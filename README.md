@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml/badge.svg)](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml)
 
-A portable role definition repository for infrastructure and platform engineering teams. Covers 32 domains grouped into 7 chapters, and 217 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Chapter Lead, Technical Area Lead (TAL), Product Area Lead (PAL), and C-Suite.
+A portable role definition repository for infrastructure and platform engineering teams. Covers 32 domains grouped into 7 chapters, and 216 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Chapter Lead, Technical Area Lead (TAL), Product Area Lead (PAL), and C-Suite.
 
 Repository: [github.com/JeanKadang/DOC-ITRoles](https://github.com/JeanKadang/DOC-ITRoles) (private). Issues and backlog are tracked on the [Issues tab](https://github.com/JeanKadang/DOC-ITRoles/issues).
 
@@ -100,7 +100,7 @@ See `docs/CHAPTERS_OVERVIEW.md` for the full breakdown and `docs/chapters/*.md` 
 roles_master/
 ├── .github/
 │   └── workflows/ci.yml                    # CI: npm test, npm run validate, markdownlint
-├── Roles/                                  # All role definitions (32 domains, 217 roles)
+├── Roles/                                  # All role definitions (32 domains, 216 roles)
 │   ├── leadership/                         # SVP, CISO, Chapter Leads, TAL, PAL
 │   ├── c_suite/                            # CEO, CTO, CIO, CFO
 │   ├── cloud_platforms/                    # Azure, AWS, GCP + Lead/Principal
@@ -115,7 +115,7 @@ roles_master/
 │   └── ...                                 # 32 domains total
 ├── docs/                                   # Governance and reference documentation
 │   ├── role_template.md                    # Template for new roles
-│   ├── improvements_and_recommendations.md # Backlog of future improvements
+│   ├── improvements_and_recommendations.md # Review history & completed-work record
 │   ├── CROSS_DOMAIN_INTERACTIONS.md        # Domain ownership and escalation paths
 │   ├── SKILLS_PROGRESSION.md              # Career progression framework
 │   ├── ONBOARDING_TEMPLATE.md             # 30/60/90 day onboarding plan template
@@ -190,7 +190,7 @@ Each role file follows the canonical 13-section structure. See `docs/role_templa
 | `docs/ONBOARDING_TEMPLATE.md` | 30/60/90 day plan template for new hires |
 | `docs/onboarding_chapter_lead_template.md` | Onboarding variant for incoming Chapter Leads |
 | `docs/CHAPTERS_OVERVIEW.md` | The 7 chapters, their focus, and links to per-chapter detail |
-| `docs/improvements_and_recommendations.md` | Backlog of future improvements and industry trend tracking |
+| `docs/improvements_and_recommendations.md` | Review history, rationale, and industry-trend tracking (open work tracked as [GitHub issues](https://github.com/JeanKadang/DOC-ITRoles/issues)) |
 | `CHANGELOG.md` | Version history of the codebase (Keep a Changelog format) |
 
 ## Development

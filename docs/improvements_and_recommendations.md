@@ -1,6 +1,6 @@
 # Role description improvements and recommendations
 
-> **Last Updated:** July 2026 (Review 4) — Status update: role template extended with Reports To/Direct Reports, Role Scope & Boundaries, and Interaction Mode fields (backfill across 218 roles pending); 8 service-operations and governance roles added; 3 duplicate role titles resolved; web viewer maturity pass (validation tooling, tests, security headers, export, stale-role tracking — see CHANGELOG.md). Catalogue now 217 roles across 32 domains (2026-07-06: `cloud_cost_optimization_standards.md` reclassified as a reference doc, not a role — see "Technology-specific experience levels" and the Stale-panel fix in CHANGELOG.md). See status indicators below.
+> **Last Updated:** July 2026 (Review 4) — Status update: role template extended with Reports To/Direct Reports, Role Scope & Boundaries, and Interaction Mode fields (backfill across 218 roles pending); 8 service-operations and governance roles added; 3 duplicate role titles resolved; web viewer maturity pass (validation tooling, tests, security headers, export, stale-role tracking — see CHANGELOG.md). Catalogue now 216 roles across 32 domains (2026-07-06: `cloud_cost_optimization_standards.md` reclassified as a reference doc, not a role — see "Technology-specific experience levels" and the Stale-panel fix in CHANGELOG.md). See status indicators below.
 >
 > **Status key:** ✅ Completed · ⏳ Partially done · 📋 Not yet started · 🔄 Process/people — requires owner assignment
 
@@ -27,7 +27,7 @@ Standardize all role descriptions to include these canonical sections in order:
 12. Career Development Path
 13. **Recommended Certifications & Learning Paths** *(restructured March 2026)*
 
-**Status:** `docs/role_template.md` fully updated. All 217 roles follow this structure. New roles created in March 2026 Review 3 use the full template.
+**Status:** `docs/role_template.md` fully updated. All 216 roles follow this structure. New roles created in March 2026 Review 3 use the full template.
 
 ---
 
@@ -54,7 +54,7 @@ Develop a skills progression framework showing Engineer → Senior Engineer → 
 ### 4. Reporting lines, scope boundaries, and interaction mode ⏳ Partially done
 
 **Recommendation:**
-Role descriptions captured horizontal peer interactions well (via the Interactions table) but were silent on the vertical reporting line, explicit ownership boundaries, and the direction of each cross-role relationship — the classic overlap failure mode in a 217-role catalog.
+Role descriptions captured horizontal peer interactions well (via the Interactions table) but were silent on the vertical reporting line, explicit ownership boundaries, and the direction of each cross-role relationship — the classic overlap failure mode in a 216-role catalog.
 
 **Status:** `docs/role_template.md` updated (2026-07) with:
 
@@ -62,7 +62,7 @@ Role descriptions captured horizontal peer interactions well (via the Interactio
 - A new **Role Scope & Boundaries** section: scope of influence, experience anchor, explicit out-of-scope statement, and escalation path (escalates to / escalated to by).
 - An **Interaction Mode** column added to the Interactions with Other Roles table (Collaborates / Consumes From / Provides To / Governed By / Escalates To).
 
-**Remaining:** Backfill these fields across all 217 existing role files. Not yet enforced by `validate-roles.js` — added as a required section only once backfill is complete, to avoid a wave of false "missing section" errors on existing files. 🔄
+**Remaining:** Backfill these fields across all 216 existing role files. Not yet enforced by `validate-roles.js` — added as a required section only once backfill is complete, to avoid a wave of false "missing section" errors on existing files. 🔄
 
 ---
 
@@ -429,7 +429,7 @@ All roles covering security, compliance, or regulated workloads now reference th
 | Technology experience levels (Architect roles) | ✅ Complete |
 | Business Impact sections | ✅ Complete |
 | Remote Work sections | ✅ Complete |
-| New roles (217 total) | ✅ Complete |
+| New roles (216 total) | ✅ Complete |
 | Chapter Lead roles (6 created) | ✅ Complete |
 | C-suite roles (CEO, CTO, CIO) | ✅ Complete |
 | Client Platform domain | ✅ Complete |
@@ -498,35 +498,13 @@ Consolidated backlog from the July 2026 audit. Completed items are checked and k
 - [x] **Chapters refactored** — per-chapter narrative split into `docs/chapters/*.md`, rendered live in the viewer's chapter panel; flat overview retired to a thin index; counts now computed live to prevent drift.
 - [x] **Markdown lint noise cleared** — MD032 blank-line normalisation across 208 files.
 
-### Open — documentation currency
+### Open work
 
-- [ ] `docs/SKILLS_PROGRESSION.md`: domain ladders cover only ~10 of 32 domains; add the remaining domains, the 8 new specialist Senior-Engineer roles, and the GenAI vs classical-MLOps split. Clarify the `Data Engineer → AI Governance Engineer → AI Platform Architect` mobility path now that there are two distinct AI platform architect roles. 📋
-- [ ] `docs/CROSS_DOMAIN_INTERACTIONS.md`: add ownership-boundary and escalation rows for the new governance roles — change enablement (Change/Release Manager), major incident/problem (Major Incident Manager), BC/DR ownership, and the data-classification split across Data Governance Lead vs Data Privacy Officer vs Security. 📋
-- [x] `docs/role_template.md`: the Role Level example lists only four levels — show the full canonical vocabulary (Engineer … Chapter Lead, TAL, PAL, C-Suite, Reliability Engineer). Fixed 2026-07-06.
-- [x] The proficiency-table backfill figure was stale (claimed "~159/166 remaining"); recounted 2026-07-06 — actual remaining is 3 roles, not 166. See "Technology-specific experience levels" above.
-
-### Open — content backfill
-
-- [ ] Backfill the new template fields (Reports To / Direct Reports / Role Scope & Boundaries / Interaction Mode) across all 217 existing role files. 📋
-- [ ] Once backfill is complete, enable those sections as required checks in `validate-roles.js`. 📋
-- [ ] Resolve the 43 role files that `npm run validate` reports with missing canonical sections (pre-existing drift; run `npm run validate` for the current list). 📋
-- [ ] Proficiency tables for the 3 remaining roles: `Roles/endpoint_management/endpoint_management_senior_engineer.md`, `Roles/leadership/engineering_practices_champion.md`, `Roles/modern_workplace/modern_workplace_senior_engineer.md` (corrected 2026-07-06 — previously overstated as ~166). 📋
-
-### Open — tooling and process
-
-- [ ] Initialise Git for the repository — currently no version control, which makes large automated edits (like the 208-file lint fix) higher-risk. 🔄
-- [ ] Add a CI workflow (e.g., GitHub Actions) running `npm test`, `npm run validate`, and markdownlint on pull requests. Requires Git first. 📋
-- [ ] Consider a small script to generate any count-bearing documentation from the filesystem, so counts never drift again (the chapter panel already does this live). 📋
-- [ ] Assign a maintenance owner and schedule the next quarterly review. 🔄
-
-### Open — visualisation & data presentation
-
-> Design principle: any charting library must be **vendored locally** (served from `vendor/`, never a CDN) to preserve the app's offline, zero-external-dependency design — the same approach used for `marked`. Library guidance: **ECharts** for hierarchy/relationship visuals (`tree`, `graph`, `sankey` series); **Chart.js** for simple distributions (bar/donut). ECharts min is ~1 MB vs Chart.js ~200 KB — weigh bundle size before adding.
-
-- [ ] **Organisational chart view** — add an interactive org diagram rendering the live hierarchy (Chapters → Domains → Roles) plus the leadership line (CEO/CTO/CIO → SVP → TAL/PAL → Chapter Leads), built from `/api/roles` data. Recommended: ECharts `tree` series (native hierarchy; Chart.js cannot draw trees). 📋
-- [ ] **Vendor a charting library** — add `echarts.min.js` (and/or `chart.umd.js`) under `vendor/` and serve it like `marked`, keeping the no-CDN principle. 📋
-- [ ] **Cross-domain relationship graph** — visualise the ownership/collaboration links in `CROSS_DOMAIN_INTERACTIONS.md` as an ECharts force-directed `graph` (nodes = domains, edges = collaborations) to make the "who works with whom" picture immediate. 📋
-- [ ] **Distribution charts** — roles per chapter and per level as donut/bar charts (Chart.js is sufficient) to complement the welcome stat cards. 📋
-- [ ] **Career-path Sankey** — render the Engineer → Senior → Architect ladders and cross-domain mobility paths from `SKILLS_PROGRESSION.md` as an ECharts `sankey`. 📋
-- [ ] **Markdown diagrams for docs** — evaluate Mermaid (`graph TD`, flowcharts) for the reference docs. Note: the in-app viewer renders markdown with `marked`, so Mermaid blocks render natively on GitHub but would require adding `mermaid.js` to the viewer to display in-app. 📋
-- [ ] **Accessibility for charts** — ensure any chart pairs colour with text/shape cues and exposes an accessible text/table fallback (WCAG 2.2), consistent with the existing focus-visible and aria work. 📋
+All open backlog items (documentation currency, content backfill, tooling/process,
+visualisation & data presentation) are tracked as labeled, prioritized GitHub issues,
+not maintained as prose here — see the
+[Issues tab](https://github.com/JeanKadang/DOC-ITRoles/issues). This section
+previously duplicated that backlog in Markdown and drifted (e.g. a proficiency-table
+count that was off by two orders of magnitude — see the "Technology-specific
+experience levels" recount above); the issue tracker is now the single source of
+truth for what's outstanding.

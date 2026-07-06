@@ -17,7 +17,7 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 
 - **Business Objective:** Deliver reliable, timely, and high-quality data to analytics, BI, and ML consumers, enabling data-driven decisions across the organisation.
 - **Value Metrics:** Pipeline reliability and data freshness SLAs, data quality test pass rate, time-to-delivery for new data pipelines, analyst/data science consumer satisfaction.
-- **Key Stakeholders:** Analytics/BI teams, Data Scientists, Product Owners, Data Governance, DataOps Engineers.
+- **Key Stakeholders:** Analytics/BI teams, Data Scientists, Product Owners, Data Governance, DataOps Specialists.
 - **Processes Supported:** Data ingestion, ELT/ETL transformation, data quality validation, data product delivery, ML feature pipeline development.
 
 ## Key Responsibilities
@@ -77,7 +77,7 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 | Role | Nature of Interaction |
 |---|---|
 | Data Platform Architect: | Receive architectural direction; contribute feedback on implementation feasibility |
-| DataOps Engineers: | Follow CI/CD standards; request tooling and pipeline infrastructure support |
+| DataOps Specialists: | Follow CI/CD standards; request tooling and pipeline infrastructure support |
 | Analytics Engineers: | Collaborate on semantic layer and BI-facing data models |
 | Data Scientists: | Provide feature engineering pipelines and curated datasets |
 | Data Governance: | Apply cataloguing, lineage, and classification requirements |
@@ -132,7 +132,7 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 **Potential Next Roles:**
 
 - Data Senior Engineer
-- DataOps Engineer
+- DataOps Specialist
 - MLOps Engineer
 - Analytics Engineer
 

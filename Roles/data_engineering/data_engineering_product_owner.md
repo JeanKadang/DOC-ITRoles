@@ -77,7 +77,7 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 | CDO / Data Strategy: | Receive strategic data priorities and translate into engineering deliverables |
 | Analytics / BI Leads: | Capture and prioritise data consumption requirements |
 | Data Science / MLOps: | Align feature pipeline delivery with ML project roadmaps |
-| DataOps Engineers: | Provide clear acceptance criteria for pipeline reliability and CI/CD work |
+| DataOps Specialists: | Provide clear acceptance criteria for pipeline reliability and CI/CD work |
 | Finance / FinOps: | Report and optimise data platform cost |
 
 ## Key Technologies
@@ -120,7 +120,7 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 
 **Previous Roles:**
 
-- Data Senior Engineer or DataOps Engineer (technical track to PO)
+- Data Senior Engineer or DataOps Specialist (technical track to PO)
 - Analytics Manager or BI Manager
 - IT Programme Manager with data platform experience
 

@@ -17,7 +17,7 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 
 - **Business Objective:** Accelerate data product delivery and improve data quality maturity across the organisation, enabling faster and more trustworthy analytical and ML use cases.
 - **Value Metrics:** Data product delivery velocity, data quality coverage (percentage of tables with quality tests), data platform cost efficiency, pipeline reliability, and time-to-value for new analytical capabilities.
-- **Key Stakeholders:** Data Platform Architect, Analytics and BI leads, Data Science teams, DataOps Engineers, Data Governance.
+- **Key Stakeholders:** Data Platform Architect, Analytics and BI leads, Data Science teams, DataOps Specialists, Data Governance.
 - **Processes Supported:** Data platform development, data domain design, data quality governance, ML feature pipeline delivery, data catalogue and lineage management.
 
 ## Key Responsibilities
@@ -42,7 +42,7 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 |---|---|
 | Detailed data model and pipeline design for owned domains | Data platform architecture (with Data Platform Architect) |
 | Data quality framework standards and test coverage for team | Business domain data requirements (with Product/Analytics) |
-| Reusable framework and shared asset development | DataOps CI/CD process design (with DataOps Engineers) |
+| Reusable framework and shared asset development | DataOps CI/CD process design (with DataOps Specialists) |
 | Code review standards and technical quality gates for data team | Data governance policy (with CDO/Governance team) |
 | Performance and cost optimisation of owned data platform components | Tooling and platform procurement decisions |
 
@@ -80,7 +80,7 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 | Role | Nature of Interaction |
 |---|---|
 | Data Platform Architect: | Receive strategic direction; contribute implementation experience to architecture decisions |
-| DataOps Engineers: | Collaborate on pipeline reliability, testing, and observability |
+| DataOps Specialists: | Collaborate on pipeline reliability, testing, and observability |
 | Data Engineers: | Provide mentoring, code review, and design guidance |
 | Analytics Engineers: | Align on semantic layer requirements and data model design |
 | Data Scientists: | Provide feature engineering pipelines and curated, well-documented datasets |

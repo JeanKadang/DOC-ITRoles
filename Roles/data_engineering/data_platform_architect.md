@@ -98,7 +98,7 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 |---|---|
 | CDO / Data Governance team: | Align platform architecture with data governance policies and data strategy |
 | MLOps / AI Platform Architect: | Design integration between data platform and ML training/serving infrastructure |
-| DataOps Engineer: | Provide architecture direction; receive operational feedback from platform operations |
+| DataOps Specialist: | Provide architecture direction; receive operational feedback from platform operations |
 | Cloud Architects: | Align data platform architecture with cloud platform standards |
 | Analytics / BI teams: | Ensure data platform serves consumption layer performance requirements |
 | FinOps: | Provide data platform cost attribution models |

@@ -17,7 +17,7 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 - **Business Objective:** Implements and maintains ML and LLM pipelines enabling data science teams to deploy, operate, and monitor AI models reliably and reproducibly in production environments
 - **Value Metrics:** ML model deployment time, pipeline automation coverage, model serving availability and latency, ML infrastructure cost per training and inference run, model monitoring coverage
-- **Key Stakeholders:** Data scientists, AI Platform Architect, application teams, DevOps, Cloud Engineers, FinOps
+- **Key Stakeholders:** Data scientists, AI Platform Architect (AI Governance), GenAI Platform Architect, application teams, DevOps, Cloud Engineers, FinOps
 - **Processes Supported:** ML model training and deployment pipelines, feature engineering automation, model monitoring and drift detection, GenAI and RAG pipeline management, ML cost optimization
 
 ## Key Responsibilities
