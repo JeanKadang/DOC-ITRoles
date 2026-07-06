@@ -1,6 +1,10 @@
 # IT Roles Library
 
-A portable role definition repository for infrastructure and platform engineering teams. Covers 32 domains and 218 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Technical Area Lead (TAL), and Product Area Lead (PAL).
+[![CI](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml/badge.svg)](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml)
+
+A portable role definition repository for infrastructure and platform engineering teams. Covers 32 domains grouped into 7 chapters, and 218 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Chapter Lead, Technical Area Lead (TAL), Product Area Lead (PAL), and C-Suite.
+
+Repository: [github.com/JeanKadang/DOC-ITRoles](https://github.com/JeanKadang/DOC-ITRoles) (private). Issues and backlog are tracked on the [Issues tab](https://github.com/JeanKadang/DOC-ITRoles/issues).
 
 ## Prerequisites
 
@@ -55,13 +59,33 @@ $env:PORT = 8080; node server.js
 | Export the matrix | In Matrix view, click **⬇️ Export CSV** |
 | Track stale roles | Click **⏰ Stale (N)** in the header (shown only when roles are overdue) — lists roles with no review date or one older than 12 months, with CSV export |
 | Dark mode | Click the **🌙 Dark** toggle in the header |
+| Browse by chapter | Click a chapter in the sidebar to open its narrative panel (purpose, cross-chapter collaborations, live domain/role counts, Chapter Lead link) |
+
+## Chapters
+
+The 32 domains are grouped into 7 chapters, each led by a Chapter Lead:
+
+| # | Chapter | Focus |
+|---|---------|-------|
+| 1 | ☁️ Cloud, Platform & Infrastructure | Cloud, containers, virtualisation, hardware, OS, network, FinOps |
+| 2 | 🔄 DevOps & Delivery | CI/CD, developer experience, application platforms, integration |
+| 3 | 📊 Data & AI | Data platform, storage, databases, AI governance |
+| 4 | 🔒 Security & Identity | Security architecture, IAM/PAM, data protection, directory services |
+| 5 | 🖥️ End User & Workplace | Client platform, endpoint management, Microsoft 365 |
+| 6 | 🎯 Service & Governance | ITSM, configuration management, service management, enterprise architecture |
+| 7 | 👑 Leadership | C-Suite, SVP, CISO, Chapter Leads, TAL, PAL, cross-cutting leadership |
+
+See `docs/CHAPTERS_OVERVIEW.md` for the full breakdown and `docs/chapters/*.md` for each chapter's detail. Domain and role counts are computed live from `Roles/` — never hand-maintained — to prevent drift.
 
 ## Role hierarchy
 
 | Level | Badge | Description |
 |---|---|---|
+| C-Suite (CEO, CTO, CIO, CFO, CISO) | Distinct per role | Executive leadership — organisation-wide accountability |
+| SVP | Slate | Senior VP of Technology — cross-chapter executive oversight |
 | Product Area Lead (PAL) | Dark navy | Cross-domain delivery, people, and budget leadership |
 | Technical Area Lead (TAL) | Blue | Cross-domain technical direction and governance |
+| Chapter Lead | Teal | Leads one of the 7 chapters; owns its domains and Chapter Leads report to TAL/PAL |
 | Principal Architect | Gold | Senior IC — org-wide architecture strategy |
 | Lead Architect | Amber | Multi-domain architecture leadership and standards |
 | Architect | Purple | Domain-level technical authority and design |
@@ -74,12 +98,17 @@ $env:PORT = 8080; node server.js
 
 ```
 roles_master/
-├── Roles/                                  # All role definitions (32 domains)
-│   ├── leadership/                         # PAL, TAL
+├── .github/
+│   └── workflows/ci.yml                    # CI: npm test, npm run validate, markdownlint
+├── Roles/                                  # All role definitions (32 domains, 218 roles)
+│   ├── leadership/                         # SVP, CISO, Chapter Leads, TAL, PAL
+│   ├── c_suite/                            # CEO, CTO, CIO, CFO
 │   ├── cloud_platforms/                    # Azure, AWS, GCP + Lead/Principal
 │   ├── devops/                             # DevOps, Developer Experience, Platform Reliability
-│   ├── ai_governance/                      # AI Governance, AI Platform
+│   ├── ai_governance/                      # AI Governance, AI Platform (classical MLOps)
+│   ├── modern_infrastructure/               # GenAI Platform, Infrastructure Automation
 │   ├── data_engineering/                   # Data Platform, Data Mesh, DataOps
+│   ├── service_management/                 # TPM, Major Incident, Change/Release, Vendor/Asset
 │   ├── security/                           # README.md explains scope
 │   ├── security_cross_platform/            # README.md explains scope
 │   ├── security_identity/                  # README.md explains scope
@@ -89,7 +118,10 @@ roles_master/
 │   ├── improvements_and_recommendations.md # Backlog of future improvements
 │   ├── CROSS_DOMAIN_INTERACTIONS.md        # Domain ownership and escalation paths
 │   ├── SKILLS_PROGRESSION.md              # Career progression framework
-│   └── ONBOARDING_TEMPLATE.md             # 30/60/90 day onboarding plan template
+│   ├── ONBOARDING_TEMPLATE.md             # 30/60/90 day onboarding plan template
+│   ├── onboarding_chapter_lead_template.md # Chapter Lead-specific onboarding variant
+│   ├── CHAPTERS_OVERVIEW.md               # The 7 chapters: focus, lead, detail link
+│   └── chapters/                           # Per-chapter narrative (rendered in the viewer)
 ├── test/                                   # node:test suite (server + roleMeta)
 ├── vendor/                                 # Vendored third-party assets (marked.min.js)
 ├── server.js                               # Node.js web server (no dependencies)
@@ -156,6 +188,8 @@ Each role file follows the canonical 13-section structure. See `docs/role_templa
 | `docs/CROSS_DOMAIN_INTERACTIONS.md` | Domain ownership boundaries, key relationships, escalation paths |
 | `docs/SKILLS_PROGRESSION.md` | Engineer → Senior → Architect career ladder per domain |
 | `docs/ONBOARDING_TEMPLATE.md` | 30/60/90 day plan template for new hires |
+| `docs/onboarding_chapter_lead_template.md` | Onboarding variant for incoming Chapter Leads |
+| `docs/CHAPTERS_OVERVIEW.md` | The 7 chapters, their focus, and links to per-chapter detail |
 | `docs/improvements_and_recommendations.md` | Backlog of future improvements and industry trend tracking |
 | `CHANGELOG.md` | Version history of the codebase (Keep a Changelog format) |
 
@@ -176,6 +210,14 @@ npm run validate
 ```
 
 Checks every role file against the canonical 13-section template and required metadata fields (`Domain`, `Role Level`, `Last Reviewed`). Missing sections or metadata are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`) are reported as warnings. Pass `--strict` to fail the build on warnings too.
+
+### Continuous integration
+
+`.github/workflows/ci.yml` runs on every push/PR to `main`:
+
+- **Tests** (`npm test`) — blocking.
+- **Role content validation** (`npm run validate`) — currently non-blocking (`continue-on-error`) while 43 pre-existing role files are backfilled to the canonical template; see the repo's Issues tab.
+- **Markdown lint** (`markdownlint-cli2`, config in `.markdownlint.json`) — blocking.
 
 ### Security
 
