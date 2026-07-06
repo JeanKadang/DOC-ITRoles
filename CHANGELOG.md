@@ -7,6 +7,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- `scripts/check-counts.js` (`npm run check-counts`): compares README.md's
+  count-bearing sentences ("N domains grouped into N chapters, and N roles")
+  against the actual filesystem, wired as a non-blocking CI step. Prevents
+  the kind of drift that previously left a proficiency-table backfill
+  estimate off by two orders of magnitude.
+- `validate-roles.js` now warns (non-blocking) when a role's `Domain`
+  metadata doesn't match the canonical label for its folder.
+
+### Fixed
+
+- **Duplicate role:** `Java Platform Product Owner` existed as two
+  near-identical files (`java_product_owner.md` and
+  `java_platform_product_owner.md`) — the 2026-07 duplicate-title cleanup
+  scanned by filename and missed this pair. Removed the non-canonical copy.
+  Catalog count: 217 → 216 roles.
+- **Stale cross-references** to the removed `DataOps Engineer` role (9
+  references across 4 `data_engineering` files) updated to `DataOps
+  Specialist`; disambiguated an ambiguous `AI Platform Architect` stakeholder
+  reference in `mlops_engineer.md` to name both the AI Governance and GenAI
+  variants.
+- **Domain metadata drift:** 34 role files' `Domain` metadata didn't match
+  their folder's canonical label (`Leadership` vs `C-Suite` for c_suite
+  roles; `and` vs `&` variants in `integration_middleware`,
+  `itsm_configuration`, `security_identity`; naming mismatches in
+  `server_hardware_hpe`, `server_os_linux`, `server_os_windows`). Moved
+  `DOMAIN_LABELS` out of `server.js` into `roleMeta.js` as the shared source
+  of truth, matching the `REFERENCE_DOC_PATTERN` pattern.
+- **`start.bat` no longer force-kills** whatever process is listening on
+  port 3000 — it now probes 3000-3010 for a free port and launches there,
+  and still auto-opens the default browser to whichever port it picked.
+- **CI action deprecation warnings** cleared: bumped `actions/checkout`
+  v4→v7, `actions/setup-node` v4→v6, `markdownlint-cli2-action` v18→v24.
+  Test job now runs a Node 18/22 matrix instead of only 18.
+- **`getRoles()` no longer re-reads all 216 role files on every
+  `/api/roles` request** — cached, invalidated via an mtime signature over
+  the `Roles/` tree. Live-edit pickup (adding/editing a role file without
+  restarting the server) is preserved.
+- **Technology Proficiency Levels backfilled** for the last 3 roles missing
+  it (`endpoint_management_senior_engineer`, `engineering_practices_champion`,
+  `modern_workplace_senior_engineer`). Coverage is now 216/216 (100%).
+- The "Open TODOs" section in `docs/improvements_and_recommendations.md`,
+  which had started duplicating the GitHub issue tracker, replaced with a
+  pointer to the Issues tab; historical "Done this review" content kept.
+
 ## [1.2.0] - 2026-07-06
 
 ### Added

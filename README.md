@@ -124,14 +124,16 @@ roles_master/
 │   ├── onboarding_chapter_lead_template.md # Chapter Lead-specific onboarding variant
 │   ├── CHAPTERS_OVERVIEW.md               # The 7 chapters: focus, lead, detail link
 │   └── chapters/                           # Per-chapter narrative (rendered in the viewer)
+├── scripts/
+│   └── check-counts.js                     # Verifies README counts vs filesystem — `npm run check-counts`
 ├── test/                                   # node:test suite (server + roleMeta)
-├── vendor/                                 # Vendored third-party assets (marked.min.js)
+├── vendor/                                 # Vendored third-party assets (marked.min.js, chart.umd.min.js, echarts.min.js)
 ├── server.js                               # Node.js web server (no dependencies)
 ├── roleMeta.js                             # Shared role metadata parser (server + validator)
 ├── validate-roles.js                       # Content validator — `npm run validate`
 ├── index.html                              # Single-file web UI
-├── start.bat                               # Windows launcher
-├── package.json                            # Scripts: start, test, validate
+├── start.bat                               # Windows launcher (auto-picks a free port, opens browser)
+├── package.json                            # Scripts: start, test, validate, check-counts
 ├── CHANGELOG.md                            # Version history (Keep a Changelog)
 └── README.md                               # This file
 ```
@@ -211,15 +213,24 @@ Runs the Node.js built-in test runner (`node --test`) against `test/` — covers
 npm run validate
 ```
 
-Checks every role file against the canonical 13-section template and required metadata fields (`Domain`, `Role Level`, `Last Reviewed`). Missing sections or metadata are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`) are reported as warnings. Pass `--strict` to fail the build on warnings too.
+Checks every role file against the canonical 13-section template and required metadata fields (`Domain`, `Role Level`, `Last Reviewed`). Missing sections or metadata are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`, or a `Domain` that doesn't match its folder's canonical label) are reported as warnings. Pass `--strict` to fail the build on warnings too.
+
+### Checking counts
+
+```powershell
+npm run check-counts
+```
+
+Compares README.md's count-bearing sentences ("N domains grouped into N chapters, and N roles") against the actual `Roles/` filesystem and fails (exit code 1) on any mismatch — a guard-rail against count drift, since these numbers used to be hand-maintained and go stale silently.
 
 ### Continuous integration
 
 `.github/workflows/ci.yml` runs on every push/PR to `main`:
 
-- **Tests** (`npm test`) — blocking.
+- **Tests** (`npm test`) — blocking, on a Node 18/22 matrix.
 - **Role content validation** (`npm run validate`) — currently non-blocking (`continue-on-error`) while 43 pre-existing role files are backfilled to the canonical template; see the repo's Issues tab.
 - **Markdown lint** (`markdownlint-cli2`, config in `.markdownlint.json`) — blocking.
+- **Count check** (`npm run check-counts`) — blocking.
 
 ### Security
 
