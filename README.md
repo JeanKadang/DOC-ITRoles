@@ -32,13 +32,15 @@ Don't have winget? Install it from the [App Installer page in the Microsoft Stor
 start.bat
 ```
 
+`start.bat` picks the first free port starting at 3000 (trying up to 3010), starts the server on it, and automatically opens your default browser to it — no manual URL needed. If port 3000 is already in use by something else (another dev server, etc.), it moves on to the next free port instead of touching that process.
+
 Or directly:
 
 ```powershell
 node server.js
 ```
 
-Then open **http://localhost:3000** in your browser.
+Then open **http://localhost:3000** in your browser (does not auto-open — only `start.bat` does that).
 
 To use a different port:
 
