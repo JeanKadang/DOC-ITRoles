@@ -1,6 +1,6 @@
 # Role description improvements and recommendations
 
-> **Last Updated:** July 2026 (Review 4) — Status update: role template extended with Reports To/Direct Reports, Role Scope & Boundaries, and Interaction Mode fields (backfill across 218 roles pending); 8 service-operations and governance roles added; 3 duplicate role titles resolved; web viewer maturity pass (validation tooling, tests, security headers, export, stale-role tracking — see CHANGELOG.md). Catalogue now 218 roles across 32 domains. See status indicators below.
+> **Last Updated:** July 2026 (Review 4) — Status update: role template extended with Reports To/Direct Reports, Role Scope & Boundaries, and Interaction Mode fields (backfill across 218 roles pending); 8 service-operations and governance roles added; 3 duplicate role titles resolved; web viewer maturity pass (validation tooling, tests, security headers, export, stale-role tracking — see CHANGELOG.md). Catalogue now 217 roles across 32 domains (2026-07-06: `cloud_cost_optimization_standards.md` reclassified as a reference doc, not a role — see "Technology-specific experience levels" and the Stale-panel fix in CHANGELOG.md). See status indicators below.
 >
 > **Status key:** ✅ Completed · ⏳ Partially done · 📋 Not yet started · 🔄 Process/people — requires owner assignment
 
@@ -27,7 +27,7 @@ Standardize all role descriptions to include these canonical sections in order:
 12. Career Development Path
 13. **Recommended Certifications & Learning Paths** *(restructured March 2026)*
 
-**Status:** `docs/role_template.md` fully updated. All 218 roles follow this structure. New roles created in March 2026 Review 3 use the full template.
+**Status:** `docs/role_template.md` fully updated. All 217 roles follow this structure. New roles created in March 2026 Review 3 use the full template.
 
 ---
 
@@ -54,7 +54,7 @@ Develop a skills progression framework showing Engineer → Senior Engineer → 
 ### 4. Reporting lines, scope boundaries, and interaction mode ⏳ Partially done
 
 **Recommendation:**
-Role descriptions captured horizontal peer interactions well (via the Interactions table) but were silent on the vertical reporting line, explicit ownership boundaries, and the direction of each cross-role relationship — the classic overlap failure mode in a 218-role catalog.
+Role descriptions captured horizontal peer interactions well (via the Interactions table) but were silent on the vertical reporting line, explicit ownership boundaries, and the direction of each cross-role relationship — the classic overlap failure mode in a 217-role catalog.
 
 **Status:** `docs/role_template.md` updated (2026-07) with:
 
@@ -62,7 +62,7 @@ Role descriptions captured horizontal peer interactions well (via the Interactio
 - A new **Role Scope & Boundaries** section: scope of influence, experience anchor, explicit out-of-scope statement, and escalation path (escalates to / escalated to by).
 - An **Interaction Mode** column added to the Interactions with Other Roles table (Collaborates / Consumes From / Provides To / Governed By / Escalates To).
 
-**Remaining:** Backfill these fields across all 218 existing role files. Not yet enforced by `validate-roles.js` — added as a required section only once backfill is complete, to avoid a wave of false "missing section" errors on existing files. 🔄
+**Remaining:** Backfill these fields across all 217 existing role files. Not yet enforced by `validate-roles.js` — added as a required section only once backfill is complete, to avoid a wave of false "missing section" errors on existing files. 🔄
 
 ---
 
@@ -429,7 +429,7 @@ All roles covering security, compliance, or regulated workloads now reference th
 | Technology experience levels (Architect roles) | ✅ Complete |
 | Business Impact sections | ✅ Complete |
 | Remote Work sections | ✅ Complete |
-| New roles (218 total) | ✅ Complete |
+| New roles (217 total) | ✅ Complete |
 | Chapter Lead roles (6 created) | ✅ Complete |
 | C-suite roles (CEO, CTO, CIO) | ✅ Complete |
 | Client Platform domain | ✅ Complete |
@@ -507,7 +507,7 @@ Consolidated backlog from the July 2026 audit. Completed items are checked and k
 
 ### Open — content backfill
 
-- [ ] Backfill the new template fields (Reports To / Direct Reports / Role Scope & Boundaries / Interaction Mode) across all 218 existing role files. 📋
+- [ ] Backfill the new template fields (Reports To / Direct Reports / Role Scope & Boundaries / Interaction Mode) across all 217 existing role files. 📋
 - [ ] Once backfill is complete, enable those sections as required checks in `validate-roles.js`. 📋
 - [ ] Resolve the 43 role files that `npm run validate` reports with missing canonical sections (pre-existing drift; run `npm run validate` for the current list). 📋
 - [ ] Proficiency tables for the 3 remaining roles: `Roles/endpoint_management/endpoint_management_senior_engineer.md`, `Roles/leadership/engineering_practices_champion.md`, `Roles/modern_workplace/modern_workplace_senior_engineer.md` (corrected 2026-07-06 — previously overstated as ~166). 📋
