@@ -1,7 +1,7 @@
 const http = require('http');
 const fs   = require('fs');
 const path = require('path');
-const { resolveLevel, parseMeta } = require('./roleMeta');
+const { resolveLevel, parseMeta, REFERENCE_DOC_PATTERN } = require('./roleMeta');
 
 const PORT      = process.env.PORT || 3000;
 const ROOT      = __dirname;
@@ -58,7 +58,7 @@ function getRoles() {
   for (const entry of entries) {
     const domainPath = path.join(ROLES_DIR, entry.name);
     const files = fs.readdirSync(domainPath)
-      .filter(f => f.endsWith('.md') && f !== 'README.md')
+      .filter(f => f.endsWith('.md') && f !== 'README.md' && !REFERENCE_DOC_PATTERN.test(f))
       .sort();
 
     if (files.length === 0) continue;

@@ -5,6 +5,13 @@
 
 'use strict';
 
+// Files that document standards/policy rather than a single role (e.g.
+// cloud_cost_optimization_standards.md). They carry no Role Level or Last
+// Reviewed metadata by design, so both the validator and the web server's
+// role listing/stale-tracking must exclude them rather than treat them as
+// roles with missing metadata.
+const REFERENCE_DOC_PATTERN = /_standards\.md$/;
+
 // Canonical role-level vocabulary used by the UI badges, matrix columns and
 // the validator. Order is not significant here (the UI defines its own order).
 const CANONICAL_LEVELS = [
@@ -109,6 +116,7 @@ function resolveLevel(content, filename) {
 module.exports = {
   CANONICAL_LEVELS,
   KNOWN_LEVELS,
+  REFERENCE_DOC_PATTERN,
   parseField,
   parseMeta,
   normalizeLevel,

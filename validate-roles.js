@@ -9,15 +9,11 @@
 
 const fs   = require('fs');
 const path = require('path');
-const { parseMeta, KNOWN_LEVELS, normalizeLevel } = require('./roleMeta');
+const { parseMeta, KNOWN_LEVELS, normalizeLevel, REFERENCE_DOC_PATTERN } = require('./roleMeta');
 
 const ROOT       = __dirname;
 const ROLES_DIR  = path.join(ROOT, 'Roles');
 const STRICT     = process.argv.includes('--strict');
-
-// Files that document standards/policy rather than a single role. They carry
-// no Role Level and are exempt from the full section checklist.
-const REFERENCE_DOC_PATTERN = /_standards\.md$/;
 
 // Required section headings. Each entry accepts one or more historical
 // spellings so the validator surfaces genuinely missing content rather than
