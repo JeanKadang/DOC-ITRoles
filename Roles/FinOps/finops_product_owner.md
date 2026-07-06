@@ -1,0 +1,163 @@
+# FinOps Product Owner
+
+| Field | Value |
+|---|---|
+| **Domain** | FinOps |
+| **Chapter:** | Cloud, Platform & Infrastructure |
+| **Role Level** | Product Owner |
+| **Last Reviewed** | 2026-03 |
+
+---
+
+## Role Overview
+
+The FinOps Product Owner manages the backlog of cloud cost optimization initiatives, drives cloud financial accountability, and ensures business alignment. This role champions the FinOps practice within the organization, ensuring that cloud spending delivers maximum business value and that stakeholders understand their cloud economics.
+
+## Business Impact
+
+- **Business Objective:** Manages the FinOps backlog and service roadmap ensuring cloud cost optimisation initiatives deliver measurable ROI and that cloud financial accountability is embedded across business units
+- **Value Metrics:** Cloud cost reduction delivered, forecast accuracy, stakeholder satisfaction with cost transparency, FinOps roadmap velocity, chargeback/showback coverage, FinOps maturity progression
+- **Key Stakeholders:** FinOps Architect, CFO/Financial Controllers, Cloud Directors, business unit leaders, cloud platform Product Owners
+- **Processes Supported:** FinOps backlog management, cloud cost review facilitation, chargeback/showback governance, cloud budget planning, stakeholder reporting, agile ceremonies
+
+## Key Responsibilities
+
+- Manage the product backlog for cloud cost optimization initiatives
+- Develop and maintain the FinOps service roadmap
+- Define and track key performance indicators (KPIs) for cloud cost management
+- Facilitate cloud spending accountability across business units
+- Define acceptance criteria for FinOps deliverables
+- Coordinate regular cloud cost reviews with stakeholders
+- Prioritize cost optimization initiatives based on potential ROI
+- Develop chargeback/showback models for cloud resource consumption
+- Drive adoption of FinOps practices and tools
+- Communicate cloud financial insights to leadership and stakeholders
+
+## Key Decisions and Accountabilities
+
+> Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
+
+| Owns | Advises On |
+|---|---|
+| FinOps product backlog, roadmap prioritisation, and cloud cost optimisation KPIs | Architecture decisions and technical implementation approaches |
+| Stakeholder cloud cost reporting, financial accountability governance, and chargeback/showback model | Commercial cloud provider negotiations and budget allocation decisions |
+| FinOps practice adoption programme and team capability development priorities | Enterprise financial planning, cloud strategy, and reserved capacity commercial decisions |
+
+## Required Skills
+
+- Strong understanding of product management and agile methodologies
+- Knowledge of cloud service provider billing models and pricing structures
+- Experience with financial planning and budget management
+- Stakeholder management and communication skills
+- Ability to translate financial metrics into business outcomes
+- Data analysis and visualization capabilities
+- Understanding of cloud architecture and services
+- Experience with FinOps practices and methodologies
+
+**Technology Proficiency Levels:**
+
+- **Expert level required:** Agile product ownership tools (Jira, Confluence) for FinOps backlog management, roadmap tracking, and sprint ceremonies, FinOps Foundation Framework and methodology for cloud financial accountability governance and maturity assessment, Stakeholder reporting and communication platforms (Power BI, Microsoft Teams) for cloud cost transparency and executive briefings
+- **Proficient level required:** Cloud cost management portals (AWS Cost Explorer, Azure Cost Management, GCP Billing Console) for understanding cost drivers and initiative prioritisation, Chargeback and showback platforms for cost allocation model governance and reporting quality oversight, Cloud provider pricing models (AWS, Azure, GCP) for ROI analysis of FinOps optimisation initiatives
+- **Working Knowledge required:** FinOps tooling platforms (CloudHealth, Apptio Cloudability) for service catalogue definition and tool governance decisions, ITIL service management framework for aligning FinOps processes with IT service delivery and SLA management
+- **Awareness level expected:** FinOps automation and reserved capacity management platforms for technical roadmap and investment oversight, AI/LLM cost governance patterns and emerging cloud consumption models (spot GPU, token pricing, inference reservations)
+
+## Qualifications
+
+- Bachelor's degree in Business, Finance, Computer Science, or related field
+- 5+ years of experience in product management, preferably in IT or cloud services
+- FinOps Certified Practitioner certification preferred
+- Experience with agile project management tools
+- Knowledge of cloud cost management tools and platforms
+- Background in financial analysis or IT financial management
+
+## Interactions
+
+| Role | Nature of Interaction |
+|---|---|
+| Reports to | Cloud Services Director or Head of Cloud Center of Excellence |
+| | : FinOps Architect, Cloud Engineers, Business Unit Leaders, Financial Controllers |
+| Manages | FinOps product backlog and stakeholder relationships |
+
+## Key Focus Areas
+
+- Cloud financial accountability and cost transparency
+- Unit economics for cloud services
+- Chargeback and showback implementation
+- Budget management and forecasting
+- Cost allocation accuracy and granularity
+- Financial reporting for cloud consumption
+- Strategic cost optimization initiatives
+- Self-service financial tools for engineering teams
+- Financial governance and policies
+- Stakeholder engagement and education
+
+## Typical Day-to-Day Activities
+
+- Managing the FinOps implementation backlog
+- Prioritizing cost optimization initiatives
+- Leading FinOps team meetings and ceremonies
+- Analyzing cloud spending patterns and anomalies
+- Meeting with stakeholders to review cloud costs
+- Developing financial models for cloud services
+- Creating reports on cost optimization progress
+- Collaborating with architects on cost-efficient designs
+- Defining metrics and KPIs for cloud financial management
+- Planning and coordinating cost review sessions
+
+## Key Performance Indicators
+
+- Cloud cost reduction achievements
+- Forecast accuracy for cloud spending
+- Stakeholder satisfaction with cost transparency
+- Cost allocation coverage and accuracy
+- On-time delivery of FinOps roadmap items
+- Adoption of FinOps practices across teams
+- Quality of backlog management
+- Unit economics improvement metrics
+- Reserved/committed capacity optimization
+- FinOps maturity progression
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Fully remote eligible for all backlog management, stakeholder engagement, and reporting activities
+- **Collaboration Tools:** Microsoft Teams, Jira, Confluence, Power BI, and cloud cost management portals
+- **On-Site Requirements:** None routinely; occasional executive forums or major stakeholder workshops
+- **Time Zone Flexibility:** Standard business hours with flexibility for executive cost reviews and distributed team agile ceremonies
+- **On-Call / Operational Demands:** Not on-call; escalation path for significant budget exceptions, cloud spending governance issues, or major cost overrun events
+
+## Career Development Path
+
+**Previous Roles:**
+
+- IT Financial Analyst
+- Cloud Engineer with cost focus
+- Product Owner for infrastructure services
+- Technical Program Manager
+
+**Potential Next Roles:**
+
+- FinOps Director
+- Cloud Economics Leader
+- Cloud Operations Director
+- IT Financial Management Director
+- Technology Business Management Leader
+- VP of Cloud Strategy
+
+## Recommended Certifications & Learning Paths
+
+- FinOps Certified Practitioner (FCP)
+- Professional Scrum Product Owner (PSPO)
+- AWS Certified Cloud Practitioner
+- Microsoft Azure Fundamentals
+- Google Cloud Platform Fundamentals
+- Project Management Professional (PMP)
+- ITIL 4 Foundation
+- Cloud Financial Management certification
+
+**Complementary Certifications:**
+
+- SAFe Product Owner/Product Manager (SAFe POPM), FinOps Certified Practitioner (FCP), and ITIL 4 Foundation
+
+**Learning Resources and Communities:**
+
+- FinOps Foundation (finops.org), Scrum.org product owner resources, Technology Business Management Council (tbmcouncil.org), and cloud provider billing documentation (AWS, Azure, GCP)

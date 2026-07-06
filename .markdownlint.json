@@ -1,0 +1,6 @@
+{
+  "default": false,
+  "MD012": { "maximum": 1 },
+  "MD022": { "lines_above": 1, "lines_below": 1 },
+  "MD032": true
+}

@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Roles Library</title>
+    <script src="/vendor/marked.min.js"></script>
+    <style>
+        :root {
+            --bg-primary:      #f0f2f5;
+            --bg-card:         #ffffff;
+            --bg-card-hover:   #fafbfc;
+            --bg-input:        #f5f7fa;
+            --text-primary:    #1a1a2e;
+            --text-secondary:  #555770;
+            --text-muted:      #8e8ea0;
+            --border-color:    rgba(0,0,0,0.08);
+            --border-hover:    rgba(102,126,234,0.3);
+            --shadow-sm:       0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md:       0 4px 12px rgba(0,0,0,0.08);
+            --shadow-lg:       0 8px 30px rgba(0,0,0,0.12);
+            --shadow-xl:       0 20px 60px rgba(0,0,0,0.15);
+            --gradient-header: linear-gradient(135deg, #1e3a5f 0%, #0078D4 100%);
+            --gradient-card:   linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            --accent-blue:     #0078D4;
+            --accent-purple:   #764ba2;
+            --accent-green:    #28a745;
+            --accent-orange:   #ff9800;
+            --accent-cyan:     #17a2b8;
+            --radius-sm:  8px;
+            --radius-md:  12px;
+            --radius-lg:  16px;
+            --radius-xl:  20px;
+            --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+            --sidebar-w:  290px;
+        }
+        [data-theme="dark"] {
+            --bg-primary:     #0d1117;
+            --bg-card:        #161b22;
+            --bg-card-hover:  #1c2333;
+            --bg-input:       #21262d;
+            --text-primary:   #e6edf3;
+            --text-secondary: #b1bac4;
+            --text-muted:     #7d8590;
+            --border-color:   rgba(255,255,255,0.1);
+            --border-hover:   rgba(0,120,212,0.4);
+            --shadow-sm:      0 1px 3px rgba(0,0,0,0.3);
+            --shadow-md:      0 4px 12px rgba(0,0,0,0.4);
+            --shadow-lg:      0 8px 30px rgba(0,0,0,0.5);
+            --shadow-xl:      0 20px 60px rgba(0,0,0,0.6);
+            --gradient-card:  linear-gradient(135deg, #1c2333 0%, #21262d 100%);
+        }
+
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: background var(--transition), color var(--transition);
+        }
+
+        /* ── HEADER ─────────────────────────────────────────────────── */
+        .header {
+            background: var(--gradient-header);
+            color: white;
+            padding: 18px 32px;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md);
+        }
+        .header::before {
+            content: '';
+            position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 50%);
+            animation: shimmer 20s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes shimmer { to { transform: rotate(360deg); } }
+
+        .header-brand { position: relative; }
+        .header-brand h1 {
+            font-size: 1.6em;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            white-space: nowrap;
+        }
+        .header-brand .subtitle {
+            font-size: 0.82em;
+            opacity: 0.8;
+            font-weight: 300;
+            white-space: nowrap;
+        }
+
+        .header-stats {
+            display: flex;
+            gap: 28px;
+            position: relative;
+            margin-left: 8px;
+        }
+        .hstat { text-align: center; }
+        .hstat-val  { font-size: 1.7em; font-weight: 800; line-height: 1; }
+        .hstat-lbl  { font-size: 0.7em; opacity: 0.75; text-transform: uppercase; letter-spacing: 1px; }
+
+        .header-actions { margin-left: auto; position: relative; display: flex; gap: 10px; align-items: center; }
+        .btn-ghost {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 7px 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: all var(--transition);
+            backdrop-filter: blur(10px);
+            white-space: nowrap;
+        }
+        .btn-ghost:hover { background: rgba(255,255,255,0.25); transform: scale(1.04); }
+
+        /* ── LAYOUT ──────────────────────────────────────────────────── */
+        .app-body { display: flex; flex: 1; overflow: hidden; }
+
+        /* ── SIDEBAR ─────────────────────────────────────────────────── */
+        .sidebar {
+            width: var(--sidebar-w);
+            background: var(--bg-card);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex-shrink: 0;
+            transition: background var(--transition);
+        }
+        .sidebar-search {
+            padding: 14px 14px 10px;
+            border-bottom: 1px solid var(--border-color);
+            flex-shrink: 0;
+        }
+        .search-wrap { position: relative; }
+        .search-wrap .search-icon {
+            position: absolute;
+            left: 11px; top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.85em;
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+        .search-input {
+            width: 100%;
+            padding: 9px 12px 9px 32px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background: var(--bg-input);
+            color: var(--text-primary);
+            font-size: 0.875em;
+            outline: none;
+            transition: all var(--transition);
+        }
+        .search-input:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(0,120,212,0.12);
+        }
+        .search-input::placeholder { color: var(--text-muted); }
+
+        .sidebar-scroller {
+            flex: 1;
+            overflow-y: auto;
+            padding: 6px 0 12px;
+        }
+        .sidebar-scroller::-webkit-scrollbar { width: 4px; }
+        .sidebar-scroller::-webkit-scrollbar-track { background: transparent; }
+        .sidebar-scroller::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 2px; }
+
+        /* ── CHAPTER OVERVIEW PANEL ─────────────────────────── */
+        .chapter-view {
+            display: none;
+            padding: 32px 36px;
+            max-width: 860px;
+        }
+        .chapter-view-hd {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .chapter-view-ico  { font-size: 2.8em; }
+        .chapter-view-title { font-size: 1.6em; font-weight: 800; color: var(--text-primary); }
+        .chapter-view-subtitle { font-size: 0.9em; color: var(--text-muted); margin-top: 4px; }
+        .chapter-view-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+        .ch-meta-pill {
+            background: rgba(0,120,212,0.08);
+            border: 1px solid rgba(0,120,212,0.18);
+            border-radius: 20px;
+            padding: 6px 14px;
+            font-size: 0.82em;
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        .chapter-view-desc {
+            font-size: 0.95em;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+        .ch-domains-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+        .ch-domain-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: background var(--transition), border-color var(--transition);
+        }
+        .ch-domain-card:hover { background: var(--bg-hover); border-color: var(--accent-blue); }
+        .ch-domain-card .d-ico  { font-size: 1.2em; }
+        .ch-domain-card .d-info { flex: 1; }
+        .ch-domain-card .d-lbl  { font-size: 0.84em; font-weight: 600; color: var(--text-primary); }
+        .ch-domain-card .d-cnt  { font-size: 0.72em; color: var(--text-muted); margin-top: 2px; }
+        .ch-lead-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0,168,132,0.1);
+            border: 1px solid rgba(0,168,132,0.3);
+            border-radius: var(--radius);
+            padding: 10px 18px;
+            font-size: 0.88em;
+            font-weight: 600;
+            color: #00856a;
+            cursor: pointer;
+            transition: background var(--transition);
+            margin-bottom: 28px;
+        }
+        .ch-lead-link:hover { background: rgba(0,168,132,0.18); }
+        [data-theme="dark"] .ch-meta-pill  { background: rgba(0,120,212,0.15); border-color: rgba(0,120,212,0.3); }
+        [data-theme="dark"] .ch-lead-link  { background: rgba(0,200,160,0.15); border-color: rgba(0,200,160,0.35); color: #00d4a8; }
+        [data-theme="dark"] .ch-lead-link:hover { background: rgba(0,200,160,0.25); }
+
+        /* ── CHAPTER GROUPS ─────────────────────────────────────────── */
+        .chapter-group { border-bottom: 2px solid var(--border-color); }
+        .chapter-hd {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 14px;
+            cursor: pointer;
+            user-select: none;
+            background: linear-gradient(90deg, rgba(0,120,212,0.07) 0%, transparent 70%);
+            border-left: 3px solid var(--accent-blue);
+            transition: background var(--transition);
+        }
+        .chapter-hd:hover { background: linear-gradient(90deg, rgba(0,120,212,0.14) 0%, transparent 70%); }
+        [data-theme="dark"] .chapter-hd       { background: linear-gradient(90deg, rgba(0,120,212,0.12) 0%, transparent 70%); }
+        [data-theme="dark"] .chapter-hd:hover { background: linear-gradient(90deg, rgba(0,120,212,0.22) 0%, transparent 70%); }
+        .chapter-ico  { font-size: 1em; }
+        .chapter-lbl  { flex: 1; font-size: 0.84em; font-weight: 700; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.5px; }
+        .chapter-cnt  { font-size: 0.7em; background: rgba(0,120,212,0.12); color: var(--accent-blue); padding: 2px 7px; border-radius: 10px; font-weight: 600; }
+        .chapter-chev { font-size: 0.65em; color: var(--text-muted); transition: transform var(--transition); }
+        .chapter-group.open .chapter-chev { transform: rotate(180deg); }
+        .chapter-domains { display: none; }
+        .chapter-group.open .chapter-domains { display: block; }
+        /* Indent domains and roles within chapters */
+        .chapter-domains .domain-hd   { padding-left: 22px; }
+        .chapter-domains .role-item   { padding-left: 44px; }
+        .domain-hd {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            cursor: pointer;
+            user-select: none;
+            transition: background var(--transition);
+        }
+        .domain-hd:hover { background: var(--bg-card-hover); }
+        .domain-hd-left { display: flex; align-items: center; gap: 9px; }
+        .domain-ico  { font-size: 0.95em; }
+        .domain-lbl  { font-size: 0.82em; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.4px; }
+        .domain-cnt  { font-size: 0.72em; background: var(--bg-input); color: var(--text-muted); padding: 2px 7px; border-radius: 10px; font-weight: 500; }
+        .domain-chev { font-size: 0.65em; color: var(--text-muted); transition: transform var(--transition); }
+        .domain-group.open .domain-chev { transform: rotate(180deg); }
+
+        .domain-roles { display: none; padding: 2px 0 6px; }
+        .domain-group.open .domain-roles { display: block; }
+
+        /* Role items */
+        .role-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 7px 12px 7px 34px;
+            cursor: pointer;
+            transition: background var(--transition);
+            border-left: 3px solid transparent;
+        }
+        .role-item:hover { background: var(--bg-card-hover); }
+        .role-item.active {
+            background: rgba(0,120,212,0.07);
+            border-left-color: var(--accent-blue);
+        }
+        .role-item-name {
+            font-size: 0.855em;
+            color: var(--text-secondary);
+            flex: 1;
+            line-height: 1.35;
+            padding-right: 6px;
+        }
+        .role-item.active .role-item-name { color: var(--accent-blue); font-weight: 600; }
+
+        /* Level badges */
+        .badge {
+            font-size: 0.67em;
+            padding: 2px 7px;
+            border-radius: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .b-ceo  { background: rgba(180,120,0,0.14);   color: #7a4f00; font-weight: 700; }
+        .b-cto  { background: rgba(49,46,129,0.14);  color: #312e81; font-weight: 700; }
+        .b-cio  { background: rgba(6,78,59,0.14);    color: #064e3b; font-weight: 700; }
+        .b-svp  { background: rgba(15,23,42,0.12);   color: #0f172a; font-weight: 700; }
+        .b-ciso { background: rgba(127,29,29,0.12);  color: #7f1d1d; font-weight: 700; }
+        .b-arch  { background: rgba(118,75,162,0.14); color: #764ba2; }
+        .b-lead  { background: rgba(180,90,20,0.14);  color: #b45a14; }
+        .b-prin  { background: rgba(180,140,0,0.16);  color: #8a6a00; font-weight: 700; }
+        .b-cl    { background: rgba(0,168,132,0.14);  color: #00856a; font-weight: 700; }
+        .b-sen   { background: rgba(0,120,212,0.14);  color: #0078D4; }
+        .b-eng   { background: rgba(40,167,69,0.14);  color: #28a745; }
+        .b-po    { background: rgba(255,152,0,0.14);  color: #e08000; }
+        .b-sre   { background: rgba(23,162,184,0.14); color: #17a2b8; }
+        .b-pal   { background: rgba(30,58,95,0.14);   color: #1e3a5f; }
+        .b-tal   { background: rgba(0,120,212,0.22);  color: #005a9e; font-weight: 700; }
+
+        [data-theme="dark"] .b-ceo  { background: rgba(251,191,36,0.25);  color: #fcd34d; font-weight: 700; }
+        [data-theme="dark"] .b-cto  { background: rgba(165,180,252,0.25); color: #a5b4fc; font-weight: 700; }
+        [data-theme="dark"] .b-cio  { background: rgba(52,211,153,0.25);  color: #34d399; font-weight: 700; }
+        [data-theme="dark"] .b-svp  { background: rgba(226,232,240,0.15); color: #e2e8f0; font-weight: 700; }
+        [data-theme="dark"] .b-ciso { background: rgba(254,202,202,0.2);  color: #fca5a5; font-weight: 700; }
+        [data-theme="dark"] .b-arch { background: rgba(118,75,162,0.28); color: #c09ee0; }
+        [data-theme="dark"] .b-lead { background: rgba(220,130,50,0.28); color: #f0a860; }
+        [data-theme="dark"] .b-prin { background: rgba(220,180,0,0.28);  color: #f0d060; font-weight: 700; }
+        [data-theme="dark"] .b-cl   { background: rgba(0,200,160,0.28);  color: #00d4a8; font-weight: 700; }
+        [data-theme="dark"] .b-sen  { background: rgba(0,120,212,0.28);  color: #60b4ff; }
+        [data-theme="dark"] .b-eng  { background: rgba(40,167,69,0.28);  color: #6bcf7f; }
+        [data-theme="dark"] .b-po   { background: rgba(255,152,0,0.28);  color: #ffb84d; }
+        [data-theme="dark"] .b-sre  { background: rgba(23,162,184,0.28); color: #5bc8d9; }
+        [data-theme="dark"] .b-pal  { background: rgba(100,160,255,0.2); color: #a0c8ff; font-weight: 700; }
+        [data-theme="dark"] .b-tal  { background: rgba(0,120,212,0.35);  color: #90d0ff; font-weight: 700; }
+
+        /* ── MAIN CONTENT ────────────────────────────────────────────── */
+        .main {
+            flex: 1;
+            overflow-y: auto;
+            padding: 28px 36px;
+            background: var(--bg-primary);
+            transition: background var(--transition);
+        }
+        .main::-webkit-scrollbar { width: 6px; }
+        .main::-webkit-scrollbar-track { background: transparent; }
+        .main::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+
+        /* Welcome */
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+            text-align: center;
+        }
+        .welcome-icon { font-size: 3.5em; margin-bottom: 18px; }
+        .welcome h2   { font-size: 1.5em; margin-bottom: 8px; }
+        .welcome p    { color: var(--text-muted); max-width: 380px; font-size: 0.92em; }
+        .stats-cards  { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; justify-content: center; }
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 16px 22px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            min-width: 100px;
+            animation: fadeInUp 0.5s ease-out both;
+        }
+        .stat-card .val { font-size: 1.9em; font-weight: 800; color: var(--accent-blue); }
+        .stat-card .val.accent-ch   { color: #00856a; }
+        .stat-card .val.accent-arch { color: #764ba2; }
+        .stat-card .val.accent-lead { color: #005a9e; }
+        .stat-card .val.accent-eng  { color: #28a745; }
+        .stat-card .lbl { font-size: 0.75em; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+        [data-theme="dark"] .stat-card .val.accent-ch   { color: #00d4a8; }
+        [data-theme="dark"] .stat-card .val.accent-arch { color: #c09ee0; }
+        [data-theme="dark"] .stat-card .val.accent-lead { color: #90d0ff; }
+        [data-theme="dark"] .stat-card .val.accent-eng  { color: #6bcf7f; }
+
+        @keyframes fadeInUp {
+            from { opacity:0; transform: translateY(16px); }
+            to   { opacity:1; transform: translateY(0); }
+        }
+
+        /* Role view */
+        .role-view { display: none; animation: fadeInUp 0.3s ease-out; }
+        .role-view.show { display: block; }
+
+        .role-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 26px 30px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--accent-blue);
+        }
+        /* h1 is now inside .role-header-row — margin handled by the row */
+        .role-card h1 {
+            font-size: 1.65em;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            margin-bottom: 0;
+            flex: 1;
+        }
+        .role-meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+        .meta-tag {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.83em;
+            color: var(--text-secondary);
+            background: var(--bg-input);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        /* Markdown body */
+        .md-body {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 30px 34px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .md-body h1 { display: none; }
+
+        .md-body h2 {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: var(--accent-blue);
+            margin: 30px 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+            letter-spacing: -0.2px;
+        }
+        .md-body h2:first-of-type { margin-top: 0; }
+
+        .md-body h3 {
+            font-size: 0.95em;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 18px 0 8px;
+        }
+
+        .md-body p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            line-height: 1.75;
+            font-size: 0.93em;
+        }
+
+        .md-body ul, .md-body ol {
+            padding-left: 22px;
+            margin-bottom: 14px;
+        }
+        .md-body li {
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+            line-height: 1.65;
+            font-size: 0.93em;
+        }
+        .md-body li strong { color: var(--text-primary); }
+
+        .md-body hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 6px 0;
+        }
+
+        .md-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0 20px;
+            font-size: 0.88em;
+        }
+        .md-body table th {
+            background: var(--bg-input);
+            color: var(--text-primary);
+            font-weight: 600;
+            padding: 9px 14px;
+            text-align: left;
+            border: 1px solid var(--border-color);
+            font-size: 0.82em;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        .md-body table td {
+            padding: 9px 14px;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            vertical-align: top;
+            line-height: 1.6;
+        }
+        .md-body table tr:hover td { background: var(--bg-card-hover); }
+
+        .md-body blockquote {
+            border-left: 4px solid var(--accent-blue);
+            padding: 10px 16px;
+            margin: 14px 0;
+            background: rgba(0,120,212,0.05);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            color: var(--text-secondary);
+            font-style: italic;
+            font-size: 0.92em;
+        }
+        .md-body blockquote strong { color: var(--accent-blue); font-style: normal; }
+
+        .md-body code {
+            background: var(--bg-input);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+            font-size: 0.875em;
+            color: var(--accent-blue);
+        }
+        .md-body pre {
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 14px 18px;
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+        .md-body pre code {
+            background: none;
+            padding: 0;
+            color: var(--text-primary);
+            font-size: 0.875em;
+        }
+
+        /* Loading / utility */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+        .spinner {
+            width: 18px; height: 18px;
+            border: 2px solid var(--border-color);
+            border-top-color: var(--accent-blue);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .empty-msg {
+            text-align: center;
+            padding: 20px 14px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+        }
+
+        /* ── ROLE ACTION BUTTONS ────────────────────────── */
+        .role-header-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+        .role-actions { display: flex; gap: 8px; flex-shrink: 0; padding-top: 3px; }
+        .btn-action {
+            padding: 5px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background: var(--bg-input);
+            color: var(--text-secondary);
+            font-size: 0.8em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition);
+            white-space: nowrap;
+        }
+        .btn-action:hover { background: var(--bg-card-hover); border-color: var(--border-hover); color: var(--text-primary); }
+        .btn-action.active { background: rgba(0,120,212,0.1); border-color: var(--accent-blue); color: var(--accent-blue); }
+        .btn-action.btn-danger { color: #dc3545; }
+        .btn-action.btn-danger:hover { background: rgba(220,53,69,0.08); border-color: rgba(220,53,69,0.3); }
+
+        /* ── COMPARE LAYOUT ─────────────────────────────── */
+        .roles-grid { display: grid; grid-template-columns: 1fr; }
+        .roles-grid.comparing { grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+        .compare-label {
+            font-size: 0.72em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .role-card-compare { border-top-color: var(--accent-purple) !important; }
+
+        /* ── COMPARE SIDEBAR BANNER ─────────────────────── */
+        .compare-banner {
+            background: rgba(0,120,212,0.08);
+            border: 1px solid rgba(0,120,212,0.25);
+            border-radius: var(--radius-sm);
+            padding: 9px 12px;
+            margin: 10px 10px 2px;
+            font-size: 0.8em;
+            color: var(--accent-blue);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+        .compare-banner-x {
+            cursor: pointer; opacity: 0.6; padding: 1px 5px; border-radius: 3px;
+        }
+        .compare-banner-x:hover { opacity: 1; background: rgba(0,120,212,0.15); }
+
+        /* ── COMPARE ACTIVE ROLE IN SIDEBAR ─────────────── */
+        .role-item.compare-active { background: rgba(118,75,162,0.07); border-left-color: var(--accent-purple); }
+        .role-item.compare-active .role-item-name { color: var(--accent-purple); font-weight: 600; }
+
+        /* ── PRINT ──────────────────────────────────────── */
+        @media print {
+            .sidebar, .header, .role-actions, .compare-banner { display: none !important; }
+            body { overflow: visible; height: auto; background: white; }
+            .app-body { display: block; overflow: visible; }
+            .main { padding: 16px; overflow: visible; background: white; }
+            .roles-grid.comparing { grid-template-columns: 1fr 1fr; gap: 20px; }
+            .role-card, .md-body { box-shadow: none !important; border: 1px solid #ddd !important; }
+            .role-card { border-top: 4px solid #0078D4 !important; break-inside: avoid; }
+            .welcome { display: none !important; }
+            .md-body h2 { color: #0078D4 !important; border-bottom: 1px solid #ddd !important; }
+        }
+
+        @media (max-width: 768px) {
+            :root { --sidebar-w: 240px; }
+            .header-stats { display: none; }
+            .main { padding: 18px; }
+        }
+
+        /* ── MATRIX VIEW ─────────────────────────────────────────── */
+        .matrix-view {
+            display: none;
+            animation: fadeInUp 0.3s ease-out;
+        }
+        .matrix-view.show { display: block; }
+
+        .matrix-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .matrix-header h2 {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .matrix-header p {
+            font-size: 0.84em;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        .matrix-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+        .matrix-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.75em;
+            color: var(--text-muted);
+        }
+
+        .matrix-scroll {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        .matrix-table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 900px;
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+        .matrix-table thead tr {
+            background: var(--gradient-header);
+        }
+        .matrix-table thead th {
+            padding: 10px 12px;
+            color: white;
+            font-size: 0.72em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-align: center;
+            white-space: nowrap;
+            border-right: 1px solid rgba(255,255,255,0.12);
+        }
+        .matrix-table thead th:first-child {
+            text-align: left;
+            min-width: 170px;
+        }
+        .matrix-th-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.18);
+            color: white;
+            font-size: 0.85em;
+        }
+        .matrix-table tbody tr {
+            border-bottom: 1px solid var(--border-color);
+            transition: background var(--transition);
+        }
+        .matrix-table tbody tr:last-child { border-bottom: none; }
+        .matrix-table tbody tr:hover { background: var(--bg-card-hover); }
+
+        .matrix-domain-cell {
+            padding: 10px 14px;
+            border-right: 1px solid var(--border-color);
+            font-size: 0.82em;
+            font-weight: 600;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            background: var(--bg-input);
+            position: sticky;
+            left: 0;
+            z-index: 1;
+        }
+        .matrix-domain-cell span { margin-right: 6px; }
+
+        .matrix-cell {
+            padding: 6px 8px;
+            border-right: 1px solid var(--border-color);
+            vertical-align: top;
+            min-width: 120px;
+        }
+        .matrix-cell:last-child { border-right: none; }
+
+        .matrix-chip {
+            display: inline-block;
+            margin: 2px 2px;
+            padding: 3px 9px;
+            border-radius: 10px;
+            font-size: 0.73em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            line-height: 1.4;
+            text-align: center;
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .matrix-chip:hover {
+            transform: scale(1.06);
+            box-shadow: var(--shadow-md);
+        }
+
+        .matrix-empty {
+            color: var(--text-muted);
+            font-size: 0.75em;
+            opacity: 0.35;
+            padding: 4px 6px;
+            text-align: center;
+            display: block;
+        }
+
+        /* Gap indicator for missing roles */
+        .matrix-gap {
+            display: block;
+            margin: 2px;
+            padding: 2px 7px;
+            border: 1px dashed var(--border-color);
+            border-radius: 8px;
+            font-size: 0.68em;
+            color: var(--text-muted);
+            text-align: center;
+            opacity: 0.5;
+        }
+
+        /* ── RESOURCES SIDEBAR SECTION ───────────────────────────── */
+        .resources-sep {
+            border-bottom: 1px solid var(--border-color);
+            margin: 0 0 6px;
+            padding: 10px 0 8px;
+        }
+        .resources-hd {
+            padding: 2px 14px 8px;
+            font-size: 0.72em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-muted);
+        }
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 7px 12px 7px 14px;
+            cursor: pointer;
+            transition: background var(--transition);
+            border-left: 3px solid transparent;
+            font-size: 0.855em;
+            color: var(--text-secondary);
+        }
+        .resource-item:hover { background: var(--bg-card-hover); }
+        .resource-item.active {
+            background: rgba(23,162,184,0.07);
+            border-left-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+        .resource-ico { font-size: 1em; }
+
+        /* ── DOC VIEW ─────────────────────────────────────────────── */
+        .doc-view { display: none; animation: fadeInUp 0.3s ease-out; }
+        .doc-card {
+            border-top-color: var(--accent-cyan) !important;
+        }
+        .doc-tag {
+            font-size: 0.76em;
+            padding: 3px 10px;
+            background: rgba(23,162,184,0.12);
+            color: var(--accent-cyan);
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        @media print {
+            .matrix-view { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── HEADER ─────────────────────────────────────── -->
+<header class="header">
+    <div class="header-brand">
+        <h1>🗂️ IT Roles Library</h1>
+        <div class="subtitle">Infrastructure &amp; Platform Engineering role definitions</div>
+    </div>
+    <div class="header-stats" id="headerStats"></div>
+    <div class="header-actions">
+        <button class="btn-ghost" id="backBtn" onclick="goBack()" aria-label="Go back to the previous view" style="display:none">← Back</button>
+        <button class="btn-ghost" id="staleBtn" onclick="toggleStalePanel()" aria-pressed="false" aria-label="Show roles overdue for review" style="display:none"></button>
+        <button class="btn-ghost" id="matrixBtn" onclick="toggleMatrix()" aria-pressed="false" aria-label="Toggle role matrix view">📊 Matrix</button>
+        <button class="btn-ghost" id="themeBtn" onclick="toggleTheme()" aria-pressed="false" aria-label="Toggle dark mode">🌙 Dark</button>
+    </div>
+</header>
+
+<!-- ── APP BODY ───────────────────────────────────── -->
+<div class="app-body">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-search">
+            <div class="search-wrap">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="searchInput"
+                       placeholder="Search roles…" oninput="filterRoles(this.value)">
+            </div>
+        </div>
+        <div class="sidebar-scroller" id="sidebarNav">
+            <div class="loading"><div class="spinner"></div> Loading…</div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main" id="mainArea">
+
+        <!-- Welcome state -->
+        <div class="welcome" id="welcomeState">
+            <div class="welcome-icon">📋</div>
+            <h2>Select a role to view</h2>
+            <p>Choose a domain and role from the sidebar to read the full role definition.</p>
+            <div class="stats-cards" id="statsCards"></div>
+        </div>
+
+        <!-- Role(s) grid — single column normally, two columns when comparing -->
+        <div class="roles-grid" id="rolesGrid">
+
+            <!-- Primary role -->
+            <div class="role-view" id="roleView">
+                <div class="role-card" id="roleHeader"></div>
+                <div class="md-body"  id="roleBody"></div>
+            </div>
+
+            <!-- Comparison role (hidden until Compare is activated) -->
+            <div class="role-view" id="roleView2" style="display:none">
+                <div class="role-card role-card-compare" id="roleHeader2"></div>
+                <div class="md-body" id="roleBody2"></div>
+            </div>
+
+        </div>
+
+        <!-- Matrix view (full-width, replaces welcome/role view) -->
+        <div class="matrix-view" id="matrixView"></div>
+
+        <!-- Stale-roles view (roles overdue for review) -->
+        <div class="matrix-view" id="staleView"></div>
+
+        <!-- Doc view (reference documents) -->
+        <div class="doc-view" id="docView">
+            <div class="role-card doc-card" id="docHeader"></div>
+            <div class="md-body"            id="docBody"></div>
+        </div>
+
+        <!-- Chapter overview panel -->
+        <div class="chapter-view" id="chapterView"></div>
+
+    </main>
+</div>
+
+<script>
+    // ── State ───────────────────────────────────────────
+    let allDomains  = {};
+    let activeFile  = null;
+    let activeDoc   = null;   // currently open reference doc
+    let compareFile = null;   // file loaded in the comparison slot
+    let compareMode = false;  // true = next sidebar click loads into slot B
+    let lastMarkdown      = null;  // raw markdown of the last-opened role/doc, for export
+    let lastMarkdownTitle = null;
+    let activeChapter     = null;  // key of the currently open chapter panel
+    let activeDocTitle    = null;  // title of the currently open reference doc
+    let restoringView     = false; // true while goBack() is restoring a view (suppresses history push)
+    const backStack       = [];    // navigation history for the Back button
+    const STALE_MONTHS = 12;   // roles not reviewed within this many months are flagged stale
+    const openChapters = new Set(); // chapters explicitly expanded by user
+
+    // ── Reference documents ──────────────────────────────
+    const RESOURCES = [
+        { file: 'docs/CHAPTERS_OVERVIEW.md',                  icon: '🗂️', title: 'Chapters Overview' },
+        { file: 'docs/SKILLS_PROGRESSION.md',                 icon: '📈', title: 'Career Paths & Skills Progression' },
+        { file: 'docs/CROSS_DOMAIN_INTERACTIONS.md',          icon: '🔀', title: 'Domain Interactions' },
+        { file: 'docs/ONBOARDING_TEMPLATE.md',                icon: '🚀', title: 'Onboarding Template' },
+        { file: 'docs/onboarding_chapter_lead_template.md',   icon: '👑', title: 'Chapter Lead Onboarding Template' },
+    ];
+
+    // ── Chapter → domain groupings ───────────────────────
+    const CHAPTERS = {
+        cloud_platform_infra: {
+            label: 'Cloud, Platform & Infrastructure',
+            icon:  '☁️',
+            desc:  'Owns the full infrastructure estate from bare metal to cloud-native, including cloud adoption strategy, platform engineering, container orchestration, virtualisation, specialised computing, server hardware, operating systems, networking, and cloud cost governance (FinOps).',
+            domains: [
+                'cloud_platforms', 'kubernetes', 'modern_infrastructure',
+                'virtualization', 'specialized_computing',
+                'server_hardware', 'server_hardware_hpe',
+                'server_os_linux', 'server_os_windows', 'network', 'FinOps',
+            ],
+            leadFile: 'Roles/leadership/cloud_platform_infrastructure_chapter_lead.md',
+        },
+        devops_delivery: {
+            label: 'DevOps & Delivery',
+            icon:  '🔄',
+            desc:  'Owns the software delivery toolchain, internal developer platforms, CI/CD standards, application platform engineering, and integration & middleware architecture. Accountable for DORA metrics and delivery flow across the organisation.',
+            domains: ['devops', 'app_platforms', 'integration_middleware'],
+            leadFile: 'Roles/leadership/devops_delivery_chapter_lead.md',
+        },
+        data_ai: {
+            label: 'Data & AI',
+            icon:  '📊',
+            desc:  'Owns the data platform strategy, data architecture, database management standards, and AI governance frameworks. Ensures data quality, lineage, and ethical AI practices across the organisation.',
+            domains: ['data_engineering', 'data_management', 'database_management', 'ai_governance'],
+            leadFile: 'Roles/leadership/data_ai_chapter_lead.md',
+        },
+        security_identity: {
+            label: 'Security & Identity',
+            icon:  '🔒',
+            desc:  'Owns the end-to-end security posture, zero trust architecture, identity and access management, data protection, directory services, and security automation across all platforms and cloud environments.',
+            domains: ['security', 'security_cross_platform', 'security_identity', 'data_protection', 'directory_services'],
+            leadFile: 'Roles/leadership/security_identity_chapter_lead.md',
+        },
+        end_user_workplace: {
+            label: 'End User & Workplace',
+            icon:  '🖥️',
+            desc:  'Owns the digital workplace experience, device management strategy, M365 platform, collaboration tooling, and end-user technology standards. Ensures employees have secure, productive, and consistent technology experiences.',
+            domains: ['client_platform', 'endpoint_management', 'modern_workplace'],
+            leadFile: 'Roles/leadership/end_user_workplace_chapter_lead.md',
+        },
+        service_governance: {
+            label: 'Service & Governance',
+            icon:  '🎯',
+            desc:  'Owns IT service management, configuration management, SIAM frameworks, enterprise architecture governance, and infrastructure onboarding standards. Ensures IT operates as a consistent, measurable service across the organisation.',
+            domains: ['itsm_configuration', 'service_management', 'infrastructure_onboarding_cross_platform', 'enterprise_architecture'],
+            leadFile: 'Roles/leadership/service_governance_chapter_lead.md',
+        },
+        leadership_chapter: {
+            label: 'Leadership',
+            icon:  '👑',
+            desc:  'Cross-cutting leadership roles that span all chapters and domains. Includes C-Suite executives, Chapter Leads, Technical Area Leads (TAL), and Product Area Leads (PAL). These roles set technical direction, own people development, and represent IT at the business level.',
+            domains: ['c_suite', 'leadership'],
+            leadFile: null,
+        },
+    };
+
+    // ── Domain icons ────────────────────────────────────
+    const ICONS = {
+        c_suite:                                 '🏢',
+        leadership:                              '👑',
+        ai_governance:                           '🤖',
+        app_platforms:                           '⚙️',
+        cloud_platforms:                         '☁️',
+        data_engineering:                        '📊',
+        data_management:                         '💾',
+        data_protection:                         '🛡️',
+        database_management:                     '🗄️',
+        devops:                                  '🔄',
+        directory_services:                      '📁',
+        client_platform:                         '🖱️',
+        endpoint_management:                     '💻',
+        enterprise_architecture:                 '🏛️',
+        FinOps:                                  '💰',
+        infrastructure_onboarding_cross_platform:'🔌',
+        integration_middleware:                  '🔗',
+        itsm_configuration:                      '📋',
+        kubernetes:                              '☸️',
+        modern_infrastructure:                   '🚀',
+        modern_workplace:                        '🖥️',
+        network:                                 '🌐',
+        security:                                '🔒',
+        security_cross_platform:                 '🛡️',
+        security_identity:                       '🪪',
+        server_hardware:                         '🖧',
+        server_hardware_hpe:                     '🖧',
+        server_os_linux:                         '🐧',
+        server_os_windows:                       '🪟',
+        service_management:                      '🎯',
+        specialized_computing:                   '⚡',
+        virtualization:                          '📦',
+    };
+
+    // ── HTML attribute escaping ──────────────────────────
+    function escapeAttr(str) {
+        return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+    }
+
+    // ── Badge class for role level ───────────────────────
+    function badgeClass(level) {
+        if (level === 'CEO')                 return 'b-ceo';
+        if (level === 'CTO')                 return 'b-cto';
+        if (level === 'CIO')                 return 'b-cio';
+        if (level === 'SVP')                 return 'b-svp';
+        if (level === 'CISO')                return 'b-ciso';
+        if (level === 'Product Area Lead')   return 'b-pal';
+        if (level === 'Technical Area Lead') return 'b-tal';
+        if (level === 'Chapter Lead')        return 'b-cl';
+        if (level === 'Principal Architect') return 'b-prin';
+        if (level === 'Lead Architect')      return 'b-lead';
+        if (level === 'Architect')           return 'b-arch';
+        if (level === 'Senior Engineer')     return 'b-sen';
+        if (level === 'Product Owner')       return 'b-po';
+        if (level.includes('Reliability'))   return 'b-sre';
+        return 'b-eng';
+    }
+
+    // ── Load roles from API ──────────────────────────────
+    async function init() {
+        try {
+            const res  = await fetch('/api/roles');
+            allDomains = await res.json();
+            renderSidebar(allDomains);
+            renderWelcomeStats(allDomains);
+            updateStaleButton(allDomains);
+        } catch {
+            document.getElementById('sidebarNav').innerHTML =
+                '<div class="empty-msg">⚠️ Cannot reach server.<br>Is server.js running?</div>';
+        }
+    }
+
+    // ── Welcome stats ────────────────────────────────────
+    function renderWelcomeStats(domains) {
+        const allRoles      = Object.values(domains).flatMap(d => d.roles);
+        const domainCount   = Object.keys(domains).length;
+        const chapterCount  = Object.keys(CHAPTERS).length;
+        const roleCount     = allRoles.length;
+
+        const count = level => allRoles.filter(r => r.level === level).length;
+        const archCount     = count('Architect');
+        const leadArchCount = count('Lead Architect') + count('Principal Architect');
+        const chLeadCount   = count('Chapter Lead');
+        const talPalCount   = count('Technical Area Lead') + count('Product Area Lead');
+        const execCount     = count('CEO') + count('CTO') + count('CIO') + count('SVP') + count('CISO');
+        const seniorCount   = count('Senior Engineer') + count('Reliability Engineer');
+        const poCount       = count('Product Owner');
+        const engCount      = count('Engineer');
+
+        // Header bar — compact summary
+        document.getElementById('headerStats').innerHTML = `
+            <div class="hstat"><div class="hstat-val">${roleCount}</div><div class="hstat-lbl">Roles</div></div>
+            <div class="hstat"><div class="hstat-val">${chapterCount}</div><div class="hstat-lbl">Chapters</div></div>
+            <div class="hstat"><div class="hstat-val">${domainCount}</div><div class="hstat-lbl">Domains</div></div>
+        `;
+
+        // Welcome panel stat cards
+        const cards = [
+            { val: roleCount,     lbl: 'Total Roles',           cls: '' },
+            { val: chapterCount,  lbl: 'Chapters',              cls: 'accent-ch' },
+            { val: domainCount,   lbl: 'Domains',               cls: '' },
+            { val: execCount,     lbl: 'Executives',            cls: 'accent-lead' },
+            { val: chLeadCount,   lbl: 'Chapter Leads',         cls: 'accent-ch' },
+            { val: talPalCount,   lbl: 'TAL / PAL',             cls: 'accent-lead' },
+            { val: leadArchCount, lbl: 'Lead & Principal Arch', cls: 'accent-arch' },
+            { val: archCount,     lbl: 'Architects',            cls: 'accent-arch' },
+            { val: seniorCount,   lbl: 'Senior Engineers',      cls: 'accent-lead' },
+            { val: poCount,       lbl: 'Product Owners',        cls: 'accent-eng' },
+            { val: engCount,      lbl: 'Engineers',             cls: 'accent-eng' },
+        ];
+
+        document.getElementById('statsCards').innerHTML = cards.map(({ val, lbl, cls }, i) => `
+            <div class="stat-card" style="animation-delay:${i * 0.06}s">
+                <div class="val ${cls}">${val}</div>
+                <div class="lbl">${lbl}</div>
+            </div>
+        `).join('');
+    }
+
+    // ── Render sidebar ───────────────────────────────────
+    function renderSidebar(domains, filter = '') {
+        const q   = filter.toLowerCase();
+        const nav = document.getElementById('sidebarNav');
+        let   html = '';
+        let   any  = false;
+
+        for (const [chKey, chapter] of Object.entries(CHAPTERS)) {
+            let chDomainsHtml = '';
+            let chHasContent  = false;
+
+            for (const domainKey of chapter.domains) {
+                const domain = domains[domainKey];
+                if (!domain) continue;
+
+                const roles = q
+                    ? domain.roles.filter(r =>
+                        r.title.toLowerCase().includes(q) ||
+                        domain.label.toLowerCase().includes(q) ||
+                        chapter.label.toLowerCase().includes(q))
+                    : domain.roles;
+
+                if (roles.length === 0) continue;
+                chHasContent = true;
+
+                const domainOpen = (q || (activeFile && activeFile.includes(`/${domainKey}/`))) ? 'open' : '';
+                const icon = ICONS[domainKey] || '📄';
+
+                chDomainsHtml += `
+                <div class="domain-group ${domainOpen}" id="dg-${domainKey}">
+                    <div class="domain-hd" onclick="toggleDomain('${domainKey}')">
+                        <div class="domain-hd-left">
+                            <span class="domain-ico">${icon}</span>
+                            <span class="domain-lbl">${domain.label}</span>
+                            <span class="domain-cnt">${roles.length}</span>
+                        </div>
+                        <span class="domain-chev">▼</span>
+                    </div>
+                    <div class="domain-roles">
+                        ${roles.map(r => `
+                        <div class="role-item ${activeFile === r.file ? 'active' : ''} ${compareFile === r.file ? 'compare-active' : ''}"
+                             data-file="${escapeAttr(r.file)}"
+                             data-title="${escapeAttr(r.title)}"
+                             data-level="${escapeAttr(r.level)}"
+                             data-domain="${escapeAttr(domain.label)}">
+                            <span class="role-item-name">${r.title}</span>
+                            <span class="badge ${badgeClass(r.level)}">${r.level}</span>
+                        </div>`).join('')}
+                    </div>
+                </div>`;
+            }
+
+            if (!chHasContent) continue;
+            any = true;
+
+            const chOpen = q
+                || openChapters.has(chKey)
+                || chapter.domains.some(d => activeFile && activeFile.includes(`/${d}/`))
+                    ? 'open' : '';
+
+            const totalRoles = chapter.domains
+                .reduce((n, d) => n + (domains[d]?.roles.length || 0), 0);
+
+            html += `
+            <div class="chapter-group ${chOpen}" id="ch-${chKey}">
+                <div class="chapter-hd" onclick="toggleChapter('${escapeAttr(chKey)}')">
+                    <span class="chapter-ico">${chapter.icon}</span>
+                    <span class="chapter-lbl">${chapter.label}</span>
+                    <span class="chapter-cnt">${totalRoles}</span>
+                    <span class="chapter-chev">▼</span>
+                </div>
+                <div class="chapter-domains">${chDomainsHtml}</div>
+            </div>`;
+        }
+
+        if (!any) {
+            html = `<div class="empty-msg">No roles match "<strong>${filter}</strong>"</div>`;
+        }
+
+        // Prepend compare-mode banner when active
+        if (compareMode) {
+            html = `<div class="compare-banner">
+                <span>👆 Click a role to compare</span>
+                <span class="compare-banner-x" title="Cancel">✕</span>
+            </div>` + html;
+        }
+
+        // Resources section — always visible regardless of search filter
+        const resourcesHtml = `
+            <div class="resources-sep">
+                <div class="resources-hd">📚 Resources</div>
+                ${RESOURCES.map(r => `
+                <div class="resource-item ${activeDoc === r.file ? 'active' : ''}"
+                     data-doc="${escapeAttr(r.file)}"
+                     data-doc-title="${escapeAttr(r.title)}">
+                    <span class="resource-ico">${r.icon}</span>
+                    <span>${r.title}</span>
+                </div>`).join('')}
+            </div>`;
+
+        nav.innerHTML = resourcesHtml + html;
+    }
+
+    function toggleDomain(key) {
+        document.getElementById(`dg-${key}`)?.classList.toggle('open');
+    }
+
+    function toggleChapter(key) {
+        const el = document.getElementById(`ch-${key}`);
+        if (!el) return;
+        el.classList.toggle('open');
+        if (el.classList.contains('open')) { openChapters.add(key); openChapter(key); }
+        else { openChapters.delete(key); }
+    }
+
+    function openChapter(key) {
+        const chapter = CHAPTERS[key];
+        if (!chapter) return;
+
+        pushHistory();
+
+        // Clear other views
+        activeFile = null; activeDoc = null;
+        activeChapter = key;
+        document.getElementById('rolesGrid').style.display    = 'none';
+        document.getElementById('matrixView').classList.remove('show');
+        document.getElementById('staleView').classList.remove('show');
+        document.getElementById('docView').style.display      = 'none';
+        document.getElementById('welcomeState').style.display = 'none';
+
+        const cv = document.getElementById('chapterView');
+        cv.style.display = 'block';
+
+        // Compute stats
+        const chDomains = chapter.domains.filter(d => allDomains[d]);
+        const totalRoles = chDomains.reduce((n, d) => n + allDomains[d].roles.length, 0);
+
+        // Find chapter lead role file
+        let leadHtml = '';
+        if (chapter.leadFile) {
+            const leadRole = Object.values(allDomains).flatMap(d => d.roles)
+                .find(r => r.file === chapter.leadFile || r.file.replace(/\\/g,'/').endsWith(chapter.leadFile.replace('Roles/','')));
+            if (leadRole) {
+                leadHtml = `<div class="ch-lead-link" onclick="openRole('${escapeAttr(leadRole.file)}','${escapeAttr(leadRole.title)}','${escapeAttr(leadRole.level)}','${escapeAttr(allDomains['leadership']?.label||'Leadership')}')">
+                    👑 View Chapter Lead role: ${leadRole.title}
+                </div>`;
+            }
+        }
+
+        // Domain cards
+        const domainCards = chDomains.map(d => {
+            const dom = allDomains[d];
+            return `<div class="ch-domain-card" onclick="toggleDomain('${escapeAttr(d)}'); document.getElementById('dg-${escapeAttr(d)}')?.scrollIntoView({behavior:'smooth',block:'center'})">
+                <span class="d-ico">${ICONS[d] || '📄'}</span>
+                <div class="d-info">
+                    <div class="d-lbl">${dom.label}</div>
+                    <div class="d-cnt">${dom.roles.length} role${dom.roles.length !== 1 ? 's' : ''}</div>
+                </div>
+            </div>`;
+        }).join('');
+
+        cv.innerHTML = `
+            <div class="chapter-view-hd">
+                <span class="chapter-view-ico">${chapter.icon}</span>
+                <div>
+                    <div class="chapter-view-title">${chapter.label}</div>
+                    <div class="chapter-view-subtitle">Chapter overview</div>
+                </div>
+            </div>
+            <div class="chapter-view-meta">
+                <span class="ch-meta-pill">📁 ${chDomains.length} domain${chDomains.length !== 1 ? 's' : ''}</span>
+                <span class="ch-meta-pill">👤 ${totalRoles} roles</span>
+            </div>
+            <div class="chapter-view-desc" id="chapterDesc">${chapter.desc}</div>
+            ${leadHtml}
+            <div class="ch-domains-grid">${domainCards}</div>
+        `;
+
+        // Load the full chapter narrative from docs/chapters/<key>.md, falling
+        // back to the inline one-line description if the file is unavailable.
+        fetch(`/api/doc?file=${encodeURIComponent('docs/chapters/' + key + '.md')}`)
+            .then(r => r.ok ? r.text() : Promise.reject(new Error('not found')))
+            .then(md => {
+                const body = md.replace(/^#\s+.*\r?\n/, ''); // strip H1 (title already shown in header)
+                const el = document.getElementById('chapterDesc');
+                if (el) el.innerHTML = marked.parse(body);
+            })
+            .catch(() => { /* keep the inline fallback description */ });
+    }
+
+    function filterRoles(value) {
+        renderSidebar(allDomains, value);
+    }
+
+    // ── Navigation history (Back button) ─────────────────
+    // Capture the view currently on screen as a restorable descriptor.
+    function captureView() {
+        if (activeFile)    return { type: 'role',    file: activeFile };
+        if (activeDoc)     return { type: 'doc',     file: activeDoc, title: activeDocTitle };
+        if (activeChapter) return { type: 'chapter', key: activeChapter };
+        return null;
+    }
+
+    // Record the current view before navigating away (skipped while restoring).
+    function pushHistory() {
+        if (restoringView) return;
+        const v = captureView();
+        if (v) backStack.push(v);
+        updateBackBtn();
+    }
+
+    function updateBackBtn() {
+        const btn = document.getElementById('backBtn');
+        if (btn) btn.style.display = backStack.length ? '' : 'none';
+    }
+
+    function findRoleMeta(file) {
+        const all = Object.values(allDomains).flatMap(d => d.roles.map(r => ({ ...r, domainLabel: d.label })));
+        const m = all.find(r => r.file === file || r.file.replace(/\\/g, '/') === file);
+        return m
+            ? { title: m.title, level: m.level, domainLabel: m.domainLabel }
+            : { title: file.split('/').pop().replace(/_/g, ' ').replace('.md', ''), level: '', domainLabel: '' };
+    }
+
+    function goBack() {
+        const v = backStack.pop();
+        if (!v) { updateBackBtn(); return; }
+        restoringView = true;
+        try {
+            if (v.type === 'role') {
+                const m = findRoleMeta(v.file);
+                openRole(v.file, m.title, m.level, m.domainLabel);
+            } else if (v.type === 'doc') {
+                openDoc(v.file, v.title || v.file.split('/').pop().replace(/_/g, ' ').replace('.md', ''));
+            } else if (v.type === 'chapter') {
+                openChapter(v.key);
+            }
+        } finally {
+            restoringView = false;
+        }
+        updateBackBtn();
+    }
+
+    // Close the matrix and stale panels (used when opening a role/doc/chapter).
+    function closePanels() {
+        matrixOpen = false;
+        staleOpen  = false;
+        document.getElementById('matrixView').classList.remove('show');
+        document.getElementById('staleView').classList.remove('show');
+        const mb = document.getElementById('matrixBtn');
+        mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
+        document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
+    }
+
+    // Resolve a Markdown link href relative to the currently open doc/role.
+    function resolveDocHref(href) {
+        href = href.replace(/^\.\//, '');
+        if (href.startsWith('Roles/') || href.startsWith('docs/')) return href;
+        const baseFile = activeDoc || activeFile || '';
+        const baseDir  = baseFile.includes('/') ? baseFile.slice(0, baseFile.lastIndexOf('/')) : '';
+        const stack    = baseDir ? baseDir.split('/') : [];
+        for (const seg of href.split('/')) {
+            if (seg === '' || seg === '.') continue;
+            if (seg === '..') stack.pop();
+            else stack.push(seg);
+        }
+        return stack.join('/');
+    }
+
+    // ── Shared: build role header HTML ───────────────────
+    function buildHeader(title, level, domainLabel, lastReviewed, slot) {
+        const isCompare = slot === 'B';
+        const actions = isCompare
+            ? `<button class="btn-action btn-danger" onclick="closeComparison()" aria-label="Close comparison">✕ Close</button>`
+            : `<button class="btn-action" onclick="printRole()" aria-label="Print this role">🖨️ Print</button>
+               <button class="btn-action" onclick="exportRoleMarkdown()" aria-label="Download this role as Markdown">⬇️ Export</button>
+               <button class="btn-action" id="compareBtn" onclick="startCompare()" aria-label="Compare with another role">⚖️ Compare</button>`;
+        const compareLabel = isCompare ? `<div class="compare-label">Comparing with</div>` : '';
+        const reviewedTag  = lastReviewed ? `<span class="meta-tag">🗓️ Reviewed ${lastReviewed}</span>` : '';
+        return `
+            ${compareLabel}
+            <div class="role-header-row">
+                <h1>${title}</h1>
+                <div class="role-actions">${actions}</div>
+            </div>
+            <div class="role-meta">
+                <span class="meta-tag">📂 ${domainLabel}</span>
+                <span class="meta-tag badge ${badgeClass(level)}">${level}</span>
+                ${reviewedTag}
+            </div>`;
+    }
+
+    // ── Open a role (primary slot) ────────────────────────
+    async function openRole(file, title, level, domainLabel) {
+        pushHistory();
+        activeFile  = file;
+        activeDoc   = null;
+        activeChapter = null;
+        compareMode = false;
+        compareFile = null;
+        closePanels();
+
+        // Close any open comparison or doc view
+        document.getElementById('roleView2').style.display = 'none';
+        document.getElementById('rolesGrid').classList.remove('comparing');
+        document.getElementById('docView').style.display = 'none';
+        document.getElementById('rolesGrid').style.display = '';
+
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+
+        // Switch panels
+        document.getElementById('welcomeState').style.display  = 'none';
+        document.getElementById('chapterView').style.display   = 'none';
+        document.getElementById('roleView').style.display      = '';
+        document.getElementById('roleView').classList.add('show');
+
+        // Placeholder header (no reviewed date yet)
+        document.getElementById('roleHeader').innerHTML = buildHeader(title, level, domainLabel, null, 'A');
+        document.getElementById('roleBody').innerHTML =
+            '<div class="loading"><div class="spinner"></div> Loading…</div>';
+
+        try {
+            const res      = await fetch(`/api/role?file=${encodeURIComponent(file)}`);
+            const markdown = await res.text();
+
+            const reviewMatch  = markdown.match(/\|\s*\*\*Last Reviewed\*\*\s*\|\s*(.+?)\s*\|/);
+            const lastReviewed = reviewMatch ? reviewMatch[1].trim() : null;
+
+            // Re-render header with reviewed date
+            document.getElementById('roleHeader').innerHTML = buildHeader(title, level, domainLabel, lastReviewed, 'A');
+
+            const h2idx = markdown.indexOf('\n## ');
+            const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
+            document.getElementById('roleBody').innerHTML = marked.parse(body);
+            document.getElementById('mainArea').scrollTop = 0;
+
+            lastMarkdown      = markdown;
+            lastMarkdownTitle = title;
+
+        } catch {
+            document.getElementById('roleBody').innerHTML =
+                '<div class="empty-msg">⚠️ Failed to load role content.</div>';
+        }
+    }
+
+    // ── Open a role (comparison slot) ────────────────────
+    async function openCompareRole(file, title, level, domainLabel) {
+        compareMode = false;
+        compareFile = file;
+
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+
+        // Show the comparison column
+        document.getElementById('roleView2').style.display = 'block';
+        document.getElementById('rolesGrid').classList.add('comparing');
+
+        document.getElementById('roleHeader2').innerHTML = buildHeader(title, level, domainLabel, null, 'B');
+        document.getElementById('roleBody2').innerHTML =
+            '<div class="loading"><div class="spinner"></div> Loading…</div>';
+
+        try {
+            const res      = await fetch(`/api/role?file=${encodeURIComponent(file)}`);
+            const markdown = await res.text();
+
+            const reviewMatch  = markdown.match(/\|\s*\*\*Last Reviewed\*\*\s*\|\s*(.+?)\s*\|/);
+            const lastReviewed = reviewMatch ? reviewMatch[1].trim() : null;
+
+            document.getElementById('roleHeader2').innerHTML = buildHeader(title, level, domainLabel, lastReviewed, 'B');
+
+            const h2idx = markdown.indexOf('\n## ');
+            const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
+            document.getElementById('roleBody2').innerHTML = marked.parse(body);
+
+        } catch {
+            document.getElementById('roleBody2').innerHTML =
+                '<div class="empty-msg">⚠️ Failed to load role content.</div>';
+        }
+    }
+
+    // ── Open a reference document ─────────────────────────
+    async function openDoc(file, title) {
+        pushHistory();
+        activeDoc   = file;
+        activeDocTitle = title;
+        activeFile  = null;
+        activeChapter = null;
+        compareMode = false;
+        compareFile = null;
+
+        // Hide roles and welcome, show doc view
+        document.getElementById('roleView2').style.display = 'none';
+        document.getElementById('rolesGrid').classList.remove('comparing');
+        document.getElementById('rolesGrid').style.display = 'none';
+        document.getElementById('roleView').classList.remove('show');
+        document.getElementById('welcomeState').style.display = 'none';
+        document.getElementById('chapterView').style.display  = 'none';
+        document.getElementById('matrixView').classList.remove('show');
+        matrixOpen = false;
+        document.getElementById('matrixBtn').style.background  = '';
+        document.getElementById('matrixBtn').style.borderColor = '';
+        document.getElementById('matrixBtn').setAttribute('aria-pressed', 'false');
+
+        document.getElementById('staleView').classList.remove('show');
+        staleOpen = false;
+        document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
+
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+
+        const docView = document.getElementById('docView');
+        docView.style.display = 'block';
+
+        document.getElementById('docHeader').innerHTML = `
+            <div class="role-header-row">
+                <h1>📖 ${title}</h1>
+                <div class="role-actions">
+                    <button class="btn-action" onclick="printRole()">🖨️ Print</button>
+                </div>
+            </div>
+            <div class="role-meta">
+                <span class="doc-tag">📚 Reference Document</span>
+            </div>`;
+
+        document.getElementById('docBody').innerHTML =
+            '<div class="loading"><div class="spinner"></div> Loading…</div>';
+
+        try {
+            const res      = await fetch(`/api/doc?file=${encodeURIComponent(file)}`);
+            const markdown = await res.text();
+            document.getElementById('docBody').innerHTML = marked.parse(markdown);
+            document.getElementById('mainArea').scrollTop = 0;
+        } catch {
+            document.getElementById('docBody').innerHTML =
+                '<div class="empty-msg">⚠️ Failed to load document.</div>';
+        }
+    }
+
+    // ── Compare controls ──────────────────────────────────
+    function startCompare() {
+        if (!activeFile) return;
+        compareMode = true;
+        document.getElementById('compareBtn')?.classList.add('active');
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+    }
+
+    function cancelCompare() {
+        compareMode = false;
+        document.getElementById('compareBtn')?.classList.remove('active');
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+    }
+
+    function closeComparison() {
+        compareFile = null;
+        compareMode = false;
+        document.getElementById('roleView2').style.display = 'none';
+        document.getElementById('rolesGrid').classList.remove('comparing');
+        document.getElementById('compareBtn')?.classList.remove('active');
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+    }
+
+    function printRole() { window.print(); }
+
+    // ── Export: download the currently open role/doc as a .md file ──
+    function downloadText(filename, text, mime) {
+        const blob = new Blob([text], { type: mime });
+        const url  = URL.createObjectURL(blob);
+        const a    = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+    }
+
+    function exportRoleMarkdown() {
+        if (!lastMarkdown) return;
+        const slug = (lastMarkdownTitle || 'role').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        downloadText(`${slug || 'role'}.md`, lastMarkdown, 'text/markdown;charset=utf-8');
+    }
+
+    // ── Export: download the full role matrix as CSV ──
+    function exportMatrixCsv() {
+        const rows = [['Domain', 'Role Title', 'Level', 'File', 'Last Reviewed']];
+        for (const domain of Object.values(allDomains)) {
+            for (const role of domain.roles) {
+                rows.push([domain.label, role.title, role.level, role.file, role.lastReviewed || '']);
+            }
+        }
+        const csv = rows.map(r => r.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')).join('\r\n');
+        downloadText('role-matrix.csv', csv, 'text/csv;charset=utf-8');
+    }
+
+    // ── Theme toggle ─────────────────────────────────────
+    function toggleTheme() {
+        const root   = document.documentElement;
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        root.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        const btn = document.getElementById('themeBtn');
+        btn.textContent = isDark ? '🌙 Dark' : '☀️ Light';
+        btn.setAttribute('aria-pressed', String(!isDark));
+    }
+
+    // ── Matrix view ───────────────────────────────────────
+    let matrixOpen = false;
+    let staleOpen  = false;
+
+    const LEVEL_ORDER = [
+        'CEO',
+        'CTO',
+        'CIO',
+        'SVP',
+        'CISO',
+        'Product Area Lead',
+        'Technical Area Lead',
+        'Chapter Lead',
+        'Principal Architect',
+        'Lead Architect',
+        'Architect',
+        'Senior Engineer',
+        'Engineer',
+        'Reliability Engineer',
+        'Product Owner',
+    ];
+
+    // Short column header labels
+    const LEVEL_SHORT = {
+        'CEO':                 'CEO',
+        'CTO':                 'CTO',
+        'CIO':                 'CIO',
+        'SVP':                 'SVP',
+        'CISO':                'CISO',
+        'Product Area Lead':   'PAL',
+        'Technical Area Lead': 'TAL',
+        'Chapter Lead':        'Ch Lead',
+        'Principal Architect': 'Principal',
+        'Lead Architect':      'Lead Arch',
+        'Architect':           'Architect',
+        'Senior Engineer':     'Sr Engineer',
+        'Engineer':            'Engineer',
+        'Reliability Engineer':'SRE',
+        'Product Owner':       'Prod Owner',
+    };
+
+    function renderMatrix(domains) {
+        // Collect which levels actually exist in the data
+        const presentLevels = new Set();
+        for (const domain of Object.values(domains)) {
+            for (const role of domain.roles) presentLevels.add(role.level);
+        }
+        const cols = LEVEL_ORDER.filter(l => presentLevels.has(l));
+
+        // Legend HTML
+        const legendHtml = cols.map(l => `
+            <span class="matrix-legend-item">
+                <span class="badge ${badgeClass(l)}">${LEVEL_SHORT[l] || l}</span>
+            </span>`).join('');
+
+        // Table header
+        const theadCols = cols.map(l => `
+            <th><span class="matrix-th-badge badge ${badgeClass(l)}">${LEVEL_SHORT[l] || l}</span></th>
+        `).join('');
+
+        // Table body — one row per domain
+        const tbodyRows = Object.entries(domains).map(([key, domain]) => {
+            const icon = ICONS[key] || '📄';
+            const cells = cols.map(level => {
+                const matches = domain.roles.filter(r => r.level === level);
+                if (matches.length === 0) {
+                    return `<td class="matrix-cell"><span class="matrix-empty">—</span></td>`;
+                }
+                const chips = matches.map(r => `
+                    <span class="matrix-chip badge ${badgeClass(r.level)}"
+                          data-file="${escapeAttr(r.file)}"
+                          data-title="${escapeAttr(r.title)}"
+                          data-level="${escapeAttr(r.level)}"
+                          data-domain="${escapeAttr(domain.label)}"
+                          title="${escapeAttr(r.title)}">
+                        ${r.title}
+                    </span>`).join('');
+                return `<td class="matrix-cell">${chips}</td>`;
+            }).join('');
+
+            return `<tr>
+                <td class="matrix-domain-cell"><span>${icon}</span>${domain.label}</td>
+                ${cells}
+            </tr>`;
+        }).join('');
+
+        document.getElementById('matrixView').innerHTML = `
+            <div class="matrix-header">
+                <div>
+                    <h2>📊 Role Matrix</h2>
+                    <p>All ${Object.values(domains).reduce((n,d) => n + d.roles.length, 0)} roles across
+                       ${Object.keys(domains).length} domains — click any role to open it.</p>
+                </div>
+                <div class="matrix-legend">${legendHtml}</div>
+                <button class="btn-action" onclick="exportMatrixCsv()" aria-label="Download role matrix as CSV">⬇️ Export CSV</button>
+            </div>
+            <div class="matrix-scroll">
+                <table class="matrix-table">
+                    <thead>
+                        <tr>
+                            <th>Domain</th>
+                            ${theadCols}
+                        </tr>
+                    </thead>
+                    <tbody>${tbodyRows}</tbody>
+                </table>
+            </div>`;
+    }
+
+    function toggleMatrix() {
+        matrixOpen = !matrixOpen;
+        const mv  = document.getElementById('matrixView');
+        const btn = document.getElementById('matrixBtn');
+        btn.setAttribute('aria-pressed', String(matrixOpen));
+
+        if (matrixOpen) {
+            // Hide normal content and doc view, show matrix
+            document.getElementById('welcomeState').style.display = 'none';
+            document.getElementById('chapterView').style.display  = 'none';
+            document.getElementById('rolesGrid').style.display    = 'none';
+            document.getElementById('docView').style.display      = 'none';
+            activeDoc = null;
+            mv.style.display = '';
+            mv.classList.add('show');
+            btn.style.background = 'rgba(255,255,255,0.3)';
+            btn.style.borderColor = 'rgba(255,255,255,0.6)';
+            renderMatrix(allDomains);
+            renderSidebar(allDomains, document.getElementById('searchInput').value);
+
+            // Matrix and stale panel are mutually exclusive
+            if (staleOpen) { staleOpen = false; document.getElementById('staleView').classList.remove('show'); document.getElementById('staleBtn').setAttribute('aria-pressed', 'false'); }
+        } else {
+            // Restore normal content
+            document.getElementById('rolesGrid').style.display = '';
+            mv.classList.remove('show');
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            // Show welcome if no role loaded
+            if (!activeFile) document.getElementById('welcomeState').style.display = '';
+        }
+    }
+
+    // ── Stale-role tracking: flag roles with no review date or one
+    //    older than STALE_MONTHS ───────────────────────────
+    function monthsSinceReview(lastReviewed, now = new Date()) {
+        if (!lastReviewed) return null;
+        const m = lastReviewed.match(/^(\d{4})-(\d{2})$/);
+        if (!m) return null;
+        const reviewed = new Date(Number(m[1]), Number(m[2]) - 1, 1);
+        return (now.getFullYear() - reviewed.getFullYear()) * 12 + (now.getMonth() - reviewed.getMonth());
+    }
+
+    function computeStaleRoles(domains) {
+        const now   = new Date();
+        const stale = [];
+        for (const domain of Object.values(domains)) {
+            for (const role of domain.roles) {
+                const monthsSince = monthsSinceReview(role.lastReviewed, now);
+                if (monthsSince === null || monthsSince >= STALE_MONTHS) {
+                    stale.push({ ...role, domainLabel: domain.label, monthsSince });
+                }
+            }
+        }
+        return stale.sort((a, b) => (b.monthsSince ?? 9999) - (a.monthsSince ?? 9999));
+    }
+
+    function updateStaleButton(domains) {
+        const stale = computeStaleRoles(domains);
+        const btn   = document.getElementById('staleBtn');
+        if (stale.length === 0) { btn.style.display = 'none'; return; }
+        btn.style.display  = '';
+        btn.textContent    = `⏰ Stale (${stale.length})`;
+        btn.setAttribute('aria-label', `${stale.length} roles overdue for review`);
+    }
+
+    function toggleStalePanel() {
+        staleOpen = !staleOpen;
+        const sv  = document.getElementById('staleView');
+        const btn = document.getElementById('staleBtn');
+        btn.setAttribute('aria-pressed', String(staleOpen));
+
+        if (staleOpen) {
+            document.getElementById('welcomeState').style.display = 'none';
+            document.getElementById('chapterView').style.display  = 'none';
+            document.getElementById('rolesGrid').style.display    = 'none';
+            document.getElementById('docView').style.display      = 'none';
+            activeDoc = null;
+            sv.style.display = '';
+            sv.classList.add('show');
+            renderStalePanel(allDomains);
+
+            // Matrix and stale panel are mutually exclusive
+            if (matrixOpen) {
+                matrixOpen = false;
+                document.getElementById('matrixView').classList.remove('show');
+                document.getElementById('matrixBtn').setAttribute('aria-pressed', 'false');
+                document.getElementById('matrixBtn').style.background  = '';
+                document.getElementById('matrixBtn').style.borderColor = '';
+            }
+        } else {
+            sv.classList.remove('show');
+            if (!activeFile) document.getElementById('welcomeState').style.display = '';
+        }
+    }
+
+    function renderStalePanel(domains) {
+        const stale = computeStaleRoles(domains);
+        const rows = stale.map(r => `
+            <tr>
+                <td class="matrix-domain-cell">${r.domainLabel}</td>
+                <td><span class="matrix-chip badge ${badgeClass(r.level)}"
+                        data-file="${escapeAttr(r.file)}" data-title="${escapeAttr(r.title)}"
+                        data-level="${escapeAttr(r.level)}" data-domain="${escapeAttr(r.domainLabel)}">${r.title}</span></td>
+                <td>${r.lastReviewed || '<em>Not set</em>'}</td>
+                <td>${r.monthsSince === null ? '—' : r.monthsSince + ' mo'}</td>
+            </tr>`).join('');
+
+        document.getElementById('staleView').innerHTML = `
+            <div class="matrix-header">
+                <div>
+                    <h2>⏰ Roles Overdue for Review</h2>
+                    <p>${stale.length} of ${Object.values(domains).reduce((n,d) => n + d.roles.length, 0)} roles
+                       have no review date or were last reviewed ${STALE_MONTHS}+ months ago — click any role to open it.</p>
+                </div>
+                <button class="btn-action" onclick="exportStaleCsv()" aria-label="Download overdue role list as CSV">⬇️ Export CSV</button>
+            </div>
+            <div class="matrix-scroll">
+                <table class="matrix-table">
+                    <thead><tr><th>Domain</th><th>Role</th><th>Last Reviewed</th><th>Age</th></tr></thead>
+                    <tbody>${rows || '<tr><td colspan="4">No stale roles 🎉</td></tr>'}</tbody>
+                </table>
+            </div>`;
+    }
+
+    function exportStaleCsv() {
+        const stale = computeStaleRoles(allDomains);
+        const rows  = [['Domain', 'Role Title', 'Level', 'Last Reviewed', 'Months Since Review']];
+        for (const r of stale) rows.push([r.domainLabel, r.title, r.level, r.lastReviewed || '', r.monthsSince ?? '']);
+        const csv = rows.map(r => r.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')).join('\r\n');
+        downloadText('stale-roles.csv', csv, 'text/csv;charset=utf-8');
+    }
+
+    // ── Intercept .md links inside rendered doc/role content ─
+    document.getElementById('mainArea').addEventListener('click', e => {
+        const a = e.target.closest('a[href]');
+        if (!a) return;
+        const href = a.getAttribute('href');
+        if (!href || !href.endsWith('.md')) return;
+        e.preventDefault();
+
+        // Resolve the link relative to the currently open doc/role, then route.
+        const clean = resolveDocHref(href);
+
+        if (clean.startsWith('Roles/')) {
+            // Look up role metadata from allDomains
+            const allRoles = Object.values(allDomains).flatMap(d =>
+                d.roles.map(r => ({ ...r, domainLabel: d.label }))
+            );
+            const match = allRoles.find(r =>
+                r.file === clean || r.file.replace(/\\/g, '/') === clean
+            );
+            if (match) {
+                openRole(match.file, match.title, match.level, match.domainLabel);
+            } else {
+                // Fallback: open with just the filename as title
+                const title = clean.split('/').pop().replace(/_/g, ' ').replace('.md', '');
+                openRole(clean, title, '', '');
+            }
+        } else if (clean.startsWith('docs/')) {
+            const title = clean.split('/').pop().replace(/_/g, ' ').replace('.md', '');
+            openDoc(clean, title);
+        }
+    });
+
+    // ── Delegated click handler for role items ───────────
+    document.getElementById('sidebarNav').addEventListener('click', e => {
+        // Cancel button on the compare banner
+        if (e.target.closest('.compare-banner-x')) { cancelCompare(); return; }
+
+        // Resource doc items
+        const resItem = e.target.closest('.resource-item');
+        if (resItem) {
+            openDoc(resItem.dataset.doc, resItem.dataset.docTitle);
+            return;
+        }
+
+        const item = e.target.closest('.role-item');
+        if (!item) return;
+
+        if (compareMode) {
+            openCompareRole(item.dataset.file, item.dataset.title, item.dataset.level, item.dataset.domain);
+        } else {
+            openRole(item.dataset.file, item.dataset.title, item.dataset.level, item.dataset.domain);
+        }
+    });
+
+    // ── Matrix chip clicks (single delegated listener) ───
+    document.getElementById('matrixView').addEventListener('click', e => {
+        const chip = e.target.closest('.matrix-chip');
+        if (!chip) return;
+        openRole(chip.dataset.file, chip.dataset.title, chip.dataset.level, chip.dataset.domain);
+        const fileKey = chip.dataset.file.split('/')[1];
+        setTimeout(() => {
+            const dg = document.getElementById(`dg-${fileKey}`);
+            if (dg && !dg.classList.contains('open')) dg.classList.add('open');
+            document.querySelector(`.role-item[data-file="${chip.dataset.file}"]`)
+                ?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 150);
+    });
+
+    // ── Stale-panel chip clicks (single delegated listener) ─
+    document.getElementById('staleView').addEventListener('click', e => {
+        const chip = e.target.closest('.matrix-chip');
+        if (!chip) return;
+        openRole(chip.dataset.file, chip.dataset.title, chip.dataset.level, chip.dataset.domain);
+    });
+
+    // ── Boot ─────────────────────────────────────────────
+    init();
+</script>
+</body>
+</html>

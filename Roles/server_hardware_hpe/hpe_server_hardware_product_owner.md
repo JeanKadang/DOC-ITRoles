@@ -1,0 +1,165 @@
+# HPE Server Hardware Product Owner
+
+| Field | Value |
+|---|---|
+| **Domain** | Server Hardware HPE |
+| **Chapter:** | Cloud, Platform & Infrastructure |
+| **Role Level** | Product Owner |
+| **Last Reviewed** | 2026-03 |
+
+---
+
+## Role Overview
+
+The HPE Server Hardware Product Owner manages the development and lifecycle of the organization's server infrastructure based on Hewlett Packard Enterprise technologies. This role leads a team of server hardware architects and engineers, ensuring that server platforms meet business requirements, performance targets, and operational standards.
+
+## Business Impact
+
+- **Business Objective:** Manages the HPE server hardware platform lifecycle ensuring capacity, refresh cycles, HPE vendor relationships, and cost efficiency align with current and future business workload requirements
+- **Value Metrics:** Server infrastructure availability, capacity utilisation, procurement cycle time, refresh cycle adherence, total cost of ownership trend, provisioning throughput
+- **Key Stakeholders:** IT leadership, platform product owners (Windows, Linux, Virtualisation, HPC), FinOps, procurement, data centre facilities
+- **Processes Supported:** HPE hardware backlog management, lifecycle and refresh planning, HPE procurement and vendor management, capacity planning, asset lifecycle management, agile ceremonies
+
+## Key Responsibilities
+
+- Develop and maintain the product backlog for HPE server infrastructure
+- Prioritize server hardware initiatives based on business impact and strategic alignment
+- Define acceptance criteria for server hardware deliverables
+- Lead sprint planning and agile ceremonies for the server hardware team
+- Engage with business stakeholders to understand computing requirements
+- Create and maintain a strategic roadmap for HPE server platform evolution
+- Manage hardware procurement processes and vendor relationships
+- Track and optimize total cost of ownership for server infrastructure
+- Focus on server hardware standardization and consolidation
+- Optimize performance for different workload types
+- Improve power efficiency and sustainable computing
+- Manage technology refresh cycles and lifecycle
+- Develop hardware reliability and resilience strategy
+- Maintain vendor relationships
+- Reduce total cost of ownership
+- Drive server technology innovation and adoption
+
+## Key Technologies
+
+- HPE ProLiant servers (DL, ML series)
+- HPE BladeSystem and enclosures
+- HPE Synergy composable infrastructure
+- HPE OneView management platform
+- HPE InfoSight for servers
+- HPE GreenLake infrastructure services
+- HPE iLO management interface
+- Server lifecycle management tools
+- Hardware monitoring systems
+- Capacity planning tools
+- IT service management platforms
+- Product backlog management tools
+- Hardware asset management systems
+- Server hardware standardization and consolidation tools
+- Workload performance optimization frameworks
+- Power efficiency and sustainable computing solutions
+- Technology refresh and lifecycle management systems
+- Hardware reliability and resilience technologies
+- Vendor relationship management platforms
+- Total cost of ownership analysis tools
+- Server technology innovation frameworks
+
+## Typical Day-to-Day Activities
+
+- Leading daily standups with the server hardware team
+- Refining product backlogs and user stories
+- Meeting with stakeholders to gather requirements
+- Reviewing server hardware specifications and quotes
+- Participating in sprint reviews and retrospectives
+- Analyzing server performance metrics and capacity needs
+- Coordinating hardware refresh activities
+- Working with finance on budgeting and forecasting
+- Collaborating with architects on design decisions
+- Preparing reports on infrastructure status and roadmap
+- Negotiating with vendors on pricing and support terms
+
+## Key Performance Indicators
+
+- Server infrastructure availability and reliability metrics
+- On-time delivery of hardware initiatives and projects
+- Stakeholder satisfaction ratings
+- Budget management and cost optimization
+- Hardware standardization percentage
+- Time to provision new server infrastructure
+- Server capacity utilization efficiency
+- Successful technology adoption rate
+- Documentation quality and completeness
+- Team velocity and productivity metrics
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid; primarily remote for planning and stakeholder engagement, with periodic on-site for data centre tours, hardware reviews, and major HPE refresh planning activities
+- **Collaboration Tools:** Microsoft Teams, Jira, Confluence, HPE GreenLake portal, hardware asset management dashboards, and vendor procurement portals
+- **On-Site Requirements:** Periodic data centre visits for capacity reviews, hardware refresh programme walkthroughs, and HPE vendor assessments
+- **Time Zone Flexibility:** Standard business hours with flexibility for HPE partner calls and distributed team agile ceremonies
+- **On-Call / Operational Demands:** Not on-call; available through escalation for critical hardware capacity events or major procurement decisions requiring executive approval
+
+## Career Development Path
+
+**Previous Roles:**
+
+- Server Hardware Engineer
+- Infrastructure Team Lead
+- Data Center Operations Manager
+- IT Project Manager
+- Server Administrator
+
+**Potential Next Roles:**
+
+- IT Infrastructure Director
+- Enterprise Technology Manager
+- IT Portfolio Manager
+- Cloud Infrastructure Product Director
+- Technology Strategy Director
+
+## Recommended Certifications & Learning Paths
+
+- Professional Scrum Product Owner (PSPO)
+- HPE Product Certified - Server Solutions
+- HPE Technical Certified - Server Solutions
+- ITIL 4 Foundation
+- SAFe Product Owner/Product Manager
+- Project Management Professional (PMP)
+- Agile Certified Practitioner (ACP)
+- HPE ASE - Server Solutions Architect (recommended)
+
+## Interactions with Other Roles
+
+| Role | Nature of Interaction |
+|---|---|
+| HPE Server Hardware Architect | Technical strategy |
+| platform-specific Product Owners (Windows, Linux, VMware) | Hardware requirements |
+| procurement teams | Vendor negotiations and contracts |
+| finance teams | Capital expenditure planning |
+| business stakeholders | Computing service requirements |
+| IT leadership | Infrastructure strategy and investments |
+
+## Key Focus Areas
+
+- Server hardware standardization and consolidation
+- Performance optimization for different workload types
+- Power efficiency and sustainable computing
+- Technology refresh cycles and lifecycle management
+- Hardware reliability and resilience strategy
+- Vendor relationship management
+- Total cost of ownership reduction
+- Server technology innovation and adoption
+
+**Technology Proficiency Levels:**
+
+- **Expert level required:** HPE ProLiant servers (DL/ML series), HPE GreenLake infrastructure services, Jira / Azure DevOps (backlog and roadmap management)
+- **Proficient level required:** HPE OneView management platform, HPE InfoSight analytics, HPE Synergy composable infrastructure, hardware asset management systems
+- **Working Knowledge required:** HPE BladeSystem and enclosures, HPE iLO management, server lifecycle management tools, capacity planning tools
+- **Awareness level expected:** HPE Compute Ops Manager, HPE Alletra storage, cloud hardware alternatives, sustainable computing standards
+
+**Complementary Certifications:**
+
+- Certified Data Centre Professional (CDCP), IT Asset Management (IAITAM CSAM), and HPE GreenLake commercial training
+
+**Learning Resources and Communities:**
+
+- HPE education portal (education.hpe.com), HPE GreenLake documentation, Uptime Institute resources (uptimeinstitute.com), Gartner server hardware research, and IAITAM IT asset management resources

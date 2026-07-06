@@ -1,0 +1,157 @@
+# Network Senior Engineer
+
+| Field | Value |
+|---|---|
+| **Domain** | Network |
+| **Chapter:** | Cloud, Platform & Infrastructure |
+| **Role Level** | Senior Engineer |
+| **Last Reviewed** | 2026-03 |
+
+---
+
+## Role Overview
+
+The Network Senior Engineer leads the implementation and optimization of complex enterprise network solutions. This role provides technical leadership for network deployments, migrations, and operations while working closely with architects to translate network designs into effective implementations.
+
+## Business Impact
+
+- **Business Objective:** Delivers complex network solutions and maintains the reliability of critical network infrastructure, directly reducing downtime risk and enabling high-throughput connectivity for business applications, cloud services, and hybrid working.
+- **Value Metrics:** Mean time to resolution for P1/P2 network incidents, change implementation success rate, network automation coverage percentage, core routing and switching uptime, number of engineers mentored and capability uplift achieved.
+- **Key Stakeholders:** Network Architect, Network Product Owner, Cloud and Security engineering teams, application delivery teams, data centre operations.
+- **Processes Supported:** Change management (RFC authoring and lead implementation), incident management (P1/P2 response), capacity planning, network technology refresh execution, network automation pipeline development.
+
+## Key Responsibilities
+
+- Design and implement complex network solutions based on architectural guidance
+- Develop automation for network configuration and management
+- Lead troubleshooting for critical network issues
+- Create and maintain network standards and procedures
+- Implement advanced security controls for network infrastructure
+- Optimize network performance and resource utilization
+- Plan and execute network migrations and technology refreshes
+- Provide technical mentorship to Network Engineers
+
+## Key Decisions and Accountabilities
+
+> Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
+
+| Owns | Advises On |
+|---|---|
+| Complex network solution implementations and low-level design | Enterprise-wide network architecture standards (with Network Architect) |
+| Network automation tooling, scripting approach, and pipeline development | Network product roadmap and technology selection |
+| Technical mentoring direction and capability development for Network Engineers | Security control implementation approach (with Security Senior Engineer) |
+
+## Required Skills & Qualifications
+
+- Extensive experience with enterprise networking technologies
+- Advanced knowledge of routing and switching protocols
+- Strong understanding of network security principles
+- Experience with network automation and orchestration tools
+- Deep knowledge of WAN, LAN, and wireless technologies
+- Advanced troubleshooting skills for complex network issues
+- Experience with SD-WAN and modern networking concepts
+- Relevant advanced certifications (CCIE, JNCIE, etc.)
+
+**Technology Proficiency Levels:**
+
+- **Expert level required:** Enterprise routing and switching platforms (OSPF, BGP, MPLS), SD-WAN advanced configuration and troubleshooting, next-generation firewalls and security appliances, network automation frameworks (Ansible, Python)
+- **Proficient level required:** Software-Defined Networking (SDN) solutions, load balancers and application delivery controllers, Wi-Fi 6/6E and wireless network management, IPv6 implementation and migration
+- **Working Knowledge required:** Cloud network integration (AWS/Azure/GCP), network overlay technologies (VXLAN, EVPN), network access control (NAC) systems
+- **Awareness level expected:** Zero Trust Network Architecture, AI-driven network operations (AIOps), eBPF-based network monitoring
+
+## Interactions with Other Roles
+
+| Role | Nature of Interaction |
+|---|---|
+| Network Architect | Solution design and implementation strategy |
+| Network Product Owner | Technical planning and roadmap execution |
+| Security Senior Engineers | Network security controls |
+| Cloud Senior Engineers | Cloud network integration |
+| Virtualization Senior Engineers | Virtual networking |
+| Network Engineers | Technical implementation |
+
+## Key Technologies
+
+- Enterprise routing and switching platforms
+- Software-Defined Networking (SDN) solutions
+- SD-WAN technologies
+- Next-generation firewalls and security appliances
+- Load balancers and application delivery controllers
+- Network automation frameworks and tools
+- Network monitoring and analytics platforms
+- MPLS and carrier services
+- Network access control systems
+- IPv6 implementation technologies
+- Wi-Fi 6/6E and wireless networks
+- Network overlay technologies
+
+## Typical Day-to-Day Activities
+
+- Designing complex network topologies and solutions
+- Implementing advanced network configurations
+- Troubleshooting critical network performance issues
+- Creating network automation scripts and workflows
+- Optimizing routing protocols and traffic flows
+- Mentoring network engineers on advanced concepts
+- Planning and executing network migrations
+- Performing network capacity planning and analysis
+- Collaborating with architects on network strategy
+- Evaluating new network technologies and capabilities
+
+## Key Performance Indicators
+
+- Network availability and reliability metrics
+- Mean time to resolution for complex network issues
+- Implementation quality of network solutions
+- Network security posture improvement
+- Knowledge transfer effectiveness to network engineers
+- Network automation coverage and efficiency
+- Success rate of network migrations and changes
+- Network performance optimization results
+- Customer satisfaction with network services
+- Innovation in network implementation approaches
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid — most work is performed remotely; on-site required for hardware installation, cabling, and data centre physical activities.
+- **Collaboration Tools:** Microsoft Teams, Jira, Confluence, NetBox, GitHub / GitLab, Ansible, network monitoring platforms (PRTG, SolarWinds, Grafana/Prometheus).
+- **On-Site Requirements:** Data centre access for rack and stack, hardware replacement, or out-of-band console management; campus or branch visits for major refresh projects.
+- **Time Zone Flexibility:** Standard business hours with on-call rotation coverage across the team.
+- **On-Call / Operational Demands:** P1/P2 on-call rotation; expected to respond to critical network incidents within defined SLA; leads incident resolution and post-incident review.
+
+## Career Development Path
+
+**Previous Roles:**
+
+- Network Engineer
+- Network Administrator
+- Systems Engineer with network focus
+- Network Support Specialist
+- Security Engineer with network focus
+
+**Potential Next Roles:**
+
+- Network Architect
+- Network Engineering Manager
+- Network Operations Director
+- Cloud Network Architect
+- Network Security Architect
+
+## Recommended Certifications & Learning Paths
+
+- Cisco Certified Network Professional (CCNP)
+- Cisco Certified Internetwork Expert (CCIE)
+- Juniper Networks Certified Professional (JNCP)
+- Palo Alto Networks Certified Network Security Engineer (PCNSE)
+- Arista Certified Engineering Professional (ACE-P)
+- VMware Certified Professional - Network Virtualization
+- AWS Certified Advanced Networking - Specialty
+- Microsoft Certified: Azure Network Engineer Associate
+
+**Complementary Certifications:**
+
+- HashiCorp Certified: Terraform Associate (network IaC), Python Institute PCEP/PCAP (automation scripting), Fortinet NSE 4/5, and Palo Alto Networks PCNSE.
+
+**Learning Resources and Communities:**
+
+- Cisco Learning Network and DevNet, Juniper Learning Portal, Network to Code (networktocode.com), Packet Pushers podcast and community, ipSpace.net, INE network engineering courses.
