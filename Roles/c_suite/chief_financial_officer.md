@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Domain** | Leadership |
+| **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CFO |
 | **Last Reviewed** | 2026-03 |

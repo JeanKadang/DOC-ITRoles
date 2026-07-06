@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Domain** | Server Hardware HPE |
+| **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
 | **Last Reviewed** | 2026-03 |

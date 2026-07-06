@@ -1,48 +1,12 @@
 const http = require('http');
 const fs   = require('fs');
 const path = require('path');
-const { resolveLevel, parseMeta, REFERENCE_DOC_PATTERN } = require('./roleMeta');
+const { resolveLevel, parseMeta, REFERENCE_DOC_PATTERN, DOMAIN_LABELS } = require('./roleMeta');
 
 const PORT      = process.env.PORT || 3000;
 const ROOT      = __dirname;
 const ROLES_DIR = path.join(ROOT, 'Roles');
 const VENDOR_DIR = path.join(ROOT, 'vendor');
-
-// Human-readable labels for each domain folder
-const DOMAIN_LABELS = {
-  leadership:                             'Leadership',
-  ai_governance:                          'AI Governance',
-  app_platforms:                          'App Platforms',
-  cloud_platforms:                        'Cloud Platforms',
-  data_engineering:                       'Data Engineering',
-  data_management:                        'Data Management',
-  data_protection:                        'Data Protection',
-  database_management:                    'Database Management',
-  devops:                                 'DevOps',
-  directory_services:                     'Directory Services',
-  client_platform:                        'Client Platform',
-  endpoint_management:                    'Endpoint Management',
-  enterprise_architecture:                'Enterprise Architecture',
-  FinOps:                                 'FinOps',
-  infrastructure_onboarding_cross_platform: 'Infrastructure Onboarding',
-  integration_middleware:                 'Integration & Middleware',
-  itsm_configuration:                     'ITSM & Configuration',
-  kubernetes:                             'Kubernetes',
-  modern_infrastructure:                  'Modern Infrastructure',
-  modern_workplace:                       'Modern Workplace',
-  network:                                'Network',
-  security:                               'Security',
-  security_cross_platform:                'Security Cross-Platform',
-  security_identity:                      'Security & Identity',
-  server_hardware:                        'Server Hardware',
-  server_hardware_hpe:                    'HPE Server Hardware',
-  server_os_linux:                        'Linux Server OS',
-  server_os_windows:                      'Windows Server OS',
-  service_management:                     'Service Management',
-  c_suite:                                'C-Suite',
-  specialized_computing:                  'Specialized Computing',
-  virtualization:                         'Virtualization',
-};
 
 // Cache getRoles() results, invalidated whenever any directory or file under
 // Roles/ has a newer mtime than what was last seen (covers edits, adds, and

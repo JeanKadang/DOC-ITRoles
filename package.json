@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "node --test",
-    "validate": "node validate-roles.js"
+    "validate": "node validate-roles.js",
+    "check-counts": "node scripts/check-counts.js"
   },
   "dependencies": {}
 }

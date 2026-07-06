@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 
 node --version >nul 2>&1
 if errorlevel 1 (
@@ -11,23 +11,29 @@ if errorlevel 1 (
     exit /b 1
 )
 
-:: Check if port 3000 is already in use and offer to free it
-netstat -ano | findstr ":3000 " | findstr "LISTENING" >nul 2>&1
+:: Find a free port starting at 3000, without touching whatever else is
+:: listening on a busy one -- never force-kill another process.
+set PORT=3000
+:port_check
+netstat -ano | findstr ":!PORT! " | findstr "LISTENING" >nul 2>&1
 if not errorlevel 1 (
-    echo.
-    echo  [WARN] Port 3000 is already in use.
-    echo  Attempting to stop existing process...
-    for /f "tokens=5" %%p in ('netstat -ano ^| findstr ":3000 " ^| findstr "LISTENING"') do (
-        taskkill /F /PID %%p >nul 2>&1
+    if !PORT! geq 3010 (
+        echo.
+        echo  [ERROR] Ports 3000-3010 are all in use. Free one and retry,
+        echo  or set PORT yourself: set PORT=8080 ^&^& node server.js
+        echo.
+        pause
+        exit /b 1
     )
-    timeout /t 1 /nobreak >nul
+    set /a PORT+=1
+    goto port_check
 )
 
 echo.
-echo  Starting IT Roles Library...
+echo  Starting IT Roles Library on port !PORT!...
 echo.
 
 :: Open browser after a short delay (fires and forgets)
-start /b cmd /c "timeout /t 2 /nobreak >nul && start http://localhost:3000"
+start /b cmd /c "timeout /t 2 /nobreak >nul && start http://localhost:!PORT!"
 
 node "%~dp0server.js"

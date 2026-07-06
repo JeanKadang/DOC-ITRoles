@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Domain** | Server OS - Windows |
+| **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
 | **Last Reviewed** | 2026-03 |

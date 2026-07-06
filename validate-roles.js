@@ -9,7 +9,7 @@
 
 const fs   = require('fs');
 const path = require('path');
-const { parseMeta, KNOWN_LEVELS, normalizeLevel, REFERENCE_DOC_PATTERN } = require('./roleMeta');
+const { parseMeta, KNOWN_LEVELS, normalizeLevel, REFERENCE_DOC_PATTERN, DOMAIN_LABELS } = require('./roleMeta');
 
 const ROOT       = __dirname;
 const ROLES_DIR  = path.join(ROOT, 'Roles');
@@ -61,6 +61,17 @@ function validateFile(filePath) {
 
   if (isReferenceDoc) {
     return { rel, errors, warnings, skipped: true };
+  }
+
+  // Domain metadata should match the canonical label for the folder the
+  // file lives in -- a warning (not error) so this doesn't block CI while
+  // any future drift gets cleaned up incrementally.
+  if (meta.domain) {
+    const folder = rel.split('/')[1];
+    const canonicalLabel = DOMAIN_LABELS[folder] || folder;
+    if (meta.domain.toLowerCase() !== canonicalLabel.toLowerCase()) {
+      warnings.push(`Domain "${meta.domain}" does not match the canonical label "${canonicalLabel}" for folder Roles/${folder}/`);
+    }
   }
 
   if (!meta.levelRaw) {

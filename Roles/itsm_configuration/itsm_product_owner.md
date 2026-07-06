@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Domain** | ITSM and Configuration |
+| **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |
 | **Last Reviewed** | 2026-03 |

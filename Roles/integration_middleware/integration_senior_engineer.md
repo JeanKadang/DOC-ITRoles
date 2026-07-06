@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Domain** | Integration and Middleware |
+| **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
 | **Last Reviewed** | 2026-03 |

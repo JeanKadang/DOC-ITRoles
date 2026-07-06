@@ -32,6 +32,7 @@ jobs:
       # issue #7). Flip continue-on-error to false once that backfill lands.
       - run: npm run validate
         continue-on-error: true
+      - run: npm run check-counts
 
   markdownlint:
     name: Markdown lint
