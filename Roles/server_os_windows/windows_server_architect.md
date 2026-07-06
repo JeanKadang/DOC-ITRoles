@@ -161,7 +161,6 @@ The Windows Server Architect designs and defines the strategic direction for the
 | Application Architects | Windows platform requirements, OS constraints, and Group Policy/WinAPI design considerations |
 | Active Directory Engineers | Identity architecture |
 
-
 **Complementary Certifications:**
 
 - TOGAF for enterprise architecture alignment, CISSP for security governance, Microsoft Certified: Azure Solutions Architect Expert (AZ-305), and Microsoft Certified: Azure Stack HCI Operator

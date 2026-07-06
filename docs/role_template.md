@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | **Domain** | [e.g., Cloud Platforms / Security / DevOps / Modern Infrastructure] |
-| **Role Level** | [Engineer / Senior Engineer / Architect / Product Owner] |
+| **Role Level** | [Engineer / Senior Engineer / Reliability Engineer / Product Owner / Architect / Lead Architect / Principal Architect / Chapter Lead / Technical Area Lead / Product Area Lead / SVP / CISO / CFO / CIO / CTO / CEO] |
 | **Reports To** | [Role title this position reports to, e.g., Cloud Platform Architect] |
 | **Direct Reports** | [Role titles managed by this position, or "None" for individual-contributor roles] |
 | **Last Reviewed** | [YYYY-MM] |

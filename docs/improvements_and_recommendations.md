@@ -130,7 +130,7 @@ Add a proficiency scale to the Required Skills section of each role:
 | virtualization | 3/3 |
 | **Total** | **52/52** |
 
-**Remaining:** Backfill Senior Engineer, Engineer, and Product Owner roles in the next review cycle. Approximately 159 non-architect roles still to be done.
+**Remaining (recounted 2026-07-06):** Coverage is now 214/218 role files repo-wide (verified via `grep -rl "Technology Proficiency Levels" Roles`), not the ~159 non-architect roles previously estimated — most non-architect roles were backfilled since that estimate was written but the count here wasn't updated. Only 3 actual roles remain: `Roles/endpoint_management/endpoint_management_senior_engineer.md`, `Roles/leadership/engineering_practices_champion.md`, `Roles/modern_workplace/modern_workplace_senior_engineer.md`. (A 4th file without the section, `Roles/FinOps/cloud_cost_optimization_standards.md`, is a reference/standards doc exempt from the role template, not an actual role.)
 
 ---
 
@@ -368,8 +368,9 @@ All references to Azure Active Directory updated to Microsoft Entra ID.
 | Chief Executive Officer | ✅ Created — `Roles/c_suite/chief_executive_officer.md` |
 | Chief Technology Officer | ✅ Created — `Roles/c_suite/chief_technology_officer.md` |
 | Chief Information Officer | ✅ Created — `Roles/c_suite/chief_information_officer.md` |
+| Chief Financial Officer | ✅ Created — `Roles/c_suite/chief_financial_officer.md` |
 
-C-suite roles are served under a dedicated `c_suite` domain within the Leadership chapter. CEO, CTO, and CIO each have distinct badge colours and appear as a separate sub-section in the web viewer sidebar above the existing Leadership domain.
+C-suite roles are served under a dedicated `c_suite` domain within the Leadership chapter. CEO, CTO, CIO, and CFO each have distinct badge colours and appear as a separate sub-section in the web viewer sidebar above the existing Leadership domain.
 
 ---
 
@@ -501,15 +502,15 @@ Consolidated backlog from the July 2026 audit. Completed items are checked and k
 
 - [ ] `docs/SKILLS_PROGRESSION.md`: domain ladders cover only ~10 of 32 domains; add the remaining domains, the 8 new specialist Senior-Engineer roles, and the GenAI vs classical-MLOps split. Clarify the `Data Engineer → AI Governance Engineer → AI Platform Architect` mobility path now that there are two distinct AI platform architect roles. 📋
 - [ ] `docs/CROSS_DOMAIN_INTERACTIONS.md`: add ownership-boundary and escalation rows for the new governance roles — change enablement (Change/Release Manager), major incident/problem (Major Incident Manager), BC/DR ownership, and the data-classification split across Data Governance Lead vs Data Privacy Officer vs Security. 📋
-- [ ] `docs/role_template.md`: the Role Level example lists only four levels — show the full canonical vocabulary (Engineer … Chapter Lead, TAL, PAL, C-Suite, Reliability Engineer). 📋
-- [ ] The proficiency-table backfill figure ("~159 remaining") is now approximately 166 after the role additions — recount when that work is scheduled. 📋
+- [x] `docs/role_template.md`: the Role Level example lists only four levels — show the full canonical vocabulary (Engineer … Chapter Lead, TAL, PAL, C-Suite, Reliability Engineer). Fixed 2026-07-06.
+- [x] The proficiency-table backfill figure was stale (claimed "~159/166 remaining"); recounted 2026-07-06 — actual remaining is 3 roles, not 166. See "Technology-specific experience levels" above.
 
 ### Open — content backfill
 
 - [ ] Backfill the new template fields (Reports To / Direct Reports / Role Scope & Boundaries / Interaction Mode) across all 218 existing role files. 📋
 - [ ] Once backfill is complete, enable those sections as required checks in `validate-roles.js`. 📋
 - [ ] Resolve the 43 role files that `npm run validate` reports with missing canonical sections (pre-existing drift; run `npm run validate` for the current list). 📋
-- [ ] Proficiency tables for non-architect roles (~166 Senior Engineer / Engineer / Product Owner roles). 📋
+- [ ] Proficiency tables for the 3 remaining roles: `Roles/endpoint_management/endpoint_management_senior_engineer.md`, `Roles/leadership/engineering_practices_champion.md`, `Roles/modern_workplace/modern_workplace_senior_engineer.md` (corrected 2026-07-06 — previously overstated as ~166). 📋
 
 ### Open — tooling and process
 

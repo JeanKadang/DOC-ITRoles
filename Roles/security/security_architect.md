@@ -174,7 +174,6 @@ The Security Architect designs and implements security systems and frameworks th
 | Risk Management | Security risk assessments |
 | Product Owners | Security requirements |
 
-
 **Complementary Certifications:**
 
 - GIAC Security Expert (GSE), SANS SEC530 (Defensible Security Architecture), and CREST Registered Technical Security Architect.

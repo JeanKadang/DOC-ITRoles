@@ -161,7 +161,6 @@ The Linux Server Architect designs and defines the strategic direction for the o
 | Application Architects | Linux platform requirements, OS constraints, and kernel-level design considerations |
 | DevOps Engineers | CI/CD pipeline integration |
 
-
 **Complementary Certifications:**
 
 - TOGAF for enterprise architecture alignment, CISSP for security governance, Red Hat Certified Architect (RHCA), and Certified Kubernetes Security Specialist (CKS) for container security design

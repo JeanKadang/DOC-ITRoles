@@ -154,7 +154,6 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 | Storage Team Lead | Or **Infrastructure Manager** |
 | Virtualization Engineers | VM storage connectivity |
 
-
 **Complementary Certifications:**
 
 - SNIA Certified Storage Professional, cloud storage fundamentals (AZ-900 or AWS Cloud Practitioner), Linux administration fundamentals (RHCSA/LPIC-1), and VMware storage basics
