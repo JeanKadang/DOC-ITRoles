@@ -56,6 +56,29 @@ The Engineering Practices Champion is a senior individual contributor and intern
 - Ability to communicate engineering quality concepts to non-technical stakeholders — translating DORA metrics and quality gate results into business-meaningful risk and velocity language
 - Familiarity with trunk-based development practices, feature flag management, and the organisational and technical changes required to sustain them at scale
 
+**Technology Proficiency Levels:**
+
+**Expert level required:**
+
+- Test-driven development (TDD), behaviour-driven development (BDD), and pair/mob programming coaching
+- SonarQube and GitHub Advanced Security (code quality gate configuration and coaching)
+- DORA metrics and SPACE framework (collection, interpretation, and team-level coaching)
+
+**Proficient level required:**
+
+- Test automation frameworks across layers (Jest, Pytest, NUnit, Playwright, Cypress)
+- Trunk-based development and feature flag adoption (LaunchDarkly, Azure App Configuration)
+- Backstage or equivalent developer portal for golden path template publishing
+
+**Working Knowledge required:**
+
+- GitHub Actions / Azure DevOps Pipelines configuration
+- DORA metrics dashboards (Four Keys, LinearB, Sleuth)
+
+**Awareness level expected:**
+
+- Emerging engineering practice trends (Thoughtworks Technology Radar signals)
+
 ## Qualifications
 
 - **Education:** Degree in Computer Science, Software Engineering, or a related discipline, or equivalent professional experience demonstrating depth in software quality and delivery practices

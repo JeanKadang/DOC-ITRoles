@@ -44,7 +44,31 @@ const DOMAIN_LABELS = {
   virtualization:                         'Virtualization',
 };
 
+// Cache getRoles() results, invalidated whenever any directory or file under
+// Roles/ has a newer mtime than what was last seen (covers edits, adds, and
+// removes -- a deletion changes its parent directory's mtime). Avoids a full
+// readdir+readFile+parse pass of all 217 role files on every /api/roles hit.
+let rolesCache = { signature: -1, domains: null };
+
+function rolesTreeSignature() {
+  let latest = fs.statSync(ROLES_DIR).mtimeMs;
+  for (const entry of fs.readdirSync(ROLES_DIR, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const domainPath = path.join(ROLES_DIR, entry.name);
+    latest = Math.max(latest, fs.statSync(domainPath).mtimeMs);
+    for (const file of fs.readdirSync(domainPath)) {
+      latest = Math.max(latest, fs.statSync(path.join(domainPath, file)).mtimeMs);
+    }
+  }
+  return latest;
+}
+
 function getRoles() {
+  const signature = rolesTreeSignature();
+  if (rolesCache.domains && rolesCache.signature === signature) {
+    return rolesCache.domains;
+  }
+
   const domains = {};
 
   const entries = fs.readdirSync(ROLES_DIR, { withFileTypes: true })
@@ -83,6 +107,7 @@ function getRoles() {
     };
   }
 
+  rolesCache = { signature, domains };
   return domains;
 }
 

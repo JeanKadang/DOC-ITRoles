@@ -66,6 +66,29 @@ The Modern Workplace Senior Engineer implements, manages, and optimises the orga
 - Mentoring junior engineers in M365 administration.
 - Documentation discipline and knowledge sharing mindset.
 
+**Technology Proficiency Levels:**
+
+**Expert level required:**
+
+- Exchange Online administration (mail flow, connectors, hybrid, anti-spam, DMARC/DKIM/SPF)
+- Microsoft Teams administration (policies, calling, telephony, guest access)
+- PowerShell and Microsoft Graph API for M365 administration and automation
+
+**Proficient level required:**
+
+- SharePoint Online administration (hub sites, site designs, permissions, governance)
+- Microsoft Purview (retention, sensitivity labels, DLP, eDiscovery)
+- Microsoft Defender for Office 365 policy configuration and tuning
+
+**Working Knowledge required:**
+
+- Microsoft Entra ID integration with M365 workloads
+- Microsoft 365 service health monitoring and support case management
+
+**Awareness level expected:**
+
+- Microsoft 365 Copilot rollout and adoption patterns
+
 ## Interactions with Other Roles
 
 | Role | Nature of Interaction |

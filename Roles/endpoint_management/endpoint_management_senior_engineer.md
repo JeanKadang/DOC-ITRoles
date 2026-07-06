@@ -68,6 +68,31 @@ The Endpoint Management Senior Engineer designs, implements, and maintains compl
 - Mentoring junior team members on endpoint tooling and best practices.
 - Effective communication with helpdesk and end-user support teams.
 
+**Technology Proficiency Levels:**
+
+**Expert level required:**
+
+- Microsoft Intune (device configuration, compliance policies, app management, scripting)
+- PowerShell scripting and Microsoft Graph API for Intune automation
+- Windows Autopilot (profile creation, troubleshooting, hybrid join scenarios)
+
+**Proficient level required:**
+
+- MECM/SCCM administration (OSD, software distribution, reporting)
+- Win32/MSIX application packaging and Intune Win32 app deployment
+- Windows Update for Business / Intune Autopatch ring configuration
+
+**Working Knowledge required:**
+
+- macOS device management via Intune configuration profiles
+- Conditional Access policy configuration and device compliance signal flow
+- Android Enterprise / Apple Business Manager MDM configuration
+
+**Awareness level expected:**
+
+- Microsoft Entra ID (Azure AD) Hybrid Join vs. Entra Join architecture
+- Microsoft Defender for Endpoint policy integration
+
 ## Interactions with Other Roles
 
 | Role | Nature of Interaction |

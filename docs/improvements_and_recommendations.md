@@ -82,7 +82,7 @@ Catalog count adjusted from 220 to 218 roles as a result. Verified with `npm run
 
 ## Content enhancement recommendations
 
-### 1. Technology-specific experience levels ✅ Completed — Architect roles
+### 1. Technology-specific experience levels ✅ Completed — all roles (216/216)
 
 **Recommendation:**
 Add a proficiency scale to the Required Skills section of each role:
@@ -130,7 +130,7 @@ Add a proficiency scale to the Required Skills section of each role:
 | virtualization | 3/3 |
 | **Total** | **52/52** |
 
-**Remaining (recounted 2026-07-06):** Coverage is now 214/218 role files repo-wide (verified via `grep -rl "Technology Proficiency Levels" Roles`), not the ~159 non-architect roles previously estimated — most non-architect roles were backfilled since that estimate was written but the count here wasn't updated. Only 3 actual roles remain: `Roles/endpoint_management/endpoint_management_senior_engineer.md`, `Roles/leadership/engineering_practices_champion.md`, `Roles/modern_workplace/modern_workplace_senior_engineer.md`. (A 4th file without the section, `Roles/FinOps/cloud_cost_optimization_standards.md`, is a reference/standards doc exempt from the role template, not an actual role.)
+**Status (2026-07-06):** All 216 role files now have a Technology Proficiency Levels subsection — verified via `grep -rl "Technology Proficiency Levels" Roles --include="*.md" | wc -l` (216/216). The last 3 (`endpoint_management_senior_engineer.md`, `engineering_practices_champion.md`, `modern_workplace_senior_engineer.md`) were backfilled 2026-07-06. `Roles/FinOps/cloud_cost_optimization_standards.md` correctly has none — it's a reference/standards doc exempt from the role template, not a role.
 
 ---
 
@@ -426,7 +426,7 @@ All roles covering security, compliance, or regulated workloads now reference th
 | Template standardization | ✅ Complete |
 | Cross-domain interactions map | ✅ Complete |
 | Skills progression framework | ✅ Complete |
-| Technology experience levels (Architect roles) | ✅ Complete |
+| Technology experience levels (all 216 roles) | ✅ Complete |
 | Business Impact sections | ✅ Complete |
 | Remote Work sections | ✅ Complete |
 | New roles (216 total) | ✅ Complete |
@@ -449,7 +449,6 @@ All roles covering security, compliance, or regulated workloads now reference th
 | Skills assessment / LMS integration | 🔄 In progress |
 | Role effectiveness measurement | 🔄 In progress |
 | Reporting lines / scope / interaction-mode fields | ⏳ Template done, backfill pending |
-| Proficiency tables — non-architect roles | 📋 Next cycle |
 | Role-specific onboarding variants | 📋 Next cycle |
 | Section-drift cleanup (43 files) | 📋 Next cycle |
 
