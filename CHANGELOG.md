@@ -7,11 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-07-06
+
 ### Added
 
 - `scripts/check-counts.js` (`npm run check-counts`): compares README.md's
   count-bearing sentences ("N domains grouped into N chapters, and N roles")
-  against the actual filesystem, wired as a non-blocking CI step. Prevents
+  against the actual filesystem, wired as a blocking CI step. Prevents
   the kind of drift that previously left a proficiency-table backfill
   estimate off by two orders of magnitude.
 - `validate-roles.js` now warns (non-blocking) when a role's `Domain`
