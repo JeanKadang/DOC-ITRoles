@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+# Least-privilege default: this workflow only checks out code, runs tests,
+# and lints -- it never pushes, comments, or writes releases.
+permissions:
+  contents: read
+
 jobs:
   test:
     name: Tests (Node ${{ matrix.node-version }})
