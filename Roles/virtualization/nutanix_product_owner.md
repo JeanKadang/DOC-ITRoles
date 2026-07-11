@@ -91,7 +91,7 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 - REST API and automation frameworks for the Nutanix stack
 - Migration tooling (Nutanix Move)
 - Licensing and cost management for hyperconverged estates
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Nutanix Sizer and capacity forecasting tools
 
 ## Typical Day-to-Day Activities
 

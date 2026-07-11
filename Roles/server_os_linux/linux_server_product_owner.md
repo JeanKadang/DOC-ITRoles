@@ -101,7 +101,7 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 - Cloud Linux services and hybrid image pipelines
 - Monitoring and observability platforms for Linux estates
 - Open source governance and license compliance tooling
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Golden-image build pipelines (Packer, cloud image factories)
 
 ## Typical Day-to-Day Activities
 

@@ -120,7 +120,7 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 - PowerShell automation and self-service provisioning frameworks
 - Monitoring and capacity management platforms (System Center Operations Manager)
 - Windows Server and virtualization licensing management tooling
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Azure Automation and System Center Orchestrator for VM lifecycle workflows
 
 ## Typical Day-to-Day Activities
 

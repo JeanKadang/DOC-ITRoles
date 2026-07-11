@@ -101,7 +101,7 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 - Backup compliance, retention, and reporting dashboards
 - License usage tracking and optimization tooling
 - ITSM integration for backup/restore request workflows (ServiceNow)
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Commvault REST API and workflow automation for service integration
 
 ## Typical Day-to-Day Activities
 
