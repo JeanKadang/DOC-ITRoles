@@ -20,9 +20,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   block.
 - Repository setting `delete_branch_on_merge` enabled — merged PR branches
   are deleted automatically.
+- **Role content validation is now a blocking CI check** — the
+  `continue-on-error` escape hatch was removed from the validate job now
+  that the full catalog passes (#7).
 
 ### Fixed
 
+- **All 43 role files failing `npm run validate` resolved (#7)** — the full
+  216-role catalog now validates with zero errors and zero warnings.
+  Roughly 25 files only needed variant headings renamed to the canonical
+  template wording (`Interactions`/`Key Interactions`, `KPIs and Success
+  Metrics`, `Career Progression`, `Tools and Technologies`, `Recommended
+  Background`); the rest received authored content: `Key Technologies`
+  sections for 11 product-owner files, four executive-level sections for
+  each of the 4 C-suite roles, `Key Decisions & Accountabilities` plus
+  three further sections for the 4 `client_platform` roles, and remaining
+  gaps in `kubernetes_engineer`, `observability_engineer`, both HPE server
+  hardware roles, and `vmware_architect`. The FinOps standards reference
+  doc gained its required `Domain` metadata field.
 - Stale "217 role files" comment in `server.js` (catalog is 216 since the
   v1.3.0 duplicate-role removal); comment is now count-free so it cannot
   drift again (#40).
