@@ -85,7 +85,7 @@ The Engineering Practices Champion is a senior individual contributor and intern
 - **Experience:** Typically 7+ years in software engineering, DevOps, or platform engineering roles, with a strong focus on quality practices and engineering excellence; at least 2–3 years of coaching, mentoring, or team enablement experience at Senior Engineer level or above
 - **Certifications:** No mandatory certifications required; recommended certifications listed in the Certifications section below
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

@@ -39,6 +39,42 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 - Reduce total cost of ownership
 - Drive server technology innovation and adoption
 
+## Key Decisions & Accountabilities
+
+> Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
+
+| Owns | Advises On |
+|---|---|
+| HPE server hardware backlog content, ordering, and sprint priorities | Server hardware architecture standards and reference configurations (Architect-owned) |
+| Acceptance criteria and definition of done for hardware platform deliverables | Procurement contract terms and commercial negotiation (Procurement-owned) |
+| Hardware refresh roadmap sequencing and stakeholder communication | Data centre facilities capacity and power/cooling planning |
+| Trade-off decisions between refresh, capacity, and operational-stability work within the backlog | Budget envelope and investment approval (IT leadership/FinOps) |
+| Prioritisation of HPE vendor engagement topics and escalations | Cross-platform infrastructure strategy (platform product owners and architects) |
+
+## Required Skills & Qualifications
+
+**Technical Skills:**
+
+- Solid working knowledge of the HPE server portfolio (ProLiant, Synergy) and lifecycle management tooling (HPE OneView, iLO, InfoSight)
+- Understanding of server lifecycle, capacity, and refresh planning at enterprise scale
+- Familiarity with data centre operations, provisioning workflows, and dependent platforms (virtualisation, Windows/Linux server OS)
+- Financial literacy for total-cost-of-ownership analysis, refresh business cases, and vendor cost models
+- Proficiency with backlog and roadmap tooling (Azure DevOps, Jira) and agile delivery practices
+
+**Soft Skills:**
+
+- Stakeholder management across platform teams, FinOps, procurement, and data centre facilities
+- Clear prioritisation and trade-off communication under competing demands
+- Vendor relationship management with HPE account and support teams
+- Data-driven decision making from capacity, utilisation, and cost metrics
+
+**Qualifications:**
+
+- Degree in Information Technology, Business, or equivalent professional experience
+- Professional Scrum Product Owner (PSPO I) or Certified Scrum Product Owner (CSPO)
+- ITIL 4 Foundation; HPE sales/technical fundamentals (e.g., HPE ATP) beneficial
+- 5+ years in infrastructure roles with 2+ years in product ownership or service ownership
+
 ## Key Technologies
 
 - HPE ProLiant servers (DL, ML series)

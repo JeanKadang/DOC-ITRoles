@@ -69,7 +69,7 @@ The Technical Community Leader is a senior individual contributor responsible fo
 - **Experience:** Typically 7+ years in software or platform engineering roles, with at least 2–3 years of demonstrated leadership, mentoring, or community-building activity; experience at Senior Engineer or Architect level in at least one domain
 - **Certifications:** No mandatory certifications required for this role; recommended certifications listed in the Certifications section below
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

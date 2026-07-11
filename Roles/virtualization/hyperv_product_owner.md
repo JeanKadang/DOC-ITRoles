@@ -74,7 +74,7 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 - **Working Knowledge required:** Hyper-V Replica and Azure Site Recovery for DR planning and SLA governance, Software-Defined Networking product capabilities in Windows Server, PowerShell automation and self-service provisioning pattern design
 - **Awareness level expected:** Azure Arc and Azure Stack HCI platform convergence roadmap, VMware and Nutanix competitive positioning for infrastructure strategy context
 
-## Key Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|
@@ -109,6 +109,18 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 - Backup and business continuity services
 - Licensing optimization for Windows environments
 - Virtualization automation and efficiency
+
+## Key Technologies
+
+- Microsoft Hyper-V and Failover Clustering
+- System Center Virtual Machine Manager (SCVMM)
+- Azure Stack HCI and hybrid Azure services
+- Windows Admin Center for platform management
+- Azure Site Recovery for DR and business continuity
+- PowerShell automation and self-service provisioning frameworks
+- Monitoring and capacity management platforms (System Center Operations Manager)
+- Windows Server and virtualization licensing management tooling
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
 
 ## Typical Day-to-Day Activities
 

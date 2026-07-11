@@ -80,7 +80,7 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 - **Experience:** 3–5 years in DevOps, software engineering, or QA automation engineering, with at least 2 years focused on framework or library development rather than point-in-time automation delivery.
 - **Certifications:** HashiCorp Certified: Terraform Associate, GitHub Actions certification, AWS Certified DevOps Engineer – Professional or Microsoft Certified: DevOps Engineer Expert (AZ-400), ISTQB Advanced Level – Test Automation Engineer (desirable).
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

@@ -71,7 +71,7 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 - Google Data Analytics Certificate or equivalent data analytics qualification advantageous
 - Demonstrated experience delivering financial or cost reporting outputs to senior business stakeholders
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

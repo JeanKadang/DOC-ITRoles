@@ -71,7 +71,7 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 - Experience leading technical projects and initiatives
 - Demonstrated expertise in cloud cost optimization
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

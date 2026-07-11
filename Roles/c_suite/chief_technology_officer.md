@@ -104,7 +104,7 @@ Degree in Computer Science, Software Engineering, Mathematics, or a related tech
 
 15+ years of progressive technology and engineering leadership experience, with at least 5 years in a senior technology executive role (VP of Engineering, CTO, or equivalent). Proven track record of owning enterprise technology strategy, leading large engineering organisations, and delivering technology-led business outcomes at scale.
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -117,7 +117,7 @@ Degree in Computer Science, Software Engineering, Mathematics, or a related tech
 | R&D investment return | Defined ROI or capability outcomes from R&D budget within agreed timeframes | Annual |
 | Time to production for major platform releases | Meets agreed release cadence targets | Per release |
 
-## Career Progression
+## Career Development Path
 
 **Previous Roles:**
 
@@ -147,6 +147,54 @@ Degree in Computer Science, Software Engineering, Mathematics, or a related tech
 | Technical Area Lead (TAL) | Close partnership on enterprise architecture, engineering standards, principal engineering community, and technology governance |
 | Strategic technology vendors / cloud providers | Executive relationship management for platform strategy, roadmap alignment, and strategic commercial agreements |
 | Board / Investors | Technical credibility, innovation narrative, and technology risk assurance for investor and Board engagement |
+
+## Key Technologies
+
+- Cloud platform strategy and governance consoles (Azure, AWS, GCP) at portfolio level
+- Enterprise architecture management platforms (LeanIX or equivalent)
+- Engineering delivery and DevOps toolchains (GitHub, Azure DevOps) at governance level
+- Data, analytics, and AI/ML platform strategy tooling
+- Technology portfolio, innovation, and R&D management platforms
+- Product analytics and engineering performance dashboards (DORA-style delivery metrics)
+- Enterprise risk and security dashboards (with the CISO organisation)
+- Business intelligence and executive reporting tools (Power BI, Tableau)
+
+## Typical Day-to-Day Activities
+
+- Setting and communicating technology strategy, architecture direction, and platform investment priorities
+- Chairing architecture, engineering, and innovation governance forums
+- Holding strategic 1:1s with senior technology leaders: Product Area Leads, architects, and engineering leadership
+- Reviewing engineering delivery health, platform reliability, and technology KPI trends
+- Evaluating emerging technologies — AI, cloud services, and platform capabilities — and setting adoption positions
+- Engaging product and business leadership to align technology capability with commercial strategy
+- Conducting executive engagements with strategic technology vendors and partners
+- Preparing Board and executive updates on technology strategy, innovation, and technology risk
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid; significant on-site presence required for executive leadership sessions, engineering leadership engagement, Board reporting, and strategic partner meetings
+- **Collaboration Tools:** Microsoft Teams, SharePoint, engineering and portfolio dashboards, and executive reporting platforms
+- **On-Site Requirements:** Regular presence at headquarters for executive and governance cycles; travel for vendor executive briefings, industry conferences, and engineering site engagement
+- **Time Zone Flexibility:** Standard business hours with availability for global partner engagements and cross-regional technology forums
+- **On-Call / Operational Demands:** Executive escalation authority for major platform or technology incidents with enterprise impact; participates in crisis-management protocols alongside the CIO and CISO
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Executive technology leadership programmes (MIT Sloan CTO Programme or equivalent)
+- TOGAF Foundation or Practitioner — enterprise architecture governance
+- Board-level technology governance programmes (IoD, NACD, or equivalent)
+
+**Complementary Certifications:**
+
+- Cloud architecture certifications (Azure Solutions Architect Expert, AWS Certified Solutions Architect) — for platform credibility, at awareness-to-proficient depth
+- AI strategy and governance programmes (e.g., MIT Sloan AI for Business Strategy)
+- CISM or CISSP — security governance credibility
+
+**Learning Resources and Communities:**
+
+- Gartner and Forrester technology strategy research, Thoughtworks Technology Radar, DORA/Accelerate research on engineering performance, CTO peer forums and communities, and major cloud provider executive briefing programmes
 
 ## Common Challenges
 

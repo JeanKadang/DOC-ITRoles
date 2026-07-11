@@ -79,7 +79,7 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 - **Experience:** 5–7 years of experience in identity and access management, IAM engineering, or information security; at least 3 years with direct hands-on IGA platform operations (SailPoint, Saviynt, Omada, or Microsoft Entra ID Governance) in an enterprise environment.
 - **Certifications:** Microsoft Certified: Identity and Access Administrator Associate (SC-300), SailPoint IdentityNow Certified Engineer, ISACA Certified Information Systems Auditor (CISA), ISC2 Certified Cloud Security Professional (CCSP), CyberArk Trustee.
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

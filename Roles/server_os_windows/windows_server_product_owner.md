@@ -91,6 +91,18 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 - Performance optimization and capacity planning
 - Windows Server version adoption and migration
 
+## Key Technologies
+
+- Windows Server platform (current and N-1 versions, Server Core)
+- Hybrid management (Azure Arc, Windows Admin Center)
+- Endpoint and server configuration management (Microsoft Configuration Manager, Group Policy)
+- Patching and update orchestration (WSUS, Azure Update Manager)
+- PowerShell automation and Desired State Configuration
+- Failover Clustering and high-availability technologies
+- Monitoring and capacity management platforms
+- Windows Server licensing and cost management tooling
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the Windows Server platform backlog

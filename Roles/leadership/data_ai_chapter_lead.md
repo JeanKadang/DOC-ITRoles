@@ -78,7 +78,7 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 - Track record of owning enterprise data strategy and governance at scale, including data quality programmes and platform consolidation
 - Experience leading AI governance or ML risk management programmes in a regulated or enterprise context
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

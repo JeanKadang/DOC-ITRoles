@@ -40,6 +40,19 @@ This role operates at the intersection of engineering rigour and business strate
 - Mentor Senior Engineers and provide architectural governance over engineering delivery.
 - Represent the Client Platform domain in architecture review boards and cross-functional governance forums.
 
+## Key Decisions & Accountabilities
+
+> Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
+
+| Owns | Advises On |
+|---|---|
+| Client OS reference architecture and engineering standards across Windows, macOS, and Linux desktop | UEM policy and MDM configuration detail (owned by Endpoint Management) |
+| OS image build, provisioning pipeline, and application packaging standards | Application portfolio decisions and business application selection |
+| OS hardening baseline definitions (CIS Benchmarks, DISA STIGs) for the client estate | Enterprise security policy and Zero Trust strategy (owned by Security Architecture) |
+| Client hardware lifecycle standards, device specifications, and OEM selection criteria | Procurement commercial negotiations and contract terms |
+| Client platform tooling selection and proof-of-concept outcomes (e.g., Jamf Pro, Fleet.dm) | Enterprise-wide tooling consolidation decisions (architecture review board) |
+| Domain boundary definitions between Client Platform, Endpoint Management, and Modern Workplace | Service desk support model and staffing (owned by Service Desk Lead) |
+
 ## Required Skills
 
 **Technical Skills:**
@@ -88,7 +101,7 @@ This role operates at the intersection of engineering rigour and business strate
 
 **Experience:** Minimum 8 years in endpoint or client platform engineering, with at least 3 years in an architecture or technical lead role. Demonstrated hands-on experience across Windows, macOS, and Linux desktop environments at enterprise scale (2,000+ devices).
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -101,7 +114,7 @@ This role operates at the intersection of engineering rigour and business strate
 | Architecture standards adoption rate (new builds) | 100% | Quarterly |
 | Application packaging lead time (standard apps) | ≤ 5 business days | Monthly |
 
-## Career Progression
+## Career Development Path
 
 **From (typical previous roles):**
 
@@ -131,7 +144,7 @@ This role operates at the intersection of engineering rigour and business strate
 | Client Platform Senior Engineers | Provide architectural direction, review engineering designs, mentor on platform decisions |
 | Infrastructure / Server OS Architects | Coordinate on shared automation tooling, scripting standards, and cross-platform configuration management patterns |
 
-## Tools and Technologies
+## Key Technologies
 
 **OS Engineering & Deployment:**
 
@@ -184,6 +197,44 @@ This role operates at the intersection of engineering rigour and business strate
 - Bash / Zsh (macOS and Linux)
 - Python 3.x (cross-platform automation)
 - Git (version control for build scripts and standards)
+
+## Typical Day-to-Day Activities
+
+- Reviewing and evolving OS reference architectures, build standards, and hardening baselines
+- Leading design sessions for provisioning, packaging, and patching pipeline changes across the three client platforms
+- Reviewing engineering designs and providing architectural direction to Senior Engineers
+- Meeting with Endpoint Management, Security, and Modern Workplace counterparts to align roadmaps and domain boundaries
+- Evaluating tooling and platform options through structured proof-of-concept work
+- Progressing hardware lifecycle governance: device specification reviews, driver pack strategy, and refresh planning with Procurement
+- Presenting client platform direction at architecture review boards and governance forums
+- Reviewing estate telemetry (compliance, patch currency, provisioning success) and directing corrective engineering work
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid or remote-first; architecture and governance work is largely location-independent, with periodic on-site presence for workshops and hardware evaluation
+- **Collaboration Tools:** Microsoft Teams, SharePoint, Git-based documentation repositories, and architecture diagramming tools
+- **On-Site Requirements:** Occasional presence for architecture workshops, physical hardware/driver validation, OEM engagements, and major migration cutovers
+- **Time Zone Flexibility:** Standard business hours with occasional flexibility for global stakeholder alignment and vendor briefings
+- **On-Call / Operational Demands:** Not part of a standing on-call rota; consulted as escalation authority during major client-estate incidents (e.g., a failed patch ring or provisioning outage)
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Microsoft Certified: Endpoint Administrator Associate (MD-102)
+- Jamf Certified Expert (JCE) or Jamf 400-level
+- TOGAF Foundation — architecture method grounding
+
+**Complementary Certifications:**
+
+- Microsoft Certified: Azure Administrator Associate (AZ-104)
+- CIS Controls Implementation Group Practitioner
+- ITIL 4 Foundation
+- Linux Foundation Certified System Administrator (LFCS) — Linux desktop credibility
+
+**Learning Resources and Communities:**
+
+- Microsoft Intune and Windows deployment documentation and release notes, Jamf Nation community, MacAdmins Slack and conference, Fleet.dm and osquery communities, Lenovo commercial deployment resources, and CIS Benchmark working groups
 
 ## Common Challenges
 

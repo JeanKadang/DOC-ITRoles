@@ -24,6 +24,13 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 - **Key Stakeholders:** CIO/CTO, CISO, IT Operations leadership, HR/People Operations, Procurement, Finance, Service Desk, Security Architecture, Endpoint Management Product Owner.
 - **Processes Supported:** New employee device provisioning, hardware refresh planning and budgeting, OS lifecycle management, application onboarding backlog, client estate compliance reporting, vendor and OEM relationship management.
 
+## Business Impact
+
+- **Business Objective:** Ensure the client platform service delivers maximum workforce value — a secure, reliable, and modern device experience — by prioritising the engineering backlog around business outcomes, stakeholder needs, and platform health.
+- **Value Metrics:** Stakeholder satisfaction with the client platform service, backlog lead time for prioritised platform features, provisioning and packaging service-level performance, adoption rate of new platform capabilities (e.g., zero-touch provisioning), platform compliance and patch currency trends.
+- **Key Stakeholders:** End User & Workplace Chapter Lead, Client Platform Architect and engineering team, Endpoint Management Product Owner, Service Desk Lead, HR (onboarding experience), Procurement, Security, and business unit representatives.
+- **Processes Supported:** Client platform backlog and roadmap management, demand intake and prioritisation, new capability rollout planning, stakeholder communication, and service performance review.
+
 ## Key Responsibilities
 
 - Own and maintain the Client Platform product backlog, ensuring stories are well-defined, estimated, and prioritised in alignment with business value and technical risk.
@@ -37,6 +44,18 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 - Coordinate with the Endpoint Management Product Owner to ensure aligned priorities where Client Platform engineering intersects with UEM platform capabilities.
 - Ensure hardware asset lifecycle data for the Lenovo and Apple fleet is accurately maintained in the ITAM system (ServiceNow ITAM or equivalent), aligned with Lenovo Premier Support warranty records and enabling accurate refresh cycle forecasting.
 - Remove blockers for the engineering team through stakeholder escalation, procurement facilitation, and dependency resolution.
+
+## Key Decisions & Accountabilities
+
+> Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
+
+| Owns | Advises On |
+|---|---|
+| Client platform backlog content, ordering, and sprint/iteration priorities | Engineering solution design and implementation approach (owned by Architect and engineers) |
+| Acceptance criteria and definition of done for platform features and improvements | OS hardening and security baseline requirements (Security/Architect-owned) |
+| Platform roadmap communication and stakeholder expectation management | Hardware lifecycle standards and OEM selection (Architect/Procurement-owned) |
+| Trade-off decisions between feature work, technical debt, and operational stability within the backlog | Budget envelope and headcount (Chapter Lead-owned) |
+| Rollout sequencing and communication plans for user-facing platform changes | UEM policy detail and endpoint security tooling (Endpoint Management/Security-owned) |
 
 ## Required Skills
 
@@ -82,7 +101,7 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 
 **Experience:** Minimum 4 years in IT product ownership, IT programme management, or a senior IT operations role with backlog and stakeholder management responsibilities. Experience in end-user computing, endpoint management, or workplace technology domains is strongly preferred.
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -94,7 +113,7 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 | Backlog refinement coverage (stories refined and estimated) | ≥ 80% of next sprint's stories refined 1 sprint ahead | Per sprint |
 | Stakeholder satisfaction with Client Platform delivery | ≥ 4.0 / 5.0 (survey-based) | Quarterly |
 
-## Career Progression
+## Career Development Path
 
 **From (typical previous roles):**
 
@@ -124,7 +143,7 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 | Finance | Manage hardware refresh budget planning, CapEx submissions, and lifecycle cost reporting |
 | Microsoft, Apple, OEM Vendors | Manage roadmap briefings, software assurance reviews, escalations, and commercial relationships |
 
-## Tools and Technologies
+## Key Technologies
 
 **Backlog & Delivery Management:**
 
@@ -160,6 +179,42 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 - Microsoft Partner Centre / TAM engagement
 - Apple Business Manager and Apple authorised reseller engagement
 - OEM SLA tracking and escalation management portals
+
+## Typical Day-to-Day Activities
+
+- Refining and reprioritising the client platform backlog with the Architect and engineering team
+- Running backlog refinement, sprint planning, and review ceremonies for the platform team
+- Gathering and clarifying demand from HR, Service Desk, Security, and business stakeholders
+- Writing user stories and acceptance criteria for provisioning, packaging, and platform improvements
+- Reviewing platform service metrics (provisioning success, packaging lead time, patch currency) and feeding findings into priorities
+- Communicating roadmap progress and upcoming changes to stakeholders and user representatives
+- Coordinating rollout plans for user-visible changes (OS upgrades, new provisioning experiences) with change management
+- Aligning with the Endpoint Management Product Owner on cross-domain sequencing and dependencies
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid or remote-first; product ownership work is largely location-independent
+- **Collaboration Tools:** Microsoft Teams, Azure DevOps or Jira for backlog management, SharePoint, and service dashboards
+- **On-Site Requirements:** Periodic presence for stakeholder workshops, planning events, and major rollout support
+- **Time Zone Flexibility:** Standard business hours with flexibility for cross-regional stakeholder sessions
+- **On-Call / Operational Demands:** Not on-call; engaged during major user-impacting platform incidents for communication and prioritisation decisions
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Professional Scrum Product Owner (PSPO I) or Certified Scrum Product Owner (CSPO)
+- ITIL 4 Foundation — service management context
+
+**Complementary Certifications:**
+
+- Microsoft Certified: Endpoint Administrator Associate (MD-102) — platform domain literacy
+- SAFe Product Owner/Product Manager (POPM) where scaled agile is in use
+- Change management foundations (e.g., Prosci) for user-facing rollouts
+
+**Learning Resources and Communities:**
+
+- Scrum.org and product-management learning paths, Microsoft Intune/Windows deployment release notes for roadmap awareness, MacAdmins and Jamf Nation community trends, and internal chapter and product community forums
 
 ## Common Challenges
 

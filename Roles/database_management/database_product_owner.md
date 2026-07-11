@@ -89,6 +89,18 @@ The Database Product Owner manages the portfolio of database platforms and data 
 - Database lifecycle management
 - Data migration and modernization planning
 
+## Key Technologies
+
+- Relational database platforms (Microsoft SQL Server, Oracle, PostgreSQL, MySQL)
+- Cloud database services (Azure SQL, Amazon RDS, managed PostgreSQL)
+- High availability and DR technologies (Always On, Data Guard, replication)
+- Database performance monitoring platforms
+- Database backup and recovery tooling
+- Database-as-a-service and self-service provisioning frameworks
+- Database security, auditing, and compliance tooling
+- License and cost management tooling for database estates
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the database platform backlog

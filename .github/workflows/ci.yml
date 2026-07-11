@@ -37,10 +37,7 @@ jobs:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
           node-version: '18'
-      # Non-blocking: 43 pre-existing role files fail validation (tracked in
-      # issue #7). Flip continue-on-error to false once that backfill lands.
       - run: npm run validate
-        continue-on-error: true
       - run: npm run check-counts
 
   markdownlint:

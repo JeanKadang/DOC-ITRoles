@@ -77,6 +77,17 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 | service desk with monitoring data | Troubleshooting |
 | Senior Observability Engineers and Architect | Day-to-day guidance and direction |
 
+## Key Technologies
+
+- Metrics platforms (Prometheus, Grafana, Azure Monitor)
+- Log management stacks (Elastic Stack, Grafana Loki, Splunk)
+- Distributed tracing and telemetry standards (OpenTelemetry, Jaeger)
+- Application performance monitoring platforms (Dynatrace, Datadog, Azure Application Insights)
+- Telemetry collection pipelines (OpenTelemetry Collector, Fluent Bit, Logstash)
+- Alert routing and incident integration (Alertmanager, PagerDuty/Opsgenie, ITSM webhooks)
+- Dashboards-as-code and monitoring configuration management (Grafana provisioning, Terraform)
+- Scripting for automation and integration (Python, PowerShell, Bash)
+
 ## Key Performance Indicators
 
 - Reliability and performance of observability platforms

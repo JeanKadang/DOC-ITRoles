@@ -38,6 +38,18 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 - Mentor Client Platform Engineers through peer reviews of packaging submissions, pairing on build tasks, and structured knowledge-sharing.
 - Maintain technical documentation including build procedures, packaging standards, runbooks, and known-issues logs.
 
+## Key Decisions & Accountabilities
+
+> Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
+
+| Owns | Advises On |
+|---|---|
+| Detailed engineering design of OS build, provisioning, and packaging pipelines within the reference architecture | Client platform reference architecture and standards (owned by the Architect) |
+| Complex application packaging solutions and cross-platform automation implementations | OS hardening baseline selection (advises the Architect with implementation feedback) |
+| Patch ring execution design and remediation engineering for the client estate | UEM policy configuration (owned by Endpoint Management) |
+| Technical quality of engineering deliverables and peer review outcomes | Hardware specification and OEM selection (Architect/Procurement-owned) |
+| Escalated engineering investigations and root-cause analysis for client platform issues | Service desk knowledge base structure and support processes |
+
 ## Required Skills
 
 **Technical Skills:**
@@ -83,7 +95,7 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 
 **Experience:** Minimum 5 years in client platform or endpoint engineering, with demonstrated multi-platform experience across Windows and at least one of macOS or Linux desktop. Experience packaging applications and building/maintaining OS images at enterprise scale (1,000+ devices).
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -95,7 +107,7 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 | Documentation coverage for active build pipelines and runbooks | 100% of active pipelines documented | Quarterly |
 | Peer review participation rate for packaging submissions | 100% reviewed before promotion | Monthly |
 
-## Career Progression
+## Career Development Path
 
 **From (typical previous roles):**
 
@@ -123,7 +135,7 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 | HR / People Operations | Support device provisioning workflows for new employee onboarding cohorts |
 | Procurement | Advise on hardware compatibility for new device models entering the standard |
 
-## Tools and Technologies
+## Key Technologies
 
 **OS Image Build:**
 
@@ -169,6 +181,44 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 - Apple Software Update / softwareupdate CLI (macOS firmware and security updates)
 - fwupd / Linux Vendor Firmware Service (LVFS) for Lenovo hardware on Ubuntu LTS
 - OEM INF/SYS driver packages (Intel, AMD — supplementary chipset and peripheral components)
+
+## Typical Day-to-Day Activities
+
+- Designing and building OS image, provisioning, and packaging pipeline improvements across Windows, macOS, and Linux
+- Implementing and testing hardening baseline changes and validating compliance impact before rollout
+- Handling escalated engineering issues from Engineers and the Service Desk, leading root-cause analysis
+- Reviewing peers’ engineering work: scripts, packages, pipeline changes, and documentation
+- Automating repetitive client-platform tasks with PowerShell, Bash, and Python
+- Monitoring patch ring health and provisioning telemetry, driving remediation where success rates degrade
+- Mentoring Engineers on platform internals, packaging techniques, and automation practices
+- Contributing implementation feedback to the Architect on standards and tooling decisions
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid or remote-first; engineering work is largely remote-compatible with occasional lab/hardware presence
+- **Collaboration Tools:** Microsoft Teams, Git repositories for build scripts and pipelines, Intune/Jamf/Fleet.dm consoles, and shared engineering documentation
+- **On-Site Requirements:** Occasional presence for physical device validation, driver/firmware testing on reference hardware, and major deployment events
+- **Time Zone Flexibility:** Standard business hours; occasional out-of-hours windows for patch ring cutovers and migration activities
+- **On-Call / Operational Demands:** Participates in escalation support for client-estate incidents affecting provisioning, patching, or OS stability
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Microsoft Certified: Endpoint Administrator Associate (MD-102)
+- Jamf Certified Tech / Jamf 300-level (JCT)
+- Linux Foundation Certified System Administrator (LFCS)
+
+**Complementary Certifications:**
+
+- Microsoft Certified: Azure Administrator Associate (AZ-104)
+- CIS Controls Implementation Group Practitioner
+- ITIL 4 Foundation
+- HashiCorp or Red Hat automation credentials (e.g., RHCE/Ansible) for cross-platform automation depth
+
+**Learning Resources and Communities:**
+
+- Microsoft Learn deployment and Intune content, Jamf Nation and MacAdmins community, PatchMyPC and packaging community resources, osquery/Fleet.dm documentation, and PowerShell and Python automation communities
 
 ## Common Challenges
 
