@@ -12,7 +12,9 @@ const path = require('path');
 const { parseMeta, KNOWN_LEVELS, normalizeLevel, REFERENCE_DOC_PATTERN, DOMAIN_LABELS } = require('./roleMeta');
 
 const ROOT       = __dirname;
-const ROLES_DIR  = path.join(ROOT, 'Roles');
+// ROLES_DIR env override exists for the test suite, which points the
+// validator at a fixture tree; normal runs always use Roles/.
+const ROLES_DIR  = process.env.ROLES_DIR ? path.resolve(process.env.ROLES_DIR) : path.join(ROOT, 'Roles');
 const STRICT     = process.argv.includes('--strict');
 
 // Required section headings. Each entry accepts one or more historical
@@ -33,11 +35,11 @@ const REQUIRED_SECTIONS = [
   { name: 'Recommended Certifications & Learning Paths', patterns: [/^##\s+Recommended Certifications (&|and) Learning Paths/im] },
 ];
 
-function listRoleFiles() {
+function listRoleFiles(rolesDir = ROLES_DIR) {
   const files = [];
-  for (const entry of fs.readdirSync(ROLES_DIR, { withFileTypes: true })) {
+  for (const entry of fs.readdirSync(rolesDir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
-    const domainPath = path.join(ROLES_DIR, entry.name);
+    const domainPath = path.join(rolesDir, entry.name);
     for (const f of fs.readdirSync(domainPath)) {
       if (f.endsWith('.md') && f !== 'README.md') {
         files.push(path.join(domainPath, f));
@@ -47,8 +49,8 @@ function listRoleFiles() {
   return files.sort();
 }
 
-function validateFile(filePath) {
-  const rel     = path.relative(ROOT, filePath).replace(/\\/g, '/');
+function validateFile(filePath, rolesDir = ROLES_DIR) {
+  const rel     = path.relative(path.dirname(rolesDir), filePath).replace(/\\/g, '/');
   const content = fs.readFileSync(filePath, 'utf8');
   const meta    = parseMeta(content);
   const errors  = [];
@@ -96,7 +98,7 @@ function validateFile(filePath) {
 
 function main() {
   const files   = listRoleFiles();
-  const results = files.map(validateFile);
+  const results = files.map(f => validateFile(f));
 
   const withErrors   = results.filter(r => r.errors.length > 0);
   const withWarnings = results.filter(r => r.warnings.length > 0);
@@ -123,4 +125,10 @@ function main() {
   }
 }
 
-main();
+// Only run the CLI when executed directly (`node validate-roles.js`).
+// The test suite requires this module and calls the exported functions.
+if (require.main === module) {
+  main();
+}
+
+module.exports = { listRoleFiles, validateFile, REQUIRED_SECTIONS };
