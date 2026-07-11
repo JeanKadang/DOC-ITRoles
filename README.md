@@ -228,17 +228,18 @@ Compares README.md's count-bearing sentences ("N domains grouped into N chapters
 `.github/workflows/ci.yml` runs on every push/PR to `main`:
 
 - **Tests** (`npm test`) — blocking, on a Node 18/22 matrix.
-- **Role content validation** (`npm run validate`) — currently non-blocking (`continue-on-error`) while 43 pre-existing role files are backfilled to the canonical template; see the repo's Issues tab.
+- **Role content validation** (`npm run validate`) — blocking; every role file must match the canonical template.
 - **Markdown lint** (`markdownlint-cli2`, config in `.markdownlint.json`) — blocking.
 - **Count check** (`npm run check-counts`) — blocking.
 
 ### Security
 
-- No external CDN dependencies — `marked` is vendored locally under `vendor/` and served by `server.js`.
+- No external CDN dependencies — all third-party browser libraries (`marked`, `DOMPurify`, chart libraries) are vendored locally under `vendor/` and served by `server.js`.
+- All rendered markdown is sanitized with DOMPurify before insertion into the DOM, and dynamic strings (role titles, levels, labels, search input) are HTML-escaped — a malicious or copy-pasted `.md` file cannot execute script in the viewer.
 - Every response sets `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, and a `Content-Security-Policy` restricting script/style/connect origins to same-origin.
 - `/api/role`, `/api/doc`, and `/vendor/*` all validate requested paths against traversal (`..`) and enforce their respective root directories.
 
 ## Design notes
 
 - **Single-file `index.html`.** The entire UI (~1,700 lines of HTML/CSS/JS) lives in one file by design, so the whole app can be shared as two files (`index.html` + `server.js`) with no build step or bundler. This is a deliberate portability tradeoff, not unaddressed technical debt — split it up only if maintenance becomes painful.
-- **Zero runtime dependencies.** `server.js` uses only Node.js built-ins; the one third-party library (`marked`) is vendored under `vendor/` rather than pulled from a CDN, so the app works fully offline.
+- **Zero runtime dependencies.** `server.js` uses only Node.js built-ins; the third-party browser libraries (`marked`, `DOMPurify`, chart libraries) are vendored under `vendor/` rather than pulled from a CDN, so the app works fully offline.
