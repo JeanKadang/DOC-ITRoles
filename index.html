@@ -889,6 +889,13 @@
             font-weight: 600;
         }
 
+        /* Keyboard focus for div/span elements promoted to role="button" —
+           real <button>s already get the browser's default focus ring. */
+        [role="button"]:focus-visible {
+            outline: 2px solid var(--accent-blue);
+            outline-offset: 2px;
+        }
+
         @media print {
             .matrix-view { display: none !important; }
         }
@@ -919,7 +926,7 @@
         <div class="sidebar-search">
             <div class="search-wrap">
                 <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" id="searchInput"
+                <input type="text" class="search-input" id="searchInput" aria-label="Search roles"
                        placeholder="Search roles…" oninput="filterRoles(this.value)">
             </div>
         </div>
@@ -1209,7 +1216,8 @@
 
                 chDomainsHtml += `
                 <div class="domain-group ${domainOpen}" id="dg-${domainKey}">
-                    <div class="domain-hd" onclick="toggleDomain('${domainKey}')">
+                    <div class="domain-hd" onclick="toggleDomain('${domainKey}')"
+                         role="button" tabindex="0" aria-expanded="${domainOpen ? 'true' : 'false'}">
                         <div class="domain-hd-left">
                             <span class="domain-ico">${icon}</span>
                             <span class="domain-lbl">${domain.label}</span>
@@ -1220,6 +1228,7 @@
                     <div class="domain-roles">
                         ${roles.map(r => `
                         <div class="role-item ${activeFile === r.file ? 'active' : ''} ${compareFile === r.file ? 'compare-active' : ''}"
+                             role="button" tabindex="0"
                              data-file="${escapeAttr(r.file)}"
                              data-title="${escapeAttr(r.title)}"
                              data-level="${escapeAttr(r.level)}"
@@ -1244,7 +1253,8 @@
 
             html += `
             <div class="chapter-group ${chOpen}" id="ch-${chKey}">
-                <div class="chapter-hd" onclick="toggleChapter('${escapeAttr(chKey)}')">
+                <div class="chapter-hd" onclick="toggleChapter('${escapeAttr(chKey)}')"
+                     role="button" tabindex="0" aria-expanded="${chOpen ? 'true' : 'false'}">
                     <span class="chapter-ico">${chapter.icon}</span>
                     <span class="chapter-lbl">${chapter.label}</span>
                     <span class="chapter-cnt">${totalRoles}</span>
@@ -1262,7 +1272,7 @@
         if (compareMode) {
             html = `<div class="compare-banner">
                 <span>👆 Click a role to compare</span>
-                <span class="compare-banner-x" title="Cancel">✕</span>
+                <span class="compare-banner-x" title="Cancel" role="button" tabindex="0" aria-label="Cancel comparison">✕</span>
             </div>` + html;
         }
 
@@ -1272,6 +1282,7 @@
                 <div class="resources-hd">📚 Resources</div>
                 ${RESOURCES.map(r => `
                 <div class="resource-item ${activeDoc === r.file ? 'active' : ''}"
+                     role="button" tabindex="0"
                      data-doc="${escapeAttr(r.file)}"
                      data-doc-title="${escapeAttr(r.title)}">
                     <span class="resource-ico">${r.icon}</span>
@@ -1283,14 +1294,19 @@
     }
 
     function toggleDomain(key) {
-        document.getElementById(`dg-${key}`)?.classList.toggle('open');
+        const el = document.getElementById(`dg-${key}`);
+        if (!el) return;
+        el.classList.toggle('open');
+        el.querySelector('.domain-hd')?.setAttribute('aria-expanded', String(el.classList.contains('open')));
     }
 
     function toggleChapter(key) {
         const el = document.getElementById(`ch-${key}`);
         if (!el) return;
         el.classList.toggle('open');
-        if (el.classList.contains('open')) { openChapters.add(key); openChapter(key); }
+        const open = el.classList.contains('open');
+        el.querySelector('.chapter-hd')?.setAttribute('aria-expanded', String(open));
+        if (open) { openChapters.add(key); openChapter(key); }
         else { openChapters.delete(key); }
     }
 
@@ -1322,7 +1338,7 @@
             const leadRole = Object.values(allDomains).flatMap(d => d.roles)
                 .find(r => r.file === chapter.leadFile || r.file.replace(/\\/g,'/').endsWith(chapter.leadFile.replace('Roles/','')));
             if (leadRole) {
-                leadHtml = `<div class="ch-lead-link" onclick="openRole('${escapeAttr(leadRole.file)}','${escapeAttr(leadRole.title)}','${escapeAttr(leadRole.level)}','${escapeAttr(allDomains['leadership']?.label||'Leadership')}')">
+                leadHtml = `<div class="ch-lead-link" role="button" tabindex="0" onclick="openRole('${escapeAttr(leadRole.file)}','${escapeAttr(leadRole.title)}','${escapeAttr(leadRole.level)}','${escapeAttr(allDomains['leadership']?.label||'Leadership')}')">
                     👑 View Chapter Lead role: ${leadRole.title}
                 </div>`;
             }
@@ -1331,7 +1347,7 @@
         // Domain cards
         const domainCards = chDomains.map(d => {
             const dom = allDomains[d];
-            return `<div class="ch-domain-card" onclick="toggleDomain('${escapeAttr(d)}'); document.getElementById('dg-${escapeAttr(d)}')?.scrollIntoView({behavior:'smooth',block:'center'})">
+            return `<div class="ch-domain-card" role="button" tabindex="0" onclick="toggleDomain('${escapeAttr(d)}'); document.getElementById('dg-${escapeAttr(d)}')?.scrollIntoView({behavior:'smooth',block:'center'})">
                 <span class="d-ico">${ICONS[d] || '📄'}</span>
                 <div class="d-info">
                     <div class="d-lbl">${dom.label}</div>
@@ -1766,6 +1782,7 @@
                 }
                 const chips = matches.map(r => `
                     <span class="matrix-chip badge ${badgeClass(r.level)}"
+                          role="button" tabindex="0"
                           data-file="${escapeAttr(r.file)}"
                           data-title="${escapeAttr(r.title)}"
                           data-level="${escapeAttr(r.level)}"
@@ -1907,6 +1924,7 @@
             <tr>
                 <td class="matrix-domain-cell">${r.domainLabel}</td>
                 <td><span class="matrix-chip badge ${badgeClass(r.level)}"
+                        role="button" tabindex="0"
                         data-file="${escapeAttr(r.file)}" data-title="${escapeAttr(r.title)}"
                         data-level="${escapeAttr(r.level)}" data-domain="${escapeAttr(r.domainLabel)}">${r.title}</span></td>
                 <td>${r.lastReviewed || '<em>Not set</em>'}</td>
@@ -2011,6 +2029,19 @@
         const chip = e.target.closest('.matrix-chip');
         if (!chip) return;
         openRole(chip.dataset.file, chip.dataset.title, chip.dataset.level, chip.dataset.domain);
+    });
+
+    // ── Keyboard activation for role="button" elements ───
+    // Sidebar items, matrix/stale chips, domain/chapter headers, and chapter
+    // panel cards are divs/spans promoted with role="button"; Enter and Space
+    // must activate them like real buttons. One delegated handler covers all
+    // current and re-rendered elements.
+    document.body.addEventListener('keydown', e => {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        const el = e.target.closest('[role="button"]');
+        if (!el) return;
+        e.preventDefault(); // keep Space from scrolling the page
+        el.click();
     });
 
     // ── Boot ─────────────────────────────────────────────
