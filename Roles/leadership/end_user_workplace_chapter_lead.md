@@ -79,7 +79,7 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 - Track record of owning Microsoft 365 governance, device management strategy, or digital workplace transformation programmes at enterprise scale
 - Experience collaborating with security teams to govern endpoint security posture, conditional access, and zero trust device compliance
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

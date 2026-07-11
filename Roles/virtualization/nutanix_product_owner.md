@@ -81,6 +81,18 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 - Data protection strategies
 - Licensing optimization and cost management
 
+## Key Technologies
+
+- Nutanix AOS and AHV hypervisor
+- Nutanix Prism Element and Prism Central management
+- Nutanix data protection and DR (Leap, protection domains)
+- Nutanix Flow for microsegmentation and security policy
+- Capacity planning and runway analytics in Prism
+- REST API and automation frameworks for the Nutanix stack
+- Migration tooling (Nutanix Move)
+- Licensing and cost management for hyperconverged estates
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the Nutanix infrastructure backlog

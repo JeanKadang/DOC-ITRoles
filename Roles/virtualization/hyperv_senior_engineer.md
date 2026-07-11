@@ -77,7 +77,7 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 - **Working Knowledge required:** Windows Admin Center extensions and performance monitoring integration, Azure Arc and Azure Stack HCI hybrid connectivity for management, Microsoft Endpoint Configuration Manager integration for VM guest OS management
 - **Awareness level expected:** Azure Stack HCI next-generation capabilities and ARC-enabled services, Windows Server container integration and Kubernetes on Hyper-V emerging patterns
 
-## Key Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

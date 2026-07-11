@@ -70,7 +70,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 - Knowledge of cloud cost management tools and platforms
 - Background in financial analysis or IT financial management
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|
@@ -90,6 +90,18 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 - Self-service financial tools for engineering teams
 - Financial governance and policies
 - Stakeholder engagement and education
+
+## Key Technologies
+
+- Cloud-native cost management consoles (AWS Cost Explorer, Azure Cost Management, GCP Billing)
+- FinOps platforms (Apptio Cloudability, VMware Aria Cost / CloudHealth)
+- Chargeback, showback, and cost-allocation tooling
+- Tagging governance and policy enforcement tools
+- Budgeting and forecasting platforms
+- Commitment management tooling (Reserved Instances, Savings Plans, Committed Use Discounts)
+- BI and reporting platforms (Power BI, Tableau) for unit-economics dashboards
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Collaboration and stakeholder reporting tools
 
 ## Typical Day-to-Day Activities
 

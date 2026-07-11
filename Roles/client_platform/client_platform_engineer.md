@@ -37,6 +37,17 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 - Participate in sprint ceremonies, daily stand-ups, and retrospectives as part of the Client Platform team.
 - Escalate complex technical issues to the Senior Engineer with clear diagnostic information and reproduction steps.
 
+## Key Decisions & Accountabilities
+
+> Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
+
+| Owns | Advises On |
+|---|---|
+| Execution of OS build, provisioning, packaging, and patching tasks to the defined standards | Engineering pipeline design (owned by Senior Engineers and the Architect) |
+| Quality and documentation of individual packages, scripts, and build artefacts | Packaging and hardening standards (provides implementation feedback) |
+| First-line resolution of escalated client platform tickets within the engineering tier | Patch ring strategy and scheduling (Senior Engineer/Architect-owned) |
+| Accuracy of estate telemetry data hygiene for assigned platforms | Tooling selection and platform strategy |
+
 ## Required Skills
 
 **Technical Skills:**
@@ -83,7 +94,7 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 
 **Experience:** 1–3 years in desktop support, IT field services, or a junior endpoint/client platform engineering role. Demonstrable hands-on experience with Windows device management; exposure to macOS or Linux desktop is advantageous.
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -94,7 +105,7 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 | Patch compliance rate on assigned device cohorts | ≥ 97% | Monthly |
 | Runbook and documentation accuracy (verified by Senior Engineer) | No critical gaps identified in quarterly review | Quarterly |
 
-## Career Progression
+## Career Development Path
 
 **From (typical previous roles):**
 
@@ -120,7 +131,7 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 | HR / People Operations | Align device setup timing with new employee start dates and onboarding cohort schedules |
 | Procurement / Asset Management | Receive new hardware for imaging; return retired devices for secure wipe and disposal |
 
-## Tools and Technologies
+## Key Technologies
 
 **OS Image Maintenance:**
 
@@ -166,6 +177,43 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 - ServiceNow or Jira (ticket handling and sprint tracking)
 - Microsoft Teams, SharePoint (team communication)
 - Confluence or SharePoint (runbook and documentation maintenance)
+
+## Typical Day-to-Day Activities
+
+- Building, testing, and releasing application packages for Windows (MSIX/Win32), macOS (.pkg), and Linux (.deb/.rpm)
+- Executing OS image build and provisioning tasks, including driver pack updates and validation on reference hardware
+- Running patch deployment activities and verifying update compliance across assigned rings
+- Resolving escalated tickets from the Service Desk that require OS engineering investigation
+- Writing and maintaining automation scripts (PowerShell, Bash) for routine client-platform tasks
+- Updating engineering documentation, runbooks, and package records
+- Validating hardening baseline settings on test devices and reporting deviations
+- Participating in team stand-ups, peer reviews, and knowledge-sharing sessions
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid; a substantial share of packaging, scripting, and pipeline work is remote-compatible, with regular lab presence for device work
+- **Collaboration Tools:** Microsoft Teams, Git repositories, Intune/Jamf consoles, and ticketing/ITSM tooling
+- **On-Site Requirements:** Regular presence for physical device provisioning, hardware troubleshooting, and deployment support events
+- **Time Zone Flexibility:** Standard business hours; occasional out-of-hours participation in deployment windows
+- **On-Call / Operational Demands:** May participate in a follow-the-sun or rota-based escalation model for client estate incidents
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Microsoft Certified: Endpoint Administrator Associate (MD-102)
+- Jamf Certified Associate / Jamf 200-level (JCA)
+- CompTIA A+ or equivalent client platform foundation
+
+**Complementary Certifications:**
+
+- Linux Foundation Certified IT Associate (LFCA) or LFCS
+- ITIL 4 Foundation
+- PowerShell and scripting fundamentals courses (Microsoft Learn paths)
+
+**Learning Resources and Communities:**
+
+- Microsoft Learn (Windows deployment, Intune), Jamf training catalogue and Jamf Nation, MacAdmins community, packaging communities (PSAppDeployToolkit, Homebrew), and internal engineering runbooks and standards
 
 ## Common Challenges
 

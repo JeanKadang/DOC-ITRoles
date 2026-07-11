@@ -83,6 +83,18 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 - Backup reporting and compliance
 - Recovery testing program
 
+## Key Technologies
+
+- HPE SimpliVity hyperconverged platform and OmniStack data virtualization
+- SimpliVity native backup policies and RapidDR orchestration
+- VMware vCenter integration for backup and recovery workflows
+- Enterprise backup solution integration (e.g. HPE StoreOnce, Commvault)
+- Backup policy automation and scheduling frameworks
+- RPO/RTO monitoring, reporting, and compliance dashboards
+- Recovery testing and application recovery orchestration tooling
+- ITSM integration for backup/restore request workflows (ServiceNow)
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the SimpliVity backup platform backlog

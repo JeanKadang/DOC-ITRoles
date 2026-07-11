@@ -91,6 +91,18 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 - Cloud and on-premises Linux strategy
 - Open source governance and risk management
 
+## Key Technologies
+
+- Enterprise Linux distributions (RHEL, SUSE, Ubuntu LTS)
+- Lifecycle and patch management (Red Hat Satellite, SUSE Manager)
+- Configuration management and automation (Ansible, Infrastructure as Code)
+- Security hardening and compliance scanning (OpenSCAP, CIS benchmarks)
+- Container runtimes and virtualization support on Linux
+- Cloud Linux services and hybrid image pipelines
+- Monitoring and observability platforms for Linux estates
+- Open source governance and license compliance tooling
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the Linux platform service backlog

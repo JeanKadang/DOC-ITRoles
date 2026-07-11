@@ -104,7 +104,7 @@ Degree in Business, Economics, Law, Engineering, or a related field. An MBA or o
 
 20+ years of progressive leadership experience across multiple business functions, with at least 5–10 years in C-suite or Group-level roles. Proven track record of P&L ownership, Board-level accountability, and executive leadership across complex, multi-domain organisations.
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -117,7 +117,7 @@ Degree in Business, Economics, Law, Engineering, or a related field. An MBA or o
 | Total Shareholder Return (TSR) | Meets or exceeds sector peer group benchmark | Annual |
 | Major incident response (technology, security, operational) | Board-appropriate escalation and communication within agreed protocols | Per incident |
 
-## Career Progression
+## Career Development Path
 
 **Previous Roles:**
 
@@ -147,6 +147,54 @@ Degree in Business, Economics, Law, Engineering, or a related field. An MBA or o
 | Board of Directors | Primary governance accountability; strategy, performance, risk, executive appointments, and regulatory posture |
 | Investors / Shareholders | External accountability relationship; investor relations, capital markets, and shareholder communications |
 | Regulators | External engagement; regulatory posture, formal notifications, government relations, and sector compliance |
+
+## Key Technologies
+
+- Board governance and reporting platforms (Diligent, BoardVantage, or equivalent)
+- Enterprise ERP and financial management platforms (SAP, Oracle Financials) at governance level
+- Executive business intelligence dashboards (Power BI, Tableau) for enterprise performance visibility
+- Enterprise risk and GRC platforms (ServiceNow GRC, Archer) for risk appetite governance
+- OKR and executive performance management frameworks
+- Investor relations and shareholder communication platforms
+- Virtual data rooms and M&A due-diligence tooling
+- Collaboration and executive communication tools (Microsoft Teams, SharePoint)
+
+## Typical Day-to-Day Activities
+
+- Preparing for and chairing Board meetings, Board committee sessions, and executive leadership team meetings
+- Reviewing enterprise performance against the annual operating plan with the CFO and function heads
+- Holding strategic 1:1s with C-suite direct reports, including the technology reporting line (CTO/CIO/SVP)
+- Engaging investors, analysts, and shareholders through briefings, roadshows, and results communications
+- Reviewing enterprise risk posture, including technology and cyber risk briefings from the CISO reporting chain
+- Progressing M&A pipeline activity: target reviews, due-diligence checkpoints, and integration steering
+- Representing the organisation externally with regulators, government bodies, industry forums, and media
+- Driving executive talent, succession, and organisational design decisions with the CPO
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid; substantial on-site presence required for Board meetings, executive leadership sessions, investor engagements, and organisational leadership visibility
+- **Collaboration Tools:** Microsoft Teams, SharePoint, board governance platforms, and executive dashboards for performance, risk, and strategy reporting
+- **On-Site Requirements:** Regular presence at headquarters for Board and executive team cycles; frequent travel for investor relations, regulator engagement, M&A activity, and site leadership visits
+- **Time Zone Flexibility:** Extended availability across regions for global investor, Board, and partner engagements
+- **On-Call / Operational Demands:** Ultimate escalation point for enterprise crises — major technology or security incidents, regulatory events, and reputational issues — with availability governed by crisis-management protocols
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Certificate in Company Direction (IoD) or NACD Directorship Certification — Board governance and director accountability
+- Chartered Director (CDir) — senior governance and strategic leadership
+- Executive leadership programmes (Harvard Business School, INSEAD, London Business School)
+
+**Complementary Certifications:**
+
+- Board-level cyber risk governance programmes (e.g., NACD Cyber-Risk Oversight, Carnegie Mellon/SEI executive cyber programmes)
+- AI governance and strategy programmes for executives (e.g., MIT Sloan Artificial Intelligence for Business Strategy)
+- Corporate finance and M&A executive education for non-CFO executives
+
+**Learning Resources and Communities:**
+
+- World Economic Forum and Gartner executive research, CEO peer networks (YPO, Business Roundtable, Chief Executive Network), Board and governance publications (Harvard Business Review, Directors & Boards), and investor-relations and regulatory briefing services
 
 ## Common Challenges
 

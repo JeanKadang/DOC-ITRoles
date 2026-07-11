@@ -72,7 +72,7 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 - **Working Knowledge required:** Azure Arc integration and hybrid cloud connectivity for Hyper-V workloads, Shielded VMs and Virtualization-Based Security (VBS) for platform security design, Azure migration tooling for Hyper-V workload cloud integration
 - **Awareness level expected:** Azure Stack HCI next-generation capabilities and evolving licensing, Emerging containerisation and Kubernetes integration on Windows Server
 
-## Key Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

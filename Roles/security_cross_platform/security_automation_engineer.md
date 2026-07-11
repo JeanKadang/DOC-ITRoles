@@ -79,7 +79,7 @@ The Security Automation Engineer builds and maintains the automated security too
 - **Experience:** 3–5 years of experience in DevOps engineering, security engineering, or software engineering with a strong security focus; at least 2 years of hands-on experience building and operating automated security tooling within CI/CD pipelines.
 - **Certifications:** CompTIA Security+, Certified Ethical Hacker (CEH), Offensive Security Certified Professional (OSCP), AWS Certified Security – Specialty, Microsoft Certified: Security Operations Analyst Associate (SC-200).
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

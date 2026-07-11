@@ -106,7 +106,7 @@ Degree in Finance, Accounting, Economics, or a related field. A postgraduate qua
 
 15+ years of progressive finance leadership experience, with at least 5 years in a senior finance executive role (CFO, VP of Finance, Group Financial Controller, or equivalent). Proven track record of owning enterprise financial reporting, managing external audit and regulatory relationships, governing capital allocation at scale, and partnering with CEOs and Boards through complex financial cycles including growth phases, restructuring, or M&A activity.
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -119,7 +119,7 @@ Degree in Finance, Accounting, Economics, or a related field. A postgraduate qua
 | Budget cycle completion | Annual budget approved by Board within agreed governance timeline | Annual |
 | Regulatory financial compliance | Zero material compliance breaches; all regulatory returns filed on time | Annual |
 
-## Career Progression
+## Career Development Path
 
 **Previous Roles:**
 
@@ -150,6 +150,54 @@ Degree in Finance, Accounting, Economics, or a related field. A postgraduate qua
 | CISO | Financial risk dimensions of cyber and data incidents; regulatory financial penalties; cyber insurance governance |
 | Business unit and functional leaders | Budget ownership, financial performance management, investment business cases, and financial reporting obligations |
 | External auditors and regulators | Primary executive contact for statutory audit, regulatory financial submissions, and financial compliance assurance |
+
+## Key Technologies
+
+- Enterprise ERP and financial management platforms (SAP S/4HANA, Oracle Financials, Workday Financials)
+- Enterprise planning and forecasting platforms (Anaplan, Oracle EPM, Workday Adaptive Planning)
+- Financial consolidation, close, and reporting tooling
+- Treasury management systems and banking platforms
+- Business intelligence and executive dashboards (Power BI, Tableau) for financial performance visibility
+- GRC, audit management, and internal-controls platforms
+- Cloud cost governance and FinOps reporting consoles for technology investment oversight
+- Investor relations and results communication platforms
+
+## Typical Day-to-Day Activities
+
+- Reviewing financial performance, cash position, and forecast variance with FP&A and treasury teams
+- Chairing capital allocation and investment governance forums, including technology business-case reviews
+- Preparing Board, audit committee, and investor reporting: results, guidance, and financial risk posture
+- Working with the CEO on enterprise strategy, operating plan trade-offs, and M&A financial modelling
+- Engaging auditors, banks, rating agencies, and institutional investors
+- Reviewing enterprise cost programmes, including cloud and technology spend governance with the CTO/CIO
+- Overseeing financial controls, compliance, and tax posture with controllers and internal audit
+- Holding 1:1s with finance leadership and driving finance function transformation and automation
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid; significant on-site presence required for Board and audit committee cycles, results announcements, executive leadership sessions, and investor engagements
+- **Collaboration Tools:** Microsoft Teams, SharePoint, ERP and planning platforms, and executive dashboards for financial reporting and governance
+- **On-Site Requirements:** Regular presence at headquarters for Board, audit committee, and executive team meetings; travel for investor roadshows, banking relationships, and M&A activity
+- **Time Zone Flexibility:** Standard business hours with extended availability during close, results, audit, and M&A periods
+- **On-Call / Operational Demands:** Escalation point for material financial events, liquidity issues, and financially significant incidents, including cyber events with financial-disclosure implications
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Chartered or certified accountancy qualification (ACA, ACCA, CIMA, CPA) — professional finance foundation
+- CFA Charter — investment and capital-markets depth (common in capital-markets-facing CFO roles)
+- Board governance programmes (IoD Certificate in Company Direction, NACD Directorship Certification)
+
+**Complementary Certifications:**
+
+- FinOps Certified Practitioner — cloud financial governance literacy for technology investment oversight
+- Enterprise risk management programmes (COSO ERM, IRM qualifications)
+- Executive leadership programmes (Wharton, INSEAD, London Business School CFO programmes)
+
+**Learning Resources and Communities:**
+
+- Financial Executives International (FEI), Gartner CFO research, CFO peer networks and roundtables, Big Four technical accounting and regulatory update services, and investor-relations society resources
 
 ## Common Challenges
 

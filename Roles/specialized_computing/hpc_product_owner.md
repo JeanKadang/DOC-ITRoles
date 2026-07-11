@@ -96,6 +96,18 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 - Innovation and continuous improvement in HPC capabilities
 - User support models and knowledge transfer for research teams
 
+## Key Technologies
+
+- HPC cluster platforms and job schedulers (Slurm, PBS Pro)
+- Parallel file systems (Lustre, IBM Storage Scale/GPFS)
+- GPU and accelerator ecosystems (NVIDIA CUDA, multi-instance GPU)
+- MPI and parallel programming frameworks
+- HPC containerization (Apptainer/Singularity)
+- Cloud HPC services (Azure CycleCloud, AWS ParallelCluster)
+- Utilization, chargeback, and value reporting for HPC investments
+- Scientific application stacks and environment module systems
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the HPC platform backlog

@@ -70,7 +70,7 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 - AWS Certified Cloud Practitioner, AZ-900, or Google Cloud Digital Leader preferred
 - Demonstrated hands-on experience with at least one major cloud cost management or FinOps platform
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

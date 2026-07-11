@@ -78,7 +78,7 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 - Track record of owning technical strategy and architecture governance for large infrastructure estates
 - Experience in organisations operating both on-premises datacentres and major public cloud platforms (Azure, AWS, and/or GCP)
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

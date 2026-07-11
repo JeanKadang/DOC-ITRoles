@@ -91,6 +91,18 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 - Disaster recovery planning and testing
 - Backup reporting and analytics
 
+## Key Technologies
+
+- Commvault Complete Data Protection and Command Center
+- Commvault HyperScale X scale-out infrastructure
+- Cloud backup and DR targets (Azure Blob, Amazon S3)
+- Deduplication storage pools and backup storage tiering
+- Automated recovery testing and DR orchestration tooling
+- Backup compliance, retention, and reporting dashboards
+- License usage tracking and optimization tooling
+- ITSM integration for backup/restore request workflows (ServiceNow)
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the Commvault platform backlog

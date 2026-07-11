@@ -88,3 +88,64 @@ The VMware Architect designs and oversees the organization's virtualization infr
 - VMware Horizon VDI
 - VMware Site Recovery Manager
 - vSphere Replication and High Availability
+
+## Typical Day-to-Day Activities
+
+- Leading design sessions and reviews for vSphere, vSAN, and NSX platform changes
+- Developing and maintaining virtualization standards, reference architectures, and design records
+- Planning platform upgrades and migrations, including VMware Cloud Foundation adoption and Broadcom licensing impact assessment
+- Reviewing platform capacity, performance, and availability trends and directing optimisation work
+- Aligning with storage, network, security, and cloud architects on integrated infrastructure designs
+- Advising engineers on complex implementation questions and reviewing engineering designs
+- Evaluating VMware roadmap developments and alternatives, and briefing IT leadership on platform strategy
+- Participating in architecture review boards and DR/HA design and test planning
+
+## Key Performance Indicators
+
+- Virtualization platform availability against agreed service levels
+- VM consolidation ratio and infrastructure cost-efficiency trend
+- Adoption rate of approved design standards in new deployments
+- Disaster recovery test success rate for VMware-hosted workloads
+- Platform version currency (vSphere/vSAN/NSX at N or N-1)
+- NSX microsegmentation coverage of eligible workloads
+- Workload migration success rate for platform transformation programmes
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid or remote-first; architecture and design work is largely location-independent
+- **Collaboration Tools:** Microsoft Teams, SharePoint, architecture diagramming tools, and Git-based design documentation repositories
+- **On-Site Requirements:** Occasional presence for design workshops, data centre reviews, major migration cutovers, and vendor engagements
+- **Time Zone Flexibility:** Standard business hours with occasional flexibility for global stakeholder and vendor sessions
+- **On-Call / Operational Demands:** Not part of a standing on-call rota; engaged as design authority during major virtualization platform incidents
+
+## Career Development Path
+
+**From (typical previous roles):**
+
+- VMware Senior Engineer
+- Infrastructure or Virtualization Engineer with design responsibility
+- Storage or Network Architect broadening into SDDC scope
+
+**To (typical next roles):**
+
+- Cloud Lead Architect or Cloud Principal Architect
+- Enterprise Architect
+- Technical Area Lead or Chapter Lead (Cloud, Platform & Infrastructure)
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- VMware Certified Advanced Professional — Data Center Virtualization Design (VCAP-DCV Design)
+- VMware Certified Design Expert (VCDX) — aspirational, for senior design authority credibility
+- VMware Certified Professional — Data Center Virtualization (VCP-DCV) as the maintained baseline
+
+**Complementary Certifications:**
+
+- VCAP — Network Virtualization (NSX) for software-defined networking depth
+- Microsoft Certified: Azure Administrator Associate (AZ-104) and Azure VMware Solution learning paths for hybrid strategy
+- TOGAF Foundation for architecture method grounding
+
+**Learning Resources and Communities:**
+
+- Broadcom/VMware technical documentation and release notes, VMware Hands-on Labs, VMUG community and VMware Explore conference content, and virtualization design blogs and reference architectures

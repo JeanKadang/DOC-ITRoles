@@ -91,6 +91,18 @@ The Qumulo Storage Product Owner manages the development and lifecycle of the or
 - Compliance and data governance
 - Storage-as-a-service delivery model
 
+## Key Technologies
+
+- Qumulo Core distributed file system and Qumulo analytics
+- Qumulo REST API for automation and self-service integration
+- File protocols and access control (SMB, NFS, Active Directory integration)
+- Hybrid and cloud file services (Qumulo on Azure / AWS)
+- Capacity monitoring, trending, and reporting platforms
+- Enterprise backup integration for file data protection
+- Storage automation and orchestration frameworks
+- ITSM and self-service request portals (ServiceNow)
+- Product backlog and roadmap management tools (Azure DevOps, Jira)
+
 ## Typical Day-to-Day Activities
 
 - Managing the Qumulo storage platform backlog

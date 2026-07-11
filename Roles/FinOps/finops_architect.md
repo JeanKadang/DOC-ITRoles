@@ -71,7 +71,7 @@ The FinOps Architect designs and implements cloud financial management strategie
 - Experience with cloud cost management tools (e.g., CloudHealth, Cloudability, AWS Cost Explorer)
 - Prior experience in architecture or senior technical leadership roles
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

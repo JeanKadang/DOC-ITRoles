@@ -78,7 +78,7 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 - Track record of owning security architecture governance, zero trust programme delivery, or identity platform strategy at enterprise scale
 - Deep familiarity with security compliance and regulatory frameworks applicable to the organisation's industry context
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

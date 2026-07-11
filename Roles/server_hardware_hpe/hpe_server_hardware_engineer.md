@@ -138,3 +138,26 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 **Learning Resources and Communities:**
 
 - HPE education portal (education.hpe.com), HPE TechLibrary technical documentation (techlibrary.hpe.com), CompTIA Server+ study resources, HPE Smart Update Manager documentation, and HPE InfoSight for Servers learning content
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid with a significant on-site component; physical server installation, cabling, and break-fix work requires data centre presence, while firmware, configuration, and documentation work can be done remotely via HPE iLO and OneView
+- **Collaboration Tools:** Microsoft Teams, ITSM ticketing, HPE OneView and iLO remote management consoles, and shared runbook repositories
+- **On-Site Requirements:** Regular data centre presence for hardware installs, component replacement, maintenance windows, and smart-hands activities
+- **Time Zone Flexibility:** Standard business hours with scheduled out-of-hours maintenance windows
+- **On-Call / Operational Demands:** Participates in the hardware support on-call rota for critical server hardware incidents
+
+## Career Development Path
+
+**From (typical previous roles):**
+
+- Data Centre Technician or Smart Hands Engineer
+- IT Support / Field Service Engineer with server hardware exposure
+- Junior Systems Engineer
+
+**To (typical next roles):**
+
+- HPE Server Hardware Senior Engineer
+- Server Hardware Architect
+- Platform engineering roles in adjacent domains (Virtualization, Linux/Windows Server OS)
+- Data Centre Operations Lead

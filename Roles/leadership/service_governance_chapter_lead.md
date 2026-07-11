@@ -78,7 +78,7 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 - Track record of owning ITSM process maturity improvement, CMDB governance, or enterprise architecture governance at enterprise scale
 - Experience engaging with Risk, Audit, and Compliance stakeholders on IT compliance reporting and service accountability
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|

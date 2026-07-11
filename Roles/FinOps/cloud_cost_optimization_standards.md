@@ -1,5 +1,9 @@
 # Cloud Cost Optimization Standards
 
+| Field | Value |
+|---|---|
+| **Domain** | FinOps |
+
 ## Overview
 
 This document outlines the standards and best practices for cloud cost optimization across our organization. These standards provide a framework for consistent, efficient management of cloud resources to maximize value while controlling costs.

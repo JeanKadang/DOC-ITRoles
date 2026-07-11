@@ -105,7 +105,7 @@ Degree in Information Technology, Computer Science, Business Information Systems
 
 15+ years of progressive IT leadership experience, with at least 5 years in a senior IT executive role (CIO, VP of IT, Head of IT, or equivalent). Proven track record of owning enterprise IT operations, managing large IT vendor and system integrator relationships, and delivering IT service improvement and enterprise system transformation programmes in complex, multi-site organisations.
 
-## KPIs and Success Metrics
+## Key Performance Indicators
 
 | Metric | Target | Frequency |
 |---|---|---|
@@ -118,7 +118,7 @@ Degree in Information Technology, Computer Science, Business Information Systems
 | IT vendor performance | ≥90% of key vendors meeting contracted SLA targets | Quarterly |
 | Business continuity / DR test results | All critical systems recovered within agreed RTO/RPO in annual DR test | Annual |
 
-## Career Progression
+## Career Development Path
 
 **Previous Roles:**
 
@@ -148,6 +148,55 @@ Degree in Information Technology, Computer Science, Business Information Systems
 | CISO | IT security posture, IT compliance obligations, and security requirements for enterprise systems and IT infrastructure; CISO may report to CIO in some governance models |
 | Business operations leaders | IT as an enabler of operational performance; SLA management, service improvement prioritisation, and operational IT requirements |
 | Enterprise system vendors and system integrators | Executive vendor relationships for ERP, HRIS, ITSM, and collaboration platforms; performance management and contract governance |
+
+## Key Technologies
+
+- IT portfolio and strategic planning platforms (ServiceNow Strategic Portfolio Management, LeanIX, Planview)
+- ITSM and enterprise service management platforms (ServiceNow)
+- Enterprise ERP and corporate application estates at governance level
+- Cloud platform governance consoles (Azure Management Groups, AWS Organizations, GCP Resource Manager)
+- Enterprise risk, security, and compliance dashboards (with the CISO organisation)
+- Data, analytics, and AI platform strategy tooling at portfolio level
+- Digital workplace and collaboration platforms (Microsoft 365, Teams)
+- Business intelligence and executive dashboards (Power BI, Tableau) for IT performance reporting
+
+## Typical Day-to-Day Activities
+
+- Chairing IT leadership, portfolio, and governance forums across delivery, operations, and risk
+- Reviewing IT investment portfolio performance: delivery progress, budget adherence, and benefit realisation
+- Engaging business unit executives to align technology services and roadmaps with business priorities
+- Reviewing operational health: major incident posture, service levels, resilience, and continuity readiness
+- Holding strategic 1:1s with IT leadership team and the CISO on security and risk posture
+- Preparing Board and executive reporting on technology strategy, risk, and transformation progress
+- Conducting executive vendor and partner engagements, including strategic agreements and escalations
+- Sponsoring digital transformation, data, and AI adoption programmes across the enterprise
+
+## Remote Work Considerations
+
+- **Remote Eligibility:** Hybrid; significant on-site presence required for executive leadership sessions, Board reporting, business unit engagement, and major vendor negotiations
+- **Collaboration Tools:** Microsoft Teams, SharePoint, ServiceNow, and executive dashboards for portfolio, risk, and service reporting
+- **On-Site Requirements:** Regular presence at headquarters for executive and governance cycles; travel to major sites, vendor executive briefings, and industry forums
+- **Time Zone Flexibility:** Standard business hours with availability for global vendor engagements and cross-regional leadership forums
+- **On-Call / Operational Demands:** Executive escalation authority for major technology incidents with enterprise, regulatory, or Board implications; participates in crisis-management protocols
+
+## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- CGEIT (Certified in the Governance of Enterprise IT) — enterprise IT governance
+- ITIL 4 Strategic Leader — service management and operating-model leadership
+- Board-level technology governance programmes (IoD, NACD, or equivalent)
+
+**Complementary Certifications:**
+
+- CISM or CISSP — security and risk governance credibility
+- TOGAF Foundation — enterprise architecture literacy
+- FinOps Certified Practitioner — cloud financial governance
+- Executive programmes (MIT Sloan CIO Executive Programme, Gartner CIO academies)
+
+**Learning Resources and Communities:**
+
+- Gartner Executive Programmes (EXP), MIT CISR research, SIM (Society for Information Management), CIO Executive Council, and peer CIO networks and industry forums
 
 ## Common Challenges
 

@@ -78,6 +78,28 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 | CI/CD teams | Deployment pipeline integration |
 | Kubernetes Senior Engineers and Architect | Day-to-day guidance and direction |
 
+## Key Technologies
+
+- Kubernetes distributions and managed services (kubeadm-based clusters, AKS/EKS)
+- kubectl, Helm, and Kustomize for cluster and workload management
+- Container runtimes and image tooling (containerd, Docker, image registries such as Harbor/ACR)
+- Ingress controllers and cluster networking (NGINX Ingress, CNI plugins, network policies)
+- GitOps and deployment tooling (Argo CD, Flux)
+- Monitoring and logging stacks (Prometheus, Grafana, Loki/Fluent Bit)
+- Kubernetes security basics (RBAC, namespaces, secrets management, image scanning with Trivy)
+- Infrastructure as Code fundamentals (Terraform) for cluster-adjacent resources
+
+## Typical Day-to-Day Activities
+
+- Performing daily cluster health checks and responding to platform monitoring alerts
+- Executing cluster patching and upgrade tasks following the defined upgrade runbooks
+- Resolving standard Kubernetes incidents and tickets: failing pods, resource pressure, configuration issues
+- Provisioning namespaces, RBAC bindings, and quotas for application team onboarding
+- Reviewing and applying workload manifests and Helm chart changes through the GitOps pipeline
+- Maintaining platform documentation, runbooks, and onboarding guides
+- Participating in stand-ups, change advisory reviews for standard changes, and knowledge sharing with Senior Engineers
+- Escalating complex platform issues to the Kubernetes Senior Engineer with diagnostic context
+
 ## Key Performance Indicators
 
 - Kubernetes cluster uptime and reliability

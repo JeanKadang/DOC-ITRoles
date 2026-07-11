@@ -71,7 +71,7 @@ The FinOps Engineer implements and maintains cloud cost monitoring, reporting, a
 - Knowledge of FinOps principles and practices
 - Cloud platform certifications preferred
 
-## Interactions
+## Interactions with Other Roles
 
 | Role | Nature of Interaction |
 |---|---|
