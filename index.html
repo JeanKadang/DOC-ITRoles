@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Roles Library</title>
     <script src="/vendor/marked.min.js"></script>
+    <script src="/vendor/purify.min.js"></script>
     <style>
         :root {
             --bg-primary:      #f0f2f5;
@@ -1100,9 +1101,28 @@
         virtualization:                          '📦',
     };
 
-    // ── HTML attribute escaping ──────────────────────────
-    function escapeAttr(str) {
-        return String(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+    // ── HTML escaping ─────────────────────────────────────
+    // Full escape for both text nodes and attribute values. Every dynamic
+    // string interpolated into a template literal that becomes innerHTML
+    // must pass through this (role titles, levels, domain labels, search
+    // input, review dates) — markdown bodies go through renderMarkdown()
+    // instead.
+    function escapeHtml(str) {
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    // ── Markdown rendering ────────────────────────────────
+    // marked does not sanitize its output; any HTML in a .md file passes
+    // straight through. All rendered markdown is sanitized with DOMPurify
+    // before it reaches innerHTML, so a malicious or copy-pasted role file
+    // cannot execute script in the viewer.
+    function renderMarkdown(md) {
+        return DOMPurify.sanitize(marked.parse(md));
     }
 
     // ── Badge class for role level ───────────────────────
@@ -1220,7 +1240,7 @@
                          role="button" tabindex="0" aria-expanded="${domainOpen ? 'true' : 'false'}">
                         <div class="domain-hd-left">
                             <span class="domain-ico">${icon}</span>
-                            <span class="domain-lbl">${domain.label}</span>
+                            <span class="domain-lbl">${escapeHtml(domain.label)}</span>
                             <span class="domain-cnt">${roles.length}</span>
                         </div>
                         <span class="domain-chev">▼</span>
@@ -1229,12 +1249,12 @@
                         ${roles.map(r => `
                         <div class="role-item ${activeFile === r.file ? 'active' : ''} ${compareFile === r.file ? 'compare-active' : ''}"
                              role="button" tabindex="0"
-                             data-file="${escapeAttr(r.file)}"
-                             data-title="${escapeAttr(r.title)}"
-                             data-level="${escapeAttr(r.level)}"
-                             data-domain="${escapeAttr(domain.label)}">
-                            <span class="role-item-name">${r.title}</span>
-                            <span class="badge ${badgeClass(r.level)}">${r.level}</span>
+                             data-file="${escapeHtml(r.file)}"
+                             data-title="${escapeHtml(r.title)}"
+                             data-level="${escapeHtml(r.level)}"
+                             data-domain="${escapeHtml(domain.label)}">
+                            <span class="role-item-name">${escapeHtml(r.title)}</span>
+                            <span class="badge ${badgeClass(r.level)}">${escapeHtml(r.level)}</span>
                         </div>`).join('')}
                     </div>
                 </div>`;
@@ -1253,7 +1273,7 @@
 
             html += `
             <div class="chapter-group ${chOpen}" id="ch-${chKey}">
-                <div class="chapter-hd" onclick="toggleChapter('${escapeAttr(chKey)}')"
+                <div class="chapter-hd" onclick="toggleChapter('${escapeHtml(chKey)}')"
                      role="button" tabindex="0" aria-expanded="${chOpen ? 'true' : 'false'}">
                     <span class="chapter-ico">${chapter.icon}</span>
                     <span class="chapter-lbl">${chapter.label}</span>
@@ -1265,7 +1285,7 @@
         }
 
         if (!any) {
-            html = `<div class="empty-msg">No roles match "<strong>${filter}</strong>"</div>`;
+            html = `<div class="empty-msg">No roles match "<strong>${escapeHtml(filter)}</strong>"</div>`;
         }
 
         // Prepend compare-mode banner when active
@@ -1283,8 +1303,8 @@
                 ${RESOURCES.map(r => `
                 <div class="resource-item ${activeDoc === r.file ? 'active' : ''}"
                      role="button" tabindex="0"
-                     data-doc="${escapeAttr(r.file)}"
-                     data-doc-title="${escapeAttr(r.title)}">
+                     data-doc="${escapeHtml(r.file)}"
+                     data-doc-title="${escapeHtml(r.title)}">
                     <span class="resource-ico">${r.icon}</span>
                     <span>${r.title}</span>
                 </div>`).join('')}
@@ -1338,8 +1358,8 @@
             const leadRole = Object.values(allDomains).flatMap(d => d.roles)
                 .find(r => r.file === chapter.leadFile || r.file.replace(/\\/g,'/').endsWith(chapter.leadFile.replace('Roles/','')));
             if (leadRole) {
-                leadHtml = `<div class="ch-lead-link" role="button" tabindex="0" onclick="openRole('${escapeAttr(leadRole.file)}','${escapeAttr(leadRole.title)}','${escapeAttr(leadRole.level)}','${escapeAttr(allDomains['leadership']?.label||'Leadership')}')">
-                    👑 View Chapter Lead role: ${leadRole.title}
+                leadHtml = `<div class="ch-lead-link" role="button" tabindex="0" onclick="openRole('${escapeHtml(leadRole.file)}','${escapeHtml(leadRole.title)}','${escapeHtml(leadRole.level)}','${escapeHtml(allDomains['leadership']?.label||'Leadership')}')">
+                    👑 View Chapter Lead role: ${escapeHtml(leadRole.title)}
                 </div>`;
             }
         }
@@ -1347,7 +1367,7 @@
         // Domain cards
         const domainCards = chDomains.map(d => {
             const dom = allDomains[d];
-            return `<div class="ch-domain-card" role="button" tabindex="0" onclick="toggleDomain('${escapeAttr(d)}'); document.getElementById('dg-${escapeAttr(d)}')?.scrollIntoView({behavior:'smooth',block:'center'})">
+            return `<div class="ch-domain-card" role="button" tabindex="0" onclick="toggleDomain('${escapeHtml(d)}'); document.getElementById('dg-${escapeHtml(d)}')?.scrollIntoView({behavior:'smooth',block:'center'})">
                 <span class="d-ico">${ICONS[d] || '📄'}</span>
                 <div class="d-info">
                     <div class="d-lbl">${dom.label}</div>
@@ -1380,7 +1400,7 @@
             .then(md => {
                 const body = md.replace(/^#\s+.*\r?\n/, ''); // strip H1 (title already shown in header)
                 const el = document.getElementById('chapterDesc');
-                if (el) el.innerHTML = marked.parse(body);
+                if (el) el.innerHTML = renderMarkdown(body);
             })
             .catch(() => { /* keep the inline fallback description */ });
     }
@@ -1488,16 +1508,16 @@
                <button class="btn-action" onclick="exportRoleMarkdown()" aria-label="Download this role as Markdown">⬇️ Export</button>
                <button class="btn-action" id="compareBtn" onclick="startCompare()" aria-label="Compare with another role">⚖️ Compare</button>`;
         const compareLabel = isCompare ? `<div class="compare-label">Comparing with</div>` : '';
-        const reviewedTag  = lastReviewed ? `<span class="meta-tag">🗓️ Reviewed ${lastReviewed}</span>` : '';
+        const reviewedTag  = lastReviewed ? `<span class="meta-tag">🗓️ Reviewed ${escapeHtml(lastReviewed)}</span>` : '';
         return `
             ${compareLabel}
             <div class="role-header-row">
-                <h1>${title}</h1>
+                <h1>${escapeHtml(title)}</h1>
                 <div class="role-actions">${actions}</div>
             </div>
             <div class="role-meta">
-                <span class="meta-tag">📂 ${domainLabel}</span>
-                <span class="meta-tag badge ${badgeClass(level)}">${level}</span>
+                <span class="meta-tag">📂 ${escapeHtml(domainLabel)}</span>
+                <span class="meta-tag badge ${badgeClass(level)}">${escapeHtml(level)}</span>
                 ${reviewedTag}
             </div>`;
     }
@@ -1543,7 +1563,7 @@
 
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
-            document.getElementById('roleBody').innerHTML = marked.parse(body);
+            document.getElementById('roleBody').innerHTML = renderMarkdown(body);
             document.getElementById('mainArea').scrollTop = 0;
 
             lastMarkdown      = markdown;
@@ -1581,7 +1601,7 @@
 
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
-            document.getElementById('roleBody2').innerHTML = marked.parse(body);
+            document.getElementById('roleBody2').innerHTML = renderMarkdown(body);
 
         } catch {
             document.getElementById('roleBody2').innerHTML =
@@ -1623,7 +1643,7 @@
 
         document.getElementById('docHeader').innerHTML = `
             <div class="role-header-row">
-                <h1>📖 ${title}</h1>
+                <h1>📖 ${escapeHtml(title)}</h1>
                 <div class="role-actions">
                     <button class="btn-action" onclick="printRole()">🖨️ Print</button>
                 </div>
@@ -1638,7 +1658,7 @@
         try {
             const res      = await fetch(`/api/doc?file=${encodeURIComponent(file)}`);
             const markdown = await res.text();
-            document.getElementById('docBody').innerHTML = marked.parse(markdown);
+            document.getElementById('docBody').innerHTML = renderMarkdown(markdown);
             document.getElementById('mainArea').scrollTop = 0;
         } catch {
             document.getElementById('docBody').innerHTML =
@@ -1783,18 +1803,18 @@
                 const chips = matches.map(r => `
                     <span class="matrix-chip badge ${badgeClass(r.level)}"
                           role="button" tabindex="0"
-                          data-file="${escapeAttr(r.file)}"
-                          data-title="${escapeAttr(r.title)}"
-                          data-level="${escapeAttr(r.level)}"
-                          data-domain="${escapeAttr(domain.label)}"
-                          title="${escapeAttr(r.title)}">
-                        ${r.title}
+                          data-file="${escapeHtml(r.file)}"
+                          data-title="${escapeHtml(r.title)}"
+                          data-level="${escapeHtml(r.level)}"
+                          data-domain="${escapeHtml(domain.label)}"
+                          title="${escapeHtml(r.title)}">
+                        ${escapeHtml(r.title)}
                     </span>`).join('');
                 return `<td class="matrix-cell">${chips}</td>`;
             }).join('');
 
             return `<tr>
-                <td class="matrix-domain-cell"><span>${icon}</span>${domain.label}</td>
+                <td class="matrix-domain-cell"><span>${icon}</span>${escapeHtml(domain.label)}</td>
                 ${cells}
             </tr>`;
         }).join('');
@@ -1922,12 +1942,12 @@
         const stale = computeStaleRoles(domains);
         const rows = stale.map(r => `
             <tr>
-                <td class="matrix-domain-cell">${r.domainLabel}</td>
+                <td class="matrix-domain-cell">${escapeHtml(r.domainLabel)}</td>
                 <td><span class="matrix-chip badge ${badgeClass(r.level)}"
                         role="button" tabindex="0"
-                        data-file="${escapeAttr(r.file)}" data-title="${escapeAttr(r.title)}"
-                        data-level="${escapeAttr(r.level)}" data-domain="${escapeAttr(r.domainLabel)}">${r.title}</span></td>
-                <td>${r.lastReviewed || '<em>Not set</em>'}</td>
+                        data-file="${escapeHtml(r.file)}" data-title="${escapeHtml(r.title)}"
+                        data-level="${escapeHtml(r.level)}" data-domain="${escapeHtml(r.domainLabel)}">${escapeHtml(r.title)}</span></td>
+                <td>${r.lastReviewed ? escapeHtml(r.lastReviewed) : '<em>Not set</em>'}</td>
                 <td>${r.monthsSince === null ? '—' : r.monthsSince + ' mo'}</td>
             </tr>`).join('');
 

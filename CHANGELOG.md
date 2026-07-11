@@ -14,6 +14,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - `.github/dependabot.yml`: weekly grouped update PRs for GitHub Actions and
   npm dependencies, labeled and assigned automatically.
 
+### Security
+
+- **Rendered markdown is now sanitized (#25).** DOMPurify 3.2.7 is vendored
+  under `vendor/` (matching the existing no-CDN pattern) and every
+  `marked.parse()` call site routes through a shared `renderMarkdown()`
+  helper that sanitizes before `innerHTML`. The old two-character
+  `escapeAttr()` helper was replaced by a full `escapeHtml()` (`& < > " '`)
+  applied to all dynamic text interpolations — role titles, levels, domain
+  labels, review dates, and the reflected search string. A malicious or
+  copy-pasted role file can no longer execute script in the viewer.
+
+### Accessibility
+
+- **Sidebar and matrix navigation is now keyboard-accessible (#24).** All
+  clickable divs/spans (role items, resource docs, domain/chapter headers,
+  chapter-panel cards, matrix and stale-panel chips, compare-cancel) are
+  promoted to `role="button"` with `tabindex="0"`, activated by a delegated
+  Enter/Space handler; domain and chapter toggles expose `aria-expanded`;
+  the search input has an `aria-label`; promoted elements get a visible
+  `:focus-visible` outline.
+
 ### Changed
 
 - CI workflow now declares a least-privilege `permissions: contents: read`
