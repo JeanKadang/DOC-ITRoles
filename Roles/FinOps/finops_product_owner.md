@@ -100,7 +100,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 - Budgeting and forecasting platforms
 - Commitment management tooling (Reserved Instances, Savings Plans, Committed Use Discounts)
 - BI and reporting platforms (Power BI, Tableau) for unit-economics dashboards
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Cloud provider pricing, TCO, and what-if modelling tools
 - Collaboration and stakeholder reporting tools
 
 ## Typical Day-to-Day Activities

@@ -101,7 +101,7 @@ The Qumulo Storage Product Owner manages the development and lifecycle of the or
 - Enterprise backup integration for file data protection
 - Storage automation and orchestration frameworks
 - ITSM and self-service request portals (ServiceNow)
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Data replication and migration tooling for file estates (Qumulo continuous replication)
 
 ## Typical Day-to-Day Activities
 

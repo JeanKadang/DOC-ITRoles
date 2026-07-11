@@ -109,7 +109,7 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 - PowerCLI and API-driven automation frameworks
 - Virtualization security, compliance, and hardening tooling
 - VMware licensing and cost optimization tooling
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- VMware Skyline proactive support and estate health analytics
 
 ## Typical Day-to-Day Activities
 

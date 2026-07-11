@@ -99,7 +99,7 @@ The Database Product Owner manages the portfolio of database platforms and data 
 - Database-as-a-service and self-service provisioning frameworks
 - Database security, auditing, and compliance tooling
 - License and cost management tooling for database estates
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Schema migration and database release tooling (Flyway, Liquibase)
 
 ## Typical Day-to-Day Activities
 

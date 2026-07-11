@@ -101,7 +101,7 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 - Failover Clustering and high-availability technologies
 - Monitoring and capacity management platforms
 - Windows Server licensing and cost management tooling
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- Backup and DR integration for Windows Server estates (Azure Site Recovery, enterprise backup)
 
 ## Typical Day-to-Day Activities
 

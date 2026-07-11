@@ -106,7 +106,7 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 - Cloud HPC services (Azure CycleCloud, AWS ParallelCluster)
 - Utilization, chargeback, and value reporting for HPC investments
 - Scientific application stacks and environment module systems
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- HPC user portals and self-service gateways (Open OnDemand)
 
 ## Typical Day-to-Day Activities
 

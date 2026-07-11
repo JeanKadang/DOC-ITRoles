@@ -82,14 +82,23 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - HPE ATP - Server Solutions V5
 - HPE Product Certified - Server Solutions
-- HPE Product Certified - OneView
 - CompTIA Server+
-- ITIL Foundation
+
+**Complementary Certifications:**
+
+- HPE Product Certified - OneView
+- ITIL 4 Foundation
 - Microsoft Certified: Windows Server
 - VMware Certified Technical Associate (VCTA)
 - Data Center certification basics
+
+**Learning Resources and Communities:**
+
+- HPE education portal (education.hpe.com), HPE TechLibrary technical documentation (techlibrary.hpe.com), CompTIA Server+ study resources, HPE Smart Update Manager documentation, and HPE InfoSight for Servers learning content
 
 ## Interactions with Other Roles
 
@@ -130,14 +139,6 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 - Standard build implementation quality
 - User satisfaction with hardware support
 - Knowledge sharing and collaboration
-
-**Complementary Certifications:**
-
-- HPE Product Certified - OneView, CompTIA Server+, and ITIL 4 Foundation
-
-**Learning Resources and Communities:**
-
-- HPE education portal (education.hpe.com), HPE TechLibrary technical documentation (techlibrary.hpe.com), CompTIA Server+ study resources, HPE Smart Update Manager documentation, and HPE InfoSight for Servers learning content
 
 ## Remote Work Considerations
 

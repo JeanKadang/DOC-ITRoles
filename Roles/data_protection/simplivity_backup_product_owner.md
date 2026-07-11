@@ -93,7 +93,7 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 - RPO/RTO monitoring, reporting, and compliance dashboards
 - Recovery testing and application recovery orchestration tooling
 - ITSM integration for backup/restore request workflows (ServiceNow)
-- Product backlog and roadmap management tools (Azure DevOps, Jira)
+- HPE InfoSight predictive analytics for SimpliVity estates
 
 ## Typical Day-to-Day Activities
 
