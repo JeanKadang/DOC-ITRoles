@@ -11,7 +11,7 @@ const VENDOR_DIR = path.join(ROOT, 'vendor');
 // Cache getRoles() results, invalidated whenever any directory or file under
 // Roles/ has a newer mtime than what was last seen (covers edits, adds, and
 // removes -- a deletion changes its parent directory's mtime). Avoids a full
-// readdir+readFile+parse pass of all 217 role files on every /api/roles hit.
+// readdir+readFile+parse pass of every role file on every /api/roles hit.
 let rolesCache = { signature: -1, domains: null };
 
 function rolesTreeSignature() {

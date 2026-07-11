@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- `SECURITY.md`: security policy with private reporting instructions, scope,
+  and response expectations.
+- `.github/dependabot.yml`: weekly grouped update PRs for GitHub Actions and
+  npm dependencies, labeled and assigned automatically.
+
+### Changed
+
+- CI workflow now declares a least-privilege `permissions: contents: read`
+  block.
+- Repository setting `delete_branch_on_merge` enabled — merged PR branches
+  are deleted automatically.
+
+### Fixed
+
+- Stale "217 role files" comment in `server.js` (catalog is 216 since the
+  v1.3.0 duplicate-role removal); comment is now count-free so it cannot
+  drift again (#40).
+
 ## [1.3.0] - 2026-07-06
 
 ### Added
