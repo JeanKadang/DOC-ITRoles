@@ -6,6 +6,7 @@
     <title>IT Roles Library</title>
     <script src="/vendor/marked.min.js"></script>
     <script src="/vendor/purify.min.js"></script>
+    <script src="/vendor/chart.umd.min.js"></script>
     <script src="/viewer-logic.js"></script>
     <style>
         :root {
@@ -431,6 +432,58 @@
         [data-theme="dark"] .stat-card .val.accent-arch { color: #c09ee0; }
         [data-theme="dark"] .stat-card .val.accent-lead { color: #90d0ff; }
         [data-theme="dark"] .stat-card .val.accent-eng  { color: #6bcf7f; }
+
+        /* ── Distribution charts (welcome screen) ─────────── */
+        .charts-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 28px;
+            justify-content: center;
+            text-align: left;
+        }
+        .chart-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 18px 20px 12px;
+            box-shadow: var(--shadow-sm);
+            margin: 0;
+            flex: 1 1 380px;
+            max-width: 560px;
+            min-width: 320px;
+        }
+        .chart-title {
+            font-size: 0.9em;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .chart-canvas-wrap { position: relative; width: 100%; }
+        .chart-canvas-chapters { height: 240px; }
+        .chart-canvas-levels   { height: 420px; }
+        .chart-table summary {
+            cursor: pointer;
+            font-size: 0.78em;
+            color: var(--text-muted);
+            margin-top: 8px;
+            padding: 4px 0;
+        }
+        .chart-table summary:hover { color: var(--accent-blue); }
+        .chart-table table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.82em;
+            margin-top: 6px;
+        }
+        .chart-table th, .chart-table td {
+            text-align: left;
+            padding: 4px 8px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+        .chart-table td:last-child { text-align: right; color: var(--text-primary); font-weight: 600; }
+        @media print { .charts-row { display: none; } }
 
         @keyframes fadeInUp {
             from { opacity:0; transform: translateY(16px); }
@@ -946,6 +999,30 @@
             <h2>Select a role to view</h2>
             <p>Choose a domain and role from the sidebar to read the full role definition.</p>
             <div class="stats-cards" id="statsCards"></div>
+
+            <!-- Distribution charts (rendered once role data is loaded) -->
+            <div class="charts-row" id="chartsRow" hidden>
+                <figure class="chart-card">
+                    <figcaption class="chart-title">Roles per chapter</figcaption>
+                    <div class="chart-canvas-wrap chart-canvas-chapters">
+                        <canvas id="chapterChart"></canvas>
+                    </div>
+                    <details class="chart-table">
+                        <summary>View as table</summary>
+                        <div id="chapterChartTable"></div>
+                    </details>
+                </figure>
+                <figure class="chart-card">
+                    <figcaption class="chart-title">Roles per level</figcaption>
+                    <div class="chart-canvas-wrap chart-canvas-levels">
+                        <canvas id="levelChart"></canvas>
+                    </div>
+                    <details class="chart-table">
+                        <summary>View as table</summary>
+                        <div id="levelChartTable"></div>
+                    </details>
+                </figure>
+            </div>
         </div>
 
         <!-- Role(s) grid — single column normally, two columns when comparing -->
@@ -988,6 +1065,7 @@
     const {
         STALE_MONTHS, LEVEL_ORDER, LEVEL_SHORT,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
+        rolesPerChapter, rolesPerLevel,
     } = ViewerLogic;
 
     // ── State ───────────────────────────────────────────
@@ -1123,6 +1201,7 @@
             allDomains = await res.json();
             renderSidebar(allDomains);
             renderWelcomeStats(allDomains);
+            renderDistributionCharts(allDomains);
             updateStaleButton(allDomains);
         } catch {
             document.getElementById('sidebarNav').innerHTML =
@@ -1175,6 +1254,88 @@
                 <div class="lbl">${lbl}</div>
             </div>
         `).join('');
+    }
+
+    // ── Distribution charts (welcome screen) ─────────────
+    // Two horizontal bar charts fed by viewer-logic's rolesPerChapter /
+    // rolesPerLevel. Single sequential hue (--accent-blue, validated for
+    // contrast + CVD on both surfaces); identity comes from the axis
+    // labels, never from color. Each chart carries an aria-label summary
+    // and a real <details> table fallback (WCAG, #17).
+    const chartInstances = {};
+
+    function chartTheme() {
+        const css = getComputedStyle(document.documentElement);
+        return {
+            bar:   css.getPropertyValue('--accent-blue').trim() || '#0078D4',
+            grid:  css.getPropertyValue('--border-color').trim() || 'rgba(0,0,0,0.08)',
+            text:  css.getPropertyValue('--text-secondary').trim() || '#555770',
+        };
+    }
+
+    function renderBarChart(canvasId, tableId, rows, labelKey) {
+        const theme = chartTheme();
+        const labels = rows.map(r => r[labelKey]);
+        const counts = rows.map(r => r.count);
+
+        chartInstances[canvasId]?.destroy();
+        chartInstances[canvasId] = new Chart(document.getElementById(canvasId), {
+            type: 'bar',
+            data: {
+                labels,
+                datasets: [{
+                    data: counts,
+                    backgroundColor: theme.bar,
+                    borderRadius: { topRight: 4, bottomRight: 4 },
+                    borderSkipped: 'start',
+                    maxBarThickness: 14,
+                    categoryPercentage: 0.82,
+                }],
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }, // single series — the title names it
+                    tooltip: {
+                        displayColors: false,
+                        callbacks: { label: ctx => `${ctx.parsed.x} role${ctx.parsed.x !== 1 ? 's' : ''}` },
+                    },
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid:   { color: theme.grid },
+                        border: { display: false },
+                        ticks:  { color: theme.text, precision: 0 },
+                    },
+                    y: {
+                        grid:   { display: false },
+                        border: { display: false },
+                        ticks:  { color: theme.text, autoSkip: false },
+                    },
+                },
+            },
+        });
+
+        // Screen-reader summary on the canvas + a real table fallback.
+        const canvas = document.getElementById(canvasId);
+        canvas.setAttribute('role', 'img');
+        canvas.setAttribute('aria-label',
+            `Bar chart. ${rows.map(r => `${r[labelKey]}: ${r.count}`).join(', ')}.`);
+        document.getElementById(tableId).innerHTML = `
+            <table>
+                <thead><tr><th>${labelKey === 'label' ? 'Chapter' : 'Level'}</th><th>Roles</th></tr></thead>
+                <tbody>${rows.map(r => `<tr><td>${escapeHtml(r[labelKey])}</td><td>${r.count}</td></tr>`).join('')}</tbody>
+            </table>`;
+    }
+
+    function renderDistributionCharts(domains) {
+        if (typeof Chart === 'undefined') return; // chart lib failed to load — stat cards still work
+        document.getElementById('chartsRow').hidden = false;
+        renderBarChart('chapterChart', 'chapterChartTable', rolesPerChapter(domains, CHAPTERS), 'label');
+        renderBarChart('levelChart', 'levelChartTable', rolesPerLevel(domains), 'level');
     }
 
     // ── Render sidebar ───────────────────────────────────
@@ -1686,6 +1847,9 @@
         const btn = document.getElementById('themeBtn');
         btn.textContent = isDark ? '🌙 Dark' : '☀️ Light';
         btn.setAttribute('aria-pressed', String(!isDark));
+        // Charts read their colors from CSS variables at render time, so a
+        // theme flip means a re-render against the new surface.
+        if (Object.keys(allDomains).length) renderDistributionCharts(allDomains);
     }
 
     // ── Matrix view ───────────────────────────────────────
