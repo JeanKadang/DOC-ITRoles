@@ -11,6 +11,8 @@ const {
     badgeClass,
     monthsSinceReview,
     computeStaleRoles,
+    rolesPerLevel,
+    rolesPerChapter,
     resolveDocHref,
 } = require('../viewer-logic');
 
@@ -161,4 +163,76 @@ test('resolveDocHref resolves parent traversal from nested paths', () => {
 
 test('resolveDocHref with no base file resolves from the repo root', () => {
     assert.equal(resolveDocHref('README.md', ''), 'README.md');
+});
+
+// ── rolesPerLevel ────────────────────────────────────────
+
+function distributionFixture() {
+    return {
+        alpha: {
+            label: 'Alpha',
+            roles: [
+                { title: 'A1', file: 'Roles/alpha/a1.md', level: 'Engineer' },
+                { title: 'A2', file: 'Roles/alpha/a2.md', level: 'Architect' },
+                { title: 'A3', file: 'Roles/alpha/a3.md', level: 'Engineer' },
+            ],
+        },
+        beta: {
+            label: 'Beta',
+            roles: [
+                { title: 'B1', file: 'Roles/beta/b1.md', level: 'CEO' },
+                { title: 'B2', file: 'Roles/beta/b2.md', level: 'Engineer' },
+            ],
+        },
+    };
+}
+
+test('rolesPerLevel counts roles across domains in seniority order', () => {
+    const dist = rolesPerLevel(distributionFixture());
+    assert.deepEqual(dist, [
+        { level: 'CEO',       count: 1 },
+        { level: 'Architect', count: 1 },
+        { level: 'Engineer',  count: 3 },
+    ]);
+});
+
+test('rolesPerLevel appends unknown levels instead of dropping them', () => {
+    // #46 lesson: a level absent from the order list must never silently
+    // remove its roles from a visualization.
+    const domains = {
+        x: { label: 'X', roles: [
+            { title: 'X1', file: 'Roles/x/x1.md', level: 'Engineer' },
+            { title: 'X2', file: 'Roles/x/x2.md', level: 'Grand Wizard' },
+        ] },
+    };
+    const dist = rolesPerLevel(domains);
+    assert.deepEqual(dist, [
+        { level: 'Engineer',     count: 1 },
+        { level: 'Grand Wizard', count: 1 },
+    ]);
+});
+
+test('rolesPerLevel total matches the role count', () => {
+    const dist = rolesPerLevel(distributionFixture());
+    assert.equal(dist.reduce((n, d) => n + d.count, 0), 5);
+});
+
+// ── rolesPerChapter ──────────────────────────────────────
+
+test('rolesPerChapter sums domain counts per chapter in chapter order', () => {
+    const chapters = {
+        first:  { label: 'First Chapter',  domains: ['alpha'] },
+        second: { label: 'Second Chapter', domains: ['beta', 'missing_domain'] },
+    };
+    const dist = rolesPerChapter(distributionFixture(), chapters);
+    assert.deepEqual(dist, [
+        { key: 'first',  label: 'First Chapter',  count: 3 },
+        { key: 'second', label: 'Second Chapter', count: 2 },
+    ]);
+});
+
+test('rolesPerChapter counts a chapter with no present domains as 0', () => {
+    const chapters = { empty: { label: 'Empty', domains: ['nope'] } };
+    assert.deepEqual(rolesPerChapter(distributionFixture(), chapters),
+        [{ key: 'empty', label: 'Empty', count: 0 }]);
 });

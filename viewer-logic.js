@@ -118,6 +118,33 @@
         return stale.sort((a, b) => (b.monthsSince ?? 9999) - (a.monthsSince ?? 9999));
     }
 
+    // Role counts per canonical level, in seniority order (LEVEL_ORDER).
+    // Levels present in the data but missing from the order are appended at
+    // the end rather than dropped — a chart must never silently lose roles
+    // the way the matrix once lost the CFO (#46).
+    function rolesPerLevel(domains, levelOrder = LEVEL_ORDER) {
+        const counts = new Map();
+        for (const domain of Object.values(domains)) {
+            for (const role of domain.roles) {
+                counts.set(role.level, (counts.get(role.level) || 0) + 1);
+            }
+        }
+        const ordered = levelOrder.filter(l => counts.has(l));
+        const extras  = [...counts.keys()].filter(l => !levelOrder.includes(l)).sort();
+        return [...ordered, ...extras].map(level => ({ level, count: counts.get(level) }));
+    }
+
+    // Role counts per chapter, in the chapters object's own order.
+    // `chapters` is the CHAPTERS mapping from index.html: key → { label,
+    // domains: [domainKey, …] }. Domains absent from the data count as 0.
+    function rolesPerChapter(domains, chapters) {
+        return Object.entries(chapters).map(([key, chapter]) => ({
+            key,
+            label: chapter.label,
+            count: chapter.domains.reduce((n, d) => n + (domains[d]?.roles.length || 0), 0),
+        }));
+    }
+
     // Resolve a Markdown link href relative to the file it appears in.
     // Repo-absolute hrefs (Roles/…, docs/…) pass through unchanged.
     function resolveDocHref(href, baseFile = '') {
@@ -141,6 +168,8 @@
         badgeClass,
         monthsSinceReview,
         computeStaleRoles,
+        rolesPerLevel,
+        rolesPerChapter,
         resolveDocHref,
     };
 });

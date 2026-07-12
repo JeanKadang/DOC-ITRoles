@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **Distribution charts on the welcome screen (#14).** Two horizontal bar
+  charts — roles per chapter and roles per level (seniority order) — built
+  on the vendored Chart.js, first UI use of the charting libraries staged
+  in v1.2.0. Data shaping (`rolesPerChapter`, `rolesPerLevel`) lives in
+  `viewer-logic.js` with tests, including a guard that unknown levels are
+  appended rather than silently dropped (the #46 failure mode). Single
+  accent-blue hue validated for contrast and color-vision safety on both
+  themes; charts re-render on theme toggle, and each ships an
+  `aria-label` summary plus a "View as table" fallback (#17).
 - `SECURITY.md`: security policy with private reporting instructions, scope,
   and response expectations.
 - `.github/dependabot.yml`: weekly grouped update PRs for GitHub Actions and
