@@ -7,6 +7,7 @@
     <script src="/vendor/marked.min.js"></script>
     <script src="/vendor/purify.min.js"></script>
     <script src="/vendor/chart.umd.min.js"></script>
+    <script src="/vendor/echarts.min.js"></script>
     <script src="/viewer-logic.js"></script>
     <style>
         :root {
@@ -484,6 +485,24 @@
         }
         .chart-table td:last-child { text-align: right; color: var(--text-primary); font-weight: 600; }
         @media print { .charts-row { display: none; } }
+
+        /* ── Org chart view ─────────────────────────────────── */
+        .org-canvas {
+            width: 100%;
+            height: max(480px, calc(100vh - 320px));
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+        .org-list ul { list-style: none; padding-left: 20px; margin: 4px 0; }
+        .org-list > ul { padding-left: 0; }
+        .org-list li { padding: 2px 0; color: var(--text-secondary); font-size: 0.88em; }
+        .org-list .org-node-label { font-weight: 700; color: var(--text-primary); }
+        .org-list [data-file] {
+            cursor: pointer;
+            color: var(--accent-blue);
+        }
+        .org-list [data-file]:hover { text-decoration: underline; }
 
         @keyframes fadeInUp {
             from { opacity:0; transform: translateY(16px); }
@@ -969,6 +988,7 @@
         <button class="btn-ghost" id="backBtn" onclick="goBack()" aria-label="Go back to the previous view" style="display:none">← Back</button>
         <button class="btn-ghost" id="staleBtn" onclick="toggleStalePanel()" aria-pressed="false" aria-label="Show roles overdue for review" style="display:none"></button>
         <button class="btn-ghost" id="matrixBtn" onclick="toggleMatrix()" aria-pressed="false" aria-label="Toggle role matrix view">📊 Matrix</button>
+        <button class="btn-ghost" id="orgBtn" onclick="toggleOrg()" aria-pressed="false" aria-label="Toggle organisation chart view">🌳 Org</button>
         <button class="btn-ghost" id="themeBtn" onclick="toggleTheme()" aria-pressed="false" aria-label="Toggle dark mode">🌙 Dark</button>
     </div>
 </header>
@@ -1048,6 +1068,23 @@
         <!-- Stale-roles view (roles overdue for review) -->
         <div class="matrix-view" id="staleView"></div>
 
+        <!-- Organisation chart view -->
+        <div class="matrix-view" id="orgView">
+            <div class="matrix-header">
+                <div>
+                    <h2>🌳 Organisation Chart</h2>
+                    <p>Leadership line and Chapters → Domains → Roles. Click a node to expand or collapse it,
+                       click a role to open it; drag to pan, scroll to zoom.</p>
+                </div>
+            </div>
+            <div id="orgChartCanvas" class="org-canvas" role="img"
+                 aria-label="Organisation chart. A text version is available below under 'View as list'."></div>
+            <details class="chart-table">
+                <summary>View as list</summary>
+                <div id="orgListFallback" class="org-list"></div>
+            </details>
+        </div>
+
         <!-- Doc view (reference documents) -->
         <div class="doc-view" id="docView">
             <div class="role-card doc-card" id="docHeader"></div>
@@ -1065,7 +1102,7 @@
     const {
         STALE_MONTHS, LEVEL_ORDER, LEVEL_SHORT,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
-        rolesPerChapter, rolesPerLevel,
+        rolesPerChapter, rolesPerLevel, buildOrgTree,
     } = ViewerLogic;
 
     // ── State ───────────────────────────────────────────
@@ -1338,6 +1375,142 @@
         renderBarChart('levelChart', 'levelChartTable', rolesPerLevel(domains), 'level');
     }
 
+    // ── Org chart view (ECharts tree) ─────────────────────
+    let orgOpen  = false;
+    let orgChart = null; // ECharts instance, disposed on re-render
+
+    // Decorate the pure buildOrgTree() output with per-kind display hints
+    // and per-node labels for ECharts.
+    function orgDisplayNode(node) {
+        const kindColor = {
+            exec:    '#764ba2',
+            lead:    '#005a9e',
+            chapter: '#0078D4',
+            domain:  '#17a2b8',
+            group:   '#8e8ea0',
+            role:    '#0078D4',
+        };
+        const out = {
+            name: node.name,
+            kind: node.kind,
+            file: node.file || null,
+            value: node.count || undefined,
+            itemStyle: { color: kindColor[node.kind] || kindColor.role },
+            children: (node.children || []).map(orgDisplayNode),
+        };
+        if (node.kind === 'chapter' && node.count) out.name = `${node.name} (${node.count})`;
+        if (node.kind === 'domain'  && node.count) out.name = `${node.name} (${node.count})`;
+        return out;
+    }
+
+    function renderOrgChart() {
+        if (typeof echarts === 'undefined') return;
+        const theme = chartTheme();
+        const tree  = buildOrgTree(allDomains, CHAPTERS);
+
+        orgChart?.dispose();
+        orgChart = echarts.init(document.getElementById('orgChartCanvas'));
+        orgChart.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: p => {
+                    const d = p.data;
+                    if (d.kind === 'chapter') return `${escapeHtml(p.name)}<br>Chapter — click to open its lead role`;
+                    if (d.kind === 'domain')  return `${escapeHtml(p.name)}<br>Domain — click to expand`;
+                    if (d.file)               return `${escapeHtml(p.name)}<br>Click to open this role`;
+                    return escapeHtml(p.name);
+                },
+            },
+            series: [{
+                type: 'tree',
+                data: [orgDisplayNode(tree)],
+                orient: 'LR',
+                roam: true,
+                initialTreeDepth: 2,
+                expandAndCollapse: true,
+                symbol: 'circle',
+                symbolSize: 9,
+                lineStyle: { color: theme.grid, width: 1.5, curveness: 0.5 },
+                label: {
+                    color: theme.text,
+                    fontSize: 12,
+                    position: 'left',
+                    verticalAlign: 'middle',
+                    align: 'right',
+                    distance: 6,
+                },
+                leaves: { label: { position: 'right', align: 'left' } },
+                emphasis: { focus: 'descendant' },
+                animationDuration: 300,
+                animationDurationUpdate: 400,
+            }],
+        });
+
+        // Role and chapter-lead nodes open the role view; branch nodes
+        // expand/collapse natively.
+        orgChart.on('click', params => {
+            const d = params.data;
+            if (!d || !d.file) return;
+            if (d.kind === 'role' || d.kind === 'exec' || d.kind === 'lead' || d.kind === 'chapter') {
+                const m = findRoleMeta(d.file);
+                openRole(d.file, m.title, m.level, m.domainLabel);
+            }
+        });
+
+        // Accessible fallback: the same tree as a nested list.
+        document.getElementById('orgListFallback').innerHTML = orgListHtml(tree);
+    }
+
+    function orgListHtml(node) {
+        const label = node.file
+            ? `<span data-file="${escapeHtml(node.file)}" role="button" tabindex="0">${escapeHtml(node.name)}</span>`
+            : `<span class="org-node-label">${escapeHtml(node.name)}</span>`;
+        const meta = node.leadTitle && !node.file ? '' :
+            node.leadTitle ? ` — lead: ${escapeHtml(node.leadTitle)}` : '';
+        const kids = (node.children || []).map(c => orgListHtml(c)).join('');
+        return `<ul><li>${label}${meta}${kids ? kids : ''}</li></ul>`;
+    }
+
+    function toggleOrg() {
+        orgOpen = !orgOpen;
+        const ov  = document.getElementById('orgView');
+        const btn = document.getElementById('orgBtn');
+        btn.setAttribute('aria-pressed', String(orgOpen));
+
+        if (orgOpen) {
+            document.getElementById('welcomeState').style.display = 'none';
+            document.getElementById('chapterView').style.display  = 'none';
+            document.getElementById('rolesGrid').style.display    = 'none';
+            document.getElementById('docView').style.display      = 'none';
+            activeDoc = null;
+            ov.classList.add('show');
+            btn.style.background = 'rgba(255,255,255,0.3)';
+            btn.style.borderColor = 'rgba(255,255,255,0.6)';
+            renderOrgChart();
+
+            // Org, matrix, and stale views are mutually exclusive
+            if (matrixOpen) {
+                matrixOpen = false;
+                document.getElementById('matrixView').classList.remove('show');
+                const mb = document.getElementById('matrixBtn');
+                mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
+            }
+            if (staleOpen) {
+                staleOpen = false;
+                document.getElementById('staleView').classList.remove('show');
+                document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
+            }
+        } else {
+            ov.classList.remove('show');
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            if (!activeFile) document.getElementById('welcomeState').style.display = '';
+        }
+    }
+
+    // Keep the ECharts canvas sized to its container.
+    window.addEventListener('resize', () => orgChart?.resize());
+
     // ── Render sidebar ───────────────────────────────────
     function renderSidebar(domains, filter = '') {
         const q   = filter.toLowerCase();
@@ -1474,6 +1647,7 @@
         document.getElementById('rolesGrid').style.display    = 'none';
         document.getElementById('matrixView').classList.remove('show');
         document.getElementById('staleView').classList.remove('show');
+        document.getElementById('orgView').classList.remove('show');
         document.getElementById('docView').style.display      = 'none';
         document.getElementById('welcomeState').style.display = 'none';
 
@@ -1605,15 +1779,19 @@
         updateBackBtn();
     }
 
-    // Close the matrix and stale panels (used when opening a role/doc/chapter).
+    // Close the matrix, stale, and org panels (used when opening a role/doc/chapter).
     function closePanels() {
         matrixOpen = false;
         staleOpen  = false;
+        orgOpen    = false;
         document.getElementById('matrixView').classList.remove('show');
         document.getElementById('staleView').classList.remove('show');
+        document.getElementById('orgView').classList.remove('show');
         const mb = document.getElementById('matrixBtn');
         mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
         document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
+        const ob = document.getElementById('orgBtn');
+        ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
     }
 
     // ── Shared: build role header HTML ───────────────────
@@ -1753,6 +1931,12 @@
         staleOpen = false;
         document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
 
+        document.getElementById('orgView').classList.remove('show');
+        orgOpen = false;
+        document.getElementById('orgBtn').style.background  = '';
+        document.getElementById('orgBtn').style.borderColor = '';
+        document.getElementById('orgBtn').setAttribute('aria-pressed', 'false');
+
         renderSidebar(allDomains, document.getElementById('searchInput').value);
 
         const docView = document.getElementById('docView');
@@ -1850,6 +2034,7 @@
         // Charts read their colors from CSS variables at render time, so a
         // theme flip means a re-render against the new surface.
         if (Object.keys(allDomains).length) renderDistributionCharts(allDomains);
+        if (orgOpen) renderOrgChart();
     }
 
     // ── Matrix view ───────────────────────────────────────
@@ -1946,8 +2131,14 @@
             renderMatrix(allDomains);
             renderSidebar(allDomains, document.getElementById('searchInput').value);
 
-            // Matrix and stale panel are mutually exclusive
+            // Matrix, stale, and org panels are mutually exclusive
             if (staleOpen) { staleOpen = false; document.getElementById('staleView').classList.remove('show'); document.getElementById('staleBtn').setAttribute('aria-pressed', 'false'); }
+            if (orgOpen) {
+                orgOpen = false;
+                document.getElementById('orgView').classList.remove('show');
+                const ob = document.getElementById('orgBtn');
+                ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
+            }
         } else {
             // Restore normal content
             document.getElementById('rolesGrid').style.display = '';
@@ -1986,13 +2177,19 @@
             sv.classList.add('show');
             renderStalePanel(allDomains);
 
-            // Matrix and stale panel are mutually exclusive
+            // Matrix, stale, and org panels are mutually exclusive
             if (matrixOpen) {
                 matrixOpen = false;
                 document.getElementById('matrixView').classList.remove('show');
                 document.getElementById('matrixBtn').setAttribute('aria-pressed', 'false');
                 document.getElementById('matrixBtn').style.background  = '';
                 document.getElementById('matrixBtn').style.borderColor = '';
+            }
+            if (orgOpen) {
+                orgOpen = false;
+                document.getElementById('orgView').classList.remove('show');
+                const ob = document.getElementById('orgBtn');
+                ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
             }
         } else {
             sv.classList.remove('show');
@@ -2111,6 +2308,14 @@
         const chip = e.target.closest('.matrix-chip');
         if (!chip) return;
         openRole(chip.dataset.file, chip.dataset.title, chip.dataset.level, chip.dataset.domain);
+    });
+
+    // ── Org list-fallback clicks (single delegated listener) ─
+    document.getElementById('orgListFallback').addEventListener('click', e => {
+        const item = e.target.closest('[data-file]');
+        if (!item) return;
+        const m = findRoleMeta(item.dataset.file);
+        openRole(item.dataset.file, m.title, m.level, m.domainLabel);
     });
 
     // ── Keyboard activation for role="button" elements ───

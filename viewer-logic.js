@@ -145,6 +145,92 @@
         }));
     }
 
+    // Build the org-chart tree: leadership line (CEO → C-suite/SVP →
+    // PAL/TAL → chapters) on top of the Chapters → Domains → Roles
+    // hierarchy. Pure data in, nested { name, kind, file?, count?,
+    // children? } out — the renderer decides how to draw it.
+    //
+    // Invariant: every role in `domains` appears exactly once — either as a
+    // node on the leadership line, a chapter-lead attachment, or a leaf
+    // under its domain. Roles must never be silently dropped (#46 lesson).
+    function buildOrgTree(domains, chapters) {
+        const allRoles = Object.entries(domains).flatMap(([key, d]) =>
+            d.roles.map(r => ({ ...r, domainKey: key, domainLabel: d.label })));
+        const used = new Set();
+        const take = pred => {
+            const hit = allRoles.find(r => !used.has(r.file) && pred(r));
+            if (hit) used.add(hit.file);
+            return hit || null;
+        };
+        const roleNode = (r, kind = 'role') =>
+            ({ name: r.title, kind, file: r.file, roleLevel: r.level });
+
+        // Leadership line
+        const ceo  = take(r => r.level === 'CEO');
+        const svp  = take(r => r.level === 'SVP');
+        const suite = ['CTO', 'CIO', 'CFO', 'CISO']
+            .map(lvl => take(r => r.level === lvl)).filter(Boolean);
+        const areaLeads = [];
+        for (;;) {
+            const lead = take(r => r.level === 'Product Area Lead' || r.level === 'Technical Area Lead');
+            if (!lead) break;
+            areaLeads.push(lead);
+        }
+
+        // Chapter nodes (the Leadership chapter IS the line above — skip any
+        // chapter whose domains are all consumed by leadership placement).
+        const chapterNodes = Object.entries(chapters)
+            .filter(([, ch]) => ch.domains.some(d => domains[d] && !['c_suite', 'leadership'].includes(d)))
+            .map(([key, ch]) => {
+                const lead = ch.leadFile
+                    ? take(r => r.file === ch.leadFile || r.file.replace(/\\/g, '/') === ch.leadFile)
+                    : null;
+                const domainNodes = ch.domains
+                    .filter(d => domains[d] && !['c_suite', 'leadership'].includes(d))
+                    .map(d => ({
+                        name: domains[d].label,
+                        kind: 'domain',
+                        count: domains[d].roles.length,
+                        children: domains[d].roles.map(r => {
+                            used.add(r.file);
+                            return roleNode(r);
+                        }),
+                    }));
+                return {
+                    name: ch.label,
+                    kind: 'chapter',
+                    file: lead ? lead.file : null,
+                    leadTitle: lead ? lead.title : null,
+                    count: domainNodes.reduce((n, d) => n + d.count, 0),
+                    children: domainNodes,
+                };
+            });
+
+        // Anything not yet placed (e.g. cross-cutting leadership roles)
+        const leftovers = allRoles.filter(r => !used.has(r.file));
+        const crossCutting = leftovers.length
+            ? [{
+                name: 'Cross-cutting Leadership',
+                kind: 'group',
+                count: leftovers.length,
+                children: leftovers.map(r => roleNode(r)),
+            }]
+            : [];
+
+        const svpNode = svp
+            ? { ...roleNode(svp, 'exec'), children: [...areaLeads.map(r => roleNode(r, 'lead')), ...crossCutting, ...chapterNodes] }
+            : null;
+
+        const rootChildren = [
+            ...suite.map(r => roleNode(r, 'exec')),
+            ...(svpNode ? [svpNode] : [...areaLeads.map(r => roleNode(r, 'lead')), ...crossCutting, ...chapterNodes]),
+        ];
+
+        return ceo
+            ? { ...roleNode(ceo, 'exec'), children: rootChildren }
+            : { name: 'IT Organisation', kind: 'group', children: rootChildren };
+    }
+
     // Resolve a Markdown link href relative to the file it appears in.
     // Repo-absolute hrefs (Roles/…, docs/…) pass through unchanged.
     function resolveDocHref(href, baseFile = '') {
@@ -170,6 +256,7 @@
         computeStaleRoles,
         rolesPerLevel,
         rolesPerChapter,
+        buildOrgTree,
         resolveDocHref,
     };
 });

@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **Organisation chart view (#11).** New "🌳 Org" header toggle renders the
+  live hierarchy as an ECharts tree (first UI use of the vendored ECharts):
+  leadership line (CEO → C-suite/SVP → area leads → chapters) flowing into
+  Chapters → Domains → Roles, with expand/collapse, pan/zoom, and
+  click-to-open on any role, chapter-lead, or executive node. The tree is
+  built by a pure `buildOrgTree()` in `viewer-logic.js` whose tests pin the
+  invariant that **every role appears exactly once** — unplaced leadership
+  roles group under "Cross-cutting Leadership" instead of vanishing. Ships
+  a keyboard-operable "View as list" fallback (#17), re-renders on theme
+  toggle, and is mutually exclusive with the Matrix and Stale views.
 - **Distribution charts on the welcome screen (#14).** Two horizontal bar
   charts — roles per chapter and roles per level (seniority order) — built
   on the vendored Chart.js, first UI use of the charting libraries staged
