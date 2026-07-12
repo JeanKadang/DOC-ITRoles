@@ -6,6 +6,7 @@
     <title>IT Roles Library</title>
     <script src="/vendor/marked.min.js"></script>
     <script src="/vendor/purify.min.js"></script>
+    <script src="/viewer-logic.js"></script>
     <style>
         :root {
             --bg-primary:      #f0f2f5;
@@ -983,6 +984,12 @@
 </div>
 
 <script>
+    // ── Shared pure view logic (viewer-logic.js, also under node:test) ──
+    const {
+        STALE_MONTHS, LEVEL_ORDER, LEVEL_SHORT,
+        escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
+    } = ViewerLogic;
+
     // ── State ───────────────────────────────────────────
     let allDomains  = {};
     let activeFile  = null;
@@ -995,7 +1002,6 @@
     let activeDocTitle    = null;  // title of the currently open reference doc
     let restoringView     = false; // true while goBack() is restoring a view (suppresses history push)
     const backStack       = [];    // navigation history for the Back button
-    const STALE_MONTHS = 12;   // roles not reviewed within this many months are flagged stale
     const openChapters = new Set(); // chapters explicitly expanded by user
 
     // ── Reference documents ──────────────────────────────
@@ -1101,21 +1107,6 @@
         virtualization:                          '📦',
     };
 
-    // ── HTML escaping ─────────────────────────────────────
-    // Full escape for both text nodes and attribute values. Every dynamic
-    // string interpolated into a template literal that becomes innerHTML
-    // must pass through this (role titles, levels, domain labels, search
-    // input, review dates) — markdown bodies go through renderMarkdown()
-    // instead.
-    function escapeHtml(str) {
-        return String(str)
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#39;');
-    }
-
     // ── Markdown rendering ────────────────────────────────
     // marked does not sanitize its output; any HTML in a .md file passes
     // straight through. All rendered markdown is sanitized with DOMPurify
@@ -1123,26 +1114,6 @@
     // cannot execute script in the viewer.
     function renderMarkdown(md) {
         return DOMPurify.sanitize(marked.parse(md));
-    }
-
-    // ── Badge class for role level ───────────────────────
-    function badgeClass(level) {
-        if (level === 'CEO')                 return 'b-ceo';
-        if (level === 'CTO')                 return 'b-cto';
-        if (level === 'CIO')                 return 'b-cio';
-        if (level === 'CFO')                 return 'b-cfo';
-        if (level === 'SVP')                 return 'b-svp';
-        if (level === 'CISO')                return 'b-ciso';
-        if (level === 'Product Area Lead')   return 'b-pal';
-        if (level === 'Technical Area Lead') return 'b-tal';
-        if (level === 'Chapter Lead')        return 'b-cl';
-        if (level === 'Principal Architect') return 'b-prin';
-        if (level === 'Lead Architect')      return 'b-lead';
-        if (level === 'Architect')           return 'b-arch';
-        if (level === 'Senior Engineer')     return 'b-sen';
-        if (level === 'Product Owner')       return 'b-po';
-        if (level.includes('Reliability'))   return 'b-sre';
-        return 'b-eng';
     }
 
     // ── Load roles from API ──────────────────────────────
@@ -1484,21 +1455,6 @@
         document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
     }
 
-    // Resolve a Markdown link href relative to the currently open doc/role.
-    function resolveDocHref(href) {
-        href = href.replace(/^\.\//, '');
-        if (href.startsWith('Roles/') || href.startsWith('docs/')) return href;
-        const baseFile = activeDoc || activeFile || '';
-        const baseDir  = baseFile.includes('/') ? baseFile.slice(0, baseFile.lastIndexOf('/')) : '';
-        const stack    = baseDir ? baseDir.split('/') : [];
-        for (const seg of href.split('/')) {
-            if (seg === '' || seg === '.') continue;
-            if (seg === '..') stack.pop();
-            else stack.push(seg);
-        }
-        return stack.join('/');
-    }
-
     // ── Shared: build role header HTML ───────────────────
     function buildHeader(title, level, domainLabel, lastReviewed, slot) {
         const isCompare = slot === 'B';
@@ -1733,47 +1689,9 @@
     }
 
     // ── Matrix view ───────────────────────────────────────
+    // (LEVEL_ORDER / LEVEL_SHORT come from viewer-logic.js)
     let matrixOpen = false;
     let staleOpen  = false;
-
-    const LEVEL_ORDER = [
-        'CEO',
-        'CTO',
-        'CIO',
-        'CFO',
-        'SVP',
-        'CISO',
-        'Product Area Lead',
-        'Technical Area Lead',
-        'Chapter Lead',
-        'Principal Architect',
-        'Lead Architect',
-        'Architect',
-        'Senior Engineer',
-        'Engineer',
-        'Reliability Engineer',
-        'Product Owner',
-    ];
-
-    // Short column header labels
-    const LEVEL_SHORT = {
-        'CEO':                 'CEO',
-        'CTO':                 'CTO',
-        'CIO':                 'CIO',
-        'CFO':                 'CFO',
-        'SVP':                 'SVP',
-        'CISO':                'CISO',
-        'Product Area Lead':   'PAL',
-        'Technical Area Lead': 'TAL',
-        'Chapter Lead':        'Ch Lead',
-        'Principal Architect': 'Principal',
-        'Lead Architect':      'Lead Arch',
-        'Architect':           'Architect',
-        'Senior Engineer':     'Sr Engineer',
-        'Engineer':            'Engineer',
-        'Reliability Engineer':'SRE',
-        'Product Owner':       'Prod Owner',
-    };
 
     function renderMatrix(domains) {
         // Collect which levels actually exist in the data
@@ -1877,30 +1795,8 @@
         }
     }
 
-    // ── Stale-role tracking: flag roles with no review date or one
-    //    older than STALE_MONTHS ───────────────────────────
-    function monthsSinceReview(lastReviewed, now = new Date()) {
-        if (!lastReviewed) return null;
-        const m = lastReviewed.match(/^(\d{4})-(\d{2})$/);
-        if (!m) return null;
-        const reviewed = new Date(Number(m[1]), Number(m[2]) - 1, 1);
-        return (now.getFullYear() - reviewed.getFullYear()) * 12 + (now.getMonth() - reviewed.getMonth());
-    }
-
-    function computeStaleRoles(domains) {
-        const now   = new Date();
-        const stale = [];
-        for (const domain of Object.values(domains)) {
-            for (const role of domain.roles) {
-                const monthsSince = monthsSinceReview(role.lastReviewed, now);
-                if (monthsSince === null || monthsSince >= STALE_MONTHS) {
-                    stale.push({ ...role, domainLabel: domain.label, monthsSince });
-                }
-            }
-        }
-        return stale.sort((a, b) => (b.monthsSince ?? 9999) - (a.monthsSince ?? 9999));
-    }
-
+    // ── Stale-role tracking ───────────────────────────────
+    // (monthsSinceReview / computeStaleRoles come from viewer-logic.js)
     function updateStaleButton(domains) {
         const stale = computeStaleRoles(domains);
         const btn   = document.getElementById('staleBtn');
@@ -1987,7 +1883,7 @@
         e.preventDefault();
 
         // Resolve the link relative to the currently open doc/role, then route.
-        const clean = resolveDocHref(href);
+        const clean = resolveDocHref(href, activeDoc || activeFile || '');
 
         if (clean.startsWith('Roles/')) {
             // Look up role metadata from allDomains

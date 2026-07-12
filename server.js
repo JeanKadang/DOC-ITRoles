@@ -115,6 +115,16 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Serve the shared pure view-logic module (also consumed by node:test)
+  if (url.pathname === '/viewer-logic.js') {
+    try {
+      send(res, 200, 'text/javascript; charset=utf-8', fs.readFileSync(path.join(ROOT, 'viewer-logic.js')));
+    } catch {
+      send(res, 404, 'text/plain', 'Asset not found');
+    }
+    return;
+  }
+
   // Serve vendored third-party assets (e.g. marked.min.js) — no CDN dependency
   if (url.pathname.startsWith('/vendor/')) {
     const rel = url.pathname.slice('/vendor/'.length);

@@ -86,6 +86,13 @@ test('GET /api/doc rejects path traversal via ..', async () => {
   assert.equal(res.status, 400);
 });
 
+test('GET /viewer-logic.js serves the shared view-logic module', async () => {
+  const res = await request('/viewer-logic.js');
+  assert.equal(res.status, 200);
+  assert.match(res.headers['content-type'], /javascript/);
+  assert.match(res.body, /ViewerLogic/);
+});
+
 test('GET /vendor/marked.min.js serves the vendored library', async () => {
   const res = await request('/vendor/marked.min.js');
   assert.equal(res.status, 200);
