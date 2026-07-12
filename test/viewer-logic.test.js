@@ -13,6 +13,7 @@ const {
     computeStaleRoles,
     rolesPerLevel,
     rolesPerChapter,
+    buildOrgTree,
     resolveDocHref,
 } = require('../viewer-logic');
 
@@ -235,4 +236,94 @@ test('rolesPerChapter counts a chapter with no present domains as 0', () => {
     const chapters = { empty: { label: 'Empty', domains: ['nope'] } };
     assert.deepEqual(rolesPerChapter(distributionFixture(), chapters),
         [{ key: 'empty', label: 'Empty', count: 0 }]);
+});
+
+// ── buildOrgTree ─────────────────────────────────────────
+
+function orgFixture() {
+    const domains = {
+        c_suite: {
+            label: 'C-Suite',
+            roles: [
+                { title: 'Chief Executive Officer', file: 'Roles/c_suite/ceo.md', level: 'CEO' },
+                { title: 'Chief Technology Officer', file: 'Roles/c_suite/cto.md', level: 'CTO' },
+            ],
+        },
+        leadership: {
+            label: 'Leadership',
+            roles: [
+                { title: 'SVP of Technology', file: 'Roles/leadership/svp.md', level: 'SVP' },
+                { title: 'Product Area Lead', file: 'Roles/leadership/pal.md', level: 'Product Area Lead' },
+                { title: 'Alpha Chapter Lead', file: 'Roles/leadership/alpha_lead.md', level: 'Chapter Lead' },
+                { title: 'Community Leader', file: 'Roles/leadership/community.md', level: 'Senior Engineer' },
+            ],
+        },
+        devops: {
+            label: 'DevOps',
+            roles: [
+                { title: 'DevOps Engineer', file: 'Roles/devops/eng.md', level: 'Engineer' },
+                { title: 'DevOps Architect', file: 'Roles/devops/arch.md', level: 'Architect' },
+            ],
+        },
+    };
+    const chapters = {
+        alpha: { label: 'Alpha Chapter', domains: ['devops'], leadFile: 'Roles/leadership/alpha_lead.md' },
+        leadership_chapter: { label: 'Leadership', domains: ['c_suite', 'leadership'], leadFile: null },
+    };
+    return { domains, chapters };
+}
+
+function collectFiles(node, out = []) {
+    if (node.file) out.push(node.file);
+    for (const c of node.children || []) collectFiles(c, out);
+    return out;
+}
+
+test('buildOrgTree roots at the CEO with C-suite and SVP children', () => {
+    const { domains, chapters } = orgFixture();
+    const tree = buildOrgTree(domains, chapters);
+    assert.equal(tree.name, 'Chief Executive Officer');
+    assert.equal(tree.kind, 'exec');
+    const childNames = tree.children.map(c => c.name);
+    assert.ok(childNames.includes('Chief Technology Officer'));
+    assert.ok(childNames.includes('SVP of Technology'));
+});
+
+test('buildOrgTree hangs area leads, cross-cutting roles, and chapters under the SVP', () => {
+    const { domains, chapters } = orgFixture();
+    const tree = buildOrgTree(domains, chapters);
+    const svp = tree.children.find(c => c.name === 'SVP of Technology');
+    const names = svp.children.map(c => c.name);
+    assert.ok(names.includes('Product Area Lead'));
+    assert.ok(names.includes('Cross-cutting Leadership'), 'unplaced leadership roles are grouped');
+    assert.ok(names.includes('Alpha Chapter'));
+});
+
+test('buildOrgTree attaches the chapter lead and counts roles per chapter', () => {
+    const { domains, chapters } = orgFixture();
+    const tree = buildOrgTree(domains, chapters);
+    const chapter = tree.children.find(c => c.name === 'SVP of Technology')
+        .children.find(c => c.name === 'Alpha Chapter');
+    assert.equal(chapter.leadTitle, 'Alpha Chapter Lead');
+    assert.equal(chapter.count, 2);
+    assert.equal(chapter.children[0].name, 'DevOps');
+    assert.equal(chapter.children[0].children.length, 2);
+});
+
+test('buildOrgTree places every role exactly once', () => {
+    const { domains, chapters } = orgFixture();
+    const tree = buildOrgTree(domains, chapters);
+    const files = collectFiles(tree);
+    const allFiles = Object.values(domains).flatMap(d => d.roles.map(r => r.file)).sort();
+    assert.deepEqual([...files].sort(), allFiles);
+    assert.equal(new Set(files).size, files.length, 'no role may appear twice');
+});
+
+test('buildOrgTree falls back to a generic root when no CEO exists', () => {
+    const { domains, chapters } = orgFixture();
+    domains.c_suite.roles = domains.c_suite.roles.filter(r => r.level !== 'CEO');
+    const tree = buildOrgTree(domains, chapters);
+    assert.equal(tree.name, 'IT Organisation');
+    assert.equal(tree.kind, 'group');
+    assert.equal(collectFiles(tree).length, 7, 'all remaining roles still placed');
 });
