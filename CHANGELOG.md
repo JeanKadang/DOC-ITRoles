@@ -13,6 +13,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   and response expectations.
 - `.github/dependabot.yml`: weekly grouped update PRs for GitHub Actions and
   npm dependencies, labeled and assigned automatically.
+- **Test coverage for the browser view logic (#27).** Pure functions and
+  constants (`escapeHtml`, `badgeClass`, `LEVEL_ORDER`/`LEVEL_SHORT`,
+  `monthsSinceReview`, `computeStaleRoles`, `resolveDocHref`) extracted from
+  index.html into `viewer-logic.js` (browser global + Node module, served by
+  a dedicated route — still no build step) with 18 tests, including guards
+  that fail on #18-style badge fallthroughs and #46-style missing matrix
+  levels.
+- **Test coverage for the validator (#19).** `validate-roles.js` gained a
+  `require.main` guard, exported `listRoleFiles`/`validateFile`, and a
+  `ROLES_DIR` override; 15 fixture-based tests cover every required-section
+  error, metadata errors, warning paths, reference-doc skipping, and CLI
+  exit codes including `--strict`. Suite total: 19 → 52 tests.
 
 ### Security
 
@@ -47,6 +59,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- **CFO role missing from the matrix view (#46)** — `LEVEL_ORDER` and
+  `LEVEL_SHORT` lacked `CFO`, so the matrix silently rendered 215 of 216
+  role chips while claiming all were shown. Same defect family as the
+  v1.2.0 CFO badge fallthrough; the new viewer-logic tests now assert
+  level-list parity with `roleMeta.js` so this class of bug fails CI.
 - **All 43 role files failing `npm run validate` resolved (#7)** — the full
   216-role catalog now validates with zero errors and zero warnings.
   Roughly 25 files only needed variant headings renamed to the canonical
