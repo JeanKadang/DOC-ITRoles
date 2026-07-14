@@ -13,6 +13,8 @@
 
 The FinOps Engineer implements and maintains cloud cost monitoring, reporting, and optimization solutions. This role applies technical expertise to operationalize FinOps practices, ensuring effective day-to-day management of cloud costs and supporting the organization's cloud financial management goals.
 
+See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.md) — the tagging, budgeting, and chargeback standards this role works within.
+
 ## Business Impact
 
 - **Business Objective:** Implements and maintains cloud cost monitoring, tagging, and reporting solutions ensuring day-to-day cloud cost visibility and optimisation enabling business units to manage their cloud consumption effectively

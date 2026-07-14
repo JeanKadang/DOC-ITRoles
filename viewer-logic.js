@@ -16,6 +16,11 @@
     // Roles not reviewed within this many months are flagged stale.
     const STALE_MONTHS = 12;
 
+    // Files that document standards/policy rather than a single role.
+    // Mirror of roleMeta.js REFERENCE_DOC_PATTERN (which can't be required
+    // from the browser); a test asserts the two stay identical.
+    const REFERENCE_DOC_PATTERN = /_standards\.md$/;
+
     // Matrix column order. Must cover every canonical role level in
     // roleMeta.js CANONICAL_LEVELS — a level missing here silently drops
     // its roles from the matrix (see #46: CFO was absent).
@@ -331,6 +336,7 @@
 
     return {
         STALE_MONTHS,
+        REFERENCE_DOC_PATTERN,
         LEVEL_ORDER,
         LEVEL_SHORT,
         escapeHtml,

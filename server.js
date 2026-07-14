@@ -45,11 +45,13 @@ function getRoles() {
 
   for (const entry of entries) {
     const domainPath = path.join(ROLES_DIR, entry.name);
-    const files = fs.readdirSync(domainPath)
-      .filter(f => f.endsWith('.md') && f !== 'README.md' && !REFERENCE_DOC_PATTERN.test(f))
+    const allMd = fs.readdirSync(domainPath)
+      .filter(f => f.endsWith('.md') && f !== 'README.md')
       .sort();
+    const files    = allMd.filter(f => !REFERENCE_DOC_PATTERN.test(f));
+    const refFiles = allMd.filter(f => REFERENCE_DOC_PATTERN.test(f));
 
-    if (files.length === 0) continue;
+    if (files.length === 0 && refFiles.length === 0) continue;
 
     const roles = files.map(file => {
       const content = fs.readFileSync(path.join(domainPath, file), 'utf8');
@@ -65,9 +67,23 @@ function getRoles() {
       };
     });
 
+    // Reference/standards documents (e.g. *_standards.md) are listed
+    // separately: they are reachable in the viewer but never counted as
+    // roles, never levelled, and never stale-tracked (#23, #29).
+    const references = refFiles.map(file => {
+      const content = fs.readFileSync(path.join(domainPath, file), 'utf8');
+      const meta = parseMeta(content);
+      return {
+        name:  file.replace('.md', ''),
+        file:  `Roles/${entry.name}/${file}`,
+        title: meta.title || file.replace(/_/g, ' ').replace('.md', ''),
+      };
+    });
+
     domains[entry.name] = {
       label: DOMAIN_LABELS[entry.name] || entry.name.replace(/_/g, ' '),
       roles,
+      references,
     };
   }
 

@@ -19,7 +19,15 @@ const {
     resolveDocHref,
 } = require('../viewer-logic');
 
-const { CANONICAL_LEVELS } = require('../roleMeta');
+const { CANONICAL_LEVELS, REFERENCE_DOC_PATTERN: ROLEMETA_REF_PATTERN } = require('../roleMeta');
+const { REFERENCE_DOC_PATTERN } = require('../viewer-logic');
+
+test('viewer-logic REFERENCE_DOC_PATTERN mirrors roleMeta exactly', () => {
+    // The browser cannot require roleMeta.js, so viewer-logic carries a
+    // copy; this test keeps the two from drifting apart.
+    assert.equal(REFERENCE_DOC_PATTERN.source, ROLEMETA_REF_PATTERN.source);
+    assert.equal(REFERENCE_DOC_PATTERN.flags, ROLEMETA_REF_PATTERN.flags);
+});
 
 // ── escapeHtml ────────────────────────────────────────────
 

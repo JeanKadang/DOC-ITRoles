@@ -49,6 +49,18 @@ test('GET /api/roles returns JSON grouped by domain', async () => {
   assert.ok('lastReviewed' in domains.kubernetes.roles[0]);
 });
 
+test('GET /api/roles lists reference docs separately from roles (#29)', async () => {
+  const res = await request('/api/roles');
+  const domains = JSON.parse(res.body);
+  const finops = domains.FinOps;
+  assert.ok(Array.isArray(finops.references), 'FinOps carries a references array');
+  const std = finops.references.find(r => r.file.endsWith('cloud_cost_optimization_standards.md'));
+  assert.ok(std, 'the standards doc is listed as a reference');
+  assert.equal(std.title, 'Cloud Cost Optimization Standards');
+  assert.ok(!('level' in std) && !('lastReviewed' in std), 'references carry no role metadata');
+  assert.ok(!finops.roles.some(r => r.file.endsWith('_standards.md')), 'standards docs never appear as roles');
+});
+
 test('GET /api/role returns a real role file', async () => {
   const res = await request('/api/role?file=Roles/kubernetes/kubernetes_architect.md');
   assert.equal(res.status, 200);
