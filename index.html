@@ -989,6 +989,7 @@
         <button class="btn-ghost" id="staleBtn" onclick="toggleStalePanel()" aria-pressed="false" aria-label="Show roles overdue for review" style="display:none"></button>
         <button class="btn-ghost" id="matrixBtn" onclick="toggleMatrix()" aria-pressed="false" aria-label="Toggle role matrix view">📊 Matrix</button>
         <button class="btn-ghost" id="orgBtn" onclick="toggleOrg()" aria-pressed="false" aria-label="Toggle organisation chart view">🌳 Org</button>
+        <button class="btn-ghost" id="graphBtn" onclick="toggleGraph()" aria-pressed="false" aria-label="Toggle domain relationship graph">🔗 Graph</button>
         <button class="btn-ghost" id="themeBtn" onclick="toggleTheme()" aria-pressed="false" aria-label="Toggle dark mode">🌙 Dark</button>
     </div>
 </header>
@@ -1085,6 +1086,24 @@
             </details>
         </div>
 
+        <!-- Domain relationship graph view -->
+        <div class="matrix-view" id="graphView">
+            <div class="matrix-header">
+                <div>
+                    <h2>🔗 Domain Relationship Graph</h2>
+                    <p>Who works with whom — built live from the Cross-Domain Interactions reference.
+                       Solid edges are collaboration pairs, dashed edges are consultation relationships;
+                       node size reflects how connected a domain is. Click a domain to find it in the sidebar.</p>
+                </div>
+            </div>
+            <div id="graphChartCanvas" class="org-canvas" role="img"
+                 aria-label="Domain relationship graph. A text version is available below under 'View as list'."></div>
+            <details class="chart-table">
+                <summary>View as list</summary>
+                <div id="graphListFallback" class="org-list"></div>
+            </details>
+        </div>
+
         <!-- Doc view (reference documents) -->
         <div class="doc-view" id="docView">
             <div class="role-card doc-card" id="docHeader"></div>
@@ -1102,7 +1121,7 @@
     const {
         STALE_MONTHS, LEVEL_ORDER, LEVEL_SHORT,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
-        rolesPerChapter, rolesPerLevel, buildOrgTree,
+        rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
     } = ViewerLogic;
 
     // ── State ───────────────────────────────────────────
@@ -1488,7 +1507,7 @@
             btn.style.borderColor = 'rgba(255,255,255,0.6)';
             renderOrgChart();
 
-            // Org, matrix, and stale views are mutually exclusive
+            // Org, graph, matrix, and stale views are mutually exclusive
             if (matrixOpen) {
                 matrixOpen = false;
                 document.getElementById('matrixView').classList.remove('show');
@@ -1500,6 +1519,12 @@
                 document.getElementById('staleView').classList.remove('show');
                 document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
             }
+            if (graphOpen) {
+                graphOpen = false;
+                document.getElementById('graphView').classList.remove('show');
+                const gb = document.getElementById('graphBtn');
+                gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
+            }
         } else {
             ov.classList.remove('show');
             btn.style.background = '';
@@ -1508,8 +1533,178 @@
         }
     }
 
-    // Keep the ECharts canvas sized to its container.
-    window.addEventListener('resize', () => orgChart?.resize());
+    // ── Domain relationship graph (ECharts force graph) ───
+    let graphOpen  = false;
+    let graphChart = null;
+
+    // Chapter-categorical palettes, validated (dataviz six-checks) against
+    // the light (#ffffff) and dark (#161b22) card surfaces. The light-mode
+    // contrast WARN on slots 2/3/7 is discharged by always-visible node
+    // labels and the list fallback; External/Other use the de-emphasis gray.
+    const GRAPH_PALETTE = {
+        light: ['#2a78d6', '#1baf7a', '#eda100', '#008300', '#4a3aa7', '#e34948', '#e87ba4'],
+        dark:  ['#3987e5', '#199e70', '#c98500', '#008300', '#9085e9', '#e66767', '#d55181'],
+        grayLight: '#8e8ea0',
+        grayDark:  '#7d8590',
+    };
+
+    async function renderDomainGraph() {
+        if (typeof echarts === 'undefined') return;
+        const theme  = chartTheme();
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const colors = isDark ? GRAPH_PALETTE.dark : GRAPH_PALETTE.light;
+        const gray   = isDark ? GRAPH_PALETTE.grayDark : GRAPH_PALETTE.grayLight;
+
+        let graph;
+        try {
+            const res = await fetch(`/api/doc?file=${encodeURIComponent('docs/CROSS_DOMAIN_INTERACTIONS.md')}`);
+            graph = parseInteractions(await res.text());
+        } catch {
+            document.getElementById('graphListFallback').innerHTML =
+                '<p>⚠️ Could not load the Cross-Domain Interactions document.</p>';
+            return;
+        }
+
+        const chapterOf = labelToChapter(allDomains, CHAPTERS);
+        const chapterLabels = [...new Set(Object.values(chapterOf))];
+        const categories = [
+            ...chapterLabels.map((label, i) => ({ name: label, itemStyle: { color: colors[i % colors.length] } })),
+            { name: 'External', itemStyle: { color: gray } },
+            { name: 'Other',    itemStyle: { color: gray } },
+        ];
+        const categoryIndex = name => {
+            const i = categories.findIndex(c => c.name === name);
+            return i === -1 ? categories.length - 1 : i;
+        };
+
+        const degree = {};
+        for (const l of graph.links) {
+            degree[l.source] = (degree[l.source] || 0) + 1;
+            degree[l.target] = (degree[l.target] || 0) + 1;
+        }
+
+        const nodes = graph.nodes.map(n => ({
+            name: n.name,
+            value: degree[n.name] || 0,
+            category: n.kind === 'external' ? categoryIndex('External')
+                    : chapterOf[n.name] ? categoryIndex(chapterOf[n.name])
+                    : categoryIndex('Other'),
+            symbolSize: 12 + (degree[n.name] || 0) * 3,
+            notes: n.notes,
+            label: { show: true },
+        }));
+
+        const links = graph.links.map(l => ({
+            source: l.source,
+            target: l.target,
+            labels: l.labels,
+            lineStyle: l.kind === 'collaborates'
+                ? { width: 2,   type: 'solid',  color: theme.grid, opacity: 1 }
+                : { width: 1.2, type: 'dashed', color: theme.grid, opacity: 0.9 },
+        }));
+
+        graphChart?.dispose();
+        graphChart = echarts.init(document.getElementById('graphChartCanvas'));
+        graphChart.setOption({
+            legend: { data: categories.map(c => c.name), textStyle: { color: theme.text }, top: 6, type: 'scroll' },
+            tooltip: {
+                trigger: 'item',
+                formatter: p => {
+                    if (p.dataType === 'edge') {
+                        const lbls = (p.data.labels || []).map(escapeHtml).join('<br>• ');
+                        return `<b>${escapeHtml(p.data.source)} ↔ ${escapeHtml(p.data.target)}</b>${lbls ? '<br>• ' + lbls : ''}`;
+                    }
+                    const notes = (p.data.notes || []).map(escapeHtml).join('<br>');
+                    return `<b>${escapeHtml(p.name)}</b><br>${p.data.value} relationship${p.data.value !== 1 ? 's' : ''}${notes ? '<br>' + notes : ''}`;
+                },
+            },
+            series: [{
+                type: 'graph',
+                layout: 'force',
+                data: nodes,
+                links,
+                categories,
+                roam: true,
+                draggable: true,
+                label: { color: theme.text, fontSize: 11, position: 'right' },
+                force: { repulsion: 320, edgeLength: [70, 150], gravity: 0.12 },
+                emphasis: { focus: 'adjacency', lineStyle: { width: 3 } },
+            }],
+        });
+
+        // Click a domain node → reveal that domain in the sidebar.
+        graphChart.on('click', params => {
+            if (!params || params.dataType !== 'node') return;
+            const entry = Object.entries(allDomains).find(([, d]) => d.label === params.name);
+            if (!entry) return;
+            const dg = document.getElementById(`dg-${entry[0]}`);
+            if (dg && !dg.classList.contains('open')) toggleDomain(entry[0]);
+            dg?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        document.getElementById('graphListFallback').innerHTML = graphListHtml(graph, chapterOf);
+    }
+
+    function graphListHtml(graph, chapterOf) {
+        const byNode = graph.nodes.map(n => {
+            const rels = graph.links
+                .filter(l => l.source === n.name || l.target === n.name)
+                .map(l => {
+                    const other = l.source === n.name ? l.target : l.source;
+                    return `<li>${l.kind === 'collaborates' ? 'Collaborates with' : 'Consulted relationship with'} <b>${escapeHtml(other)}</b>: ${escapeHtml(l.labels.join('; '))}</li>`;
+                }).join('');
+            const notes = n.notes.map(x => `<li>${escapeHtml(x)}</li>`).join('');
+            const chapter = n.kind === 'external' ? 'External party' : (chapterOf[n.name] || 'Other');
+            return `<li><span class="org-node-label">${escapeHtml(n.name)}</span> — ${escapeHtml(chapter)}<ul>${rels}${notes}</ul></li>`;
+        }).join('');
+        return `<ul>${byNode}</ul>`;
+    }
+
+    function toggleGraph() {
+        graphOpen = !graphOpen;
+        const gv  = document.getElementById('graphView');
+        const btn = document.getElementById('graphBtn');
+        btn.setAttribute('aria-pressed', String(graphOpen));
+
+        if (graphOpen) {
+            document.getElementById('welcomeState').style.display = 'none';
+            document.getElementById('chapterView').style.display  = 'none';
+            document.getElementById('rolesGrid').style.display    = 'none';
+            document.getElementById('docView').style.display      = 'none';
+            activeDoc = null;
+            gv.classList.add('show');
+            btn.style.background = 'rgba(255,255,255,0.3)';
+            btn.style.borderColor = 'rgba(255,255,255,0.6)';
+            renderDomainGraph();
+
+            // Graph, org, matrix, and stale views are mutually exclusive
+            if (matrixOpen) {
+                matrixOpen = false;
+                document.getElementById('matrixView').classList.remove('show');
+                const mb = document.getElementById('matrixBtn');
+                mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
+            }
+            if (staleOpen) {
+                staleOpen = false;
+                document.getElementById('staleView').classList.remove('show');
+                document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
+            }
+            if (orgOpen) {
+                orgOpen = false;
+                document.getElementById('orgView').classList.remove('show');
+                const ob = document.getElementById('orgBtn');
+                ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
+            }
+        } else {
+            gv.classList.remove('show');
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            if (!activeFile) document.getElementById('welcomeState').style.display = '';
+        }
+    }
+
+    // Keep the ECharts canvases sized to their containers.
+    window.addEventListener('resize', () => { orgChart?.resize(); graphChart?.resize(); });
 
     // ── Render sidebar ───────────────────────────────────
     function renderSidebar(domains, filter = '') {
@@ -1648,6 +1843,7 @@
         document.getElementById('matrixView').classList.remove('show');
         document.getElementById('staleView').classList.remove('show');
         document.getElementById('orgView').classList.remove('show');
+        document.getElementById('graphView').classList.remove('show');
         document.getElementById('docView').style.display      = 'none';
         document.getElementById('welcomeState').style.display = 'none';
 
@@ -1779,19 +1975,23 @@
         updateBackBtn();
     }
 
-    // Close the matrix, stale, and org panels (used when opening a role/doc/chapter).
+    // Close the matrix, stale, org, and graph panels (used when opening a role/doc/chapter).
     function closePanels() {
         matrixOpen = false;
         staleOpen  = false;
         orgOpen    = false;
+        graphOpen  = false;
         document.getElementById('matrixView').classList.remove('show');
         document.getElementById('staleView').classList.remove('show');
         document.getElementById('orgView').classList.remove('show');
+        document.getElementById('graphView').classList.remove('show');
         const mb = document.getElementById('matrixBtn');
         mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
         document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
         const ob = document.getElementById('orgBtn');
         ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
+        const gb = document.getElementById('graphBtn');
+        gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
     }
 
     // ── Shared: build role header HTML ───────────────────
@@ -1937,6 +2137,12 @@
         document.getElementById('orgBtn').style.borderColor = '';
         document.getElementById('orgBtn').setAttribute('aria-pressed', 'false');
 
+        document.getElementById('graphView').classList.remove('show');
+        graphOpen = false;
+        document.getElementById('graphBtn').style.background  = '';
+        document.getElementById('graphBtn').style.borderColor = '';
+        document.getElementById('graphBtn').setAttribute('aria-pressed', 'false');
+
         renderSidebar(allDomains, document.getElementById('searchInput').value);
 
         const docView = document.getElementById('docView');
@@ -2035,6 +2241,7 @@
         // theme flip means a re-render against the new surface.
         if (Object.keys(allDomains).length) renderDistributionCharts(allDomains);
         if (orgOpen) renderOrgChart();
+        if (graphOpen) renderDomainGraph();
     }
 
     // ── Matrix view ───────────────────────────────────────
@@ -2131,13 +2338,19 @@
             renderMatrix(allDomains);
             renderSidebar(allDomains, document.getElementById('searchInput').value);
 
-            // Matrix, stale, and org panels are mutually exclusive
+            // Matrix, stale, org, and graph panels are mutually exclusive
             if (staleOpen) { staleOpen = false; document.getElementById('staleView').classList.remove('show'); document.getElementById('staleBtn').setAttribute('aria-pressed', 'false'); }
             if (orgOpen) {
                 orgOpen = false;
                 document.getElementById('orgView').classList.remove('show');
                 const ob = document.getElementById('orgBtn');
                 ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
+            }
+            if (graphOpen) {
+                graphOpen = false;
+                document.getElementById('graphView').classList.remove('show');
+                const gb = document.getElementById('graphBtn');
+                gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
             }
         } else {
             // Restore normal content
@@ -2177,7 +2390,7 @@
             sv.classList.add('show');
             renderStalePanel(allDomains);
 
-            // Matrix, stale, and org panels are mutually exclusive
+            // Matrix, stale, org, and graph panels are mutually exclusive
             if (matrixOpen) {
                 matrixOpen = false;
                 document.getElementById('matrixView').classList.remove('show');
@@ -2190,6 +2403,12 @@
                 document.getElementById('orgView').classList.remove('show');
                 const ob = document.getElementById('orgBtn');
                 ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
+            }
+            if (graphOpen) {
+                graphOpen = false;
+                document.getElementById('graphView').classList.remove('show');
+                const gb = document.getElementById('graphBtn');
+                gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
             }
         } else {
             sv.classList.remove('show');

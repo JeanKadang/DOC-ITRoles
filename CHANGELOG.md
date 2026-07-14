@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **Domain relationship graph (#13).** New "🔗 Graph" header toggle renders
+  an ECharts force-directed graph built live from
+  docs/CROSS_DOMAIN_INTERACTIONS.md: nodes are domains (sized by how
+  connected they are, colored by chapter with a palette validated for
+  color-vision safety on both themes), solid edges are collaboration pairs,
+  dashed edges are consultation relationships from the ownership table, and
+  external parties (Legal, Procurement) render in a neutral gray. "All
+  domains" entries become node notes instead of edge explosions. The
+  markdown parser (`parseInteractions`) lives in `viewer-logic.js` with
+  fixture tests plus an integration test against the real document, so doc
+  drift that would break the graph fails CI. Clicking a node reveals that
+  domain in the sidebar; a keyboard-operable "View as list" fallback ships
+  per #17.
 - **Governance-role coverage in CROSS_DOMAIN_INTERACTIONS.md (#2).** The
   eight v1.2.0 governance roles now appear in the interaction map: seven
   ownership-boundary rows (change enablement, major incident, BC/DR
