@@ -145,6 +145,89 @@
         }));
     }
 
+    // Parse docs/CROSS_DOMAIN_INTERACTIONS.md into a graph:
+    // nodes = domains (plus external parties), links = consultation edges
+    // from the ownership table and collaboration edges from the
+    // relationship bullets. Pure markdown in, { nodes, links } out.
+    //
+    // "All domains (…)" consulted entries and "X ↔ All" bullets become a
+    // note on the node instead of edges — fanning one node out to every
+    // other node says nothing and buries the real structure.
+    function parseInteractions(markdown) {
+        const lines = String(markdown).split(/\r?\n/);
+        const nodes = new Map(); // name → { name, kind, notes: [] }
+        const edges = new Map(); // "a|b" sorted key → { source, target, kinds:Set, labels: [] }
+
+        const cleanName = raw => raw.replace(/\(.*?\)/g, '').trim();
+        const isExternal = raw => /\(external\)/i.test(raw);
+        const isAll = raw => /^all\b/i.test(raw.trim());
+
+        function node(raw) {
+            const name = cleanName(raw);
+            if (!nodes.has(name)) {
+                nodes.set(name, { name, kind: isExternal(raw) ? 'external' : 'domain', notes: [] });
+            }
+            return nodes.get(name);
+        }
+
+        function edge(a, b, kind, label) {
+            const [s, t] = [a, b].sort();
+            const key = `${s}|${t}`;
+            if (!edges.has(key)) edges.set(key, { source: s, target: t, kinds: new Set(), labels: [] });
+            const e = edges.get(key);
+            e.kinds.add(kind);
+            if (label) e.labels.push(label);
+        }
+
+        let section = null;
+        for (const line of lines) {
+            const h = line.match(/^##\s+(.+)/);
+            if (h) { section = h[1].trim().toLowerCase(); continue; }
+
+            if (section && section.startsWith('domain ownership')) {
+                const m = line.match(/^\|(.+)\|(.+)\|(.+)\|\s*$/);
+                if (!m) continue;
+                const [decision, ownerRaw, consultedRaw] = [m[1], m[2], m[3]].map(s => s.trim());
+                if (/^-+$/.test(decision.replace(/\s/g, '')) || /technology \/ decision/i.test(decision)) continue;
+                const owner = node(ownerRaw);
+                for (const c of consultedRaw.split(',').map(s => s.trim()).filter(Boolean)) {
+                    if (isAll(c)) { owner.notes.push(`Consulted by all domains: ${decision}`); continue; }
+                    edge(owner.name, node(c).name, 'consults', decision);
+                }
+            }
+
+            if (section && section.startsWith('key cross-domain')) {
+                const m = line.match(/^-\s+\*\*(.+?)\s*↔\s*(.+?)\*\*\s*—\s*(.+)$/);
+                if (!m) continue;
+                const [aRaw, bRaw, desc] = [m[1], m[2], m[3]].map(s => s.trim());
+                if (isAll(bRaw)) { node(aRaw).notes.push(`Collaborates with all domains: ${desc}`); continue; }
+                edge(node(aRaw).name, node(bRaw).name, 'collaborates', desc);
+            }
+        }
+
+        return {
+            nodes: [...nodes.values()],
+            links: [...edges.values()].map(e => ({
+                source: e.source,
+                target: e.target,
+                kind: e.kinds.has('collaborates') ? 'collaborates' : 'consults',
+                labels: e.labels,
+            })),
+        };
+    }
+
+    // Map each domain label to its chapter label (for graph node
+    // categories). Labels not covered by any chapter map to null.
+    function labelToChapter(domains, chapters) {
+        const map = {};
+        for (const chapter of Object.values(chapters)) {
+            for (const key of chapter.domains) {
+                if (domains[key]) map[domains[key].label] = chapter.label;
+            }
+        }
+        return map;
+    }
+
     // Build the org-chart tree: leadership line (CEO → C-suite/SVP →
     // PAL/TAL → chapters) on top of the Chapters → Domains → Roles
     // hierarchy. Pure data in, nested { name, kind, file?, count?,
@@ -257,6 +340,8 @@
         rolesPerLevel,
         rolesPerChapter,
         buildOrgTree,
+        parseInteractions,
+        labelToChapter,
         resolveDocHref,
     };
 });

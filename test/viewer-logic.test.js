@@ -14,6 +14,8 @@ const {
     rolesPerLevel,
     rolesPerChapter,
     buildOrgTree,
+    parseInteractions,
+    labelToChapter,
     resolveDocHref,
 } = require('../viewer-logic');
 
@@ -326,4 +328,80 @@ test('buildOrgTree falls back to a generic root when no CEO exists', () => {
     assert.equal(tree.name, 'IT Organisation');
     assert.equal(tree.kind, 'group');
     assert.equal(collectFiles(tree).length, 7, 'all remaining roles still placed');
+});
+
+// ── parseInteractions ────────────────────────────────────
+
+const INTERACTIONS_FIXTURE = `# Cross-domain interactions
+
+## Domain ownership boundaries
+
+| Technology / Decision | Primary Owner | Consulted |
+|---|---|---|
+| Kubernetes platform selection | Kubernetes | Cloud Platforms, DevOps |
+| Cost governance | FinOps | All domains (consumers) |
+| Privacy program | Data Management (Data Privacy Officer) | Security, Legal (external) |
+
+## Key cross-domain relationships
+
+- **Cloud Platforms ↔ Network** — landing zone connectivity
+- **Kubernetes ↔ Cloud Platforms** — managed Kubernetes services
+- **Enterprise Architecture ↔ All** — architecture governance framework
+
+## Escalation paths
+
+1. Domain architects
+`;
+
+test('parseInteractions extracts consultation edges from the ownership table', () => {
+    const g = parseInteractions(INTERACTIONS_FIXTURE);
+    const k8s = g.links.filter(l => [l.source, l.target].includes('Kubernetes'));
+    assert.equal(k8s.length, 2); // Cloud Platforms (consult + collaboration merged into one edge) and DevOps
+    const kcp = g.links.find(l => [l.source, l.target].sort().join('|') === 'Cloud Platforms|Kubernetes');
+    assert.equal(kcp.kind, 'collaborates', 'collaboration wins when both edge kinds exist for a pair');
+    assert.equal(kcp.labels.length, 2, 'labels from both sources are kept');
+});
+
+test('parseInteractions strips role parentheticals and flags external parties', () => {
+    const g = parseInteractions(INTERACTIONS_FIXTURE);
+    assert.ok(g.nodes.some(n => n.name === 'Data Management' && n.kind === 'domain'));
+    assert.ok(g.nodes.some(n => n.name === 'Legal' && n.kind === 'external'));
+    assert.ok(!g.nodes.some(n => n.name.includes('(')));
+});
+
+test('parseInteractions turns All-domain entries into node notes, not edges', () => {
+    const g = parseInteractions(INTERACTIONS_FIXTURE);
+    const finops = g.nodes.find(n => n.name === 'FinOps');
+    assert.ok(finops.notes[0].includes('Cost governance'));
+    const ea = g.nodes.find(n => n.name === 'Enterprise Architecture');
+    assert.ok(ea.notes[0].includes('architecture governance'));
+    assert.ok(!g.links.some(l => [l.source, l.target].some(isAllish => /^All/.test(isAllish))));
+});
+
+test('parseInteractions handles the real CROSS_DOMAIN_INTERACTIONS.md', () => {
+    // Integration guard: doc drift that breaks the graph fails the suite.
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const md = fs.readFileSync(path.join(__dirname, '..', 'docs', 'CROSS_DOMAIN_INTERACTIONS.md'), 'utf8');
+    const g = parseInteractions(md);
+    assert.ok(g.nodes.length >= 18, `expected 18+ nodes, got ${g.nodes.length}`);
+    assert.ok(g.links.length >= 25, `expected 25+ links, got ${g.links.length}`);
+    assert.ok(g.nodes.some(n => n.name === 'Service Management'), 'governance rows from #2 present');
+    assert.ok(g.nodes.some(n => n.kind === 'external'), 'external parties (Legal/Procurement) present');
+    assert.ok(g.nodes.find(n => n.name === 'FinOps').notes.length > 0, 'All-domains note captured');
+    for (const l of g.links) {
+        assert.ok(l.source !== l.target, 'no self-loops');
+        assert.ok(g.nodes.some(n => n.name === l.source) && g.nodes.some(n => n.name === l.target), 'links reference known nodes');
+    }
+});
+
+// ── labelToChapter ───────────────────────────────────────
+
+test('labelToChapter maps domain labels to chapter labels', () => {
+    const domains = { devops: { label: 'DevOps', roles: [] }, network: { label: 'Network', roles: [] } };
+    const chapters = {
+        a: { label: 'Chapter A', domains: ['devops'] },
+        b: { label: 'Chapter B', domains: ['network', 'missing'] },
+    };
+    assert.deepEqual(labelToChapter(domains, chapters), { 'DevOps': 'Chapter A', 'Network': 'Chapter B' });
 });
