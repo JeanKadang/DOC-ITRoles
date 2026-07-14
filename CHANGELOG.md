@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **Governance-role coverage in CROSS_DOMAIN_INTERACTIONS.md (#2).** The
+  eight v1.2.0 governance roles now appear in the interaction map: seven
+  ownership-boundary rows (change enablement, major incident, BC/DR
+  standards, data governance, privacy program, risk register, vendor/asset
+  management), four cross-domain relationship entries, a "Data governance
+  scope clarification" section splitting Data Governance Lead vs Data
+  Privacy Officer vs Security, and an "Operational and governance
+  escalations" section mapping each event type to its entry-point role —
+  all aligned with the escalation paths documented in the role files
+  themselves. Unblocks the #13 relationship graph.
 - **Organisation chart view (#11).** New "🌳 Org" header toggle renders the
   live hierarchy as an ECharts tree (first UI use of the vendored ECharts):
   leadership line (CEO → C-suite/SVP → area leads → chapters) flowing into
