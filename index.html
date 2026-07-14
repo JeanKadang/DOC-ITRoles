@@ -367,6 +367,7 @@
         .b-sen   { background: rgba(0,120,212,0.14);  color: #0078D4; }
         .b-eng   { background: rgba(40,167,69,0.14);  color: #28a745; }
         .b-po    { background: rgba(255,152,0,0.14);  color: #e08000; }
+        .b-standards { background: rgba(23,162,184,0.12); color: var(--accent-cyan); }
         .b-sre   { background: rgba(23,162,184,0.14); color: #17a2b8; }
         .b-pal   { background: rgba(30,58,95,0.14);   color: #1e3a5f; }
         .b-tal   { background: rgba(0,120,212,0.22);  color: #005a9e; font-weight: 700; }
@@ -384,6 +385,7 @@
         [data-theme="dark"] .b-sen  { background: rgba(0,120,212,0.28);  color: #60b4ff; }
         [data-theme="dark"] .b-eng  { background: rgba(40,167,69,0.28);  color: #6bcf7f; }
         [data-theme="dark"] .b-po   { background: rgba(255,152,0,0.28);  color: #ffb84d; }
+        [data-theme="dark"] .b-standards { background: rgba(23,162,184,0.25); color: #5fd3e8; }
         [data-theme="dark"] .b-sre  { background: rgba(23,162,184,0.28); color: #5bc8d9; }
         [data-theme="dark"] .b-pal  { background: rgba(100,160,255,0.2); color: #a0c8ff; font-weight: 700; }
         [data-theme="dark"] .b-tal  { background: rgba(0,120,212,0.35);  color: #90d0ff; font-weight: 700; }
@@ -1119,7 +1121,7 @@
 <script>
     // ── Shared pure view logic (viewer-logic.js, also under node:test) ──
     const {
-        STALE_MONTHS, LEVEL_ORDER, LEVEL_SHORT,
+        STALE_MONTHS, REFERENCE_DOC_PATTERN, LEVEL_ORDER, LEVEL_SHORT,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
     } = ViewerLogic;
@@ -1728,7 +1730,16 @@
                         chapter.label.toLowerCase().includes(q))
                     : domain.roles;
 
-                if (roles.length === 0) continue;
+                // Reference/standards docs live under the domain too (#29);
+                // they match the same search fields but are never roles.
+                const refs = q
+                    ? (domain.references || []).filter(r =>
+                        r.title.toLowerCase().includes(q) ||
+                        domain.label.toLowerCase().includes(q) ||
+                        chapter.label.toLowerCase().includes(q))
+                    : (domain.references || []);
+
+                if (roles.length === 0 && refs.length === 0) continue;
                 chHasContent = true;
 
                 const domainOpen = (q || (activeFile && activeFile.includes(`/${domainKey}/`))) ? 'open' : '';
@@ -1755,6 +1766,14 @@
                              data-domain="${escapeHtml(domain.label)}">
                             <span class="role-item-name">${escapeHtml(r.title)}</span>
                             <span class="badge ${badgeClass(r.level)}">${escapeHtml(r.level)}</span>
+                        </div>`).join('')}
+                        ${refs.map(r => `
+                        <div class="role-item standards-item ${activeDoc === r.file ? 'active' : ''}"
+                             role="button" tabindex="0"
+                             data-doc="${escapeHtml(r.file)}"
+                             data-doc-title="${escapeHtml(r.title)}">
+                            <span class="role-item-name">📐 ${escapeHtml(r.title)}</span>
+                            <span class="badge b-standards">Standards</span>
                         </div>`).join('')}
                     </div>
                 </div>`;
@@ -2163,7 +2182,10 @@
             '<div class="loading"><div class="spinner"></div> Loading…</div>';
 
         try {
-            const res      = await fetch(`/api/doc?file=${encodeURIComponent(file)}`);
+            // Reference docs live under docs/ (served by /api/doc) or as
+            // *_standards.md files under Roles/ (served by /api/role).
+            const endpoint = file.startsWith('Roles/') ? '/api/role' : '/api/doc';
+            const res      = await fetch(`${endpoint}?file=${encodeURIComponent(file)}`);
             const markdown = await res.text();
             document.getElementById('docBody').innerHTML = renderMarkdown(markdown);
             document.getElementById('mainArea').scrollTop = 0;
@@ -2466,6 +2488,14 @@
         const clean = resolveDocHref(href, activeDoc || activeFile || '');
 
         if (clean.startsWith('Roles/')) {
+            // Reference/standards docs open in the doc view, not as a role (#29)
+            if (REFERENCE_DOC_PATTERN.test(clean)) {
+                const ref = Object.values(allDomains)
+                    .flatMap(d => d.references || [])
+                    .find(r => r.file === clean);
+                openDoc(clean, ref ? ref.title : clean.split('/').pop().replace(/_/g, ' ').replace('.md', ''));
+                return;
+            }
             // Look up role metadata from allDomains
             const allRoles = Object.values(allDomains).flatMap(d =>
                 d.roles.map(r => ({ ...r, domainLabel: d.label }))
@@ -2495,6 +2525,14 @@
         const resItem = e.target.closest('.resource-item');
         if (resItem) {
             openDoc(resItem.dataset.doc, resItem.dataset.docTitle);
+            return;
+        }
+
+        // Standards/reference docs inside a domain group (#29) — must be
+        // checked before .role-item because they share its styling class.
+        const stdItem = e.target.closest('.standards-item');
+        if (stdItem) {
+            openDoc(stdItem.dataset.doc, stdItem.dataset.docTitle);
             return;
         }
 

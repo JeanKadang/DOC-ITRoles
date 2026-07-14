@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **Reference/standards docs are reachable in the viewer again (#29).**
+  `/api/roles` now lists `*_standards.md` files in a per-domain
+  `references` array (never counted as roles, levelled, or stale-tracked),
+  and the sidebar renders them inside their domain group with a 📐
+  Standards badge, opening in the doc view. Markdown links to standards
+  docs route to the doc view instead of the role view, and the FinOps
+  Architect/Engineer files gained "See also" cross-links to the Cloud
+  Cost Optimization Standards. Fixes the side effect of #23 that left the
+  FinOps standards doc orphaned; the pattern works for any future
+  standards file in any domain.
 - **Domain relationship graph (#13).** New "🔗 Graph" header toggle renders
   an ECharts force-directed graph built live from
   docs/CROSS_DOMAIN_INTERACTIONS.md: nodes are domains (sized by how

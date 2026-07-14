@@ -13,6 +13,8 @@
 
 The FinOps Architect designs and implements cloud financial management strategies, governance frameworks, and cost optimization architectures across the organization. This role bridges financial management practices with cloud technology to ensure optimal resource utilization and cost efficiency.
 
+See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.md) — the tagging, budgeting, and chargeback standards this role works within.
+
 ## Business Impact
 
 - **Business Objective:** Designs cloud financial management frameworks and cost optimisation architectures ensuring cloud investments align with business strategy and deliver maximum value through governance, visibility, and accountability
