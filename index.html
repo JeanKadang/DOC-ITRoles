@@ -1322,6 +1322,13 @@
     // and a real <details> table fallback (WCAG, #17).
     const chartInstances = {};
 
+    // WCAG 2.2 motion: users who ask the OS for reduced motion get charts
+    // without entrance/update animations (#17). Evaluated per render so a
+    // live OS-setting change is picked up on the next redraw.
+    function reducedMotion() {
+        return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
     function chartTheme() {
         const css = getComputedStyle(document.documentElement);
         return {
@@ -1354,6 +1361,7 @@
                 indexAxis: 'y',
                 responsive: true,
                 maintainAspectRatio: false,
+                animation: reducedMotion() ? false : undefined,
                 plugins: {
                     legend: { display: false }, // single series — the title names it
                     tooltip: {
@@ -1462,6 +1470,7 @@
                 },
                 leaves: { label: { position: 'right', align: 'left' } },
                 emphasis: { focus: 'descendant' },
+                animation: !reducedMotion(),
                 animationDuration: 300,
                 animationDurationUpdate: 400,
             }],
@@ -1629,7 +1638,11 @@
                 roam: true,
                 draggable: true,
                 label: { color: theme.text, fontSize: 11, position: 'right' },
-                force: { repulsion: 320, edgeLength: [70, 150], gravity: 0.12 },
+                force: {
+                    repulsion: 320, edgeLength: [70, 150], gravity: 0.12,
+                    layoutAnimation: !reducedMotion(),
+                },
+                animation: !reducedMotion(),
                 emphasis: { focus: 'adjacency', lineStyle: { width: 3 } },
             }],
         });
