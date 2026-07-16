@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Accessibility
+
+- **Charts respect `prefers-reduced-motion` (#17).** Users who ask the OS
+  for reduced motion get all four visuals (distribution charts, org chart,
+  relationship graph) without entrance/update animations; the force graph
+  lays out statically. This closes the chart-accessibility issue — the
+  fallback/labeling requirements it tracked were built into each chart as
+  it shipped: aria-label summaries and table/list fallbacks on every
+  visual, identity via labels and shape cues (solid vs dashed edges)
+  rather than color alone, and validated palettes on both themes.
+
 ### Added
 
 - **Reference/standards docs are reachable in the viewer again (#29).**
