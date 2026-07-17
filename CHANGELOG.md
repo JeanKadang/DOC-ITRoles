@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **Career path flow view (#15).** New "📈 Careers" header toggle renders
+  an ECharts sankey built live from SKILLS_PROGRESSION.md: career rungs as
+  columns (Engineer → Senior → Architect → Lead/Principal → Chapter Lead →
+  Area Lead → Executive), band width = role count at each rung, with
+  Product Owner and Reliability Engineer branching off the IC line. Node
+  colors are an ordinal blue ramp (darker = more senior); hover shows the
+  contributing domains per band. Ladder and mobility parsers
+  (`parseProgressionLadders`, `buildCareerSankey`, `parseMobilityPaths`)
+  live in `viewer-logic.js` with fixture tests plus an integration test
+  against the real document (32 ladders, all 216 roles). Ships the full
+  chart-accessibility bar: reduced-motion support, aria summary, and a
+  "View as table" fallback that also lists the cross-domain mobility
+  paths. Completes the In-App Data Visualization milestone's original
+  chart set.
 - **SKILLS_PROGRESSION.md now covers all 32 domains (#1)** — up from 10.
   The domain-ladder section was regenerated from the role files themselves:
   every one of the 216 roles appears exactly once, mapped to its metadata

@@ -221,6 +221,98 @@
         };
     }
 
+    // Parse the domain-ladder section of docs/SKILLS_PROGRESSION.md into
+    // [{ domain, levels: { bucket: [roleName, …] } }]. Pure markdown in;
+    // the drift-guard tests in test/skills-progression.test.js keep the
+    // document complete, so this parser can trust its shape.
+    function parseProgressionLadders(markdown) {
+        const section = String(markdown)
+            .split('## Domain-by-domain progression paths')[1];
+        if (!section) return [];
+        const body = section.split(/\r?\n## /)[0];
+        const ladders = [];
+        let current = null;
+        for (const line of body.split(/\r?\n/)) {
+            const h = line.match(/^###\s+(.+)/);
+            if (h) {
+                current = { domain: h[1].trim(), levels: {} };
+                ladders.push(current);
+                continue;
+            }
+            const l = current && line.match(/^-\s+([^:]+):\s+(.+)$/);
+            if (l) {
+                const bucket = l[1].trim();
+                const roles = [...l[2].matchAll(/`([a-z0-9_]+)`/g)].map(m => m[1]);
+                if (roles.length) current.levels[bucket] = roles;
+            }
+        }
+        return ladders;
+    }
+
+    // Build a level-flow sankey from parsed ladders. Nodes are career
+    // levels; a link Engineer → Senior Engineer with value 3 means a domain
+    // contributes 3 Senior roles reachable from its Engineer rung. Link
+    // weight = role count at the TARGET level, so node throughput mirrors
+    // how many roles exist at each rung. Product Owner branches off Senior
+    // Engineer; Reliability Engineer branches off Engineer; every ladder
+    // role is represented in exactly one link value (or as a source-only
+    // entry node), so nothing silently disappears (#46 lesson).
+    const SANKEY_MAIN_LINE = [
+        'Engineer', 'Senior Engineer', 'Architect', 'Lead/Principal',
+        'Chapter Lead', 'Area Lead', 'Executive',
+    ];
+    const SANKEY_BRANCHES = {
+        'Reliability Engineer': 'Engineer',
+        'Product Owner':        'Senior Engineer',
+    };
+
+    function buildCareerSankey(ladders) {
+        const linkMap = new Map(); // "src|tgt" → { value, domains: [] }
+        const nodeSet = new Set();
+
+        function addLink(source, target, value, domain) {
+            const key = `${source}|${target}`;
+            if (!linkMap.has(key)) linkMap.set(key, { source, target, value: 0, domains: [] });
+            const l = linkMap.get(key);
+            l.value += value;
+            l.domains.push(`${domain} (${value})`);
+            nodeSet.add(source);
+            nodeSet.add(target);
+        }
+
+        for (const { domain, levels } of ladders) {
+            const present = SANKEY_MAIN_LINE.filter(b => levels[b]);
+            for (let i = 1; i < present.length; i++) {
+                addLink(present[i - 1], present[i], levels[present[i]].length, domain);
+            }
+            if (present.length === 1) nodeSet.add(present[0]); // entry-only rung (e.g. C-Suite Executive)
+            for (const [branch, from] of Object.entries(SANKEY_BRANCHES)) {
+                if (levels[branch] && levels[from]) {
+                    addLink(from, branch, levels[branch].length, domain);
+                }
+            }
+        }
+
+        const order = [...SANKEY_MAIN_LINE, ...Object.keys(SANKEY_BRANCHES)];
+        return {
+            nodes: order.filter(n => nodeSet.has(n)).map(name => ({ name })),
+            links: [...linkMap.values()],
+        };
+    }
+
+    // Parse the cross-domain mobility bullet list from SKILLS_PROGRESSION.md
+    // into [{ path, description }] for display alongside the sankey.
+    function parseMobilityPaths(markdown) {
+        const section = String(markdown).split('## Cross-domain mobility paths')[1];
+        if (!section) return [];
+        const out = [];
+        for (const line of section.split(/\r?\n/)) {
+            const m = line.match(/^-\s+\*\*(.+?)\*\*\s*(?:\((.*?)\))?\s*—\s*(.+)$/);
+            if (m) out.push({ path: m[1].trim(), description: m[3].trim() });
+        }
+        return out;
+    }
+
     // Map each domain label to its chapter label (for graph node
     // categories). Labels not covered by any chapter map to null.
     function labelToChapter(domains, chapters) {
@@ -348,6 +440,9 @@
         buildOrgTree,
         parseInteractions,
         labelToChapter,
+        parseProgressionLadders,
+        buildCareerSankey,
+        parseMobilityPaths,
         resolveDocHref,
     };
 });
