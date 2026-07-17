@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **SKILLS_PROGRESSION.md now covers all 32 domains (#1)** — up from 10.
+  The domain-ladder section was regenerated from the role files themselves:
+  every one of the 216 roles appears exactly once, mapped to its metadata
+  level (Product Owner lines added throughout; the eight specialist
+  Senior-Engineer-grade governance roles sit on their domains' Senior
+  lines). New "GenAI vs classical MLOps" section documents the two AI
+  platform tracks, the Data-to-AI mobility path names which of the two
+  architect targets it leads to, and governance-specialist feeder paths
+  were added to cross-domain mobility. A new test suite pins the doc to
+  the catalog — a missing, duplicate, or phantom ladder entry now fails
+  CI. Unblocks the #15 career Sankey.
+
 ### Accessibility
 
 - **Charts respect `prefers-reduced-motion` (#17).** Users who ask the OS
