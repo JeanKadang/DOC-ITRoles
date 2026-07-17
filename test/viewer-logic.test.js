@@ -16,6 +16,9 @@ const {
     buildOrgTree,
     parseInteractions,
     labelToChapter,
+    parseProgressionLadders,
+    buildCareerSankey,
+    parseMobilityPaths,
     resolveDocHref,
 } = require('../viewer-logic');
 
@@ -412,4 +415,75 @@ test('labelToChapter maps domain labels to chapter labels', () => {
         b: { label: 'Chapter B', domains: ['network', 'missing'] },
     };
     assert.deepEqual(labelToChapter(domains, chapters), { 'DevOps': 'Chapter A', 'Network': 'Chapter B' });
+});
+
+// ── parseProgressionLadders / buildCareerSankey ──────────
+
+const LADDER_FIXTURE = `# Skills progression framework
+
+## Domain-by-domain progression paths
+
+Intro line.
+
+### Alpha Domain
+
+- Engineer: \`alpha_engineer\`, \`alpha_tool_engineer\`
+- Senior Engineer: \`alpha_senior_engineer\`
+- Architect: \`alpha_architect\`
+- Product Owner: \`alpha_product_owner\`
+
+### Leadershipish
+
+- Senior Engineer: \`champion\`
+- Chapter Lead: \`alpha_chapter_lead\`
+- Executive: \`svp_thing\`
+
+### Execs Only
+
+- Executive: \`ceo_thing\`
+
+## Cross-domain mobility paths
+
+- **Alpha Engineer → Beta Senior Engineer** — a well-trodden move
+- **Any Architect → TAL** — leadership track
+`;
+
+test('parseProgressionLadders extracts domains, buckets, and role names', () => {
+    const ladders = parseProgressionLadders(LADDER_FIXTURE);
+    assert.equal(ladders.length, 3);
+    assert.deepEqual(ladders[0].levels['Engineer'], ['alpha_engineer', 'alpha_tool_engineer']);
+    assert.deepEqual(ladders[1].levels['Chapter Lead'], ['alpha_chapter_lead']);
+});
+
+test('buildCareerSankey links adjacent present rungs weighted by target count', () => {
+    const s = buildCareerSankey(parseProgressionLadders(LADDER_FIXTURE));
+    const link = (a, b) => s.links.find(l => l.source === a && l.target === b);
+    assert.equal(link('Engineer', 'Senior Engineer').value, 1);
+    assert.equal(link('Senior Engineer', 'Architect').value, 1);
+    assert.equal(link('Senior Engineer', 'Product Owner').value, 1, 'PO branches off Senior');
+    assert.equal(link('Senior Engineer', 'Chapter Lead').value, 1, 'absent rungs are skipped, not broken');
+    assert.equal(link('Chapter Lead', 'Executive').value, 1);
+});
+
+test('buildCareerSankey keeps entry-only rungs as nodes (nothing vanishes)', () => {
+    const s = buildCareerSankey(parseProgressionLadders(LADDER_FIXTURE));
+    assert.ok(s.nodes.some(n => n.name === 'Executive'), 'exec-only domain still contributes its node');
+    assert.ok(s.links.every(l => l.value > 0));
+});
+
+test('career sankey handles the real SKILLS_PROGRESSION.md', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const md = fs.readFileSync(path.join(__dirname, '..', 'docs', 'SKILLS_PROGRESSION.md'), 'utf8');
+    const ladders = parseProgressionLadders(md);
+    assert.equal(ladders.length, 32, 'all 32 domain ladders parse');
+    const totalRoles = ladders.reduce((n, l) => n + Object.values(l.levels).flat().length, 0);
+    assert.equal(totalRoles, 216, 'parser sees every role the drift guard guarantees');
+    const s = buildCareerSankey(ladders);
+    assert.ok(s.nodes.length >= 8, 'all level rungs present');
+    const engSr = s.links.find(l => l.source === 'Engineer' && l.target === 'Senior Engineer');
+    assert.ok(engSr.value >= 40, `main-line flow has real volume (got ${engSr.value})`);
+    const mobility = parseMobilityPaths(md);
+    assert.ok(mobility.length >= 7, 'mobility bullets parse');
+    assert.ok(mobility.some(m => m.path.includes('TAL')));
 });

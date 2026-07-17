@@ -992,6 +992,7 @@
         <button class="btn-ghost" id="matrixBtn" onclick="toggleMatrix()" aria-pressed="false" aria-label="Toggle role matrix view">📊 Matrix</button>
         <button class="btn-ghost" id="orgBtn" onclick="toggleOrg()" aria-pressed="false" aria-label="Toggle organisation chart view">🌳 Org</button>
         <button class="btn-ghost" id="graphBtn" onclick="toggleGraph()" aria-pressed="false" aria-label="Toggle domain relationship graph">🔗 Graph</button>
+        <button class="btn-ghost" id="careersBtn" onclick="toggleCareers()" aria-pressed="false" aria-label="Toggle career path flow view">📈 Careers</button>
         <button class="btn-ghost" id="themeBtn" onclick="toggleTheme()" aria-pressed="false" aria-label="Toggle dark mode">🌙 Dark</button>
     </div>
 </header>
@@ -1106,6 +1107,25 @@
             </details>
         </div>
 
+        <!-- Career path flow view -->
+        <div class="matrix-view" id="careersView">
+            <div class="matrix-header">
+                <div>
+                    <h2>📈 Career Path Flow</h2>
+                    <p>How the catalog's roles ladder upward — built live from the Skills Progression
+                       reference. Band width shows how many roles each rung offers; Product Owner and
+                       Reliability Engineer branch off the individual-contributor line. Hover any band
+                       for the contributing domains.</p>
+                </div>
+            </div>
+            <div id="careersChartCanvas" class="org-canvas" role="img"
+                 aria-label="Career path flow diagram. A text version is available below under 'View as table'."></div>
+            <details class="chart-table">
+                <summary>View as table</summary>
+                <div id="careersListFallback" class="org-list"></div>
+            </details>
+        </div>
+
         <!-- Doc view (reference documents) -->
         <div class="doc-view" id="docView">
             <div class="role-card doc-card" id="docHeader"></div>
@@ -1124,6 +1144,7 @@
         STALE_MONTHS, REFERENCE_DOC_PATTERN, LEVEL_ORDER, LEVEL_SHORT,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
+        parseProgressionLadders, buildCareerSankey, parseMobilityPaths,
     } = ViewerLogic;
 
     // ── State ───────────────────────────────────────────
@@ -1536,6 +1557,12 @@
                 const gb = document.getElementById('graphBtn');
                 gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
             }
+            if (careersOpen) {
+                careersOpen = false;
+                document.getElementById('careersView').classList.remove('show');
+                const cb = document.getElementById('careersBtn');
+                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
+            }
         } else {
             ov.classList.remove('show');
             btn.style.background = '';
@@ -1710,6 +1737,12 @@
                 const ob = document.getElementById('orgBtn');
                 ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
             }
+            if (careersOpen) {
+                careersOpen = false;
+                document.getElementById('careersView').classList.remove('show');
+                const cb = document.getElementById('careersBtn');
+                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
+            }
         } else {
             gv.classList.remove('show');
             btn.style.background = '';
@@ -1718,8 +1751,128 @@
         }
     }
 
+    // ── Career path flow (ECharts sankey) ─────────────────
+    let careersOpen  = false;
+    let careersChart = null;
+
+    // Ordinal blue ramp (light→dark with seniority) for the main IC line,
+    // aqua for the two branch rungs. Sequential/ordinal encoding — one hue,
+    // monotonic lightness — per the dataviz method for ordered levels.
+    const SANKEY_NODE_COLORS = {
+        light: {
+            'Engineer': '#86b6ef', 'Senior Engineer': '#5598e7', 'Architect': '#2a78d6',
+            'Lead/Principal': '#1c5cab', 'Chapter Lead': '#184f95', 'Area Lead': '#104281',
+            'Executive': '#0d366b',
+            'Reliability Engineer': '#1baf7a', 'Product Owner': '#1baf7a',
+        },
+        dark: {
+            'Engineer': '#9ec5f4', 'Senior Engineer': '#6da7ec', 'Architect': '#3987e5',
+            'Lead/Principal': '#2a78d6', 'Chapter Lead': '#256abf', 'Area Lead': '#1c5cab',
+            'Executive': '#184f95',
+            'Reliability Engineer': '#199e70', 'Product Owner': '#199e70',
+        },
+    };
+
+    async function renderCareerSankey() {
+        if (typeof echarts === 'undefined') return;
+        const theme  = chartTheme();
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const colors = SANKEY_NODE_COLORS[isDark ? 'dark' : 'light'];
+
+        let md;
+        try {
+            const res = await fetch(`/api/doc?file=${encodeURIComponent('docs/SKILLS_PROGRESSION.md')}`);
+            md = await res.text();
+        } catch {
+            document.getElementById('careersListFallback').innerHTML =
+                '<p>⚠️ Could not load the Skills Progression document.</p>';
+            return;
+        }
+        const ladders  = parseProgressionLadders(md);
+        const sankey   = buildCareerSankey(ladders);
+        const mobility = parseMobilityPaths(md);
+
+        careersChart?.dispose();
+        careersChart = echarts.init(document.getElementById('careersChartCanvas'));
+        careersChart.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: p => {
+                    if (p.dataType === 'edge') {
+                        const doms = (p.data.domains || []).map(escapeHtml).join('<br>• ');
+                        return `<b>${escapeHtml(p.data.source)} → ${escapeHtml(p.data.target)}</b>: ${p.data.value} role${p.data.value !== 1 ? 's' : ''}${doms ? '<br>• ' + doms : ''}`;
+                    }
+                    return `<b>${escapeHtml(p.name)}</b>`;
+                },
+            },
+            series: [{
+                type: 'sankey',
+                data: sankey.nodes.map(n => ({ ...n, itemStyle: { color: colors[n.name] || theme.bar } })),
+                links: sankey.links,
+                orient: 'horizontal',
+                nodeAlign: 'left',
+                nodeGap: 14,
+                label: { color: theme.text, fontSize: 12 },
+                lineStyle: { color: 'gradient', curveness: 0.5, opacity: isDark ? 0.35 : 0.25 },
+                emphasis: { focus: 'adjacency' },
+                animation: !reducedMotion(),
+            }],
+        });
+
+        // Fallback: flows as a table plus the mobility paths as text.
+        const rows = sankey.links.map(l => `
+            <tr><td>${escapeHtml(l.source)}</td><td>${escapeHtml(l.target)}</td>
+                <td>${l.value}</td><td>${escapeHtml(l.domains.join('; '))}</td></tr>`).join('');
+        const mobilityHtml = mobility.map(m =>
+            `<li><b>${escapeHtml(m.path)}</b> — ${escapeHtml(m.description)}</li>`).join('');
+        document.getElementById('careersListFallback').innerHTML = `
+            <table>
+                <thead><tr><th>From</th><th>To</th><th>Roles</th><th>Contributing domains</th></tr></thead>
+                <tbody>${rows}</tbody>
+            </table>
+            <p><b>Cross-domain mobility paths</b></p>
+            <ul>${mobilityHtml}</ul>`;
+    }
+
+    function toggleCareers() {
+        careersOpen = !careersOpen;
+        const cv  = document.getElementById('careersView');
+        const btn = document.getElementById('careersBtn');
+        btn.setAttribute('aria-pressed', String(careersOpen));
+
+        if (careersOpen) {
+            document.getElementById('welcomeState').style.display = 'none';
+            document.getElementById('chapterView').style.display  = 'none';
+            document.getElementById('rolesGrid').style.display    = 'none';
+            document.getElementById('docView').style.display      = 'none';
+            activeDoc = null;
+            cv.classList.add('show');
+            btn.style.background = 'rgba(255,255,255,0.3)';
+            btn.style.borderColor = 'rgba(255,255,255,0.6)';
+            renderCareerSankey();
+
+            // All five side panels are mutually exclusive
+            for (const [flagOff, viewId, btnId] of [
+                [() => { matrixOpen = false; }, 'matrixView', 'matrixBtn'],
+                [() => { staleOpen  = false; }, 'staleView',  'staleBtn'],
+                [() => { orgOpen    = false; }, 'orgView',    'orgBtn'],
+                [() => { graphOpen  = false; }, 'graphView',  'graphBtn'],
+            ]) {
+                flagOff();
+                document.getElementById(viewId).classList.remove('show');
+                const b = document.getElementById(btnId);
+                b.style.background = ''; b.style.borderColor = ''; b.setAttribute('aria-pressed', 'false');
+            }
+        } else {
+            cv.classList.remove('show');
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            if (!activeFile) document.getElementById('welcomeState').style.display = '';
+        }
+    }
+
     // Keep the ECharts canvases sized to their containers.
-    window.addEventListener('resize', () => { orgChart?.resize(); graphChart?.resize(); });
+    window.addEventListener('resize', () => { orgChart?.resize(); graphChart?.resize(); careersChart?.resize(); });
 
     // ── Render sidebar ───────────────────────────────────
     function renderSidebar(domains, filter = '') {
@@ -1876,6 +2029,7 @@
         document.getElementById('staleView').classList.remove('show');
         document.getElementById('orgView').classList.remove('show');
         document.getElementById('graphView').classList.remove('show');
+        document.getElementById('careersView').classList.remove('show');
         document.getElementById('docView').style.display      = 'none';
         document.getElementById('welcomeState').style.display = 'none';
 
@@ -2024,6 +2178,10 @@
         ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
         const gb = document.getElementById('graphBtn');
         gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
+        careersOpen = false;
+        document.getElementById('careersView').classList.remove('show');
+        const cb = document.getElementById('careersBtn');
+        cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
     }
 
     // ── Shared: build role header HTML ───────────────────
@@ -2175,6 +2333,12 @@
         document.getElementById('graphBtn').style.borderColor = '';
         document.getElementById('graphBtn').setAttribute('aria-pressed', 'false');
 
+        document.getElementById('careersView').classList.remove('show');
+        careersOpen = false;
+        document.getElementById('careersBtn').style.background  = '';
+        document.getElementById('careersBtn').style.borderColor = '';
+        document.getElementById('careersBtn').setAttribute('aria-pressed', 'false');
+
         renderSidebar(allDomains, document.getElementById('searchInput').value);
 
         const docView = document.getElementById('docView');
@@ -2277,6 +2441,7 @@
         if (Object.keys(allDomains).length) renderDistributionCharts(allDomains);
         if (orgOpen) renderOrgChart();
         if (graphOpen) renderDomainGraph();
+        if (careersOpen) renderCareerSankey();
     }
 
     // ── Matrix view ───────────────────────────────────────
@@ -2387,6 +2552,12 @@
                 const gb = document.getElementById('graphBtn');
                 gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
             }
+            if (careersOpen) {
+                careersOpen = false;
+                document.getElementById('careersView').classList.remove('show');
+                const cb = document.getElementById('careersBtn');
+                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
+            }
         } else {
             // Restore normal content
             document.getElementById('rolesGrid').style.display = '';
@@ -2444,6 +2615,12 @@
                 document.getElementById('graphView').classList.remove('show');
                 const gb = document.getElementById('graphBtn');
                 gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
+            }
+            if (careersOpen) {
+                careersOpen = false;
+                document.getElementById('careersView').classList.remove('show');
+                const cb = document.getElementById('careersBtn');
+                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
             }
         } else {
             sv.classList.remove('show');
