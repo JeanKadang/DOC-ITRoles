@@ -411,6 +411,32 @@
             : { name: 'IT Organisation', kind: 'group', children: rootChildren };
     }
 
+    // Parse a role file's "## Career Development Path" section into
+    // { from: [...], to: [...] }. The catalog uses two heading variants
+    // ("Previous Roles:" / "Potential Next Roles:" in 210 files,
+    // "From (typical previous roles):" / "To (typical next roles):" in 6);
+    // both are handled. Returns empty lists when the section is absent.
+    function parseCareerPath(markdown) {
+        const section = String(markdown).split(/^## Career Development Path\s*$/m)[1];
+        const out = { from: [], to: [] };
+        if (!section) return out;
+        const body = section.split(/\r?\n## /)[0];
+        let current = null;
+        for (const line of body.split(/\r?\n/)) {
+            const bold = line.match(/^\*\*(.+?):?\*\*/);
+            if (bold) {
+                const h = bold[1].toLowerCase();
+                current = /previous|from \(/.test(h) ? 'from'
+                        : /next|to \(/.test(h)       ? 'to'
+                        : null;
+                continue;
+            }
+            const item = current && line.match(/^-\s+(.+)$/);
+            if (item) out[current].push(item[1].trim());
+        }
+        return out;
+    }
+
     // Resolve a Markdown link href relative to the file it appears in.
     // Repo-absolute hrefs (Roles/…, docs/…) pass through unchanged.
     function resolveDocHref(href, baseFile = '') {
@@ -443,6 +469,7 @@
         parseProgressionLadders,
         buildCareerSankey,
         parseMobilityPaths,
+        parseCareerPath,
         resolveDocHref,
     };
 });

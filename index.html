@@ -488,6 +488,52 @@
         .chart-table td:last-child { text-align: right; color: var(--text-primary); font-weight: 600; }
         @media print { .charts-row { display: none; } }
 
+        /* ── Career stepper (role view, #55) ────────────────── */
+        .career-stepper {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0 4px;
+            padding: 12px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: 0.82em;
+        }
+        .career-stepper .cs-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+        .career-stepper .cs-label {
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-muted);
+            margin-right: 2px;
+        }
+        .career-stepper .cs-chip {
+            padding: 3px 10px;
+            border-radius: 20px;
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+        .career-stepper .cs-chip[data-file] {
+            color: var(--accent-blue);
+            border-color: var(--border-hover);
+            cursor: pointer;
+        }
+        .career-stepper .cs-chip[data-file]:hover { background: var(--bg-card-hover); text-decoration: underline; }
+        .career-stepper .cs-current {
+            padding: 3px 12px;
+            border-radius: 20px;
+            background: var(--accent-blue);
+            color: #fff;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .career-stepper .cs-arrow { color: var(--text-muted); font-weight: 700; }
+        @media print { .career-stepper { display: none; } }
+
         /* ── Org chart view ─────────────────────────────────── */
         .org-canvas {
             width: 100%;
@@ -1055,6 +1101,7 @@
             <!-- Primary role -->
             <div class="role-view" id="roleView">
                 <div class="role-card" id="roleHeader"></div>
+                <nav class="career-stepper" id="careerStepper" aria-label="Career progression for this role" hidden></nav>
                 <div class="md-body"  id="roleBody"></div>
             </div>
 
@@ -1144,7 +1191,7 @@
         STALE_MONTHS, REFERENCE_DOC_PATTERN, LEVEL_ORDER, LEVEL_SHORT,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
-        parseProgressionLadders, buildCareerSankey, parseMobilityPaths,
+        parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
     } = ViewerLogic;
 
     // ── State ───────────────────────────────────────────
@@ -2184,6 +2231,43 @@
         cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
     }
 
+    // ── Career stepper (role view, #55) ───────────────────
+    // From → current role → To chips parsed from the role's own Career
+    // Development Path section. Steps whose text exactly matches a catalog
+    // role title (case-insensitive) become keyboard-operable links that
+    // open that role; the rest render as plain chips.
+    function findRoleByTitle(title) {
+        const t = title.trim().toLowerCase();
+        for (const d of Object.values(allDomains)) {
+            const hit = d.roles.find(r => r.title.trim().toLowerCase() === t);
+            if (hit) return { ...hit, domainLabel: d.label };
+        }
+        return null;
+    }
+
+    function renderCareerStepper(markdown, currentTitle) {
+        const el = document.getElementById('careerStepper');
+        const { from, to } = parseCareerPath(markdown);
+        if (!from.length && !to.length) { el.hidden = true; el.innerHTML = ''; return; }
+
+        const chip = title => {
+            const match = findRoleByTitle(title);
+            return match
+                ? `<span class="cs-chip" role="button" tabindex="0"
+                        data-file="${escapeHtml(match.file)}" data-title="${escapeHtml(match.title)}"
+                        data-level="${escapeHtml(match.level)}" data-domain="${escapeHtml(match.domainLabel)}">${escapeHtml(title)}</span>`
+                : `<span class="cs-chip">${escapeHtml(title)}</span>`;
+        };
+
+        el.innerHTML = `
+            <span class="cs-group"><span class="cs-label">From</span>${from.map(chip).join('')}</span>
+            <span class="cs-arrow" aria-hidden="true">→</span>
+            <span class="cs-current">${escapeHtml(currentTitle)}</span>
+            <span class="cs-arrow" aria-hidden="true">→</span>
+            <span class="cs-group"><span class="cs-label">To</span>${to.map(chip).join('')}</span>`;
+        el.hidden = false;
+    }
+
     // ── Shared: build role header HTML ───────────────────
     function buildHeader(title, level, domainLabel, lastReviewed, slot) {
         const isCompare = slot === 'B';
@@ -2233,6 +2317,7 @@
 
         // Placeholder header (no reviewed date yet)
         document.getElementById('roleHeader').innerHTML = buildHeader(title, level, domainLabel, null, 'A');
+        document.getElementById('careerStepper').hidden = true;
         document.getElementById('roleBody').innerHTML =
             '<div class="loading"><div class="spinner"></div> Loading…</div>';
 
@@ -2249,6 +2334,7 @@
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
             document.getElementById('roleBody').innerHTML = renderMarkdown(body);
+            renderCareerStepper(markdown, title);
             document.getElementById('mainArea').scrollTop = 0;
 
             lastMarkdown      = markdown;
@@ -2755,6 +2841,13 @@
         const chip = e.target.closest('.matrix-chip');
         if (!chip) return;
         openRole(chip.dataset.file, chip.dataset.title, chip.dataset.level, chip.dataset.domain);
+    });
+
+    // ── Career-stepper chip clicks (single delegated listener) ─
+    document.getElementById('careerStepper').addEventListener('click', e => {
+        const chipEl = e.target.closest('.cs-chip[data-file]');
+        if (!chipEl) return;
+        openRole(chipEl.dataset.file, chipEl.dataset.title, chipEl.dataset.level, chipEl.dataset.domain);
     });
 
     // ── Org list-fallback clicks (single delegated listener) ─
