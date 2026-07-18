@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-07-12
+
 ### Added
 
 - **Career path flow view (#15).** New "📈 Careers" header toggle renders
@@ -34,19 +36,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   were added to cross-domain mobility. A new test suite pins the doc to
   the catalog — a missing, duplicate, or phantom ladder entry now fails
   CI. Unblocks the #15 career Sankey.
-
-### Accessibility
-
-- **Charts respect `prefers-reduced-motion` (#17).** Users who ask the OS
-  for reduced motion get all four visuals (distribution charts, org chart,
-  relationship graph) without entrance/update animations; the force graph
-  lays out statically. This closes the chart-accessibility issue — the
-  fallback/labeling requirements it tracked were built into each chart as
-  it shipped: aria-label summaries and table/list fallbacks on every
-  visual, identity via labels and shape cues (solid vs dashed edges)
-  rather than color alone, and validated palettes on both themes.
-
-### Added
 
 - **Reference/standards docs are reachable in the viewer again (#29).**
   `/api/roles` now lists `*_standards.md` files in a per-domain
@@ -130,6 +119,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Accessibility
 
+- **Charts respect `prefers-reduced-motion` (#17).** Users who ask the OS
+  for reduced motion get all four visuals (distribution charts, org chart,
+  relationship graph) without entrance/update animations; the force graph
+  lays out statically. This closes the chart-accessibility issue — the
+  fallback/labeling requirements it tracked were built into each chart as
+  it shipped: aria-label summaries and table/list fallbacks on every
+  visual, identity via labels and shape cues (solid vs dashed edges)
+  rather than color alone, and validated palettes on both themes.
 - **Sidebar and matrix navigation is now keyboard-accessible (#24).** All
   clickable divs/spans (role items, resource docs, domain/chapter headers,
   chapter-panel cards, matrix and stale-panel chips, compare-cancel) are
