@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **Per-role career stepper (#55).** The role view now opens with a
+  From → current role → To strip parsed from the role's own Career
+  Development Path section (both heading variants in the catalog are
+  handled; every one of the 216 role files parses). Steps whose text
+  exactly matches a catalog role title become keyboard-operable chips
+  that open that role; unmatched steps render as plain chips. Plain
+  HTML/CSS — no chart library, accessible by construction, hidden in
+  print and in the compare column.
+
 ## [1.4.0] - 2026-07-12
 
 ### Added

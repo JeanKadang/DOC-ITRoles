@@ -19,6 +19,7 @@ const {
     parseProgressionLadders,
     buildCareerSankey,
     parseMobilityPaths,
+    parseCareerPath,
     resolveDocHref,
 } = require('../viewer-logic');
 
@@ -486,4 +487,48 @@ test('career sankey handles the real SKILLS_PROGRESSION.md', () => {
     const mobility = parseMobilityPaths(md);
     assert.ok(mobility.length >= 7, 'mobility bullets parse');
     assert.ok(mobility.some(m => m.path.includes('TAL')));
+});
+
+// ── parseCareerPath ──────────────────────────────────────
+
+test('parseCareerPath handles the dominant heading variant', () => {
+    const md = `# Role\n\n## Career Development Path\n\n**Previous Roles:**\n\n- System Administrator\n- Build Engineer\n\n**Potential Next Roles:**\n\n- Senior Engineer\n\n## Interactions with Other Roles\n\n- stuff`;
+    assert.deepEqual(parseCareerPath(md), {
+        from: ['System Administrator', 'Build Engineer'],
+        to:   ['Senior Engineer'],
+    });
+});
+
+test('parseCareerPath handles the From/To (typical …) variant', () => {
+    const md = `## Career Development Path\n\n**From (typical previous roles):**\n\n- VMware Senior Engineer\n\n**To (typical next roles):**\n\n- Cloud Lead Architect\n- Enterprise Architect\n`;
+    assert.deepEqual(parseCareerPath(md), {
+        from: ['VMware Senior Engineer'],
+        to:   ['Cloud Lead Architect', 'Enterprise Architect'],
+    });
+});
+
+test('parseCareerPath returns empty lists when the section is absent', () => {
+    assert.deepEqual(parseCareerPath('# Role\n\n## Role Overview\n\nText.'), { from: [], to: [] });
+});
+
+test('parseCareerPath ignores bullets outside the from/to sub-lists', () => {
+    const md = `## Career Development Path\n\nIntro text.\n\n- stray bullet\n\n**Previous Roles:**\n\n- Real Entry\n\n**Growth areas:**\n\n- not a role list\n`;
+    assert.deepEqual(parseCareerPath(md), { from: ['Real Entry'], to: [] });
+});
+
+test('parseCareerPath parses every role file in the catalog', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    let withBoth = 0, total = 0;
+    for (const d of fs.readdirSync(path.join(__dirname, '..', 'Roles'), { withFileTypes: true })) {
+        if (!d.isDirectory()) continue;
+        for (const f of fs.readdirSync(path.join(__dirname, '..', 'Roles', d.name))) {
+            if (!f.endsWith('.md') || f === 'README.md' || /_standards\.md$/.test(f)) continue;
+            total++;
+            const cp = parseCareerPath(fs.readFileSync(path.join(__dirname, '..', 'Roles', d.name, f), 'utf8'));
+            if (cp.from.length && cp.to.length) withBoth++;
+        }
+    }
+    assert.equal(total, 216);
+    assert.equal(withBoth, 216, 'every role file yields both From and To lists');
 });
