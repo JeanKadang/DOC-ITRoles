@@ -39,7 +39,6 @@
         'Architect',
         'Senior Engineer',
         'Engineer',
-        'Reliability Engineer',
         'Product Owner',
     ];
 
@@ -59,7 +58,6 @@
         'Architect':           'Architect',
         'Senior Engineer':     'Sr Engineer',
         'Engineer':            'Engineer',
-        'Reliability Engineer':'SRE',
         'Product Owner':       'Prod Owner',
     };
 
@@ -94,7 +92,6 @@
         if (level === 'Architect')           return 'b-arch';
         if (level === 'Senior Engineer')     return 'b-sen';
         if (level === 'Product Owner')       return 'b-po';
-        if (level.includes('Reliability'))   return 'b-sre';
         return 'b-eng';
     }
 
@@ -254,16 +251,15 @@
     // contributes 3 Senior roles reachable from its Engineer rung. Link
     // weight = role count at the TARGET level, so node throughput mirrors
     // how many roles exist at each rung. Product Owner branches off Senior
-    // Engineer; Reliability Engineer branches off Engineer; every ladder
-    // role is represented in exactly one link value (or as a source-only
-    // entry node), so nothing silently disappears (#46 lesson).
+    // Engineer; every ladder role is represented in exactly one link value
+    // (or as a source-only entry node), so nothing silently disappears
+    // (#46 lesson).
     const SANKEY_MAIN_LINE = [
         'Engineer', 'Senior Engineer', 'Architect', 'Lead/Principal',
         'Chapter Lead', 'Area Lead', 'Executive',
     ];
     const SANKEY_BRANCHES = {
-        'Reliability Engineer': 'Engineer',
-        'Product Owner':        'Senior Engineer',
+        'Product Owner': 'Senior Engineer',
     };
 
     function buildCareerSankey(ladders) {
