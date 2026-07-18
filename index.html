@@ -368,7 +368,6 @@
         .b-eng   { background: rgba(40,167,69,0.14);  color: #28a745; }
         .b-po    { background: rgba(255,152,0,0.14);  color: #e08000; }
         .b-standards { background: rgba(23,162,184,0.12); color: var(--accent-cyan); }
-        .b-sre   { background: rgba(23,162,184,0.14); color: #17a2b8; }
         .b-pal   { background: rgba(30,58,95,0.14);   color: #1e3a5f; }
         .b-tal   { background: rgba(0,120,212,0.22);  color: #005a9e; font-weight: 700; }
 
@@ -386,7 +385,6 @@
         [data-theme="dark"] .b-eng  { background: rgba(40,167,69,0.28);  color: #6bcf7f; }
         [data-theme="dark"] .b-po   { background: rgba(255,152,0,0.28);  color: #ffb84d; }
         [data-theme="dark"] .b-standards { background: rgba(23,162,184,0.25); color: #5fd3e8; }
-        [data-theme="dark"] .b-sre  { background: rgba(23,162,184,0.28); color: #5bc8d9; }
         [data-theme="dark"] .b-pal  { background: rgba(100,160,255,0.2); color: #a0c8ff; font-weight: 700; }
         [data-theme="dark"] .b-tal  { background: rgba(0,120,212,0.35);  color: #90d0ff; font-weight: 700; }
 
@@ -1160,9 +1158,9 @@
                 <div>
                     <h2>📈 Career Path Flow</h2>
                     <p>How the catalog's roles ladder upward — built live from the Skills Progression
-                       reference. Band width shows how many roles each rung offers; Product Owner and
-                       Reliability Engineer branch off the individual-contributor line. Hover any band
-                       for the contributing domains.</p>
+                       reference. Band width shows how many roles each rung offers; Product Owner
+                       branches off the individual-contributor line. Hover any band for the
+                       contributing domains.</p>
                 </div>
             </div>
             <div id="careersChartCanvas" class="org-canvas" role="img"
@@ -1348,7 +1346,7 @@
         const chLeadCount   = count('Chapter Lead');
         const talPalCount   = count('Technical Area Lead') + count('Product Area Lead');
         const execCount     = count('CEO') + count('CTO') + count('CIO') + count('SVP') + count('CISO');
-        const seniorCount   = count('Senior Engineer') + count('Reliability Engineer');
+        const seniorCount   = count('Senior Engineer');
         const poCount       = count('Product Owner');
         const engCount      = count('Engineer');
 
@@ -1810,13 +1808,13 @@
             'Engineer': '#86b6ef', 'Senior Engineer': '#5598e7', 'Architect': '#2a78d6',
             'Lead/Principal': '#1c5cab', 'Chapter Lead': '#184f95', 'Area Lead': '#104281',
             'Executive': '#0d366b',
-            'Reliability Engineer': '#1baf7a', 'Product Owner': '#1baf7a',
+            'Product Owner': '#1baf7a',
         },
         dark: {
             'Engineer': '#9ec5f4', 'Senior Engineer': '#6da7ec', 'Architect': '#3987e5',
             'Lead/Principal': '#2a78d6', 'Chapter Lead': '#256abf', 'Area Lead': '#1c5cab',
             'Executive': '#184f95',
-            'Reliability Engineer': '#199e70', 'Product Owner': '#199e70',
+            'Product Owner': '#199e70',
         },
     };
 

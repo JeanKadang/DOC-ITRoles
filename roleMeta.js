@@ -67,7 +67,6 @@ const CANONICAL_LEVELS = [
   'Architect',
   'Senior Engineer',
   'Engineer',
-  'Reliability Engineer',
   'Product Owner',
 ];
 
@@ -78,7 +77,6 @@ const KNOWN_LEVELS = new Set(CANONICAL_LEVELS);
 const LEVEL_ALIASES = {
   'svp of technology': 'SVP',
   'svp':               'SVP',
-  'reliability engineer': 'Reliability Engineer',
 };
 
 // Read a single `| **Field** | value |` cell from a markdown metadata table.
@@ -120,7 +118,6 @@ function detectLevelFromFilename(filename) {
   if (/engineering_practices_champion\.md$/.test(filename))     return 'Senior Engineer';
   if (/identity_governance_specialist\.md$/.test(filename))     return 'Senior Engineer';
   if (/_product_owner\.md$/.test(filename))                     return 'Product Owner';
-  if (/_reliability_engineer\.md$/.test(filename))              return 'Reliability Engineer';
   return 'Engineer';
 }
 

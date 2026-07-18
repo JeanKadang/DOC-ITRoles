@@ -126,9 +126,8 @@ Every domain in the catalog is listed below (alphabetically), with every role fi
 
 ### DevOps
 
-- Engineer: `automation_framework_engineer`, `developer_experience_engineer`, `devops_engineer`
+- Engineer: `automation_framework_engineer`, `developer_experience_engineer`, `devops_engineer`, `platform_reliability_engineer`
 - Senior Engineer: `devops_senior_engineer`
-- Reliability Engineer: `platform_reliability_engineer`
 - Architect: `devops_architect`
 - Product Owner: `devops_product_owner`
 

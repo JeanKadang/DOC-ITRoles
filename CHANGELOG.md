@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **Retired the one-role "Reliability Engineer" career level (#69).**
+  The canonical level was held by exactly one of 216 roles
+  (`platform_reliability_engineer`), which made that role render as a
+  career dead end — a terminal Sankey branch, a one-chip matrix column,
+  and a ladder line with no upward connection — while its own Career
+  Development Path listed real next steps. The role is now graded
+  Engineer like the catalog's four other reliability-titled roles; the
+  level was removed from `roleMeta.js`, `viewer-logic.js`
+  (LEVEL_ORDER/LEVEL_SHORT/badge/sankey branch), the welcome stats, and
+  the DevOps ladder. Also fixed the role's phantom "Platform Reliability
+  Senior Engineer" next-step: its To-list now names the real DevOps /
+  Site Reliability / Observability Senior Engineer roles, all of which
+  link in the career stepper.
+
 ### Added
 
 - **Per-role career stepper (#55).** The role view now opens with a

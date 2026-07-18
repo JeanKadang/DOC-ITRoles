@@ -4,7 +4,7 @@
 |---|---|
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
-| **Role Level** | Reliability Engineer |
+| **Role Level** | Engineer |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -139,8 +139,8 @@ The Platform Reliability Engineer applies site reliability engineering (SRE) pri
 
 **Potential Next Roles:**
 
-- Platform Reliability Senior Engineer
-- Site Reliability Engineer (Senior)
+- DevOps Senior Engineer
+- Site Reliability Senior Engineer
 - Observability Senior Engineer
 - DevOps Architect (platform reliability specialism)
 - Head of Platform Reliability / SRE Practice Lead
