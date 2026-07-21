@@ -342,6 +342,51 @@ test('buildOrgTree falls back to a generic root when no CEO exists', () => {
     assert.equal(collectFiles(tree).length, 7, 'all remaining roles still placed');
 });
 
+function cisoFixture() {
+    const domains = {
+        c_suite:    { label: 'C-Suite',    roles: [{ title: 'CEO', file: 'Roles/c_suite/ceo.md', level: 'CEO' }] },
+        leadership: { label: 'Leadership', roles: [
+            { title: 'SVP of Technology', file: 'Roles/leadership/svp.md', level: 'SVP' },
+            { title: 'Chief Information Security Officer', file: 'Roles/leadership/ciso.md', level: 'CISO' },
+            { title: 'Security & Identity Chapter Lead', file: 'Roles/leadership/sec_lead.md', level: 'Chapter Lead' },
+        ] },
+        security:   { label: 'Security', roles: [{ title: 'Security Engineer', file: 'Roles/security/eng.md', level: 'Engineer' }] },
+        devops:     { label: 'DevOps',   roles: [{ title: 'DevOps Engineer', file: 'Roles/devops/eng.md', level: 'Engineer' }] },
+    };
+    const chapters = {
+        security_identity: { label: 'Security & Identity', domains: ['security'], leadFile: 'Roles/leadership/sec_lead.md' },
+        devops_delivery:   { label: 'DevOps & Delivery',   domains: ['devops'],   leadFile: null },
+        leadership_chapter:{ label: 'Leadership',           domains: ['c_suite', 'leadership'], leadFile: null },
+    };
+    return { domains, chapters };
+}
+
+test('buildOrgTree attaches the Security & Identity chapter under the CISO, not the SVP (#71)', () => {
+    const { domains, chapters } = cisoFixture();
+    const tree = buildOrgTree(domains, chapters);
+    const ciso = tree.children.find(c => c.name === 'Chief Information Security Officer');
+    const svp  = tree.children.find(c => c.name === 'SVP of Technology');
+    assert.ok(ciso, 'CISO sits on the executive line');
+    const cisoChapters = (ciso.children || []).map(c => c.name);
+    assert.ok(cisoChapters.includes('Security & Identity'), 'security chapter hangs under the CISO');
+    const svpChapters = (svp.children || []).map(c => c.name);
+    assert.ok(!svpChapters.includes('Security & Identity'), 'security chapter no longer under the SVP');
+    assert.ok(svpChapters.includes('DevOps & Delivery'), 'other chapters remain under the SVP');
+    // The security engineer still appears exactly once, now beneath the CISO.
+    assert.ok(collectFiles(ciso).includes('Roles/security/eng.md'));
+    const all = collectFiles(tree);
+    assert.equal(new Set(all).size, all.length, 'no role duplicated by the re-parenting');
+});
+
+test('buildOrgTree leaves the security chapter under the SVP when there is no CISO', () => {
+    const { domains, chapters } = cisoFixture();
+    domains.leadership.roles = domains.leadership.roles.filter(r => r.level !== 'CISO');
+    const tree = buildOrgTree(domains, chapters);
+    const svp = tree.children.find(c => c.name === 'SVP of Technology');
+    assert.ok((svp.children || []).some(c => c.name === 'Security & Identity'),
+        'without a CISO the security chapter falls back under the SVP');
+});
+
 // ── parseInteractions ────────────────────────────────────
 
 const INTERACTIONS_FIXTURE = `# Cross-domain interactions

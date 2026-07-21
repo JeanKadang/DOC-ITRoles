@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- **Org chart: the CISO now carries the security-governance line (#71).**
+  The CISO previously rendered as a childless C-suite leaf while the entire
+  Security & Identity chapter hung under the SVP of Technology —
+  contradicting the role content, in which the CISO "provides strategic
+  direction to the Security & Identity Chapter Lead and senior security
+  architects." `buildOrgTree()` now attaches the Security & Identity chapter
+  (its Chapter Lead, 5 domains, and all security roles) under the CISO, with
+  every other chapter remaining under the SVP; the tree falls back to the
+  old placement when no CISO exists. All 216 roles still appear exactly
+  once, and the org-view copy names the CISO→security relationship.
 - **Retired the one-role "Reliability Engineer" career level (#69).**
   The canonical level was held by exactly one of 216 roles
   (`platform_reliability_engineer`), which made that role render as a

@@ -344,8 +344,12 @@
         // Leadership line
         const ceo  = take(r => r.level === 'CEO');
         const svp  = take(r => r.level === 'SVP');
-        const suite = ['CTO', 'CIO', 'CFO', 'CISO']
+        const suite = ['CTO', 'CIO', 'CFO']
             .map(lvl => take(r => r.level === lvl)).filter(Boolean);
+        // The CISO is placed separately from the flat C-suite: it owns the
+        // security-governance line (the Security & Identity chapter) per the
+        // CISO role content, rather than dangling as a childless leaf (#71).
+        const ciso = take(r => r.level === 'CISO');
         const areaLeads = [];
         for (;;) {
             const lead = take(r => r.level === 'Product Area Lead' || r.level === 'Technical Area Lead');
@@ -353,9 +357,10 @@
             areaLeads.push(lead);
         }
 
-        // Chapter nodes (the Leadership chapter IS the line above — skip any
-        // chapter whose domains are all consumed by leadership placement).
-        const chapterNodes = Object.entries(chapters)
+        // Chapter nodes, kept keyed so the security chapter can be re-parented
+        // under the CISO. (The Leadership chapter IS the line above — skip any
+        // chapter whose domains are all consumed by leadership placement.)
+        const chapterEntries = Object.entries(chapters)
             .filter(([, ch]) => ch.domains.some(d => domains[d] && !['c_suite', 'leadership'].includes(d)))
             .map(([key, ch]) => {
                 const lead = ch.leadFile
@@ -372,14 +377,14 @@
                             return roleNode(r);
                         }),
                     }));
-                return {
+                return [key, {
                     name: ch.label,
                     kind: 'chapter',
                     file: lead ? lead.file : null,
                     leadTitle: lead ? lead.title : null,
                     count: domainNodes.reduce((n, d) => n + d.count, 0),
                     children: domainNodes,
-                };
+                }];
             });
 
         // Anything not yet placed (e.g. cross-cutting leadership roles)
@@ -393,13 +398,28 @@
             }]
             : [];
 
+        // The Security & Identity chapter attaches under the CISO (its
+        // security-governance line, per the CISO content); every other chapter
+        // sits under the SVP. When no CISO exists it stays under the SVP.
+        const CISO_CHAPTER_KEY = 'security_identity';
+        const attachSecurityToCiso = !!ciso && chapterEntries.some(([k]) => k === CISO_CHAPTER_KEY);
+        const cisoNode = ciso
+            ? (attachSecurityToCiso
+                ? { ...roleNode(ciso, 'exec'), children: chapterEntries.filter(([k]) => k === CISO_CHAPTER_KEY).map(([, n]) => n) }
+                : roleNode(ciso, 'exec'))
+            : null;
+        const svpChapterNodes = chapterEntries
+            .filter(([k]) => !(attachSecurityToCiso && k === CISO_CHAPTER_KEY))
+            .map(([, n]) => n);
+
         const svpNode = svp
-            ? { ...roleNode(svp, 'exec'), children: [...areaLeads.map(r => roleNode(r, 'lead')), ...crossCutting, ...chapterNodes] }
+            ? { ...roleNode(svp, 'exec'), children: [...areaLeads.map(r => roleNode(r, 'lead')), ...crossCutting, ...svpChapterNodes] }
             : null;
 
         const rootChildren = [
             ...suite.map(r => roleNode(r, 'exec')),
-            ...(svpNode ? [svpNode] : [...areaLeads.map(r => roleNode(r, 'lead')), ...crossCutting, ...chapterNodes]),
+            ...(cisoNode ? [cisoNode] : []),
+            ...(svpNode ? [svpNode] : [...areaLeads.map(r => roleNode(r, 'lead')), ...crossCutting, ...svpChapterNodes]),
         ];
 
         return ceo
