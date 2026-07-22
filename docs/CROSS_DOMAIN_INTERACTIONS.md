@@ -27,6 +27,8 @@ The table below records which domain holds primary decision-making authority ove
 | Personal data privacy program and DPIAs | Data Management (Data Privacy Officer) | Security, Data Protection, Legal (external) |
 | Enterprise risk register and compliance framework mapping | Security (GRC / Risk & Compliance Analyst) | All domains (evidence providers) |
 | Vendor contracts, IT asset and software license management | Service Management (Vendor / Supplier / IT Asset Manager) | FinOps, Endpoint Management, Procurement (external) |
+| Automation framework and reusable tooling standards (cross-domain) | DevOps (Automation Framework Engineer) | Infrastructure Automation Architect, Network Automation Architect, Security Automation Engineer |
+| Site reliability engineering practice and SLO/error-budget methodology | Modern Infrastructure (Site Reliability Engineer / Senior SRE) | DevOps, Database Management, Data Protection |
 
 ## Key cross-domain relationships
 
@@ -66,6 +68,38 @@ Three roles share the data-classification and privacy space. The boundaries belo
 - **Data Privacy Officer** (`data_management/`) — owns the personal-data privacy program: DPIAs, privacy-by-design requirements, and regulator contact where legally required. Consumes the Data Governance Lead's classification; defines the privacy requirements Security's controls must meet; external Legal owns regulatory interpretation.
 
 - **Security** (`security/`, `security_identity/`) — owns the enforcing controls: DLP, access policy, encryption standards, and monitoring. Implements against the classification scheme and privacy requirements; does not define either.
+
+## Automation domain scope clarification
+
+Automation work is distributed across four domains rather than owned centrally. The boundaries below prevent duplicate framework-building and clarify who owns cross-domain automation standards.
+
+- **Automation Framework Engineer** (`devops/`) — owns the shared, reusable automation primitives consumed *by other engineers* across every domain: test automation frameworks, IaC module libraries, GitHub Actions reusable workflows, and internal automation SDKs/CLIs. Operates at the meta-level — builds the tooling other domains automate with, rather than owning any domain's automation architecture itself.
+
+- **Infrastructure Automation Architect** (`modern_infrastructure/`) — owns infrastructure automation standards, IaC coding patterns, and module library governance across cloud platforms: drift detection, compliance-as-code, and self-healing infrastructure design.
+
+- **Network Automation Architect** (`network/`) — owns network automation toolchain architecture and standards: network-as-code workflows, CI/CD pipeline design for network changes, and intent-based networking automation. Scoped to network infrastructure only.
+
+- **Security Automation Engineer** (`security_cross_platform/`) — owns security automation tooling: policy-as-code rule authoring, SOAR playbook design, and CI/CD-embedded security scanning. Scoped to security control automation only.
+
+Each domain owns the automation *architecture and standards for its own domain*; none of the architect/engineer roles above selects tooling on another domain's behalf. Where a team needs a reusable building block rather than a domain-specific pattern, the Automation Framework Engineer is the consumption point, not a domain automation architect.
+
+## Reliability domain scope clarification
+
+Four roles apply Site Reliability Engineering principles to different systems. The boundary is the system under reliability engineering, not the practice itself — each role owns SLOs, error budgets, and chaos engineering only for its own system class.
+
+- **Site Reliability Engineer / Senior SRE** (`modern_infrastructure/`) — applies SRE practice to production application and platform systems generally; the Senior SRE leads SLO/SLI design for critical services and sets the org-wide SRE methodology (error budget policy shape, chaos engineering standards) that the other three roles below apply within their own system scope.
+
+- **Platform Reliability Engineer** (`devops/`) — applies SRE practice specifically to the internal developer platform and shared engineering infrastructure (CI/CD, developer portals, self-service provisioning, shared Kubernetes clusters), treating internal engineering teams as its customers rather than end users or external products.
+
+- **Database Reliability Engineer** (`database_management/`) — applies SRE practice specifically to database systems: failover automation, replication reliability, and database-specific observability.
+
+- **Backup Reliability Engineer** (`data_protection/`) — applies SRE practice specifically to backup infrastructure: backup job health, restore reliability, and backup-specific observability.
+
+The closest overlap is Site Reliability Engineer and Platform Reliability Engineer: the former owns reliability for production application/infrastructure systems broadly, the latter is scoped exclusively to the internal developer platform and does not own product-facing service SLOs.
+
+## Endpoint tooling scope note
+
+- **SCCM Engineer** vs **Endpoint Management Engineer** (`endpoint_management/`) — the SCCM Engineer is the ConfigMgr/MECM tool specialist for deep on-premises configuration-manager work; the Endpoint Management Engineer is the generalist owning day-to-day operation of the full endpoint stack (Intune and MECM/SCCM) across Windows, macOS, iOS, and Android. Same tool-specific-beside-generalist pattern used elsewhere in this repository.
 
 ## Escalation paths
 
