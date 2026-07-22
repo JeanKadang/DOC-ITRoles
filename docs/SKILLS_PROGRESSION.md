@@ -255,6 +255,11 @@ Every domain in the catalog is listed below (alphabetically), with every role fi
 - Architect: `server_hardware_architect`
 - Product Owner: `server_hardware_product_owner`
 
+### Service Desk
+
+- Engineer: `service_desk_analyst`
+- Senior Engineer: `service_desk_lead`, `service_desk_senior_analyst`
+
 ### Service Management
 
 - Engineer: `service_management_engineer`
