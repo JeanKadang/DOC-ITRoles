@@ -44,6 +44,7 @@ const DOMAIN_LABELS = {
   server_hardware_hpe:                    'HPE Server Hardware',
   server_os_linux:                        'Linux Server OS',
   server_os_windows:                      'Windows Server OS',
+  service_desk:                           'Service Desk',
   service_management:                     'Service Management',
   c_suite:                                'C-Suite',
   specialized_computing:                  'Specialized Computing',

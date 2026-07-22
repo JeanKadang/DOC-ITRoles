@@ -29,6 +29,7 @@ The table below records which domain holds primary decision-making authority ove
 | Vendor contracts, IT asset and software license management | Service Management (Vendor / Supplier / IT Asset Manager) | FinOps, Endpoint Management, Procurement (external) |
 | Automation framework and reusable tooling standards (cross-domain) | DevOps (Automation Framework Engineer) | Infrastructure Automation Architect, Network Automation Architect, Security Automation Engineer |
 | Site reliability engineering practice and SLO/error-budget methodology | Modern Infrastructure (Site Reliability Engineer / Senior SRE) | DevOps, Database Management, Data Protection |
+| Service desk support model, staffing, and Tier-1/2/3 escalation boundaries | Service Desk (Service Desk Lead) | Client Platform, Endpoint Management, Modern Workplace, Service Management |
 
 ## Key cross-domain relationships
 
@@ -117,7 +118,7 @@ When architectural decisions conflict between domains, use the following escalat
 
 The chain above covers architectural conflicts. Operational and governance events have their own entry points, aligned with each role's documented scope:
 
-- **Major incident (P1/P2)** — on-call engineers and SREs escalate to the **Major Incident Manager**, who has incident-scoped authority to direct any team onto the bridge; incidents identified as security events hand off to the **Security Architect**; executive notification goes via the Service Management Architect.
+- **Major incident (P1/P2)** — on-call engineers and SREs escalate to the **Major Incident Manager**, who has incident-scoped authority to direct any team onto the bridge; incidents identified as security events hand off to the **Security Architect**; executive notification goes via the Service Management Architect. End-user-reported outages typically surface first through the **Service Desk**, whose Senior Analysts confirm the pattern before escalating to the Major Incident Manager.
 - **Emergency or disputed change** — engineering teams appeal risk classification to the **Change / Release Manager**; unresolved CAB disputes and organisation-wide change freezes escalate to the Service Management Architect.
 - **DR invocation and recovery gaps** — service owners raise recovery capability gaps to the **BC/DR Manager**; BIA-identified risks requiring investment or risk acceptance escalate to the Security & Identity Chapter Lead, and to the **CISO** where regulatory implications exist.
 - **Privacy incident or new personal-data processing** — any domain Architect consults the **Data Privacy Officer** before launching features that collect new personal data; privacy incidents with material regulatory exposure escalate to the **CISO** and Legal/Compliance.

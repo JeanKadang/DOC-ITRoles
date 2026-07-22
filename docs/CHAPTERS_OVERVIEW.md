@@ -12,7 +12,7 @@ This role library is organised into **seven chapters** — the top-level groupin
 | 2 | 🔄 DevOps & Delivery | CI/CD, developer experience, application platforms, integration | [devops_delivery.md](chapters/devops_delivery.md) | [devops_delivery_chapter_lead](../Roles/leadership/devops_delivery_chapter_lead.md) |
 | 3 | 📊 Data & AI | Data platform, storage, databases, AI governance | [data_ai.md](chapters/data_ai.md) | [data_ai_chapter_lead](../Roles/leadership/data_ai_chapter_lead.md) |
 | 4 | 🔒 Security & Identity | Security architecture, IAM/PAM, data protection, directory services | [security_identity.md](chapters/security_identity.md) | [security_identity_chapter_lead](../Roles/leadership/security_identity_chapter_lead.md) |
-| 5 | 🖥️ End User & Workplace | Client platform, endpoint management, Microsoft 365 | [end_user_workplace.md](chapters/end_user_workplace.md) | [end_user_workplace_chapter_lead](../Roles/leadership/end_user_workplace_chapter_lead.md) |
+| 5 | 🖥️ End User & Workplace | Client platform, endpoint management, Microsoft 365, service desk | [end_user_workplace.md](chapters/end_user_workplace.md) | [end_user_workplace_chapter_lead](../Roles/leadership/end_user_workplace_chapter_lead.md) |
 | 6 | 🎯 Service & Governance | ITSM, configuration management, service management, enterprise architecture | [service_governance.md](chapters/service_governance.md) | [service_governance_chapter_lead](../Roles/leadership/service_governance_chapter_lead.md) |
 | 7 | 👑 Leadership | C-Suite, SVP, CISO, Chapter Leads, TAL, PAL, cross-cutting leadership | [leadership_chapter.md](chapters/leadership_chapter.md) | — |
 

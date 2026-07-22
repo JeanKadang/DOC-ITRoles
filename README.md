@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml/badge.svg)](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml)
 
-A portable role definition repository for infrastructure and platform engineering teams. Covers 32 domains grouped into 7 chapters, and 216 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Chapter Lead, Technical Area Lead (TAL), Product Area Lead (PAL), and C-Suite.
+A portable role definition repository for infrastructure and platform engineering teams. Covers 33 domains grouped into 7 chapters, and 219 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Chapter Lead, Technical Area Lead (TAL), Product Area Lead (PAL), and C-Suite.
 
 Repository: [github.com/JeanKadang/DOC-ITRoles](https://github.com/JeanKadang/DOC-ITRoles) (private). Issues and backlog are tracked on the [Issues tab](https://github.com/JeanKadang/DOC-ITRoles/issues).
 
@@ -65,7 +65,7 @@ $env:PORT = 8080; node server.js
 
 ## Chapters
 
-The 32 domains are grouped into 7 chapters, each led by a Chapter Lead:
+The 33 domains are grouped into 7 chapters, each led by a Chapter Lead:
 
 | # | Chapter | Focus |
 |---|---------|-------|
@@ -73,7 +73,7 @@ The 32 domains are grouped into 7 chapters, each led by a Chapter Lead:
 | 2 | 🔄 DevOps & Delivery | CI/CD, developer experience, application platforms, integration |
 | 3 | 📊 Data & AI | Data platform, storage, databases, AI governance |
 | 4 | 🔒 Security & Identity | Security architecture, IAM/PAM, data protection, directory services |
-| 5 | 🖥️ End User & Workplace | Client platform, endpoint management, Microsoft 365 |
+| 5 | 🖥️ End User & Workplace | Client platform, endpoint management, Microsoft 365, service desk |
 | 6 | 🎯 Service & Governance | ITSM, configuration management, service management, enterprise architecture |
 | 7 | 👑 Leadership | C-Suite, SVP, CISO, Chapter Leads, TAL, PAL, cross-cutting leadership |
 
@@ -102,7 +102,7 @@ See `docs/CHAPTERS_OVERVIEW.md` for the full breakdown and `docs/chapters/*.md` 
 roles_master/
 ├── .github/
 │   └── workflows/ci.yml                    # CI: npm test, npm run validate, markdownlint
-├── Roles/                                  # All role definitions (32 domains, 216 roles)
+├── Roles/                                  # All role definitions (33 domains, 219 roles)
 │   ├── leadership/                         # SVP, CISO, Chapter Leads, TAL, PAL
 │   ├── c_suite/                            # CEO, CTO, CIO, CFO
 │   ├── cloud_platforms/                    # Azure, AWS, GCP + Lead/Principal
@@ -114,7 +114,7 @@ roles_master/
 │   ├── security/                           # README.md explains scope
 │   ├── security_cross_platform/            # README.md explains scope
 │   ├── security_identity/                  # README.md explains scope
-│   └── ...                                 # 32 domains total
+│   └── ...                                 # 33 domains total
 ├── docs/                                   # Governance and reference documentation
 │   ├── role_template.md                    # Template for new roles
 │   ├── improvements_and_recommendations.md # Review history & completed-work record
