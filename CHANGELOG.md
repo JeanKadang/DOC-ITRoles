@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **The validator now flags duplicate role titles (#67).**
+  `validate-roles.js` groups H1 titles across all non-reference role files
+  and fails (exit 1, blocking CI) on any title held by more than one role,
+  naming both paths. Duplicate titles shipped in v1.2.0 (3 cross-domain
+  pairs) and v1.3.0 (a pair the filename scan missed because the files
+  differed); this closes the recurrence. Covered by fixture tests; the
+  current catalog has zero duplicates.
+
 ### Fixed
 
 - **Org chart: the CISO now carries the security-governance line (#71).**
