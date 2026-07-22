@@ -7,7 +7,7 @@ const os = require('node:os');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
-const { listRoleFiles, validateFile, REQUIRED_SECTIONS } = require('../validate-roles');
+const { listRoleFiles, validateFile, findDuplicateTitles, REQUIRED_SECTIONS } = require('../validate-roles');
 
 // All fixtures are generated into a temp tree at runtime — nothing under
 // Roles/ or test/ is touched, so `npm run validate` and markdownlint on the
@@ -182,9 +182,11 @@ function runCli(rolesDir, args = []) {
 test('CLI exits 0 on a clean tree, and warnings do not fail a normal run', () => {
   const cliRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-cli-'));
   fs.mkdirSync(path.join(cliRoot, 'testdomain'));
-  fs.writeFileSync(path.join(cliRoot, 'testdomain', 'ok.md'), completeRole());
+  fs.writeFileSync(path.join(cliRoot, 'testdomain', 'ok.md'),
+    completeRole({ transform: c => c.replace('# Test Role', '# Ok Role') }));
   fs.writeFileSync(path.join(cliRoot, 'testdomain', 'warny.md'), completeRole({
-    transform: c => c.replace('| **Role Level** | Engineer |', '| **Role Level** | Grand Wizard |'),
+    transform: c => c.replace('# Test Role', '# Warny Role')
+                     .replace('| **Role Level** | Engineer |', '| **Role Level** | Grand Wizard |'),
   }));
   const normal = runCli(cliRoot);
   assert.equal(normal.status, 0, normal.stdout);
@@ -205,4 +207,63 @@ test('CLI exits 1 when a file has errors', () => {
   assert.equal(run.status, 1);
   assert.match(run.stdout, /Missing section: ## Business Impact/);
   fs.rmSync(cliRoot, { recursive: true, force: true });
+});
+
+// ── findDuplicateTitles (#67) ────────────────────────────
+// Isolated temp trees (not the shared tmpRoot, which accumulates many
+// "Test Role" H1s across the other tests).
+
+function isolatedTree(files) {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-dupe-'));
+  fs.mkdirSync(path.join(root, 'dom_a'));
+  fs.mkdirSync(path.join(root, 'dom_b'));
+  for (const [rel, title] of Object.entries(files)) {
+    fs.writeFileSync(path.join(root, rel), `# ${title}\n\n| Field | Value |\n|---|---|\n| **Domain** | x |\n`);
+  }
+  return root;
+}
+
+test('findDuplicateTitles reports a title shared by two role files, with both paths', () => {
+  const root = isolatedTree({
+    'dom_a/one.md': 'Platform Owner',
+    'dom_b/two.md': 'Platform Owner',
+    'dom_a/three.md': 'Unique Role',
+  });
+  const dupes = findDuplicateTitles(root);
+  assert.equal(dupes.length, 1);
+  assert.equal(dupes[0].title, 'Platform Owner');
+  // rel paths carry the temp-dir basename prefix; assert on the tail.
+  assert.deepEqual(dupes[0].files.map(f => f.split('/').slice(-2).join('/')),
+    ['dom_a/one.md', 'dom_b/two.md']);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findDuplicateTitles returns nothing when every title is unique', () => {
+  const root = isolatedTree({ 'dom_a/one.md': 'Alpha', 'dom_b/two.md': 'Beta' });
+  assert.deepEqual(findDuplicateTitles(root), []);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findDuplicateTitles ignores _standards.md reference docs', () => {
+  const root = isolatedTree({
+    'dom_a/role.md': 'Shared Name',
+    'dom_a/cost_standards.md': 'Shared Name', // reference doc, must not count
+  });
+  assert.deepEqual(findDuplicateTitles(root), []);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('CLI exits 1 and names both files when a duplicate title exists', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-dupe-cli-'));
+  fs.mkdirSync(path.join(root, 'testdomain'));
+  fs.writeFileSync(path.join(root, 'testdomain', 'a.md'), completeRole({ transform: c => c.replace('# Test Role', '# Same Title') }));
+  fs.writeFileSync(path.join(root, 'testdomain', 'b.md'), completeRole({ transform: c => c.replace('# Test Role', '# Same Title') }));
+  const run = spawnSync(process.execPath, [path.join(__dirname, '..', 'validate-roles.js')], {
+    env: { ...process.env, ROLES_DIR: root }, encoding: 'utf8',
+  });
+  assert.equal(run.status, 1);
+  assert.match(run.stdout, /Duplicate role title: "Same Title"/);
+  assert.match(run.stdout, /testdomain\/a\.md/);
+  assert.match(run.stdout, /testdomain\/b\.md/);
+  fs.rmSync(root, { recursive: true, force: true });
 });

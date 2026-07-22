@@ -96,6 +96,26 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
   return { rel, errors, warnings, skipped: false };
 }
 
+// Group H1 titles across all non-reference role files and return
+// [{ title, files: [rel, …] }] for any title held by more than one role.
+// Duplicate titles shipped in both v1.2.0 (3 cross-domain pairs) and
+// v1.3.0 (a pair the filename scan missed because the files differed);
+// this makes the recurrence a blocking validation error.
+function findDuplicateTitles(rolesDir = ROLES_DIR) {
+  const byTitle = new Map();
+  for (const filePath of listRoleFiles(rolesDir)) {
+    if (REFERENCE_DOC_PATTERN.test(path.basename(filePath))) continue;
+    const title = parseMeta(fs.readFileSync(filePath, 'utf8')).title;
+    if (!title) continue; // a missing H1 is already a per-file error
+    const rel = path.relative(path.dirname(rolesDir), filePath).replace(/\\/g, '/');
+    if (!byTitle.has(title)) byTitle.set(title, []);
+    byTitle.get(title).push(rel);
+  }
+  return [...byTitle.entries()]
+    .filter(([, files]) => files.length > 1)
+    .map(([title, files]) => ({ title, files: files.sort() }));
+}
+
 function main() {
   const files   = listRoleFiles();
   const results = files.map(f => validateFile(f));
@@ -103,6 +123,7 @@ function main() {
   const withErrors   = results.filter(r => r.errors.length > 0);
   const withWarnings = results.filter(r => r.warnings.length > 0);
   const skipped      = results.filter(r => r.skipped);
+  const duplicates   = findDuplicateTitles();
 
   for (const r of withErrors) {
     console.log(`\n✖ ${r.rel}`);
@@ -114,13 +135,19 @@ function main() {
     for (const w of r.warnings) console.log(`  warn:  ${w}`);
   }
 
+  for (const d of duplicates) {
+    console.log(`\n✖ Duplicate role title: "${d.title}"`);
+    for (const f of d.files) console.log(`  ${f}`);
+  }
+
   console.log(`\n${'─'.repeat(60)}`);
   console.log(`Checked ${files.length} role files (${skipped.length} reference docs skipped)`);
   console.log(`  ${withErrors.length} file(s) with errors`);
   console.log(`  ${withWarnings.length} file(s) with warnings`);
+  console.log(`  ${duplicates.length} duplicate title(s)`);
   console.log('─'.repeat(60));
 
-  if (withErrors.length > 0 || (STRICT && withWarnings.length > 0)) {
+  if (withErrors.length > 0 || duplicates.length > 0 || (STRICT && withWarnings.length > 0)) {
     process.exitCode = 1;
   }
 }
@@ -131,4 +158,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { listRoleFiles, validateFile, REQUIRED_SECTIONS };
+module.exports = { listRoleFiles, validateFile, findDuplicateTitles, REQUIRED_SECTIONS };
