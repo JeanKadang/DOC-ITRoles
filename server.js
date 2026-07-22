@@ -91,6 +91,74 @@ function getRoles() {
   return domains;
 }
 
+// Full-text search index over role bodies (#68). Built lazily and cached
+// against the same mtime signature as getRoles(), so a role edit is picked
+// up without a restart. Reference/standards docs are excluded — they are
+// reachable via their own listing, not the role search.
+let searchCache = { signature: -1, entries: null };
+
+function getSearchIndex() {
+  const signature = rolesTreeSignature();
+  if (searchCache.entries && searchCache.signature === signature) return searchCache.entries;
+
+  const entries = [];
+  for (const entry of fs.readdirSync(ROLES_DIR, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const domainPath = path.join(ROLES_DIR, entry.name);
+    const label = DOMAIN_LABELS[entry.name] || entry.name.replace(/_/g, ' ');
+    for (const file of fs.readdirSync(domainPath)) {
+      if (!file.endsWith('.md') || file === 'README.md' || REFERENCE_DOC_PATTERN.test(file)) continue;
+      const content = fs.readFileSync(path.join(domainPath, file), 'utf8');
+      const meta = parseMeta(content);
+      entries.push({
+        file:        `Roles/${entry.name}/${file}`,
+        title:       meta.title || file.replace(/_/g, ' ').replace('.md', ''),
+        level:       resolveLevel(content, file),
+        domainLabel: label,
+        text:        content,
+        textLower:   content.toLowerCase(),
+      });
+    }
+  }
+  searchCache = { signature, entries };
+  return entries;
+}
+
+// A ~100-char excerpt of `text` centred on the first match of the query.
+// Whitespace (incl. markdown table pipes/newlines) is collapsed to one
+// space; the raw excerpt is HTML-escaped by the client before rendering.
+function makeSnippet(text, idx, qlen, radius = 50) {
+  const start = Math.max(0, idx - radius);
+  const end   = Math.min(text.length, idx + qlen + radius);
+  let s = text.slice(start, end).replace(/[|#*`]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (start > 0)          s = '… ' + s;
+  if (end < text.length)  s = s + ' …';
+  return s;
+}
+
+// Roles whose title or body contains the query. Title matches sort first,
+// then alphabetically. Query shorter than 2 chars returns nothing.
+function searchRoles(query) {
+  const q = String(query).trim().toLowerCase();
+  if (q.length < 2) return [];
+  const matches = [];
+  for (const e of getSearchIndex()) {
+    const inTitle = e.title.toLowerCase().includes(q);
+    const bodyIdx = e.textLower.indexOf(q);
+    if (!inTitle && bodyIdx === -1) continue;
+    matches.push({
+      file:    e.file,
+      title:   e.title,
+      level:   e.level,
+      domain:  e.domainLabel,
+      inTitle,
+      snippet: bodyIdx === -1 ? '' : makeSnippet(e.text, bodyIdx, q.length),
+    });
+  }
+  matches.sort((a, b) => (Number(b.inTitle) - Number(a.inTitle)) || a.title.localeCompare(b.title));
+  return matches;
+}
+
 // Content Security Policy: this app is a single-origin SPA with inline
 // <script>/<style> and inline onclick handlers, so 'unsafe-inline' is required
 // for script-src/style-src. Everything else is locked to same-origin, and no
@@ -172,6 +240,17 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Full-text search across role bodies (#68)
+  if (url.pathname === '/api/search') {
+    try {
+      const q = url.searchParams.get('q') || '';
+      send(res, 200, 'application/json', JSON.stringify({ query: q.trim(), matches: searchRoles(q).slice(0, 50) }));
+    } catch (e) {
+      send(res, 500, 'application/json', JSON.stringify({ error: e.message }));
+    }
+    return;
+  }
+
   // Return raw markdown for a single role
   if (url.pathname === '/api/role') {
     const file = url.searchParams.get('file') || '';
@@ -233,4 +312,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { server, getRoles, ROOT, ROLES_DIR };
+module.exports = { server, getRoles, searchRoles, ROOT, ROLES_DIR };

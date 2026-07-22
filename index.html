@@ -962,6 +962,35 @@
         }
 
         /* ── RESOURCES SIDEBAR SECTION ───────────────────────────── */
+        /* ── Content-search matches (#68) ─────────────────── */
+        .content-matches {
+            border-bottom: 2px solid var(--border-color);
+            margin: 0 0 6px;
+            padding: 8px 0;
+            background: var(--bg-input);
+        }
+        .cm-hd {
+            padding: 2px 14px 8px;
+            font-size: 0.72em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-muted);
+        }
+        .cm-item {
+            display: block;
+            border-left: 3px solid transparent;
+        }
+        .cm-item-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+        .cm-meta { font-size: 0.72em; color: var(--text-muted); margin-top: 2px; }
+        .cm-snippet {
+            font-size: 0.75em;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+
         .resources-sep {
             border-bottom: 1px solid var(--border-color);
             margin: 0 0 6px;
@@ -2142,6 +2171,62 @@
 
     function filterRoles(value) {
         renderSidebar(allDomains, value);
+        scheduleContentSearch(value);
+    }
+
+    // ── Full-text content search (#68) ────────────────────
+    // The sidebar filter above matches titles/domains/chapters instantly.
+    // For queries of 3+ chars we additionally ask the server to search role
+    // bodies and prepend a "Content matches" group with snippets. Debounced,
+    // and guarded against out-of-order responses.
+    let contentSearchTimer = null;
+    let contentSearchSeq   = 0;
+
+    function scheduleContentSearch(value) {
+        clearTimeout(contentSearchTimer);
+        const q = value.trim();
+        if (q.length < 3) { removeContentMatches(); return; }
+        contentSearchTimer = setTimeout(() => runContentSearch(q), 180);
+    }
+
+    function removeContentMatches() {
+        document.getElementById('contentMatches')?.remove();
+    }
+
+    async function runContentSearch(q) {
+        const seq = ++contentSearchSeq;
+        let matches;
+        try {
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+            ({ matches } = await res.json());
+        } catch { return; }
+        // Ignore stale responses and queries the user has since changed.
+        if (seq !== contentSearchSeq) return;
+        if (document.getElementById('searchInput').value.trim() !== q) return;
+
+        removeContentMatches();
+        if (!matches.length) return;
+
+        const section = document.createElement('div');
+        section.id = 'contentMatches';
+        section.className = 'content-matches';
+        section.innerHTML = `
+            <div class="cm-hd">🔎 Content matches (${matches.length})</div>
+            ${matches.map(m => `
+                <div class="role-item cm-item" role="button" tabindex="0"
+                     data-file="${escapeHtml(m.file)}"
+                     data-title="${escapeHtml(m.title)}"
+                     data-level="${escapeHtml(m.level)}"
+                     data-domain="${escapeHtml(m.domain)}">
+                    <div class="cm-item-top">
+                        <span class="role-item-name">${escapeHtml(m.title)}</span>
+                        <span class="badge ${badgeClass(m.level)}">${escapeHtml(m.level)}</span>
+                    </div>
+                    <div class="cm-meta">${escapeHtml(m.domain)}</div>
+                    ${m.snippet ? `<div class="cm-snippet">${escapeHtml(m.snippet)}</div>` : ''}
+                </div>`).join('')}`;
+        const nav = document.getElementById('sidebarNav');
+        nav.insertBefore(section, nav.firstChild);
     }
 
     // ── Navigation history (Back button) ─────────────────

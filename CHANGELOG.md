@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **Full-text search across role content (#68).** The sidebar search still
+  filters titles/domains/chapters instantly, but for queries of 3+ chars it
+  now also asks the server (`/api/search`) to search role *bodies* and
+  prepends a "Content matches" group with a snippet around each hit — so
+  searching "Terraform", "Entra", or "Slurm" finds the roles that mention
+  it, not just those with it in the title. The server keeps a body index
+  cached against the same mtime signature as `/api/roles` (no extra I/O
+  until a search runs, live-edit pickup preserved), excludes reference
+  docs, caps results at 50, and sorts title matches first. Results are
+  keyboard-operable (#24 pattern) and open the role like any sidebar item;
+  the query is debounced and guarded against out-of-order responses.
 - **The validator now flags duplicate role titles (#67).**
   `validate-roles.js` groups H1 titles across all non-reference role files
   and fails (exit 1, blocking CI) on any title held by more than one role,
