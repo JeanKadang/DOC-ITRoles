@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-07-22
+
 ### Added
 
 - **Full-text search across role content (#68).** The sidebar search still
@@ -27,6 +29,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   pairs) and v1.3.0 (a pair the filename scan missed because the files
   differed); this closes the recurrence. Covered by fixture tests; the
   current catalog has zero duplicates.
+- **Per-role career stepper (#55).** The role view now opens with a
+  From → current role → To strip parsed from the role's own Career
+  Development Path section (both heading variants in the catalog are
+  handled; every one of the 216 role files parses). Steps whose text
+  exactly matches a catalog role title become keyboard-operable chips
+  that open that role; unmatched steps render as plain chips. Plain
+  HTML/CSS — no chart library, accessible by construction, hidden in
+  print and in the compare column.
+
+### Changed
+
+- **Clarified automation and reliability domain ownership boundaries (#66).**
+  `CROSS_DOMAIN_INTERACTIONS.md` gains two ownership-table rows plus
+  Automation and Reliability scope-clarification sections: the
+  Automation Framework Engineer owns shared cross-domain tooling while
+  Infrastructure/Network/Security automation architects own standards
+  within their own domain only; SRE sets org-wide reliability
+  methodology while Platform/Database/Backup Reliability Engineers each
+  apply it to one system class. Also notes the SCCM vs Endpoint
+  Management Engineer tool-specialist/generalist split. No role files
+  changed — their scope statements didn't contradict each other.
 
 ### Fixed
 
@@ -53,17 +76,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   Senior Engineer" next-step: its To-list now names the real DevOps /
   Site Reliability / Observability Senior Engineer roles, all of which
   link in the career stepper.
-
-### Added
-
-- **Per-role career stepper (#55).** The role view now opens with a
-  From → current role → To strip parsed from the role's own Career
-  Development Path section (both heading variants in the catalog are
-  handled; every one of the 216 role files parses). Steps whose text
-  exactly matches a catalog role title become keyboard-operable chips
-  that open that role; unmatched steps render as plain chips. Plain
-  HTML/CSS — no chart library, accessible by construction, hidden in
-  print and in the compare column.
 
 ## [1.4.0] - 2026-07-12
 
