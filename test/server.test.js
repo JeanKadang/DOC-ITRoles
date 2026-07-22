@@ -61,6 +61,40 @@ test('GET /api/roles lists reference docs separately from roles (#29)', async ()
   assert.ok(!finops.roles.some(r => r.file.endsWith('_standards.md')), 'standards docs never appear as roles');
 });
 
+test('GET /api/search finds roles by body content, not just title (#68)', async () => {
+  // "Terraform" appears in many role bodies but few (if any) titles.
+  const res = await request('/api/search?q=terraform');
+  assert.equal(res.status, 200);
+  const { query, matches } = JSON.parse(res.body);
+  assert.equal(query, 'terraform');
+  assert.ok(matches.length > 0, 'body-content search returns results');
+  const bodyOnly = matches.find(m => !m.inTitle);
+  assert.ok(bodyOnly, 'at least one match is a body-only hit');
+  assert.ok(bodyOnly.snippet.length > 0, 'body matches carry a snippet');
+  assert.ok(bodyOnly.file.startsWith('Roles/') && bodyOnly.title && bodyOnly.domain);
+});
+
+test('GET /api/search sorts title matches ahead of body-only matches', async () => {
+  const res = await request('/api/search?q=kubernetes');
+  const { matches } = JSON.parse(res.body);
+  const firstBodyOnly = matches.findIndex(m => !m.inTitle);
+  const lastTitle     = matches.map(m => m.inTitle).lastIndexOf(true);
+  if (firstBodyOnly !== -1 && lastTitle !== -1) {
+    assert.ok(lastTitle < firstBodyOnly, 'all title matches precede body-only matches');
+  }
+});
+
+test('GET /api/search returns nothing for a query shorter than 2 chars', async () => {
+  const res = await request('/api/search?q=a');
+  assert.deepEqual(JSON.parse(res.body).matches, []);
+});
+
+test('GET /api/search excludes reference/standards docs', async () => {
+  const res = await request('/api/search?q=chargeback'); // a standards-doc word
+  const { matches } = JSON.parse(res.body);
+  assert.ok(!matches.some(m => m.file.endsWith('_standards.md')), 'standards docs never appear in role search');
+});
+
 test('GET /api/role returns a real role file', async () => {
   const res = await request('/api/role?file=Roles/kubernetes/kubernetes_architect.md');
   assert.equal(res.status, 200);
