@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **Service Desk domain (#65).** 31 role files referenced "Service Desk" /
+  "Service Desk Lead" as an escalation target or stakeholder, but the
+  catalog had no service-desk roles. Adds a 3-role ladder under a new
+  `service_desk` domain — `service_desk_analyst` (Tier 1, Engineer),
+  `service_desk_senior_analyst` (Tier 2, Senior Engineer),
+  `service_desk_lead` (support model/staffing owner, Senior Engineer) —
+  slotted into the existing End User & Workplace chapter alongside Client
+  Platform, Endpoint Management, and Modern Workplace. The new files use
+  the full modern template (Role Scope & Boundaries, Reports To/Direct
+  Reports, Interaction Mode) rather than the legacy template #5 is
+  backfilling, so they add no new debt to that effort. Wired into
+  `roleMeta.js`, the sidebar/chapter mapping, `SKILLS_PROGRESSION.md`, and
+  `CROSS_DOMAIN_INTERACTIONS.md` (including a major-incident-detection
+  note); chapter overview docs and the chapter lead's role overview
+  updated to name four domains instead of three. Catalog: 216 → 219 roles,
+  32 → 33 domains.
+
 ## [1.5.0] - 2026-07-22
 
 ### Added
