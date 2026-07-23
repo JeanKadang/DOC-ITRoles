@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **Process ownership assigned (#10).** The five process items in
+  `docs/improvements_and_recommendations.md` that lacked a named owner —
+  role description maintenance, skills assessment/LMS integration, role
+  effectiveness measurement, continuous role evolution strategy, and
+  CROSS_DOMAIN_INTERACTIONS.md upkeep — are now owned by JeanKadang, with
+  review cadence tied to each release rather than a fixed calendar date.
+  Owner assignment does not itself complete the underlying external
+  actions (HR/L&D engagement, pulse survey, tech radar adoption) — those
+  remain flagged as pending in their respective sections.
+
 ### Added
 
 - **Service Desk domain (#65).** 31 role files referenced "Service Desk" /
