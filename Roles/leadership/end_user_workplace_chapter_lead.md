@@ -22,9 +22,9 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 
 ## Key Responsibilities
 
-- Line manage and develop architects and senior engineers across the Client Platform, Endpoint Management, and Modern Workplace domains, including performance management, career development, and chapter hiring
+- Line manage and develop architects and senior engineers across the Client Platform, Endpoint Management, Modern Workplace, and Service Desk domains, including performance management, career development, and chapter hiring
 - Own and maintain the chapter career development framework for end-user and workplace practitioners, running regular 1:1s, development reviews, and talent calibration
-- Lead chapter-level hiring: define role standards, conduct or chair technical interviews, and ensure a consistent engineering bar across client platform, endpoint management, and modern workplace domains
+- Lead chapter-level hiring: define role standards, conduct or chair technical interviews, and ensure a consistent engineering bar across client platform, endpoint management, modern workplace, and service desk domains
 - Own the client platform strategy — governing OS engineering for Windows 10/11, macOS (Apple Silicon), and Linux desktop (Ubuntu LTS) across the Lenovo-primary fleet (ThinkPad, ThinkCentre) and MacBook estate; covering image build pipelines, hardware lifecycle, Lenovo driver and firmware governance, and emerging Linux-on-Lenovo adoption
 - Own the device management strategy — governing Microsoft Intune, endpoint configuration standards, device compliance policies, and device lifecycle management across all form factors (laptops, desktops, mobile, shared devices)
 - Lead the Microsoft 365 platform governance framework — defining M365 tenant architecture standards, Teams governance policies, SharePoint information architecture, and platform adoption roadmap
@@ -84,7 +84,7 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 | Role | Nature of Interaction |
 |---|---|
 | Reports to: | Technical Area Lead (TAL) or Product Area Lead (PAL) |
-| Line manages: | Domain Architects and Senior Engineers across Endpoint Management and Modern Workplace domains |
+| Line manages: | Domain Architects and Senior Engineers across Client Platform, Endpoint Management, Modern Workplace, and Service Desk domains |
 | Partners closely with: | Security & Identity Chapter Lead on endpoint security posture, EDR coverage, and conditional access architecture aligned to the zero trust roadmap |
 | Collaborates with: | Service & Governance Chapter Lead on ITSM processes for end-user services, device onboarding, and service catalogue entries |
 | Engages with: | Enterprise Architect on M365 platform alignment with enterprise architecture standards |
