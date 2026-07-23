@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- **End User & Workplace Chapter Lead's domain list now names all four
+  chapter domains (#77).** The "Line manages" row and two Key
+  Responsibilities bullets still said "Endpoint Management and Modern
+  Workplace" (or omitted Client Platform), missed when Service Desk joined
+  the chapter in #65 — the Role Overview was updated at the time but these
+  three spots weren't. All three now list Client Platform, Endpoint
+  Management, Modern Workplace, and Service Desk consistently.
 - **Process ownership assigned (#10).** The five process items in
   `docs/improvements_and_recommendations.md` that lacked a named owner —
   role description maintenance, skills assessment/LMS integration, role
