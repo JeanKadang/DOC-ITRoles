@@ -36,9 +36,9 @@ Standardize all role descriptions to include these canonical sections in order:
 **Recommendation:**
 Create a centralized map of cross-domain dependencies showing key handoffs, shared responsibilities, escalation paths, and collaboration touchpoints.
 
-**Status:** `docs/CROSS_DOMAIN_INTERACTIONS.md` created — covers domain ownership boundaries for 12 technology decisions, 10 key cross-domain relationships, security domain scope clarification, and a 5-step escalation chain.
+**Status:** `docs/CROSS_DOMAIN_INTERACTIONS.md` created — covers domain ownership boundaries for shared technology decisions, cross-domain relationships, security and data-governance scope clarification, and the escalation chain, kept current as domains are added (e.g. Service Desk, #65).
 
-**Remaining:** Assign a process owner to keep this document current as domains evolve. 🔄
+**Process owner:** JeanKadang — keeps this document current as domains evolve; reviewed alongside each release. ✅
 
 ---
 
@@ -228,19 +228,19 @@ Add a proficiency scale to the Required Skills section of each role:
 
 ## Implementation recommendations
 
-### 1. Role description maintenance process 🔄 Process — owner required
+### 1. Role description maintenance process ✅ Owner assigned
 
 **Recommendation:** Annual reviews for technical accuracy; quarterly updates for emerging technology; integration with HR competency frameworks.
 
-**Actionable next step:** Designate a process owner (Architecture Lead or HR Business Partner) and schedule the first quarterly review for Q2 2026.
+**Process owner:** JeanKadang (repository maintainer). **Review cadence:** tied to each release rather than a fixed calendar date — a review pass runs alongside every version cut rather than on a separate quarterly clock. See [issue #10](https://github.com/JeanKadang/DOC-ITRoles/issues/10).
 
 ---
 
-### 2. Skills assessment integration 🔄 Process — owner required
+### 2. Skills assessment integration 🔄 Process — owner: JeanKadang
 
 **Recommendation:** Connect role descriptions to skills assessment frameworks, training programs, certification tracking, and career progression pathways.
 
-**Actionable next step:** Share `docs/SKILLS_PROGRESSION.md` with the HR/L&D team as the foundation for a skills matrix aligned to the LMS.
+**Actionable next step:** Share `docs/SKILLS_PROGRESSION.md` with the HR/L&D team as the foundation for a skills matrix aligned to the LMS. Owned by JeanKadang; still pending HR/L&D engagement.
 
 ---
 
@@ -252,19 +252,19 @@ Add a proficiency scale to the Required Skills section of each role:
 
 ---
 
-### 4. Role effectiveness measurement 🔄 Process — owner required
+### 4. Role effectiveness measurement 🔄 Process — owner: JeanKadang
 
 **Recommendation:** Track time-to-productivity for new hires, internal mobility success rates, skills gap accuracy, and project success rates with properly staffed roles.
 
-**Actionable next step:** Establish a feedback loop — quarterly pulse survey to managers and practitioners against role definitions. Results feed the maintenance process (item 1 above).
+**Actionable next step:** Establish a feedback loop — pulse survey to managers and practitioners against role definitions, run alongside each release review. Results feed the maintenance process (item 1 above). Owned by JeanKadang; survey mechanism not yet stood up.
 
 ---
 
-### 5. Continuous role evolution strategy 🔄 Process — owner required
+### 5. Continuous role evolution strategy 🔄 Process — owner: JeanKadang
 
 **Recommendation:** Technology radar integration, industry benchmark comparisons, regular practitioner feedback, skills inventory mapping.
 
-**Actionable next step:** Adopt a lightweight technology radar (e.g., Thoughtworks format) reviewed quarterly alongside role descriptions.
+**Actionable next step:** Adopt a lightweight technology radar (e.g., Thoughtworks format), reviewed alongside each release. Owned by JeanKadang; radar not yet adopted.
 
 ---
 
@@ -445,7 +445,7 @@ All roles covering security, compliance, or regulated workloads now reference th
 | Edge computing | ✅ Complete |
 | NIST CSF coverage | ✅ Complete |
 | IEC 62443 coverage | ✅ Complete |
-| Maintenance process / owner assignment | 🔄 In progress |
+| Maintenance process / owner assignment | ✅ Complete (JeanKadang, #10) |
 | Skills assessment / LMS integration | 🔄 In progress |
 | Role effectiveness measurement | 🔄 In progress |
 | Reporting lines / scope / interaction-mode fields | ⏳ Template done, backfill pending |
@@ -476,7 +476,7 @@ See `docs/role_template.md` for the full template with placeholder guidance.
 
 ---
 
-**Process owner:** Designate a responsible party (Architecture Lead or HR Business Partner) for maintaining this document and scheduling quarterly reviews.
+**Process owner:** JeanKadang — maintains this document and reviews it alongside each release (see [#10](https://github.com/JeanKadang/DOC-ITRoles/issues/10)).
 
 **Feedback loop:** Practitioners and managers should raise suggested improvements via the team's standard backlog process, referencing the relevant role file and section.
 
