@@ -5,6 +5,8 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | Data Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Data Senior Engineer leads complex data engineering initiatives, drives data platform standards adoption, and acts as a technical authority and escalation point within the data engineering team. This role owns design decisions for significant data domains or platform components, leads the development of reusable data frameworks and patterns, drives data quality maturity, and mentors data engineers. The Senior Data Engineer operates within a high degree of autonomy and contributes to the broader data platform architecture through hands-on technical leadership.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced data pipeline design and delivery within the Data Platform Architect's reference architecture
+- **Experience Anchor:** 5+ years in data engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Data platform architecture and technology standards (Architect-owned); pipeline reliability tooling and CI/CD standards (DataOps Specialist-owned, this role collaborates with it); semantic layer ownership (Analytics Engineers-owned, this role aligns to it)
+- **Escalates To:** Data Platform Architect — architecture-level questions and standards exceptions
+- **Escalated To By:** Data Engineers on complex pipeline design and implementation issues
 
 ## Business Impact
 
@@ -77,13 +87,13 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Platform Architect: | Receive strategic direction; contribute implementation experience to architecture decisions |
-| DataOps Specialists: | Collaborate on pipeline reliability, testing, and observability |
-| Data Engineers: | Provide mentoring, code review, and design guidance |
-| Analytics Engineers: | Align on semantic layer requirements and data model design |
-| Data Scientists: | Provide feature engineering pipelines and curated, well-documented datasets |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Platform Architect | Receive strategic direction; contribute implementation experience to architecture decisions | Escalates To |
+| DataOps Specialists | Collaborate on pipeline reliability, testing, and observability | Collaborates |
+| Data Engineers | Provide mentoring, code review, and design guidance | Provides To |
+| Analytics Engineers | Align on semantic layer requirements and data model design | Collaborates |
+| Data Scientists | Provide feature engineering pipelines and curated, well-documented datasets | Provides To |
 
 ## Key Technologies
 

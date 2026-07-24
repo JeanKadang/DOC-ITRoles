@@ -5,6 +5,8 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors AI Governance Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AI Governance Architect designs and governs the organisation's frameworks, policies, and technical controls for responsible and compliant use of artificial intelligence across all business units and AI system deployments. As AI and generative AI become deeply embedded in enterprise products, operations, and decision-making, this role ensures that AI systems are trustworthy, explainable, fair, secure, and compliant with applicable regulations (EU AI Act, US Executive Orders, GDPR). The AI Governance Architect bridges technical AI implementation with legal, ethical, and regulatory requirements.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — AI governance framework, model risk assessment methodology, and AI compliance controls across the chapter
+- **Experience Anchor:** 8+ years in AI/ML governance, risk, or compliance engineering with demonstrated framework-level ownership — operates independently on domain-wide AI governance decisions, as a peer counterpart to the AI Platform Architect rather than in a hierarchical relationship
+- **Out of Scope:** AI/ML platform infrastructure design (AI Platform Architect-owned, this role embeds governance controls into it); broader data governance policy (Chief Data Officer-owned, this role integrates with it); AI regulatory legal interpretation (Legal and Compliance-owned, this role translates it into technical controls)
+- **Escalates To:** Data & AI Chapter Lead — chapter-wide priorities and cross-domain governance disputes
+- **Escalated To By:** AI Governance Senior Engineers on framework, policy, and complex assessment decisions
 
 ## Business Impact
 
@@ -78,14 +88,14 @@ The AI Governance Architect designs and governs the organisation's frameworks, p
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| CISO / Security Architect | Align AI security controls with the AI governance framework |
-| Chief Data Officer / Data Governance | Integrate AI data governance with broader data governance policy |
-| AI Platform Architect | Embed governance controls into AI platform design |
-| Legal and Compliance | Translate regulatory requirements into technical governance controls |
-| HR | Govern workforce AI tools (Copilot, AI assistants, AI-assisted performance management) |
-| Product Teams | Provide AI governance requirements for AI-powered product features |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CISO / Security Architect | Align AI security controls with the AI governance framework | Collaborates |
+| Chief Data Officer / Data Governance | Integrate AI data governance with broader data governance policy | Governed By |
+| AI Platform Architect | Embed governance controls into AI platform design | Collaborates |
+| Legal and Compliance | Translate regulatory requirements into technical governance controls | Governed By |
+| HR | Govern workforce AI tools (Copilot, AI assistants, AI-assisted performance management) | Provides To |
+| Product Teams | Provide AI governance requirements for AI-powered product features | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | Storage Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Storage Engineer implements and maintains enterprise storage solutions across the organization. Working with the Storage Architect and Product Owner, this role ensures reliable, secure, and optimized storage environments supporting various business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of storage provisioning and connectivity tasks to defined standards
+- **Experience Anchor:** 1-3 years in storage or infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Storage architecture and solution design (Senior Engineers and the Architect-owned); backup infrastructure integration strategy (Backup Engineers-owned, this role coordinates with it); virtual machine storage design (Virtualization Engineers-owned, this role coordinates with it)
+- **Escalates To:** Storage Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on storage requirements and provisioning requests
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Storage Product Owner | Task prioritization |
-| Server Infrastructure Engineers | Storage connectivity |
-| Virtualization Engineers | Storage for virtual machines |
-| Backup Engineers | Backup storage integration |
-| Storage Architect | Implementation activities |
-| application teams | Storage requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Storage Product Owner | Task prioritization | Consumes From |
+| Server Infrastructure Engineers | Storage connectivity | Collaborates |
+| Virtualization Engineers | Storage for virtual machines | Provides To |
+| Backup Engineers | Backup storage integration | Collaborates |
+| Storage Architect | Implementation activities | Escalates To |
+| application teams | Storage requirements | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Data Engineering Product Owner owns the vision, roadmap, and delivery backlog for the organisation's data platform and data engineering capabilities. This role ensures the data platform investment delivers measurable business value - enabling analytics, BI, and ML use cases to be powered by reliable, timely, and trustworthy data. The Data Engineering PO bridges the CDO's data strategy with the technical delivery of the data engineering team, prioritising work that maximises data-driven business outcomes.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — data engineering backlog, delivery prioritisation, and roadmap alignment to enterprise data strategy
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Data platform architecture and technical constraints (Data Platform Architect-owned); pipeline reliability acceptance criteria detail (DataOps Specialists-owned); enterprise data strategy setting (CDO-owned, this role translates it into deliverables)
+- **Escalates To:** Data & AI Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** DataOps Specialists on acceptance criteria for pipeline reliability and CI/CD work
 
 ## Business Impact
 
@@ -71,14 +81,14 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Platform Architect: | Align backlog with architecture roadmap and technical constraints |
-| CDO / Data Strategy: | Receive strategic data priorities and translate into engineering deliverables |
-| Analytics / BI Leads: | Capture and prioritise data consumption requirements |
-| Data Science / MLOps: | Align feature pipeline delivery with ML project roadmaps |
-| DataOps Specialists: | Provide clear acceptance criteria for pipeline reliability and CI/CD work |
-| Finance / FinOps: | Report and optimise data platform cost |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Platform Architect | Align backlog with architecture roadmap and technical constraints | Consumes From |
+| CDO / Data Strategy | Receive strategic data priorities and translate into engineering deliverables | Consumes From |
+| Analytics / BI Leads | Capture and prioritise data consumption requirements | Consumes From |
+| Data Science / MLOps | Align feature pipeline delivery with ML project roadmaps | Collaborates |
+| DataOps Specialists | Provide clear acceptance criteria for pipeline reliability and CI/CD work | Provides To |
+| Finance / FinOps | Report and optimise data platform cost | Provides To |
 
 ## Key Technologies
 

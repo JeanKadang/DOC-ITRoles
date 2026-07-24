@@ -5,6 +5,8 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | AI Governance Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AI Governance Engineer is an entry-level practitioner role responsible for implementing AI governance controls across the organisation's AI systems under the direction of the AI Governance Architect and Senior AI Governance Engineer. This role conducts bias testing and fairness evaluations, maintains AI system documentation and risk registers, supports AI incident logging and investigation processes, and assists with compliance evidence collection for regulatory requirements. The AI Governance Engineer builds practical hands-on experience with responsible AI toolkits and governance processes, forming the operational backbone of the AI governance function.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of AI governance documentation and evidence-gathering tasks to defined standards
+- **Experience Anchor:** 1-3 years in AI/ML governance, risk, or compliance — works under guidance, building toward independent delivery
+- **Out of Scope:** AI governance framework design (Senior Engineers and the Architect-owned); risk assessment methodology definition; AI platform architecture decisions
+- **Escalates To:** AI Governance Senior Engineer — day-to-day task direction and technical guidance
+- **Escalated To By:** AI Governance Product Owner on documentation and risk register completeness status
 
 ## Business Impact
 
@@ -72,14 +82,14 @@ The AI Governance Engineer is an entry-level practitioner role responsible for i
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AI Platform Architect | Accessing deployed model artefacts, MLOps pipeline outputs, and model registry metadata needed for governance assessments |
-| Legal and Compliance | Team members when collecting compliance evidence or seeking clarification on documentation requirements |
-| AI Governance Senior Engineer | Day-to-day task direction, mentoring, and technical guidance |
-| AI Governance Architect | Technical guidance, framework interpretation, and escalation of complex governance decisions |
-| Data Science and ML Engineering | Teams to collect model documentation, training data lineage, and evaluation metrics required for risk assessments |
-| AI Governance Product Owner | Provide status on documentation and risk register completeness for backlog and programme reporting |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AI Platform Architect | Accessing deployed model artefacts, MLOps pipeline outputs, and model registry metadata needed for governance assessments | Consumes From |
+| Legal and Compliance | Team members when collecting compliance evidence or seeking clarification on documentation requirements | Collaborates |
+| AI Governance Senior Engineer | Day-to-day task direction, mentoring, and technical guidance | Escalates To |
+| AI Governance Architect | Technical guidance, framework interpretation, and escalation of complex governance decisions | Escalates To |
+| Data Science and ML Engineering | Teams to collect model documentation, training data lineage, and evaluation metrics required for risk assessments | Consumes From |
+| AI Governance Product Owner | Provide status on documentation and risk register completeness for backlog and programme reporting | Provides To |
 
 ## Key Technologies
 

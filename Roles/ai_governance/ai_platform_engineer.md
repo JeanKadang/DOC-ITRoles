@@ -5,6 +5,8 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | AI Platform Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AI Platform Engineer builds and operates the organisation's AI/ML platform infrastructure, translating designs from the AI Platform Architect into production-grade implementations. This role provisions and maintains ML compute infrastructure, implements MLOps pipelines for model training and deployment, manages model registries, and supports data science and ML engineering teams with reliable, scalable platform tooling. Operating as an entry to mid-level practitioner, the AI Platform Engineer ensures that the AI platform is operationally stable, cost-efficient, and enables data scientists to move from experimentation to production with minimal friction.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of ML platform implementation, pipeline support, and infrastructure tasks to defined standards
+- **Experience Anchor:** 1-3 years in ML platform, MLOps, or infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** ML platform architecture and technology standards (Architect-owned); AI governance control design (AI Governance Engineer-owned, this role coordinates implementation); data pipeline architecture (Data Platform Architect-owned)
+- **Escalates To:** AI Platform Architect — complex design decisions
+- **Escalated To By:** Data Science / ML Engineering teams on experiment environment setup, pipeline debugging, and model deployment support
 
 ## Business Impact
 
@@ -76,14 +86,14 @@ The AI Platform Engineer builds and operates the organisation's AI/ML platform i
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AI Platform Architect: | Receives architecture design direction, reference implementations, and technology standards; escalates complex design decisions upward |
-| AI Governance Engineer: | Coordinates on embedding governance controls, audit logging, and bias testing hooks within ML pipelines and the model registry |
-| Data Platform Architect: | Aligns data ingestion and feature pipeline integration between the data platform and the ML platform |
-| Data Science / ML Engineering teams: | Primary customers of the platform; supports experiment environment setup, pipeline debugging, and model deployment |
-| DevOps Architect: | Aligns MLOps CI/CD pipelines with organisational DevOps toolchain standards and deployment gates |
-| Cloud Architects: | Coordinates on underlying compute, networking, and storage for ML infrastructure |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AI Platform Architect | Receives architecture design direction, reference implementations, and technology standards; escalates complex design decisions upward | Escalates To |
+| AI Governance Engineer | Coordinates on embedding governance controls, audit logging, and bias testing hooks within ML pipelines and the model registry | Collaborates |
+| Data Platform Architect | Aligns data ingestion and feature pipeline integration between the data platform and the ML platform | Collaborates |
+| Data Science / ML Engineering teams | Primary customers of the platform; supports experiment environment setup, pipeline debugging, and model deployment | Provides To |
+| DevOps Architect | Aligns MLOps CI/CD pipelines with organisational DevOps toolchain standards and deployment gates | Governed By |
+| Cloud Architects | Coordinates on underlying compute, networking, and storage for ML infrastructure | Collaborates |
 
 ## Key Technologies
 

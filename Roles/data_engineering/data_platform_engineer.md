@@ -5,6 +5,8 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | Data Platform Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Data Platform Engineer builds, maintains, and optimises the shared data platform infrastructure that all data engineering teams and data consumers rely upon. Operating as an entry to mid-level practitioner, this role implements data platform designs created by the Data Platform Architect — constructing and managing data lakes, lakehouses, ingestion pipelines, transformation frameworks, and data storage layers. Distinct from a domain-focused Data Engineer — who builds pipelines serving a specific business domain — the Data Platform Engineer focuses on the shared infrastructure layer that all data engineers and data consumers depend on. This role ensures the platform is reliable, performant, cost-efficient, and continuously improving.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of shared data platform infrastructure, onboarding support, and platform-layer incident response
+- **Experience Anchor:** 3-5 years in data platform or infrastructure engineering — operates independently within the Data Platform Architect's reference architecture
+- **Out of Scope:** Data platform architecture and technology standards (Architect-owned); domain-specific pipeline implementation (Data Engineers across domains-owned, this role provides shared infrastructure to them); DevOps toolchain standards (DevOps Architect-owned, this role aligns to them)
+- **Escalates To:** Data Platform Architect — complex design decisions and implementation feasibility questions
+- **Escalated To By:** Data Engineers across domains on platform onboarding and platform-layer issues
 
 ## Business Impact
 
@@ -77,14 +87,14 @@ The Data Platform Engineer builds, maintains, and optimises the shared data plat
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Platform Architect: | Receives architecture designs, technology standards, and implementation direction; escalates complex design decisions and provides implementation feasibility feedback |
-| DataOps Specialist: | Collaborates on pipeline reliability, data quality test integration, CI/CD pipeline implementation, and incident response for platform-layer failures |
-| Data Engineers across domains: | Primary platform customers; supports onboarding, resolves platform issues, and provides shared infrastructure services enabling domain data product delivery |
-| Cloud Architects: | Coordinates on underlying compute, networking, storage, and security configuration that underpins the data platform |
-| DevOps Architect: | Aligns data platform CI/CD pipelines with organisational DevOps toolchain, container registries, and deployment gates |
-| AI Platform Engineer: | Coordinates on data platform integration points for ML feature pipeline ingestion and training data access patterns |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Platform Architect | Receives architecture designs, technology standards, and implementation direction; escalates complex design decisions and provides implementation feasibility feedback | Escalates To |
+| DataOps Specialist | Collaborates on pipeline reliability, data quality test integration, CI/CD pipeline implementation, and incident response for platform-layer failures | Collaborates |
+| Data Engineers across domains | Primary platform customers; supports onboarding, resolves platform issues, and provides shared infrastructure services enabling domain data product delivery | Provides To |
+| Cloud Architects | Coordinates on underlying compute, networking, storage, and security configuration that underpins the data platform | Collaborates |
+| DevOps Architect | Aligns data platform CI/CD pipelines with organisational DevOps toolchain, container registries, and deployment gates | Governed By |
+| AI Platform Engineer | Coordinates on data platform integration points for ML feature pipeline ingestion and training data access patterns | Collaborates |
 
 ## Key Technologies
 

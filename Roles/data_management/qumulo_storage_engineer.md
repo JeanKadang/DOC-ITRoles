@@ -5,6 +5,8 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | Qumulo Storage Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Qumulo Storage Engineer is responsible for the implementation, configuration, maintenance, and optimization of the organization's Qumulo storage infrastructure. This role ensures high availability, performance, and reliability of file storage systems while supporting business applications and user needs.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Qumulo storage provisioning, connectivity, and support tasks to defined standards
+- **Experience Anchor:** 1-3 years in storage or infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Qumulo platform architecture and solution design (Senior Engineers and the Architect-owned); network connectivity troubleshooting beyond storage-side configuration (Network Engineers-owned); backup strategy definition (Backup Administrators-owned, this role coordinates with it)
+- **Escalates To:** Qumulo Storage Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** Application Teams on storage requirements
 
 ## Business Impact
 
@@ -143,16 +153,16 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Application Teams | Understand storage requirements |
-| Network Engineers | Connectivity issues |
-| Backup Administrators | Data protection strategies |
-| Cloud Engineers | Hybrid storage solutions |
-| System Administrators | Server access to storage |
-| Security Teams | Storage security configuration |
-| Storage Team Lead | Or **Infrastructure Manager** |
-| Virtualization Engineers | VM storage connectivity |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Application Teams | Understand storage requirements | Consumes From |
+| Network Engineers | Connectivity issues | Collaborates |
+| Backup Administrators | Data protection strategies | Collaborates |
+| Cloud Engineers | Hybrid storage solutions | Collaborates |
+| System Administrators | Server access to storage | Collaborates |
+| Security Teams | Storage security configuration | Governed By |
+| Qumulo Storage Senior Engineer | Escalate complex issues; receive implementation guidance | Escalates To |
+| Virtualization Engineers | VM storage connectivity | Collaborates |
 
 **Complementary Certifications:**
 

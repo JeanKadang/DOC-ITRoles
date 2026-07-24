@@ -5,6 +5,8 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Data Senior Engineers and Data Platform Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Data Platform Architect designs and governs the organisation's enterprise data platform strategy, covering data ingestion, storage, transformation, and consumption layers across on-premises, cloud, and hybrid environments. This role defines the architecture for data lakehouse platforms, cloud data warehouses, streaming pipelines, and data mesh or data product patterns that enable analytics, machine learning, and operational data use cases at scale. The Architect ensures the data platform is secure, reliable, governed, and cost-efficient.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — data platform architecture, ingestion/storage/compute standards, and data platform technology selection across the chapter
+- **Experience Anchor:** 8+ years in data engineering or platform architecture with demonstrated architecture-level delivery — operates independently on domain-wide data platform architecture decisions, as a peer counterpart to the Data Mesh Architect rather than in a hierarchical relationship
+- **Out of Scope:** Data mesh domain decomposition and federated governance model (Data Mesh Architect-owned); AI/ML training and serving infrastructure (AI Platform Architect-owned, this role aligns data pipelines to it); data governance policy (CDO/Data Governance-owned)
+- **Escalates To:** Data & AI Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Data Senior Engineers and Data Platform Engineers on architecture-level design exceptions
 
 ## Business Impact
 
@@ -94,14 +104,14 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| CDO / Data Governance team: | Align platform architecture with data governance policies and data strategy |
-| MLOps / AI Platform Architect: | Design integration between data platform and ML training/serving infrastructure |
-| DataOps Specialist: | Provide architecture direction; receive operational feedback from platform operations |
-| Cloud Architects: | Align data platform architecture with cloud platform standards |
-| Analytics / BI teams: | Ensure data platform serves consumption layer performance requirements |
-| FinOps: | Provide data platform cost attribution models |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CDO / Data Governance team | Align platform architecture with data governance policies and data strategy | Governed By |
+| MLOps / AI Platform Architect | Design integration between data platform and ML training/serving infrastructure | Collaborates |
+| DataOps Specialist | Provide architecture direction; receive operational feedback from platform operations | Provides To |
+| Cloud Architects | Align data platform architecture with cloud platform standards | Collaborates |
+| Analytics / BI teams | Ensure data platform serves consumption layer performance requirements | Provides To |
+| FinOps | Provide data platform cost attribution models | Provides To |
 
 ## Key Technologies
 

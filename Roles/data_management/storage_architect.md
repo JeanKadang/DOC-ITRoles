@@ -5,6 +5,8 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Storage Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Storage Architect is responsible for designing and governing the organisation's enterprise storage strategy across on-premises, hybrid, and cloud environments. This role defines storage architecture patterns for block, file, and object storage, covering performance, capacity, resilience, data protection, and cost optimisation. Unlike vendor-specific storage specialists, the Storage Architect takes a platform-agnostic view across the full storage estate - from SAN/NAS infrastructure to cloud-native object storage and software-defined storage platforms.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — enterprise storage architecture, tiering strategy, and storage technology standards across the chapter
+- **Experience Anchor:** 8+ years in storage or infrastructure architecture with demonstrated architecture-level delivery — operates independently on domain-wide storage architecture decisions
+- **Out of Scope:** Backup, replication, and DR strategy detail (Data Protection Architect-owned, this role aligns to it); database workload performance tuning (Database Architects-owned, this role provisions storage tiers to meet it); storage procurement negotiation (FinOps/Finance-owned)
+- **Escalates To:** Data & AI Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Storage Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -77,14 +87,14 @@ The Storage Architect is responsible for designing and governing the organisatio
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Protection Architect: | Align storage architecture with backup, replication, and DR requirements |
-| Database Architects: | Ensure storage tiers and performance specifications meet database workload requirements |
-| Virtualisation Architects: | Design vSAN and hypervisor-attached storage solutions |
-| Cloud Architects: | Define hybrid and cloud-native storage integration patterns |
-| Kubernetes / Platform Engineers: | Define persistent volume standards and CSI driver governance |
-| FinOps / Finance: | Model and optimise storage cost across on-premises and cloud |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Protection Architect | Align storage architecture with backup, replication, and DR requirements | Collaborates |
+| Database Architects | Ensure storage tiers and performance specifications meet database workload requirements | Provides To |
+| Virtualisation Architects | Design vSAN and hypervisor-attached storage solutions | Collaborates |
+| Cloud Architects | Define hybrid and cloud-native storage integration patterns | Collaborates |
+| Kubernetes / Platform Engineers | Define persistent volume standards and CSI driver governance | Provides To |
+| FinOps / Finance | Model and optimise storage cost across on-premises and cloud | Collaborates |
 
 ## Key Technologies
 

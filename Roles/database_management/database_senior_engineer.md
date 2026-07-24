@@ -5,6 +5,8 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | Database Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Database Senior Engineer leads the implementation and optimization of complex database environments. This role provides technical leadership for database deployments, migrations, and performance tuning while working closely with architects to translate database designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced database solution design and delivery within the Database Architect's reference architecture
+- **Experience Anchor:** 5+ years in database engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Database platform architecture and technology standards (Architect-owned); cloud database service selection (Cloud Senior Engineers-owned, this role coordinates with it); reliability engineering tooling strategy (Database Reliability Engineer-owned, this role coordinates with it)
+- **Escalates To:** Database Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Database Engineers on complex database technology issues
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Database Architect | Solution design and implementation strategy |
-| Database Product Owner | Technical planning and roadmap execution |
-| Cloud Senior Engineers | Cloud database services |
-| Senior Engineers | From other platforms on integrated solutions |
-| Database Engineers | Complex database technologies |
-| application teams | Complex data requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Database Architect | Solution design and implementation strategy | Escalates To |
+| Database Product Owner | Technical planning and roadmap execution | Collaborates |
+| Cloud Senior Engineers | Cloud database services | Collaborates |
+| Senior Engineers from other platforms | Integrated solutions | Collaborates |
+| Database Engineers | Complex database technologies | Provides To |
+| application teams | Complex data requirements | Provides To |
 
 ## Key Technologies
 

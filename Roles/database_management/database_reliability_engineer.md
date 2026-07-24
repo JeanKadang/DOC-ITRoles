@@ -5,6 +5,8 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | Database Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Database Reliability Engineer focuses on ensuring the availability, performance, scalability, and reliability of database systems across the enterprise. This role applies Site Reliability Engineering principles to database operations, emphasizing automation, observability, and continuous improvement to database infrastructure.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — database reliability engineering, resilience implementation, and performance monitoring integration
+- **Experience Anchor:** 3-5 years in database or site reliability engineering — operates independently within the Database Architect's resilience design
+- **Out of Scope:** Database architecture and resilience design (Database Architects-owned, this role implements it); CI/CD toolchain standards (DevOps Engineers-owned, this role integrates with it); observability platform standards (Observability Engineers-owned, this role coordinates with it)
+- **Escalates To:** Database Senior Engineer — implementation-level reliability questions
+- **Escalated To By:** application teams on database performance issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Database Senior Engineers | Implementation |
-| Observability Engineers | Monitoring implementation |
-| DevOps Engineers | CI/CD integration |
-| Database Product Owner | Reliability metrics |
-| Database Architects | Resilience design |
-| application teams | Database performance |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Database Senior Engineers | Implementation | Escalates To |
+| Observability Engineers | Monitoring implementation | Collaborates |
+| DevOps Engineers | CI/CD integration | Collaborates |
+| Database Product Owner | Reliability metrics | Provides To |
+| Database Architects | Resilience design | Consumes From |
+| application teams | Database performance | Provides To |
 
 ## Key Technologies
 

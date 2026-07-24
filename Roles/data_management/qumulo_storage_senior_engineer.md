@@ -5,6 +5,8 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | Qumulo Storage Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Qumulo Storage Senior Engineer leads the implementation and optimization of complex Qumulo storage solutions. This role provides technical leadership for storage deployments, migrations, and performance tuning while working closely with architects to translate storage designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Qumulo storage solution design and delivery within the Qumulo Storage Architect's reference architecture
+- **Experience Anchor:** 5+ years in storage engineering with demonstrated independent delivery on scale-out NAS platforms — operates independently within the Architect's reference architecture
+- **Out of Scope:** Qumulo platform architecture and technology standards (Architect-owned); hybrid cloud storage architecture (Cloud Senior Engineers-owned, this role coordinates with it); backup solution design (Backup Solution Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Qumulo Storage Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Qumulo Storage Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Qumulo Storage Senior Engineer leads the implementation and optimization of 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Qumulo Storage Architect | Solution design and implementation strategy |
-| Qumulo Storage Product Owner | Technical planning and roadmap execution |
-| Cloud Senior Engineers | Hybrid cloud storage solutions |
-| Backup Solution Senior Engineers | Integrated data protection |
-| Qumulo Storage Engineers | Technical implementation |
-| application teams | Complex storage requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Qumulo Storage Architect | Solution design and implementation strategy | Escalates To |
+| Qumulo Storage Product Owner | Technical planning and roadmap execution | Collaborates |
+| Cloud Senior Engineers | Hybrid cloud storage solutions | Collaborates |
+| Backup Solution Senior Engineers | Integrated data protection | Collaborates |
+| Qumulo Storage Engineers | Technical implementation | Provides To |
+| application teams | Complex storage requirements | Provides To |
 
 ## Key Technologies
 

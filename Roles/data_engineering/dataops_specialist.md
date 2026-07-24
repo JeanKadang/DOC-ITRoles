@@ -5,6 +5,8 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DataOps Specialist applies DevOps and agile engineering principles to data pipeline development, testing, and operations — bringing software engineering rigour to the data engineering lifecycle. This senior-level role owns data pipeline CI/CD, automated data quality testing frameworks, data pipeline observability and alerting, and incident management for data infrastructure failures. The DataOps Specialist bridges the gap between data engineering (build) and data operations (run), ensuring that pipelines are reliable, testable, observable, and continuously delivered. This role works closely with Data Platform Architects, data engineers across domains, DevOps, and ML platform teams to maintain a high standard of operational maturity for the organisation's data infrastructure.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — data pipeline CI/CD standards, quality testing integration, and pipeline observability across data engineering teams
+- **Experience Anchor:** 5+ years in DataOps, data engineering, or platform reliability with demonstrated independent delivery — operates independently within the Data Platform Architect's standards
+- **Out of Scope:** Data platform architecture and technology standards (Data Platform Architect-owned); data mesh governance framework design (Data Mesh Architect-owned, this role aligns pipeline standards to it); organisational DevOps toolchain standards (DevOps Architect-owned, this role aligns to them)
+- **Escalates To:** Data Platform Architect — pipeline architecture standards and design direction
+- **Escalated To By:** Data Engineers across domains on pipeline code reviews, quality testing guidance, and incident triage
 
 ## Business Impact
 
@@ -78,14 +88,14 @@ The DataOps Specialist applies DevOps and agile engineering principles to data p
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Platform Architect: | Receives pipeline architecture standards and design direction; provides operational feedback on platform reliability and performance |
-| Data Mesh Architect: | Aligns data product pipeline CI/CD standards with the data mesh governance framework; ensures domain data product pipelines meet quality and SLA requirements |
-| DevOps Architect: | Aligns data pipeline CI/CD toolchain with organisational DevOps standards, shared runners, and deployment governance |
-| Observability Architect: | Integrates data pipeline monitoring, alerting, and incident data with the enterprise observability platform (Datadog, Grafana, etc.) |
-| AI Platform Architect: | Coordinates on ML feature engineering pipeline orchestration reliability and MLOps CI/CD alignment |
-| Data Engineers across domains: | Primary partners for pipeline code reviews, quality testing guidance, incident triage, and DataOps standards adoption |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Platform Architect | Receives pipeline architecture standards and design direction; provides operational feedback on platform reliability and performance | Escalates To |
+| Data Mesh Architect | Aligns data product pipeline CI/CD standards with the data mesh governance framework; ensures domain data product pipelines meet quality and SLA requirements | Governed By |
+| DevOps Architect | Aligns data pipeline CI/CD toolchain with organisational DevOps standards, shared runners, and deployment governance | Governed By |
+| Observability Architect | Integrates data pipeline monitoring, alerting, and incident data with the enterprise observability platform (Datadog, Grafana, etc.) | Governed By |
+| AI Platform Architect | Coordinates on ML feature engineering pipeline orchestration reliability and MLOps CI/CD alignment | Collaborates |
+| Data Engineers across domains | Primary partners for pipeline code reviews, quality testing guidance, incident triage, and DataOps standards adoption | Provides To |
 
 ## Key Technologies
 

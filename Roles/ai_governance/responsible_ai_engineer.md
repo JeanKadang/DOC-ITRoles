@@ -5,6 +5,8 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | AI Governance Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Responsible AI Engineer implements the technical tooling, testing processes, and compliance artefacts that support the organisation's AI governance framework. Where the AI Governance Architect defines policy and strategy, this role operationalises governance controls directly within AI development and MLOps pipelines. The Responsible AI Engineer runs bias and fairness evaluations, generates explainability outputs, produces model cards and compliance documentation, integrates governance tooling into CI/CD pipelines, and supports AI risk assessments with quantitative evidence and audit artefacts.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — embedding responsible AI checks and governance tooling into ML experimentation and deployment workflows
+- **Experience Anchor:** 3-5 years in AI/ML engineering with a responsible AI, ethics, or governance focus — operates independently within the AI Governance Architect's framework
+- **Out of Scope:** AI governance framework and policy design (AI Governance Architect-owned); ML platform infrastructure (AI Platform team-owned); AI regulatory legal interpretation (Legal and Compliance-owned)
+- **Escalates To:** AI Governance Architect — governance requirements interpretation and compliance gap findings
+- **Escalated To By:** Data Scientists and MLOps Engineers on responsible AI tooling and governance check integration
 
 ## Business Impact
 
@@ -78,13 +88,13 @@ The Responsible AI Engineer implements the technical tooling, testing processes,
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AI Governance Architect: | Receives governance requirements; escalates findings and compliance gaps |
-| Data Scientists: | Embeds governance checks into experimentation and training workflows |
-| MLOps Engineer: | Integrates governance tooling into CI/CD pipelines and model deployment gates |
-| Security Engineer: | Coordinates on AI-specific threat surface (prompt injection, model theft, adversarial examples) |
-| Legal and Compliance: | Provides technical evidence for AI regulatory assessments and audits |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AI Governance Architect | Receives governance requirements; escalates findings and compliance gaps | Escalates To |
+| Data Scientists | Embeds governance checks into experimentation and training workflows | Provides To |
+| MLOps Engineer | Integrates governance tooling into CI/CD pipelines and model deployment gates | Collaborates |
+| Security Engineer | Coordinates on AI-specific threat surface (prompt injection, model theft, adversarial examples) | Collaborates |
+| Legal and Compliance | Provides technical evidence for AI regulatory assessments and audits | Provides To |
 
 ## Key Technologies
 
