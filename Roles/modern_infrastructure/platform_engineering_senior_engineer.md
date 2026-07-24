@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Platform Engineering Senior Engineer leads the implementation and optimization of developer platforms that enable application teams to efficiently build, deploy, and operate their services. This role provides technical leadership for internal platform development while working closely with architects to create effective self-service capabilities.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced platform engineering solution design and delivery within the Platform Engineering Architect's reference architecture
+- **Experience Anchor:** 5+ years in platform engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Platform engineering architecture and standards (Architect-owned); DevOps pipeline design (DevOps Senior Engineers-owned, this role integrates with it); container platform architecture (Kubernetes Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Platform Engineering Architect — solution design exceptions
+- **Escalated To By:** Platform Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Platform Engineering Architect | Solution design |
-| Platform Engineering Product Owner | Technical planning |
-| DevOps Senior Engineers | Pipeline integration |
-| Kubernetes Senior Engineers | Container platforms |
-| Security Engineers | Platform security controls |
-| Platform Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Platform Engineering Architect | Solution design | Escalates To |
+| Platform Engineering Product Owner | Technical planning | Collaborates |
+| DevOps Senior Engineers | Pipeline integration | Collaborates |
+| Kubernetes Senior Engineers | Container platforms | Collaborates |
+| Security Engineers | Platform security controls | Governed By |
+| Platform Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors VMware Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The VMware Architect designs and oversees the organization's virtualization infrastructure based on VMware technologies. This role ensures the delivery of a scalable, performant, and reliable virtualization platform supporting enterprise applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — VMware virtualisation platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in virtualisation architecture with demonstrated architecture-level delivery — operates independently on domain-wide VMware architecture decisions
+- **Out of Scope:** Nutanix or Hyper-V virtualisation architecture (Nutanix/Hyper-V Architects-owned — parallel, non-VMware virtualisation ladders); server hardware specification (Server Hardware Architect-owned, this role consumes it); virtual storage detail implementation (Storage Architects-owned, this role coordinates with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** VMware Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The VMware Architect designs and oversees the organization's virtualization infr
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Architect | Hardware specifications for VMware hosts |
-| Storage Architects | Virtual storage design |
-| Network Architects | Virtual networking solutions |
-| Cloud Platform Architects | Hybrid cloud integration |
-| Backup Solutions Architect | Virtualization backup strategies |
-| Security Architects | Virtual infrastructure security |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Architect | Hardware specifications for VMware hosts | Consumes From |
+| Storage Architects | Virtual storage design | Collaborates |
+| Network Architects | Virtual networking solutions | Collaborates |
+| Cloud Platform Architects | Hybrid cloud integration | Collaborates |
+| Backup Solutions Architect | Virtualization backup strategies | Collaborates |
+| Security Architects | Virtual infrastructure security | Governed By |
 
 ## Key Technologies
 

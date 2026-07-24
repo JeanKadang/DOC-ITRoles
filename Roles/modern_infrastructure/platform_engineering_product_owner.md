@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Platform Engineering Product Owner manages the roadmap and development of internal developer platforms that enable application teams to build, deploy, and operate their services efficiently. This role leads a team of platform engineers, ensuring that the developer experience meets the needs of application teams while maintaining operational excellence.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — internal platform engineering backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Platform engineering technical architecture (Platform Engineering Architect-owned); CI/CD roadmap ownership (DevOps Product Owner-owned, this role aligns to it); cloud infrastructure service roadmap (Cloud Platform Product Owners-owned, this role coordinates with them)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** development team leaders on platform adoption support
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevOps Product Owner | CI/CD integration |
-| Cloud Platform Product Owners | Infrastructure services |
-| Platform Engineering Architect | Technical strategy |
-| Application Product Owners | Developer requirements |
-| development team leaders | Platform adoption |
-| IT leadership | Platform strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Product Owner | CI/CD integration | Collaborates |
+| Cloud Platform Product Owners | Infrastructure services | Collaborates |
+| Platform Engineering Architect | Technical strategy | Consumes From |
+| Application Product Owners | Developer requirements | Consumes From |
+| development team leaders | Platform adoption | Provides To |
+| IT leadership | Platform strategy and investments | Provides To |
 
 ## Key Technologies
 

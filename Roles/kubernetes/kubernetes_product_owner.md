@@ -5,6 +5,8 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Kubernetes Product Owner manages the container platform roadmap and service portfolio, ensuring the Kubernetes environment meets the needs of application teams and aligns with organizational goals. This role prioritizes platform enhancements, coordinates the implementation schedule, and serves as the business liaison for container initiatives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Kubernetes platform backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Kubernetes technical architecture (Kubernetes Architect-owned); enterprise architecture standards alignment (enterprise architecture-owned, this role aligns to it); cross-cloud Kubernetes service roadmap ownership (other Product Owners-owned, this role coordinates integration points with them)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** application teams on containerization requirements
 
 ## Business Impact
 
@@ -67,16 +77,16 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 - **Working Knowledge required:** Kubernetes governance tools (OPA, Kyverno, Gatekeeper) for informing policy product decisions, Cloud-managed Kubernetes services (AKS, EKS, GKE) from a service catalogue and cost perspective
 - **Awareness level expected:** Service mesh capabilities (Istio, Linkerd) for evaluating advanced platform feature roadmap items, FinOps tooling for Kubernetes cost visibility, namespace-level chargeback, and reserved capacity
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Kubernetes Architect | Platform strategy and design |
-| Kubernetes Engineers | Implementation priorities |
-| application teams | Understand containerization requirements |
-| enterprise architecture | Alignment with standards |
-| other Product Owners | Integration points |
-| IT leadership | Container platform value and metrics |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Kubernetes Architect | Platform strategy and design | Consumes From |
+| Kubernetes Engineers | Implementation priorities | Provides To |
+| application teams | Understand containerization requirements | Consumes From |
+| enterprise architecture | Alignment with standards | Governed By |
+| other Product Owners | Integration points | Collaborates |
+| IT leadership | Container platform value and metrics | Provides To |
 
 ## Key Performance Indicators
 

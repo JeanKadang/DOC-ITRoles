@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | GCP Cloud Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Google Cloud Senior Engineer leads the implementation and optimization of complex Google Cloud Platform (GCP) solutions. This role provides technical leadership for GCP deployments, migrations, and operations while working closely with architects to translate cloud designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced GCP solution design and delivery within the GCP Cloud Architect's reference architecture
+- **Experience Anchor:** 5+ years in GCP engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** GCP platform architecture and technology standards (Architect-owned); underlying Linux host configuration (Linux Senior Engineers-owned, this role coordinates with it); GKE cluster architecture (Kubernetes Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** GCP Cloud Architect — solution design exceptions
+- **Escalated To By:** GCP Cloud Engineers on GCP services and best practices
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| GCP Cloud Architect | Solution design and implementation strategy |
-| GCP Cloud Product Owner | Technical planning and roadmap execution |
-| Linux Senior Engineers | Cloud infrastructure |
-| Kubernetes Senior Engineers | GKE implementations |
-| Security Engineers | Cloud security controls |
-| GCP Cloud Engineers | GCP services and best practices |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| GCP Cloud Architect | Solution design and implementation strategy | Escalates To |
+| GCP Cloud Product Owner | Technical planning and roadmap execution | Collaborates |
+| Linux Senior Engineers | Cloud infrastructure | Collaborates |
+| Kubernetes Senior Engineers | GKE implementations | Collaborates |
+| Security Engineers | Cloud security controls | Governed By |
+| GCP Cloud Engineers | GCP services and best practices | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Server Product Owner manages the product backlog and roadmap for all Tier 1 Windows Server platforms, excluding Tier 0 infrastructure (domain controllers and servers involved in directory services) which falls under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Windows Server platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Windows technical architecture (Windows Server Architect-owned); cross-platform initiative ownership (other Product Owners-owned, this role coordinates with them); compliance policy definition (Security teams-owned, this role implements vulnerability management from it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Business Relationship Managers on stakeholder needs
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Architect | Define technical direction |
-| other Product Owners | Cross-platform initiatives |
-| Security teams | Windows compliance and vulnerability management |
-| Service Delivery Managers | Operational handover |
-| Business Relationship Managers | Understand stakeholder needs |
-| IT leadership | Strategic roadmaps and investment planning |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Architect | Define technical direction | Consumes From |
+| other Product Owners | Cross-platform initiatives | Collaborates |
+| Security teams | Windows compliance and vulnerability management | Governed By |
+| Service Delivery Managers | Operational handover | Collaborates |
+| Business Relationship Managers | Understand stakeholder needs | Consumes From |
+| IT leadership | Strategic roadmaps and investment planning | Provides To |
 
 ## Key Focus Areas
 

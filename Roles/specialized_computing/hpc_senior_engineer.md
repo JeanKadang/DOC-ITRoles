@@ -5,6 +5,8 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | HPC Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The HPC Senior Engineer leads the technical implementation, automation, and optimization of high-performance computing environments. This role combines deep HPC expertise with technical leadership, driving innovation, security, and efficiency. The Senior Engineer works closely with researchers, architects, and engineers to deliver robust, scalable, and secure HPC solutions for complex workloads. The Senior Engineer also fosters a culture of innovation, continuous improvement, and inclusivity within the HPC team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced HPC solution design and delivery within the HPC Architect's reference architecture
+- **Experience Anchor:** 5+ years in HPC or scientific computing engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** HPC platform architecture and standards (Architect-owned); server hardware upgrade ownership (Server Hardware Senior Engineers-owned, this role coordinates with it); cloud HPC integration ownership (Cloud Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** HPC Architect — solution design, automation, and implementation strategy exceptions
+- **Escalated To By:** HPC Engineers on complex technical challenges and best practices
 
 ## Business Impact
 
@@ -97,15 +107,15 @@ The HPC Senior Engineer leads the technical implementation, automation, and opti
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| HPC Architect | Solution design, automation, and implementation strategies |
-| HPC Product Owner | Technical planning, roadmap execution, and user requirements |
-| Server Hardware Senior Engineers | HPC infrastructure and upgrades |
-| Cloud Senior Engineers | Cloud and hybrid HPC solutions |
-| Security Engineers | Ensure compliance and data protection |
-| HPC Engineers | Complex technical challenges and best practices |
-| researchers | Optimize and automate computational workflows |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| HPC Architect | Solution design, automation, and implementation strategies | Escalates To |
+| HPC Product Owner | Technical planning, roadmap execution, and user requirements | Collaborates |
+| Server Hardware Senior Engineers | HPC infrastructure and upgrades | Collaborates |
+| Cloud Senior Engineers | Cloud and hybrid HPC solutions | Collaborates |
+| Security Engineers | Ensure compliance and data protection | Governed By |
+| HPC Engineers | Complex technical challenges and best practices | Provides To |
+| researchers | Optimize and automate computational workflows | Provides To |
 
 ## Key Technologies
 

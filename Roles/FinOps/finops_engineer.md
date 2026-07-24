@@ -5,6 +5,8 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | FinOps Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -14,6 +16,14 @@
 The FinOps Engineer implements and maintains cloud cost monitoring, reporting, and optimization solutions. This role applies technical expertise to operationalize FinOps practices, ensuring effective day-to-day management of cloud costs and supporting the organization's cloud financial management goals.
 
 See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.md) — the tagging, budgeting, and chargeback standards this role works within.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of cost tracking, tagging, and optimisation implementation tasks to defined standards
+- **Experience Anchor:** 1-3 years in cloud financial management or FinOps engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** FinOps architecture and cost governance standards (Senior Engineers and the Architect-owned); cloud platform engineering implementation (Cloud Platform Engineers-owned, this role coordinates cost data with it); billing negotiation with cloud service providers (FinOps Senior Engineer/Architect-owned, this role supports it)
+- **Escalates To:** FinOps Senior Engineer — cost optimisation implementation questions
+- **Escalated To By:** business units and project teams on cost optimisation support
 
 ## Business Impact
 
@@ -75,13 +85,15 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to | FinOps Manager or Cloud Cost Management Lead |
-| | : FinOps Senior Engineers, Cloud Platform Engineers, Finance Teams |
-| Collaborates with | DevOps teams, Application owners, Cloud Center of Excellence |
-| Supports | Business units and project teams on cost optimization |
-| Partners with | Cloud service providers on billing and optimization |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| FinOps Senior Engineers | Receives task prioritisation and technical guidance | Escalates To |
+| Cloud Platform Engineers | Coordinates on cloud resource cost data | Collaborates |
+| Finance Teams | Provides cost data for financial reporting | Provides To |
+| DevOps teams | Collaborates on cost-efficient deployment practices | Collaborates |
+| Application owners | Supports on cost optimisation opportunities | Provides To |
+| Cloud Center of Excellence | Partners on cost optimisation best practices | Collaborates |
+| Cloud service providers | Partners on billing and optimization | Collaborates |
 
 ## Key Technologies
 

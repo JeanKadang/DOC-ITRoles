@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | GenAI Platform Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-07 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The GenAI Platform Engineer implements and maintains the infrastructure, tooling, and pipelines that enable engineering and data science teams to build, deploy, and operate AI and generative AI applications in production. This role focuses on the day-to-day delivery of reliable, secure, and cost-efficient AI infrastructure, including LLM serving, RAG pipelines, vector databases, agentic workflow infrastructure, and AI observability tooling. This role is distinct from the AI Platform Engineer in AI Governance, which builds and operates classical MLOps pipelines (feature stores, model training, model registries) — the GenAI Platform Engineer operates the infrastructure layer specific to large language models and agentic AI.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of GenAI/LLM platform implementation, pipeline integration, and IDP tooling tasks
+- **Experience Anchor:** 3-5 years in AI/ML or platform engineering — operates independently within the GenAI Platform Architect's reference architecture
+- **Out of Scope:** GenAI platform architecture and technology standards (Architect-owned); ML pipeline architecture (MLOps Engineers-owned, this role integrates with it); AI security control design (Security Engineers-owned, this role implements it)
+- **Escalates To:** GenAI Platform Architect — platform delivery decisions
+- **Escalated To By:** Data Scientists and AI Engineers on platform tooling support
 
 ## Business Impact
 
@@ -66,16 +76,15 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| MLOps Engineers | ML pipeline integration |
-| Data Scientists | Platform tooling |
-| AI Engineers | Platform tooling |
-| DevOps Engineers | CI/CD pipeline automation |
-| Security Engineers | AI security control implementation |
-| Cloud Engineers | Cloud AI service configuration |
-| Platform Engineering Engineers | IDP integration |
-| GenAI Platform Architect | Platform delivery |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| MLOps Engineers | ML pipeline integration | Collaborates |
+| Data Scientists and AI Engineers | Platform tooling | Provides To |
+| DevOps Engineers | CI/CD pipeline automation | Collaborates |
+| Security Engineers | AI security control implementation | Governed By |
+| Cloud Engineers | Cloud AI service configuration | Collaborates |
+| Platform Engineering Engineers | IDP integration | Collaborates |
+| GenAI Platform Architect | Platform delivery | Escalates To |
 
 ## Key Technologies
 

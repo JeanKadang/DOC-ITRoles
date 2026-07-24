@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors the GenAI Platform Engineer; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-07 |
 
 ---
@@ -60,17 +62,16 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| MLOps Engineers | Pipeline implementation and model deployment |
-| Security Architects | AI security controls and LLM governance |
-| Cloud Platform Architects | (Azure, AWS, GCP) on AI service integration |
-| Platform Engineering Architect | IDP integration of AI tooling |
-| FinOps Architect | AI/LLM cost governance |
-| Enterprise Architects | AI platform strategy and roadmap |
-| Data Scientists | Platform capabilities and golden paths |
-| AI Engineers | Platform capabilities and golden paths |
-| AI Platform Architect (AI Governance) | Alignment between classical MLOps platform architecture and GenAI/LLM platform architecture |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| MLOps Engineers | Pipeline implementation and model deployment | Collaborates |
+| Security Architects | AI security controls and LLM governance | Governed By |
+| Cloud Platform Architects (Azure, AWS, GCP) | AI service integration | Collaborates |
+| Platform Engineering Architect | IDP integration of AI tooling | Collaborates |
+| FinOps Architect | AI/LLM cost governance | Governed By |
+| Enterprise Architects | AI platform strategy and roadmap | Governed By |
+| Data Scientists and AI Engineers | Platform capabilities and golden paths | Provides To |
+| AI Platform Architect (AI Governance) | Alignment between classical MLOps platform architecture and GenAI/LLM platform architecture | Collaborates |
 
 ## Key Technologies
 
@@ -117,6 +118,14 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 - Knowledge transfer and enablement effectiveness
 - Edge AI model deployment coverage: ≥80% of approved edge AI workloads served via standardised edge inference patterns
 - Edge inference latency: p95 inference latency within agreed SLA for latency-sensitive edge AI applications
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — GenAI/LLM platform architecture, AI service integration, and generative AI tooling strategy across the chapter
+- **Experience Anchor:** 8+ years in AI/ML or platform architecture with demonstrated GenAI platform ownership — operates independently on domain-wide GenAI platform architecture decisions
+- **Out of Scope:** Classical MLOps platform architecture (AI Platform Architect in AI Governance-owned, this role aligns GenAI platform design with it); AI governance and risk framework (Security Architects-owned, this role implements AI security controls and LLM governance from it); cloud AI service selection detail (Cloud Platform Architects-owned, this role integrates with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** the GenAI Platform Engineer on platform delivery questions
 
 ## Business Impact
 

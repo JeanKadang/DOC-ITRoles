@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtualization platforms within the organization. This role balances business requirements with technical capabilities to ensure Hyper-V environments deliver value to stakeholders while maintaining operational excellence.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Hyper-V platform backlog, licensing roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Hyper-V technical architecture (Hyper-V Architect-owned); Windows Server platform roadmap (Windows Server Teams-owned, this role coordinates dependencies with it); service level definition beyond Hyper-V-specific commitments (Service Management-owned, this role coordinates with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Business Stakeholders on requirements and expectations
 
 ## Business Impact
 
@@ -76,15 +86,15 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Business Stakeholders | Understanding requirements and managing expectations |
-| Hyper-V Architect | Collaborating on technical strategy and architecture |
-| Hyper-V Engineering Teams | Providing direction on implementation priorities |
-| Windows Server Teams | Coordinating platform dependencies and roadmaps |
-| Procurement | Managing licensing and vendor relationships |
-| Finance Teams | Budget planning and cost management |
-| Service Management | Defining service levels and support models |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Business Stakeholders | Understanding requirements and managing expectations | Consumes From |
+| Hyper-V Architect | Collaborating on technical strategy and architecture | Consumes From |
+| Hyper-V Engineering Teams | Providing direction on implementation priorities | Provides To |
+| Windows Server Teams | Coordinating platform dependencies and roadmaps | Collaborates |
+| Procurement | Managing licensing and vendor relationships | Collaborates |
+| Finance Teams | Budget planning and cost management | Collaborates |
+| Service Management | Defining service levels and support models | Collaborates |
 
 ## Key Performance Indicators
 

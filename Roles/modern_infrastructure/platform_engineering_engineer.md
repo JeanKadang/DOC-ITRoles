@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Platform Engineering Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Platform Engineering Engineer implements and maintains internal developer platforms that enable application teams to efficiently build, deploy, and operate their services. This role focuses on creating self-service capabilities, automation, and tooling that improve the developer experience and accelerate software delivery.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of internal platform implementation tasks to defined standards
+- **Experience Anchor:** 1-3 years in platform engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Platform engineering architecture and solution design (Senior Engineers and the Architect-owned); CI/CD pipeline design (DevOps Engineers-owned, this role integrates with it); container platform implementation ownership (Kubernetes Engineers-owned, this role coordinates with it)
+- **Escalates To:** Platform Engineering Senior Engineers — design-level questions and complex implementation issues
+- **Escalated To By:** application developers on platform usage support
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Platform Engineering Product Owner | Task prioritization |
-| DevOps Engineers | Pipeline integration |
-| Kubernetes Engineers | Container platforms |
-| Cloud Engineers | Infrastructure services |
-| Platform Engineering Senior Engineers |  |
-| application developers | Platform usage |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Platform Engineering Product Owner | Task prioritization | Consumes From |
+| DevOps Engineers | Pipeline integration | Collaborates |
+| Kubernetes Engineers | Container platforms | Collaborates |
+| Cloud Engineers | Infrastructure services | Collaborates |
+| Platform Engineering Senior Engineers | Escalate complex issues; receive implementation guidance | Escalates To |
+| application developers | Platform usage | Provides To |
 
 ## Key Technologies
 

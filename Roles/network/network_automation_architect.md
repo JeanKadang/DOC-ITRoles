@@ -5,6 +5,8 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors the Network Automation Engineer; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Network Automation Architect designs and governs the strategy, tooling, and practices for automating network infrastructure provisioning, configuration, validation, and operations. As networks evolve from manually-configured hardware-centric models to software-defined, API-driven, and infrastructure-as-code approaches, this role leads the transition - defining the automation architecture across on-premises (campus, data centre), SD-WAN, and cloud networking. The Network Automation Architect bridges traditional network engineering with software and DevOps practices to enable faster, safer, and more consistent network-change delivery.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — network automation architecture, CI/CD for network changes, and infrastructure-as-code patterns across the chapter
+- **Experience Anchor:** 8+ years in network engineering or automation architecture with demonstrated architecture-level delivery — operates independently on domain-wide network automation decisions, as a peer counterpart to the Network Architect rather than in a hierarchical relationship
+- **Out of Scope:** Overall network platform architecture (Network Architect-owned, this role extends and operationalises its designs); cloud IaC standards beyond network automation (Cloud Architects-owned, this role aligns to them); ITSM change process ownership (Service Management-owned, this role integrates automated workflows with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** the Network Automation Engineer on automation strategy questions
 
 ## Business Impact
 
@@ -98,13 +108,13 @@ The Network Automation Architect designs and governs the strategy, tooling, and 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Network Architect: | Collaborate on overall network platform decisions; automation extends and operationalises network designs |
-| DevOps / Platform Engineering Architect: | Align network CI/CD with enterprise pipeline standards |
-| Cloud Architects: | Define cloud network automation patterns (Terraform VNets/VPCs) aligned with cloud platform IaC standards |
-| Security Engineers: | Automate network security policy enforcement and compliance validation |
-| Service Management: | Integrate automated network change workflows with ITSM change approval processes |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Network Architect | Collaborate on overall network platform decisions; automation extends and operationalises network designs | Collaborates |
+| DevOps / Platform Engineering Architect | Align network CI/CD with enterprise pipeline standards | Collaborates |
+| Cloud Architects | Define cloud network automation patterns (Terraform VNets/VPCs) aligned with cloud platform IaC standards | Collaborates |
+| Security Engineers | Automate network security policy enforcement and compliance validation | Governed By |
+| Service Management | Integrate automated network change workflows with ITSM change approval processes | Collaborates |
 
 ## Key Technologies
 

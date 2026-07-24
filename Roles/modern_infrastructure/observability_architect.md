@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Observability Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Observability Architect designs and governs the organisation's full-stack observability strategy, covering metrics, distributed tracing, structured logging, alerting frameworks, and SLO/SLA design. This role owns the observability platform architecture and toolchain, ensuring that engineers, SREs, and operations teams have the signals they need to detect issues, investigate incidents, and meet reliability commitments. The Observability Architect sets organisation-wide instrumentation standards, governs telemetry pipelines, and drives observability culture across engineering teams operating across cloud-native, hybrid, and multi-cloud environments.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — observability platform architecture, telemetry pipeline standards, and SLO framework design across the chapter
+- **Experience Anchor:** 8+ years in observability or SRE architecture with demonstrated architecture-level delivery — operates independently on domain-wide observability architecture decisions
+- **Out of Scope:** Cloud-native monitoring service selection (Cloud Architects-owned, this role aligns platform design to it); security event monitoring policy (Security Architect-owned, this role integrates with SIEM per its requirements); CI/CD pipeline design (DevOps Architect-owned, this role integrates observability into it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Observability Senior Engineers and Engineers on platform implementation and instrumentation standards
 
 ## Business Impact
 
@@ -76,18 +86,16 @@ The Observability Architect designs and governs the organisation's full-stack ob
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Azure Cloud Architect | , **AWS Cloud Architect**, and **GCP Cloud Architect** to align observability platform with cloud-native monitoring services (Azure Monitor, CloudWatch, Cloud Operations Suite) |
-| Kubernetes Architect | Cluster observability, workload metrics collection, and service mesh telemetry design |
-| Site Reliability Engineers | SLO framework implementation, error budget policies, and incident detection engineering |
-| Senior Site Reliability Engineers | SLO framework implementation, error budget policies, and incident detection engineering |
-| Security Architect | Security event monitoring, telemetry pipeline access controls, and integration with SIEM platforms |
-| DevOps Architect | Observability integration within CI/CD pipelines (deployment tracking, release impact analysis, and pipeline performance metrics) |
-| Data Platform Architect | Telemetry data pipeline patterns and event streaming for observability data feeds |
-| Observability Product Owner | Platform roadmap prioritisation and capability investment decisions |
-| Observability Senior Engineers | Platform implementation and instrumentation standards |
-| Observability Engineers | Platform implementation and instrumentation standards |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Azure, AWS, and GCP Cloud Architects | Align observability platform with cloud-native monitoring services (Azure Monitor, CloudWatch, Cloud Operations Suite) | Collaborates |
+| Kubernetes Architect | Cluster observability, workload metrics collection, and service mesh telemetry design | Collaborates |
+| Site Reliability Engineers and Senior Engineers | SLO framework implementation, error budget policies, and incident detection engineering | Collaborates |
+| Security Architect | Security event monitoring, telemetry pipeline access controls, and integration with SIEM platforms | Governed By |
+| DevOps Architect | Observability integration within CI/CD pipelines (deployment tracking, release impact analysis, and pipeline performance metrics) | Collaborates |
+| Data Platform Architect | Telemetry data pipeline patterns and event streaming for observability data feeds | Collaborates |
+| Observability Product Owner | Platform roadmap prioritisation and capability investment decisions | Collaborates |
+| Observability Senior Engineers and Engineers | Platform implementation and instrumentation standards | Provides To |
 
 ## Key Technologies
 

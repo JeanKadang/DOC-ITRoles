@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Google Cloud Product Owner manages the development and lifecycle of the organization's Google Cloud Platform (GCP) services portfolio. This role leads a team of GCP architects and engineers, ensuring that cloud services meet business requirements, cost objectives, and operational standards while aligning with the organization's cloud strategy.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — GCP platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** GCP technical architecture (GCP Cloud Architect-owned); cloud cost governance strategy (FinOps Team-owned, this role aligns to it); GCP compliance control implementation (security teams-owned)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on cloud requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| FinOps Team | Cloud cost management |
-| GCP Cloud Architect | Technical strategy |
-| Application Product Owners | Cloud requirements |
-| security teams | Cloud compliance requirements |
-| application teams | GCP service adoption |
-| IT leadership | Cloud strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| FinOps Team | Cloud cost management | Collaborates |
+| GCP Cloud Architect | Technical strategy | Consumes From |
+| Application Product Owners | Cloud requirements | Consumes From |
+| security teams | Cloud compliance requirements | Governed By |
+| application teams | GCP service adoption | Provides To |
+| IT leadership | Cloud strategy and investments | Provides To |
 
 ## Key Technologies
 

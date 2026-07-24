@@ -5,6 +5,8 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Network Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Network Architect designs comprehensive enterprise network strategies and architectures for the organization. This role establishes the technical vision for network infrastructure, creating architectures that balance performance, security, scalability, and reliability while aligning with business objectives and digital transformation initiatives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — network architecture, connectivity standards, and hybrid network design across the chapter
+- **Experience Anchor:** 8+ years in network architecture with demonstrated architecture-level delivery — operates independently on domain-wide network architecture decisions
+- **Out of Scope:** Network automation tooling architecture (Network Automation Architect-owned — a peer role that extends and operationalises this role's designs); security control implementation (Security Architects-owned, this role implements security design from it); cloud connectivity service selection (Cloud Architects-owned, this role aligns hybrid connectivity to it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Network Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -63,14 +73,14 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Security Architects | Security design |
-| Cloud Architects | Hybrid connectivity |
-| Network Product Owner | Technical strategy |
-| Network Senior Engineers |  |
-| application architects | Network requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standards | Governed By |
+| Security Architects | Security design | Governed By |
+| Cloud Architects | Hybrid connectivity | Collaborates |
+| Network Product Owner | Technical strategy | Collaborates |
+| Network Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| application architects | Network requirements | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Azure Cloud Platform Product Owner manages the organization's Azure cloud services portfolio and adoption strategy. This role leads a team of Azure architects and engineers, ensuring that Azure-based services deliver business value while maintaining security, compliance, and cost efficiency.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Azure platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Azure technical architecture (Azure Cloud Platform Architect-owned); hybrid Windows Server roadmap (Windows Server Product Owner-owned, this role aligns to it); AKS strategy (Kubernetes Product Owner-owned, this role aligns to it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on platform requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Product Owner | Hybrid cloud scenarios |
-| Kubernetes Product Owner | Azure Kubernetes Service strategy |
-| Azure Cloud Platform Architect | Technical decisions |
-| Application Product Owners | Platform requirements |
-| Security and Compliance teams | Cloud controls |
-| IT leadership | Cloud strategy and investment priorities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Product Owner | Hybrid cloud scenarios | Collaborates |
+| Kubernetes Product Owner | Azure Kubernetes Service strategy | Collaborates |
+| Azure Cloud Platform Architect | Technical decisions | Consumes From |
+| Application Product Owners | Platform requirements | Consumes From |
+| Security and Compliance teams | Cloud controls | Governed By |
+| IT leadership | Cloud strategy and investment priorities | Provides To |
 
 ## Key Technologies
 

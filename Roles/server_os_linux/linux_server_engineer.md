@@ -5,6 +5,8 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Linux Server Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Linux Server Engineer implements and maintains Tier 1 Linux Server environments across the organization, excluding any Tier 0 infrastructure related to directory services which falls under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Linux server deployment and configuration tasks to defined standards
+- **Experience Anchor:** 1-3 years in Linux systems engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Linux architecture and solution design (Senior Engineers and the Architect-owned); server hardware deployment ownership (Server Hardware Engineers-owned, this role coordinates with it); container host configuration ownership (Kubernetes Engineers-owned, this role coordinates with it)
+- **Escalates To:** Linux Server Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** Database Engineers on Linux database host support
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Linux Server Product Owner | Task prioritization |
-| Server Hardware Engineers | Server deployments |
-| Kubernetes Engineers | Container host configuration |
-| Database Engineers | Linux database hosts |
-| Linux Server Architect | Implementation activities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Linux Server Product Owner | Task prioritization | Consumes From |
+| Server Hardware Engineers | Server deployments | Collaborates |
+| Kubernetes Engineers | Container host configuration | Collaborates |
+| Database Engineers | Linux database hosts | Provides To |
+| Linux Server Architect | Implementation activities | Escalates To |
 
 ## Key Technologies
 

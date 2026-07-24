@@ -5,6 +5,8 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Server Hardware Product Owner manages the lifecycle of physical server infrastructure across the organization. This role leads a team of hardware architects and engineers, ensuring that server hardware meets performance requirements, operational standards, and cost objectives while aligning with business needs.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — server hardware procurement backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Server hardware technical architecture (Server Hardware Architect-owned); data centre operations execution (Data Center Operations teams-owned, this role coordinates installation with it); vendor contract terms (Procurement-owned, this role coordinates selection with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** platform-specific Product Owners (Windows, Linux, HPC) on hardware requirements
 
 ## Business Impact
 
@@ -86,14 +96,14 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Architect | Specifications and designs |
-| platform-specific Product Owners (Windows, Linux, HPC) | Hardware requirements |
-| Data Center Operations teams | Installation and maintenance |
-| Finance | Capital expenditure planning and budgeting |
-| Procurement | Vendor selection and contract negotiations |
-| IT leadership | Infrastructure investment strategy |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Architect | Specifications and designs | Consumes From |
+| platform-specific Product Owners (Windows, Linux, HPC) | Hardware requirements | Collaborates |
+| Data Center Operations teams | Installation and maintenance | Collaborates |
+| Finance | Capital expenditure planning and budgeting | Collaborates |
+| Procurement | Vendor selection and contract negotiations | Collaborates |
+| IT leadership | Infrastructure investment strategy | Provides To |
 
 ## Key Focus Areas
 

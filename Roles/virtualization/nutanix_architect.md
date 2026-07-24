@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Nutanix Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Nutanix Architect designs and oversees the organization's hyperconverged infrastructure (HCI) based on Nutanix technology. This role ensures the delivery of a scalable, efficient, and resilient platform that meets business requirements for application hosting and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Nutanix hyperconverged infrastructure architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in virtualisation or hyperconverged infrastructure architecture with demonstrated Nutanix ownership — operates independently on domain-wide Nutanix architecture decisions
+- **Out of Scope:** VMware or Hyper-V virtualisation architecture (VMware/Hyper-V Architects-owned — parallel, non-Nutanix virtualisation ladders); server hardware specification (Server Hardware Architect-owned, this role consumes it); database workload tuning detail (Database Architect-owned, this role optimises Nutanix for it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Nutanix Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Architect | Hardware specifications for Nutanix nodes |
-| Database Architect | Database workload optimization on Nutanix |
-| Kubernetes Architect | Container solutions with Nutanix Karbon |
-| Backup Solutions Architect | Nutanix data protection strategies |
-| Cloud Platform Architects | Hybrid cloud solutions with Nutanix Xi |
-| application architects | Workload placement |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Architect | Hardware specifications for Nutanix nodes | Consumes From |
+| Database Architect | Database workload optimization on Nutanix | Collaborates |
+| Kubernetes Architect | Container solutions with Nutanix Karbon | Collaborates |
+| Backup Solutions Architect | Nutanix data protection strategies | Collaborates |
+| Cloud Platform Architects | Hybrid cloud solutions with Nutanix Xi | Collaborates |
+| application architects | Workload placement | Provides To |
 
 ## Key Technologies
 

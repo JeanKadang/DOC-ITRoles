@@ -5,6 +5,8 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Linux Server Product Owner manages the product backlog and roadmap for all Tier 1 Linux Server platforms, excluding any Tier 0 infrastructure related to directory services which falls under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Linux server platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Linux technical architecture (Linux Server Architect-owned); cross-platform integration ownership (other Product Owners-owned, this role coordinates with them); hardening policy definition (Security teams-owned, this role implements compliance from it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Business Relationship Managers on business driver alignment
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Linux Server Architect | Technical strategy and design |
-| other Product Owners | Integrated solutions |
-| Security teams | Linux hardening and compliance |
-| Service Delivery Managers | Operational transitions |
-| Business Relationship Managers | Understand business drivers |
-| IT leadership | Strategic initiatives and investment decisions |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Linux Server Architect | Technical strategy and design | Consumes From |
+| other Product Owners | Integrated solutions | Collaborates |
+| Security teams | Linux hardening and compliance | Governed By |
+| Service Delivery Managers | Operational transitions | Collaborates |
+| Business Relationship Managers | Understand business drivers | Consumes From |
+| IT leadership | Strategic initiatives and investment decisions | Provides To |
 
 ## Key Focus Areas
 

@@ -5,6 +5,8 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Kubernetes Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Kubernetes Senior Engineer leads complex containerization initiatives and advanced implementations, providing technical leadership for container orchestration platforms. This role focuses on automation, platform optimization, and solving complex challenges in Kubernetes environments while mentoring other team members.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Kubernetes cluster design and delivery within the Kubernetes Architect's reference architecture
+- **Experience Anchor:** 5+ years in Kubernetes engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Kubernetes platform architecture and standards (Architect-owned); CI/CD pipeline design (DevOps teams-owned, this role integrates advanced pipeline patterns with it); container security policy definition (security teams-owned, this role implements controls)
+- **Escalates To:** Kubernetes Architect — platform design exceptions
+- **Escalated To By:** Kubernetes Engineers on technical matters
 
 ## Business Impact
 
@@ -69,15 +79,15 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 - **Working Knowledge required:** Infrastructure as Code (Terraform, Pulumi) for cluster provisioning and lifecycle management, Multi-cluster management platforms (Rancher, VMware Tanzu, Red Hat OpenShift)
 - **Awareness level expected:** eBPF-based networking and security (Cilium, Hubble, Tetragon) for next-generation cluster observability, WASM and container-native computing patterns for edge and serverless Kubernetes workloads
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Kubernetes Architect | Platform design decisions |
-| Kubernetes Engineers | Technical matters |
-| DevOps teams | Advanced pipeline integrations |
-| application architects | Container strategy |
-| security teams | Container security implementations |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Kubernetes Architect | Platform design decisions | Escalates To |
+| Kubernetes Engineers | Technical matters | Provides To |
+| DevOps teams | Advanced pipeline integrations | Collaborates |
+| application architects | Container strategy | Collaborates |
+| security teams | Container security implementations | Governed By |
 
 ## Key Performance Indicators
 

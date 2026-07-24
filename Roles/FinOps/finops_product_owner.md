@@ -5,6 +5,8 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The FinOps Product Owner manages the backlog of cloud cost optimization initiatives, drives cloud financial accountability, and ensures business alignment. This role champions the FinOps practice within the organization, ensuring that cloud spending delivers maximum business value and that stakeholders understand their cloud economics.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — FinOps platform backlog, cost governance roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management, ideally with cloud financial management exposure — operates independently on backlog and roadmap decisions
+- **Out of Scope:** FinOps technical architecture (FinOps Architect-owned); cloud engineering implementation (Cloud Engineers-owned, this role aligns backlog to it); enterprise financial controls (Financial Controllers-owned, this role coordinates reporting with them)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Business Unit Leaders on cost governance and reporting needs
 
 ## Business Impact
 
@@ -72,11 +82,13 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to | Cloud Services Director or Head of Cloud Center of Excellence |
-| | : FinOps Architect, Cloud Engineers, Business Unit Leaders, Financial Controllers |
-| Manages | FinOps product backlog and stakeholder relationships |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| FinOps Architect | Consumes technical strategy to shape backlog and roadmap priorities | Consumes From |
+| Cloud Engineers | Provides delivery direction and prioritisation for cost optimisation work | Provides To |
+| Business Unit Leaders | Gathers cost governance and reporting requirements | Consumes From |
+| Financial Controllers | Coordinates cloud spend reporting with enterprise financial processes | Collaborates |
+| Cloud Services Director | Manages the FinOps product backlog and stakeholder relationships | Escalates To |
 
 ## Key Focus Areas
 

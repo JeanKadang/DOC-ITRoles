@@ -5,6 +5,8 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Server Hardware Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Server Hardware Engineer implements and maintains the physical server infrastructure across the organization. Working with the Server Hardware Architect and Product Owner, this role ensures proper installation, configuration, and maintenance of server hardware to support business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of server hardware installation, deployment, and inventory tasks to defined standards
+- **Experience Anchor:** 1-3 years in server hardware or infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Server hardware architecture and solution design (Senior Engineers and the Architect-owned); OS installation ownership (Windows/Linux Server Engineers-owned, this role coordinates with it); vendor contract negotiation (procurement team-owned, this role coordinates receiving and inventory with it)
+- **Escalates To:** Server Hardware Architect — implementation activity questions
+- **Escalated To By:** data center facilities teams on physical infrastructure coordination
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Server Hardware Engineer implements and maintains the physical server infras
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Product Owner | Task prioritization |
-| Windows/Linux Server Engineers | OS installation needs |
-| Server Hardware Architect | Implementation activities |
-| data center facilities teams | Physical infrastructure |
-| procurement team | Hardware receiving and inventory |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Product Owner | Task prioritization | Consumes From |
+| Windows/Linux Server Engineers | OS installation needs | Collaborates |
+| Server Hardware Architect | Implementation activities | Escalates To |
+| data center facilities teams | Physical infrastructure | Collaborates |
+| procurement team | Hardware receiving and inventory | Collaborates |
 
 ## Key Technologies
 

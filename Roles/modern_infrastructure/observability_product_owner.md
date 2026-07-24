@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Observability Product Owner manages the observability platform portfolio, defining requirements and priorities for monitoring, logging, and tracing services. This role ensures that observability platforms meet the needs of all stakeholders and align with business objectives for system reliability and performance visibility.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — observability platform backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Observability technical architecture (Observability Architect-owned); incident management process ownership (IT operations-owned, this role integrates roadmap with it); cross-service integration ownership (other Product Owners-owned, this role coordinates with them)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** application teams on monitoring requirements
 
 ## Business Impact
 
@@ -67,16 +77,16 @@ The Observability Product Owner manages the observability platform portfolio, de
 - **Working Knowledge required:** OpenTelemetry instrumentation concepts and team adoption patterns, Distributed tracing systems (Jaeger, Zipkin) and APM tool features, Time-series database concepts, cardinality management, and telemetry cost governance
 - **Awareness level expected:** AI-assisted root cause analysis and AIOps capabilities in observability platforms, eBPF-based observability and continuous profiling as emerging product features
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Observability Architect | Platform strategy |
-| Observability Engineers | Implementation priorities |
-| application teams | Understand monitoring requirements |
-| IT operations | Incident management integration |
-| other Product Owners | Service integration |
-| IT leadership | Observability platform value |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Observability Architect | Platform strategy | Consumes From |
+| Observability Engineers | Implementation priorities | Provides To |
+| application teams | Understand monitoring requirements | Consumes From |
+| IT operations | Incident management integration | Collaborates |
+| other Product Owners | Service integration | Collaborates |
+| IT leadership | Observability platform value | Provides To |
 
 ## Key Performance Indicators
 

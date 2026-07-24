@@ -5,6 +5,8 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The High-Performance Computing (HPC) Product Owner leads the development, delivery, and continuous improvement of HPC solutions that support the organization's computationally intensive workloads. This role drives the strategic vision for HPC, ensuring environments are innovative, scalable, secure, and aligned with research and business needs. The Product Owner champions user engagement, value delivery, and adoption of emerging HPC technologies, including cloud and hybrid solutions. The Product Owner also champions sustainability, diversity, and user advocacy, ensuring that HPC solutions are accessible and valuable to all stakeholders.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — HPC platform backlog, investment strategy, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management, ideally with research computing exposure — operates independently on backlog and roadmap decisions
+- **Out of Scope:** HPC technical architecture (HPC Architect-owned); server hardware procurement roadmap (Server Hardware Product Owner-owned, this role aligns to it); cloud integration compliance detail (Security Teams-owned)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Data Science and Research departments on evolving computational needs
 
 ## Business Impact
 
@@ -75,15 +85,15 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Product Owner | Infrastructure requirements and optimization |
-| Linux Server Product Owner | Infrastructure requirements and optimization |
-| Cloud Product Owners | Cloud integration and compliance |
-| Security Teams | Cloud integration and compliance |
-| HPC Architect | Platform design, technology adoption, and enhancement |
-| Data Science and Research departments | Understand evolving computational needs |
-| IT leadership | HPC investment strategy, business cases, and value delivery |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Product Owner | Infrastructure requirements and optimization | Collaborates |
+| Linux Server Product Owner | Infrastructure requirements and optimization | Collaborates |
+| Cloud Product Owners | Cloud integration and compliance | Collaborates |
+| Security Teams | Cloud integration and compliance | Governed By |
+| HPC Architect | Platform design, technology adoption, and enhancement | Consumes From |
+| Data Science and Research departments | Understand evolving computational needs | Consumes From |
+| IT leadership | HPC investment strategy, business cases, and value delivery | Provides To |
 
 ## Key Focus Areas
 

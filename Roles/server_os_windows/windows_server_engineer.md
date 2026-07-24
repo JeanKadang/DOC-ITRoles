@@ -5,6 +5,8 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Windows Server Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Server Engineer implements and maintains Tier 1 Windows Server environments across the organization, excluding Tier 0 infrastructure (domain controllers and servers involved in directory services) which falls under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Windows server deployment and configuration tasks to defined standards
+- **Experience Anchor:** 1-3 years in Windows systems engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Windows architecture and solution design (Senior Engineers and the Architect-owned); server hardware deployment ownership (Server Hardware Engineers-owned, this role coordinates with it); monitoring platform implementation ownership (Observability Engineers-owned, this role coordinates with it)
+- **Escalates To:** Windows Server Architect — implementation detail questions
+- **Escalated To By:** other platform engineers on integration point coordination
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Product Owner | Task prioritization and delivery |
-| Server Hardware Engineers | Physical server deployments |
-| Observability Engineers | Monitoring implementation |
-| Windows Server Architect | Implementation details |
-| other platform engineers | Integration points |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Product Owner | Task prioritization and delivery | Consumes From |
+| Server Hardware Engineers | Physical server deployments | Collaborates |
+| Observability Engineers | Monitoring implementation | Collaborates |
+| Windows Server Architect | Implementation details | Escalates To |
+| other platform engineers | Integration points | Collaborates |
 
 ## Key Technologies
 

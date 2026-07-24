@@ -5,6 +5,8 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | FinOps Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Cloud Economics Analyst is the business-facing analytical capability within the FinOps practice, responsible for translating raw cloud spend data into actionable financial intelligence that informs budgeting, forecasting, and investment decisions. This role specialises in unit economics modelling, showback and chargeback reporting, budget variance analysis, TCO modelling, and make-vs-buy analysis, working closely with finance teams, product owners, and business unit leaders to ensure cloud costs are understood, attributed accurately, and optimised from a commercial perspective.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — cloud unit economics analysis, billing allocation accuracy, and commitment/contract data analysis
+- **Experience Anchor:** 3-5 years in FinOps, financial analysis, or cloud engineering with a financial/economics focus — operates independently within the FinOps Senior Engineer's standards
+- **Out of Scope:** FinOps architecture and cost governance standards (FinOps Architect-owned); billing pipeline engineering implementation (data engineering teams-owned, this role consumes it); tagging and rightsizing implementation (Cloud Cost Optimization Engineer-owned, this role analyses the resulting economics)
+- **Escalates To:** FinOps Senior Engineer — cost economics questions
+- **Escalated To By:** business unit finance leads on unit economics reporting needs
 
 ## Business Impact
 
@@ -73,11 +83,15 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to | FinOps Manager or Finance Operations Manager |
-| | FinOps Senior Engineer, FinOps Architect, Finance business partners, business unit finance leads |
-| Collaborates with | Cloud Platform Engineers (for tagging and allocation accuracy), product owners (for unit economics inputs), procurement teams (for commitment and contract data), and data engineering teams (for billing pipeline support) |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| FinOps Senior Engineer | Receives task prioritisation and technical guidance | Escalates To |
+| FinOps Architect | Consumes cost governance standards for economics analysis | Consumes From |
+| Finance business partners and business unit finance leads | Provides unit economics analysis and reporting | Provides To |
+| Cloud Platform Engineers | Coordinates for tagging and allocation accuracy | Collaborates |
+| product owners | Provides unit economics inputs | Provides To |
+| procurement teams | Consumes commitment and contract data | Consumes From |
+| data engineering teams | Coordinates on billing pipeline support | Collaborates |
 
 ## Key Technologies
 

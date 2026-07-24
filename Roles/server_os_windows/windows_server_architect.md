@@ -5,6 +5,8 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Windows Server Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Server Architect designs and defines the strategic direction for the organization's Windows Server infrastructure. This role creates architectural blueprints, standards, and reference models for Windows environments, ensuring they meet business requirements for performance, scalability, reliability, and security while aligning with broader IT strategy and enterprise architecture.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Windows Server platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in Windows systems architecture with demonstrated architecture-level delivery — operates independently on domain-wide Windows architecture decisions
+- **Out of Scope:** Linux Server architecture (Linux Server Architect-owned — a parallel, non-Windows OS ladder); Active Directory identity architecture (Windows Active Directory Architect-owned, this role aligns to it); server hardware specification (Server Hardware Architect-owned, this role consumes it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Windows Server Engineers on implementation of architectural standards
 
 ## Business Impact
 
@@ -149,17 +159,17 @@ The Windows Server Architect designs and defines the strategic direction for the
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Align Windows architecture with overall strategy |
-| Windows Server Engineers | Implementation of architectural standards |
-| Security Architects | Windows security design |
-| Cloud Architects | Hybrid Windows deployments |
-| Infrastructure Managers | Windows technology roadmaps |
-| Network Architects | Windows networking requirements |
-| Storage Architects | Windows storage solutions |
-| Application Architects | Windows platform requirements, OS constraints, and Group Policy/WinAPI design considerations |
-| Active Directory Engineers | Identity architecture |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Align Windows architecture with overall strategy | Governed By |
+| Windows Server Engineers | Implementation of architectural standards | Provides To |
+| Security Architects | Windows security design | Governed By |
+| Cloud Architects | Hybrid Windows deployments | Collaborates |
+| Infrastructure Managers | Windows technology roadmaps | Collaborates |
+| Network Architects | Windows networking requirements | Collaborates |
+| Storage Architects | Windows storage solutions | Collaborates |
+| Application Architects | Windows platform requirements, OS constraints, and Group Policy/WinAPI design considerations | Provides To |
+| Active Directory Engineers | Identity architecture | Collaborates |
 
 **Complementary Certifications:**
 

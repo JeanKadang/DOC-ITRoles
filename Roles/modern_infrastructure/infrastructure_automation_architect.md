@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Infrastructure Automation Architect designs and governs the organisation's end-to-end infrastructure automation strategy — spanning Infrastructure as Code (IaC), configuration management, event-driven automation, runbook automation, and self-healing infrastructure patterns. This role owns the automation standards, reusable module libraries, and automation governance frameworks that cloud and platform teams build upon, ensuring consistency, security, and operational efficiency across all infrastructure provisioning and management activities. The Infrastructure Automation Architect bridges the gap between infrastructure engineering and platform operations, establishing automation as a first-class engineering discipline across the organisation.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — infrastructure-as-code (IaC) module standards, compliance-as-code, and automation architecture across the chapter
+- **Experience Anchor:** 8+ years in infrastructure automation or platform architecture with demonstrated IaC programme ownership — operates independently on domain-wide automation architecture decisions
+- **Out of Scope:** Cloud platform-specific service architecture (Azure/AWS/GCP Cloud Architects-owned, this role aligns automation standards to each); CI/CD pipeline platform design (DevOps Architect-owned, this role integrates IaC automation into it); observability signal design (Observability Architect-owned, this role builds remediation triggers from it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Infrastructure Engineers on IaC design pattern and module development questions
 
 ## Business Impact
 
@@ -75,17 +85,16 @@ The Infrastructure Automation Architect designs and governs the organisation's e
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Azure Cloud Architect | **AWS Cloud Architect**, and **GCP Cloud Architect** to define automation standards that align with each cloud platform's native capabilities and governance model |
-| DevOps Architect | CI/CD pipeline automation integration — ensuring IaC modules, compliance gates, and drift detection fit within delivery pipeline patterns |
-| Observability Architect | Design automated remediation triggers based on observability signals and to ensure automation activities produce appropriate audit telemetry |
-| ITSM Architect | Service management teams on runbook automation integration with ServiceNow Orchestration and change management workflows |
-| Kubernetes Architect | GitOps-based cluster automation, namespace provisioning patterns, and cluster lifecycle management automation |
-| Security Architect | Embed compliance-as-code controls and security guardrails into IaC module standards and automation pipelines |
-| Infrastructure Automation Senior Engineers | IaC design patterns and module development |
-| Infrastructure Engineers | IaC design patterns and module development |
-| FinOps team | Infracost integration, budget guardrails in IaC pipelines, and cost governance standards |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Azure, AWS, and GCP Cloud Architects | Define automation standards that align with each cloud platform's native capabilities and governance model | Collaborates |
+| DevOps Architect | CI/CD pipeline automation integration — ensuring IaC modules, compliance gates, and drift detection fit within delivery pipeline patterns | Collaborates |
+| Observability Architect | Design automated remediation triggers based on observability signals and to ensure automation activities produce appropriate audit telemetry | Collaborates |
+| ITSM Architect | Runbook automation integration with ServiceNow Orchestration and change management workflows | Collaborates |
+| Kubernetes Architect | GitOps-based cluster automation, namespace provisioning patterns, and cluster lifecycle management automation | Collaborates |
+| Security Architect | Embed compliance-as-code controls and security guardrails into IaC module standards and automation pipelines | Governed By |
+| Infrastructure Automation Senior Engineers and Infrastructure Engineers | IaC design patterns and module development | Provides To |
+| FinOps team | Infracost integration, budget guardrails in IaC pipelines, and cost governance standards | Collaborates |
 
 ## Key Technologies
 

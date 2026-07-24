@@ -5,6 +5,8 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Kubernetes Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Kubernetes Architect is responsible for designing and evolving container orchestration strategies that support modern application architectures. This role establishes the technical direction, standards, and best practices for Kubernetes platforms across the organization.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Kubernetes platform architecture, cluster standards, and container orchestration strategy across the chapter
+- **Experience Anchor:** 8+ years in Kubernetes or container platform architecture with demonstrated architecture-level delivery — operates independently on domain-wide Kubernetes architecture decisions
+- **Out of Scope:** Cloud-managed Kubernetes service selection (Cloud Architects-owned, this role aligns cluster design to it); container security control implementation (Security Architects-owned, this role implements standards from it); CI/CD pipeline design beyond cluster integration (DevOps teams-owned, this role coordinates with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Kubernetes Engineers and Senior Engineers on technical guidance requests
 
 ## Business Impact
 
@@ -144,18 +154,18 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 - Cloud Native Transformation Leader
 - Distinguished Engineer
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Platform Architect | Kubernetes-based data orchestration, Apache Spark/Flink on Kubernetes, and ML pipeline infrastructure (Kubeflow, Ray) |
-| Integration Architect | Service mesh cross-domain integration patterns, east-west traffic governance, and inter-service API standards |
-| Kubernetes Product Owner | Strategy and roadmap |
-| Kubernetes Engineers and Senior Engineers | Technical guidance |
-| Security Architects | Container security standards |
-| Cloud Architects | Align with cloud platform strategies |
-| application teams | Containerization approaches |
-| DevOps teams | CI/CD integration with Kubernetes |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Platform Architect | Kubernetes-based data orchestration, Apache Spark/Flink on Kubernetes, and ML pipeline infrastructure (Kubeflow, Ray) | Collaborates |
+| Integration Architect | Service mesh cross-domain integration patterns, east-west traffic governance, and inter-service API standards | Collaborates |
+| Kubernetes Product Owner | Strategy and roadmap | Collaborates |
+| Kubernetes Engineers and Senior Engineers | Technical guidance | Provides To |
+| Security Architects | Container security standards | Governed By |
+| Cloud Architects | Align with cloud platform strategies | Collaborates |
+| application teams | Containerization approaches | Provides To |
+| DevOps teams | CI/CD integration with Kubernetes | Collaborates |
 
 ## Key Performance Indicators
 

@@ -5,6 +5,8 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | HPC Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The HPC Engineer designs, implements, and maintains high-performance computing environments that support computationally intensive workloads. This role ensures that HPC clusters are secure, scalable, and efficient for scientific and engineering applications. The HPC Engineer works closely with the HPC Architect, Product Owner, and other stakeholders to automate operations, integrate new technologies, support users, and promote sustainable, cost-effective HPC operations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of HPC resource provisioning and support tasks to defined standards
+- **Experience Anchor:** 1-3 years in HPC or scientific computing engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** HPC architecture and solution design (Senior Engineers and the Architect-owned); underlying Linux OS automation ownership (Linux Server Engineers-owned, this role coordinates with it); specialised hardware upgrade ownership (Server Hardware Engineers-owned, this role coordinates with it)
+- **Escalates To:** HPC Architect — implementation and design activity questions
+- **Escalated To By:** researchers and engineers on HPC resource training and documentation needs
 
 ## Business Impact
 
@@ -77,16 +87,15 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| HPC Product Owner | Task prioritization and user requirements |
-| Linux Server Engineers | Base OS and automation |
-| Server Hardware Engineers | Specialized hardware and upgrades |
-| Security Engineers | Ensure compliance and data protection |
-| Cloud Engineers | Integrate cloud-based HPC resources |
-| HPC Architect | Implementation and design activities |
-| Provides training and documentation | Researchers and engineers using HPC resources |
-| researchers and engineers | HPC resources |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| HPC Product Owner | Task prioritization and user requirements | Consumes From |
+| Linux Server Engineers | Base OS and automation | Collaborates |
+| Server Hardware Engineers | Specialized hardware and upgrades | Collaborates |
+| Security Engineers | Ensure compliance and data protection | Governed By |
+| Cloud Engineers | Integrate cloud-based HPC resources | Collaborates |
+| HPC Architect | Implementation and design activities | Escalates To |
+| researchers and engineers | Provide training, documentation, and support for HPC resource usage | Provides To |
 
 ## Key Technologies
 

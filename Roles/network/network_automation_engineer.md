@@ -5,6 +5,8 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Network Automation Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Network Automation Engineer specializes in developing and implementing automation solutions for network infrastructure. This role focuses on creating scripts, tools, and pipelines that enable efficient network configuration, deployment, and management while reducing manual effort and increasing consistency.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of network automation scripting, pipeline integration, and automated change tasks
+- **Experience Anchor:** 3-5 years in network engineering with an automation focus — operates independently within the Network Automation Architect's standards
+- **Out of Scope:** Network automation architecture (Network Automation Architect-owned); overall network platform architecture (Network Architects-owned, this role automates strategy set by it); security automation policy design (Security Engineers-owned, this role implements automated enforcement)
+- **Escalates To:** Network Automation Architect — automation strategy questions
+- **Escalated To By:** Network Engineers on automation implementation requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Network Automation Engineer specializes in developing and implementing autom
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Network Engineers | Implementation requirements |
-| DevOps Engineers | Pipeline integration |
-| Security Engineers | Security automation |
-| Network Product Owner | Automation capabilities |
-| Cloud Engineers | Hybrid network automation |
-| Network Architects | Automation strategy |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Network Engineers | Implementation requirements | Consumes From |
+| DevOps Engineers | Pipeline integration | Collaborates |
+| Security Engineers | Security automation | Collaborates |
+| Network Product Owner | Automation capabilities | Collaborates |
+| Cloud Engineers | Hybrid network automation | Collaborates |
+| Network Architects | Automation strategy | Escalates To |
 
 ## Key Technologies
 
