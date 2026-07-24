@@ -5,6 +5,8 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
+| **Reports To** | Endpoint Management Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Endpoint Management Engineer administers and maintains the organisation's enterprise endpoint management platform, ensuring devices are enrolled, configured, patched, and compliant with security policies. This role operates Microsoft Intune and MECM/SCCM day-to-day, deploying applications, enforcing compliance, and supporting the help desk with endpoint issues across Windows, macOS, iOS, and Android devices.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — day-to-day operation of Intune/MECM, device enrolment, and compliance policy enforcement
+- **Experience Anchor:** 1-3 years in endpoint or desktop support engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** UEM platform architecture and technology selection (Architect-owned); security policy design (Security Operations directs, this role implements); identity architecture (Identity Engineers-owned)
+- **Escalates To:** Senior Endpoint Engineers — complex device management issues and design-level questions
+- **Escalated To By:** Help Desk on device management tickets requiring engineering-tier resolution
 
 ## Business Impact
 
@@ -72,12 +82,14 @@ The Endpoint Management Engineer administers and maintains the organisation's en
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Senior Endpoint Engineers: | Escalate complex issues; receive guidance and mentoring |
-| Help Desk: | Receive escalated device management tickets; provide resolution and knowledge transfer |
-| Identity Engineers: | Coordinate on device join status and Entra ID issues |
-| Security Operations: | Implement security compliance policies as directed |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Senior Endpoint Engineers: | Escalate complex issues; receive guidance and mentoring | Escalates To |
+| Help Desk: | Receive escalated device management tickets; provide resolution and knowledge transfer | Provides To |
+| Identity Engineers: | Coordinate on device join status and Entra ID issues | Collaborates |
+| Security Operations: | Implement security compliance policies as directed | Governed By |
 
 ## Key Technologies
 

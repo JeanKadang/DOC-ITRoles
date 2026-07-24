@@ -5,6 +5,8 @@
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Modern Workplace Product Owner (PO) owns the vision, roadmap, and delivery backlog for the organisation's Microsoft 365 digital workplace platform. This role ensures that the investment in Microsoft 365 - covering Exchange Online, Teams, SharePoint, OneDrive, Purview, Viva, and Microsoft 365 Copilot - delivers measurable workforce productivity, governance, and employee experience outcomes. The PO bridges business and technology, translating workforce needs and strategic digital workplace goals into platform improvements delivered by the M365 engineering team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — modern workplace/M365 backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Technical architecture and tenant design (with Architect); security and compliance requirements (with CISO/Legal); commercial licensing negotiations (with Procurement); HR workload and change management capacity
+- **Escalates To:** End User & Workplace Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Modern Workplace Architect on roadmap and architecture-alignment questions
 
 ## Business Impact
 
@@ -70,13 +80,15 @@ The Modern Workplace Product Owner (PO) owns the vision, roadmap, and delivery b
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Modern Workplace Architect: | Align roadmap with architecture decisions and tenant standards |
-| HR / People Operations: | Align digital workplace capabilities with employee experience strategy |
-| Legal / Compliance: | Translate compliance obligations into M365 governance and Purview requirements |
-| CISO / Security: | Ensure M365 security capabilities are activated and maintained |
-| Communications / Change Management: | Co-own adoption and training programme delivery |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Modern Workplace Architect: | Align roadmap with architecture decisions and tenant standards | Collaborates |
+| HR / People Operations: | Align digital workplace capabilities with employee experience strategy | Consumes From |
+| Legal / Compliance: | Translate compliance obligations into M365 governance and Purview requirements | Governed By |
+| CISO / Security: | Ensure M365 security capabilities are activated and maintained | Governed By |
+| Communications / Change Management: | Co-own adoption and training programme delivery | Collaborates |
 
 ## Key Technologies
 

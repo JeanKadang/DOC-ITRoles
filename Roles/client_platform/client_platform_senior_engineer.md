@@ -5,6 +5,8 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | Client Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Client Platform Senior Engineer is the primary technical practitioner respon
 Operating with a high degree of autonomy, the Senior Engineer translates architectural standards set by the Client Platform Architect into working pipelines, automated task sequences, and tested deployable builds. They are the subject matter expert for OS image construction, application packaging (MSIX, .pkg, .deb), zero-touch provisioning, and patch pipeline management across all three platforms.
 
 This role provides technical leadership and mentoring to Client Platform Engineers, collaborates closely with the Endpoint Management team on Intune and SCCM integration, supports Security on hardening implementation, and serves as the primary Tier-3 escalation point for OS-level incidents escalated from the Service Desk.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — detailed engineering design and delivery within the client platform reference architecture
+- **Experience Anchor:** 5+ years in client platform or endpoint engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Client platform reference architecture and standards (Architect-owned); UEM policy configuration (Endpoint Management-owned); hardware specification and OEM selection (Architect/Procurement-owned)
+- **Escalates To:** Client Platform Architect — architecture-level questions and standards exceptions
+- **Escalated To By:** Client Platform Engineers on complex packaging, provisioning, and patch remediation issues
 
 ## Business Impact
 
@@ -125,15 +135,17 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Client Platform Architect | Receive architectural direction; contribute engineering feedback to standards and roadmap |
-| Client Platform Engineers | Provide mentoring, peer review packaging work, and first-line escalation support |
-| Endpoint Management Senior Engineers | Coordinate on Intune policy integration with OS builds and application deployment alignment |
-| Service Desk (Tier 1/2) | Receive OS-level escalations; provide resolution, root cause analysis, and knowledge base updates |
-| Security Operations | Validate OS hardening baseline implementations; support rapid remediation of client-side CVEs |
-| HR / People Operations | Support device provisioning workflows for new employee onboarding cohorts |
-| Procurement | Advise on hardware compatibility for new device models entering the standard |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Client Platform Architect | Receive architectural direction; contribute engineering feedback to standards and roadmap | Escalates To |
+| Client Platform Engineers | Provide mentoring, peer review packaging work, and first-line escalation support | Provides To |
+| Endpoint Management Senior Engineers | Coordinate on Intune policy integration with OS builds and application deployment alignment | Collaborates |
+| Service Desk (Tier 1/2) | Receive OS-level escalations; provide resolution, root cause analysis, and knowledge base updates | Provides To |
+| Security Operations | Validate OS hardening baseline implementations; support rapid remediation of client-side CVEs | Collaborates |
+| HR / People Operations | Support device provisioning workflows for new employee onboarding cohorts | Collaborates |
+| Procurement | Advise on hardware compatibility for new device models entering the standard | Consumes From |
 
 ## Key Technologies
 

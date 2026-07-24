@@ -5,6 +5,8 @@
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
+| **Reports To** | Modern Workplace Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Modern Workplace Engineer administers and supports the organisation's Microsoft 365 platform on a day-to-day basis. This role manages user mailboxes, Teams configurations, SharePoint permissions, and OneDrive governance while handling escalated support from the help desk. The M365 Engineer is responsible for routine platform operations, user lifecycle administration, and contributing to compliance and security policy maintenance across the Microsoft 365 tenant.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — day-to-day M365 operation: provisioning, mailbox/Teams administration, and user support escalations
+- **Experience Anchor:** 1-3 years in M365 or collaboration engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** M365 tenant architecture and governance standards (Architect-owned); legal hold and eDiscovery policy design (Legal/Compliance directs, this role executes); enterprise security configuration strategy (Senior Engineers/Architect-owned)
+- **Escalates To:** Senior M365 Engineers — complex configuration issues and design-level questions
+- **Escalated To By:** Help Desk on M365 tickets requiring engineering-tier resolution
 
 ## Business Impact
 
@@ -70,12 +80,14 @@ The Modern Workplace Engineer administers and supports the organisation's Micros
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Senior M365 Engineers: | Escalate complex issues; receive guidance and mentoring |
-| Help Desk: | Accept and resolve M365 escalations |
-| HR / People Operations: | Process onboarding and offboarding M365 provisioning requests |
-| Legal / Compliance: | Execute eDiscovery holds, search, and export requests |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Senior M365 Engineers: | Escalate complex issues; receive guidance and mentoring | Escalates To |
+| Help Desk: | Accept and resolve M365 escalations | Provides To |
+| HR / People Operations: | Process onboarding and offboarding M365 provisioning requests | Consumes From |
+| Legal / Compliance: | Execute eDiscovery holds, search, and export requests | Governed By |
 
 ## Key Technologies
 

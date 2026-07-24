@@ -5,6 +5,8 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | Endpoint Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Endpoint Management Senior Engineer designs, implements, and maintains complex enterprise endpoint management solutions using Microsoft Intune and Microsoft Endpoint Configuration Manager (MECM). This role serves as a deep technical specialist and escalation point for the endpoint management team, leading implementation of new capabilities, driving automation, and ensuring the reliability, security, and compliance of the managed device estate across Windows, macOS, iOS, and Android platforms.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — detailed engineering design and delivery within the UEM reference architecture
+- **Experience Anchor:** 5+ years in endpoint/UEM engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** UEM platform architecture and technology selection (Architect-owned); enterprise identity architecture (Identity Engineers-owned); ITSM process governance (Service Management-owned)
+- **Escalates To:** Endpoint Management Architect — architecture-level questions and design direction
+- **Escalated To By:** Endpoint Management Engineers on complex device management and compliance issues
 
 ## Business Impact
 
@@ -95,13 +105,15 @@ The Endpoint Management Senior Engineer designs, implements, and maintains compl
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Endpoint Management Architect: | Receive design direction; contribute implementation feedback to architecture decisions |
-| Help Desk / Desktop Support: | Provide escalation support and knowledge transfer |
-| Security Engineers: | Implement security baselines and respond to compliance findings |
-| Identity Engineers: | Coordinate on Entra ID device policies and Conditional Access |
-| Service Management: | Follow ITSM processes for change approval and incident management |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Endpoint Management Architect: | Receive design direction; contribute implementation feedback to architecture decisions | Escalates To |
+| Help Desk / Desktop Support: | Provide escalation support and knowledge transfer | Provides To |
+| Security Engineers: | Implement security baselines and respond to compliance findings | Collaborates |
+| Identity Engineers: | Coordinate on Entra ID device policies and Conditional Access | Collaborates |
+| Service Management: | Follow ITSM processes for change approval and incident management | Governed By |
 
 ## Key Technologies
 

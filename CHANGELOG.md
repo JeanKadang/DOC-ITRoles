@@ -10,6 +10,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 - **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
+  Mode backfilled for the End User & Workplace chapter (#84, batch 2/7:
+  13 of 219 files — the domain's 3 Service Desk files were already on the
+  modern template).** Client Platform, Endpoint Management, and Modern
+  Workplace's Engineer/Senior Engineer/Architect/Product Owner ladders now
+  carry the full field set, establishing the reporting model for all
+  remaining IC-ladder domains without a dedicated Lead role: Engineer →
+  Senior Engineer (day-to-day technical lead) → Chapter Lead; Architect and
+  Product Owner also report directly to the Chapter Lead, matching its own
+  existing Direct Reports claim ("Domain Architects and Senior Engineers").
+  A cross-file directional inconsistency was caught and fixed: Client
+  Platform Architect's Service Desk Lead row was tagged as the Architect
+  providing direction, when the Service Desk Lead's own file states it
+  owns escalation-boundary decisions that Client Platform cites it as the
+  owner of — corrected to Collaborates.
+- **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
   Mode backfilled for the Leadership chapter (#5, batch 1/7: 16 of 219
   files).** All 4 C-suite roles and all 12 Leadership-domain roles now
   carry the full modern role_template.md field set. Reporting hierarchy is

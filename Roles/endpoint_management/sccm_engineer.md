@@ -5,6 +5,8 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
+| **Reports To** | Endpoint Management Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The SCCM Engineer implements and maintains Microsoft System Center Configuration Manager (SCCM/ConfigMgr) and related endpoint management solutions. This role ensures reliable, secure, and efficient deployment of applications, updates, and configurations to endpoint devices across the organization.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — SCCM/MECM configuration manager operation: application deployment, patching, and OS deployment via ConfigMgr
+- **Experience Anchor:** 2-4 years in SCCM/ConfigMgr administration — works semi-independently on defined ConfigMgr operational tasks
+- **Out of Scope:** UEM platform architecture and technology selection (Architect-owned); Intune/modern management strategy and co-management sequencing (Architect-owned); broader endpoint security policy (Security Engineers-owned)
+- **Escalates To:** Endpoint Management Senior Engineer — complex ConfigMgr issues and co-management/migration questions
+- **Escalated To By:** application teams on packaging and deployment readiness questions
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Endpoint Management Product Owner | Task prioritization |
-| Windows Server Engineers | Infrastructure |
-| Security Engineers | Endpoint security |
-| Application Packaging | Software deployment |
-| SCCM Senior Engineers |  |
-| application teams | Application deployment needs |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Endpoint Management Product Owner | Task prioritization | Consumes From |
+| Windows Server Engineers | Infrastructure | Collaborates |
+| Security Engineers | Endpoint security | Governed By |
+| Application Packaging | Software deployment | Collaborates |
+| SCCM Senior Engineers | Escalate complex ConfigMgr site infrastructure and co-management migration issues; receive guidance and mentoring | Escalates To |
+| application teams | Application deployment needs | Provides To |
 
 ## Key Technologies
 

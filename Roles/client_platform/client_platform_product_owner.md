@@ -5,6 +5,8 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -23,6 +25,14 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 - **Value Metrics:** Device provisioning SLA adherence for new starters, OS currency rate (% of fleet on current approved OS version), hardware refresh completion against plan, application packaging backlog lead time, client estate patch compliance rate, security hardening compliance score.
 - **Key Stakeholders:** CIO/CTO, CISO, IT Operations leadership, HR/People Operations, Procurement, Finance, Service Desk, Security Architecture, Endpoint Management Product Owner.
 - **Processes Supported:** New employee device provisioning, hardware refresh planning and budgeting, OS lifecycle management, application onboarding backlog, client estate compliance reporting, vendor and OEM relationship management.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — client platform backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Engineering solution design and implementation approach (Architect and engineers-owned); OS hardening and security baseline requirements (Security/Architect-owned); hardware lifecycle standards and OEM selection (Architect/Procurement-owned); budget envelope and headcount (Chapter Lead-owned)
+- **Escalates To:** End User & Workplace Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Client Platform Senior Engineer on backlog refinement and delivery-transparency questions
 
 ## Business Impact
 
@@ -131,17 +141,19 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Client Platform Architect | Collaborate on roadmap direction, technology selection decisions, and architecture-driven backlog items |
-| Client Platform Senior Engineer | Partner on backlog refinement, acceptance criteria, sprint planning, and delivery transparency |
-| Endpoint Management Product Owner | Align on cross-domain priorities where OS engineering meets UEM platform capabilities |
-| HR / People Operations | Manage device provisioning SLAs for onboarding; define acceptance criteria for new starter readiness |
-| Procurement | Lead hardware refresh planning, OEM vendor selection, device standard governance, and budget submissions |
-| Security / CISO | Translate security hardening and compliance obligations into backlog items with prioritised delivery timelines |
-| Service Desk Lead | Report on provisioning performance, OS escalation volumes, and client estate health trends |
-| Finance | Manage hardware refresh budget planning, CapEx submissions, and lifecycle cost reporting |
-| Microsoft, Apple, OEM Vendors | Manage roadmap briefings, software assurance reviews, escalations, and commercial relationships |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Client Platform Architect | Collaborate on roadmap direction, technology selection decisions, and architecture-driven backlog items | Collaborates |
+| Client Platform Senior Engineer | Partner on backlog refinement, acceptance criteria, sprint planning, and delivery transparency | Collaborates |
+| Endpoint Management Product Owner | Align on cross-domain priorities where OS engineering meets UEM platform capabilities | Collaborates |
+| HR / People Operations | Manage device provisioning SLAs for onboarding; define acceptance criteria for new starter readiness | Consumes From |
+| Procurement | Lead hardware refresh planning, OEM vendor selection, device standard governance, and budget submissions | Collaborates |
+| Security / CISO | Translate security hardening and compliance obligations into backlog items with prioritised delivery timelines | Consumes From |
+| Service Desk Lead | Report on provisioning performance, OS escalation volumes, and client estate health trends | Consumes From |
+| Finance | Manage hardware refresh budget planning, CapEx submissions, and lifecycle cost reporting | Collaborates |
+| Microsoft, Apple, OEM Vendors | Manage roadmap briefings, software assurance reviews, escalations, and commercial relationships | Governed By |
 
 ## Key Technologies
 

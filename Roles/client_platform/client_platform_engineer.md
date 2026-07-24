@@ -5,6 +5,8 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
+| **Reports To** | Client Platform Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Client Platform Engineer supports the day-to-day operational and build activ
 Working under the guidance of the Senior Engineer and Architect, the Client Platform Engineer develops practical skills in OS image maintenance, packaging tooling, scripting, and provisioning workflows. This is a hands-on technical role that forms the foundation of the client platform engineering career pathway; individuals in this role are expected to grow their multi-platform skills progressively and take increasing ownership of discrete build and packaging tasks over time.
 
 The Engineer plays a critical role in the device lifecycle — from imaging new hardware for onboarding cohorts to retiring and wiping outgoing devices — and in maintaining the documentation that supports consistent, auditable, and repeatable operations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of OS build, provisioning, packaging, and patching tasks to defined standards
+- **Experience Anchor:** 1-3 years in client platform, endpoint, or desktop support engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Engineering pipeline design (Senior Engineers and the Architect-owned); packaging and hardening standards (provides implementation feedback only); patch ring strategy and scheduling (Senior Engineer/Architect-owned); tooling selection and platform strategy
+- **Escalates To:** Client Platform Senior Engineer — design-level questions, complex packaging issues, and escalated tickets beyond first-line resolution
+- **Escalated To By:** Service Desk (Tier 1) on OS-level issues requiring engineering-tier resolution
 
 ## Business Impact
 
@@ -122,14 +132,16 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Client Platform Senior Engineer | Day-to-day technical guidance, escalation point, and peer review of packaging output |
-| Client Platform Architect | Receive procedures and standards; escalate design-level questions through the Senior Engineer |
-| Service Desk (Tier 1) | Receive OS-level escalations; provide resolution and knowledge transfer back to Tier 1 |
-| Endpoint Management Engineers | Coordinate on Intune application deployment and compliance policy interactions |
-| HR / People Operations | Align device setup timing with new employee start dates and onboarding cohort schedules |
-| Procurement / Asset Management | Receive new hardware for imaging; return retired devices for secure wipe and disposal |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Client Platform Senior Engineer | Day-to-day technical guidance, escalation point, and peer review of packaging output | Escalates To |
+| Client Platform Architect | Receive procedures and standards; escalate design-level questions through the Senior Engineer | Governed By |
+| Service Desk (Tier 1) | Receive OS-level escalations; provide resolution and knowledge transfer back to Tier 1 | Provides To |
+| Endpoint Management Engineers | Coordinate on Intune application deployment and compliance policy interactions | Collaborates |
+| HR / People Operations | Align device setup timing with new employee start dates and onboarding cohort schedules | Collaborates |
+| Procurement / Asset Management | Receive new hardware for imaging; return retired devices for secure wipe and disposal | Consumes From |
 
 ## Key Technologies
 
