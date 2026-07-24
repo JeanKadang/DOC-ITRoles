@@ -5,6 +5,8 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AI Governance Product Owner owns the AI governance product backlog, managing the roadmap for governance platform capabilities and tooling investments. This role bridges business risk and compliance requirements with technical governance implementation — working closely with the AI Governance Architect to translate governance policies into platform features, and with Legal, Compliance, and Risk Management to ensure the governance programme meets organisational and regulatory obligations. The AI Governance Product Owner ensures the governance team delivers prioritised, high-value capabilities that keep the organisation's AI estate compliant, auditable, and responsibly governed.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — AI governance programme backlog, risk register prioritisation, and delivery roadmap
+- **Experience Anchor:** 5+ years in product ownership or technical product management, ideally with risk/compliance domain exposure — operates independently on backlog and roadmap decisions
+- **Out of Scope:** AI governance framework design (AI Governance Architect-owned); AI platform delivery roadmap (AI Platform Architect-owned, this role aligns to it); enterprise risk appetite setting (Risk Management-owned)
+- **Escalates To:** Data & AI Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** AI Governance Senior Engineers and Engineers on backlog ceremonies and delivery prioritisation
 
 ## Business Impact
 
@@ -72,16 +82,16 @@ The AI Governance Product Owner owns the AI governance product backlog, managing
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AI Platform Architect | Ensure governance controls and tooling integrations are included in ML platform delivery roadmaps and sprint planning |
-| Legal and Compliance | Gather regulatory requirements, validate compliance deliverables, and coordinate evidence for regulatory submissions and audits |
-| Risk Management | Align governance programme priorities with enterprise risk appetite and risk register obligations |
-| Business Unit AI Programme stakeholders | Balance governance requirements against AI development team needs and delivery velocity |
-| AI Governance Senior Engineers and Engineers | Product owner for the team — leads ceremonies, provides delivery prioritisation direction, and owns the governance backlog |
-| TAL and PAL | Vendor tooling roadmaps, support SLAs, and AI governance platform procurement decisions |
-| AI Governance Architect | As the technical counterpart — translates governance framework design into platform backlog items and sequences delivery aligned to architectural strategy and dependencies |
-| Internal Audit | Executive risk governance committees |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AI Platform Architect | Ensure governance controls and tooling integrations are included in ML platform delivery roadmaps and sprint planning | Collaborates |
+| Legal and Compliance | Gather regulatory requirements, validate compliance deliverables, and coordinate evidence for regulatory submissions and audits | Consumes From |
+| Risk Management | Align governance programme priorities with enterprise risk appetite and risk register obligations | Governed By |
+| Business Unit AI Programme stakeholders | Balance governance requirements against AI development team needs and delivery velocity | Collaborates |
+| AI Governance Senior Engineers and Engineers | Product owner for the team — leads ceremonies, provides delivery prioritisation direction, and owns the governance backlog | Provides To |
+| TAL and PAL | Vendor tooling roadmaps, support SLAs, and AI governance platform procurement decisions | Provides To |
+| AI Governance Architect | As the technical counterpart — translates governance framework design into platform backlog items and sequences delivery aligned to architectural strategy and dependencies | Consumes From |
+| Internal Audit | Executive risk governance committees | Provides To |
 
 ## Key Technologies
 

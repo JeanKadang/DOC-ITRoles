@@ -5,6 +5,8 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | AI Governance Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AI Governance Senior Engineer implements, operates, and continuously improves the technical controls, tooling, and processes that make up the organization's AI governance framework. Working under the direction of the AI Governance Architect, this role translates governance policies into working technical implementations — running AI risk assessments, operating bias and explainability tooling, maintaining the AI system inventory, and ensuring that AI deployments comply with applicable regulations and internal policies. The Senior Engineer brings hands-on depth in AI/ML tooling combined with strong governance and compliance awareness.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced AI risk assessments and governance tooling delivery within the AI Governance Architect's framework
+- **Experience Anchor:** 5+ years in AI/ML governance, risk, or compliance engineering with demonstrated independent delivery — operates independently within the Architect's framework
+- **Out of Scope:** AI governance framework and policy design (Architect-owned); AI platform infrastructure (AI Platform Engineers-owned, this role embeds governance checks into it); regulatory legal interpretation (Legal and Compliance-owned)
+- **Escalates To:** AI Governance Architect — framework, policy, and complex assessment decisions
+- **Escalated To By:** AI Governance Engineers on day-to-day task direction and technical guidance
 
 ## Business Impact
 
@@ -65,15 +75,15 @@ The AI Governance Senior Engineer implements, operates, and continuously improve
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AI Platform Engineers | Embed governance checks into AI pipelines |
-| MLOps Engineers | Embed governance checks into AI pipelines |
-| data science and ML teams | Model card completion, bias testing, and documentation |
-| Legal and Compliance | Technical evidence packages for regulatory reviews and audits |
-| Security Engineers | AI-specific security controls (prompt injection mitigations, model access controls) |
-| business AI owners | Complete risk assessment interviews and gather system documentation |
-| AI Governance Architect | Framework, policy, and complex assessment decisions |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AI Platform Engineers | Embed governance checks into AI pipelines | Collaborates |
+| MLOps Engineers | Embed governance checks into AI pipelines | Collaborates |
+| data science and ML teams | Model card completion, bias testing, and documentation | Collaborates |
+| Legal and Compliance | Technical evidence packages for regulatory reviews and audits | Provides To |
+| Security Engineers | AI-specific security controls (prompt injection mitigations, model access controls) | Collaborates |
+| business AI owners | Complete risk assessment interviews and gather system documentation | Consumes From |
+| AI Governance Architect | Framework, policy, and complex assessment decisions | Escalates To |
 
 ## Key Technologies
 

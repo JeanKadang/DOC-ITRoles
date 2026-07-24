@@ -5,6 +5,8 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors AI Platform Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AI Platform Architect designs and governs the organisation's AI/ML platform infrastructure that enables data science and engineering teams to build, train, deploy, and monitor AI and machine learning models at scale. This role owns the end-to-end MLOps architecture: experiment tracking, model registry, feature stores, model serving infrastructure, and AI workload orchestration. The AI Platform Architect ensures the AI platform is secure, scalable, governable, and aligned with both cloud infrastructure standards and AI governance policies — bridging the gap between raw cloud infrastructure and the AI development lifecycle.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — ML platform infrastructure architecture, MLOps tooling standards, and AI/ML compute strategy across the chapter
+- **Experience Anchor:** 8+ years in ML platform, MLOps, or AI infrastructure engineering with demonstrated architecture-level delivery — operates independently on domain-wide ML platform architecture decisions, as a peer counterpart to the AI Governance Architect rather than in a hierarchical relationship
+- **Out of Scope:** AI governance framework and risk methodology (AI Governance Architect-owned, this role embeds controls into the platform); data pipeline architecture upstream of model training (Data Platform Architect-owned); cloud landing zone design (Cloud Architects-owned)
+- **Escalates To:** Data & AI Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** AI Platform Engineers on complex design decisions
 
 ## Business Impact
 
@@ -74,15 +84,15 @@ The AI Platform Architect designs and governs the organisation's AI/ML platform 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AI Governance Architect | Embed governance controls, bias evaluation pipelines, audit trail requirements, and AI risk tagging into the ML platform architecture |
-| Data Platform Architect | Data pipeline integration, feature computation patterns, Delta Lake / data lakehouse architecture, and data quality upstream of model training |
-| Azure Cloud Architect | , **AWS Cloud Architect**, and **GCP Cloud Architect** on AI/ML infrastructure provisioning, landing zone design for ML workloads, and managed AI service integration |
-| Kubernetes Architect | GPU workload orchestration, distributed training scheduling, and ML serving infrastructure deployment on Kubernetes |
-| Security Architect | Ensure model artefact security, training data access governance, inference endpoint security, and AI supply chain integrity |
-| MLOps Engineers | Platform tooling, pipeline patterns, and ML infrastructure implementation |
-| data science and ML engineering teams | Platform adoption, experiment tracking standards, and model deployment best practices |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AI Governance Architect | Embed governance controls, bias evaluation pipelines, audit trail requirements, and AI risk tagging into the ML platform architecture | Collaborates |
+| Data Platform Architect | Data pipeline integration, feature computation patterns, Delta Lake / data lakehouse architecture, and data quality upstream of model training | Collaborates |
+| Azure, AWS, and GCP Cloud Architects | AI/ML infrastructure provisioning, landing zone design for ML workloads, and managed AI service integration | Collaborates |
+| Kubernetes Architect | GPU workload orchestration, distributed training scheduling, and ML serving infrastructure deployment on Kubernetes | Collaborates |
+| Security Architect | Ensure model artefact security, training data access governance, inference endpoint security, and AI supply chain integrity | Governed By |
+| MLOps Engineers | Platform tooling, pipeline patterns, and ML infrastructure implementation | Provides To |
+| data science and ML engineering teams | Platform adoption, experiment tracking standards, and model deployment best practices | Provides To |
 
 ## Key Technologies
 

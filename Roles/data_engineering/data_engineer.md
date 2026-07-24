@@ -5,6 +5,8 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | Data Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Data Engineer designs, builds, and maintains the data pipelines, transformations, and data models that deliver reliable, high-quality data to analytics, reporting, and machine learning consumers. This role works with cloud data platforms (Databricks, Snowflake, BigQuery, Azure Synapse), orchestration tools, and transformation frameworks to ingest data from diverse sources, apply medallion architecture patterns, and produce curated data products that the organisation can trust.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of data pipeline implementation and data model tasks to defined standards
+- **Experience Anchor:** 1-3 years in data engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Data pipeline architecture and design (Senior Engineers and the Architect-owned); CI/CD tooling standards (DataOps Specialists-owned); data governance policy definition (Data Governance-owned, this role applies its requirements)
+- **Escalates To:** Data Senior Engineer — design-level questions and implementation issues
+- **Escalated To By:** Data Scientists on feature engineering pipeline and curated dataset requests
 
 ## Business Impact
 
@@ -74,13 +84,13 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Platform Architect: | Receive architectural direction; contribute feedback on implementation feasibility |
-| DataOps Specialists: | Follow CI/CD standards; request tooling and pipeline infrastructure support |
-| Analytics Engineers: | Collaborate on semantic layer and BI-facing data models |
-| Data Scientists: | Provide feature engineering pipelines and curated datasets |
-| Data Governance: | Apply cataloguing, lineage, and classification requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Platform Architect | Receive architectural direction; contribute feedback on implementation feasibility | Consumes From |
+| DataOps Specialists | Follow CI/CD standards; request tooling and pipeline infrastructure support | Governed By |
+| Analytics Engineers | Collaborate on semantic layer and BI-facing data models | Collaborates |
+| Data Scientists | Provide feature engineering pipelines and curated datasets | Provides To |
+| Data Governance | Apply cataloguing, lineage, and classification requirements | Governed By |
 
 ## Key Technologies
 

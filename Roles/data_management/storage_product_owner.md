@@ -5,6 +5,8 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Storage Product Owner manages the development and lifecycle of the organization's storage infrastructure services. This role leads a team of storage architects and engineers, ensuring that storage platforms meet business requirements, performance targets, and cost objectives while aligning with organizational data strategy.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — storage platform backlog, procurement roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Storage technical architecture design (Storage Architect-owned); backup solution strategy (Backup Solutions Product Owner-owned); data governance policy for storage compliance (data governance teams-owned)
+- **Escalates To:** Data & AI Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on storage requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Backup Solutions Product Owner | Data protection strategies |
-| Storage Architect | Technical strategy and design |
-| Application Product Owners | Storage requirements |
-| finance teams | Storage procurement and budgeting |
-| data governance teams | Storage compliance requirements |
-| IT leadership | Storage strategy and investment planning |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Backup Solutions Product Owner | Data protection strategies | Collaborates |
+| Storage Architect | Technical strategy and design | Consumes From |
+| Application Product Owners | Storage requirements | Consumes From |
+| finance teams | Storage procurement and budgeting | Collaborates |
+| data governance teams | Storage compliance requirements | Governed By |
+| IT leadership | Storage strategy and investment planning | Provides To |
 
 ## Key Technologies
 

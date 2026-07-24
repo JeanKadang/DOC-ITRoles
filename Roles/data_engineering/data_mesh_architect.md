@@ -5,6 +5,8 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (sets technical direction on data mesh standards; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Data Mesh Architect designs and governs the organisation's data mesh architecture — a sociotechnical approach to data management that moves away from centralised monolithic data platforms towards a domain-oriented, self-serve model where business domains own and publish their data as products. This role owns the data mesh governance framework, federated data product standards, data contract specifications, and the central infrastructure components (data product portal, federated catalogue, and interoperability layer) that allow domain teams to operate autonomously while maintaining enterprise-wide discoverability and interoperability. The Data Mesh Architect operates at the intersection of enterprise architecture, data engineering, and data governance.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — data mesh domain decomposition model, federated governance, and data product standards across the chapter
+- **Experience Anchor:** 8+ years in data architecture with demonstrated experience designing federated/domain-oriented data platforms — operates independently on domain-wide data mesh strategy decisions, as a peer counterpart to the Data Platform Architect rather than in a hierarchical relationship
+- **Out of Scope:** Underlying data platform infrastructure (Data Platform Architect-owned, this role aligns mesh requirements to it); enterprise capability domain boundaries (Enterprise Architect-owned, this role aligns mesh boundaries to it); enterprise-wide data governance policy (Data Management / Data Governance team-owned)
+- **Escalates To:** Data & AI Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Business domain teams (Data Product Owners) on data product onboarding and governance guidance
 
 ## Business Impact
 
@@ -77,14 +87,14 @@ The Data Mesh Architect designs and governs the organisation's data mesh archite
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Platform Architect: | Aligns data mesh self-serve infrastructure requirements with the underlying data platform architecture; agrees shared storage, compute, and governance tooling |
-| Enterprise Architect: | Aligns domain decomposition model with enterprise capability domains; ensures data mesh boundaries are consistent with application and business architecture |
-| AI Governance Architect: | Defines AI data product standards for ML training datasets, feature stores, and model output datasets published as data products |
-| Data Management / Data Governance team: | Integrates federated governance model with enterprise-wide data governance policy, data classification, and regulatory requirements |
-| Integration Architect: | Aligns data product output port patterns with enterprise integration and API standards for downstream consumption |
-| Business domain teams (Data Product Owners): | Partners with domain teams to design, review, and onboard data products to the mesh; provides governance guidance and self-serve tooling support |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Platform Architect | Aligns data mesh self-serve infrastructure requirements with the underlying data platform architecture; agrees shared storage, compute, and governance tooling | Collaborates |
+| Enterprise Architect | Aligns domain decomposition model with enterprise capability domains; ensures data mesh boundaries are consistent with application and business architecture | Governed By |
+| AI Governance Architect | Defines AI data product standards for ML training datasets, feature stores, and model output datasets published as data products | Collaborates |
+| Data Management / Data Governance team | Integrates federated governance model with enterprise-wide data governance policy, data classification, and regulatory requirements | Governed By |
+| Integration Architect | Aligns data product output port patterns with enterprise integration and API standards for downstream consumption | Collaborates |
+| Business domain teams (Data Product Owners) | Partners with domain teams to design, review, and onboard data products to the mesh; provides governance guidance and self-serve tooling support | Provides To |
 
 ## Key Technologies
 

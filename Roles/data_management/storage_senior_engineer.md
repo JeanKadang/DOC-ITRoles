@@ -5,6 +5,8 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | Storage Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Storage Senior Engineer leads the implementation and optimization of complex enterprise storage solutions. This role provides technical leadership for storage deployments, migrations, and operations while working closely with architects to translate storage designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced storage solution design and delivery within the Storage Architect's reference architecture
+- **Experience Anchor:** 5+ years in storage engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Storage architecture and technology standards (Architect-owned); virtualisation platform design (Virtualization Senior Engineers-owned, this role provides storage to it); backup infrastructure design (Backup Senior Engineers-owned, this role provides storage to it)
+- **Escalates To:** Storage Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Storage Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Storage Architect | Solution design and implementation strategy |
-| Storage Product Owner | Technical planning and roadmap execution |
-| Virtualization Senior Engineers | Storage for virtual environments |
-| Database Senior Engineers | Storage for database systems |
-| Backup Senior Engineers | Storage for backup infrastructure |
-| Storage Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Storage Architect | Solution design and implementation strategy | Escalates To |
+| Storage Product Owner | Technical planning and roadmap execution | Collaborates |
+| Virtualization Senior Engineers | Storage for virtual environments | Provides To |
+| Database Senior Engineers | Storage for database systems | Provides To |
+| Backup Senior Engineers | Storage for backup infrastructure | Provides To |
+| Storage Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

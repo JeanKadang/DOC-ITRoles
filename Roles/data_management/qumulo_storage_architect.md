@@ -5,6 +5,8 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Qumulo Storage Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Qumulo Storage Architect designs and oversees the implementation of enterprise storage solutions using Qumulo technology. This role ensures that the organization's file storage infrastructure delivers optimal performance, scalability, and data protection while meeting business requirements.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Qumulo unstructured storage platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in storage architecture with demonstrated Qumulo or scale-out NAS platform ownership — operates independently on domain-wide Qumulo platform architecture decisions
+- **Out of Scope:** Enterprise block/SAN storage architecture (Storage Architect-owned — a parallel, non-Qumulo storage ladder); server hardware procurement (Server Hardware Architect-owned, this role defines requirements for it); backup solution integration detail (Backup Solution Architects-owned, this role aligns to it)
+- **Escalates To:** Data & AI Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Qumulo Storage Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -61,13 +71,13 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Architect | Hardware specifications for Qumulo nodes |
-| Cloud Platform Architects | Hybrid cloud storage implementations |
-| Database Architect | Storage requirements for database workloads |
-| Observability Architect | Storage monitoring solutions |
-| Backup Solution Architects | Data protection integration |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Architect | Hardware specifications for Qumulo nodes | Consumes From |
+| Cloud Platform Architects | Hybrid cloud storage implementations | Collaborates |
+| Database Architect | Storage requirements for database workloads | Provides To |
+| Observability Architect | Storage monitoring solutions | Governed By |
+| Backup Solution Architects | Data protection integration | Collaborates |
 
 ## Key Technologies
 

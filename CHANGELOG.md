@@ -10,6 +10,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 - **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
+  Mode backfilled for the Data & AI chapter (#87, batch 5/7: 27 of 219
+  files — Data Management's 2 governance specialists, Data Governance
+  Lead and Data Privacy Officer, were already on the modern template).**
+  AI Governance, Data Engineering, Data Management (Storage and Qumulo
+  Storage ladders), and Database Management all follow the standard
+  IC-ladder pattern: Engineer reports to Senior Engineer, Senior Engineer
+  and Product Owner report to the Data & AI Chapter Lead. Three Architect
+  pairs are modeled as peers rather than a hierarchy, per each pair's own
+  text describing the other as its counterpart rather than its manager:
+  AI Governance Architect / AI Platform Architect, Data Platform Architect
+  / Data Mesh Architect, and Storage Architect / Qumulo Storage Architect
+  (parallel block-storage and unstructured-storage ladders). AI Platform
+  Engineer, Data Platform Engineer, and Responsible AI Engineer — Engineer-
+  grade specialists with no dedicated Senior Engineer tier of their own —
+  report to their nearest Architect. Fixed a malformed interactions-table
+  row in `qumulo_storage_engineer.md` ("Storage Team Lead | Or
+  **Infrastructure Manager**", referencing roles that don't exist in the
+  catalog) by replacing it with the standard escalation row to Qumulo
+  Storage Senior Engineer.
+- **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
   Mode backfilled for the DevOps & Delivery chapter (#86, batch 4/7:
   24 of 219 files).** DevOps, App Platforms (API, .NET, Java), and
   Integration & Middleware all follow the standard IC-ladder pattern:

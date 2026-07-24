@@ -5,6 +5,8 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Database Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Database Architect designs comprehensive data management strategies and architectures for the organization. This role establishes the technical vision for database implementations, creating architectures that balance performance, scalability, security, and operational excellence while ensuring data integrity and availability.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — database platform architecture, technology selection, and data persistence standards across the chapter
+- **Experience Anchor:** 8+ years in database architecture or engineering with demonstrated architecture-level delivery — operates independently on domain-wide database architecture decisions
+- **Out of Scope:** Enterprise-wide data strategy (Enterprise Architects-owned, this role implements data persistence within it); application-level data access patterns (Application Architects-owned, this role provides persistence standards to them); database security control implementation (Security Architects-owned, this role aligns to it)
+- **Escalates To:** Data & AI Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Database Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Database Architect designs comprehensive data management strategies and arch
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Data strategy |
-| Security Architects | Database security design |
-| Application Architects | Data persistence |
-| Database Product Owner | Technical strategy |
-| Database Senior Engineers |  |
-| data governance teams | Compliance requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Data strategy | Governed By |
+| Security Architects | Database security design | Governed By |
+| Application Architects | Data persistence | Provides To |
+| Database Product Owner | Technical strategy | Collaborates |
+| Database Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| data governance teams | Compliance requirements | Governed By |
 
 ## Key Technologies
 

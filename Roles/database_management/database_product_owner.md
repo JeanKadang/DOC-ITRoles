@@ -5,6 +5,8 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
+| **Reports To** | Data & AI Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Database Product Owner manages the portfolio of database platforms and data storage solutions across the organization. This role leads a team of database architects and engineers, ensuring that database services meet application requirements, performance standards, security policies, and cost objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — database platform backlog, standardisation roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Database technical architecture and design (Database Architect-owned); database-as-a-service platform selection (Cloud Platform Product Owners-owned, this role aligns to it); database security standards (Security teams-owned)
+- **Escalates To:** Data & AI Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on data requirements
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Database Product Owner manages the portfolio of database platforms and data 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Database Architect | Technical decisions and designs |
-| Application Product Owners | Data requirements |
-| Cloud Platform Product Owners | Database-as-a-service offerings |
-| Data Governance teams | Data management policies |
-| Security teams | Database security standards |
-| IT leadership | Database strategy and investment priorities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Database Architect | Technical decisions and designs | Consumes From |
+| Application Product Owners | Data requirements | Consumes From |
+| Cloud Platform Product Owners | Database-as-a-service offerings | Collaborates |
+| Data Governance teams | Data management policies | Governed By |
+| Security teams | Database security standards | Governed By |
+| IT leadership | Database strategy and investment priorities | Provides To |
 
 ## Key Focus Areas
 

@@ -5,6 +5,8 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
+| **Reports To** | Database Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Database Engineer implements and maintains database systems across the organization. Working with the Database Architect and Product Owner, this role ensures reliable, secure, and optimized database environments supporting various business applications.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of database configuration and support tasks to defined standards
+- **Experience Anchor:** 1-3 years in database administration or engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Database architecture and solution design (Senior Engineers and the Architect-owned); server host configuration beyond database-side settings (Windows/Linux Server Engineers-owned); database monitoring tooling strategy (Observability Engineers-owned, this role coordinates with it)
+- **Escalates To:** Database Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on database requirements
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Database Engineer implements and maintains database systems across the organ
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Database Product Owner | Task prioritization |
-| Windows/Linux Server Engineers | Database host configuration |
-| Observability Engineers | Database monitoring |
-| Database Architect | Implementation activities |
-| application teams | Database requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Database Product Owner | Task prioritization | Consumes From |
+| Windows/Linux Server Engineers | Database host configuration | Collaborates |
+| Observability Engineers | Database monitoring | Collaborates |
+| Database Architect | Implementation activities | Escalates To |
+| application teams | Database requirements | Provides To |
 
 ## Key Technologies
 
