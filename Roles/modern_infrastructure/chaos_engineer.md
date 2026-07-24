@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Site Reliability Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Chaos Engineer designs, implements, and executes controlled failure experiments to proactively validate the resilience and reliability of distributed systems, cloud infrastructure, and microservices. Rather than waiting for production incidents to expose weaknesses, Chaos Engineering deliberately injects failures - network partitions, pod terminations, resource exhaustion, latency injection - to verify that systems behave as expected under failure conditions and that monitoring and alerting correctly detects them. This role operates at the intersection of SRE, platform engineering, and quality engineering.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — chaos engineering experiment design, fault injection tooling, and resilience validation
+- **Experience Anchor:** 3-5 years in site reliability or resilience engineering — operates independently within the SRE practice's SLO framework
+- **Out of Scope:** SLO framework and reliability strategy (Site Reliability Senior Engineer-owned, this role validates it through experiments); internal developer platform design (Platform Engineering-owned, this role integrates chaos tooling with it); monitoring platform architecture (Observability Engineers-owned, this role validates alerting through it)
+- **Escalates To:** Site Reliability Senior Engineer — SLO validation findings and incident readiness gaps
+- **Escalated To By:** Engineering Squads on chaos experiment scheduling and remediation guidance
 
 ## Business Impact
 
@@ -76,13 +86,13 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| SRE / Senior SRE: | Collaborate on SLO validation and incident readiness |
-| Platform Engineering: | Design chaos tooling integration with internal developer platforms |
-| Engineering Squads: | Run experiments on their services; communicate findings and guide remediation |
-| Observability Engineers: | Validate alerting and monitoring effectiveness during fault injection |
-| Security Engineers: | Ensure experiment tooling and processes meet security requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| SRE / Senior SRE | Collaborate on SLO validation and incident readiness | Escalates To |
+| Platform Engineering | Design chaos tooling integration with internal developer platforms | Collaborates |
+| Engineering Squads | Run experiments on their services; communicate findings and guide remediation | Provides To |
+| Observability Engineers | Validate alerting and monitoring effectiveness during fault injection | Collaborates |
+| Security Engineers | Ensure experiment tooling and processes meet security requirements | Governed By |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Observability Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Observability Senior Engineer leads advanced observability projects, focusing on complex implementations, platform optimization, and advanced analytics. This role develops sophisticated monitoring strategies, implements advanced observability patterns, and mentors team members while driving innovation in system visibility approaches.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced observability solution design and delivery within the Observability Architect's reference architecture
+- **Experience Anchor:** 5+ years in observability or monitoring engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Observability platform architecture and standards (Architect-owned); SRE SLO framework ownership (SRE and platform teams-owned, this role supports advanced monitoring for it); security monitoring policy definition (security teams-owned, this role implements patterns)
+- **Escalates To:** Observability Architect — platform design exceptions
+- **Escalated To By:** Observability Engineers on mentoring and technical guidance
 
 ## Business Impact
 
@@ -69,15 +79,15 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 - **Working Knowledge required:** AI/ML-based anomaly detection and intelligent alerting systems, Observability-as-code frameworks and IaC tooling for telemetry configuration, Real-time analytics platforms for high-cardinality telemetry data processing
 - **Awareness level expected:** eBPF-based continuous profiling tools (Parca, Pyroscope), OpenTelemetry emerging signals (profiling, events)
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Observability Architect | Platform design |
-| SRE and platform teams | Advanced monitoring |
-| application architects | Advanced instrumentation |
-| security teams | Security monitoring patterns |
-| Observability Engineers | Mentoring and technical guidance |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Observability Architect | Platform design | Escalates To |
+| SRE and platform teams | Advanced monitoring | Collaborates |
+| application architects | Advanced instrumentation | Collaborates |
+| security teams | Security monitoring patterns | Governed By |
+| Observability Engineers | Mentoring and technical guidance | Provides To |
 
 ## Key Performance Indicators
 

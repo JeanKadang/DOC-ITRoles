@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The VMware Product Owner manages the development and lifecycle of the organization's VMware-based virtualization solutions. This role leads a team of VMware architects and engineers, ensuring that virtualization services meet business requirements, performance targets, and operational standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — VMware platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** VMware technical architecture (VMware Architect-owned); host infrastructure procurement roadmap (Server Hardware Product Owner-owned, this role aligns to it); virtual storage service roadmap (Storage Product Owner-owned, this role aligns to it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on virtualization requirements
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Product Owner | Host infrastructure |
-| Storage Product Owner | Virtual storage services |
-| VMware Architect | Technical strategy and design |
-| Application Product Owners | Virtualization requirements |
-| business stakeholders | Virtualization service delivery |
-| IT leadership | Virtualization strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Product Owner | Host infrastructure | Collaborates |
+| Storage Product Owner | Virtual storage services | Collaborates |
+| VMware Architect | Technical strategy and design | Consumes From |
+| Application Product Owners | Virtualization requirements | Consumes From |
+| business stakeholders | Virtualization service delivery | Provides To |
+| IT leadership | Virtualization strategy and investments | Provides To |
 
 ## Key Focus Areas
 

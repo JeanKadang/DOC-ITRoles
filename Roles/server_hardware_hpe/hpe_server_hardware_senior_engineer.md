@@ -5,6 +5,8 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | HPE Server Hardware Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The HPE Server Hardware Senior Engineer leads the implementation and optimization of enterprise server infrastructure based on Hewlett Packard Enterprise technologies. This role provides technical leadership for complex server deployments, migrations, and operations while working closely with architects to translate server designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced HPE server hardware solution delivery within the HPE Server Hardware Architect's reference architecture
+- **Experience Anchor:** 5+ years in HPE server hardware engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** HPE hardware architecture and standards (Architect-owned); OS-hardware integration ownership (Platform Senior Engineers-owned, this role coordinates with it); virtualisation host optimisation ownership (Virtualization Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** HPE Server Hardware Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** HPE Server Hardware Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -157,14 +167,14 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| HPE Server Hardware Architect | Solution design and implementation strategy |
-| HPE Server Hardware Product Owner | Technical planning |
-| Virtualization Senior Engineers | Host optimization |
-| Platform Senior Engineers | OS-hardware integration |
-| HPE Server Hardware Engineers | Technical implementation |
-| vendor technical resources | Advanced issues and solutions |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| HPE Server Hardware Architect | Solution design and implementation strategy | Escalates To |
+| HPE Server Hardware Product Owner | Technical planning | Collaborates |
+| Virtualization Senior Engineers | Host optimization | Collaborates |
+| Platform Senior Engineers | OS-hardware integration | Collaborates |
+| HPE Server Hardware Engineers | Technical implementation | Provides To |
+| vendor technical resources | Advanced issues and solutions | Collaborates |
 
 ## Key Technologies
 

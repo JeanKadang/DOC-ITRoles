@@ -5,6 +5,8 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | FinOps Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Cloud Cost Optimization Engineer is responsible for the hands-on implementation of cost reduction measures across the cloud estate, translating FinOps strategy into tangible savings through reserved instance and savings plan management, rightsizing, idle resource cleanup, spot instance adoption, and tagging enforcement. This role operates at the intersection of cloud engineering and financial accountability, working directly with cloud platforms and FinOps tooling to reduce waste, improve coverage, and ensure cost-aware resource utilisation across AWS, Azure, and GCP.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — cloud resource tagging, anomaly resolution, and rightsizing implementation tasks
+- **Experience Anchor:** 3-5 years in cloud engineering or FinOps with a cost optimisation focus — operates independently within the FinOps Senior Engineer's standards
+- **Out of Scope:** FinOps architecture and cost governance standards (FinOps Architect-owned); cloud platform engineering implementation (Cloud Platform Engineers-owned, this role coordinates rightsizing with it); pipeline design ownership (DevOps Engineers-owned, this role coordinates with it)
+- **Escalates To:** FinOps Senior Engineer — cost optimisation implementation questions
+- **Escalated To By:** application owners on tagging, anomaly resolution, and rightsizing support
 
 ## Business Impact
 
@@ -72,11 +82,14 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to | FinOps Senior Engineer or FinOps Manager |
-| | Cloud Platform Engineers, DevOps Engineers, FinOps Senior Engineer |
-| Collaborates with | Application owners, Finance business partners, and platform tooling teams on tagging, anomaly resolution, and rightsizing initiatives |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| FinOps Senior Engineer | Receives task prioritisation and technical guidance | Escalates To |
+| Cloud Platform Engineers | Coordinates on resource tagging, anomaly resolution, and rightsizing implementation | Collaborates |
+| DevOps Engineers | Coordinates cost-efficient deployment practices | Collaborates |
+| Application owners | Supports tagging, anomaly resolution, and rightsizing initiatives | Provides To |
+| Finance business partners | Provides cost optimisation data for reporting | Provides To |
+| platform tooling teams | Coordinates on FinOps tooling integration | Collaborates |
 
 ## Key Technologies
 

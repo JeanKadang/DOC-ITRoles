@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | VMware Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The VMware Senior Engineer leads the implementation and optimization of complex VMware virtualization solutions. This role provides technical leadership for virtualization deployments, migrations, and operations while working closely with architects to translate virtualization designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced VMware solution design and delivery within the VMware Architect's reference architecture
+- **Experience Anchor:** 5+ years in VMware engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** VMware platform architecture and standards (Architect-owned); advanced storage virtualisation ownership (Storage Senior Engineers-owned, this role coordinates with it); complex virtual networking design (Network Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** VMware Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** VMware Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| VMware Architect | Solution design and implementation strategy |
-| VMware Product Owner | Technical planning and roadmap execution |
-| Storage Senior Engineers | Advanced storage virtualization |
-| Network Senior Engineers | Complex virtual networking |
-| Security Senior Engineers | Virtualization security controls |
-| VMware Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| VMware Architect | Solution design and implementation strategy | Escalates To |
+| VMware Product Owner | Technical planning and roadmap execution | Collaborates |
+| Storage Senior Engineers | Advanced storage virtualization | Collaborates |
+| Network Senior Engineers | Complex virtual networking | Collaborates |
+| Security Senior Engineers | Virtualization security controls | Governed By |
+| VMware Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

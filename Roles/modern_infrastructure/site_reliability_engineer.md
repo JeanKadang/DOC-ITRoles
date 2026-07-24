@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Site Reliability Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and efficient systems through engineering practices applied to operations. This role bridges development and operations, designing solutions that improve system reliability, performance, and observability while reducing toil through automation.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of reliability engineering practices and incident response support tasks
+- **Experience Anchor:** 1-3 years in site reliability or infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Reliability strategy and SLO framework design (Site Reliability Senior Engineer and Platform Engineering Architect-owned); observability platform implementation (Observability Engineers-owned, this role coordinates monitoring with it); deployment pipeline architecture (DevOps Engineers-owned, this role coordinates reliability with it)
+- **Escalates To:** Site Reliability Senior Engineer — reliability design questions and complex implementation issues
+- **Escalated To By:** application teams on reliability engineering practices support
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Platform Engineering Architects | Reliability design patterns |
-| Observability Engineers | Monitoring implementation |
-| Cloud Platform Engineers | Cloud service reliability |
-| DevOps Engineers | Deployment pipeline reliability |
-| Security Engineers | Implementing secure reliable systems |
-| application teams | Reliability engineering practices |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Platform Engineering Architects | Reliability design patterns | Consumes From |
+| Observability Engineers | Monitoring implementation | Collaborates |
+| Cloud Platform Engineers | Cloud service reliability | Collaborates |
+| DevOps Engineers | Deployment pipeline reliability | Collaborates |
+| Security Engineers | Implementing secure reliable systems | Collaborates |
+| application teams | Reliability engineering practices | Provides To |
 
 ## Key Technologies
 

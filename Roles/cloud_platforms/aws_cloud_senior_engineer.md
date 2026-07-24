@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | AWS Cloud Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AWS Cloud Senior Engineer leads the implementation and optimization of complex Amazon Web Services solutions. This role provides technical leadership for AWS deployments, migrations, and operations while working closely with architects to translate cloud designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced AWS solution design and delivery within the AWS Cloud Architect's reference architecture
+- **Experience Anchor:** 5+ years in AWS engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** AWS platform architecture and technology standards (Architect-owned); underlying Linux host configuration (Linux Senior Engineers-owned, this role coordinates with it); EKS cluster architecture (Kubernetes Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** AWS Cloud Architect — solution design exceptions
+- **Escalated To By:** AWS Cloud Engineers on AWS services and best practices
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AWS Cloud Platform Architect | Solution design and implementation strategy |
-| AWS Cloud Product Owner | Technical planning and roadmap execution |
-| Linux Senior Engineers | Cloud infrastructure |
-| Kubernetes Senior Engineers | EKS implementations |
-| Security Engineers | Cloud security controls |
-| AWS Cloud Engineers | AWS services and best practices |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AWS Cloud Platform Architect | Solution design and implementation strategy | Escalates To |
+| AWS Cloud Product Owner | Technical planning and roadmap execution | Collaborates |
+| Linux Senior Engineers | Cloud infrastructure | Collaborates |
+| Kubernetes Senior Engineers | EKS implementations | Collaborates |
+| Security Engineers | Cloud security controls | Governed By |
+| AWS Cloud Engineers | AWS services and best practices | Provides To |
 
 ## Key Technologies
 

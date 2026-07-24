@@ -5,6 +5,8 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The HPE Server Hardware Product Owner manages the development and lifecycle of the organization's server infrastructure based on Hewlett Packard Enterprise technologies. This role leads a team of server hardware architects and engineers, ensuring that server platforms meet business requirements, performance targets, and operational standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — HPE server hardware procurement backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** HPE hardware technical architecture (HPE Server Hardware Architect-owned); vendor-agnostic hardware roadmap (Server Hardware Product Owner-owned — a parallel, non-HPE hardware ladder); vendor contract terms (procurement teams-owned, this role coordinates negotiations with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** platform-specific Product Owners (Windows, Linux, VMware) on hardware requirements
 
 ## Business Impact
 
@@ -165,14 +175,14 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| HPE Server Hardware Architect | Technical strategy |
-| platform-specific Product Owners (Windows, Linux, VMware) | Hardware requirements |
-| procurement teams | Vendor negotiations and contracts |
-| finance teams | Capital expenditure planning |
-| business stakeholders | Computing service requirements |
-| IT leadership | Infrastructure strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| HPE Server Hardware Architect | Technical strategy | Consumes From |
+| platform-specific Product Owners (Windows, Linux, VMware) | Hardware requirements | Collaborates |
+| procurement teams | Vendor negotiations and contracts | Collaborates |
+| finance teams | Capital expenditure planning | Collaborates |
+| business stakeholders | Computing service requirements | Consumes From |
+| IT leadership | Infrastructure strategy and investments | Provides To |
 
 ## Key Focus Areas
 

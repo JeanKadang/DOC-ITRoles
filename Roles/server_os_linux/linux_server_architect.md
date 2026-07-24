@@ -5,6 +5,8 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Linux Server Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Linux Server Architect designs and defines the strategic direction for the organization's Linux infrastructure. This role creates architectural blueprints, standards, and reference models for Linux environments, ensuring they meet business requirements for performance, scalability, reliability, and security while aligning with broader IT strategy and enterprise architecture principles.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Linux server platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in Linux systems architecture with demonstrated architecture-level delivery — operates independently on domain-wide Linux architecture decisions
+- **Out of Scope:** Windows Server architecture (Windows Server Architect-owned — a parallel, non-Linux OS ladder); server hardware specification (Server Hardware Architect-owned, this role consumes it); container platform architecture (Kubernetes Architect-owned via CI/CD Engineers, this role coordinates hosting with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Linux Server Engineers on implementation of architectural standards
 
 ## Business Impact
 
@@ -149,17 +159,17 @@ The Linux Server Architect designs and defines the strategic direction for the o
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Align Linux architecture with overall strategy |
-| Linux Server Engineers | Implementation of architectural standards |
-| Security Architects | Linux security design |
-| Cloud Architects | Hybrid Linux deployments |
-| Infrastructure Managers | Linux technology roadmaps |
-| Network Architects | Linux networking requirements |
-| Storage Architects | Linux storage solutions |
-| Application Architects | Linux platform requirements, OS constraints, and kernel-level design considerations |
-| DevOps Engineers | CI/CD pipeline integration |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Align Linux architecture with overall strategy | Governed By |
+| Linux Server Engineers | Implementation of architectural standards | Provides To |
+| Security Architects | Linux security design | Governed By |
+| Cloud Architects | Hybrid Linux deployments | Collaborates |
+| Infrastructure Managers | Linux technology roadmaps | Collaborates |
+| Network Architects | Linux networking requirements | Collaborates |
+| Storage Architects | Linux storage solutions | Collaborates |
+| Application Architects | Linux platform requirements, OS constraints, and kernel-level design considerations | Provides To |
+| DevOps Engineers | CI/CD pipeline integration | Collaborates |
 
 **Complementary Certifications:**
 

@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | VMware Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The VMware Engineer implements and maintains virtualization infrastructure based on VMware technologies. Working with the VMware Architect and Product Owner, this role ensures reliable, secure, and optimized virtualization services supporting business applications and workloads.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of VM provisioning and datastore configuration tasks to defined standards
+- **Experience Anchor:** 1-3 years in virtualisation engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** VMware architecture and solution design (Senior Engineers and the Architect-owned); server hardware host configuration ownership (Server Hardware Engineers-owned, this role coordinates with it); virtual network implementation ownership (Network Engineers-owned, this role coordinates with it)
+- **Escalates To:** VMware Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on VM requirements
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| VMware Product Owner | Task prioritization |
-| Server Hardware Engineers | Host configuration |
-| Storage Engineers | Datastore configuration |
-| Network Engineers | Virtual network implementation |
-| VMware Architect | Implementation activities |
-| application teams | VM requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| VMware Product Owner | Task prioritization | Consumes From |
+| Server Hardware Engineers | Host configuration | Collaborates |
+| Storage Engineers | Datastore configuration | Collaborates |
+| Network Engineers | Virtual network implementation | Collaborates |
+| VMware Architect | Implementation activities | Escalates To |
+| application teams | VM requirements | Provides To |
 
 ## Key Technologies
 

@@ -10,6 +10,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 - **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
+  Mode backfilled for the Cloud, Platform & Infrastructure chapter (#89,
+  batch 7/7 — the final batch: 77 of 219 files, completing #5).** Cloud
+  Platforms, Kubernetes, Modern Infrastructure, Virtualisation (VMware,
+  Hyper-V, Nutanix), Specialised Computing (HPC), Server Hardware
+  (vendor-agnostic and HPE), Server OS (Linux and Windows), Network, and
+  FinOps all follow the standard IC-ladder pattern: Engineer reports to
+  Senior Engineer, Senior Engineer and Product Owner report to the Cloud,
+  Platform & Infrastructure Chapter Lead. Kubernetes and one Hyper-V file
+  had the variant "Relationships & Collaboration" heading renamed to the
+  canonical "Interactions with Other Roles" (mirroring the #7 fix, same as
+  batch 4). Two grounded structural exceptions:
+  - **Cloud Platforms has an explicit three-tier hierarchy above the
+    standard architect ladder**, stated directly in its own role-overview
+    text: the Cloud Principal Architect "operates below the Technical Area
+    Lead (TAL)" and reports there directly rather than to the Chapter
+    Lead; the Cloud Lead Architect "bridges the gap" between the Principal
+    Architect's strategy and the AWS/Azure/GCP Cloud Architects' designs
+    and reports to the Principal Architect. The three platform Architects
+    themselves still report to the Chapter Lead like every other domain,
+    but escalate cross-platform problems to the Cloud Lead Architect
+    rather than straight to the Chapter Lead.
+  - **Network Automation Architect is a peer to Network Architect**, per
+    its own text ("automation extends and operationalises network
+    designs" rather than replacing them) — both report to the Chapter
+    Lead, mirroring the API Strategy/API Platform peer pattern from
+    batch 4.
+  Six further structural notes: Site Reliability Engineer/Senior Engineer
+  has no Architect tier of its own in the catalog, so the Senior Engineer
+  reports to the Chapter Lead directly and escalates to the Platform
+  Engineering Architect (its closest real architectural relationship);
+  GenAI Platform Engineer and MLOps Engineer both report to the GenAI
+  Platform Architect (MLOps has no dedicated architect of its own); Chaos
+  Engineer reports to the Site Reliability Senior Engineer. FinOps's
+  interactions tables were fully restructured — the pre-existing content
+  used a degraded "Reports to | X" / blank-role-cell pseudo-row format
+  unlike every other domain's proper two-column table, including several
+  rows with a literally empty Role cell — into the standard three-column
+  format grounded in the same raw material. Fixed a malformed row in
+  `hpc_architect.md` ("Facilitates knowledge sharing and documentation |
+  All HPC stakeholders", with Role and Nature reversed) and merged a
+  duplicate pair of rows in `hpc_engineer.md` describing the same
+  researcher-training relationship twice.
+- **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
   Mode backfilled for the Security & Identity chapter (#88, batch 6/7:
   36 of 219 files — the domain's 2 governance specialists, GRC Risk
   Compliance Analyst and Business Continuity/DR Manager, were already on

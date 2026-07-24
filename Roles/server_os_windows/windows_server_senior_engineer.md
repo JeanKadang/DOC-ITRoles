@@ -5,6 +5,8 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Windows Server Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Server Senior Engineer leads complex implementations and optimizations for Tier 1 Windows Server environments, excluding Tier 0 infrastructure (domain controllers and servers involved in directory services) which falls under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Windows solution delivery within the Windows Server Architect's reference architecture
+- **Experience Anchor:** 5+ years in Windows systems engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Windows platform architecture and standards (Architect-owned); Azure hybrid solution architecture (Azure Cloud Senior Engineers-owned, this role coordinates with it); cross-domain solution design ownership (Senior Engineers from other platforms-owned, this role coordinates with them)
+- **Escalates To:** Windows Server Architect — solution design and validation exceptions
+- **Escalated To By:** Windows Server Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Architect | Solution design and validation |
-| Windows Server Product Owner | Technical planning and roadmap execution |
-| Azure Cloud Senior Engineers | Hybrid solutions |
-| Security Engineers | Windows security implementation |
-| Senior Engineers | From other platforms on cross-domain solutions |
-| Windows Server Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Architect | Solution design and validation | Escalates To |
+| Windows Server Product Owner | Technical planning and roadmap execution | Collaborates |
+| Azure Cloud Senior Engineers | Hybrid solutions | Collaborates |
+| Security Engineers | Windows security implementation | Governed By |
+| Senior Engineers from other platforms | Cross-domain solutions | Collaborates |
+| Windows Server Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

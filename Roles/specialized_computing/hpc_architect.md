@@ -5,6 +5,8 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors HPC Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The High-Performance Computing (HPC) Architect leads the design, implementation, and evolution of advanced HPC environments for scientific, engineering, analytics, and large-scale AI/ML training workloads. This role focuses on maximizing performance, scalability, security, sustainability, and efficiency, and sets technical direction for GPU-accelerated AI infrastructure, LLM training clusters, and hybrid/cloud HPC. The HPC Architect ensures alignment with organizational goals including AI strategy and fosters a culture of continuous learning and cross-functional collaboration.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — high-performance computing architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in HPC or scientific computing architecture with demonstrated architecture-level delivery — operates independently on domain-wide HPC architecture decisions
+- **Out of Scope:** Underlying Linux OS architecture (Linux Server Architect-owned, this role aligns to it); cloud/hybrid HPC service selection (Cloud Platform Architects-owned, this role integrates with it); specialised HPC hardware procurement (Server Hardware Architect-owned, this role defines requirements for it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** HPC Senior Engineers on solution design, automation, and implementation strategy questions
 
 ## Business Impact
 
@@ -94,16 +104,16 @@ The High-Performance Computing (HPC) Architect leads the design, implementation,
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Linux Server Architect | OS and hybrid/cloud integration |
-| Cloud Platform Architects | OS and hybrid/cloud integration |
-| Database Architect | Data-intensive computing solutions |
-| Security Architects | Ensure compliance and data protection |
-| Observability Architect | HPC monitoring and analytics |
-| HPC Product Owner | Business stakeholders on HPC strategy |
-| Server Hardware Architect | Specialized HPC hardware |
-| Facilitates knowledge sharing and documentation | All HPC stakeholders |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Linux Server Architect | OS and hybrid/cloud integration | Collaborates |
+| Cloud Platform Architects | OS and hybrid/cloud integration | Collaborates |
+| Database Architect | Data-intensive computing solutions | Collaborates |
+| Security Architects | Ensure compliance and data protection | Governed By |
+| Observability Architect | HPC monitoring and analytics | Collaborates |
+| HPC Product Owner | Business stakeholders on HPC strategy | Collaborates |
+| Server Hardware Architect | Specialized HPC hardware | Consumes From |
+| All HPC stakeholders | Facilitates knowledge sharing and documentation | Provides To |
 
 ## Key Technologies
 

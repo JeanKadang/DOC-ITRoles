@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Hyper-V Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Hyper-V Architect is responsible for designing and overseeing the strategic implementation of Microsoft's virtualization technologies across the organization. This role drives technical standards, architecture patterns, and best practices for Hyper-V environments.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Hyper-V virtualisation platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in virtualisation architecture with demonstrated Hyper-V/Windows platform ownership — operates independently on domain-wide Hyper-V architecture decisions
+- **Out of Scope:** VMware or Nutanix virtualisation architecture (VMware/Nutanix Architects-owned — parallel, non-Hyper-V virtualisation ladders); Windows Server infrastructure architecture (Windows Server Teams-owned, this role collaborates on platform integration with it); Azure hybrid cloud integration detail (Cloud Teams-owned, this role integrates with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Hyper-V Senior Engineers on architecture design and standards development support
 
 ## Business Impact
 
@@ -74,15 +84,15 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Teams | Collaboration on platform integration and architecture |
-| Storage Teams | Design of storage solutions for Hyper-V environments |
-| Network Teams | Design of network architecture for virtualized workloads |
-| Cloud Teams | Integration with Azure and hybrid cloud scenarios |
-| Security Teams | Implementation of security controls in virtualized environments |
-| Other Virtualization Teams | Cross-platform integration and migration strategies |
-| Product Owners | Strategic planning and roadmap development |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Teams | Collaboration on platform integration and architecture | Collaborates |
+| Storage Teams | Design of storage solutions for Hyper-V environments | Collaborates |
+| Network Teams | Design of network architecture for virtualized workloads | Collaborates |
+| Cloud Teams | Integration with Azure and hybrid cloud scenarios | Collaborates |
+| Security Teams | Implementation of security controls in virtualized environments | Governed By |
+| Other Virtualization Teams | Cross-platform integration and migration strategies | Collaborates |
+| Product Owners | Strategic planning and roadmap development | Collaborates |
 
 ## Key Performance Indicators
 

@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Lead Architect |
+| **Reports To** | Cloud Principal Architect |
+| **Direct Reports** | None (provides technical oversight and mentorship to the AWS, Azure, and GCP Cloud Architects; formal line management sits with the Cloud, Platform & Infrastructure Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Cloud Lead Architect provides technical leadership across a cluster of cloud platform architects (Azure, AWS, GCP). This role bridges the gap between the cross-organizational cloud strategy set by the Principal Cloud Architect and the platform-specific designs delivered by individual platform architects. The Cloud Lead Architect ensures architectural coherence, governs design quality, and acts as the primary escalation point for complex cross-platform cloud problems.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-platform — architectural coherence and design quality across the AWS, Azure, and GCP Cloud Architects
+- **Experience Anchor:** 10+ years in cloud architecture with demonstrated cross-platform technical leadership — bridges the Principal Cloud Architect's strategy and the platform architects' designs, acting as primary escalation point for complex cross-platform problems
+- **Out of Scope:** Multi-year multi-cloud strategy setting (Cloud Principal Architect-owned, this role executes the platform-level guidance it translates); platform-specific implementation detail (AWS/Azure/GCP Cloud Architects-owned); formal line management of the platform architects (Cloud, Platform & Infrastructure Chapter Lead-owned)
+- **Escalates To:** Cloud Principal Architect — cross-organisational strategy questions
+- **Escalated To By:** AWS, Azure, and GCP Cloud Architects on complex cross-platform cloud problems
 
 ## Business Impact
 
@@ -63,14 +73,14 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Principal Cloud Architect | Translates it into platform-level guidance |
-| Azure, AWS, and GCP Cloud Architects | Coordinates and provides technical oversight |
-| Technical Area Lead (TAL) | Priorities, escalations, and cross-domain technical decisions |
-| Enterprise Architecture Senior Engineer | Ensure cloud patterns are captured in the EA repository |
-| Security and Compliance Architects | Ensure cross-platform security posture consistency |
-| FinOps | Ensure cost governance standards are applied consistently across all cloud platforms |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Principal Cloud Architect | Translates strategic direction into platform-level guidance | Escalates To |
+| Azure, AWS, and GCP Cloud Architects | Coordinates and provides technical oversight | Provides To |
+| Technical Area Lead (TAL) | Priorities, escalations, and cross-domain technical decisions | Collaborates |
+| Enterprise Architecture Senior Engineer | Ensure cloud patterns are captured in the EA repository | Collaborates |
+| Security and Compliance Architects | Ensure cross-platform security posture consistency | Governed By |
+| FinOps | Ensure cost governance standards are applied consistently across all cloud platforms | Governed By |
 
 ## Key Technologies
 

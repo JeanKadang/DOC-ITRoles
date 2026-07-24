@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Hyper-V Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, develops automation solutions, and provides technical leadership for the virtualization team. This role focuses on optimization, advanced implementations, troubleshooting critical issues, and mentoring other team members.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Hyper-V solution design and delivery within the Hyper-V Architect's reference architecture
+- **Experience Anchor:** 5+ years in Hyper-V or Windows virtualisation engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Hyper-V platform architecture and standards (Architect-owned); advanced Windows Server configuration ownership (Windows Server Teams-owned, this role collaborates with it); complex network design ownership (Network Teams-owned, this role coordinates with it)
+- **Escalates To:** Hyper-V Architect — architecture design and standards development support
+- **Escalated To By:** Hyper-V Engineers on technical leadership and mentoring needs
 
 ## Business Impact
 
@@ -79,16 +89,16 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Hyper-V Architect | Supporting architecture design and standards development |
-| Hyper-V Product Owner | Providing technical input on roadmaps and feature prioritization |
-| Hyper-V Engineers | Mentoring and providing technical leadership |
-| Windows Server Teams | Collaborating on advanced Windows configurations |
-| Cloud Teams | Integration with Azure and hybrid scenarios |
-| Storage Teams | Advanced storage configurations and troubleshooting |
-| Network Teams | Complex network designs for virtualization |
-| Security Teams | Advanced security implementations for virtual environments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Hyper-V Architect | Supporting architecture design and standards development | Escalates To |
+| Hyper-V Product Owner | Providing technical input on roadmaps and feature prioritization | Collaborates |
+| Hyper-V Engineers | Mentoring and providing technical leadership | Provides To |
+| Windows Server Teams | Collaborating on advanced Windows configurations | Collaborates |
+| Cloud Teams | Integration with Azure and hybrid scenarios | Collaborates |
+| Storage Teams | Advanced storage configurations and troubleshooting | Collaborates |
+| Network Teams | Complex network designs for virtualization | Collaborates |
+| Security Teams | Advanced security implementations for virtual environments | Governed By |
 
 ## Key Performance Indicators
 

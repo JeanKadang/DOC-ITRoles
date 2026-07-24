@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Site Reliability Senior Engineer (Senior SRE) leads the technical implementation of SRE practices across the organisation's production engineering teams. Building on hands-on SRE engineering experience, this role takes ownership of complex reliability projects, leads SLO/SLI design for critical services, mentors junior SREs, and drives forward the engineering practices around observability, incident management, capacity planning, and toil elimination. The Senior SRE operates with a high degree of autonomy and serves as a technical lead in cross-functional reliability initiatives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — reliability engineering practice, SLO design, and incident post-mortem methodology across engineering squads
+- **Experience Anchor:** 5+ years in site reliability engineering with demonstrated independent delivery — operates independently within the reliability strategy set by chapter architecture
+- **Out of Scope:** Platform engineering architecture (Platform Engineering Architect-owned, this role drives reliability requirements into it); observability platform design (Observability Engineers-owned, this role collaborates on telemetry pipeline design with it); availability-impacting security incident ownership (Security Operations-owned, this role coordinates with it)
+- **Escalates To:** Platform Engineering Architect — systemic reliability issues and platform-level design escalations
+- **Escalated To By:** the Site Reliability Engineer on implementation feedback and reliability practice questions
 
 ## Business Impact
 
@@ -78,13 +88,13 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| SRE Architect: | Receive reliability strategy direction; provide implementation feedback and escalate systemic reliability issues |
-| Engineering Squads: | Embed reliability practices; support SLO design and incident post-mortems |
-| Observability Engineers: | Collaborate on telemetry pipeline and dashboard design |
-| Platform Engineering: | Drive reliability requirements for internal developer platform capabilities |
-| Security Operations: | Coordinate on availability-impacting security incidents |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| SRE Architect (Platform Engineering Architect) | Receive reliability strategy direction; provide implementation feedback and escalate systemic reliability issues | Escalates To |
+| Engineering Squads | Embed reliability practices; support SLO design and incident post-mortems | Provides To |
+| Observability Engineers | Collaborate on telemetry pipeline and dashboard design | Collaborates |
+| Platform Engineering | Drive reliability requirements for internal developer platform capabilities | Provides To |
+| Security Operations | Coordinate on availability-impacting security incidents | Collaborates |
 
 ## Key Technologies
 

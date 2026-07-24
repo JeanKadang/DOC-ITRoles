@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Observability Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Observability Engineer implements and maintains monitoring, logging, and tracing solutions that provide visibility into IT systems and applications. This role focuses on configuring observability tools, creating dashboards and alerts, and ensuring effective collection of telemetry data across the enterprise.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of monitoring implementation and alert integration tasks to defined standards
+- **Experience Anchor:** 1-3 years in observability or monitoring engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Observability architecture and platform design (Senior Engineers and the Architect-owned); underlying infrastructure platform ownership (infrastructure teams-owned, this role monitors it); operational alert response ownership (operations teams-owned, this role integrates alerting with it)
+- **Escalates To:** Senior Observability Engineers and Architect — day-to-day guidance and direction
+- **Escalated To By:** service desk on troubleshooting using monitoring data
 
 ## Business Impact
 
@@ -67,15 +77,15 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 - **Working Knowledge required:** Kubernetes monitoring stack (kube-state-metrics, node exporter, metrics-server), Alertmanager, PagerDuty, and OpsGenie for alert routing and on-call notification, Scripting and automation for monitoring configuration and dashboard-as-code
 - **Awareness level expected:** AI/ML-assisted anomaly detection capabilities in modern observability platforms, eBPF-based observability tooling and low-overhead profiling approaches
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| application teams | Monitoring implementation |
-| infrastructure teams | Platform monitoring |
-| operations teams | Alert integration |
-| service desk with monitoring data | Troubleshooting |
-| Senior Observability Engineers and Architect | Day-to-day guidance and direction |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| application teams | Monitoring implementation | Provides To |
+| infrastructure teams | Platform monitoring | Collaborates |
+| operations teams | Alert integration | Collaborates |
+| service desk | Troubleshooting using monitoring data | Provides To |
+| Senior Observability Engineers and Architect | Day-to-day guidance and direction | Escalates To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Hyper-V Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Hyper-V Engineer implements and maintains Microsoft virtualization environments, ensuring they operate efficiently and reliably to support business applications. This role focuses on day-to-day operations, deployments, and routine maintenance of Hyper-V infrastructure.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of VM provisioning and Hyper-V operations tasks to defined standards
+- **Experience Anchor:** 1-3 years in virtualisation or Windows infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Hyper-V architecture and solution design (Senior Engineers and the Architect-owned); OS-level Windows Server configuration ownership (Windows Server Teams-owned, this role coordinates with it); network configuration architecture (Network Teams-owned, this role implements configurations within it)
+- **Escalates To:** Hyper-V Senior Engineers — complex issues requiring escalation
+- **Escalated To By:** Service Desk on incidents and service requests
 
 ## Business Impact
 
@@ -74,17 +84,17 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 - **Working Knowledge required:** Software-Defined Networking and Hyper-V virtual switch configuration, Azure hybrid services integration for on-premises Hyper-V environments, Virtual Machine Queue (VMQ) and network performance settings
 - **Awareness level expected:** Azure Stack HCI cloud-managed Hyper-V features and capabilities, Windows Server 2025 virtualisation improvements and new Hyper-V features
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Hyper-V Senior Engineers | Receiving guidance and escalating complex issues |
-| Windows Server Teams | Coordinating OS-level configurations and updates |
-| Storage Teams | Working with storage allocations and configurations |
-| Network Teams | Implementation of network configurations for VMs |
-| Service Desk | Responding to incidents and service requests |
-| Application Teams | Supporting VM provisioning for application needs |
-| Security Teams | Implementing security controls and responding to vulnerabilities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Hyper-V Senior Engineers | Receiving guidance and escalating complex issues | Escalates To |
+| Windows Server Teams | Coordinating OS-level configurations and updates | Collaborates |
+| Storage Teams | Working with storage allocations and configurations | Collaborates |
+| Network Teams | Implementation of network configurations for VMs | Collaborates |
+| Service Desk | Responding to incidents and service requests | Provides To |
+| Application Teams | Supporting VM provisioning for application needs | Provides To |
+| Security Teams | Implementing security controls and responding to vulnerabilities | Governed By |
 
 ## Key Performance Indicators
 

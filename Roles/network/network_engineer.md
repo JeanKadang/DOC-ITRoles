@@ -5,6 +5,8 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Network Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Network Engineer implements and maintains enterprise network infrastructure across the organization. Working with the Network Architect and Product Owner, this role ensures reliable, secure, and optimized network connectivity supporting various business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of network connectivity and configuration tasks to defined standards
+- **Experience Anchor:** 1-3 years in network engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Network architecture and solution design (Senior Engineers and the Architect-owned); network security control implementation (Security Engineers-owned, this role coordinates with it); server connectivity ownership (Server Infrastructure Engineers-owned, this role coordinates with it)
+- **Escalates To:** Network Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** business units on network connectivity requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Network Product Owner | Task prioritization |
-| Security Engineers | Network security controls |
-| Server Infrastructure Engineers | Connectivity |
-| Cloud Engineers | Hybrid network integration |
-| Network Architect | Implementation activities |
-| business units | Network connectivity requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Network Product Owner | Task prioritization | Consumes From |
+| Security Engineers | Network security controls | Governed By |
+| Server Infrastructure Engineers | Connectivity | Collaborates |
+| Cloud Engineers | Hybrid network integration | Collaborates |
+| Network Architect | Implementation activities | Escalates To |
+| business units | Network connectivity requirements | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AWS Cloud Platform Product Owner manages the organization's Amazon Web Services portfolio and adoption roadmap. This role leads a team of AWS architects and engineers, ensuring that AWS cloud services deliver maximum business value while maintaining security, compliance, and cost efficiency.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — AWS platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** AWS technical architecture (AWS Cloud Platform Architect-owned); underlying database service strategy (Database Product Owner-owned, this role aligns to it); AWS control implementation detail (Security and Compliance teams-owned)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on platform requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Linux Server Product Owner | Amazon EC2 standards |
-| Database Product Owner | AWS database services strategy |
-| AWS Cloud Platform Architect | Technical strategy |
-| Application Product Owners | Platform requirements |
-| Security and Compliance teams | AWS controls |
-| IT leadership | Cloud investment strategies and priorities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Linux Server Product Owner | Amazon EC2 standards | Collaborates |
+| Database Product Owner | AWS database services strategy | Collaborates |
+| AWS Cloud Platform Architect | Technical strategy | Consumes From |
+| Application Product Owners | Platform requirements | Consumes From |
+| Security and Compliance teams | AWS controls | Governed By |
+| IT leadership | Cloud investment strategies and priorities | Provides To |
 
 ## Key Technologies
 

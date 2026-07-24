@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Nutanix Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Nutanix Engineer implements and maintains hyperconverged infrastructure based on Nutanix technology. Working with the Nutanix Architect and Product Owner, this role ensures reliable, secure, and optimized Nutanix environments supporting various business workloads.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Nutanix cluster provisioning and infrastructure tasks to defined standards
+- **Experience Anchor:** 1-3 years in Nutanix or hyperconverged infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Nutanix architecture and solution design (Senior Engineers and the Architect-owned); server hardware physical infrastructure ownership (Server Hardware Engineers-owned, this role coordinates with it); network connectivity design (Network Engineers-owned, this role coordinates with it)
+- **Escalates To:** Nutanix Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on infrastructure needs
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Nutanix Product Owner | Task prioritization |
-| Server Hardware Engineers | Physical infrastructure |
-| Network Engineers | Connectivity requirements |
-| Security Engineers | Infrastructure security |
-| Nutanix Architect | Implementation activities |
-| application teams | Infrastructure needs |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Nutanix Product Owner | Task prioritization | Consumes From |
+| Server Hardware Engineers | Physical infrastructure | Collaborates |
+| Network Engineers | Connectivity requirements | Collaborates |
+| Security Engineers | Infrastructure security | Governed By |
+| Nutanix Architect | Implementation activities | Escalates To |
+| application teams | Infrastructure needs | Provides To |
 
 ## Key Technologies
 

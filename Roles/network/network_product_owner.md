@@ -5,6 +5,8 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Network Product Owner manages the development and lifecycle of the organization's network services portfolio. This role leads a team of network architects and engineers, ensuring that network services meet business requirements, performance targets, and security objectives while aligning with organizational strategy.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — network platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Network technical architecture (Network Architect-owned); security initiative ownership (Security Product Owner-owned, this role coordinates with it); hybrid cloud network roadmap ownership (Cloud teams-owned, this role coordinates with them)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** business units on network service needs
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Security Product Owner | Network security initiatives |
-| Network Architect | Technical strategy and design |
-| Application Product Owners | Connectivity requirements |
-| Cloud teams | Hybrid network integration |
-| business units | Understand service needs |
-| IT leadership | Network strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security Product Owner | Network security initiatives | Collaborates |
+| Network Architect | Technical strategy and design | Consumes From |
+| Application Product Owners | Connectivity requirements | Consumes From |
+| Cloud teams | Hybrid network integration | Collaborates |
+| business units | Understand service needs | Consumes From |
+| IT leadership | Network strategy and investments | Provides To |
 
 ## Key Technologies
 

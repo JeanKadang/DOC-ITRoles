@@ -5,6 +5,8 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Server Hardware Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Server Hardware Architect designs comprehensive server infrastructure strategies and architectures for the organization. This role establishes the technical vision for server hardware implementations, creating architectures that balance performance, scalability, efficiency, and reliability while aligning with business objectives and data center strategies.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — server hardware standards and technology roadmap across the chapter
+- **Experience Anchor:** 8+ years in server hardware or infrastructure architecture with demonstrated architecture-level delivery — operates independently on domain-wide hardware architecture decisions
+- **Out of Scope:** Enterprise-wide technology standards beyond hardware (Enterprise Architects-owned, this role aligns to it); data centre facility planning (Data Center Architects-owned, this role coordinates capacity strategy with it); HPE-specific hardware architecture (HPE Server Hardware Architect-owned — a parallel, vendor-specific hardware ladder)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Server Hardware Senior Engineers on implementation strategy questions
 
 ## Business Impact
 
@@ -80,14 +90,14 @@ The Server Hardware Architect designs comprehensive server infrastructure strate
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Data Center Architects | Infrastructure planning |
-| Infrastructure Directors | Capacity strategy |
-| Server Hardware Product Owner | Technical strategy |
-| Server Hardware Senior Engineers |  |
-| vendors | Hardware roadmaps and innovation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standards | Governed By |
+| Data Center Architects | Infrastructure planning | Collaborates |
+| Infrastructure Directors | Capacity strategy | Collaborates |
+| Server Hardware Product Owner | Technical strategy | Collaborates |
+| Server Hardware Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| vendors | Hardware roadmaps and innovation | Collaborates |
 
 ## Key Technologies
 

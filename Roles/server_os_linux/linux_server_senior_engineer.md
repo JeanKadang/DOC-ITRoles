@@ -5,6 +5,8 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Linux Server Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Linux Server Senior Engineer leads complex implementations and optimizations for Tier 1 Linux Server environments, excluding any Tier 0 infrastructure related to directory services which falls under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Linux solution delivery within the Linux Server Architect's reference architecture
+- **Experience Anchor:** 5+ years in Linux systems engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Linux platform architecture and standards (Architect-owned); HPC-specific performance tuning ownership (HPC Senior Engineers-owned, this role coordinates with it); container hosting architecture (Kubernetes Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Linux Server Architect — solution design and implementation approach exceptions
+- **Escalated To By:** Linux Server Engineers on technical skills development
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Linux Server Architect | Solution design and implementation approaches |
-| Linux Server Product Owner | Technical planning and roadmap execution |
-| HPC Senior Engineers | Linux performance optimization |
-| Kubernetes Senior Engineers | Advanced container hosting |
-| Cloud Senior Engineers | Linux in cloud environments |
-| Linux Server Engineers | Technical skills development |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Linux Server Architect | Solution design and implementation approaches | Escalates To |
+| Linux Server Product Owner | Technical planning and roadmap execution | Collaborates |
+| HPC Senior Engineers | Linux performance optimization | Collaborates |
+| Kubernetes Senior Engineers | Advanced container hosting | Collaborates |
+| Cloud Senior Engineers | Linux in cloud environments | Collaborates |
+| Linux Server Engineers | Technical skills development | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Nutanix Product Owner manages the development and lifecycle of the organization's Nutanix hyperconverged infrastructure (HCI) solutions. This role leads a team of Nutanix architects and engineers, ensuring that hyperconverged services meet business requirements, performance targets, and operational standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Nutanix platform backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Nutanix technical architecture (Nutanix Architect-owned); server hardware procurement roadmap (Server Hardware Product Owner-owned, this role aligns to it); operational service transition ownership (Service Delivery Managers-owned, this role coordinates with it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on infrastructure requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Product Owner | Nutanix hardware planning |
-| Nutanix Architect | Technical strategy and design |
-| Application Product Owners | Infrastructure requirements |
-| Service Delivery Managers | Operational transitions |
-| business stakeholders | Service requirements |
-| IT leadership | Hyperconverged strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Product Owner | Nutanix hardware planning | Collaborates |
+| Nutanix Architect | Technical strategy and design | Consumes From |
+| Application Product Owners | Infrastructure requirements | Consumes From |
+| Service Delivery Managers | Operational transitions | Collaborates |
+| business stakeholders | Service requirements | Consumes From |
+| IT leadership | Hyperconverged strategy and investments | Provides To |
 
 ## Key Focus Areas
 

@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Azure Cloud Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Azure Cloud Senior Engineer leads the implementation and optimization of complex Azure cloud solutions. This role provides technical leadership for Azure deployments, migrations, and operations while working closely with architects to translate cloud designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Azure solution design and delivery within the Azure Cloud Architect's reference architecture
+- **Experience Anchor:** 5+ years in Azure engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Azure platform architecture and technology standards (Architect-owned); underlying Windows host configuration (Windows Senior Engineers-owned, this role coordinates with it); AKS cluster architecture (Kubernetes Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Azure Cloud Architect — solution design exceptions
+- **Escalated To By:** Azure Cloud Engineers on Azure services and best practices
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Azure Cloud Platform Architect | Solution design and implementation strategy |
-| Azure Cloud Product Owner | Technical planning and roadmap execution |
-| Windows Senior Engineers | Hybrid cloud solutions |
-| Kubernetes Senior Engineers | AKS implementations |
-| Security Engineers | Cloud security controls |
-| Azure Cloud Engineers | Azure services and best practices |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Azure Cloud Platform Architect | Solution design and implementation strategy | Escalates To |
+| Azure Cloud Product Owner | Technical planning and roadmap execution | Collaborates |
+| Windows Senior Engineers | Hybrid cloud solutions | Collaborates |
+| Kubernetes Senior Engineers | AKS implementations | Collaborates |
+| Security Engineers | Cloud security controls | Governed By |
+| Azure Cloud Engineers | Azure services and best practices | Provides To |
 
 ## Key Technologies
 

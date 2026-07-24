@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Azure Cloud Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Azure Cloud Platform Architect designs, implements, and governs cloud solutions using Microsoft Azure. This role is responsible for creating a secure, scalable, and cost-effective cloud environment that aligns with business objectives and technical requirements.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Azure platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in Azure or cloud architecture with demonstrated architecture-level delivery — operates independently on domain-wide Azure architecture decisions within the Cloud Lead Architect's cross-platform standards
+- **Out of Scope:** Cross-platform architecture consistency (Cloud Lead Architect-owned, this role escalates cross-platform problems to it); Windows Server / hybrid identity infrastructure (Windows Server Architect-owned, this role aligns Entra ID to it); AKS cluster architecture (Kubernetes Architect-owned, this role coordinates with it)
+- **Escalates To:** Cloud Lead Architect — complex cross-platform cloud problems
+- **Escalated To By:** Azure Cloud Senior Engineers on solution design questions
 
 ## Business Impact
 
@@ -80,13 +90,13 @@ The Azure Cloud Platform Architect designs, implements, and governs cloud soluti
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Architect | Microsoft Entra ID and hybrid services |
-| Kubernetes Architect | Azure Kubernetes Service implementations |
-| Database Architect | Azure database services |
-| Observability Architect | Azure Monitor and Log Analytics |
-| AWS Cloud Platform Architect | Multi-cloud strategies |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Architect | Microsoft Entra ID and hybrid services | Collaborates |
+| Kubernetes Architect | Azure Kubernetes Service implementations | Collaborates |
+| Database Architect | Azure database services | Collaborates |
+| Observability Architect | Azure Monitor and Log Analytics | Collaborates |
+| AWS Cloud Platform Architect | Multi-cloud strategies | Collaborates |
 
 ## Key Technologies
 

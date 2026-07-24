@@ -5,6 +5,8 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Kubernetes Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Kubernetes Engineer implements and maintains Kubernetes environments, ensuring stable, secure, and performant container orchestration platforms. This role is responsible for day-to-day operations, troubleshooting, and implementation of standard Kubernetes components and configurations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of container deployment and cluster operations tasks to defined standards
+- **Experience Anchor:** 1-3 years in Kubernetes or container engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Kubernetes architecture and cluster design (Senior Engineers and the Architect-owned); underlying infrastructure platform ownership (infrastructure teams-owned, this role coordinates with it); CI/CD pipeline design (CI/CD teams-owned, this role integrates deployments with it)
+- **Escalates To:** Kubernetes Senior Engineers and Architect — day-to-day guidance and direction
+- **Escalated To By:** application teams on containerized workload support
 
 ## Business Impact
 
@@ -68,15 +78,15 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 - **Working Knowledge required:** GitOps deployment tools (ArgoCD, Flux) for declarative workload delivery, Linux system administration and container OS fundamentals (cgroups, namespaces, systemd)
 - **Awareness level expected:** Service mesh concepts (Istio, Linkerd) for advanced traffic management and mTLS, Cloud-managed Kubernetes platforms (AKS, EKS, GKE) for cloud-specific deployment and operations
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| application teams | Containerized workloads |
-| infrastructure teams | Underlying platforms |
-| security teams | Container security implementations |
-| CI/CD teams | Deployment pipeline integration |
-| Kubernetes Senior Engineers and Architect | Day-to-day guidance and direction |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| application teams | Containerized workloads | Provides To |
+| infrastructure teams | Underlying platforms | Collaborates |
+| security teams | Container security implementations | Governed By |
+| CI/CD teams | Deployment pipeline integration | Collaborates |
+| Kubernetes Senior Engineers and Architect | Day-to-day guidance and direction | Escalates To |
 
 ## Key Technologies
 

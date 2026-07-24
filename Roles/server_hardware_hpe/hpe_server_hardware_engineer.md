@@ -5,6 +5,8 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | HPE Server Hardware Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The HPE Server Hardware Engineer implements and maintains server infrastructure based on Hewlett Packard Enterprise technologies. Working with the HPE Server Hardware Architect and Product Owner, this role ensures reliable and properly configured server hardware supporting business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of HPE server hardware installation and deployment tasks to defined standards
+- **Experience Anchor:** 1-3 years in server hardware engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** HPE hardware architecture and solution design (Senior Engineers and the Architect-owned); OS installation ownership (OS Engineers-owned, this role coordinates with it); vendor contract negotiation (procurement team-owned, this role coordinates receiving and inventory with it)
+- **Escalates To:** HPE Server Hardware Architect — implementation activity questions
+- **Escalated To By:** platform engineers on hardware-related issues
 
 ## Business Impact
 
@@ -102,14 +112,14 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| HPE Server Hardware Product Owner | Task prioritization |
-| OS Engineers | Operating system installation requirements |
-| HPE Server Hardware Architect | Implementation activities |
-| data center facilities teams | Physical infrastructure |
-| procurement team | Hardware receiving and inventory |
-| platform engineers | Hardware-related issues |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| HPE Server Hardware Product Owner | Task prioritization | Consumes From |
+| OS Engineers | Operating system installation requirements | Collaborates |
+| HPE Server Hardware Architect | Implementation activities | Escalates To |
+| data center facilities teams | Physical infrastructure | Collaborates |
+| procurement team | Hardware receiving and inventory | Collaborates |
+| platform engineers | Hardware-related issues | Provides To |
 
 ## Key Technologies
 

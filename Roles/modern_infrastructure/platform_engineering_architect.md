@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Platform Engineering Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Platform Engineering Architect designs comprehensive internal developer platforms that enable application teams to efficiently build, deploy, and operate their services. This role establishes the technical vision for developer experience, creating architectures that balance self-service capabilities with governance and operational excellence.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — internal platform engineering architecture and infrastructure self-service standards across the chapter
+- **Experience Anchor:** 8+ years in platform engineering or infrastructure architecture with demonstrated architecture-level delivery — operates independently on domain-wide platform architecture decisions
+- **Out of Scope:** Cloud infrastructure provisioning architecture (Cloud Platform Architects-owned, this role integrates with it); CI/CD pipeline strategy (DevOps Architects-owned, this role aligns to it); security control design (Security Architects-owned, this role implements secure platform design from it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Platform Engineering Senior Engineers on solution design questions
 
 ## Business Impact
 
@@ -65,14 +75,14 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Cloud Platform Architects | Infrastructure integration |
-| DevOps Architects | CI/CD strategy |
-| Security Architects | Secure platform design |
-| Platform Engineering Product Owner | Technical strategy |
-| Platform Engineering Senior Engineers |  |
-| application architects | Platform requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Cloud Platform Architects | Infrastructure integration | Collaborates |
+| DevOps Architects | CI/CD strategy | Collaborates |
+| Security Architects | Secure platform design | Governed By |
+| Platform Engineering Product Owner | Technical strategy | Collaborates |
+| Platform Engineering Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| application architects | Platform requirements | Provides To |
 
 ## Key Technologies
 

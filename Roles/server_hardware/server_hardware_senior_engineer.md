@@ -5,6 +5,8 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Server Hardware Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Server Hardware Senior Engineer leads the implementation and optimization of enterprise server hardware infrastructure. This role provides technical leadership for complex server deployments, hardware troubleshooting, and lifecycle management while working closely with architects to translate designs into physical implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced server hardware solution delivery within the Server Hardware Architect's reference architecture
+- **Experience Anchor:** 5+ years in server hardware engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Server hardware architecture and standards (Architect-owned); data centre operations facility management (data center operations-owned, this role coordinates infrastructure planning with it); OS-level platform configuration (platform Senior Engineers-owned, this role coordinates hardware requirements with them)
+- **Escalates To:** Server Hardware Architect — implementation strategy exceptions
+- **Escalated To By:** Server Hardware Engineers on complex technical challenges
 
 ## Business Impact
 
@@ -88,14 +98,14 @@ The Server Hardware Senior Engineer leads the implementation and optimization of
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Server Hardware Architect | Implementation strategies |
-| Server Hardware Product Owner | Technical planning |
-| Senior Engineers | Platforms on hardware requirements |
-| Server Hardware Engineers | Complex technical challenges |
-| data center operations | Infrastructure planning |
-| vendor technical resources | Complex issues |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Server Hardware Architect | Implementation strategies | Escalates To |
+| Server Hardware Product Owner | Technical planning | Collaborates |
+| Senior Engineers from other platforms | Hardware requirements | Collaborates |
+| Server Hardware Engineers | Complex technical challenges | Provides To |
+| data center operations | Infrastructure planning | Collaborates |
+| vendor technical resources | Complex issues | Collaborates |
 
 ## Key Technologies
 

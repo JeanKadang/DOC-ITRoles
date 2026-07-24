@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Principal Architect |
+| **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
+| **Direct Reports** | None (sets multi-cloud strategy; the Cloud Lead Architect and platform architects execute against it) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Cloud Principal Architect is the organization's foremost individual contributor for cloud technology strategy. Operating below the Technical Area Lead (TAL), this role shapes the multi-year, multi-cloud architecture vision and translates it into a coherent strategy that the Lead Cloud Architect and platform architects execute against. The Principal Cloud Architect sets the standard for how cloud technology is adopted, governed, and evolved across the organization — influencing decisions at the intersection of business strategy, engineering capability, and cloud innovation.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Enterprise-wide — multi-year, multi-cloud architecture strategy and standards across the organisation
+- **Experience Anchor:** 12+ years in cloud architecture with demonstrated organisation-wide strategic ownership — operates independently below the TAL, shaping strategy the Cloud Lead Architect and platform architects execute against
+- **Out of Scope:** Day-to-day platform-specific architecture decisions (Cloud Lead Architect and platform Architects-owned); chapter-level people management of domain architects and senior engineers (Cloud, Platform & Infrastructure Chapter Lead-owned); business unit budget allocation (PAL/Finance-owned)
+- **Escalates To:** Technical Area Lead (TAL) — strategic direction and cross-chapter alignment
+- **Escalated To By:** Cloud Lead Architect on cross-platform strategy questions and architecture governance escalations
 
 ## Business Impact
 
@@ -64,15 +74,15 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Technical Area Lead (TAL) | Cloud technology strategy, roadmap alignment, and governance |
-| Cloud Lead Architect | Provides strategic direction and oversight |
-| PAL | Alignment between cloud investment and business outcomes |
-| Enterprise Architecture Senior Engineer | Ensure cloud strategy is reflected in the EA repository and roadmap |
-| Security and Compliance Architects | Cloud-wide security posture and policy |
-| FinOps | Cloud spend strategy, commitment optimization, and multi-year cost modelling |
-| cloud service provider advisory programs | Technical communities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Technical Area Lead (TAL) | Cloud technology strategy, roadmap alignment, and governance | Escalates To |
+| Cloud Lead Architect | Provides strategic direction and oversight | Provides To |
+| PAL | Alignment between cloud investment and business outcomes | Collaborates |
+| Enterprise Architecture Senior Engineer | Ensure cloud strategy is reflected in the EA repository and roadmap | Collaborates |
+| Security and Compliance Architects | Cloud-wide security posture and policy | Governed By |
+| FinOps | Cloud spend strategy, commitment optimization, and multi-year cost modelling | Collaborates |
+| cloud service provider advisory programs | Technical communities | Collaborates |
 
 ## Key Technologies
 

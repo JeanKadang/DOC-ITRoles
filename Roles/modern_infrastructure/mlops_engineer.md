@@ -5,6 +5,8 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | GenAI Platform Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The MLOps Engineer implements and maintains platforms and pipelines that enable data science and AI teams to efficiently develop, deploy, and operate machine learning and generative AI models in production. This role bridges the gap between data science, AI engineering, and operations, ensuring ML/LLM models are reliable, scalable, observable, and governed in production environments.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — ML pipeline automation, model deployment infrastructure, and cloud ML service integration
+- **Experience Anchor:** 3-5 years in MLOps or platform engineering — operates independently within the GenAI Platform Architect's reference architecture
+- **Out of Scope:** GenAI/LLM platform architecture (GenAI Platform Architect-owned); data pipeline architecture upstream of model training (Data Engineers-owned, this role integrates with it); infrastructure automation module governance (Platform Engineers-owned, this role integrates with it)
+- **Escalates To:** GenAI Platform Architect — ML pipeline platform decisions
+- **Escalated To By:** Data Scientists on model deployment requirements
 
 ## Business Impact
 
@@ -66,14 +76,14 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Data Engineers | Data pipeline integration |
-| DevOps Engineers | Infrastructure automation |
-| Platform Engineers | Platform integration |
-| Cloud Engineers | Cloud services for ML |
-| Application Teams | Model integration |
-| Data Scientists | Model deployment requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Data Engineers | Data pipeline integration | Collaborates |
+| DevOps Engineers | Infrastructure automation | Collaborates |
+| Platform Engineers | Platform integration | Collaborates |
+| Cloud Engineers | Cloud services for ML | Collaborates |
+| Application Teams | Model integration | Provides To |
+| Data Scientists | Model deployment requirements | Consumes From |
 
 ## Key Technologies
 

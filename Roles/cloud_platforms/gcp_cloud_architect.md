@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors GCP Cloud Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Google Cloud Architect designs comprehensive cloud solutions using Google Cloud Platform (GCP) services. This role establishes the technical vision for GCP implementations, creating architectures that balance performance, cost, security, and operational excellence while aligning with business objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — GCP platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in GCP or cloud architecture with demonstrated architecture-level delivery — operates independently on domain-wide GCP architecture decisions within the Cloud Lead Architect's cross-platform standards
+- **Out of Scope:** Cross-platform architecture consistency (Cloud Lead Architect-owned, this role escalates cross-platform problems to it); enterprise architecture strategic alignment (Enterprise Architects-owned, this role aligns to it); GKE cluster architecture (Kubernetes Architect-owned, this role coordinates with it)
+- **Escalates To:** Cloud Lead Architect — complex cross-platform cloud problems
+- **Escalated To By:** GCP Cloud Senior Engineers on solution design questions
 
 ## Business Impact
 
@@ -62,14 +72,14 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Strategic alignment |
-| Security Architects | GCP security design |
-| Network Architects | Cloud connectivity |
-| GCP Cloud Product Owner | Technical strategy |
-| GCP Cloud Senior Engineers |  |
-| application architects | Cloud migration |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Strategic alignment | Governed By |
+| Security Architects | GCP security design | Governed By |
+| Network Architects | Cloud connectivity | Collaborates |
+| GCP Cloud Product Owner | Technical strategy | Collaborates |
+| GCP Cloud Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| application architects | Cloud migration | Provides To |
 
 ## Key Technologies
 

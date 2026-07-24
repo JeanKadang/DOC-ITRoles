@@ -5,6 +5,8 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | Nutanix Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Nutanix Senior Engineer leads the implementation and optimization of complex Nutanix hyperconverged solutions. This role provides technical leadership for Nutanix deployments, migrations, and operations while working closely with architects to translate HCI designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Nutanix solution design and delivery within the Nutanix Architect's reference architecture
+- **Experience Anchor:** 5+ years in Nutanix or hyperconverged infrastructure engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Nutanix platform architecture and standards (Architect-owned); database workload optimisation ownership (Database Senior Engineers-owned, this role coordinates with it); hybrid cloud integration ownership (Cloud Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Nutanix Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Nutanix Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Nutanix Architect | Solution design and implementation strategy |
-| Nutanix Product Owner | Technical planning and roadmap execution |
-| Database Senior Engineers | Optimizing database workloads |
-| Security Senior Engineers | Infrastructure security controls |
-| Cloud Senior Engineers | Hybrid cloud integrations |
-| Nutanix Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Nutanix Architect | Solution design and implementation strategy | Escalates To |
+| Nutanix Product Owner | Technical planning and roadmap execution | Collaborates |
+| Database Senior Engineers | Optimizing database workloads | Collaborates |
+| Security Senior Engineers | Infrastructure security controls | Governed By |
+| Cloud Senior Engineers | Hybrid cloud integrations | Collaborates |
+| Nutanix Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

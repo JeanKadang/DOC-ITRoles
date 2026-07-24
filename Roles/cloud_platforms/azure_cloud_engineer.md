@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | Azure Cloud Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Azure Cloud Engineer implements and maintains cloud resources and services in Microsoft Azure. Working with the Azure Cloud Platform Architect and Product Owner, this role ensures reliable, secure, and optimized Azure environments supporting various business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Azure resource provisioning and implementation tasks to defined standards
+- **Experience Anchor:** 1-3 years in Azure or cloud engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Azure architecture and solution design (Senior Engineers and the Architect-owned); underlying Windows Server hybrid services ownership (Windows Server Engineers-owned, this role coordinates with it); AKS implementation ownership (Kubernetes Engineers-owned, this role coordinates with it)
+- **Escalates To:** Azure Cloud Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on Azure resource requirements
 
 ## Business Impact
 
@@ -61,13 +71,13 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Azure Cloud Product Owner | Task prioritization |
-| Windows Server Engineers | Azure hybrid services |
-| Kubernetes Engineers | Azure Kubernetes Service |
-| Observability Engineers | Azure monitoring |
-| Azure Cloud Platform Architect | Implementation activities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Azure Cloud Product Owner | Task prioritization | Consumes From |
+| Windows Server Engineers | Azure hybrid services | Collaborates |
+| Kubernetes Engineers | Azure Kubernetes Service | Collaborates |
+| Observability Engineers | Azure monitoring | Collaborates |
+| Azure Cloud Platform Architect | Implementation activities | Escalates To |
 
 ## Key Technologies
 

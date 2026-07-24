@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors AWS Cloud Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AWS Cloud Platform Architect designs, implements, and governs cloud solutions on Amazon Web Services. This role is responsible for creating secure, scalable, and cost-efficient AWS environments that meet business requirements and technical standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — AWS platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in AWS or cloud architecture with demonstrated architecture-level delivery — operates independently on domain-wide AWS architecture decisions within the Cloud Lead Architect's cross-platform standards
+- **Out of Scope:** Cross-platform architecture consistency (Cloud Lead Architect-owned, this role escalates cross-platform problems to it); underlying compute/OS configuration (Linux Server Architect-owned, this role aligns to it); container orchestration architecture (Kubernetes Architect-owned, this role coordinates EKS with it)
+- **Escalates To:** Cloud Lead Architect — complex cross-platform cloud problems
+- **Escalated To By:** AWS Cloud Senior Engineers on solution design questions
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The AWS Cloud Platform Architect designs, implements, and governs cloud solution
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Linux Server Architect | EC2 deployments and AMI standards |
-| Kubernetes Architect | EKS implementations |
-| Database Architect | RDS and other AWS database services |
-| Observability Architect | CloudWatch and observability solutions |
-| Azure Cloud Platform Architect | Multi-cloud strategies |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Linux Server Architect | EC2 deployments and AMI standards | Collaborates |
+| Kubernetes Architect | EKS implementations | Collaborates |
+| Database Architect | RDS and other AWS database services | Collaborates |
+| Observability Architect | CloudWatch and observability solutions | Collaborates |
+| Azure Cloud Platform Architect | Multi-cloud strategies | Collaborates |
 
 ## Key Technologies
 

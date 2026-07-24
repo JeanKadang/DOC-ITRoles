@@ -5,6 +5,8 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors FinOps Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -14,6 +16,14 @@
 The FinOps Architect designs and implements cloud financial management strategies, governance frameworks, and cost optimization architectures across the organization. This role bridges financial management practices with cloud technology to ensure optimal resource utilization and cost efficiency.
 
 See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.md) — the tagging, budgeting, and chargeback standards this role works within.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — cloud financial management architecture, cost governance standards, and FinOps tooling strategy across the chapter
+- **Experience Anchor:** 8+ years in cloud financial management or infrastructure architecture with demonstrated architecture-level delivery — operates independently on domain-wide FinOps architecture decisions
+- **Out of Scope:** Cloud platform-specific architecture (Cloud Platform Architects-owned, this role partners with it on cost-efficient design); enterprise architecture strategy (Enterprise Architecture team-owned, this role aligns to it); individual cost optimisation execution (Cloud Cost Optimization Engineer-owned, this role guides it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** FinOps Senior Engineers on cost governance standards questions
 
 ## Business Impact
 
@@ -75,13 +85,15 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to | Chief Technology Officer or VP of Cloud Operations |
-| | : Cloud Platform Architects, Financial Controllers, IT Directors |
-| Partners with | Enterprise Architecture team, Cloud Center of Excellence |
-| Advises | Executive leadership on cloud economics and optimization |
-| Guides | Cloud engineering teams on cost-efficient architectures |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Cloud Platform Architects | Partners on cost-efficient cloud architecture design | Collaborates |
+| Financial Controllers | Aligns cloud spend reporting with enterprise financial controls | Collaborates |
+| IT Directors | Provides cloud economics input to infrastructure investment decisions | Provides To |
+| Enterprise Architecture team | Ensures FinOps standards align with enterprise architecture governance | Governed By |
+| Cloud Center of Excellence | Partners on cloud governance and best practice adoption | Collaborates |
+| Executive leadership | Advises on cloud economics and optimization strategy | Provides To |
+| Cloud engineering teams | Guides teams on cost-efficient architectures | Provides To |
 
 ## Key Technologies & Platforms
 

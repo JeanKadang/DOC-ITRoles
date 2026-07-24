@@ -5,6 +5,8 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
+| **Reports To** | AWS Cloud Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The AWS Cloud Engineer implements and maintains cloud resources and services in Amazon Web Services. Working with the AWS Cloud Platform Architect and Product Owner, this role ensures reliable, secure, and optimized AWS environments supporting various business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of AWS resource provisioning and implementation tasks to defined standards
+- **Experience Anchor:** 1-3 years in AWS or cloud engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** AWS architecture and solution design (Senior Engineers and the Architect-owned); underlying Linux instance configuration ownership (Linux Server Engineers-owned, this role coordinates with it); CI/CD pipeline design (DevOps Engineers-owned, this role integrates with it)
+- **Escalates To:** AWS Cloud Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on AWS resource requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| AWS Cloud Product Owner | Task prioritization |
-| Linux Server Engineers | Cloud instances |
-| DevOps Engineers | CI/CD integration |
-| Observability Engineers | AWS monitoring |
-| AWS Cloud Platform Architect | Implementation activities |
-| application teams | AWS resource requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| AWS Cloud Product Owner | Task prioritization | Consumes From |
+| Linux Server Engineers | Cloud instances | Collaborates |
+| DevOps Engineers | CI/CD integration | Collaborates |
+| Observability Engineers | AWS monitoring | Collaborates |
+| AWS Cloud Platform Architect | Implementation activities | Escalates To |
+| application teams | AWS resource requirements | Provides To |
 
 ## Key Technologies
 

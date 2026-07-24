@@ -5,6 +5,8 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | FinOps Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The FinOps Senior Engineer leads complex cloud financial optimization projects, develops sophisticated automation solutions, and provides technical leadership for the FinOps practice. This role applies advanced technical expertise to optimize cloud costs at scale, implement innovative solutions, and mentor other team members.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced cost optimisation and FinOps tooling delivery within the FinOps Architect's reference architecture
+- **Experience Anchor:** 5+ years in cloud financial management engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** FinOps architecture and cost governance standards (Architect-owned); cloud platform engineering implementation (Cloud Platform Senior Engineers-owned, this role coordinates cost data with it); backlog prioritisation (FinOps Product Owner-owned, this role provides technical input to it)
+- **Escalates To:** FinOps Architect — cost governance standards exceptions
+- **Escalated To By:** FinOps Engineers on cost optimisation implementation questions
 
 ## Business Impact
 
@@ -73,10 +83,11 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to | FinOps Manager or Cloud Operations Manager |
-| | : FinOps Architect, Cloud Platform Senior Engineers, FinOps Product Owner |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| FinOps Architect | Receives cost governance standards and architecture direction | Escalates To |
+| Cloud Platform Senior Engineers | Coordinates on cloud resource cost data and optimisation opportunities | Collaborates |
+| FinOps Product Owner | Provides technical input to backlog and roadmap prioritisation | Collaborates |
 
 ## Key Technologies
 

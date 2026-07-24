@@ -5,6 +5,8 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors HPE Server Hardware Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The HPE Server Hardware Architect designs and oversees the organization's server infrastructure based on Hewlett Packard Enterprise technologies. This role ensures the delivery of a reliable, performant, and cost-effective server platform that meets the organization's computing requirements.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — HPE server hardware standards and technology roadmap across the chapter
+- **Experience Anchor:** 8+ years in server hardware architecture with demonstrated HPE platform ownership — operates independently on domain-wide HPE hardware architecture decisions
+- **Out of Scope:** Vendor-agnostic server hardware architecture (Server Hardware Architect-owned — a parallel, non-HPE hardware ladder); OS-level configuration on the hardware (Windows and Linux Server Architects-owned, this role aligns hardware to it); virtualisation host design detail (VMware/Nutanix Architects-owned, this role provides hardware requirements to it)
+- **Escalates To:** Cloud, Platform & Infrastructure Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** HPE Server Hardware Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -90,14 +100,14 @@ The HPE Server Hardware Architect designs and oversees the organization's server
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows and Linux Server Architects | Align hardware with OS requirements |
-| VMware/Nutanix Architects | Virtualization host requirements |
-| Storage Architects | Server storage integration |
-| Network Architects | Server connectivity |
-| HPC Architects | High-performance computing solutions |
-| data center teams | Physical infrastructure planning |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows and Linux Server Architects | Align hardware with OS requirements | Collaborates |
+| VMware/Nutanix Architects | Virtualization host requirements | Provides To |
+| Storage Architects | Server storage integration | Collaborates |
+| Network Architects | Server connectivity | Collaborates |
+| HPC Architects | High-performance computing solutions | Collaborates |
+| data center teams | Physical infrastructure planning | Collaborates |
 
 ## Key Technologies
 
