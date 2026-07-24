@@ -5,6 +5,8 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Security Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Architect designs and implements security systems and frameworks that protect the organization's information assets and technology infrastructure. They establish security standards, patterns, and best practices while ensuring compliance with regulatory requirements and industry standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — enterprise security architecture, control frameworks, and security design standards across the chapter
+- **Experience Anchor:** 8+ years in security architecture or engineering with demonstrated architecture-level delivery — operates independently on domain-wide security architecture decisions
+- **Out of Scope:** Enterprise-wide architecture integration beyond security (Enterprise Architects-owned, this role provides security patterns into it); regulatory interpretation (Compliance Managers-owned, this role implements requirements); security investment prioritisation (Security Product Owner-owned)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Security Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -163,16 +173,16 @@ The Security Architect designs and implements security systems and frameworks th
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Security integration in overall architecture |
-| Solution Architects | Security patterns and controls |
-| Security Engineers | Implementation of security designs |
-| Compliance Managers | Regulatory requirements |
-| Development Teams | Secure coding practices |
-| Security Operations | Architectural insights and design guidance for security operations |
-| Risk Management | Security risk assessments |
-| Product Owners | Security requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Security integration in overall architecture | Collaborates |
+| Solution Architects | Security patterns and controls | Provides To |
+| Security Engineers | Implementation of security designs | Provides To |
+| Compliance Managers | Regulatory requirements | Governed By |
+| Development Teams | Secure coding practices | Provides To |
+| Security Operations | Architectural insights and design guidance for security operations | Provides To |
+| Risk Management | Security risk assessments | Governed By |
+| Product Owners | Security requirements | Provides To |
 
 **Complementary Certifications:**
 

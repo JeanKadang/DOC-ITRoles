@@ -5,6 +5,8 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | Security Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Senior Engineer leads the implementation and optimization of complex security solutions across the organization. This role provides technical leadership for security deployments, operations, and incident response while working closely with architects to translate security designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced security solution design and delivery within the Security Architect's reference architecture
+- **Experience Anchor:** 5+ years in security engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Security architecture and control framework design (Architect-owned); incident response process ownership (Incident Response-owned, this role coordinates on security events); network security infrastructure design (Network Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Security Architect — solution design exceptions
+- **Escalated To By:** Security Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Security Architect | Solution design |
-| Security Product Owner | Technical planning |
-| Network Senior Engineers | Security infrastructure |
-| Cloud Senior Engineers | Cloud security |
-| Incident Response | Security events |
-| Security Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security Architect | Solution design | Escalates To |
+| Security Product Owner | Technical planning | Collaborates |
+| Network Senior Engineers | Security infrastructure | Collaborates |
+| Cloud Senior Engineers | Cloud security | Collaborates |
+| Incident Response | Security events | Collaborates |
+| Security Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

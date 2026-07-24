@@ -5,6 +5,8 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Security Cross-Platform Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Automation Engineer builds and maintains the automated security tooling, pipelines, and integrations that allow security controls to operate at pipeline speed across the software development lifecycle. This role treats security as code — authoring policy-as-code engines (OPA, Kyverno), embedding SAST, DAST, and SCA tooling into CI/CD pipelines, implementing SOAR playbooks for automated threat response, and constructing automated compliance evidence collection workflows. Rather than relying on manual security reviews, the Security Automation Engineer designs the automation layer that enforces security controls continuously, at scale, and with measurable outcomes — making the security function a reliable, low-friction part of the engineering organisation rather than a bottleneck.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — security automation tooling, evidence collection pipelines, and pipeline-speed control enforcement
+- **Experience Anchor:** 3-5 years in security or automation engineering — operates independently within the Security Architect's control framework
+- **Out of Scope:** Cross-platform security standards (Security Cross-Platform Senior Engineer and Architect-owned); security control framework design (Security Architect-owned, this role implements automated enforcement of it); shared automation platform architecture (Automation Framework Engineer-owned, this role consumes it)
+- **Escalates To:** Security Cross-Platform Senior Engineer — complex automation implementation issues
+- **Escalated To By:** development teams on security gate findings and false positive tuning
 
 ## Business Impact
 
@@ -81,16 +91,16 @@ The Security Automation Engineer builds and maintains the automated security too
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Cloud Security Posture Manager | Align runtime CSPM detection with pipeline-time policy-as-code rules — ensuring consistent coverage between shift-left and runtime security layers |
-| Developer Experience Engineer | Integrate security tooling into the developer-facing toolchain in a low-friction, actionable manner — minimising developer toil while maintaining security coverage |
-| Automation Framework Engineer | Leverage shared automation infrastructure (pipeline templates, scripting libraries, orchestration platforms) for security automation workloads |
-| Compliance and Risk team | Understand evidence requirements for ISO 27001, SOC 2, and other frameworks — designing automated evidence collection pipelines to satisfy audit obligations |
-| Security Architect | — implements automation that enforces the organisation's security control framework at pipeline speed |
-| DevOps Architect | Embedding security tooling into shared CI/CD pipeline templates, golden-path tooling, and infrastructure automation — ensuring security gates are a first-class component of the delivery platform |
-| development teams | Triage security gate findings, explain remediation requirements, and tune false positive rates — maintaining developer trust in automated security tooling |
-| platform and SRE teams | Runtime security tooling (Falco) deployment, alert routing, and operational runbook management |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Cloud Security Posture Manager | Align runtime CSPM detection with pipeline-time policy-as-code rules — ensuring consistent coverage between shift-left and runtime security layers | Collaborates |
+| Developer Experience Engineer | Integrate security tooling into the developer-facing toolchain in a low-friction, actionable manner — minimising developer toil while maintaining security coverage | Collaborates |
+| Automation Framework Engineer | Leverage shared automation infrastructure (pipeline templates, scripting libraries, orchestration platforms) for security automation workloads | Consumes From |
+| Compliance and Risk team | Understand evidence requirements for ISO 27001, SOC 2, and other frameworks — designing automated evidence collection pipelines to satisfy audit obligations | Consumes From |
+| Security Architect | Implements automation that enforces the organisation's security control framework at pipeline speed | Governed By |
+| DevOps Architect | Embedding security tooling into shared CI/CD pipeline templates, golden-path tooling, and infrastructure automation — ensuring security gates are a first-class component of the delivery platform | Governed By |
+| development teams | Triage security gate findings, explain remediation requirements, and tune false positive rates — maintaining developer trust in automated security tooling | Provides To |
+| platform and SRE teams | Runtime security tooling (Falco) deployment, alert routing, and operational runbook management | Collaborates |
 
 ## Key Technologies
 

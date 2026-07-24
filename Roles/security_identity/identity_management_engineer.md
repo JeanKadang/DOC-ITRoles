@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Identity Management Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Identity Management Engineer implements and maintains identity management systems across the organization. Working with the Identity Management Architect and Product Owner, this role ensures secure, efficient, and well-managed identity services for all users and applications.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of identity provisioning and directory operations tasks to defined standards
+- **Experience Anchor:** 1-3 years in identity or directory engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Identity management architecture and solution design (Senior Engineers and the Architect-owned); access management (authorization) implementation (Access Management Engineers-owned, this role integrates with it); Windows Server infrastructure operations (Windows Server Engineers-owned, this role coordinates with it)
+- **Escalates To:** Identity Management Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on identity integration requests
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Identity Management Engineer implements and maintains identity management sy
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Identity Management Product Owner | Task prioritization |
-| Access Management Engineers | Integrated IAM solutions |
-| Windows Server Engineers | Active Directory operations |
-| Identity Management Architect | Implementation activities |
-| application teams | Identity integration |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Identity Management Product Owner | Task prioritization | Consumes From |
+| Access Management Engineers | Integrated IAM solutions | Collaborates |
+| Windows Server Engineers | Active Directory operations | Collaborates |
+| Identity Management Architect | Implementation activities | Escalates To |
+| application teams | Identity integration | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Product Owner manages the development and lifecycle of the organization's security services portfolio. This role leads a team of security architects and engineers, ensuring that security capabilities meet business requirements, risk management objectives, and compliance needs while aligning with the overall security strategy.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — security programme backlog, investment roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management, ideally with security domain exposure — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Security architecture and technical design (Security Architect-owned); regulatory compliance interpretation (Compliance-owned); enterprise risk appetite setting (Risk Management-owned)
+- **Escalates To:** Security & Identity Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** IT teams on security implementation prioritisation
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Security Product Owner manages the development and lifecycle of the organiza
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Risk Management | Risk prioritization |
-| Compliance | Regulatory requirements |
-| Security Architect | Technical strategy |
-| Business Unit leaders | Security requirements |
-| IT teams | Security implementation |
-| executive leadership | Security investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Risk Management | Risk prioritization | Governed By |
+| Compliance | Regulatory requirements | Governed By |
+| Security Architect | Technical strategy | Consumes From |
+| Business Unit leaders | Security requirements | Consumes From |
+| IT teams | Security implementation | Provides To |
+| executive leadership | Security investments | Provides To |
 
 ## Key Technologies
 

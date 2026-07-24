@@ -5,6 +5,8 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Windows Active Directory Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Active Directory Engineer maintains directory services and all Tier 0 Windows servers across the organization. This role has exclusive responsibility for implementing and maintaining domain controllers and all servers involved in directory services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Active Directory operations and authentication support tasks to defined standards
+- **Experience Anchor:** 1-3 years in directory services or Windows infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Active Directory architecture and solution design (Senior Engineers and the Architect-owned); broader Windows Server infrastructure ownership (Windows Server Engineers-owned, this role coordinates with it); identity provisioning beyond directory operations (Identity Management Engineers-owned, this role coordinates with it)
+- **Escalates To:** Windows Active Directory Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on authentication requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Active Directory Product Owner | Task prioritization |
-| Windows Server Engineers | Server infrastructure |
-| Identity Management Engineers | Identity integration |
-| Security Engineers | Directory security controls |
-| Windows Active Directory Architect | Implementation activities |
-| application teams | Authentication requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Active Directory Product Owner | Task prioritization | Consumes From |
+| Windows Server Engineers | Server infrastructure | Collaborates |
+| Identity Management Engineers | Identity integration | Collaborates |
+| Security Engineers | Directory security controls | Collaborates |
+| Windows Active Directory Architect | Implementation activities | Escalates To |
+| application teams | Authentication requirements | Provides To |
 
 ## Key Technologies
 

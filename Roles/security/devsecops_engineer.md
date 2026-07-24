@@ -5,6 +5,8 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | DevSecOps Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DevSecOps Engineer implements and maintains the security tooling, automation, and processes embedded within the organisation's software development pipelines and DevOps workflows. This role works hands-on with CI/CD systems to integrate SAST, SCA, DAST, container scanning, and secrets management capabilities, ensuring security checks are automated, actionable, and minimally disruptive to engineering velocity. The DevSecOps Engineer is a bridge between the security and engineering disciplines, enabling developer teams to ship securely.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of pipeline security tooling deployment and developer enablement tasks
+- **Experience Anchor:** 3-5 years in security or DevOps engineering with an application security focus — operates independently within the DevSecOps Architect's framework
+- **Out of Scope:** DevSecOps control framework and pipeline security architecture (Architect-owned); broader security incident response (Security Engineers-owned, this role escalates findings to it); DevOps platform toolchain standards (DevOps / Platform Engineers-owned, this role collaborates on it)
+- **Escalates To:** DevSecOps Architect — design direction and implementation blockers
+- **Escalated To By:** Software Engineers on security finding remediation guidance
 
 ## Business Impact
 
@@ -74,13 +84,13 @@ The DevSecOps Engineer implements and maintains the security tooling, automation
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevSecOps Architect: | Receive design direction; raise implementation blockers and findings |
-| DevOps / Platform Engineers: | Collaborate on pipeline integration and tooling deployment |
-| Software Engineers: | Guide and support developers in understanding and remediating security findings |
-| Security Engineers: | Escalate findings requiring broader security response |
-| Compliance: | Provide pipeline security evidence for audit requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevSecOps Architect | Receive design direction; raise implementation blockers and findings | Escalates To |
+| DevOps / Platform Engineers | Collaborate on pipeline integration and tooling deployment | Collaborates |
+| Software Engineers | Guide and support developers in understanding and remediating security findings | Provides To |
+| Security Engineers | Escalate findings requiring broader security response | Collaborates |
+| Compliance | Provide pipeline security evidence for audit requirements | Provides To |
 
 ## Key Technologies
 

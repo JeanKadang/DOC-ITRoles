@@ -5,6 +5,8 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors the DevSecOps Engineer; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DevSecOps Architect is responsible for designing and governing the strategy, frameworks, and tooling that embed security into every stage of the software development lifecycle (SDLC) and CI/CD pipeline. This role bridges the worlds of software engineering, DevOps platform engineering, and security - ensuring that security is shifted left and treated as a first-class engineering concern rather than a gate at the end of delivery. The DevSecOps Architect defines standards for code security, supply chain security, container security, secrets management, and infrastructure security as code, and ensures these are implemented consistently across all engineering teams.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — DevSecOps control framework, pipeline security architecture, and supply chain security standards across the chapter
+- **Experience Anchor:** 8+ years in security or DevOps architecture with demonstrated DevSecOps programme ownership — operates independently on domain-wide DevSecOps architecture decisions
+- **Out of Scope:** Enterprise security policy and risk framework (CISO/Security Architects-owned, this role aligns to it); DevOps CI/CD platform design (DevOps Architect-owned, this role embeds security into it); application-level secure coding practices (Software Engineers-owned, this role defines requirements)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** the DevSecOps Engineer on implementation blockers and findings
 
 ## Business Impact
 
@@ -77,13 +87,13 @@ The DevSecOps Architect is responsible for designing and governing the strategy,
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| CISO / Security Architects: | Align DevSecOps controls with enterprise security policy and risk framework |
-| DevOps Architect / Platform Engineering Architect: | Embed security into CI/CD platforms as first-class capabilities |
-| Software Engineers / Development Teams: | Define security requirements and provide enablement |
-| Solution Architects: | Ensure solution designs include security testing and supply chain considerations |
-| Compliance / Audit: | Provide evidence of security controls in the pipeline for regulatory requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CISO / Security Architects | Align DevSecOps controls with enterprise security policy and risk framework | Governed By |
+| DevOps Architect / Platform Engineering Architect | Embed security into CI/CD platforms as first-class capabilities | Collaborates |
+| Software Engineers / Development Teams | Define security requirements and provide enablement | Provides To |
+| Solution Architects | Ensure solution designs include security testing and supply chain considerations | Provides To |
+| Compliance / Audit | Provide evidence of security controls in the pipeline for regulatory requirements | Provides To |
 
 ## Key Technologies
 

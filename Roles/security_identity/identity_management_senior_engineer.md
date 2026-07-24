@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | Identity Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Identity Management Senior Engineer leads the implementation and optimization of enterprise identity management solutions. This role provides technical leadership for identity systems while working closely with architects to translate identity strategies into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced identity solution design and delivery within the Identity Management Architect's reference architecture
+- **Experience Anchor:** 5+ years in identity engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Identity management architecture and standards (Architect-owned); access management (authorization) implementation (Access Management Senior Engineers-owned, this role integrates with it); cloud identity service selection (Cloud Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Identity Management Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Identity Management Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Identity Management Architect | Solution design and implementation strategy |
-| Identity Management Product Owner | Technical planning and roadmap execution |
-| Access Management Senior Engineers | Integrated IAM solutions |
-| Cloud Senior Engineers | Cloud identity solutions |
-| Identity Management Engineers | Technical implementation |
-| application architects | Complex identity requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Identity Management Architect | Solution design and implementation strategy | Escalates To |
+| Identity Management Product Owner | Technical planning and roadmap execution | Collaborates |
+| Access Management Senior Engineers | Integrated IAM solutions | Collaborates |
+| Cloud Senior Engineers | Cloud identity solutions | Collaborates |
+| Identity Management Engineers | Technical implementation | Provides To |
+| application architects | Complex identity requirements | Provides To |
 
 ## Key Technologies
 

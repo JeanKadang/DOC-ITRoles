@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | SimpliVity Backup Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The SimpliVity Backup Engineer implements and maintains backup and recovery operations using HPE SimpliVity's built-in capabilities. Working with the SimpliVity Backup Architect and Product Owner, this role ensures reliable data protection for workloads running on the SimpliVity platform.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of SimpliVity backup configuration and VM backup operation tasks to defined standards
+- **Experience Anchor:** 1-3 years in backup or virtualisation engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** SimpliVity architecture and solution design (Senior Engineers and the Architect-owned); VM-level backup operations ownership (VMware Engineers-owned, this role coordinates with it); backup monitoring tooling design (Observability Engineers-owned, this role implements monitoring within it)
+- **Escalates To:** SimpliVity Backup Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on backup and recovery requirements
 
 ## Business Impact
 
@@ -61,13 +71,13 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| SimpliVity Backup Product Owner | Task prioritization |
-| VMware Engineers | Virtual machine backup operations |
-| Observability Engineers | Backup monitoring implementation |
-| SimpliVity Backup Architect | Implementation activities |
-| application teams | Backup and recovery requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| SimpliVity Backup Product Owner | Task prioritization | Consumes From |
+| VMware Engineers | Virtual machine backup operations | Collaborates |
+| Observability Engineers | Backup monitoring implementation | Collaborates |
+| SimpliVity Backup Architect | Implementation activities | Escalates To |
+| application teams | Backup and recovery requirements | Provides To |
 
 ## Key Technologies
 

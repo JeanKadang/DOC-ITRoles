@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Identity and Access Governance Specialist owns the Identity Governance and Administration (IGA) function across the organisation — the operational and technical layer that answers the question: who has what access, and is it appropriate? This role is distinct from the Identity Management Senior Engineer (which focuses on authentication protocols, federation, and SSO): the Identity and Access Governance Specialist focuses on the governance layer — designing and operating access certification campaigns, entitlement management catalogues, role mining and RBAC/ABAC engineering, Joiner/Mover/Leaver (JML) lifecycle automation, and Segregation of Duties (SoD) enforcement. The Specialist operates IGA platforms (SailPoint IdentityNow/IIQ, Saviynt, Omada Identity, Microsoft Entra ID Governance) and integrates them with HR systems (Workday, SAP) to drive fully automated, auditable, and compliant identity lifecycle processes at enterprise scale.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — identity governance and administration (IGA) platform operations, access certification, and segregation-of-duties (SoD) compliance
+- **Experience Anchor:** 5+ years in identity governance with demonstrated IGA platform ownership — operates independently within the Identity Management Architect's framework
+- **Out of Scope:** Enterprise identity architecture (Identity Management Architect-owned, this role operates IGA platforms within it); broader security control framework (Security Architect-owned, this role aligns SoD policy to it); privileged account vaulting operations (PAM Architect and Engineer-owned, this role coordinates certification scope with them)
+- **Escalates To:** Identity Management Architect — platform or design decisions requiring architectural guidance
+- **Escalated To By:** application owners on entitlement modelling and certification configuration
 
 ## Business Impact
 
@@ -81,17 +91,17 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Security Architect | SoD policy alignment with the broader security control framework, risk acceptance processes for SoD exceptions, and audit preparation for identity governance controls |
-| application owners | The enterprise to onboard applications into the IGA platform, design entitlement models and role structures, and maintain application-specific certification and SoD configurations |
-| Compliance and Risk team | Identity governance evidence, access certification results, and SoD compliance reports in support of ISO 27001, SOC 2, SOX, and regulatory assessments |
-| Internal and external audit teams | Identity governance evidence, access certification results, and SoD compliance reports in support of ISO 27001, SOC 2, SOX, and regulatory assessments |
-| Access Management Senior Engineer | Identity engineering team on entitlement provisioning integration — ensuring IGA-driven provisioning events are correctly executed at the application and directory layer |
-| CyberArk Identity | Or equivalent identity governance tooling to ensure that identity lifecycle events from the IGA platform are reflected in privileged account and vault membership management |
-| Identity Management Architect | — operates IGA platforms within the enterprise identity architecture framework and escalates platform or design decisions requiring architectural guidance |
-| Privileged Access Management (PAM) Architect and Engineer | Ensure privileged account entitlements are included in IGA certification scope, SoD analysis, and JML deprovisioning workflows — maintaining a unified governance view across standard and privileged identities |
-| HR systems teams | (Workday, SAP HRIS owners) to maintain JML integration reliability — managing attribute mapping updates, HR event trigger configurations, and data quality issues that affect automated provisioning |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security Architect | SoD policy alignment with the broader security control framework, risk acceptance processes for SoD exceptions, and audit preparation for identity governance controls | Governed By |
+| application owners | Onboard applications into the IGA platform, design entitlement models and role structures, and maintain application-specific certification and SoD configurations | Collaborates |
+| Compliance and Risk team | Identity governance evidence, access certification results, and SoD compliance reports in support of ISO 27001, SOC 2, SOX, and regulatory assessments | Provides To |
+| Internal and external audit teams | Identity governance evidence, access certification results, and SoD compliance reports in support of ISO 27001, SOC 2, SOX, and regulatory assessments | Provides To |
+| Access Management Senior Engineer | Coordinate with the identity engineering team on entitlement provisioning integration — ensuring IGA-driven provisioning events are correctly executed at the application and directory layer | Collaborates |
+| CyberArk Identity (or equivalent) | Ensure identity lifecycle events from the IGA platform are reflected in privileged account and vault membership management | Collaborates |
+| Identity Management Architect | Operates IGA platforms within the enterprise identity architecture framework and escalates platform or design decisions requiring architectural guidance | Escalates To |
+| Privileged Access Management (PAM) Architect and Engineer | Ensure privileged account entitlements are included in IGA certification scope, SoD analysis, and JML deprovisioning workflows — maintaining a unified governance view across standard and privileged identities | Collaborates |
+| HR systems teams (Workday, SAP HRIS owners) | Maintain JML integration reliability — managing attribute mapping updates, HR event trigger configurations, and data quality issues that affect automated provisioning | Consumes From |
 
 ## Key Technologies
 

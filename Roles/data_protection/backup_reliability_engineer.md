@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Commvault Senior Engineer or SimpliVity Backup Senior Engineer (depending on platform assignment) |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Backup Reliability Engineer focuses on ensuring the consistency, reliability, and effectiveness of backup systems across the enterprise. This role applies Site Reliability Engineering principles to backup operations, emphasizing automation, metrics, and continuous improvement to data protection infrastructure.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — backup infrastructure reliability engineering, resilience implementation, and performance monitoring integration
+- **Experience Anchor:** 3-5 years in backup or site reliability engineering — operates independently within the relevant Backup Architect's resilience design
+- **Out of Scope:** Backup platform architecture and resilience design (Backup Architects-owned, this role implements it); underlying storage reliability (Storage Engineers-owned, this role coordinates with it); CI/CD toolchain integration ownership (DevOps Engineers-owned, this role coordinates with it)
+- **Escalates To:** Commvault Senior Engineer or SimpliVity Backup Senior Engineer, depending on platform assignment — implementation-level reliability questions
+- **Escalated To By:** Risk Management on data protection assurance status
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Backup Senior Engineers | Implementation |
-| Observability Engineers | Monitoring implementation |
-| Storage Engineers | Storage reliability |
-| Backup Product Owner | Reliability metrics |
-| Risk Management | Data protection assurance |
-| Backup Architects | Resilience design |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Backup Senior Engineers | Implementation | Escalates To |
+| Observability Engineers | Monitoring implementation | Collaborates |
+| Storage Engineers | Storage reliability | Collaborates |
+| Backup Product Owner | Reliability metrics | Provides To |
+| Risk Management | Data protection assurance | Provides To |
+| Backup Architects | Resilience design | Consumes From |
 
 ## Key Technologies
 

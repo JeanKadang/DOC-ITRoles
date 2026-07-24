@@ -10,6 +10,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 - **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
+  Mode backfilled for the Security & Identity chapter (#88, batch 6/7:
+  36 of 219 files — the domain's 2 governance specialists, GRC Risk
+  Compliance Analyst and Business Continuity/DR Manager, were already on
+  the modern template).** Security, Security Cross-Platform, Security &
+  Identity, Data Protection, and Directory Services all follow the
+  standard IC-ladder pattern: Engineer reports to Senior Engineer, Senior
+  Engineer and Product Owner report to the Security & Identity Chapter
+  Lead. Storage-style parallel ladders (Commvault vs. SimpliVity backup)
+  each report straight to the Chapter Lead rather than to each other, same
+  as the Storage/Qumulo Storage pattern from batch 5. Six Engineer- or
+  Senior-Engineer-grade specialists with no dedicated tier of their own
+  report to their nearest Architect or Senior Engineer: DevSecOps Engineer
+  → DevSecOps Architect, Security Automation Engineer → Security
+  Cross-Platform Senior Engineer, Cloud Security Posture Manager →
+  escalates to Security Cross-Platform Architect, Identity Governance
+  Specialist → escalates to Identity Management Architect, Privileged
+  Access Management Engineer → PAM Architect (no PAM Senior Engineer tier
+  exists), and Backup Reliability Engineer → "Commvault Senior Engineer or
+  SimpliVity Backup Senior Engineer, depending on platform assignment"
+  (mirroring the DevOps chapter's Automation Framework Engineer pattern).
+  Fixed a malformed interactions-table row in `commvault_product_owner.md`
+  ("IT Operations Manager | Or **Infrastructure Director**", referencing
+  roles that don't exist in the catalog) the same way as the
+  `qumulo_storage_engineer.md` fix in batch 5.
+- **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
   Mode backfilled for the Data & AI chapter (#87, batch 5/7: 27 of 219
   files — Data Management's 2 governance specialists, Data Governance
   Lead and Data Privacy Officer, were already on the modern template).**

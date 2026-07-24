@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors the Privileged Access Management Engineer; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Privileged Access Management (PAM) Architect designs, governs, and evolves the organisation's strategy and technical architecture for securing privileged credentials, accounts, and access paths across on-premises, cloud, and hybrid environments. Privileged access - administrative accounts, service accounts, API keys, and secrets - represents the highest-value attack surface in any organisation. This role ensures that privileged access is vaulted, just-in-time, audited, and aligned to Zero Trust principles, preventing lateral movement and credential-based attacks.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — privileged access management (PAM) architecture, vaulting strategy, and just-in-time access patterns across the chapter
+- **Experience Anchor:** 8+ years in PAM or identity security architecture with demonstrated architecture-level delivery — operates independently on domain-wide PAM architecture decisions
+- **Out of Scope:** Standard identity lifecycle management (Identity Management Architect-owned, this role coordinates PIM/governance integration with it); enterprise security risk framework (Security Architect / CISO-owned, this role aligns PAM strategy to it); cloud landing zone design (Cloud Architects-owned, this role defines privileged access patterns within it)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** the Privileged Access Management Engineer on design-level issues and platform limitations
 
 ## Business Impact
 
@@ -76,14 +86,14 @@ The Privileged Access Management (PAM) Architect designs, governs, and evolves t
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Identity Management Architect: | Coordinate on Entra ID PIM, access governance, and identity lifecycle integration |
-| Security Architect / CISO: | Align PAM strategy with enterprise security architecture and risk management |
-| Cloud Architects (Azure, AWS, GCP): | Define cloud-native privileged access patterns and JIT models |
-| IT Operations / Sysadmins: | Drive on-boarding of server and infrastructure privileged accounts |
-| Database Administrators: | On-board database privileged credentials to PAM vaulting |
-| Compliance / Audit: | Provide PAM control evidence and attestation for regulatory requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Identity Management Architect | Coordinate on Entra ID PIM, access governance, and identity lifecycle integration | Collaborates |
+| Security Architect / CISO | Align PAM strategy with enterprise security architecture and risk management | Governed By |
+| Cloud Architects (Azure, AWS, GCP) | Define cloud-native privileged access patterns and JIT models | Collaborates |
+| IT Operations / Sysadmins | Drive on-boarding of server and infrastructure privileged accounts | Provides To |
+| Database Administrators | On-board database privileged credentials to PAM vaulting | Provides To |
+| Compliance / Audit | Provide PAM control evidence and attestation for regulatory requirements | Provides To |
 
 ## Key Technologies
 

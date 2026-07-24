@@ -5,6 +5,8 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Security Cross-Platform Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Cross-Platform Engineer implements and maintains security controls across multiple technology domains. This role ensures the consistent application of security measures in various environments including Windows, Linux, cloud platforms, and container infrastructure, supporting the organization's overall security posture.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of cross-platform security control implementation tasks
+- **Experience Anchor:** 1-3 years in security engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Cross-platform security standards (Senior Engineers and the Architect-owned); domain-specific security architecture (domain architects-owned, this role receives technical input from them); security incident response ownership (security operations-owned, this role coordinates with it)
+- **Escalates To:** Security Cross-Platform Senior Engineer — complex implementations
+- **Escalated To By:** operations teams on security maintenance across multiple domains
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Security Cross-Platform Engineer implements and maintains security controls 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| domain-specific Engineers | Implement consistent security controls |
-| Security Cross-Platform Senior Engineers | Complex implementations |
-| operations teams | Multiple domains on security maintenance |
-| security operations | Monitoring and incident response |
-| domain architects with technical input | Security implementations |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| domain-specific Engineers | Implement consistent security controls | Collaborates |
+| Security Cross-Platform Senior Engineers | Complex implementations | Escalates To |
+| operations teams | Multiple domains on security maintenance | Provides To |
+| security operations | Monitoring and incident response | Collaborates |
+| domain architects | Provide technical input on security implementations | Consumes From |
 
 ## Key Technologies
 

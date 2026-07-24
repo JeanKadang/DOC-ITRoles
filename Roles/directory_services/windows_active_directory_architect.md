@@ -5,6 +5,8 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Windows Active Directory Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Active Directory Architect designs AD structure, security models, and all Tier 0 infrastructure across the organization. This role provides technical leadership for domain controllers and all servers involved in directory services, which fall under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Active Directory and hybrid identity infrastructure architecture across the chapter
+- **Experience Anchor:** 8+ years in directory services or identity infrastructure architecture with demonstrated architecture-level delivery — operates independently on domain-wide AD architecture decisions
+- **Out of Scope:** Broader Windows Server infrastructure architecture (Windows Server Architect-owned, this role aligns AD architecture to it); identity governance and IAM strategy beyond directory infrastructure (Identity Management Architect-owned, this role integrates with it); authorization framework design (Access Management Architect-owned, this role coordinates with it)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Windows Active Directory Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Windows Active Directory Architect designs AD structure, security models, an
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Architect | Overall Windows infrastructure |
-| Identity Management Architect | Integrated identity solutions |
-| Access Management Architect | Authorization frameworks |
-| Security Architects | Directory security controls |
-| Cloud Platform Architects | Microsoft Entra ID and hybrid identity |
-| application architects | Authentication requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Architect | Overall Windows infrastructure | Collaborates |
+| Identity Management Architect | Integrated identity solutions | Collaborates |
+| Access Management Architect | Authorization frameworks | Collaborates |
+| Security Architects | Directory security controls | Governed By |
+| Cloud Platform Architects | Microsoft Entra ID and hybrid identity | Collaborates |
+| application architects | Authentication requirements | Provides To |
 
 ## Key Technologies
 

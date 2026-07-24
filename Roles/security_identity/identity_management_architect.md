@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Identity Management Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Identity Management Architect designs and oversees the organization's identity management strategy and solutions. This role focuses on creating a secure, scalable, and efficient identity infrastructure that supports authentication, lifecycle management, and identity governance across the enterprise.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — identity management architecture, directory services strategy, and hybrid identity standards across the chapter
+- **Experience Anchor:** 8+ years in identity architecture with demonstrated architecture-level delivery — operates independently on domain-wide identity architecture decisions
+- **Out of Scope:** Access management (authorization) architecture (Access Management Architect-owned, this role integrates identity with it); Active Directory infrastructure operations (Windows Server Architect-owned, this role aligns to it); application-level identity integration detail (application architects-owned, this role provides standards to them)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Identity Management Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Identity Management Architect designs and oversees the organization's identi
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Cloud Platform Architects | Cloud identity strategies |
-| Security Architects | Identity security controls |
-| Windows Server Architect | Active Directory architecture |
-| Access Management Architect | Integrated IAM solutions |
-| application architects | Application identity integration |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Cloud Platform Architects | Cloud identity strategies | Collaborates |
+| Security Architects | Identity security controls | Governed By |
+| Windows Server Architect | Active Directory architecture | Collaborates |
+| Access Management Architect | Integrated IAM solutions | Collaborates |
+| application architects | Application identity integration | Provides To |
 
 ## Key Technologies
 

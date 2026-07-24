@@ -5,6 +5,8 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Security Cross-Platform Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Cross-Platform Architect designs and develops comprehensive security frameworks, standards, and architectures that span multiple technology domains. This role ensures consistent security controls and governance across all infrastructure platforms including on-premises servers, cloud environments, container platforms, and virtualization infrastructure.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — cross-platform security standards ensuring consistent controls across domain-specific security architectures
+- **Experience Anchor:** 8+ years in security architecture with demonstrated cross-platform or multi-domain security ownership — operates independently on domain-wide cross-platform security decisions
+- **Out of Scope:** Domain-specific security control implementation detail (domain-specific architects-owned, this role sets cross-cutting standards); enterprise security strategy setting (Security & Identity teams-owned, this role aligns to it); infrastructure onboarding process design (Enterprise Infrastructure Onboarding team-owned, this role embeds controls into it)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Security Cross-Platform Senior Engineers on technical design and implementation questions
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Security Cross-Platform Architect designs and develops comprehensive securit
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| domain-specific architects | Security standards are implemented consistently |
-| Security & Identity teams | Align on enterprise security strategy |
-| Enterprise Infrastructure Onboarding team | Embed security controls in onboarding processes |
-| DevOps teams | Integrate security into pipelines across multiple platforms |
-| senior leadership | Cross-platform security risks and mitigation strategies |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| domain-specific architects | Security standards are implemented consistently | Governed By |
+| Security & Identity teams | Align on enterprise security strategy | Governed By |
+| Enterprise Infrastructure Onboarding team | Embed security controls in onboarding processes | Provides To |
+| DevOps teams | Integrate security into pipelines across multiple platforms | Provides To |
+| senior leadership | Cross-platform security risks and mitigation strategies | Provides To |
 
 ## Key Technologies
 

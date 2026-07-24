@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Access Management Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Access Management Engineer implements and maintains access management systems across the organization. Working with the Access Management Architect and Product Owner, this role ensures secure, efficient, and appropriate access to systems and data for users and applications.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of access provisioning and control configuration tasks to defined standards
+- **Experience Anchor:** 1-3 years in access management or identity engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Access management architecture and solution design (Senior Engineers and the Architect-owned); identity (authentication) provisioning (Identity Management Engineers-owned, this role integrates with it); broader security control implementation (Security Engineers-owned, this role coordinates with it)
+- **Escalates To:** Access Management Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on access requirements
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Access Management Engineer implements and maintains access management system
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Access Management Product Owner | Task prioritization |
-| Identity Management Engineers | Integrated IAM solutions |
-| Security Engineers | Access security controls |
-| Access Management Architect | Implementation activities |
-| application teams | Access requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Access Management Product Owner | Task prioritization | Consumes From |
+| Identity Management Engineers | Integrated IAM solutions | Collaborates |
+| Security Engineers | Access security controls | Collaborates |
+| Access Management Architect | Implementation activities | Escalates To |
+| application teams | Access requirements | Provides To |
 
 ## Key Technologies
 
