@@ -5,6 +5,8 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Endpoint Management Architect is responsible for the strategic design, governance, and evolution of the organisation's enterprise endpoint management platform. This role defines the architecture for modern unified endpoint management (UEM) across all device types - Windows, macOS, iOS, Android, and Linux - ensuring security, compliance, and a productive user experience at scale. The Architect leads the transition from legacy management tooling (SCCM/ConfigMgr co-management) toward cloud-native Microsoft Intune and Microsoft Endpoint Manager (MEM) architectures.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — UEM platform architecture and technology selection
+- **Experience Anchor:** Minimum 8 years in endpoint/UEM engineering, with at least 3 years in an architecture role — operates independently on domain-wide architecture decisions
+- **Out of Scope:** Security policy requirements for endpoints (with CISO); HR processes for device onboarding and offboarding; budget allocation for endpoint tooling licensing; application portfolio rationalisation (with App teams)
+- **Escalates To:** End User & Workplace Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and decisions beyond endpoint management scope
+- **Escalated To By:** Endpoint Management Senior Engineers and Engineers on design-level questions and standards clarification
 
 ## Business Impact
 
@@ -97,14 +107,16 @@ The Endpoint Management Architect is responsible for the strategic design, gover
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Security Architects: | Align endpoint controls with Zero Trust and SIEM/SOAR integration requirements |
-| Identity Architects: | Coordinate on Microsoft Entra ID device identity, Conditional Access, and SSO |
-| Desktop/Endpoint Engineers: | Provide architecture direction and technical governance |
-| Cloud Architects: | Ensure endpoint policies integrate with cloud workloads and cloud-joined devices |
-| Service Management: | Align endpoint change processes with ITSM workflows (ServiceNow, etc.) |
-| CISO / Security Teams: | Provide compliance posture reporting and drive security baseline adoption |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security Architects: | Align endpoint controls with Zero Trust and SIEM/SOAR integration requirements | Governed By |
+| Identity Architects: | Coordinate on Microsoft Entra ID device identity, Conditional Access, and SSO | Collaborates |
+| Desktop/Endpoint Engineers: | Provide architecture direction and technical governance | Provides To |
+| Cloud Architects: | Ensure endpoint policies integrate with cloud workloads and cloud-joined devices | Collaborates |
+| Service Management: | Align endpoint change processes with ITSM workflows (ServiceNow, etc.) | Governed By |
+| CISO / Security Teams: | Provide compliance posture reporting and drive security baseline adoption | Governed By |
 
 ## Key Technologies
 

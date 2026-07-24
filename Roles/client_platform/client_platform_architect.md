@@ -5,6 +5,8 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Client Platform Architect is responsible for the strategic design, governanc
 The Architect leads the transition from legacy imaging approaches (MDT/WDS) toward cloud-native, zero-touch provisioning models, integrating with Microsoft Intune and Apple Business Manager while establishing cross-platform automation using tools such as Ansible and Fleet.dm. The role governs hardware lifecycle standards, OS hardening baselines aligned to CIS Benchmarks and DISA STIGs, and telemetry pipelines that provide visibility across the full client estate.
 
 This role operates at the intersection of engineering rigour and business strategy, translating workforce technology requirements into actionable OS platform roadmaps. The Architect collaborates closely with Endpoint Management, Security, Service Desk, HR, and Procurement to ensure client platform decisions support the broader IT and organisational strategy — while maintaining a clear domain boundary from the UEM platform (Intune/SCCM policy) and Modern Workplace (M365/Teams) domains.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — client OS engineering reference architecture and standards across Windows, macOS, and Linux desktop
+- **Experience Anchor:** Minimum 8 years in endpoint or client platform engineering, with at least 3 years in an architecture or technical lead role — operates independently on domain-wide architecture decisions
+- **Out of Scope:** UEM policy and MDM configuration detail (owned by Endpoint Management); enterprise security policy and Zero Trust strategy (Security Architecture-owned); procurement commercial negotiations and contract terms; enterprise-wide tooling consolidation decisions (architecture review board)
+- **Escalates To:** End User & Workplace Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and decisions beyond client platform scope
+- **Escalated To By:** Client Platform Senior Engineers and Engineers on design-level questions and standards clarification
 
 ## Business Impact
 
@@ -133,16 +143,18 @@ This role operates at the intersection of engineering rigour and business strate
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Endpoint Management Architect | Align OS engineering with UEM platform strategy; define domain boundaries between image build and MDM policy layer |
-| Security Architect | Define OS hardening baselines, integrate client telemetry with SIEM, align with Zero Trust endpoint model |
-| Modern Workplace Architect | Ensure client OS standards support M365, Teams, and collaboration tooling requirements |
-| Service Desk Lead | Define Tier-2/3 escalation boundaries and OS-level support handoff procedures |
-| HR / People Operations | Align device provisioning workflows with employee onboarding and offboarding processes |
-| Procurement | Govern hardware lifecycle standards, OEM selection criteria, and device refresh investment planning |
-| Client Platform Senior Engineers | Provide architectural direction, review engineering designs, mentor on platform decisions |
-| Infrastructure / Server OS Architects | Coordinate on shared automation tooling, scripting standards, and cross-platform configuration management patterns |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Endpoint Management Architect | Align OS engineering with UEM platform strategy; define domain boundaries between image build and MDM policy layer | Collaborates |
+| Security Architect | Define OS hardening baselines, integrate client telemetry with SIEM, align with Zero Trust endpoint model | Governed By |
+| Modern Workplace Architect | Ensure client OS standards support M365, Teams, and collaboration tooling requirements | Collaborates |
+| Service Desk Lead | Define Tier-2/3 escalation boundaries and OS-level support handoff procedures | Collaborates |
+| HR / People Operations | Align device provisioning workflows with employee onboarding and offboarding processes | Collaborates |
+| Procurement | Govern hardware lifecycle standards, OEM selection criteria, and device refresh investment planning | Collaborates |
+| Client Platform Senior Engineers | Provide architectural direction, review engineering designs, mentor on platform decisions | Provides To |
+| Infrastructure / Server OS Architects | Coordinate on shared automation tooling, scripting standards, and cross-platform configuration management patterns | Collaborates |
 
 ## Key Technologies
 

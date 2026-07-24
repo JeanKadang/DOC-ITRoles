@@ -5,6 +5,8 @@
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | Modern Workplace Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Modern Workplace Senior Engineer implements, manages, and optimises the organisation's Microsoft 365 platform workloads at a deep technical level. This role acts as the primary technical specialist and escalation point for Exchange Online, Microsoft Teams, SharePoint Online, OneDrive, and Microsoft Purview compliance capabilities. The Senior Engineer leads complex configuration projects, drives automation of M365 administration, and ensures the platform operates securely, reliably, and in alignment with architecture standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — detailed engineering design and delivery within the M365 reference architecture
+- **Experience Anchor:** 5+ years in M365/collaboration engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** M365 tenant architecture and governance standards (Architect-owned); enterprise identity architecture (Identity Engineers-owned); legal hold policy design (Legal/Compliance-owned)
+- **Escalates To:** Modern Workplace Architect — architecture-level questions and design direction
+- **Escalated To By:** Modern Workplace Engineers on complex M365 configuration and security-event issues
 
 ## Business Impact
 
@@ -91,13 +101,15 @@ The Modern Workplace Senior Engineer implements, manages, and optimises the orga
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Modern Workplace Architect: | Receive design direction; implement architecture standards |
-| Help Desk: | Provide escalation support and knowledge transfer for M365 issues |
-| Security Engineers: | Implement M365 security configurations and respond to email-based threat events |
-| Identity Engineers: | Coordinate on Entra ID, SSO, and guest access configurations |
-| Legal / Compliance: | Execute eDiscovery and hold configurations for legal requirements |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Modern Workplace Architect: | Receive design direction; implement architecture standards | Escalates To |
+| Help Desk: | Provide escalation support and knowledge transfer for M365 issues | Provides To |
+| Security Engineers: | Implement M365 security configurations and respond to email-based threat events | Collaborates |
+| Identity Engineers: | Coordinate on Entra ID, SSO, and guest access configurations | Collaborates |
+| Legal / Compliance: | Execute eDiscovery and hold configurations for legal requirements | Governed By |
 
 ## Key Technologies
 

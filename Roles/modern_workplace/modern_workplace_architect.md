@@ -5,6 +5,8 @@
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Modern Workplace Architect is responsible for designing, governing, and evolving the organisation's Microsoft 365 and digital workplace platform strategy. This role owns the architecture across Exchange Online, Microsoft Teams, SharePoint Online, OneDrive, Viva, and the Microsoft 365 security and compliance stack - ensuring these platforms are designed to maximise workforce productivity, collaboration, governance, and security at enterprise scale. The Architect leads Microsoft 365 workload migrations, tenant governance design, and the adoption of emerging M365 capabilities including Microsoft 365 Copilot.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Microsoft 365 tenant architecture and governance standards
+- **Experience Anchor:** Minimum 8 years in M365/collaboration engineering, with at least 3 years in an architecture role — operates independently on domain-wide architecture decisions
+- **Out of Scope:** Security policy for M365 workloads (with CISO); legal hold and eDiscovery requirements (with Legal); HR processes supporting collaboration tool adoption; licensing strategy and commercial decisions (with Procurement)
+- **Escalates To:** End User & Workplace Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and decisions beyond M365 platform scope
+- **Escalated To By:** Modern Workplace Senior Engineers and Engineers on design-level questions and standards clarification
 
 ## Business Impact
 
@@ -97,13 +107,15 @@ The Modern Workplace Architect is responsible for designing, governing, and evol
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Endpoint Management Architect: | Align device compliance policies with M365 Conditional Access |
-| Identity Architect: | Coordinate on Entra ID, SSO, and guest identity design |
-| Security Architect / CISO: | Embed M365 security controls within enterprise security framework |
-| HR / People Operations: | Align communication and collaboration tools with workforce needs |
-| Legal / Compliance: | Design eDiscovery, retention, and DLP policies to meet regulatory obligations |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Endpoint Management Architect: | Align device compliance policies with M365 Conditional Access | Collaborates |
+| Identity Architect: | Coordinate on Entra ID, SSO, and guest identity design | Collaborates |
+| Security Architect / CISO: | Embed M365 security controls within enterprise security framework | Governed By |
+| HR / People Operations: | Align communication and collaboration tools with workforce needs | Collaborates |
+| Legal / Compliance: | Design eDiscovery, retention, and DLP policies to meet regulatory obligations | Governed By |
 
 ## Key Technologies
 

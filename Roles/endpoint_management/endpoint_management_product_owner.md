@@ -5,6 +5,8 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |
+| **Reports To** | End User & Workplace Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Endpoint Management Product Owner (PO) owns the product vision, roadmap, and backlog for the organisation's enterprise endpoint management platform. This role bridges business requirements - security, compliance, workforce productivity, and cost - with the engineering team's delivery capacity. The PO prioritises work across the endpoint estate (Windows, macOS, iOS, Android) and ensures the platform evolves to meet workforce and security needs while delivering measurable business value.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — endpoint management backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Technical implementation approach (Architect/Senior Engineer-owned); security policy design (with CISO); licensing commercial negotiations (with Procurement); organisational onboarding and change management (with HR)
+- **Escalates To:** End User & Workplace Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Endpoint Management Architect on roadmap and architecture-alignment questions
 
 ## Business Impact
 
@@ -70,13 +80,15 @@ The Endpoint Management Product Owner (PO) owns the product vision, roadmap, and
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Endpoint Management Architect: | Align roadmap with architecture decisions and standards |
-| Security / CISO: | Translate security requirements and compliance obligations into backlog items |
-| HR / People Operations: | Represent onboarding and offboarding device provisioning requirements |
-| Help Desk: | Surface operational pain points for backlog prioritisation |
-| Finance / Procurement: | Manage Microsoft licensing alignment and renewals |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Endpoint Management Architect: | Align roadmap with architecture decisions and standards | Collaborates |
+| Security / CISO: | Translate security requirements and compliance obligations into backlog items | Consumes From |
+| HR / People Operations: | Represent onboarding and offboarding device provisioning requirements | Consumes From |
+| Help Desk: | Surface operational pain points for backlog prioritisation | Consumes From |
+| Finance / Procurement: | Manage Microsoft licensing alignment and renewals | Collaborates |
 
 ## Key Technologies
 
