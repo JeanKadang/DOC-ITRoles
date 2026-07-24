@@ -5,6 +5,8 @@
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Enterprise Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Enterprise Architecture Senior Engineer operates at the intersection of technical delivery and architectural governance. This role maintains and develops the organization's enterprise architecture repository, tooling, and processes — ensuring that architecture artifacts, patterns, and standards are accurately documented, accessible, and actionable for engineering and architecture teams. The Senior Engineer supports the Enterprise Architect and Solution Architect in running architecture governance processes, building reference architectures, and enabling teams across the organization to apply enterprise architecture standards in their day-to-day work.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain — operational and documentation support for enterprise architecture governance processes (architecture repository, CMDB accuracy, review board administration)
+- **Experience Anchor:** 5+ years in architecture, ITSM, or technical documentation roles — operates independently maintaining the architecture governance operating rhythm
+- **Out of Scope:** Enterprise architecture standards and framework decisions (Enterprise Architect-owned); solution-level design decisions (Solution Architect-owned); domain-specific architecture decisions (domain Architects-owned)
+- **Escalates To:** Enterprise Architect — governance process gaps and architecture data quality issues requiring authority to resolve
+- **Escalated To By:** domain architects on architecture repository and documentation questions
 
 ## Business Impact
 
@@ -64,15 +74,17 @@ The Enterprise Architecture Senior Engineer operates at the intersection of tech
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| domain architects | (Cloud, Security, Network, Data, etc.) to gather, review, and maintain accurate architecture data |
-| delivery teams | Understanding and applying architecture standards and documentation requirements |
-| CMDB and IT asset management teams | Maintain accurate application and technology inventory data |
-| CTO/CIO office | Architecture reporting, maturity assessments, and executive communications |
-| Enterprise Architect | Providing operational and documentation support for governance processes |
-| Solution Architect | Providing operational and documentation support for governance processes |
-| architecture review board | Chaired by the Enterprise Architect |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| domain architects | (Cloud, Security, Network, Data, etc.) gathers, reviews, and maintains accurate architecture data from | Consumes From |
+| delivery teams | Understanding and applying architecture standards and documentation requirements | Provides To |
+| CMDB and IT asset management teams | Maintain accurate application and technology inventory data | Collaborates |
+| CTO/CIO office | Architecture reporting, maturity assessments, and executive communications | Provides To |
+| Enterprise Architect | Providing operational and documentation support for governance processes | Escalates To |
+| Solution Architect | Providing operational and documentation support for governance processes | Provides To |
+| architecture review board | Chaired by the Enterprise Architect | Provides To |
 
 ## Key Technologies
 

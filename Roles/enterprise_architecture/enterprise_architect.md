@@ -5,6 +5,8 @@
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | Solution Architect; Enterprise Architecture Senior Engineer |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Enterprise Architect develops and maintains the overall technological vision and roadmap for the organization. This role designs comprehensive enterprise-wide architectures that align technology investments with business strategy, ensuring that disparate systems and platforms work together effectively within a cohesive framework.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, organisation-wide — enterprise architecture framework, cross-domain standards, and technology roadmap governance, referenced and governed-by across every domain in the catalog
+- **Experience Anchor:** Minimum 10 years in enterprise/solution architecture, with demonstrated organisation-wide governance impact — operates independently, chairs the architecture review board
+- **Out of Scope:** Business strategy priorities, investment priorities, and commercial decisions (business/CTO-CIO-owned); domain-specific technical designs and implementation approaches (domain Architects-owned); individual domain architecture decisions and project-level design choices
+- **Escalates To:** Service & Governance Chapter Lead and CTO/CIO — enterprise architecture investment, cross-domain governance disputes, and strategic technology direction
+- **Escalated To By:** Solution Architect on decisions with enterprise-wide impact; domain Architects across the catalog on cross-domain integration and standards questions
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Enterprise Architect develops and maintains the overall technological vision
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Business Leaders | Strategic technology alignment |
-| Domain Architects | (Security, Cloud, Network, etc.) on cross-domain integration |
-| Product Owners | Technology roadmap priorities |
-| CTO/CIO | Strategic technology decisions |
-| Senior Engineering Leaders | Architecture implementation |
-| Project and Program Managers | Technology transformation initiatives |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Business Leaders | Strategic technology alignment | Collaborates |
+| Domain Architects | (Security, Cloud, Network, etc.) sets enterprise architecture standards they operate within, on cross-domain integration | Governed By |
+| Product Owners | Technology roadmap priorities | Collaborates |
+| CTO/CIO | Strategic technology decisions | Escalates To |
+| Senior Engineering Leaders | Architecture implementation | Collaborates |
+| Project and Program Managers | Technology transformation initiatives | Collaborates |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
+| **Reports To** | Enterprise Architect |
+| **Direct Reports** | None (technical direction role, not a people manager) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Solution Architect is responsible for designing end-to-end technical solutions for specific projects, programmes, or business problems. Where the Enterprise Architect operates at the strategic portfolio and long-term roadmap level, the Solution Architect works at the *initiative* level - translating defined business requirements into a coherent, feasible technical design that can be handed to engineering teams for delivery. This role is the primary technical authority for a solution's scope: from component selection and integration design to security, performance, and cost considerations. Solution Architects are found across all IT domains and frequently operate in a cross-functional, cross-platform capacity.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, engagement-scoped — solution design and component selection within enterprise architecture standards for a specific initiative or programme
+- **Experience Anchor:** 8+ years in solution/technical architecture with demonstrated delivery of enterprise-scale solutions — operates independently within EA-set guardrails, escalating enterprise-wide-impact decisions
+- **Out of Scope:** Enterprise architecture standards and guardrails (set by the Enterprise Architect); business requirements and scope definition (with Business/PO); budget and commercial decisions (with Finance/Procurement); security policy and organisational risk appetite (with CISO)
+- **Escalates To:** Enterprise Architect — decisions with enterprise-wide impact and guardrail exceptions
+- **Escalated To By:** Engineering Teams on implementation-level design clarification
 
 ## Business Impact
 
@@ -78,14 +88,16 @@ The Solution Architect is responsible for designing end-to-end technical solutio
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architect: | Receive strategic direction, architecture principles, and guardrail policies; escalate decisions with enterprise-wide impact |
-| Product Owner / Programme Manager: | Receive and clarify business requirements; manage scope of design engagement |
-| Security Architect: | Collaborate on security design within the solution; obtain security sign-off |
-| Engineering Teams: | Provide technical direction during delivery; review implementation against design |
-| Domain Architects (Cloud, Network, Data, etc.): | Engage domain specialists for deep-dive design in their areas |
-| Vendors / System Integrators: | Lead technical engagement during procurement and delivery |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architect: | Receive strategic direction, architecture principles, and guardrail policies; escalate decisions with enterprise-wide impact | Escalates To |
+| Product Owner / Programme Manager: | Receive and clarify business requirements; manage scope of design engagement | Consumes From |
+| Security Architect: | Collaborate on security design within the solution; obtain security sign-off | Governed By |
+| Engineering Teams: | Provide technical direction during delivery; review implementation against design | Provides To |
+| Domain Architects (Cloud, Network, Data, etc.): | Engage domain specialists for deep-dive design in their areas | Collaborates |
+| Vendors / System Integrators: | Lead technical engagement during procurement and delivery | Governed By |
 
 ## Key Technologies
 

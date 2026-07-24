@@ -5,6 +5,8 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Enterprise Infrastructure Onboarding Product Owner manages the infrastructure onboarding service portfolio, ensuring that provisioning processes meet business requirements for speed, efficiency, and compliance. This role prioritizes onboarding capabilities, coordinates implementation schedules, and drives adoption of standardized onboarding processes across the organization.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — infrastructure onboarding backlog, service roadmap, and SLA targets
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Architecture design and technical implementation decisions (Architect-owned); ITSM platform configuration and domain-specific tooling decisions; enterprise architecture direction and platform strategy decisions (Enterprise Architect-owned)
+- **Escalates To:** Service & Governance Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Onboarding Architect on roadmap and architecture-alignment questions
 
 ## Business Impact
 
@@ -62,14 +72,16 @@ The Enterprise Infrastructure Onboarding Product Owner manages the infrastructur
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Onboarding Architect | Platform strategy and design |
-| Onboarding Engineers | Implementation priorities |
-| business units | Understand provisioning requirements |
-| domain-specific teams | Service integration |
-| ITSM teams | Service request processes |
-| IT leadership | Onboarding service performance |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Onboarding Architect | Platform strategy and design | Collaborates |
+| Onboarding Engineers | Implementation priorities | Consumes From |
+| business units | Understand provisioning requirements | Consumes From |
+| domain-specific teams | Service integration | Collaborates |
+| ITSM teams | Service request processes | Collaborates |
+| IT leadership | Onboarding service performance | Escalates To |
 
 ## Key Technologies
 

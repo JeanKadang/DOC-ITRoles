@@ -5,6 +5,8 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | Infrastructure Onboarding Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Enterprise Infrastructure Onboarding Senior Engineer leads the implementation of complex infrastructure provisioning and onboarding solutions that span multiple technology domains. This role provides technical leadership for creating standardized, automated, and efficient processes for deploying infrastructure resources.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — detailed engineering design and delivery within the infrastructure onboarding reference architecture
+- **Experience Anchor:** 5+ years in infrastructure engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Enterprise infrastructure provisioning reference architecture (Architect-owned); ITSM platform configuration (ITSM-owned); commercial infrastructure decisions (Procurement-owned)
+- **Escalates To:** Infrastructure Onboarding Architect — architecture-level questions and design direction
+- **Escalated To By:** Infrastructure Onboarding Engineers on complex provisioning and integration issues
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Infrastructure Onboarding Architect | Solution design |
-| Infrastructure Onboarding Product Owner | Technical planning |
-| DevOps Senior Engineers | Pipeline integration |
-| Security Cross-Platform Senior Engineers | Security controls |
-| Infrastructure Onboarding Engineers | Technical implementation |
-| domain-specific Senior Engineers | Integration points |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Infrastructure Onboarding Architect | Solution design | Escalates To |
+| Infrastructure Onboarding Product Owner | Technical planning | Collaborates |
+| DevOps Senior Engineers | Pipeline integration | Collaborates |
+| Security Cross-Platform Senior Engineers | Security controls | Collaborates |
+| Infrastructure Onboarding Engineers | Technical implementation | Provides To |
+| domain-specific Senior Engineers | Integration points | Collaborates |
 
 ## Key Technologies
 

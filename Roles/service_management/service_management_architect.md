@@ -5,6 +5,8 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Service Management Architect designs comprehensive strategies and architectures for IT service management across the enterprise. This role establishes the technical vision for ITSM platforms, processes, and integrations, creating architectures that enable efficient service delivery while aligning with business objectives and industry best practices.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — ITSM platform architecture, process reference models, and service integration design standards
+- **Experience Anchor:** Minimum 8 years in ITSM/service management engineering, with at least 3 years in an architecture role — operates independently on domain-wide architecture decisions
+- **Out of Scope:** Enterprise architecture decisions and cross-domain technology standards (Enterprise Architect-owned); business process design and service SLA target-setting (Process Owners-owned); platform procurement, licensing, and commercial decisions (Procurement-owned)
+- **Escalates To:** Service & Governance Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and decisions beyond service management scope
+- **Escalated To By:** Service Management Senior Engineers and Engineers on design-level questions and standards clarification
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Service Management Architect designs comprehensive strategies and architectu
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Process Owners | Process design |
-| Business Relationship Managers | Service portfolio |
-| Service Management Product Owner | Technical strategy |
-| Service Management Senior Engineers |  |
-| executives | Service management strategy |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standards | Governed By |
+| Process Owners | Process design | Collaborates |
+| Business Relationship Managers | Service portfolio | Collaborates |
+| Service Management Product Owner | Technical strategy | Collaborates |
+| Service Management Senior Engineers | Provide architectural direction and review engineering designs | Provides To |
+| executives | Service management strategy | Escalates To |
 
 ## Key Technologies
 

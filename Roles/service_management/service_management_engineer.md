@@ -5,6 +5,8 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
+| **Reports To** | Service Management Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Service Management Engineer implements and maintains IT service management platforms and processes across the organization. This role focuses on configuring ITSM tools, automating workflows, and supporting service management processes to ensure efficient IT service delivery.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of ITSM platform configuration and process implementation tasks to defined standards
+- **Experience Anchor:** 1-3 years in ITSM/service management engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** ITSM platform architecture (Senior Engineer/Architect-owned); process design (Process Owners-owned); backlog prioritisation (Product Owner-owned)
+- **Escalates To:** Service Management Senior Engineers — complex implementation issues and design-level questions
+- **Escalated To By:** stakeholders on service management need clarification
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Service Management Engineer implements and maintains IT service management p
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Service Management Product Owner | Task prioritization |
-| Process Owners | Process implementations |
-| Service Desk Staff | Operational requirements |
-| Knowledge Management | Documentation |
-| Service Management Senior Engineers |  |
-| stakeholders | Service management needs |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Service Management Product Owner | Task prioritization | Consumes From |
+| Process Owners | Process implementations | Collaborates |
+| Service Desk Staff | Operational requirements | Provides To |
+| Knowledge Management | Documentation | Collaborates |
+| Service Management Senior Engineers | Escalate complex implementation issues; receive guidance and mentoring | Escalates To |
+| stakeholders | Service management needs | Provides To |
 
 ## Key Technologies
 

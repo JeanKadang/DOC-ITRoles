@@ -5,6 +5,8 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | Configuration Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Application Configuration Management Senior Engineer leads the implementation and optimization of complex configuration management solutions for applications across the enterprise. This role provides technical leadership for creating standardized, repeatable, and secure approaches to managing application settings, parameters, and environmental configurations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — detailed engineering design and delivery within the configuration management reference architecture
+- **Experience Anchor:** 5+ years in configuration/ITSM engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Configuration management reference architecture and automation standards (Architect-owned); DevOps CI/CD toolchain decisions (DevOps-owned); ITSM platform commercial decisions (ITSM Product Owner-owned)
+- **Escalates To:** Configuration Management Architect — architecture-level questions and standards exceptions
+- **Escalated To By:** Configuration Management Engineers on complex configuration and implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Application Configuration Management Senior Engineer leads the implementatio
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Configuration Management Architect | Solution design |
-| ITSM Product Owner | Technical planning |
-| DevOps Senior Engineers | CI/CD integration |
-| Security Engineers | Secure configuration practices |
-| Application Teams | Configuration requirements |
-| Configuration Management Engineers | Technical implementation |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Configuration Management Architect | Solution design | Escalates To |
+| ITSM Product Owner | Technical planning | Collaborates |
+| DevOps Senior Engineers | CI/CD integration | Collaborates |
+| Security Engineers | Secure configuration practices | Collaborates |
+| Application Teams | Configuration requirements | Consumes From |
+| Configuration Management Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 
