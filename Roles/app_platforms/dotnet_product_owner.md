@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The .NET Platform Product Owner manages the development and lifecycle of the organization's .NET platform, frameworks, and shared components. This role leads a team of .NET platform engineers, ensuring that the .NET ecosystem meets the needs of application teams while maintaining technical excellence, security, and operational standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — .NET platform backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** .NET technical architecture design (.NET Architect-owned); CI/CD integration design (DevOps Product Owner-owned); platform security standards (Security Teams-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** development teams on .NET platform adoption and roadmap alignment
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevOps Product Owner | CI/CD integration |
-| Security Teams | .NET security standards |
-| .NET Architect | Technical strategy |
-| Application Product Owners | Platform requirements |
-| development teams | Platform adoption |
-| IT leadership | Platform strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Product Owner | CI/CD integration | Collaborates |
+| Security Teams | .NET security standards | Governed By |
+| .NET Architect | Technical strategy | Consumes From |
+| Application Product Owners | Platform requirements | Consumes From |
+| development teams | Platform adoption | Provides To |
+| IT leadership | Platform strategy and investments | Provides To |
 
 ## Key Technologies
 

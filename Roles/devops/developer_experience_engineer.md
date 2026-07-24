@@ -5,6 +5,8 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
+| **Reports To** | DevOps Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Developer Experience Engineer designs, builds, and operates internal developer platforms (IDPs) and self-service tooling that reduce cognitive load for engineering teams across the organisation. This role owns the golden path templates, developer portals, CLI tooling, and platform scaffolding that allow application teams to provision infrastructure, deploy services, and manage their software delivery lifecycle without deep platform expertise. The Developer Experience Engineer uses DORA metrics and the SPACE framework to measure and continuously improve developer productivity, treating application teams as their primary customers.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — internal developer platform (IDP) design, golden path standards, and developer tooling
+- **Experience Anchor:** 5+ years in platform or DevOps engineering with a developer-productivity focus — operates independently within the DevOps Architect's platform strategy
+- **Out of Scope:** DevOps platform architecture and toolchain standards (DevOps Architect-owned); cluster and cloud infrastructure provisioning design (Kubernetes/Cloud Architect-owned); security guardrail policy definition (Security Architect-owned, embeds controls into golden paths)
+- **Escalates To:** DevOps Architect — platform architecture decisions and IDP strategy exceptions
+- **Escalated To By:** application development teams on golden path adoption and self-service platform issues
 
 ## Business Impact
 
@@ -72,15 +82,15 @@ The Developer Experience Engineer designs, builds, and operates internal develop
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevOps Architect | Platform architecture, IDP strategy, and golden path standards |
-| Azure, AWS, and GCP Cloud Architects | Designing self-service infrastructure provisioning workflows and cloud resource templates |
-| Kubernetes Architect | Align platform compute (cluster provisioning, namespace management, workload templates) with self-service IDP capabilities |
-| Security Architect | Embed security guardrails, policy-as-code checks, and compliance gates into golden path templates and platform scaffolding |
-| application development teams | As primary customers — gathering productivity feedback, co-designing workflows, and supporting onboarding onto the IDP |
-| Platform Reliability Engineer | Ensure IDP components and developer tooling meet reliability and availability standards |
-| Observability Architect | Or **Observability Senior Engineers** to include default instrumentation templates in golden paths |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Architect | Platform architecture, IDP strategy, and golden path standards | Escalates To |
+| Azure, AWS, and GCP Cloud Architects | Designing self-service infrastructure provisioning workflows and cloud resource templates | Collaborates |
+| Kubernetes Architect | Align platform compute (cluster provisioning, namespace management, workload templates) with self-service IDP capabilities | Collaborates |
+| Security Architect | Embed security guardrails, policy-as-code checks, and compliance gates into golden path templates and platform scaffolding | Governed By |
+| application development teams | As primary customers — gathering productivity feedback, co-designing workflows, and supporting onboarding onto the IDP | Provides To |
+| Platform Reliability Engineer | Ensure IDP components and developer tooling meet reliability and availability standards | Collaborates |
+| Observability Architect | Or Observability Senior Engineers to include default instrumentation templates in golden paths | Collaborates |
 
 ## Key Technologies
 

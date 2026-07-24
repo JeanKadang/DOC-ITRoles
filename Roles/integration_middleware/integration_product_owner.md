@@ -5,6 +5,8 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Integration Product Owner owns the integration platform product backlog — covering API gateway capabilities, ESB and message broker services, event streaming infrastructure, and middleware platform offerings. This role manages the integration platform roadmap, prioritises integration capability investments, defines SLAs for integration services, and aligns the platform direction with the needs of consuming application teams and business stakeholders. Working closely with the Integration Architect as the technical counterpart, the Integration Product Owner translates integration requirements from across the organisation into a coherent, sequenced delivery plan that advances integration maturity, reduces technical debt, and supports digital transformation programmes.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — integration platform backlog, SLA governance, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Integration platform architecture and technical design (Integration Architect-owned); API gateway roadmap where separately owned (API Platform Architect-owned); enterprise architecture direction (Enterprise Architect-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Integration Senior Engineers and Integration Engineers on ceremony direction and delivery-transparency questions
 
 ## Business Impact
 
@@ -72,17 +82,17 @@ The Integration Product Owner owns the integration platform product backlog — 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Integration Architect | As the technical counterpart — receives architectural direction and ensures that backlog prioritisation reflects integration platform architectural strategy and delivery dependencies |
-| API Platform Architect | (where separate) to align API gateway roadmap and developer portal features with the broader API management strategy |
-| DevOps Architect | Ensure integration platform CI/CD pipeline requirements and deployment automation are included in DevOps platform delivery planning |
-| Security Architect | Incorporate API security, OAuth 2.0 / mTLS, and B2B credential governance requirements into the integration platform backlog |
-| Enterprise Architect | Integration platform direction within the overall enterprise architecture strategy and digital transformation programme |
-| consuming application teams | Gather requirements, manage onboarding to integration services, and communicate deprecation timelines |
-| Integration Senior Engineers | As the team's product owner, leading ceremonies and providing delivery direction |
-| Integration Engineers | As the team's product owner, leading ceremonies and providing delivery direction |
-| vendor TAL/PAL (MuleSoft, Confluent, IBM, TIBCO) | Product roadmap updates, support agreements, and licensing strategy |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Integration Architect | As the technical counterpart — receives architectural direction and ensures that backlog prioritisation reflects integration platform architectural strategy and delivery dependencies | Consumes From |
+| API Platform Architect | (where separate) to align API gateway roadmap and developer portal features with the broader API management strategy | Collaborates |
+| DevOps Architect | Ensure integration platform CI/CD pipeline requirements and deployment automation are included in DevOps platform delivery planning | Collaborates |
+| Security Architect | Incorporate API security, OAuth 2.0 / mTLS, and B2B credential governance requirements into the integration platform backlog | Governed By |
+| Enterprise Architect | Integration platform direction within the overall enterprise architecture strategy and digital transformation programme | Governed By |
+| consuming application teams | Gather requirements, manage onboarding to integration services, and communicate deprecation timelines | Provides To |
+| Integration Senior Engineers | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |
+| Integration Engineers | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |
+| vendor TAL/PAL (MuleSoft, Confluent, IBM, TIBCO) | Product roadmap updates, support agreements, and licensing strategy | Collaborates |
 
 ## Key Technologies
 

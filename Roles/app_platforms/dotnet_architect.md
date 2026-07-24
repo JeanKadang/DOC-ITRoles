@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors .NET Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The .NET Architect designs comprehensive strategies and architectures for the organization's .NET ecosystem. This role establishes the technical vision for .NET platforms, frameworks, and applications, creating architectures that balance performance, scalability, security, and developer productivity while aligning with business objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — .NET platform architecture standards and technology stack decisions across the chapter
+- **Experience Anchor:** 8+ years in .NET engineering or software architecture with demonstrated architecture-level delivery — operates independently on domain-wide .NET architecture decisions
+- **Out of Scope:** Enterprise-wide technology standards (Enterprise Architects-owned); .NET security control implementation detail (Security Architects-owned, this role aligns to it); cloud deployment architecture (Cloud Architects-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and investment decisions beyond .NET platform scope
+- **Escalated To By:** .NET Senior Engineers on design exceptions and standards clarification
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Security Architects | .NET security patterns |
-| Cloud Architects | .NET cloud deployment |
-| .NET Platform Product Owner | Technical strategy |
-| .NET Senior Engineers |  |
-| application architects | .NET implementation patterns |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standards | Governed By |
+| Security Architects | .NET security patterns | Governed By |
+| Cloud Architects | .NET cloud deployment | Collaborates |
+| .NET Platform Product Owner | Technical strategy | Collaborates |
+| .NET Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| application architects | .NET implementation patterns | Provides To |
 
 ## Key Technologies
 

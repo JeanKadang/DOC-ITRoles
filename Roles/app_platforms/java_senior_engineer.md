@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | Java Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Java Senior Engineer leads the implementation and optimization of complex Java platform solutions. This role provides technical leadership for Java applications, frameworks, and services while working closely with architects to translate platform designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Java solution design and delivery within the Java Architect's reference architecture
+- **Experience Anchor:** 5+ years in Java engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Java platform architecture standards (Architect-owned); CI/CD pipeline design (DevOps Senior Engineers-owned); application security policy definition (Security Senior Engineers-owned, implements controls)
+- **Escalates To:** Java Architect — architecture-level questions and standards exceptions
+- **Escalated To By:** Java Engineers on complex implementation and technical design issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Java Architect | Solution design |
-| Java Platform Product Owner | Technical planning |
-| DevOps Senior Engineers | CI/CD pipelines |
-| Security Senior Engineers | Application security |
-| Database Senior Engineers | Data access layers |
-| Java Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Java Architect | Solution design | Escalates To |
+| Java Platform Product Owner | Technical planning | Collaborates |
+| DevOps Senior Engineers | CI/CD pipelines | Collaborates |
+| Security Senior Engineers | Application security | Governed By |
+| Database Senior Engineers | Data access layers | Collaborates |
+| Java Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

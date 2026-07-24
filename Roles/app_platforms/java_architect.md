@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Java Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Java Platform Architect designs comprehensive strategies and architectures for the organization's Java ecosystem. This role establishes the technical vision for Java platforms, frameworks, and applications, creating architectures that balance performance, scalability, security, and developer productivity while aligning with business objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Java platform architecture standards and technology stack decisions across the chapter
+- **Experience Anchor:** 8+ years in Java engineering or software architecture with demonstrated architecture-level delivery — operates independently on domain-wide Java architecture decisions
+- **Out of Scope:** Enterprise-wide technology standards (Enterprise Architects-owned); Java security control implementation detail (Security Architects-owned, this role aligns to it); cloud deployment architecture (Cloud Architects-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and investment decisions beyond Java platform scope
+- **Escalated To By:** Java Senior Engineers on design exceptions and standards clarification
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Security Architects | Java security patterns |
-| Cloud Architects | Java cloud deployment |
-| Java Platform Product Owner | Technical strategy |
-| Java Senior Engineers |  |
-| application architects | Java implementation patterns |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standards | Governed By |
+| Security Architects | Java security patterns | Governed By |
+| Cloud Architects | Java cloud deployment | Collaborates |
+| Java Platform Product Owner | Technical strategy | Collaborates |
+| Java Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| application architects | Java implementation patterns | Provides To |
 
 ## Key Technologies
 

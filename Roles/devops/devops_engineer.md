@@ -5,6 +5,8 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
+| **Reports To** | DevOps Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DevOps Engineer implements and maintains CI/CD pipelines and automation tools that enable efficient, reliable software delivery. This role focuses on building and supporting DevOps infrastructure, troubleshooting pipeline issues, and assisting development teams with CI/CD integration.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of CI/CD pipeline implementation, automation, and support tasks to defined standards
+- **Experience Anchor:** 1-3 years in DevOps, release, or infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Pipeline architecture and platform design (Senior Engineers and the Architect-owned); DevSecOps policy and control framework definition; deployment automation strategy beyond assigned implementation tasks
+- **Escalates To:** DevOps Senior Engineer — design-level questions, complex automation issues, and escalated pipeline incidents
+- **Escalated To By:** development and operations teams on day-to-day pipeline and deployment support requests
 
 ## Business Impact
 
@@ -68,15 +78,15 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 - **Working Knowledge required:** ArgoCD/Flux (GitOps deployment), automated testing framework integration in pipelines, security scanning tools (SBOM generation, Sigstore/Cosign)
 - **Awareness level expected:** Supply chain security standards (SLSA verification), AI-assisted development tools (GitHub Copilot), Kubernetes as a pipeline deployment target
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| development teams | Pipeline implementation |
-| QA teams | Test automation integration |
-| infrastructure teams | Deployment environments |
-| Senior DevOps Engineers and DevOps Architect | Day-to-day guidance and direction |
-| operations | Deployment processes |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| development teams | Pipeline implementation | Provides To |
+| QA teams | Test automation integration | Collaborates |
+| infrastructure teams | Deployment environments | Collaborates |
+| Senior DevOps Engineers and DevOps Architect | Day-to-day guidance and direction | Escalates To |
+| operations | Deployment processes | Collaborates |
 
 ## Key Performance Indicators
 

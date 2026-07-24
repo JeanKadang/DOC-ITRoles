@@ -5,6 +5,8 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
+| **Reports To** | Integration Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Integration Engineer builds, maintains, and supports enterprise integration flows connecting applications, cloud services, and SaaS platforms. This role implements integrations using iPaaS platforms (MuleSoft, Azure Logic Apps, Boomi) and messaging systems, working from specifications and integration designs provided by senior engineers and the Integration Architect. The Integration Engineer is responsible for reliable day-to-day operation of integration workflows, monitoring, and first-response to integration incidents.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of integration build, testing, and support tasks to defined standards
+- **Experience Anchor:** 1-3 years in integration or middleware engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Integration platform architecture and design (Senior Engineers and the Architect-owned); integration contract negotiation with application teams (Senior Engineer-owned); event-driven data feed strategy
+- **Escalates To:** Integration Senior Engineer — complex issues and implementation guidance
+- **Escalated To By:** Help Desk / Operations on integration-related support requests
 
 ## Business Impact
 
@@ -70,11 +80,11 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Integration Senior Engineers: | Escalate complex issues; receive implementation guidance |
-| Application Teams: | Communicate integration errors and coordinate on API changes |
-| Help Desk / Operations: | Receive integration-related support requests |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Integration Senior Engineers | Escalate complex issues; receive implementation guidance | Escalates To |
+| Application Teams | Communicate integration errors and coordinate on API changes | Collaborates |
+| Help Desk / Operations | Receive integration-related support requests | Provides To |
 
 ## Key Technologies
 

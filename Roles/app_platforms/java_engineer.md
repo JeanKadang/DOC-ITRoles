@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
+| **Reports To** | Java Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Java Engineer implements and maintains Java-based applications and platform components across the organization. Working with the Java Senior Engineers and Architects, this role ensures reliable, secure, and optimized Java solutions supporting various business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Java implementation tasks to defined standards
+- **Experience Anchor:** 1-3 years in Java or software engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Java platform architecture and standards (Senior Engineers and the Architect-owned); data access layer design (Database Engineers-owned); deployment pipeline design (DevOps Engineers-owned)
+- **Escalates To:** Java Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on Java implementation support requests
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Java Engineer implements and maintains Java-based applications and platform 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Java Platform Product Owner | Task prioritization |
-| QA Engineers | Testing strategies |
-| DevOps Engineers | Deployment |
-| Database Engineers | Data access |
-| Java Senior Engineers |  |
-| application teams | Java implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Java Platform Product Owner | Task prioritization | Consumes From |
+| QA Engineers | Testing strategies | Collaborates |
+| DevOps Engineers | Deployment | Collaborates |
+| Database Engineers | Data access | Collaborates |
+| Java Senior Engineers | Escalate complex issues; receive implementation guidance | Escalates To |
+| application teams | Java implementation | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
+| **Reports To** | API Platform Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The API Platform Engineer implements and maintains API management solutions across the organization. Working with the API Platform Senior Engineers and Architects, this role ensures reliable, secure, and optimized API solutions supporting various business applications and services.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of API implementation and deployment tasks to defined standards
+- **Experience Anchor:** 1-3 years in API or software engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** API platform architecture and standards (Senior Engineers and the Architect-owned); API security control design; integration guidance strategy beyond assigned implementation tasks
+- **Escalates To:** API Platform Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** API Consumers on integration guidance and implementation support requests
 
 ## Business Impact
 
@@ -63,14 +73,14 @@ The API Platform Engineer implements and maintains API management solutions acro
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| API Platform Product Owner | Task prioritization |
-| Application Developers | API implementation |
-| DevOps Engineers | API deployment |
-| Security Engineers | API security controls |
-| API Consumers | Integration guidance |
-| API Platform Senior Engineers |  |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| API Platform Product Owner | Task prioritization | Consumes From |
+| Application Developers | API implementation | Provides To |
+| DevOps Engineers | API deployment | Collaborates |
+| Security Engineers | API security controls | Governed By |
+| API Consumers | Integration guidance | Provides To |
+| API Platform Senior Engineers | Escalate complex issues; receive implementation guidance | Escalates To |
 
 ## Key Technologies
 

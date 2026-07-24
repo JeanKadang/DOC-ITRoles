@@ -5,6 +5,8 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | DevOps Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DevOps Senior Engineer leads complex DevOps initiatives and transformations, focusing on advanced automation, pipeline optimization, and innovative delivery approaches. This role implements sophisticated CI/CD patterns, develops reusable pipeline components, and provides technical leadership while mentoring team members.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced CI/CD solution design and delivery within the DevOps Architect's reference architecture
+- **Experience Anchor:** 5+ years in DevOps or release engineering with demonstrated independent delivery of advanced pipeline solutions — operates independently within the Architect's reference architecture
+- **Out of Scope:** DevOps platform architecture and toolchain standards (Architect-owned); security policy definition (Security teams-owned, implements DevSecOps controls); application architecture decisions (application architects-owned)
+- **Escalates To:** DevOps Architect — architecture-level questions and platform standards exceptions
+- **Escalated To By:** DevOps Engineers on complex pipeline, automation, and deployment issues
 
 ## Business Impact
 
@@ -70,15 +80,15 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 - **Working Knowledge required:** Istio/Linkerd (service mesh implementation), canary and Blue/Green deployment tooling, observability platform integration with CI/CD, Artifactory/Nexus (artifact management)
 - **Awareness level expected:** eBPF-based security and observability tooling, SLSA supply chain security standards, WebAssembly for serverless pipeline patterns
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevOps Architect | Platform design decisions |
-| DevOps Engineers | Technical matters |
-| security teams | DevSecOps implementations |
-| application architects | Delivery pipeline design |
-| development teams | Advanced CI/CD approaches |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Architect | Platform design decisions | Escalates To |
+| DevOps Engineers | Technical matters | Provides To |
+| security teams | DevSecOps implementations | Governed By |
+| application architects | Delivery pipeline design | Collaborates |
+| development teams | Advanced CI/CD approaches | Provides To |
 
 ## Key Performance Indicators
 

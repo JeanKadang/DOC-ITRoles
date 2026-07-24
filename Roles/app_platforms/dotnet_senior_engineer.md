@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | .NET Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The .NET Senior Engineer leads the implementation and optimization of complex .NET platform solutions across the organization. This role provides technical leadership for .NET application platforms, frameworks, and services while working closely with architects to translate platform designs into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced .NET solution design and delivery within the .NET Architect's reference architecture
+- **Experience Anchor:** 5+ years in .NET engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** .NET platform architecture standards (Architect-owned); CI/CD pipeline design (DevOps Senior Engineers-owned); application security policy definition (Security Senior Engineers-owned, implements controls)
+- **Escalates To:** .NET Architect — architecture-level questions and standards exceptions
+- **Escalated To By:** .NET Engineers on complex implementation and technical design issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| .NET Architect | Solution design |
-| .NET Platform Product Owner | Technical planning |
-| DevOps Senior Engineers | CI/CD pipelines |
-| Security Senior Engineers | Application security |
-| Database Senior Engineers | Data access layers |
-| .NET Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| .NET Architect | Solution design | Escalates To |
+| .NET Platform Product Owner | Technical planning | Collaborates |
+| DevOps Senior Engineers | CI/CD pipelines | Collaborates |
+| Security Senior Engineers | Application security | Governed By |
+| Database Senior Engineers | Data access layers | Collaborates |
+| .NET Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

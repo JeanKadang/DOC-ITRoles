@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Java Platform Product Owner manages the development and lifecycle of the organization's Java platform, frameworks, and shared components. This role leads a team of Java platform engineers, ensuring that the Java ecosystem meets the needs of application teams while maintaining technical excellence, security, and operational standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Java platform backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Java technical architecture design (Java Architect-owned); CI/CD integration design (DevOps Product Owner-owned); platform security standards (Security Teams-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** development teams on Java platform adoption and roadmap alignment
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Java Platform Product Owner manages the development and lifecycle of the org
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevOps Product Owner | CI/CD integration |
-| Security Teams | Java security standards |
-| Java Architect | Technical strategy |
-| Application Product Owners | Platform requirements |
-| development teams | Platform adoption |
-| IT leadership | Platform strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Product Owner | CI/CD integration | Collaborates |
+| Security Teams | Java security standards | Governed By |
+| Java Architect | Technical strategy | Consumes From |
+| Application Product Owners | Platform requirements | Consumes From |
+| development teams | Platform adoption | Provides To |
+| IT leadership | Platform strategy and investments | Provides To |
 
 ## Key Technologies
 
