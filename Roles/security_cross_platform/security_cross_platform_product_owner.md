@@ -5,6 +5,8 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Cross-Platform Product Owner manages the portfolio of security services and capabilities that span multiple technology domains. This role ensures that security requirements are prioritized and implemented consistently across all platforms, balancing security needs with operational efficiency and user experience.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — cross-platform security programme backlog and roadmap alignment across domain-specific product roadmaps
+- **Experience Anchor:** 5+ years in product ownership or technical product management, ideally with security domain exposure — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Cross-platform security architecture (Security Cross-Platform Architect-owned); domain-specific product roadmap ownership (domain-specific Product Owners-owned, this role aligns cross-cutting priorities with them); regulatory compliance interpretation (security compliance teams-owned)
+- **Escalates To:** Security & Identity Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** project managers on cross-platform security implementations
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Security Cross-Platform Product Owner manages the portfolio of security serv
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Security Cross-Platform Architect | Align product roadmap with architectural vision |
-| domain-specific Product Owners | Security features are prioritized in their roadmaps |
-| business stakeholders | Understand security requirements that span multiple domains |
-| security compliance teams | Regulatory requirements are addressed across platforms |
-| project managers | Cross-platform security implementations |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security Cross-Platform Architect | Align product roadmap with architectural vision | Consumes From |
+| domain-specific Product Owners | Security features are prioritized in their roadmaps | Collaborates |
+| business stakeholders | Understand security requirements that span multiple domains | Consumes From |
+| security compliance teams | Regulatory requirements are addressed across platforms | Governed By |
+| project managers | Cross-platform security implementations | Collaborates |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | Commvault Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Commvault Senior Engineer leads the implementation and optimization of enterprise backup and recovery solutions using Commvault technology. This role provides technical leadership for complex Commvault deployments, migrations, and operations while working closely with architects to translate data protection strategies into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Commvault solution design and delivery within the Commvault Architect's reference architecture
+- **Experience Anchor:** 5+ years in backup engineering with demonstrated independent Commvault delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Commvault platform architecture and technology standards (Architect-owned); underlying storage integration architecture (Storage Senior Engineers-owned, this role coordinates with it); virtualisation platform design (Virtualization Senior Engineers-owned, this role coordinates VM backup strategies with it)
+- **Escalates To:** Commvault Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Commvault Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Commvault Architect | Solution design and implementation strategy |
-| Commvault Product Owner | Technical planning and roadmap execution |
-| Storage Senior Engineers | Backup storage integration |
-| Virtualization Senior Engineers | VM backup strategies |
-| Commvault Engineers | Technical implementation |
-| application teams | Complex backup requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Commvault Architect | Solution design and implementation strategy | Escalates To |
+| Commvault Product Owner | Technical planning and roadmap execution | Collaborates |
+| Storage Senior Engineers | Backup storage integration | Collaborates |
+| Virtualization Senior Engineers | VM backup strategies | Collaborates |
+| Commvault Engineers | Technical implementation | Provides To |
+| application teams | Complex backup requirements | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Access Management Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Access Management Architect designs and oversees the organization's access management strategy and solutions. This role ensures secure, efficient, and appropriate access to systems and data while maintaining compliance with security policies and regulatory requirements.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — access management (authorization) architecture, RBAC/ABAC models, and access governance standards across the chapter
+- **Experience Anchor:** 8+ years in access management or identity architecture with demonstrated architecture-level delivery — operates independently on domain-wide access architecture decisions
+- **Out of Scope:** Identity (authentication) management architecture (Identity Management Architect-owned, this role integrates with it); access monitoring tooling design (Observability Architect-owned, this role consumes it); enterprise access governance policy (compliance and risk management-owned, this role implements it)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Access Management Senior Engineers on solution design and implementation strategy
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Access Management Architect designs and oversees the organization's access m
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Security Architects | Access security controls |
-| Cloud Platform Architects | Cloud access management |
-| Observability Architect | Access monitoring |
-| Identity Management Architect | Integrated IAM solutions |
-| compliance and risk management | Access governance |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security Architects | Access security controls | Governed By |
+| Cloud Platform Architects | Cloud access management | Collaborates |
+| Observability Architect | Access monitoring | Consumes From |
+| Identity Management Architect | Integrated IAM solutions | Collaborates |
+| compliance and risk management | Access governance | Governed By |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | Windows Active Directory Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure initiatives, including complex implementations and optimizations for domain controllers and all servers involved in directory services, which fall under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced Active Directory solution design and delivery within the Windows Active Directory Architect's reference architecture
+- **Experience Anchor:** 5+ years in directory services engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Active Directory architecture and hybrid identity standards (Architect-owned); broader Windows Server infrastructure integration ownership (Windows Server Senior Engineers-owned, this role coordinates with it); directory security control design (Security Senior Engineers-owned, this role implements it)
+- **Escalates To:** Windows Active Directory Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Windows Active Directory Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Active Directory Architect | Solution design and implementation strategy |
-| Windows Active Directory Product Owner | Technical planning and roadmap execution |
-| Windows Server Senior Engineers | Infrastructure integration |
-| Security Senior Engineers | Directory security implementations |
-| Cloud Senior Engineers | Hybrid identity solutions |
-| Windows Active Directory Engineers | Technical implementation |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Active Directory Architect | Solution design and implementation strategy | Escalates To |
+| Windows Active Directory Product Owner | Technical planning and roadmap execution | Collaborates |
+| Windows Server Senior Engineers | Infrastructure integration | Collaborates |
+| Security Senior Engineers | Directory security implementations | Collaborates |
+| Cloud Senior Engineers | Hybrid identity solutions | Collaborates |
+| Windows Active Directory Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

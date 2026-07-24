@@ -5,6 +5,8 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | Security Cross-Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Cross-Platform Senior Engineer leads the technical implementation of security controls and solutions that span multiple technology domains. This role designs, implements, and optimizes complex security mechanisms that work consistently across diverse environments including on-premises servers, cloud platforms, container ecosystems, and virtualization infrastructure.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced cross-platform security implementation within the Security Cross-Platform Architect's standards
+- **Experience Anchor:** 5+ years in security engineering with demonstrated cross-platform delivery — operates independently within the Architect's standards
+- **Out of Scope:** Cross-platform security standards design (Architect-owned); domain-specific security implementation detail (domain-specific Senior Engineers-owned, this role ensures consistency across them); security observability platform design (monitoring teams-owned, this role implements observability within it)
+- **Escalates To:** Security Cross-Platform Architect — technical design and implementation exceptions
+- **Escalated To By:** Security Cross-Platform Engineers on complex implementations
 
 ## Business Impact
 
@@ -69,13 +79,13 @@ The Security Cross-Platform Senior Engineer leads the technical implementation o
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| domain-specific Senior Engineers | Implement consistent security controls |
-| Security Cross-Platform Architect | Technical design and implementation |
-| DevOps teams | Integrate security into CI/CD pipelines across platforms |
-| monitoring teams | Implement cross-platform security observability |
-| Mentors Security Cross-Platform Engineers | Complex implementations |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| domain-specific Senior Engineers | Implement consistent security controls | Governed By |
+| Security Cross-Platform Architect | Technical design and implementation | Escalates To |
+| DevOps teams | Integrate security into CI/CD pipelines across platforms | Collaborates |
+| monitoring teams | Implement cross-platform security observability | Collaborates |
+| Security Cross-Platform Engineers | Mentors on complex implementations | Provides To |
 
 ## Key Technologies
 

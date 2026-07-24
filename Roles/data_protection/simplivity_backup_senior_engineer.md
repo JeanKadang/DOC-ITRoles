@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | SimpliVity Backup Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The SimpliVity Backup Senior Engineer leads the implementation and optimization of data protection solutions using HPE SimpliVity's built-in capabilities. This role provides technical leadership for complex SimpliVity backup deployments while working closely with architects to translate data protection strategies into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced SimpliVity backup solution design and delivery within the SimpliVity Backup Architect's reference architecture
+- **Experience Anchor:** 5+ years in backup engineering with demonstrated independent SimpliVity delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** SimpliVity platform architecture and technology standards (Architect-owned); advanced VMware virtualisation integration ownership (VMware Senior Engineers-owned, this role coordinates with it); broader enterprise backup strategy (Enterprise Backup Senior Engineers-owned, this role integrates with it)
+- **Escalates To:** SimpliVity Backup Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** SimpliVity Backup Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| SimpliVity Backup Architect | Solution design and implementation strategy |
-| SimpliVity Backup Product Owner | Technical planning and roadmap execution |
-| VMware Senior Engineers | Advanced virtualization integration |
-| Enterprise Backup Senior Engineers | Integration with broader backup strategy |
-| SimpliVity Backup Engineers | Technical implementation |
-| application teams | Complex recovery requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| SimpliVity Backup Architect | Solution design and implementation strategy | Escalates To |
+| SimpliVity Backup Product Owner | Technical planning and roadmap execution | Collaborates |
+| VMware Senior Engineers | Advanced virtualization integration | Collaborates |
+| Enterprise Backup Senior Engineers | Integration with broader backup strategy | Collaborates |
+| SimpliVity Backup Engineers | Technical implementation | Provides To |
+| application teams | Complex recovery requirements | Provides To |
 
 ## Key Technologies
 

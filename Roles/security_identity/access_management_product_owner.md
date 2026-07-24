@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Access Management Product Owner manages the development and lifecycle of the organization's access management solutions. This role leads a team of access management architects and engineers, ensuring secure and efficient access to systems and data while meeting business requirements and compliance standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — access management platform backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Access management technical architecture (Access Management Architect-owned); identity (authentication) roadmap (Identity Management Product Owner-owned, this role aligns to it); access policy definition (Security and Compliance teams-owned)
+- **Escalates To:** Security & Identity Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** business unit representatives on access needs
 
 ## Business Impact
 
@@ -96,14 +106,14 @@ The Access Management Product Owner manages the development and lifecycle of the
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Identity Management Product Owner | Integrated IAM strategy |
-| Access Management Architect | Technical strategy |
-| Security and Compliance teams | Access policies |
-| Application Product Owners | Application access requirements |
-| business unit representatives | Access needs |
-| IT leadership | Access management strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Identity Management Product Owner | Integrated IAM strategy | Collaborates |
+| Access Management Architect | Technical strategy | Consumes From |
+| Security and Compliance teams | Access policies | Governed By |
+| Application Product Owners | Application access requirements | Consumes From |
+| business unit representatives | Access needs | Consumes From |
+| IT leadership | Access management strategy and investments | Provides To |
 
 ## Key Focus Areas
 

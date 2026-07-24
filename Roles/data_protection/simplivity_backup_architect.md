@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors SimpliVity Backup Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The SimpliVity Backup Architect designs and oversees data protection strategies leveraging HPE SimpliVity's built-in backup and recovery capabilities. This role ensures optimal use of SimpliVity's native data protection features to meet the organization's requirements for data availability, compliance, and business continuity.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — SimpliVity hyperconverged backup platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in backup/data protection architecture with demonstrated hyperconverged infrastructure ownership — operates independently on domain-wide SimpliVity architecture decisions
+- **Out of Scope:** Enterprise Commvault backup architecture (Commvault Architect-owned — a parallel, non-SimpliVity backup ladder); VMware virtualisation platform architecture (VMware Architect-owned, this role designs VM backup strategies within it); database-level backup consistency (Database Architect-owned, this role coordinates with it)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** SimpliVity Backup Senior Engineers on implementation approaches
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The SimpliVity Backup Architect designs and oversees data protection strategies 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| VMware Architect | Virtual machine backup strategies |
-| Commvault Architect | Integration with enterprise backup solutions |
-| Database Architect | Database backup strategies in SimpliVity |
-| Observability Architect | Backup monitoring |
-| compliance and security teams | Data protection requirements |
-| application architects | Backup requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| VMware Architect | Virtual machine backup strategies | Collaborates |
+| Commvault Architect | Integration with enterprise backup solutions | Collaborates |
+| Database Architect | Database backup strategies in SimpliVity | Collaborates |
+| Observability Architect | Backup monitoring | Consumes From |
+| compliance and security teams | Data protection requirements | Governed By |
+| application architects | Backup requirements | Provides To |
 
 ## Key Technologies
 

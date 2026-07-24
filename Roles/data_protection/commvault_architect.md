@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Commvault Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Commvault Architect designs enterprise data protection strategies and solutions using Commvault technology. This role creates comprehensive backup, recovery, and data management architectures that ensure data availability, compliance, and business continuity while optimizing for performance and cost efficiency.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — Commvault enterprise backup platform architecture and technology standards across the chapter
+- **Experience Anchor:** 8+ years in backup/data protection architecture with demonstrated Commvault platform ownership — operates independently on domain-wide Commvault architecture decisions
+- **Out of Scope:** Underlying backup storage architecture (Storage Architect-owned, this role aligns backup strategy to it); SimpliVity hyperconverged backup architecture (SimpliVity Backup Architect-owned — a parallel, non-Commvault backup ladder); data retention regulatory interpretation (compliance teams-owned, this role implements requirements)
+- **Escalates To:** Security & Identity Chapter Lead — chapter-wide priorities and cross-domain investment decisions
+- **Escalated To By:** Commvault Senior Engineers on implementation approaches
 
 ## Business Impact
 
@@ -61,15 +71,15 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Storage Architect | Backup storage strategies |
-| Cloud Architects | Cloud-based data protection |
-| Security Architect | Data protection security |
-| Commvault Product Owner | Technical strategy |
-| Commvault Senior Engineers | Implementation approaches |
-| application architects | Application backup requirements |
-| compliance teams | Data retention requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Storage Architect | Backup storage strategies | Collaborates |
+| Cloud Architects | Cloud-based data protection | Collaborates |
+| Security Architect | Data protection security | Governed By |
+| Commvault Product Owner | Technical strategy | Collaborates |
+| Commvault Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| application architects | Application backup requirements | Provides To |
+| compliance teams | Data retention requirements | Governed By |
 
 ## Key Technologies
 

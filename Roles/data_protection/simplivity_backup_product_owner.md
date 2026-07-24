@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The SimpliVity Backup Product Owner manages the development and lifecycle of the organization's backup and recovery services based on HPE SimpliVity's built-in capabilities. This role leads a team focusing on SimpliVity data protection, ensuring services meet business requirements, compliance standards, and operational objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — SimpliVity platform backlog, recovery capability roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** SimpliVity technical architecture (SimpliVity Backup Architect-owned); virtualisation platform roadmap (VMware Product Owner-owned, this role aligns to it); data protection policy definition (compliance and security teams-owned)
+- **Escalates To:** Security & Identity Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** application owners on recovery point/time objective requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| VMware Product Owner | Virtualization integration |
-| SimpliVity Backup Architect | Technical strategy |
-| compliance and security teams | Data protection policies |
-| Service Delivery Managers | Backup operations |
-| application owners | Recovery point/time objectives |
-| IT leadership | Data protection strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| VMware Product Owner | Virtualization integration | Collaborates |
+| SimpliVity Backup Architect | Technical strategy | Consumes From |
+| compliance and security teams | Data protection policies | Governed By |
+| Service Delivery Managers | Backup operations | Collaborates |
+| application owners | Recovery point/time objectives | Consumes From |
+| IT leadership | Data protection strategy and investments | Provides To |
 
 ## Key Focus Areas
 

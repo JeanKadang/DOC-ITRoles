@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Commvault Product Owner is responsible for maximizing the value of the organization's Commvault data protection platform. This role defines and prioritizes the backlog of features, enhancements, and improvements for the Commvault environment, ensuring it meets business needs, compliance requirements, and operational efficiency goals.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Commvault platform backlog, recovery capability roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Commvault technical architecture (Commvault Architect-owned); recovery planning strategy (Business Continuity Managers-owned, this role aligns backlog to it); data protection compliance policy (Security Teams-owned)
+- **Escalates To:** Security & Identity Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Commvault Engineers on implementation and operations status
 
 ## Business Impact
 
@@ -65,16 +75,16 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Application Owners | Backup requirements |
-| Infrastructure Teams | Commvault platform support |
-| Security Teams | Data protection compliance |
-| Business Continuity Managers | Recovery planning |
-| IT Operations Manager | Or **Infrastructure Director** |
-| Storage Team | Backup storage needs |
-| Cloud Teams | Cloud-based backup solutions |
-| Commvault Engineers | Implementation and operations |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Application Owners | Backup requirements | Consumes From |
+| Infrastructure Teams | Commvault platform support | Collaborates |
+| Security Teams | Data protection compliance | Governed By |
+| Business Continuity Managers | Recovery planning | Collaborates |
+| IT Operations Manager or Infrastructure Director | Infrastructure escalation for platform-level backup incidents | Collaborates |
+| Storage Team | Backup storage needs | Collaborates |
+| Cloud Teams | Cloud-based backup solutions | Collaborates |
+| Commvault Engineers | Implementation and operations | Provides To |
 
 ## Key Focus Areas
 

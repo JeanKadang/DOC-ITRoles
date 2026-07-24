@@ -5,6 +5,8 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Windows Active Directory Product Owner manages the service roadmap and planning for all Tier 0 infrastructure, including domain controllers and all servers involved in directory services, which fall under the exclusive responsibility of the Directory Services team.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — Active Directory / directory services platform backlog, modernisation roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Active Directory technical architecture (Windows Active Directory Architect-owned); identity management roadmap (Identity Management Product Owner-owned, this role aligns to it); directory security policy (Security and Compliance teams-owned)
+- **Escalates To:** Security & Identity Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on authentication requirements
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Windows Active Directory Product Owner manages the service roadmap and plann
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Windows Server Product Owner | Infrastructure requirements |
-| Identity Management Product Owner | Integrated identity strategy |
-| Windows Active Directory Architect | Technical strategy |
-| Security and Compliance teams | Directory security policies |
-| Application Product Owners | Authentication requirements |
-| IT leadership | Directory services strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Windows Server Product Owner | Infrastructure requirements | Collaborates |
+| Identity Management Product Owner | Integrated identity strategy | Collaborates |
+| Windows Active Directory Architect | Technical strategy | Consumes From |
+| Security and Compliance teams | Directory security policies | Governed By |
+| Application Product Owners | Authentication requirements | Consumes From |
+| IT leadership | Directory services strategy and investments | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Privileged Access Management Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Privileged Access Management (PAM) Engineer implements, operates, and maintains the organisation's PAM platform and associated privileged access controls. This role is responsible for on-boarding privileged accounts to vaulting solutions, configuring session management, maintaining platform health, and supporting IT operational teams in adopting JIT and zero-standing-privilege workflows. The PAM Engineer is a hands-on specialist who ensures the PAM platform is reliable, correctly configured, and actively covering the organisation's privileged attack surface.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of PAM onboarding, vaulting operations, and access support tasks
+- **Experience Anchor:** 3-5 years in PAM or identity security engineering — operates independently within the PAM Architect's reference architecture
+- **Out of Scope:** PAM architecture and vaulting strategy (Architect-owned); standard identity lifecycle provisioning (Identity Engineers-owned, this role coordinates with it); broader security incident investigation (Security Operations-owned, this role shares audit logs and alerts with it)
+- **Escalates To:** Privileged Access Management Architect — design-level issues and platform limitations
+- **Escalated To By:** IT Operations / System Administrators on PAM access support and on-boarding requests
 
 ## Business Impact
 
@@ -74,13 +84,13 @@ The Privileged Access Management (PAM) Engineer implements, operates, and mainta
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| PAM Architect: | Receive architecture direction; escalate design-level issues and platform limitations |
-| IT Operations / System Administrators: | Provide PAM access support and on-boarding assistance |
-| Security Operations: | Share audit logs and alert on privileged access anomalies |
-| Compliance / Audit: | Produce access reports and attestation evidence |
-| Identity Engineers: | Coordinate on Entra ID PIM and access lifecycle alignment |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| PAM Architect | Receive architecture direction; escalate design-level issues and platform limitations | Escalates To |
+| IT Operations / System Administrators | Provide PAM access support and on-boarding assistance | Provides To |
+| Security Operations | Share audit logs and alert on privileged access anomalies | Collaborates |
+| Compliance / Audit | Produce access reports and attestation evidence | Provides To |
+| Identity Engineers | Coordinate on Entra ID PIM and access lifecycle alignment | Collaborates |
 
 ## Key Technologies
 

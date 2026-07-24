@@ -5,6 +5,8 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Commvault Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Commvault Engineer implements and maintains backup and recovery systems using Commvault technology. Working with the Commvault Architect and Product Owner, this role ensures reliable data protection and recovery capabilities for the organization's systems and data.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of Commvault backup configuration and agent deployment tasks to defined standards
+- **Experience Anchor:** 1-3 years in backup engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Commvault architecture and solution design (Senior Engineers and the Architect-owned); underlying database backup strategy (Database Engineers-owned, this role coordinates with it); backup storage configuration ownership (Storage Engineers-owned, this role coordinates with it)
+- **Escalates To:** Commvault Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on backup and recovery requests
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Commvault Product Owner | Task prioritization |
-| Server Engineers | Backup agent deployment |
-| Database Engineers | Database backup requirements |
-| Storage Engineers | Backup storage configuration |
-| Commvault Architect | Implementation activities |
-| application teams | Backup and recovery requests |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Commvault Product Owner | Task prioritization | Consumes From |
+| Server Engineers | Backup agent deployment | Collaborates |
+| Database Engineers | Database backup requirements | Collaborates |
+| Storage Engineers | Backup storage configuration | Collaborates |
+| Commvault Architect | Implementation activities | Escalates To |
+| application teams | Backup and recovery requests | Provides To |
 
 ## Key Technologies
 

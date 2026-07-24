@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | Access Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Access Management Senior Engineer leads the implementation and optimization of enterprise access management solutions. This role provides technical leadership for access control systems while working closely with architects to translate access strategies into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced access management solution design and delivery within the Access Management Architect's reference architecture
+- **Experience Anchor:** 5+ years in access management engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Access management architecture and standards (Architect-owned); identity (authentication) management implementation (Identity Management Senior Engineers-owned, this role integrates with it); advanced security control design (Security Senior Engineers-owned, this role coordinates with it)
+- **Escalates To:** Access Management Architect — solution design and implementation strategy exceptions
+- **Escalated To By:** Access Management Engineers on technical implementation issues
 
 ## Business Impact
 
@@ -69,14 +79,14 @@ The Access Management Senior Engineer leads the implementation and optimization 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Access Management Architect | Solution design and implementation strategy |
-| Access Management Product Owner | Technical planning and roadmap execution |
-| Identity Management Senior Engineers | Integrated IAM solutions |
-| Security Senior Engineers | Advanced access security controls |
-| Access Management Engineers | Technical implementation |
-| application architects | Complex access requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Access Management Architect | Solution design and implementation strategy | Escalates To |
+| Access Management Product Owner | Technical planning and roadmap execution | Collaborates |
+| Identity Management Senior Engineers | Integrated IAM solutions | Collaborates |
+| Security Senior Engineers | Advanced access security controls | Collaborates |
+| Access Management Engineers | Technical implementation | Provides To |
+| application architects | Complex access requirements | Provides To |
 
 ## Key Technologies
 

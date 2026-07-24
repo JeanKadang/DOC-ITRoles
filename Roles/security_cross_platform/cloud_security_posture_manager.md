@@ -5,6 +5,8 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Cloud Security Posture Manager implements and operates Cloud Security Posture Management (CSPM) across all cloud platforms — Azure, AWS, and GCP. This role continuously monitors cloud environments for misconfigurations, policy violations, and compliance drift, operating CSPM tooling that provides unified visibility across the organisation's multi-cloud estate. The Cloud Security Posture Manager manages cloud security benchmarks (CIS, NIST CSF, IEC 62443, ISO 27001), tracks compliance posture, and drives structured remediation workflows in partnership with cloud platform teams — ensuring that cloud configurations remain aligned to the organisation's security policy framework and regulatory obligations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — cloud security posture management (CSPM) tooling, runtime detection policy, and multi-cloud misconfiguration remediation
+- **Experience Anchor:** 5+ years in cloud security engineering with demonstrated CSPM/cloud posture ownership — operates independently within the Security Cross-Platform Architect's standards
+- **Out of Scope:** Cross-platform security standards design (Security Cross-Platform Architect-owned); pipeline-time policy-as-code rule design (DevSecOps engineers-owned, this role aligns runtime detection to it); cloud landing zone architecture (Cloud Architects-owned, this role triages findings within it)
+- **Escalates To:** Security Cross-Platform Architect — architectural-level misconfigurations and posture standard definitions
+- **Escalated To By:** Azure, AWS, and GCP Cloud Architects on misconfiguration remediation within their cloud estates
 
 ## Business Impact
 
@@ -73,17 +83,17 @@ The Cloud Security Posture Manager implements and operates Cloud Security Postur
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevOps Architect | Shift-left CSPM integration — surfacing equivalent configuration checks within CI/CD pipelines and IaC scanning tooling |
-| DevSecOps engineers | Shift-left CSPM integration — surfacing equivalent configuration checks within CI/CD pipelines and IaC scanning tooling |
-| Infrastructure Automation Architect | Ensure compliance-as-code policies in IaC pipelines align with and complement CSPM runtime detection policies |
-| Compliance and Risk team | Provide CSPM findings, benchmark scores, and remediation evidence for regulatory compliance reporting, risk register updates, and audit preparation |
-| FinOps team | Review CSPM tooling costs, evaluate coverage efficiency, and ensure CSPM platform licensing is optimised across the multi-cloud estate |
-| Kubernetes Architect | Platform engineers to address Kubernetes-specific CSPM findings and CIS Kubernetes Benchmark compliance gaps |
-| Security Cross-Platform Architect | Security posture standard definitions and receives escalation guidance for architectural-level misconfigurations |
-| Security Architect | — operates within the security policy framework and escalates findings that exceed risk tolerance thresholds or require policy changes |
-| Azure Cloud Architect | **AWS Cloud Architect**, and **GCP Cloud Architect** to triage and drive remediation of misconfigurations within their respective cloud estates |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Architect | Shift-left CSPM integration — surfacing equivalent configuration checks within CI/CD pipelines and IaC scanning tooling | Collaborates |
+| DevSecOps engineers | Shift-left CSPM integration — surfacing equivalent configuration checks within CI/CD pipelines and IaC scanning tooling | Collaborates |
+| Infrastructure Automation Architect | Ensure compliance-as-code policies in IaC pipelines align with and complement CSPM runtime detection policies | Collaborates |
+| Compliance and Risk team | Provide CSPM findings, benchmark scores, and remediation evidence for regulatory compliance reporting, risk register updates, and audit preparation | Provides To |
+| FinOps team | Review CSPM tooling costs, evaluate coverage efficiency, and ensure CSPM platform licensing is optimised across the multi-cloud estate | Collaborates |
+| Kubernetes Architect | Platform engineers to address Kubernetes-specific CSPM findings and CIS Kubernetes Benchmark compliance gaps | Collaborates |
+| Security Cross-Platform Architect | Security posture standard definitions and receives escalation guidance for architectural-level misconfigurations | Escalates To |
+| Security Architect | Operates within the security policy framework and escalates findings that exceed risk tolerance thresholds or require policy changes | Governed By |
+| Azure, AWS, and GCP Cloud Architects | Triage and drive remediation of misconfigurations within their respective cloud estates | Provides To |
 
 ## Key Technologies
 

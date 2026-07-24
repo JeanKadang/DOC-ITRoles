@@ -5,6 +5,8 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
+| **Reports To** | Security Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security Engineer implements and maintains security controls and technologies across the organization's IT infrastructure. Working with Security Architects and Senior Engineers, this role ensures the effective deployment of security solutions that protect systems, data, and users while supporting business requirements.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of security control implementation tasks to defined standards
+- **Experience Anchor:** 1-3 years in security engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Security architecture and solution design (Senior Engineers and the Architect-owned); network-level security control ownership (Network Engineers-owned, this role coordinates with it); identity access control design (Identity Engineers-owned, this role coordinates with it)
+- **Escalates To:** Security Senior Engineer — design-level questions and complex implementation issues
+- **Escalated To By:** application teams on security implementation requests
 
 ## Business Impact
 
@@ -62,14 +72,14 @@ The Security Engineer implements and maintains security controls and technologie
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Security Product Owner | Task prioritization |
-| Network Engineers | Security controls |
-| System Administrators | Endpoint security |
-| Identity Engineers | Access controls |
-| Security Senior Engineers |  |
-| application teams | Security implementations |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security Product Owner | Task prioritization | Consumes From |
+| Network Engineers | Security controls | Collaborates |
+| System Administrators | Endpoint security | Collaborates |
+| Identity Engineers | Access controls | Collaborates |
+| Security Senior Engineers | Escalate complex issues; receive implementation guidance | Escalates To |
+| application teams | Security implementations | Provides To |
 
 ## Key Technologies
 

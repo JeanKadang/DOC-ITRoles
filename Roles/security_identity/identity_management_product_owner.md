@@ -5,6 +5,8 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
+| **Reports To** | Security & Identity Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Identity Management Product Owner manages the development and lifecycle of the organization's identity management solutions. This role leads a team of identity architects and engineers, ensuring that identity services meet security requirements, user needs, and operational objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — identity management platform backlog, modernisation roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Identity management technical architecture (Identity Management Architect-owned); access management (authorization) roadmap (Access Management Product Owner-owned, this role aligns to it); identity policy definition (security and compliance teams-owned)
+- **Escalates To:** Security & Identity Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** HR and business unit representatives on identity lifecycle process needs
 
 ## Business Impact
 
@@ -99,14 +109,14 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Access Management Product Owner | Integrated IAM strategy |
-| Identity Management Architect | Technical strategy |
-| security and compliance teams | Identity policies |
-| Application Product Owners | Application identity requirements |
-| HR and business unit representatives | Identity lifecycle processes |
-| IT leadership | Identity management strategy and investments |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Access Management Product Owner | Integrated IAM strategy | Collaborates |
+| Identity Management Architect | Technical strategy | Consumes From |
+| security and compliance teams | Identity policies | Governed By |
+| Application Product Owners | Application identity requirements | Consumes From |
+| HR and business unit representatives | Identity lifecycle processes | Consumes From |
+| IT leadership | Identity management strategy and investments | Provides To |
 
 ## Key Focus Areas
 
