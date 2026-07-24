@@ -5,6 +5,8 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Service Management Product Owner manages the development and lifecycle of the organization's IT service management capabilities. This role leads a team of ITSM specialists, ensuring that service management processes, tools, and practices meet business requirements, operational standards, and continual improvement objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — ITSM product backlog, service management roadmap, and service catalog portfolio governance
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Architecture decisions and technical ITSM platform design (Architect-owned); ITSM platform commercial procurement and licensing decisions (Procurement-owned); enterprise service architecture direction and governance standards (Enterprise Architect-owned)
+- **Escalates To:** Service & Governance Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** ITSM Architect on roadmap and architecture-alignment questions
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Service Management Product Owner manages the development and lifecycle of th
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Continual Improvement Manager | ITSM enhancements |
-| Service Desk Manager | Operational requirements |
-| ITSM Architect | Process design |
-| IT Team Leaders | Service delivery |
-| business relationship managers | Service expectations |
-| IT leadership | Service strategy and investments |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Continual Improvement Manager | ITSM enhancements | Collaborates |
+| Service Desk Manager | Operational requirements | Consumes From |
+| ITSM Architect | Process design | Collaborates |
+| IT Team Leaders | Service delivery | Consumes From |
+| business relationship managers | Service expectations | Consumes From |
+| IT leadership | Service strategy and investments | Escalates To |
 
 ## Key Technologies
 

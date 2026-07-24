@@ -5,6 +5,8 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
+| **Reports To** | Configuration Management Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Application Configuration Management Engineer implements and maintains configuration management processes and tools for applications across the enterprise. This role focuses on ensuring consistent, controlled, and secure management of application configurations throughout different environments and release cycles.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of application configuration management tasks to defined standards
+- **Experience Anchor:** 1-3 years in configuration/ITSM engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Configuration management reference architecture (Senior Engineer/Architect-owned); DevOps pipeline design (DevOps-owned); release scheduling strategy (Release Management-owned)
+- **Escalates To:** Configuration Management Senior Engineers — complex configuration issues and design-level questions
+- **Escalated To By:** application teams on configuration requirement questions
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Application Configuration Management Engineer implements and maintains confi
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| ITSM Product Owner | Task prioritization |
-| Release Management | Deployment configurations |
-| DevOps Engineers | Pipeline integration |
-| Application Support | Configuration troubleshooting |
-| Configuration Management Senior Engineers |  |
-| application teams | Configuration requirements |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| ITSM Product Owner | Task prioritization | Consumes From |
+| Release Management | Deployment configurations | Collaborates |
+| DevOps Engineers | Pipeline integration | Collaborates |
+| Application Support | Configuration troubleshooting | Provides To |
+| Configuration Management Senior Engineers | Escalate complex configuration issues; receive guidance and mentoring | Escalates To |
+| application teams | Configuration requirements | Provides To |
 
 ## Key Technologies
 

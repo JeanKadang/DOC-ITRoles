@@ -5,6 +5,8 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | Service Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Service Management Senior Engineer leads the implementation and optimization of complex IT service management solutions across the organization. This role provides technical leadership for ITSM platform configurations, workflows, and integrations while working closely with process owners to translate service management requirements into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — detailed engineering design and delivery within the ITSM reference architecture
+- **Experience Anchor:** 5+ years in ITSM/service management engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** ITSM platform architecture and process reference models (Architect-owned); business process/SLA target-setting (Process Owners-owned); platform commercial decisions (Product Owner-owned)
+- **Escalates To:** ITSM Architect — architecture-level questions and design direction
+- **Escalated To By:** Service Management Engineers on complex implementation issues
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Service Management Senior Engineer leads the implementation and optimization
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| ITSM Architect | Solution design |
-| Service Management Product Owner | Technical planning |
-| Process Owners | Process automation |
-| Integration Engineers | System connections |
-| Service Desk Teams | Operational requirements |
-| Service Management Engineers | Technical implementation |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| ITSM Architect | Solution design | Escalates To |
+| Service Management Product Owner | Technical planning | Collaborates |
+| Process Owners | Process automation | Collaborates |
+| Integration Engineers | System connections | Collaborates |
+| Service Desk Teams | Operational requirements | Provides To |
+| Service Management Engineers | Technical implementation | Provides To |
 
 ## Key Technologies
 

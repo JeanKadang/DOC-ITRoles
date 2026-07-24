@@ -5,6 +5,8 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Application Configuration Management Architect designs comprehensive strategies and architectures for managing application configurations across the enterprise. This role establishes the technical vision for configuration management, creating architectures that ensure consistency, security, auditability, and automation of application configurations throughout their lifecycle.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — application configuration management reference architecture and automation standards
+- **Experience Anchor:** Minimum 8 years in configuration management/ITSM engineering, with at least 3 years in an architecture role — operates independently on domain-wide architecture decisions
+- **Out of Scope:** Domain-specific application configuration decisions (owned by application teams); DevOps CI/CD toolchain decisions and pipeline design (DevOps-owned); ITSM platform selection and procurement decisions (ITSM Product Owner/Procurement-owned)
+- **Escalates To:** Service & Governance Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and decisions beyond configuration management scope
+- **Escalated To By:** Configuration Management Senior Engineers and Engineers on design-level questions and standards clarification
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Application Configuration Management Architect designs comprehensive strateg
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Security Architects | Secure configuration patterns |
-| DevOps Architects | CI/CD integration |
-| ITSM Product Owner | Technical strategy |
-| Configuration Management Senior Engineers |  |
-| application architects | Configuration requirements |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standards | Governed By |
+| Security Architects | Secure configuration patterns | Governed By |
+| DevOps Architects | CI/CD integration | Collaborates |
+| ITSM Product Owner | Technical strategy | Collaborates |
+| Configuration Management Senior Engineers | Provide architectural direction and review engineering designs | Provides To |
+| application architects | Configuration requirements | Consumes From |
 
 ## Key Technologies
 

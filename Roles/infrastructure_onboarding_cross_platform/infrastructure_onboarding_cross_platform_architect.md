@@ -5,6 +5,8 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Enterprise Infrastructure Onboarding Architect designs comprehensive strategies and frameworks for efficient infrastructure provisioning across all technology domains. This role creates the architectural vision for standardized, automated, and governance-controlled infrastructure deployment processes.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — enterprise infrastructure provisioning reference architecture and automation standards
+- **Experience Anchor:** Minimum 8 years in infrastructure engineering, with at least 3 years in an architecture role — operates independently on domain-wide architecture decisions
+- **Out of Scope:** Domain-specific architecture decisions and technology selection (owned by the relevant domain Architect); ITSM platform configuration and workflow design (ITSM-owned); tool selection, vendor procurement, and commercial infrastructure decisions (Procurement-owned)
+- **Escalates To:** Service & Governance Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and decisions beyond onboarding scope
+- **Escalated To By:** Infrastructure Onboarding Senior Engineers and Engineers on design-level questions and standards clarification
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standardization |
-| ITSM Architects | Service catalog design |
-| Infrastructure Onboarding Product Owner | Technical strategy |
-| Infrastructure Onboarding Senior Engineers |  |
-| domain-specific Architects | Integration approaches |
-| business stakeholders | Onboarding requirements |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standardization | Governed By |
+| ITSM Architects | Service catalog design | Collaborates |
+| Infrastructure Onboarding Product Owner | Technical strategy | Collaborates |
+| Infrastructure Onboarding Senior Engineers | Provide architectural direction and review engineering designs | Provides To |
+| domain-specific Architects | Integration approaches | Collaborates |
+| business stakeholders | Onboarding requirements | Consumes From |
 
 ## Key Technologies
 

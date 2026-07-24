@@ -5,6 +5,8 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
+| **Reports To** | Infrastructure Onboarding Senior Engineer |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Enterprise Infrastructure Onboarding Engineer implements and maintains provisioning processes and automation for deploying infrastructure across multiple technology domains. This role focuses on creating efficient, standardized, and reliable methods for infrastructure deployment and configuration.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Team — execution of infrastructure provisioning and onboarding tasks to defined standards
+- **Experience Anchor:** 1-3 years in infrastructure engineering — works under guidance, building toward independent delivery
+- **Out of Scope:** Infrastructure provisioning reference architecture (Senior Engineer/Architect-owned); ITSM service catalog management (ITSM-owned); backlog prioritisation (Product Owner-owned)
+- **Escalates To:** Infrastructure Onboarding Senior Engineers — complex provisioning issues and design-level questions
+- **Escalated To By:** end users on infrastructure provisioning request clarification
 
 ## Business Impact
 
@@ -61,14 +71,16 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Infrastructure Onboarding Product Owner | Task prioritization |
-| DevOps Engineers | Pipeline integration |
-| ITSM teams | Service catalog management |
-| Infrastructure Onboarding Senior Engineers |  |
-| domain-specific Engineers | Infrastructure requirements |
-| end users | Infrastructure provisioning requests |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Infrastructure Onboarding Product Owner | Task prioritization | Consumes From |
+| DevOps Engineers | Pipeline integration | Collaborates |
+| ITSM teams | Service catalog management | Governed By |
+| Infrastructure Onboarding Senior Engineers | Escalate complex provisioning and integration issues; receive guidance and mentoring | Escalates To |
+| domain-specific Engineers | Infrastructure requirements | Collaborates |
+| end users | Infrastructure provisioning requests | Provides To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |
+| **Reports To** | Service & Governance Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The ITSM Product Owner owns the product vision, roadmap, and backlog for the organisation's IT Service Management platform and Configuration Management Database (CMDB). This role ensures the ITSM platform (typically ServiceNow or equivalent) evolves to meet the changing needs of IT Operations, end users, and the business - covering Incident, Problem, Change, Service Request, Asset, CMDB, and related ITSM processes. The PO balances platform capability development, process improvement, and stakeholder expectations across IT and business domains.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — ITSM platform backlog, roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** ITIL process design (with Process Owners/Service Management Architect); ITSM tooling procurement commercial decisions (with Procurement); organisational ITSM process adoption strategy; IT security policies applicable to the ITSM platform
+- **Escalates To:** Service & Governance Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** ITSM / ConfigMgr Engineers on backlog clarification and acceptance criteria questions
 
 ## Business Impact
 
@@ -72,13 +82,15 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Service Management Architect: | Align platform development with ITSM process design and standards |
-| ITSM / ConfigMgr Engineers: | Direct the delivery team; provide clear stories and acceptance criteria |
-| IT Process Owners (Incident, Change, Problem Managers): | Translate process needs into backlog items |
-| IT Operations and Help Desk: | Represent their operational requirements in the backlog |
-| Finance / Procurement: | Align licensing and tooling costs with budget cycles |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Service Management Architect: | Align platform development with ITSM process design and standards | Collaborates |
+| ITSM / ConfigMgr Engineers: | Direct the delivery team; provide clear stories and acceptance criteria | Provides To |
+| IT Process Owners (Incident, Change, Problem Managers): | Translate process needs into backlog items | Consumes From |
+| IT Operations and Help Desk: | Represent their operational requirements in the backlog | Consumes From |
+| Finance / Procurement: | Align licensing and tooling costs with budget cycles | Collaborates |
 
 ## Key Technologies
 

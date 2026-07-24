@@ -10,6 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 - **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
+  Mode backfilled for the Service & Governance chapter (#85, batch 3/7:
+  15 of 219 files — the domain's 4 governance specialists, built in the
+  v1.2.0 batch, were already on the modern template).** ITSM &
+  Configuration, Service Management, and Infrastructure Onboarding follow
+  the standard IC-ladder pattern from batch 2. Enterprise Architecture is
+  modeled as a sub-hierarchy rather than three flat peer architects: its
+  own existing text has the Solution Architect explicitly "receiving
+  strategic direction from" and "escalating enterprise-wide decisions to"
+  the Enterprise Architect, and the Senior Engineer providing "operational
+  and documentation support" to both — so both report to the Enterprise
+  Architect, who alone reports to the Chapter Lead, rather than all three
+  reporting straight to the Chapter Lead like the chapter's other domains.
+- **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
   Mode backfilled for the End User & Workplace chapter (#84, batch 2/7:
   13 of 219 files — the domain's 3 Service Desk files were already on the
   modern template).** Client Platform, Endpoint Management, and Modern
