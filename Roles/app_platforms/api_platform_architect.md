@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors API Platform Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The API Platform Architect designs comprehensive strategies and architectures for the organization's API ecosystem. This role establishes the technical vision for API platforms, gateways, and management tools, creating architectures that balance performance, scalability, security, and developer experience while aligning with business objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — API platform architecture standards, gateway topology design, and API management platform selection across the chapter
+- **Experience Anchor:** 8+ years in API or software architecture with demonstrated architecture-level delivery — operates independently on domain-wide API platform architecture decisions
+- **Out of Scope:** Enterprise integration strategy and application architecture decisions (Enterprise/application architects-owned); cloud platform selection and deployment architecture (Cloud Architects-owned); API governance policy and lifecycle framework definition (API Strategy Architect-owned, this role implements it)
+- **Escalates To:** DevOps & Delivery Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and investment decisions beyond API platform scope
+- **Escalated To By:** API Platform Senior Engineers on design exceptions and platform standards clarification
 
 ## Business Impact
 
@@ -63,14 +73,14 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Security Architects | API security patterns |
-| Integration Architects | Enterprise integration |
-| API Platform Product Owner | Technical strategy |
-| API Platform Senior Engineers |  |
-| Application Architects | API consumption patterns |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Technology standards | Governed By |
+| Security Architects | API security patterns | Governed By |
+| Integration Architects | Enterprise integration | Collaborates |
+| API Platform Product Owner | Technical strategy | Collaborates |
+| API Platform Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| Application Architects | API consumption patterns | Provides To |
 
 ## Key Technologies
 

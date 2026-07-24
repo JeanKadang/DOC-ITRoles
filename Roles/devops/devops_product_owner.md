@@ -5,6 +5,8 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DevOps Product Owner manages the DevOps platform roadmap and adoption strategy, ensuring CI/CD infrastructure and automation tools meet the needs of development and operations teams. This role prioritizes DevOps capabilities, coordinates implementation schedules, and drives platform adoption across the organization.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — DevOps platform backlog, sprint roadmap, and delivery prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Technical architecture and toolchain design (DevOps Architect-owned); security requirements for pipeline tooling (Security PO-owned); engineering team hiring and resourcing (Chapter Lead-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** DevOps Engineers on backlog refinement and delivery-transparency questions
 
 ## Business Impact
 
@@ -67,16 +77,16 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 - **Working Knowledge required:** Container registry and artifact management concepts, value stream management tooling, code quality and security scanning pipeline integrations
 - **Awareness level expected:** AI-assisted development toolchain impacts on DevOps adoption metrics, FinOps tooling for DevOps platform cost management, platform engineering maturity model frameworks
 
-## Relationships & Collaboration
+## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| DevOps Architect | Platform strategy and design |
-| DevOps Engineers | Implementation priorities |
-| development teams | Understand pipeline requirements |
-| operations teams | Operational readiness |
-| training teams | DevOps enablement |
-| IT leadership | DevOps platform value and metrics |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Architect | Platform strategy and design | Consumes From |
+| DevOps Engineers | Implementation priorities | Provides To |
+| development teams | Understand pipeline requirements | Consumes From |
+| operations teams | Operational readiness | Collaborates |
+| training teams | DevOps enablement | Collaborates |
+| IT leadership | DevOps platform value and metrics | Provides To |
 
 ## Key Performance Indicators
 

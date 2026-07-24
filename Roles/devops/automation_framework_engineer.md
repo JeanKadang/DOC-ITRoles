@@ -5,6 +5,8 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
+| **Reports To** | DevOps Senior Engineer or DevOps Architect (depending on team structure) |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Automation Framework Engineer designs, builds, and maintains the reusable automation primitives that accelerate delivery across all engineering teams. This role operates at the meta-level — rather than automating individual workloads, it owns the shared frameworks, libraries, and tooling that other engineers consume to build their own automation. Core outputs include test automation frameworks, infrastructure provisioning libraries, runbook automation platforms, shared pipeline templates, and SDK/API wrappers that standardise how automation is written and maintained across the organisation.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — shared automation frameworks, reusable pipeline modules, and self-service tooling consumed across engineering teams
+- **Experience Anchor:** 5+ years in automation, DevOps, or platform engineering with demonstrated framework/tooling ownership — operates independently within DevOps platform standards
+- **Out of Scope:** DevOps platform architecture and IDP strategy (DevOps Architect-owned); infrastructure automation module governance (Infrastructure Automation Architect-owned); test strategy definition (QA/test engineering-owned, aligns published frameworks to it)
+- **Escalates To:** DevOps Senior Engineer or DevOps Architect (depending on team structure) — framework standards exceptions and cross-team adoption conflicts
+- **Escalated To By:** domain engineering teams on issues consuming published automation frameworks
 
 ## Business Impact
 
@@ -82,11 +92,15 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | DevOps Senior Engineer or DevOps Architect (depending on team structure) |
-| Works closely with: | Developer Experience Engineer (inner developer portal and golden paths), Platform Reliability Engineer (operational automation and runbook alignment), Infrastructure Automation Architect (strategic direction and module governance) |
-| Collaborates with: | Domain engineering teams who consume published frameworks; QA/test engineering leads aligning on test automation standards; security engineering on compliance controls embedded in shared templates |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Senior Engineer or DevOps Architect | Reports to, depending on team structure | Escalates To |
+| Developer Experience Engineer | Inner developer portal and golden paths | Collaborates |
+| Platform Reliability Engineer | Operational automation and runbook alignment | Collaborates |
+| Infrastructure Automation Architect | Strategic direction and module governance | Governed By |
+| domain engineering teams | Consume published frameworks | Provides To |
+| QA/test engineering leads | Aligning on test automation standards | Collaborates |
+| security engineering | Compliance controls embedded in shared templates | Governed By |
 
 ## Key Technologies
 

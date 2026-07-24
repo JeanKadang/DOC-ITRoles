@@ -5,6 +5,8 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | Integration Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Integration Senior Engineer designs and implements complex enterprise integrations across on-premises, cloud, and SaaS platforms. This role serves as the deep technical specialist and escalation point for the integration team, leading delivery of sophisticated integration workflows, API implementations, and event-driven integration patterns. The Senior Engineer drives adoption of integration platform standards, mentors integration engineers, and contributes to integration architecture decisions.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced integration solution design and delivery within the Integration Architect's reference architecture
+- **Experience Anchor:** 5+ years in integration or middleware engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** Integration platform architecture and standards (Architect-owned); event-driven data feed integration strategy beyond assigned implementation (DataOps-owned, jointly implemented); API security control design (Security Engineers-owned, implements controls)
+- **Escalates To:** Integration Architect — architecture-level questions and standards exceptions
+- **Escalated To By:** Integration Engineers on complex issues and implementation guidance requests
 
 ## Business Impact
 
@@ -75,13 +85,13 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Integration Architect: | Receive architectural direction; contribute implementation feedback |
-| Integration Engineers: | Mentor and review work |
-| Application Teams: | Design and agree integration contracts and API specifications |
-| DataOps Teams: | Implement event-driven data feed integrations for the data platform |
-| Security Engineers: | Implement API security controls |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Integration Architect | Receive architectural direction; contribute implementation feedback | Escalates To |
+| Integration Engineers | Mentor and review work | Provides To |
+| Application Teams | Design and agree integration contracts and API specifications | Collaborates |
+| DataOps Teams | Implement event-driven data feed integrations for the data platform | Collaborates |
+| Security Engineers | Implement API security controls | Governed By |
 
 ## Key Technologies
 

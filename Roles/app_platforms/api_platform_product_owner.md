@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The API Platform Product Owner manages the development and lifecycle of the organization's API management platform, tools, and shared components. This role leads a team of API platform engineers, ensuring that the API ecosystem meets the needs of application teams while maintaining technical excellence, security, and operational standards.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — API platform product backlog, strategic roadmap, and developer experience prioritisation
+- **Experience Anchor:** 5+ years in product ownership or technical product management — operates independently on backlog and roadmap decisions
+- **Out of Scope:** Technical API architecture design and platform technology selection (API Architect-owned); enterprise integration strategy (Enterprise/Integration Architects-owned); API security standards (Security Teams-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — budget, headcount, and cross-domain roadmap trade-offs
+- **Escalated To By:** Application Product Owners on API requirements and roadmap alignment
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The API Platform Product Owner manages the development and lifecycle of the orga
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Application Product Owners | API requirements |
-| DevOps Product Owner | CI/CD integration for APIs |
-| Security Teams | API security standards |
-| Application Teams | API adoption and consumption |
-| IT Leadership | API platform strategy |
-| API Architect | Technical strategy |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Application Product Owners | API requirements | Consumes From |
+| DevOps Product Owner | CI/CD integration for APIs | Collaborates |
+| Security Teams | API security standards | Governed By |
+| Application Teams | API adoption and consumption | Provides To |
+| IT Leadership | API platform strategy | Provides To |
+| API Architect | Technical strategy | Consumes From |
 
 ## Key Technologies
 

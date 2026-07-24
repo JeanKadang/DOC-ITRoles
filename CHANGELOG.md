@@ -10,6 +10,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ### Added
 
 - **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
+  Mode backfilled for the DevOps & Delivery chapter (#86, batch 4/7:
+  24 of 219 files).** DevOps, App Platforms (API, .NET, Java), and
+  Integration & Middleware all follow the standard IC-ladder pattern:
+  Engineer reports to Senior Engineer, Senior Engineer and Architect and
+  Product Owner report to the DevOps & Delivery Chapter Lead. API Strategy
+  Architect and API Platform Architect are modeled as peers per the
+  domain's own text (each the other's "primary technical counterpart"),
+  both reporting to the Chapter Lead rather than one managing the other.
+  Developer Experience Engineer and Platform Reliability Engineer — two
+  Engineer-grade specialists with no dedicated Senior Engineer tier —
+  report to the DevOps Architect. `devops_engineer.md`,
+  `devops_senior_engineer.md`, and `devops_product_owner.md` had their
+  "Relationships & Collaboration" heading renamed to the canonical
+  "Interactions with Other Roles" (mirroring the #7 fix). Consolidated a
+  duplicate Security Architect row in `devops_architect.md`'s interactions
+  table into one entry.
+- **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
   Mode backfilled for the Service & Governance chapter (#85, batch 3/7:
   15 of 219 files — the domain's 4 governance specialists, built in the
   v1.2.0 batch, were already on the modern template).** ITSM &

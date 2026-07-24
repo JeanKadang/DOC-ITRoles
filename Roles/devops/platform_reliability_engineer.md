@@ -5,6 +5,8 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
+| **Reports To** | DevOps Architect |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Platform Reliability Engineer applies site reliability engineering (SRE) principles specifically to the internal developer platform and shared engineering infrastructure — treating internal engineering teams as the primary customers rather than end users. This role owns the reliability, availability, and performance of platform services including CI/CD infrastructure, developer portals, self-service provisioning tooling, and shared Kubernetes clusters. The Platform Reliability Engineer defines and tracks SLOs for platform services, manages error budgets, runs chaos engineering experiments to validate platform resilience, and leads blameless incident reviews when platform failures affect developer productivity.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — internal developer platform reliability, resilience, and SLO management
+- **Experience Anchor:** 5+ years in site reliability or platform engineering with demonstrated ownership of production reliability — operates independently within the DevOps Architect's platform strategy
+- **Out of Scope:** DevOps platform architecture and toolchain standards (DevOps Architect-owned); organisation-wide observability standards (Observability Architect-owned, this role aligns to them); infrastructure cost optimisation targets (FinOps-owned, balanced against reliability)
+- **Escalates To:** DevOps Architect — platform architecture decisions and reliability standards exceptions
+- **Escalated To By:** application development teams on platform SLO status and reliability-impacting incidents
 
 ## Business Impact
 
@@ -72,15 +82,15 @@ The Platform Reliability Engineer applies site reliability engineering (SRE) pri
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Developer Experience Engineer | Review platform feature designs for reliability risks and to jointly respond to IDP incidents |
-| DevOps Architect | Platform design reviews — providing reliability and resilience input to IDP architecture decisions |
-| Observability Architect | Align platform monitoring with organisation-wide observability standards and telemetry pipeline governance |
-| Azure, AWS, and GCP Cloud Architects | Underlying infrastructure reliability, autoscaling, and multi-zone availability design for shared platform components |
-| Kubernetes Architect | Cluster reliability, workload isolation, and failure domain analysis for platform services hosted on shared clusters |
-| application development teams | Communicate platform SLO status, planned maintenance, and reliability improvements |
-| FinOps team | Platform infrastructure cost optimisation initiatives that must be balanced against reliability requirements |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Developer Experience Engineer | Review platform feature designs for reliability risks and to jointly respond to IDP incidents | Collaborates |
+| DevOps Architect | Platform design reviews — providing reliability and resilience input to IDP architecture decisions | Escalates To |
+| Observability Architect | Align platform monitoring with organisation-wide observability standards and telemetry pipeline governance | Governed By |
+| Azure, AWS, and GCP Cloud Architects | Underlying infrastructure reliability, autoscaling, and multi-zone availability design for shared platform components | Collaborates |
+| Kubernetes Architect | Cluster reliability, workload isolation, and failure domain analysis for platform services hosted on shared clusters | Collaborates |
+| application development teams | Communicate platform SLO status, planned maintenance, and reliability improvements | Provides To |
+| FinOps team | Platform infrastructure cost optimisation initiatives that must be balanced against reliability requirements | Collaborates |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors Integration Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Integration Architect designs and governs the organisation's enterprise integration strategy and architecture, covering API management, event-driven messaging, enterprise service bus (ESB) patterns, and point-to-point integration across on-premises, cloud, and SaaS platforms. This role ensures that systems integrate securely, reliably, and in a maintainable way - moving the organisation away from fragile point-to-point integrations toward governed, reusable integration platforms. The Integration Architect works across the full integration stack: synchronous APIs, asynchronous messaging, event streaming, and MFT.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — integration platform architecture, API design standards, and event-driven architecture patterns across the chapter
+- **Experience Anchor:** 8+ years in integration or middleware architecture with demonstrated architecture-level delivery — operates independently on domain-wide integration architecture decisions
+- **Out of Scope:** Cloud platform architecture (Cloud Architects-owned); application data model and business process design (application teams-owned); security policy for API and integration access (CISO-owned, this role implements controls)
+- **Escalates To:** DevOps & Delivery Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and investment decisions beyond integration platform scope
+- **Escalated To By:** Integration Senior Engineers on architectural direction and design exception questions
 
 ## Business Impact
 
@@ -76,16 +86,16 @@ The Integration Architect designs and governs the organisation's enterprise inte
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architect / Solution Architects: | Provide integration patterns; governance review of integration designs in project proposals |
-| Cloud Architects: | Align integration platform architecture with cloud platform standards |
-| Application Teams: | Define and enforce API design standards; support integration design within applications |
-| Security Architect: | Implement API security patterns and B2B credential governance |
-| ERP / Business Systems Teams: | Design integration between core enterprise systems and surrounding applications |
-| DataOps / Data Platform: | Define event sourcing and CDC patterns where integration feeds data platforms |
-| DevOps Architect | Govern CI/CD integration pipeline standards, deployment automation for integration artifacts, and integration testing practices |
-| API Platform Architect | API design standards, versioning policies, and the boundary between API gateway capabilities and integration platform responsibilities |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architect / Solution Architects | Provide integration patterns; governance review of integration designs in project proposals | Governed By |
+| Cloud Architects | Align integration platform architecture with cloud platform standards | Collaborates |
+| Application Teams | Define and enforce API design standards; support integration design within applications | Provides To |
+| Security Architect | Implement API security patterns and B2B credential governance | Governed By |
+| ERP / Business Systems Teams | Design integration between core enterprise systems and surrounding applications | Collaborates |
+| DataOps / Data Platform | Define event sourcing and CDC patterns where integration feeds data platforms | Collaborates |
+| DevOps Architect | Govern CI/CD integration pipeline standards, deployment automation for integration artifacts, and integration testing practices | Collaborates |
+| API Platform Architect | API design standards, versioning policies, and the boundary between API gateway capabilities and integration platform responsibilities | Collaborates |
 
 ## Key Technologies
 

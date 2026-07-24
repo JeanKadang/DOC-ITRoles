@@ -5,6 +5,8 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | None (sets technical direction and mentors DevOps Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DevOps Architect designs comprehensive strategies and architectures for enabling efficient software delivery and operations across the organization. This role establishes the technical vision for DevOps practices, creating architectures that balance delivery speed, operational stability, security, and quality while aligning with business objectives.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain-wide — DevOps platform architecture, CI/CD toolchain strategy, and DevSecOps reference architecture across the DevOps & Delivery chapter
+- **Experience Anchor:** 8+ years in DevOps, platform, or release engineering with demonstrated architecture-level delivery — operates independently on domain-wide toolchain and pipeline architecture decisions
+- **Out of Scope:** Application architecture and technology stack selection (Application Architect-owned); cloud infrastructure design (Cloud Architect-owned); security control requirements and DevSecOps policy detail (Security Architect-owned, DevOps Architect implements); data pipeline CI/CD governance beyond shared toolchain standards (Data Platform Architect-owned)
+- **Escalates To:** DevOps & Delivery Chapter Lead — chapter-wide priorities, cross-domain boundary disputes, and investment decisions beyond DevOps platform scope
+- **Escalated To By:** DevOps Senior Engineers on platform design exceptions and toolchain standards clarification
 
 ## Business Impact
 
@@ -78,16 +88,15 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Enterprise Architects | Technology standards |
-| Security Architects | DevSecOps patterns |
-| Cloud Architects | Deployment architectures |
-| DevOps Product Owner | Technical strategy |
-| DevOps Senior Engineers |  |
-| Security Architect | Define the DevSecOps control framework, supply chain security policies (SLSA, SBOM), and security gate standards within CI/CD pipelines |
-| Data Platform Architect | Data pipeline CI/CD governance, data quality gates, and dbt/Spark job deployment automation |
-| application architects | Delivery pipelines |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architects | Align DevOps platform standards with enterprise technology standards | Governed By |
+| Security Architects | Define the DevSecOps control framework, supply chain security policies (SLSA, SBOM), and security gate standards within CI/CD pipelines | Collaborates |
+| Cloud Architects | Align deployment architectures with cloud platform design | Collaborates |
+| DevOps Product Owner | Technical strategy input to backlog and roadmap prioritisation | Collaborates |
+| DevOps Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
+| Data Platform Architect | Data pipeline CI/CD governance, data quality gates, and dbt/Spark job deployment automation | Collaborates |
+| application architects | Delivery pipeline design and consumption patterns | Provides To |
 
 ## Key Technologies
 

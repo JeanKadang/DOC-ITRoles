@@ -5,6 +5,8 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
+| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Direct Reports** | API Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The API Platform Senior Engineer leads the implementation and optimization of API management platforms across the organization. This role provides technical leadership for API gateways, design standards, and developer experiences while working closely with architects to translate API strategies into effective implementations.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Domain — advanced API platform solution design and delivery within the API Platform Architect's reference architecture
+- **Experience Anchor:** 5+ years in API or platform engineering with demonstrated independent delivery — operates independently within the Architect's reference architecture
+- **Out of Scope:** API platform architecture standards (Architect-owned); enterprise integration pattern definition (Integration Senior Engineers-owned); API security policy definition (Security Senior Engineers-owned, implements controls)
+- **Escalates To:** API Platform Architect — architecture-level questions and platform standards exceptions
+- **Escalated To By:** API Platform Engineers on complex implementation and API consumption issues
 
 ## Business Impact
 
@@ -61,14 +71,14 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| API Architect | API platform strategy |
-| API Platform Product Owner | Technical planning |
-| Integration Senior Engineers | Enterprise integration patterns |
-| Security Senior Engineers | API security controls |
-| API Platform Engineers | Implementation best practices |
-| application teams | API consumption patterns |
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| API Architect | API platform strategy | Escalates To |
+| API Platform Product Owner | Technical planning | Collaborates |
+| Integration Senior Engineers | Enterprise integration patterns | Collaborates |
+| Security Senior Engineers | API security controls | Governed By |
+| API Platform Engineers | Implementation best practices | Provides To |
+| application teams | API consumption patterns | Provides To |
 
 ## Key Technologies
 
