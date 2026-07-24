@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Engineering Director or Technical Area Lead (PAL/TAL pair for the relevant product area or organisation-wide engineering function) |
+| **Direct Reports** | None (individual contributor — leads through influence, curation, and connection rather than line management) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Technical Community Leader is a senior individual contributor responsible for building and sustaining the technical community across the engineering organisation. This role drives technical excellence not through line management authority but through influence, curation, and connection — establishing and running communities of practice (CoPs), facilitating knowledge sharing across domain boundaries, maintaining shared standards libraries, and operating the organisation's technology radar. The Technical Community Leader ensures that hard-won technical knowledge does not remain siloed within individual teams, that practitioners across all domains have forums for peer learning, and that engineering standards evolve through collective input rather than top-down mandate.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, organisation-wide (as an internal consultant) — no budget or headcount authority; influence through community facilitation and standards curation
+- **Experience Anchor:** 8+ years in senior technical roles with demonstrated cross-domain influence and community-building impact — operates independently organisation-wide
+- **Out of Scope:** Enterprise architecture policy and domain-level technical direction (Architecture function and TAL-owned); technology investment and procurement decisions (TAL and business stakeholders-owned); mandatory standards and architectural constraints for specific domains (Domain Architect-owned)
+- **Escalates To:** Engineering Director or Technical Area Lead — community programme investment and organisation-wide standards adoption decisions
+- **Escalated To By:** Domain Architects and practitioners on cross-domain knowledge-sharing gaps; not a formal escalation target — operates through voluntary community participation
 
 ## Business Impact
 
@@ -71,11 +81,15 @@ The Technical Community Leader is a senior individual contributor responsible fo
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Engineering Director or Technical Area Lead (PAL/TAL pair for the relevant product area or organisation-wide engineering function) |
-| Works closely with: | Architecture function (all domain Architects), Technical Area Leads, Engineering Practices Champion, HR/L&D team, and DevEx/Developer Experience Engineer |
-| Collaborates with: | All engineering teams and practitioners as community participants; vendor technical communities and industry peer groups for external technology radar input |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Architecture function (all domain Architects), Technical Area Leads | Enterprise architecture policy and domain-level technical direction inform the community's standards library and radar content | Consumes From |
+| Engineering Practices Champion | Coordinate engineering-culture initiatives with the wider technical community programme | Collaborates |
+| HR/L&D team, DevEx/Developer Experience Engineer | Internal learning and development alignment and developer-experience tooling for community platforms | Collaborates |
+| All engineering teams and practitioners | Community of practice participants, knowledge-sharing forums, and peer review | Provides To |
+| Vendor technical communities and industry peer groups | External technology radar input | Consumes From |
 
 ## Key Technologies
 

@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
+  Mode backfilled for the Leadership chapter (#5, batch 1/7: 16 of 219
+  files).** All 4 C-suite roles and all 12 Leadership-domain roles now
+  carry the full modern role_template.md field set. Reporting hierarchy is
+  grounded in each file's own existing content (Key Decisions &
+  Accountabilities Owns/Advises tables, Key Stakeholders, and prior
+  "Reports to:" prose) rather than invented: CEO → Board of Directors;
+  CTO/CIO/SVP of Technology → CEO (documented equivalent titles); CISO →
+  SVP/CTO/CIO or directly to CEO/Board (dual governance model per the
+  file's own text); PAL/TAL → CTO/CIO/SVP as the delivery/technical
+  leadership pair; the 6 Chapter Leads → TAL or PAL; the Engineering
+  Practices Champion and Technical Community Leader → Engineering
+  Director or TAL. The 8 files that previously jammed "Reports to:" and
+  "Line manages:" into the Interactions table as a workaround (predating
+  the metadata fields) had those now-redundant rows removed and the
+  remaining stakeholder rows re-authored with real role names and an
+  Interaction Mode, matching the modern-template convention already
+  established by the Service Desk roles (downward = Provides To, upward =
+  Escalates To, peer = Collaborates). Remaining 6 chapters (203 files)
+  tracked in #5.
+
 ### Fixed
 
 - **End User & Workplace Chapter Lead's domain list now names all four

@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CISO |
+| **Reports To** | SVP of Technology (or CTO/CIO equivalent); CEO or Board in independent governance models |
+| **Direct Reports** | None (strategic direction over the Security & Identity Chapter Lead and senior security architects — not formal line management; see the org chart / #71) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Chief Information Security Officer (CISO) is the senior executive accountabl
 In many organisations the CISO reports into the SVP of Technology (or equivalent CTO/CIO), forming a close executive partnership on technology risk and investment. In some organisations — particularly those with independent security governance or heavily regulated operating environments — the CISO reports directly to the CEO or Board. Both models are valid and reflected in this definition. In some organisations, the SVP of Technology and the CISO role may be held by the same person; the CISO responsibilities are documented separately here for clarity and for organisations where the roles are distinct.
 
 The CISO sits above the PAL and TAL in the technology leadership hierarchy on matters of security governance and risk, and provides strategic direction to the Security & Identity Chapter Lead and senior security architects who deliver operational security.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Organisation-wide — information security strategy, risk framework, and security architecture direction
+- **Experience Anchor:** 15+ years of security leadership, 5+ years at CISO or senior security executive level — operates independently on security strategy and risk acceptance
+- **Out of Scope:** Overall technology strategy and platform investment priorities (SVP of Technology-owned); total technology budget authority and enterprise-wide financial governance (SVP of Technology and CFO-owned); corporate legal strategy and regulatory engagement beyond security obligations (Legal and CEO-owned)
+- **Escalates To:** SVP of Technology (or CEO/Board directly, in independent governance models) for enterprise risk acceptance and major security investment
+- **Escalated To By:** Security & Identity Chapter Lead and senior security architects on unresolved security risk, incident escalation, and architecture decisions requiring executive risk acceptance
 
 ## Business Impact
 
@@ -94,17 +104,19 @@ The CISO sits above the PAL and TAL in the technology leadership hierarchy on ma
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| SVP of Technology | (or equivalent CTO/CIO) on security strategy, risk posture, and technology investment decisions with security implications; reports directly to the CEO or Board in independent governance models |
-| Security & Identity Chapter Lead | Who owns the operational delivery of security services, tooling, and engineering within the technology function |
-| security architects | Cloud, identity, application, and data security domains as technical advisors and delivery leaders |
-| Board Risk or Audit Committee | Providing executive-level assurance on the organisation's security posture |
-| Product Area Lead (PAL) | Ensure security requirements are embedded in product area roadmaps, architectural decisions, and delivery practices |
-| Technical Area Lead (TAL) | Ensure security requirements are embedded in product area roadmaps, architectural decisions, and delivery practices |
-| Legal team and Data Protection Officer (DPO) | Regulatory compliance, data breach notification obligations, and contractual security requirements |
-| third-party vendors and technology partners | Security requirements, contractual obligations, and ongoing risk management |
-| Enterprise Architect | Ensure security architecture principles are embedded in the enterprise architecture framework |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| SVP of Technology | (or equivalent CTO/CIO) on security strategy, risk posture, and technology investment decisions with security implications; reports directly to the CEO or Board in independent governance models | Escalates To |
+| Security & Identity Chapter Lead | Who owns the operational delivery of security services, tooling, and engineering within the technology function | Provides To |
+| security architects | Cloud, identity, application, and data security domains as technical advisors and delivery leaders | Provides To |
+| Board Risk or Audit Committee | Providing executive-level assurance on the organisation's security posture | Escalates To |
+| Product Area Lead (PAL) | Ensure security requirements are embedded in product area roadmaps, architectural decisions, and delivery practices | Collaborates |
+| Technical Area Lead (TAL) | Ensure security requirements are embedded in product area roadmaps, architectural decisions, and delivery practices | Collaborates |
+| Legal team and Data Protection Officer (DPO) | Regulatory compliance, data breach notification obligations, and contractual security requirements | Collaborates |
+| third-party vendors and technology partners | Security requirements, contractual obligations, and ongoing risk management | Governed By |
+| Enterprise Architect | Ensure security architecture principles are embedded in the enterprise architecture framework | Collaborates |
 
 ## Key Technologies
 

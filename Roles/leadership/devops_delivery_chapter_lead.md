@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Chapter Lead |
+| **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
+| **Direct Reports** | Domain Architects and Senior Engineers across DevOps, App Platforms, and Integration & Middleware domains |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The DevOps & Delivery Chapter Lead is the most senior technical manager and people leader for the organisation's software delivery capability, spanning three domains: DevOps, App Platforms, and Integration & Middleware. This role combines direct line management of architects and senior engineers across these domains with authoritative technical direction over the delivery toolchain, platform engineering maturity, and integration platform governance. The Chapter Lead owns the delivery toolchain strategy — CI/CD, Internal Developer Platforms (IDP), and pipeline architecture — while also governing API standards. Cloud cost discipline for delivery workloads is a close collaboration with the Cloud, Platform & Infrastructure Chapter Lead who owns FinOps. Reporting to a Technical Area Lead or Product Area Lead, this role is the definitive technical voice for how software is built and integrated across the organisation.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, chapter-wide — line management and technical authority across delivery and integration domains
+- **Experience Anchor:** 8+ years in senior technical roles with 2+ years of demonstrated line management or formal mentorship of architect-level practitioners — operates independently across the full chapter scope
+- **Out of Scope:** Enterprise-wide architecture policy and cross-chapter standards (Enterprise Architect-owned); platform infrastructure decisions and cloud service selection (Cloud, Platform & Infrastructure Chapter Lead-owned); compensation bands, HR policy, and organisational structure (PAL and HR-owned); cloud spend and FinOps governance (Cloud, Platform & Infrastructure Chapter Lead-owned)
+- **Escalates To:** Technical Area Lead (TAL) or Product Area Lead (PAL) — strategic priorities, budget allocation, and decisions beyond chapter-level authority
+- **Escalated To By:** Domain Architects and Senior Engineers within the chapter on cross-domain technical conflicts, standards disputes, or decisions requiring chapter-wide authority
 
 ## Business Impact
 
@@ -79,15 +89,15 @@ The DevOps & Delivery Chapter Lead is the most senior technical manager and peop
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Technical Area Lead (TAL) or Product Area Lead (PAL) |
-| Line manages: | Domain Architects and Senior Engineers across DevOps, App Platforms, and Integration & Middleware domains |
-| Collaborates closely with: | Cloud, Platform & Infrastructure Chapter Lead on platform decisions, cloud architecture, and delivery workload cost visibility |
-| Engages with: | Enterprise Architect on delivery and integration alignment with enterprise architecture standards |
-| Works with: | Security & Identity Chapter Lead on pipeline security, SAST/DAST toolchain integration, and secure delivery practices |
-| Partners with: | Finance stakeholders for delivery toolchain investment visibility; cloud spend governance is handled via the Cloud & Platform Infrastructure Chapter Lead |
-| Participates in: | Enterprise architecture forums, cloud strategy governance, developer experience communities of practice, and engineering leadership forums |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Cloud, Platform & Infrastructure Chapter Lead | Platform decisions, cloud architecture, and delivery workload cost visibility | Collaborates |
+| Enterprise Architect | Delivery and integration alignment with enterprise architecture standards | Governed By |
+| Security & Identity Chapter Lead | Pipeline security, SAST/DAST toolchain integration, and secure delivery practices | Collaborates |
+| Finance stakeholders | Delivery toolchain investment visibility; cloud spend governance is handled via the Cloud, Platform & Infrastructure Chapter Lead | Collaborates |
+| Enterprise architecture forums, cloud strategy governance, developer experience communities of practice | Cross-chapter engineering leadership forums | Escalates To |
 
 ## Key Technologies
 

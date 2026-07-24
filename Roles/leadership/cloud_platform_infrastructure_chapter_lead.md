@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Chapter Lead |
+| **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
+| **Direct Reports** | Domain Architects and Senior Engineers across all eleven infrastructure chapter domains (Cloud Platforms, Kubernetes, Modern Infrastructure, Virtualisation, Specialised Computing, Server Hardware ×2, Linux/Windows Server OS, Network, FinOps) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical manager and people leader for the organisation's largest technology chapter, spanning eleven domains across the full infrastructure stack from bare metal to cloud-native — including FinOps & Cloud Economics. This role combines direct line management of architect-level practitioners across Cloud Platforms, Kubernetes, Modern Infrastructure, Virtualisation, Specialised Computing, Server Hardware, Linux and Windows Server OS, Network, and FinOps with authoritative technical direction over the entire infrastructure estate. The Chapter Lead owns the infrastructure technology radar, ensures coherence between cloud and on-premises platforms, governs cloud financial discipline, and is accountable for architecture standards across all eleven domains. Reporting to a Technical Area Lead or Product Area Lead, this role is the definitive "Head of Infrastructure" voice below the TAL layer. FinOps sits within this chapter due to the close relationship between cloud cost governance and infrastructure investment decisions, capacity planning, and direct budget accountability to the PAL and TAL.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, chapter-wide — line management and technical authority across eleven infrastructure domains
+- **Experience Anchor:** 8+ years in senior technical roles with 2+ years of demonstrated line management or formal mentorship of architect-level practitioners — operates independently across the full chapter scope
+- **Out of Scope:** Enterprise-wide architecture policy and cross-chapter technology standards (Enterprise Architect-owned); strategic investment priorities, budget allocation, and programme governance (TAL/PAL-owned); compensation bands, HR policy, and organisational structure (PAL and HR-owned); vendor contracts, procurement decisions, and enterprise supplier strategy (commercial and PAL-owned)
+- **Escalates To:** Technical Area Lead (TAL) or Product Area Lead (PAL) — strategic priorities, budget allocation, and decisions beyond chapter-level authority
+- **Escalated To By:** Domain Architects and Senior Engineers within the chapter on cross-domain technical conflicts, standards disputes, or decisions requiring chapter-wide authority
 
 ## Business Impact
 
@@ -80,15 +90,15 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Technical Area Lead (TAL) or Product Area Lead (PAL) |
-| Line manages: | Domain Architects and Senior Engineers across all eleven infrastructure chapter domains (Cloud Platforms, Kubernetes, Modern Infrastructure, Virtualisation, Specialised Computing, Server Hardware ×2, Linux/Windows Server OS, Network, FinOps) |
-| Collaborates with: | Other Chapter Leads (DevOps & Delivery, Security & Identity, Data & AI, End User & Workplace, Service & Governance) for cross-chapter technical dependencies |
-| Engages with: | Enterprise Architect on infrastructure alignment with enterprise architecture standards |
-| Partners with: | Finance and procurement on cloud budget governance and vendor spend optimisation; FinOps domain practitioners within the chapter own the cloud cost governance practice |
-| Works with: | CISO and Security & Identity Chapter Lead on infrastructure security posture and compliance |
-| Participates in: | CTO/CIO-level infrastructure forums, vendor and partner technical evaluations, and cross-area capacity planning |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Other Chapter Leads | Cross-chapter technical dependencies with DevOps & Delivery, Security & Identity, Data & AI, End User & Workplace, and Service & Governance | Collaborates |
+| Enterprise Architect | Infrastructure alignment with enterprise architecture standards | Governed By |
+| Finance and Procurement | Cloud budget governance and vendor spend optimisation; FinOps domain practitioners within the chapter own the cloud cost governance practice | Collaborates |
+| CISO and Security & Identity Chapter Lead | Infrastructure security posture and compliance | Collaborates |
+| CTO/CIO-level infrastructure forums | Vendor and partner technical evaluations and cross-area capacity planning | Escalates To |
 
 ## Key Technologies
 

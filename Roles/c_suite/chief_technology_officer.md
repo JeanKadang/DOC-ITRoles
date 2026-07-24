@@ -5,6 +5,8 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CTO |
+| **Reports To** | CEO |
+| **Direct Reports** | Product Area Lead, Technical Area Lead (equivalent title to CIO/SVP of Technology — org uses one) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Chief Technology Officer (CTO) is the senior executive accountable for the o
 In most organisations the CTO reports directly to the CEO and operates as a peer of the CIO (where both roles exist). The CTO is primarily accountable for _how_ the organisation uses technology to build products and create competitive advantage, while the CIO is accountable for the reliability, cost, and governance of internal IT systems and operations. In organisations where only one senior technology executive exists — such as an SVP of Technology — that role typically combines the mandates of both CTO and CIO; this is explicitly noted in the SVP of Technology role definition.
 
 In some governance models the CISO reports to the CTO, particularly where security is positioned as a product and engineering concern (DevSecOps, security architecture, and platform security) rather than primarily an operational compliance function.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Organisation-wide — technology product vision, engineering standards, and multi-year technology roadmap
+- **Experience Anchor:** 15+ years of engineering/technology leadership, 5+ years at CTO or VP Engineering level — operates independently on technology strategy
+- **Out of Scope:** Overall corporate strategy and investment prioritisation (CEO and Board-owned); enterprise-wide capital allocation and financial governance (CFO and CEO-owned); architecture domain detail and workload-level technical decisions (Enterprise Architect and TAL-owned)
+- **Escalates To:** CEO — technology risk, major platform investment, and strategic conflicts beyond engineering scope
+- **Escalated To By:** Product Area Leads, Technical Area Lead, and principal engineers on technology roadmap and engineering capability decisions
 
 ## Business Impact
 
@@ -137,16 +147,18 @@ Degree in Computer Science, Software Engineering, Mathematics, or a related tech
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| CEO | Primary reporting line; technology product strategy, innovation pipeline, and engineering risk |
-| CIO | Close peer collaboration on enterprise architecture, cloud strategy, and shared infrastructure; joint decisions where product engineering and IT operations overlap |
-| CISO | Security architecture standards, DevSecOps requirements, and security posture of product platforms; CISO may report to CTO in some governance models |
-| CPO (Chief Product Officer) | Joint ownership of product platform direction; CTO owns technical strategy and engineering execution, CPO owns product vision and customer outcomes |
-| Product Area Leads (PALs) | Direct or indirect leadership of engineering delivery; PALs operate within the engineering standards and architecture direction set by the CTO |
-| Technical Area Lead (TAL) | Close partnership on enterprise architecture, engineering standards, principal engineering community, and technology governance |
-| Strategic technology vendors / cloud providers | Executive relationship management for platform strategy, roadmap alignment, and strategic commercial agreements |
-| Board / Investors | Technical credibility, innovation narrative, and technology risk assurance for investor and Board engagement |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CEO | Primary reporting line; technology product strategy, innovation pipeline, and engineering risk | Escalates To |
+| CIO | Close peer collaboration on enterprise architecture, cloud strategy, and shared infrastructure; joint decisions where product engineering and IT operations overlap | Collaborates |
+| CISO | Security architecture standards, DevSecOps requirements, and security posture of product platforms; CISO may report to CTO in some governance models | Collaborates |
+| CPO (Chief Product Officer) | Joint ownership of product platform direction; CTO owns technical strategy and engineering execution, CPO owns product vision and customer outcomes | Collaborates |
+| Product Area Leads (PALs) | Direct or indirect leadership of engineering delivery; PALs operate within the engineering standards and architecture direction set by the CTO | Provides To |
+| Technical Area Lead (TAL) | Close partnership on enterprise architecture, engineering standards, principal engineering community, and technology governance | Provides To |
+| Strategic technology vendors / cloud providers | Executive relationship management for platform strategy, roadmap alignment, and strategic commercial agreements | Governed By |
+| Board / Investors | Technical credibility, innovation narrative, and technology risk assurance for investor and Board engagement | Escalates To |
 
 ## Key Technologies
 

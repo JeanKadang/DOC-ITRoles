@@ -5,6 +5,8 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CIO |
+| **Reports To** | CEO |
+| **Direct Reports** | Product Area Lead, Technical Area Lead (equivalent title to CTO/SVP of Technology — org uses one) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Chief Information Officer (CIO) is the senior executive accountable for the 
 In most organisations the CIO reports directly to the CEO and operates as a peer of the CTO. Where both roles exist, the CTO is typically accountable for technology product strategy and engineering capability, while the CIO is accountable for enterprise IT operations, internal systems, and IT service delivery. In some organisations — particularly those where IT is viewed primarily as an operational cost centre — the CIO may report to the COO rather than the CEO; both models are valid. In organisations where only one senior technology executive exists (for example, an SVP of Technology), that role typically combines the mandates of both CIO and CTO; this is explicitly noted in the SVP of Technology role definition.
 
 In some governance models the CISO reports to the CIO, particularly where security is positioned as an IT operational risk and compliance function rather than an engineering or product concern.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Organisation-wide — enterprise IT strategy, infrastructure, and internal digital services
+- **Experience Anchor:** 15+ years of IT leadership, 5+ years at CIO or senior IT executive level — operates independently on enterprise IT strategy
+- **Out of Scope:** Technology product strategy and external-facing platform direction (CTO-owned, where both roles exist); enterprise-wide capital allocation and financial governance (CFO and CEO-owned); business process design and operational change management (COO and business leaders-owned)
+- **Escalates To:** CEO — enterprise IT risk, major investment decisions, and cross-functional strategic conflicts
+- **Escalated To By:** Product Area Lead, Technical Area Lead, and business operations leaders on IT service delivery, infrastructure, and enterprise systems decisions
 
 ## Business Impact
 
@@ -138,16 +148,18 @@ Degree in Information Technology, Computer Science, Business Information Systems
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| CEO | Primary reporting line; IT risk, IT investment performance, enterprise IT governance, and operational IT resilience |
-| CFO | Close collaboration on IT cost governance, ERP financial systems, IT investment ROI, and audit readiness |
-| COO | IT operational continuity, ITSM alignment to business operations, and IT enablement of business process performance |
-| CPO (Chief People Officer) | HRIS strategy, digital employee experience, and people system lifecycle governance |
-| CTO | Peer collaboration on enterprise architecture, cloud strategy, and shared infrastructure; boundary management where product engineering and IT operations overlap |
-| CISO | IT security posture, IT compliance obligations, and security requirements for enterprise systems and IT infrastructure; CISO may report to CIO in some governance models |
-| Business operations leaders | IT as an enabler of operational performance; SLA management, service improvement prioritisation, and operational IT requirements |
-| Enterprise system vendors and system integrators | Executive vendor relationships for ERP, HRIS, ITSM, and collaboration platforms; performance management and contract governance |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CEO | Primary reporting line; IT risk, IT investment performance, enterprise IT governance, and operational IT resilience | Escalates To |
+| CFO | Close collaboration on IT cost governance, ERP financial systems, IT investment ROI, and audit readiness | Collaborates |
+| COO | IT operational continuity, ITSM alignment to business operations, and IT enablement of business process performance | Collaborates |
+| CPO (Chief People Officer) | HRIS strategy, digital employee experience, and people system lifecycle governance | Collaborates |
+| CTO | Peer collaboration on enterprise architecture, cloud strategy, and shared infrastructure; boundary management where product engineering and IT operations overlap | Collaborates |
+| CISO | IT security posture, IT compliance obligations, and security requirements for enterprise systems and IT infrastructure; CISO may report to CIO in some governance models | Collaborates |
+| Business operations leaders | IT as an enabler of operational performance; SLA management, service improvement prioritisation, and operational IT requirements | Provides To |
+| Enterprise system vendors and system integrators | Executive vendor relationships for ERP, HRIS, ITSM, and collaboration platforms; performance management and contract governance | Governed By |
 
 ## Key Technologies
 

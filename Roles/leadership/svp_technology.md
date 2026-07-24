@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | SVP of Technology |
+| **Reports To** | CEO |
+| **Direct Reports** | Product Area Leads, Technical Area Lead (equivalent title to CTO/CIO — org uses one) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -14,6 +16,14 @@
 The SVP of Technology (Senior Vice President of Technology) is the most senior technology executive in the organisation, accountable to the CEO and Board of Directors for the full IT and technology strategy, investment, capability, and delivery. The SVP owns the organisation's technology vision and multi-year roadmap, holds budget authority across all technology investment, and represents technology interests at the executive leadership level. In some organisations this role is held by a **CTO (Chief Technology Officer)** or **CIO (Chief Information Officer)** rather than an SVP — these titles are considered equivalent at this level, and the responsibilities described here apply equally to all three. In some organisations, the SVP of Technology and the CISO role may be held by the same person; this is noted where relevant.
 
 The SVP of Technology sits above the Product Area Lead (PAL) and Technical Area Lead (TAL) in the technology leadership hierarchy, providing the strategic direction and organisational context within which PALs and TALs operate.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Organisation-wide — entire technology function, full budget and organisational design authority
+- **Experience Anchor:** 15+ years of technology leadership, 5+ years at SVP/VP Technology level — operates independently, accountable to the CEO and Board
+- **Out of Scope:** Overall corporate strategy and business investment priorities (CEO and Board-owned); corporate financial policy, treasury, and enterprise-wide budget frameworks (CFO-owned); enterprise-wide people policies, HR frameworks, and executive compensation (CPO and Board-owned)
+- **Escalates To:** CEO and Board of Directors — strategic technology risk, major investment decisions, and board-level reporting
+- **Escalated To By:** Product Area Leads, Technical Area Lead, and CISO on technology risk, investment prioritisation, and organisational design decisions
 
 ## Business Impact
 
@@ -96,17 +106,19 @@ The SVP of Technology sits above the Product Area Lead (PAL) and Technical Area 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Product Area Leads (PALs) | Day-to-day operation of the technology function, portfolio alignment, and delivery governance |
-| Technical Area Lead (TAL) | Technical strategy execution, engineering standards, and cross-chapter coordination |
-| CISO | (where the role is separate) on information security strategy, risk posture, and board-level security reporting; in some organisations holds both roles |
-| Enterprise Architect | The long-term technology architecture strategy and platform evolution |
-| CEO and Board of Directors | As the primary technology accountability point for risk, investment, and strategic direction |
-| CFO | Technology investment planning, ROI reporting, and financial governance |
-| CPO (Chief People Officer) | Technology talent strategy, leadership development, and organisational design |
-| executive leadership team | Alongside COO, CFO, CMO, and other C-suite peers |
-| strategic technology vendors and partners | Including cloud hyperscalers, system integrators, and platform providers |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Product Area Leads (PALs) | Day-to-day operation of the technology function, portfolio alignment, and delivery governance | Provides To |
+| Technical Area Lead (TAL) | Technical strategy execution, engineering standards, and cross-chapter coordination | Provides To |
+| CISO | (where the role is separate) on information security strategy, risk posture, and board-level security reporting; in some organisations holds both roles | Collaborates |
+| Enterprise Architect | The long-term technology architecture strategy and platform evolution | Collaborates |
+| CEO and Board of Directors | As the primary technology accountability point for risk, investment, and strategic direction | Escalates To |
+| CFO | Technology investment planning, ROI reporting, and financial governance | Collaborates |
+| CPO (Chief People Officer) | Technology talent strategy, leadership development, and organisational design | Collaborates |
+| executive leadership team | Alongside COO, CFO, CMO, and other C-suite peers | Collaborates |
+| strategic technology vendors and partners | Including cloud hyperscalers, system integrators, and platform providers | Governed By |
 
 ## Key Technologies
 

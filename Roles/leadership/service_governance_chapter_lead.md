@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Chapter Lead |
+| **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
+| **Direct Reports** | Domain Architects and Senior Engineers across ITSM & Configuration, Service Management, Infrastructure Onboarding, and Enterprise Architecture domains |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Service & Governance Chapter Lead is the most senior technical manager and people leader for the organisation's IT service management, enterprise architecture, and governance capability, spanning four domains: ITSM & Configuration, Service Management, Infrastructure Onboarding, and Enterprise Architecture. This role combines direct line management of architects and senior engineers across these domains with authoritative ownership of the IT service management framework, enterprise architecture governance, CMDB integrity, and the processes that make IT run reliably. The Chapter Lead bridges technology and business — owning ITIL process maturity, service catalogue governance, EA governance board operations, and the cross-domain onboarding standards that ensure new infrastructure and services are adopted into the organisation consistently. Reporting to a Technical Area Lead or Product Area Lead, this role is the definitive "Head of Service & Governance" voice below the TAL layer.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, chapter-wide — line management and technical authority across ITSM, governance, and enterprise architecture domains
+- **Experience Anchor:** 8+ years in senior technical roles with 2+ years of demonstrated line management or formal mentorship of architect-level practitioners — operates independently across the full chapter scope
+- **Out of Scope:** IT tool procurement, ITSM platform selection, and vendor contracts (PAL and commercial-owned); IT asset procurement and lifecycle investment decisions (PAL and Finance-owned); enterprise architecture strategy and long-range IT architecture direction (Enterprise Architect and CTO/CIO-owned); compensation bands, HR policy, and organisational structure (PAL and HR-owned); technology investment decisions, programme governance, and business case approval (PAL and Finance-owned)
+- **Escalates To:** Technical Area Lead (TAL) or Product Area Lead (PAL) — strategic priorities, budget allocation, and decisions beyond chapter-level authority
+- **Escalated To By:** Domain Architects and Senior Engineers within the chapter on cross-domain technical conflicts, standards disputes, or decisions requiring chapter-wide authority
 
 ## Business Impact
 
@@ -80,15 +90,15 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Technical Area Lead (TAL) or Product Area Lead (PAL) |
-| Line manages: | Domain Architects and Senior Engineers across ITSM & Configuration, Service Management, Infrastructure Onboarding, and Enterprise Architecture domains |
-| Engages with: | Enterprise Architect as primary partner on EA governance board operations and architecture standards alignment |
-| Collaborates with: | All other Chapter Leads — this chapter owns the processes and governance frameworks that all chapters operate within (change management, onboarding gates, CMDB, service catalogue) |
-| Works with: | Risk and Audit functions on IT compliance reporting, configuration estate audits, and governance evidence |
-| Partners with: | CTO/CIO on EA governance board outcomes, IT service reporting, and governance maturity programme direction |
-| Participates in: | Enterprise architecture forums, IT compliance reviews, cross-chapter operational governance, and business-facing IT service accountability meetings |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architect | Primary partner on EA governance board operations and architecture standards alignment | Collaborates |
+| All other Chapter Leads | This chapter owns the processes and governance frameworks that all chapters operate within — change management, onboarding gates, CMDB, service catalogue | Provides To |
+| Risk and Audit functions | IT compliance reporting, configuration estate audits, and governance evidence | Governed By |
+| CTO/CIO | EA governance board outcomes, IT service reporting, and governance maturity programme direction | Escalates To |
+| Enterprise architecture forums, IT compliance reviews, cross-chapter operational governance | Business-facing IT service accountability meetings | Escalates To |
 
 ## Key Technologies
 

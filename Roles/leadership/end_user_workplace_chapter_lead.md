@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Chapter Lead |
+| **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
+| **Direct Reports** | Domain Architects and Senior Engineers across Client Platform, Endpoint Management, Modern Workplace, and Service Desk domains |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The End User & Workplace Chapter Lead is the most senior technical manager and people leader for the organisation's end-user technology capability, spanning four domains: Client Platform, Endpoint Management, Modern Workplace, and Service Desk. This role combines direct line management of architects and senior engineers in these domains with authoritative ownership of the client OS engineering strategy, device management platform, Microsoft 365 governance, collaboration tooling architecture, and the digital workplace roadmap. The Chapter Lead is accountable for delivering a consistent, secure, and productive user experience across all endpoints and workplace platforms — from client OS image engineering for Lenovo ThinkPad/ThinkCentre, MacBook, and Linux laptop fleets through to robust endpoint management and M365 governance — balancing technology innovation in the employee experience with strong endpoint security posture, managed in close collaboration with the Security & Identity Chapter Lead. Reporting to a Technical Area Lead or Product Area Lead, this role is the definitive "Head of End User Technology" voice below the TAL layer.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, chapter-wide — line management and technical authority across end-user and workplace domains
+- **Experience Anchor:** 8+ years in senior technical roles with 2+ years of demonstrated line management or formal mentorship of architect-level practitioners — operates independently across the full chapter scope
+- **Out of Scope:** Enterprise security policy and zero trust architecture (Security & Identity Chapter Lead and CISO-owned); M365 licensing, procurement, and Microsoft enterprise agreement decisions (commercial and PAL-owned); HR policy, people management, and employee wellbeing strategy (HR/People-owned); compensation bands, HR policy, and organisational structure (PAL and HR-owned); business strategy, hybrid working policy, and organisational change decisions (PAL, HR, and business leadership-owned)
+- **Escalates To:** Technical Area Lead (TAL) or Product Area Lead (PAL) — strategic priorities, budget allocation, and decisions beyond chapter-level authority
+- **Escalated To By:** Domain Architects and Senior Engineers within the chapter on cross-domain technical conflicts, standards disputes, or decisions requiring chapter-wide authority
 
 ## Business Impact
 
@@ -81,15 +91,15 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Technical Area Lead (TAL) or Product Area Lead (PAL) |
-| Line manages: | Domain Architects and Senior Engineers across Client Platform, Endpoint Management, Modern Workplace, and Service Desk domains |
-| Partners closely with: | Security & Identity Chapter Lead on endpoint security posture, EDR coverage, and conditional access architecture aligned to the zero trust roadmap |
-| Collaborates with: | Service & Governance Chapter Lead on ITSM processes for end-user services, device onboarding, and service catalogue entries |
-| Engages with: | Enterprise Architect on M365 platform alignment with enterprise architecture standards |
-| Works with: | HR and People function on digital employee experience strategy, hybrid working technology requirements, and people technology roadmap |
-| Participates in: | Enterprise architecture forums, endpoint security reviews, M365 governance boards, and digital workplace steering groups |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Security & Identity Chapter Lead | Endpoint security posture, EDR coverage, and conditional access architecture aligned to the zero trust roadmap | Collaborates |
+| Service & Governance Chapter Lead | ITSM processes for end-user services, device onboarding, and service catalogue entries | Collaborates |
+| Enterprise Architect | M365 platform alignment with enterprise architecture standards | Governed By |
+| HR and People function | Digital employee experience strategy, hybrid working technology requirements, and people technology roadmap | Collaborates |
+| Enterprise architecture forums, endpoint security reviews, M365 governance boards, digital workplace steering groups | Cross-chapter governance forums | Escalates To |
 
 ## Key Technologies
 

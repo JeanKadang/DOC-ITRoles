@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Chapter Lead |
+| **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
+| **Direct Reports** | Domain Architects and Senior Engineers across Data Engineering, Data Management, Database Management, and AI Governance domains |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Data & AI Chapter Lead is the most senior technical manager and people leader for the organisation's data and artificial intelligence capability, spanning four domains: Data Engineering, Data Management, Database Management, and AI Governance. This role combines direct line management of architects and senior engineers across these domains with authoritative ownership of the enterprise data strategy, AI platform governance, data architecture standards, and data governance frameworks. The Chapter Lead is accountable for ensuring data quality, lineage, and accessibility across the estate while overseeing responsible and compliant AI adoption — including the governance of ML model lifecycles and AI ethics policy. Reporting to a Technical Area Lead or Product Area Lead, this role is the definitive "Head of Data & AI" voice below the TAL layer.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, chapter-wide — line management and technical authority across data and AI domains
+- **Experience Anchor:** 8+ years in senior technical roles with 2+ years of demonstrated line management or formal mentorship of architect-level practitioners — operates independently across the full chapter scope
+- **Out of Scope:** Enterprise-wide architecture policy and cross-chapter technical standards (Enterprise Architect-owned); AI investment strategy, business use-case prioritisation, and AI programme governance (TAL/PAL and CDO-owned); data regulatory compliance decisions and legal interpretations (Legal and Compliance-owned); compensation bands, HR policy, and organisational structure (PAL and HR-owned); enterprise AI ethics policy and regulatory reporting obligations (Legal, Risk, and CDO-owned)
+- **Escalates To:** Technical Area Lead (TAL) or Product Area Lead (PAL) — strategic priorities, budget allocation, and decisions beyond chapter-level authority
+- **Escalated To By:** Domain Architects and Senior Engineers within the chapter on cross-domain technical conflicts, standards disputes, or decisions requiring chapter-wide authority
 
 ## Business Impact
 
@@ -80,15 +90,15 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Technical Area Lead (TAL) or Product Area Lead (PAL) |
-| Line manages: | Domain Architects and Senior Engineers across Data Engineering, Data Management, Database Management, and AI Governance domains |
-| Collaborates with: | Enterprise Architect on alignment of data and AI architecture with enterprise standards and patterns |
-| Partners with: | Chief Data Officer (CDO) on enterprise data strategy, data governance policy, and AI programme direction |
-| Works with: | Security & Identity Chapter Lead and CISO on data protection, data privacy architecture, and secure data platform design |
-| Engages with: | Legal and Compliance on AI ethics, GDPR obligations, data residency, and regulatory AI requirements |
-| Participates in: | Enterprise architecture forums, data governance boards, AI ethics committees, and cross-chapter technology forums |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Enterprise Architect | Alignment of data and AI architecture with enterprise standards and patterns | Governed By |
+| Chief Data Officer (CDO) | Enterprise data strategy, data governance policy, and AI programme direction | Collaborates |
+| Security & Identity Chapter Lead and CISO | Data protection, data privacy architecture, and secure data platform design | Collaborates |
+| Legal and Compliance | AI ethics, GDPR obligations, data residency, and regulatory AI requirements | Governed By |
+| Enterprise architecture forums, data governance boards, AI ethics committees | Cross-chapter technology and governance forums | Escalates To |
 
 ## Key Technologies
 

@@ -5,6 +5,8 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CFO |
+| **Reports To** | CEO |
+| **Direct Reports** | None (no subordinate finance roles modelled in this catalog) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Chief Financial Officer (CFO) is the senior executive accountable for the or
 In most organisations the CFO reports directly to the CEO and is a peer of the CTO and CIO. The CFO holds formal accountability to the Board's Audit and Risk Committee, acts as the primary contact for external auditors and investors, and — in publicly listed organisations — leads investor relations and financial disclosure obligations.
 
 The CFO's remit intersects closely with technology leadership: enterprise financial systems (ERP, FP&A platforms, treasury management systems) sit at the boundary of IT and Finance governance; cloud and technology spend increasingly falls under FinOps disciplines that the CFO co-owns with the CIO and CTO; and major technology investment decisions require the CFO's sign-off through capital allocation and business case governance processes.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Organisation-wide — full financial strategy, capital structure, and reporting authority
+- **Experience Anchor:** 15+ years of progressive finance leadership, typically 5+ years at CFO or deputy-CFO level — operates independently, accountable to the CEO and Board Audit Committee
+- **Out of Scope:** Corporate strategy direction and business model decisions (CEO and Board-owned); operational strategy and business unit performance improvement (COO and business leaders-owned); technology product strategy and engineering investment prioritisation (CTO-owned)
+- **Escalates To:** CEO and Board Audit/Risk Committee — material financial risk, capital structure decisions, and statutory reporting matters
+- **Escalated To By:** CIO, CTO, SVP of Technology, and business unit leaders on investment business cases and budget requests requiring capital allocation approval
 
 ## Business Impact
 
@@ -139,17 +149,19 @@ Degree in Finance, Accounting, Economics, or a related field. A postgraduate qua
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| CEO | Primary reporting line; financial strategy, capital allocation, Board financial reporting, and enterprise risk |
-| Board / Audit Committee | Direct accountability for financial reporting accuracy, internal controls, audit outcomes, and regulatory compliance |
-| CIO | Close collaboration on IT cost governance, ERP financial systems strategy, IT investment ROI, and audit readiness |
-| CTO | Technology capital investment governance, FinOps cloud cost management, and build-vs-buy financial evaluation |
-| COO | Operational cost management, working capital efficiency, financial controls in operational processes, and procurement governance |
-| CPO (Chief People Officer) | Compensation and benefits cost governance, headcount financial planning, and HRIS financial data integrity |
-| CISO | Financial risk dimensions of cyber and data incidents; regulatory financial penalties; cyber insurance governance |
-| Business unit and functional leaders | Budget ownership, financial performance management, investment business cases, and financial reporting obligations |
-| External auditors and regulators | Primary executive contact for statutory audit, regulatory financial submissions, and financial compliance assurance |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CEO | Primary reporting line; financial strategy, capital allocation, Board financial reporting, and enterprise risk | Escalates To |
+| Board / Audit Committee | Direct accountability for financial reporting accuracy, internal controls, audit outcomes, and regulatory compliance | Escalates To |
+| CIO | Close collaboration on IT cost governance, ERP financial systems strategy, IT investment ROI, and audit readiness | Collaborates |
+| CTO | Technology capital investment governance, FinOps cloud cost management, and build-vs-buy financial evaluation | Collaborates |
+| COO | Operational cost management, working capital efficiency, financial controls in operational processes, and procurement governance | Collaborates |
+| CPO (Chief People Officer) | Compensation and benefits cost governance, headcount financial planning, and HRIS financial data integrity | Collaborates |
+| CISO | Financial risk dimensions of cyber and data incidents; regulatory financial penalties; cyber insurance governance | Collaborates |
+| Business unit and functional leaders | Budget ownership, financial performance management, investment business cases, and financial reporting obligations | Provides To |
+| External auditors and regulators | Primary executive contact for statutory audit, regulatory financial submissions, and financial compliance assurance | Provides To |
 
 ## Key Technologies
 

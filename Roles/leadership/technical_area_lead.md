@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Technical Area Lead |
+| **Reports To** | SVP of Technology (or CTO/CIO) |
+| **Direct Reports** | Chapter Leads (jointly with the Product Area Lead, as the PAL/TAL leadership pair); Engineering Practices Champion; Technical Community Leader |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Technical Area Lead (TAL) is the senior technical authority for a defined IT product area, operating as the technical counterpart to the Product Area Lead (PAL). The TAL provides technical direction, architectural governance, and engineering leadership across all domains within the area. Where the PAL owns delivery, people management, and business alignment, the TAL owns technical quality, architecture coherence, platform strategy, and the engineering culture within the area. Together, the PAL and TAL form the leadership pair for the product area.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, product-area-wide — technical direction and architecture authority within the area
+- **Experience Anchor:** 10+ years of technical leadership experience, 3-5+ years in senior architecture/engineering leadership — operates independently on technical direction
+- **Out of Scope:** Roadmap priorities, budget allocation, and people management decisions (PAL-owned); enterprise-wide architecture policy and cross-area standards (Enterprise Architect-owned); vendor and contract decisions (PAL-owned, TAL provides technical input)
+- **Escalates To:** SVP of Technology / CTO/CIO — cross-area technical conflicts and enterprise architecture disputes
+- **Escalated To By:** Chapter Leads and domain architects on technical decisions requiring area-wide authority or cross-domain arbitration
 
 ## Business Impact
 
@@ -73,16 +83,18 @@ The Technical Area Lead (TAL) is the senior technical authority for a defined IT
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Product Area Lead (PAL) | As the leadership pair — the TAL owns technical quality and direction; the PAL owns delivery and business alignment |
-| Domain Architects | Across the area's domains |
-| Senior Engineers | Across the area's domains |
-| Enterprise Architect | Align area technical direction with enterprise architecture standards and patterns |
-| CISO / Security Architect | Ensure security and compliance are embedded in area technical decisions |
-| CTO/CIO-level technical forums | Cross-area technical governance bodies |
-| TALs of other product areas | Shared platforms, integration patterns, and cross-area technical dependencies |
-| vendor and partner technical evaluations | The PAL |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Product Area Lead (PAL) | As the leadership pair — the TAL owns technical quality and direction; the PAL owns delivery and business alignment | Collaborates |
+| Domain Architects | Across the area's domains | Provides To |
+| Senior Engineers | Across the area's domains | Provides To |
+| Enterprise Architect | Align area technical direction with enterprise architecture standards and patterns | Collaborates |
+| CISO / Security Architect | Ensure security and compliance are embedded in area technical decisions | Collaborates |
+| CTO/CIO-level technical forums | Cross-area technical governance bodies | Escalates To |
+| TALs of other product areas | Shared platforms, integration patterns, and cross-area technical dependencies | Collaborates |
+| vendor and partner technical evaluations | The PAL | Collaborates |
 
 ## Key Technologies
 
