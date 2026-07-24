@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Product Area Lead |
+| **Reports To** | CTO/CIO (or SVP of Technology) |
+| **Direct Reports** | Chapter Leads (jointly with the Technical Area Lead, as the PAL/TAL leadership pair); Product Owners within the area |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Product Area Lead (PAL) is a senior IT management role responsible for the end-to-end delivery, operational health, and strategic direction of a defined product area within IT. A product area typically spans one or more related technical domains — for example, Cloud & Infrastructure, Security & Identity, or Data & Integration. The PAL owns the area's roadmap, budget, people, and stakeholder relationships, operating as the primary accountability point between the business and the IT teams within their area.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, product-area-wide — roadmap, budget, and people authority within the area
+- **Experience Anchor:** 10+ years of IT management experience, 3-5+ years in senior delivery/product leadership — operates independently on area strategy and delivery
+- **Out of Scope:** IT-wide strategic direction and cross-area portfolio prioritization (CTO/CIO-owned); compensation frameworks and organization-wide HR policy (HR-owned); enterprise-wide vendor strategy and strategic procurement decisions (Procurement-owned)
+- **Escalates To:** CTO/CIO — cross-area conflicts, budget escalation, and strategic decisions beyond area scope
+- **Escalated To By:** Chapter Leads and domain architects on delivery blockers, resourcing conflicts, and business stakeholder escalations
 
 ## Business Impact
 
@@ -76,16 +86,18 @@ The Product Area Lead (PAL) is a senior IT management role responsible for the e
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Technical Area Lead (TAL) | As a leadership pair — the PAL owns delivery, people, and business alignment; the TAL owns technical direction and quality |
-| Domain Architects | Within the area as direct reports or close collaborators |
-| Product Owners | Within the area as direct reports or close collaborators |
-| CTO/CIO | Area strategy and investment |
-| other Product Area Leads | Cross-area dependencies, shared services, and portfolio alignment |
-| business stakeholders | Translating IT capability into business value |
-| HR | Talent acquisition, development planning, and organizational design |
-| vendor and partner relationships | Within the area in coordination with procurement |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| Technical Area Lead (TAL) | As a leadership pair — the PAL owns delivery, people, and business alignment; the TAL owns technical direction and quality | Collaborates |
+| Domain Architects | Within the area as direct reports or close collaborators | Provides To |
+| Product Owners | Within the area as direct reports or close collaborators | Provides To |
+| CTO/CIO | Area strategy and investment | Escalates To |
+| other Product Area Leads | Cross-area dependencies, shared services, and portfolio alignment | Collaborates |
+| business stakeholders | Translating IT capability into business value | Provides To |
+| HR | Talent acquisition, development planning, and organizational design | Collaborates |
+| vendor and partner relationships | Within the area in coordination with procurement | Governed By |
 
 ## Key Technologies
 

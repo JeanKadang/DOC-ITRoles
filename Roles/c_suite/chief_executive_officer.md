@@ -5,6 +5,8 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CEO |
+| **Reports To** | Board of Directors |
+| **Direct Reports** | CTO, CIO, or SVP of Technology (equivalent titles — org uses one); CFO; CISO (in direct-reporting governance models) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -16,6 +18,14 @@ The Chief Executive Officer (CEO) is the most senior executive in the organisati
 The CEO holds the reporting line for the Chief Technology Officer (CTO), Chief Information Officer (CIO), or equivalent SVP of Technology. In organisations where a single senior technology executive exists (for example, an SVP of Technology or a combined CTO/CIO), that person is the primary technology accountability point to the CEO. In organisations with both a CTO and a CIO, the CEO is responsible for maintaining coherence between both reporting lines and ensuring technology strategy and IT operations work in alignment.
 
 In some governance models — particularly in heavily regulated industries or where the Board requires independent security assurance — the CEO also holds the direct CISO reporting line, outside the technology chain of command.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Organisation-wide — full P&L and enterprise capital allocation authority
+- **Experience Anchor:** 20+ years of progressive leadership across multiple business functions, 5-10+ years at C-suite or Group level — operates with full autonomy, accountable only to the Board
+- **Out of Scope:** Detailed functional strategies and delivery execution (owned by respective C-suite function heads); departmental budget management and functional spend (CFO and function heads-owned); broader people policies and HR frameworks (CPO-owned)
+- **Escalates To:** Board of Directors — strategic decisions, major risk issues, executive appointments, or decisions requiring board-level visibility
+- **Escalated To By:** CTO / CIO / SVP of Technology, CFO, COO, CISO, and other C-suite peers on enterprise-level risk, investment, or cross-functional conflicts they cannot resolve at their own level
 
 ## Business Impact
 
@@ -137,16 +147,18 @@ Degree in Business, Economics, Law, Engineering, or a related field. An MBA or o
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| CTO / CIO / SVP of Technology | Direct reporting line; holds technology strategy, investment performance, and enterprise technology risk accountable |
-| CISO | Direct or indirect reporting line (model-dependent); receives executive cyber risk briefings and sets risk appetite for security governance |
-| CFO | Joint P&L oversight; capital allocation, investment governance, and Board financial reporting |
-| COO | Operational performance accountability; business continuity, enterprise operational risk, and cross-functional delivery |
-| CPO (Chief People Officer) | Executive talent strategy, succession planning, organisational design, and culture leadership |
-| Board of Directors | Primary governance accountability; strategy, performance, risk, executive appointments, and regulatory posture |
-| Investors / Shareholders | External accountability relationship; investor relations, capital markets, and shareholder communications |
-| Regulators | External engagement; regulatory posture, formal notifications, government relations, and sector compliance |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CTO / CIO / SVP of Technology | Direct reporting line; holds technology strategy, investment performance, and enterprise technology risk accountable | Provides To |
+| CISO | Direct or indirect reporting line (model-dependent); receives executive cyber risk briefings and sets risk appetite for security governance | Provides To |
+| CFO | Joint P&L oversight; capital allocation, investment governance, and Board financial reporting | Collaborates |
+| COO | Operational performance accountability; business continuity, enterprise operational risk, and cross-functional delivery | Collaborates |
+| CPO (Chief People Officer) | Executive talent strategy, succession planning, organisational design, and culture leadership | Collaborates |
+| Board of Directors | Primary governance accountability; strategy, performance, risk, executive appointments, and regulatory posture | Escalates To |
+| Investors / Shareholders | External accountability relationship; investor relations, capital markets, and shareholder communications | Escalates To |
+| Regulators | External engagement; regulatory posture, formal notifications, government relations, and sector compliance | Escalates To |
 
 ## Key Technologies
 

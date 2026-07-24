@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Senior Engineer |
+| **Reports To** | Engineering Director or Technical Area Lead (PAL/TAL pair for the relevant product area or cross-cutting engineering enablement function) |
+| **Direct Reports** | None (individual contributor and internal consultant — no line management authority; drives change through coaching influence) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Engineering Practices Champion is a senior individual contributor and internal consultant focused on embedding and continuously improving software engineering quality across delivery teams. This role works team-by-team — coaching engineers on test-driven development (TDD), behaviour-driven development (BDD), code review culture, trunk-based development, pair programming, and CI/CD maturity — with the goal of systematically uplifting the engineering capability and health of the organisation. The Engineering Practices Champion translates abstract engineering quality principles into concrete, team-applicable habits, tooling configurations, and measurable health metrics (DORA, SPACE), and is the organisation's go-to authority for the question: *how should we be engineering software?*
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, organisation-wide (as an internal consultant) — no budget or headcount authority; influence through coaching and standards
+- **Experience Anchor:** 8+ years in senior engineering roles with demonstrated coaching/mentoring impact — operates independently across delivery teams organisation-wide
+- **Out of Scope:** CI/CD platform architecture and pipeline infrastructure (DevOps Architect-owned); mandatory security policy controls embedded in pipelines (Security Architect-owned); team structure, sprint capacity, and delivery prioritisation (Team Lead and Delivery Lead-owned)
+- **Escalates To:** Engineering Director or Technical Area Lead — engineering-culture investment decisions and cross-team quality escalations beyond coaching influence
+- **Escalated To By:** Team Leads and Engineering Managers on team-level engineering health issues; not a formal escalation target — engages proactively rather than reactively
 
 ## Business Impact
 
@@ -87,11 +97,14 @@ The Engineering Practices Champion is a senior individual contributor and intern
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Engineering Director or Technical Area Lead (PAL/TAL pair for the relevant product area or cross-cutting engineering enablement function) |
-| Works closely with: | DevOps Architect, Developer Experience Engineer, Automation Framework Engineer, and Technical Community Leader |
-| Collaborates with: | Delivery teams across all domains (as the primary coaching audience), Team Leads, Engineering Managers, and product owners as DoR/DoD stakeholders |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| DevOps Architect, Developer Experience Engineer, Automation Framework Engineer | Joint ownership of tooling and platform capability that engineering practices depend on | Collaborates |
+| Technical Community Leader | Coordinate engineering-culture initiatives with the wider technical community programme | Collaborates |
+| Delivery teams, Team Leads, Engineering Managers | Primary coaching audience for TDD/BDD, code review culture, and CI/CD maturity uplift | Provides To |
+| Product Owners | Definition of Ready / Definition of Done governance as DoR/DoD stakeholders | Collaborates |
 
 ## Key Technologies
 

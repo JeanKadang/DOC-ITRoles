@@ -5,6 +5,8 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Chapter Lead |
+| **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
+| **Direct Reports** | Domain Architects and Senior Engineers across Security, Security Cross-Platform, Security & Identity, Data Protection, and Directory Services domains |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -12,6 +14,14 @@
 ## Role Overview
 
 The Security & Identity Chapter Lead is the organisation's most senior security practitioner and people leader below the CISO layer, spanning five domains: Security, Security Cross-Platform, Security & Identity, Data Protection, and Directory Services. This role combines direct line management of security architects and senior engineers with authoritative ownership of the security architecture strategy, identity governance framework, zero trust implementation roadmap, and the organisation's compliance posture. The Chapter Lead is the practitioner-level technical authority for security across the entire technology estate — ensuring security architecture standards, identity platform strategy, data protection policy, and threat modelling standards are coherent, current, and enforced. Reporting to a Technical Area Lead or Product Area Lead, this role works in close partnership with the CISO and is the definitive "Head of Security Architecture" voice for the engineering organisation.
+
+## Role Scope & Boundaries
+
+- **Scope of Influence:** Cross-domain, chapter-wide — line management and technical authority across five security and identity domains
+- **Experience Anchor:** 8+ years in senior technical roles with 2+ years of demonstrated line management or formal mentorship of architect-level practitioners — operates independently across the full chapter scope
+- **Out of Scope:** Enterprise security strategy, risk appetite, and security programme investment (CISO-owned); programme funding, sequencing, and organisational risk acceptance decisions (CISO and TAL/PAL-owned); compliance obligations, regulatory requirements, and legal interpretations (Legal, DPO, and Compliance-owned); compensation bands, HR policy, and organisational structure (PAL and HR-owned); vendor contracts, security product procurement, and supplier risk decisions (CISO and commercial-owned)
+- **Escalates To:** Technical Area Lead (TAL) or Product Area Lead (PAL) — strategic priorities, budget allocation, and decisions beyond chapter-level authority
+- **Escalated To By:** Domain Architects and Senior Engineers within the chapter on cross-domain technical conflicts, standards disputes, or decisions requiring chapter-wide authority
 
 ## Business Impact
 
@@ -80,15 +90,15 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 
 ## Interactions with Other Roles
 
-| Role | Nature of Interaction |
-|---|---|
-| Reports to: | Technical Area Lead (TAL) or Product Area Lead (PAL) |
-| Line manages: | Domain Architects and Senior Engineers across Security, Security Cross-Platform, Security & Identity, Data Protection, and Directory Services domains |
-| Partners closely with: | CISO and Head of Security — this role is the practitioner-level counterpart to the CISO's strategic and risk leadership |
-| Engages with: | Enterprise Architect on security architecture alignment with enterprise standards and zero trust principles |
-| Collaborates with: | All other Chapter Leads on embedding security requirements, threat modelling, and security controls into their domain architectures |
-| Works with: | Data Protection Officer (DPO) and Legal/Compliance on GDPR, data privacy, and regulatory security obligations |
-| Participates in: | Security governance boards, risk committees, enterprise architecture forums, and cross-chapter technical governance |
+> **Interaction Mode** describes the direction/nature of the relationship: **Collaborates** (peer-to-peer), **Consumes From** (relies on the other role's output/service), **Provides To** (delivers a service the other role consumes), **Governed By** (subject to the other role's standards/approval), or **Escalates To** (routes unresolved issues upward).
+
+| Role | Nature of Interaction | Interaction Mode |
+|---|---|---|
+| CISO | This role is the practitioner-level counterpart to the CISO's strategic and risk leadership | Escalates To |
+| Enterprise Architect | Security architecture alignment with enterprise standards and zero trust principles | Governed By |
+| All other Chapter Leads | Embedding security requirements, threat modelling, and security controls into their domain architectures | Provides To |
+| Data Protection Officer (DPO) and Legal/Compliance | GDPR, data privacy, and regulatory security obligations | Governed By |
+| Security governance boards, risk committees, enterprise architecture forums | Cross-chapter technical governance | Escalates To |
 
 ## Key Technologies
 
