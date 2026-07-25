@@ -6,8 +6,8 @@ Security fixes are provided for the current released version of this repository.
 
 | Version | Supported |
 | ------- | --------- |
-| 1.5.x   | Yes       |
-| < 1.5   | No        |
+| 1.6.x   | Yes       |
+| < 1.6   | No        |
 
 ## Reporting a Vulnerability
 
