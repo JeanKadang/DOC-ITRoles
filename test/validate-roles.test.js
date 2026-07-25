@@ -31,7 +31,11 @@ test.after(() => {
 function completeRole({ except = null, transform = null } = {}) {
   const sections = REQUIRED_SECTIONS
     .filter(s => s.name !== except)
-    .map(s => `## ${s.name}\n\nContent for ${s.name}.\n`)
+    .map(s => s.name === 'Interactions with Other Roles'
+      // This section must carry the Interaction Mode column (#6), so it needs
+      // a real table rather than the placeholder prose the others use.
+      ? `## ${s.name}\n\n| Role | Nature of Interaction | Interaction Mode |\n|---|---|---|\n| Peer Role | Shared delivery work | Collaborates |\n`
+      : `## ${s.name}\n\nContent for ${s.name}.\n`)
     .join('\n');
   let content = `# Test Role
 
@@ -39,6 +43,8 @@ function completeRole({ except = null, transform = null } = {}) {
 |---|---|
 | **Domain** | testdomain |
 | **Role Level** | Engineer |
+| **Reports To** | Test Chapter Lead |
+| **Direct Reports** | None |
 | **Last Reviewed** | 2026-07 |
 
 ${sections}`;
@@ -68,8 +74,14 @@ test('each required section individually missing produces exactly that error', (
   for (const section of REQUIRED_SECTIONS) {
     const file = writeFixture('missing-section.md', completeRole({ except: section.name }));
     const r = validateFile(file, tmpRoot);
-    assert.deepEqual(r.errors, [`Missing section: ## ${section.name}`],
-      `expected a single missing-section error for "${section.name}"`);
+    const expected = [`Missing section: ## ${section.name}`];
+    // Dropping the Interactions section also drops the table carrying the
+    // Interaction Mode column, so both errors are legitimately expected.
+    if (section.name === 'Interactions with Other Roles') {
+      expected.push('Interactions table is missing the "Interaction Mode" column');
+    }
+    assert.deepEqual(r.errors, expected,
+      `unexpected errors for a file missing "${section.name}"`);
   }
 });
 
@@ -107,6 +119,64 @@ test('missing Last Reviewed metadata is an error', () => {
   const file = writeFixture('no-reviewed.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Last Reviewed\*\*.*\n/, '') }));
   const r = validateFile(file, tmpRoot);
   assert.ok(r.errors.includes('Missing **Last Reviewed** metadata field'));
+});
+
+// ── template fields enforced after the #5 backfill (#6) ──
+
+test('missing Reports To metadata is an error', () => {
+  const file = writeFixture('no-reports-to.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Reports To\*\*.*\n/, '') }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, ['Missing **Reports To** metadata field']);
+});
+
+test('missing Direct Reports metadata is an error', () => {
+  const file = writeFixture('no-direct-reports.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Direct Reports\*\*.*\n/, '') }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, ['Missing **Direct Reports** metadata field']);
+});
+
+test('"None" is a valid Direct Reports value for individual contributors', () => {
+  const file = writeFixture('ic-role.md', completeRole());
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, []);
+});
+
+test('Role Scope & Boundaries is a required section', () => {
+  const file = writeFixture('no-scope.md', completeRole({ except: 'Role Scope & Boundaries' }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, ['Missing section: ## Role Scope & Boundaries']);
+});
+
+test('"Role Scope and Boundaries" is accepted as an equivalent heading', () => {
+  const file = writeFixture('scope-and.md', completeRole({
+    transform: c => c.replace('## Role Scope & Boundaries', '## Role Scope and Boundaries'),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, []);
+});
+
+test('an Interactions table without the Interaction Mode column is an error', () => {
+  const file = writeFixture('no-mode-column.md', completeRole({
+    transform: c => c
+      .replace('| Role | Nature of Interaction | Interaction Mode |', '| Role | Nature of Interaction |')
+      .replace('|---|---|---|', '|---|---|')
+      .replace('| Peer Role | Shared delivery work | Collaborates |', '| Peer Role | Shared delivery work |'),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, ['Interactions table is missing the "Interaction Mode" column']);
+});
+
+test('prose mentioning Interaction Mode does not satisfy the column check', () => {
+  // docs/role_template.md explains the Interaction Mode vocabulary in a
+  // blockquote above the table; that text alone must not count as the column.
+  const file = writeFixture('mode-prose-only.md', completeRole({
+    transform: c => c
+      .replace('| Role | Nature of Interaction | Interaction Mode |', '> **Interaction Mode** describes the direction of the relationship.\n\n| Role | Nature of Interaction |')
+      .replace('|---|---|---|', '|---|---|')
+      .replace('| Peer Role | Shared delivery work | Collaborates |', '| Peer Role | Shared delivery work |'),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, ['Interactions table is missing the "Interaction Mode" column']);
 });
 
 // ── warnings (not errors) ────────────────────────────────

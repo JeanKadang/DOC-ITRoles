@@ -145,7 +145,7 @@ roles_master/
    - Standard levels: `architect`, `senior_engineer`, `engineer`, `product_owner`, `reliability_engineer`
    - Special levels: `product_area_lead`, `technical_area_lead`, `cloud_lead_architect`, `cloud_principal_architect`
    - Example: `Roles/kubernetes/kubernetes_platform_engineer.md`
-3. Fill in all 13 sections following the template.
+3. Fill in all 14 sections following the template.
 4. Run `npm run validate` to confirm the file has all required sections and metadata.
 5. Restart the server — new roles are picked up automatically on each request.
 
@@ -158,7 +158,7 @@ roles_master/
 
 ## Role file format
 
-Each role file follows the canonical 13-section structure. See `docs/role_template.md` for full guidance.
+Each role file follows the canonical 14-section structure. See `docs/role_template.md` for full guidance.
 
 ```markdown
 # Role Title
@@ -167,11 +167,14 @@ Each role file follows the canonical 13-section structure. See `docs/role_templa
 |---|---|
 | **Domain** | Domain Name |
 | **Role Level** | Architect / Senior Engineer / Engineer / Product Owner |
+| **Reports To** | Role this position reports to |
+| **Direct Reports** | Roles managed, or "None" for individual contributors |
 | **Last Reviewed** | YYYY-MM |
 
 ---
 
 ## Role Overview
+## Role Scope & Boundaries
 ## Business Impact
 ## Key Responsibilities
 ## Key Decisions & Accountabilities
@@ -213,7 +216,9 @@ Runs the Node.js built-in test runner (`node --test`) against `test/` — covers
 npm run validate
 ```
 
-Checks every role file against the canonical 13-section template and required metadata fields (`Domain`, `Role Level`, `Last Reviewed`). Missing sections or metadata are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`, or a `Domain` that doesn't match its folder's canonical label) are reported as warnings. Pass `--strict` to fail the build on warnings too.
+Checks every role file against the canonical 14-section template and required metadata fields (`Domain`, `Role Level`, `Reports To`, `Direct Reports`, `Last Reviewed`), and requires the Interactions table to carry an `Interaction Mode` column. Missing sections, metadata, or the mode column are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`, or a `Domain` that doesn't match its folder's canonical label) are reported as warnings. Pass `--strict` to fail the build on warnings too.
+
+Duplicate H1 role titles across the catalog are also errors — the same title appearing in two files is a content-integrity bug that shipped twice before this check existed.
 
 ### Checking counts
 

@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- **The role template's reporting-line and interaction fields are now
+  enforced by `npm run validate` (closes #6).** With the #5 backfill
+  complete across all 219 role files, `Reports To` and `Direct Reports`
+  metadata, the `Role Scope & Boundaries` section, and the Interactions
+  table's `Interaction Mode` column are all required — missing any of them
+  is an error, not a silent omission. The canonical structure is therefore
+  now 14 sections rather than 13. `parseMeta` in `roleMeta.js` exposes
+  `reportsTo` and `directReports` alongside the existing metadata fields.
+  The Interaction Mode check matches a real table header followed by its
+  delimiter row, so the template's explanatory blockquote above the table
+  cannot satisfy it on its own.
+
 - **Reports To / Direct Reports / Role Scope & Boundaries / Interaction
   Mode backfilled for the Cloud, Platform & Infrastructure chapter (#89,
   batch 7/7 — the final batch: 77 of 219 files, completing #5).** Cloud

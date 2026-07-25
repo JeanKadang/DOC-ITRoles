@@ -135,10 +135,12 @@ function parseMeta(content) {
   const titleMatch = clean.match(/^#\s+(.+)/m);
   return {
     title:        titleMatch ? titleMatch[1].trim() : null,
-    domain:       parseField(content, 'Domain'),
-    chapter:      parseField(content, 'Chapter:') || parseField(content, 'Chapter'),
-    levelRaw:     parseField(content, 'Role Level'),
-    lastReviewed: parseField(content, 'Last Reviewed'),
+    domain:         parseField(content, 'Domain'),
+    chapter:        parseField(content, 'Chapter:') || parseField(content, 'Chapter'),
+    levelRaw:       parseField(content, 'Role Level'),
+    reportsTo:      parseField(content, 'Reports To'),
+    directReports:  parseField(content, 'Direct Reports'),
+    lastReviewed:   parseField(content, 'Last Reviewed'),
   };
 }
 

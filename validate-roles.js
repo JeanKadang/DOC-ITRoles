@@ -1,4 +1,4 @@
-// Validates every role file under Roles/ against the canonical 13-section
+// Validates every role file under Roles/ against the canonical 14-section
 // structure defined in docs/role_template.md. Zero dependencies — run with
 // `npm run validate` or `node validate-roles.js [--strict]`.
 //
@@ -22,6 +22,7 @@ const STRICT     = process.argv.includes('--strict');
 // failing on cosmetic wording differences (tracked as a follow-up cleanup).
 const REQUIRED_SECTIONS = [
   { name: 'Role Overview',                          patterns: [/^##\s+Role Overview/im] },
+  { name: 'Role Scope & Boundaries',                patterns: [/^##\s+Role Scope (&|and) Boundaries/im] },
   { name: 'Business Impact',                        patterns: [/^##\s+Business Impact/im] },
   { name: 'Key Responsibilities',                    patterns: [/^##\s+Key Responsibilities/im] },
   { name: 'Key Decisions & Accountabilities',        patterns: [/^##\s+Key Decisions (&|and) Accountabilities/im] },
@@ -34,6 +35,14 @@ const REQUIRED_SECTIONS = [
   { name: 'Career Development Path',                 patterns: [/^##\s+Career Development Path/im] },
   { name: 'Recommended Certifications & Learning Paths', patterns: [/^##\s+Recommended Certifications (&|and) Learning Paths/im] },
 ];
+
+// The Interactions table must carry an Interaction Mode column (Collaborates /
+// Consumes From / Provides To / Governed By / Escalates To) so each cross-role
+// relationship states its direction, not just its subject. Matches a table
+// header row naming the column followed by the delimiter row, rather than a
+// bare mention of the words — the template's explanatory blockquote above the
+// table would otherwise satisfy a looser check.
+const INTERACTION_MODE_COLUMN = /^\|.*Interaction Mode.*\|[ \t]*\r?\n\|[\s:|-]+\|/im;
 
 function listRoleFiles(rolesDir = ROLES_DIR) {
   const files = [];
@@ -82,6 +91,12 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
     warnings.push(`Role Level "${meta.levelRaw}" is not in the canonical level vocabulary (roleMeta.js)`);
   }
 
+  // Reporting line. Backfilled across all role files in #5; enforced here so
+  // the vertical relationship can't silently go missing from new roles the
+  // way it was absent from the whole catalogue before that backfill.
+  if (!meta.reportsTo) errors.push('Missing **Reports To** metadata field');
+  if (!meta.directReports) errors.push('Missing **Direct Reports** metadata field');
+
   if (!meta.lastReviewed) {
     errors.push('Missing **Last Reviewed** metadata field');
   } else if (!/^\d{4}-\d{2}$/.test(meta.lastReviewed)) {
@@ -91,6 +106,10 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
   for (const section of REQUIRED_SECTIONS) {
     const found = section.patterns.some(re => re.test(content));
     if (!found) errors.push(`Missing section: ## ${section.name}`);
+  }
+
+  if (!INTERACTION_MODE_COLUMN.test(content)) {
+    errors.push('Interactions table is missing the "Interaction Mode" column');
   }
 
   return { rel, errors, warnings, skipped: false };
