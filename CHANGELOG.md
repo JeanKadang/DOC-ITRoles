@@ -7,7 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-07-25
+
 ### Added
+
+- **Service Desk domain (#65).** 31 role files referenced "Service Desk" /
+  "Service Desk Lead" as an escalation target or stakeholder, but the
+  catalog had no service-desk roles. Adds a 3-role ladder under a new
+  `service_desk` domain — `service_desk_analyst` (Tier 1, Engineer),
+  `service_desk_senior_analyst` (Tier 2, Senior Engineer),
+  `service_desk_lead` (support model/staffing owner, Senior Engineer) —
+  slotted into the existing End User & Workplace chapter alongside Client
+  Platform, Endpoint Management, and Modern Workplace. The new files use
+  the full modern template (Role Scope & Boundaries, Reports To/Direct
+  Reports, Interaction Mode) rather than the legacy template #5 is
+  backfilling, so they add no new debt to that effort. Wired into
+  `roleMeta.js`, the sidebar/chapter mapping, `SKILLS_PROGRESSION.md`, and
+  `CROSS_DOMAIN_INTERACTIONS.md` (including a major-incident-detection
+  note); chapter overview docs and the chapter lead's role overview
+  updated to name four domains instead of three. Catalog: 216 → 219 roles,
+  32 → 33 domains.
 
 - **The role template's reporting-line and interaction fields are now
   enforced by `npm run validate` (closes #6).** With the #5 backfill
@@ -193,25 +212,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   Owner assignment does not itself complete the underlying external
   actions (HR/L&D engagement, pulse survey, tech radar adoption) — those
   remain flagged as pending in their respective sections.
-
-### Added
-
-- **Service Desk domain (#65).** 31 role files referenced "Service Desk" /
-  "Service Desk Lead" as an escalation target or stakeholder, but the
-  catalog had no service-desk roles. Adds a 3-role ladder under a new
-  `service_desk` domain — `service_desk_analyst` (Tier 1, Engineer),
-  `service_desk_senior_analyst` (Tier 2, Senior Engineer),
-  `service_desk_lead` (support model/staffing owner, Senior Engineer) —
-  slotted into the existing End User & Workplace chapter alongside Client
-  Platform, Endpoint Management, and Modern Workplace. The new files use
-  the full modern template (Role Scope & Boundaries, Reports To/Direct
-  Reports, Interaction Mode) rather than the legacy template #5 is
-  backfilling, so they add no new debt to that effort. Wired into
-  `roleMeta.js`, the sidebar/chapter mapping, `SKILLS_PROGRESSION.md`, and
-  `CROSS_DOMAIN_INTERACTIONS.md` (including a major-incident-detection
-  note); chapter overview docs and the chapter lead's role overview
-  updated to name four domains instead of three. Catalog: 216 → 219 roles,
-  32 → 33 domains.
+- **Stale README and role-template claims corrected.** An audit of every
+  documented claim against the code found the docs had drifted behind the
+  last two releases. The retired `Reliability Engineer` level (removed in
+  v1.4.0, #69) was still listed in the README hierarchy table, in the
+  filename conventions, and in `docs/role_template.md`'s Role Level
+  vocabulary — so a role copied from the template would have picked a
+  level the validator no longer accepts, which #6 now makes a hard error.
+  The Features table was missing the entire visualization epic (org chart,
+  relationship graph, career paths), full-text content search, the career
+  stepper, and the welcome-screen distribution charts. The structure tree
+  omitted `viewer-logic.js`, `SECURITY.md`, and `dependabot.yml`, listed
+  three of four vendored libraries, and described `test/` as two suites
+  when there are five; the design notes claimed "~1,700 lines" and "two
+  files" for a UI that is now ~3,000 lines across three. Claims were
+  re-verified against a running server rather than read off the source,
+  after a first pass got three button labels wrong. Also gitignores
+  `.claude/scheduled_tasks.lock`.
 
 ## [1.5.0] - 2026-07-22
 
