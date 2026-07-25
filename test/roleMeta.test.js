@@ -13,6 +13,8 @@ test('parseMeta extracts title and metadata fields', () => {
     '|---|---|',
     '| **Domain** | Example Domain |',
     '| **Role Level** | Architect |',
+    '| **Reports To** | Example Chapter Lead |',
+    '| **Direct Reports** | None |',
     '| **Last Reviewed** | 2026-03 |',
     '',
     '---',
@@ -24,7 +26,15 @@ test('parseMeta extracts title and metadata fields', () => {
   assert.equal(meta.title, 'Example Architect');
   assert.equal(meta.domain, 'Example Domain');
   assert.equal(meta.levelRaw, 'Architect');
+  assert.equal(meta.reportsTo, 'Example Chapter Lead');
+  assert.equal(meta.directReports, 'None');
   assert.equal(meta.lastReviewed, '2026-03');
+});
+
+test('parseMeta returns null for reporting-line fields when absent', () => {
+  const meta = parseMeta('# Bare Role\n\n| **Role Level** | Engineer |\n');
+  assert.equal(meta.reportsTo, null);
+  assert.equal(meta.directReports, null);
 });
 
 test('parseMeta strips a leading UTF-8 BOM before matching the H1 title', () => {
