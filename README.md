@@ -53,8 +53,13 @@ $env:PORT = 8080; node server.js
 | Feature | How to use |
 |---|---|
 | Browse roles | Expand a domain in the left sidebar |
-| Search | Type in the search box — filters roles and domains live |
+| Search | Type in the search box — filters roles, domains, and chapters instantly. Queries of 3+ characters additionally search role *content* and prepend a **🔎 Content matches** group with snippets |
 | **Role Matrix** | Click **📊 Matrix** in the header — shows all roles in a domain × level grid |
+| **Org chart** | Click **🌳 Org** in the header — interactive hierarchy of chapters, domains, and roles plus the leadership line |
+| **Relationship graph** | Click **🔗 Graph** in the header — force-directed view of how domains collaborate |
+| **Career paths** | Click **📈 Careers** in the header — flow view of progression and cross-domain mobility |
+| Career stepper | Open a role — its Career Development Path renders as a clickable stepper linking previous and next roles |
+| Distribution charts | Shown on the welcome screen — roles per chapter and per level, each with an accessible table fallback |
 | Compare two roles | Open a role, then click **⚖️ Compare** and select a second role |
 | Print a role | Open a role, click **🖨️ Print** — sidebar and controls are hidden in print |
 | Export a role | Open a role, click **⬇️ Export** — downloads it as a `.md` file |
@@ -93,7 +98,6 @@ See `docs/CHAPTERS_OVERVIEW.md` for the full breakdown and `docs/chapters/*.md` 
 | Architect | Purple | Domain-level technical authority and design |
 | Senior Engineer | Blue | Autonomous delivery and mentoring within a domain |
 | Engineer | Green | Execution and learning within a domain |
-| Reliability Engineer | Cyan | SRE/platform reliability focus |
 | Product Owner | Orange | Backlog and roadmap ownership for a domain |
 
 ## Repository structure
@@ -101,7 +105,8 @@ See `docs/CHAPTERS_OVERVIEW.md` for the full breakdown and `docs/chapters/*.md` 
 ```
 roles_master/
 ├── .github/
-│   └── workflows/ci.yml                    # CI: npm test, npm run validate, markdownlint
+│   ├── workflows/ci.yml                    # CI: npm test, npm run validate, check-counts, markdownlint
+│   └── dependabot.yml                      # Weekly GitHub Actions + npm update checks
 ├── Roles/                                  # All role definitions (33 domains, 219 roles)
 │   ├── leadership/                         # SVP, CISO, Chapter Leads, TAL, PAL
 │   ├── c_suite/                            # CEO, CTO, CIO, CFO
@@ -126,14 +131,16 @@ roles_master/
 │   └── chapters/                           # Per-chapter narrative (rendered in the viewer)
 ├── scripts/
 │   └── check-counts.js                     # Verifies README counts vs filesystem — `npm run check-counts`
-├── test/                                   # node:test suite (server + roleMeta)
-├── vendor/                                 # Vendored third-party assets (marked.min.js, chart.umd.min.js, echarts.min.js)
+├── test/                                   # node:test suite (server, roleMeta, validator, viewer logic, career paths)
+├── vendor/                                 # Vendored third-party assets (marked, DOMPurify, Chart.js, ECharts)
 ├── server.js                               # Node.js web server (no dependencies)
 ├── roleMeta.js                             # Shared role metadata parser (server + validator)
+├── viewer-logic.js                         # Browser-side pure logic, shared with the test suite
 ├── validate-roles.js                       # Content validator — `npm run validate`
-├── index.html                              # Single-file web UI
+├── index.html                              # Web UI markup, styles, and view wiring
 ├── start.bat                               # Windows launcher (auto-picks a free port, opens browser)
 ├── package.json                            # Scripts: start, test, validate, check-counts
+├── SECURITY.md                             # Security policy and vulnerability reporting
 ├── CHANGELOG.md                            # Version history (Keep a Changelog)
 └── README.md                               # This file
 ```
@@ -142,7 +149,7 @@ roles_master/
 
 1. Copy `docs/role_template.md` into the appropriate folder under `Roles/`.
 2. Name the file using the pattern: `<technology>_<level>.md`
-   - Standard levels: `architect`, `senior_engineer`, `engineer`, `product_owner`, `reliability_engineer`
+   - Standard levels: `architect`, `senior_engineer`, `engineer`, `product_owner`
    - Special levels: `product_area_lead`, `technical_area_lead`, `cloud_lead_architect`, `cloud_principal_architect`
    - Example: `Roles/kubernetes/kubernetes_platform_engineer.md`
 3. Fill in all 14 sections following the template.
@@ -199,6 +206,7 @@ Each role file follows the canonical 14-section structure. See `docs/role_templa
 | `docs/CHAPTERS_OVERVIEW.md` | The 7 chapters, their focus, and links to per-chapter detail |
 | `docs/improvements_and_recommendations.md` | Review history, rationale, and industry-trend tracking (open work tracked as [GitHub issues](https://github.com/JeanKadang/DOC-ITRoles/issues)) |
 | `CHANGELOG.md` | Version history of the codebase (Keep a Changelog format) |
+| `SECURITY.md` | Security policy and how to report a vulnerability |
 
 ## Development
 
@@ -246,5 +254,5 @@ Compares README.md's count-bearing sentences ("N domains grouped into N chapters
 
 ## Design notes
 
-- **Single-file `index.html`.** The entire UI (~1,700 lines of HTML/CSS/JS) lives in one file by design, so the whole app can be shared as two files (`index.html` + `server.js`) with no build step or bundler. This is a deliberate portability tradeoff, not unaddressed technical debt — split it up only if maintenance becomes painful.
-- **Zero runtime dependencies.** `server.js` uses only Node.js built-ins; the third-party browser libraries (`marked`, `DOMPurify`, chart libraries) are vendored under `vendor/` rather than pulled from a CDN, so the app works fully offline.
+- **Near-single-file UI.** Markup, styles, and view wiring live together in `index.html` (~3,000 lines) with no build step or bundler, so the app stays portable. The one deliberate exception is `viewer-logic.js`, which holds the pure functions (level ordering, stale-role computation, career-path parsing) so the `node:test` suite can import and test them directly — logic that was previously untestable and shipped two silent bugs. Keep new *pure* logic there and new *DOM* work in `index.html`.
+- **Zero runtime dependencies.** `server.js` uses only Node.js built-ins; the third-party browser libraries (`marked`, `DOMPurify`, Chart.js, ECharts) are vendored under `vendor/` rather than pulled from a CDN, so the app works fully offline.
