@@ -1,0 +1,53 @@
+# Categorises GitHub's auto-generated release notes.
+#
+# Categories are matched in order against each merged PR's labels, and a PR
+# lands in the first category it matches, so "*" must stay last. Note these are
+# the *PR's* labels, not the linked issue's — an unlabelled PR falls through to
+# "Other Changes" regardless of how its issue was labelled (see #100).
+#
+# Preview the output before tagging:
+#   gh api repos/{owner}/{repo}/releases/generate-notes -f tag_name=vX.Y.Z --jq .body
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+  categories:
+    - title: Security
+      labels:
+        - security
+    - title: Features
+      labels:
+        - enhancement
+    - title: Content & Backfill
+      labels:
+        - backfill
+    - title: Fixes
+      labels:
+        - bug
+    - title: Accessibility
+      labels:
+        - accessibility
+    - title: Performance
+      labels:
+        - performance
+    - title: Visualization
+      labels:
+        - visualization
+        - ux
+    - title: Documentation
+      labels:
+        - documentation
+    - title: Tooling & CI
+      labels:
+        - tooling
+        - ci-cd
+        - testing
+        - developer-experience
+    - title: Maintenance & Refactoring
+      labels:
+        - maintenance
+        - refactor
+        - process
+    - title: Other Changes
+      labels:
+        - "*"
