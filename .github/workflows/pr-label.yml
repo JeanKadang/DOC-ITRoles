@@ -1,0 +1,81 @@
+name: PR labeler
+
+# Derives a category label from the conventional-commit prefix already used in
+# every PR title (feat:, fix:, docs:, ci:, ...). This is what makes
+# .github/release.yml work: generated release notes categorise by the *PR's*
+# labels, and an unlabelled PR falls through to "Other Changes".
+#
+# Uses `pull_request` rather than `pull_request_target`. The repo is private, so
+# there are no fork PRs to accommodate, and pull_request_target would hand a
+# write token to a workflow evaluating untrusted input for no benefit.
+
+on:
+  pull_request:
+    types: [opened, edited, reopened]
+
+# Least-privilege: this workflow only reads and edits PR labels. It never
+# checks out code, reads contents, or writes to the repository.
+permissions:
+  pull-requests: write
+
+jobs:
+  label:
+    name: Label from title prefix
+    runs-on: ubuntu-latest
+    steps:
+      - name: Map conventional-commit prefix to a category label
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          # Passed as an environment variable, never interpolated into the
+          # script body -- a PR title is attacker-controlled text and `${{ }}`
+          # inside `run:` would be a shell injection.
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+
+          # "feat(scope)!: subject" -> "feat"
+          prefix="${PR_TITLE%%:*}"
+          prefix="${prefix%%(*}"
+          prefix="$(printf '%s' "$prefix" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:]!')"
+
+          case "$prefix" in
+            feat)        label="enhancement" ;;
+            fix)         label="bug" ;;
+            docs)        label="documentation" ;;
+            ci)          label="ci-cd" ;;
+            test)        label="testing" ;;
+            perf)        label="performance" ;;
+            refactor)    label="refactor" ;;
+            build)       label="tooling" ;;
+            chore|style) label="maintenance" ;;
+            release)     label="ignore-for-release" ;;
+            *)           label="" ;;
+          esac
+
+          if [ -z "$label" ]; then
+            echo "No recognised conventional-commit prefix in: $PR_TITLE"
+            echo "Leaving the PR unlabelled; label it by hand if it should appear in release notes."
+            exit 0
+          fi
+
+          # Respect manual labelling: if a human already put this PR in a
+          # category, don't add a second one. release.yml matches categories in
+          # order, so two category labels would silently pick the earlier one.
+          known="accessibility backfill bug ci-cd documentation enhancement
+                 ignore-for-release maintenance performance process refactor
+                 security testing tooling ux visualization"
+          current="$(gh pr view "$PR_NUMBER" --json labels --jq '.labels[].name')"
+
+          for c in $current; do
+            for k in $known; do
+              if [ "$c" = "$k" ]; then
+                echo "PR #$PR_NUMBER already has category label '$c' -- leaving it alone."
+                exit 0
+              fi
+            done
+          done
+
+          echo "Title prefix '$prefix' -> label '$label'"
+          gh pr edit "$PR_NUMBER" --add-label "$label"
