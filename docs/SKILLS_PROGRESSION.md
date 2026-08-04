@@ -261,6 +261,7 @@ Every domain in the catalog is listed below (alphabetically), with every role fi
 
 - Engineer: `service_desk_analyst`
 - Senior Engineer: `service_desk_lead`, `service_desk_senior_analyst`
+- Product Owner: `service_desk_product_owner`
 
 ### Service Management
 
