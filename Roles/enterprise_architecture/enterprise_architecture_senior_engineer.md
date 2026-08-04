@@ -6,7 +6,7 @@
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
 | **Reports To** | Enterprise Architect |
-| **Direct Reports** | None |
+| **Direct Reports** | Enterprise Architecture Engineer (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Last Reviewed** | 2026-03 |
 
 ---
@@ -85,6 +85,7 @@ The Enterprise Architecture Senior Engineer operates at the intersection of tech
 | Enterprise Architect | Providing operational and documentation support for governance processes | Escalates To |
 | Solution Architect | Providing operational and documentation support for governance processes | Provides To |
 | architecture review board | Chaired by the Enterprise Architect | Provides To |
+| Enterprise Architecture Engineer | Provides task direction, review, and mentoring on repository and documentation work | Provides To |
 
 ## Key Technologies
 
