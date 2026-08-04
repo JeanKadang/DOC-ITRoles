@@ -615,6 +615,44 @@
 
         .md-body h1 { display: none; }
 
+        /* ── Reporting line in the header (#113) ────────────── */
+        .role-reporting { margin-top: 8px; }
+        .meta-reporting {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 6px;
+            background: transparent;
+            border: 1px dashed var(--border-color);
+        }
+        .meta-reporting .meta-key {
+            color: var(--text-muted);
+            font-size: 0.92em;
+            letter-spacing: 0.2px;
+        }
+        .meta-note {
+            color: var(--text-muted);
+            cursor: help;
+            margin-left: 4px;
+            font-size: 0.9em;
+        }
+        .meta-note:hover { color: var(--accent-blue); }
+
+        /* ── Section emphasis (#113) ────────────────────────── */
+        /* The Owns vs. Advises On table is the role's core accountability
+           statement; it read at the same weight as a certification list. */
+        .md-section .owns-advises th:first-child { color: var(--accent-blue); }
+        .md-section .owns-advises td:first-child {
+            font-weight: 600;
+            color: var(--text-primary);
+            border-right: 2px solid var(--accent-blue);
+        }
+        .md-section .owns-advises td:last-child { color: var(--text-secondary); }
+
+        /* Trailing reference material is looked up deliberately rather than
+           read through, so it sits back from the substantive sections. */
+        .md-section.section-reference > .md-section-hd { color: var(--text-secondary); font-weight: 600; }
+        .md-section.section-reference { font-size: 0.95em; }
+
         /* ── Sticky section nav (#111) ──────────────────────── */
         .toc-nav {
             position: sticky;
@@ -1385,6 +1423,7 @@
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
         sectionStartsOpen, panelStateFor,
         tocIdFor, activeTocIndex,
+        parseRoleMeta, splitReportingValue,
         findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
 
@@ -2457,6 +2496,13 @@
             details.className = 'md-section';
             if (sectionStartsOpen(heading)) details.open = true;
 
+            // Reference sections are looked up on demand rather than read
+            // through, so they carry less visual weight than the sections
+            // that state what the role owns and does (#113).
+            if (/^(Key Technologies|Recommended Certifications|Remote Work Considerations)/i.test(heading)) {
+                details.classList.add('section-reference');
+            }
+
             const summary = document.createElement('summary');
             summary.className = 'md-section-hd';
             summary.textContent = heading;
@@ -2468,6 +2514,14 @@
             while (el && el.tagName !== 'H2') { body.push(el); el = el.nextElementSibling; }
             h2.replaceWith(details);
             for (const node of body) details.appendChild(node);
+
+            // Tag the Owns / Advises On table so it can carry more weight
+            // than an ordinary two-column table (#113).
+            if (/^Key Decisions/i.test(heading)) {
+                for (const t of details.querySelectorAll('table')) {
+                    if (/\bOwns\b/i.test(t.rows[0]?.cells[0]?.textContent || '')) t.classList.add('owns-advises');
+                }
+            }
         }
     }
 
@@ -2588,7 +2642,7 @@
     }
 
     // ── Shared: build role header HTML ───────────────────
-    function buildHeader(title, level, domainLabel, lastReviewed, slot) {
+    function buildHeader(title, level, domainLabel, lastReviewed, slot, meta = null) {
         const isCompare = slot === 'B';
         const actions = isCompare
             ? `<button class="btn-action btn-danger" onclick="closeComparison()" aria-label="Close comparison">✕ Close</button>`
@@ -2597,6 +2651,31 @@
                <button class="btn-action" id="compareBtn" onclick="startCompare()" aria-label="Compare with another role">⚖️ Compare</button>`;
         const compareLabel = isCompare ? `<div class="compare-label">Comparing with</div>` : '';
         const reviewedTag  = lastReviewed ? `<span class="meta-tag">🗓️ Reviewed ${escapeHtml(lastReviewed)}</span>` : '';
+
+        // Reporting line (#113). The body is rendered from the first "## "
+        // heading onward, so the metadata table above it never appears — these
+        // two fields were absent from the viewer entirely despite being
+        // backfilled across all 222 files in #5. Each name that resolves to a
+        // catalog role becomes a link, reusing the .role-xref affordance.
+        const reportingChip = (icon, label, value) => {
+            if (!value) return '';
+            const { head, detail } = splitReportingValue(value);
+            const hit = findRoleByTitle(head);
+            const inner = hit
+                ? `<span class="role-xref" role="button" tabindex="0"
+                         data-file="${escapeHtml(hit.file)}" data-title="${escapeHtml(hit.title)}"
+                         data-level="${escapeHtml(hit.level)}" data-domain="${escapeHtml(hit.domainLabel)}"
+                         title="Open ${escapeHtml(hit.title)}">${escapeHtml(head)}</span>`
+                : escapeHtml(head);
+            // The qualifier stays reachable without dominating the header.
+            const note = detail ? `<span class="meta-note" title="${escapeHtml(detail)}">ⓘ</span>` : '';
+            return `<span class="meta-tag meta-reporting" title="${escapeHtml(value)}"><span class="meta-key">${icon} ${label}</span> ${inner}${note}</span>`;
+        };
+        const reporting = meta
+            ? reportingChip('↑', 'Reports to', meta.reportsTo) +
+              reportingChip('↓', 'Direct reports', meta.directReports)
+            : '';
+
         return `
             ${compareLabel}
             <div class="role-header-row">
@@ -2607,7 +2686,8 @@
                 <span class="meta-tag">📂 ${escapeHtml(domainLabel)}</span>
                 <span class="meta-tag badge ${badgeClass(level)}">${escapeHtml(level)}</span>
                 ${reviewedTag}
-            </div>`;
+            </div>
+            ${reporting ? `<div class="role-meta role-reporting">${reporting}</div>` : ''}`;
     }
 
     // ── Open a role (primary slot) ────────────────────────
@@ -2645,11 +2725,14 @@
             const res      = await fetch(`/api/role?file=${encodeURIComponent(file)}`);
             const markdown = await res.text();
 
-            const reviewMatch  = markdown.match(/\|\s*\*\*Last Reviewed\*\*\s*\|\s*(.+?)\s*\|/);
-            const lastReviewed = reviewMatch ? reviewMatch[1].trim() : null;
+            // parseRoleMeta also recovers Reports To / Direct Reports, which
+            // the body slice below discards with the rest of the metadata
+            // table — that is why they never reached the UI (#113).
+            const meta         = parseRoleMeta(markdown);
+            const lastReviewed = meta.lastReviewed;
 
             // Re-render header with reviewed date
-            document.getElementById('roleHeader').innerHTML = buildHeader(title, level, domainLabel, lastReviewed, 'A');
+            document.getElementById('roleHeader').innerHTML = buildHeader(title, level, domainLabel, lastReviewed, 'A', meta);
 
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
@@ -2694,10 +2777,13 @@
             const res      = await fetch(`/api/role?file=${encodeURIComponent(file)}`);
             const markdown = await res.text();
 
-            const reviewMatch  = markdown.match(/\|\s*\*\*Last Reviewed\*\*\s*\|\s*(.+?)\s*\|/);
-            const lastReviewed = reviewMatch ? reviewMatch[1].trim() : null;
+            // parseRoleMeta also recovers Reports To / Direct Reports, which
+            // the body slice below discards with the rest of the metadata
+            // table — that is why they never reached the UI (#113).
+            const meta         = parseRoleMeta(markdown);
+            const lastReviewed = meta.lastReviewed;
 
-            document.getElementById('roleHeader2').innerHTML = buildHeader(title, level, domainLabel, lastReviewed, 'B');
+            document.getElementById('roleHeader2').innerHTML = buildHeader(title, level, domainLabel, lastReviewed, 'B', meta);
 
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;

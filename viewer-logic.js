@@ -582,6 +582,49 @@
         return idx;
     }
 
+    // Read the metadata table that sits between the H1 and the first "## "
+    // section. The viewer renders the body from that first heading onward, so
+    // anything here is otherwise invisible — which is why Reports To and
+    // Direct Reports never appeared in the UI at all despite being backfilled
+    // across the whole catalog in #5 (see #113).
+    //
+    // Deliberately stops at the first section heading: a "Reports To" written
+    // in prose further down is not metadata.
+    function parseRoleMeta(markdown) {
+        const text = String(markdown == null ? '' : markdown).replace(/\r\n/g, '\n');
+        const end  = text.indexOf('\n## ');
+        const head = end === -1 ? text : text.slice(0, end);
+        const field = label => {
+            const m = head.match(new RegExp('\\|\\s*\\*\\*' + label + ':?\\*\\*\\s*\\|\\s*([^|]*?)\\s*\\|'));
+            const v = m && m[1].trim();
+            return v ? v : null;
+        };
+        return {
+            domain:        field('Domain'),
+            chapter:       field('Chapter'),
+            level:         field('Role Level'),
+            reportsTo:     field('Reports To'),
+            directReports: field('Direct Reports'),
+            lastReviewed:  field('Last Reviewed'),
+        };
+    }
+
+    // Split a Reports To / Direct Reports value into the part worth showing
+    // and the qualifier behind it. 34% of these values run past 60 characters
+    // (longest is 241) because they explain the arrangement inline — "None
+    // (sets technical direction and mentors …; formal line management sits
+    // with the Chapter Lead)". Rendering that whole string as a chip is
+    // unreadable, so the lead-in shows and the rest becomes a tooltip (#113).
+    function splitReportingValue(value) {
+        const v = String(value == null ? '' : value).trim();
+        if (!v) return { head: '', detail: '' };
+        const paren = v.match(/^([^(]+?)\s*\((.+)\)\s*$/);
+        if (paren) return { head: paren[1].trim(), detail: paren[2].trim() };
+        const semi = v.indexOf(';');
+        if (semi > -1) return { head: v.slice(0, semi).trim(), detail: v.slice(semi + 1).trim() };
+        return { head: v, detail: '' };
+    }
+
     return {
         STALE_MONTHS,
         REFERENCE_DOC_PATTERN,
@@ -605,6 +648,8 @@
         roleTitleKey,
         findRoleByTitle,
         panelStateFor,
+        parseRoleMeta,
+        splitReportingValue,
         tocIdFor,
         activeTocIndex,
     };
