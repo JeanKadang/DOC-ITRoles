@@ -610,6 +610,52 @@
 
         .md-body h1 { display: none; }
 
+        /* ── Collapsible role sections (#112) ───────────────── */
+        .md-section { border-bottom: 1px solid var(--border-color); }
+        .md-section:last-child { border-bottom: none; }
+
+        .md-section > .md-section-hd {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: var(--accent-blue);
+            letter-spacing: -0.2px;
+            padding: 14px 0 14px 26px;
+            position: relative;
+            cursor: pointer;
+            list-style: none;          /* hide the native marker … */
+            user-select: none;
+        }
+        .md-section > .md-section-hd::-webkit-details-marker { display: none; }
+
+        /* … and draw our own, so it can rotate and match the type scale. */
+        .md-section > .md-section-hd::before {
+            content: '▸';
+            position: absolute;
+            left: 4px;
+            color: var(--text-muted);
+            transition: transform 0.15s ease;
+            display: inline-block;
+        }
+        .md-section[open] > .md-section-hd::before { transform: rotate(90deg); }
+        .md-section > .md-section-hd:hover { color: var(--accent-blue); }
+        .md-section > .md-section-hd:hover::before { color: var(--accent-blue); }
+        .md-section > .md-section-hd:focus-visible {
+            outline: 2px solid var(--accent-blue);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+        .md-section[open] > .md-section-hd { padding-bottom: 8px; }
+        .md-section > *:not(.md-section-hd):last-child { margin-bottom: 18px; }
+
+        /* Sections are force-opened for printing by the beforeprint handler
+           (CSS alone cannot expand a closed <details>); this just drops the
+           interactive affordances from the printed page. */
+        @media print {
+            .md-section > .md-section-hd::before { display: none; }
+            .md-section > .md-section-hd { padding-left: 0; }
+            .md-section { border-bottom: none; }
+        }
+
         .md-body h2 {
             font-size: 1.1em;
             font-weight: 700;
@@ -1232,6 +1278,7 @@
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
+        sectionStartsOpen,
         findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
 
@@ -2363,6 +2410,50 @@
         el.hidden = false;
     }
 
+
+    // Wrap each "## " section of a rendered role body in a <details> so the
+    // page opens as a scannable outline instead of ~9,000 characters of
+    // expanded prose (#112). Which sections start open is decided by
+    // sectionStartsOpen in viewer-logic.js (under test).
+    //
+    // <details> is used deliberately over a custom widget: the browser gives
+    // keyboard operation, correct ARIA semantics, and — importantly for this
+    // repo — Ctrl+F still finds text inside a closed section in current
+    // browsers. Printing is handled by the beforeprint handler, since CSS
+    // cannot expand a closed <details>.
+    // State is intentionally not persisted across roles; each role opens in
+    // the same predictable shape.
+    function collapseSections(container) {
+        if (!container) return;
+        const headings = [...container.querySelectorAll('h2')];
+        for (const h2 of headings) {
+            const heading = h2.textContent.trim();
+            const details = document.createElement('details');
+            details.className = 'md-section';
+            if (sectionStartsOpen(heading)) details.open = true;
+
+            const summary = document.createElement('summary');
+            summary.className = 'md-section-hd';
+            summary.textContent = heading;
+            details.appendChild(summary);
+
+            // Move everything between this h2 and the next one inside.
+            const body = [];
+            let el = h2.nextElementSibling;
+            while (el && el.tagName !== 'H2') { body.push(el); el = el.nextElementSibling; }
+            h2.replaceWith(details);
+            for (const node of body) details.appendChild(node);
+        }
+    }
+
+    // Expand the section containing an element (used when navigating to a
+    // collapsed section — the TOC in #111 will rely on this too).
+    function revealSection(el) {
+        for (let p = el; p; p = p.parentElement) {
+            if (p.tagName === 'DETAILS') p.open = true;
+        }
+    }
+
     // Link the role names in the "Interactions with Other Roles" table.
     // The section renders as plain Markdown, so until #120 every name in it
     // was dead text even when the catalog defined that role. Resolution
@@ -2396,6 +2487,7 @@
                 cell.appendChild(a);
             }
             break;
+
         }
     }
 
@@ -2465,7 +2557,12 @@
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
             document.getElementById('roleBody').innerHTML = renderMarkdown(body);
+            // Order matters: linkInteractionRoles walks h2.nextElementSibling
+            // to reach the interactions table, and collapseSections then moves
+            // that table inside a <details>. Collapsing first silently drops
+            // every cross-reference link.
             linkInteractionRoles(document.getElementById('roleBody'), title);
+            collapseSections(document.getElementById('roleBody'));
             renderCareerStepper(markdown, title);
             document.getElementById('mainArea').scrollTop = 0;
 
@@ -2506,6 +2603,7 @@
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
             document.getElementById('roleBody2').innerHTML = renderMarkdown(body);
             linkInteractionRoles(document.getElementById('roleBody2'), title);
+            collapseSections(document.getElementById('roleBody2'));
 
         } catch {
             document.getElementById('roleBody2').innerHTML =
@@ -2615,6 +2713,21 @@
     }
 
     function printRole() { window.print(); }
+
+    // A closed <details> cannot be expanded by CSS, so the printed page would
+    // silently lose every collapsed section (#112). Force them open for the
+    // print, then restore exactly what the reader had. Covers Ctrl+P as well
+    // as the Print button, since both fire beforeprint.
+    let printRestore = [];
+    window.addEventListener('beforeprint', () => {
+        printRestore = [...document.querySelectorAll('details.md-section')]
+            .filter(d => !d.open);
+        for (const d of printRestore) d.open = true;
+    });
+    window.addEventListener('afterprint', () => {
+        for (const d of printRestore) d.open = false;
+        printRestore = [];
+    });
 
     // ── Export: download the currently open role/doc as a .md file ──
     function downloadText(filename, text, mime) {

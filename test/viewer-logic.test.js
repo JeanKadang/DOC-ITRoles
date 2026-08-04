@@ -21,6 +21,7 @@ const {
     parseMobilityPaths,
     parseCareerPath,
     resolveDocHref,
+    sectionStartsOpen,
     roleTitleKey,
     findRoleByTitle,
 } = require('../viewer-logic');
@@ -578,6 +579,36 @@ test('parseCareerPath parses every role file in the catalog', () => {
     }
     assert.equal(total, 222);
     assert.equal(withBoth, 222, 'every role file yields both From and To lists');
+});
+
+// ── sectionStartsOpen (#112) ──────────────────────────────
+// Role bodies open with all 14 sections expanded (~9,000 chars). Collapsing
+// them turns the page into a scannable outline, but the orienting sections
+// must stay open or the reader lands on a wall of closed headings.
+test('sectionStartsOpen keeps the two orienting sections expanded', () => {
+    assert.equal(sectionStartsOpen('Role Overview'), true);
+    assert.equal(sectionStartsOpen('Role Scope & Boundaries'), true);
+});
+
+test('sectionStartsOpen collapses the reference sections', () => {
+    assert.equal(sectionStartsOpen('Key Technologies'), false);
+    assert.equal(sectionStartsOpen('Recommended Certifications & Learning Paths'), false);
+    assert.equal(sectionStartsOpen('Typical Day-to-Day Activities'), false);
+    assert.equal(sectionStartsOpen('Key Performance Indicators'), false);
+});
+
+test('sectionStartsOpen tolerates the catalog heading spelling variants', () => {
+    // 67 files use "Required Skills", 155 "Required Skills & Qualifications";
+    // "and" vs "&" splits 203/19 (see #121). Matching must not depend on
+    // which variant a given file happens to use.
+    assert.equal(sectionStartsOpen('Role Scope and Boundaries'), true);
+    assert.equal(sectionStartsOpen('  role scope & boundaries  '), true);
+});
+
+test('sectionStartsOpen defaults unknown sections to collapsed', () => {
+    assert.equal(sectionStartsOpen('Something New We Added Later'), false);
+    assert.equal(sectionStartsOpen(''), false);
+    assert.equal(sectionStartsOpen(null), false);
 });
 
 // ── findRoleByTitle (#120) ────────────────────────────────
