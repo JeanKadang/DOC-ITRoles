@@ -41,7 +41,7 @@ The Database Architect designs comprehensive data management strategies and arch
 - Evaluate new database technologies and approaches
 - Provide technical leadership for database initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

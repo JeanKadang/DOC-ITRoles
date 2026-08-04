@@ -44,7 +44,7 @@ The Privileged Access Management (PAM) Architect designs, governs, and evolves t
 - Provide technical governance over PAM platform operations and ensure platform availability and resilience.
 - Mentor PAM engineers and guide cross-domain teams on privileged access principles.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Privileged Access Management (PAM) Architect designs, governs, and evolves t
 | PAM governance framework and on-boarding standards | Organisational change management for JIT adoption |
 | Integration architecture with SIEM and identity platforms | Budget allocation for PAM tooling |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

@@ -43,7 +43,7 @@ The Platform Reliability Engineer applies site reliability engineering (SRE) pri
 - Drive a culture of reliability within the platform engineering team through runbook authorship, game day facilitation, and reliability review practices.
 - Maintain platform runbooks, incident playbooks, and reliability standards documentation.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

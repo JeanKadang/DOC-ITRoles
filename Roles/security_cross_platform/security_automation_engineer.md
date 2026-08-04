@@ -43,7 +43,7 @@ The Security Automation Engineer builds and maintains the automated security too
 - Tune security scanning configurations to manage false positive rates — maintaining signal quality so that security gate failures reflect genuine risk rather than noise.
 - Monitor the operational health of security automation pipelines, alert on tooling failures or coverage gaps, and maintain runbooks for pipeline security tooling incidents.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Security Automation Engineer builds and maintains the automated security too
 | Security tooling integration into CI/CD pipelines and developer-facing toolchains | CI/CD pipeline architecture and developer platform design (owned by DevOps Architect) |
 | Runtime security rule configuration (Falco) and detection signal tuning | Threat modelling and broader detection strategy (owned by Security Architect) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -83,7 +83,7 @@ The Security Automation Engineer builds and maintains the automated security too
 - **Working Knowledge required:** OWASP ZAP (DAST), Wiz/Prisma Cloud
 - **Awareness level expected:** eBPF-based security tools, AI-driven security automation
 
-## Qualifications
+### Qualifications
 
 - **Education:** Bachelor's degree in Computer Science, Software Engineering, Cybersecurity, or a related field; or equivalent demonstrated experience.
 - **Experience:** 3–5 years of experience in DevOps engineering, security engineering, or software engineering with a strong security focus; at least 2 years of hands-on experience building and operating automated security tooling within CI/CD pipelines.

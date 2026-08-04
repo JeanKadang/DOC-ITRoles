@@ -54,7 +54,7 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 - Supporting hardware maintenance activities
 - Implementing standard HPE server builds
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

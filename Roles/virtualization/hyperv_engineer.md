@@ -45,7 +45,7 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 - Implement security controls and hardening for Hyper-V infrastructure
 - Assist with capacity planning and resource allocation
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 | Backup configuration, restoration testing, and recovery procedures for virtual machines | DR/HA design and capacity planning recommendations |
 | Operational documentation accuracy and change management execution for Hyper-V tasks | PowerShell automation improvements and platform optimization approaches |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

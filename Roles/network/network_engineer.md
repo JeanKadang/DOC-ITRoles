@@ -41,7 +41,7 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 - Implement basic network automation and monitoring
 - Document network configurations and operational procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

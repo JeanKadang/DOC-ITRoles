@@ -43,7 +43,7 @@ The Modern Workplace Product Owner (PO) owns the vision, roadmap, and delivery b
 - Define success metrics for the M365 platform and report against them to IT and business leadership.
 - Own the relationship with Microsoft account team and FastTrack for strategic engagement.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -54,7 +54,7 @@ The Modern Workplace Product Owner (PO) owns the vision, roadmap, and delivery b
 | M365 licensing strategy and tier recommendations | Commercial licensing negotiations (with Procurement) |
 | Stakeholder communication and digital workplace messaging | HR workload and change management capacity |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

@@ -43,7 +43,7 @@ The API Platform Engineer implements and maintains API management solutions acro
 - Maintain API lifecycle management processes
 - Assist with API analytics and reporting
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

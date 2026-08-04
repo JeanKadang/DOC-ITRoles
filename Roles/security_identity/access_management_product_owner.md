@@ -68,7 +68,7 @@ The Access Management Product Owner manages the development and lifecycle of the
 - Self-service access implementations
 - Access reporting and analytics systems
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

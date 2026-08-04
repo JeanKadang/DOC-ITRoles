@@ -43,7 +43,7 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 - Write comprehensive documentation, usage guides, worked examples, and contribution guidelines for all published frameworks
 - Monitor framework adoption, defect rates, and consumer feedback; drive continuous improvement of the automation platform
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 | Backstage scaffolder plugins and software templates owned by the DevOps team | Developer experience portal strategy and information architecture (led by Developer Experience Engineer) |
 | Framework documentation, contribution guidelines, and deprecation notices | Test strategy and coverage targets for consuming application teams |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -84,7 +84,7 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 - **Working Knowledge required:** Docker and container registries (packaging and distributing automation tooling), Packer (machine image pipeline authoring), internal artifact registries (PyPI, Terraform Registry, GitHub Packages)
 - **Awareness level expected:** Kubernetes as automation workload runtime target, AI-assisted development tools (GitHub Copilot for framework and test scaffolding), Robot Framework and Playwright for UI automation
 
-## Qualifications
+### Qualifications
 
 - **Education:** Bachelor's degree in Computer Science, Software Engineering, or a related technical discipline; equivalent professional experience considered.
 - **Experience:** 3–5 years in DevOps, software engineering, or QA automation engineering, with at least 2 years focused on framework or library development rather than point-in-time automation delivery.

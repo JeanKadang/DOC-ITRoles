@@ -47,7 +47,7 @@ In some governance models the CISO reports to the CTO, particularly where securi
 - Report to the CEO on technology product performance, engineering health, innovation pipeline, and technology risk at an executive level
 - Build and develop the senior engineering leadership team — including Product Area Leads, Technical Area Lead, and principal engineers — creating succession depth and a high-performance engineering culture
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -61,7 +61,7 @@ In some governance models the CISO reports to the CTO, particularly where securi
 | Senior engineering leadership hiring, structure, and succession planning | Broader executive appointments and HR policy (CEO and CPO-owned) |
 | External representation as technology spokesperson — investors, analysts, media, and strategic events | Corporate communications strategy and brand messaging (CMO-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -94,7 +94,7 @@ In some governance models the CISO reports to the CTO, particularly where securi
 | Budget management and financial governance | Proficient |
 | Security architecture principles (strategic) | Awareness |
 
-## Qualifications
+### Qualifications
 
 **Education:**
 

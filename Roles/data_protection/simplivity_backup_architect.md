@@ -41,7 +41,7 @@ The SimpliVity Backup Architect designs and oversees data protection strategies 
 - Evaluate new HPE SimpliVity features and data protection capabilities
 - Provide technical leadership for SimpliVity-based data protection initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

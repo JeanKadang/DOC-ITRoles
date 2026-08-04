@@ -42,7 +42,7 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 - Translate Principal Cloud Architect strategy into actionable platform-specific guidance and roadmaps
 - Contribute to the multi-cloud strategy by providing deep implementation insight to inform higher-level direction
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -60,7 +60,7 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 | Technical quality of engineering deliverables and peer review outcomes | Hardware specification and OEM selection (Architect/Procurement-owned) |
 | Escalated engineering investigations and root-cause analysis for client platform issues | Service desk knowledge base structure and support processes |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -89,7 +89,7 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 - **Working Knowledge required:** Jamf software update management, apt/dnf patch pipeline management, Python scripting for cross-platform automation, CIS Benchmark hardening implementation, Lenovo driver pack management and Lenovo System Update / Thin Installer workflows, hardware driver compatibility testing
 - **Awareness level expected:** Fleet.dm cross-platform telemetry, Declarative Device Management (DDM) for macOS, MDT/WDS legacy context, Microsoft Intune Autopatch advanced ring customisation
 
-## Qualifications
+### Qualifications
 
 **Education:** Bachelor's degree in IT, Computer Science, or related field; or equivalent industry experience.
 

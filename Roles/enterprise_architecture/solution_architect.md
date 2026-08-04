@@ -45,7 +45,7 @@ The Solution Architect is responsible for designing end-to-end technical solutio
 - Participate in vendor selection and RFI/RFP processes as subject matter expert.
 - Mentor engineers and review technical designs produced by delivery teams.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -57,7 +57,7 @@ The Solution Architect is responsible for designing end-to-end technical solutio
 | RAID log and solution-level risk decisions | Security policy and organisational risk appetite (with CISO) |
 | Technical governance of delivery teams during build phase | Organisational change management (with Programme Management) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

@@ -41,7 +41,7 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 - Manage resource allocation and capacity planning for the Windows Server team
 - Track and report on key metrics and service level objectives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

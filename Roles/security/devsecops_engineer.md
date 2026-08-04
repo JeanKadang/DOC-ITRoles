@@ -44,7 +44,7 @@ The DevSecOps Engineer implements and maintains the security tooling, automation
 - Support security champions in engineering teams with tooling guidance and training.
 - Participate in security incident response where pipeline or supply chain compromise is suspected.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The DevSecOps Engineer implements and maintains the security tooling, automation
 | Developer documentation and onboarding for security tools | Security policy thresholds and gate criteria |
 | SBOM generation pipeline maintenance | Application architecture choices |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

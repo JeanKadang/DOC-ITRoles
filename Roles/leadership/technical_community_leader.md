@@ -43,7 +43,7 @@ The Technical Community Leader is a senior individual contributor responsible fo
 - Identify emerging knowledge gaps across the organisation and design targeted community interventions — workshops, working groups, or learning sprints — to address them
 - Champion psychological safety and inclusive participation within technical communities, ensuring all voices contribute to shared standards and practices
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Technical Community Leader is a senior individual contributor responsible fo
 | Internal technical content calendar, format, and publication channels | Engineering headcount, team structure, and L&D budget allocation (PAL/HR-owned) |
 | Cross-domain peer review process and participation guidelines | Individual team delivery priorities and sprint planning (Delivery Lead and team-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Demonstrated ability to facilitate technical communities, workshops, and peer forums with diverse practitioner audiences — combining structure with genuine curiosity and energy
 - Strong written and verbal communication skills, with the ability to distil complex technical topics into accessible newsletters, wiki articles, and reference guides for varied audiences
@@ -73,7 +73,7 @@ The Technical Community Leader is a senior individual contributor responsible fo
 - **Working Knowledge required:** Metrics and analytics tooling (survey platforms, community engagement dashboards)
 - **Awareness level expected:** AI-powered learning and content tools, community platform analytics
 
-## Qualifications
+### Qualifications
 
 - **Education:** Degree in Computer Science, Software Engineering, or a related technical discipline, or equivalent professional experience
 - **Experience:** Typically 7+ years in software or platform engineering roles, with at least 2–3 years of demonstrated leadership, mentoring, or community-building activity; experience at Senior Engineer or Architect level in at least one domain

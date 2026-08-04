@@ -47,7 +47,7 @@ In some governance models the CISO reports to the CIO, particularly where securi
 - Build and develop the IT leadership team — including IT operations leads, enterprise application managers, and service management professionals — creating a culture of operational excellence and continuous improvement
 - Collaborate with the CTO (where both roles exist) on shared infrastructure strategy, cloud governance, and enterprise architecture alignment to ensure technology product and IT operations work cohesively
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -61,7 +61,7 @@ In some governance models the CISO reports to the CIO, particularly where securi
 | IT governance framework (ITIL, COBIT) and regulatory IT compliance posture | Enterprise risk appetite and board-level risk framework (CEO and CRO-owned) |
 | IT leadership team structure, hiring, and development | Broader technology talent strategy and engineering culture (CTO-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -94,7 +94,7 @@ In some governance models the CISO reports to the CIO, particularly where securi
 | Regulatory IT compliance (GDPR, DORA, sector-specific) | Proficient |
 | IT project portfolio management | Proficient |
 
-## Qualifications
+### Qualifications
 
 **Education:**
 

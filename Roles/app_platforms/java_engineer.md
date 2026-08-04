@@ -41,7 +41,7 @@ The Java Engineer implements and maintains Java-based applications and platform 
 - Create and update technical documentation
 - Support application deployment and operations
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -45,7 +45,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 - Support cloud resource rightsizing and optimization efforts
 - Maintain cloud cost dashboards and visualizations
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 | Cost allocation report generation, dashboard maintenance, and cost optimisation script execution | Architecture decisions with cloud cost impact |
 | Reserved capacity tracking, cost forecast data maintenance, and billing anomaly investigation | Financial planning, budgeting, and commercial cloud commitment decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Solid understanding of cloud service provider billing systems
 - Experience with cloud cost management tools
@@ -74,7 +74,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 - **Working Knowledge required:** Infrastructure as Code (Terraform, Bicep, CloudFormation) for understanding resource cost implications of IaC changes, Reserved instance and savings plan tracking tools for commitment coverage monitoring
 - **Awareness level expected:** FinOps Foundation Framework and maturity model for practice development context, AI/LLM cost attribution patterns and token-level cost management for emerging cloud consumption
 
-## Qualifications
+### Qualifications
 
 - Bachelor's degree in Computer Science, Information Technology, or related field
 - 3+ years of experience in cloud engineering or IT operations

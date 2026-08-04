@@ -42,7 +42,7 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 - Document DevOps processes and pipeline configurations
 - Support development teams with CI/CD implementation
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -52,7 +52,7 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 | IaC template creation and maintenance for standard deployment environments | Infrastructure design and cloud architecture decisions |
 | Pipeline documentation, runbooks, and onboarding guides for application teams | Security scanning policy and vulnerability triage |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

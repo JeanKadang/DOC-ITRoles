@@ -41,7 +41,7 @@ The Network Automation Engineer specializes in developing and implementing autom
 - Create self-service tools for common network operations
 - Document automation processes and frameworks
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

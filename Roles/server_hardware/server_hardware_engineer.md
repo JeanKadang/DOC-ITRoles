@@ -41,7 +41,7 @@ The Server Hardware Engineer implements and maintains the physical server infras
 - Implement physical cable management in data centers
 - Support server lifecycle activities including decommissioning
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -44,7 +44,7 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 - Define migration strategies from other virtualization platforms to Hyper-V
 - Ensure security controls meet organizational standards within Hyper-V environments
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -54,7 +54,7 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 | Hyper-V disaster recovery and high availability design patterns (Hyper-V Replica, clustering, SRM) | Azure cloud integration, Azure Arc deployment strategy, and hybrid cloud architecture |
 | Hyper-V security architecture including Shielded VMs, VBS, and SDN security controls | Storage and networking architecture for virtualized workloads |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

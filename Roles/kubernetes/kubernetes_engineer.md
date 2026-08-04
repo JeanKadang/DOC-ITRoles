@@ -42,7 +42,7 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 - Support application teams in deploying containerized workloads
 - Document Kubernetes operational procedures and configurations
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -52,7 +52,7 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 | Helm chart creation and Kubernetes manifest maintenance for standard workload patterns | Container security policy and network policy design |
 | Cluster monitoring alert response, node troubleshooting, and first-response incident triage | Cluster capacity planning and scaling strategy |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

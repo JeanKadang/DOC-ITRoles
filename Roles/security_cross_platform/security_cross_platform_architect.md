@@ -41,7 +41,7 @@ The Security Cross-Platform Architect designs and develops comprehensive securit
 - Maintain awareness of emerging security threats and mitigation strategies applicable to multiple domains
 - Create reference architectures for common security patterns that span multiple platforms
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

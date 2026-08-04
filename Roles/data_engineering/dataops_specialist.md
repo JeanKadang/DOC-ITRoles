@@ -45,7 +45,7 @@ The DataOps Specialist applies DevOps and agile engineering principles to data p
 - Coordinate with ML platform teams on orchestration patterns for ML feature engineering and training pipeline reliability.
 - Implement data lineage capture tooling to provide end-to-end traceability from source systems to data products.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

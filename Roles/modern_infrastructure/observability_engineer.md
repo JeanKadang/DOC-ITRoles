@@ -41,7 +41,7 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 - Troubleshoot issues with observability platforms and data collection
 - Document observability implementations and procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -51,7 +51,7 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 | Log collection policies, retention configuration, and metrics collection setup from infrastructure and applications | Monitoring standards and instrumentation guidelines for application development teams |
 | Alert threshold tuning, noise reduction processes, and monitoring runbooks | Digital experience monitoring (RUM) strategy and APM implementation for application teams |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

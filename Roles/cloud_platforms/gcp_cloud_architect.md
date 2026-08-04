@@ -42,7 +42,7 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 - Evaluate new GCP services and technologies
 - Provide technical leadership for GCP initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

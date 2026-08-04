@@ -41,7 +41,7 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 - Evaluate new Commvault features and capabilities for adoption
 - Provide technical leadership for Commvault implementation projects
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

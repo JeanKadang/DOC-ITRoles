@@ -41,7 +41,7 @@ The Database Product Owner manages the portfolio of database platforms and data 
 - Manage database licensing and capacity planning
 - Track and optimize database performance, availability, and cost metrics
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

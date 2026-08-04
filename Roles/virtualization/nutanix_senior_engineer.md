@@ -41,7 +41,7 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 - Optimize resource allocation and infrastructure performance
 - Provide technical mentorship to Nutanix Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -41,7 +41,7 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 - Manage capacity planning and resource allocation for virtualization resources
 - Track and report on virtualization platform metrics and service levels
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

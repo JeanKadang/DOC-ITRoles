@@ -43,7 +43,7 @@ The Enterprise Architecture Senior Engineer operates at the intersection of tech
 - Maintain the business capability model, application portfolio inventory, and technology lifecycle records
 - Contribute to architecture community of practice activities: knowledge sharing sessions, architecture clinic facilitation, and onboarding guidance for new architects
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

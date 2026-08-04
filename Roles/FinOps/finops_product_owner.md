@@ -43,7 +43,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 - Drive adoption of FinOps practices and tools
 - Communicate cloud financial insights to leadership and stakeholders
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -53,7 +53,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 | Stakeholder cloud cost reporting, financial accountability governance, and chargeback/showback model | Commercial cloud provider negotiations and budget allocation decisions |
 | FinOps practice adoption programme and team capability development priorities | Enterprise financial planning, cloud strategy, and reserved capacity commercial decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Strong understanding of product management and agile methodologies
 - Knowledge of cloud service provider billing models and pricing structures
@@ -71,7 +71,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 - **Working Knowledge required:** FinOps tooling platforms (CloudHealth, Apptio Cloudability) for service catalogue definition and tool governance decisions, ITIL service management framework for aligning FinOps processes with IT service delivery and SLA management
 - **Awareness level expected:** FinOps automation and reserved capacity management platforms for technical roadmap and investment oversight, AI/LLM cost governance patterns and emerging cloud consumption models (spot GPU, token pricing, inference reservations)
 
-## Qualifications
+### Qualifications
 
 - Bachelor's degree in Business, Finance, Computer Science, or related field
 - 5+ years of experience in product management, preferably in IT or cloud services

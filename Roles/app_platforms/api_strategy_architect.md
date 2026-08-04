@@ -43,7 +43,7 @@ The API Strategy Architect defines and governs the organisation's end-to-end API
 - Govern the API contract testing strategy and integration with CI/CD pipelines — ensuring consumer-driven contract testing (Pact) is embedded in API delivery workflows.
 - Mentor senior engineers and platform architects on API strategy, governance, and API-as-a-product thinking.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

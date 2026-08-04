@@ -41,7 +41,7 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 - Lead incident response for database outages
 - Conduct post-incident reviews for database failures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

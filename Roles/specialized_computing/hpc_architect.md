@@ -46,7 +46,7 @@ The High-Performance Computing (HPC) Architect leads the design, implementation,
 - Maintain comprehensive documentation of HPC architectures, standards, and procedures
 - Design edge-HPC convergence patterns: distributed edge inference for ML models, FPGA acceleration at edge locations, and low-latency compute at geographically distributed edge sites
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

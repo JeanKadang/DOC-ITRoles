@@ -45,7 +45,7 @@ The Privileged Access Management (PAM) Engineer implements, operates, and mainta
 - Document PAM configurations, on-boarding procedures, and troubleshooting runbooks.
 - Participate in incident response when credential compromise or privileged access abuse is suspected.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Privileged Access Management (PAM) Engineer implements, operates, and mainta
 | Platform monitoring and health maintenance | On-boarding priority for account categories |
 | Compliance report generation and audit artefact collection | Tooling procurement decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

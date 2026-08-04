@@ -41,7 +41,7 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 - Manage versioning and deprecation strategies for .NET components
 - Track and report on platform adoption and value delivery
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

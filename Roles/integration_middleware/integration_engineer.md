@@ -43,7 +43,7 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 - Participate in change management processes for integration updates.
 - Escalate complex integration issues to senior engineers.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -53,7 +53,7 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 | Integration monitoring response and incident first-response | API design and error handling strategy |
 | Integration documentation currency | Tooling and platform improvements |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

@@ -42,7 +42,7 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 - Provide technical mentorship to Kubernetes Engineers
 - Evaluate and prototype new Kubernetes features and extensions
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -52,7 +52,7 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 | Cluster automation tooling, GitOps pipeline implementation, and performance tuning | Application containerisation design and workload resource sizing |
 | Technical mentoring direction and capability development for Kubernetes Engineers | Container security policy definition (with Security team) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

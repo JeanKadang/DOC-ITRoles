@@ -43,7 +43,7 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 - Design edge networking architectures: SD-WAN edge PoP topology, 5G and private 5G integration for industrial and IoT edge sites, and cloud edge compute connectivity patterns (Azure Edge Zones, AWS Wavelength, AWS Local Zones).
 - Define network security architecture for edge environments: micro-segmentation at edge PoPs, zero trust network access for edge workloads, and secure SD-WAN policy enforcement at distributed edge sites.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

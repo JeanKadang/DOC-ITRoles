@@ -43,7 +43,7 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 - Maintain and update optimisation runbooks, savings tracking logs, and reservation coverage dashboards
 - Evaluate FinOps tooling and contribute to tool configuration, alert tuning, and reporting improvements
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -53,7 +53,7 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 | Day-to-day cost anomaly triage, investigation, and resolution within defined thresholds | Architectural changes required to address structural cost inefficiencies |
 | Tagging enforcement actions and non-compliance remediation workflows | Tagging policy design, governance framework, and enforcement tooling strategy |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Practical experience with cloud cost management and billing platforms across one or more major cloud providers
 - Working knowledge of cloud compute, storage, networking, and database service pricing models
@@ -72,7 +72,7 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 - **Working Knowledge required:** Cloud provider CLIs (AWS CLI, Azure CLI, gcloud) for bulk resource auditing and operational remediation tasks, GCP Billing Console and GCP Recommender for GCP-specific optimisation actions
 - **Awareness level expected:** Infracost for shift-left cost estimation integrated into IaC pipelines, Harness Cloud Cost Management (CCM) and Densify for AI-driven rightsizing and workload optimisation
 
-## Qualifications
+### Qualifications
 
 - Bachelor's degree in Computer Science, Information Technology, Engineering, or a related field; equivalent practical experience considered
 - 2+ years of experience in cloud engineering, DevOps, or infrastructure roles with exposure to cloud cost management

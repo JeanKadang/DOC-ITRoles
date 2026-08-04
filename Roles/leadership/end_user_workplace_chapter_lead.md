@@ -44,7 +44,7 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 - Own the modern workplace roadmap — translating business requirements for hybrid working, productivity, and employee experience into a technically sound and delivery-sequenced chapter plan
 - Represent the chapter in enterprise architecture forums, security governance discussions (for endpoint posture), and HR/People technology forums
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 | Practitioner career decisions — promotions, development plans, performance management, and hiring bar for the chapter | Compensation bands, HR policy, and organisational structure (PAL and HR-owned) |
 | Modern workplace roadmap and chapter technical priorities | Business strategy, hybrid working policy, and organisational change decisions (PAL, HR, and business leadership-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -81,7 +81,7 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 - **Working Knowledge required:** Collaboration analytics (Viva Insights, Teams analytics) for workplace metrics
 - **Awareness level expected:** ITSM platforms (ServiceNow) for end-user service governance
 
-## Qualifications
+### Qualifications
 
 - 10+ years of experience in endpoint management, Microsoft 365 architecture, modern workplace engineering, or senior end-user technology roles
 - 3+ years in a Principal Architect, Lead Architect, or senior technical leadership role with Microsoft 365 and endpoint management scope

@@ -43,7 +43,7 @@ The Endpoint Management Product Owner (PO) owns the product vision, roadmap, and
 - Define success metrics for the endpoint platform and report against KPIs to leadership.
 - Drive prioritisation of co-management migration from SCCM to cloud-native Intune delivery.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -54,7 +54,7 @@ The Endpoint Management Product Owner (PO) owns the product vision, roadmap, and
 | Stakeholder communication and expectation management | Licensing commercial negotiations (with Procurement) |
 | Acceptance criteria for platform features | Organisational onboarding and change management (with HR) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

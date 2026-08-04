@@ -41,7 +41,7 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 - Manage cloud resource allocation and subscription governance
 - Track cloud spending and optimize cost management practices
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

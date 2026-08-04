@@ -44,7 +44,7 @@ The Infrastructure Automation Architect designs and governs the organisation's e
 - Mentor senior automation engineers and champion infrastructure automation culture across the organisation.
 - Design edge infrastructure automation strategies: IaC templates for edge node provisioning, automated edge deployment pipelines, and configuration drift detection and remediation at edge locations.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

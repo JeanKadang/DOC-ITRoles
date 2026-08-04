@@ -41,7 +41,7 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 - Plan and execute storage migrations and technology refreshes
 - Provide technical mentorship to Storage Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -41,7 +41,7 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 - Coordinate DevOps training and enablement initiatives
 - Establish service level objectives for DevOps platforms
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -51,7 +51,7 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 | DevOps tooling license and investment strategy | Security requirements for pipeline tooling (with Security PO) |
 | DORA metrics reporting and developer experience improvement backlog | Engineering team hiring and resourcing decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -97,7 +97,7 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 - Measurable improvement in software delivery metrics
 - Effectiveness of DevOps training and enablement programs
 
-## Key Technologies & Platforms
+## Key Technologies
 
 - CI/CD orchestration platforms
 - DevOps toolchain integration frameworks

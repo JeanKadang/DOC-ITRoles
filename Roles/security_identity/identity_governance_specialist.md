@@ -43,7 +43,7 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 - Drive continuous improvement of IGA automation coverage — identifying manual identity administration processes still performed outside the IGA platform and building structured plans to automate them.
 - Collaborate with the Privileged Access Management Architect/Engineer to ensure privileged account entitlements are accurately represented in the IGA governance layer and subject to appropriate certification and SoD controls.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 | Role mining analysis, RBAC/ABAC role engineering recommendations, and IGA role model maintenance | Privileged account entitlement governance strategy (co-owned with PAM Architect/Engineer) |
 | IGA platform operational health: connector monitoring, provisioning queue management, and platform incident escalation | PAM vault and privileged session management configuration (owned by PAM Architect/Engineer) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -83,7 +83,7 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 - **Working Knowledge required:** Workday/SAP SuccessFactors (HR integration), CyberArk Identity (PAM-IGA)
 - **Awareness level expected:** Omada Identity, AI-driven identity governance tools
 
-## Qualifications
+### Qualifications
 
 - **Education:** Bachelor's degree in Information Security, Computer Science, Information Systems, or a related field; or equivalent demonstrated professional experience.
 - **Experience:** 5–7 years of experience in identity and access management, IAM engineering, or information security; at least 3 years with direct hands-on IGA platform operations (SailPoint, Saviynt, Omada, or Microsoft Entra ID Governance) in an enterprise environment.

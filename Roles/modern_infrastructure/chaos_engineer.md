@@ -45,7 +45,7 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 - Contribute to production readiness review checklists by defining resilience acceptance criteria.
 - Develop chaos engineering runbooks and experiment templates for engineering team self-service.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 | Experiment catalogue and findings tracking | Remediation implementation (engineering squads own fixes) |
 | Game day planning and facilitation | Error budget policy implications of identified gaps |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

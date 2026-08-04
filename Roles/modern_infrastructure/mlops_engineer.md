@@ -46,7 +46,7 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 - Implement edge MLOps pipelines: automate model packaging, optimisation (ONNX, TinyML quantisation), and deployment to edge devices using OTA update frameworks and edge runtime platforms.
 - Monitor and maintain edge-deployed models: implement performance telemetry, drift detection, and rollback mechanisms for ML models running on resource-constrained edge hardware.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

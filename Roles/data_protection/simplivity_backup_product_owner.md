@@ -41,7 +41,7 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 - Manage capacity planning for SimpliVity backup resources
 - Track and report on backup success rates, recovery testing, and SLA compliance
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

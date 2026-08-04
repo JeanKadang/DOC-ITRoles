@@ -41,7 +41,7 @@ The Security Senior Engineer leads the implementation and optimization of comple
 - Optimize security operations and monitoring
 - Provide technical mentorship to Security Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

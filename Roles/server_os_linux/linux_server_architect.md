@@ -43,7 +43,7 @@ The Linux Server Architect designs and defines the strategic direction for the o
 - Ensure compliance with security policies and regulatory requirements
 - Optimize cost and performance of Linux infrastructure
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

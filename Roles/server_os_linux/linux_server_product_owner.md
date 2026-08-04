@@ -41,7 +41,7 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 - Balance resources and capacity for the Linux server team
 - Establish and track metrics for Linux platform health and performance
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

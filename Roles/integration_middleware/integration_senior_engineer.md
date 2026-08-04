@@ -44,7 +44,7 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 - Mentor integration engineers and guide the team on integration patterns and standards.
 - Maintain integration runbooks, operational documentation, and incident response procedures.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 | Integration monitoring and alerting configuration | B2B trading partner requirements (with Business/ERP teams) |
 | Code review standards and quality gates for integration team | Security policies for API access and credential management |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

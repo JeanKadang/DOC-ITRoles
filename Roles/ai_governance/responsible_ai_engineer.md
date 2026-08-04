@@ -45,7 +45,7 @@ The Responsible AI Engineer implements the technical tooling, testing processes,
 - Support AI supplier due diligence by assessing vendor model documentation, API safety controls, and data handling practices.
 - Document model limitations, known failure modes, and edge cases in standardised formats for governance records.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -57,7 +57,7 @@ The Responsible AI Engineer implements the technical tooling, testing processes,
 | Governance checks integrated into MLOps pipelines | MLOps pipeline architecture (MLOps Engineer) |
 | AI red teaming test execution and findings documentation | AI system approval / rejection decisions (Governance Architect + Risk) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -149,7 +149,7 @@ The Responsible AI Engineer implements the technical tooling, testing processes,
 - AI Governance Architect (after gaining framework and policy experience)
 - AI Platform Architect (MLOps and governance specialism)
 
-## Recommended Certifications and Learning Paths
+## Recommended Certifications & Learning Paths
 
 **Core Certifications:**
 

@@ -46,7 +46,7 @@ The Observability Architect designs and governs the organisation's full-stack ob
 - Design edge observability architecture: distributed telemetry collection from edge nodes, OpenTelemetry Collector deployment patterns for resource-constrained edge environments, and KubeEdge workload monitoring integration.
 - Define observability strategies for disconnected and intermittently-connected edge sites, including local telemetry buffering, store-and-forward pipeline patterns, and edge-to-cloud telemetry aggregation.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

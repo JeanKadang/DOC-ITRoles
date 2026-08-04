@@ -43,7 +43,7 @@ The DevOps & Delivery Chapter Lead is the most senior technical manager and peop
 - Own the chapter roadmap — translating TAL/PAL strategic direction into delivery toolchain and platform engineering priorities
 - Represent the chapter in enterprise architecture forums, cloud strategy forums, and financial governance discussions
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -54,7 +54,7 @@ The DevOps & Delivery Chapter Lead is the most senior technical manager and peop
 | Practitioner career decisions — promotions, development plans, performance management, and hiring bar for the chapter | Compensation bands, HR policy, and organisational structure (PAL and HR-owned) |
 | DORA metrics target-setting and delivery performance improvement initiatives at chapter level | Cloud spend and FinOps governance (Cloud & Platform Infrastructure Chapter Lead-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -79,7 +79,7 @@ The DevOps & Delivery Chapter Lead is the most senior technical manager and peop
 - **Working Knowledge required:** DORA metrics tooling for chapter performance visibility
 - **Awareness level expected:** Integration platforms (Azure API Management, MuleSoft) at architecture depth
 
-## Qualifications
+### Qualifications
 
 - 10+ years of experience in DevOps engineering, platform engineering, software delivery, or integration architecture roles
 - 3+ years in a Principal Architect, Lead Architect, or senior technical leadership role with cross-domain delivery or platform scope

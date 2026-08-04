@@ -41,7 +41,7 @@ The Security Cross-Platform Engineer implements and maintains security controls 
 - Participate in security assessments across different technology environments
 - Apply security patches and updates across multiple platform types
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

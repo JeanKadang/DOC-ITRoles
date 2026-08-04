@@ -45,7 +45,7 @@ The Data Platform Engineer builds, maintains, and optimises the shared data plat
 - Write and maintain technical documentation for platform components, deployment guides, and runbooks.
 - Participate in data platform architecture reviews and provide implementation feasibility feedback to the Data Platform Architect.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

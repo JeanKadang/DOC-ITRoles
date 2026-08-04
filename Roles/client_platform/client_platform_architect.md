@@ -63,7 +63,7 @@ This role operates at the intersection of engineering rigour and business strate
 | Client platform tooling selection and proof-of-concept outcomes (e.g., Jamf Pro, Fleet.dm) | Enterprise-wide tooling consolidation decisions (architecture review board) |
 | Domain boundary definitions between Client Platform, Endpoint Management, and Modern Workplace | Service desk support model and staffing (owned by Service Desk Lead) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -94,7 +94,7 @@ This role operates at the intersection of engineering rigour and business strate
 - **Working Knowledge required:** Fleet.dm cross-platform endpoint telemetry, Homebrew cask packaging, .deb/.rpm Linux packaging, Lenovo System Update and Lenovo Thin Installer for BIOS/firmware and driver deployment, MDT/WDS (legacy context for deprecation planning), Microsoft Intune and SCCM co-management integration patterns
 - **Awareness level expected:** Declarative Device Management (DDM) for macOS, Linux desktop management evolution (systemd-based provisioning), hardware attestation and Pluton/secure boot developments, emerging zero-touch models for Linux
 
-## Qualifications
+### Qualifications
 
 **Education:** Bachelor's degree in Computer Science, Information Technology, or a related field; or equivalent depth of professional experience.
 

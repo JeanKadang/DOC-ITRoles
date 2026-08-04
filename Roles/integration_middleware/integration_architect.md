@@ -44,7 +44,7 @@ The Integration Architect designs and governs the organisation's enterprise inte
 - Provide technical governance through design review of integration solutions.
 - Mentor integration engineers and work with Solution Architects to embed integration best practices in project designs.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Integration Architect designs and governs the organisation's enterprise inte
 | Integration monitoring and SLA standards | Commercial licensing decisions (with Procurement) |
 | B2B and EDI integration standards | ERP configuration decisions (with ERP/Business Systems teams) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

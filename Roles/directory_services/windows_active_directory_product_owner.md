@@ -41,7 +41,7 @@ The Windows Active Directory Product Owner manages the service roadmap and plann
 - Manage capacity planning and resource allocation for directory services
 - Track and report on directory services health, performance, and security metrics
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

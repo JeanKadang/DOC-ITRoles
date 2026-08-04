@@ -43,7 +43,7 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 - Lead security toolchain governance — rationalising and standardising the security tooling portfolio (SIEM, EDR, CSPM, CNAPP, vulnerability management) across the estate
 - Represent the chapter in enterprise architecture forums, security governance bodies, risk committees, and regulatory compliance discussions
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 | Practitioner career decisions — promotions, development plans, performance management, and hiring bar for the chapter | Compensation bands, HR policy, and organisational structure (PAL and HR-owned) |
 | Security toolchain governance — tooling rationalisation, platform selection, and security technology radar | Vendor contracts, security product procurement, and supplier risk decisions (CISO and commercial-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -80,7 +80,7 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 - **Working Knowledge required:** Zero trust architecture frameworks and tooling
 - **Awareness level expected:** GRC platforms (ServiceNow GRC, Archer) for risk oversight
 
-## Qualifications
+### Qualifications
 
 - 10+ years of experience in security architecture, identity and access management, or senior security engineering roles
 - 3+ years in a Principal Security Architect, Lead Security Architect, or senior security leadership role with cross-domain scope

@@ -41,7 +41,7 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 - Evaluate and test new Windows technologies and features
 - Support the Product Owner in backlog refinement and technical estimation
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

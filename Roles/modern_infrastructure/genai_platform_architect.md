@@ -30,7 +30,7 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 - Architect edge AI inference platforms: design deployment patterns for on-device AI model serving using NVIDIA Jetson, Azure IoT Edge AI modules, and Intel OpenVINO for latency-sensitive or bandwidth-constrained edge workloads.
 - Define edge AI governance standards: model versioning, OTA model update pipelines, performance monitoring for edge-deployed models, and alignment between edge and cloud AI governance frameworks.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

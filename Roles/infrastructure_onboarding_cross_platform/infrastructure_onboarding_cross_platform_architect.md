@@ -41,7 +41,7 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 - Evaluate new technologies for infrastructure provisioning
 - Provide technical leadership for onboarding initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

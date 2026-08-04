@@ -41,7 +41,7 @@ The Identity Management Engineer implements and maintains identity management sy
 - Generate identity reports and audit data
 - Document identity management configurations and procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

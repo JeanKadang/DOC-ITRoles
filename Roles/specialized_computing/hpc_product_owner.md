@@ -45,7 +45,7 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 - Lead change management and communication for HPC initiatives
 - Gather and act on continuous feedback from users and stakeholders
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

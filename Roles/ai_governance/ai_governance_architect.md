@@ -45,7 +45,7 @@ The AI Governance Architect designs and governs the organisation's frameworks, p
 - Collaborate with the security team on AI-specific security threats: prompt injection, model inversion, adversarial attacks, and supply chain risks.
 - Report to board-level governance committees on AI risk posture and regulatory readiness.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -57,7 +57,7 @@ The AI Governance Architect designs and governs the organisation's frameworks, p
 | AI supplier assessment framework | HR and workforce AI policy (with HR/Legal) |
 | AI incident classification and response governance | AI system architectural design (with AI Platform Architect) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

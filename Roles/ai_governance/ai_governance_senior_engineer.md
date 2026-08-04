@@ -44,7 +44,7 @@ The AI Governance Senior Engineer implements, operates, and continuously improve
 - Implement and maintain EU AI Act compliance controls: risk classification documentation, technical conformity assessment support, and post-market monitoring for high-risk AI systems
 - Contribute to improving AI governance processes, assessment templates, and technical controls
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

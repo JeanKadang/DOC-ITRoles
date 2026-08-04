@@ -41,7 +41,7 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 - Optimize server configurations for performance, efficiency, and availability
 - Provide technical mentorship to HPE Server Hardware Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

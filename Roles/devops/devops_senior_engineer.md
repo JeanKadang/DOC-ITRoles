@@ -43,7 +43,7 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 - Provide technical mentorship to DevOps Engineers
 - Evaluate new DevOps tools and approaches
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -53,7 +53,7 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 | Deployment strategy selection (canary, blue/green, feature flags) for application teams | Application architecture and code structure |
 | DevSecOps toolchain integration and pipeline security gate design | Security policy and vulnerability remediation priorities (with Security team) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

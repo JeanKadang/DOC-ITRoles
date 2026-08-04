@@ -49,7 +49,7 @@ The Security Product Owner manages the development and lifecycle of the organiza
 - Develop self-service security capabilities
 - Analyze and report on security management metrics
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

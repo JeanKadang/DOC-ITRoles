@@ -41,7 +41,7 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 - Design enterprise-scale backup architectures and workflows
 - Provide technical mentorship to Commvault Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

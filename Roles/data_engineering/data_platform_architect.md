@@ -45,7 +45,7 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 - Create reference architectures, patterns libraries, and data platform standards documentation.
 - Mentor data engineers and senior data engineers on platform design principles.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -57,7 +57,7 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 | Data platform FinOps standards | Budget and procurement (with Finance) |
 | Ingestion and streaming architecture standards | Application integration patterns |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

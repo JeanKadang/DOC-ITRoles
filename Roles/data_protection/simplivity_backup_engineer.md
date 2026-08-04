@@ -41,7 +41,7 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 - Execute backup testing and validation procedures
 - Document SimpliVity backup configurations and operational procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

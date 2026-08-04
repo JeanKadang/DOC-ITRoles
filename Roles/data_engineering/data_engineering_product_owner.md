@@ -43,7 +43,7 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 - Evaluate new data platform capabilities and define adoption roadmap in collaboration with the Data Platform Architect.
 - Report on data platform KPIs and delivery metrics to CDO and IT leadership.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -54,7 +54,7 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 | Data product SLA and quality threshold definition | ML and AI platform strategy (with MLOps/AI Platform Architect) |
 | Licensing strategy and commercial planning | Budget allocation (with Finance/CDO) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

@@ -44,7 +44,7 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 - Maintain IaC for AI platform components and automate deployments through CI/CD
 - Document AI platform capabilities, patterns, and runbooks
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -54,7 +54,7 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 | AI security controls implementation including prompt injection defenses, RBAC, and access logging | AI governance framework design and responsible AI policy development |
 | LLM inference cost optimization approach (caching, batching, quantization, model routing) | AI platform technology roadmap and long-term model selection decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Experience deploying and managing LLM APIs and model serving platforms
 - Knowledge of vector databases and embedding workflows

@@ -44,7 +44,7 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 - Collaborate with DataOps engineers to improve CI/CD maturity and pipeline reliability.
 - Contribute to data governance by designing lineage tracking, business glossary, and data product ownership models.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 | Code review standards and technical quality gates for data team | Data governance policy (with CDO/Governance team) |
 | Performance and cost optimisation of owned data platform components | Tooling and platform procurement decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

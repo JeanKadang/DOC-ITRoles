@@ -41,7 +41,7 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 - Implement observability for platform components
 - Support application teams in platform adoption
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

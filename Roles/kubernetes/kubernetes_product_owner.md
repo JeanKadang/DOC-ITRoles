@@ -41,7 +41,7 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 - Coordinate container platform adoption initiatives across teams
 - Develop and maintain service level objectives for the Kubernetes platform
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -51,7 +51,7 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 | Platform adoption programme strategy and application team onboarding sequencing | Container security policy requirements (with Security PO) |
 | Kubernetes platform SLA targets, service definitions, and acceptance criteria | Cloud infrastructure costs and resourcing decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

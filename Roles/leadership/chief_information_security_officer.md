@@ -47,7 +47,7 @@ The CISO sits above the PAL and TAL in the technology leadership hierarchy on ma
 - Engage with regulators, auditors, and industry security bodies as the executive accountable for the organisation's security obligations
 - Collaborate with the SVP of Technology and CTO/CIO on technology investment decisions where security risk, compliance, or architectural security principles are at stake
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -95,7 +95,7 @@ The CISO sits above the PAL and TAL in the technology leadership hierarchy on ma
 | DevSecOps and application security | Proficient |
 | Security culture and awareness programme leadership | Expert |
 
-## Qualifications
+### Qualifications
 
 - Degree in Computer Science, Information Security, Information Technology, or a related field; postgraduate qualification advantageous
 - 15+ years of progressive security leadership experience, with at least 5 years in a senior executive or CISO-level role

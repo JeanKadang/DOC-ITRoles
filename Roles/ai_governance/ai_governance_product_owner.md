@@ -44,7 +44,7 @@ The AI Governance Product Owner owns the AI governance product backlog, managing
 - Coordinate AI governance reporting to risk committees and board-level governance bodies, working with the Architect on content.
 - Work with TAL (Technical Account Lead) and PAL (Platform Account Lead) on vendor governance tooling roadmaps and support agreements.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
