@@ -861,10 +861,55 @@
             .md-body h2 { color: #0078D4 !important; border-bottom: 1px solid #ddd !important; }
         }
 
+        /* ── RESPONSIVE: sidebar becomes an off-canvas drawer (#110) ──
+           Below 768px the fixed flex split left the sidebar occupying ~64%
+           of a 375px viewport with no way to dismiss it. The sidebar now
+           slides over the content and the ☰ toggle in the header opens it;
+           choosing a role closes it again. */
+        .nav-toggle { display: none; }        /* desktop: no toggle needed */
+        .nav-scrim  { display: none; }
+
         @media (max-width: 768px) {
-            :root { --sidebar-w: 240px; }
+            .nav-toggle { display: inline-flex; margin-right: 4px; }
             .header-stats { display: none; }
             .main { padding: 18px; }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 60;
+                width: min(84vw, 320px);
+                transform: translateX(-100%);
+                transition: transform 0.22s ease;
+                box-shadow: 2px 0 18px rgba(0, 0, 0, 0.25);
+            }
+            .sidebar.open { transform: translateX(0); }
+
+            .nav-scrim {
+                display: block;
+                position: fixed;
+                inset: 0;
+                z-index: 50;
+                background: rgba(0, 0, 0, 0.45);
+            }
+            .nav-scrim[hidden] { display: none; }
+
+            /* Main content keeps the full width — the drawer floats over it. */
+            .main { width: 100%; }
+
+            /* Wide content must scroll inside itself, never the page. */
+            .md-body table, .matrix-table { display: block; overflow-x: auto; }
+        }
+
+        /* Users who ask for reduced motion get the drawer without the slide. */
+        @media (prefers-reduced-motion: reduce) {
+            .sidebar { transition: none; }
+        }
+
+        @media print {
+            .nav-toggle, .nav-scrim { display: none !important; }
         }
 
         /* ── MATRIX VIEW ─────────────────────────────────────────── */
@@ -1111,6 +1156,9 @@
 
 <!-- ── HEADER ─────────────────────────────────────── -->
 <header class="header">
+    <button class="btn-ghost nav-toggle" id="navToggle" onclick="toggleSidebar()"
+            aria-expanded="false" aria-controls="sidebar"
+            aria-label="Show role navigation">☰</button>
     <div class="header-brand">
         <h1><a href="#" id="homeLink" onclick="goHome(); return false;" aria-label="Home — return to the welcome screen">🗂️ IT Roles Library</a></h1>
         <div class="subtitle">Infrastructure &amp; Platform Engineering role definitions</div>
@@ -1130,8 +1178,11 @@
 <!-- ── APP BODY ───────────────────────────────────── -->
 <div class="app-body">
 
+    <!-- Dismisses the drawer on narrow viewports; inert on desktop. -->
+    <div class="nav-scrim" id="navScrim" onclick="closeSidebar()" hidden></div>
+
     <!-- SIDEBAR -->
-    <nav class="sidebar">
+    <nav class="sidebar" id="sidebar" aria-label="Role navigation">
         <div class="sidebar-search">
             <div class="search-wrap">
                 <span class="search-icon">🔍</span>
@@ -2152,6 +2203,7 @@
     }
 
     function openChapter(key) {
+        closeSidebar();
         const chapter = CHAPTERS[key];
         if (!chapter) return;
 
@@ -2321,6 +2373,7 @@
 
     // Return to the welcome/stats screen from any role, doc, chapter, matrix, or stale view.
     function goHome() {
+        closeSidebar();
         pushHistory();
         activeFile = null; activeDoc = null; activeChapter = null;
         closeComparison();
@@ -2516,6 +2569,7 @@
 
     // ── Open a role (primary slot) ────────────────────────
     async function openRole(file, title, level, domainLabel) {
+        closeSidebar();
         pushHistory();
         activeFile  = file;
         activeDoc   = null;
@@ -2613,6 +2667,7 @@
 
     // ── Open a reference document ─────────────────────────
     async function openDoc(file, title) {
+        closeSidebar();
         pushHistory();
         activeDoc   = file;
         activeDocTitle = title;
@@ -2761,6 +2816,46 @@
     }
 
     // ── Theme toggle ─────────────────────────────────────
+    // ── Sidebar drawer (#110) ────────────────────────────
+    // Below 768px the sidebar is an off-canvas drawer. On wider viewports it
+    // is a permanent column and these are no-ops in practice: the CSS keeps
+    // it in flow regardless of the .open class, and the toggle is hidden.
+    const NARROW = () => window.matchMedia('(max-width: 768px)').matches;
+
+    function setSidebar(open) {
+        const nav    = document.getElementById('sidebar');
+        const scrim  = document.getElementById('navScrim');
+        const toggle = document.getElementById('navToggle');
+        nav.classList.toggle('open', open);
+        scrim.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Hide role navigation' : 'Show role navigation');
+        // Opening the drawer should land the caret where people start typing.
+        if (open) document.getElementById('searchInput').focus();
+    }
+
+    function toggleSidebar() { setSidebar(!document.getElementById('sidebar').classList.contains('open')); }
+
+    // Called after every navigation. Only acts on narrow viewports, where
+    // leaving the drawer open would cover the content the reader just chose.
+    function closeSidebar() {
+        if (!NARROW()) return;
+        if (!document.getElementById('sidebar').classList.contains('open')) return;
+        setSidebar(false);
+        document.getElementById('navToggle').focus();
+    }
+
+    // Escape closes the drawer, matching every other overlay convention.
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && document.getElementById('sidebar').classList.contains('open')) closeSidebar();
+    });
+
+    // Returning to a wide viewport must clear drawer state, or the sidebar
+    // keeps a stale .open/scrim and the scrim blocks clicks on desktop.
+    window.matchMedia('(max-width: 768px)').addEventListener('change', e => {
+        if (!e.matches) setSidebar(false);
+    });
+
     function toggleTheme() {
         const root   = document.documentElement;
         const isDark = root.getAttribute('data-theme') === 'dark';
