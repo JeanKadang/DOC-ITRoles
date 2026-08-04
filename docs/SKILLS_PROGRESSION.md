@@ -147,8 +147,10 @@ Every domain in the catalog is listed below (alphabetically), with every role fi
 
 ### Enterprise Architecture
 
+- Engineer: `enterprise_architecture_engineer`
 - Senior Engineer: `enterprise_architecture_senior_engineer`
 - Architect: `enterprise_architect`, `solution_architect`
+- Product Owner: `enterprise_architecture_product_owner`
 
 ### FinOps
 
