@@ -7,6 +7,102 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-08-04
+
+A viewer-quality release: role documents became navigable rather than a
+wall of text, the site became usable on a phone, and several thousand
+cross-references that had never been links became clickable.
+
+### Added
+
+- **Cross-references resolve and the interactions table links (#120).**
+  Role names written in prose — plural for a group (`Security Engineers`),
+  or carrying a parenthetical qualifier (`Enterprise Architect (AI
+  governance domain)`) — never matched the exact-match lookup, so they
+  rendered as dead text. `findRoleByTitle` now normalises case,
+  punctuation, a trailing parenthetical and a trailing plural, and nothing
+  else: no fuzzy matching, because a near-miss resolving to the wrong role
+  is worse than one that stays unlinked. The *Interactions with Other
+  Roles* table was never linked at all and now resolves through the same
+  function. Catalogue-wide, **639 interaction rows became navigable** and
+  career-path resolution rose 294 → 375. Non-catalogue actors
+  (`Development Teams`, `Business Leaders`) and aspirational career exits
+  (`Chief Architect`, `VP of Engineering`) correctly stay as text.
+- **Collapsible role sections (#112).** Opening a role expanded all 14
+  sections at once — about 9,000 characters. Sections now start collapsed
+  except *Role Overview* and *Role Scope & Boundaries*, taking visible text
+  on load from 8,946 to **1,407 characters**. Native `<details>` for free
+  keyboard and ARIA behaviour; a `beforeprint` handler force-opens every
+  section and restores the reader's state afterwards, since CSS cannot
+  expand a closed `<details>`.
+- **Sticky section nav (#111).** Collapsing gives an overview at the top of
+  the page; this covers what remains — once a section is expanded and the
+  reader scrolls in, that overview is gone. A pinned bar lists every
+  section, marks the current one via scroll-spy, and jumps to any of them,
+  expanding the target first. Built as a horizontal bar rather than the
+  side rail originally sketched, because compare mode splits the grid into
+  two equal columns.
+- **The reporting line is now visible (#113).** `Reports To` and `Direct
+  Reports` were absent from the viewer entirely: the body renders from the
+  first `## ` heading onward, so the metadata table above it never
+  appeared — the #5 backfill across all 222 files was invisible in the UI.
+  Both now render as header chips and link to the catalogue role where one
+  resolves. 34% of these values exceed 60 characters (longest 241) because
+  they explain the arrangement inline, so the lead-in shows and the
+  qualifier moves to a tooltip — 121 characters down to 23 in the worst
+  case.
+- **Staggered review schedule (#124).** 206 of 222 roles carry an identical
+  `2026-03` stamp, so at a flat 12-month threshold all of them would turn
+  stale in March 2027 and the panel would stop being a work queue.
+  Restamping from git history is not possible — the repository is *younger
+  than the stamps it holds* (first commit 2026-07-06), so every file traces
+  to one seeding commit and any staggered date would assert a review that
+  never happened. The schedule is spread instead and the recorded dates
+  stay truthful: each role falls due `STALE_MONTHS + slot` months after its
+  stamp, turning **206 roles in one month into 9–29 per month across a
+  year**. A missing date is never deferred.
+
+### Fixed
+
+- **The sidebar is an off-canvas drawer on narrow viewports (#110).** The
+  single breakpoint only narrowed the sidebar to 240px, so at 375px it
+  permanently occupied ~64% of the screen with no way to dismiss it. It now
+  slides over the content behind a header toggle, closes on selection,
+  Escape, or scrim tap, moves focus to search on open and back to the
+  toggle on close, and clears its state when the viewport widens.
+- **Closing Org, Graph or Careers over an open role no longer blanks the
+  screen (#129).** Opening any panel hid the role grid but only
+  `toggleMatrix` restored it, so three of five panels left an empty content
+  area. Found while surveying the duplication for #119 — exactly the defect
+  that issue predicted.
+- **Role action buttons no longer overflow the viewport on mobile
+  (#132).** The Print/Export/Compare row is ~283px and pushed *Compare*
+  off-screen at 375px; it now wraps.
+
+### Changed
+
+- **The five overlay panels are driven by one registry (#119).** Matrix,
+  Stale, Org, Graph and Careers each hid the other four by hand — the
+  teardown existed in five copies plus a sixth in `closePanels` and a
+  seventh inline in `openDoc`. `panelStateFor` now computes the desired
+  state once and `index.html` applies it, so a sixth panel is one table
+  row. **`index.html` lost ~245 lines.**
+- **The validator warns on non-canonical headings and content formats
+  (#121).** Its permissiveness — a code comment called the cleanup "a
+  follow-up" that was never filed — is why the catalogue drifted. Reported
+  as warnings, not errors, so CI stays green while #122 normalises the
+  files; `--strict` already fails on warnings and is now the gate. Against
+  the catalogue: 203 `and` vs `&`, 200 bullet KPIs, 191 inline proficiency
+  levels, 67 bare `Required Skills`, and **4 previously unnoticed** `Key
+  Technologies & Platforms`/`& Tools` variants a manual survey had missed.
+
+### Testing
+
+Suite grown **120 → 143 tests**. Every new pure function was written
+test-first, including a collision guard asserting no two catalogue titles
+reduce to the same lookup key, and a distribution test asserting the real
+catalogue spreads across all 12 review months.
+
 ## [1.7.0] - 2026-08-04
 
 ### Added
