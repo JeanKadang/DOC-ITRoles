@@ -468,6 +468,30 @@
         return stack.join('/');
     }
 
+    // Role bodies carry 14 sections and open with all of them expanded, so
+    // the reader parses ~9,000 characters to find the one they came for
+    // (#112). Sections collapse by default; these two stay open because they
+    // orient the reader — everything else is reference material they seek out
+    // deliberately.
+    //
+    // Compared on a normalised key so the catalog's heading spelling variants
+    // ("&" vs "and", with/without "& Qualifications") all match — see #121,
+    // which removes those variants at source.
+    const DEFAULT_OPEN_SECTIONS = ['Role Overview', 'Role Scope & Boundaries'];
+
+    function sectionKey(heading) {
+        return String(heading == null ? '' : heading)
+            .toLowerCase()
+            .replace(/\band\b/g, '&')
+            .replace(/[^a-z0-9&]+/g, '');
+    }
+
+    function sectionStartsOpen(heading) {
+        const key = sectionKey(heading);
+        if (!key) return false;
+        return DEFAULT_OPEN_SECTIONS.some(s => sectionKey(s) === key);
+    }
+
     return {
         STALE_MONTHS,
         REFERENCE_DOC_PATTERN,
@@ -487,5 +511,6 @@
         parseMobilityPaths,
         parseCareerPath,
         resolveDocHref,
+        sectionStartsOpen,
     };
 });
