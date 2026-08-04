@@ -551,6 +551,37 @@
         };
     }
 
+    // Anchor id for a role section heading (#111). Built on sectionKey so the
+    // catalog's heading spelling variants ("and" vs "&", see #121) produce the
+    // same id — a jump link must not depend on which variant a file used.
+    function tocIdFor(heading) {
+        const slug = String(heading == null ? '' : heading)
+            .toLowerCase()
+            .replace(/\band\b/g, '&')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+        return 'sec-' + slug;
+    }
+
+    // Scroll-spy: index of the last section whose top has passed the scroll
+    // line. Clamps to the first section rather than returning -1 when scrolled
+    // above it (rubber-banding gives a negative scrollTop), so the nav always
+    // has exactly one entry highlighted while sections exist.
+    //
+    // `atBottom` handles the end of the document: there the remaining sections
+    // are all on screen and none of their tops can reach the scroll line, so
+    // the plain rule sticks on whichever section last crossed it — jumping to
+    // the final section would highlight the wrong chip.
+    function activeTocIndex(tops, scrollTop, { atBottom = false } = {}) {
+        if (!tops || !tops.length) return -1;
+        if (atBottom) return tops.length - 1;
+        let idx = 0;
+        for (let i = 0; i < tops.length; i++) {
+            if (tops[i] <= scrollTop) idx = i;
+        }
+        return idx;
+    }
+
     return {
         STALE_MONTHS,
         REFERENCE_DOC_PATTERN,
@@ -574,5 +605,7 @@
         roleTitleKey,
         findRoleByTitle,
         panelStateFor,
+        tocIdFor,
+        activeTocIndex,
     };
 });

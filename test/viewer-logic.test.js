@@ -25,6 +25,8 @@ const {
     roleTitleKey,
     findRoleByTitle,
     panelStateFor,
+    tocIdFor,
+    activeTocIndex,
 } = require('../viewer-logic');
 
 const { CANONICAL_LEVELS, REFERENCE_DOC_PATTERN: ROLEMETA_REF_PATTERN } = require('../roleMeta');
@@ -741,4 +743,55 @@ test('panelStateFor falls back to the welcome screen when no role is open', () =
     const s = panelStateFor(null, PANEL_KEYS, { hasRole: false });
     assert.equal(s.showWelcome, true);
     assert.equal(s.showRolesGrid, false);
+});
+
+// ── TOC helpers (#111) ────────────────────────────────────
+// Role bodies are 13 collapsible sections. Once one is expanded and the
+// reader scrolls into it the overview is lost, so a sticky section nav needs
+// stable ids to jump to and a scroll-spy to say where you are.
+
+test('tocIdFor slugifies a heading into a stable anchor id', () => {
+    assert.equal(tocIdFor('Role Overview'), 'sec-role-overview');
+    assert.equal(tocIdFor('Key Decisions & Accountabilities'), 'sec-key-decisions-accountabilities');
+    assert.equal(tocIdFor('Typical Day-to-Day Activities'), 'sec-typical-day-to-day-activities');
+});
+
+test('tocIdFor gives the heading spelling variants the same id', () => {
+    // 203 files use "and", 19 use "&" (#121). A link built from one spelling
+    // must still resolve in a file that uses the other.
+    assert.equal(tocIdFor('Key Decisions and Accountabilities'),
+                 tocIdFor('Key Decisions & Accountabilities'));
+});
+
+test('activeTocIndex reports the last section at or above the scroll line', () => {
+    const tops = [0, 400, 900, 1500];
+    assert.equal(activeTocIndex(tops, 0), 0);
+    assert.equal(activeTocIndex(tops, 399), 0);
+    assert.equal(activeTocIndex(tops, 400), 1);
+    assert.equal(activeTocIndex(tops, 1200), 2);
+    assert.equal(activeTocIndex(tops, 99999), 3);
+});
+
+test('activeTocIndex stays on the first section when scrolled above it', () => {
+    // Negative scroll happens with rubber-banding; it must not return -1 and
+    // leave the nav with nothing highlighted.
+    assert.equal(activeTocIndex([120, 500], -50), 0);
+});
+
+test('activeTocIndex returns -1 only when there are no sections', () => {
+    assert.equal(activeTocIndex([], 0), -1);
+});
+
+test('activeTocIndex highlights the last section once scrolled to the bottom', () => {
+    // At max scroll the remaining sections are all on screen and none of
+    // their tops can reach the scroll line, so the plain rule sticks on
+    // whichever section last crossed it. Jumping to the final section would
+    // then highlight the wrong chip.
+    const tops = [0, 400, 900, 1500];
+    assert.equal(activeTocIndex(tops, 853), 1, 'mid-scroll is unchanged (900 has not passed 853)');
+    assert.equal(activeTocIndex(tops, 853, { atBottom: true }), 3);
+});
+
+test('activeTocIndex atBottom is ignored when there are no sections', () => {
+    assert.equal(activeTocIndex([], 500, { atBottom: true }), -1);
 });
