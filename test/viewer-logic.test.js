@@ -22,6 +22,8 @@ const {
     parseCareerPath,
     resolveDocHref,
     sectionStartsOpen,
+    roleTitleKey,
+    findRoleByTitle,
 } = require('../viewer-logic');
 
 const { CANONICAL_LEVELS, REFERENCE_DOC_PATTERN: ROLEMETA_REF_PATTERN } = require('../roleMeta');
@@ -607,4 +609,97 @@ test('sectionStartsOpen defaults unknown sections to collapsed', () => {
     assert.equal(sectionStartsOpen('Something New We Added Later'), false);
     assert.equal(sectionStartsOpen(''), false);
     assert.equal(sectionStartsOpen(null), false);
+});
+
+// ── findRoleByTitle (#120) ────────────────────────────────
+// Career-path and interaction prose names roles the way English does —
+// plural for a group, with a parenthetical qualifier for a variant. An
+// exact-match lookup misses all of those, so the reference renders as
+// dead text instead of a link.
+const LOOKUP_DOMAINS = {
+    security: {
+        label: 'Security',
+        roles: [
+            { title: 'Security Engineer',        file: 'Roles/security/security_engineer.md',        level: 'Engineer' },
+            { title: 'Security Senior Engineer', file: 'Roles/security/security_senior_engineer.md', level: 'Senior Engineer' },
+        ],
+    },
+    modern_workplace: {
+        label: 'Modern Workplace',
+        roles: [
+            { title: 'Modern Workplace Architect (Microsoft 365)', file: 'Roles/modern_workplace/mw_architect.md', level: 'Architect' },
+        ],
+    },
+    leadership: {
+        label: 'Leadership',
+        roles: [
+            { title: 'Chief Information Security Officer', file: 'Roles/leadership/ciso.md', level: 'CISO' },
+        ],
+    },
+};
+
+test('findRoleByTitle matches an exact title', () => {
+    const hit = findRoleByTitle('Security Engineer', LOOKUP_DOMAINS);
+    assert.equal(hit.file, 'Roles/security/security_engineer.md');
+    assert.equal(hit.domainLabel, 'Security');
+});
+
+test('findRoleByTitle matches a plural reference to a singular role title', () => {
+    // "collaborates with Security Engineers" is correct prose; the catalog
+    // title is singular.
+    assert.equal(findRoleByTitle('Security Engineers', LOOKUP_DOMAINS)?.file,
+                 'Roles/security/security_engineer.md');
+    assert.equal(findRoleByTitle('Security Senior Engineers', LOOKUP_DOMAINS)?.file,
+                 'Roles/security/security_senior_engineer.md');
+});
+
+test('findRoleByTitle ignores a parenthetical qualifier on the reference', () => {
+    // e.g. "Chief Information Security Officer (CISO)" in a career path.
+    assert.equal(findRoleByTitle('Chief Information Security Officer (CISO)', LOOKUP_DOMAINS)?.file,
+                 'Roles/leadership/ciso.md');
+});
+
+test('findRoleByTitle matches when the catalog title carries the parenthetical', () => {
+    // The reverse case: prose says "Modern Workplace Architect", the
+    // catalog title is "Modern Workplace Architect (Microsoft 365)".
+    assert.equal(findRoleByTitle('Modern Workplace Architect', LOOKUP_DOMAINS)?.file,
+                 'Roles/modern_workplace/mw_architect.md');
+});
+
+test('findRoleByTitle returns null for a role the catalog does not define', () => {
+    // Aspirational exits like "Chief Architect" are deliberately outside
+    // the catalog and must stay unlinked rather than resolving to something
+    // approximate.
+    assert.equal(findRoleByTitle('Chief Architect', LOOKUP_DOMAINS), null);
+    assert.equal(findRoleByTitle('VP of Engineering', LOOKUP_DOMAINS), null);
+});
+
+test('findRoleByTitle does not fuzzy-match a different role', () => {
+    // "Security Architect" is not in this fixture; matching it to
+    // "Security Engineer" would send the reader to the wrong role.
+    assert.equal(findRoleByTitle('Security Architect', LOOKUP_DOMAINS), null);
+});
+
+test('no two catalog role titles collide under roleTitleKey', () => {
+    // The plural/parenthetical normalisation is what makes prose references
+    // resolve (#120), but it also merges keys. If two real role titles ever
+    // reduce to the same key, findRoleByTitle silently returns whichever
+    // comes first and half the links point at the wrong role.
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const rolesDir = path.join(__dirname, '..', 'Roles');
+    const seen = new Map();
+    const collisions = [];
+    for (const d of fs.readdirSync(rolesDir, { withFileTypes: true })) {
+        if (!d.isDirectory()) continue;
+        for (const f of fs.readdirSync(path.join(rolesDir, d.name))) {
+            if (!f.endsWith('.md') || f === 'README.md' || /_standards\.md$/.test(f)) continue;
+            const title = fs.readFileSync(path.join(rolesDir, d.name, f), 'utf8')
+                .replace(/^\uFEFF/, '').split('\n')[0].replace(/^#\s*/, '').trim();
+            const key = roleTitleKey(title);
+            if (seen.has(key)) collisions.push(`${seen.get(key)} <-> ${title}`);
+            else seen.set(key, title);
+        }
+    }
+    assert.deepEqual(collisions, [], 'role titles that normalise to the same lookup key');
 });
