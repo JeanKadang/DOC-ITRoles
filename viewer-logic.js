@@ -657,8 +657,54 @@
         return { head: v, detail: '' };
     }
 
+    // Executive levels, named once. #18 and #46 were both a hand-maintained
+    // level list that someone forgot to extend when CFO arrived, and #141 was
+    // a third: the Executives tile summed CEO+CTO+CIO+SVP+CISO and silently
+    // reported 5 of 6. A test asserts this covers the executive levels.
+    const EXEC_LEVELS = ['CEO', 'CTO', 'CIO', 'CFO', 'SVP', 'CISO'];
+
+    // The welcome tiles, as data rather than eleven hand-written expressions.
+    // Every canonical level must appear in exactly one group or the tiles stop
+    // summing to the catalogue — also asserted by a test.
+    const STAT_GROUPS = [
+        { label: 'Executives',            levels: EXEC_LEVELS,                                 cls: 'accent-lead' },
+        { label: 'Chapter Leads',         levels: ['Chapter Lead'],                            cls: 'accent-ch'   },
+        { label: 'TAL / PAL',             levels: ['Technical Area Lead', 'Product Area Lead'], cls: 'accent-lead' },
+        { label: 'Lead & Principal Arch', levels: ['Lead Architect', 'Principal Architect'],   cls: 'accent-arch' },
+        { label: 'Architects',            levels: ['Architect'],                               cls: 'accent-arch' },
+        { label: 'Senior Engineers',      levels: ['Senior Engineer'],                         cls: 'accent-lead' },
+        { label: 'Product Owners',        levels: ['Product Owner'],                           cls: 'accent-eng'  },
+        { label: 'Engineers',             levels: ['Engineer'],                                cls: 'accent-eng'  },
+    ];
+
+    function countRolesAtLevels(domains, levels) {
+        const want = new Set(levels || []);
+        if (!want.size) return 0;
+        let n = 0;
+        for (const d of Object.values(domains || {})) {
+            for (const r of (d.roles || [])) if (want.has(r.level)) n++;
+        }
+        return n;
+    }
+
+    // Does a role survive the sidebar's combined text + level filter (#114,
+    // #115)? An empty query or empty level set means "no constraint", so both
+    // can be applied independently or together.
+    function roleMatchesFilter(role, { domainLabel = '', chapterLabel = '' } = {}, { q = '', levels = [] } = {}) {
+        if (levels.length && !levels.includes(role.level)) return false;
+        const needle = String(q || '').trim().toLowerCase();
+        if (!needle) return true;
+        return String(role.title).toLowerCase().includes(needle)
+            || String(domainLabel).toLowerCase().includes(needle)
+            || String(chapterLabel).toLowerCase().includes(needle);
+    }
+
     return {
         STALE_MONTHS,
+        EXEC_LEVELS,
+        STAT_GROUPS,
+        countRolesAtLevels,
+        roleMatchesFilter,
         REFERENCE_DOC_PATTERN,
         LEVEL_ORDER,
         LEVEL_SHORT,

@@ -615,6 +615,60 @@
 
         .md-body h1 { display: none; }
 
+        /* ── Sidebar level filters and result count (#114, #115) ── */
+        .sidebar-filters {
+            padding: 8px 12px 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .filter-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+        .filter-chip {
+            padding: 3px 9px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-input);
+            color: var(--text-muted);
+            font-size: 0.7em;
+            font-family: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .filter-chip:hover { color: var(--text-primary); border-color: var(--border-hover); }
+        .filter-chip:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 1px; }
+        .filter-chip.on {
+            color: var(--accent-blue);
+            border-color: var(--accent-blue);
+            background: var(--bg-card-hover);
+            font-weight: 600;
+        }
+        .filter-clear { color: var(--text-secondary); border-style: dashed; }
+
+        .filter-summary {
+            margin-top: 8px;
+            font-size: 0.72em;
+            color: var(--text-muted);
+        }
+        .filter-summary[hidden] { display: none; }
+        .filter-summary strong { color: var(--text-primary); }
+
+        .link-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            color: var(--accent-blue);
+            font: inherit;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Level tiles on the welcome screen act as filters (#116). */
+        .stat-card-action { cursor: pointer; }
+        .stat-card-action:hover { border-color: var(--accent-blue); }
+        .stat-card-action:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+
+        .cm-busy  { color: var(--text-muted); }
+        .cm-empty { color: var(--text-muted); }
+        .cm-error { color: var(--accent-red, #d13438); }
+
         /* ── Reporting line in the header (#113) ────────────── */
         .role-reporting { margin-top: 8px; }
         .meta-reporting {
@@ -1281,6 +1335,10 @@
                        placeholder="Search roles…" oninput="filterRoles(this.value)">
             </div>
         </div>
+        <div class="sidebar-filters">
+            <div class="filter-chips" id="levelFilters" role="group" aria-label="Filter roles by level"></div>
+            <div class="filter-summary" id="filterSummary" hidden></div>
+        </div>
         <div class="sidebar-scroller" id="sidebarNav">
             <div class="loading"><div class="spinner"></div> Loading…</div>
         </div>
@@ -1424,6 +1482,7 @@
         sectionStartsOpen, panelStateFor,
         tocIdFor, activeTocIndex,
         parseRoleMeta, splitReportingValue, reviewSlotFor,
+        EXEC_LEVELS, STAT_GROUPS, countRolesAtLevels, roleMatchesFilter,
         findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
 
@@ -1432,6 +1491,10 @@
     // falling due in the same month (#124). Set to 0 to review everything on a
     // flat threshold.
     const REVIEW_STAGGER_MONTHS = 12;
+
+    // Levels the sidebar is currently narrowed to (#115). Empty = no
+    // constraint. Combines with the text query rather than replacing it.
+    let activeLevels = new Set();
 
     // ── State ───────────────────────────────────────────
     let allDomains  = {};
@@ -1565,6 +1628,7 @@
         try {
             const res  = await fetch('/api/roles');
             allDomains = await res.json();
+            renderLevelFilters();
             renderSidebar(allDomains);
             renderWelcomeStats(allDomains);
             renderDistributionCharts(allDomains);
@@ -1582,15 +1646,6 @@
         const chapterCount  = Object.keys(CHAPTERS).length;
         const roleCount     = allRoles.length;
 
-        const count = level => allRoles.filter(r => r.level === level).length;
-        const archCount     = count('Architect');
-        const leadArchCount = count('Lead Architect') + count('Principal Architect');
-        const chLeadCount   = count('Chapter Lead');
-        const talPalCount   = count('Technical Area Lead') + count('Product Area Lead');
-        const execCount     = count('CEO') + count('CTO') + count('CIO') + count('SVP') + count('CISO');
-        const seniorCount   = count('Senior Engineer');
-        const poCount       = count('Product Owner');
-        const engCount      = count('Engineer');
 
         // Header bar — compact summary
         document.getElementById('headerStats').innerHTML = `
@@ -1599,27 +1654,35 @@
             <div class="hstat"><div class="hstat-val">${domainCount}</div><div class="hstat-lbl">Domains</div></div>
         `;
 
-        // Welcome panel stat cards
+        // Welcome panel stat cards. The level tiles come from STAT_GROUPS in
+        // viewer-logic rather than eleven hand-written sums — that hand-
+        // maintained list is what dropped the CFO from the Executives count
+        // (#141), the third bug of that shape after #18 and #46. Tests assert
+        // every canonical level sits in exactly one group.
         const cards = [
-            { val: roleCount,     lbl: 'Total Roles',           cls: '' },
-            { val: chapterCount,  lbl: 'Chapters',              cls: 'accent-ch' },
-            { val: domainCount,   lbl: 'Domains',               cls: '' },
-            { val: execCount,     lbl: 'Executives',            cls: 'accent-lead' },
-            { val: chLeadCount,   lbl: 'Chapter Leads',         cls: 'accent-ch' },
-            { val: talPalCount,   lbl: 'TAL / PAL',             cls: 'accent-lead' },
-            { val: leadArchCount, lbl: 'Lead & Principal Arch', cls: 'accent-arch' },
-            { val: archCount,     lbl: 'Architects',            cls: 'accent-arch' },
-            { val: seniorCount,   lbl: 'Senior Engineers',      cls: 'accent-lead' },
-            { val: poCount,       lbl: 'Product Owners',        cls: 'accent-eng' },
-            { val: engCount,      lbl: 'Engineers',             cls: 'accent-eng' },
+            { val: roleCount,    lbl: 'Total Roles', cls: '' },
+            { val: chapterCount, lbl: 'Chapters',    cls: 'accent-ch' },
+            { val: domainCount,  lbl: 'Domains',     cls: '' },
+            ...STAT_GROUPS.map(g => ({
+                val: countRolesAtLevels(domains, g.levels),
+                lbl: g.label,
+                cls: g.cls,
+                levels: g.levels,
+            })),
         ];
 
-        document.getElementById('statsCards').innerHTML = cards.map(({ val, lbl, cls }, i) => `
-            <div class="stat-card" style="animation-delay:${i * 0.06}s">
+        // Level tiles filter the sidebar to that level (#116); the three
+        // summary tiles have nothing to filter by and stay inert.
+        document.getElementById('statsCards').innerHTML = cards.map(({ val, lbl, cls, levels }, i) => {
+            const interactive = levels && levels.length;
+            return `
+            <div class="stat-card${interactive ? ' stat-card-action' : ''}" style="animation-delay:${i * 0.06}s"
+                 ${interactive ? `role="button" tabindex="0" data-levels="${escapeHtml(levels.join('|'))}"
+                    title="Show only ${escapeHtml(lbl)}" aria-label="Filter roles to ${escapeHtml(lbl)}"` : ''}>
                 <div class="val ${cls}">${val}</div>
                 <div class="lbl">${lbl}</div>
-            </div>
-        `).join('');
+            </div>`;
+        }).join('');
     }
 
     // ── Distribution charts (welcome screen) ─────────────
@@ -2100,11 +2163,61 @@
     window.addEventListener('resize', () => { orgChart?.resize(); graphChart?.resize(); careersChart?.resize(); });
 
     // ── Render sidebar ───────────────────────────────────
+    // ── Level filters (#115) ─────────────────────────────
+    // Chips mirror STAT_GROUPS so the sidebar and the welcome tiles offer the
+    // same vocabulary, and clicking a tile (#116) toggles the matching chip.
+    function renderLevelFilters() {
+        const el = document.getElementById('levelFilters');
+        if (!el) return;
+        el.innerHTML = STAT_GROUPS.map(g => {
+            const on = g.levels.every(l => activeLevels.has(l));
+            return `<button class="filter-chip${on ? ' on' : ''}" data-levels="${escapeHtml(g.levels.join('|'))}"
+                     aria-pressed="${on}">${escapeHtml(g.label)}</button>`;
+        }).join('') + (activeLevels.size
+            ? `<button class="filter-chip filter-clear" id="clearLevels" aria-label="Clear level filters">✕ Clear</button>`
+            : '');
+    }
+
+    function toggleLevels(levels) {
+        const on = levels.every(l => activeLevels.has(l));
+        for (const l of levels) on ? activeLevels.delete(l) : activeLevels.add(l);
+        renderLevelFilters();
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+    }
+
+    function clearLevelFilters() {
+        activeLevels.clear();
+        renderLevelFilters();
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+    }
+
+    document.getElementById('levelFilters').addEventListener('click', e => {
+        if (e.target.closest('#clearLevels')) return clearLevelFilters();
+        const chip = e.target.closest('.filter-chip');
+        if (chip) toggleLevels(chip.dataset.levels.split('|'));
+    });
+
+    // Welcome tiles drive the same filter, then hand over to the sidebar.
+    document.getElementById('statsCards').addEventListener('click', e => {
+        const card = e.target.closest('.stat-card-action');
+        if (!card) return;
+        const levels = card.dataset.levels.split('|');
+        // A tile is "show me these", not a toggle — set rather than flip, so
+        // clicking two tiles in a row does not leave both applied.
+        activeLevels = new Set(levels);
+        renderLevelFilters();
+        renderSidebar(allDomains, document.getElementById('searchInput').value);
+        if (NARROW()) setSidebar(true);
+    });
+
     function renderSidebar(domains, filter = '') {
         const q   = filter.toLowerCase();
+        const levels = [...activeLevels];
         const nav = document.getElementById('sidebarNav');
         let   html = '';
         let   any  = false;
+        let   shown = 0;
+        let   total = 0;
 
         for (const [chKey, chapter] of Object.entries(CHAPTERS)) {
             let chDomainsHtml = '';
@@ -2114,21 +2227,21 @@
                 const domain = domains[domainKey];
                 if (!domain) continue;
 
-                const roles = q
-                    ? domain.roles.filter(r =>
-                        r.title.toLowerCase().includes(q) ||
-                        domain.label.toLowerCase().includes(q) ||
-                        chapter.label.toLowerCase().includes(q))
-                    : domain.roles;
+                total += domain.roles.length;
+                const ctx = { domainLabel: domain.label, chapterLabel: chapter.label };
+                const roles = domain.roles.filter(r => roleMatchesFilter(r, ctx, { q, levels }));
+                shown += roles.length;
 
                 // Reference/standards docs live under the domain too (#29);
                 // they match the same search fields but are never roles.
-                const refs = q
+                // Reference docs have no role level, so a level filter hides
+                // them rather than matching everything.
+                const refs = levels.length ? [] : (q
                     ? (domain.references || []).filter(r =>
                         r.title.toLowerCase().includes(q) ||
                         domain.label.toLowerCase().includes(q) ||
                         chapter.label.toLowerCase().includes(q))
-                    : (domain.references || []);
+                    : (domain.references || []));
 
                 if (roles.length === 0 && refs.length === 0) continue;
                 chHasContent = true;
@@ -2178,8 +2291,15 @@
                 || chapter.domains.some(d => activeFile && activeFile.includes(`/${d}/`))
                     ? 'open' : '';
 
-            const totalRoles = chapter.domains
-                .reduce((n, d) => n + (domains[d]?.roles.length || 0), 0);
+            // Count what is actually shown. Previously this summed the
+            // unfiltered totals, so a filtered chapter advertised more roles
+            // than it listed (#114).
+            const totalRoles = chapter.domains.reduce((n, d) => {
+                const dom = domains[d];
+                if (!dom) return n;
+                const ctx = { domainLabel: dom.label, chapterLabel: chapter.label };
+                return n + dom.roles.filter(r => roleMatchesFilter(r, ctx, { q, levels })).length;
+            }, 0);
 
             html += `
             <div class="chapter-group ${chOpen}" id="ch-${chKey}">
@@ -2194,8 +2314,27 @@
             </div>`;
         }
 
+        // Say what the filter did (#114). Silence made "no matches", "still
+        // searching" and "the request failed" look identical.
+        const summary = document.getElementById('filterSummary');
+        if (summary) {
+            const filtered = q.trim() || levels.length;
+            summary.hidden = !filtered;
+            if (filtered) {
+                const bits = [];
+                if (q.trim())      bits.push(`matching “${escapeHtml(filter.trim())}”`);
+                if (levels.length) bits.push(`at ${levels.length === 1 ? escapeHtml(levels[0]) : levels.length + ' levels'}`);
+                summary.innerHTML = `<strong>${shown}</strong> of ${total} roles ${bits.join(' ')}`;
+            }
+        }
+
         if (!any) {
-            html = `<div class="empty-msg">No roles match "<strong>${escapeHtml(filter)}</strong>"</div>`;
+            const what = q.trim()
+                ? `No roles match “<strong>${escapeHtml(filter.trim())}</strong>”${levels.length ? ' at the selected level' + (levels.length > 1 ? 's' : '') : ''}.`
+                : `No roles at the selected level${levels.length > 1 ? 's' : ''}.`;
+            html = `<div class="empty-msg">${what}${
+                levels.length ? ` <button class="link-btn" onclick="clearLevelFilters()">Clear level filter</button>` : ''
+            }</div>`;
         }
 
         // Prepend compare-mode banner when active
@@ -2343,19 +2482,41 @@
         document.getElementById('contentMatches')?.remove();
     }
 
+    // Render a one-line status where the content-match group goes, so
+    // "searching", "nothing found" and "the request failed" are told apart
+    // instead of all rendering as silence (#114).
+    function showContentStatus(text, cls) {
+        removeContentMatches();
+        const nav = document.getElementById('sidebarNav');
+        if (!nav) return;
+        const el = document.createElement('div');
+        el.id = 'contentMatches';
+        el.className = 'content-matches';
+        el.innerHTML = `<div class="cm-hd ${cls || ''}">${escapeHtml(text)}</div>`;
+        nav.insertBefore(el, nav.firstChild);
+    }
+
     async function runContentSearch(q) {
         const seq = ++contentSearchSeq;
+        showContentStatus('🔎 Searching role content…', 'cm-busy');
         let matches;
         try {
             const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+            if (!res.ok) throw new Error(res.status);
             ({ matches } = await res.json());
-        } catch { return; }
+        } catch {
+            if (seq === contentSearchSeq) showContentStatus('⚠️ Content search unavailable', 'cm-error');
+            return;
+        }
         // Ignore stale responses and queries the user has since changed.
         if (seq !== contentSearchSeq) return;
         if (document.getElementById('searchInput').value.trim() !== q) return;
 
         removeContentMatches();
-        if (!matches.length) return;
+        if (!matches.length) {
+            showContentStatus('🔎 No matches inside role content', 'cm-empty');
+            return;
+        }
 
         const section = document.createElement('div');
         section.id = 'contentMatches';

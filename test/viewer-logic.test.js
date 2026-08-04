@@ -5,6 +5,10 @@ const assert = require('node:assert/strict');
 
 const {
     STALE_MONTHS,
+    EXEC_LEVELS,
+    STAT_GROUPS,
+    countRolesAtLevels,
+    roleMatchesFilter,
     LEVEL_ORDER,
     LEVEL_SHORT,
     escapeHtml,
@@ -947,4 +951,63 @@ test('computeStaleRoles with stagger still flags a very overdue role', () => {
     const now = new Date(2026, 6, 15);
     const staggered = computeStaleRoles(fixtureDomains(), STALE_MONTHS, now, { stagger: 12 });
     assert.ok(staggered.some(r => r.title === 'Ancient Role'));
+});
+
+// ── level grouping and filtering (#114, #115, #116, #141) ──
+test('EXEC_LEVELS covers every C-suite/executive canonical level', () => {
+    // #18 and #46 were both a hand-maintained level list that someone forgot
+    // to extend; #141 was a third (the Executives tile omitted CFO). Deriving
+    // the set and guarding it here is what stops a fourth.
+    for (const l of ['CEO', 'CTO', 'CIO', 'CFO', 'SVP', 'CISO']) {
+        assert.ok(EXEC_LEVELS.includes(l), `executive level "${l}" missing from EXEC_LEVELS`);
+    }
+});
+
+test('every canonical level belongs to exactly one stat group', () => {
+    // A level in no group is invisible on the welcome screen; a level in two
+    // is double-counted. Either way the tiles stop summing to the catalogue.
+    for (const level of CANONICAL_LEVELS) {
+        const groups = STAT_GROUPS.filter(g => g.levels.includes(level)).map(g => g.label);
+        assert.equal(groups.length, 1, `"${level}" is in ${groups.length} groups: ${groups}`);
+    }
+});
+
+test('the stat groups together account for every role in the catalogue', () => {
+    const domains = {
+        a: { label: 'A', roles: [
+            { title: 'X', file: 'a/x.md', level: 'CFO' },
+            { title: 'Y', file: 'a/y.md', level: 'Engineer' },
+            { title: 'Z', file: 'a/z.md', level: 'Architect' },
+        ] },
+    };
+    const total = Object.values(domains).flatMap(d => d.roles).length;
+    const summed = STAT_GROUPS.reduce((n, g) => n + countRolesAtLevels(domains, g.levels), 0);
+    assert.equal(summed, total);
+});
+
+test('countRolesAtLevels counts only the requested levels', () => {
+    const domains = { a: { label: 'A', roles: [
+        { title: 'X', file: 'a/x.md', level: 'CFO' },
+        { title: 'Y', file: 'a/y.md', level: 'Engineer' },
+    ] } };
+    assert.equal(countRolesAtLevels(domains, ['CFO']), 1);
+    assert.equal(countRolesAtLevels(domains, ['CFO', 'Engineer']), 2);
+    assert.equal(countRolesAtLevels(domains, []), 0);
+});
+
+test('roleMatchesFilter combines the text query and the level filter', () => {
+    const role = { title: 'AWS Cloud Architect', level: 'Architect' };
+    const ctx  = { domainLabel: 'Cloud Platforms', chapterLabel: 'Cloud, Platform & Infrastructure' };
+    assert.equal(roleMatchesFilter(role, ctx, { q: 'aws',  levels: [] }), true);
+    assert.equal(roleMatchesFilter(role, ctx, { q: 'aws',  levels: ['Architect'] }), true);
+    assert.equal(roleMatchesFilter(role, ctx, { q: 'aws',  levels: ['Engineer'] }), false);
+    assert.equal(roleMatchesFilter(role, ctx, { q: 'nope', levels: ['Architect'] }), false);
+    assert.equal(roleMatchesFilter(role, ctx, { q: '',     levels: [] }), true);
+});
+
+test('roleMatchesFilter matches on domain and chapter as well as title', () => {
+    const role = { title: 'AWS Cloud Architect', level: 'Architect' };
+    const ctx  = { domainLabel: 'Cloud Platforms', chapterLabel: 'Cloud, Platform & Infrastructure' };
+    assert.equal(roleMatchesFilter(role, ctx, { q: 'cloud platforms', levels: [] }), true);
+    assert.equal(roleMatchesFilter(role, ctx, { q: 'infrastructure',  levels: [] }), true);
 });
