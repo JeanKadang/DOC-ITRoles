@@ -702,10 +702,14 @@
         }
         .md-section .owns-advises td:last-child { color: var(--text-secondary); }
 
-        /* Trailing reference material is looked up deliberately rather than
-           read through, so it sits back from the substantive sections. */
-        .md-section.section-reference > .md-section-hd { color: var(--text-secondary); font-weight: 600; }
-        .md-section.section-reference { font-size: 0.95em; }
+        /* #113 de-emphasised Key Technologies, Remote Work Considerations and
+           Recommended Certifications with a muted heading and a 0.95em size on
+           the whole section. Reverted in #143: shrinking the body copy of three
+           sections out of thirteen read as a rendering fault rather than as
+           hierarchy — the first thing it prompted was "why are these headers a
+           different font?". Sections already collapse by default (#112) and the
+           section nav (#111) handles navigation, so this was buying almost
+           nothing in exchange for looking broken. */
 
         /* ── Sticky section nav (#111) ──────────────────────── */
         .toc-nav {
@@ -1482,7 +1486,7 @@
         sectionStartsOpen, panelStateFor,
         tocIdFor, activeTocIndex,
         parseRoleMeta, splitReportingValue, reviewSlotFor,
-        EXEC_LEVELS, STAT_GROUPS, countRolesAtLevels, roleMatchesFilter,
+        EXEC_LEVELS, STAT_GROUPS, countRolesAtLevels, roleMatchesFilter, groupResources,
         findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
 
@@ -1511,12 +1515,26 @@
     const openChapters = new Set(); // chapters explicitly expanded by user
 
     // ── Reference documents ──────────────────────────────
+    // Two kinds of thing, kept apart (#144). The reference docs describe what
+    // the catalogue contains and are read; the onboarding templates are
+    // working documents you copy and fill in for a specific person. Listing
+    // them identically made the templates easy to miss and gave no signal
+    // they were actionable.
+    //
+    // Order here is the order rendered, and the onboarding group is meant to
+    // grow — 30/60/90 plans, buddy checklists, per-chapter variants — so add
+    // a row rather than a second hard-coded list.
+    const RESOURCE_GROUPS = [
+        { key: 'reference',  label: '📚 Resources'  },
+        { key: 'onboarding', label: '🚀 Onboarding' },
+    ];
+
     const RESOURCES = [
-        { file: 'docs/CHAPTERS_OVERVIEW.md',                  icon: '🗂️', title: 'Chapters Overview' },
-        { file: 'docs/SKILLS_PROGRESSION.md',                 icon: '📈', title: 'Career Paths & Skills Progression' },
-        { file: 'docs/CROSS_DOMAIN_INTERACTIONS.md',          icon: '🔀', title: 'Domain Interactions' },
-        { file: 'docs/ONBOARDING_TEMPLATE.md',                icon: '🚀', title: 'Onboarding Template' },
-        { file: 'docs/onboarding_chapter_lead_template.md',   icon: '👑', title: 'Chapter Lead Onboarding Template' },
+        { group: 'reference',  file: 'docs/CHAPTERS_OVERVIEW.md',                icon: '🗂️', title: 'Chapters Overview' },
+        { group: 'reference',  file: 'docs/SKILLS_PROGRESSION.md',               icon: '📈', title: 'Career Paths & Skills Progression' },
+        { group: 'reference',  file: 'docs/CROSS_DOMAIN_INTERACTIONS.md',        icon: '🔀', title: 'Domain Interactions' },
+        { group: 'onboarding', file: 'docs/ONBOARDING_TEMPLATE.md',              icon: '📋', title: 'Onboarding Template' },
+        { group: 'onboarding', file: 'docs/onboarding_chapter_lead_template.md', icon: '👑', title: 'Chapter Lead Onboarding Template' },
     ];
 
     // ── Chapter → domain groupings ───────────────────────
@@ -2345,19 +2363,20 @@
             </div>` + html;
         }
 
-        // Resources section — always visible regardless of search filter
-        const resourcesHtml = `
+        // Resources — always visible regardless of search filter, and grouped
+        // so read-only references and fill-in templates are told apart (#144).
+        const resourcesHtml = groupResources(RESOURCES, RESOURCE_GROUPS).map(g => `
             <div class="resources-sep">
-                <div class="resources-hd">📚 Resources</div>
-                ${RESOURCES.map(r => `
+                <div class="resources-hd">${escapeHtml(g.label)}</div>
+                ${g.items.map(r => `
                 <div class="resource-item ${activeDoc === r.file ? 'active' : ''}"
                      role="button" tabindex="0"
                      data-doc="${escapeHtml(r.file)}"
                      data-doc-title="${escapeHtml(r.title)}">
                     <span class="resource-ico">${r.icon}</span>
-                    <span>${r.title}</span>
+                    <span>${escapeHtml(r.title)}</span>
                 </div>`).join('')}
-            </div>`;
+            </div>`).join('');
 
         nav.innerHTML = resourcesHtml + html;
     }
@@ -2662,13 +2681,6 @@
             const details = document.createElement('details');
             details.className = 'md-section';
             if (sectionStartsOpen(heading)) details.open = true;
-
-            // Reference sections are looked up on demand rather than read
-            // through, so they carry less visual weight than the sections
-            // that state what the role owns and does (#113).
-            if (/^(Key Technologies|Recommended Certifications|Remote Work Considerations)/i.test(heading)) {
-                details.classList.add('section-reference');
-            }
 
             const summary = document.createElement('summary');
             summary.className = 'md-section-hd';

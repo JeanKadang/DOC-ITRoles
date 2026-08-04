@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 
 const {
     STALE_MONTHS,
+    groupResources,
     EXEC_LEVELS,
     STAT_GROUPS,
     countRolesAtLevels,
@@ -1010,4 +1011,42 @@ test('roleMatchesFilter matches on domain and chapter as well as title', () => {
     const ctx  = { domainLabel: 'Cloud Platforms', chapterLabel: 'Cloud, Platform & Infrastructure' };
     assert.equal(roleMatchesFilter(role, ctx, { q: 'cloud platforms', levels: [] }), true);
     assert.equal(roleMatchesFilter(role, ctx, { q: 'infrastructure',  levels: [] }), true);
+});
+
+// ── groupResources (#144) ─────────────────────────────────
+// The Resources list mixed two kinds of thing: read-only references
+// describing the catalogue, and onboarding templates you copy and fill in.
+// Grouping is data-driven so the onboarding group is somewhere new
+// templates get added, not a hard-coded second list.
+test('groupResources returns groups in the declared order, not alphabetically', () => {
+    const items = [
+        { group: 'reference',  title: 'A' },
+        { group: 'onboarding', title: 'B' },
+        { group: 'reference',  title: 'C' },
+    ];
+    const groups = groupResources(items, [
+        { key: 'reference',  label: '📚 Resources' },
+        { key: 'onboarding', label: '🚀 Onboarding' },
+    ]);
+    assert.deepEqual(groups.map(g => g.label), ['📚 Resources', '🚀 Onboarding']);
+    assert.deepEqual(groups[0].items.map(i => i.title), ['A', 'C']);
+    assert.deepEqual(groups[1].items.map(i => i.title), ['B']);
+});
+
+test('groupResources omits a group that has no items', () => {
+    const groups = groupResources([{ group: 'reference', title: 'A' }], [
+        { key: 'reference',  label: 'Ref' },
+        { key: 'onboarding', label: 'Onboarding' },
+    ]);
+    assert.deepEqual(groups.map(g => g.label), ['Ref']);
+});
+
+test('groupResources keeps an ungrouped item visible in the first group', () => {
+    // A resource added without a group must not silently vanish from the
+    // sidebar - that failure mode is invisible until someone goes looking.
+    const groups = groupResources([{ title: 'Orphan' }], [
+        { key: 'reference',  label: 'Ref' },
+        { key: 'onboarding', label: 'Onboarding' },
+    ]);
+    assert.deepEqual(groups[0].items.map(i => i.title), ['Orphan']);
 });

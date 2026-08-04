@@ -699,8 +699,25 @@
             || String(chapterLabel).toLowerCase().includes(needle);
     }
 
+    // Bucket sidebar resources by their declared group, preserving the order
+    // the groups are declared in (#144). Empty groups are dropped; an item
+    // with no group falls into the first one rather than disappearing, since
+    // a resource silently missing from the sidebar is not noticed until
+    // somebody goes looking for it.
+    function groupResources(items, groups) {
+        const first = groups[0] && groups[0].key;
+        return groups
+            .map(g => ({
+                key: g.key,
+                label: g.label,
+                items: (items || []).filter(i => (i.group || first) === g.key),
+            }))
+            .filter(g => g.items.length);
+    }
+
     return {
         STALE_MONTHS,
+        groupResources,
         EXEC_LEVELS,
         STAT_GROUPS,
         countRolesAtLevels,
