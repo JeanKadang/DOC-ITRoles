@@ -1423,9 +1423,15 @@
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
         sectionStartsOpen, panelStateFor,
         tocIdFor, activeTocIndex,
-        parseRoleMeta, splitReportingValue,
+        parseRoleMeta, splitReportingValue, reviewSlotFor,
         findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
+
+    // Reviews are spread over this many months past STALE_MONTHS, using each
+    // role's own slot, so the queue fills gradually instead of 206 roles all
+    // falling due in the same month (#124). Set to 0 to review everything on a
+    // flat threshold.
+    const REVIEW_STAGGER_MONTHS = 12;
 
     // ── State ───────────────────────────────────────────
     let allDomains  = {};
@@ -3052,7 +3058,7 @@
     // ── Stale-role tracking ───────────────────────────────
     // (monthsSinceReview / computeStaleRoles come from viewer-logic.js)
     function updateStaleButton(domains) {
-        const stale = computeStaleRoles(domains);
+        const stale = computeStaleRoles(domains, STALE_MONTHS, new Date(), { stagger: REVIEW_STAGGER_MONTHS });
         const btn   = document.getElementById('staleBtn');
         if (stale.length === 0) { btn.style.display = 'none'; return; }
         btn.style.display  = '';
@@ -3062,7 +3068,7 @@
 
 
     function renderStalePanel(domains) {
-        const stale = computeStaleRoles(domains);
+        const stale = computeStaleRoles(domains, STALE_MONTHS, new Date(), { stagger: REVIEW_STAGGER_MONTHS });
         const rows = stale.map(r => `
             <tr>
                 <td class="matrix-domain-cell">${escapeHtml(r.domainLabel)}</td>
@@ -3079,7 +3085,11 @@
                 <div>
                     <h2>⏰ Roles Overdue for Review</h2>
                     <p>${stale.length} of ${Object.values(domains).reduce((n,d) => n + d.roles.length, 0)} roles
-                       have no review date or were last reviewed ${STALE_MONTHS}+ months ago — click any role to open it.</p>
+                       have no review date, or have passed their review slot — click any role to open it.
+                       ${REVIEW_STAGGER_MONTHS > 0
+                         ? `Reviews are due ${STALE_MONTHS}–${STALE_MONTHS + REVIEW_STAGGER_MONTHS - 1} months after each role's
+                            last review, spread so the catalogue comes up steadily rather than all at once.`
+                         : `Reviews are due ${STALE_MONTHS}+ months after each role's last review.`}</p>
                 </div>
                 <button class="btn-action" onclick="exportStaleCsv()" aria-label="Download overdue role list as CSV">⬇️ Export CSV</button>
             </div>
@@ -3092,7 +3102,7 @@
     }
 
     function exportStaleCsv() {
-        const stale = computeStaleRoles(allDomains);
+        const stale = computeStaleRoles(allDomains, STALE_MONTHS, new Date(), { stagger: REVIEW_STAGGER_MONTHS });
         const rows  = [['Domain', 'Role Title', 'Level', 'Last Reviewed', 'Months Since Review']];
         for (const r of stale) rows.push([r.domainLabel, r.title, r.level, r.lastReviewed || '', r.monthsSince ?? '']);
         const csv = rows.map(r => r.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')).join('\r\n');

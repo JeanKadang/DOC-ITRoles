@@ -105,14 +105,46 @@
         return (now.getFullYear() - reviewed.getFullYear()) * 12 + (now.getMonth() - reviewed.getMonth());
     }
 
+    // Review slot for a role, 0..span-1, derived from its path (#124).
+    //
+    // 206 of 222 roles carry an identical 2026-03 stamp, so at a flat
+    // threshold every one turns stale in the same month and the panel jumps
+    // from near-empty to 93% of the catalog — at which point it stops being a
+    // work queue. Git cannot supply real review history to stagger from: the
+    // repository is younger than the stamps it holds, so every file traces
+    // back to one seeding commit. Rather than invent per-role review dates
+    // that never happened, the *schedule* is spread and the recorded dates
+    // stay truthful.
+    //
+    // FNV-1a: small, stable across runs and platforms, and good enough to
+    // spread paths evenly — a test asserts the real catalog lands in every
+    // month with no month taking a disproportionate share.
+    function reviewSlotFor(file, span = 12) {
+        if (span <= 1) return 0;
+        let h = 0x811c9dc5;
+        const s = String(file == null ? '' : file);
+        for (let i = 0; i < s.length; i++) {
+            h ^= s.charCodeAt(i);
+            h = Math.imul(h, 0x01000193) >>> 0;
+        }
+        return h % span;
+    }
+
     // Roles with no review date or one at least staleMonths old, sorted
     // most-overdue first (never-reviewed roles sort to the top).
-    function computeStaleRoles(domains, staleMonths = STALE_MONTHS, now = new Date()) {
+    //
+    // `stagger` spreads the due date across that many months using the role's
+    // slot, so reviews arrive as a steady queue instead of one cliff. A
+    // missing date is never deferred — that is a real gap, not a slot.
+    function computeStaleRoles(domains, staleMonths = STALE_MONTHS, now = new Date(), { stagger = 0 } = {}) {
         const stale = [];
         for (const domain of Object.values(domains)) {
             for (const role of domain.roles) {
                 const monthsSince = monthsSinceReview(role.lastReviewed, now);
-                if (monthsSince === null || monthsSince >= staleMonths) {
+                const threshold = monthsSince === null || stagger <= 0
+                    ? staleMonths
+                    : staleMonths + reviewSlotFor(role.file, stagger);
+                if (monthsSince === null || monthsSince >= threshold) {
                     stale.push({ ...role, domainLabel: domain.label, monthsSince });
                 }
             }
@@ -634,6 +666,7 @@
         badgeClass,
         monthsSinceReview,
         computeStaleRoles,
+        reviewSlotFor,
         rolesPerLevel,
         rolesPerChapter,
         buildOrgTree,
