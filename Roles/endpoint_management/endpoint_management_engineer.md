@@ -44,7 +44,7 @@ The Endpoint Management Engineer administers and maintains the organisation's en
 - Maintain runbooks, SOPs, and endpoint management knowledge base articles.
 - Participate in change management processes for endpoint configuration changes.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -54,7 +54,7 @@ The Endpoint Management Engineer administers and maintains the organisation's en
 | Compliance remediation actions for individual devices | Application packaging strategy |
 | Knowledge base and runbook maintenance | Automation and scripting approaches |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

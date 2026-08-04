@@ -46,7 +46,7 @@ The Network Automation Architect designs and governs the strategy, tooling, and 
 - Design automated edge network provisioning frameworks: zero-touch provisioning (ZTP) pipelines for edge site routers, SD-WAN CPE, and network appliances at distributed edge locations.
 - Define edge network automation standards: automated configuration push, compliance validation, and telemetry collection for edge PoPs and remote/branch network infrastructure integrated into the central network-as-code framework.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -58,7 +58,7 @@ The Network Automation Architect designs and governs the strategy, tooling, and 
 | IBN and telemetry collection architecture | Security policy for network automation access credentials |
 | Network compliance automation framework design | Training and skilling programme for network operations team |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

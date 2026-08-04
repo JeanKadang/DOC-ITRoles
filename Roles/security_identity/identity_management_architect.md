@@ -41,7 +41,7 @@ The Identity Management Architect designs and oversees the organization's identi
 - Evaluate and recommend identity management technologies
 - Provide technical leadership for identity management initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

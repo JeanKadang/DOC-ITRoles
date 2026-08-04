@@ -43,7 +43,7 @@ The Product Area Lead (PAL) is a senior IT management role responsible for the e
 - Own risk and compliance governance for the area, escalating material risks to IT leadership
 - Create a high-performing, inclusive team culture with clear career development pathways
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

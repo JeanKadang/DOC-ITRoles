@@ -41,7 +41,7 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 - Plan and execute cloud migrations to GCP
 - Provide technical mentorship to GCP Cloud Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -41,7 +41,7 @@ The Network Product Owner manages the development and lifecycle of the organizat
 - Manage network capacity planning and investment strategy
 - Track and report on network performance, availability, and cost metrics
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -46,7 +46,7 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 - Conduct capacity planning and performance optimization
 - Support the Hyper-V Architect in design and architecture activities
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 | PowerShell automation and SCVMM orchestration standards for operational efficiency | Azure Arc integration strategy and hybrid cloud design considerations |
 | Hyper-V performance tuning, capacity optimization, and disaster recovery implementation | Storage architecture decisions, clustering design, and SDN configuration at the platform level |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

@@ -43,7 +43,7 @@ The Engineering Practices Champion is a senior individual contributor and intern
 - Define and track team-level engineering practice KPIs, providing regular visibility of maturity trends to Engineering Directors and TALs
 - Identify systemic quality issues appearing across multiple teams — escalate architectural or tooling root causes and work with the appropriate function to resolve them at source
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Engineering Practices Champion is a senior individual contributor and intern
 | TDD/BDD, trunk-based development, and pair programming adoption guidance and coaching materials | Test automation framework architecture and long-term tooling investment (Automation Framework Engineer-owned) |
 | DoR and DoD workshop design, facilitation, and outcome documentation | Team-level Definition of Done final content (team and Product Owner-owned, with this role as facilitator) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Deep practical expertise in software engineering quality practices — TDD, BDD, pair programming, code review, trunk-based development, and continuous integration — with the ability to demonstrate and coach these practices hands-on, not just advocate for them
 - Proficiency with code quality and security tooling: SonarQube, GitHub Advanced Security, and the configuration of quality gates in modern CI pipelines (GitHub Actions, Azure DevOps, or equivalent)
@@ -89,7 +89,7 @@ The Engineering Practices Champion is a senior individual contributor and intern
 
 - Emerging engineering practice trends (Thoughtworks Technology Radar signals)
 
-## Qualifications
+### Qualifications
 
 - **Education:** Degree in Computer Science, Software Engineering, or a related discipline, or equivalent professional experience demonstrating depth in software quality and delivery practices
 - **Experience:** Typically 7+ years in software engineering, DevOps, or platform engineering roles, with a strong focus on quality practices and engineering excellence; at least 2–3 years of coaching, mentoring, or team enablement experience at Senior Engineer level or above

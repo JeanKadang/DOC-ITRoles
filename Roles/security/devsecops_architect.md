@@ -44,7 +44,7 @@ The DevSecOps Architect is responsible for designing and governing the strategy,
 - Collaborate with platform engineering on developer experience - ensuring security tooling is seamless, not friction-heavy.
 - Represent DevSecOps in architecture forums and provide input into enterprise security architecture strategy.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The DevSecOps Architect is responsible for designing and governing the strategy,
 | Container security baseline standards | Vendor licensing and commercial decisions |
 | SBOM strategy and software supply chain controls | Application architecture decisions (with Solution Architect) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

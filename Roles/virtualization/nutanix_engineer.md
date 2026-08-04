@@ -41,7 +41,7 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 - Implement basic automation for Nutanix operations
 - Document Nutanix configurations and operational procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

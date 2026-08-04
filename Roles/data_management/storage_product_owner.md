@@ -41,7 +41,7 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 - Manage storage capacity planning and procurement processes
 - Track and report on storage performance, utilization, and cost metrics
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -45,7 +45,7 @@ The Storage Architect is responsible for designing and governing the organisatio
 - Produce storage architecture documentation, standards, and patterns library.
 - Mentor senior storage engineers and provide governance on complex design decisions.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -57,7 +57,7 @@ The Storage Architect is responsible for designing and governing the organisatio
 | Performance standards and workload-to-tier mapping | Application storage requirements (with App and DB teams) |
 | Storage capacity planning models | Vendor commercial negotiations |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

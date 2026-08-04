@@ -41,7 +41,7 @@ The Database Senior Engineer leads the implementation and optimization of comple
 - Implement data migration and integration strategies
 - Provide technical mentorship to Database Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

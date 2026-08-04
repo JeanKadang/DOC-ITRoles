@@ -41,7 +41,7 @@ The HPE Server Hardware Architect designs and oversees the organization's server
 - Develop server hardware lifecycle management strategies
 - Provide technical leadership for HPE server infrastructure initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

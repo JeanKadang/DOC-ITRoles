@@ -47,7 +47,7 @@ The CFO's remit intersects closely with technology leadership: enterprise financ
 - Report to the CEO and Board (Audit Committee, Risk Committee) on financial performance, financial risk, capital adequacy, and compliance — providing transparent, decision-ready financial insight at all times
 - Build and develop the finance leadership team — including FP&A, Group Reporting, Treasury, Tax, and Internal Audit functions — maintaining a culture of financial integrity, commercial rigor, and continuous improvement
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -61,7 +61,7 @@ The CFO's remit intersects closely with technology leadership: enterprise financ
 | Tax strategy and regulatory financial compliance | Enterprise risk framework beyond financial risk dimensions (CRO-owned, where role exists) |
 | Finance leadership team structure, hiring, and development | Broader technology talent strategy and engineering organisation design (CTO-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -95,7 +95,7 @@ The CFO's remit intersects closely with technology leadership: enterprise financ
 | FinOps and cloud cost governance | Awareness |
 | Investor relations and financial communications | Proficient |
 
-## Qualifications
+### Qualifications
 
 **Education:**
 

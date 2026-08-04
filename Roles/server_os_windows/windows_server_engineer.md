@@ -41,7 +41,7 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 - Assist in server migrations and upgrades
 - Document configurations, procedures, and operational processes
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

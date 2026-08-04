@@ -43,7 +43,7 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 - Own the chapter roadmap — translating TAL/PAL and CDO strategic direction into chapter-level data and AI technical priorities and delivery commitments
 - Represent the chapter in enterprise architecture forums, data governance boards, AI ethics committees, and regulatory compliance discussions
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 | Practitioner career decisions — promotions, development plans, performance management, and hiring bar for the chapter | Compensation bands, HR policy, and organisational structure (PAL and HR-owned) |
 | AI ethics framework implementation and model risk assessment standards | Enterprise AI ethics policy and regulatory reporting obligations (Legal, Risk, and CDO-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -80,7 +80,7 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 - **Working Knowledge required:** ML platforms (Azure ML, SageMaker) at strategic oversight
 - **Awareness level expected:** AI ethics and responsible AI frameworks (NIST AI RMF, EU AI Act)
 
-## Qualifications
+### Qualifications
 
 - 10+ years of experience in data architecture, data engineering, data platform, or AI/ML roles
 - 3+ years in a Principal Data Architect, Lead Data Engineer, or senior technical leadership role with cross-domain data scope

@@ -41,7 +41,7 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 - Plan and execute .NET platform upgrades and migrations
 - Provide technical mentorship to .NET Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

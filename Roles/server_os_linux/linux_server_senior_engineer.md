@@ -41,7 +41,7 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 - Evaluate and test new Linux technologies and distributions
 - Contribute to Linux platform roadmap and strategy
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

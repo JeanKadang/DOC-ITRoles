@@ -41,7 +41,7 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 - Develop runbooks and playbooks for operational procedures
 - Implement chaos engineering practices to improve system resilience
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

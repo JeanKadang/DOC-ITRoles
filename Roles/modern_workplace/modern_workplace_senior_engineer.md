@@ -45,7 +45,7 @@ The Modern Workplace Senior Engineer implements, manages, and optimises the orga
 - Mentor M365 engineers and provide guidance on complex administration scenarios.
 - Produce and maintain runbooks, SOPs, and technical documentation.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Modern Workplace Senior Engineer implements, manages, and optimises the orga
 | Defender for Office 365 policy tuning | Licensing structure (with Procurement/PO) |
 | Runbook and documentation maintenance | End-user training and adoption strategy |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

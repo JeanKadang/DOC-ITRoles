@@ -41,7 +41,7 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 - Assist in implementing automation scripts and tools
 - Maintain documentation for Linux environments
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -41,7 +41,7 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 - Support self-service infrastructure provisioning portals
 - Collect metrics on provisioning performance and efficiency
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

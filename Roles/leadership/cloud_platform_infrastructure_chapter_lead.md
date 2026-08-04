@@ -43,7 +43,7 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 - Own the infrastructure chapter roadmap — translating TAL/PAL strategic direction into chapter-level technical priorities and delivery commitments
 - Represent the chapter in enterprise-wide architecture forums, security governance bodies, and technology investment discussions
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 | Chapter roadmap and technical prioritisation within the infrastructure portfolio | Business strategy, enterprise roadmap sequencing, and cross-area investment trade-offs (TAL/PAL-owned) |
 | Platform consolidation and hardware refresh strategy within the infrastructure estate | Vendor contracts, procurement decisions, and enterprise supplier strategy (commercial and PAL-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -80,7 +80,7 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 - **Working Knowledge required:** Kubernetes at governance and platform strategy depth
 - **Awareness level expected:** FinOps tooling (Azure Cost Management, Cloudability) for chapter budget oversight
 
-## Qualifications
+### Qualifications
 
 - 10+ years of experience in infrastructure architecture, platform engineering, or senior infrastructure engineering roles
 - 3+ years in a Principal Architect, Lead Architect, or technical leadership role with cross-domain infrastructure scope

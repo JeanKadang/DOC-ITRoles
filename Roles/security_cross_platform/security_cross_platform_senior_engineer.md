@@ -41,7 +41,7 @@ The Security Cross-Platform Senior Engineer leads the technical implementation o
 - Develop integration patterns for connecting security systems across multiple platforms
 - Implement security monitoring and alerting that provides visibility across all domains
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

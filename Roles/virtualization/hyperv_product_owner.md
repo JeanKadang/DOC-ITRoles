@@ -45,7 +45,7 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 - Manage dependencies with other technology domains (storage, networking, security)
 - Advocate for customer needs in virtualization service delivery
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 | Acceptance criteria and delivery scope for Hyper-V platform capabilities and service catalog | Windows Server and cloud platform strategy, Azure integration roadmap |
 | Windows licensing governance, cost optimization approach, and vendor relationship management | Storage, network, and security platform investment decisions affecting virtualization |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

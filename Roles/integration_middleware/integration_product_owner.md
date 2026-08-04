@@ -44,7 +44,7 @@ The Integration Product Owner owns the integration platform product backlog — 
 - Engage with consuming teams to manage expectations around integration platform capabilities, breaking changes, and deprecation timelines.
 - Drive integration technical debt reduction programmes: prioritising decommissioning of legacy point-to-point integrations in favour of governed platform patterns.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

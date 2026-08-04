@@ -47,7 +47,7 @@ In some governance models — particularly in heavily regulated industries or wh
 - Set the cultural and ethical tone for the organisation, sponsoring inclusion, performance, and values-aligned behaviours at all levels
 - Drive digital transformation ambition at the enterprise level, ensuring technology investment is positioned as a source of competitive advantage and customer value
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -61,7 +61,7 @@ In some governance models — particularly in heavily regulated industries or wh
 | M&A strategy: target approval, investment rationale, and integration mandate | M&A execution and functional integration workstreams (owned by relevant function heads and integration leads) |
 | External representation with regulators, government, and key strategic partners | Technology, security, and operational detail in regulatory engagements (CTO / CIO / CISO / Legal-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -95,7 +95,7 @@ In some governance models — particularly in heavily regulated industries or wh
 | Cyber risk understanding (board-appropriate) | Awareness |
 | AI and emerging technology trends (strategic context) | Awareness |
 
-## Qualifications
+### Qualifications
 
 **Education:**
 

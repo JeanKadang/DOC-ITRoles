@@ -45,7 +45,7 @@ The HPC Senior Engineer leads the technical implementation, automation, and opti
 - Proactively identify and mitigate risks to HPC operations and security
 - Lead continuous improvement initiatives for HPC processes and technologies
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

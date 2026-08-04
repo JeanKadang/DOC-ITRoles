@@ -43,7 +43,7 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 - Lead IT compliance reporting — ensuring the organisation can accurately report on IT service metrics, configuration estate, and governance adherence to Risk, Audit, and regulatory stakeholders
 - Represent the chapter in cross-chapter governance forums, enterprise architecture reviews, and business-facing IT service accountability discussions
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 | Practitioner career decisions — promotions, development plans, performance management, and hiring bar for the chapter | Compensation bands, HR policy, and organisational structure (PAL and HR-owned) |
 | Infrastructure onboarding playbook standards and architecture gate criteria for new services | Technology investment decisions, programme governance, and business case approval (PAL and Finance-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -80,7 +80,7 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 - **Working Knowledge required:** Enterprise architecture tools (LeanIX, Ardoq) at governance depth
 - **Awareness level expected:** Power BI/Tableau for service performance reporting
 
-## Qualifications
+### Qualifications
 
 - 10+ years of experience in IT service management, enterprise architecture governance, configuration management, or senior IT operations roles
 - 3+ years in a Principal Architect, Lead ITSM Architect, or senior technical leadership role with cross-domain governance scope

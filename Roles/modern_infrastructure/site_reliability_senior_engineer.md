@@ -45,7 +45,7 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 - Define and maintain on-call runbooks and playbooks for critical services.
 - Evaluate and adopt new reliability tooling and platform improvements.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -57,7 +57,7 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 | Chaos engineering experiment design and execution | Capacity investment decisions (with Infrastructure/Finance) |
 | SRE tooling and automation implementation | Incident prioritisation policy |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

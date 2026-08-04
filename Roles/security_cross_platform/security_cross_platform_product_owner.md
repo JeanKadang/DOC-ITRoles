@@ -41,7 +41,7 @@ The Security Cross-Platform Product Owner manages the portfolio of security serv
 - Facilitate agile ceremonies for cross-platform security initiatives
 - Balance security requirements with operational needs and technology constraints across domains
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

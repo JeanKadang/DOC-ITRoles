@@ -44,7 +44,7 @@ The AI Platform Architect designs and governs the organisation's AI/ML platform 
 - Evaluate and select ML platform tooling: open-source (MLflow, Kubeflow, Ray, Feast) vs. managed cloud services (Azure AI Foundry, AWS SageMaker, Vertex AI).
 - Provide technical leadership for ML platform implementation teams and guide ML engineers on platform adoption.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

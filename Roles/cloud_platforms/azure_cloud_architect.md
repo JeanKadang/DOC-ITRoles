@@ -43,7 +43,7 @@ The Azure Cloud Platform Architect designs, implements, and governs cloud soluti
 - Design cloud architectures that comply with data residency and sovereignty requirements, leveraging Azure sovereign cloud offerings for regulated industries
 - Provide technical leadership for Azure migrations and modernization initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

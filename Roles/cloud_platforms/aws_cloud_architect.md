@@ -42,7 +42,7 @@ The AWS Cloud Platform Architect designs, implements, and governs cloud solution
 - Architect generative AI and ML workload deployments using Amazon Bedrock and SageMaker
 - Provide technical leadership for AWS migrations and modernization initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

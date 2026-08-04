@@ -44,7 +44,7 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 - Define ITSM platform integration requirements with monitoring, alerting, cloud platforms, and DevOps tooling.
 - Drive self-service adoption through service catalogue design and virtual agent/chatbot capabilities.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 | Acceptance criteria for platform changes | Organisational ITSM process adoption strategy |
 | CMDB scope definition and data quality KPIs | IT security policies applicable to ITSM platform |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

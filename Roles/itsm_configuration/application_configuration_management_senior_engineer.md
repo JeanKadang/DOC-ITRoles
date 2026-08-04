@@ -41,7 +41,7 @@ The Application Configuration Management Senior Engineer leads the implementatio
 - Optimize configuration management for security and compliance
 - Provide technical mentorship to Configuration Management Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

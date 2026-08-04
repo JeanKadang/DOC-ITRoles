@@ -43,7 +43,7 @@ The AI Governance Engineer is an entry-level practitioner role responsible for i
 - Maintain the organisation's AI system inventory, tracking new AI system onboarding and periodic re-assessment schedules.
 - Attend and contribute to AI governance team meetings, learning from senior practitioners and contributing operational observations.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

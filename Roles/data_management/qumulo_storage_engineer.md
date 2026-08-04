@@ -43,7 +43,7 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 - Perform Qumulo software upgrades and patching
 - Manage file shares and access controls
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

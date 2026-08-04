@@ -41,7 +41,7 @@ The Application Configuration Management Architect designs comprehensive strateg
 - Evaluate new configuration management technologies
 - Provide technical leadership for configuration management initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -45,7 +45,7 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 - Design edge platform deployment patterns, extending IDP golden paths to edge and IoT environments
 - Architect edge-aware self-service tooling and onboarding workflows for edge workloads
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

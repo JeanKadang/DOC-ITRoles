@@ -41,7 +41,7 @@ The Service Management Architect designs comprehensive strategies and architectu
 - Evaluate new service management technologies
 - Provide technical leadership for ITSM initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

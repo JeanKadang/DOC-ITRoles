@@ -43,7 +43,7 @@ The Modern Workplace Engineer administers and supports the organisation's Micros
 - Maintain knowledge base articles and runbooks for M365 operational procedures.
 - Participate in M365 configuration changes following change management processes.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -53,7 +53,7 @@ The Modern Workplace Engineer administers and supports the organisation's Micros
 | Routine compliance and eDiscovery task execution | Risk decisions on external sharing or guest access |
 | Knowledge base and runbook maintenance | Licensing optimisation recommendations |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

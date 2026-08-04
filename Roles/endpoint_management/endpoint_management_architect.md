@@ -43,7 +43,7 @@ The Endpoint Management Architect is responsible for the strategic design, gover
 - Create and maintain reference architectures, design patterns, and technical standards documents.
 - Mentor senior engineers and guide cross-functional teams on endpoint architecture decisions.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Endpoint Management Architect is responsible for the strategic design, gover
 | Integration architecture with Microsoft Entra ID, Defender, and Purview | Application portfolio rationalisation (with App teams) |
 | Endpoint compliance policy framework | Network segmentation impacts of endpoint control changes |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

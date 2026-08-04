@@ -41,7 +41,7 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 - Evaluate new .NET technologies and frameworks
 - Provide technical leadership for .NET initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

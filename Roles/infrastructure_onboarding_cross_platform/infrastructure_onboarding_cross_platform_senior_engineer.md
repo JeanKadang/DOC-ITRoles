@@ -41,7 +41,7 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 - Optimize infrastructure onboarding for speed and reliability
 - Provide technical mentorship to Infrastructure Onboarding Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

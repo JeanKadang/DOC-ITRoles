@@ -41,7 +41,7 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 - Create self-healing mechanisms for backup infrastructure
 - Lead post-incident reviews for backup failures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

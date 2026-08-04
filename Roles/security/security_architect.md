@@ -42,7 +42,7 @@ The Security Architect designs and implements security systems and frameworks th
 - Lead security architecture reviews and risk assessments
 - Collaborate on disaster recovery and business continuity planning
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

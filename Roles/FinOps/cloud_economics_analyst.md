@@ -43,7 +43,7 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 - Support annual cloud budgeting cycles with historical analysis, trend modelling, and scenario planning inputs
 - Continuously improve reporting automation, data pipelines, and dashboard quality to reduce manual effort and increase analytical depth
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -53,7 +53,7 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 | Forecast model design, assumptions documentation, and variance explanation | Budget approval, financial planning targets, and cloud spend governance thresholds |
 | Unit economics model construction and maintenance for assigned products or domains | Product investment decisions, architectural choices with cost implications, and commercial cloud negotiations |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Strong analytical and financial modelling skills, including forecasting, variance analysis, and TCO construction
 - Proficiency in data visualisation tools such as Power BI or Tableau for building stakeholder-ready dashboards and reports
@@ -72,7 +72,7 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 - **Working Knowledge required:** Anodot for cloud cost anomaly detection and spend forecasting, FinOps Foundation Framework cost allocation methodologies and chargeback/showback design patterns
 - **Awareness level expected:** Cloud provider billing APIs (AWS Billing API, Azure Cost Management API, GCP Billing API) for automated data extraction pipelines, FOCUS (FinOps Open Cost and Usage Specification) standard for multi-cloud billing normalisation
 
-## Qualifications
+### Qualifications
 
 - Bachelor's degree in Finance, Business, Economics, Data Analytics, Computer Science, or a related field; equivalent practical experience considered
 - 2+ years of experience in a business analyst, financial analyst, or data analyst role, ideally with cloud cost or IT financial management exposure

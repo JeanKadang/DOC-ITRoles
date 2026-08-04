@@ -43,7 +43,7 @@ The Developer Experience Engineer designs, builds, and operates internal develop
 - Maintain documentation, runbooks, and onboarding guides within the developer portal to support platform self-service adoption.
 - Participate in platform incident response for developer tooling and CI/CD infrastructure availability issues.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

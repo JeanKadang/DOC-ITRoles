@@ -43,7 +43,7 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 - Provide technical leadership for cloud cost anomaly detection
 - Develop integrations between FinOps tools and existing systems
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -53,7 +53,7 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 | FinOps toolchain integrations, tagging enforcement automation, and cost anomaly detection solution design | Product roadmap priorities and FinOps tool procurement decisions |
 | Reserved and committed capacity management methodology and optimisation execution | Financial planning, budget governance, and cloud commitment commercial decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Advanced knowledge of cloud service provider pricing models and optimization techniques
 - Expert-level experience with cloud cost management tools and platforms
@@ -72,7 +72,7 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 - **Working Knowledge required:** Cloud architecture principles across AWS, Azure, and GCP for evaluating the cost impact of design decisions, Machine learning concepts and tooling for cloud cost forecasting and anomaly prediction models
 - **Awareness level expected:** AI/LLM cost governance patterns (token attribution, GPU reservation management, prompt caching cost optimization), FinOps Foundation Framework maturity model and emerging FinOps open standards (FOCUS specification)
 
-## Qualifications
+### Qualifications
 
 - Bachelor's degree in Computer Science, Information Technology, or related field
 - 5+ years of experience in cloud engineering with at least 2 years focusing on FinOps

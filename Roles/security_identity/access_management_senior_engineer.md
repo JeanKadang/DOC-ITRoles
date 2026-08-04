@@ -41,7 +41,7 @@ The Access Management Senior Engineer leads the implementation and optimization 
 - Develop custom access management integrations and extensions
 - Provide technical mentorship to Access Management Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -41,7 +41,7 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 - Establish metrics for measuring platform effectiveness
 - Track and report on platform adoption and value delivery
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

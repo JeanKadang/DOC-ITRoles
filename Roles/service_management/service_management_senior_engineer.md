@@ -41,7 +41,7 @@ The Service Management Senior Engineer leads the implementation and optimization
 - Plan and execute ITSM platform upgrades and migrations
 - Provide technical mentorship to Service Management Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

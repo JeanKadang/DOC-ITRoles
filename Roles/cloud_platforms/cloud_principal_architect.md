@@ -43,7 +43,7 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 - Act as final escalation point for architectural decisions that cannot be resolved at platform or lead level
 - Contribute to and influence industry communities, cloud provider advisory programs, and internal innovation initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

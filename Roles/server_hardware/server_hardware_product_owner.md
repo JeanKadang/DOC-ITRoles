@@ -58,7 +58,7 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 - Total cost of ownership optimization frameworks
 - Physical infrastructure security and compliance tools
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

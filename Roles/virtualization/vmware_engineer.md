@@ -41,7 +41,7 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 - Implement basic automation for repetitive virtualization tasks
 - Document VMware configurations and operational procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

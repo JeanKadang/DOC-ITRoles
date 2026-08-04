@@ -41,7 +41,7 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 - Execute infrastructure as code deployments
 - Document Azure configurations and operational procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

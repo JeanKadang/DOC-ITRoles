@@ -41,7 +41,7 @@ The Service Management Product Owner manages the development and lifecycle of th
 - Manage service catalog and portfolio development
 - Track and report on service performance metrics
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -45,7 +45,7 @@ The SVP of Technology sits above the Product Area Lead (PAL) and Technical Area 
 - Set the tone for technology risk appetite, ensuring the organisation's risk posture is appropriate, transparent, and governed effectively
 - Develop and retain the senior technology leadership team, building succession depth and a high-performance culture across the function
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -98,7 +98,7 @@ The SVP of Technology sits above the Product Area Lead (PAL) and Technical Area 
 | Vendor and partner executive management | Expert |
 | Emerging technology evaluation (AI, data, platforms) | Proficient |
 
-## Qualifications
+### Qualifications
 
 - Degree in Computer Science, Information Technology, Engineering, Business, or a related field; postgraduate qualification (MBA, MSc) advantageous
 - 15+ years of progressive technology leadership experience, with at least 5 years in a senior executive role (CTO, CIO, VP, or SVP level)

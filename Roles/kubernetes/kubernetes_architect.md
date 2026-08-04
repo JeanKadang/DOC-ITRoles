@@ -41,7 +41,7 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 - Ensure Kubernetes platforms meet security, compliance, and performance requirements
 - Define high-level technical roadmaps for Kubernetes infrastructure evolution
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -51,7 +51,7 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 | Container security framework: admission policies, network policies, image scanning standards | Cloud platform selection and underlying infrastructure design |
 | Service mesh strategy, API gateway pattern, and GitOps workflow design | DevOps pipeline design and CI/CD toolchain selection |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

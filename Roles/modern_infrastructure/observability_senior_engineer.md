@@ -42,7 +42,7 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 - Mentor Observability Engineers on advanced techniques
 - Evaluate and prototype new observability tools and approaches
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -52,7 +52,7 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 | Performance optimization, high-cardinality telemetry management, and query efficiency for observability platforms | Application team instrumentation strategy, SLO framework design, and APM adoption |
 | Custom integration development, observability automation frameworks, and anomaly detection implementation | Vendor platform evaluation, AI/ML-driven observability approaches, and platform roadmap |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -98,7 +98,7 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 - Contribution to observability standards and patterns
 - Implementation of innovative monitoring approaches
 
-## Key Technologies & Tools
+## Key Technologies
 
 - Advanced observability platforms (Datadog, New Relic, Dynatrace)
 - Open source monitoring stacks (Prometheus, Grafana, Thanos)

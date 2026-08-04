@@ -46,7 +46,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 - Drive sustainability and carbon footprint optimization alongside cloud cost initiatives
 - Drive cloud cost optimization initiatives across business units
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 | Cost allocation model, chargeback/showback design, tagging taxonomy, and cost optimisation strategy | Business unit spending decisions and financial planning priorities |
 | FinOps practice maturity roadmap and AI/LLM cost governance standards | Reserved capacity and commitment discount commercial negotiation decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 - Deep understanding of cloud service provider pricing models and billing systems
 - Expert knowledge of cloud architecture patterns and cost optimization techniques
@@ -74,7 +74,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 - **Working Knowledge required:** Carbon footprint and sustainability reporting tools (Cloud Carbon Footprint, Azure Carbon Optimization, AWS Customer Carbon Footprint Tool, GCP Carbon Footprint), Enterprise architecture tooling (LeanIX, Sparx EA) for documenting cloud cost governance architecture
 - **Awareness level expected:** FinOps automation and workflow orchestration platforms (Spot Ocean, CAST AI auto-scaling) for emerging optimisation patterns, Technology Business Management (TBM) frameworks and unit economics benchmarking standards
 
-## Qualifications
+### Qualifications
 
 - Bachelor's degree in Computer Science, Information Technology, Finance, or related field
 - 8+ years of IT experience with at least 3 years in cloud cost management
@@ -95,7 +95,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 | Executive leadership | Advises on cloud economics and optimization strategy | Provides To |
 | Cloud engineering teams | Guides teams on cost-efficient architectures | Provides To |
 
-## Key Technologies & Platforms
+## Key Technologies
 
 - Multi-cloud cost management platforms (CloudHealth, Apptio Cloudability, Spot by NetApp)
 - Cloud-native cost tools (AWS Cost Explorer, Azure Cost Management, GCP Billing & Recommender)

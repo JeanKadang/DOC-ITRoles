@@ -41,7 +41,7 @@ The Windows Active Directory Architect designs AD structure, security models, an
 - Develop authentication and authorization frameworks
 - Provide technical leadership for Active Directory initiatives
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

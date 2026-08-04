@@ -45,7 +45,7 @@ The AI Platform Engineer builds and operates the organisation's AI/ML platform i
 - Manage platform costs by implementing resource tagging, auto-scaling, and compute auto-suspend policies.
 - Document ML platform components, runbooks, and onboarding guides for data science teams.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -58,7 +58,7 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 | First-line resolution of escalated client platform tickets within the engineering tier | Patch ring strategy and scheduling (Senior Engineer/Architect-owned) |
 | Accuracy of estate telemetry data hygiene for assigned platforms | Tooling selection and platform strategy |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -88,7 +88,7 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 - **Working Knowledge required:** MSIX packaging basics, macOS .pkg creation, Jamf software update policies, WUfB patch compliance report interpretation, Windows event log and MDM log analysis for troubleshooting
 - **Awareness level expected:** Ansible basics for Linux configuration management, Homebrew cask authoring structure, MSIX Packaging Tool advanced features, CIS Benchmark client hardening concepts, Lenovo System Update and Thin Installer for BIOS/firmware management, Apple Silicon M-series application compatibility (Rosetta 2, Universal Binary)
 
-## Qualifications
+### Qualifications
 
 **Education:** Diploma or Bachelor's degree in IT, Computing, or a related field; or demonstrated equivalent practical experience in a desktop or endpoint support environment.
 

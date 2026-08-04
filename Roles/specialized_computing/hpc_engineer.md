@@ -46,7 +46,7 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 - Provide user training and develop clear documentation
 - Continuously seek opportunities for process and technology improvement
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -44,7 +44,7 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 - Write clear data documentation, data contracts, and field-level lineage descriptions.
 - Participate in data platform design reviews and contribute to standards development.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -55,7 +55,7 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 | Data quality test coverage for owned pipelines | DataOps CI/CD process requirements |
 | Data documentation in the catalogue | Data governance classification decisions |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

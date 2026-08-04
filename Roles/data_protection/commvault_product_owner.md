@@ -43,7 +43,7 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 - Ensure proper documentation of service offerings and capabilities
 - Coordinate version upgrades and new feature implementations
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

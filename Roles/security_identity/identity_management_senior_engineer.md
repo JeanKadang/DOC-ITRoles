@@ -41,7 +41,7 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 - Develop custom identity integrations and connectors
 - Provide technical mentorship to Identity Management Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

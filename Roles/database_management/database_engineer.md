@@ -41,7 +41,7 @@ The Database Engineer implements and maintains database systems across the organ
 - Implement basic database scripts and procedures
 - Document database configurations and operational procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

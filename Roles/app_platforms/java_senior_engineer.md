@@ -41,7 +41,7 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 - Plan and execute Java platform upgrades and migrations
 - Provide technical mentorship to Java Engineers
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

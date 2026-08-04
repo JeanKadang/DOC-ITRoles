@@ -41,7 +41,7 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 - Collaborate on hybrid cloud storage solutions using Qumulo's cloud capabilities
 - Evaluate new Qumulo features and technologies for potential implementation
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

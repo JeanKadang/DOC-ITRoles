@@ -45,7 +45,7 @@ The Data Mesh Architect designs and governs the organisation's data mesh archite
 - Align data mesh architecture with enterprise and cloud architecture standards in collaboration with the Enterprise Architect and Cloud Architect.
 - Define AI data product standards in coordination with the AI Governance Architect — ensuring ML training datasets, feature datasets, and inference outputs meet traceability and quality requirements.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

@@ -67,7 +67,7 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 | Trade-off decisions between feature work, technical debt, and operational stability within the backlog | Budget envelope and headcount (Chapter Lead-owned) |
 | Rollout sequencing and communication plans for user-facing platform changes | UEM policy detail and endpoint security tooling (Endpoint Management/Security-owned) |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -95,7 +95,7 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 - **Working Knowledge required:** Windows Update for Business compliance concepts, Jamf Pro reporting basics, Microsoft Intune device compliance overview, agile ceremonies and delivery metrics (velocity, cycle time, lead time)
 - **Awareness level expected:** OS image build concepts (WIM, DISM, task sequences), zero-touch provisioning workflows (Autopilot, ABM), application packaging formats (MSIX, .pkg, .deb), CIS benchmark hardening concepts
 
-## Qualifications
+### Qualifications
 
 **Education:** Bachelor's degree in Business, Information Technology, or a related field; or equivalent professional experience in a product ownership or IT programme management role.
 

@@ -41,7 +41,7 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 - Implement basic storage automation and scripting
 - Document storage configurations and operational procedures
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

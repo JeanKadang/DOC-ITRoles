@@ -43,7 +43,7 @@ The Cloud Security Posture Manager implements and operates Cloud Security Postur
 - Assess the security posture impact of proposed cloud architecture changes, providing input to cloud platform teams during design and review.
 - Monitor CSPM tooling cost with FinOps team and ensure platform coverage remains cost-efficient and within agreed budgets.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 

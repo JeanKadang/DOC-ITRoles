@@ -44,7 +44,7 @@ The Modern Workplace Architect is responsible for designing, governing, and evol
 - Create and maintain M365 architecture documentation, governance frameworks, and standards.
 - Mentor M365 senior engineers and provide technical governance.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Modern Workplace Architect is responsible for designing, governing, and evol
 | SharePoint information architecture and permissions model | Licensing strategy and commercial decisions (with Procurement) |
 | M365 Copilot readiness and deployment architecture | Change management and end-user training strategy |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 

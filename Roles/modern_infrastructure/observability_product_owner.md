@@ -41,7 +41,7 @@ The Observability Product Owner manages the observability platform portfolio, de
 - Coordinate platform adoption and enablement initiatives
 - Track and report on observability platform value and metrics
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -51,7 +51,7 @@ The Observability Product Owner manages the observability platform portfolio, de
 | Acceptance criteria and delivery scope for monitoring, alerting, and logging platform capabilities | Enterprise ITSM strategy and incident management integration approach |
 | Platform adoption strategy and team onboarding program design | Organization-wide SLO governance framework and reliability measurement standards |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
@@ -97,7 +97,7 @@ The Observability Product Owner manages the observability platform portfolio, de
 - Effectiveness of observability in improving system reliability
 - Clear demonstration of platform value to the business
 
-## Key Technologies & Tools
+## Key Technologies
 
 - Enterprise observability platforms (Datadog, New Relic, Dynatrace)
 - Open-source monitoring stacks (Prometheus, Grafana)

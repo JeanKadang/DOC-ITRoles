@@ -45,7 +45,7 @@ The Endpoint Management Senior Engineer designs, implements, and maintains compl
 - Mentor junior engineers and contribute to team knowledge base and runbooks.
 - Participate in change management processes and ensure endpoint changes are properly documented.
 
-## Key Decisions and Accountabilities
+## Key Decisions & Accountabilities
 
 > Clarifies what this role **owns** (decides independently) vs. **advises on** (input without final authority).
 
@@ -56,7 +56,7 @@ The Endpoint Management Senior Engineer designs, implements, and maintains compl
 | Intune scripting and automation solutions | Co-management workload migration timeline |
 | Patch ring design and testing | Licensing and tooling procurement |
 
-## Required Skills
+## Required Skills & Qualifications
 
 **Technical Skills:**
 
