@@ -521,6 +521,17 @@
             cursor: pointer;
         }
         .career-stepper .cs-chip[data-file]:hover { background: var(--bg-card-hover); text-decoration: underline; }
+
+        /* Resolvable role names inside the Interactions table (#120) */
+        .role-xref {
+            color: var(--accent-blue);
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-underline-offset: 3px;
+        }
+        .role-xref:hover, .role-xref:focus-visible { text-decoration-style: solid; }
+        @media print { .role-xref { color: inherit; text-decoration: none; } }
         .career-stepper .cs-current {
             padding: 3px 12px;
             border-radius: 20px;
@@ -1221,6 +1232,7 @@
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
+        findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
 
     // ── State ───────────────────────────────────────────
@@ -2322,13 +2334,10 @@
     // Development Path section. Steps whose text exactly matches a catalog
     // role title (case-insensitive) become keyboard-operable links that
     // open that role; the rest render as plain chips.
+    // Resolution (plural/parenthetical normalisation) lives in
+    // viewer-logic.js under test; this just binds it to the loaded catalog.
     function findRoleByTitle(title) {
-        const t = title.trim().toLowerCase();
-        for (const d of Object.values(allDomains)) {
-            const hit = d.roles.find(r => r.title.trim().toLowerCase() === t);
-            if (hit) return { ...hit, domainLabel: d.label };
-        }
-        return null;
+        return resolveRoleTitle(title, allDomains);
     }
 
     function renderCareerStepper(markdown, currentTitle) {
@@ -2352,6 +2361,42 @@
             <span class="cs-arrow" aria-hidden="true">→</span>
             <span class="cs-group"><span class="cs-label">To</span>${to.map(chip).join('')}</span>`;
         el.hidden = false;
+    }
+
+    // Link the role names in the "Interactions with Other Roles" table.
+    // The section renders as plain Markdown, so until #120 every name in it
+    // was dead text even when the catalog defined that role. Resolution
+    // (plurals, parentheticals) is handled by viewer-logic's findRoleByTitle;
+    // anything that does not resolve — "Business Leaders", "delivery teams",
+    // vendor contacts — is left as text on purpose.
+    function linkInteractionRoles(container, currentTitle) {
+        if (!container) return;
+        for (const h2 of container.querySelectorAll('h2')) {
+            if (!/^Interactions with Other Roles/i.test(h2.textContent.trim())) continue;
+            let el = h2.nextElementSibling;
+            while (el && el.tagName !== 'TABLE' && el.tagName !== 'H2') el = el.nextElementSibling;
+            if (!el || el.tagName !== 'TABLE') break;
+            for (const row of el.querySelectorAll('tbody tr')) {
+                const cell = row.cells[0];
+                if (!cell) continue;
+                const raw = cell.textContent.trim().replace(/:$/, '').trim();
+                const hit = findRoleByTitle(raw);
+                if (!hit || hit.title === currentTitle) continue;
+                const a = document.createElement('span');
+                a.className = 'role-xref';
+                a.setAttribute('role', 'button');
+                a.tabIndex = 0;
+                a.dataset.file   = hit.file;
+                a.dataset.title  = hit.title;
+                a.dataset.level  = hit.level;
+                a.dataset.domain = hit.domainLabel;
+                a.title = `Open ${hit.title}`;
+                a.textContent = cell.textContent.trim();
+                cell.textContent = '';
+                cell.appendChild(a);
+            }
+            break;
+        }
     }
 
     // ── Shared: build role header HTML ───────────────────
@@ -2420,6 +2465,7 @@
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
             document.getElementById('roleBody').innerHTML = renderMarkdown(body);
+            linkInteractionRoles(document.getElementById('roleBody'), title);
             renderCareerStepper(markdown, title);
             document.getElementById('mainArea').scrollTop = 0;
 
@@ -2459,6 +2505,7 @@
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
             document.getElementById('roleBody2').innerHTML = renderMarkdown(body);
+            linkInteractionRoles(document.getElementById('roleBody2'), title);
 
         } catch {
             document.getElementById('roleBody2').innerHTML =
@@ -2934,6 +2981,15 @@
         const chipEl = e.target.closest('.cs-chip[data-file]');
         if (!chipEl) return;
         openRole(chipEl.dataset.file, chipEl.dataset.title, chipEl.dataset.level, chipEl.dataset.domain);
+    });
+
+    // ── Interactions-table cross-reference clicks (#120) ──
+    // One delegated listener covers both the main and comparison columns,
+    // including content re-rendered on every role open.
+    document.getElementById('rolesGrid').addEventListener('click', e => {
+        const x = e.target.closest('.role-xref[data-file]');
+        if (!x) return;
+        openRole(x.dataset.file, x.dataset.title, x.dataset.level, x.dataset.domain);
     });
 
     // ── Org list-fallback clicks (single delegated listener) ─

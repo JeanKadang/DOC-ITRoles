@@ -468,6 +468,40 @@
         return stack.join('/');
     }
 
+    // Reduce a role name to a comparison key. Career-path and interaction
+    // prose names roles the way English does — plural for a group
+    // ("Security Engineers"), or with a parenthetical qualifier
+    // ("Enterprise Architect (AI governance domain)") — while catalog H1
+    // titles are singular and mostly unqualified. Exact matching misses
+    // every one of those, leaving the reference as dead text (#120).
+    //
+    // Deliberately conservative: case, punctuation, a trailing
+    // parenthetical, and a trailing plural only. No fuzzy or token-overlap
+    // matching — a near-miss that resolves to the wrong role is worse than
+    // one that stays unlinked.
+    function roleTitleKey(name) {
+        return String(name == null ? '' : name)
+            .replace(/\s*\([^)]*\)\s*$/, '')
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '')
+            .replace(/s$/, '');
+    }
+
+    // Find the catalog role a prose name refers to, or null when the
+    // catalog does not define it. Aspirational career exits ("Chief
+    // Architect", "VP of Engineering") legitimately return null and must
+    // stay unlinked.
+    function findRoleByTitle(title, domains) {
+        const want = roleTitleKey(title);
+        if (!want) return null;
+        for (const d of Object.values(domains || {})) {
+            for (const r of (d.roles || [])) {
+                if (roleTitleKey(r.title) === want) return { ...r, domainLabel: d.label };
+            }
+        }
+        return null;
+    }
+
     return {
         STALE_MONTHS,
         REFERENCE_DOC_PATTERN,
@@ -487,5 +521,7 @@
         parseMobilityPaths,
         parseCareerPath,
         resolveDocHref,
+        roleTitleKey,
+        findRoleByTitle,
     };
 });
