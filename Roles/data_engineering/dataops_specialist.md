@@ -81,10 +81,29 @@ The DataOps Specialist applies DevOps and agile engineering principles to data p
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** dbt (project structure, schema and singular tests, custom generic tests, documentation, and deployment strategies), data pipeline CI/CD (GitHub Actions or GitLab CI — templating, environment promotion, and automated testing gates), Apache Airflow or Dagster (DAG authoring, operators, sensors, connection management, and platform administration)
-- **Proficient level required:** Data quality frameworks (Great Expectations — expectations, checkpoints, and data docs; Soda — checks YAML and SLA monitoring), data observability platforms (Monte Carlo or Bigeye — automated anomaly detection and SLA breach alerting), Apache Spark and Databricks (large-scale batch and streaming pipeline development and optimisation)
-- **Working Knowledge required:** Terraform (data infrastructure provisioning for Databricks clusters, Spark jobs, and orchestration platforms), OpenLineage or Marquez (data lineage capture and end-to-end traceability), Delta Lake or Apache Iceberg (lakehouse table format operations for pipeline incident management)
-- **Awareness level expected:** AI-assisted data quality anomaly detection tooling, real-time streaming pipeline reliability patterns (Kafka/Flink), ML feature engineering pipeline orchestration and reliability alignment
+**Expert level required:**
+
+- dbt (project structure, schema and singular tests, custom generic tests, documentation, and deployment strategies)
+- data pipeline CI/CD (GitHub Actions or GitLab CI — templating, environment promotion, and automated testing gates)
+- Apache Airflow or Dagster (DAG authoring, operators, sensors, connection management, and platform administration)
+
+**Proficient level required:**
+
+- Data quality frameworks (Great Expectations — expectations, checkpoints, and data docs; Soda — checks YAML and SLA monitoring)
+- data observability platforms (Monte Carlo or Bigeye — automated anomaly detection and SLA breach alerting)
+- Apache Spark and Databricks (large-scale batch and streaming pipeline development and optimisation)
+
+**Working Knowledge required:**
+
+- Terraform (data infrastructure provisioning for Databricks clusters, Spark jobs, and orchestration platforms)
+- OpenLineage or Marquez (data lineage capture and end-to-end traceability)
+- Delta Lake or Apache Iceberg (lakehouse table format operations for pipeline incident management)
+
+**Awareness level expected:**
+
+- AI-assisted data quality anomaly detection tooling
+- real-time streaming pipeline reliability patterns (Kafka/Flink)
+- ML feature engineering pipeline orchestration and reliability alignment
 
 ## Interactions with Other Roles
 

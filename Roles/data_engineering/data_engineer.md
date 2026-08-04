@@ -77,10 +77,29 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Python and SQL (data pipeline development and complex transformation logic), dbt (transformation model development, testing strategies, and documentation), cloud data platforms (Databricks, Snowflake, BigQuery, or Azure Synapse — production pipeline development and optimisation)
-- **Proficient level required:** Apache Spark/PySpark (large-scale data processing and batch pipeline development), Apache Airflow or Dagster (pipeline orchestration, DAG design, and dependency management), data quality frameworks (dbt tests, Great Expectations, or Soda)
-- **Working Knowledge required:** Delta Lake or Apache Iceberg (lakehouse table formats, partitioning strategies, and compaction operations), REST API and JDBC-based ingestion pipeline development, data catalogue tooling (Databricks Unity Catalog or DataHub — lineage and documentation)
-- **Awareness level expected:** Kafka-based streaming ingestion patterns, Data Vault 2.0 modelling concepts, AI-assisted data engineering tools (GitHub Copilot for pipeline scaffolding)
+**Expert level required:**
+
+- Python and SQL (data pipeline development and complex transformation logic)
+- dbt (transformation model development, testing strategies, and documentation)
+- cloud data platforms (Databricks, Snowflake, BigQuery, or Azure Synapse — production pipeline development and optimisation)
+
+**Proficient level required:**
+
+- Apache Spark/PySpark (large-scale data processing and batch pipeline development)
+- Apache Airflow or Dagster (pipeline orchestration, DAG design, and dependency management)
+- data quality frameworks (dbt tests, Great Expectations, or Soda)
+
+**Working Knowledge required:**
+
+- Delta Lake or Apache Iceberg (lakehouse table formats, partitioning strategies, and compaction operations)
+- REST API and JDBC-based ingestion pipeline development
+- data catalogue tooling (Databricks Unity Catalog or DataHub — lineage and documentation)
+
+**Awareness level expected:**
+
+- Kafka-based streaming ingestion patterns
+- Data Vault 2.0 modelling concepts
+- AI-assisted data engineering tools (GitHub Copilot for pipeline scaffolding)
 
 ## Interactions with Other Roles
 

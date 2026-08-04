@@ -80,10 +80,29 @@ The Data Platform Engineer builds, maintains, and optimises the shared data plat
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Databricks (Delta Lake, Unity Catalog, Workflows, cluster management, and workspace administration), Apache Spark/PySpark (job development, performance tuning, and large-scale transformation workloads), Terraform (infrastructure-as-code provisioning for data platform resources — storage, compute, and Kafka clusters)
-- **Proficient level required:** Delta Lake or Apache Iceberg (ACID transactions, time travel, OPTIMIZE, ZORDER, and VACUUM operations), dbt (transformation framework development, model testing, and deployment pipeline integration), managed ingestion platforms (Azure Data Factory, AWS Glue, or GCP Dataflow)
-- **Working Knowledge required:** Streaming data ingestion (Apache Kafka, Azure Event Hubs, or AWS Kinesis — platform-layer ingestion patterns), Python for Spark job scripting and pipeline automation, cloud platform fundamentals (Azure/AWS/GCP — data storage, compute, and networking)
-- **Awareness level expected:** Data mesh self-serve infrastructure patterns for domain data product enablement, AI/ML platform integration points for training data access patterns, data platform cost optimisation strategies (spot instances, auto-suspend, and storage tiering)
+**Expert level required:**
+
+- Databricks (Delta Lake, Unity Catalog, Workflows, cluster management, and workspace administration)
+- Apache Spark/PySpark (job development, performance tuning, and large-scale transformation workloads)
+- Terraform (infrastructure-as-code provisioning for data platform resources — storage, compute, and Kafka clusters)
+
+**Proficient level required:**
+
+- Delta Lake or Apache Iceberg (ACID transactions, time travel, OPTIMIZE, ZORDER, and VACUUM operations)
+- dbt (transformation framework development, model testing, and deployment pipeline integration)
+- managed ingestion platforms (Azure Data Factory, AWS Glue, or GCP Dataflow)
+
+**Working Knowledge required:**
+
+- Streaming data ingestion (Apache Kafka, Azure Event Hubs, or AWS Kinesis — platform-layer ingestion patterns)
+- Python for Spark job scripting and pipeline automation
+- cloud platform fundamentals (Azure/AWS/GCP — data storage, compute, and networking)
+
+**Awareness level expected:**
+
+- Data mesh self-serve infrastructure patterns for domain data product enablement
+- AI/ML platform integration points for training data access patterns
+- data platform cost optimisation strategies (spot instances, auto-suspend, and storage tiering)
 
 ## Interactions with Other Roles
 

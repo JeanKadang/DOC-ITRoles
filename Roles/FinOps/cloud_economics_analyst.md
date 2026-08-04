@@ -67,10 +67,23 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Power BI for cloud cost dashboards, chargeback reports, and scheduled stakeholder reporting (including RLS-based multi-tenant views), Microsoft Excel for financial modelling, TCO templates, and budget variance workbooks, AWS Cost and Usage Report (CUR), Azure Cost Management exports, and GCP BigQuery Billing Export for multi-cloud billing data analysis, SQL (Azure Synapse Analytics, Google BigQuery, Amazon Athena) for billing data querying, transformation, and aggregation
-- **Proficient level required:** Tableau for executive visualisation and self-service cloud cost analytics portals, Python (Pandas, Matplotlib) for analytical scripting, billing pipeline automation, and ad hoc analysis, Apptio for IT financial management, TBM taxonomy, and cloud cost analytics
-- **Working Knowledge required:** Anodot for cloud cost anomaly detection and spend forecasting, FinOps Foundation Framework cost allocation methodologies and chargeback/showback design patterns
-- **Awareness level expected:** Cloud provider billing APIs (AWS Billing API, Azure Cost Management API, GCP Billing API) for automated data extraction pipelines, FOCUS (FinOps Open Cost and Usage Specification) standard for multi-cloud billing normalisation
+**Expert level required:**
+
+- Power BI for cloud cost dashboards, chargeback reports, and scheduled stakeholder reporting (including RLS-based multi-tenant views), Microsoft Excel for financial modelling, TCO templates, and budget variance workbooks, AWS Cost and Usage Report (CUR), Azure Cost Management exports, and GCP BigQuery Billing Export for multi-cloud billing data analysis, SQL (Azure Synapse Analytics, Google BigQuery, Amazon Athena) for billing data querying, transformation, and aggregation
+
+**Proficient level required:**
+
+- Tableau for executive visualisation and self-service cloud cost analytics portals, Python (Pandas, Matplotlib) for analytical scripting, billing pipeline automation, and ad hoc analysis, Apptio for IT financial management, TBM taxonomy, and cloud cost analytics
+
+**Working Knowledge required:**
+
+- Anodot for cloud cost anomaly detection and spend forecasting
+- FinOps Foundation Framework cost allocation methodologies and chargeback/showback design patterns
+
+**Awareness level expected:**
+
+- Cloud provider billing APIs (AWS Billing API, Azure Cost Management API, GCP Billing API) for automated data extraction pipelines
+- FOCUS (FinOps Open Cost and Usage Specification) standard for multi-cloud billing normalisation
 
 ### Qualifications
 

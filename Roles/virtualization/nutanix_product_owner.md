@@ -64,10 +64,27 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Nutanix HCI platform capabilities, licensing models, and strategic roadmap management, Jira and Confluence for agile backlog management, sprint planning, and stakeholder communication, Nutanix Prism Central product features and service catalog governance, Nutanix node licensing and NX/third-party hardware cost management
-- **Proficient level required:** Nutanix Beam for multi-cloud cost governance and utilisation chargeback reporting, Nutanix AOS upgrade and lifecycle management at programme planning level, Capacity planning and resource utilisation dashboards in Prism Central, Stakeholder-facing reporting and HCI service KPI tracking tools
-- **Working Knowledge required:** Nutanix Calm and automation capabilities for self-service provisioning design, Nutanix Flow microsegmentation and security policy management at governance level, Nutanix Clusters on public clouds for hybrid workload placement decisions
-- **Awareness level expected:** Nutanix Frame desktop-as-a-service capabilities and competitive positioning, Competitive HCI landscape (VMware vSAN, Azure Stack HCI, HPE SimpliVity) for market context
+**Expert level required:**
+
+- Nutanix HCI platform capabilities, licensing models, and strategic roadmap management, Jira and Confluence for agile backlog management, sprint planning, and stakeholder communication, Nutanix Prism Central product features and service catalog governance, Nutanix node licensing and NX/third-party hardware cost management
+
+**Proficient level required:**
+
+- Nutanix Beam for multi-cloud cost governance and utilisation chargeback reporting
+- Nutanix AOS upgrade and lifecycle management at programme planning level
+- Capacity planning and resource utilisation dashboards in Prism Central
+- Stakeholder-facing reporting and HCI service KPI tracking tools
+
+**Working Knowledge required:**
+
+- Nutanix Calm and automation capabilities for self-service provisioning design
+- Nutanix Flow microsegmentation and security policy management at governance level
+- Nutanix Clusters on public clouds for hybrid workload placement decisions
+
+**Awareness level expected:**
+
+- Nutanix Frame desktop-as-a-service capabilities and competitive positioning
+- Competitive HCI landscape (VMware vSAN, Azure Stack HCI, HPE SimpliVity) for market context
 
 ## Interactions with Other Roles
 

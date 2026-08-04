@@ -64,10 +64,28 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Terraform/Ansible (infrastructure automation), ServiceNow (ITSM/service catalog), Azure DevOps/Jenkins (CI/CD)
-- **Proficient level required:** Windows Server/Linux administration, Azure (IaaS), workflow automation platforms
-- **Working Knowledge required:** API integration frameworks, infrastructure monitoring (Azure Monitor), CMDB management
-- **Awareness level expected:** Kubernetes, infrastructure governance frameworks
+**Expert level required:**
+
+- Terraform/Ansible (infrastructure automation)
+- ServiceNow (ITSM/service catalog)
+- Azure DevOps/Jenkins (CI/CD)
+
+**Proficient level required:**
+
+- Windows Server/Linux administration
+- Azure (IaaS)
+- workflow automation platforms
+
+**Working Knowledge required:**
+
+- API integration frameworks
+- infrastructure monitoring (Azure Monitor)
+- CMDB management
+
+**Awareness level expected:**
+
+- Kubernetes
+- infrastructure governance frameworks
 
 ## Interactions with Other Roles
 

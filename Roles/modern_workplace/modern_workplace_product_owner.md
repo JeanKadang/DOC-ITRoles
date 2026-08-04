@@ -73,10 +73,30 @@ The Modern Workplace Product Owner (PO) owns the vision, roadmap, and delivery b
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft 365 platform concepts and roadmap (Exchange, Teams, SharePoint, Purview, Copilot), Jira/Azure DevOps product backlog management, Microsoft 365 Adoption Score and usage analytics
-- **Proficient level required:** Microsoft 365 Copilot adoption and readiness frameworks, M365 licensing tiers (E3, E5, Copilot add-ons), Microsoft Purview compliance governance concepts, Microsoft FastTrack and TAM engagement
-- **Working Knowledge required:** Power BI for M365 reporting, Microsoft Viva suite (Insights, Engage, Topics), change management frameworks for digital adoption (Prosci/ADKAR)
-- **Awareness level expected:** AI-powered workplace features (Copilot, Loop, Places), Power Platform capabilities for workplace automation, Microsoft Teams Rooms and hybrid meeting technology
+**Expert level required:**
+
+- Microsoft 365 platform concepts and roadmap (Exchange, Teams, SharePoint, Purview, Copilot)
+- Jira/Azure DevOps product backlog management
+- Microsoft 365 Adoption Score and usage analytics
+
+**Proficient level required:**
+
+- Microsoft 365 Copilot adoption and readiness frameworks
+- M365 licensing tiers (E3, E5, Copilot add-ons)
+- Microsoft Purview compliance governance concepts
+- Microsoft FastTrack and TAM engagement
+
+**Working Knowledge required:**
+
+- Power BI for M365 reporting
+- Microsoft Viva suite (Insights, Engage, Topics)
+- change management frameworks for digital adoption (Prosci/ADKAR)
+
+**Awareness level expected:**
+
+- AI-powered workplace features (Copilot, Loop, Places)
+- Power Platform capabilities for workplace automation
+- Microsoft Teams Rooms and hybrid meeting technology
 
 ## Interactions with Other Roles
 

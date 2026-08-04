@@ -89,10 +89,28 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Server hardware lifecycle management platforms, Jira / Azure DevOps (backlog and roadmap management)
-- **Proficient level required:** Capacity planning and resource allocation tools, TCO optimization frameworks, hardware vendor management (Dell, HPE, Cisco)
-- **Working Knowledge required:** Server provisioning automation tools, DCIM platforms, power management and optimization technologies
-- **Awareness level expected:** Composable and disaggregated infrastructure trends, as-a-service hardware models (HPE GreenLake, Dell APEX), sustainable computing and green data center standards
+**Expert level required:**
+
+- Server hardware lifecycle management platforms
+- Jira / Azure DevOps (backlog and roadmap management)
+
+**Proficient level required:**
+
+- Capacity planning and resource allocation tools
+- TCO optimization frameworks
+- hardware vendor management (Dell, HPE, Cisco)
+
+**Working Knowledge required:**
+
+- Server provisioning automation tools
+- DCIM platforms
+- power management and optimization technologies
+
+**Awareness level expected:**
+
+- Composable and disaggregated infrastructure trends
+- as-a-service hardware models (HPE GreenLake, Dell APEX)
+- sustainable computing and green data center standards
 
 ## Interactions with Other Roles
 

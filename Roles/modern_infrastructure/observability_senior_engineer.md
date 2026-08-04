@@ -74,10 +74,24 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Prometheus, Grafana, and Thanos for advanced metrics collection, long-term storage, and SLO dashboarding, OpenTelemetry SDK and Collector for multi-signal distributed tracing and instrumentation, SLO/SLI implementation and error budget management for business-critical services, Datadog, Dynatrace, or New Relic for full-stack APM and enterprise observability
-- **Proficient level required:** Elastic Stack (Elasticsearch, Loki, Splunk) for advanced log aggregation and correlation analysis, Jaeger and Zipkin for distributed trace analysis in microservice architectures, Alertmanager, PagerDuty, and OpsGenie for advanced on-call routing and alert deduplication, Service mesh observability with Istio and Linkerd telemetry integration
-- **Working Knowledge required:** AI/ML-based anomaly detection and intelligent alerting systems, Observability-as-code frameworks and IaC tooling for telemetry configuration, Real-time analytics platforms for high-cardinality telemetry data processing
-- **Awareness level expected:** eBPF-based continuous profiling tools (Parca, Pyroscope), OpenTelemetry emerging signals (profiling, events)
+**Expert level required:**
+
+- Prometheus, Grafana, and Thanos for advanced metrics collection, long-term storage, and SLO dashboarding, OpenTelemetry SDK and Collector for multi-signal distributed tracing and instrumentation, SLO/SLI implementation and error budget management for business-critical services, Datadog, Dynatrace, or New Relic for full-stack APM and enterprise observability
+
+**Proficient level required:**
+
+- Elastic Stack (Elasticsearch, Loki, Splunk) for advanced log aggregation and correlation analysis, Jaeger and Zipkin for distributed trace analysis in microservice architectures, Alertmanager, PagerDuty, and OpsGenie for advanced on-call routing and alert deduplication, Service mesh observability with Istio and Linkerd telemetry integration
+
+**Working Knowledge required:**
+
+- AI/ML-based anomaly detection and intelligent alerting systems
+- Observability-as-code frameworks and IaC tooling for telemetry configuration
+- Real-time analytics platforms for high-cardinality telemetry data processing
+
+**Awareness level expected:**
+
+- eBPF-based continuous profiling tools (Parca, Pyroscope)
+- OpenTelemetry emerging signals (profiling, events)
 
 ## Interactions with Other Roles
 

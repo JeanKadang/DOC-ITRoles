@@ -64,10 +64,27 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Nutanix AOS and AHV hypervisor at advanced configuration, performance tuning, and cluster optimisation level, Nutanix Prism Central multi-cluster management, automation, and advanced policy design, Nutanix Flow network security advanced microsegmentation and policy design, Nutanix Calm blueprint development and application lifecycle automation
-- **Proficient level required:** Nutanix Files and Objects advanced storage configuration and troubleshooting, Nutanix Era database-as-a-service implementation and lifecycle management, Nutanix Karbon Kubernetes platform deployment and operations, Nutanix Foundation for large-scale automated cluster deployments and expansions
-- **Working Knowledge required:** Nutanix Beam for cloud cost governance and resource optimisation reporting, Nutanix Mine for backup integration and data protection policy management, Nutanix Clusters on public clouds (AWS, Azure, GCP) for hybrid workload operations
-- **Awareness level expected:** Nutanix Frame desktop-as-a-service capabilities and use cases, Nutanix GPT-in-a-Box and AI/ML workload acceleration features
+**Expert level required:**
+
+- Nutanix AOS and AHV hypervisor at advanced configuration, performance tuning, and cluster optimisation level, Nutanix Prism Central multi-cluster management, automation, and advanced policy design, Nutanix Flow network security advanced microsegmentation and policy design, Nutanix Calm blueprint development and application lifecycle automation
+
+**Proficient level required:**
+
+- Nutanix Files and Objects advanced storage configuration and troubleshooting
+- Nutanix Era database-as-a-service implementation and lifecycle management
+- Nutanix Karbon Kubernetes platform deployment and operations
+- Nutanix Foundation for large-scale automated cluster deployments and expansions
+
+**Working Knowledge required:**
+
+- Nutanix Beam for cloud cost governance and resource optimisation reporting
+- Nutanix Mine for backup integration and data protection policy management
+- Nutanix Clusters on public clouds (AWS, Azure, GCP) for hybrid workload operations
+
+**Awareness level expected:**
+
+- Nutanix Frame desktop-as-a-service capabilities and use cases
+- Nutanix GPT-in-a-Box and AI/ML workload acceleration features
 
 ## Interactions with Other Roles
 

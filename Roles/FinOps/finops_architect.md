@@ -69,10 +69,28 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Multi-cloud cost management platforms (CloudHealth, Apptio Cloudability, Spot by NetApp) for governance and optimisation architecture, Cloud financial governance frameworks (FinOps Foundation Framework v2, FOCUS cost allocation standard), Cloud-native cost tools (AWS Cost Explorer, Azure Cost Management, GCP Billing & Recommender) for authoritative cost data, Showback/chargeback and cost allocation platform design including tagging taxonomy and allocation key definition
-- **Proficient level required:** Cloud resource optimization platforms (Densify, Turbonomic, CAST AI) for rightsizing and workload placement architecture, Infrastructure as Code cost estimation (Infracost) for shift-left cost governance integration into CI/CD pipelines, AI/LLM cost governance (token attribution, GPU reservation vs. spot cost modelling, prompt caching optimisation)
-- **Working Knowledge required:** Carbon footprint and sustainability reporting tools (Cloud Carbon Footprint, Azure Carbon Optimization, AWS Customer Carbon Footprint Tool, GCP Carbon Footprint), Enterprise architecture tooling (LeanIX, Sparx EA) for documenting cloud cost governance architecture
-- **Awareness level expected:** FinOps automation and workflow orchestration platforms (Spot Ocean, CAST AI auto-scaling) for emerging optimisation patterns, Technology Business Management (TBM) frameworks and unit economics benchmarking standards
+**Expert level required:**
+
+- Multi-cloud cost management platforms (CloudHealth, Apptio Cloudability, Spot by NetApp) for governance and optimisation architecture
+- Cloud financial governance frameworks (FinOps Foundation Framework v2, FOCUS cost allocation standard)
+- Cloud-native cost tools (AWS Cost Explorer, Azure Cost Management, GCP Billing & Recommender) for authoritative cost data
+- Showback/chargeback and cost allocation platform design including tagging taxonomy and allocation key definition
+
+**Proficient level required:**
+
+- Cloud resource optimization platforms (Densify, Turbonomic, CAST AI) for rightsizing and workload placement architecture
+- Infrastructure as Code cost estimation (Infracost) for shift-left cost governance integration into CI/CD pipelines
+- AI/LLM cost governance (token attribution, GPU reservation vs. spot cost modelling, prompt caching optimisation)
+
+**Working Knowledge required:**
+
+- Carbon footprint and sustainability reporting tools (Cloud Carbon Footprint, Azure Carbon Optimization, AWS Customer Carbon Footprint Tool, GCP Carbon Footprint)
+- Enterprise architecture tooling (LeanIX, Sparx EA) for documenting cloud cost governance architecture
+
+**Awareness level expected:**
+
+- FinOps automation and workflow orchestration platforms (Spot Ocean, CAST AI auto-scaling) for emerging optimisation patterns
+- Technology Business Management (TBM) frameworks and unit economics benchmarking standards
 
 ### Qualifications
 

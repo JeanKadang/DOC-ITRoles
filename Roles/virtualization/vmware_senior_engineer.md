@@ -72,10 +72,27 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** VMware vSphere (ESXi 7.0/8.0, vCenter Server) at advanced configuration, cluster design, and performance optimisation level, VMware vSAN storage design, deduplication, compression, and performance tuning, VMware NSX-T software-defined networking and microsegmentation implementation, PowerCLI scripting and automation for vSphere operational management and bulk tasks
-- **Proficient level required:** VMware Site Recovery Manager (SRM) and vSphere Replication for DR implementation and failover testing, VMware vRealize Operations (Aria Operations) and Log Insight for performance management, VMware Cloud Foundation (VCF) lifecycle management and SDDC upgrade procedures, VMware Aria Suite for infrastructure automation and orchestration
-- **Working Knowledge required:** VMware Tanzu for Kubernetes workload management and integration, VMware HCX for workload mobility and cloud migration workflows, vRealize Orchestrator for complex multi-step workflow automation
-- **Awareness level expected:** Broadcom VMware product consolidation and licensing changes impact on platform strategy, Emerging cloud-native alternatives and Azure VMware Solution integration patterns
+**Expert level required:**
+
+- VMware vSphere (ESXi 7.0/8.0, vCenter Server) at advanced configuration, cluster design, and performance optimisation level, VMware vSAN storage design, deduplication, compression, and performance tuning, VMware NSX-T software-defined networking and microsegmentation implementation, PowerCLI scripting and automation for vSphere operational management and bulk tasks
+
+**Proficient level required:**
+
+- VMware Site Recovery Manager (SRM) and vSphere Replication for DR implementation and failover testing
+- VMware vRealize Operations (Aria Operations) and Log Insight for performance management
+- VMware Cloud Foundation (VCF) lifecycle management and SDDC upgrade procedures
+- VMware Aria Suite for infrastructure automation and orchestration
+
+**Working Knowledge required:**
+
+- VMware Tanzu for Kubernetes workload management and integration
+- VMware HCX for workload mobility and cloud migration workflows
+- vRealize Orchestrator for complex multi-step workflow automation
+
+**Awareness level expected:**
+
+- Broadcom VMware product consolidation and licensing changes impact on platform strategy
+- Emerging cloud-native alternatives and Azure VMware Solution integration patterns
 
 ## Interactions with Other Roles
 

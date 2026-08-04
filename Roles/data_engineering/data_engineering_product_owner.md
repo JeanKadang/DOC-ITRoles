@@ -74,10 +74,29 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Data engineering backlog and sprint management (Jira, Azure DevOps), data platform roadmap governance and CDO stakeholder communication, data product SLA and quality threshold definition
-- **Proficient level required:** Databricks/Snowflake/BigQuery (platform familiarity for FinOps and adoption decisions), dbt Cloud usage dashboards and adoption metrics, data quality and observability tool reporting (Monte Carlo, Soda)
-- **Working Knowledge required:** Data catalogue tools (Databricks Unity Catalog, Collibra, DataHub — governance reporting level), data governance concepts (lineage, classification, data mesh), Power BI/Tableau for platform analytics
-- **Awareness level expected:** MLOps and AI feature pipeline concepts, streaming data platform concepts (Kafka, Kinesis), emerging data lakehouse technologies (Apache Iceberg, Apache Hudi)
+**Expert level required:**
+
+- Data engineering backlog and sprint management (Jira, Azure DevOps)
+- data platform roadmap governance and CDO stakeholder communication
+- data product SLA and quality threshold definition
+
+**Proficient level required:**
+
+- Databricks/Snowflake/BigQuery (platform familiarity for FinOps and adoption decisions)
+- dbt Cloud usage dashboards and adoption metrics
+- data quality and observability tool reporting (Monte Carlo, Soda)
+
+**Working Knowledge required:**
+
+- Data catalogue tools (Databricks Unity Catalog, Collibra, DataHub — governance reporting level)
+- data governance concepts (lineage, classification, data mesh)
+- Power BI/Tableau for platform analytics
+
+**Awareness level expected:**
+
+- MLOps and AI feature pipeline concepts
+- streaming data platform concepts (Kafka, Kinesis)
+- emerging data lakehouse technologies (Apache Iceberg, Apache Hudi)
 
 ## Interactions with Other Roles
 

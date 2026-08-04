@@ -65,10 +65,27 @@ The Enterprise Infrastructure Onboarding Product Owner manages the infrastructur
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow (service catalog), Jira/Azure DevOps (backlog management), Power BI (reporting)
-- **Proficient level required:** ITIL v4, workflow visualization tools, SLA monitoring/tracking systems
-- **Working Knowledge required:** Terraform/Ansible (automation awareness), Windows Server/Linux (awareness)
-- **Awareness level expected:** Azure IaaS, onboarding workflow automation
+**Expert level required:**
+
+- ServiceNow (service catalog)
+- Jira/Azure DevOps (backlog management)
+- Power BI (reporting)
+
+**Proficient level required:**
+
+- ITIL v4
+- workflow visualization tools
+- SLA monitoring/tracking systems
+
+**Working Knowledge required:**
+
+- Terraform/Ansible (automation awareness)
+- Windows Server/Linux (awareness)
+
+**Awareness level expected:**
+
+- Azure IaaS
+- onboarding workflow automation
 
 ## Interactions with Other Roles
 

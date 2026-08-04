@@ -72,10 +72,28 @@ The Security Cross-Platform Engineer implements and maintains security controls 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Defender for Endpoint, Microsoft Sentinel, CIS Benchmarks/security hardening
-- **Proficient level required:** Qualys/Tenable (vulnerability scanning), Ansible/PowerShell (configuration management), Aqua/Trivy (container security)
-- **Working Knowledge required:** Microsoft Entra ID (IAM), Azure Security Center, patch management tools
-- **Awareness level expected:** SOAR automation, Zero Trust network access
+**Expert level required:**
+
+- Microsoft Defender for Endpoint
+- Microsoft Sentinel
+- CIS Benchmarks/security hardening
+
+**Proficient level required:**
+
+- Qualys/Tenable (vulnerability scanning)
+- Ansible/PowerShell (configuration management)
+- Aqua/Trivy (container security)
+
+**Working Knowledge required:**
+
+- Microsoft Entra ID (IAM)
+- Azure Security Center
+- patch management tools
+
+**Awareness level expected:**
+
+- SOAR automation
+- Zero Trust network access
 
 ## Interactions with Other Roles
 

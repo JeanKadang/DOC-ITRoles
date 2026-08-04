@@ -197,10 +197,32 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** HPE ProLiant servers (DL/ML series), HPE GreenLake infrastructure services, Jira / Azure DevOps (backlog and roadmap management)
-- **Proficient level required:** HPE OneView management platform, HPE InfoSight analytics, HPE Synergy composable infrastructure, hardware asset management systems
-- **Working Knowledge required:** HPE BladeSystem and enclosures, HPE iLO management, server lifecycle management tools, capacity planning tools
-- **Awareness level expected:** HPE Compute Ops Manager, HPE Alletra storage, cloud hardware alternatives, sustainable computing standards
+**Expert level required:**
+
+- HPE ProLiant servers (DL/ML series)
+- HPE GreenLake infrastructure services
+- Jira / Azure DevOps (backlog and roadmap management)
+
+**Proficient level required:**
+
+- HPE OneView management platform
+- HPE InfoSight analytics
+- HPE Synergy composable infrastructure
+- hardware asset management systems
+
+**Working Knowledge required:**
+
+- HPE BladeSystem and enclosures
+- HPE iLO management
+- server lifecycle management tools
+- capacity planning tools
+
+**Awareness level expected:**
+
+- HPE Compute Ops Manager
+- HPE Alletra storage
+- cloud hardware alternatives
+- sustainable computing standards
 
 **Complementary Certifications:**
 

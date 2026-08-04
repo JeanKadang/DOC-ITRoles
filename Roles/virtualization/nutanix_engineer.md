@@ -72,10 +72,27 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Nutanix AOS and AHV hypervisor for day-to-day cluster operations and maintenance, Nutanix Prism Element and Prism Central for VM provisioning, monitoring, and cluster management, Nutanix Foundation for node imaging and cluster deployment procedures, VM provisioning, template management, and storage container configuration
-- **Proficient level required:** Nutanix Flow for VM-level microsegmentation policy configuration, Nutanix Files and Objects for software-defined storage management, Nutanix Move for workload migration execution and cutover, Nutanix REST APIs and automation scripts for routine operational tasks
-- **Working Knowledge required:** Nutanix backup and disaster recovery tools configuration and recovery testing, Nutanix Guest Tools installation and management in virtual machines, Nutanix software upgrade execution and patch compliance processes
-- **Awareness level expected:** Nutanix Calm blueprints and self-service provisioning automation capabilities, Nutanix Karbon Kubernetes platform administration concepts
+**Expert level required:**
+
+- Nutanix AOS and AHV hypervisor for day-to-day cluster operations and maintenance, Nutanix Prism Element and Prism Central for VM provisioning, monitoring, and cluster management, Nutanix Foundation for node imaging and cluster deployment procedures, VM provisioning, template management, and storage container configuration
+
+**Proficient level required:**
+
+- Nutanix Flow for VM-level microsegmentation policy configuration
+- Nutanix Files and Objects for software-defined storage management
+- Nutanix Move for workload migration execution and cutover
+- Nutanix REST APIs and automation scripts for routine operational tasks
+
+**Working Knowledge required:**
+
+- Nutanix backup and disaster recovery tools configuration and recovery testing
+- Nutanix Guest Tools installation and management in virtual machines
+- Nutanix software upgrade execution and patch compliance processes
+
+**Awareness level expected:**
+
+- Nutanix Calm blueprints and self-service provisioning automation capabilities
+- Nutanix Karbon Kubernetes platform administration concepts
 
 ## Interactions with Other Roles
 

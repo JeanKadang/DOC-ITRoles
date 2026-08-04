@@ -64,10 +64,29 @@ The Java Platform Product Owner manages the development and lifecycle of the org
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Java platform product backlog management and roadmap delivery (Jira, Confluence), Spring Framework adoption and stakeholder reporting for platform decisions, Java version lifecycle and upgrade governance
-- **Proficient level required:** Java build ecosystem (Maven/Gradle) for platform oversight and dependency governance, artifact repository management (Nexus/JFrog), Java security scanning and compliance monitoring
-- **Working Knowledge required:** Java testing frameworks and code quality metrics, cloud deployment services for Java workloads, CI/CD pipeline integration concepts for Java delivery workflows
-- **Awareness level expected:** Quarkus and Micronaut cloud-native Java framework adoption trends, GraalVM native compilation impacts, AI-assisted Java development tool effects on team productivity
+**Expert level required:**
+
+- Java platform product backlog management and roadmap delivery (Jira, Confluence)
+- Spring Framework adoption and stakeholder reporting for platform decisions
+- Java version lifecycle and upgrade governance
+
+**Proficient level required:**
+
+- Java build ecosystem (Maven/Gradle) for platform oversight and dependency governance
+- artifact repository management (Nexus/JFrog)
+- Java security scanning and compliance monitoring
+
+**Working Knowledge required:**
+
+- Java testing frameworks and code quality metrics
+- cloud deployment services for Java workloads
+- CI/CD pipeline integration concepts for Java delivery workflows
+
+**Awareness level expected:**
+
+- Quarkus and Micronaut cloud-native Java framework adoption trends
+- GraalVM native compilation impacts
+- AI-assisted Java development tool effects on team productivity
 
 ## Interactions with Other Roles
 

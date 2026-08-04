@@ -68,10 +68,28 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Backstage/Port IDP, Kubernetes, GitOps (ArgoCD/Flux), Software supply chain tooling (SLSA/Sigstore/SBOM)
-- **Proficient level required:** Terraform/Pulumi/Bicep, GitHub Actions/Azure DevOps Pipelines, Crossplane
-- **Working Knowledge required:** Service mesh (Istio/Linkerd), OPA/Kyverno policy-as-code
-- **Awareness level expected:** WebAssembly (WASM) for platform runtimes, Dapr distributed application runtime
+**Expert level required:**
+
+- Backstage/Port IDP
+- Kubernetes
+- GitOps (ArgoCD/Flux)
+- Software supply chain tooling (SLSA/Sigstore/SBOM)
+
+**Proficient level required:**
+
+- Terraform/Pulumi/Bicep
+- GitHub Actions/Azure DevOps Pipelines
+- Crossplane
+
+**Working Knowledge required:**
+
+- Service mesh (Istio/Linkerd)
+- OPA/Kyverno policy-as-code
+
+**Awareness level expected:**
+
+- WebAssembly (WASM) for platform runtimes
+- Dapr distributed application runtime
 
 ## Interactions with Other Roles
 

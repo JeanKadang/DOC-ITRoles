@@ -65,10 +65,28 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** GCP Architecture Framework and landing zone design (resource hierarchy, folder/project structure), GCP networking (VPC, Cloud Interconnect, Cloud NAT, Network Connectivity Center), GCP IAM and security (IAM, Security Command Center, VPC Service Controls, Organization Policy Service), Google Kubernetes Engine (GKE) and Anthos for hybrid and multi-cloud
-- **Proficient level required:** Infrastructure as Code for GCP (Terraform/OpenTofu, Google Cloud Deployment Manager), BigQuery and data analytics architecture patterns, GCP governance and compliance services (Assured Workloads, Access Transparency)
-- **Working Knowledge required:** Google Vertex AI and Gemini API architecture for GenAI workloads, GCP cost optimization tools (Billing Console, Recommender, Committed Use Discounts)
-- **Awareness level expected:** AlloyDB and Cloud Spanner for enterprise database workloads, Google Sovereign Cloud and Assured Workloads patterns for government and regulated sectors
+**Expert level required:**
+
+- GCP Architecture Framework and landing zone design (resource hierarchy, folder/project structure)
+- GCP networking (VPC, Cloud Interconnect, Cloud NAT, Network Connectivity Center)
+- GCP IAM and security (IAM, Security Command Center, VPC Service Controls, Organization Policy Service)
+- Google Kubernetes Engine (GKE) and Anthos for hybrid and multi-cloud
+
+**Proficient level required:**
+
+- Infrastructure as Code for GCP (Terraform/OpenTofu, Google Cloud Deployment Manager)
+- BigQuery and data analytics architecture patterns
+- GCP governance and compliance services (Assured Workloads, Access Transparency)
+
+**Working Knowledge required:**
+
+- Google Vertex AI and Gemini API architecture for GenAI workloads
+- GCP cost optimization tools (Billing Console, Recommender, Committed Use Discounts)
+
+**Awareness level expected:**
+
+- AlloyDB and Cloud Spanner for enterprise database workloads
+- Google Sovereign Cloud and Assured Workloads patterns for government and regulated sectors
 
 ## Interactions with Other Roles
 

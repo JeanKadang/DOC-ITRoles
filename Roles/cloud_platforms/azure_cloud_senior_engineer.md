@@ -64,10 +64,23 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Infrastructure as Code (Terraform, Bicep, ARM templates) for complex Azure deployments, Advanced Azure networking (ExpressRoute, Virtual WAN, Azure Firewall, Private Endpoints), Azure security services (Microsoft Defender for Cloud, Microsoft Sentinel, Azure Key Vault), Microsoft Entra ID including PIM, Conditional Access, and hybrid identity
-- **Proficient level required:** Azure Kubernetes Service (AKS) and container services deployment and management, Azure DevOps and GitHub Actions for CI/CD pipeline implementation, Azure Monitor, Log Analytics, and Application Insights for full-stack observability
-- **Working Knowledge required:** Azure Policy and management groups for governance and compliance enforcement, Azure Cost Management and resource right-sizing tools
-- **Awareness level expected:** Azure Arc for hybrid and multi-cloud resource management, Azure AI services and Azure OpenAI Service deployment and integration patterns
+**Expert level required:**
+
+- Infrastructure as Code (Terraform, Bicep, ARM templates) for complex Azure deployments, Advanced Azure networking (ExpressRoute, Virtual WAN, Azure Firewall, Private Endpoints), Azure security services (Microsoft Defender for Cloud, Microsoft Sentinel, Azure Key Vault), Microsoft Entra ID including PIM, Conditional Access, and hybrid identity
+
+**Proficient level required:**
+
+- Azure Kubernetes Service (AKS) and container services deployment and management, Azure DevOps and GitHub Actions for CI/CD pipeline implementation, Azure Monitor, Log Analytics, and Application Insights for full-stack observability
+
+**Working Knowledge required:**
+
+- Azure Policy and management groups for governance and compliance enforcement
+- Azure Cost Management and resource right-sizing tools
+
+**Awareness level expected:**
+
+- Azure Arc for hybrid and multi-cloud resource management
+- Azure AI services and Azure OpenAI Service deployment and integration patterns
 
 ## Interactions with Other Roles
 

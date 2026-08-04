@@ -72,10 +72,28 @@ The Observability Product Owner manages the observability platform portfolio, de
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise observability platforms (Datadog, Dynatrace, New Relic) at product feature and roadmap level, Jira and Confluence for backlog management and sprint planning, SLO/SLI frameworks and error budget governance for reliability management, PagerDuty and OpsGenie for incident management integration and on-call governance
-- **Proficient level required:** Prometheus and Grafana open-source observability stack at product capability level, Elastic Stack and Splunk for log management product features and adoption planning, Synthetic monitoring and Real User Monitoring (RUM) product capabilities, Dashboard and visualisation platform features for self-service adoption
-- **Working Knowledge required:** OpenTelemetry instrumentation concepts and team adoption patterns, Distributed tracing systems (Jaeger, Zipkin) and APM tool features, Time-series database concepts, cardinality management, and telemetry cost governance
-- **Awareness level expected:** AI-assisted root cause analysis and AIOps capabilities in observability platforms, eBPF-based observability and continuous profiling as emerging product features
+**Expert level required:**
+
+- Enterprise observability platforms (Datadog, Dynatrace, New Relic) at product feature and roadmap level
+- Jira and Confluence for backlog management and sprint planning
+- SLO/SLI frameworks and error budget governance for reliability management
+- PagerDuty and OpsGenie for incident management integration and on-call governance
+
+**Proficient level required:**
+
+- Prometheus and Grafana open-source observability stack at product capability level
+- Elastic Stack and Splunk for log management product features and adoption planning
+- Synthetic monitoring and Real User Monitoring (RUM) product capabilities
+- Dashboard and visualisation platform features for self-service adoption
+
+**Working Knowledge required:**
+
+- OpenTelemetry instrumentation concepts and team adoption patterns, Distributed tracing systems (Jaeger, Zipkin) and APM tool features, Time-series database concepts, cardinality management, and telemetry cost governance
+
+**Awareness level expected:**
+
+- AI-assisted root cause analysis and AIOps capabilities in observability platforms
+- eBPF-based observability and continuous profiling as emerging product features
 
 ## Interactions with Other Roles
 

@@ -64,10 +64,27 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Prometheus and Grafana for SLI/SLO instrumentation, error budget dashboards, and reliability monitoring, Kubernetes for container platform reliability operations and resource management, SLO/SLI framework design and error budget policy implementation, Incident management platforms (PagerDuty, OpsGenie) and runbook automation
-- **Proficient level required:** Chaos engineering tools (LitmusChaos, Gremlin, Chaos Mesh) for resilience validation, Infrastructure as Code (Terraform, Pulumi) for reliability infrastructure automation, Load testing tools (k6, Locust, Apache JMeter) for performance and capacity validation, Log aggregation systems (Loki, Elasticsearch, Splunk) for incident diagnosis
-- **Working Knowledge required:** Service mesh technologies (Istio, Linkerd) for traffic management and circuit-breaking, Datadog or New Relic for APM and synthetic monitoring, CI/CD pipeline reliability gates and progressive delivery patterns
-- **Awareness level expected:** eBPF-based observability and low-overhead profiling tools, Emerging auto-remediation and AIOps platforms for toil reduction
+**Expert level required:**
+
+- Prometheus and Grafana for SLI/SLO instrumentation, error budget dashboards, and reliability monitoring, Kubernetes for container platform reliability operations and resource management, SLO/SLI framework design and error budget policy implementation, Incident management platforms (PagerDuty, OpsGenie) and runbook automation
+
+**Proficient level required:**
+
+- Chaos engineering tools (LitmusChaos, Gremlin, Chaos Mesh) for resilience validation
+- Infrastructure as Code (Terraform, Pulumi) for reliability infrastructure automation
+- Load testing tools (k6, Locust, Apache JMeter) for performance and capacity validation
+- Log aggregation systems (Loki, Elasticsearch, Splunk) for incident diagnosis
+
+**Working Knowledge required:**
+
+- Service mesh technologies (Istio, Linkerd) for traffic management and circuit-breaking
+- Datadog or New Relic for APM and synthetic monitoring
+- CI/CD pipeline reliability gates and progressive delivery patterns
+
+**Awareness level expected:**
+
+- eBPF-based observability and low-overhead profiling tools
+- Emerging auto-remediation and AIOps platforms for toil reduction
 
 ## Interactions with Other Roles
 

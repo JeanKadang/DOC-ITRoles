@@ -79,10 +79,27 @@ The Privileged Access Management (PAM) Architect designs, governs, and evolves t
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** CyberArk PAM Suite (EPV/PSM/PVWA/CPM/AIM), Microsoft Entra ID PIM, BeyondTrust Password Safe
-- **Proficient level required:** HashiCorp Vault/CyberArk Conjur (DevOps secrets), Microsoft Sentinel (SIEM), Azure Key Vault
-- **Working Knowledge required:** Delinea/Thycotic Secret Server, Endpoint Privilege Management (EPM/BeyondTrust EPM)
-- **Awareness level expected:** BeyondTrust Privileged Remote Access, AWS Secrets Manager
+**Expert level required:**
+
+- CyberArk PAM Suite (EPV/PSM/PVWA/CPM/AIM)
+- Microsoft Entra ID PIM
+- BeyondTrust Password Safe
+
+**Proficient level required:**
+
+- HashiCorp Vault/CyberArk Conjur (DevOps secrets)
+- Microsoft Sentinel (SIEM)
+- Azure Key Vault
+
+**Working Knowledge required:**
+
+- Delinea/Thycotic Secret Server
+- Endpoint Privilege Management (EPM/BeyondTrust EPM)
+
+**Awareness level expected:**
+
+- BeyondTrust Privileged Remote Access
+- AWS Secrets Manager
 
 ## Interactions with Other Roles
 

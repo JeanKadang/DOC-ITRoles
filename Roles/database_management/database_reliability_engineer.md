@@ -64,10 +64,29 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Database observability and monitoring automation (Prometheus/Grafana for database SLO/SLI tracking, Datadog or Percona Monitoring), automated failover and self-healing mechanisms for database HA configurations, database performance profiling and query optimisation automation
-- **Proficient level required:** SRE principles applied to databases (error budget management, SLO definitions, toil elimination), chaos engineering for databases (Gremlin or LitmusChaos for database failure injection), HA/DR configurations (SQL Server Always On AG, Oracle Data Guard, or PostgreSQL streaming replication)
-- **Working Knowledge required:** Cloud database services reliability patterns (AWS RDS Multi-AZ, Azure SQL Business Critical, GCP Cloud SQL HA), incident management platforms (PagerDuty, Opsgenie) for database on-call routing, Terraform/Ansible for database automation and IaC
-- **Awareness level expected:** AI-assisted database performance anomaly detection, HTAP and distributed database reliability patterns, eBPF-based database observability tooling
+**Expert level required:**
+
+- Database observability and monitoring automation (Prometheus/Grafana for database SLO/SLI tracking, Datadog or Percona Monitoring)
+- automated failover and self-healing mechanisms for database HA configurations
+- database performance profiling and query optimisation automation
+
+**Proficient level required:**
+
+- SRE principles applied to databases (error budget management, SLO definitions, toil elimination)
+- chaos engineering for databases (Gremlin or LitmusChaos for database failure injection)
+- HA/DR configurations (SQL Server Always On AG, Oracle Data Guard, or PostgreSQL streaming replication)
+
+**Working Knowledge required:**
+
+- Cloud database services reliability patterns (AWS RDS Multi-AZ, Azure SQL Business Critical, GCP Cloud SQL HA)
+- incident management platforms (PagerDuty, Opsgenie) for database on-call routing
+- Terraform/Ansible for database automation and IaC
+
+**Awareness level expected:**
+
+- AI-assisted database performance anomaly detection
+- HTAP and distributed database reliability patterns
+- eBPF-based database observability tooling
 
 ## Interactions with Other Roles
 

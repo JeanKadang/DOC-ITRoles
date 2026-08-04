@@ -72,10 +72,27 @@ The Access Management Engineer implements and maintains access management system
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Entra ID (SSO/MFA), CyberArk/BeyondTrust (PAM), RBAC systems
-- **Proficient level required:** Access request/approval workflows, access certification tools, Azure MFA
-- **Working Knowledge required:** Access reporting/analytics, OAuth 2.0/SAML
-- **Awareness level expected:** SailPoint/Saviynt (IGA), Zero Trust access control
+**Expert level required:**
+
+- Microsoft Entra ID (SSO/MFA)
+- CyberArk/BeyondTrust (PAM)
+- RBAC systems
+
+**Proficient level required:**
+
+- Access request/approval workflows
+- access certification tools
+- Azure MFA
+
+**Working Knowledge required:**
+
+- Access reporting/analytics
+- OAuth 2.0/SAML
+
+**Awareness level expected:**
+
+- SailPoint/Saviynt (IGA)
+- Zero Trust access control
 
 ## Interactions with Other Roles
 

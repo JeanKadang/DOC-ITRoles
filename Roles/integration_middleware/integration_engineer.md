@@ -73,10 +73,27 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** MuleSoft Anypoint Studio/Runtime Manager or Azure Logic Apps (integration flow implementation and monitoring), REST API concepts (HTTP methods, status codes, JSON/XML transformation), OAuth 2.0 and API key authentication configuration
-- **Proficient level required:** Message routing, transformation, and error handling within integration platforms, SFTP file exchange and scheduled file processing patterns, Postman (API testing and integration validation)
-- **Working Knowledge required:** Azure Service Bus or RabbitMQ (message queue fundamentals), basic scripting for transformations (DataWeave, JavaScript, or Python), Git version control for integration artefacts
-- **Awareness level expected:** Apache Kafka fundamentals, advanced B2B/EDI protocols (AS2, X12, EDIFACT), microservices integration patterns and event-driven architecture concepts
+**Expert level required:**
+
+- MuleSoft Anypoint Studio/Runtime Manager or Azure Logic Apps (integration flow implementation and monitoring)
+- REST API concepts (HTTP methods, status codes, JSON/XML transformation)
+- OAuth 2.0 and API key authentication configuration
+
+**Proficient level required:**
+
+- Message routing, transformation, and error handling within integration platforms, SFTP file exchange and scheduled file processing patterns, Postman (API testing and integration validation)
+
+**Working Knowledge required:**
+
+- Azure Service Bus or RabbitMQ (message queue fundamentals)
+- basic scripting for transformations (DataWeave, JavaScript, or Python)
+- Git version control for integration artefacts
+
+**Awareness level expected:**
+
+- Apache Kafka fundamentals
+- advanced B2B/EDI protocols (AS2, X12, EDIFACT)
+- microservices integration patterns and event-driven architecture concepts
 
 ## Interactions with Other Roles
 

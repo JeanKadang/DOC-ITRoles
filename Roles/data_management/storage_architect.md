@@ -80,10 +80,29 @@ The Storage Architect is responsible for designing and governing the organisatio
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise SAN/NAS platforms (NetApp ONTAP, Pure Storage, Dell EMC PowerStore/PowerScale — architecture standards, HA design, and performance governance), storage protocols (FC, iSCSI, NFS, SMB/CIFS, NVMe-oF — design patterns and workload-to-protocol mapping), data tiering strategy (hot/warm/cold/archive across on-premises and cloud tiers with lifecycle management)
-- **Proficient level required:** Software-defined storage (VMware vSAN, Nutanix AOS, or Ceph — architecture and selection criteria), cloud object storage (Azure Blob, AWS S3, or GCP Cloud Storage — tiering, lifecycle policies, and hybrid storage patterns), storage replication and data protection architecture (NetApp SnapMirror, Pure ActiveDR, or Zerto)
-- **Working Knowledge required:** Kubernetes persistent storage (CSI drivers, StorageClass design, PVC patterns, and ReadWriteMany for containerised workloads), hybrid cloud storage solutions (Azure NetApp Files, AWS FSx, or Google Cloud Filestore), storage capacity planning and cost modelling methodologies
-- **Awareness level expected:** NVMe-oF protocol adoption and all-flash fabric architecture trends, Ceph and Rook-Ceph for cloud-native Kubernetes storage deployments, AI/ML workload storage performance requirements and high-throughput access patterns
+**Expert level required:**
+
+- Enterprise SAN/NAS platforms (NetApp ONTAP, Pure Storage, Dell EMC PowerStore/PowerScale — architecture standards, HA design, and performance governance)
+- storage protocols (FC, iSCSI, NFS, SMB/CIFS, NVMe-oF — design patterns and workload-to-protocol mapping)
+- data tiering strategy (hot/warm/cold/archive across on-premises and cloud tiers with lifecycle management)
+
+**Proficient level required:**
+
+- Software-defined storage (VMware vSAN, Nutanix AOS, or Ceph — architecture and selection criteria)
+- cloud object storage (Azure Blob, AWS S3, or GCP Cloud Storage — tiering, lifecycle policies, and hybrid storage patterns)
+- storage replication and data protection architecture (NetApp SnapMirror, Pure ActiveDR, or Zerto)
+
+**Working Knowledge required:**
+
+- Kubernetes persistent storage (CSI drivers, StorageClass design, PVC patterns, and ReadWriteMany for containerised workloads)
+- hybrid cloud storage solutions (Azure NetApp Files, AWS FSx, or Google Cloud Filestore)
+- storage capacity planning and cost modelling methodologies
+
+**Awareness level expected:**
+
+- NVMe-oF protocol adoption and all-flash fabric architecture trends
+- Ceph and Rook-Ceph for cloud-native Kubernetes storage deployments
+- AI/ML workload storage performance requirements and high-throughput access patterns
 
 ## Interactions with Other Roles
 

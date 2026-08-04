@@ -64,10 +64,28 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** C# and .NET Core/.NET 5+ (feature implementation and OOP principles), ASP.NET MVC and Web API (endpoint and controller development), .NET testing frameworks (xUnit, NUnit, or MSTest — unit and integration testing)
-- **Proficient level required:** Entity Framework and ORM-based data access patterns, NuGet package management and dependency consumption, Git and Azure DevOps for version control and CI/CD, SQL Server or equivalent relational database
-- **Working Knowledge required:** HTML, CSS, and JavaScript (basic web development context), .NET CLI and MSBuild (build tooling and project management), dependency injection patterns in .NET applications
-- **Awareness level expected:** .NET containerization with Docker, Blazor/WebAssembly for front-end components, cloud deployment basics on Azure App Service
+**Expert level required:**
+
+- C# and .NET Core/.NET 5+ (feature implementation and OOP principles)
+- ASP.NET MVC and Web API (endpoint and controller development)
+- .NET testing frameworks (xUnit, NUnit, or MSTest — unit and integration testing)
+
+**Proficient level required:**
+
+- Entity Framework and ORM-based data access patterns
+- NuGet package management and dependency consumption
+- Git and Azure DevOps for version control and CI/CD
+- SQL Server or equivalent relational database
+
+**Working Knowledge required:**
+
+- HTML, CSS, and JavaScript (basic web development context), .NET CLI and MSBuild (build tooling and project management), dependency injection patterns in .NET applications
+
+**Awareness level expected:**
+
+- .NET containerization with Docker
+- Blazor/WebAssembly for front-end components
+- cloud deployment basics on Azure App Service
 
 ## Interactions with Other Roles
 

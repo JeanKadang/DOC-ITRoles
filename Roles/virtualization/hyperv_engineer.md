@@ -79,10 +79,24 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Hyper-V host configuration, virtual machine provisioning, and lifecycle management, System Center Virtual Machine Manager (SCVMM) for VM operations and cluster management, Windows Server administration and update management with WSUS, PowerShell scripting for Hyper-V management and routine automation
-- **Proficient level required:** Windows Server Failover Clustering and Hyper-V high availability configuration, Hyper-V Replica setup, configuration, and recovery procedure testing, Storage Spaces Direct (S2D) and Cluster Shared Volumes (CSV) management, Windows Admin Center for remote server and VM management
-- **Working Knowledge required:** Software-Defined Networking and Hyper-V virtual switch configuration, Azure hybrid services integration for on-premises Hyper-V environments, Virtual Machine Queue (VMQ) and network performance settings
-- **Awareness level expected:** Azure Stack HCI cloud-managed Hyper-V features and capabilities, Windows Server 2025 virtualisation improvements and new Hyper-V features
+**Expert level required:**
+
+- Microsoft Hyper-V host configuration, virtual machine provisioning, and lifecycle management, System Center Virtual Machine Manager (SCVMM) for VM operations and cluster management, Windows Server administration and update management with WSUS, PowerShell scripting for Hyper-V management and routine automation
+
+**Proficient level required:**
+
+- Windows Server Failover Clustering and Hyper-V high availability configuration, Hyper-V Replica setup, configuration, and recovery procedure testing, Storage Spaces Direct (S2D) and Cluster Shared Volumes (CSV) management, Windows Admin Center for remote server and VM management
+
+**Working Knowledge required:**
+
+- Software-Defined Networking and Hyper-V virtual switch configuration
+- Azure hybrid services integration for on-premises Hyper-V environments
+- Virtual Machine Queue (VMQ) and network performance settings
+
+**Awareness level expected:**
+
+- Azure Stack HCI cloud-managed Hyper-V features and capabilities
+- Windows Server 2025 virtualisation improvements and new Hyper-V features
 
 ## Interactions with Other Roles
 

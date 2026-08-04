@@ -72,10 +72,23 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** VMware vSphere platform capabilities and strategic product roadmap management, Jira and Confluence for agile backlog management, sprint ceremonies, and roadmap reporting, VMware and Broadcom licensing models, TCO analysis, and cost optimisation governance, vRealize Operations and Aria Suite dashboards for platform performance and capacity reporting
-- **Proficient level required:** VMware NSX-T, vSAN, and Cloud Foundation (VCF) product capabilities at service planning and SLA definition level, VMware Site Recovery Manager for DR governance and business continuity planning, vCenter Server and ESXi upgrade lifecycle planning and risk assessment, Stakeholder-facing capacity and utilisation reporting
-- **Working Knowledge required:** VMware Horizon VDI and desktop virtualisation product features for service catalog design, VMware Tanzu Kubernetes integration capabilities for container strategy decisions, PowerCLI and vRealize Orchestrator automation capabilities for self-service provisioning design
-- **Awareness level expected:** Broadcom VMware strategic direction, pricing changes, and alternative platform migration options, Azure VMware Solution and VMware Cloud on AWS for hybrid cloud positioning
+**Expert level required:**
+
+- VMware vSphere platform capabilities and strategic product roadmap management, Jira and Confluence for agile backlog management, sprint ceremonies, and roadmap reporting, VMware and Broadcom licensing models, TCO analysis, and cost optimisation governance, vRealize Operations and Aria Suite dashboards for platform performance and capacity reporting
+
+**Proficient level required:**
+
+- VMware NSX-T, vSAN, and Cloud Foundation (VCF) product capabilities at service planning and SLA definition level, VMware Site Recovery Manager for DR governance and business continuity planning, vCenter Server and ESXi upgrade lifecycle planning and risk assessment, Stakeholder-facing capacity and utilisation reporting
+
+**Working Knowledge required:**
+
+- VMware Horizon VDI and desktop virtualisation product features for service catalog design
+- VMware Tanzu Kubernetes integration capabilities for container strategy decisions
+- PowerCLI and vRealize Orchestrator automation capabilities for self-service provisioning design
+
+**Awareness level expected:**
+
+- Broadcom VMware strategic direction, pricing changes, and alternative platform migration options, Azure VMware Solution and VMware Cloud on AWS for hybrid cloud positioning
 
 ## Interactions with Other Roles
 

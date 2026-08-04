@@ -85,10 +85,31 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** HPE ProLiant servers (DL/ML series), HPE iLO management interface, HPE OneView, server firmware and RAID configurations
-- **Proficient level required:** HPE Smart Update Manager, HPE BladeSystem and Synergy enclosures, HPE InfoSight for servers, hardware diagnostics tools
-- **Working Knowledge required:** Server power management, hardware compatibility matrices, HPE GreenLake infrastructure
-- **Awareness level expected:** HPE Compute Ops Manager, HPE SimpliVity, composable infrastructure automation
+**Expert level required:**
+
+- HPE ProLiant servers (DL/ML series)
+- HPE iLO management interface
+- HPE OneView
+- server firmware and RAID configurations
+
+**Proficient level required:**
+
+- HPE Smart Update Manager
+- HPE BladeSystem and Synergy enclosures
+- HPE InfoSight for servers
+- hardware diagnostics tools
+
+**Working Knowledge required:**
+
+- Server power management
+- hardware compatibility matrices
+- HPE GreenLake infrastructure
+
+**Awareness level expected:**
+
+- HPE Compute Ops Manager
+- HPE SimpliVity
+- composable infrastructure automation
 
 ## Recommended Certifications & Learning Paths
 

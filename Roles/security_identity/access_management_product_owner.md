@@ -99,10 +99,27 @@ The Access Management Product Owner manages the development and lifecycle of the
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Entra ID, ServiceNow (access request workflows), Jira/Azure DevOps
-- **Proficient level required:** CyberArk/BeyondTrust (PAM), Power BI (access reporting), access certification platforms
-- **Working Knowledge required:** SailPoint/Saviynt (IGA), Azure MFA/SSO
-- **Awareness level expected:** AI-driven access governance, Zero Trust access frameworks
+**Expert level required:**
+
+- Microsoft Entra ID
+- ServiceNow (access request workflows)
+- Jira/Azure DevOps
+
+**Proficient level required:**
+
+- CyberArk/BeyondTrust (PAM)
+- Power BI (access reporting)
+- access certification platforms
+
+**Working Knowledge required:**
+
+- SailPoint/Saviynt (IGA)
+- Azure MFA/SSO
+
+**Awareness level expected:**
+
+- AI-driven access governance
+- Zero Trust access frameworks
 
 ## Interactions with Other Roles
 

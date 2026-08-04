@@ -68,10 +68,27 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Commvault Complete Backup & Recovery, Metallic SaaS, Jira/Azure DevOps
-- **Proficient level required:** CommCell Console, Power BI (metrics/reporting), ServiceNow (ITSM integration)
-- **Working Knowledge required:** GDPR compliance reporting, storage management platforms
-- **Awareness level expected:** Cloud backup strategies, DR orchestration tools
+**Expert level required:**
+
+- Commvault Complete Backup & Recovery
+- Metallic SaaS
+- Jira/Azure DevOps
+
+**Proficient level required:**
+
+- CommCell Console
+- Power BI (metrics/reporting)
+- ServiceNow (ITSM integration)
+
+**Working Knowledge required:**
+
+- GDPR compliance reporting
+- storage management platforms
+
+**Awareness level expected:**
+
+- Cloud backup strategies
+- DR orchestration tools
 
 ## Interactions with Other Roles
 

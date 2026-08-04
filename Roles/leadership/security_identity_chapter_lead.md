@@ -75,10 +75,21 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Sentinel/Defender at CSPM governance depth
-- **Proficient level required:** Microsoft Entra ID / Azure AD at IAM governance depth
-- **Working Knowledge required:** Zero trust architecture frameworks and tooling
-- **Awareness level expected:** GRC platforms (ServiceNow GRC, Archer) for risk oversight
+**Expert level required:**
+
+- Microsoft Sentinel/Defender at CSPM governance depth
+
+**Proficient level required:**
+
+- Microsoft Entra ID / Azure AD at IAM governance depth
+
+**Working Knowledge required:**
+
+- Zero trust architecture frameworks and tooling
+
+**Awareness level expected:**
+
+- GRC platforms (ServiceNow GRC, Archer) for risk oversight
 
 ### Qualifications
 

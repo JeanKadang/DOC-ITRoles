@@ -66,10 +66,25 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure, AWS, and GCP architecture governance frameworks (CAF, WAF, AWS Well-Architected, GCP Architecture Framework), Cloud governance platforms (Azure Policy, AWS Service Control Policies, GCP Organization Policy Service), CSPM tooling (Microsoft Defender for Cloud, AWS Security Hub, GCP Security Command Center)
-- **Proficient level required:** Infrastructure as Code (Terraform/OpenTofu, Bicep, CloudFormation, Pulumi) across all three major cloud providers, Multi-cloud networking connectivity patterns (ExpressRoute, Direct Connect, Cloud Interconnect), Identity federation and cross-cloud IAM patterns (OIDC, SAML, workload identity federation)
-- **Working Knowledge required:** FinOps tooling and multi-cloud cost management platforms (CloudHealth, Apptio), Architecture documentation and diagramming tools (C4 model, draw.io, Lucidchart)
-- **Awareness level expected:** Cloud management platforms (Morpheus, Scalr, env0) for multi-cloud orchestration, Cloud-native application protection platform (CNAPP) and CIEM for emerging security posture management
+**Expert level required:**
+
+- Azure, AWS, and GCP architecture governance frameworks (CAF, WAF, AWS Well-Architected, GCP Architecture Framework), Cloud governance platforms (Azure Policy, AWS Service Control Policies, GCP Organization Policy Service), CSPM tooling (Microsoft Defender for Cloud, AWS Security Hub, GCP Security Command Center)
+
+**Proficient level required:**
+
+- Infrastructure as Code (Terraform/OpenTofu, Bicep, CloudFormation, Pulumi) across all three major cloud providers
+- Multi-cloud networking connectivity patterns (ExpressRoute, Direct Connect, Cloud Interconnect)
+- Identity federation and cross-cloud IAM patterns (OIDC, SAML, workload identity federation)
+
+**Working Knowledge required:**
+
+- FinOps tooling and multi-cloud cost management platforms (CloudHealth, Apptio)
+- Architecture documentation and diagramming tools (C4 model, draw.io, Lucidchart)
+
+**Awareness level expected:**
+
+- Cloud management platforms (Morpheus, Scalr, env0) for multi-cloud orchestration
+- Cloud-native application protection platform (CNAPP) and CIEM for emerging security posture management
 
 ## Interactions with Other Roles
 

@@ -64,10 +64,27 @@ The Service Management Senior Engineer leads the implementation and optimization
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow (advanced ITSM administration), CMDB design/configuration, workflow engines/scripting
-- **Proficient level required:** ITSM platform integration technologies, advanced reporting/analytics (Power BI), ITIL v4
-- **Working Knowledge required:** Performance monitoring for ITSM (Azure Monitor), ITSM testing/validation frameworks
-- **Awareness level expected:** AI-driven ITSM automation, Mobile ITSM platforms
+**Expert level required:**
+
+- ServiceNow (advanced ITSM administration)
+- CMDB design/configuration
+- workflow engines/scripting
+
+**Proficient level required:**
+
+- ITSM platform integration technologies
+- advanced reporting/analytics (Power BI)
+- ITIL v4
+
+**Working Knowledge required:**
+
+- Performance monitoring for ITSM (Azure Monitor)
+- ITSM testing/validation frameworks
+
+**Awareness level expected:**
+
+- AI-driven ITSM automation
+- Mobile ITSM platforms
 
 ## Interactions with Other Roles
 

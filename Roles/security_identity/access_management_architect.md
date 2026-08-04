@@ -72,10 +72,27 @@ The Access Management Architect designs and oversees the organization's access m
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** SailPoint/Saviynt (IGA), CyberArk/BeyondTrust (PAM), Microsoft Entra ID (Zero Trust access)
-- **Proficient level required:** OAuth 2.0/OIDC/SAML, Cloud Access Security Broker (CASB), RBAC/ABAC frameworks
-- **Working Knowledge required:** API/service access management, access analytics platforms
-- **Awareness level expected:** AI-driven access governance, SSPM (SaaS security posture management)
+**Expert level required:**
+
+- SailPoint/Saviynt (IGA)
+- CyberArk/BeyondTrust (PAM)
+- Microsoft Entra ID (Zero Trust access)
+
+**Proficient level required:**
+
+- OAuth 2.0/OIDC/SAML
+- Cloud Access Security Broker (CASB)
+- RBAC/ABAC frameworks
+
+**Working Knowledge required:**
+
+- API/service access management
+- access analytics platforms
+
+**Awareness level expected:**
+
+- AI-driven access governance
+- SSPM (SaaS security posture management)
 
 ## Interactions with Other Roles
 

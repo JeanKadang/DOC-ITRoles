@@ -72,10 +72,28 @@ The Security Cross-Platform Senior Engineer leads the technical implementation o
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Sentinel, Ansible/Terraform (configuration/IaC management), Aqua/Prisma Cloud (container security), HashiCorp Vault/Azure Key Vault
-- **Proficient level required:** OPA/Kyverno/Falco (Kubernetes security), Microsoft Entra ID/Okta (identity federation), Trivy/Qualys (scanning)
-- **Working Knowledge required:** Azure Security Center/AWS Security Hub, InSpec (compliance automation)
-- **Awareness level expected:** NeuVector, eBPF-based security tools
+**Expert level required:**
+
+- Microsoft Sentinel
+- Ansible/Terraform (configuration/IaC management)
+- Aqua/Prisma Cloud (container security)
+- HashiCorp Vault/Azure Key Vault
+
+**Proficient level required:**
+
+- OPA/Kyverno/Falco (Kubernetes security)
+- Microsoft Entra ID/Okta (identity federation)
+- Trivy/Qualys (scanning)
+
+**Working Knowledge required:**
+
+- Azure Security Center/AWS Security Hub
+- InSpec (compliance automation)
+
+**Awareness level expected:**
+
+- NeuVector
+- eBPF-based security tools
 
 ## Interactions with Other Roles
 

@@ -75,10 +75,29 @@ The Platform Reliability Engineer applies site reliability engineering (SRE) pri
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Prometheus and Grafana (SLO/SLI framework implementation, burn-rate dashboards, and alerting for platform services), LitmusChaos or Chaos Mesh (Kubernetes-native chaos engineering experiment design and execution), blameless post-incident review facilitation and platform error budget management
-- **Proficient level required:** Kubernetes (platform workload reliability debugging and failure mode analysis), OpenTelemetry (platform service instrumentation and distributed tracing), PagerDuty or Opsgenie (on-call routing, escalation configuration, and incident alerting)
-- **Working Knowledge required:** Helm (platform service deployment and release management), Alertmanager (Prometheus-integrated alert routing and grouping), Grafana Loki (log aggregation and analysis for platform incident response)
-- **Awareness level expected:** eBPF-based observability tooling for Kubernetes platform services, incident management platforms (incident.io, Statuspage), AI-assisted incident correlation and anomaly detection tools
+**Expert level required:**
+
+- Prometheus and Grafana (SLO/SLI framework implementation, burn-rate dashboards, and alerting for platform services)
+- LitmusChaos or Chaos Mesh (Kubernetes-native chaos engineering experiment design and execution)
+- blameless post-incident review facilitation and platform error budget management
+
+**Proficient level required:**
+
+- Kubernetes (platform workload reliability debugging and failure mode analysis)
+- OpenTelemetry (platform service instrumentation and distributed tracing)
+- PagerDuty or Opsgenie (on-call routing, escalation configuration, and incident alerting)
+
+**Working Knowledge required:**
+
+- Helm (platform service deployment and release management)
+- Alertmanager (Prometheus-integrated alert routing and grouping)
+- Grafana Loki (log aggregation and analysis for platform incident response)
+
+**Awareness level expected:**
+
+- eBPF-based observability tooling for Kubernetes platform services
+- incident management platforms (incident.io, Statuspage)
+- AI-assisted incident correlation and anomaly detection tools
 
 ## Interactions with Other Roles
 

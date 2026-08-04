@@ -78,10 +78,29 @@ The Security Automation Engineer builds and maintains the automated security too
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Snyk (SCA/SAST/container/IaC), GitHub Advanced Security (GHAS)/Microsoft Defender for DevOps, Python/Go (security automation), OPA/Conftest
-- **Proficient level required:** Semgrep, Trivy/Grype, Palo Alto XSOAR/Splunk SOAR, Kyverno/Falco
-- **Working Knowledge required:** OWASP ZAP (DAST), Wiz/Prisma Cloud
-- **Awareness level expected:** eBPF-based security tools, AI-driven security automation
+**Expert level required:**
+
+- Snyk (SCA/SAST/container/IaC)
+- GitHub Advanced Security (GHAS)/Microsoft Defender for DevOps
+- Python/Go (security automation)
+- OPA/Conftest
+
+**Proficient level required:**
+
+- Semgrep
+- Trivy/Grype
+- Palo Alto XSOAR/Splunk SOAR
+- Kyverno/Falco
+
+**Working Knowledge required:**
+
+- OWASP ZAP (DAST)
+- Wiz/Prisma Cloud
+
+**Awareness level expected:**
+
+- eBPF-based security tools
+- AI-driven security automation
 
 ### Qualifications
 

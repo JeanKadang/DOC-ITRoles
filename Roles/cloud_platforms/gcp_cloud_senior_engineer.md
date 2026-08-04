@@ -64,10 +64,28 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Google Kubernetes Engine (GKE) and Anthos for container management and hybrid deployments, GCP networking (VPC, Cloud Interconnect, Network Connectivity Center, Cloud Armor), Infrastructure as Code (Terraform, Google Cloud Deployment Manager) for GCP automation, GCP security services (IAM, Security Command Center, VPC Service Controls, Binary Authorization)
-- **Proficient level required:** CI/CD for GCP (Cloud Build, GitLab CI, Jenkins) and GitOps integration, GCP monitoring and observability (Cloud Monitoring, Cloud Logging, Cloud Trace, Cloud Profiler), GCP cost management and resource optimization (Billing Console, Recommender, Committed Use Discounts)
-- **Working Knowledge required:** Multi-project GCP strategies and organization hierarchy management (folder structure, Org Policy), GCP data services and analytics (BigQuery, Dataflow, Pub/Sub)
-- **Awareness level expected:** Vertex AI and Gemini APIs for ML and GenAI workload deployments, GCP Assured Workloads and compliance tooling for regulated industries
+**Expert level required:**
+
+- Google Kubernetes Engine (GKE) and Anthos for container management and hybrid deployments
+- GCP networking (VPC, Cloud Interconnect, Network Connectivity Center, Cloud Armor)
+- Infrastructure as Code (Terraform, Google Cloud Deployment Manager) for GCP automation
+- GCP security services (IAM, Security Command Center, VPC Service Controls, Binary Authorization)
+
+**Proficient level required:**
+
+- CI/CD for GCP (Cloud Build, GitLab CI, Jenkins) and GitOps integration
+- GCP monitoring and observability (Cloud Monitoring, Cloud Logging, Cloud Trace, Cloud Profiler)
+- GCP cost management and resource optimization (Billing Console, Recommender, Committed Use Discounts)
+
+**Working Knowledge required:**
+
+- Multi-project GCP strategies and organization hierarchy management (folder structure, Org Policy)
+- GCP data services and analytics (BigQuery, Dataflow, Pub/Sub)
+
+**Awareness level expected:**
+
+- Vertex AI and Gemini APIs for ML and GenAI workload deployments
+- GCP Assured Workloads and compliance tooling for regulated industries
 
 ## Interactions with Other Roles
 

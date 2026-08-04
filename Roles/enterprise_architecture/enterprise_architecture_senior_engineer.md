@@ -67,10 +67,27 @@ The Enterprise Architecture Senior Engineer operates at the intersection of tech
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ArchiMate/Structurizr C4 model (architecture modeling), LeanIX/Bizzdesign (EA platforms), Miro/draw.io/Lucidchart (diagramming)
-- **Proficient level required:** Confluence/SharePoint (documentation), Git/Azure DevOps (version control), Power BI (reporting)
-- **Working Knowledge required:** ServiceNow CMDB (ITSM integration), Azure/AWS/GCP (conceptual cloud awareness)
-- **Awareness level expected:** Technology radar tooling, AI-assisted architecture tools
+**Expert level required:**
+
+- ArchiMate/Structurizr C4 model (architecture modeling)
+- LeanIX/Bizzdesign (EA platforms)
+- Miro/draw.io/Lucidchart (diagramming)
+
+**Proficient level required:**
+
+- Confluence/SharePoint (documentation)
+- Git/Azure DevOps (version control)
+- Power BI (reporting)
+
+**Working Knowledge required:**
+
+- ServiceNow CMDB (ITSM integration)
+- Azure/AWS/GCP (conceptual cloud awareness)
+
+**Awareness level expected:**
+
+- Technology radar tooling
+- AI-assisted architecture tools
 
 ## Interactions with Other Roles
 

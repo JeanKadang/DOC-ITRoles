@@ -72,10 +72,30 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Server lifecycle management and Microsoft version roadmap, Microsoft licensing portals and cost management, Jira/Azure DevOps backlog and sprint management
-- **Proficient level required:** Windows Server platform concepts (AD, GPO, WSUS, Failover Clustering), Azure hybrid services awareness, PowerShell scripting concepts, ITSM platforms (ServiceNow)
-- **Working Knowledge required:** Microsoft Endpoint Configuration Manager concepts, Azure Arc and hybrid management, Windows Server security frameworks (CIS, NIST)
-- **Awareness level expected:** Azure Stack HCI adoption trends, Windows Server containerization, Infrastructure as Code approaches
+**Expert level required:**
+
+- Windows Server lifecycle management and Microsoft version roadmap
+- Microsoft licensing portals and cost management
+- Jira/Azure DevOps backlog and sprint management
+
+**Proficient level required:**
+
+- Windows Server platform concepts (AD, GPO, WSUS, Failover Clustering)
+- Azure hybrid services awareness
+- PowerShell scripting concepts
+- ITSM platforms (ServiceNow)
+
+**Working Knowledge required:**
+
+- Microsoft Endpoint Configuration Manager concepts
+- Azure Arc and hybrid management
+- Windows Server security frameworks (CIS, NIST)
+
+**Awareness level expected:**
+
+- Azure Stack HCI adoption trends
+- Windows Server containerization
+- Infrastructure as Code approaches
 
 ## Interactions with Other Roles
 

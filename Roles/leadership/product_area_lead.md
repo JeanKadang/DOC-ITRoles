@@ -79,10 +79,21 @@ The Product Area Lead (PAL) is a senior IT management role responsible for the e
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** P&L management and business case tooling (Excel, Tableau, PowerBI)
-- **Proficient level required:** Programme/portfolio governance platforms (ServiceNow PPM, Jira Align)
-- **Working Knowledge required:** Azure/AWS/GCP at awareness level for investment decisions
-- **Awareness level expected:** ITIL 4 / SAFe framework literacy
+**Expert level required:**
+
+- P&L management and business case tooling (Excel, Tableau, PowerBI)
+
+**Proficient level required:**
+
+- Programme/portfolio governance platforms (ServiceNow PPM, Jira Align)
+
+**Working Knowledge required:**
+
+- Azure/AWS/GCP at awareness level for investment decisions
+
+**Awareness level expected:**
+
+- ITIL 4 / SAFe framework literacy
 
 ## Interactions with Other Roles
 

@@ -72,10 +72,28 @@ The AWS Cloud Platform Architect designs, implements, and governs cloud solution
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** AWS Well-Architected Framework, AWS Control Tower and multi-account strategy (AWS Organizations), AWS networking (Transit Gateway, Direct Connect, PrivateLink, VPC design), AWS IAM and security services (GuardDuty, Security Hub, Config, Macie)
-- **Proficient level required:** Infrastructure as Code (CloudFormation, CDK, Terraform/OpenTofu), AWS monitoring and observability (CloudWatch, X-Ray, AWS Distro for OpenTelemetry), AWS cost management (Cost Explorer, Savings Plans, Reserved Instances, Trusted Advisor)
-- **Working Knowledge required:** Amazon EKS and container orchestration architecture, Amazon Bedrock and AWS GenAI services architecture
-- **Awareness level expected:** Amazon SageMaker AI/ML platform design patterns, AWS GovCloud and Digital Sovereignty Pledge compliance patterns for regulated industries
+**Expert level required:**
+
+- AWS Well-Architected Framework
+- AWS Control Tower and multi-account strategy (AWS Organizations)
+- AWS networking (Transit Gateway, Direct Connect, PrivateLink, VPC design)
+- AWS IAM and security services (GuardDuty, Security Hub, Config, Macie)
+
+**Proficient level required:**
+
+- Infrastructure as Code (CloudFormation, CDK, Terraform/OpenTofu)
+- AWS monitoring and observability (CloudWatch, X-Ray, AWS Distro for OpenTelemetry)
+- AWS cost management (Cost Explorer, Savings Plans, Reserved Instances, Trusted Advisor)
+
+**Working Knowledge required:**
+
+- Amazon EKS and container orchestration architecture
+- Amazon Bedrock and AWS GenAI services architecture
+
+**Awareness level expected:**
+
+- Amazon SageMaker AI/ML platform design patterns
+- AWS GovCloud and Digital Sovereignty Pledge compliance patterns for regulated industries
 
 ## Interactions with Other Roles
 

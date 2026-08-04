@@ -64,10 +64,27 @@ The Windows Active Directory Product Owner manages the service roadmap and plann
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Active Directory, Microsoft Entra ID (hybrid identity), Jira/Azure DevOps
-- **Proficient level required:** Group Policy management, Power BI (AD metrics/reporting), ServiceNow (ITSM integration)
-- **Working Knowledge required:** Microsoft Entra Connect, PowerShell (AD automation)
-- **Awareness level expected:** DNS/DHCP management, AD Certificate Services
+**Expert level required:**
+
+- Windows Active Directory
+- Microsoft Entra ID (hybrid identity)
+- Jira/Azure DevOps
+
+**Proficient level required:**
+
+- Group Policy management
+- Power BI (AD metrics/reporting)
+- ServiceNow (ITSM integration)
+
+**Working Knowledge required:**
+
+- Microsoft Entra Connect
+- PowerShell (AD automation)
+
+**Awareness level expected:**
+
+- DNS/DHCP management
+- AD Certificate Services
 
 ## Interactions with Other Roles
 

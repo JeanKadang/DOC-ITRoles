@@ -78,10 +78,29 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** MuleSoft Anypoint Platform or Azure Integration Services (complex integration flow design, Logic Apps, Service Bus, and Function-based patterns), Apache Kafka (producer/consumer development, topic design, and offset management), API gateway configuration (Azure APIM or AWS API Gateway — OAuth 2.0, rate limiting, and transformation policies)
-- **Proficient level required:** OpenAPI 3.x specification and REST API design standards, error handling patterns (DLQ, retry policies, idempotency, and saga compensation), B2B/EDI integration protocols (AS2, SFTP, X12, EDIFACT)
-- **Working Knowledge required:** Azure Event Grid or AWS EventBridge (event-driven integration patterns), DataWeave or JavaScript/Python scripting for message transformation, integration monitoring and end-to-end correlation tracing
-- **Awareness level expected:** Dapr for event-driven microservice integration patterns, schema registry tooling (Confluent Schema Registry, AWS Glue Schema Registry), CNCF CloudEvents specification
+**Expert level required:**
+
+- MuleSoft Anypoint Platform or Azure Integration Services (complex integration flow design, Logic Apps, Service Bus, and Function-based patterns)
+- Apache Kafka (producer/consumer development, topic design, and offset management)
+- API gateway configuration (Azure APIM or AWS API Gateway — OAuth 2.0, rate limiting, and transformation policies)
+
+**Proficient level required:**
+
+- OpenAPI 3.x specification and REST API design standards
+- error handling patterns (DLQ, retry policies, idempotency, and saga compensation)
+- B2B/EDI integration protocols (AS2, SFTP, X12, EDIFACT)
+
+**Working Knowledge required:**
+
+- Azure Event Grid or AWS EventBridge (event-driven integration patterns)
+- DataWeave or JavaScript/Python scripting for message transformation
+- integration monitoring and end-to-end correlation tracing
+
+**Awareness level expected:**
+
+- Dapr for event-driven microservice integration patterns
+- schema registry tooling (Confluent Schema Registry, AWS Glue Schema Registry)
+- CNCF CloudEvents specification
 
 ## Interactions with Other Roles
 

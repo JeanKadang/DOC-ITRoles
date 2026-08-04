@@ -72,10 +72,27 @@ The Identity Management Engineer implements and maintains identity management sy
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Active Directory, Microsoft Entra ID, Azure MFA
-- **Proficient level required:** AD FS/SAML (federation services), Microsoft Entra Connect (sync), LDAP
-- **Working Knowledge required:** Identity provisioning tools (SCIM), password management systems
-- **Awareness level expected:** OAuth 2.0/OIDC, SailPoint/Saviynt (IGA)
+**Expert level required:**
+
+- Windows Active Directory
+- Microsoft Entra ID
+- Azure MFA
+
+**Proficient level required:**
+
+- AD FS/SAML (federation services)
+- Microsoft Entra Connect (sync)
+- LDAP
+
+**Working Knowledge required:**
+
+- Identity provisioning tools (SCIM)
+- password management systems
+
+**Awareness level expected:**
+
+- OAuth 2.0/OIDC
+- SailPoint/Saviynt (IGA)
 
 ## Interactions with Other Roles
 

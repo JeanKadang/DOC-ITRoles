@@ -66,10 +66,25 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Agile product ownership tools (Jira, Confluence) for FinOps backlog management, roadmap tracking, and sprint ceremonies, FinOps Foundation Framework and methodology for cloud financial accountability governance and maturity assessment, Stakeholder reporting and communication platforms (Power BI, Microsoft Teams) for cloud cost transparency and executive briefings
-- **Proficient level required:** Cloud cost management portals (AWS Cost Explorer, Azure Cost Management, GCP Billing Console) for understanding cost drivers and initiative prioritisation, Chargeback and showback platforms for cost allocation model governance and reporting quality oversight, Cloud provider pricing models (AWS, Azure, GCP) for ROI analysis of FinOps optimisation initiatives
-- **Working Knowledge required:** FinOps tooling platforms (CloudHealth, Apptio Cloudability) for service catalogue definition and tool governance decisions, ITIL service management framework for aligning FinOps processes with IT service delivery and SLA management
-- **Awareness level expected:** FinOps automation and reserved capacity management platforms for technical roadmap and investment oversight, AI/LLM cost governance patterns and emerging cloud consumption models (spot GPU, token pricing, inference reservations)
+**Expert level required:**
+
+- Agile product ownership tools (Jira, Confluence) for FinOps backlog management, roadmap tracking, and sprint ceremonies, FinOps Foundation Framework and methodology for cloud financial accountability governance and maturity assessment, Stakeholder reporting and communication platforms (Power BI, Microsoft Teams) for cloud cost transparency and executive briefings
+
+**Proficient level required:**
+
+- Cloud cost management portals (AWS Cost Explorer, Azure Cost Management, GCP Billing Console) for understanding cost drivers and initiative prioritisation
+- Chargeback and showback platforms for cost allocation model governance and reporting quality oversight
+- Cloud provider pricing models (AWS, Azure, GCP) for ROI analysis of FinOps optimisation initiatives
+
+**Working Knowledge required:**
+
+- FinOps tooling platforms (CloudHealth, Apptio Cloudability) for service catalogue definition and tool governance decisions
+- ITIL service management framework for aligning FinOps processes with IT service delivery and SLA management
+
+**Awareness level expected:**
+
+- FinOps automation and reserved capacity management platforms for technical roadmap and investment oversight
+- AI/LLM cost governance patterns and emerging cloud consumption models (spot GPU, token pricing, inference reservations)
 
 ### Qualifications
 

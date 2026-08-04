@@ -64,10 +64,27 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Kubernetes and container orchestration for platform component deployment and operations, CI/CD pipeline tools (GitHub Actions, GitLab CI, Jenkins) for developer self-service automation, Infrastructure as Code (Terraform, Pulumi) for platform component provisioning, Backstage or similar developer portal configuration, plugin management, and service catalog templates
-- **Proficient level required:** GitOps tools (ArgoCD, Flux) for platform deployment management, Service catalog and golden path template authoring, Prometheus and Grafana for platform component monitoring and health dashboards, Container registries and artifact repositories (Harbor, JFrog Artifactory)
-- **Working Knowledge required:** API gateways and service mesh basics (Istio, Linkerd) for platform-level traffic management, Helm and Kustomize for Kubernetes workload packaging and customisation, Policy engines (OPA, Kyverno) for platform governance and admission control
-- **Awareness level expected:** Platform engineering maturity frameworks (CNCF Platforms whitepaper, Team Topologies), Emerging internal developer portal features and ecosystem integrations
+**Expert level required:**
+
+- Kubernetes and container orchestration for platform component deployment and operations, CI/CD pipeline tools (GitHub Actions, GitLab CI, Jenkins) for developer self-service automation, Infrastructure as Code (Terraform, Pulumi) for platform component provisioning, Backstage or similar developer portal configuration, plugin management, and service catalog templates
+
+**Proficient level required:**
+
+- GitOps tools (ArgoCD, Flux) for platform deployment management
+- Service catalog and golden path template authoring
+- Prometheus and Grafana for platform component monitoring and health dashboards
+- Container registries and artifact repositories (Harbor, JFrog Artifactory)
+
+**Working Knowledge required:**
+
+- API gateways and service mesh basics (Istio, Linkerd) for platform-level traffic management
+- Helm and Kustomize for Kubernetes workload packaging and customisation
+- Policy engines (OPA, Kyverno) for platform governance and admission control
+
+**Awareness level expected:**
+
+- Platform engineering maturity frameworks (CNCF Platforms whitepaper, Team Topologies)
+- Emerging internal developer portal features and ecosystem integrations
 
 ## Interactions with Other Roles
 

@@ -68,10 +68,33 @@ The Linux Server Architect designs and defines the strategic direction for the o
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** RHEL/SLES/Ubuntu enterprise distributions, Ansible and Terraform (IaC), Kubernetes/OpenShift container orchestration, Linux HA (Pacemaker, Corosync), Linux security hardening and CIS compliance
-- **Proficient level required:** Docker/Podman container technologies, KVM/VMware virtualization, LVM/ZFS advanced storage, Linux networking and firewall configuration, LDAP/SSO identity integration
-- **Working Knowledge required:** Cloud-native Linux deployments (AWS/Azure/GCP), Linux monitoring and observability solutions, OpenShift platform services
-- **Awareness level expected:** eBPF-based observability tooling, immutable OS patterns (CoreOS, Flatcar), edge computing Linux workloads
+**Expert level required:**
+
+- RHEL/SLES/Ubuntu enterprise distributions
+- Ansible and Terraform (IaC)
+- Kubernetes/OpenShift container orchestration
+- Linux HA (Pacemaker, Corosync)
+- Linux security hardening and CIS compliance
+
+**Proficient level required:**
+
+- Docker/Podman container technologies
+- KVM/VMware virtualization
+- LVM/ZFS advanced storage
+- Linux networking and firewall configuration
+- LDAP/SSO identity integration
+
+**Working Knowledge required:**
+
+- Cloud-native Linux deployments (AWS/Azure/GCP)
+- Linux monitoring and observability solutions
+- OpenShift platform services
+
+**Awareness level expected:**
+
+- eBPF-based observability tooling
+- immutable OS patterns (CoreOS, Flatcar)
+- edge computing Linux workloads
 
 ## Key Technologies
 

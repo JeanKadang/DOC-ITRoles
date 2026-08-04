@@ -66,10 +66,28 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Cisco IOS-XE/NX-OS, BGP/OSPF/MPLS routing protocols, SD-WAN platforms (Cisco Meraki/Viptela, VMware VeloCloud)
-- **Proficient level required:** Azure Networking (vWAN/ExpressRoute), Palo Alto/Fortinet next-generation firewalls, Wireshark/packet analysis
-- **Working Knowledge required:** AWS/GCP networking constructs, DNSSEC, 802.1X network access control
-- **Awareness level expected:** 5G/private wireless networking, Azure Edge Zones/AWS Wavelength
+**Expert level required:**
+
+- Cisco IOS-XE/NX-OS
+- BGP/OSPF/MPLS routing protocols
+- SD-WAN platforms (Cisco Meraki/Viptela, VMware VeloCloud)
+
+**Proficient level required:**
+
+- Azure Networking (vWAN/ExpressRoute)
+- Palo Alto/Fortinet next-generation firewalls
+- Wireshark/packet analysis
+
+**Working Knowledge required:**
+
+- AWS/GCP networking constructs
+- DNSSEC
+- 802.1X network access control
+
+**Awareness level expected:**
+
+- 5G/private wireless networking
+- Azure Edge Zones/AWS Wavelength
 
 ## Interactions with Other Roles
 

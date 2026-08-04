@@ -68,10 +68,29 @@ The AI Governance Senior Engineer implements, operates, and continuously improve
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Fairlearn/AI Fairness 360, SHAP/LIME/Microsoft InterpretML, Azure AI Content Safety/Azure OpenAI content filtering, Microsoft Purview
-- **Proficient level required:** MLflow/Azure Machine Learning, OWASP LLM Top 10/MITRE ATLAS, Presidio, Python
-- **Working Knowledge required:** GRC platforms (ServiceNow GRC), Microsoft Copilot Admin Center/Microsoft 365 governance
-- **Awareness level expected:** Weights & Biases, EU AI Act compliance tooling
+**Expert level required:**
+
+- Fairlearn/AI Fairness 360
+- SHAP/LIME/Microsoft InterpretML
+- Azure AI Content Safety/Azure OpenAI content filtering
+- Microsoft Purview
+
+**Proficient level required:**
+
+- MLflow/Azure Machine Learning
+- OWASP LLM Top 10/MITRE ATLAS
+- Presidio
+- Python
+
+**Working Knowledge required:**
+
+- GRC platforms (ServiceNow GRC)
+- Microsoft Copilot Admin Center/Microsoft 365 governance
+
+**Awareness level expected:**
+
+- Weights & Biases
+- EU AI Act compliance tooling
 
 ## Interactions with Other Roles
 

@@ -77,10 +77,27 @@ The Privileged Access Management (PAM) Engineer implements, operates, and mainta
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** CyberArk EPV/PVWA/PSM/CPM, Microsoft Entra ID PIM, Active Directory (service account management)
-- **Proficient level required:** Microsoft Sentinel (SIEM/audit), PowerShell/Python automation, BeyondTrust/Delinea (PAM)
-- **Working Knowledge required:** Network device management (Cisco/Juniper PAM), Database PAM (SQL Server/Oracle)
-- **Awareness level expected:** HashiCorp Vault (DevOps secrets), CyberArk Conjur
+**Expert level required:**
+
+- CyberArk EPV/PVWA/PSM/CPM
+- Microsoft Entra ID PIM
+- Active Directory (service account management)
+
+**Proficient level required:**
+
+- Microsoft Sentinel (SIEM/audit)
+- PowerShell/Python automation
+- BeyondTrust/Delinea (PAM)
+
+**Working Knowledge required:**
+
+- Network device management (Cisco/Juniper PAM)
+- Database PAM (SQL Server/Oracle)
+
+**Awareness level expected:**
+
+- HashiCorp Vault (DevOps secrets)
+- CyberArk Conjur
 
 ## Interactions with Other Roles
 

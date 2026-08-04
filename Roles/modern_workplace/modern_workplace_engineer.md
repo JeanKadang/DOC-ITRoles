@@ -73,10 +73,29 @@ The Modern Workplace Engineer administers and supports the organisation's Micros
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Exchange Online mailbox and mail flow management, Microsoft Teams administration and policy configuration, SharePoint Online and OneDrive permissions management
-- **Proficient level required:** Microsoft Purview compliance portal (sensitivity labels, retention policies, eDiscovery), PowerShell for M365 administration tasks, Microsoft Entra ID user and licence management
-- **Working Knowledge required:** Microsoft Defender for Office 365 operations, Microsoft 365 Admin Centre reporting and service health, Microsoft Viva Engage and Viva Connections basics
-- **Awareness level expected:** Microsoft 365 Copilot capabilities, Microsoft Teams Rooms and meeting room systems, Power Automate for M365 workflow automation
+**Expert level required:**
+
+- Exchange Online mailbox and mail flow management
+- Microsoft Teams administration and policy configuration
+- SharePoint Online and OneDrive permissions management
+
+**Proficient level required:**
+
+- Microsoft Purview compliance portal (sensitivity labels, retention policies, eDiscovery)
+- PowerShell for M365 administration tasks
+- Microsoft Entra ID user and licence management
+
+**Working Knowledge required:**
+
+- Microsoft Defender for Office 365 operations
+- Microsoft 365 Admin Centre reporting and service health
+- Microsoft Viva Engage and Viva Connections basics
+
+**Awareness level expected:**
+
+- Microsoft 365 Copilot capabilities
+- Microsoft Teams Rooms and meeting room systems
+- Power Automate for M365 workflow automation
 
 ## Interactions with Other Roles
 

@@ -70,10 +70,24 @@ The Service Desk Analyst is the Tier-1 point of contact for every employee techn
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ITSM ticketing platform (ServiceNow or equivalent) day-to-day operation
-- **Proficient level required:** Windows 10/11 and Microsoft 365 end-user troubleshooting, remote-support tooling (Quick Assist, TeamViewer, or equivalent)
-- **Working Knowledge required:** macOS end-user troubleshooting, Active Directory / Entra ID account concepts
-- **Awareness level expected:** mobile device (iOS/Android) basic troubleshooting, VPN/network connectivity fundamentals
+**Expert level required:**
+
+- ITSM ticketing platform (ServiceNow or equivalent) day-to-day operation
+
+**Proficient level required:**
+
+- Windows 10/11 and Microsoft 365 end-user troubleshooting
+- remote-support tooling (Quick Assist, TeamViewer, or equivalent)
+
+**Working Knowledge required:**
+
+- macOS end-user troubleshooting
+- Active Directory / Entra ID account concepts
+
+**Awareness level expected:**
+
+- mobile device (iOS/Android) basic troubleshooting
+- VPN/network connectivity fundamentals
 
 ## Interactions with Other Roles
 

@@ -68,10 +68,30 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Qumulo Core file system (cluster administration, web UI, CLI, and REST API operations), file protocols (NFS, SMB, and S3 — share provisioning, access controls, and client connectivity), Qumulo snapshot management and replication configuration
-- **Proficient level required:** Qumulo Analytics and cluster performance monitoring, Qumulo Shift for cloud data transfers, file system quota management and capacity monitoring, Qumulo software upgrades and patching procedures
-- **Working Knowledge required:** Network file system protocol troubleshooting (NFS/SMB connectivity issues), data migration tooling for Qumulo workloads, Python scripting for Qumulo REST API automation
-- **Awareness level expected:** Hybrid cloud storage integration patterns, object storage protocol trends (S3-compatible NAS), competitive enterprise NAS platforms (NetApp, Dell EMC Isilon)
+**Expert level required:**
+
+- Qumulo Core file system (cluster administration, web UI, CLI, and REST API operations)
+- file protocols (NFS, SMB, and S3 — share provisioning, access controls, and client connectivity)
+- Qumulo snapshot management and replication configuration
+
+**Proficient level required:**
+
+- Qumulo Analytics and cluster performance monitoring
+- Qumulo Shift for cloud data transfers
+- file system quota management and capacity monitoring
+- Qumulo software upgrades and patching procedures
+
+**Working Knowledge required:**
+
+- Network file system protocol troubleshooting (NFS/SMB connectivity issues)
+- data migration tooling for Qumulo workloads
+- Python scripting for Qumulo REST API automation
+
+**Awareness level expected:**
+
+- Hybrid cloud storage integration patterns
+- object storage protocol trends (S3-compatible NAS)
+- competitive enterprise NAS platforms (NetApp, Dell EMC Isilon)
 
 ## Key Technologies
 

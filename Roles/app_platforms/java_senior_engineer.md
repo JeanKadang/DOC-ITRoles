@@ -64,10 +64,30 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Spring Framework ecosystem (Spring Boot, Spring Cloud, Spring Security — advanced implementation and optimisation), Java/JVM performance tuning (GC analysis, heap profiling, thread contention), microservices design patterns (circuit breaker, saga, outbox)
-- **Proficient level required:** Java security configuration (OWASP dependency audit, SAST integration), Maven/Gradle advanced multi-module project management, Java containerization and Kubernetes deployment, TestContainers and integration testing strategies
-- **Working Knowledge required:** Cloud-native Java development patterns (AWS/Azure Java SDKs, GraalVM awareness), CI/CD pipeline integration for Java (GitHub Actions or Jenkins), Jakarta EE specifications and migration context
-- **Awareness level expected:** Project Loom virtual threads and structured concurrency, GraalVM native image for microservice performance, reactive programming patterns (Spring WebFlux/Project Reactor)
+**Expert level required:**
+
+- Spring Framework ecosystem (Spring Boot, Spring Cloud, Spring Security — advanced implementation and optimisation)
+- Java/JVM performance tuning (GC analysis, heap profiling, thread contention)
+- microservices design patterns (circuit breaker, saga, outbox)
+
+**Proficient level required:**
+
+- Java security configuration (OWASP dependency audit, SAST integration)
+- Maven/Gradle advanced multi-module project management
+- Java containerization and Kubernetes deployment
+- TestContainers and integration testing strategies
+
+**Working Knowledge required:**
+
+- Cloud-native Java development patterns (AWS/Azure Java SDKs, GraalVM awareness)
+- CI/CD pipeline integration for Java (GitHub Actions or Jenkins)
+- Jakarta EE specifications and migration context
+
+**Awareness level expected:**
+
+- Project Loom virtual threads and structured concurrency
+- GraalVM native image for microservice performance
+- reactive programming patterns (Spring WebFlux/Project Reactor)
 
 ## Interactions with Other Roles
 

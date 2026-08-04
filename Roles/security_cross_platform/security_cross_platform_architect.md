@@ -72,10 +72,28 @@ The Security Cross-Platform Architect designs and develops comprehensive securit
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Zero Trust architecture frameworks, SABSA/TOGAF Security, Microsoft Defender XDR
-- **Proficient level required:** Microsoft Sentinel, Prisma Cloud/Wiz (multi-cloud CSPM), Microsoft Entra ID (identity fabric)
-- **Working Knowledge required:** IaC security tools (Checkov/tfsec), API security gateways, HashiCorp Vault
-- **Awareness level expected:** SOAR automation platforms, eBPF-based runtime security
+**Expert level required:**
+
+- Zero Trust architecture frameworks
+- SABSA/TOGAF Security
+- Microsoft Defender XDR
+
+**Proficient level required:**
+
+- Microsoft Sentinel
+- Prisma Cloud/Wiz (multi-cloud CSPM)
+- Microsoft Entra ID (identity fabric)
+
+**Working Knowledge required:**
+
+- IaC security tools (Checkov/tfsec)
+- API security gateways
+- HashiCorp Vault
+
+**Awareness level expected:**
+
+- SOAR automation platforms
+- eBPF-based runtime security
 
 ## Interactions with Other Roles
 

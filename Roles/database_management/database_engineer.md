@@ -72,10 +72,29 @@ The Database Engineer implements and maintains database systems across the organ
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Relational database administration (Oracle, SQL Server, or PostgreSQL — instance management, backup/recovery, and patching), SQL and query language proficiency (DML, DDL, stored procedures, and views), database security controls (access management, RBAC, and auditing configuration)
-- **Proficient level required:** Database backup and recovery procedure execution and restoration testing, database performance monitoring tools (execution plans, query analysis, and space utilisation), database provisioning and standard configuration management
-- **Working Knowledge required:** High availability concepts (SQL Server Always On AG, Oracle RAC basics, or PostgreSQL streaming replication), cloud database services (Azure SQL, AWS RDS basics), database migration and upgrade tooling
-- **Awareness level expected:** NoSQL database platforms (MongoDB, Redis fundamentals), database automation scripting (Python/PowerShell), container-based database deployments
+**Expert level required:**
+
+- Relational database administration (Oracle, SQL Server, or PostgreSQL — instance management, backup/recovery, and patching)
+- SQL and query language proficiency (DML, DDL, stored procedures, and views)
+- database security controls (access management, RBAC, and auditing configuration)
+
+**Proficient level required:**
+
+- Database backup and recovery procedure execution and restoration testing
+- database performance monitoring tools (execution plans, query analysis, and space utilisation)
+- database provisioning and standard configuration management
+
+**Working Knowledge required:**
+
+- High availability concepts (SQL Server Always On AG, Oracle RAC basics, or PostgreSQL streaming replication)
+- cloud database services (Azure SQL, AWS RDS basics)
+- database migration and upgrade tooling
+
+**Awareness level expected:**
+
+- NoSQL database platforms (MongoDB, Redis fundamentals)
+- database automation scripting (Python/PowerShell)
+- container-based database deployments
 
 ## Interactions with Other Roles
 

@@ -72,10 +72,31 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Server (2016/2019/2022) administration, Active Directory user/group/OU management, Group Policy configuration and troubleshooting, WSUS patch management
-- **Proficient level required:** PowerShell scripting for Windows administration, DNS and DHCP management, Windows File Services and DFS, IIS and Remote Desktop Services
-- **Working Knowledge required:** Windows Firewall and security features, Windows Backup and recovery tools, Hyper-V virtualization basics
-- **Awareness level expected:** Azure Arc management basics, PowerShell DSC concepts, Windows Server containers
+**Expert level required:**
+
+- Windows Server (2016/2019/2022) administration
+- Active Directory user/group/OU management
+- Group Policy configuration and troubleshooting
+- WSUS patch management
+
+**Proficient level required:**
+
+- PowerShell scripting for Windows administration
+- DNS and DHCP management
+- Windows File Services and DFS
+- IIS and Remote Desktop Services
+
+**Working Knowledge required:**
+
+- Windows Firewall and security features
+- Windows Backup and recovery tools
+- Hyper-V virtualization basics
+
+**Awareness level expected:**
+
+- Azure Arc management basics
+- PowerShell DSC concepts
+- Windows Server containers
 
 ## Interactions with Other Roles
 

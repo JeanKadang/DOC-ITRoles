@@ -80,10 +80,27 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Slurm or PBS Pro job scheduler administration, queue configuration, and resource policy management, Linux HPC system administration and cluster node imaging with xCAT or Bright Cluster Manager, Parallel file systems (Lustre, GPFS/Spectrum Scale, BeeGFS) operations, maintenance, and capacity management, HPC cluster management and automation using Ansible for configuration management
-- **Proficient level required:** MPI implementations (OpenMPI, MPICH) and scientific library installation and environment module configuration, InfiniBand and OmniPath high-performance interconnect management and diagnostics, Container technologies for HPC (Singularity/Apptainer, Docker) for reproducible research environments, GPU computing frameworks (CUDA, OpenACC) for scientific application support and user enablement
-- **Working Knowledge required:** Cluster monitoring tools (Prometheus, Grafana, Ganglia) for HPC environment health visibility, Cloud HPC solutions (AWS ParallelCluster, Azure CycleCloud) for hybrid burst workload integration, Bash and Python scripting for job submission automation and workflow tooling
-- **Awareness level expected:** ROCm AMD GPU computing platform for accelerated scientific workloads, Emerging cloud-native HPC patterns and Kubernetes batch scheduling (Volcano, Kueue)
+**Expert level required:**
+
+- Slurm or PBS Pro job scheduler administration, queue configuration, and resource policy management, Linux HPC system administration and cluster node imaging with xCAT or Bright Cluster Manager, Parallel file systems (Lustre, GPFS/Spectrum Scale, BeeGFS) operations, maintenance, and capacity management, HPC cluster management and automation using Ansible for configuration management
+
+**Proficient level required:**
+
+- MPI implementations (OpenMPI, MPICH) and scientific library installation and environment module configuration
+- InfiniBand and OmniPath high-performance interconnect management and diagnostics
+- Container technologies for HPC (Singularity/Apptainer, Docker) for reproducible research environments
+- GPU computing frameworks (CUDA, OpenACC) for scientific application support and user enablement
+
+**Working Knowledge required:**
+
+- Cluster monitoring tools (Prometheus, Grafana, Ganglia) for HPC environment health visibility
+- Cloud HPC solutions (AWS ParallelCluster, Azure CycleCloud) for hybrid burst workload integration
+- Bash and Python scripting for job submission automation and workflow tooling
+
+**Awareness level expected:**
+
+- ROCm AMD GPU computing platform for accelerated scientific workloads
+- Emerging cloud-native HPC patterns and Kubernetes batch scheduling (Volcano, Kueue)
 
 ## Interactions with Other Roles
 

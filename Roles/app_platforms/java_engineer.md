@@ -64,10 +64,30 @@ The Java Engineer implements and maintains Java-based applications and platform 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Java language (JDK 8-17) and object-oriented programming principles, Spring Framework (Spring Boot, Spring MVC, Spring Data), JUnit and Mockito (unit and integration testing)
-- **Proficient level required:** Maven or Gradle (build tools and dependency management), JPA/Hibernate for relational data access, RESTful API development (REST controllers, HTTP standards), SQL database connectivity (JDBC)
-- **Working Knowledge required:** Git version control and branching basics, CI/CD pipeline basics (Jenkins or GitLab CI), Docker container fundamentals for Java applications
-- **Awareness level expected:** Kubernetes for Java deployment targets, Spring Cloud for microservices patterns, reactive programming with Spring WebFlux
+**Expert level required:**
+
+- Java language (JDK 8-17) and object-oriented programming principles
+- Spring Framework (Spring Boot, Spring MVC, Spring Data)
+- JUnit and Mockito (unit and integration testing)
+
+**Proficient level required:**
+
+- Maven or Gradle (build tools and dependency management)
+- JPA/Hibernate for relational data access
+- RESTful API development (REST controllers, HTTP standards)
+- SQL database connectivity (JDBC)
+
+**Working Knowledge required:**
+
+- Git version control and branching basics
+- CI/CD pipeline basics (Jenkins or GitLab CI)
+- Docker container fundamentals for Java applications
+
+**Awareness level expected:**
+
+- Kubernetes for Java deployment targets
+- Spring Cloud for microservices patterns
+- reactive programming with Spring WebFlux
 
 ## Interactions with Other Roles
 

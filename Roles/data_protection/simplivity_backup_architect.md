@@ -64,10 +64,27 @@ The SimpliVity Backup Architect designs and oversees data protection strategies 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** HPE SimpliVity hyperconverged infrastructure, SimpliVity RapidDR, vSphere/vCenter (VMware integration)
-- **Proficient level required:** SimpliVity DVP (Data Virtualization Platform), SimpliVity policy-based management, SimpliVity replication (multi-site)
-- **Working Knowledge required:** SimpliVity API/automation frameworks, DR orchestration tools
-- **Awareness level expected:** NetApp/Pure Storage (enterprise storage), , NIST CSF compliance for backup
+**Expert level required:**
+
+- HPE SimpliVity hyperconverged infrastructure
+- SimpliVity RapidDR
+- vSphere/vCenter (VMware integration)
+
+**Proficient level required:**
+
+- SimpliVity DVP (Data Virtualization Platform)
+- SimpliVity policy-based management
+- SimpliVity replication (multi-site)
+
+**Working Knowledge required:**
+
+- SimpliVity API/automation frameworks
+- DR orchestration tools
+
+**Awareness level expected:**
+
+- NetApp/Pure Storage (enterprise storage)
+- NIST CSF compliance for backup
 
 ## Interactions with Other Roles
 

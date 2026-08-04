@@ -90,10 +90,31 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Jira or Azure DevOps backlog management and sprint planning, stakeholder reporting and dashboard creation (Power BI or equivalent), hardware refresh planning and lifecycle budget management
-- **Proficient level required:** Client estate health reporting (Intune Endpoint Analytics, Jamf Pro dashboards, WUfB Reports), application packaging intake and triage process management, OS lifecycle roadmap management (Windows, macOS, Ubuntu LTS release cycles)
-- **Working Knowledge required:** Windows Update for Business compliance concepts, Jamf Pro reporting basics, Microsoft Intune device compliance overview, agile ceremonies and delivery metrics (velocity, cycle time, lead time)
-- **Awareness level expected:** OS image build concepts (WIM, DISM, task sequences), zero-touch provisioning workflows (Autopilot, ABM), application packaging formats (MSIX, .pkg, .deb), CIS benchmark hardening concepts
+**Expert level required:**
+
+- Jira or Azure DevOps backlog management and sprint planning
+- stakeholder reporting and dashboard creation (Power BI or equivalent)
+- hardware refresh planning and lifecycle budget management
+
+**Proficient level required:**
+
+- Client estate health reporting (Intune Endpoint Analytics, Jamf Pro dashboards, WUfB Reports)
+- application packaging intake and triage process management
+- OS lifecycle roadmap management (Windows, macOS, Ubuntu LTS release cycles)
+
+**Working Knowledge required:**
+
+- Windows Update for Business compliance concepts
+- Jamf Pro reporting basics
+- Microsoft Intune device compliance overview
+- agile ceremonies and delivery metrics (velocity, cycle time, lead time)
+
+**Awareness level expected:**
+
+- OS image build concepts (WIM, DISM, task sequences)
+- zero-touch provisioning workflows (Autopilot, ABM)
+- application packaging formats (MSIX, .pkg, .deb)
+- CIS benchmark hardening concepts
 
 ### Qualifications
 

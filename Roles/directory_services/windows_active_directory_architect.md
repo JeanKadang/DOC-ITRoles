@@ -64,10 +64,27 @@ The Windows Active Directory Architect designs AD structure, security models, an
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Active Directory (AD DS/AD FS), Group Policy Objects (GPO), AD Certificate Services (AD CS)
-- **Proficient level required:** Microsoft Entra Connect (hybrid identity), LDAP/Kerberos, PowerShell (AD automation)
-- **Working Knowledge required:** AD security/auditing tools, DNS/DHCP for Active Directory
-- **Awareness level expected:** Microsoft Entra ID (Azure AD), Zero Trust identity architectures
+**Expert level required:**
+
+- Windows Active Directory (AD DS/AD FS)
+- Group Policy Objects (GPO)
+- AD Certificate Services (AD CS)
+
+**Proficient level required:**
+
+- Microsoft Entra Connect (hybrid identity)
+- LDAP/Kerberos
+- PowerShell (AD automation)
+
+**Working Knowledge required:**
+
+- AD security/auditing tools
+- DNS/DHCP for Active Directory
+
+**Awareness level expected:**
+
+- Microsoft Entra ID (Azure AD)
+- Zero Trust identity architectures
 
 ## Interactions with Other Roles
 

@@ -64,10 +64,29 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Qumulo Core file system (cluster architecture, HA design, and performance standards), file protocols (NFS, SMB, S3 — multi-protocol access design and governance), Qumulo replication and snapshot architecture for data protection and DR
-- **Proficient level required:** Qumulo Shift for hybrid cloud data migration (AWS S3 and Azure Blob integration), Qumulo API and automation frameworks (REST API integration and management tooling), capacity planning and cluster scaling models for Qumulo deployments
-- **Working Knowledge required:** Storage networking technologies (Ethernet/TCP/IP for Qumulo cluster connectivity), data migration strategies to and from Qumulo, cloud storage platforms (AWS S3, Azure Blob) as Qumulo Shift targets
-- **Awareness level expected:** Competitive enterprise NAS platforms (NetApp ONTAP, Dell EMC PowerScale/Isilon), AI/ML unstructured data storage requirements and performance patterns, object storage protocol (S3-compatible NAS) adoption trends
+**Expert level required:**
+
+- Qumulo Core file system (cluster architecture, HA design, and performance standards)
+- file protocols (NFS, SMB, S3 — multi-protocol access design and governance)
+- Qumulo replication and snapshot architecture for data protection and DR
+
+**Proficient level required:**
+
+- Qumulo Shift for hybrid cloud data migration (AWS S3 and Azure Blob integration)
+- Qumulo API and automation frameworks (REST API integration and management tooling)
+- capacity planning and cluster scaling models for Qumulo deployments
+
+**Working Knowledge required:**
+
+- Storage networking technologies (Ethernet/TCP/IP for Qumulo cluster connectivity)
+- data migration strategies to and from Qumulo
+- cloud storage platforms (AWS S3, Azure Blob) as Qumulo Shift targets
+
+**Awareness level expected:**
+
+- Competitive enterprise NAS platforms (NetApp ONTAP, Dell EMC PowerScale/Isilon)
+- AI/ML unstructured data storage requirements and performance patterns
+- object storage protocol (S3-compatible NAS) adoption trends
 
 ## Interactions with Other Roles
 

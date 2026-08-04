@@ -72,10 +72,27 @@ The Access Management Senior Engineer leads the implementation and optimization 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Entra ID (advanced configurations), CyberArk/BeyondTrust (PAM), access governance/certification tools
-- **Proficient level required:** OAuth 2.0/OIDC/SAML, automated access provisioning, risk-based access control (ABAC)
-- **Working Knowledge required:** Access management APIs/integrations, PowerShell/Python automation
-- **Awareness level expected:** SailPoint/Saviynt (IGA), AI-driven access analytics
+**Expert level required:**
+
+- Microsoft Entra ID (advanced configurations)
+- CyberArk/BeyondTrust (PAM)
+- access governance/certification tools
+
+**Proficient level required:**
+
+- OAuth 2.0/OIDC/SAML
+- automated access provisioning
+- risk-based access control (ABAC)
+
+**Working Knowledge required:**
+
+- Access management APIs/integrations
+- PowerShell/Python automation
+
+**Awareness level expected:**
+
+- SailPoint/Saviynt (IGA)
+- AI-driven access analytics
 
 ## Interactions with Other Roles
 

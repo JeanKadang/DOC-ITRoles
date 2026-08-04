@@ -72,10 +72,27 @@ The Security Cross-Platform Product Owner manages the portfolio of security serv
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Sentinel (SIEM), Microsoft Defender for Cloud (CSPM), Jira/Azure DevOps
-- **Proficient level required:** Power BI (security metrics), ServiceNow (security governance), Microsoft Defender XDR
-- **Working Knowledge required:** DevSecOps pipeline integration tools, identity federation platforms
-- **Awareness level expected:** SOAR automation, multi-cloud governance frameworks
+**Expert level required:**
+
+- Microsoft Sentinel (SIEM)
+- Microsoft Defender for Cloud (CSPM)
+- Jira/Azure DevOps
+
+**Proficient level required:**
+
+- Power BI (security metrics)
+- ServiceNow (security governance)
+- Microsoft Defender XDR
+
+**Working Knowledge required:**
+
+- DevSecOps pipeline integration tools
+- identity federation platforms
+
+**Awareness level expected:**
+
+- SOAR automation
+- multi-cloud governance frameworks
 
 ## Interactions with Other Roles
 

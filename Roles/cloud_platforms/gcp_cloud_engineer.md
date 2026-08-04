@@ -64,10 +64,22 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Google Compute Engine, managed instance groups, and instance lifecycle management, Google Kubernetes Engine (GKE) for container workload deployment and operations, Virtual Private Cloud (VPC) networking, firewall rules, Cloud NAT, and Cloud DNS, Cloud IAM and service accounts for resource access management
-- **Proficient level required:** Terraform and Google Cloud Deployment Manager for infrastructure as code deployments, Cloud Storage, Cloud SQL, and core GCP storage and database services, Google Cloud Monitoring, Cloud Logging, and Cloud Trace for observability
-- **Working Knowledge required:** Cloud Functions, Cloud Run, and App Engine for serverless and PaaS workloads, GCP cost management tools (Billing Console, Budget Alerts, GCP Recommender)
-- **Awareness level expected:** BigQuery and Vertex AI for data and ML workloads, GCP security services (Security Command Center, VPC Service Controls) for security posture awareness
+**Expert level required:**
+
+- Google Compute Engine, managed instance groups, and instance lifecycle management, Google Kubernetes Engine (GKE) for container workload deployment and operations, Virtual Private Cloud (VPC) networking, firewall rules, Cloud NAT, and Cloud DNS, Cloud IAM and service accounts for resource access management
+
+**Proficient level required:**
+
+- Terraform and Google Cloud Deployment Manager for infrastructure as code deployments, Cloud Storage, Cloud SQL, and core GCP storage and database services, Google Cloud Monitoring, Cloud Logging, and Cloud Trace for observability
+
+**Working Knowledge required:**
+
+- Cloud Functions, Cloud Run, and App Engine for serverless and PaaS workloads, GCP cost management tools (Billing Console, Budget Alerts, GCP Recommender)
+
+**Awareness level expected:**
+
+- BigQuery and Vertex AI for data and ML workloads
+- GCP security services (Security Command Center, VPC Service Controls) for security posture awareness
 
 ## Interactions with Other Roles
 

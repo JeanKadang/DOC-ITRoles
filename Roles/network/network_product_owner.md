@@ -64,10 +64,30 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise network service lifecycle management and roadmap planning, Jira/Azure DevOps backlog and sprint management, network performance and capacity planning concepts
-- **Proficient level required:** SD-WAN and SASE technology concepts, network security platforms and Zero Trust frameworks, Wi-Fi and wireless network technologies, network analytics and monitoring dashboards
-- **Working Knowledge required:** Network automation frameworks (Ansible, Python scripting), cloud connectivity and hybrid network concepts, MPLS and carrier services
-- **Awareness level expected:** IoT network management approaches, AI-driven network analytics (AIOps), private 5G and edge networking
+**Expert level required:**
+
+- Enterprise network service lifecycle management and roadmap planning
+- Jira/Azure DevOps backlog and sprint management
+- network performance and capacity planning concepts
+
+**Proficient level required:**
+
+- SD-WAN and SASE technology concepts
+- network security platforms and Zero Trust frameworks
+- Wi-Fi and wireless network technologies
+- network analytics and monitoring dashboards
+
+**Working Knowledge required:**
+
+- Network automation frameworks (Ansible, Python scripting)
+- cloud connectivity and hybrid network concepts
+- MPLS and carrier services
+
+**Awareness level expected:**
+
+- IoT network management approaches
+- AI-driven network analytics (AIOps)
+- private 5G and edge networking
 
 ## Interactions with Other Roles
 

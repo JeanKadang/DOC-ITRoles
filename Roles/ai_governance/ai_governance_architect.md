@@ -81,10 +81,30 @@ The AI Governance Architect designs and governs the organisation's frameworks, p
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure AI Content Safety, Microsoft Purview, EU AI Act compliance tooling, SHAP/LIME/Microsoft InterpretML
-- **Proficient level required:** Fairlearn/AI Fairness 360, MLflow, OWASP LLM Top 10/MITRE ATLAS, Presidio
-- **Working Knowledge required:** Azure Machine Learning, Responsible AI Dashboard, ISO/IEC 42001
-- **Awareness level expected:** NIST AI RMF, Microsoft Copilot Studio governance controls
+**Expert level required:**
+
+- Azure AI Content Safety
+- Microsoft Purview
+- EU AI Act compliance tooling
+- SHAP/LIME/Microsoft InterpretML
+
+**Proficient level required:**
+
+- Fairlearn/AI Fairness 360
+- MLflow
+- OWASP LLM Top 10/MITRE ATLAS
+- Presidio
+
+**Working Knowledge required:**
+
+- Azure Machine Learning
+- Responsible AI Dashboard
+- ISO/IEC 42001
+
+**Awareness level expected:**
+
+- NIST AI RMF
+- Microsoft Copilot Studio governance controls
 
 ## Interactions with Other Roles
 

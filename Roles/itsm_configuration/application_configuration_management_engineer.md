@@ -64,10 +64,27 @@ The Application Configuration Management Engineer implements and maintains confi
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow/Remedy (ITSM/CMDB), Ansible/Chef/Puppet (configuration management), Git (version control)
-- **Proficient level required:** PowerShell/Python (configuration deployment scripts), CI/CD pipeline integration, configuration validation tools
-- **Working Knowledge required:** Azure Key Vault/HashiCorp Vault (secrets management), ITIL v4
-- **Awareness level expected:** Terraform (IaC), configuration drift detection tools
+**Expert level required:**
+
+- ServiceNow/Remedy (ITSM/CMDB)
+- Ansible/Chef/Puppet (configuration management)
+- Git (version control)
+
+**Proficient level required:**
+
+- PowerShell/Python (configuration deployment scripts)
+- CI/CD pipeline integration
+- configuration validation tools
+
+**Working Knowledge required:**
+
+- Azure Key Vault/HashiCorp Vault (secrets management)
+- ITIL v4
+
+**Awareness level expected:**
+
+- Terraform (IaC)
+- configuration drift detection tools
 
 ## Interactions with Other Roles
 

@@ -72,10 +72,30 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** RHEL/Ubuntu/SUSE enterprise Linux administration, Bash scripting, Linux package management (RPM/APT/Zypper)
-- **Proficient level required:** LVM and file system management, Linux networking configuration, Linux security hardening tools, SSH and remote management
-- **Working Knowledge required:** Ansible basics for configuration management, virtualization and container fundamentals, Linux monitoring tools
-- **Awareness level expected:** Infrastructure as Code concepts (Ansible/Terraform), cloud Linux services (AWS/Azure), DevSecOps practices
+**Expert level required:**
+
+- RHEL/Ubuntu/SUSE enterprise Linux administration
+- Bash scripting
+- Linux package management (RPM/APT/Zypper)
+
+**Proficient level required:**
+
+- LVM and file system management
+- Linux networking configuration
+- Linux security hardening tools
+- SSH and remote management
+
+**Working Knowledge required:**
+
+- Ansible basics for configuration management
+- virtualization and container fundamentals
+- Linux monitoring tools
+
+**Awareness level expected:**
+
+- Infrastructure as Code concepts (Ansible/Terraform)
+- cloud Linux services (AWS/Azure)
+- DevSecOps practices
 
 ## Interactions with Other Roles
 

@@ -79,10 +79,30 @@ The AI Platform Engineer builds and operates the organisation's AI/ML platform i
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure ML/Azure AI Foundry, MLflow, Docker/Kubernetes (AKS), Python
-- **Proficient level required:** Kubeflow Pipelines, Apache Airflow, GitHub Actions/GitLab CI, Terraform
-- **Working Knowledge required:** AWS SageMaker, Google Vertex AI, Feast (feature store)
-- **Awareness level expected:** Ray/Ray Serve, KServe/Triton Inference Server
+**Expert level required:**
+
+- Azure ML/Azure AI Foundry
+- MLflow
+- Docker/Kubernetes (AKS)
+- Python
+
+**Proficient level required:**
+
+- Kubeflow Pipelines
+- Apache Airflow
+- GitHub Actions/GitLab CI
+- Terraform
+
+**Working Knowledge required:**
+
+- AWS SageMaker
+- Google Vertex AI
+- Feast (feature store)
+
+**Awareness level expected:**
+
+- Ray/Ray Serve
+- KServe/Triton Inference Server
 
 ## Interactions with Other Roles
 

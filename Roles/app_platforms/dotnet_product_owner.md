@@ -64,10 +64,29 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** .NET platform roadmap management and backlog prioritisation (Jira, Azure DevOps), NuGet ecosystem governance and package versioning strategy, developer adoption metrics and platform satisfaction scoring
-- **Proficient level required:** .NET application lifecycle management and version upgrade planning, Azure cloud deployment concepts for .NET workload hosting, .NET security scanning and compliance oversight frameworks
-- **Working Knowledge required:** .NET testing frameworks and code quality tooling (SonarQube), CI/CD pipeline concepts for .NET delivery, artifact repository management (NuGet Gallery, GitHub Packages)
-- **Awareness level expected:** .NET MAUI and cross-platform development expansion trends, AI-assisted .NET development tooling impacts (GitHub Copilot), Blazor/WebAssembly adoption for front-end patterns
+**Expert level required:**
+
+- .NET platform roadmap management and backlog prioritisation (Jira, Azure DevOps)
+- NuGet ecosystem governance and package versioning strategy
+- developer adoption metrics and platform satisfaction scoring
+
+**Proficient level required:**
+
+- .NET application lifecycle management and version upgrade planning
+- Azure cloud deployment concepts for .NET workload hosting
+- .NET security scanning and compliance oversight frameworks
+
+**Working Knowledge required:**
+
+- .NET testing frameworks and code quality tooling (SonarQube)
+- CI/CD pipeline concepts for .NET delivery
+- artifact repository management (NuGet Gallery, GitHub Packages)
+
+**Awareness level expected:**
+
+- .NET MAUI and cross-platform development expansion trends
+- AI-assisted .NET development tooling impacts (GitHub Copilot)
+- Blazor/WebAssembly adoption for front-end patterns
 
 ## Interactions with Other Roles
 

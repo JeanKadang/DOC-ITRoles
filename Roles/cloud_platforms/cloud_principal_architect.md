@@ -67,10 +67,24 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Multi-cloud architecture strategy across Azure, AWS, and GCP at enterprise scale (landing zones, governance, AI/ML, networking, security), Cloud governance at scale: policy-as-code, CSPM, and multi-cloud management platforms, Enterprise architecture frameworks (TOGAF, Zachman, ArchiMate) applied to cloud strategy
-- **Proficient level required:** Infrastructure as Code at scale (Terraform Enterprise/Cloud, Pulumi Enterprise, platform engineering toolchains), AI/ML platform architecture across all three providers (Azure AI Foundry, AWS SageMaker, Google Vertex AI), Cloud security and identity federation (OIDC, SAML, workload identity federation)
-- **Working Knowledge required:** Cloud financial management strategy and FinOps tooling for multi-year cost modelling, Enterprise architecture tooling (LeanIX, Sparx EA, ArchiMate) for cloud strategy documentation
-- **Awareness level expected:** Emerging CNAPP, CIEM, and AIOps patterns for next-generation cloud security and operations, Cloud provider advisory programs (Microsoft MVP, AWS Hero, Google Developer Expert) and technology preview adoption signals
+**Expert level required:**
+
+- Multi-cloud architecture strategy across Azure, AWS, and GCP at enterprise scale (landing zones, governance, AI/ML, networking, security), Cloud governance at scale: policy-as-code, CSPM, and multi-cloud management platforms, Enterprise architecture frameworks (TOGAF, Zachman, ArchiMate) applied to cloud strategy
+
+**Proficient level required:**
+
+- Infrastructure as Code at scale (Terraform Enterprise/Cloud, Pulumi Enterprise, platform engineering toolchains)
+- AI/ML platform architecture across all three providers (Azure AI Foundry, AWS SageMaker, Google Vertex AI)
+- Cloud security and identity federation (OIDC, SAML, workload identity federation)
+
+**Working Knowledge required:**
+
+- Cloud financial management strategy and FinOps tooling for multi-year cost modelling
+- Enterprise architecture tooling (LeanIX, Sparx EA, ArchiMate) for cloud strategy documentation
+
+**Awareness level expected:**
+
+- Emerging CNAPP, CIEM, and AIOps patterns for next-generation cloud security and operations, Cloud provider advisory programs (Microsoft MVP, AWS Hero, Google Developer Expert) and technology preview adoption signals
 
 ## Interactions with Other Roles
 

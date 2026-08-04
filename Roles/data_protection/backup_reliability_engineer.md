@@ -64,10 +64,27 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Commvault Complete Backup & Recovery, Prometheus/Grafana (monitoring), Ansible/PowerShell (automation)
-- **Proficient level required:** Veeam/Veritas (backup platforms), Jenkins/GitLab CI (CI/CD for backup testing), PagerDuty/OpsGenie
-- **Working Knowledge required:** Chaos engineering tools, backup validation frameworks
-- **Awareness level expected:** Synthetic transaction monitoring, AI-driven backup analytics
+**Expert level required:**
+
+- Commvault Complete Backup & Recovery
+- Prometheus/Grafana (monitoring)
+- Ansible/PowerShell (automation)
+
+**Proficient level required:**
+
+- Veeam/Veritas (backup platforms)
+- Jenkins/GitLab CI (CI/CD for backup testing)
+- PagerDuty/OpsGenie
+
+**Working Knowledge required:**
+
+- Chaos engineering tools
+- backup validation frameworks
+
+**Awareness level expected:**
+
+- Synthetic transaction monitoring
+- AI-driven backup analytics
 
 ## Interactions with Other Roles
 

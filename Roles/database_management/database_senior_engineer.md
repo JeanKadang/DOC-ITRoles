@@ -72,10 +72,29 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Advanced relational database performance tuning (Oracle, SQL Server, or PostgreSQL — execution plans, advanced indexing, and buffer pool optimisation), database HA and DR implementation (SQL Server Always On AG, Oracle Data Guard, or PostgreSQL streaming replication), database automation and Infrastructure as Code for database deployments
-- **Proficient level required:** NoSQL database platforms at production scale (MongoDB, Cassandra — administration and tuning), cloud database migration strategies (on-prem to AWS RDS, Azure SQL, or GCP Cloud SQL), data replication technologies (logical replication and CDC patterns)
-- **Working Knowledge required:** Advanced backup and recovery strategies (point-in-time recovery and cross-region backup), database security hardening (TDE, column encryption, row-level security), containerised database deployment patterns
-- **Awareness level expected:** NewSQL and distributed database patterns (CockroachDB, TiDB), AI-assisted query tuning tools, database DevOps and schema migration practices (Flyway, Liquibase)
+**Expert level required:**
+
+- Advanced relational database performance tuning (Oracle, SQL Server, or PostgreSQL — execution plans, advanced indexing, and buffer pool optimisation)
+- database HA and DR implementation (SQL Server Always On AG, Oracle Data Guard, or PostgreSQL streaming replication)
+- database automation and Infrastructure as Code for database deployments
+
+**Proficient level required:**
+
+- NoSQL database platforms at production scale (MongoDB, Cassandra — administration and tuning)
+- cloud database migration strategies (on-prem to AWS RDS, Azure SQL, or GCP Cloud SQL)
+- data replication technologies (logical replication and CDC patterns)
+
+**Working Knowledge required:**
+
+- Advanced backup and recovery strategies (point-in-time recovery and cross-region backup)
+- database security hardening (TDE, column encryption, row-level security)
+- containerised database deployment patterns
+
+**Awareness level expected:**
+
+- NewSQL and distributed database patterns (CockroachDB, TiDB)
+- AI-assisted query tuning tools
+- database DevOps and schema migration practices (Flyway, Liquibase)
 
 ## Interactions with Other Roles
 

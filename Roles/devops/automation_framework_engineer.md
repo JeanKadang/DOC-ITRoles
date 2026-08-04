@@ -79,10 +79,27 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Python and Go (framework and library development), GitHub Actions (reusable workflows, composite actions, and custom JavaScript/Docker actions), Terraform and Pulumi (IaC module authoring and provider development)
-- **Proficient level required:** pytest, Testinfra, and Terratest (infrastructure and IaC test automation), Ansible (roles, collections, and runbook automation), Backstage (scaffolder plugins and software templates)
-- **Working Knowledge required:** Docker and container registries (packaging and distributing automation tooling), Packer (machine image pipeline authoring), internal artifact registries (PyPI, Terraform Registry, GitHub Packages)
-- **Awareness level expected:** Kubernetes as automation workload runtime target, AI-assisted development tools (GitHub Copilot for framework and test scaffolding), Robot Framework and Playwright for UI automation
+**Expert level required:**
+
+- Python and Go (framework and library development)
+- GitHub Actions (reusable workflows, composite actions, and custom JavaScript/Docker actions)
+- Terraform and Pulumi (IaC module authoring and provider development)
+
+**Proficient level required:**
+
+- pytest, Testinfra, and Terratest (infrastructure and IaC test automation), Ansible (roles, collections, and runbook automation), Backstage (scaffolder plugins and software templates)
+
+**Working Knowledge required:**
+
+- Docker and container registries (packaging and distributing automation tooling)
+- Packer (machine image pipeline authoring)
+- internal artifact registries (PyPI, Terraform Registry, GitHub Packages)
+
+**Awareness level expected:**
+
+- Kubernetes as automation workload runtime target
+- AI-assisted development tools (GitHub Copilot for framework and test scaffolding)
+- Robot Framework and Playwright for UI automation
 
 ### Qualifications
 

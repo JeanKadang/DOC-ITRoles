@@ -64,10 +64,23 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Agile product ownership tools (Jira, Confluence) for AWS platform backlog, sprint ceremonies, and roadmap management, FinOps Foundation Framework for cloud financial accountability, cost governance, and chargeback prioritisation, AWS service portfolio and AWS Cloud Adoption Framework for strategic roadmap planning and adoption sequencing
-- **Proficient level required:** AWS Cost Explorer, AWS Budgets, and Cost and Usage Report (CUR) for cost visibility, anomaly awareness, and governance decisions, Power BI or Tableau for cloud platform performance dashboards and stakeholder reporting, AWS Control Tower and multi-account governance concepts for product scope and compliance decision-making
-- **Working Knowledge required:** AWS landing zone design and account structure for informing governance and onboarding product decisions, AWS security services (GuardDuty, Security Hub, AWS Config) from a compliance posture and product strategy perspective
-- **Awareness level expected:** AWS AI/ML services (Bedrock, SageMaker) for evaluating future platform capability roadmap items, AWS GovCloud and Digital Sovereignty controls for regulated industry cloud adoption context
+**Expert level required:**
+
+- Agile product ownership tools (Jira, Confluence) for AWS platform backlog, sprint ceremonies, and roadmap management, FinOps Foundation Framework for cloud financial accountability, cost governance, and chargeback prioritisation, AWS service portfolio and AWS Cloud Adoption Framework for strategic roadmap planning and adoption sequencing
+
+**Proficient level required:**
+
+- AWS Cost Explorer, AWS Budgets, and Cost and Usage Report (CUR) for cost visibility, anomaly awareness, and governance decisions, Power BI or Tableau for cloud platform performance dashboards and stakeholder reporting, AWS Control Tower and multi-account governance concepts for product scope and compliance decision-making
+
+**Working Knowledge required:**
+
+- AWS landing zone design and account structure for informing governance and onboarding product decisions
+- AWS security services (GuardDuty, Security Hub, AWS Config) from a compliance posture and product strategy perspective
+
+**Awareness level expected:**
+
+- AWS AI/ML services (Bedrock, SageMaker) for evaluating future platform capability roadmap items
+- AWS GovCloud and Digital Sovereignty controls for regulated industry cloud adoption context
 
 ## Interactions with Other Roles
 

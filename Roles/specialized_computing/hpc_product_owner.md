@@ -78,10 +78,26 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** HPC cluster platform capabilities (Slurm, PBS Pro, job schedulers) at product planning and SLA governance level, Jira and Confluence for backlog management, research stakeholder engagement, and sprint planning, Cluster utilisation dashboards (Grafana, Prometheus) and reporting tools for data-driven capacity planning, ServiceNow and ITSM platforms for HPC service request and incident governance
-- **Proficient level required:** Cloud HPC platforms (AWS ParallelCluster, Azure CycleCloud) product capabilities and hybrid burst use case planning, GPU and accelerator allocation governance and cost-per-compute-hour reporting frameworks, Power BI and analytics tools for cluster utilisation metrics and researcher satisfaction measurement
-- **Working Knowledge required:** Parallel file systems (Lustre, GPFS) and HPC storage service capabilities for service catalog design, MPI-based workload requirements and parallel application resource needs for capacity planning, HPC container technologies (Singularity, Apptainer) for reproducible research enablement
-- **Awareness level expected:** Emerging quantum computing platforms and future HPC technology directions, NVIDIA H100/Blackwell and AMD Instinct accelerator roadmaps for capacity planning
+**Expert level required:**
+
+- HPC cluster platform capabilities (Slurm, PBS Pro, job schedulers) at product planning and SLA governance level, Jira and Confluence for backlog management, research stakeholder engagement, and sprint planning, Cluster utilisation dashboards (Grafana, Prometheus) and reporting tools for data-driven capacity planning, ServiceNow and ITSM platforms for HPC service request and incident governance
+
+**Proficient level required:**
+
+- Cloud HPC platforms (AWS ParallelCluster, Azure CycleCloud) product capabilities and hybrid burst use case planning
+- GPU and accelerator allocation governance and cost-per-compute-hour reporting frameworks
+- Power BI and analytics tools for cluster utilisation metrics and researcher satisfaction measurement
+
+**Working Knowledge required:**
+
+- Parallel file systems (Lustre, GPFS) and HPC storage service capabilities for service catalog design
+- MPI-based workload requirements and parallel application resource needs for capacity planning
+- HPC container technologies (Singularity, Apptainer) for reproducible research enablement
+
+**Awareness level expected:**
+
+- Emerging quantum computing platforms and future HPC technology directions
+- NVIDIA H100/Blackwell and AMD Instinct accelerator roadmaps for capacity planning
 
 ## Interactions with Other Roles
 

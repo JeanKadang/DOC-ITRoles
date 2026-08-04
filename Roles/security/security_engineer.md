@@ -65,10 +65,28 @@ The Security Engineer implements and maintains security controls and technologie
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Sentinel (SIEM), Microsoft Defender for Endpoint (EDR), Qualys/Tenable (vulnerability management)
-- **Proficient level required:** Microsoft Defender for Cloud, Azure WAF, Microsoft Purview (DLP)
-- **Working Knowledge required:** Microsoft Entra ID (IAM), Azure Security Center, threat intelligence platforms
-- **Awareness level expected:** SOAR automation, Zero Trust architecture frameworks
+**Expert level required:**
+
+- Microsoft Sentinel (SIEM)
+- Microsoft Defender for Endpoint (EDR)
+- Qualys/Tenable (vulnerability management)
+
+**Proficient level required:**
+
+- Microsoft Defender for Cloud
+- Azure WAF
+- Microsoft Purview (DLP)
+
+**Working Knowledge required:**
+
+- Microsoft Entra ID (IAM)
+- Azure Security Center
+- threat intelligence platforms
+
+**Awareness level expected:**
+
+- SOAR automation
+- Zero Trust architecture frameworks
 
 ## Interactions with Other Roles
 

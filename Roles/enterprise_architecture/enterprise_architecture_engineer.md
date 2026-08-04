@@ -69,10 +69,25 @@ The Enterprise Architecture Engineer supports the enterprise architecture functi
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Confluence/SharePoint (documentation), Miro/draw.io (diagramming)
-- **Proficient level required:** LeanIX/Bizzdesign/ARIS (repository data entry), ArchiMate/C4 notation basics
-- **Working Knowledge required:** Excel/Power BI (data-quality reporting), Git/Azure DevOps (version control for artefacts)
-- **Awareness level expected:** TOGAF framework concepts, cloud architecture fundamentals (Azure/AWS/GCP)
+**Expert level required:**
+
+- Confluence/SharePoint (documentation)
+- Miro/draw.io (diagramming)
+
+**Proficient level required:**
+
+- LeanIX/Bizzdesign/ARIS (repository data entry)
+- ArchiMate/C4 notation basics
+
+**Working Knowledge required:**
+
+- Excel/Power BI (data-quality reporting)
+- Git/Azure DevOps (version control for artefacts)
+
+**Awareness level expected:**
+
+- TOGAF framework concepts
+- cloud architecture fundamentals (Azure/AWS/GCP)
 
 ## Interactions with Other Roles
 

@@ -64,10 +64,31 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise routing and switching platforms (Cisco/Juniper/Arista), VLAN and IP subnetting, firewall rule management, wireless access points and controllers
-- **Proficient level required:** Dynamic routing protocols (OSPF, BGP), VPN technologies, WAN connectivity solutions, network monitoring tools (PRTG, SolarWinds, Nagios)
-- **Working Knowledge required:** Basic SD-WAN technologies, network load balancers, basic network automation scripting (Python/Ansible)
-- **Awareness level expected:** SD-WAN and SASE architecture concepts, Zero Trust network access, cloud networking fundamentals
+**Expert level required:**
+
+- Enterprise routing and switching platforms (Cisco/Juniper/Arista)
+- VLAN and IP subnetting
+- firewall rule management
+- wireless access points and controllers
+
+**Proficient level required:**
+
+- Dynamic routing protocols (OSPF, BGP)
+- VPN technologies
+- WAN connectivity solutions
+- network monitoring tools (PRTG, SolarWinds, Nagios)
+
+**Working Knowledge required:**
+
+- Basic SD-WAN technologies
+- network load balancers
+- basic network automation scripting (Python/Ansible)
+
+**Awareness level expected:**
+
+- SD-WAN and SASE architecture concepts
+- Zero Trust network access
+- cloud networking fundamentals
 
 ## Interactions with Other Roles
 

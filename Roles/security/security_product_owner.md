@@ -72,10 +72,27 @@ The Security Product Owner manages the development and lifecycle of the organiza
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Sentinel (SIEM), ServiceNow (security service management), Jira/Azure DevOps
-- **Proficient level required:** Microsoft Defender for Cloud (CSPM), Power BI (security metrics dashboards), Microsoft Purview (DLP)
-- **Working Knowledge required:** Microsoft Entra ID/CyberArk (PAM), SOAR automation tools
-- **Awareness level expected:** Zero Trust frameworks, DevSecOps pipeline integration tools
+**Expert level required:**
+
+- Microsoft Sentinel (SIEM)
+- ServiceNow (security service management)
+- Jira/Azure DevOps
+
+**Proficient level required:**
+
+- Microsoft Defender for Cloud (CSPM)
+- Power BI (security metrics dashboards)
+- Microsoft Purview (DLP)
+
+**Working Knowledge required:**
+
+- Microsoft Entra ID/CyberArk (PAM)
+- SOAR automation tools
+
+**Awareness level expected:**
+
+- Zero Trust frameworks
+- DevSecOps pipeline integration tools
 
 ## Interactions with Other Roles
 
