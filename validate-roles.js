@@ -19,7 +19,10 @@ const STRICT     = process.argv.includes('--strict');
 
 // Required section headings. Each entry accepts one or more historical
 // spellings so the validator surfaces genuinely missing content rather than
-// failing on cosmetic wording differences (tracked as a follow-up cleanup).
+// failing on cosmetic wording differences. Anything other than `name` itself
+// now also raises a canonical-heading warning (#121) so the drift is visible
+// and countable; #122 normalises the files, after which the alternates can be
+// dropped and CI can move to `--strict`.
 const REQUIRED_SECTIONS = [
   { name: 'Role Overview',                          patterns: [/^##\s+Role Overview/im] },
   { name: 'Role Scope & Boundaries',                patterns: [/^##\s+Role Scope (&|and) Boundaries/im] },
@@ -43,6 +46,29 @@ const REQUIRED_SECTIONS = [
 // bare mention of the words — the template's explanatory blockquote above the
 // table would otherwise satisfy a looser check.
 const INTERACTION_MODE_COLUMN = /^\|.*Interaction Mode.*\|[ \t]*\r?\n\|[\s:|-]+\|/im;
+
+// Return the body of a "## " section: everything up to the next H2 or EOF.
+function sectionBody(content, heading) {
+  const start = content.search(new RegExp('^##\\s+' + heading, 'im'));
+  if (start === -1) return '';
+  const rest = content.slice(start);
+  const next = rest.search(/\n##\s+/);
+  return next === -1 ? rest : rest.slice(0, next);
+}
+
+// The template calls the KPI table (| Metric | Target | Frequency |) the
+// preferred form because a bullet list records topics, not measurable
+// targets: "Architecture design quality and effectiveness" cannot be met or
+// missed. 200 of 222 roles still use bullets — see #122.
+function hasKpiTable(body) {
+  return /^\|.*\|[ \t]*\r?\n\|[\s:|-]+\|/im.test(body);
+}
+
+// Technology Proficiency Levels should use the template's sub-heading form
+// (**Expert level required:** on its own line, then a bullet list) rather
+// than folding each tier into a single bullet. 191 of 222 use the inline
+// form — see #122.
+const PROFICIENCY_INLINE = /^[ \t]*-[ \t]+\*\*(Expert|Proficient|Working Knowledge|Awareness)[^*]*\*\*/im;
 
 function listRoleFiles(rolesDir = ROLES_DIR) {
   const files = [];
@@ -105,7 +131,28 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
 
   for (const section of REQUIRED_SECTIONS) {
     const found = section.patterns.some(re => re.test(content));
-    if (!found) errors.push(`Missing section: ## ${section.name}`);
+    if (!found) {
+      errors.push(`Missing section: ## ${section.name}`);
+      continue;
+    }
+    // Present, but is it spelled the canonical way? An accepted alternate is
+    // not an error (the content is there) but it is drift worth counting.
+    const canonical = new RegExp('^##\\s+' + section.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*$', 'im');
+    if (!canonical.test(content)) {
+      warnings.push(`Non-canonical heading for "${section.name}" — use "## ${section.name}" exactly`);
+    }
+  }
+
+  // Content-format conventions. Warnings rather than errors while #122
+  // normalises the catalog; `--strict` already fails on warnings, so CI can
+  // be switched over the moment that lands.
+  const kpiBody = sectionBody(content, 'Key Performance Indicators');
+  if (kpiBody && !hasKpiTable(kpiBody)) {
+    warnings.push('Key Performance Indicators uses bullets — the template prefers a | Metric | Target | Frequency | table so targets are measurable');
+  }
+
+  if (PROFICIENCY_INLINE.test(content)) {
+    warnings.push('Technology Proficiency Levels uses inline bullets — the template puts each level on its own **sub-heading** line');
   }
 
   if (!INTERACTION_MODE_COLUMN.test(content)) {
