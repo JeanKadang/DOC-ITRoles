@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-08-04
+
+### Added
+
+- **`enterprise_architecture` engineer and product_owner tiers (#103).** The
+  chapter had only 3 roles (`enterprise_architect`,
+  `enterprise_architecture_senior_engineer`, `solution_architect`), breaking
+  the 4-tier pattern every comparable chapter follows. Adds
+  `enterprise_architecture_engineer` and `enterprise_architecture_product_owner`,
+  wires the Senior Engineer's Direct Reports to the new Engineer role, and
+  adds both to `SKILLS_PROGRESSION.md`.
+- **`service_desk_product_owner` (#104).** The desk had no backlog owner for
+  its own tooling roadmap (self-service portal, knowledge base,
+  virtual-agent/chatbot deflection), distinct from `service_desk_lead`'s
+  operational ownership (staffing, SLAs, escalation boundaries). No separate
+  "manager" role was added — `service_desk_lead` already covers that scope
+  at Senior Engineer level, matching how other domains fold "manager"
+  titles into the Senior Engineer tier.
+- **`Roles/c_suite/README.md` (#105).** Cross-references the CISO's actual
+  location (`Roles/leadership/chief_information_security_officer.md`) so a
+  reader landing in `c_suite/` doesn't assume it's missing. Mirrors the
+  existing cross-reference README pattern used for the security domain
+  split.
+
+Catalog: 219 → 222 roles.
+
 ## [1.6.0] - 2026-07-25
 
 ### Added
