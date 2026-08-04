@@ -31,11 +31,18 @@ test.after(() => {
 function completeRole({ except = null, transform = null } = {}) {
   const sections = REQUIRED_SECTIONS
     .filter(s => s.name !== except)
-    .map(s => s.name === 'Interactions with Other Roles'
-      // This section must carry the Interaction Mode column (#6), so it needs
-      // a real table rather than the placeholder prose the others use.
-      ? `## ${s.name}\n\n| Role | Nature of Interaction | Interaction Mode |\n|---|---|---|\n| Peer Role | Shared delivery work | Collaborates |\n`
-      : `## ${s.name}\n\nContent for ${s.name}.\n`)
+    .map(s => {
+      // Two sections have a required shape rather than free prose:
+      // Interactions needs the Interaction Mode column (#6), and KPIs need
+      // the measurable table form (#121). The rest use placeholder text.
+      if (s.name === 'Interactions with Other Roles') {
+        return `## ${s.name}\n\n| Role | Nature of Interaction | Interaction Mode |\n|---|---|---|\n| Peer Role | Shared delivery work | Collaborates |\n`;
+      }
+      if (s.name === 'Key Performance Indicators') {
+        return `## ${s.name}\n\n| Metric | Target | Frequency |\n|---|---|---|\n| Delivery within agreed scope | ≥95% | Monthly |\n`;
+      }
+      return `## ${s.name}\n\nContent for ${s.name}.\n`;
+    })
     .join('\n');
   let content = `# Test Role
 
@@ -336,4 +343,79 @@ test('CLI exits 1 and names both files when a duplicate title exists', () => {
   assert.match(run.stdout, /testdomain\/a\.md/);
   assert.match(run.stdout, /testdomain\/b\.md/);
   fs.rmSync(root, { recursive: true, force: true });
+});
+
+// ── canonical formatting warnings (#121) ─────────────────
+// The validator accepts several historical spellings and formats so that a
+// missing section is reported instead of a cosmetic difference. That
+// permissiveness is why the catalog drifted (203/19 on "and" vs "&",
+// 155/67 on "Required Skills", 200/22 on KPI format). These now warn, so
+// the drift is visible and `--strict` can gate it once #122 normalises the
+// files.
+
+test('a non-canonical but accepted heading spelling warns', () => {
+  const file = writeFixture('warn-heading.md', completeRole({
+    transform: c => c.replace('## Key Decisions & Accountabilities', '## Key Decisions and Accountabilities'),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, [], 'still not an error - the section is present');
+  assert.ok(
+    r.warnings.some(w => /Key Decisions & Accountabilities/.test(w)),
+    `expected a canonical-heading warning, got: ${JSON.stringify(r.warnings)}`
+  );
+});
+
+test('the canonical heading spelling does not warn', () => {
+  const file = writeFixture('ok-heading.md', completeRole());
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.warnings.filter(w => /canonical heading/i.test(w)), []);
+});
+
+test('bullet-format Key Performance Indicators warn', () => {
+  // 200 of 222 roles list KPI topics rather than measurable targets; the
+  // template calls the table form preferred. See #122.
+  const file = writeFixture('kpi-bullets.md', completeRole({
+    transform: c => c.replace(
+      '| Metric | Target | Frequency |\n|---|---|---|\n| Delivery within agreed scope | ≥95% | Monthly |\n',
+      '- Architecture design quality and effectiveness\n- Cost efficiency of designed solutions\n'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, []);
+  assert.ok(
+    r.warnings.some(w => /Key Performance Indicators/.test(w) && /table/i.test(w)),
+    `expected a KPI table warning, got: ${JSON.stringify(r.warnings)}`
+  );
+});
+
+test('table-format Key Performance Indicators do not warn', () => {
+  const file = writeFixture('kpi-table.md', completeRole());
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.warnings.filter(w => /Key Performance Indicators/.test(w)), []);
+});
+
+test('inline-bullet Technology Proficiency Levels warn', () => {
+  const file = writeFixture('prof-inline.md', completeRole({
+    transform: c => c.replace(
+      'Content for Required Skills & Qualifications.',
+      '**Technology Proficiency Levels:**\n\n- **Expert level required:** Kubernetes, Terraform\n- **Proficient level required:** Helm\n'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, []);
+  assert.ok(
+    r.warnings.some(w => /Technology Proficiency Levels/.test(w)),
+    `expected a proficiency-format warning, got: ${JSON.stringify(r.warnings)}`
+  );
+});
+
+test('sub-heading Technology Proficiency Levels do not warn', () => {
+  const file = writeFixture('prof-subhead.md', completeRole({
+    transform: c => c.replace(
+      'Content for Required Skills & Qualifications.',
+      '**Technology Proficiency Levels:**\n\n**Expert level required:**\n\n- Kubernetes\n\n**Proficient level required:**\n\n- Helm\n'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.warnings.filter(w => /Technology Proficiency Levels/.test(w)), []);
 });
