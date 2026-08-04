@@ -75,10 +75,30 @@ The Integration Product Owner owns the integration platform product backlog — 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Integration platform product backlog and sprint management (Jira, Confluence), API developer portal governance and API lifecycle deprecation communications, integration service SLA definition and performance reporting
-- **Proficient level required:** Azure API Management concepts and developer portal management, MuleSoft Anypoint Platform integration service capabilities, Apache Kafka/Confluent Platform event streaming concepts, RabbitMQ/IBM MQ messaging broker patterns
-- **Working Knowledge required:** Azure Service Bus messaging broker patterns and backlog capacity planning, TIBCO/IBM MQ legacy integration governance, integration platform FinOps and cost reporting (Power BI dashboards)
-- **Awareness level expected:** AsyncAPI specification for event-driven API governance, CNCF CloudEvents standard, AI-assisted integration mapping and transformation tools
+**Expert level required:**
+
+- Integration platform product backlog and sprint management (Jira, Confluence)
+- API developer portal governance and API lifecycle deprecation communications
+- integration service SLA definition and performance reporting
+
+**Proficient level required:**
+
+- Azure API Management concepts and developer portal management
+- MuleSoft Anypoint Platform integration service capabilities
+- Apache Kafka/Confluent Platform event streaming concepts
+- RabbitMQ/IBM MQ messaging broker patterns
+
+**Working Knowledge required:**
+
+- Azure Service Bus messaging broker patterns and backlog capacity planning
+- TIBCO/IBM MQ legacy integration governance
+- integration platform FinOps and cost reporting (Power BI dashboards)
+
+**Awareness level expected:**
+
+- AsyncAPI specification for event-driven API governance
+- CNCF CloudEvents standard
+- AI-assisted integration mapping and transformation tools
 
 ## Interactions with Other Roles
 

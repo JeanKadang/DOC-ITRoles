@@ -68,10 +68,32 @@ The Windows Server Architect designs and defines the strategic direction for the
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Server (2019/2022/2025) advanced architecture, Active Directory Domain Services design, Windows Server Failover Clustering, PowerShell and DSC automation frameworks
-- **Proficient level required:** Azure Stack/hybrid services integration, Hyper-V virtualization, Storage Spaces Direct and Storage Replica, Microsoft Endpoint Configuration Manager, Windows security hardening standards
-- **Working Knowledge required:** Azure Arc for hybrid management, Windows Admin Center, Windows Server containers and Docker integration
-- **Awareness level expected:** Azure Stack HCI evolution, Kubernetes on Windows, Microsoft Entra hybrid identity patterns
+**Expert level required:**
+
+- Windows Server (2019/2022/2025) advanced architecture
+- Active Directory Domain Services design
+- Windows Server Failover Clustering
+- PowerShell and DSC automation frameworks
+
+**Proficient level required:**
+
+- Azure Stack/hybrid services integration
+- Hyper-V virtualization
+- Storage Spaces Direct and Storage Replica
+- Microsoft Endpoint Configuration Manager
+- Windows security hardening standards
+
+**Working Knowledge required:**
+
+- Azure Arc for hybrid management
+- Windows Admin Center
+- Windows Server containers and Docker integration
+
+**Awareness level expected:**
+
+- Azure Stack HCI evolution
+- Kubernetes on Windows
+- Microsoft Entra hybrid identity patterns
 
 ## Key Technologies
 

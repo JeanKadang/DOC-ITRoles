@@ -75,10 +75,27 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow (ITSM/ITOM/HRSD), Jira/Azure DevOps (backlog management), Power BI/ServiceNow dashboards
-- **Proficient level required:** ServiceNow Discovery/CMDB, ServiceNow Virtual Agent/Now Assist AI, ITIL v4
-- **Working Knowledge required:** PagerDuty/Dynatrace/Prometheus (ITSM integrations), PowerShell automation
-- **Awareness level expected:** AI-driven ITSM automation, ServiceNow App Engine
+**Expert level required:**
+
+- ServiceNow (ITSM/ITOM/HRSD)
+- Jira/Azure DevOps (backlog management)
+- Power BI/ServiceNow dashboards
+
+**Proficient level required:**
+
+- ServiceNow Discovery/CMDB
+- ServiceNow Virtual Agent/Now Assist AI
+- ITIL v4
+
+**Working Knowledge required:**
+
+- PagerDuty/Dynatrace/Prometheus (ITSM integrations)
+- PowerShell automation
+
+**Awareness level expected:**
+
+- AI-driven ITSM automation
+- ServiceNow App Engine
 
 ## Interactions with Other Roles
 

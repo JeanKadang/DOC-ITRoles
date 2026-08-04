@@ -76,10 +76,21 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft 365 at administrative and governance depth
-- **Proficient level required:** Microsoft Intune/Endpoint Manager at strategy depth
-- **Working Knowledge required:** Collaboration analytics (Viva Insights, Teams analytics) for workplace metrics
-- **Awareness level expected:** ITSM platforms (ServiceNow) for end-user service governance
+**Expert level required:**
+
+- Microsoft 365 at administrative and governance depth
+
+**Proficient level required:**
+
+- Microsoft Intune/Endpoint Manager at strategy depth
+
+**Working Knowledge required:**
+
+- Collaboration analytics (Viva Insights, Teams analytics) for workplace metrics
+
+**Awareness level expected:**
+
+- ITSM platforms (ServiceNow) for end-user service governance
 
 ### Qualifications
 

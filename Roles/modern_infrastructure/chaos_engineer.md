@@ -79,10 +79,28 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** LitmusChaos and Chaos Mesh for Kubernetes fault injection experiments, Kubernetes failure modes and cluster-level chaos (pod termination, node failure, resource pressure), Prometheus and Grafana for steady-state measurement and experiment impact validation, Hypothesis-driven chaos experiment design and blast radius controls
-- **Proficient level required:** Gremlin commercial chaos platform, AWS Fault Injection Simulator (FIS) and Azure Chaos Studio, Toxiproxy and tc-netem for network fault injection (latency, packet loss, bandwidth throttling), k6 and Locust for steady-state traffic generation during experiments
-- **Working Knowledge required:** Istio and Envoy service mesh fault injection, GitHub Actions and Azure DevOps for CI chaos pipeline integration, Python, Go, and Bash for experiment automation and tooling
-- **Awareness level expected:** OpenTelemetry for chaos observability integration, Emerging GameDay automation frameworks and chaos orchestration tooling
+**Expert level required:**
+
+- LitmusChaos and Chaos Mesh for Kubernetes fault injection experiments
+- Kubernetes failure modes and cluster-level chaos (pod termination, node failure, resource pressure)
+- Prometheus and Grafana for steady-state measurement and experiment impact validation
+- Hypothesis-driven chaos experiment design and blast radius controls
+
+**Proficient level required:**
+
+- Gremlin commercial chaos platform
+- AWS Fault Injection Simulator (FIS) and Azure Chaos Studio
+- Toxiproxy and tc-netem for network fault injection (latency, packet loss, bandwidth throttling)
+- k6 and Locust for steady-state traffic generation during experiments
+
+**Working Knowledge required:**
+
+- Istio and Envoy service mesh fault injection, GitHub Actions and Azure DevOps for CI chaos pipeline integration, Python, Go, and Bash for experiment automation and tooling
+
+**Awareness level expected:**
+
+- OpenTelemetry for chaos observability integration
+- Emerging GameDay automation frameworks and chaos orchestration tooling
 
 ## Interactions with Other Roles
 

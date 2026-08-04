@@ -67,10 +67,25 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Multi-cloud cost management platforms (CloudHealth, Apptio Cloudability) and custom API integrations, Advanced cloud cost automation (Python, PowerShell) for optimization pipeline development, Cloud provider billing APIs and SDKs (AWS, Azure, GCP) for data extraction and ETL pipelines, Reserved instance and committed use discount optimization strategy across all three major cloud providers
-- **Proficient level required:** Data visualization and analytics tools (Power BI, Tableau) for advanced cloud cost dashboards and executive reporting, Anomaly detection frameworks for identifying cost spikes, billing irregularities, and attribution errors, CI/CD pipeline integration for FinOps policy enforcement and automation deployment
-- **Working Knowledge required:** Cloud architecture principles across AWS, Azure, and GCP for evaluating the cost impact of design decisions, Machine learning concepts and tooling for cloud cost forecasting and anomaly prediction models
-- **Awareness level expected:** AI/LLM cost governance patterns (token attribution, GPU reservation management, prompt caching cost optimization), FinOps Foundation Framework maturity model and emerging FinOps open standards (FOCUS specification)
+**Expert level required:**
+
+- Multi-cloud cost management platforms (CloudHealth, Apptio Cloudability) and custom API integrations
+- Advanced cloud cost automation (Python, PowerShell) for optimization pipeline development
+- Cloud provider billing APIs and SDKs (AWS, Azure, GCP) for data extraction and ETL pipelines
+- Reserved instance and committed use discount optimization strategy across all three major cloud providers
+
+**Proficient level required:**
+
+- Data visualization and analytics tools (Power BI, Tableau) for advanced cloud cost dashboards and executive reporting, Anomaly detection frameworks for identifying cost spikes, billing irregularities, and attribution errors, CI/CD pipeline integration for FinOps policy enforcement and automation deployment
+
+**Working Knowledge required:**
+
+- Cloud architecture principles across AWS, Azure, and GCP for evaluating the cost impact of design decisions, Machine learning concepts and tooling for cloud cost forecasting and anomaly prediction models
+
+**Awareness level expected:**
+
+- AI/LLM cost governance patterns (token attribution, GPU reservation management, prompt caching cost optimization)
+- FinOps Foundation Framework maturity model and emerging FinOps open standards (FOCUS specification)
 
 ### Qualifications
 

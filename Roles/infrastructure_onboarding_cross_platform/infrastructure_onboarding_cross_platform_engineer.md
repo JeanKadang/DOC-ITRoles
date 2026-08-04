@@ -64,10 +64,28 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Terraform/Ansible (infrastructure automation), ServiceNow/Remedy (ITSM), PowerShell/Python (scripting)
-- **Proficient level required:** CI/CD pipeline integration (Azure DevOps/Jenkins), CMDB management, Windows Server/Linux administration
-- **Working Knowledge required:** Azure (IaaS), self-service portal configuration, monitoring integration (Azure Monitor)
-- **Awareness level expected:** Kubernetes (container orchestration), Terraform Cloud
+**Expert level required:**
+
+- Terraform/Ansible (infrastructure automation)
+- ServiceNow/Remedy (ITSM)
+- PowerShell/Python (scripting)
+
+**Proficient level required:**
+
+- CI/CD pipeline integration (Azure DevOps/Jenkins)
+- CMDB management
+- Windows Server/Linux administration
+
+**Working Knowledge required:**
+
+- Azure (IaaS)
+- self-service portal configuration
+- monitoring integration (Azure Monitor)
+
+**Awareness level expected:**
+
+- Kubernetes (container orchestration)
+- Terraform Cloud
 
 ## Interactions with Other Roles
 

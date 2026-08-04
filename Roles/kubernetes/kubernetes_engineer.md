@@ -73,10 +73,26 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Kubernetes cluster operations (kubectl, namespaces, Deployments, StatefulSets, DaemonSets, RBAC), Container runtime technologies (Docker, containerd, CRI-O) and image management, Kubernetes networking (CNI plugins, Services, Ingress controllers, NetworkPolicies), Helm for application package management and chart creation and maintenance
-- **Proficient level required:** Kubernetes storage (PersistentVolumes, PVCs, CSI drivers, StorageClasses), Prometheus and Grafana for cluster monitoring, alerting, and dashboards, Kubernetes security (Pod Security Standards, RBAC, Secrets management, image scanning)
-- **Working Knowledge required:** GitOps deployment tools (ArgoCD, Flux) for declarative workload delivery, Linux system administration and container OS fundamentals (cgroups, namespaces, systemd)
-- **Awareness level expected:** Service mesh concepts (Istio, Linkerd) for advanced traffic management and mTLS, Cloud-managed Kubernetes platforms (AKS, EKS, GKE) for cloud-specific deployment and operations
+**Expert level required:**
+
+- Kubernetes cluster operations (kubectl, namespaces, Deployments, StatefulSets, DaemonSets, RBAC)
+- Container runtime technologies (Docker, containerd, CRI-O) and image management
+- Kubernetes networking (CNI plugins, Services, Ingress controllers, NetworkPolicies)
+- Helm for application package management and chart creation and maintenance
+
+**Proficient level required:**
+
+- Kubernetes storage (PersistentVolumes, PVCs, CSI drivers, StorageClasses), Prometheus and Grafana for cluster monitoring, alerting, and dashboards, Kubernetes security (Pod Security Standards, RBAC, Secrets management, image scanning)
+
+**Working Knowledge required:**
+
+- GitOps deployment tools (ArgoCD, Flux) for declarative workload delivery
+- Linux system administration and container OS fundamentals (cgroups, namespaces, systemd)
+
+**Awareness level expected:**
+
+- Service mesh concepts (Istio, Linkerd) for advanced traffic management and mTLS
+- Cloud-managed Kubernetes platforms (AKS, EKS, GKE) for cloud-specific deployment and operations
 
 ## Interactions with Other Roles
 

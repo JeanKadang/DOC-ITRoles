@@ -66,10 +66,30 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise API gateway platforms (Apigee, Kong, AWS API Gateway, or Azure APIM — topology design and policy architecture), API security frameworks (OAuth 2.0, OIDC, JWT validation, and threat management), OpenAPI/Swagger specification design and governance standards
-- **Proficient level required:** Service mesh technologies (Istio, Linkerd) for API traffic management, GraphQL schema design and federation architecture, API lifecycle management and developer portal strategy, Kubernetes for API gateway deployment
-- **Working Knowledge required:** Event-driven architectures and event brokers (Kafka, Azure Service Bus) as API integration patterns, APIOps methodologies and tooling, CI/CD pipeline design for API deployments
-- **Awareness level expected:** AsyncAPI specification for event-driven APIs, gRPC and Protocol Buffers for internal service APIs, AI-assisted API design and documentation generation tools
+**Expert level required:**
+
+- Enterprise API gateway platforms (Apigee, Kong, AWS API Gateway, or Azure APIM — topology design and policy architecture)
+- API security frameworks (OAuth 2.0, OIDC, JWT validation, and threat management)
+- OpenAPI/Swagger specification design and governance standards
+
+**Proficient level required:**
+
+- Service mesh technologies (Istio, Linkerd) for API traffic management
+- GraphQL schema design and federation architecture
+- API lifecycle management and developer portal strategy
+- Kubernetes for API gateway deployment
+
+**Working Knowledge required:**
+
+- Event-driven architectures and event brokers (Kafka, Azure Service Bus) as API integration patterns
+- APIOps methodologies and tooling
+- CI/CD pipeline design for API deployments
+
+**Awareness level expected:**
+
+- AsyncAPI specification for event-driven APIs
+- gRPC and Protocol Buffers for internal service APIs
+- AI-assisted API design and documentation generation tools
 
 ## Interactions with Other Roles
 

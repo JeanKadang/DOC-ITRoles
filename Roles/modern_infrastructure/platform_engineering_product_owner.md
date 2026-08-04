@@ -64,10 +64,27 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Backstage or similar IDP portal at product management and strategic roadmap level, Jira and Confluence for backlog management, sprint planning, and engineering team ceremonies, , NIST CSF metrics and developer productivity measurement frameworks (deployment frequency, lead time, change failure rate), Developer satisfaction measurement (NPS surveys, SPACE framework analytics)
-- **Proficient level required:** CI/CD pipeline systems (GitHub Actions, GitLab CI, Azure DevOps) at capability and self-service feature level, Kubernetes and Docker container platforms for informed product decision-making, Self-service frameworks and service catalog design principles, Developer productivity analytics tools (LinearB, Jellyfish, custom DORA dashboards)
-- **Working Knowledge required:** Infrastructure as Code platforms (Terraform, Helm) for feature scoping and acceptance criteria, GitOps tools (ArgoCD, Flux) and progressive delivery concepts, Software supply chain security and DevSecOps platform requirements
-- **Awareness level expected:** Emerging internal developer platform trends and CNCF ecosystem developments, AI-assisted developer tooling adoption patterns and GitHub Copilot productivity metrics
+**Expert level required:**
+
+- Backstage or similar IDP portal at product management and strategic roadmap level, Jira and Confluence for backlog management, sprint planning, and engineering team ceremonies, , NIST CSF metrics and developer productivity measurement frameworks (deployment frequency, lead time, change failure rate), Developer satisfaction measurement (NPS surveys, SPACE framework analytics)
+
+**Proficient level required:**
+
+- CI/CD pipeline systems (GitHub Actions, GitLab CI, Azure DevOps) at capability and self-service feature level
+- Kubernetes and Docker container platforms for informed product decision-making
+- Self-service frameworks and service catalog design principles
+- Developer productivity analytics tools (LinearB, Jellyfish, custom DORA dashboards)
+
+**Working Knowledge required:**
+
+- Infrastructure as Code platforms (Terraform, Helm) for feature scoping and acceptance criteria
+- GitOps tools (ArgoCD, Flux) and progressive delivery concepts
+- Software supply chain security and DevSecOps platform requirements
+
+**Awareness level expected:**
+
+- Emerging internal developer platform trends and CNCF ecosystem developments
+- AI-assisted developer tooling adoption patterns and GitHub Copilot productivity metrics
 
 ## Interactions with Other Roles
 

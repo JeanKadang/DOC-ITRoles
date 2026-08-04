@@ -64,10 +64,23 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Agile product ownership tools (Jira, Confluence, Azure Boards) for Azure platform backlog, sprint planning, and roadmap tracking, FinOps Foundation Framework and Azure Cost Management for cloud financial accountability and cost governance, Microsoft Azure service portfolio and Azure Cloud Adoption Framework (CAF) for strategic roadmap planning and modernisation prioritisation
-- **Proficient level required:** Azure Cost Management, Azure Advisor, and Azure Budgets for cost visibility, governance decisions, and optimisation priority-setting, Power BI and Azure cost dashboards for platform performance reporting and stakeholder communication, Azure landing zone design and subscription governance concepts for informing product scope and compliance decisions
-- **Working Knowledge required:** Microsoft Entra ID and Microsoft Defender for Cloud from a security compliance posture and product strategy perspective, Azure DevOps and GitHub Actions for understanding CI/CD delivery pipeline capabilities relevant to acceptance criteria
-- **Awareness level expected:** Azure AI Foundry and Azure OpenAI Service for evaluating future platform capability roadmap items, Azure Arc and hybrid cloud patterns for cross-platform adoption product strategy
+**Expert level required:**
+
+- Agile product ownership tools (Jira, Confluence, Azure Boards) for Azure platform backlog, sprint planning, and roadmap tracking, FinOps Foundation Framework and Azure Cost Management for cloud financial accountability and cost governance, Microsoft Azure service portfolio and Azure Cloud Adoption Framework (CAF) for strategic roadmap planning and modernisation prioritisation
+
+**Proficient level required:**
+
+- Azure Cost Management, Azure Advisor, and Azure Budgets for cost visibility, governance decisions, and optimisation priority-setting, Power BI and Azure cost dashboards for platform performance reporting and stakeholder communication, Azure landing zone design and subscription governance concepts for informing product scope and compliance decisions
+
+**Working Knowledge required:**
+
+- Microsoft Entra ID and Microsoft Defender for Cloud from a security compliance posture and product strategy perspective
+- Azure DevOps and GitHub Actions for understanding CI/CD delivery pipeline capabilities relevant to acceptance criteria
+
+**Awareness level expected:**
+
+- Azure AI Foundry and Azure OpenAI Service for evaluating future platform capability roadmap items
+- Azure Arc and hybrid cloud patterns for cross-platform adoption product strategy
 
 ## Interactions with Other Roles
 

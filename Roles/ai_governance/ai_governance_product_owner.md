@@ -75,10 +75,27 @@ The AI Governance Product Owner owns the AI governance product backlog, managing
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Jira/Confluence, ServiceNow GRC/Archer, Microsoft Purview
-- **Proficient level required:** Power BI/Tableau, Azure DevOps/GitHub Projects, AI compliance platforms (OneTrust)
-- **Working Knowledge required:** ProductBoard/Aha! (roadmap management), Microsoft Teams/SharePoint
-- **Awareness level expected:** Azure AI Content Safety, Responsible AI Dashboard
+**Expert level required:**
+
+- Jira/Confluence
+- ServiceNow GRC/Archer
+- Microsoft Purview
+
+**Proficient level required:**
+
+- Power BI/Tableau
+- Azure DevOps/GitHub Projects
+- AI compliance platforms (OneTrust)
+
+**Working Knowledge required:**
+
+- ProductBoard/Aha! (roadmap management)
+- Microsoft Teams/SharePoint
+
+**Awareness level expected:**
+
+- Azure AI Content Safety
+- Responsible AI Dashboard
 
 ## Interactions with Other Roles
 

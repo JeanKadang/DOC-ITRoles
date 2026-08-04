@@ -55,10 +55,30 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure AI Foundry / Amazon Bedrock / Vertex AI LLM gateway platforms, Vector databases (Pinecone, pgvector, Azure AI Search, Qdrant), RAG and agentic frameworks (LangChain, LlamaIndex, Semantic Kernel, AutoGen), AI governance and responsible AI frameworks (Microsoft RAI, NIST AI RMF, EU AI Act)
-- **Proficient level required:** Model serving infrastructure (vLLM, NVIDIA Triton, KServe, Ollama), MLflow and Weights & Biases for experiment tracking and model registry, AI observability platforms (LangSmith, Arize AI, WhyLabs), Kubernetes GPU Operator and GPU cluster orchestration
-- **Working Knowledge required:** Fine-tuning and PEFT frameworks (LoRA, QLoRA, RLHF tooling), Edge AI inference platforms (NVIDIA Jetson, Intel OpenVINO, ONNX Runtime), TOGAF or equivalent enterprise architecture frameworks
-- **Awareness level expected:** Emerging foundation model architectures and multimodal capabilities, EU AI Act and evolving global AI regulatory landscape
+**Expert level required:**
+
+- Azure AI Foundry / Amazon Bedrock / Vertex AI LLM gateway platforms
+- Vector databases (Pinecone, pgvector, Azure AI Search, Qdrant)
+- RAG and agentic frameworks (LangChain, LlamaIndex, Semantic Kernel, AutoGen)
+- AI governance and responsible AI frameworks (Microsoft RAI, NIST AI RMF, EU AI Act)
+
+**Proficient level required:**
+
+- Model serving infrastructure (vLLM, NVIDIA Triton, KServe, Ollama)
+- MLflow and Weights & Biases for experiment tracking and model registry
+- AI observability platforms (LangSmith, Arize AI, WhyLabs)
+- Kubernetes GPU Operator and GPU cluster orchestration
+
+**Working Knowledge required:**
+
+- Fine-tuning and PEFT frameworks (LoRA, QLoRA, RLHF tooling)
+- Edge AI inference platforms (NVIDIA Jetson, Intel OpenVINO, ONNX Runtime)
+- TOGAF or equivalent enterprise architecture frameworks
+
+**Awareness level expected:**
+
+- Emerging foundation model architectures and multimodal capabilities
+- EU AI Act and evolving global AI regulatory landscape
 
 ## Interactions with Other Roles
 

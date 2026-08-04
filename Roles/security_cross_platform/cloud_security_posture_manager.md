@@ -76,10 +76,27 @@ The Cloud Security Posture Manager implements and operates Cloud Security Postur
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Defender for Cloud (CSPM), Wiz/Prisma Cloud (multi-cloud CSPM), Azure Policy/Blueprints
-- **Proficient level required:** AWS Security Hub/AWS Config, GCP Security Command Center, Checkov/tfsec (IaC security)
-- **Working Knowledge required:** Orca Security, GCP Organisation Policies
-- **Awareness level expected:** KQL (Defender for Cloud queries), CSPM automation/SOAR integration
+**Expert level required:**
+
+- Microsoft Defender for Cloud (CSPM)
+- Wiz/Prisma Cloud (multi-cloud CSPM)
+- Azure Policy/Blueprints
+
+**Proficient level required:**
+
+- AWS Security Hub/AWS Config
+- GCP Security Command Center
+- Checkov/tfsec (IaC security)
+
+**Working Knowledge required:**
+
+- Orca Security
+- GCP Organisation Policies
+
+**Awareness level expected:**
+
+- KQL (Defender for Cloud queries)
+- CSPM automation/SOAR integration
 
 ## Interactions with Other Roles
 

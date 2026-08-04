@@ -102,10 +102,27 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Entra ID, ServiceNow (identity request workflows), Jira/Azure DevOps
-- **Proficient level required:** SailPoint/Saviynt (IGA), Azure MFA, Power BI (identity reporting/analytics)
-- **Working Knowledge required:** Microsoft Entra Connect (sync), federation services (AD FS/SAML)
-- **Awareness level expected:** Decentralized identity frameworks, AI-driven identity governance
+**Expert level required:**
+
+- Microsoft Entra ID
+- ServiceNow (identity request workflows)
+- Jira/Azure DevOps
+
+**Proficient level required:**
+
+- SailPoint/Saviynt (IGA)
+- Azure MFA
+- Power BI (identity reporting/analytics)
+
+**Working Knowledge required:**
+
+- Microsoft Entra Connect (sync)
+- federation services (AD FS/SAML)
+
+**Awareness level expected:**
+
+- Decentralized identity frameworks
+- AI-driven identity governance
 
 ## Interactions with Other Roles
 

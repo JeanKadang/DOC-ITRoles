@@ -78,10 +78,27 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** SailPoint IdentityNow/IdentityIQ, Microsoft Entra ID Governance, Saviynt Enterprise Identity Cloud
-- **Proficient level required:** Microsoft Entra ID (Azure AD), ServiceNow (access request/SoD), PowerShell/Python
-- **Working Knowledge required:** Workday/SAP SuccessFactors (HR integration), CyberArk Identity (PAM-IGA)
-- **Awareness level expected:** Omada Identity, AI-driven identity governance tools
+**Expert level required:**
+
+- SailPoint IdentityNow/IdentityIQ
+- Microsoft Entra ID Governance
+- Saviynt Enterprise Identity Cloud
+
+**Proficient level required:**
+
+- Microsoft Entra ID (Azure AD)
+- ServiceNow (access request/SoD)
+- PowerShell/Python
+
+**Working Knowledge required:**
+
+- Workday/SAP SuccessFactors (HR integration)
+- CyberArk Identity (PAM-IGA)
+
+**Awareness level expected:**
+
+- Omada Identity
+- AI-driven identity governance tools
 
 ### Qualifications
 

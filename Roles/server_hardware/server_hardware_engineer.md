@@ -72,10 +72,27 @@ The Server Hardware Engineer implements and maintains the physical server infras
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise server hardware platforms (Dell PowerEdge, HPE ProLiant, Cisco UCS), server management interfaces (iDRAC, iLO, CIMC), hardware RAID configurations
-- **Proficient level required:** Server firmware and driver management, hardware diagnostics utilities, rack, power, and cooling solutions
-- **Working Knowledge required:** Server deployment tools, hardware inventory systems, remote management technologies (IPMI, Redfish)
-- **Awareness level expected:** Composable infrastructure, hardware automation via Redfish API, server security technologies (TPM, secure boot)
+**Expert level required:**
+
+- Enterprise server hardware platforms (Dell PowerEdge, HPE ProLiant, Cisco UCS)
+- server management interfaces (iDRAC, iLO, CIMC)
+- hardware RAID configurations
+
+**Proficient level required:**
+
+- Server firmware and driver management, hardware diagnostics utilities, rack, power, and cooling solutions
+
+**Working Knowledge required:**
+
+- Server deployment tools
+- hardware inventory systems
+- remote management technologies (IPMI, Redfish)
+
+**Awareness level expected:**
+
+- Composable infrastructure
+- hardware automation via Redfish API
+- server security technologies (TPM, secure boot)
 
 ## Interactions with Other Roles
 

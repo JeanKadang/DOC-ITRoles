@@ -75,10 +75,21 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow at platform governance and architecture depth
-- **Proficient level required:** ITIL 4 / SIAM framework expertise
-- **Working Knowledge required:** Enterprise architecture tools (LeanIX, Ardoq) at governance depth
-- **Awareness level expected:** Power BI/Tableau for service performance reporting
+**Expert level required:**
+
+- ServiceNow at platform governance and architecture depth
+
+**Proficient level required:**
+
+- ITIL 4 / SIAM framework expertise
+
+**Working Knowledge required:**
+
+- Enterprise architecture tools (LeanIX, Ardoq) at governance depth
+
+**Awareness level expected:**
+
+- Power BI/Tableau for service performance reporting
 
 ### Qualifications
 

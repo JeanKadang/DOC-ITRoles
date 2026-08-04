@@ -64,10 +64,29 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Sentinel (SIEM/SOAR), Microsoft Defender XDR, KQL (threat hunting), Zero Trust implementation
-- **Proficient level required:** Microsoft Defender for Cloud (CSPM), CyberArk/BeyondTrust (PAM), container/Kubernetes security (Aqua/Trivy)
-- **Working Knowledge required:** Azure Key Vault (encryption/key management), DevSecOps pipeline tools, NDR solutions
-- **Awareness level expected:** Security data lake architectures, AI-driven threat detection
+**Expert level required:**
+
+- Microsoft Sentinel (SIEM/SOAR)
+- Microsoft Defender XDR
+- KQL (threat hunting)
+- Zero Trust implementation
+
+**Proficient level required:**
+
+- Microsoft Defender for Cloud (CSPM)
+- CyberArk/BeyondTrust (PAM)
+- container/Kubernetes security (Aqua/Trivy)
+
+**Working Knowledge required:**
+
+- Azure Key Vault (encryption/key management)
+- DevSecOps pipeline tools
+- NDR solutions
+
+**Awareness level expected:**
+
+- Security data lake architectures
+- AI-driven threat detection
 
 ## Interactions with Other Roles
 

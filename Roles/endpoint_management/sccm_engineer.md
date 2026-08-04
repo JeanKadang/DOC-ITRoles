@@ -64,10 +64,31 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** SCCM/ConfigMgr application packaging and deployment, SCCM operating system deployment (OSD) and task sequences, software update management via SCCM, SCCM collection management and queries
-- **Proficient level required:** Windows Deployment Services (WDS) and Microsoft Deployment Toolkit (MDT), PowerShell scripting for endpoint tasks, Group Policy administration, Windows Server infrastructure basics
-- **Working Knowledge required:** Microsoft SQL Server for SCCM site database administration, Microsoft Intune basics and co-management concepts, PKI and certificate management for SCCM
-- **Awareness level expected:** Modern management migration to Intune cloud-native delivery, Windows Autopilot integration, Microsoft Configuration Manager cloud attach features
+**Expert level required:**
+
+- SCCM/ConfigMgr application packaging and deployment
+- SCCM operating system deployment (OSD) and task sequences
+- software update management via SCCM
+- SCCM collection management and queries
+
+**Proficient level required:**
+
+- Windows Deployment Services (WDS) and Microsoft Deployment Toolkit (MDT)
+- PowerShell scripting for endpoint tasks
+- Group Policy administration
+- Windows Server infrastructure basics
+
+**Working Knowledge required:**
+
+- Microsoft SQL Server for SCCM site database administration
+- Microsoft Intune basics and co-management concepts
+- PKI and certificate management for SCCM
+
+**Awareness level expected:**
+
+- Modern management migration to Intune cloud-native delivery
+- Windows Autopilot integration
+- Microsoft Configuration Manager cloud attach features
 
 ## Interactions with Other Roles
 

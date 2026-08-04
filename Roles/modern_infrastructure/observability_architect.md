@@ -79,10 +79,22 @@ The Observability Architect designs and governs the organisation's full-stack ob
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** OpenTelemetry SDK, Collector pipelines, and semantic conventions for enterprise instrumentation standards, Prometheus and Thanos / Grafana Mimir for large-scale metrics storage and querying, SLO/SLI framework design with error budget policies and burn-rate alerting, Grafana stack (Loki, Tempo, dashboards) and Datadog/Dynatrace for enterprise-grade observability
-- **Proficient level required:** Elastic Stack (Elasticsearch, Logstash, Kibana, Elastic APM) for log and APM architecture, Azure Monitor, Log Analytics Workspace, and Application Insights for cloud-native observability, Fluent Bit, Fluentd, and Vector for log pipeline agent design, Jaeger and Grafana Tempo for distributed tracing architecture
-- **Working Knowledge required:** Kubernetes-native observability (kube-state-metrics, node exporter, service mesh telemetry), Alertmanager, PagerDuty, and OpsGenie for alerting governance and on-call routing, OpenTelemetry Collector edge deployment for resource-constrained environments
-- **Awareness level expected:** AI/ML-assisted anomaly detection in observability platforms, Emerging eBPF-based continuous profiling tools (Parca, Pyroscope)
+**Expert level required:**
+
+- OpenTelemetry SDK, Collector pipelines, and semantic conventions for enterprise instrumentation standards, Prometheus and Thanos / Grafana Mimir for large-scale metrics storage and querying, SLO/SLI framework design with error budget policies and burn-rate alerting, Grafana stack (Loki, Tempo, dashboards) and Datadog/Dynatrace for enterprise-grade observability
+
+**Proficient level required:**
+
+- Elastic Stack (Elasticsearch, Logstash, Kibana, Elastic APM) for log and APM architecture, Azure Monitor, Log Analytics Workspace, and Application Insights for cloud-native observability, Fluent Bit, Fluentd, and Vector for log pipeline agent design, Jaeger and Grafana Tempo for distributed tracing architecture
+
+**Working Knowledge required:**
+
+- Kubernetes-native observability (kube-state-metrics, node exporter, service mesh telemetry), Alertmanager, PagerDuty, and OpsGenie for alerting governance and on-call routing, OpenTelemetry Collector edge deployment for resource-constrained environments
+
+**Awareness level expected:**
+
+- AI/ML-assisted anomaly detection in observability platforms
+- Emerging eBPF-based continuous profiling tools (Parca, Pyroscope)
 
 ## Interactions with Other Roles
 

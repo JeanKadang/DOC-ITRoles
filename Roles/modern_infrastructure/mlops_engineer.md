@@ -69,10 +69,25 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** MLflow for experiment tracking, model registry, and pipeline orchestration, Kubeflow and Apache Airflow for ML workflow orchestration and scheduling, Kubernetes with GPU node pools for model training and serving, LLM serving platforms (vLLM, Azure AI Foundry, Amazon Bedrock, Vertex AI)
-- **Proficient level required:** Vector databases (Pinecone, Weaviate, pgvector, Qdrant) and RAG frameworks (LangChain, LlamaIndex), Feature stores (Feast, Tecton) for ML feature engineering, Distributed training frameworks (DeepSpeed, FSDP) for large model training, RAGAS and TruLens for LLM evaluation and quality measurement
-- **Working Knowledge required:** ONNX, TensorFlow Lite, and TinyML frameworks for edge model optimisation, Azure IoT Edge and AWS Greengrass for edge ML deployment pipelines, Responsible AI governance tooling and model risk management frameworks
-- **Awareness level expected:** Emerging agentic AI frameworks (AutoGen, LangGraph) for MLOps pipeline automation, Next-generation foundation model fine-tuning and PEFT approaches (LoRA, QLoRA)
+**Expert level required:**
+
+- MLflow for experiment tracking, model registry, and pipeline orchestration, Kubeflow and Apache Airflow for ML workflow orchestration and scheduling, Kubernetes with GPU node pools for model training and serving, LLM serving platforms (vLLM, Azure AI Foundry, Amazon Bedrock, Vertex AI)
+
+**Proficient level required:**
+
+- Vector databases (Pinecone, Weaviate, pgvector, Qdrant) and RAG frameworks (LangChain, LlamaIndex)
+- Feature stores (Feast, Tecton) for ML feature engineering
+- Distributed training frameworks (DeepSpeed, FSDP) for large model training
+- RAGAS and TruLens for LLM evaluation and quality measurement
+
+**Working Knowledge required:**
+
+- ONNX, TensorFlow Lite, and TinyML frameworks for edge model optimisation, Azure IoT Edge and AWS Greengrass for edge ML deployment pipelines, Responsible AI governance tooling and model risk management frameworks
+
+**Awareness level expected:**
+
+- Emerging agentic AI frameworks (AutoGen, LangGraph) for MLOps pipeline automation
+- Next-generation foundation model fine-tuning and PEFT approaches (LoRA, QLoRA)
 
 ## Interactions with Other Roles
 

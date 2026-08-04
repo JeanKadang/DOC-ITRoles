@@ -89,10 +89,36 @@ This role operates at the intersection of engineering rigour and business strate
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows 10/11 WIM/OSD pipeline design and DISM, Windows Autopilot zero-touch provisioning, Jamf Pro macOS fleet management and configuration profiles, PowerShell scripting for OS automation
-- **Proficient level required:** Apple Business Manager (ABM) and macOS MDM profile design, Linux desktop fleet management with Ansible or Puppet (Ubuntu LTS), MSIX and Win32 application packaging standards, CIS Benchmark and DISA STIG hardening for client OS, Windows Update for Business ring design and Autopatch architecture
-- **Working Knowledge required:** Fleet.dm cross-platform endpoint telemetry, Homebrew cask packaging, .deb/.rpm Linux packaging, Lenovo System Update and Lenovo Thin Installer for BIOS/firmware and driver deployment, MDT/WDS (legacy context for deprecation planning), Microsoft Intune and SCCM co-management integration patterns
-- **Awareness level expected:** Declarative Device Management (DDM) for macOS, Linux desktop management evolution (systemd-based provisioning), hardware attestation and Pluton/secure boot developments, emerging zero-touch models for Linux
+**Expert level required:**
+
+- Windows 10/11 WIM/OSD pipeline design and DISM
+- Windows Autopilot zero-touch provisioning
+- Jamf Pro macOS fleet management and configuration profiles
+- PowerShell scripting for OS automation
+
+**Proficient level required:**
+
+- Apple Business Manager (ABM) and macOS MDM profile design
+- Linux desktop fleet management with Ansible or Puppet (Ubuntu LTS)
+- MSIX and Win32 application packaging standards
+- CIS Benchmark and DISA STIG hardening for client OS
+- Windows Update for Business ring design and Autopatch architecture
+
+**Working Knowledge required:**
+
+- Fleet.dm cross-platform endpoint telemetry
+- Homebrew cask packaging
+- .deb/.rpm Linux packaging
+- Lenovo System Update and Lenovo Thin Installer for BIOS/firmware and driver deployment
+- MDT/WDS (legacy context for deprecation planning)
+- Microsoft Intune and SCCM co-management integration patterns
+
+**Awareness level expected:**
+
+- Declarative Device Management (DDM) for macOS
+- Linux desktop management evolution (systemd-based provisioning)
+- hardware attestation and Pluton/secure boot developments
+- emerging zero-touch models for Linux
 
 ### Qualifications
 

@@ -72,10 +72,24 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** VMware vSphere (ESXi, vCenter Server) for VM provisioning and daily operational management, Virtual machine lifecycle management including templates, snapshots, and customisation specifications, VMware Lifecycle Manager (vSphere Update Manager) for host patching and compliance baseline management, vSphere networking with Distributed vSwitches and port group configuration
-- **Proficient level required:** vSphere storage management (VMFS, NFS datastores, Storage DRS), vSphere resource pools, clusters, DRS, and HA configuration, VMware roles-based access control and permission management, vSphere performance dashboards and monitoring within vCenter Server
-- **Working Knowledge required:** VMware NSX-T basics for network virtualisation awareness, vSAN fundamentals for hyperconverged storage operations, PowerCLI for task automation and bulk VM configuration operations
-- **Awareness level expected:** VMware Tanzu and container workload capabilities, Broadcom VMware product consolidation and licensing changes for operational planning
+**Expert level required:**
+
+- VMware vSphere (ESXi, vCenter Server) for VM provisioning and daily operational management, Virtual machine lifecycle management including templates, snapshots, and customisation specifications, VMware Lifecycle Manager (vSphere Update Manager) for host patching and compliance baseline management, vSphere networking with Distributed vSwitches and port group configuration
+
+**Proficient level required:**
+
+- vSphere storage management (VMFS, NFS datastores, Storage DRS), vSphere resource pools, clusters, DRS, and HA configuration, VMware roles-based access control and permission management, vSphere performance dashboards and monitoring within vCenter Server
+
+**Working Knowledge required:**
+
+- VMware NSX-T basics for network virtualisation awareness
+- vSAN fundamentals for hyperconverged storage operations
+- PowerCLI for task automation and bulk VM configuration operations
+
+**Awareness level expected:**
+
+- VMware Tanzu and container workload capabilities
+- Broadcom VMware product consolidation and licensing changes for operational planning
 
 ## Interactions with Other Roles
 

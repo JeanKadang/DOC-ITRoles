@@ -64,10 +64,29 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise storage arrays (Dell EMC, HPE, NetApp, or Pure Storage — advanced configuration, performance tuning, and replication), SAN fabric switches and directors (Fibre Channel zoning, VSAN, and ISL design), storage performance analysis and optimisation (IOPS, throughput, queue depth)
-- **Proficient level required:** Software-defined storage (VMware vSAN, Nutanix, or Ceph), data replication and mirroring solutions (NetApp SnapMirror, Pure ActiveDR, Zerto), storage automation frameworks (Ansible, Terraform for storage provisioning)
-- **Working Knowledge required:** Cloud storage integration technologies (Azure Blob, AWS S3, hybrid storage solutions), storage capacity planning and analytics tools, Kubernetes persistent storage and CSI driver configuration
-- **Awareness level expected:** NVMe-oF protocol and all-flash fabric architecture, Ceph and Rook-Ceph for cloud-native storage, AI/ML workload storage patterns for high-throughput environments
+**Expert level required:**
+
+- Enterprise storage arrays (Dell EMC, HPE, NetApp, or Pure Storage — advanced configuration, performance tuning, and replication)
+- SAN fabric switches and directors (Fibre Channel zoning, VSAN, and ISL design)
+- storage performance analysis and optimisation (IOPS, throughput, queue depth)
+
+**Proficient level required:**
+
+- Software-defined storage (VMware vSAN, Nutanix, or Ceph)
+- data replication and mirroring solutions (NetApp SnapMirror, Pure ActiveDR, Zerto)
+- storage automation frameworks (Ansible, Terraform for storage provisioning)
+
+**Working Knowledge required:**
+
+- Cloud storage integration technologies (Azure Blob, AWS S3, hybrid storage solutions)
+- storage capacity planning and analytics tools
+- Kubernetes persistent storage and CSI driver configuration
+
+**Awareness level expected:**
+
+- NVMe-oF protocol and all-flash fabric architecture
+- Ceph and Rook-Ceph for cloud-native storage
+- AI/ML workload storage patterns for high-throughput environments
 
 ## Interactions with Other Roles
 

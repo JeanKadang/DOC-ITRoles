@@ -69,10 +69,24 @@ The Service Desk Product Owner owns the backlog for the tooling and self-service
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Desk tooling backlog and sprint/kanban management (Jira, Confluence)
-- **Proficient level required:** ServiceNow (or equivalent) self-service portal and knowledge base configuration, chatbot/virtual-agent platform capabilities
-- **Working Knowledge required:** ITIL 4 request fulfilment and knowledge management practices, Power BI or ServiceNow Performance Analytics for deflection reporting
-- **Awareness level expected:** AI-assisted ticket triage and resolution tooling, telephony/contact-centre platform integration patterns
+**Expert level required:**
+
+- Desk tooling backlog and sprint/kanban management (Jira, Confluence)
+
+**Proficient level required:**
+
+- ServiceNow (or equivalent) self-service portal and knowledge base configuration
+- chatbot/virtual-agent platform capabilities
+
+**Working Knowledge required:**
+
+- ITIL 4 request fulfilment and knowledge management practices
+- Power BI or ServiceNow Performance Analytics for deflection reporting
+
+**Awareness level expected:**
+
+- AI-assisted ticket triage and resolution tooling
+- telephony/contact-centre platform integration patterns
 
 ## Interactions with Other Roles
 

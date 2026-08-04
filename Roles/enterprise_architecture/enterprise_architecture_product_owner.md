@@ -69,10 +69,25 @@ The Enterprise Architecture Product Owner owns the backlog for the enterprise ar
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Practice backlog and sprint/kanban management (Jira, Confluence)
-- **Proficient level required:** LeanIX/Bizzdesign/ARIS enterprise architecture platform capabilities, architecture review board workflow tooling
-- **Working Knowledge required:** TOGAF framework concepts, technology radar tooling, Power BI or equivalent for tooling health reporting
-- **Awareness level expected:** ArchiMate/C4 modelling notation, AI-assisted architecture documentation tools
+**Expert level required:**
+
+- Practice backlog and sprint/kanban management (Jira, Confluence)
+
+**Proficient level required:**
+
+- LeanIX/Bizzdesign/ARIS enterprise architecture platform capabilities
+- architecture review board workflow tooling
+
+**Working Knowledge required:**
+
+- TOGAF framework concepts
+- technology radar tooling
+- Power BI or equivalent for tooling health reporting
+
+**Awareness level expected:**
+
+- ArchiMate/C4 modelling notation
+- AI-assisted architecture documentation tools
 
 ## Interactions with Other Roles
 

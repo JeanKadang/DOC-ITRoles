@@ -75,10 +75,21 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure/AWS/GCP at architectural governance depth
-- **Proficient level required:** Terraform/IaC tooling for standards oversight
-- **Working Knowledge required:** Kubernetes at governance and platform strategy depth
-- **Awareness level expected:** FinOps tooling (Azure Cost Management, Cloudability) for chapter budget oversight
+**Expert level required:**
+
+- Azure/AWS/GCP at architectural governance depth
+
+**Proficient level required:**
+
+- Terraform/IaC tooling for standards oversight
+
+**Working Knowledge required:**
+
+- Kubernetes at governance and platform strategy depth
+
+**Awareness level expected:**
+
+- FinOps tooling (Azure Cost Management, Cloudability) for chapter budget oversight
 
 ### Qualifications
 

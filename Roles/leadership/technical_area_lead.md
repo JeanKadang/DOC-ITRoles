@@ -76,10 +76,21 @@ The Technical Area Lead (TAL) is the senior technical authority for a defined IT
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Architecture governance tools (LeanIX, Ardoq, Sparx EA)
-- **Proficient level required:** Azure/AWS/GCP at strategic oversight depth
-- **Working Knowledge required:** GitHub/Azure DevOps for engineering visibility and metrics
-- **Awareness level expected:** DORA metrics tooling and delivery performance dashboards
+**Expert level required:**
+
+- Architecture governance tools (LeanIX, Ardoq, Sparx EA)
+
+**Proficient level required:**
+
+- Azure/AWS/GCP at strategic oversight depth
+
+**Working Knowledge required:**
+
+- GitHub/Azure DevOps for engineering visibility and metrics
+
+**Awareness level expected:**
+
+- DORA metrics tooling and delivery performance dashboards
 
 ## Interactions with Other Roles
 

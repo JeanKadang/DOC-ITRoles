@@ -64,10 +64,30 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise storage provisioning (SAN LUN masking, zoning, and NAS file share creation — Dell EMC, HPE, NetApp, or Pure Storage), storage networking (Fibre Channel and iSCSI connectivity and troubleshooting), RAID configuration and data protection implementation
-- **Proficient level required:** Storage management software (vendor GUI and CLI tools), thin provisioning and deduplication configuration, storage performance monitoring tools, cloud storage integration basics
-- **Working Knowledge required:** LUN masking and SAN zoning procedures, basic scripting for storage automation (Python or PowerShell), Kubernetes persistent volume fundamentals
-- **Awareness level expected:** Software-defined storage platforms (VMware vSAN, Ceph basics), NVMe-oF for high-performance storage, object storage platforms (S3-compatible)
+**Expert level required:**
+
+- Enterprise storage provisioning (SAN LUN masking, zoning, and NAS file share creation — Dell EMC, HPE, NetApp, or Pure Storage)
+- storage networking (Fibre Channel and iSCSI connectivity and troubleshooting)
+- RAID configuration and data protection implementation
+
+**Proficient level required:**
+
+- Storage management software (vendor GUI and CLI tools)
+- thin provisioning and deduplication configuration
+- storage performance monitoring tools
+- cloud storage integration basics
+
+**Working Knowledge required:**
+
+- LUN masking and SAN zoning procedures
+- basic scripting for storage automation (Python or PowerShell)
+- Kubernetes persistent volume fundamentals
+
+**Awareness level expected:**
+
+- Software-defined storage platforms (VMware vSAN, Ceph basics)
+- NVMe-oF for high-performance storage
+- object storage platforms (S3-compatible)
 
 ## Interactions with Other Roles
 

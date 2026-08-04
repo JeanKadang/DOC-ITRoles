@@ -75,10 +75,29 @@ The Developer Experience Engineer designs, builds, and operates internal develop
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Backstage (CNCF developer portal, software catalogue, and scaffolding template development), GitHub Actions or GitLab CI (golden path pipeline template authoring and pipeline-as-code patterns), DORA metrics tracking and SPACE framework instrumentation
-- **Proficient level required:** ArgoCD or Flux (GitOps-based application delivery and IDP self-service integration), Crossplane (Kubernetes-native self-service infrastructure provisioning), Terraform or Pulumi (IaC modules for golden path infrastructure)
-- **Working Knowledge required:** Helm (Kubernetes application packaging for golden path templates), OPA or Kyverno (policy-as-code enforcement in self-service workflows), CLI tooling development (Go, Python, or TypeScript-based internal developer tools)
-- **Awareness level expected:** Port and Cortex (alternative IDP and developer scorecard platforms), AI-assisted developer experience automation patterns, eBPF-based platform observability tooling
+**Expert level required:**
+
+- Backstage (CNCF developer portal, software catalogue, and scaffolding template development)
+- GitHub Actions or GitLab CI (golden path pipeline template authoring and pipeline-as-code patterns)
+- DORA metrics tracking and SPACE framework instrumentation
+
+**Proficient level required:**
+
+- ArgoCD or Flux (GitOps-based application delivery and IDP self-service integration)
+- Crossplane (Kubernetes-native self-service infrastructure provisioning)
+- Terraform or Pulumi (IaC modules for golden path infrastructure)
+
+**Working Knowledge required:**
+
+- Helm (Kubernetes application packaging for golden path templates)
+- OPA or Kyverno (policy-as-code enforcement in self-service workflows)
+- CLI tooling development (Go, Python, or TypeScript-based internal developer tools)
+
+**Awareness level expected:**
+
+- Port and Cortex (alternative IDP and developer scorecard platforms)
+- AI-assisted developer experience automation patterns
+- eBPF-based platform observability tooling
 
 ## Interactions with Other Roles
 

@@ -80,10 +80,29 @@ The Data Mesh Architect designs and governs the organisation's data mesh archite
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Data mesh governance framework design (domain decomposition model, data product specifications, and federated computational governance model), data catalogue platforms (DataHub, Collibra, or OpenMetadata — federated metadata governance and cross-domain discoverability), Apache Iceberg (open table format governance and cross-engine interoperability standards)
-- **Proficient level required:** Data Contract CLI or Soda (data contract specification, validation, and schema change management), dbt (data product transformation layer standards, testing requirements, and documentation conventions), data observability tooling (Monte Carlo, Bigeye, or Great Expectations — automated quality monitoring and SLA breach alerting)
-- **Working Knowledge required:** Apache Kafka and Confluent Schema Registry (event streaming architecture for real-time data product publishing), Terraform (self-serve data infrastructure provisioning patterns), cloud data platform architectures (Databricks, Snowflake, or BigQuery — data product delivery alignment)
-- **Awareness level expected:** AI data product standards for ML training datasets and feature stores, emerging data mesh tooling (OpenMetadata, Apache Hudi), DataOps CI/CD patterns for domain data product pipelines
+**Expert level required:**
+
+- Data mesh governance framework design (domain decomposition model, data product specifications, and federated computational governance model)
+- data catalogue platforms (DataHub, Collibra, or OpenMetadata — federated metadata governance and cross-domain discoverability)
+- Apache Iceberg (open table format governance and cross-engine interoperability standards)
+
+**Proficient level required:**
+
+- Data Contract CLI or Soda (data contract specification, validation, and schema change management)
+- dbt (data product transformation layer standards, testing requirements, and documentation conventions)
+- data observability tooling (Monte Carlo, Bigeye, or Great Expectations — automated quality monitoring and SLA breach alerting)
+
+**Working Knowledge required:**
+
+- Apache Kafka and Confluent Schema Registry (event streaming architecture for real-time data product publishing)
+- Terraform (self-serve data infrastructure provisioning patterns)
+- cloud data platform architectures (Databricks, Snowflake, or BigQuery — data product delivery alignment)
+
+**Awareness level expected:**
+
+- AI data product standards for ML training datasets and feature stores
+- emerging data mesh tooling (OpenMetadata, Apache Hudi)
+- DataOps CI/CD patterns for domain data product pipelines
 
 ## Interactions with Other Roles
 

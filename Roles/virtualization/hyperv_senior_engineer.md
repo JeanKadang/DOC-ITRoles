@@ -82,10 +82,24 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Hyper-V at advanced cluster configuration and performance optimisation level, Windows Server Failover Clustering and high availability implementation, System Center Virtual Machine Manager (SCVMM) advanced orchestration, templates, and library management, PowerShell Direct and advanced scripting for Hyper-V automation workflows
-- **Proficient level required:** Storage Spaces Direct (S2D) and Azure Stack HCI implementation and performance tuning, Hyper-V Replica and disaster recovery configuration, failover testing, and runbook design, Shielded VMs and Virtualization-Based Security (VBS) deployment, Software-Defined Networking in Windows Server advanced configuration
-- **Working Knowledge required:** Windows Admin Center extensions and performance monitoring integration, Azure Arc and Azure Stack HCI hybrid connectivity for management, Microsoft Endpoint Configuration Manager integration for VM guest OS management
-- **Awareness level expected:** Azure Stack HCI next-generation capabilities and ARC-enabled services, Windows Server container integration and Kubernetes on Hyper-V emerging patterns
+**Expert level required:**
+
+- Microsoft Hyper-V at advanced cluster configuration and performance optimisation level, Windows Server Failover Clustering and high availability implementation, System Center Virtual Machine Manager (SCVMM) advanced orchestration, templates, and library management, PowerShell Direct and advanced scripting for Hyper-V automation workflows
+
+**Proficient level required:**
+
+- Storage Spaces Direct (S2D) and Azure Stack HCI implementation and performance tuning, Hyper-V Replica and disaster recovery configuration, failover testing, and runbook design, Shielded VMs and Virtualization-Based Security (VBS) deployment, Software-Defined Networking in Windows Server advanced configuration
+
+**Working Knowledge required:**
+
+- Windows Admin Center extensions and performance monitoring integration
+- Azure Arc and Azure Stack HCI hybrid connectivity for management
+- Microsoft Endpoint Configuration Manager integration for VM guest OS management
+
+**Awareness level expected:**
+
+- Azure Stack HCI next-generation capabilities and ARC-enabled services
+- Windows Server container integration and Kubernetes on Hyper-V emerging patterns
 
 ## Interactions with Other Roles
 

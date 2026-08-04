@@ -77,10 +77,27 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Hyper-V architecture, cluster design, and high availability configuration, System Center Virtual Machine Manager (SCVMM) for enterprise VM fleet and library management, Azure Stack HCI and Storage Spaces Direct (S2D) hyperconverged architecture, Windows Server Failover Clustering for Hyper-V environments
-- **Proficient level required:** Hyper-V Replica and Azure Site Recovery for disaster recovery architecture, Software-Defined Networking in Windows Server and Hyper-V SDN stack, Windows Admin Center for centralised management and monitoring, PowerShell DSC and advanced automation for Hyper-V orchestration
-- **Working Knowledge required:** Azure Arc integration and hybrid cloud connectivity for Hyper-V workloads, Shielded VMs and Virtualization-Based Security (VBS) for platform security design, Azure migration tooling for Hyper-V workload cloud integration
-- **Awareness level expected:** Azure Stack HCI next-generation capabilities and evolving licensing, Emerging containerisation and Kubernetes integration on Windows Server
+**Expert level required:**
+
+- Microsoft Hyper-V architecture, cluster design, and high availability configuration, System Center Virtual Machine Manager (SCVMM) for enterprise VM fleet and library management, Azure Stack HCI and Storage Spaces Direct (S2D) hyperconverged architecture, Windows Server Failover Clustering for Hyper-V environments
+
+**Proficient level required:**
+
+- Hyper-V Replica and Azure Site Recovery for disaster recovery architecture
+- Software-Defined Networking in Windows Server and Hyper-V SDN stack
+- Windows Admin Center for centralised management and monitoring
+- PowerShell DSC and advanced automation for Hyper-V orchestration
+
+**Working Knowledge required:**
+
+- Azure Arc integration and hybrid cloud connectivity for Hyper-V workloads
+- Shielded VMs and Virtualization-Based Security (VBS) for platform security design
+- Azure migration tooling for Hyper-V workload cloud integration
+
+**Awareness level expected:**
+
+- Azure Stack HCI next-generation capabilities and evolving licensing
+- Emerging containerisation and Kubernetes integration on Windows Server
 
 ## Interactions with Other Roles
 

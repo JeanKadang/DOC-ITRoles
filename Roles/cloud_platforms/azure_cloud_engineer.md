@@ -64,10 +64,25 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure Virtual Machines, VM Scale Sets, and compute services management, Azure Virtual Networks, subnets, NSGs, and route table configuration, Microsoft Entra ID and Azure RBAC for identity and access management, ARM Templates and Bicep for infrastructure deployment
-- **Proficient level required:** Azure CLI and PowerShell for resource provisioning and day-to-day operations, Azure Monitor and Log Analytics for monitoring configuration and alert management, Azure Storage (Blob, Files, Disks) and Azure Backup for data protection
-- **Working Knowledge required:** Azure Kubernetes Service (AKS) basics for supporting container workloads, Microsoft Defender for Cloud for security compliance visibility
-- **Awareness level expected:** Azure DevOps pipelines and GitHub Actions for CI/CD integration, Terraform for Azure as a multi-cloud IaC progression path
+**Expert level required:**
+
+- Azure Virtual Machines, VM Scale Sets, and compute services management, Azure Virtual Networks, subnets, NSGs, and route table configuration, Microsoft Entra ID and Azure RBAC for identity and access management, ARM Templates and Bicep for infrastructure deployment
+
+**Proficient level required:**
+
+- Azure CLI and PowerShell for resource provisioning and day-to-day operations
+- Azure Monitor and Log Analytics for monitoring configuration and alert management
+- Azure Storage (Blob, Files, Disks) and Azure Backup for data protection
+
+**Working Knowledge required:**
+
+- Azure Kubernetes Service (AKS) basics for supporting container workloads
+- Microsoft Defender for Cloud for security compliance visibility
+
+**Awareness level expected:**
+
+- Azure DevOps pipelines and GitHub Actions for CI/CD integration
+- Terraform for Azure as a multi-cloud IaC progression path
 
 ## Interactions with Other Roles
 

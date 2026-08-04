@@ -75,10 +75,31 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** GitHub Actions / Azure DevOps / GitLab CI (advanced pipeline design, reusable templates, and composite actions), Terraform/Pulumi (advanced IaC patterns and reusable module libraries), ArgoCD/Flux (GitOps framework implementation and progressive delivery)
-- **Proficient level required:** Kubernetes/Docker Swarm (container orchestration and microservice deployment), OPA/Sentinel (policy as code frameworks), DevSecOps toolchain integration (SAST, DAST, SBOM scanners), Ansible/Puppet (configuration management)
-- **Working Knowledge required:** Istio/Linkerd (service mesh implementation), canary and Blue/Green deployment tooling, observability platform integration with CI/CD, Artifactory/Nexus (artifact management)
-- **Awareness level expected:** eBPF-based security and observability tooling, SLSA supply chain security standards, WebAssembly for serverless pipeline patterns
+**Expert level required:**
+
+- GitHub Actions / Azure DevOps / GitLab CI (advanced pipeline design, reusable templates, and composite actions)
+- Terraform/Pulumi (advanced IaC patterns and reusable module libraries)
+- ArgoCD/Flux (GitOps framework implementation and progressive delivery)
+
+**Proficient level required:**
+
+- Kubernetes/Docker Swarm (container orchestration and microservice deployment)
+- OPA/Sentinel (policy as code frameworks)
+- DevSecOps toolchain integration (SAST, DAST, SBOM scanners)
+- Ansible/Puppet (configuration management)
+
+**Working Knowledge required:**
+
+- Istio/Linkerd (service mesh implementation)
+- canary and Blue/Green deployment tooling
+- observability platform integration with CI/CD
+- Artifactory/Nexus (artifact management)
+
+**Awareness level expected:**
+
+- eBPF-based security and observability tooling
+- SLSA supply chain security standards
+- WebAssembly for serverless pipeline patterns
 
 ## Interactions with Other Roles
 

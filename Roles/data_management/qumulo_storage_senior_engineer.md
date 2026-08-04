@@ -72,10 +72,29 @@ The Qumulo Storage Senior Engineer leads the implementation and optimization of 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Advanced Qumulo cluster configuration and performance tuning, Qumulo REST API and automation frameworks (scripting and integration development), data migration planning and execution for complex Qumulo workloads
-- **Proficient level required:** Qumulo Shift for hybrid cloud implementations and data transfers, Qumulo replication and DR solution design, Qumulo CloudStudio and custom monitoring and reporting solutions
-- **Working Knowledge required:** Cloud storage platforms (AWS S3, Azure Blob) as Qumulo Shift targets, Python scripting for Qumulo management automation, network storage troubleshooting (NFS, SMB, TCP/IP)
-- **Awareness level expected:** Machine learning workload storage patterns for large unstructured datasets, competitive NAS and object storage platforms, software-defined storage technology trends
+**Expert level required:**
+
+- Advanced Qumulo cluster configuration and performance tuning
+- Qumulo REST API and automation frameworks (scripting and integration development)
+- data migration planning and execution for complex Qumulo workloads
+
+**Proficient level required:**
+
+- Qumulo Shift for hybrid cloud implementations and data transfers
+- Qumulo replication and DR solution design
+- Qumulo CloudStudio and custom monitoring and reporting solutions
+
+**Working Knowledge required:**
+
+- Cloud storage platforms (AWS S3, Azure Blob) as Qumulo Shift targets
+- Python scripting for Qumulo management automation
+- network storage troubleshooting (NFS, SMB, TCP/IP)
+
+**Awareness level expected:**
+
+- Machine learning workload storage patterns for large unstructured datasets
+- competitive NAS and object storage platforms
+- software-defined storage technology trends
 
 ## Interactions with Other Roles
 

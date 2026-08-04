@@ -64,10 +64,27 @@ The Enterprise Architect develops and maintains the overall technological vision
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ArchiMate/LeanIX/Bizzdesign (EA modeling), TOGAF, Azure/AWS/GCP (cloud architecture)
-- **Proficient level required:** Azure Integration Services/Kafka (enterprise integration), Azure APIM (API management), business capability mapping frameworks
-- **Working Knowledge required:** Enterprise AI governance frameworks, technology portfolio management tools
-- **Awareness level expected:** ArchiMate advanced modeling, innovation management systems
+**Expert level required:**
+
+- ArchiMate/LeanIX/Bizzdesign (EA modeling)
+- TOGAF
+- Azure/AWS/GCP (cloud architecture)
+
+**Proficient level required:**
+
+- Azure Integration Services/Kafka (enterprise integration)
+- Azure APIM (API management)
+- business capability mapping frameworks
+
+**Working Knowledge required:**
+
+- Enterprise AI governance frameworks
+- technology portfolio management tools
+
+**Awareness level expected:**
+
+- ArchiMate advanced modeling
+- innovation management systems
 
 ## Interactions with Other Roles
 

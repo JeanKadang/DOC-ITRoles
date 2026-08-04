@@ -64,10 +64,29 @@ The Database Architect designs comprehensive data management strategies and arch
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Relational database architecture (Oracle, SQL Server, or PostgreSQL — design patterns, HA/DR, and query performance tuning), data modelling (dimensional, normalised, and data vault patterns for enterprise workloads), database security framework design (encryption, access control, and compliance controls)
-- **Proficient level required:** NoSQL database platforms (MongoDB, Cassandra, or Couchbase — architecture patterns and use case selection), Database-as-a-Service platforms (Azure SQL, AWS RDS/Aurora, GCP Cloud SQL — migration and adoption strategy), database migration tools and cloud database modernisation approaches
-- **Working Knowledge required:** In-memory database technologies (Redis, Memcached — caching and session store patterns), distributed database architectures (CockroachDB, Spanner — for globally consistent workloads), data replication and synchronisation technologies
-- **Awareness level expected:** NewSQL and HTAP database trends, AI-assisted query optimisation tools, database DevOps and schema-as-code practices (Flyway, Liquibase)
+**Expert level required:**
+
+- Relational database architecture (Oracle, SQL Server, or PostgreSQL — design patterns, HA/DR, and query performance tuning)
+- data modelling (dimensional, normalised, and data vault patterns for enterprise workloads)
+- database security framework design (encryption, access control, and compliance controls)
+
+**Proficient level required:**
+
+- NoSQL database platforms (MongoDB, Cassandra, or Couchbase — architecture patterns and use case selection)
+- Database-as-a-Service platforms (Azure SQL, AWS RDS/Aurora, GCP Cloud SQL — migration and adoption strategy)
+- database migration tools and cloud database modernisation approaches
+
+**Working Knowledge required:**
+
+- In-memory database technologies (Redis, Memcached — caching and session store patterns)
+- distributed database architectures (CockroachDB, Spanner — for globally consistent workloads)
+- data replication and synchronisation technologies
+
+**Awareness level expected:**
+
+- NewSQL and HTAP database trends
+- AI-assisted query optimisation tools
+- database DevOps and schema-as-code practices (Flyway, Liquibase)
 
 ## Interactions with Other Roles
 

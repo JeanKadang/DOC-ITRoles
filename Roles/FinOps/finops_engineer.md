@@ -69,10 +69,25 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Cloud cost monitoring and reporting tools (AWS Cost Explorer, Azure Cost Management, GCP Billing Console), Resource tagging implementation and cost allocation frameworks across AWS, Azure, and GCP, Budget alerting and anomaly detection configuration in cloud native and third-party FinOps platforms, Cloud provider billing systems and pricing models for accurate cost attribution
-- **Proficient level required:** BI and data visualization platforms (Power BI, Tableau, Looker Studio) for cloud cost dashboards and reports, Multi-cloud cost management platforms (CloudHealth by VMware, Apptio Cloudability) for consolidated reporting, Scripting for FinOps automation (Python, PowerShell) for optimization tasks and scheduled reporting
-- **Working Knowledge required:** Infrastructure as Code (Terraform, Bicep, CloudFormation) for understanding resource cost implications of IaC changes, Reserved instance and savings plan tracking tools for commitment coverage monitoring
-- **Awareness level expected:** FinOps Foundation Framework and maturity model for practice development context, AI/LLM cost attribution patterns and token-level cost management for emerging cloud consumption
+**Expert level required:**
+
+- Cloud cost monitoring and reporting tools (AWS Cost Explorer, Azure Cost Management, GCP Billing Console), Resource tagging implementation and cost allocation frameworks across AWS, Azure, and GCP, Budget alerting and anomaly detection configuration in cloud native and third-party FinOps platforms, Cloud provider billing systems and pricing models for accurate cost attribution
+
+**Proficient level required:**
+
+- BI and data visualization platforms (Power BI, Tableau, Looker Studio) for cloud cost dashboards and reports
+- Multi-cloud cost management platforms (CloudHealth by VMware, Apptio Cloudability) for consolidated reporting
+- Scripting for FinOps automation (Python, PowerShell) for optimization tasks and scheduled reporting
+
+**Working Knowledge required:**
+
+- Infrastructure as Code (Terraform, Bicep, CloudFormation) for understanding resource cost implications of IaC changes
+- Reserved instance and savings plan tracking tools for commitment coverage monitoring
+
+**Awareness level expected:**
+
+- FinOps Foundation Framework and maturity model for practice development context
+- AI/LLM cost attribution patterns and token-level cost management for emerging cloud consumption
 
 ### Qualifications
 

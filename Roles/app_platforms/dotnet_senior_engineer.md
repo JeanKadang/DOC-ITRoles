@@ -64,10 +64,29 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ASP.NET Core and advanced Web API patterns (middleware, filters, authentication pipelines), C# advanced language features and .NET 5+ platform capabilities, .NET dependency injection architecture and service container design
-- **Proficient level required:** Entity Framework advanced data access and query optimisation, NuGet package authoring and lifecycle governance, .NET security libraries and OWASP mitigation patterns
-- **Working Knowledge required:** .NET containerization and Kubernetes deployment (CKAD patterns), Azure DevOps/GitHub Actions advanced CI/CD for .NET, .NET performance diagnostics and profiling tools
-- **Awareness level expected:** Blazor WebAssembly and .NET MAUI cross-platform trends, Dapr distributed application runtime, AI pair programming impacts on .NET framework quality
+**Expert level required:**
+
+- ASP.NET Core and advanced Web API patterns (middleware, filters, authentication pipelines)
+- C# advanced language features and .NET 5+ platform capabilities
+- .NET dependency injection architecture and service container design
+
+**Proficient level required:**
+
+- Entity Framework advanced data access and query optimisation
+- NuGet package authoring and lifecycle governance
+- .NET security libraries and OWASP mitigation patterns
+
+**Working Knowledge required:**
+
+- .NET containerization and Kubernetes deployment (CKAD patterns)
+- Azure DevOps/GitHub Actions advanced CI/CD for .NET
+- .NET performance diagnostics and profiling tools
+
+**Awareness level expected:**
+
+- Blazor WebAssembly and .NET MAUI cross-platform trends
+- Dapr distributed application runtime
+- AI pair programming impacts on .NET framework quality
 
 ## Interactions with Other Roles
 

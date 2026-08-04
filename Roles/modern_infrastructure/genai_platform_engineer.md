@@ -69,10 +69,30 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** LLM serving platforms (vLLM, Ollama, Azure AI Foundry, Amazon Bedrock), Vector database operations (Pinecone, pgvector, Weaviate, Qdrant), RAG pipeline frameworks (LangChain, LlamaIndex, Semantic Kernel), Kubernetes with GPU Operator for AI workload orchestration
-- **Proficient level required:** Agentic AI frameworks (AutoGen, CrewAI, LangGraph, Azure AI Agents), AI evaluation tools (RAGAS, TruLens, Azure AI Evaluation SDK, LangSmith), MLflow and Weights & Biases for experiment tracking, Infrastructure as Code (Terraform, Bicep, Pulumi)
-- **Working Knowledge required:** CI/CD for AI pipelines (GitHub Actions, Azure DevOps, GitLab CI), Prompt Flow and PromptLayer for prompt versioning and management, Python ML/AI ecosystem (transformers, pydantic-ai)
-- **Awareness level expected:** Emerging model quantisation and inference optimisation techniques, Responsible AI governance tooling and regulatory framework developments
+**Expert level required:**
+
+- LLM serving platforms (vLLM, Ollama, Azure AI Foundry, Amazon Bedrock)
+- Vector database operations (Pinecone, pgvector, Weaviate, Qdrant)
+- RAG pipeline frameworks (LangChain, LlamaIndex, Semantic Kernel)
+- Kubernetes with GPU Operator for AI workload orchestration
+
+**Proficient level required:**
+
+- Agentic AI frameworks (AutoGen, CrewAI, LangGraph, Azure AI Agents)
+- AI evaluation tools (RAGAS, TruLens, Azure AI Evaluation SDK, LangSmith)
+- MLflow and Weights & Biases for experiment tracking
+- Infrastructure as Code (Terraform, Bicep, Pulumi)
+
+**Working Knowledge required:**
+
+- CI/CD for AI pipelines (GitHub Actions, Azure DevOps, GitLab CI)
+- Prompt Flow and PromptLayer for prompt versioning and management
+- Python ML/AI ecosystem (transformers, pydantic-ai)
+
+**Awareness level expected:**
+
+- Emerging model quantisation and inference optimisation techniques
+- Responsible AI governance tooling and regulatory framework developments
 
 ## Interactions with Other Roles
 

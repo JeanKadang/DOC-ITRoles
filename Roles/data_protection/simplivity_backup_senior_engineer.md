@@ -64,10 +64,27 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** HPE SimpliVity (advanced configurations), SimpliVity RapidDR, SimpliVity REST API integration
-- **Proficient level required:** SimpliVity policy-based backup automation, multi-site SimpliVity replication, VMware vSphere/vCenter
-- **Working Knowledge required:** Integration with enterprise backup solutions (Veeam/Commvault), advanced backup monitoring/analytics
-- **Awareness level expected:** HPE OneView, DR orchestration platforms
+**Expert level required:**
+
+- HPE SimpliVity (advanced configurations)
+- SimpliVity RapidDR
+- SimpliVity REST API integration
+
+**Proficient level required:**
+
+- SimpliVity policy-based backup automation
+- multi-site SimpliVity replication
+- VMware vSphere/vCenter
+
+**Working Knowledge required:**
+
+- Integration with enterprise backup solutions (Veeam/Commvault)
+- advanced backup monitoring/analytics
+
+**Awareness level expected:**
+
+- HPE OneView
+- DR orchestration platforms
 
 ## Interactions with Other Roles
 

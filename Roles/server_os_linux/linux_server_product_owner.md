@@ -72,10 +72,30 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise Linux distribution concepts and lifecycle (RHEL, Ubuntu, SUSE), Jira/Azure DevOps backlog management, Linux platform metrics and compliance dashboards
-- **Proficient level required:** Ansible automation concepts and coverage reporting, Linux security hardening frameworks (CIS benchmarks), container and Kubernetes platform awareness, Linux monitoring and observability platforms
-- **Working Knowledge required:** Infrastructure as Code tools (Terraform, Ansible), cloud Linux services (AWS/Azure/GCP), open source license and risk frameworks
-- **Awareness level expected:** eBPF observability tooling, immutable infrastructure patterns, Linux AI/ML workload considerations
+**Expert level required:**
+
+- Enterprise Linux distribution concepts and lifecycle (RHEL, Ubuntu, SUSE)
+- Jira/Azure DevOps backlog management
+- Linux platform metrics and compliance dashboards
+
+**Proficient level required:**
+
+- Ansible automation concepts and coverage reporting
+- Linux security hardening frameworks (CIS benchmarks)
+- container and Kubernetes platform awareness
+- Linux monitoring and observability platforms
+
+**Working Knowledge required:**
+
+- Infrastructure as Code tools (Terraform, Ansible)
+- cloud Linux services (AWS/Azure/GCP)
+- open source license and risk frameworks
+
+**Awareness level expected:**
+
+- eBPF observability tooling
+- immutable infrastructure patterns
+- Linux AI/ML workload considerations
 
 ## Interactions with Other Roles
 

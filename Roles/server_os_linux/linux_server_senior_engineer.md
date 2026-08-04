@@ -72,10 +72,31 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Ansible/Puppet automation frameworks, Linux HA solutions (Pacemaker, Corosync), advanced Linux kernel tuning and performance analysis tools, Linux security hardening and CIS compliance tooling
-- **Proficient level required:** Terraform Infrastructure as Code, LVM/ZFS advanced storage configurations, Docker/Podman container technologies, Bash and Python scripting
-- **Working Knowledge required:** Kubernetes container host configuration, cloud Linux integration (AWS/Azure/GCP), enterprise monitoring and observability platforms
-- **Awareness level expected:** eBPF-based observability, GitOps workflows for Linux infrastructure, immutable OS patterns (CoreOS, Flatcar)
+**Expert level required:**
+
+- Ansible/Puppet automation frameworks
+- Linux HA solutions (Pacemaker, Corosync)
+- advanced Linux kernel tuning and performance analysis tools
+- Linux security hardening and CIS compliance tooling
+
+**Proficient level required:**
+
+- Terraform Infrastructure as Code
+- LVM/ZFS advanced storage configurations
+- Docker/Podman container technologies
+- Bash and Python scripting
+
+**Working Knowledge required:**
+
+- Kubernetes container host configuration
+- cloud Linux integration (AWS/Azure/GCP)
+- enterprise monitoring and observability platforms
+
+**Awareness level expected:**
+
+- eBPF-based observability
+- GitOps workflows for Linux infrastructure
+- immutable OS patterns (CoreOS, Flatcar)
 
 ## Interactions with Other Roles
 

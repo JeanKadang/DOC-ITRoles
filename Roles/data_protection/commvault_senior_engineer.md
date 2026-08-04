@@ -64,10 +64,27 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Commvault Complete Backup & Recovery, Commvault HyperScale, Commvault REST APIs/automation
-- **Proficient level required:** Commvault Orchestrate, enterprise storage integration (SAN/NAS), DR orchestration
-- **Working Knowledge required:** Cloud storage/Metallic SaaS backup targets, database backup technologies
-- **Awareness level expected:** Tape library management, GDPR compliance reporting
+**Expert level required:**
+
+- Commvault Complete Backup & Recovery
+- Commvault HyperScale
+- Commvault REST APIs/automation
+
+**Proficient level required:**
+
+- Commvault Orchestrate
+- enterprise storage integration (SAN/NAS)
+- DR orchestration
+
+**Working Knowledge required:**
+
+- Cloud storage/Metallic SaaS backup targets
+- database backup technologies
+
+**Awareness level expected:**
+
+- Tape library management
+- GDPR compliance reporting
 
 ## Interactions with Other Roles
 

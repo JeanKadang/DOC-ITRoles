@@ -64,10 +64,27 @@ The Service Management Architect designs comprehensive strategies and architectu
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow (ITSM architecture), ITIL v4 processes, CMDB architectural patterns
-- **Proficient level required:** SIAM (Service Integration and Management), process automation architectures, IT4IT reference architecture
-- **Working Knowledge required:** Power Automate (workflow automation), Azure Monitor/SCOM (monitoring integration)
-- **Awareness level expected:** AI/ML for ITSM, Digital workplace architecture frameworks
+**Expert level required:**
+
+- ServiceNow (ITSM architecture)
+- ITIL v4 processes
+- CMDB architectural patterns
+
+**Proficient level required:**
+
+- SIAM (Service Integration and Management)
+- process automation architectures
+- IT4IT reference architecture
+
+**Working Knowledge required:**
+
+- Power Automate (workflow automation)
+- Azure Monitor/SCOM (monitoring integration)
+
+**Awareness level expected:**
+
+- AI/ML for ITSM
+- Digital workplace architecture frameworks
 
 ## Interactions with Other Roles
 

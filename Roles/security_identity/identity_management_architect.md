@@ -72,10 +72,27 @@ The Identity Management Architect designs and oversees the organization's identi
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Entra ID, Windows Active Directory, Microsoft Entra Connect (hybrid identity)
-- **Proficient level required:** AD FS/SAML/OAuth 2.0/OIDC (federation), SailPoint/Saviynt (IGA), PKI/AD CS
-- **Working Knowledge required:** LDAP/Kerberos, identity provisioning tools (SCIM)
-- **Awareness level expected:** Decentralized identity (Verifiable Credentials), AI-driven identity analytics
+**Expert level required:**
+
+- Microsoft Entra ID
+- Windows Active Directory
+- Microsoft Entra Connect (hybrid identity)
+
+**Proficient level required:**
+
+- AD FS/SAML/OAuth 2.0/OIDC (federation)
+- SailPoint/Saviynt (IGA)
+- PKI/AD CS
+
+**Working Knowledge required:**
+
+- LDAP/Kerberos
+- identity provisioning tools (SCIM)
+
+**Awareness level expected:**
+
+- Decentralized identity (Verifiable Credentials)
+- AI-driven identity analytics
 
 ## Interactions with Other Roles
 

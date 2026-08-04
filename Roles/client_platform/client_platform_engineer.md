@@ -83,10 +83,34 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows 11 cumulative update integration via DISM, device setup and imaging workflows for Windows Autopilot and Apple Business Manager enrolment
-- **Proficient level required:** Win32 application packaging with Intune Content Prep Tool, Jamf Pro basic policy and package deployment, apt/dpkg package management on Ubuntu LTS, basic PowerShell scripting for Windows remediation tasks
-- **Working Knowledge required:** MSIX packaging basics, macOS .pkg creation, Jamf software update policies, WUfB patch compliance report interpretation, Windows event log and MDM log analysis for troubleshooting
-- **Awareness level expected:** Ansible basics for Linux configuration management, Homebrew cask authoring structure, MSIX Packaging Tool advanced features, CIS Benchmark client hardening concepts, Lenovo System Update and Thin Installer for BIOS/firmware management, Apple Silicon M-series application compatibility (Rosetta 2, Universal Binary)
+**Expert level required:**
+
+- Windows 11 cumulative update integration via DISM
+- device setup and imaging workflows for Windows Autopilot and Apple Business Manager enrolment
+
+**Proficient level required:**
+
+- Win32 application packaging with Intune Content Prep Tool
+- Jamf Pro basic policy and package deployment
+- apt/dpkg package management on Ubuntu LTS
+- basic PowerShell scripting for Windows remediation tasks
+
+**Working Knowledge required:**
+
+- MSIX packaging basics
+- macOS .pkg creation
+- Jamf software update policies
+- WUfB patch compliance report interpretation
+- Windows event log and MDM log analysis for troubleshooting
+
+**Awareness level expected:**
+
+- Ansible basics for Linux configuration management
+- Homebrew cask authoring structure
+- MSIX Packaging Tool advanced features
+- CIS Benchmark client hardening concepts
+- Lenovo System Update and Thin Installer for BIOS/firmware management
+- Apple Silicon M-series application compatibility (Rosetta 2, Universal Binary)
 
 ### Qualifications
 

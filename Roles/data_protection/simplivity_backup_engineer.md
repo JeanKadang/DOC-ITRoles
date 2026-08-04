@@ -64,10 +64,27 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** HPE SimpliVity hyperconverged infrastructure, SimpliVity OmniStack software, VMware vSphere integration
-- **Proficient level required:** SimpliVity backup/recovery operations, SimpliVity policy management, SimpliVity OmniCube Management
-- **Working Knowledge required:** SimpliVity replication, backup monitoring/reporting tools
-- **Awareness level expected:** VMware Data Protection, HPE OneView
+**Expert level required:**
+
+- HPE SimpliVity hyperconverged infrastructure
+- SimpliVity OmniStack software
+- VMware vSphere integration
+
+**Proficient level required:**
+
+- SimpliVity backup/recovery operations
+- SimpliVity policy management
+- SimpliVity OmniCube Management
+
+**Working Knowledge required:**
+
+- SimpliVity replication
+- backup monitoring/reporting tools
+
+**Awareness level expected:**
+
+- VMware Data Protection
+- HPE OneView
 
 ## Interactions with Other Roles
 

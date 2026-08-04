@@ -64,10 +64,27 @@ The Service Management Product Owner manages the development and lifecycle of th
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow (ITSM platform), Jira/Azure DevOps (backlog), ITIL v4 processes
-- **Proficient level required:** Power BI/ServiceNow dashboards (service analytics), service catalog management, CMDB/asset management
-- **Working Knowledge required:** Power Automate (workflow automation), change/release management tools
-- **Awareness level expected:** AI-driven ITSM automation, service value stream mapping tools
+**Expert level required:**
+
+- ServiceNow (ITSM platform)
+- Jira/Azure DevOps (backlog)
+- ITIL v4 processes
+
+**Proficient level required:**
+
+- Power BI/ServiceNow dashboards (service analytics)
+- service catalog management
+- CMDB/asset management
+
+**Working Knowledge required:**
+
+- Power Automate (workflow automation)
+- change/release management tools
+
+**Awareness level expected:**
+
+- AI-driven ITSM automation
+- service value stream mapping tools
 
 ## Interactions with Other Roles
 

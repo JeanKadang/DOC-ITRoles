@@ -64,10 +64,27 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Terraform/Ansible (IaC/automation), ServiceNow (ITSM/service catalog), Azure (IaaS architecture)
-- **Proficient level required:** CI/CD pipeline design (Azure DevOps), API gateway/integration patterns, workflow orchestration platforms
-- **Working Knowledge required:** Windows Server/Linux (administration), Azure Monitor (monitoring)
-- **Awareness level expected:** Kubernetes (container orchestration), infrastructure abstraction models
+**Expert level required:**
+
+- Terraform/Ansible (IaC/automation)
+- ServiceNow (ITSM/service catalog)
+- Azure (IaaS architecture)
+
+**Proficient level required:**
+
+- CI/CD pipeline design (Azure DevOps)
+- API gateway/integration patterns
+- workflow orchestration platforms
+
+**Working Knowledge required:**
+
+- Windows Server/Linux (administration)
+- Azure Monitor (monitoring)
+
+**Awareness level expected:**
+
+- Kubernetes (container orchestration)
+- infrastructure abstraction models
 
 ## Interactions with Other Roles
 

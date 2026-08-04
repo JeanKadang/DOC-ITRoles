@@ -80,10 +80,29 @@ The DevSecOps Architect is responsible for designing and governing the strategy,
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** GitHub Actions/Azure DevOps/GitLab CI, Checkmarx/Veracode (SAST), Trivy/Prisma Cloud (container security), Checkov/tfsec (IaC security)
-- **Proficient level required:** Snyk/OWASP Dependency-Check (SCA), HashiCorp Vault/Azure Key Vault, OPA/Gatekeeper (policy as code), OWASP ZAP/Burp Suite (DAST)
-- **Working Knowledge required:** DefectDojo/JFrog Xray (vulnerability management), CycloneDX/Syft (SBOM)
-- **Awareness level expected:** Falco/Sysdig (runtime security), Kyverno
+**Expert level required:**
+
+- GitHub Actions/Azure DevOps/GitLab CI
+- Checkmarx/Veracode (SAST)
+- Trivy/Prisma Cloud (container security)
+- Checkov/tfsec (IaC security)
+
+**Proficient level required:**
+
+- Snyk/OWASP Dependency-Check (SCA)
+- HashiCorp Vault/Azure Key Vault
+- OPA/Gatekeeper (policy as code)
+- OWASP ZAP/Burp Suite (DAST)
+
+**Working Knowledge required:**
+
+- DefectDojo/JFrog Xray (vulnerability management)
+- CycloneDX/Syft (SBOM)
+
+**Awareness level expected:**
+
+- Falco/Sysdig (runtime security)
+- Kyverno
 
 ## Interactions with Other Roles
 

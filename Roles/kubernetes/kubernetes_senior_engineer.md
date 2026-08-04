@@ -74,10 +74,25 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Advanced Kubernetes (CRDs, Operators, admission controllers, API extension mechanisms), Service mesh implementations (Istio, Linkerd, Consul) for traffic management, mTLS, and observability, GitOps tools (ArgoCD, Flux, Fleet) for declarative multi-cluster management, Policy engines (OPA/Gatekeeper, Kyverno) for admission control and governance enforcement
-- **Proficient level required:** Container security platforms (Aqua Security, Prisma Cloud, NeuVector) for runtime protection, Observability stacks (Prometheus, Grafana, OpenTelemetry, Jaeger) for full-stack cluster visibility, CNI plugins (Calico, Cilium, Multus) for advanced Kubernetes networking
-- **Working Knowledge required:** Infrastructure as Code (Terraform, Pulumi) for cluster provisioning and lifecycle management, Multi-cluster management platforms (Rancher, VMware Tanzu, Red Hat OpenShift)
-- **Awareness level expected:** eBPF-based networking and security (Cilium, Hubble, Tetragon) for next-generation cluster observability, WASM and container-native computing patterns for edge and serverless Kubernetes workloads
+**Expert level required:**
+
+- Advanced Kubernetes (CRDs, Operators, admission controllers, API extension mechanisms), Service mesh implementations (Istio, Linkerd, Consul) for traffic management, mTLS, and observability, GitOps tools (ArgoCD, Flux, Fleet) for declarative multi-cluster management, Policy engines (OPA/Gatekeeper, Kyverno) for admission control and governance enforcement
+
+**Proficient level required:**
+
+- Container security platforms (Aqua Security, Prisma Cloud, NeuVector) for runtime protection
+- Observability stacks (Prometheus, Grafana, OpenTelemetry, Jaeger) for full-stack cluster visibility
+- CNI plugins (Calico, Cilium, Multus) for advanced Kubernetes networking
+
+**Working Knowledge required:**
+
+- Infrastructure as Code (Terraform, Pulumi) for cluster provisioning and lifecycle management
+- Multi-cluster management platforms (Rancher, VMware Tanzu, Red Hat OpenShift)
+
+**Awareness level expected:**
+
+- eBPF-based networking and security (Cilium, Hubble, Tetragon) for next-generation cluster observability
+- WASM and container-native computing patterns for edge and serverless Kubernetes workloads
 
 ## Interactions with Other Roles
 

@@ -64,10 +64,29 @@ The API Platform Product Owner manages the development and lifecycle of the orga
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** API platform backlog and roadmap management (Jira, Confluence), API lifecycle and deprecation governance, API adoption metrics and developer portal KPI reporting
-- **Proficient level required:** API management platform concepts (Apigee, Kong, or Azure APIM), API developer portal governance and consumer onboarding, OpenAPI/Swagger documentation standards and review
-- **Working Knowledge required:** API security protocol concepts (OAuth 2.0, OIDC) for requirements gathering, GraphQL and event-driven API concepts, CI/CD pipeline integration for API delivery
-- **Awareness level expected:** API monetisation platforms and partner API strategies, AsyncAPI specification for event-driven APIs, AI-assisted API design tooling trends
+**Expert level required:**
+
+- API platform backlog and roadmap management (Jira, Confluence)
+- API lifecycle and deprecation governance
+- API adoption metrics and developer portal KPI reporting
+
+**Proficient level required:**
+
+- API management platform concepts (Apigee, Kong, or Azure APIM)
+- API developer portal governance and consumer onboarding
+- OpenAPI/Swagger documentation standards and review
+
+**Working Knowledge required:**
+
+- API security protocol concepts (OAuth 2.0, OIDC) for requirements gathering
+- GraphQL and event-driven API concepts
+- CI/CD pipeline integration for API delivery
+
+**Awareness level expected:**
+
+- API monetisation platforms and partner API strategies
+- AsyncAPI specification for event-driven APIs
+- AI-assisted API design tooling trends
 
 ## Interactions with Other Roles
 

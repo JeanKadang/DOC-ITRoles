@@ -80,10 +80,29 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** dbt (advanced macro development, packages, exposure definitions, testing strategies, and performance tuning), Python and SQL (advanced data engineering, pipeline framework development, and complex transformation logic), Databricks or Snowflake (production-scale platform operations, advanced performance tuning, and cost optimisation)
-- **Proficient level required:** Apache Spark/PySpark (adaptive query execution, broadcast joins, and partitioning optimisation), Apache Kafka or Flink (streaming data pipeline design for near-real-time data products), data quality and observability frameworks (Great Expectations, Soda, or Monte Carlo)
-- **Working Knowledge required:** Delta Lake and Apache Iceberg (advanced features — schema evolution, time travel, and compaction strategies), data governance tooling (Databricks Unity Catalog, DataHub, or Collibra), Data Vault 2.0 and advanced dimensional modelling patterns
-- **Awareness level expected:** AI-assisted data engineering and feature engineering tools, real-time data mesh data product patterns, emerging lakehouse optimisation technologies (Apache Hudi)
+**Expert level required:**
+
+- dbt (advanced macro development, packages, exposure definitions, testing strategies, and performance tuning)
+- Python and SQL (advanced data engineering, pipeline framework development, and complex transformation logic)
+- Databricks or Snowflake (production-scale platform operations, advanced performance tuning, and cost optimisation)
+
+**Proficient level required:**
+
+- Apache Spark/PySpark (adaptive query execution, broadcast joins, and partitioning optimisation)
+- Apache Kafka or Flink (streaming data pipeline design for near-real-time data products)
+- data quality and observability frameworks (Great Expectations, Soda, or Monte Carlo)
+
+**Working Knowledge required:**
+
+- Delta Lake and Apache Iceberg (advanced features — schema evolution, time travel, and compaction strategies)
+- data governance tooling (Databricks Unity Catalog, DataHub, or Collibra)
+- Data Vault 2.0 and advanced dimensional modelling patterns
+
+**Awareness level expected:**
+
+- AI-assisted data engineering and feature engineering tools
+- real-time data mesh data product patterns
+- emerging lakehouse optimisation technologies (Apache Hudi)
 
 ## Interactions with Other Roles
 

@@ -64,10 +64,28 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Commvault CommCell/CommCell Console, Commvault Command Center, Commvault backup/recovery operations
-- **Proficient level required:** Commvault storage policies, Commvault clients/agents, VM backup/recovery tools
-- **Working Knowledge required:** Commvault deduplication, Commvault OnePass, Commvault workflow automation
-- **Awareness level expected:** Cloud backup targets (Metallic SaaS), GDPR compliance reporting
+**Expert level required:**
+
+- Commvault CommCell/CommCell Console
+- Commvault Command Center
+- Commvault backup/recovery operations
+
+**Proficient level required:**
+
+- Commvault storage policies
+- Commvault clients/agents
+- VM backup/recovery tools
+
+**Working Knowledge required:**
+
+- Commvault deduplication
+- Commvault OnePass
+- Commvault workflow automation
+
+**Awareness level expected:**
+
+- Cloud backup targets (Metallic SaaS)
+- GDPR compliance reporting
 
 ## Interactions with Other Roles
 

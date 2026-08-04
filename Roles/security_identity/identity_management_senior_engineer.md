@@ -72,10 +72,27 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Entra ID (advanced configurations), Windows Active Directory, Microsoft Entra Connect (hybrid identity)
-- **Proficient level required:** AD FS/SAML/OAuth 2.0/OIDC (federation), SailPoint/Saviynt (IGA), advanced authentication (MFA/PIM)
-- **Working Knowledge required:** SCIM/custom identity connectors, PowerShell automation
-- **Awareness level expected:** Verifiable Credentials/Decentralized Identity, AI-driven identity analytics
+**Expert level required:**
+
+- Microsoft Entra ID (advanced configurations)
+- Windows Active Directory
+- Microsoft Entra Connect (hybrid identity)
+
+**Proficient level required:**
+
+- AD FS/SAML/OAuth 2.0/OIDC (federation)
+- SailPoint/Saviynt (IGA)
+- advanced authentication (MFA/PIM)
+
+**Working Knowledge required:**
+
+- SCIM/custom identity connectors
+- PowerShell automation
+
+**Awareness level expected:**
+
+- Verifiable Credentials/Decentralized Identity
+- AI-driven identity analytics
 
 ## Interactions with Other Roles
 

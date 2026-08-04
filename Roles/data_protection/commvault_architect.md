@@ -64,10 +64,27 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Commvault Complete Data Protection suite, Commvault HyperScale, Commvault Disaster Recovery
-- **Proficient level required:** Commvault Activate (data governance), Commvault Orchestrate, enterprise storage platforms (NetApp/Pure Storage)
-- **Working Knowledge required:** Cloud storage/cloud-native backup (Metallic SaaS), database protection technologies
-- **Awareness level expected:** , NIST CSF compliance reporting, tape/long-term archival solutions
+**Expert level required:**
+
+- Commvault Complete Data Protection suite
+- Commvault HyperScale
+- Commvault Disaster Recovery
+
+**Proficient level required:**
+
+- Commvault Activate (data governance)
+- Commvault Orchestrate
+- enterprise storage platforms (NetApp/Pure Storage)
+
+**Working Knowledge required:**
+
+- Cloud storage/cloud-native backup (Metallic SaaS)
+- database protection technologies
+
+**Awareness level expected:**
+
+- NIST CSF compliance reporting
+- tape/long-term archival solutions
 
 ## Interactions with Other Roles
 

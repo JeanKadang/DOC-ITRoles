@@ -64,10 +64,29 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Storage platform product backlog management and technology lifecycle roadmap (Jira, Confluence), storage capacity planning and procurement governance, storage service level acceptance criteria and vendor SLA management
-- **Proficient level required:** Enterprise storage platform concepts (SAN, NAS, object storage), software-defined storage strategies and adoption roadmaps, cloud storage services and hybrid storage design concepts
-- **Working Knowledge required:** Storage automation and orchestration concepts, data lifecycle management and tiering policies, storage QoS and performance analytics for cost optimisation
-- **Awareness level expected:** NVMe-oF and next-generation flash storage technology trends, AI/ML unstructured data storage requirements, storage-as-a-service delivery model evolution
+**Expert level required:**
+
+- Storage platform product backlog management and technology lifecycle roadmap (Jira, Confluence)
+- storage capacity planning and procurement governance
+- storage service level acceptance criteria and vendor SLA management
+
+**Proficient level required:**
+
+- Enterprise storage platform concepts (SAN, NAS, object storage)
+- software-defined storage strategies and adoption roadmaps
+- cloud storage services and hybrid storage design concepts
+
+**Working Knowledge required:**
+
+- Storage automation and orchestration concepts
+- data lifecycle management and tiering policies
+- storage QoS and performance analytics for cost optimisation
+
+**Awareness level expected:**
+
+- NVMe-oF and next-generation flash storage technology trends
+- AI/ML unstructured data storage requirements
+- storage-as-a-service delivery model evolution
 
 ## Interactions with Other Roles
 

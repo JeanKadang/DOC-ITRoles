@@ -72,10 +72,29 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Agile product ownership tooling (Jira/Azure DevOps — backlog management, sprint ceremonies, roadmap communication), DORA metrics platforms and delivery performance measurement, DevOps platform service roadmap and adoption governance
-- **Proficient level required:** CI/CD orchestration platform concepts (GitHub Actions, Azure DevOps, GitLab CI), deployment pipeline management and governance frameworks, feature flag management systems and rollout strategies
-- **Working Knowledge required:** Container registry and artifact management concepts, value stream management tooling, code quality and security scanning pipeline integrations
-- **Awareness level expected:** AI-assisted development toolchain impacts on DevOps adoption metrics, FinOps tooling for DevOps platform cost management, platform engineering maturity model frameworks
+**Expert level required:**
+
+- Agile product ownership tooling (Jira/Azure DevOps — backlog management, sprint ceremonies, roadmap communication)
+- DORA metrics platforms and delivery performance measurement
+- DevOps platform service roadmap and adoption governance
+
+**Proficient level required:**
+
+- CI/CD orchestration platform concepts (GitHub Actions, Azure DevOps, GitLab CI)
+- deployment pipeline management and governance frameworks
+- feature flag management systems and rollout strategies
+
+**Working Knowledge required:**
+
+- Container registry and artifact management concepts
+- value stream management tooling
+- code quality and security scanning pipeline integrations
+
+**Awareness level expected:**
+
+- AI-assisted development toolchain impacts on DevOps adoption metrics
+- FinOps tooling for DevOps platform cost management
+- platform engineering maturity model frameworks
 
 ## Interactions with Other Roles
 

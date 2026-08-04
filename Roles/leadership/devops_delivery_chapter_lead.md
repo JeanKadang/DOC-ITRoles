@@ -74,10 +74,21 @@ The DevOps & Delivery Chapter Lead is the most senior technical manager and peop
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** GitHub Actions/Azure DevOps at governance depth
-- **Proficient level required:** Internal Developer Platform tooling (Backstage, Port) for strategy
-- **Working Knowledge required:** DORA metrics tooling for chapter performance visibility
-- **Awareness level expected:** Integration platforms (Azure API Management, MuleSoft) at architecture depth
+**Expert level required:**
+
+- GitHub Actions/Azure DevOps at governance depth
+
+**Proficient level required:**
+
+- Internal Developer Platform tooling (Backstage, Port) for strategy
+
+**Working Knowledge required:**
+
+- DORA metrics tooling for chapter performance visibility
+
+**Awareness level expected:**
+
+- Integration platforms (Azure API Management, MuleSoft) at architecture depth
 
 ### Qualifications
 

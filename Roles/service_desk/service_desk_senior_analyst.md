@@ -70,10 +70,25 @@ The Service Desk Senior Analyst is the Tier-2 technical backbone of the service 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ITSM ticketing platform administration, Windows 10/11 and Microsoft 365 troubleshooting depth
-- **Proficient level required:** Microsoft Entra ID / Active Directory administration, macOS troubleshooting
-- **Working Knowledge required:** Microsoft Intune / endpoint compliance concepts, network connectivity and VPN diagnostics
-- **Awareness level expected:** PowerShell for basic diagnostic scripting, mobile device management (iOS/Android) troubleshooting
+**Expert level required:**
+
+- ITSM ticketing platform administration
+- Windows 10/11 and Microsoft 365 troubleshooting depth
+
+**Proficient level required:**
+
+- Microsoft Entra ID / Active Directory administration
+- macOS troubleshooting
+
+**Working Knowledge required:**
+
+- Microsoft Intune / endpoint compliance concepts
+- network connectivity and VPN diagnostics
+
+**Awareness level expected:**
+
+- PowerShell for basic diagnostic scripting
+- mobile device management (iOS/Android) troubleshooting
 
 ## Interactions with Other Roles
 

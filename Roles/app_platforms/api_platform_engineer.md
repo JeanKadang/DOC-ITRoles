@@ -66,10 +66,30 @@ The API Platform Engineer implements and maintains API management solutions acro
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** API gateway configuration and policy management (Apigee, Kong, or Azure API Management), REST API design principles and OpenAPI/Swagger documentation, API authentication protocols (OAuth 2.0, JWT, API keys)
-- **Proficient level required:** Postman (API testing, documentation, and consumer support), API monitoring and alerting tools, CI/CD pipelines for API deployment, GraphQL implementation basics
-- **Working Knowledge required:** Developer portal content management and consumer onboarding, API transformation and mediation tools, version control for API artefacts (Git/GitHub)
-- **Awareness level expected:** AsyncAPI for event-driven API documentation, GraphQL Federation, gRPC fundamentals for high-performance service APIs
+**Expert level required:**
+
+- API gateway configuration and policy management (Apigee, Kong, or Azure API Management)
+- REST API design principles and OpenAPI/Swagger documentation
+- API authentication protocols (OAuth 2.0, JWT, API keys)
+
+**Proficient level required:**
+
+- Postman (API testing, documentation, and consumer support)
+- API monitoring and alerting tools
+- CI/CD pipelines for API deployment
+- GraphQL implementation basics
+
+**Working Knowledge required:**
+
+- Developer portal content management and consumer onboarding
+- API transformation and mediation tools
+- version control for API artefacts (Git/GitHub)
+
+**Awareness level expected:**
+
+- AsyncAPI for event-driven API documentation
+- GraphQL Federation
+- gRPC fundamentals for high-performance service APIs
 
 ## Interactions with Other Roles
 

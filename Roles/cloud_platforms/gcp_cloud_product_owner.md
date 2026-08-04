@@ -64,10 +64,23 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Agile product ownership tools (Jira, Confluence) for GCP platform backlog, sprint ceremonies, and roadmap management, FinOps Foundation Framework and GCP Billing Console for cloud financial accountability, cost governance, and optimisation prioritisation, GCP service portfolio (Compute Engine, GKE, BigQuery, data analytics, AI) for strategic roadmap planning and adoption sequencing
-- **Proficient level required:** GCP Billing Console, Budget Alerts, and GCP Recommender for cost governance, anomaly awareness, and optimisation priority-setting, Power BI, Looker Studio, or Tableau for cloud platform performance dashboards and stakeholder reporting, GCP organization hierarchy and project governance for product scope and compliance decision-making
-- **Working Knowledge required:** Cloud IAM and GCP Security Command Center from a compliance posture and product strategy perspective, Cloud Build and GitOps tools (ArgoCD, Flux) for understanding delivery pipeline capabilities relevant to acceptance criteria
-- **Awareness level expected:** Vertex AI and Gemini API services for evaluating future platform capability roadmap items, Google Assured Workloads and Sovereign Cloud for regulated industry cloud adoption strategy and product planning
+**Expert level required:**
+
+- Agile product ownership tools (Jira, Confluence) for GCP platform backlog, sprint ceremonies, and roadmap management, FinOps Foundation Framework and GCP Billing Console for cloud financial accountability, cost governance, and optimisation prioritisation, GCP service portfolio (Compute Engine, GKE, BigQuery, data analytics, AI) for strategic roadmap planning and adoption sequencing
+
+**Proficient level required:**
+
+- GCP Billing Console, Budget Alerts, and GCP Recommender for cost governance, anomaly awareness, and optimisation priority-setting, Power BI, Looker Studio, or Tableau for cloud platform performance dashboards and stakeholder reporting, GCP organization hierarchy and project governance for product scope and compliance decision-making
+
+**Working Knowledge required:**
+
+- Cloud IAM and GCP Security Command Center from a compliance posture and product strategy perspective
+- Cloud Build and GitOps tools (ArgoCD, Flux) for understanding delivery pipeline capabilities relevant to acceptance criteria
+
+**Awareness level expected:**
+
+- Vertex AI and Gemini API services for evaluating future platform capability roadmap items
+- Google Assured Workloads and Sovereign Cloud for regulated industry cloud adoption strategy and product planning
 
 ## Interactions with Other Roles
 

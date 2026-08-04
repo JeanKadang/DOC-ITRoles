@@ -77,10 +77,29 @@ The API Strategy Architect defines and governs the organisation's end-to-end API
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** OpenAPI/Swagger and AsyncAPI specification design and governance (Spectral linting and rule set authoring), API lifecycle management (versioning strategy, breaking change impact analysis, and deprecation workflows), API security governance standards (OAuth 2.0/OIDC flows, mTLS, JWT validation, and OWASP API Security Top 10)
-- **Proficient level required:** API gateway platforms (Azure API Management, AWS API Gateway, Kong, or Apigee — governance capability assessment and tiering standards), Pact and Pact Broker (consumer-driven contract testing integration in CI/CD pipelines), Backstage API catalogue (discoverability standards, metadata governance, and API catalogue management)
-- **Working Knowledge required:** GraphQL schema governance tooling (GraphQL Inspector, Apollo Studio), gRPC and Protocol Buffers (internal service API design standards and governance), API monetisation models and developer portal strategy design
-- **Awareness level expected:** AI-assisted API design and documentation generation tools, CNCF CloudEvents specification for event-driven API governance, WebAssembly edge API patterns and their impact on API governance frameworks
+**Expert level required:**
+
+- OpenAPI/Swagger and AsyncAPI specification design and governance (Spectral linting and rule set authoring)
+- API lifecycle management (versioning strategy, breaking change impact analysis, and deprecation workflows)
+- API security governance standards (OAuth 2.0/OIDC flows, mTLS, JWT validation, and OWASP API Security Top 10)
+
+**Proficient level required:**
+
+- API gateway platforms (Azure API Management, AWS API Gateway, Kong, or Apigee — governance capability assessment and tiering standards)
+- Pact and Pact Broker (consumer-driven contract testing integration in CI/CD pipelines)
+- Backstage API catalogue (discoverability standards, metadata governance, and API catalogue management)
+
+**Working Knowledge required:**
+
+- GraphQL schema governance tooling (GraphQL Inspector, Apollo Studio)
+- gRPC and Protocol Buffers (internal service API design standards and governance)
+- API monetisation models and developer portal strategy design
+
+**Awareness level expected:**
+
+- AI-assisted API design and documentation generation tools
+- CNCF CloudEvents specification for event-driven API governance
+- WebAssembly edge API patterns and their impact on API governance frameworks
 
 ## Interactions with Other Roles
 

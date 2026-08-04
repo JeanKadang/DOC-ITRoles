@@ -72,10 +72,25 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Prometheus and Grafana for metrics collection, dashboard creation, and alerting rule configuration, Log aggregation systems (Elasticsearch/ELK Stack, Loki, Splunk) for centralised log management, PromQL and LogQL query languages for telemetry data analysis, Alert threshold configuration and noise reduction for actionable monitoring
-- **Proficient level required:** OpenTelemetry instrumentation basics and Collector configuration, Fluent Bit and Fluentd for log pipeline setup and log collection agents, Datadog or Dynatrace for APM and infrastructure monitoring, Distributed tracing concepts with Jaeger or Grafana Tempo
-- **Working Knowledge required:** Kubernetes monitoring stack (kube-state-metrics, node exporter, metrics-server), Alertmanager, PagerDuty, and OpsGenie for alert routing and on-call notification, Scripting and automation for monitoring configuration and dashboard-as-code
-- **Awareness level expected:** AI/ML-assisted anomaly detection capabilities in modern observability platforms, eBPF-based observability tooling and low-overhead profiling approaches
+**Expert level required:**
+
+- Prometheus and Grafana for metrics collection, dashboard creation, and alerting rule configuration, Log aggregation systems (Elasticsearch/ELK Stack, Loki, Splunk) for centralised log management, PromQL and LogQL query languages for telemetry data analysis, Alert threshold configuration and noise reduction for actionable monitoring
+
+**Proficient level required:**
+
+- OpenTelemetry instrumentation basics and Collector configuration
+- Fluent Bit and Fluentd for log pipeline setup and log collection agents
+- Datadog or Dynatrace for APM and infrastructure monitoring
+- Distributed tracing concepts with Jaeger or Grafana Tempo
+
+**Working Knowledge required:**
+
+- Kubernetes monitoring stack (kube-state-metrics, node exporter, metrics-server), Alertmanager, PagerDuty, and OpsGenie for alert routing and on-call notification, Scripting and automation for monitoring configuration and dashboard-as-code
+
+**Awareness level expected:**
+
+- AI/ML-assisted anomaly detection capabilities in modern observability platforms
+- eBPF-based observability tooling and low-overhead profiling approaches
 
 ## Interactions with Other Roles
 

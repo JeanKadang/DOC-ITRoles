@@ -64,10 +64,29 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Spring Framework ecosystem (Spring Boot, Spring Cloud, Spring Security — architecture standards and governance), Java/JVM performance tuning and profiling, microservices architecture patterns (service decomposition, circuit breaker, saga)
-- **Proficient level required:** Maven and Gradle (build tools, dependency governance, and multi-module project design), Java security frameworks and OWASP security patterns, containerization and Kubernetes deployment strategies for Java workloads
-- **Working Knowledge required:** Jakarta EE specifications and migration patterns, Java observability (OpenTelemetry, Micrometer, APM tools), API design and management for Java microservices
-- **Awareness level expected:** GraalVM native image compilation, Project Loom virtual threads, Quarkus and Micronaut cloud-native Java frameworks
+**Expert level required:**
+
+- Spring Framework ecosystem (Spring Boot, Spring Cloud, Spring Security — architecture standards and governance)
+- Java/JVM performance tuning and profiling
+- microservices architecture patterns (service decomposition, circuit breaker, saga)
+
+**Proficient level required:**
+
+- Maven and Gradle (build tools, dependency governance, and multi-module project design)
+- Java security frameworks and OWASP security patterns
+- containerization and Kubernetes deployment strategies for Java workloads
+
+**Working Knowledge required:**
+
+- Jakarta EE specifications and migration patterns
+- Java observability (OpenTelemetry, Micrometer, APM tools)
+- API design and management for Java microservices
+
+**Awareness level expected:**
+
+- GraalVM native image compilation
+- Project Loom virtual threads
+- Quarkus and Micronaut cloud-native Java frameworks
 
 ## Interactions with Other Roles
 

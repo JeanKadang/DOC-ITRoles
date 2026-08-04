@@ -72,10 +72,32 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** PowerShell automation and Desired State Configuration (DSC), Windows Server Failover Clustering and high availability, advanced Active Directory design and implementation, Windows Server security hardening and compliance tooling
-- **Proficient level required:** Azure Arc hybrid management, System Center suite (SCCM/SCOM), Windows Admin Center, PKI and certificate services, IIS advanced configuration
-- **Working Knowledge required:** Windows Server containers and Docker integration, Azure hybrid services (Azure Stack HCI), Storage Spaces Direct
-- **Awareness level expected:** Azure Stack HCI evolution, Kubernetes on Windows, GitHub Actions for Windows infrastructure automation
+**Expert level required:**
+
+- PowerShell automation and Desired State Configuration (DSC)
+- Windows Server Failover Clustering and high availability
+- advanced Active Directory design and implementation
+- Windows Server security hardening and compliance tooling
+
+**Proficient level required:**
+
+- Azure Arc hybrid management
+- System Center suite (SCCM/SCOM)
+- Windows Admin Center
+- PKI and certificate services
+- IIS advanced configuration
+
+**Working Knowledge required:**
+
+- Windows Server containers and Docker integration
+- Azure hybrid services (Azure Stack HCI)
+- Storage Spaces Direct
+
+**Awareness level expected:**
+
+- Azure Stack HCI evolution
+- Kubernetes on Windows
+- GitHub Actions for Windows infrastructure automation
 
 ## Interactions with Other Roles
 

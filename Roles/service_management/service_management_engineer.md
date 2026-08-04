@@ -64,10 +64,28 @@ The Service Management Engineer implements and maintains IT service management p
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow (ITSM platform), CMDB/asset tracking, service catalog design
-- **Proficient level required:** Workflow automation tools, knowledge management systems, Power BI (reporting/dashboards)
-- **Working Knowledge required:** BMC Helix/Jira Service Management, ITIL v4 processes, basic scripting (PowerShell)
-- **Awareness level expected:** Azure Monitor/SCOM (monitoring integration), AI-driven ITSM automation
+**Expert level required:**
+
+- ServiceNow (ITSM platform)
+- CMDB/asset tracking
+- service catalog design
+
+**Proficient level required:**
+
+- Workflow automation tools
+- knowledge management systems
+- Power BI (reporting/dashboards)
+
+**Working Knowledge required:**
+
+- BMC Helix/Jira Service Management
+- ITIL v4 processes
+- basic scripting (PowerShell)
+
+**Awareness level expected:**
+
+- Azure Monitor/SCOM (monitoring integration)
+- AI-driven ITSM automation
 
 ## Interactions with Other Roles
 

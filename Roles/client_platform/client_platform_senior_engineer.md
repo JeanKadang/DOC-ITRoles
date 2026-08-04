@@ -84,10 +84,36 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows 11 DISM/WIM build pipeline and monthly update integration, MSIX and Win32 application packaging for Intune, PowerShell scripting for OS automation and Graph API, Jamf Pro policy and configuration profile management
-- **Proficient level required:** Windows Autopilot (pre-provisioning and self-deploy), Apple Business Manager zero-touch enrolment, Ansible playbook and role authoring for Linux desktop (Ubuntu LTS), Homebrew cask and .deb packaging, Windows Update for Business ring management and Autopatch
-- **Working Knowledge required:** Jamf software update management, apt/dnf patch pipeline management, Python scripting for cross-platform automation, CIS Benchmark hardening implementation, Lenovo driver pack management and Lenovo System Update / Thin Installer workflows, hardware driver compatibility testing
-- **Awareness level expected:** Fleet.dm cross-platform telemetry, Declarative Device Management (DDM) for macOS, MDT/WDS legacy context, Microsoft Intune Autopatch advanced ring customisation
+**Expert level required:**
+
+- Windows 11 DISM/WIM build pipeline and monthly update integration
+- MSIX and Win32 application packaging for Intune
+- PowerShell scripting for OS automation and Graph API
+- Jamf Pro policy and configuration profile management
+
+**Proficient level required:**
+
+- Windows Autopilot (pre-provisioning and self-deploy)
+- Apple Business Manager zero-touch enrolment
+- Ansible playbook and role authoring for Linux desktop (Ubuntu LTS)
+- Homebrew cask and .deb packaging
+- Windows Update for Business ring management and Autopatch
+
+**Working Knowledge required:**
+
+- Jamf software update management
+- apt/dnf patch pipeline management
+- Python scripting for cross-platform automation
+- CIS Benchmark hardening implementation
+- Lenovo driver pack management and Lenovo System Update / Thin Installer workflows
+- hardware driver compatibility testing
+
+**Awareness level expected:**
+
+- Fleet.dm cross-platform telemetry
+- Declarative Device Management (DDM) for macOS
+- MDT/WDS legacy context
+- Microsoft Intune Autopatch advanced ring customisation
 
 ### Qualifications
 

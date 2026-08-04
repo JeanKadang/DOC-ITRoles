@@ -77,10 +77,28 @@ The DevSecOps Engineer implements and maintains the security tooling, automation
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** GitHub Actions/Azure DevOps, Checkmarx/SonarQube (SAST), Snyk/OWASP Dependency-Check (SCA)
-- **Proficient level required:** Trivy/Docker Scout (container scanning), Checkov/tfsec (IaC security), HashiCorp Vault/Azure Key Vault
-- **Working Knowledge required:** Python/PowerShell scripting, CycloneDX/Syft (SBOM), OPA/Kyverno
-- **Awareness level expected:** OWASP ZAP (DAST), Falco (runtime security)
+**Expert level required:**
+
+- GitHub Actions/Azure DevOps
+- Checkmarx/SonarQube (SAST)
+- Snyk/OWASP Dependency-Check (SCA)
+
+**Proficient level required:**
+
+- Trivy/Docker Scout (container scanning)
+- Checkov/tfsec (IaC security)
+- HashiCorp Vault/Azure Key Vault
+
+**Working Knowledge required:**
+
+- Python/PowerShell scripting
+- CycloneDX/Syft (SBOM)
+- OPA/Kyverno
+
+**Awareness level expected:**
+
+- OWASP ZAP (DAST)
+- Falco (runtime security)
 
 ## Interactions with Other Roles
 

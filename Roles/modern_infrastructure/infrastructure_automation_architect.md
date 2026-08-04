@@ -78,10 +78,28 @@ The Infrastructure Automation Architect designs and governs the organisation's e
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Terraform/Pulumi/Bicep, Ansible, GitOps tooling (ArgoCD/Flux), PowerShell DSC
-- **Proficient level required:** GitHub Actions/Azure DevOps Pipelines, HashiCorp Vault/SOPS secrets management, Packer
-- **Working Knowledge required:** Crossplane, Inspec/OPA compliance testing
-- **Awareness level expected:** Winglang, Dagger
+**Expert level required:**
+
+- Terraform/Pulumi/Bicep
+- Ansible
+- GitOps tooling (ArgoCD/Flux)
+- PowerShell DSC
+
+**Proficient level required:**
+
+- GitHub Actions/Azure DevOps Pipelines
+- HashiCorp Vault/SOPS secrets management
+- Packer
+
+**Working Knowledge required:**
+
+- Crossplane
+- Inspec/OPA compliance testing
+
+**Awareness level expected:**
+
+- Winglang
+- Dagger
 
 ## Interactions with Other Roles
 

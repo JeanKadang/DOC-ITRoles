@@ -75,10 +75,21 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure Synapse/Databricks/Snowflake at architecture governance depth
-- **Proficient level required:** Data governance platforms (Purview, Collibra, Alation)
-- **Working Knowledge required:** ML platforms (Azure ML, SageMaker) at strategic oversight
-- **Awareness level expected:** AI ethics and responsible AI frameworks (NIST AI RMF, EU AI Act)
+**Expert level required:**
+
+- Azure Synapse/Databricks/Snowflake at architecture governance depth
+
+**Proficient level required:**
+
+- Data governance platforms (Purview, Collibra, Alation)
+
+**Working Knowledge required:**
+
+- ML platforms (Azure ML, SageMaker) at strategic oversight
+
+**Awareness level expected:**
+
+- AI ethics and responsible AI frameworks (NIST AI RMF, EU AI Act)
 
 ### Qualifications
 

@@ -64,10 +64,28 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Active Directory (AD DS), Group Policy Management, PowerShell (AD administration)
-- **Proficient level required:** DNS/DHCP (AD-integrated), Microsoft Entra Connect, AD Certificate Services
-- **Working Knowledge required:** AD backup/recovery tools, Windows Server security for DCs, WSUS
-- **Awareness level expected:** Microsoft Entra ID (Azure AD), AD FS (federation)
+**Expert level required:**
+
+- Windows Active Directory (AD DS)
+- Group Policy Management
+- PowerShell (AD administration)
+
+**Proficient level required:**
+
+- DNS/DHCP (AD-integrated)
+- Microsoft Entra Connect
+- AD Certificate Services
+
+**Working Knowledge required:**
+
+- AD backup/recovery tools
+- Windows Server security for DCs
+- WSUS
+
+**Awareness level expected:**
+
+- Microsoft Entra ID (Azure AD)
+- AD FS (federation)
 
 ## Interactions with Other Roles
 

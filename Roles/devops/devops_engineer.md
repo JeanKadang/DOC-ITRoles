@@ -73,10 +73,30 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** CI/CD tools (GitHub Actions, GitLab CI, or Azure DevOps — pipeline implementation and maintenance), Git and GitHub/GitLab (version control and branching strategies), scripting languages (Bash, PowerShell, Python — pipeline automation)
-- **Proficient level required:** Docker/Containerd (containerization and image management), Terraform/OpenTofu (IaC template creation and management), Ansible (configuration management), artifact repositories (Nexus, Artifactory, or GitHub Packages)
-- **Working Knowledge required:** ArgoCD/Flux (GitOps deployment), automated testing framework integration in pipelines, security scanning tools (SBOM generation, Sigstore/Cosign)
-- **Awareness level expected:** Supply chain security standards (SLSA verification), AI-assisted development tools (GitHub Copilot), Kubernetes as a pipeline deployment target
+**Expert level required:**
+
+- CI/CD tools (GitHub Actions, GitLab CI, or Azure DevOps — pipeline implementation and maintenance)
+- Git and GitHub/GitLab (version control and branching strategies)
+- scripting languages (Bash, PowerShell, Python — pipeline automation)
+
+**Proficient level required:**
+
+- Docker/Containerd (containerization and image management)
+- Terraform/OpenTofu (IaC template creation and management)
+- Ansible (configuration management)
+- artifact repositories (Nexus, Artifactory, or GitHub Packages)
+
+**Working Knowledge required:**
+
+- ArgoCD/Flux (GitOps deployment)
+- automated testing framework integration in pipelines
+- security scanning tools (SBOM generation, Sigstore/Cosign)
+
+**Awareness level expected:**
+
+- Supply chain security standards (SLSA verification)
+- AI-assisted development tools (GitHub Copilot)
+- Kubernetes as a pipeline deployment target
 
 ## Interactions with Other Roles
 

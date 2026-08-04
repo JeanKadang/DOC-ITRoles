@@ -77,10 +77,30 @@ The AI Platform Architect designs and governs the organisation's AI/ML platform 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure AI Foundry/Azure Machine Learning, MLflow, Kubeflow Pipelines, AWS SageMaker
-- **Proficient level required:** Google Vertex AI, Apache Spark/Delta Lake, Ray/Ray Serve, KServe/Triton Inference Server
-- **Working Knowledge required:** Seldon Core/BentoML, Feast (feature store), DVC
-- **Awareness level expected:** Databricks Machine Learning, OWASP LLM Top 10
+**Expert level required:**
+
+- Azure AI Foundry/Azure Machine Learning
+- MLflow
+- Kubeflow Pipelines
+- AWS SageMaker
+
+**Proficient level required:**
+
+- Google Vertex AI
+- Apache Spark/Delta Lake
+- Ray/Ray Serve
+- KServe/Triton Inference Server
+
+**Working Knowledge required:**
+
+- Seldon Core/BentoML
+- Feast (feature store)
+- DVC
+
+**Awareness level expected:**
+
+- Databricks Machine Learning
+- OWASP LLM Top 10
 
 ## Interactions with Other Roles
 

@@ -72,10 +72,27 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Nutanix AOS and AHV hypervisor architecture, cluster design, and sizing methodology, Nutanix Prism Central for enterprise multi-cluster governance and policy automation, Nutanix Flow microsegmentation and network security architecture, Nutanix HCI disaster recovery design (Nutanix Leap, Metro Availability, Async DR)
-- **Proficient level required:** Nutanix Calm for application lifecycle automation and blueprint design, Nutanix Files and Objects software-defined storage architecture and design, Nutanix Era for database-as-a-service workload placement, Nutanix Karbon for Kubernetes platform design and integration
-- **Working Knowledge required:** Nutanix Clusters and Xi for hybrid and multi-cloud workload placement strategy, Nutanix Beam for multi-cloud cost governance and chargeback, Nutanix Foundation for automated large-scale cluster deployment
-- **Awareness level expected:** Nutanix Frame for desktop-as-a-service product capabilities, Cloud-native HCI competitive landscape (VMware vSAN, Azure Stack HCI, HPE SimpliVity)
+**Expert level required:**
+
+- Nutanix AOS and AHV hypervisor architecture, cluster design, and sizing methodology, Nutanix Prism Central for enterprise multi-cluster governance and policy automation, Nutanix Flow microsegmentation and network security architecture, Nutanix HCI disaster recovery design (Nutanix Leap, Metro Availability, Async DR)
+
+**Proficient level required:**
+
+- Nutanix Calm for application lifecycle automation and blueprint design
+- Nutanix Files and Objects software-defined storage architecture and design
+- Nutanix Era for database-as-a-service workload placement
+- Nutanix Karbon for Kubernetes platform design and integration
+
+**Working Knowledge required:**
+
+- Nutanix Clusters and Xi for hybrid and multi-cloud workload placement strategy
+- Nutanix Beam for multi-cloud cost governance and chargeback
+- Nutanix Foundation for automated large-scale cluster deployment
+
+**Awareness level expected:**
+
+- Nutanix Frame for desktop-as-a-service product capabilities
+- Cloud-native HCI competitive landscape (VMware vSAN, Azure Stack HCI, HPE SimpliVity)
 
 ## Interactions with Other Roles
 

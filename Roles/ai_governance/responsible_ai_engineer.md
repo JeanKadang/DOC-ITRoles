@@ -81,10 +81,29 @@ The Responsible AI Engineer implements the technical tooling, testing processes,
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** SHAP/LIME/Microsoft InterpretML, Fairlearn/IBM AI Fairness 360, Azure AI Content Safety, Microsoft Purview AI Hub
-- **Proficient level required:** Azure Machine Learning/MLflow, Microsoft Presidio, garak/PyRIT (LLM red teaming), Great Expectations/Evidently AI
-- **Working Knowledge required:** Hugging Face model card toolkit, Weights and Biases
-- **Awareness level expected:** OWASP LLM Top 10, MITRE ATLAS
+**Expert level required:**
+
+- SHAP/LIME/Microsoft InterpretML
+- Fairlearn/IBM AI Fairness 360
+- Azure AI Content Safety
+- Microsoft Purview AI Hub
+
+**Proficient level required:**
+
+- Azure Machine Learning/MLflow
+- Microsoft Presidio
+- garak/PyRIT (LLM red teaming)
+- Great Expectations/Evidently AI
+
+**Working Knowledge required:**
+
+- Hugging Face model card toolkit
+- Weights and Biases
+
+**Awareness level expected:**
+
+- OWASP LLM Top 10
+- MITRE ATLAS
 
 ## Interactions with Other Roles
 

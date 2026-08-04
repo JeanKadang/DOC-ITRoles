@@ -68,10 +68,24 @@ The Technical Community Leader is a senior individual contributor responsible fo
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** GitHub/GitLab community and repository features, Confluence/SharePoint knowledge base authoring
-- **Proficient level required:** Learning management platforms (Degreed, Cornerstone, internal LMS), Miro/Mural collaborative facilitation
-- **Working Knowledge required:** Metrics and analytics tooling (survey platforms, community engagement dashboards)
-- **Awareness level expected:** AI-powered learning and content tools, community platform analytics
+**Expert level required:**
+
+- GitHub/GitLab community and repository features
+- Confluence/SharePoint knowledge base authoring
+
+**Proficient level required:**
+
+- Learning management platforms (Degreed, Cornerstone, internal LMS)
+- Miro/Mural collaborative facilitation
+
+**Working Knowledge required:**
+
+- Metrics and analytics tooling (survey platforms, community engagement dashboards)
+
+**Awareness level expected:**
+
+- AI-powered learning and content tools
+- community platform analytics
 
 ### Qualifications
 

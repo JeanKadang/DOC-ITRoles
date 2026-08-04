@@ -73,10 +73,23 @@ The Service Desk Lead owns the service desk as an operational function: staffing
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ITSM ticketing platform administration and SLA/reporting configuration (ServiceNow or equivalent)
-- **Proficient level required:** Workforce/shift scheduling tooling, Windows/macOS and Microsoft 365 end-user support concepts
-- **Working Knowledge required:** Endpoint management (Intune) and identity (Entra ID) concepts sufficient to set escalation criteria
-- **Awareness level expected:** ITIL 4 major incident and problem management practices, standard-change governance models
+**Expert level required:**
+
+- ITSM ticketing platform administration and SLA/reporting configuration (ServiceNow or equivalent)
+
+**Proficient level required:**
+
+- Workforce/shift scheduling tooling
+- Windows/macOS and Microsoft 365 end-user support concepts
+
+**Working Knowledge required:**
+
+- Endpoint management (Intune) and identity (Entra ID) concepts sufficient to set escalation criteria
+
+**Awareness level expected:**
+
+- ITIL 4 major incident and problem management practices
+- standard-change governance models
 
 ## Interactions with Other Roles
 

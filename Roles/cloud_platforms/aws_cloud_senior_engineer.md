@@ -64,10 +64,28 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Infrastructure as Code (CloudFormation, CDK, Terraform) for complex AWS deployments, AWS networking (VPC, Transit Gateway, Direct Connect, PrivateLink, VPC peering), AWS security services (IAM, GuardDuty, Security Hub, AWS Config, Macie), AWS container services (ECS, EKS) and serverless (Lambda, API Gateway, Step Functions)
-- **Proficient level required:** AWS CI/CD services (CodePipeline, CodeBuild, CodeDeploy) and GitHub Actions integration, AWS monitoring and observability (CloudWatch, X-Ray, AWS Distro for OpenTelemetry), AWS cost management (Cost Explorer, Trusted Advisor, Service Control Policies)
-- **Working Knowledge required:** Multi-account AWS strategies (AWS Organizations, Control Tower, Account Factory), AWS hybrid cloud technologies (Direct Connect, Site-to-Site VPN, Outposts)
-- **Awareness level expected:** Amazon Bedrock and AWS GenAI services for AI workload deployments, AWS GovCloud and compliance frameworks (FedRAMP, PCI DSS, HIPAA on AWS)
+**Expert level required:**
+
+- Infrastructure as Code (CloudFormation, CDK, Terraform) for complex AWS deployments
+- AWS networking (VPC, Transit Gateway, Direct Connect, PrivateLink, VPC peering)
+- AWS security services (IAM, GuardDuty, Security Hub, AWS Config, Macie)
+- AWS container services (ECS, EKS) and serverless (Lambda, API Gateway, Step Functions)
+
+**Proficient level required:**
+
+- AWS CI/CD services (CodePipeline, CodeBuild, CodeDeploy) and GitHub Actions integration
+- AWS monitoring and observability (CloudWatch, X-Ray, AWS Distro for OpenTelemetry)
+- AWS cost management (Cost Explorer, Trusted Advisor, Service Control Policies)
+
+**Working Knowledge required:**
+
+- Multi-account AWS strategies (AWS Organizations, Control Tower, Account Factory)
+- AWS hybrid cloud technologies (Direct Connect, Site-to-Site VPN, Outposts)
+
+**Awareness level expected:**
+
+- Amazon Bedrock and AWS GenAI services for AI workload deployments
+- AWS GovCloud and compliance frameworks (FedRAMP, PCI DSS, HIPAA on AWS)
 
 ## Interactions with Other Roles
 

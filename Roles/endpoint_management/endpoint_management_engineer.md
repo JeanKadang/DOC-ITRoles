@@ -75,10 +75,27 @@ The Endpoint Management Engineer administers and maintains the organisation's en
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Intune configuration profiles, compliance policies, and app deployment, Windows Autopilot device registration and enrolment workflows, PowerShell scripting for endpoint remediation tasks
-- **Proficient level required:** Microsoft Endpoint Configuration Manager (MECM) software distribution and collections, Microsoft Entra ID device registration and Hybrid Join, Windows Update for Business and Autopatch
-- **Working Knowledge required:** Apple Business Manager and iOS/macOS MDM management, Microsoft Defender for Endpoint basics, Microsoft 365 service integration
-- **Awareness level expected:** Zero Trust endpoint security concepts, Windows 365 Cloud PC, Microsoft Intune Suite advanced features
+**Expert level required:**
+
+- Microsoft Intune configuration profiles, compliance policies, and app deployment, Windows Autopilot device registration and enrolment workflows, PowerShell scripting for endpoint remediation tasks
+
+**Proficient level required:**
+
+- Microsoft Endpoint Configuration Manager (MECM) software distribution and collections
+- Microsoft Entra ID device registration and Hybrid Join
+- Windows Update for Business and Autopatch
+
+**Working Knowledge required:**
+
+- Apple Business Manager and iOS/macOS MDM management
+- Microsoft Defender for Endpoint basics
+- Microsoft 365 service integration
+
+**Awareness level expected:**
+
+- Zero Trust endpoint security concepts
+- Windows 365 Cloud PC
+- Microsoft Intune Suite advanced features
 
 ## Interactions with Other Roles
 

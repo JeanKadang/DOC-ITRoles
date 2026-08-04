@@ -64,10 +64,27 @@ The Application Configuration Management Architect designs comprehensive strateg
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ServiceNow (ITSM/CMDB), HashiCorp Vault/Azure Key Vault (secrets management), Configuration-as-Code (Ansible/Chef/Puppet)
-- **Proficient level required:** Azure DevOps/Git (configuration versioning), configuration deployment orchestration, ITIL v4
-- **Working Knowledge required:** CI/CD pipeline integration, API-driven configuration management
-- **Awareness level expected:** Terraform (IaC for configuration), configuration drift detection tools
+**Expert level required:**
+
+- ServiceNow (ITSM/CMDB)
+- HashiCorp Vault/Azure Key Vault (secrets management)
+- Configuration-as-Code (Ansible/Chef/Puppet)
+
+**Proficient level required:**
+
+- Azure DevOps/Git (configuration versioning)
+- configuration deployment orchestration
+- ITIL v4
+
+**Working Knowledge required:**
+
+- CI/CD pipeline integration
+- API-driven configuration management
+
+**Awareness level expected:**
+
+- Terraform (IaC for configuration)
+- configuration drift detection tools
 
 ## Interactions with Other Roles
 

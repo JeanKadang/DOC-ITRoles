@@ -64,10 +64,27 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Windows Active Directory (advanced configurations), Group Policy (advanced management), PowerShell automation
-- **Proficient level required:** AD FS (federation), AD Certificate Services/PKI, Microsoft Entra Connect
-- **Working Knowledge required:** ADMT (Active Directory Migration Tool), AD replication/site topology
-- **Awareness level expected:** Microsoft Entra ID (Azure AD), LDAP/Kerberos advanced configurations
+**Expert level required:**
+
+- Windows Active Directory (advanced configurations)
+- Group Policy (advanced management)
+- PowerShell automation
+
+**Proficient level required:**
+
+- AD FS (federation)
+- AD Certificate Services/PKI
+- Microsoft Entra Connect
+
+**Working Knowledge required:**
+
+- ADMT (Active Directory Migration Tool)
+- AD replication/site topology
+
+**Awareness level expected:**
+
+- Microsoft Entra ID (Azure AD)
+- LDAP/Kerberos advanced configurations
 
 ## Interactions with Other Roles
 

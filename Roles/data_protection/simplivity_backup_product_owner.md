@@ -64,10 +64,27 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** HPE SimpliVity, vSphere/vCenter, Jira/Azure DevOps
-- **Proficient level required:** SimpliVity RapidDR, Power BI (metrics/reporting), ServiceNow (ITSM integration)
-- **Working Knowledge required:** VMware Data Protection, storage management platforms
-- **Awareness level expected:** DR orchestration tools, cloud backup strategies
+**Expert level required:**
+
+- HPE SimpliVity
+- vSphere/vCenter
+- Jira/Azure DevOps
+
+**Proficient level required:**
+
+- SimpliVity RapidDR
+- Power BI (metrics/reporting)
+- ServiceNow (ITSM integration)
+
+**Working Knowledge required:**
+
+- VMware Data Protection
+- storage management platforms
+
+**Awareness level expected:**
+
+- DR orchestration tools
+- cloud backup strategies
 
 ## Interactions with Other Roles
 

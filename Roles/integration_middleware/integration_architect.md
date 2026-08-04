@@ -79,10 +79,30 @@ The Integration Architect designs and governs the organisation's enterprise inte
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** MuleSoft Anypoint Platform (integration architecture and governance) or Azure Integration Services (APIM, Logic Apps, Service Bus, Event Grid), Apache Kafka/Confluent Platform (event streaming architecture and schema governance), API gateway configuration (Azure APIM, Kong, or AWS API Gateway — routing, policies, OAuth 2.0/JWT)
-- **Proficient level required:** OpenAPI 3.x and AsyncAPI (API specification and standards governance), B2B/EDI integration protocols (AS2, SFTP, X12, EDIFACT), Confluent Schema Registry or AWS Glue Schema Registry, Boomi or Informatica (iPaaS alternatives)
-- **Working Knowledge required:** Integration monitoring tools (Dynatrace, Datadog, Azure Application Insights — end-to-end correlation), ESB/iPaaS pattern selection and trade-off analysis, saga and outbox patterns for distributed transaction management
-- **Awareness level expected:** Dapr for event-driven microservice integration, AI-assisted integration mapping and transformation tools, CNCF CloudEvents specification
+**Expert level required:**
+
+- MuleSoft Anypoint Platform (integration architecture and governance) or Azure Integration Services (APIM, Logic Apps, Service Bus, Event Grid)
+- Apache Kafka/Confluent Platform (event streaming architecture and schema governance)
+- API gateway configuration (Azure APIM, Kong, or AWS API Gateway — routing, policies, OAuth 2.0/JWT)
+
+**Proficient level required:**
+
+- OpenAPI 3.x and AsyncAPI (API specification and standards governance)
+- B2B/EDI integration protocols (AS2, SFTP, X12, EDIFACT)
+- Confluent Schema Registry or AWS Glue Schema Registry
+- Boomi or Informatica (iPaaS alternatives)
+
+**Working Knowledge required:**
+
+- Integration monitoring tools (Dynatrace, Datadog, Azure Application Insights — end-to-end correlation)
+- ESB/iPaaS pattern selection and trade-off analysis
+- saga and outbox patterns for distributed transaction management
+
+**Awareness level expected:**
+
+- Dapr for event-driven microservice integration
+- AI-assisted integration mapping and transformation tools
+- CNCF CloudEvents specification
 
 ## Interactions with Other Roles
 

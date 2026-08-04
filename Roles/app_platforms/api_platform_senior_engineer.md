@@ -64,10 +64,30 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise API gateway platforms (Apigee, Kong, or Azure APIM — advanced configuration and policy design), OAuth 2.0/OIDC/JWT security implementation and rate limiting strategies, API performance optimisation and caching patterns
-- **Proficient level required:** GraphQL implementations and federation, OpenAPI specification tooling (Postman, Swagger UI), CI/CD automation patterns for API deployment and promotion pipelines, service mesh for API traffic management (Istio)
-- **Working Knowledge required:** API analytics and observability integration, event-driven API architectures (AsyncAPI, Kafka), API monetisation platform concepts
-- **Awareness level expected:** gRPC and Protocol Buffers for high-performance internal APIs, AI-assisted API design and documentation tools, WebAssembly edge API patterns
+**Expert level required:**
+
+- Enterprise API gateway platforms (Apigee, Kong, or Azure APIM — advanced configuration and policy design)
+- OAuth 2.0/OIDC/JWT security implementation and rate limiting strategies
+- API performance optimisation and caching patterns
+
+**Proficient level required:**
+
+- GraphQL implementations and federation
+- OpenAPI specification tooling (Postman, Swagger UI)
+- CI/CD automation patterns for API deployment and promotion pipelines
+- service mesh for API traffic management (Istio)
+
+**Working Knowledge required:**
+
+- API analytics and observability integration
+- event-driven API architectures (AsyncAPI, Kafka)
+- API monetisation platform concepts
+
+**Awareness level expected:**
+
+- gRPC and Protocol Buffers for high-performance internal APIs
+- AI-assisted API design and documentation tools
+- WebAssembly edge API patterns
 
 ## Interactions with Other Roles
 

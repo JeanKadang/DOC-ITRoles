@@ -73,10 +73,30 @@ The Endpoint Management Product Owner (PO) owns the product vision, roadmap, and
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Intune platform concepts and feature roadmap, Jira/Azure DevOps backlog and sprint management, device compliance frameworks and reporting metrics
-- **Proficient level required:** MECM/SCCM co-management concepts, Microsoft Entra ID and Conditional Access concepts, Windows Autopilot provisioning workflows, Zero Trust endpoint security frameworks
-- **Working Knowledge required:** Apple Business Manager and macOS management concepts, Power BI and Intune compliance dashboards, Microsoft 365 licensing tiers
-- **Awareness level expected:** Microsoft Intune Suite advanced add-ons, Windows 365 Cloud PC, AI-assisted endpoint management capabilities
+**Expert level required:**
+
+- Microsoft Intune platform concepts and feature roadmap
+- Jira/Azure DevOps backlog and sprint management
+- device compliance frameworks and reporting metrics
+
+**Proficient level required:**
+
+- MECM/SCCM co-management concepts
+- Microsoft Entra ID and Conditional Access concepts
+- Windows Autopilot provisioning workflows
+- Zero Trust endpoint security frameworks
+
+**Working Knowledge required:**
+
+- Apple Business Manager and macOS management concepts
+- Power BI and Intune compliance dashboards
+- Microsoft 365 licensing tiers
+
+**Awareness level expected:**
+
+- Microsoft Intune Suite advanced add-ons
+- Windows 365 Cloud PC
+- AI-assisted endpoint management capabilities
 
 ## Interactions with Other Roles
 

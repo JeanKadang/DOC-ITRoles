@@ -72,10 +72,29 @@ The Qumulo Storage Product Owner manages the development and lifecycle of the or
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Qumulo storage platform backlog management and technology roadmap governance (Jira, Confluence), Qumulo capacity planning and procurement decision-making, Qumulo service level definition and SLA performance reporting
-- **Proficient level required:** Qumulo platform capabilities and technology lifecycle management, cloud storage integration concepts for hybrid Qumulo strategies (Qumulo Shift), storage economics and cost-per-TB analysis for business cases
-- **Working Knowledge required:** Qumulo file protocol concepts (NFS, SMB, S3) for stakeholder requirement gathering, backup and data protection integration considerations, storage vendor relationship management
-- **Awareness level expected:** Competitive enterprise NAS and cloud-native file storage platforms, AI/ML storage requirement trends for unstructured data, software-defined storage market evolution
+**Expert level required:**
+
+- Qumulo storage platform backlog management and technology roadmap governance (Jira, Confluence)
+- Qumulo capacity planning and procurement decision-making
+- Qumulo service level definition and SLA performance reporting
+
+**Proficient level required:**
+
+- Qumulo platform capabilities and technology lifecycle management
+- cloud storage integration concepts for hybrid Qumulo strategies (Qumulo Shift)
+- storage economics and cost-per-TB analysis for business cases
+
+**Working Knowledge required:**
+
+- Qumulo file protocol concepts (NFS, SMB, S3) for stakeholder requirement gathering
+- backup and data protection integration considerations
+- storage vendor relationship management
+
+**Awareness level expected:**
+
+- Competitive enterprise NAS and cloud-native file storage platforms
+- AI/ML storage requirement trends for unstructured data
+- software-defined storage market evolution
 
 ## Interactions with Other Roles
 

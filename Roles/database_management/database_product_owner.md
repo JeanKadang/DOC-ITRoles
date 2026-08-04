@@ -72,10 +72,29 @@ The Database Product Owner manages the portfolio of database platforms and data 
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Database platform product backlog management and technology roadmap (Jira, Confluence), database licensing governance and TCO optimisation, database service level management and stakeholder performance reporting
-- **Proficient level required:** Relational and NoSQL database platform concepts (Oracle, SQL Server, PostgreSQL, MongoDB), Database-as-a-Service adoption governance (Azure SQL, AWS RDS/Aurora, GCP Cloud SQL), database lifecycle and version upgrade planning
-- **Working Knowledge required:** Database automation and DevOps tooling concepts, database security and compliance framework oversight, cloud database cost management and FinOps reporting
-- **Awareness level expected:** NewSQL and HTAP database trends, AI-assisted database administration tools, database-as-code and schema migration practices (Flyway, Liquibase)
+**Expert level required:**
+
+- Database platform product backlog management and technology roadmap (Jira, Confluence)
+- database licensing governance and TCO optimisation
+- database service level management and stakeholder performance reporting
+
+**Proficient level required:**
+
+- Relational and NoSQL database platform concepts (Oracle, SQL Server, PostgreSQL, MongoDB)
+- Database-as-a-Service adoption governance (Azure SQL, AWS RDS/Aurora, GCP Cloud SQL)
+- database lifecycle and version upgrade planning
+
+**Working Knowledge required:**
+
+- Database automation and DevOps tooling concepts
+- database security and compliance framework oversight
+- cloud database cost management and FinOps reporting
+
+**Awareness level expected:**
+
+- NewSQL and HTAP database trends
+- AI-assisted database administration tools
+- database-as-code and schema migration practices (Flyway, Liquibase)
 
 ## Interactions with Other Roles
 

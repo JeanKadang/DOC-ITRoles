@@ -64,10 +64,31 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Enterprise routing and switching platforms (OSPF, BGP, MPLS), SD-WAN advanced configuration and troubleshooting, next-generation firewalls and security appliances, network automation frameworks (Ansible, Python)
-- **Proficient level required:** Software-Defined Networking (SDN) solutions, load balancers and application delivery controllers, Wi-Fi 6/6E and wireless network management, IPv6 implementation and migration
-- **Working Knowledge required:** Cloud network integration (AWS/Azure/GCP), network overlay technologies (VXLAN, EVPN), network access control (NAC) systems
-- **Awareness level expected:** Zero Trust Network Architecture, AI-driven network operations (AIOps), eBPF-based network monitoring
+**Expert level required:**
+
+- Enterprise routing and switching platforms (OSPF, BGP, MPLS)
+- SD-WAN advanced configuration and troubleshooting
+- next-generation firewalls and security appliances
+- network automation frameworks (Ansible, Python)
+
+**Proficient level required:**
+
+- Software-Defined Networking (SDN) solutions
+- load balancers and application delivery controllers
+- Wi-Fi 6/6E and wireless network management
+- IPv6 implementation and migration
+
+**Working Knowledge required:**
+
+- Cloud network integration (AWS/Azure/GCP)
+- network overlay technologies (VXLAN, EVPN)
+- network access control (NAC) systems
+
+**Awareness level expected:**
+
+- Zero Trust Network Architecture
+- AI-driven network operations (AIOps)
+- eBPF-based network monitoring
 
 ## Interactions with Other Roles
 

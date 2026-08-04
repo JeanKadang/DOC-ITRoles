@@ -64,10 +64,31 @@ The Network Automation Engineer specializes in developing and implementing autom
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Python scripting for network automation, Ansible/Nornir/NAPALM automation frameworks, CI/CD pipelines (Jenkins, GitLab CI, GitHub Actions), REST/NETCONF/gRPC API integration
-- **Proficient level required:** Terraform for network infrastructure as code, Git/GitHub version control and workflows, network testing frameworks (pyATS, Pytest), Prometheus/Grafana for network monitoring
-- **Working Knowledge required:** Network protocols and device configuration (routing, switching, VLANs), network source-of-truth platforms (NetBox), event-driven automation frameworks
-- **Awareness level expected:** AI/ML-based network analytics, eBPF-based network observability, Kubernetes networking automation
+**Expert level required:**
+
+- Python scripting for network automation
+- Ansible/Nornir/NAPALM automation frameworks
+- CI/CD pipelines (Jenkins, GitLab CI, GitHub Actions)
+- REST/NETCONF/gRPC API integration
+
+**Proficient level required:**
+
+- Terraform for network infrastructure as code
+- Git/GitHub version control and workflows
+- network testing frameworks (pyATS, Pytest)
+- Prometheus/Grafana for network monitoring
+
+**Working Knowledge required:**
+
+- Network protocols and device configuration (routing, switching, VLANs)
+- network source-of-truth platforms (NetBox)
+- event-driven automation frameworks
+
+**Awareness level expected:**
+
+- AI/ML-based network analytics
+- eBPF-based network observability
+- Kubernetes networking automation
 
 ## Interactions with Other Roles
 

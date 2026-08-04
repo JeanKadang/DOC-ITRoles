@@ -72,10 +72,24 @@ The VMware Architect designs and oversees the organization's virtualization infr
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** VMware vSphere (ESXi, vCenter Server) architecture and SDDC design patterns, VMware NSX-T software-defined networking and microsegmentation architecture, VMware vSAN storage design, performance optimisation, and policy management, VMware Cloud Foundation (VCF) platform architecture and lifecycle management
-- **Proficient level required:** VMware vRealize Suite and Aria Suite for automation, operations, and lifecycle management, VMware Site Recovery Manager (SRM) and vSphere Replication for DR architecture, VMware Horizon VDI platform architecture and design, VMware HCX for workload mobility and cloud migration
-- **Working Knowledge required:** VMware Tanzu for Kubernetes and container workload integration, PowerCLI and vRealize Orchestrator for automation strategy and scripting, VMware Carbon Black for virtualisation security controls
-- **Awareness level expected:** Broadcom VMware licensing model changes and platform consolidation roadmap, Azure VMware Solution and VMware Cloud on AWS for hybrid cloud strategy
+**Expert level required:**
+
+- VMware vSphere (ESXi, vCenter Server) architecture and SDDC design patterns, VMware NSX-T software-defined networking and microsegmentation architecture, VMware vSAN storage design, performance optimisation, and policy management, VMware Cloud Foundation (VCF) platform architecture and lifecycle management
+
+**Proficient level required:**
+
+- VMware vRealize Suite and Aria Suite for automation, operations, and lifecycle management, VMware Site Recovery Manager (SRM) and vSphere Replication for DR architecture, VMware Horizon VDI platform architecture and design, VMware HCX for workload mobility and cloud migration
+
+**Working Knowledge required:**
+
+- VMware Tanzu for Kubernetes and container workload integration
+- PowerCLI and vRealize Orchestrator for automation strategy and scripting
+- VMware Carbon Black for virtualisation security controls
+
+**Awareness level expected:**
+
+- Broadcom VMware licensing model changes and platform consolidation roadmap
+- Azure VMware Solution and VMware Cloud on AWS for hybrid cloud strategy
 
 ## Interactions with Other Roles
 

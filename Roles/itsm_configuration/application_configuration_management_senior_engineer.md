@@ -64,10 +64,28 @@ The Application Configuration Management Senior Engineer leads the implementatio
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Ansible/Chef/Puppet (enterprise config management), HashiCorp Vault/Azure Key Vault (secrets), Configuration-as-Code frameworks
-- **Proficient level required:** ServiceNow/Remedy (ITSM), CI/CD pipeline integration (Azure DevOps), configuration drift detection
-- **Working Knowledge required:** Git (version control), ITIL v4, configuration auditing/compliance tools
-- **Awareness level expected:** Terraform (IaC), AI-driven configuration management
+**Expert level required:**
+
+- Ansible/Chef/Puppet (enterprise config management)
+- HashiCorp Vault/Azure Key Vault (secrets)
+- Configuration-as-Code frameworks
+
+**Proficient level required:**
+
+- ServiceNow/Remedy (ITSM)
+- CI/CD pipeline integration (Azure DevOps)
+- configuration drift detection
+
+**Working Knowledge required:**
+
+- Git (version control)
+- ITIL v4
+- configuration auditing/compliance tools
+
+**Awareness level expected:**
+
+- Terraform (IaC)
+- AI-driven configuration management
 
 ## Interactions with Other Roles
 

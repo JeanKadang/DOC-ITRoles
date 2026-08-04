@@ -79,10 +79,27 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Microsoft Hyper-V platform capabilities and Windows Server licensing models for product governance, Jira and Confluence for agile backlog management, sprint planning, and roadmap communication, Azure Stack HCI platform roadmap and infrastructure investment strategy, Windows Server Datacenter and Standard licensing governance and cost optimisation
-- **Proficient level required:** System Center Virtual Machine Manager (SCVMM) product capabilities and service catalog design, Windows Admin Center for platform health monitoring and service reporting, Azure hybrid integration features and virtual machine migration tooling, Capacity planning and infrastructure utilisation reporting
-- **Working Knowledge required:** Hyper-V Replica and Azure Site Recovery for DR planning and SLA governance, Software-Defined Networking product capabilities in Windows Server, PowerShell automation and self-service provisioning pattern design
-- **Awareness level expected:** Azure Arc and Azure Stack HCI platform convergence roadmap, VMware and Nutanix competitive positioning for infrastructure strategy context
+**Expert level required:**
+
+- Microsoft Hyper-V platform capabilities and Windows Server licensing models for product governance, Jira and Confluence for agile backlog management, sprint planning, and roadmap communication, Azure Stack HCI platform roadmap and infrastructure investment strategy, Windows Server Datacenter and Standard licensing governance and cost optimisation
+
+**Proficient level required:**
+
+- System Center Virtual Machine Manager (SCVMM) product capabilities and service catalog design
+- Windows Admin Center for platform health monitoring and service reporting
+- Azure hybrid integration features and virtual machine migration tooling
+- Capacity planning and infrastructure utilisation reporting
+
+**Working Knowledge required:**
+
+- Hyper-V Replica and Azure Site Recovery for DR planning and SLA governance
+- Software-Defined Networking product capabilities in Windows Server
+- PowerShell automation and self-service provisioning pattern design
+
+**Awareness level expected:**
+
+- Azure Arc and Azure Stack HCI platform convergence roadmap
+- VMware and Nutanix competitive positioning for infrastructure strategy context
 
 ## Interactions with Other Roles
 

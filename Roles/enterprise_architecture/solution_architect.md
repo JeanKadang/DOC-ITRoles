@@ -81,10 +81,27 @@ The Solution Architect is responsible for designing end-to-end technical solutio
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Azure (design/integration), Structurizr C4/Lucidchart (solution architecture modeling), Azure Integration Services/MuleSoft
-- **Proficient level required:** Kubernetes/Docker/AKS (containerization), Azure APIM/AWS API Gateway (API management), Microsoft Entra ID/OAuth 2.0/OIDC
-- **Working Knowledge required:** Terraform/Bicep (IaC design review), AWS/GCP (cross-cloud design awareness)
-- **Awareness level expected:** ArchiMate (EA modeling), serverless architectures (Azure Functions/AWS Lambda)
+**Expert level required:**
+
+- Azure (design/integration)
+- Structurizr C4/Lucidchart (solution architecture modeling)
+- Azure Integration Services/MuleSoft
+
+**Proficient level required:**
+
+- Kubernetes/Docker/AKS (containerization)
+- Azure APIM/AWS API Gateway (API management)
+- Microsoft Entra ID/OAuth 2.0/OIDC
+
+**Working Knowledge required:**
+
+- Terraform/Bicep (IaC design review)
+- AWS/GCP (cross-cloud design awareness)
+
+**Awareness level expected:**
+
+- ArchiMate (EA modeling)
+- serverless architectures (Azure Functions/AWS Lambda)
 
 ## Interactions with Other Roles
 

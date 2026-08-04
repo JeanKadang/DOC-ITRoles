@@ -64,10 +64,29 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** ASP.NET Core and Web API (design patterns and enterprise reference architectures), C# and .NET 5+ (advanced language features and platform architecture), .NET security frameworks (identity, authentication, and authorisation patterns)
-- **Proficient level required:** Azure App Service and Azure Functions (cloud-native .NET deployment architectures), Entity Framework and data access patterns at scale, .NET containerization and Kubernetes deployment design
-- **Working Knowledge required:** .NET observability patterns (OpenTelemetry, Application Insights integration), API gateway and service mesh integration with .NET workloads, Azure DevOps CI/CD pipeline design for .NET
-- **Awareness level expected:** Blazor and WebAssembly for .NET web UI patterns, Dapr distributed application runtime, .NET MAUI for cross-platform mobile and desktop
+**Expert level required:**
+
+- ASP.NET Core and Web API (design patterns and enterprise reference architectures)
+- C# and .NET 5+ (advanced language features and platform architecture)
+- .NET security frameworks (identity, authentication, and authorisation patterns)
+
+**Proficient level required:**
+
+- Azure App Service and Azure Functions (cloud-native .NET deployment architectures)
+- Entity Framework and data access patterns at scale
+- .NET containerization and Kubernetes deployment design
+
+**Working Knowledge required:**
+
+- .NET observability patterns (OpenTelemetry, Application Insights integration)
+- API gateway and service mesh integration with .NET workloads
+- Azure DevOps CI/CD pipeline design for .NET
+
+**Awareness level expected:**
+
+- Blazor and WebAssembly for .NET web UI patterns
+- Dapr distributed application runtime
+- .NET MAUI for cross-platform mobile and desktop
 
 ## Interactions with Other Roles
 

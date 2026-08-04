@@ -75,10 +75,30 @@ The AI Governance Engineer is an entry-level practitioner role responsible for i
 
 **Technology Proficiency Levels:**
 
-- **Expert level required:** Fairlearn, Microsoft InterpretML, Azure AI Content Safety, MLflow
-- **Proficient level required:** IBM AI Fairness 360, NIST AI RMF tooling, Python/Jupyter notebooks, GRC platforms (ServiceNow GRC)
-- **Working Knowledge required:** AWS Bedrock Guardrails, Model card frameworks, Jira/Confluence
-- **Awareness level expected:** Azure Machine Learning, Microsoft Purview
+**Expert level required:**
+
+- Fairlearn
+- Microsoft InterpretML
+- Azure AI Content Safety
+- MLflow
+
+**Proficient level required:**
+
+- IBM AI Fairness 360
+- NIST AI RMF tooling
+- Python/Jupyter notebooks
+- GRC platforms (ServiceNow GRC)
+
+**Working Knowledge required:**
+
+- AWS Bedrock Guardrails
+- Model card frameworks
+- Jira/Confluence
+
+**Awareness level expected:**
+
+- Azure Machine Learning
+- Microsoft Purview
 
 ## Interactions with Other Roles
 
