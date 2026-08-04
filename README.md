@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml/badge.svg)](https://github.com/JeanKadang/DOC-ITRoles/actions/workflows/ci.yml)
 
-A portable role definition repository for infrastructure and platform engineering teams. Covers 33 domains grouped into 7 chapters, and 221 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Chapter Lead, Technical Area Lead (TAL), Product Area Lead (PAL), and C-Suite.
+A portable role definition repository for infrastructure and platform engineering teams. Covers 33 domains grouped into 7 chapters, and 222 roles — spanning the full hierarchy from Engineer to Senior Engineer, Architect, Lead Architect, Principal Architect, Chapter Lead, Technical Area Lead (TAL), Product Area Lead (PAL), and C-Suite.
 
 Repository: [github.com/JeanKadang/DOC-ITRoles](https://github.com/JeanKadang/DOC-ITRoles) (private). Issues and backlog are tracked on the [Issues tab](https://github.com/JeanKadang/DOC-ITRoles/issues).
 
@@ -107,7 +107,7 @@ roles_master/
 ├── .github/
 │   ├── workflows/ci.yml                    # CI: npm test, npm run validate, check-counts, markdownlint
 │   └── dependabot.yml                      # Weekly GitHub Actions + npm update checks
-├── Roles/                                  # All role definitions (33 domains, 221 roles)
+├── Roles/                                  # All role definitions (33 domains, 222 roles)
 │   ├── leadership/                         # SVP, CISO, Chapter Leads, TAL, PAL
 │   ├── c_suite/                            # CEO, CTO, CIO, CFO
 │   ├── cloud_platforms/                    # Azure, AWS, GCP + Lead/Principal
