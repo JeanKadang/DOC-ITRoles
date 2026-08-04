@@ -25,6 +25,8 @@ const {
     roleTitleKey,
     findRoleByTitle,
     panelStateFor,
+    parseRoleMeta,
+    splitReportingValue,
     tocIdFor,
     activeTocIndex,
 } = require('../viewer-logic');
@@ -794,4 +796,88 @@ test('activeTocIndex highlights the last section once scrolled to the bottom', (
 
 test('activeTocIndex atBottom is ignored when there are no sections', () => {
     assert.equal(activeTocIndex([], 500, { atBottom: true }), -1);
+});
+
+// ── parseRoleMeta (#113) ──────────────────────────────────
+// openRole slices the body at the first "## ", so the metadata table above
+// it never renders. Reports To / Direct Reports were therefore absent from
+// the viewer entirely — the whole #5 backfill was invisible in the UI.
+const META_MD = `# AWS Cloud Architect
+
+| Field | Value |
+|---|---|
+| **Domain** | Cloud Platforms |
+| **Chapter:** | Cloud, Platform & Infrastructure |
+| **Role Level** | Architect |
+| **Reports To** | Cloud Lead Architect |
+| **Direct Reports** | AWS Cloud Senior Engineers |
+| **Last Reviewed** | 2026-03 |
+
+---
+
+## Role Overview
+
+Body text.
+`;
+
+test('parseRoleMeta reads the reporting line out of the metadata table', () => {
+    const m = parseRoleMeta(META_MD);
+    assert.equal(m.reportsTo, 'Cloud Lead Architect');
+    assert.equal(m.directReports, 'AWS Cloud Senior Engineers');
+});
+
+test('parseRoleMeta reads the remaining metadata fields', () => {
+    const m = parseRoleMeta(META_MD);
+    assert.equal(m.domain, 'Cloud Platforms');
+    assert.equal(m.level, 'Architect');
+    assert.equal(m.lastReviewed, '2026-03');
+    assert.equal(m.chapter, 'Cloud, Platform & Infrastructure');
+});
+
+test('parseRoleMeta returns null for fields a file omits', () => {
+    const m = parseRoleMeta('# Role\n\n| Field | Value |\n|---|---|\n| **Domain** | X |\n\n## Role Overview\n');
+    assert.equal(m.domain, 'X');
+    assert.equal(m.reportsTo, null);
+    assert.equal(m.directReports, null);
+    assert.equal(m.lastReviewed, null);
+});
+
+test('parseRoleMeta does not read past the first section heading', () => {
+    // A "Reports To" mentioned in prose must not be mistaken for metadata.
+    const md = '# Role\n\n| Field | Value |\n|---|---|\n| **Domain** | X |\n\n## Role Overview\n\n| **Reports To** | Someone Else |\n';
+    assert.equal(parseRoleMeta(md).reportsTo, null);
+});
+
+test('parseRoleMeta treats "None" as a real Direct Reports value', () => {
+    // Individual-contributor roles say "None"; that is meaningful and should
+    // render, not be dropped as empty.
+    const md = META_MD.replace('AWS Cloud Senior Engineers', 'None');
+    assert.equal(parseRoleMeta(md).directReports, 'None');
+});
+
+// ── splitReportingValue (#113) ────────────────────────────
+// 34% of Reports To / Direct Reports values exceed 60 characters (max 241)
+// because most carry a parenthetical qualifier explaining the arrangement.
+// The chip shows the lead-in; the qualifier moves to a tooltip.
+test('splitReportingValue separates the lead-in from a parenthetical qualifier', () => {
+    const v = 'None (sets technical direction and mentors AWS Cloud Senior Engineers; formal line management sits with the Chapter Lead)';
+    assert.deepEqual(splitReportingValue(v), {
+        head: 'None',
+        detail: 'sets technical direction and mentors AWS Cloud Senior Engineers; formal line management sits with the Chapter Lead',
+    });
+});
+
+test('splitReportingValue leaves a short plain value untouched', () => {
+    assert.deepEqual(splitReportingValue('Cloud Lead Architect'),
+                     { head: 'Cloud Lead Architect', detail: '' });
+});
+
+test('splitReportingValue splits on a semicolon when there is no parenthetical', () => {
+    assert.deepEqual(splitReportingValue('Solution Architect; Enterprise Architecture Senior Engineer'),
+                     { head: 'Solution Architect', detail: 'Enterprise Architecture Senior Engineer' });
+});
+
+test('splitReportingValue handles empty and missing values', () => {
+    assert.deepEqual(splitReportingValue(''),   { head: '', detail: '' });
+    assert.deepEqual(splitReportingValue(null), { head: '', detail: '' });
 });
