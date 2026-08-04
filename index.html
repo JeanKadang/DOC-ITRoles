@@ -1329,7 +1329,7 @@
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
-        sectionStartsOpen,
+        sectionStartsOpen, panelStateFor,
         findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
 
@@ -1613,7 +1613,6 @@
     }
 
     // ── Org chart view (ECharts tree) ─────────────────────
-    let orgOpen  = false;
     let orgChart = null; // ECharts instance, disposed on re-render
 
     // Decorate the pure buildOrgTree() output with per-kind display hints
@@ -1709,57 +1708,81 @@
         return `<ul><li>${label}${meta}${kids ? kids : ''}</li></ul>`;
     }
 
-    function toggleOrg() {
-        orgOpen = !orgOpen;
-        const ov  = document.getElementById('orgView');
-        const btn = document.getElementById('orgBtn');
-        btn.setAttribute('aria-pressed', String(orgOpen));
+    // ── Overlay panels (#119) ────────────────────────────
+    // Matrix, Stale, Org, Graph and Careers are mutually exclusive overlays.
+    // Each toggle used to hide the other four by hand, so the teardown lived
+    // in five copies; when one copy (Matrix) learned to restore the role grid
+    // on close, the other four did not — that divergence is #129, where
+    // closing Org/Graph/Careers over an open role left a blank screen.
+    //
+    // The desired state is now computed once by panelStateFor (viewer-logic,
+    // under test) and applied here, so adding a sixth panel means adding one
+    // row to this table and nothing else.
+    const PANELS = {
+        matrix:  { viewId: 'matrixView',  btnId: 'matrixBtn',
+                   onOpen: () => { renderMatrix(allDomains);
+                                   renderSidebar(allDomains, document.getElementById('searchInput').value); } },
+        stale:   { viewId: 'staleView',   btnId: 'staleBtn',
+                   onOpen: () => renderStalePanel(allDomains) },
+        org:     { viewId: 'orgView',     btnId: 'orgBtn',
+                   onOpen: () => renderOrgChart() },
+        graph:   { viewId: 'graphView',   btnId: 'graphBtn',
+                   onOpen: () => renderDomainGraph() },
+        careers: { viewId: 'careersView', btnId: 'careersBtn',
+                   onOpen: () => renderCareerSankey() },
+    };
+    let activePanel = null;
 
-        if (orgOpen) {
+    // Apply panel visibility and button state. Split out so callers that
+    // render their own content afterwards (openDoc, openChapter) can clear
+    // the panels without also triggering the content decision below.
+    function applyPanels(state) {
+        activePanel = state.active;
+        for (const [key, panel] of Object.entries(PANELS)) {
+            const { show, pressed } = state.panels[key];
+            const view = document.getElementById(panel.viewId);
+            const btn  = document.getElementById(panel.btnId);
+            view.classList.toggle('show', show);
+            if (show) view.style.display = '';
+            btn.setAttribute('aria-pressed', String(pressed));
+            btn.style.background  = pressed ? 'rgba(255,255,255,0.3)' : '';
+            btn.style.borderColor = pressed ? 'rgba(255,255,255,0.6)' : '';
+        }
+    }
+
+    // Close every panel and leave the content area to the caller.
+    function resetPanels() {
+        applyPanels(panelStateFor(null, Object.keys(PANELS), { hasRole: false }));
+    }
+
+    function setPanel(name) {
+        const state = panelStateFor(name, Object.keys(PANELS), { hasRole: !!activeFile });
+        applyPanels(state);
+
+        // A panel owns the whole content area while it is open.
+        if (state.active) {
             document.getElementById('welcomeState').style.display = 'none';
             document.getElementById('chapterView').style.display  = 'none';
             document.getElementById('rolesGrid').style.display    = 'none';
             document.getElementById('docView').style.display      = 'none';
             activeDoc = null;
-            ov.classList.add('show');
-            btn.style.background = 'rgba(255,255,255,0.3)';
-            btn.style.borderColor = 'rgba(255,255,255,0.6)';
-            renderOrgChart();
-
-            // Org, graph, matrix, and stale views are mutually exclusive
-            if (matrixOpen) {
-                matrixOpen = false;
-                document.getElementById('matrixView').classList.remove('show');
-                const mb = document.getElementById('matrixBtn');
-                mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
-            }
-            if (staleOpen) {
-                staleOpen = false;
-                document.getElementById('staleView').classList.remove('show');
-                document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
-            }
-            if (graphOpen) {
-                graphOpen = false;
-                document.getElementById('graphView').classList.remove('show');
-                const gb = document.getElementById('graphBtn');
-                gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
-            }
-            if (careersOpen) {
-                careersOpen = false;
-                document.getElementById('careersView').classList.remove('show');
-                const cb = document.getElementById('careersBtn');
-                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
-            }
+            PANELS[state.active].onOpen?.();
         } else {
-            ov.classList.remove('show');
-            btn.style.background = '';
-            btn.style.borderColor = '';
-            if (!activeFile) document.getElementById('welcomeState').style.display = '';
+            document.getElementById('rolesGrid').style.display    = state.showRolesGrid ? '' : 'none';
+            document.getElementById('welcomeState').style.display = state.showWelcome ? '' : 'none';
         }
     }
 
+    function togglePanel(name) { setPanel(activePanel === name ? null : name); }
+    function closePanels()     { setPanel(null); }
+
+    const toggleMatrix     = () => togglePanel('matrix');
+    const toggleStalePanel = () => togglePanel('stale');
+    const toggleOrg        = () => togglePanel('org');
+    const toggleGraph      = () => togglePanel('graph');
+    const toggleCareers    = () => togglePanel('careers');
+
     // ── Domain relationship graph (ECharts force graph) ───
-    let graphOpen  = false;
     let graphChart = null;
 
     // Chapter-categorical palettes, validated (dataviz six-checks) against
@@ -1889,57 +1912,8 @@
         return `<ul>${byNode}</ul>`;
     }
 
-    function toggleGraph() {
-        graphOpen = !graphOpen;
-        const gv  = document.getElementById('graphView');
-        const btn = document.getElementById('graphBtn');
-        btn.setAttribute('aria-pressed', String(graphOpen));
-
-        if (graphOpen) {
-            document.getElementById('welcomeState').style.display = 'none';
-            document.getElementById('chapterView').style.display  = 'none';
-            document.getElementById('rolesGrid').style.display    = 'none';
-            document.getElementById('docView').style.display      = 'none';
-            activeDoc = null;
-            gv.classList.add('show');
-            btn.style.background = 'rgba(255,255,255,0.3)';
-            btn.style.borderColor = 'rgba(255,255,255,0.6)';
-            renderDomainGraph();
-
-            // Graph, org, matrix, and stale views are mutually exclusive
-            if (matrixOpen) {
-                matrixOpen = false;
-                document.getElementById('matrixView').classList.remove('show');
-                const mb = document.getElementById('matrixBtn');
-                mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
-            }
-            if (staleOpen) {
-                staleOpen = false;
-                document.getElementById('staleView').classList.remove('show');
-                document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
-            }
-            if (orgOpen) {
-                orgOpen = false;
-                document.getElementById('orgView').classList.remove('show');
-                const ob = document.getElementById('orgBtn');
-                ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
-            }
-            if (careersOpen) {
-                careersOpen = false;
-                document.getElementById('careersView').classList.remove('show');
-                const cb = document.getElementById('careersBtn');
-                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
-            }
-        } else {
-            gv.classList.remove('show');
-            btn.style.background = '';
-            btn.style.borderColor = '';
-            if (!activeFile) document.getElementById('welcomeState').style.display = '';
-        }
-    }
 
     // ── Career path flow (ECharts sankey) ─────────────────
-    let careersOpen  = false;
     let careersChart = null;
 
     // Ordinal blue ramp (light→dark with seniority) for the main IC line,
@@ -2021,42 +1995,6 @@
             <ul>${mobilityHtml}</ul>`;
     }
 
-    function toggleCareers() {
-        careersOpen = !careersOpen;
-        const cv  = document.getElementById('careersView');
-        const btn = document.getElementById('careersBtn');
-        btn.setAttribute('aria-pressed', String(careersOpen));
-
-        if (careersOpen) {
-            document.getElementById('welcomeState').style.display = 'none';
-            document.getElementById('chapterView').style.display  = 'none';
-            document.getElementById('rolesGrid').style.display    = 'none';
-            document.getElementById('docView').style.display      = 'none';
-            activeDoc = null;
-            cv.classList.add('show');
-            btn.style.background = 'rgba(255,255,255,0.3)';
-            btn.style.borderColor = 'rgba(255,255,255,0.6)';
-            renderCareerSankey();
-
-            // All five side panels are mutually exclusive
-            for (const [flagOff, viewId, btnId] of [
-                [() => { matrixOpen = false; }, 'matrixView', 'matrixBtn'],
-                [() => { staleOpen  = false; }, 'staleView',  'staleBtn'],
-                [() => { orgOpen    = false; }, 'orgView',    'orgBtn'],
-                [() => { graphOpen  = false; }, 'graphView',  'graphBtn'],
-            ]) {
-                flagOff();
-                document.getElementById(viewId).classList.remove('show');
-                const b = document.getElementById(btnId);
-                b.style.background = ''; b.style.borderColor = ''; b.setAttribute('aria-pressed', 'false');
-            }
-        } else {
-            cv.classList.remove('show');
-            btn.style.background = '';
-            btn.style.borderColor = '';
-            if (!activeFile) document.getElementById('welcomeState').style.display = '';
-        }
-    }
 
     // Keep the ECharts canvases sized to their containers.
     window.addEventListener('resize', () => { orgChart?.resize(); graphChart?.resize(); careersChart?.resize(); });
@@ -2407,27 +2345,6 @@
     }
 
     // Close the matrix, stale, org, and graph panels (used when opening a role/doc/chapter).
-    function closePanels() {
-        matrixOpen = false;
-        staleOpen  = false;
-        orgOpen    = false;
-        graphOpen  = false;
-        document.getElementById('matrixView').classList.remove('show');
-        document.getElementById('staleView').classList.remove('show');
-        document.getElementById('orgView').classList.remove('show');
-        document.getElementById('graphView').classList.remove('show');
-        const mb = document.getElementById('matrixBtn');
-        mb.style.background = ''; mb.style.borderColor = ''; mb.setAttribute('aria-pressed', 'false');
-        document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
-        const ob = document.getElementById('orgBtn');
-        ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
-        const gb = document.getElementById('graphBtn');
-        gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
-        careersOpen = false;
-        document.getElementById('careersView').classList.remove('show');
-        const cb = document.getElementById('careersBtn');
-        cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
-    }
 
     // ── Career stepper (role view, #55) ───────────────────
     // From → current role → To chips parsed from the role's own Career
@@ -2683,33 +2600,7 @@
         document.getElementById('roleView').classList.remove('show');
         document.getElementById('welcomeState').style.display = 'none';
         document.getElementById('chapterView').style.display  = 'none';
-        document.getElementById('matrixView').classList.remove('show');
-        matrixOpen = false;
-        document.getElementById('matrixBtn').style.background  = '';
-        document.getElementById('matrixBtn').style.borderColor = '';
-        document.getElementById('matrixBtn').setAttribute('aria-pressed', 'false');
-
-        document.getElementById('staleView').classList.remove('show');
-        staleOpen = false;
-        document.getElementById('staleBtn').setAttribute('aria-pressed', 'false');
-
-        document.getElementById('orgView').classList.remove('show');
-        orgOpen = false;
-        document.getElementById('orgBtn').style.background  = '';
-        document.getElementById('orgBtn').style.borderColor = '';
-        document.getElementById('orgBtn').setAttribute('aria-pressed', 'false');
-
-        document.getElementById('graphView').classList.remove('show');
-        graphOpen = false;
-        document.getElementById('graphBtn').style.background  = '';
-        document.getElementById('graphBtn').style.borderColor = '';
-        document.getElementById('graphBtn').setAttribute('aria-pressed', 'false');
-
-        document.getElementById('careersView').classList.remove('show');
-        careersOpen = false;
-        document.getElementById('careersBtn').style.background  = '';
-        document.getElementById('careersBtn').style.borderColor = '';
-        document.getElementById('careersBtn').setAttribute('aria-pressed', 'false');
+        resetPanels();
 
         renderSidebar(allDomains, document.getElementById('searchInput').value);
 
@@ -2866,15 +2757,12 @@
         // Charts read their colors from CSS variables at render time, so a
         // theme flip means a re-render against the new surface.
         if (Object.keys(allDomains).length) renderDistributionCharts(allDomains);
-        if (orgOpen) renderOrgChart();
-        if (graphOpen) renderDomainGraph();
-        if (careersOpen) renderCareerSankey();
+        // Only the panel actually on screen needs re-rendering.
+        if (activePanel) PANELS[activePanel].onOpen?.();
     }
 
     // ── Matrix view ───────────────────────────────────────
     // (LEVEL_ORDER / LEVEL_SHORT come from viewer-logic.js)
-    let matrixOpen = false;
-    let staleOpen  = false;
 
     function renderMatrix(domains) {
         // Collect which levels actually exist in the data
@@ -2945,56 +2833,6 @@
             </div>`;
     }
 
-    function toggleMatrix() {
-        matrixOpen = !matrixOpen;
-        const mv  = document.getElementById('matrixView');
-        const btn = document.getElementById('matrixBtn');
-        btn.setAttribute('aria-pressed', String(matrixOpen));
-
-        if (matrixOpen) {
-            // Hide normal content and doc view, show matrix
-            document.getElementById('welcomeState').style.display = 'none';
-            document.getElementById('chapterView').style.display  = 'none';
-            document.getElementById('rolesGrid').style.display    = 'none';
-            document.getElementById('docView').style.display      = 'none';
-            activeDoc = null;
-            mv.style.display = '';
-            mv.classList.add('show');
-            btn.style.background = 'rgba(255,255,255,0.3)';
-            btn.style.borderColor = 'rgba(255,255,255,0.6)';
-            renderMatrix(allDomains);
-            renderSidebar(allDomains, document.getElementById('searchInput').value);
-
-            // Matrix, stale, org, and graph panels are mutually exclusive
-            if (staleOpen) { staleOpen = false; document.getElementById('staleView').classList.remove('show'); document.getElementById('staleBtn').setAttribute('aria-pressed', 'false'); }
-            if (orgOpen) {
-                orgOpen = false;
-                document.getElementById('orgView').classList.remove('show');
-                const ob = document.getElementById('orgBtn');
-                ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
-            }
-            if (graphOpen) {
-                graphOpen = false;
-                document.getElementById('graphView').classList.remove('show');
-                const gb = document.getElementById('graphBtn');
-                gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
-            }
-            if (careersOpen) {
-                careersOpen = false;
-                document.getElementById('careersView').classList.remove('show');
-                const cb = document.getElementById('careersBtn');
-                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
-            }
-        } else {
-            // Restore normal content
-            document.getElementById('rolesGrid').style.display = '';
-            mv.classList.remove('show');
-            btn.style.background = '';
-            btn.style.borderColor = '';
-            // Show welcome if no role loaded
-            if (!activeFile) document.getElementById('welcomeState').style.display = '';
-        }
-    }
 
     // ── Stale-role tracking ───────────────────────────────
     // (monthsSinceReview / computeStaleRoles come from viewer-logic.js)
@@ -3007,53 +2845,6 @@
         btn.setAttribute('aria-label', `${stale.length} roles overdue for review`);
     }
 
-    function toggleStalePanel() {
-        staleOpen = !staleOpen;
-        const sv  = document.getElementById('staleView');
-        const btn = document.getElementById('staleBtn');
-        btn.setAttribute('aria-pressed', String(staleOpen));
-
-        if (staleOpen) {
-            document.getElementById('welcomeState').style.display = 'none';
-            document.getElementById('chapterView').style.display  = 'none';
-            document.getElementById('rolesGrid').style.display    = 'none';
-            document.getElementById('docView').style.display      = 'none';
-            activeDoc = null;
-            sv.style.display = '';
-            sv.classList.add('show');
-            renderStalePanel(allDomains);
-
-            // Matrix, stale, org, and graph panels are mutually exclusive
-            if (matrixOpen) {
-                matrixOpen = false;
-                document.getElementById('matrixView').classList.remove('show');
-                document.getElementById('matrixBtn').setAttribute('aria-pressed', 'false');
-                document.getElementById('matrixBtn').style.background  = '';
-                document.getElementById('matrixBtn').style.borderColor = '';
-            }
-            if (orgOpen) {
-                orgOpen = false;
-                document.getElementById('orgView').classList.remove('show');
-                const ob = document.getElementById('orgBtn');
-                ob.style.background = ''; ob.style.borderColor = ''; ob.setAttribute('aria-pressed', 'false');
-            }
-            if (graphOpen) {
-                graphOpen = false;
-                document.getElementById('graphView').classList.remove('show');
-                const gb = document.getElementById('graphBtn');
-                gb.style.background = ''; gb.style.borderColor = ''; gb.setAttribute('aria-pressed', 'false');
-            }
-            if (careersOpen) {
-                careersOpen = false;
-                document.getElementById('careersView').classList.remove('show');
-                const cb = document.getElementById('careersBtn');
-                cb.style.background = ''; cb.style.borderColor = ''; cb.setAttribute('aria-pressed', 'false');
-            }
-        } else {
-            sv.classList.remove('show');
-            if (!activeFile) document.getElementById('welcomeState').style.display = '';
-        }
-    }
 
     function renderStalePanel(domains) {
         const stale = computeStaleRoles(domains);

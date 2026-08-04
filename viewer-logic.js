@@ -526,6 +526,31 @@
         return null;
     }
 
+    // The viewer has five mutually exclusive overlay panels (matrix, stale,
+    // org, graph, careers). Each toggle used to hide the others by hand, so
+    // the teardown existed in five copies — and when one copy learned to
+    // restore the role grid on close, the other four did not, which is #129:
+    // closing Org/Graph/Careers over an open role left a blank screen.
+    //
+    // Given the panel being requested (null = close everything), this returns
+    // the complete desired state, so the caller applies one description
+    // instead of maintaining five divergent ones (#119).
+    function panelStateFor(requested, keys, { hasRole = false } = {}) {
+        const panels = {};
+        for (const key of keys) {
+            const on = key === requested;
+            panels[key] = { show: on, pressed: on };
+        }
+        return {
+            active: requested || null,
+            panels,
+            // While a panel is open it owns the content area. When they all
+            // close, an open role takes it back; otherwise the welcome screen.
+            showRolesGrid: !requested && hasRole,
+            showWelcome:   !requested && !hasRole,
+        };
+    }
+
     return {
         STALE_MONTHS,
         REFERENCE_DOC_PATTERN,
@@ -548,5 +573,6 @@
         sectionStartsOpen,
         roleTitleKey,
         findRoleByTitle,
+        panelStateFor,
     };
 });

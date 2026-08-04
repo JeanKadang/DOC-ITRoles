@@ -24,6 +24,7 @@ const {
     sectionStartsOpen,
     roleTitleKey,
     findRoleByTitle,
+    panelStateFor,
 } = require('../viewer-logic');
 
 const { CANONICAL_LEVELS, REFERENCE_DOC_PATTERN: ROLEMETA_REF_PATTERN } = require('../roleMeta');
@@ -702,4 +703,42 @@ test('no two catalog role titles collide under roleTitleKey', () => {
         }
     }
     assert.deepEqual(collisions, [], 'role titles that normalise to the same lookup key');
+});
+
+// ── panelStateFor (#119, #129) ────────────────────────────
+// The five overlay panels are mutually exclusive, and their show/hide plus
+// button state was copy-pasted into each toggle. One copy (Matrix) learned
+// to restore the role grid on close and the other four never did, which is
+// #129: closing Org/Graph/Careers over an open role left a blank screen.
+// This computes the whole desired state in one place instead.
+const PANEL_KEYS = ['matrix', 'stale', 'org', 'graph', 'careers'];
+
+test('panelStateFor activates exactly one panel and clears the rest', () => {
+    const s = panelStateFor('org', PANEL_KEYS, { hasRole: false });
+    assert.equal(s.active, 'org');
+    assert.deepEqual(s.panels.org, { show: true, pressed: true });
+    for (const k of PANEL_KEYS.filter(k => k !== 'org')) {
+        assert.deepEqual(s.panels[k], { show: false, pressed: false }, `${k} must be cleared`);
+    }
+});
+
+test('panelStateFor hides the content views while a panel is open', () => {
+    const s = panelStateFor('graph', PANEL_KEYS, { hasRole: true });
+    assert.equal(s.showRolesGrid, false);
+    assert.equal(s.showWelcome, false);
+});
+
+test('panelStateFor restores the open role when every panel closes (#129)', () => {
+    // The regression: closing a panel over an open role must bring the role
+    // back, not leave an empty content area.
+    const s = panelStateFor(null, PANEL_KEYS, { hasRole: true });
+    assert.equal(s.showRolesGrid, true, 'the open role must become visible again');
+    assert.equal(s.showWelcome, false, 'welcome must not cover an open role');
+    for (const k of PANEL_KEYS) assert.deepEqual(s.panels[k], { show: false, pressed: false });
+});
+
+test('panelStateFor falls back to the welcome screen when no role is open', () => {
+    const s = panelStateFor(null, PANEL_KEYS, { hasRole: false });
+    assert.equal(s.showWelcome, true);
+    assert.equal(s.showRolesGrid, false);
 });
