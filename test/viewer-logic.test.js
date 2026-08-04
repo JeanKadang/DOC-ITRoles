@@ -11,6 +11,7 @@ const {
     badgeClass,
     monthsSinceReview,
     computeStaleRoles,
+    reviewSlotFor,
     rolesPerLevel,
     rolesPerChapter,
     buildOrgTree,
@@ -880,4 +881,70 @@ test('splitReportingValue splits on a semicolon when there is no parenthetical',
 test('splitReportingValue handles empty and missing values', () => {
     assert.deepEqual(splitReportingValue(''),   { head: '', detail: '' });
     assert.deepEqual(splitReportingValue(null), { head: '', detail: '' });
+});
+
+// ── staggered review schedule (#124) ──────────────────────
+// 206 of 222 roles carry an identical 2026-03 stamp, so at a flat
+// 12-month threshold every one of them turns stale in the same month and
+// the panel goes from near-empty to 93% of the catalog. Git offers no
+// real review history to stagger from (the repo is younger than the
+// stamps), so the schedule is spread instead of the dates being invented.
+test('reviewSlotFor is deterministic for a given path', () => {
+    assert.equal(reviewSlotFor('Roles/security/security_engineer.md', 12),
+                 reviewSlotFor('Roles/security/security_engineer.md', 12));
+});
+
+test('reviewSlotFor stays inside the requested span', () => {
+    for (const f of ['a.md', 'Roles/x/y.md', 'Roles/really/long/path/name.md', '']) {
+        const s = reviewSlotFor(f, 12);
+        assert.ok(Number.isInteger(s) && s >= 0 && s < 12, `${f} produced ${s}`);
+    }
+});
+
+test('reviewSlotFor spreads the real catalog across the whole span', () => {
+    // The point of the exercise: no month may take a disproportionate share.
+    const fs = require('node:fs'), path = require('node:path');
+    const rolesDir = path.join(__dirname, '..', 'Roles');
+    const counts = new Array(12).fill(0);
+    let total = 0;
+    for (const d of fs.readdirSync(rolesDir, { withFileTypes: true })) {
+        if (!d.isDirectory()) continue;
+        for (const f of fs.readdirSync(path.join(rolesDir, d.name))) {
+            if (!f.endsWith('.md') || f === 'README.md' || /_standards\.md$/.test(f)) continue;
+            counts[reviewSlotFor(`Roles/${d.name}/${f}`, 12)]++;
+            total++;
+        }
+    }
+    assert.ok(counts.every(c => c > 0), `some months got no roles: ${counts}`);
+    const worst = Math.max(...counts);
+    assert.ok(worst < total / 12 * 2.5, `month overloaded: ${worst} of ${total} (${counts})`);
+});
+
+test('computeStaleRoles without stagger is unchanged', () => {
+    const now = new Date(2026, 6, 15);
+    const stale = computeStaleRoles(fixtureDomains(), STALE_MONTHS, now);
+    assert.deepEqual(stale.map(r => r.title), ['Never Reviewed', 'Ancient Role', 'Boundary Role']);
+});
+
+test('computeStaleRoles with stagger defers roles whose slot has not come up', () => {
+    const now = new Date(2026, 6, 15);
+    const all      = computeStaleRoles(fixtureDomains(), STALE_MONTHS, now);
+    const staggered = computeStaleRoles(fixtureDomains(), STALE_MONTHS, now, { stagger: 12 });
+    assert.ok(staggered.length < all.length, 'staggering must hold some roles back');
+});
+
+test('computeStaleRoles with stagger still flags never-reviewed roles immediately', () => {
+    // A missing date is a real gap, not a scheduling slot — it must not be
+    // deferred by up to a year.
+    const now = new Date(2026, 6, 15);
+    const staggered = computeStaleRoles(fixtureDomains(), STALE_MONTHS, now, { stagger: 12 });
+    assert.ok(staggered.some(r => r.title === 'Never Reviewed'));
+});
+
+test('computeStaleRoles with stagger still flags a very overdue role', () => {
+    // 2020-01 is ~78 months old; no slot offset within a 12-month span can
+    // excuse that.
+    const now = new Date(2026, 6, 15);
+    const staggered = computeStaleRoles(fixtureDomains(), STALE_MONTHS, now, { stagger: 12 });
+    assert.ok(staggered.some(r => r.title === 'Ancient Role'));
 });
