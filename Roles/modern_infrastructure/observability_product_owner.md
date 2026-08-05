@@ -89,7 +89,9 @@ The Observability Product Owner manages the observability platform portfolio, de
 
 **Working Knowledge required:**
 
-- OpenTelemetry instrumentation concepts and team adoption patterns, Distributed tracing systems (Jaeger, Zipkin) and APM tool features, Time-series database concepts, cardinality management, and telemetry cost governance
+- OpenTelemetry instrumentation concepts and team adoption patterns
+- Distributed tracing systems (Jaeger, Zipkin) and APM tool features
+- Time-series database concepts, cardinality management, and telemetry cost governance
 
 **Awareness level expected:**
 

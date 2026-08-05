@@ -81,7 +81,10 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 
 **Expert level required:**
 
-- HPC cluster platform capabilities (Slurm, PBS Pro, job schedulers) at product planning and SLA governance level, Jira and Confluence for backlog management, research stakeholder engagement, and sprint planning, Cluster utilisation dashboards (Grafana, Prometheus) and reporting tools for data-driven capacity planning, ServiceNow and ITSM platforms for HPC service request and incident governance
+- HPC cluster platform capabilities (Slurm, PBS Pro, job schedulers) at product planning and SLA governance level
+- Jira and Confluence for backlog management, research stakeholder engagement, and sprint planning
+- Cluster utilisation dashboards (Grafana, Prometheus) and reporting tools for data-driven capacity planning
+- ServiceNow and ITSM platforms for HPC service request and incident governance
 
 **Proficient level required:**
 

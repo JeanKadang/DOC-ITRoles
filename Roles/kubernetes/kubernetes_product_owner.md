@@ -74,11 +74,15 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 
 **Expert level required:**
 
-- Agile product ownership tools (Jira, Confluence) for Kubernetes platform backlog, roadmap, and sprint management, Kubernetes platform concepts (namespaces, workloads, resource quotas, RBAC, admission policies) for product decision-making, Container platform service catalogue and SLA definition for internal platform consumers
+- Agile product ownership tools (Jira, Confluence) for Kubernetes platform backlog, roadmap, and sprint management
+- Kubernetes platform concepts (namespaces, workloads, resource quotas, RBAC, admission policies) for product decision-making
+- Container platform service catalogue and SLA definition for internal platform consumers
 
 **Proficient level required:**
 
-- GitOps deployment model (ArgoCD, Flux) for understanding platform delivery patterns and acceptance criteria, Container monitoring and availability dashboards (Prometheus, Grafana) for SLA tracking and stakeholder reporting, Power BI or Tableau for container platform adoption, cost, and usage metrics
+- GitOps deployment model (ArgoCD, Flux) for understanding platform delivery patterns and acceptance criteria
+- Container monitoring and availability dashboards (Prometheus, Grafana) for SLA tracking and stakeholder reporting
+- Power BI or Tableau for container platform adoption, cost, and usage metrics
 
 **Working Knowledge required:**
 
@@ -87,7 +91,8 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 
 **Awareness level expected:**
 
-- Service mesh capabilities (Istio, Linkerd) for evaluating advanced platform feature roadmap items, FinOps tooling for Kubernetes cost visibility, namespace-level chargeback, and reserved capacity
+- Service mesh capabilities (Istio, Linkerd) for evaluating advanced platform feature roadmap items
+- FinOps tooling for Kubernetes cost visibility, namespace-level chargeback, and reserved capacity
 
 ## Interactions with Other Roles
 

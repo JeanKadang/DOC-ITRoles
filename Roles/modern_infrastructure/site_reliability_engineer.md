@@ -67,7 +67,10 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 
 **Expert level required:**
 
-- Prometheus and Grafana for SLI/SLO instrumentation, error budget dashboards, and reliability monitoring, Kubernetes for container platform reliability operations and resource management, SLO/SLI framework design and error budget policy implementation, Incident management platforms (PagerDuty, OpsGenie) and runbook automation
+- Prometheus and Grafana for SLI/SLO instrumentation, error budget dashboards, and reliability monitoring
+- Kubernetes for container platform reliability operations and resource management
+- SLO/SLI framework design and error budget policy implementation
+- Incident management platforms (PagerDuty, OpsGenie) and runbook automation
 
 **Proficient level required:**
 

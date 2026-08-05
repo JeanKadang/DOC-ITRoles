@@ -79,7 +79,10 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 
 **Expert level required:**
 
-- Microsoft Hyper-V architecture, cluster design, and high availability configuration, System Center Virtual Machine Manager (SCVMM) for enterprise VM fleet and library management, Azure Stack HCI and Storage Spaces Direct (S2D) hyperconverged architecture, Windows Server Failover Clustering for Hyper-V environments
+- Microsoft Hyper-V architecture, cluster design, and high availability configuration
+- System Center Virtual Machine Manager (SCVMM) for enterprise VM fleet and library management
+- Azure Stack HCI and Storage Spaces Direct (S2D) hyperconverged architecture
+- Windows Server Failover Clustering for Hyper-V environments
 
 **Proficient level required:**
 

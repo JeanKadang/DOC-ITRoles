@@ -74,7 +74,10 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 
 **Expert level required:**
 
-- Nutanix AOS and AHV hypervisor architecture, cluster design, and sizing methodology, Nutanix Prism Central for enterprise multi-cluster governance and policy automation, Nutanix Flow microsegmentation and network security architecture, Nutanix HCI disaster recovery design (Nutanix Leap, Metro Availability, Async DR)
+- Nutanix AOS and AHV hypervisor architecture, cluster design, and sizing methodology
+- Nutanix Prism Central for enterprise multi-cluster governance and policy automation
+- Nutanix Flow microsegmentation and network security architecture
+- Nutanix HCI disaster recovery design (Nutanix Leap, Metro Availability, Async DR)
 
 **Proficient level required:**
 

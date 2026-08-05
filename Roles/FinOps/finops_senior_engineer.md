@@ -76,11 +76,14 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 **Proficient level required:**
 
-- Data visualization and analytics tools (Power BI, Tableau) for advanced cloud cost dashboards and executive reporting, Anomaly detection frameworks for identifying cost spikes, billing irregularities, and attribution errors, CI/CD pipeline integration for FinOps policy enforcement and automation deployment
+- Data visualization and analytics tools (Power BI, Tableau) for advanced cloud cost dashboards and executive reporting
+- Anomaly detection frameworks for identifying cost spikes, billing irregularities, and attribution errors
+- CI/CD pipeline integration for FinOps policy enforcement and automation deployment
 
 **Working Knowledge required:**
 
-- Cloud architecture principles across AWS, Azure, and GCP for evaluating the cost impact of design decisions, Machine learning concepts and tooling for cloud cost forecasting and anomaly prediction models
+- Cloud architecture principles across AWS, Azure, and GCP for evaluating the cost impact of design decisions
+- Machine learning concepts and tooling for cloud cost forecasting and anomaly prediction models
 
 **Awareness level expected:**
 

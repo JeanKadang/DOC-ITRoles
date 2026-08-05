@@ -96,7 +96,9 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 
 **Working Knowledge required:**
 
-- Istio and Envoy service mesh fault injection, GitHub Actions and Azure DevOps for CI chaos pipeline integration, Python, Go, and Bash for experiment automation and tooling
+- Istio and Envoy service mesh fault injection
+- GitHub Actions and Azure DevOps for CI chaos pipeline integration
+- Python, Go, and Bash for experiment automation and tooling
 
 **Awareness level expected:**
 

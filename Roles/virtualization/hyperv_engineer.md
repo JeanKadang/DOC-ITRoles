@@ -81,11 +81,17 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 
 **Expert level required:**
 
-- Microsoft Hyper-V host configuration, virtual machine provisioning, and lifecycle management, System Center Virtual Machine Manager (SCVMM) for VM operations and cluster management, Windows Server administration and update management with WSUS, PowerShell scripting for Hyper-V management and routine automation
+- Microsoft Hyper-V host configuration, virtual machine provisioning, and lifecycle management
+- System Center Virtual Machine Manager (SCVMM) for VM operations and cluster management
+- Windows Server administration and update management with WSUS
+- PowerShell scripting for Hyper-V management and routine automation
 
 **Proficient level required:**
 
-- Windows Server Failover Clustering and Hyper-V high availability configuration, Hyper-V Replica setup, configuration, and recovery procedure testing, Storage Spaces Direct (S2D) and Cluster Shared Volumes (CSV) management, Windows Admin Center for remote server and VM management
+- Windows Server Failover Clustering and Hyper-V high availability configuration
+- Hyper-V Replica setup, configuration, and recovery procedure testing
+- Storage Spaces Direct (S2D) and Cluster Shared Volumes (CSV) management
+- Windows Admin Center for remote server and VM management
 
 **Working Knowledge required:**
 

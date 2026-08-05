@@ -84,11 +84,17 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 
 **Expert level required:**
 
-- Prometheus, Grafana, and Alertmanager for SLO instrumentation, error budget burn-rate alerting, and reliability dashboards, Kubernetes (Helm, Kustomize) for cluster reliability operations and resource management, OpenTelemetry for distributed tracing and multi-signal observability, SLO/SLI/SLA framework design and error budget policy implementation for business-critical services
+- Prometheus, Grafana, and Alertmanager for SLO instrumentation, error budget burn-rate alerting, and reliability dashboards
+- Kubernetes (Helm, Kustomize) for cluster reliability operations and resource management
+- OpenTelemetry for distributed tracing and multi-signal observability
+- SLO/SLI/SLA framework design and error budget policy implementation for business-critical services
 
 **Proficient level required:**
 
-- LitmusChaos, Chaos Mesh, and AWS FIS for chaos engineering experiment design and execution, PagerDuty and OpsGenie for on-call programme management and incident routing, k6 and Locust for load testing, capacity validation, and traffic modelling, Python and Go for SRE tooling development and runbook automation
+- LitmusChaos, Chaos Mesh, and AWS FIS for chaos engineering experiment design and execution
+- PagerDuty and OpsGenie for on-call programme management and incident routing
+- k6 and Locust for load testing, capacity validation, and traffic modelling
+- Python and Go for SRE tooling development and runbook automation
 
 **Working Knowledge required:**
 

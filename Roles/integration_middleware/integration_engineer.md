@@ -81,7 +81,9 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 
 **Proficient level required:**
 
-- Message routing, transformation, and error handling within integration platforms, SFTP file exchange and scheduled file processing patterns, Postman (API testing and integration validation)
+- Message routing, transformation, and error handling within integration platforms
+- SFTP file exchange and scheduled file processing patterns
+- Postman (API testing and integration validation)
 
 **Working Knowledge required:**
 

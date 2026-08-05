@@ -67,7 +67,10 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 **Expert level required:**
 
-- Kubernetes and container orchestration for platform component deployment and operations, CI/CD pipeline tools (GitHub Actions, GitLab CI, Jenkins) for developer self-service automation, Infrastructure as Code (Terraform, Pulumi) for platform component provisioning, Backstage or similar developer portal configuration, plugin management, and service catalog templates
+- Kubernetes and container orchestration for platform component deployment and operations
+- CI/CD pipeline tools (GitHub Actions, GitLab CI, Jenkins) for developer self-service automation
+- Infrastructure as Code (Terraform, Pulumi) for platform component provisioning
+- Backstage or similar developer portal configuration, plugin management, and service catalog templates
 
 **Proficient level required:**
 

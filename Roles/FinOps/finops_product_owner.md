@@ -68,7 +68,9 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 
 **Expert level required:**
 
-- Agile product ownership tools (Jira, Confluence) for FinOps backlog management, roadmap tracking, and sprint ceremonies, FinOps Foundation Framework and methodology for cloud financial accountability governance and maturity assessment, Stakeholder reporting and communication platforms (Power BI, Microsoft Teams) for cloud cost transparency and executive briefings
+- Agile product ownership tools (Jira, Confluence) for FinOps backlog management, roadmap tracking, and sprint ceremonies
+- FinOps Foundation Framework and methodology for cloud financial accountability governance and maturity assessment
+- Stakeholder reporting and communication platforms (Power BI, Microsoft Teams) for cloud cost transparency and executive briefings
 
 **Proficient level required:**
 

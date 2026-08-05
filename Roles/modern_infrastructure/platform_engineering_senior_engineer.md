@@ -67,11 +67,17 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 
 **Expert level required:**
 
-- Backstage IDP framework including plugin development, software catalog, and scaffolding templates, Kubernetes and container orchestration for complex internal platform workloads, Terraform and Pulumi for advanced IaC automation and platform self-service provisioning, GitHub Actions and GitLab CI for CI/CD template design and golden path governance
+- Backstage IDP framework including plugin development, software catalog, and scaffolding templates
+- Kubernetes and container orchestration for complex internal platform workloads
+- Terraform and Pulumi for advanced IaC automation and platform self-service provisioning
+- GitHub Actions and GitLab CI for CI/CD template design and golden path governance
 
 **Proficient level required:**
 
-- Service mesh technologies (Istio, Linkerd) for platform-level traffic management and observability, Policy engines (OPA, Kyverno) for platform governance and Kubernetes admission control, ArgoCD and Flux for GitOps platform delivery and progressive rollouts, Helm, Kustomize, and Crossplane for Kubernetes workload management
+- Service mesh technologies (Istio, Linkerd) for platform-level traffic management and observability
+- Policy engines (OPA, Kyverno) for platform governance and Kubernetes admission control
+- ArgoCD and Flux for GitOps platform delivery and progressive rollouts
+- Helm, Kustomize, and Crossplane for Kubernetes workload management
 
 **Working Knowledge required:**
 

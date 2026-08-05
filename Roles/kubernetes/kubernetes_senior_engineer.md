@@ -76,7 +76,10 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 
 **Expert level required:**
 
-- Advanced Kubernetes (CRDs, Operators, admission controllers, API extension mechanisms), Service mesh implementations (Istio, Linkerd, Consul) for traffic management, mTLS, and observability, GitOps tools (ArgoCD, Flux, Fleet) for declarative multi-cluster management, Policy engines (OPA/Gatekeeper, Kyverno) for admission control and governance enforcement
+- Advanced Kubernetes (CRDs, Operators, admission controllers, API extension mechanisms)
+- Service mesh implementations (Istio, Linkerd, Consul) for traffic management, mTLS, and observability
+- GitOps tools (ArgoCD, Flux, Fleet) for declarative multi-cluster management
+- Policy engines (OPA/Gatekeeper, Kyverno) for admission control and governance enforcement
 
 **Proficient level required:**
 

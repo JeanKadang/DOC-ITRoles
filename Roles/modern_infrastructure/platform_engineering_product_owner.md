@@ -67,7 +67,10 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 **Expert level required:**
 
-- Backstage or similar IDP portal at product management and strategic roadmap level, Jira and Confluence for backlog management, sprint planning, and engineering team ceremonies, , NIST CSF metrics and developer productivity measurement frameworks (deployment frequency, lead time, change failure rate), Developer satisfaction measurement (NPS surveys, SPACE framework analytics)
+- Backstage or similar IDP portal at product management and strategic roadmap level
+- Jira and Confluence for backlog management, sprint planning, and engineering team ceremonies
+- NIST CSF metrics and developer productivity measurement frameworks (deployment frequency, lead time, change failure rate)
+- Developer satisfaction measurement (NPS surveys, SPACE framework analytics)
 
 **Proficient level required:**
 

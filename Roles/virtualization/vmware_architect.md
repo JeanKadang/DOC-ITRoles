@@ -74,11 +74,17 @@ The VMware Architect designs and oversees the organization's virtualization infr
 
 **Expert level required:**
 
-- VMware vSphere (ESXi, vCenter Server) architecture and SDDC design patterns, VMware NSX-T software-defined networking and microsegmentation architecture, VMware vSAN storage design, performance optimisation, and policy management, VMware Cloud Foundation (VCF) platform architecture and lifecycle management
+- VMware vSphere (ESXi, vCenter Server) architecture and SDDC design patterns
+- VMware NSX-T software-defined networking and microsegmentation architecture
+- VMware vSAN storage design, performance optimisation, and policy management
+- VMware Cloud Foundation (VCF) platform architecture and lifecycle management
 
 **Proficient level required:**
 
-- VMware vRealize Suite and Aria Suite for automation, operations, and lifecycle management, VMware Site Recovery Manager (SRM) and vSphere Replication for DR architecture, VMware Horizon VDI platform architecture and design, VMware HCX for workload mobility and cloud migration
+- VMware vRealize Suite and Aria Suite for automation, operations, and lifecycle management
+- VMware Site Recovery Manager (SRM) and vSphere Replication for DR architecture
+- VMware Horizon VDI platform architecture and design
+- VMware HCX for workload mobility and cloud migration
 
 **Working Knowledge required:**
 

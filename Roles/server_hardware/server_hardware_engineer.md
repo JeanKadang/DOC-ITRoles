@@ -80,7 +80,9 @@ The Server Hardware Engineer implements and maintains the physical server infras
 
 **Proficient level required:**
 
-- Server firmware and driver management, hardware diagnostics utilities, rack, power, and cooling solutions
+- Server firmware and driver management
+- hardware diagnostics utilities
+- rack, power, and cooling solutions
 
 **Working Knowledge required:**
 

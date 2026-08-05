@@ -79,7 +79,9 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 
 **Working Knowledge required:**
 
-- HTML, CSS, and JavaScript (basic web development context), .NET CLI and MSBuild (build tooling and project management), dependency injection patterns in .NET applications
+- HTML, CSS, and JavaScript (basic web development context)
+- .NET CLI and MSBuild (build tooling and project management)
+- dependency injection patterns in .NET applications
 
 **Awareness level expected:**
 

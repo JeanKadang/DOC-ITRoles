@@ -66,11 +66,15 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 **Expert level required:**
 
-- Agile product ownership tools (Jira, Confluence, Azure Boards) for Azure platform backlog, sprint planning, and roadmap tracking, FinOps Foundation Framework and Azure Cost Management for cloud financial accountability and cost governance, Microsoft Azure service portfolio and Azure Cloud Adoption Framework (CAF) for strategic roadmap planning and modernisation prioritisation
+- Agile product ownership tools (Jira, Confluence, Azure Boards) for Azure platform backlog, sprint planning, and roadmap tracking
+- FinOps Foundation Framework and Azure Cost Management for cloud financial accountability and cost governance
+- Microsoft Azure service portfolio and Azure Cloud Adoption Framework (CAF) for strategic roadmap planning and modernisation prioritisation
 
 **Proficient level required:**
 
-- Azure Cost Management, Azure Advisor, and Azure Budgets for cost visibility, governance decisions, and optimisation priority-setting, Power BI and Azure cost dashboards for platform performance reporting and stakeholder communication, Azure landing zone design and subscription governance concepts for informing product scope and compliance decisions
+- Azure Cost Management, Azure Advisor, and Azure Budgets for cost visibility, governance decisions, and optimisation priority-setting
+- Power BI and Azure cost dashboards for platform performance reporting and stakeholder communication
+- Azure landing zone design and subscription governance concepts for informing product scope and compliance decisions
 
 **Working Knowledge required:**
 

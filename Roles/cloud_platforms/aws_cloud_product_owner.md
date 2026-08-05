@@ -66,11 +66,15 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 **Expert level required:**
 
-- Agile product ownership tools (Jira, Confluence) for AWS platform backlog, sprint ceremonies, and roadmap management, FinOps Foundation Framework for cloud financial accountability, cost governance, and chargeback prioritisation, AWS service portfolio and AWS Cloud Adoption Framework for strategic roadmap planning and adoption sequencing
+- Agile product ownership tools (Jira, Confluence) for AWS platform backlog, sprint ceremonies, and roadmap management
+- FinOps Foundation Framework for cloud financial accountability, cost governance, and chargeback prioritisation
+- AWS service portfolio and AWS Cloud Adoption Framework for strategic roadmap planning and adoption sequencing
 
 **Proficient level required:**
 
-- AWS Cost Explorer, AWS Budgets, and Cost and Usage Report (CUR) for cost visibility, anomaly awareness, and governance decisions, Power BI or Tableau for cloud platform performance dashboards and stakeholder reporting, AWS Control Tower and multi-account governance concepts for product scope and compliance decision-making
+- AWS Cost Explorer, AWS Budgets, and Cost and Usage Report (CUR) for cost visibility, anomaly awareness, and governance decisions
+- Power BI or Tableau for cloud platform performance dashboards and stakeholder reporting
+- AWS Control Tower and multi-account governance concepts for product scope and compliance decision-making
 
 **Working Knowledge required:**
 

@@ -74,7 +74,10 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 
 **Expert level required:**
 
-- VMware vSphere (ESXi 7.0/8.0, vCenter Server) at advanced configuration, cluster design, and performance optimisation level, VMware vSAN storage design, deduplication, compression, and performance tuning, VMware NSX-T software-defined networking and microsegmentation implementation, PowerCLI scripting and automation for vSphere operational management and bulk tasks
+- VMware vSphere (ESXi 7.0/8.0, vCenter Server) at advanced configuration, cluster design, and performance optimisation level
+- VMware vSAN storage design, deduplication, compression, and performance tuning
+- VMware NSX-T software-defined networking and microsegmentation implementation
+- PowerCLI scripting and automation for vSphere operational management and bulk tasks
 
 **Proficient level required:**
 

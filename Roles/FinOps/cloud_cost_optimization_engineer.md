@@ -69,11 +69,16 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 
 **Expert level required:**
 
-- AWS Cost Explorer and Cost and Usage Report (CUR) for detailed billing analysis and waste identification, Azure Cost Management and Azure Advisor for rightsizing recommendations and anomaly investigation, Reserved instance, savings plan, and committed use discount mechanics across AWS, Azure, and GCP, Cloud resource tagging policy enforcement and non-compliant resource remediation workflows
+- AWS Cost Explorer and Cost and Usage Report (CUR) for detailed billing analysis and waste identification
+- Azure Cost Management and Azure Advisor for rightsizing recommendations and anomaly investigation
+- Reserved instance, savings plan, and committed use discount mechanics across AWS, Azure, and GCP
+- Cloud resource tagging policy enforcement and non-compliant resource remediation workflows
 
 **Proficient level required:**
 
-- Multi-cloud cost management platforms (CloudHealth by VMware, Apptio Cloudability) for consolidated waste and coverage reporting, Python and PowerShell scripting for idle resource cleanup, tagging remediation, and optimisation automation, Spot instance platforms (Spot.io Elastigroup/Ocean) for cost-efficient workload scheduling and interruption management
+- Multi-cloud cost management platforms (CloudHealth by VMware, Apptio Cloudability) for consolidated waste and coverage reporting
+- Python and PowerShell scripting for idle resource cleanup, tagging remediation, and optimisation automation
+- Spot instance platforms (Spot.io Elastigroup/Ocean) for cost-efficient workload scheduling and interruption management
 
 **Working Knowledge required:**
 

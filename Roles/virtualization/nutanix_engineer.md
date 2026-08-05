@@ -74,7 +74,10 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 
 **Expert level required:**
 
-- Nutanix AOS and AHV hypervisor for day-to-day cluster operations and maintenance, Nutanix Prism Element and Prism Central for VM provisioning, monitoring, and cluster management, Nutanix Foundation for node imaging and cluster deployment procedures, VM provisioning, template management, and storage container configuration
+- Nutanix AOS and AHV hypervisor for day-to-day cluster operations and maintenance
+- Nutanix Prism Element and Prism Central for VM provisioning, monitoring, and cluster management
+- Nutanix Foundation for node imaging and cluster deployment procedures
+- VM provisioning, template management, and storage container configuration
 
 **Proficient level required:**
 

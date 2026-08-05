@@ -66,7 +66,10 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 
 **Expert level required:**
 
-- Nutanix AOS and AHV hypervisor at advanced configuration, performance tuning, and cluster optimisation level, Nutanix Prism Central multi-cluster management, automation, and advanced policy design, Nutanix Flow network security advanced microsegmentation and policy design, Nutanix Calm blueprint development and application lifecycle automation
+- Nutanix AOS and AHV hypervisor at advanced configuration, performance tuning, and cluster optimisation level
+- Nutanix Prism Central multi-cluster management, automation, and advanced policy design
+- Nutanix Flow network security advanced microsegmentation and policy design
+- Nutanix Calm blueprint development and application lifecycle automation
 
 **Proficient level required:**
 
