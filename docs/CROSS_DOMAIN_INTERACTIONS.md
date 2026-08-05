@@ -30,6 +30,7 @@ The table below records which domain holds primary decision-making authority ove
 | Automation framework and reusable tooling standards (cross-domain) | DevOps (Automation Framework Engineer) | Infrastructure Automation Architect, Network Automation Architect, Security Automation Engineer |
 | Site reliability engineering practice and SLO/error-budget methodology | Modern Infrastructure (Site Reliability Engineer / Senior SRE) | DevOps, Database Management, Data Protection |
 | Service desk support model, staffing, and Tier-1/2/3 escalation boundaries | Service Desk (Service Desk Lead) | Client Platform, Endpoint Management, Modern Workplace, Service Management |
+| Testing standards, coverage expectations, and estate-wide quality gates | Quality Engineering | DevOps, App Platforms, Security, Data Engineering |
 | Hypervisor platform selection and virtual infrastructure standards | Virtualization | Server Hardware, Network, Data Management, Security |
 | Physical server platform, capacity, and refresh strategy | Server Hardware | Virtualization, Specialized Computing, Data Management, Network |
 | HPE-specific server tooling and firmware baselines (OneView, iLO) | HPE Server Hardware | Server Hardware, Network, Specialized Computing |
@@ -60,6 +61,9 @@ The pairs below represent the most frequent and consequential collaboration rela
 - **Service Management ↔ Data Protection** — major-incident coordination vs recovery execution: the Major Incident Manager runs the incident bridge and communications; the BC/DR Manager owns recovery plans, BIA coverage, and DR test governance; the affected service's engineers execute the technical recovery
 - **Data Management ↔ Security** — classification vs enforcement: the Data Governance Lead defines the classification scheme and data catalogue; Security implements the enforcing controls (DLP, access policy); the Data Privacy Officer sets the privacy requirements both must satisfy for personal data
 - **Service Management ↔ FinOps** — license and contract inputs to cloud cost governance: the Vendor / Supplier / IT Asset Manager provides the contract register, license entitlements, and renewal pipeline that FinOps consumes for commitment and cost optimisation decisions
+- **Quality Engineering ↔ DevOps** — quality gates live inside the delivery pipeline, so the two must be designed together: Quality Engineering decides what must pass and DevOps owns the platform it runs on. Splitting them is what produces gates teams route around
+- **Quality Engineering ↔ Security** — quality and security gates share a pipeline and a time budget; the split is that DevSecOps owns threat coverage and testing depth while Quality Engineering owns where the gate sits and what blocks a merge
+- **Quality Engineering ↔ App Platforms** — testability of application architecture: contract testing between services, and pushing back on designs that can only be verified in production
 - **Virtualization ↔ Server Hardware** — node specifications for hypervisor clusters (Nutanix, vSphere, Hyper-V hosts), firmware/HCL compatibility, and capacity planning for the physical estate the virtual platform runs on
 - **Virtualization ↔ Network** — virtual switching and overlay networking (NSX, distributed switches), east-west traffic design, and connectivity requirements for cluster and vMotion/live-migration traffic
 - **Virtualization ↔ Data Management** — virtual storage design: datastore and container layout, storage policy-based management, and the interaction between hypervisor-level and array-level protection

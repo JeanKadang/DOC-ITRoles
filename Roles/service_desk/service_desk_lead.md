@@ -6,7 +6,7 @@
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
 | **Reports To** | End User & Workplace Chapter Lead |
-| **Direct Reports** | Service Desk Senior Analysts, Service Desk Analysts |
+| **Direct Reports** | Service Desk Senior Analysts, Service Desk Analysts (full line management, including hiring and career progression — a deliberate exception to the catalogue's usual model, see Role Scope & Boundaries) |
 | **Last Reviewed** | 2026-07 |
 
 ---
@@ -22,6 +22,7 @@ The Service Desk Lead owns the service desk as an operational function: staffing
 - **Out of Scope:** Does not own OS, endpoint, identity, or security engineering standards (owned by the respective domain architects); does not own the ITSM platform's technical architecture (owned by Service Management / ITSM Configuration, though this role owns how the desk uses it day-to-day); does not declare major incidents (owned by the Major Incident Manager, though this role owns the desk's detection-and-escalation path into that process).
 - **Escalates To:** End User & Workplace Chapter Lead (for staffing budget, cross-domain escalation disputes, or SLA target changes requiring chapter-level sign-off).
 - **Escalated To By:** Service Desk Senior Analysts (for recurring issues needing a process or standard-change fix, not just a ticket fix, and for staffing/coverage gaps).
+- **People-management exception:** across the rest of the catalogue, Senior Engineers provide day-to-day technical guidance while formal line management sits with the Chapter Lead. The Service Desk Lead is the deliberate exception and holds line management directly — hiring, onboarding and career progression for Analysts and Senior Analysts. The desk runs a shift rota with its own progression ladder and a headcount model driven by ticket volume rather than project demand, none of which a Chapter Lead one level removed can staff in real time. Confirmed as intentional rather than drift when the catalogue's management model was reviewed (#148).
 
 ## Business Impact
 
