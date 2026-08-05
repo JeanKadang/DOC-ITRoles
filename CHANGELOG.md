@@ -7,6 +7,70 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.10.0] - 2026-08-05
+
+Content coverage: the relationship graph now shows the whole catalogue,
+edge computing reaches the roles that implement it, and the review-history
+document stops competing with the issue tracker. Plus a recently-viewed
+list.
+
+### Added
+
+- **Recently viewed (#117).** Navigation history was a single linear Back
+  stack, so returning to a role seen a few minutes ago meant finding it
+  again — and Compare actively encourages visiting several in sequence.
+  The last ten roles now appear on the welcome screen, newest first,
+  persisted across sessions. Revisiting a role moves it to the front
+  rather than duplicating it, and the block stays hidden until there is
+  history. Storage is treated as hostile: `localStorage` *throws* rather
+  than returning null when unavailable (private mode, disabled site data,
+  full quota), and its contents are user-writable and outlive the version
+  that wrote them, so every access is guarded and stored history is
+  sanitised on load rather than trusted.
+- **Edge computing coverage across the remaining Modern Infrastructure and
+  Specialized Computing roles (#150).** The March review added edge at
+  architect level and never carried it down, so ten roles were expected to
+  implement, operate or prioritise something their own role file never
+  mentioned. Thirteen roles gained a responsibility and matching
+  technologies, written per role: engineers got operational detail (local
+  buffering for intermittent links, model rollout across edge fleets),
+  senior engineers the design slice (what an SLO means when a site is
+  unreachable but healthy), product owners roadmap framing without tooling
+  depth. Every role in both domains now has coverage.
+
+### Fixed
+
+- **The Domain Relationship Graph showed 22 of 33 domains (#125).** It is
+  built from `CROSS_DOMAIN_INTERACTIONS.md`, which never named the other
+  eleven — including Virtualization (12 roles) and Security Cross-Platform
+  (6) — so a reader got a picture silently missing a third of the
+  catalogue. Entries were derived from those domains' own 377 existing
+  interaction rows rather than invented. Graph nodes 27 → 38, links → 81,
+  accessible list fallback 123 → 207 entries. Two drift guards were added
+  and **verified to fail** when a domain is removed or renamed, rather than
+  assumed to work.
+
+### Changed
+
+- **`improvements_and_recommendations.md` retired to a review-history note
+  (#123).** A 509-line second source of truth that had drifted: it claimed
+  "216 roles across 32 domains" in four places against an actual 222 across
+  33, three items marked open were already complete, and its live items sat
+  invisible at lines 54–279. Triaged before replacing — the three completed
+  items were verified against the repository, and the five genuinely open
+  ones became #148, #149, #150 and #151. The four-cycle review narrative
+  was kept, since CHANGELOG records what shipped but not why each cycle
+  happened. 509 lines → 48.
+
+### Testing
+
+Suite grown **154 → 161**. One of the new tests exists because driving the
+browser caught a bug the green suite missed: `loadRecent()` sanitises stored
+history by calling `pushRecent(stored, null)`, and the early return for a
+missing entry handed the raw list back unfiltered, so a stored `null`
+crashed the renderer. The unit test covering junk entries passed only
+because it supplied a valid entry, taking the other branch.
+
 ## [1.9.0] - 2026-08-04
 
 Sidebar filtering, the mechanical half of the role-content normalisation,
