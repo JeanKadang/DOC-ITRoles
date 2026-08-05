@@ -30,6 +30,17 @@ The table below records which domain holds primary decision-making authority ove
 | Automation framework and reusable tooling standards (cross-domain) | DevOps (Automation Framework Engineer) | Infrastructure Automation Architect, Network Automation Architect, Security Automation Engineer |
 | Site reliability engineering practice and SLO/error-budget methodology | Modern Infrastructure (Site Reliability Engineer / Senior SRE) | DevOps, Database Management, Data Protection |
 | Service desk support model, staffing, and Tier-1/2/3 escalation boundaries | Service Desk (Service Desk Lead) | Client Platform, Endpoint Management, Modern Workplace, Service Management |
+| Hypervisor platform selection and virtual infrastructure standards | Virtualization | Server Hardware, Network, Data Management, Security |
+| Physical server platform, capacity, and refresh strategy | Server Hardware | Virtualization, Specialized Computing, Data Management, Network |
+| HPE-specific server tooling and firmware baselines (OneView, iLO) | HPE Server Hardware | Server Hardware, Network, Specialized Computing |
+| Linux OS build standards, hardening baselines, and patching cadence | Linux Server OS | Security, Kubernetes, Database Management, Specialized Computing |
+| Windows Server OS build standards, hardening baselines, and patching cadence | Windows Server OS | Security, Directory Services, Cloud Platforms, Server Hardware |
+| HPC and specialised compute (GPU, research computing) platform design | Specialized Computing | Server Hardware, Linux Server OS, Network, Data Management |
+| Cloud security posture management and cross-platform guardrails | Security Cross-Platform | Security, DevOps, Cloud Platforms, Kubernetes |
+| CMDB structure, configuration item model, and service catalogue design | ITSM & Configuration | Service Management, DevOps, Security, Enterprise Architecture |
+| Infrastructure onboarding pathway and platform intake standards | Infrastructure Onboarding | DevOps, Enterprise Architecture, ITSM & Configuration, Security Cross-Platform |
+| Chapter structure, technical career framework, and engineering practice standards | Leadership | Enterprise Architecture, all chapters |
+| Enterprise technology strategy, IT investment, and risk appetite | C-Suite | Leadership, Enterprise Architecture, Security & Identity |
 
 ## Key cross-domain relationships
 
@@ -49,6 +60,21 @@ The pairs below represent the most frequent and consequential collaboration rela
 - **Service Management ↔ Data Protection** — major-incident coordination vs recovery execution: the Major Incident Manager runs the incident bridge and communications; the BC/DR Manager owns recovery plans, BIA coverage, and DR test governance; the affected service's engineers execute the technical recovery
 - **Data Management ↔ Security** — classification vs enforcement: the Data Governance Lead defines the classification scheme and data catalogue; Security implements the enforcing controls (DLP, access policy); the Data Privacy Officer sets the privacy requirements both must satisfy for personal data
 - **Service Management ↔ FinOps** — license and contract inputs to cloud cost governance: the Vendor / Supplier / IT Asset Manager provides the contract register, license entitlements, and renewal pipeline that FinOps consumes for commitment and cost optimisation decisions
+- **Virtualization ↔ Server Hardware** — node specifications for hypervisor clusters (Nutanix, vSphere, Hyper-V hosts), firmware/HCL compatibility, and capacity planning for the physical estate the virtual platform runs on
+- **Virtualization ↔ Network** — virtual switching and overlay networking (NSX, distributed switches), east-west traffic design, and connectivity requirements for cluster and vMotion/live-migration traffic
+- **Virtualization ↔ Data Management** — virtual storage design: datastore and container layout, storage policy-based management, and the interaction between hypervisor-level and array-level protection
+- **Server Hardware ↔ Specialized Computing** — HPC and GPU node selection, high-density rack power and cooling constraints, and interconnect (InfiniBand/RoCE) requirements the standard server platform does not cover
+- **Linux Server OS ↔ Kubernetes** — container host configuration: kernel and runtime tuning, host hardening for worker nodes, and the boundary between OS-level patching and cluster node lifecycle
+- **Windows Server OS ↔ Directory Services** — domain-joined server build standards, Group Policy scope for server workloads, and the split between OS hardening baselines and directory-enforced policy
+- **Security Cross-Platform ↔ DevOps** — shift-left posture management: surfacing CSPM and compliance-as-code checks inside CI/CD pipelines so misconfiguration is caught before deployment rather than detected in production
+- **Security Cross-Platform ↔ Security** — scope split: Security owns organisation-wide policy, threat modelling and the control framework; Security Cross-Platform owns the posture tooling and automated enforcement that implements it across cloud and platform estates
+- **ITSM & Configuration ↔ Service Management** — tooling versus process: ITSM & Configuration owns the platform build, CMDB model and integrations; Service Management owns the process design, SLAs and governance those capabilities serve
+- **Infrastructure Onboarding ↔ DevOps** — pipeline integration for platform intake: onboarding standards expressed as reusable pipeline stages and templates rather than manual gates
+- **Infrastructure Onboarding ↔ ITSM & Configuration** — service catalogue design for onboarding requests, and ensuring newly onboarded infrastructure registers correctly as configuration items
+- **HPE Server Hardware ↔ Server Hardware** — vendor-specific depth within the general platform: HPE OneView/iLO tooling, firmware baselines and support entitlements operating inside the hardware standards the broader domain sets
+- **Leadership ↔ Enterprise Architecture** — chapter leads and architects jointly own how architecture principles reach delivery teams: EA sets the standards, chapter leadership owns capability, staffing and adoption within each chapter
+- **C-Suite ↔ Leadership** — strategy to delivery: the C-Suite sets technology direction, investment envelope and risk appetite; SVP/TAL/PAL and chapter leads translate those into structure, headcount and roadmaps
+- **C-Suite ↔ Security & Identity** — the CISO's dual line: security strategy and risk reporting run to the CEO/Board where governance independence requires it, while day-to-day security delivery sits with the Security & Identity chapter
 
 ## Security domain scope clarification
 
