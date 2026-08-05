@@ -1,6 +1,6 @@
 {
   "name": "roles-master",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Portable role definition library and web viewer for infrastructure and platform engineering teams",
   "private": true,
   "license": "UNLICENSED",
