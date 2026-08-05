@@ -7,6 +7,84 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.9.0] - 2026-08-04
+
+Sidebar filtering, the mechanical half of the role-content normalisation,
+and two corrections to earlier work.
+
+### Added
+
+- **Filter the sidebar by level (#115).** Chips above the tree narrow it by
+  role level and combine with the text query rather than replacing it.
+  Reference docs carry no level, so a level filter hides them instead of
+  matching everything.
+- **The welcome stat tiles are navigation (#116).** The eight level tiles
+  set the filter and, on narrow viewports, open the drawer so the result
+  is visible. A tile means "show me these", so it sets rather than
+  toggles — clicking two in a row does not leave both applied. The three
+  summary tiles have nothing to filter by and stay inert.
+- **Onboarding templates have their own sidebar group (#144).** The
+  Resources list mixed read-only references describing the catalogue with
+  templates you copy and fill in for a specific person; listing them
+  identically made the templates easy to miss. Grouping is data-driven, so
+  the onboarding group is somewhere new material gets added — 30/60/90
+  plans, buddy checklists, per-chapter variants.
+
+### Fixed
+
+- **The Executives tile undercounted by one (#141).** It summed
+  `CEO+CTO+CIO+SVP+CISO` and reported 5 of 6; CFO was missing. This is the
+  third bug of that shape after #18 and #46, all of them a hand-maintained
+  level list nobody extended. Rather than adding CFO to a fourth list, the
+  tiles are generated from a shared `STAT_GROUPS`, and tests assert every
+  canonical level sits in exactly one group and that the groups account for
+  the whole catalogue. The level tiles now sum to 222.
+- **Search says what it did (#114).** The sidebar reports `49 of 222 roles
+  matching "aws" at Architect` whenever a filter is active, and the empty
+  state names which constraint excluded everything. Two real defects sat
+  behind this: chapter counts summed *unfiltered* totals, so a filtered
+  chapter advertised more roles than it listed; and the content search was
+  silent in three distinguishable states — no matches, request in flight,
+  and request failed all rendered as nothing.
+- **Reference sections no longer render smaller than the rest (#143).**
+  1.8.0 de-emphasised Key Technologies, Remote Work Considerations and
+  Recommended Certifications with a muted heading *and* a 0.95em size on
+  the whole section, which shrank their body copy. Three sections out of
+  thirteen rendering smaller read as a rendering fault rather than as
+  hierarchy. Reverted; sections already collapse by default and the section
+  nav handles navigation. The Owns / Advises On emphasis from the same
+  release is kept.
+
+### Changed
+
+- **Section headings normalised to one spelling each (#122).** The
+  validator accepted several historical spellings so a genuinely missing
+  section was reported rather than a cosmetic difference, and that
+  permissiveness is why the catalogue drifted. 207 files touched: 203
+  `Key Decisions and Accountabilities`, 67 bare `Required Skills`, 4
+  `Key Technologies & Platforms`/`& Tools`, 1 stray `and` on
+  Certifications. A further 27 files carried `## Qualifications` as a
+  *sibling* section, which the template folds into Required Skills &
+  Qualifications — in every one it already sat directly beneath, so
+  demoting it to `###` placed it inside the canonical section without
+  moving a line of content.
+- **Technology Proficiency levels use the template's sub-heading form
+  (#122).** 191 files folded each tier into a single inline bullet.
+  Splitting is not uniformly safe: 653 lines are flat tool lists and split
+  cleanly, but 73 are grouped capability phrases using Oxford commas where
+  a split yields fragments like `and route table configuration`. Those are
+  kept verbatim and tracked in #138. Splitting is paren-aware throughout.
+  Every one of the 191 files was verified to have an identical word
+  multiset before and after — structure changed, content did not.
+
+Validator warnings across the catalogue: **610 → 200**. All remaining are
+the KPI-table class, which is not a formatting problem and needs real
+organisational targets — tracked in #140.
+
+### Testing
+
+Suite grown **143 → 152**.
+
 ## [1.8.0] - 2026-08-04
 
 A viewer-quality release: role documents became navigable rather than a
