@@ -66,7 +66,10 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 **Expert level required:**
 
-- Azure Virtual Machines, VM Scale Sets, and compute services management, Azure Virtual Networks, subnets, NSGs, and route table configuration, Microsoft Entra ID and Azure RBAC for identity and access management, ARM Templates and Bicep for infrastructure deployment
+- Azure Virtual Machines, VM Scale Sets, and compute services management
+- Azure Virtual Networks, subnets, NSGs, and route table configuration
+- Microsoft Entra ID and Azure RBAC for identity and access management
+- ARM Templates and Bicep for infrastructure deployment
 
 **Proficient level required:**
 

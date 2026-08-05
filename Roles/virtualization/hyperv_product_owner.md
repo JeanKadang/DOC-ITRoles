@@ -81,7 +81,10 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 
 **Expert level required:**
 
-- Microsoft Hyper-V platform capabilities and Windows Server licensing models for product governance, Jira and Confluence for agile backlog management, sprint planning, and roadmap communication, Azure Stack HCI platform roadmap and infrastructure investment strategy, Windows Server Datacenter and Standard licensing governance and cost optimisation
+- Microsoft Hyper-V platform capabilities and Windows Server licensing models for product governance
+- Jira and Confluence for agile backlog management, sprint planning, and roadmap communication
+- Azure Stack HCI platform roadmap and infrastructure investment strategy
+- Windows Server Datacenter and Standard licensing governance and cost optimisation
 
 **Proficient level required:**
 

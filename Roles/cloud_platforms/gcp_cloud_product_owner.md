@@ -66,11 +66,15 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 
 **Expert level required:**
 
-- Agile product ownership tools (Jira, Confluence) for GCP platform backlog, sprint ceremonies, and roadmap management, FinOps Foundation Framework and GCP Billing Console for cloud financial accountability, cost governance, and optimisation prioritisation, GCP service portfolio (Compute Engine, GKE, BigQuery, data analytics, AI) for strategic roadmap planning and adoption sequencing
+- Agile product ownership tools (Jira, Confluence) for GCP platform backlog, sprint ceremonies, and roadmap management
+- FinOps Foundation Framework and GCP Billing Console for cloud financial accountability, cost governance, and optimisation prioritisation
+- GCP service portfolio (Compute Engine, GKE, BigQuery, data analytics, AI) for strategic roadmap planning and adoption sequencing
 
 **Proficient level required:**
 
-- GCP Billing Console, Budget Alerts, and GCP Recommender for cost governance, anomaly awareness, and optimisation priority-setting, Power BI, Looker Studio, or Tableau for cloud platform performance dashboards and stakeholder reporting, GCP organization hierarchy and project governance for product scope and compliance decision-making
+- GCP Billing Console, Budget Alerts, and GCP Recommender for cost governance, anomaly awareness, and optimisation priority-setting
+- Power BI, Looker Studio, or Tableau for cloud platform performance dashboards and stakeholder reporting
+- GCP organization hierarchy and project governance for product scope and compliance decision-making
 
 **Working Knowledge required:**
 

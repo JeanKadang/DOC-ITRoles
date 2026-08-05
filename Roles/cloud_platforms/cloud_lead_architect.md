@@ -68,7 +68,9 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 
 **Expert level required:**
 
-- Azure, AWS, and GCP architecture governance frameworks (CAF, WAF, AWS Well-Architected, GCP Architecture Framework), Cloud governance platforms (Azure Policy, AWS Service Control Policies, GCP Organization Policy Service), CSPM tooling (Microsoft Defender for Cloud, AWS Security Hub, GCP Security Command Center)
+- Azure, AWS, and GCP architecture governance frameworks (CAF, WAF, AWS Well-Architected, GCP Architecture Framework)
+- Cloud governance platforms (Azure Policy, AWS Service Control Policies, GCP Organization Policy Service)
+- CSPM tooling (Microsoft Defender for Cloud, AWS Security Hub, GCP Security Command Center)
 
 **Proficient level required:**
 

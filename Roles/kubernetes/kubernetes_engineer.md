@@ -82,7 +82,9 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 
 **Proficient level required:**
 
-- Kubernetes storage (PersistentVolumes, PVCs, CSI drivers, StorageClasses), Prometheus and Grafana for cluster monitoring, alerting, and dashboards, Kubernetes security (Pod Security Standards, RBAC, Secrets management, image scanning)
+- Kubernetes storage (PersistentVolumes, PVCs, CSI drivers, StorageClasses)
+- Prometheus and Grafana for cluster monitoring, alerting, and dashboards
+- Kubernetes security (Pod Security Standards, RBAC, Secrets management, image scanning)
 
 **Working Knowledge required:**
 

@@ -71,7 +71,10 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 **Expert level required:**
 
-- MLflow for experiment tracking, model registry, and pipeline orchestration, Kubeflow and Apache Airflow for ML workflow orchestration and scheduling, Kubernetes with GPU node pools for model training and serving, LLM serving platforms (vLLM, Azure AI Foundry, Amazon Bedrock, Vertex AI)
+- MLflow for experiment tracking, model registry, and pipeline orchestration
+- Kubeflow and Apache Airflow for ML workflow orchestration and scheduling
+- Kubernetes with GPU node pools for model training and serving
+- LLM serving platforms (vLLM, Azure AI Foundry, Amazon Bedrock, Vertex AI)
 
 **Proficient level required:**
 
@@ -82,7 +85,9 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 **Working Knowledge required:**
 
-- ONNX, TensorFlow Lite, and TinyML frameworks for edge model optimisation, Azure IoT Edge and AWS Greengrass for edge ML deployment pipelines, Responsible AI governance tooling and model risk management frameworks
+- ONNX, TensorFlow Lite, and TinyML frameworks for edge model optimisation
+- Azure IoT Edge and AWS Greengrass for edge ML deployment pipelines
+- Responsible AI governance tooling and model risk management frameworks
 
 **Awareness level expected:**
 

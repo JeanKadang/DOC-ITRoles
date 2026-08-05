@@ -87,7 +87,9 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 
 **Proficient level required:**
 
-- pytest, Testinfra, and Terratest (infrastructure and IaC test automation), Ansible (roles, collections, and runbook automation), Backstage (scaffolder plugins and software templates)
+- pytest, Testinfra, and Terratest (infrastructure and IaC test automation)
+- Ansible (roles, collections, and runbook automation)
+- Backstage (scaffolder plugins and software templates)
 
 **Working Knowledge required:**
 

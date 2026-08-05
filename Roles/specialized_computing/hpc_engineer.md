@@ -83,7 +83,10 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 
 **Expert level required:**
 
-- Slurm or PBS Pro job scheduler administration, queue configuration, and resource policy management, Linux HPC system administration and cluster node imaging with xCAT or Bright Cluster Manager, Parallel file systems (Lustre, GPFS/Spectrum Scale, BeeGFS) operations, maintenance, and capacity management, HPC cluster management and automation using Ansible for configuration management
+- Slurm or PBS Pro job scheduler administration, queue configuration, and resource policy management
+- Linux HPC system administration and cluster node imaging with xCAT or Bright Cluster Manager
+- Parallel file systems (Lustre, GPFS/Spectrum Scale, BeeGFS) operations, maintenance, and capacity management
+- HPC cluster management and automation using Ansible for configuration management
 
 **Proficient level required:**
 

@@ -71,7 +71,10 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 **Expert level required:**
 
-- Cloud cost monitoring and reporting tools (AWS Cost Explorer, Azure Cost Management, GCP Billing Console), Resource tagging implementation and cost allocation frameworks across AWS, Azure, and GCP, Budget alerting and anomaly detection configuration in cloud native and third-party FinOps platforms, Cloud provider billing systems and pricing models for accurate cost attribution
+- Cloud cost monitoring and reporting tools (AWS Cost Explorer, Azure Cost Management, GCP Billing Console)
+- Resource tagging implementation and cost allocation frameworks across AWS, Azure, and GCP
+- Budget alerting and anomaly detection configuration in cloud native and third-party FinOps platforms
+- Cloud provider billing systems and pricing models for accurate cost attribution
 
 **Proficient level required:**
 

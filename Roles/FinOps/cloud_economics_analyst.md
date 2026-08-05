@@ -69,11 +69,16 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 **Expert level required:**
 
-- Power BI for cloud cost dashboards, chargeback reports, and scheduled stakeholder reporting (including RLS-based multi-tenant views), Microsoft Excel for financial modelling, TCO templates, and budget variance workbooks, AWS Cost and Usage Report (CUR), Azure Cost Management exports, and GCP BigQuery Billing Export for multi-cloud billing data analysis, SQL (Azure Synapse Analytics, Google BigQuery, Amazon Athena) for billing data querying, transformation, and aggregation
+- Power BI for cloud cost dashboards, chargeback reports, and scheduled stakeholder reporting (including RLS-based multi-tenant views)
+- Microsoft Excel for financial modelling, TCO templates, and budget variance workbooks
+- AWS Cost and Usage Report (CUR), Azure Cost Management exports, and GCP BigQuery Billing Export for multi-cloud billing data analysis
+- SQL (Azure Synapse Analytics, Google BigQuery, Amazon Athena) for billing data querying, transformation, and aggregation
 
 **Proficient level required:**
 
-- Tableau for executive visualisation and self-service cloud cost analytics portals, Python (Pandas, Matplotlib) for analytical scripting, billing pipeline automation, and ad hoc analysis, Apptio for IT financial management, TBM taxonomy, and cloud cost analytics
+- Tableau for executive visualisation and self-service cloud cost analytics portals
+- Python (Pandas, Matplotlib) for analytical scripting, billing pipeline automation, and ad hoc analysis
+- Apptio for IT financial management, TBM taxonomy, and cloud cost analytics
 
 **Working Knowledge required:**
 

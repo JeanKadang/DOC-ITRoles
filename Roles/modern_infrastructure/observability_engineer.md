@@ -75,7 +75,10 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 
 **Expert level required:**
 
-- Prometheus and Grafana for metrics collection, dashboard creation, and alerting rule configuration, Log aggregation systems (Elasticsearch/ELK Stack, Loki, Splunk) for centralised log management, PromQL and LogQL query languages for telemetry data analysis, Alert threshold configuration and noise reduction for actionable monitoring
+- Prometheus and Grafana for metrics collection, dashboard creation, and alerting rule configuration
+- Log aggregation systems (Elasticsearch/ELK Stack, Loki, Splunk) for centralised log management
+- PromQL and LogQL query languages for telemetry data analysis
+- Alert threshold configuration and noise reduction for actionable monitoring
 
 **Proficient level required:**
 
@@ -86,7 +89,9 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 
 **Working Knowledge required:**
 
-- Kubernetes monitoring stack (kube-state-metrics, node exporter, metrics-server), Alertmanager, PagerDuty, and OpsGenie for alert routing and on-call notification, Scripting and automation for monitoring configuration and dashboard-as-code
+- Kubernetes monitoring stack (kube-state-metrics, node exporter, metrics-server)
+- Alertmanager, PagerDuty, and OpsGenie for alert routing and on-call notification
+- Scripting and automation for monitoring configuration and dashboard-as-code
 
 **Awareness level expected:**
 

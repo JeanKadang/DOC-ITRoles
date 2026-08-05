@@ -66,7 +66,10 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 
 **Expert level required:**
 
-- Nutanix HCI platform capabilities, licensing models, and strategic roadmap management, Jira and Confluence for agile backlog management, sprint planning, and stakeholder communication, Nutanix Prism Central product features and service catalog governance, Nutanix node licensing and NX/third-party hardware cost management
+- Nutanix HCI platform capabilities, licensing models, and strategic roadmap management
+- Jira and Confluence for agile backlog management, sprint planning, and stakeholder communication
+- Nutanix Prism Central product features and service catalog governance
+- Nutanix node licensing and NX/third-party hardware cost management
 
 **Proficient level required:**
 

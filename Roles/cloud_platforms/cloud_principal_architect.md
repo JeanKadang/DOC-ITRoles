@@ -69,7 +69,9 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 **Expert level required:**
 
-- Multi-cloud architecture strategy across Azure, AWS, and GCP at enterprise scale (landing zones, governance, AI/ML, networking, security), Cloud governance at scale: policy-as-code, CSPM, and multi-cloud management platforms, Enterprise architecture frameworks (TOGAF, Zachman, ArchiMate) applied to cloud strategy
+- Multi-cloud architecture strategy across Azure, AWS, and GCP at enterprise scale (landing zones, governance, AI/ML, networking, security)
+- Cloud governance at scale: policy-as-code, CSPM, and multi-cloud management platforms
+- Enterprise architecture frameworks (TOGAF, Zachman, ArchiMate) applied to cloud strategy
 
 **Proficient level required:**
 
@@ -84,7 +86,8 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 **Awareness level expected:**
 
-- Emerging CNAPP, CIEM, and AIOps patterns for next-generation cloud security and operations, Cloud provider advisory programs (Microsoft MVP, AWS Hero, Google Developer Expert) and technology preview adoption signals
+- Emerging CNAPP, CIEM, and AIOps patterns for next-generation cloud security and operations
+- Cloud provider advisory programs (Microsoft MVP, AWS Hero, Google Developer Expert) and technology preview adoption signals
 
 ## Interactions with Other Roles
 

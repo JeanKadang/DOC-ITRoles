@@ -66,11 +66,16 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 
 **Expert level required:**
 
-- Infrastructure as Code (Terraform, Bicep, ARM templates) for complex Azure deployments, Advanced Azure networking (ExpressRoute, Virtual WAN, Azure Firewall, Private Endpoints), Azure security services (Microsoft Defender for Cloud, Microsoft Sentinel, Azure Key Vault), Microsoft Entra ID including PIM, Conditional Access, and hybrid identity
+- Infrastructure as Code (Terraform, Bicep, ARM templates) for complex Azure deployments
+- Advanced Azure networking (ExpressRoute, Virtual WAN, Azure Firewall, Private Endpoints)
+- Azure security services (Microsoft Defender for Cloud, Microsoft Sentinel, Azure Key Vault)
+- Microsoft Entra ID including PIM, Conditional Access, and hybrid identity
 
 **Proficient level required:**
 
-- Azure Kubernetes Service (AKS) and container services deployment and management, Azure DevOps and GitHub Actions for CI/CD pipeline implementation, Azure Monitor, Log Analytics, and Application Insights for full-stack observability
+- Azure Kubernetes Service (AKS) and container services deployment and management
+- Azure DevOps and GitHub Actions for CI/CD pipeline implementation
+- Azure Monitor, Log Analytics, and Application Insights for full-stack observability
 
 **Working Knowledge required:**
 

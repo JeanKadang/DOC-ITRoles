@@ -77,7 +77,9 @@ The Endpoint Management Engineer administers and maintains the organisation's en
 
 **Expert level required:**
 
-- Microsoft Intune configuration profiles, compliance policies, and app deployment, Windows Autopilot device registration and enrolment workflows, PowerShell scripting for endpoint remediation tasks
+- Microsoft Intune configuration profiles, compliance policies, and app deployment
+- Windows Autopilot device registration and enrolment workflows
+- PowerShell scripting for endpoint remediation tasks
 
 **Proficient level required:**
 

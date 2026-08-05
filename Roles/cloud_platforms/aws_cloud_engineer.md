@@ -66,11 +66,16 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 **Expert level required:**
 
-- Amazon EC2, Auto Scaling groups, and Elastic Load Balancing for compute management, Amazon VPC, subnets, security groups, and route table configuration, AWS IAM (users, roles, policies, and service account management), Amazon S3 and core storage services (EBS, EFS, Glacier)
+- Amazon EC2, Auto Scaling groups, and Elastic Load Balancing for compute management
+- Amazon VPC, subnets, security groups, and route table configuration
+- AWS IAM (users, roles, policies, and service account management)
+- Amazon S3 and core storage services (EBS, EFS, Glacier)
 
 **Proficient level required:**
 
-- AWS CloudFormation and AWS CDK for infrastructure deployment within approved patterns, Amazon CloudWatch for monitoring, alerting, and log management, AWS Systems Manager for patching, parameter store, and operational management
+- AWS CloudFormation and AWS CDK for infrastructure deployment within approved patterns
+- Amazon CloudWatch for monitoring, alerting, and log management
+- AWS Systems Manager for patching, parameter store, and operational management
 
 **Working Knowledge required:**
 

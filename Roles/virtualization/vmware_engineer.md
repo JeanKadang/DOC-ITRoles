@@ -74,11 +74,17 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 
 **Expert level required:**
 
-- VMware vSphere (ESXi, vCenter Server) for VM provisioning and daily operational management, Virtual machine lifecycle management including templates, snapshots, and customisation specifications, VMware Lifecycle Manager (vSphere Update Manager) for host patching and compliance baseline management, vSphere networking with Distributed vSwitches and port group configuration
+- VMware vSphere (ESXi, vCenter Server) for VM provisioning and daily operational management
+- Virtual machine lifecycle management including templates, snapshots, and customisation specifications
+- VMware Lifecycle Manager (vSphere Update Manager) for host patching and compliance baseline management
+- vSphere networking with Distributed vSwitches and port group configuration
 
 **Proficient level required:**
 
-- vSphere storage management (VMFS, NFS datastores, Storage DRS), vSphere resource pools, clusters, DRS, and HA configuration, VMware roles-based access control and permission management, vSphere performance dashboards and monitoring within vCenter Server
+- vSphere storage management (VMFS, NFS datastores, Storage DRS)
+- vSphere resource pools, clusters, DRS, and HA configuration
+- VMware roles-based access control and permission management
+- vSphere performance dashboards and monitoring within vCenter Server
 
 **Working Knowledge required:**
 
