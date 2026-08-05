@@ -741,8 +741,51 @@
         return (kept ? [kept, ...prior] : prior).slice(0, max);
     }
 
+    // The accessible text fallbacks behind the Org and Graph charts (#118) —
+    // the "View as list" content a screen-reader user gets instead of an
+    // ECharts canvas. Pure string builders, extracted here so they are
+    // covered: a regression in them is invisible to sighted testing.
+
+    // Recursive nested list for the org tree. A node carrying a file is a
+    // role and becomes keyboard-operable; a node without one is a structural
+    // heading and must not claim to be a button.
+    function orgListHtml(node) {
+        const label = node.file
+            ? `<span data-file="${escapeHtml(node.file)}" role="button" tabindex="0">${escapeHtml(node.name)}</span>`
+            : `<span class="org-node-label">${escapeHtml(node.name)}</span>`;
+        // Only chapter nodes carry leadTitle, and buildOrgTree sets it from
+        // the same lead object as `file` — so in practice the two are always
+        // present together and the first branch never fires. Kept as written
+        // rather than simplified: this is an extraction, and collapsing a
+        // condition is a behaviour change dressed as tidying.
+        const meta = node.leadTitle && !node.file ? '' :
+            node.leadTitle ? ` — lead: ${escapeHtml(node.leadTitle)}` : '';
+        const kids = (node.children || []).map(c => orgListHtml(c)).join('');
+        return `<ul><li>${label}${meta}${kids ? kids : ''}</li></ul>`;
+    }
+
+    // Flat list of graph nodes, each with its relationships. Edges are
+    // undirected here on purpose: the reader may arrive at either end, so
+    // each edge is described under both nodes.
+    function graphListHtml(graph, chapterOf) {
+        const byNode = graph.nodes.map(n => {
+            const rels = graph.links
+                .filter(l => l.source === n.name || l.target === n.name)
+                .map(l => {
+                    const other = l.source === n.name ? l.target : l.source;
+                    return `<li>${l.kind === 'collaborates' ? 'Collaborates with' : 'Consulted relationship with'} <b>${escapeHtml(other)}</b>: ${escapeHtml(l.labels.join('; '))}</li>`;
+                }).join('');
+            const notes = (n.notes || []).map(x => `<li>${escapeHtml(x)}</li>`).join('');
+            const chapter = n.kind === 'external' ? 'External party' : ((chapterOf || {})[n.name] || 'Other');
+            return `<li><span class="org-node-label">${escapeHtml(n.name)}</span> — ${escapeHtml(chapter)}<ul>${rels}${notes}</ul></li>`;
+        }).join('');
+        return `<ul>${byNode}</ul>`;
+    }
+
     return {
         STALE_MONTHS,
+        orgListHtml,
+        graphListHtml,
         pushRecent,
         groupResources,
         EXEC_LEVELS,

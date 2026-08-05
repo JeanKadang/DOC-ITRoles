@@ -1535,6 +1535,7 @@
     // ── Shared pure view logic (viewer-logic.js, also under node:test) ──
     const {
         STALE_MONTHS, REFERENCE_DOC_PATTERN, LEVEL_ORDER, LEVEL_SHORT, pushRecent,
+        orgListHtml, graphListHtml,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
@@ -1988,15 +1989,6 @@
         document.getElementById('orgListFallback').innerHTML = orgListHtml(tree);
     }
 
-    function orgListHtml(node) {
-        const label = node.file
-            ? `<span data-file="${escapeHtml(node.file)}" role="button" tabindex="0">${escapeHtml(node.name)}</span>`
-            : `<span class="org-node-label">${escapeHtml(node.name)}</span>`;
-        const meta = node.leadTitle && !node.file ? '' :
-            node.leadTitle ? ` — lead: ${escapeHtml(node.leadTitle)}` : '';
-        const kids = (node.children || []).map(c => orgListHtml(c)).join('');
-        return `<ul><li>${label}${meta}${kids ? kids : ''}</li></ul>`;
-    }
 
     // ── Overlay panels (#119) ────────────────────────────
     // Matrix, Stale, Org, Graph and Careers are mutually exclusive overlays.
@@ -2187,20 +2179,6 @@
         document.getElementById('graphListFallback').innerHTML = graphListHtml(graph, chapterOf);
     }
 
-    function graphListHtml(graph, chapterOf) {
-        const byNode = graph.nodes.map(n => {
-            const rels = graph.links
-                .filter(l => l.source === n.name || l.target === n.name)
-                .map(l => {
-                    const other = l.source === n.name ? l.target : l.source;
-                    return `<li>${l.kind === 'collaborates' ? 'Collaborates with' : 'Consulted relationship with'} <b>${escapeHtml(other)}</b>: ${escapeHtml(l.labels.join('; '))}</li>`;
-                }).join('');
-            const notes = n.notes.map(x => `<li>${escapeHtml(x)}</li>`).join('');
-            const chapter = n.kind === 'external' ? 'External party' : (chapterOf[n.name] || 'Other');
-            return `<li><span class="org-node-label">${escapeHtml(n.name)}</span> — ${escapeHtml(chapter)}<ul>${rels}${notes}</ul></li>`;
-        }).join('');
-        return `<ul>${byNode}</ul>`;
-    }
 
 
     // ── Career path flow (ECharts sankey) ─────────────────
