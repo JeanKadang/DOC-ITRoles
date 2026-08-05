@@ -5,6 +5,8 @@ const assert = require('node:assert/strict');
 
 const {
     STALE_MONTHS,
+    orgListHtml,
+    graphListHtml,
     pushRecent,
     groupResources,
     EXEC_LEVELS,
@@ -1108,4 +1110,84 @@ test('pushRecent sanitises the list even when there is no entry to add', () => {
         [{ file: 'a.md', title: 'A', level: 'Engineer', domainLabel: 'D' }]
     );
     assert.deepEqual(pushRecent('garbage', null, 5), []);
+});
+
+// ── accessible list fallbacks (#118) ──────────────────────
+// These build the "View as list" content behind the Org and Graph charts —
+// what a screen-reader user gets instead of an ECharts canvas. They were
+// untested, and a regression in them is invisible to sighted testing.
+
+test('orgListHtml nests children as nested lists', () => {
+    const html = orgListHtml({ name: 'Root', children: [{ name: 'Child' }] });
+    assert.match(html, /<ul><li>.*Root.*<ul><li>.*Child.*<\/li><\/ul><\/li><\/ul>/s);
+});
+
+test('orgListHtml makes a node with a file keyboard-operable, and one without inert', () => {
+    const withFile = orgListHtml({ name: 'A Role', file: 'Roles/x/a.md' });
+    assert.match(withFile, /data-file="Roles\/x\/a\.md"/);
+    assert.match(withFile, /role="button"/);
+    assert.match(withFile, /tabindex="0"/);
+
+    const without = orgListHtml({ name: 'A Domain' });
+    assert.doesNotMatch(without, /role="button"/, 'a non-navigable node must not claim to be a button');
+});
+
+test('orgListHtml names the chapter lead on a chapter node', () => {
+    // buildOrgTree sets `file` and `leadTitle` together from the chapter's
+    // lead, so a chapter with a lead is both labelled and clickable.
+    const html = orgListHtml({ name: 'Chapter', file: 'Roles/leadership/lead.md', leadTitle: 'Chapter Lead' });
+    assert.match(html, /lead: Chapter Lead/);
+    assert.match(html, /data-file="Roles\/leadership\/lead\.md"/);
+});
+
+test('orgListHtml adds no lead line to a node without one', () => {
+    assert.doesNotMatch(orgListHtml({ name: 'Domain' }), /lead:/);
+    assert.doesNotMatch(orgListHtml({ name: 'Role', file: 'r.md' }), /lead:/);
+});
+
+test('orgListHtml escapes names and file paths', () => {
+    const html = orgListHtml({ name: '<img src=x onerror=alert(1)>', file: '"><script>' });
+    assert.doesNotMatch(html, /<img/);
+    assert.doesNotMatch(html, /<script>/);
+    assert.match(html, /&lt;img/);
+});
+
+test('graphListHtml lists each node with its relationships and chapter', () => {
+    const graph = {
+        nodes: [{ name: 'Alpha', kind: 'domain', notes: [] },
+                { name: 'Beta',  kind: 'domain', notes: [] }],
+        links: [{ source: 'Alpha', target: 'Beta', kind: 'collaborates', labels: ['shared work'] }],
+    };
+    const html = graphListHtml(graph, { Alpha: 'Chapter One', Beta: 'Chapter Two' });
+    assert.match(html, /Alpha/);
+    assert.match(html, /Chapter One/);
+    assert.match(html, /Collaborates with/);
+    assert.match(html, /shared work/);
+});
+
+test('graphListHtml describes a relationship from both sides', () => {
+    // The reader may arrive at either node, so the edge must appear under
+    // both — a directed rendering would hide half the graph.
+    const graph = {
+        nodes: [{ name: 'Alpha', kind: 'domain', notes: [] },
+                { name: 'Beta',  kind: 'domain', notes: [] }],
+        links: [{ source: 'Alpha', target: 'Beta', kind: 'consulted', labels: ['x'] }],
+    };
+    const html = graphListHtml(graph, {});
+    assert.equal((html.match(/Consulted relationship with/g) || []).length, 2);
+});
+
+test('graphListHtml labels an external party rather than guessing its chapter', () => {
+    const graph = { nodes: [{ name: 'Vendor', kind: 'external', notes: [] }], links: [] };
+    assert.match(graphListHtml(graph, {}), /External party/);
+});
+
+test('graphListHtml falls back to "Other" for a node with no chapter', () => {
+    const graph = { nodes: [{ name: 'Orphan', kind: 'domain', notes: [] }], links: [] };
+    assert.match(graphListHtml(graph, {}), /Other/);
+});
+
+test('graphListHtml renders node notes', () => {
+    const graph = { nodes: [{ name: 'Alpha', kind: 'domain', notes: ['consulted by all domains'] }], links: [] };
+    assert.match(graphListHtml(graph, {}), /consulted by all domains/);
 });
