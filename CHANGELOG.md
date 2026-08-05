@@ -7,6 +7,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.11.0] - 2026-08-06
+
+Resolves the long-open question of which flagged role types belong in an
+infrastructure and platform catalogue.
+
+### Added
+
+- **Quality Engineering domain (#148).** Four roles — Engineer, Senior
+  Engineer, Architect, Product Owner — under DevOps & Delivery. It was the
+  one genuine gap of five candidates considered: no role owned testing,
+  yet the content was spread across the catalogue
+  (`dataops_specialist` 20 mentions, `automation_framework_engineer` 19,
+  `api_strategy_architect` 12). A discipline that is everywhere and owned
+  by nobody is the same shape as the Service Desk gap closed in 1.6.0.
+
+  Catalogue: **222 → 226 roles, 33 → 34 domains.**
+
+### Changed
+
+- **The Service Desk Lead's people-management exception is now documented
+  (#148).** The catalogue turned out to have two management models rather
+  than one: 132 roles state that formal line management "sits with the
+  Chapter Lead", but `service_desk_lead` owns hiring, onboarding and career
+  progression directly. Confirmed as deliberate rather than drift, with the
+  reason recorded in the role — the desk runs a shift rota with its own
+  progression ladder and volume-driven headcount, which a Chapter Lead one
+  level removed cannot staff in real time. No Engineering Manager role was
+  added.
+
+### Not added, and why
+
+Three candidates were declined on evidence rather than preference, each
+recorded on the issue so the question does not recur:
+
+- **Data Scientist / ML Engineer** — `mlops_engineer` already states it
+  exists to "enable data science and AI teams", placing them outside the
+  catalogue. Adding the role would contradict content already written.
+- **Technical Writer** — not named as an interaction partner by a single
+  one of the 222 roles.
+- **Sustainability / Green IT Lead** — `finops_architect` carries 16
+  sustainability mentions and owns carbon tracking; a separate lead would
+  compete with an existing owner.
+
+### Note on the drift guards
+
+Adding a domain touches six registration points. The suite was run before
+any of them were updated and named all six — including the
+`CROSS_DOMAIN_INTERACTIONS.md` coverage guard added in 1.10.0, catching the
+first new domain since it was written.
+
 ## [1.10.0] - 2026-08-05
 
 Content coverage: the relationship graph now shows the whole catalogue,
