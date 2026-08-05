@@ -32,6 +32,7 @@ const DOMAIN_LABELS = {
   FinOps:                                 'FinOps',
   infrastructure_onboarding_cross_platform: 'Infrastructure Onboarding',
   integration_middleware:                 'Integration & Middleware',
+  quality_engineering:                    'Quality Engineering',
   itsm_configuration:                     'ITSM & Configuration',
   kubernetes:                             'Kubernetes',
   modern_infrastructure:                  'Modern Infrastructure',

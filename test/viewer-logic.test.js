@@ -537,9 +537,9 @@ test('career sankey handles the real SKILLS_PROGRESSION.md', () => {
     const path = require('node:path');
     const md = fs.readFileSync(path.join(__dirname, '..', 'docs', 'SKILLS_PROGRESSION.md'), 'utf8');
     const ladders = parseProgressionLadders(md);
-    assert.equal(ladders.length, 33, 'all 33 domain ladders parse');
+    assert.equal(ladders.length, 34, 'all 34 domain ladders parse');
     const totalRoles = ladders.reduce((n, l) => n + Object.values(l.levels).flat().length, 0);
-    assert.equal(totalRoles, 222, 'parser sees every role the drift guard guarantees');
+    assert.equal(totalRoles, 226, 'parser sees every role the drift guard guarantees');
     const s = buildCareerSankey(ladders);
     assert.ok(s.nodes.length >= 8, 'all level rungs present');
     const engSr = s.links.find(l => l.source === 'Engineer' && l.target === 'Senior Engineer');
@@ -589,8 +589,8 @@ test('parseCareerPath parses every role file in the catalog', () => {
             if (cp.from.length && cp.to.length) withBoth++;
         }
     }
-    assert.equal(total, 222);
-    assert.equal(withBoth, 222, 'every role file yields both From and To lists');
+    assert.equal(total, 226);
+    assert.equal(withBoth, 226, 'every role file yields both From and To lists');
 });
 
 // ── sectionStartsOpen (#112) ──────────────────────────────

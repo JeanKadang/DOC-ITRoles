@@ -229,6 +229,13 @@ Every domain in the catalog is listed below (alphabetically), with every role fi
 - Architect: `network_architect`, `network_automation_architect`
 - Product Owner: `network_product_owner`
 
+### Quality Engineering
+
+- Engineer: `quality_engineer`
+- Senior Engineer: `quality_engineering_senior_engineer`
+- Architect: `quality_engineering_architect`
+- Product Owner: `quality_engineering_product_owner`
+
 ### Security
 
 - Engineer: `devsecops_engineer`, `security_engineer`
