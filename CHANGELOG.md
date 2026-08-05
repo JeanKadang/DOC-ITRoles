@@ -7,6 +7,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.11.1] - 2026-08-06
+
+Content readability and test coverage. No behaviour change.
+
+### Changed
+
+- **The 73 run-on Technology Proficiency entries are split (#138).** 1.9.0
+  deliberately left these whole, because a mechanical comma split would have
+  shattered them — they are Oxford-comma capability groups, not flat tool
+  lists, and splitting yields fragments like `and route table configuration`.
+  Split points are authored per entry rather than derived: three mechanical
+  rules were tried first and each failed on real data (capitalisation splits
+  acronym lists; word count splits `Amazon EC2, Auto Scaling groups, and
+  Elastic Load Balancing for compute management` into three when it is one
+  capability).
+
+  The detection heuristic flagged 84 candidates; **11 are single capabilities
+  that merely contain an Oxford comma** — `ISO 27001, NIST CSF, and SOC 2
+  control frameworks` is one thing — and were left alone, leaving exactly the
+  73 from the issue.
+
+  | | Before | After |
+  |---|---|---|
+  | Bullets | 73 | **254** across 47 files |
+  | Longest proficiency bullet | 476 chars | **161** |
+  | Bullets over 250 chars | 55 | **0** |
+  | Bullets beginning with a connective | — | **0** |
+
+  All 47 files verified to have an identical word multiset before and after.
+  Also repairs a pre-existing `, ,` typo in
+  `platform_engineering_product_owner` that produced an empty list segment.
+
+### Testing
+
+- **The accessible list fallbacks are extracted and covered (#118).**
+  `orgListHtml` and `graphListHtml` build the "View as list" content behind
+  the Org and Graph charts — what a screen-reader user gets instead of an
+  ECharts canvas. Both were pure string builders sitting untested in
+  `index.html`, where a regression is invisible to sighted testing. Moved to
+  `viewer-logic.js` with 10 tests. Suite **161 → 171**.
+
+  Scoped deliberately: two of the three priorities the issue named were
+  already done (the search predicates became `roleMatchesFilter` in 1.9.0;
+  `badgeClass` was already extracted), and the third — `renderMarkdown` — is
+  not "trivially testable" as described. It wraps DOMPurify and marked, both
+  browser globals, and `package.json` carries zero runtime dependencies by
+  design. Moving it would break `viewer-logic.js`'s contract of staying
+  DOM-free. The remaining inline code is DOM-coupled; testing it means adding
+  jsdom, which is a dependency decision rather than a cleanup.
+
 ## [1.11.0] - 2026-08-06
 
 Resolves the long-open question of which flagged role types belong in an
