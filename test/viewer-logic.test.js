@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 
 const {
     STALE_MONTHS,
+    pushRecent,
     groupResources,
     EXEC_LEVELS,
     STAT_GROUPS,
@@ -1049,4 +1050,62 @@ test('groupResources keeps an ungrouped item visible in the first group', () => 
         { key: 'onboarding', label: 'Onboarding' },
     ]);
     assert.deepEqual(groups[0].items.map(i => i.title), ['Orphan']);
+});
+
+// ── pushRecent (#117) ─────────────────────────────────────
+// Navigation history is a single linear Back stack, so returning to a role
+// seen a few minutes ago means re-finding it. A recently-viewed list needs
+// most-recent-first ordering, no duplicates, and a hard cap.
+test('pushRecent puts the newest entry first', () => {
+    const list = pushRecent([], { file: 'a.md', title: 'A' }, 5);
+    assert.deepEqual(list.map(r => r.file), ['a.md']);
+    const list2 = pushRecent(list, { file: 'b.md', title: 'B' }, 5);
+    assert.deepEqual(list2.map(r => r.file), ['b.md', 'a.md']);
+});
+
+test('pushRecent moves a revisited role to the front rather than duplicating it', () => {
+    let list = [];
+    for (const f of ['a.md', 'b.md', 'c.md']) list = pushRecent(list, { file: f, title: f }, 5);
+    list = pushRecent(list, { file: 'a.md', title: 'a.md' }, 5);
+    assert.deepEqual(list.map(r => r.file), ['a.md', 'c.md', 'b.md']);
+    assert.equal(new Set(list.map(r => r.file)).size, list.length, 'no duplicates');
+});
+
+test('pushRecent caps the list and drops the oldest', () => {
+    let list = [];
+    for (const f of ['a', 'b', 'c', 'd']) list = pushRecent(list, { file: f, title: f }, 3);
+    assert.deepEqual(list.map(r => r.file), ['d', 'c', 'b']);
+});
+
+test('pushRecent ignores an entry with no file', () => {
+    const list = pushRecent([{ file: 'a.md', title: 'A' }], { title: 'no file' }, 5);
+    assert.deepEqual(list.map(r => r.file), ['a.md']);
+});
+
+test('pushRecent tolerates a corrupt or non-array stored value', () => {
+    // localStorage content is user-writable and survives across versions, so
+    // it cannot be trusted to still be the shape we wrote.
+    assert.deepEqual(pushRecent(null,        { file: 'a', title: 'A' }, 5).map(r => r.file), ['a']);
+    assert.deepEqual(pushRecent('garbage',   { file: 'a', title: 'A' }, 5).map(r => r.file), ['a']);
+    assert.deepEqual(pushRecent([1, 2, null],{ file: 'a', title: 'A' }, 5).map(r => r.file), ['a']);
+});
+
+test('pushRecent keeps only the fields the list renders', () => {
+    // Storing the whole role object would persist stale titles and levels
+    // across catalogue edits.
+    const list = pushRecent([], { file: 'a.md', title: 'A', level: 'Engineer', domainLabel: 'X', extra: 'drop me' }, 5);
+    assert.deepEqual(Object.keys(list[0]).sort(), ['domainLabel', 'file', 'level', 'title']);
+});
+
+test('pushRecent sanitises the list even when there is no entry to add', () => {
+    // loadRecent() calls pushRecent(stored, null) purely to clean whatever
+    // localStorage held. The early return for a missing entry used to hand
+    // the raw list straight back, so a stored null survived and crashed the
+    // renderer on r.file.
+    assert.deepEqual(pushRecent([1, 2, null, { nope: true }], null, 5), []);
+    assert.deepEqual(
+        pushRecent([{ file: 'a.md', title: 'A', level: 'Engineer', domainLabel: 'D' }, null], null, 5),
+        [{ file: 'a.md', title: 'A', level: 'Engineer', domainLabel: 'D' }]
+    );
+    assert.deepEqual(pushRecent('garbage', null, 5), []);
 });

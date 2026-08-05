@@ -715,8 +715,35 @@
             .filter(g => g.items.length);
     }
 
+    // Prepend a role to the recently-viewed list (#117): newest first, no
+    // duplicates, hard cap. Navigation history is a single linear Back stack,
+    // so returning to a role seen a few minutes ago otherwise means finding it
+    // again — and the Compare feature actively encourages visiting several in
+    // sequence.
+    //
+    // Defensive about the incoming list: it comes from localStorage, which is
+    // user-writable and survives across versions, so it cannot be trusted to
+    // still be the shape we wrote. Only the four fields the list renders are
+    // kept, so a stale title or level cannot outlive a catalogue edit by more
+    // than one visit.
+    // Passing a null entry sanitises the list without adding to it, which is
+    // how stored history is cleaned on load. The sanitising must happen on
+    // that path too — returning the raw list let a stored null through and
+    // crashed the renderer on r.file.
+    function pushRecent(list, entry, max = 10) {
+        const keep = r => r && typeof r === 'object' && r.file
+            ? { file: r.file, title: r.title || '', level: r.level || '', domainLabel: r.domainLabel || '' }
+            : null;
+        const kept  = keep(entry);
+        const prior = (Array.isArray(list) ? list : [])
+            .map(keep)
+            .filter(r => r && (!kept || r.file !== kept.file));
+        return (kept ? [kept, ...prior] : prior).slice(0, max);
+    }
+
     return {
         STALE_MONTHS,
+        pushRecent,
         groupResources,
         EXEC_LEVELS,
         STAT_GROUPS,

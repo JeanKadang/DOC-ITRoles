@@ -669,6 +669,51 @@
         .cm-empty { color: var(--text-muted); }
         .cm-error { color: var(--accent-red, #d13438); }
 
+        /* ── Recently viewed (#117) ─────────────────────────── */
+        .recent-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 26px;
+            text-align: left;
+        }
+        .recent-block[hidden] { display: none; }
+
+        .recent-hd-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        .recent-hd {
+            font-size: 0.82em;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .recent-list { display: flex; flex-wrap: wrap; gap: 8px; }
+
+        .recent-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            background: var(--bg-card);
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: border-color var(--transition), background var(--transition);
+        }
+        .recent-item:hover { border-color: var(--accent-blue); background: var(--bg-card-hover); }
+        .recent-item:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+        .recent-item-name { color: var(--text-primary); }
+
+        /* A reading aid, not content. */
+        @media print { .recent-block { display: none !important; } }
+
         /* ── Reporting line in the header (#113) ────────────── */
         .role-reporting { margin-top: 8px; }
         .meta-reporting {
@@ -1356,6 +1401,16 @@
             <div class="welcome-icon">📋</div>
             <h2>Select a role to view</h2>
             <p>Choose a domain and role from the sidebar to read the full role definition.</p>
+
+            <!-- Recently viewed (#117) — hidden until there is history -->
+            <section class="recent-block" id="recentBlock" aria-labelledby="recentHd" hidden>
+                <div class="recent-hd-row">
+                    <h3 class="recent-hd" id="recentHd">🕘 Recently viewed</h3>
+                    <button class="link-btn" id="clearRecent" onclick="clearRecent()">Clear</button>
+                </div>
+                <div class="recent-list" id="recentList"></div>
+            </section>
+
             <div class="stats-cards" id="statsCards"></div>
 
             <!-- Distribution charts (rendered once role data is loaded) -->
@@ -1479,7 +1534,7 @@
 <script>
     // ── Shared pure view logic (viewer-logic.js, also under node:test) ──
     const {
-        STALE_MONTHS, REFERENCE_DOC_PATTERN, LEVEL_ORDER, LEVEL_SHORT,
+        STALE_MONTHS, REFERENCE_DOC_PATTERN, LEVEL_ORDER, LEVEL_SHORT, pushRecent,
         escapeHtml, badgeClass, monthsSinceReview, computeStaleRoles, resolveDocHref,
         rolesPerChapter, rolesPerLevel, buildOrgTree, parseInteractions, labelToChapter,
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
@@ -1499,6 +1554,57 @@
     // Levels the sidebar is currently narrowed to (#115). Empty = no
     // constraint. Combines with the text query rather than replacing it.
     let activeLevels = new Set();
+
+    // ── Recently viewed (#117) ───────────────────────────
+    // localStorage throws rather than returning null when storage is
+    // unavailable — Safari private mode, disabled site data, a full quota —
+    // so every access is guarded. Losing the history is a non-event; taking
+    // the whole viewer down with it would not be.
+    const RECENT_KEY = 'doc-itroles:recent';
+    const RECENT_MAX = 10;
+    let recentRoles = [];
+
+    function loadRecent() {
+        try {
+            recentRoles = pushRecent(JSON.parse(localStorage.getItem(RECENT_KEY)), null, RECENT_MAX);
+        } catch { recentRoles = []; }
+    }
+
+    function saveRecent() {
+        try { localStorage.setItem(RECENT_KEY, JSON.stringify(recentRoles)); } catch { /* history is expendable */ }
+    }
+
+    function recordRecent(file, title, level, domainLabel) {
+        recentRoles = pushRecent(recentRoles, { file, title, level, domainLabel }, RECENT_MAX);
+        saveRecent();
+        renderRecent();
+    }
+
+    function clearRecent() {
+        recentRoles = [];
+        saveRecent();
+        renderRecent();
+    }
+
+    function renderRecent() {
+        const block = document.getElementById('recentBlock');
+        const list  = document.getElementById('recentList');
+        if (!block || !list) return;
+        block.hidden = recentRoles.length === 0;
+        list.innerHTML = recentRoles.map(r => `
+            <div class="recent-item" role="button" tabindex="0"
+                 data-file="${escapeHtml(r.file)}" data-title="${escapeHtml(r.title)}"
+                 data-level="${escapeHtml(r.level)}" data-domain="${escapeHtml(r.domainLabel)}">
+                <span class="recent-item-name">${escapeHtml(r.title)}</span>
+                <span class="badge ${badgeClass(r.level)}">${escapeHtml(r.level)}</span>
+            </div>`).join('');
+    }
+
+    document.getElementById('recentList').addEventListener('click', e => {
+        const item = e.target.closest('.recent-item[data-file]');
+        if (!item) return;
+        openRole(item.dataset.file, item.dataset.title, item.dataset.level, item.dataset.domain);
+    });
 
     // ── State ───────────────────────────────────────────
     let allDomains  = {};
@@ -1646,6 +1752,8 @@
         try {
             const res  = await fetch('/api/roles');
             allDomains = await res.json();
+            loadRecent();
+            renderRecent();
             renderLevelFilters();
             renderSidebar(allDomains);
             renderWelcomeStats(allDomains);
@@ -2873,6 +2981,7 @@
     async function openRole(file, title, level, domainLabel) {
         closeSidebar();
         pushHistory();
+        recordRecent(file, title, level, domainLabel);
         activeFile  = file;
         activeDoc   = null;
         activeChapter = null;
