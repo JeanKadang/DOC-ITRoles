@@ -122,7 +122,7 @@ roles_master/
 │   └── ...                                 # 33 domains total
 ├── docs/                                   # Governance and reference documentation
 │   ├── role_template.md                    # Template for new roles
-│   ├── improvements_and_recommendations.md # Review history & completed-work record
+│   ├── improvements_and_recommendations.md # Closed - review history (see Issues for open work)
 │   ├── CROSS_DOMAIN_INTERACTIONS.md        # Domain ownership and escalation paths
 │   ├── SKILLS_PROGRESSION.md              # Career progression framework
 │   ├── ONBOARDING_TEMPLATE.md             # 30/60/90 day onboarding plan template
@@ -204,7 +204,7 @@ Each role file follows the canonical 14-section structure. See `docs/role_templa
 | `docs/ONBOARDING_TEMPLATE.md` | 30/60/90 day plan template for new hires |
 | `docs/onboarding_chapter_lead_template.md` | Onboarding variant for incoming Chapter Leads |
 | `docs/CHAPTERS_OVERVIEW.md` | The 7 chapters, their focus, and links to per-chapter detail |
-| `docs/improvements_and_recommendations.md` | Review history, rationale, and industry-trend tracking (open work tracked as [GitHub issues](https://github.com/JeanKadang/DOC-ITRoles/issues)) |
+| `docs/improvements_and_recommendations.md` | **Closed.** Narrative of the four 2026 review cycles. Open work is in [GitHub Issues](https://github.com/JeanKadang/DOC-ITRoles/issues); what shipped is in [CHANGELOG.md](CHANGELOG.md) |
 | `CHANGELOG.md` | Version history of the codebase (Keep a Changelog format) |
 | `SECURITY.md` | Security policy and how to report a vulnerability |
 
