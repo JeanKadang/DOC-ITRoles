@@ -59,3 +59,34 @@ test('every domain has a ladder heading', () => {
     .filter(d => d.isDirectory()).length;
   assert.equal(headings, domainCount, 'one ladder heading per domain');
 });
+
+// ── Cross-domain interactions coverage (#125) ─────────────
+// The viewer's Domain Relationship Graph is built from
+// docs/CROSS_DOMAIN_INTERACTIONS.md. A domain absent from that document is
+// absent from the graph with no indication, so a reader gets a picture that
+// silently omits part of the catalogue — 11 of 33 domains were missing when
+// this guard was written.
+test('every canonical domain appears in CROSS_DOMAIN_INTERACTIONS.md', () => {
+  const { DOMAIN_LABELS } = require('../roleMeta');
+  const doc = fs.readFileSync(path.join(ROOT, 'docs', 'CROSS_DOMAIN_INTERACTIONS.md'), 'utf8')
+    .replace(/^\uFEFF/, '');
+  const missing = Object.entries(DOMAIN_LABELS)
+    .filter(([key, label]) => fs.existsSync(path.join(ROOT, 'Roles', key)) && !doc.includes(label))
+    .map(([, label]) => label);
+  assert.deepEqual(missing, [], 'domains missing from the relationship graph');
+});
+
+test('CROSS_DOMAIN_INTERACTIONS.md references no domain label that no longer exists', () => {
+  // The mirror of the above: a renamed or removed domain leaves a phantom
+  // node in the graph.
+  const { DOMAIN_LABELS } = require('../roleMeta');
+  const labels = new Set(Object.values(DOMAIN_LABELS));
+  const doc = fs.readFileSync(path.join(ROOT, 'docs', 'CROSS_DOMAIN_INTERACTIONS.md'), 'utf8');
+  // Only check the ownership table's Primary Owner column, which must name a
+  // real domain; prose bullets legitimately mention teams and externals.
+  const owners = [...doc.matchAll(/^\|[^|]+\|([^|]+)\|/gm)]
+    .map(m => m[1].trim().replace(/\s*\(.*\)\s*$/, ''))
+    .filter(v => v && v !== 'Primary Owner' && !/^-+$/.test(v));
+  const phantom = [...new Set(owners)].filter(o => !labels.has(o));
+  assert.deepEqual(phantom, [], 'ownership rows naming a non-existent domain');
+});
