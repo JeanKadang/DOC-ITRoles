@@ -44,6 +44,7 @@ The HPC Senior Engineer leads the technical implementation, automation, and opti
 - Foster a culture of innovation, diversity, equity, and inclusion within the HPC team
 - Proactively identify and mitigate risks to HPC operations and security
 - Lead continuous improvement initiatives for HPC processes and technologies
+- Own the operational design of edge-HPC pipelines: where pre-processing runs at the edge versus centrally, how results are staged back, and the scheduling implications of geographically distributed capacity
 
 ## Key Decisions & Accountabilities
 
@@ -130,6 +131,8 @@ The HPC Senior Engineer leads the technical implementation, automation, and opti
 - Performance profiling and monitoring tools (Intel VTune, Arm Forge, TAU, Grafana)
 - Cloud HPC solutions (AWS ParallelCluster, Azure CycleCloud, Google Cloud HPC)
 - Advanced scripting and automation (Python, Bash, Ansible)
+- Edge-HPC pipeline design (NVIDIA Jetson, Intel OpenVINO, AWS Wavelength, Azure Edge Zones)
+- Data-gravity and staging strategy for workloads that originate at edge sites
 
 ## Typical Day-to-Day Activities
 

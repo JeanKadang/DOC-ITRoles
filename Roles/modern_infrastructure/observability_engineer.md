@@ -40,6 +40,7 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 - Assist application teams with instrumentation and monitoring integration
 - Troubleshoot issues with observability platforms and data collection
 - Document observability implementations and procedures
+- Implement telemetry collection from edge sites: local buffering for intermittent links, sampling and aggregation to fit constrained bandwidth, and alerting that distinguishes a disconnected site from a failed one
 
 ## Key Decisions & Accountabilities
 
@@ -112,6 +113,8 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 - Alert routing and incident integration (Alertmanager, PagerDuty/Opsgenie, ITSM webhooks)
 - Dashboards-as-code and monitoring configuration management (Grafana provisioning, Terraform)
 - Scripting for automation and integration (Python, PowerShell, Bash)
+- OpenTelemetry Collector in edge/gateway deployment modes (local buffering, tail sampling)
+- Edge site monitoring under intermittent connectivity — store-and-forward and backfill patterns
 
 ## Key Performance Indicators
 

@@ -43,6 +43,7 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 - Optimize LLM inference costs through batching, caching, quantization, and model selection
 - Maintain IaC for AI platform components and automate deployments through CI/CD
 - Document AI platform capabilities, patterns, and runbooks
+- Deploy and operate inference at the edge: model packaging for constrained hardware, rollout and rollback across distributed sites, and monitoring of edge inference latency and accuracy drift
 
 ## Key Decisions & Accountabilities
 
@@ -120,6 +121,8 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 - CI/CD for AI pipelines (GitHub Actions, Azure DevOps, GitLab CI)
 - AI observability and monitoring platforms
 - Python ML/AI ecosystem (LangChain, transformers, pydantic-ai)
+- Edge inference runtimes (NVIDIA Jetson, Intel OpenVINO) for on-device model serving
+- Model distribution and versioning across edge fleets (Azure IoT Edge, AWS Greengrass)
 
 ## Typical Day-to-Day Activities
 

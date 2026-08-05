@@ -40,6 +40,7 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 - Conduct postmortem analysis and implement reliability improvements
 - Develop runbooks and playbooks for operational procedures
 - Implement chaos engineering practices to improve system resilience
+- Extend SLOs and error budgets to services running at edge sites, where a site can be unreachable without being unhealthy and recovery may not be remotely actionable
 
 ## Key Decisions & Accountabilities
 
@@ -111,6 +112,8 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 - Incident management platforms
 - Runbook automation tools
 - Configuration management systems
+- Edge site reliability patterns — degraded-mode operation and autonomous local recovery
+- Multi-site SLO aggregation where per-site availability differs from service availability
 
 ## Typical Day-to-Day Activities
 

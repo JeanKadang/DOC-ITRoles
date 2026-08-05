@@ -40,6 +40,7 @@ The Observability Product Owner manages the observability platform portfolio, de
 - Establish service level objectives for the observability platform itself
 - Coordinate platform adoption and enablement initiatives
 - Track and report on observability platform value and metrics
+- Prioritise observability coverage for edge estates in the backlog, and set the cost expectation for telemetry from bandwidth-constrained sites where full-fidelity collection is not affordable
 
 ## Key Decisions & Accountabilities
 
@@ -129,6 +130,7 @@ The Observability Product Owner manages the observability platform portfolio, de
 - Synthetic monitoring solutions
 - Real User Monitoring (RUM) technologies
 - Dashboard visualization platforms
+- Edge observability cost model — egress and retention trade-offs for distributed sites
 
 ## Typical Day-to-Day Activities
 

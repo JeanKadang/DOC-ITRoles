@@ -44,6 +44,7 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 - Advocate for sustainability and diversity in HPC strategy and operations
 - Lead change management and communication for HPC initiatives
 - Gather and act on continuous feedback from users and stakeholders
+- Prioritise edge-HPC capability in the backlog: which workloads justify distributed edge capacity against central compute, and the cost and data-residency trade-offs each option carries
 
 ## Key Decisions & Accountabilities
 
@@ -133,6 +134,7 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 - Utilization, chargeback, and value reporting for HPC investments
 - Scientific application stacks and environment module systems
 - HPC user portals and self-service gateways (Open OnDemand)
+- Edge compute capability and cost landscape (AWS Wavelength, Azure Edge Zones) for capacity planning
 
 ## Typical Day-to-Day Activities
 

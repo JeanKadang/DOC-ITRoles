@@ -40,6 +40,7 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 - Maintain documentation for platform services
 - Implement observability for platform components
 - Support application teams in platform adoption
+- Implement edge deployment paths in the internal developer platform: extend golden-path templates to edge and IoT targets, and support teams onboarding workloads to edge runtimes
 
 ## Key Decisions & Accountabilities
 
@@ -111,6 +112,8 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 - Artifact repositories
 - Container registries
 - Developer utility tools
+- Edge orchestration runtimes (KubeEdge, OpenYurt) as IDP deployment targets
+- Managed edge runtimes (AWS Greengrass, Azure IoT Edge) for platform-provided edge onboarding
 
 ## Typical Day-to-Day Activities
 
