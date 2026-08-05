@@ -45,6 +45,7 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 - Promote sustainable and energy-efficient HPC operations
 - Provide user training and develop clear documentation
 - Continuously seek opportunities for process and technology improvement
+- Operate distributed edge inference and pre-processing nodes: deployment to accelerator hardware at edge sites, and the data movement between edge collection and central HPC capacity
 
 ## Key Decisions & Accountabilities
 
@@ -127,6 +128,8 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 - GPU computing frameworks (CUDA, OpenACC)
 - Cloud HPC solutions (AWS ParallelCluster, Azure CycleCloud, Google Cloud HPC)
 - Batch processing and workflow scripting
+- Edge accelerator platforms (NVIDIA Jetson, Intel OpenVINO) for distributed inference
+- Edge-to-datacentre data staging for compute pipelines that begin at the edge
 
 ## Typical Day-to-Day Activities
 

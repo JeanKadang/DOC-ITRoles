@@ -41,6 +41,7 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 - Develop custom integrations and extensions for observability platforms
 - Mentor Observability Engineers on advanced techniques
 - Evaluate and prototype new observability tools and approaches
+- Own the edge telemetry pipeline design: collection topology across distributed sites, retention and aggregation tiers that keep egress affordable, and the signal model that separates site connectivity loss from workload failure
 
 ## Key Decisions & Accountabilities
 
@@ -126,6 +127,8 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 - Observability as code tools and frameworks
 - AI/ML-based anomaly detection systems
 - Real-time analytics platforms
+- OpenTelemetry Collector edge/gateway topologies and tail-sampling strategy
+- Bandwidth- and cost-aware telemetry tiering for geographically distributed estates
 
 ## Typical Day-to-Day Activities
 

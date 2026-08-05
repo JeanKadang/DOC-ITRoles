@@ -40,6 +40,7 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 - Optimize platform performance and resource utilization
 - Create platform automation and CI/CD integration
 - Provide technical mentorship to Platform Engineers
+- Own the edge portion of the platform golden paths: deployment templates for edge and IoT targets, and the operational runbooks for platform services running outside the datacentre
 
 ## Key Decisions & Accountabilities
 
@@ -109,6 +110,8 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 - Policy engines (OPA, Kyverno)
 - Developer experience tooling
 - Platform automation frameworks
+- Edge orchestration platforms (KubeEdge, OpenYurt) for platform workloads at edge sites
+- Managed edge runtimes (AWS Greengrass, Azure IoT Edge) and their fleet-management models
 
 ## Typical Day-to-Day Activities
 

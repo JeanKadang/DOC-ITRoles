@@ -44,6 +44,7 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 - Mentor SREs and provide technical coaching to engineering teams on reliability best practices.
 - Define and maintain on-call runbooks and playbooks for critical services.
 - Evaluate and adopt new reliability tooling and platform improvements.
+- Define the reliability model for geographically distributed edge estates: what an SLO means when sites are intermittently reachable, how error budgets are apportioned per site, and when an unreachable site is an incident
 
 ## Key Decisions & Accountabilities
 
@@ -122,6 +123,8 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 - Terraform / Pulumi
 - k6 / Locust (load testing)
 - Argo Rollouts / Flagger (progressive delivery)
+- Multi-site SLO and error-budget modelling for intermittently connected estates
+- Edge failure-domain design — blast radius containment when a site or region is isolated
 
 ## Typical Day-to-Day Activities
 

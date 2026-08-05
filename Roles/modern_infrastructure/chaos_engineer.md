@@ -44,6 +44,7 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 - Support teams in remediating identified resilience weaknesses.
 - Contribute to production readiness review checklists by defining resilience acceptance criteria.
 - Develop chaos engineering runbooks and experiment templates for engineering team self-service.
+- Design failure experiments for edge topologies: network partition between edge sites and the control plane, prolonged disconnection with local queueing, and degraded-mode behaviour when a site cannot reach central services
 
 ## Key Decisions & Accountabilities
 
@@ -124,6 +125,8 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 - k6 / Locust (load generation for steady state)
 - Python / Go / bash (experiment automation)
 - GitHub Actions / Azure DevOps (CI chaos integration)
+- Network partition and latency injection for cloud-to-edge links
+- Edge disconnection experiments — validating local buffering, queueing and autonomous recovery
 
 ## Typical Day-to-Day Activities
 

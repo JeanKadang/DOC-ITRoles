@@ -40,6 +40,7 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 - Create and maintain a strategic roadmap for platform evolution
 - Establish metrics for measuring platform effectiveness
 - Track and report on platform adoption and value delivery
+- Prioritise edge platform capabilities in the backlog: which edge and IoT targets the platform supports, and the sequencing of edge golden paths against demand from consuming teams
 
 ## Key Decisions & Accountabilities
 
@@ -111,6 +112,7 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 - Developer productivity analytics
 - Workflow automation tools
 - Knowledge management systems
+- Edge platform capability landscape (KubeEdge, OpenYurt, AWS Greengrass, Azure IoT Edge) at a capability-and-cost level for roadmap decisions
 
 ## Typical Day-to-Day Activities
 
