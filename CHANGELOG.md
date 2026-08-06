@@ -7,6 +7,63 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.12.1] - 2026-08-06
+
+KPI content: subject-style metrics rewritten into things that can actually
+be counted. No behaviour change.
+
+### Changed
+
+- **348 KPI rows rewritten from subjects into countable measures (#140).**
+  `Architecture design quality and effectiveness` becomes `Designs approved
+  at first architecture review, without rework (%)`.
+
+  | | Before | After |
+  |---|---|---|
+  | Subject-style rows | 852 | **506** |
+  | Countable metrics awaiting a number | 584 | **930** |
+
+  **Every rewritten row keeps its em dash.** The count of untargeted rows is
+  unchanged at 1,436, deliberately — this proposes a *measure*, not a
+  *target*. Rewriting what is measured is a lower-risk act than inventing
+  what the number should be: a proposed measure is reviewable on its face,
+  whereas a fabricated target reads as agreed fact.
+
+  Rows that already carry a target are never rewritten, since changing what
+  is measured would invalidate an agreed number.
+
+### On scope, and what was learned
+
+The work split into two passes with very different yields.
+
+**313 rows came from 86 texts appearing in more than one role.** Doing the
+repeated ones first put consistency where it mattered most —
+`Documentation quality and completeness` alone appeared in 31 roles, and
+phrasing it three ways would have been worse than leaving it.
+
+**35 more came from three phrasing patterns.** A first pass tried ten
+patterns; reviewing the generated output rejected seven of them —
+`API standards completed without rework` (standards are not completed),
+`Integration effort (count per quarter)` (effort is not a count),
+`Resolving issues delivered in the committed period` (ungrammatical), and a
+casing helper that turned `API` into `aPI`. Even the survivor needed
+narrowing: `Implementation quality of X` produced
+`standard configurations implementations` until anchored to X ending in
+"solutions".
+
+**The remaining 506 resist templating, and that is the point.** They appear
+once each. The 86 repeated texts were repeated *because* they were generic;
+singletons are specific and no shared frame serves them. They need
+individual authoring.
+
+### Still open
+
+Tracked in #140:
+
+- **930** countable metrics awaiting a number from the organisation
+- **506** subject-style rows still needing individual rewriting
+- **258** proposed benchmarks awaiting confirmation
+
 ## [1.12.0] - 2026-08-06
 
 Every KPI section is now a table, with its gaps visible on the page rather
