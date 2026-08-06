@@ -13,7 +13,8 @@
     "validate": "node validate-roles.js",
     "check-counts": "node scripts/check-counts.js",
     "seed-kpi": "node scripts/seed-kpi-targets.js",
-    "build-radar": "node scripts/build-radar.js"
+    "build-radar": "node scripts/build-radar.js",
+    "build-skills-matrix": "node scripts/build-skills-matrix.js"
   },
   "dependencies": {}
 }
