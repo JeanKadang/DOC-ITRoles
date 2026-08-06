@@ -132,7 +132,7 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 | Metric | Target | Frequency |
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | — | — |
-| Alignment of .NET designs with business requirements | — | — |
+| .NET designs accepted by the requesting business owner without rework (%) | — | — |
 | Application transactions meeting their response-time budget (%) | — | — |
 | Security posture of .NET applications | — | — |
 | Adoption of .NET reference architectures and patterns | — | — |

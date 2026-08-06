@@ -134,7 +134,7 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 |---|---|---|
 | API platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | API response time and throughput performance | — | — |
-| Implementation quality of API solutions | — | — |
+| API implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for complex API issues | — | — |
 | Junior developers reaching independent delivery within the agreed ramp period (%) | — | — |
 | API security posture improvement | — | — |

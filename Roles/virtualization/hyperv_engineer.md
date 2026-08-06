@@ -124,7 +124,7 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 | Timely resolution of incidents and service requests | — | — |
 | Efficiency of virtual resource utilization | — | — |
 | Quality of documentation and operational procedures | — | — |
-| Adherence to change management processes | — | — |
+| Work conforming to change management processes (%) | — | — |
 | Successful implementation of routine maintenance activities | — | — |
 | VM provisioning turnaround times | — | — |
 | Security compliance of virtualized environments | — | — |

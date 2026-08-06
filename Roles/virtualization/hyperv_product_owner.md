@@ -124,7 +124,7 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 | Achievement of roadmap milestones and delivery objectives | — | — |
 | Effective prioritization of features and initiatives | — | — |
 | Quality of service metrics for Hyper-V environments | — | — |
-| Alignment of Hyper-V capabilities with business needs | — | — |
+| Hyper-V capabilities accepted by the requesting business owner without rework (%) | — | — |
 | Cost optimization and value delivery | — | — |
 | Clear backlog management and sprint execution | — | — |
 | Successful adoption of new Hyper-V features and capabilities | — | — |

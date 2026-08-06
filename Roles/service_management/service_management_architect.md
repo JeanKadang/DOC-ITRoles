@@ -132,7 +132,7 @@ The Service Management Architect designs comprehensive strategies and architectu
 | Metric | Target | Frequency |
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | — | — |
-| Alignment of ITSM designs with business requirements | — | — |
+| ITSM designs accepted by the requesting business owner without rework (%) | — | — |
 | Process efficiency and effectiveness metrics | — | — |
 | Service integration reliability | — | — |
 | Adoption of ITSM reference architectures | — | — |

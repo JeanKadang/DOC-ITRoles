@@ -125,7 +125,7 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 | Metric | Target | Frequency |
 |---|---|---|
 | Hyper-V environment reliability and uptime percentages | ≥99.9% (proposed) | Monthly |
-| Implementation quality of complex virtualization solutions | — | — |
+| Complex virtualization implementations accepted without post-deployment rework (%) | — | — |
 | Success rate of migrations and upgrades | — | — |
 | Resolution time for complex virtualization issues | — | — |
 | Automation coverage for routine administrative tasks | — | — |

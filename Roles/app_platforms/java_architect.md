@@ -132,7 +132,7 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 | Metric | Target | Frequency |
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | — | — |
-| Alignment of Java designs with business requirements | — | — |
+| Java designs accepted by the requesting business owner without rework (%) | — | — |
 | Application transactions meeting their response-time budget (%) | — | — |
 | Security posture of Java applications | — | — |
 | Adoption of Java reference architectures and patterns | — | — |

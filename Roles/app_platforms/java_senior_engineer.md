@@ -134,7 +134,7 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 |---|---|---|
 | Java platform reliability and performance metrics | — | — |
 | Code quality gate pass rate on the main branch (%) | — | — |
-| Implementation quality of Java solutions | — | — |
+| Java implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for complex Java issues | — | — |
 | Junior developers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Java security posture improvement | — | — |

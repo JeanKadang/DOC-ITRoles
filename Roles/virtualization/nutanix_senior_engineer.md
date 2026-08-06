@@ -133,7 +133,7 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 | Metric | Target | Frequency |
 |---|---|---|
 | Nutanix infrastructure availability and reliability | ≥99.9% (proposed) | Monthly |
-| Implementation quality of HCI solutions | — | — |
+| HCI implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for complex Nutanix issues | — | — |
 | Automation coverage for Nutanix operations | — | — |
 | Provisioned capacity actively utilised (%) | — | — |

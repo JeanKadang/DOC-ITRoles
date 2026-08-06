@@ -135,7 +135,7 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 | Metric | Target | Frequency |
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | — | — |
-| Alignment of API designs with business requirements | — | — |
+| API designs accepted by the requesting business owner without rework (%) | — | — |
 | API platform performance and scalability | — | — |
 | Security posture of API implementations | — | — |
 | Adoption of API reference architectures and patterns | — | — |

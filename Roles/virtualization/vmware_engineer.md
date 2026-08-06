@@ -143,7 +143,7 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 | Provisioned capacity actively utilised (%) | — | — |
 | Patch compliance for VMware components | ≥95% (proposed) | Monthly |
 | Backup success rates for virtual machines | ≥99% (proposed) | Monthly |
-| Adherence to VMware configuration standards | — | — |
+| Work conforming to VMware configuration standards (%) | — | — |
 | Number of automated processes implemented | — | — |
 | Customer satisfaction with virtualization services | ≥85% (proposed) | Quarterly |
 

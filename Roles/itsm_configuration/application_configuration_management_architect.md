@@ -132,7 +132,7 @@ The Application Configuration Management Architect designs comprehensive strateg
 | Metric | Target | Frequency |
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | — | — |
-| Alignment of configuration designs with business requirements | — | — |
+| Configuration designs accepted by the requesting business owner without rework (%) | — | — |
 | Configuration management reliability and scalability | — | — |
 | Security posture of configuration systems | — | — |
 | Adoption of configuration reference architectures | — | — |
