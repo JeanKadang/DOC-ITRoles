@@ -117,7 +117,7 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 | Deployment automation effectiveness | — | — |
 | Knowledge transfer metrics for mentored engineers | — | — |
 | Kubernetes platform security posture scores | — | — |
-| Provisioned capacity actively utilised (%) | — | — |
+| Provisioned capacity actively utilised (%) | 70–85% (proposed) | Monthly |
 | Contribution to platform standards adoption | — | — |
 | Implementation of innovative container solutions | — | — |
 | Reduced operational overhead through automation | — | — |

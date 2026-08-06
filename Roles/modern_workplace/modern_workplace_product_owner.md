@@ -137,7 +137,7 @@ The Modern Workplace Product Owner (PO) owns the vision, roadmap, and delivery b
 | Microsoft 365 Copilot adoption (active users / licensed) | — | — |
 | Licensing utilisation efficiency (active use / licensed seats) | — | — |
 | Employee satisfaction with digital workplace tools (annual survey) | ≥85% (proposed) | Annual |
-| Committed sprint items delivered in the sprint (%) | — | — |
+| Committed sprint items delivered in the sprint (%) | ≥80% (proposed) | Monthly |
 | Roadmap milestones delivered against plan | — | — |
 
 ## Remote Work Considerations

@@ -117,7 +117,7 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 | Successful implementation of complex observability solutions | — | — |
 | Effectiveness of advanced alerting and detection mechanisms | — | — |
 | Platform scalability and performance improvements | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
 | Contribution to observability standards and patterns | — | — |
 | Implementation of innovative monitoring approaches | — | — |
 

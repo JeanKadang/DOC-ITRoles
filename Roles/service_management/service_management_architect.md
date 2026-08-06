@@ -138,8 +138,8 @@ The Service Management Architect designs comprehensive strategies and architectu
 | Adoption of ITSM reference architectures | — | — |
 | Reduction in service-related incidents | — | — |
 | Innovation in service management approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | Service management maturity improvement | — | — |
 
 ## Remote Work Considerations

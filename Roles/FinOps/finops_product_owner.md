@@ -157,7 +157,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 | Adoption of FinOps practices across teams | — | — |
 | Quality of backlog management | — | — |
 | Unit economics improvement metrics | — | — |
-| Eligible spend covered by reserved or committed capacity (%) | — | — |
+| Eligible spend covered by reserved or committed capacity (%) | 70–80% (proposed) | Quarterly |
 | FinOps maturity progression | — | — |
 
 ## Remote Work Considerations

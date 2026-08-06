@@ -148,7 +148,7 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 | Adoption of standards and best practices | — | — |
 | Time-to-value for new Nutanix implementations | — | — |
 | Risk mitigation effectiveness | — | — |
-| Improvement items proposed and adopted (count per quarter) | — | — |
+| Improvement items proposed and adopted (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

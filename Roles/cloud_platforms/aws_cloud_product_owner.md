@@ -134,7 +134,7 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 | AWS service adoption rates | — | — |
 | Cloud migration project success rates | — | — |
 | AWS platform feature delivery against roadmap | — | — |
-| Cloud platform requests fulfilled without manual intervention (%) | — | — |
+| Cloud platform requests fulfilled without manual intervention (%) | ≥80% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

@@ -141,10 +141,10 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 | Cost efficiency of designed cloud solutions | — | — |
 | Cloud designs passing security review at first submission (%) | ≥80% (proposed) | Quarterly |
 | Adoption of cloud reference architectures and patterns | — | — |
-| Recorded architectural risks and debt items closed (count per quarter) | — | — |
-| New cloud patterns adopted into the reference architecture (count per year) | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Recorded architectural risks and debt items closed (count per quarter) | ≥2 per quarter (proposed) | Quarterly |
+| New cloud patterns adopted into the reference architecture (count per year) | ≥2 per year (proposed) | Annually |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

@@ -140,7 +140,7 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 | Metric | Target | Frequency |
 |---|---|---|
 | Chapter practitioner retention rate and voluntary attrition trend | — | — |
-| New architect and senior engineer hires retained at 90 days (%) | — | — |
+| New architect and senior engineer hires retained at 90 days (%) | ≥95% (proposed) | Quarterly |
 | Chapter satisfaction score (internal survey results for the Service & Governance chapter) | ≥85% (proposed) | Quarterly |
 | ITSM process maturity level across all ITIL 4 processes (measured against ITIL 4 maturity model) | — | — |
 | CMDB accuracy and completeness rate for critical configuration item classes | — | — |

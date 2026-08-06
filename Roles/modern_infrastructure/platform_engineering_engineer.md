@@ -144,7 +144,7 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 | Template and golden path usage rates | — | — |
 | Developer support responsiveness | — | — |
 | Platform deployment automation success rate | — | — |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

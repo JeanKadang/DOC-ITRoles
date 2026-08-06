@@ -158,7 +158,7 @@ The Qumulo Storage Product Owner manages the development and lifecycle of the or
 | Storage implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Cost optimization achievements | — | — |
 | Backlog items meeting the definition of ready before sprint planning (%) | ≥90% (proposed) | Quarterly |
-| New storage capabilities released to consuming teams (count per year) | — | — |
+| New storage capabilities released to consuming teams (count per year) | ≥2 per year (proposed) | Annually |
 
 ## Remote Work Considerations
 

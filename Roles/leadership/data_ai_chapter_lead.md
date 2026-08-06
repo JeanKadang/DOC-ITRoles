@@ -140,7 +140,7 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 | Metric | Target | Frequency |
 |---|---|---|
 | Chapter practitioner retention rate and voluntary attrition trend | — | — |
-| New architect and senior engineer hires retained at 90 days (%) | — | — |
+| New architect and senior engineer hires retained at 90 days (%) | ≥95% (proposed) | Quarterly |
 | Chapter satisfaction score (internal survey results for the Data & AI chapter) | ≥85% (proposed) | Quarterly |
 | Data platform adoption and coverage across the organisation's data domains | — | — |
 | Data quality scores for critical business data domains | — | — |

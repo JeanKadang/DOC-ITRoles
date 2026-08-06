@@ -147,7 +147,7 @@ The Database Engineer implements and maintains database systems across the organ
 | User satisfaction with database services | ≥85% (proposed) | Quarterly |
 | Implementation quality of standard configurations | — | — |
 | Security compliance with database policies | — | — |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

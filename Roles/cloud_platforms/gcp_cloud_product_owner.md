@@ -138,7 +138,7 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 | GCP service adoption rates | — | — |
 | Migrations completed in the committed window without rollback (%) | ≥80% (proposed) | Quarterly |
 | GCP platform feature delivery against roadmap | — | — |
-| Cloud platform requests fulfilled without manual intervention (%) | — | — |
+| Cloud platform requests fulfilled without manual intervention (%) | ≥80% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

@@ -1379,3 +1379,22 @@ test('every KPI benchmark declares its basis and a note', () => {
         assert.ok(b.note && b.note.length > 0, `${b.re} needs a note`);
     }
 });
+
+test('proposedKpiTarget seeds counted improvement items but not improvement in a measure', () => {
+    // "Improvement in X" is a direction of travel; "Improvement items
+    // proposed and adopted" counts things. The first blanket rule refused
+    // both, which silently withheld a target from 3 rows that have a unit.
+    assert.match(proposedKpiTarget('Improvement items proposed and adopted (count per quarter)').target, /per quarter/);
+    assert.equal(proposedKpiTarget('Improvement in delivery metrics (lead time, MTTR, etc.)'), null);
+    assert.equal(proposedKpiTarget('Improvements in deployment frequency and reliability'), null);
+});
+
+test('count targets are floors, and stated per period', () => {
+    // A count depends on team size, so these say "the activity happens at
+    // all" rather than proposing a level of output.
+    for (const m of ['Engineers mentored who progress to the next competency level (count per year)',
+                     'Knowledge-sharing sessions delivered to engineering teams (count per quarter)']) {
+        assert.match(proposedKpiTarget(m).target, /^≥\d+ per (quarter|year) \(proposed\)$/, m);
+        assert.equal(proposedKpiTarget(m).basis, 'house');
+    }
+});

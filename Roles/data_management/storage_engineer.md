@@ -137,11 +137,11 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 | Resolution time for storage incidents | — | — |
 | Storage utilization efficiency | — | — |
 | Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
-| Planned maintenance completed in window without unplanned impact (%) | — | — |
+| Planned maintenance completed in window without unplanned impact (%) | ≥95% (proposed) | Quarterly |
 | Storage performance consistency | — | — |
 | Protected workloads passing their most recent recovery test (%) | ≥99% (proposed) | Monthly |
 | User satisfaction with storage services | ≥85% (proposed) | Quarterly |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

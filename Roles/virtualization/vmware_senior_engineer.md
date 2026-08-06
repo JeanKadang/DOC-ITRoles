@@ -145,7 +145,7 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 | Resolution time for complex incidents | — | — |
 | Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Implementation of standards and best practices | — | — |
-| Improvement items proposed and adopted (count per quarter) | — | — |
+| Improvement items proposed and adopted (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

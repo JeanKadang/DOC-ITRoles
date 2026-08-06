@@ -147,8 +147,8 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 | Successful implementation of automation tasks | — | — |
 | Backup success rates and recovery capabilities | ≥99% (proposed) | Monthly |
 | User satisfaction with Linux support | ≥85% (proposed) | Quarterly |
-| Work conforming to Linux standards and procedures (%) | — | — |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Work conforming to Linux standards and procedures (%) | ≥95% (proposed) | Quarterly |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

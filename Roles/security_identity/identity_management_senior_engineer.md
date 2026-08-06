@@ -140,7 +140,7 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 | Automation level achieved for identity operations | — | — |
 | Security posture improvement in identity systems | — | — |
 | Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
-| Identity-related security incidents (count per quarter) | — | — |
+| Identity-related security incidents (count per quarter) | 0 critical or high (proposed) | Quarterly |
 | Successful implementation of identity standards | — | — |
 | User satisfaction with authentication experience | ≥85% (proposed) | Quarterly |
 

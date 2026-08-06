@@ -138,9 +138,9 @@ The Application Configuration Management Architect designs comprehensive strateg
 | Adoption of configuration reference architectures | — | — |
 | Reduction in configuration-related incidents | — | — |
 | Configuration automation maturity improvement | — | — |
-| New configuration patterns adopted into the standard (count per year) | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| New configuration patterns adopted into the standard (count per year) | ≥2 per year (proposed) | Annually |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

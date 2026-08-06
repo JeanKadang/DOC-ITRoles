@@ -133,16 +133,16 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Code quality gate pass rate on the main branch (%) | — | — |
+| Code quality gate pass rate on the main branch (%) | ≥90% (proposed) | Monthly |
 | Timely completion of development tasks | — | — |
 | Unit test coverage percentage | ≥80% (proposed) | Monthly |
 | Number of defects in delivered code | — | — |
 | Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
-| Work conforming to .NET coding standards (%) | — | — |
+| Work conforming to .NET coding standards (%) | ≥95% (proposed) | Quarterly |
 | Cross-team deliverables completed in the committed period (%) | ≥80% (proposed) | Quarterly |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | Support requests acknowledged within the agreed response window (%) | ≥95% (proposed) | Monthly |
-| Application transactions meeting their response-time budget (%) | — | — |
+| Application transactions meeting their response-time budget (%) | ≥95% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

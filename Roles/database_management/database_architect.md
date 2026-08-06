@@ -139,8 +139,8 @@ The Database Architect designs comprehensive data management strategies and arch
 | Reduction in data-related architectural risks | — | — |
 | Database modernization progress and benefits | — | — |
 | Innovation in data management approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

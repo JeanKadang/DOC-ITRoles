@@ -131,14 +131,14 @@ The SimpliVity Backup Architect designs and oversees data protection strategies 
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
 | Solution designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
-| Protected workloads within the supported backup architecture (%) | — | — |
+| Protected workloads within the supported backup architecture (%) | ≥95% (proposed) | Quarterly |
 | Cost efficiency of designed solutions | — | — |
 | Recovery tests meeting their stated RTO (%) | ≥99% (proposed) | Monthly |
 | Adoption of reference architectures and standards | — | — |
 | Reduction in data protection architectural risks | — | — |
 | Innovation in backup approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

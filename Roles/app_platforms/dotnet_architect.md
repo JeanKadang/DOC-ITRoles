@@ -133,14 +133,14 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
 | .NET designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
-| Application transactions meeting their response-time budget (%) | — | — |
+| Application transactions meeting their response-time budget (%) | ≥95% (proposed) | Monthly |
 | Security posture of .NET applications | — | — |
 | Adoption of .NET reference architectures and patterns | — | — |
-| Recorded architectural risks and debt items closed (count per quarter) | — | — |
+| Recorded architectural risks and debt items closed (count per quarter) | ≥2 per quarter (proposed) | Quarterly |
 | Median lead time from commit to production for teams on the standard (hours) | ≤24 hours (proposed) | Monthly |
 | Innovation in .NET architectural approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

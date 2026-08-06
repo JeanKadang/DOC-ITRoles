@@ -136,7 +136,7 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 | HCI implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolution for complex Nutanix issues | — | — |
 | Automation coverage for Nutanix operations | — | — |
-| Provisioned capacity actively utilised (%) | — | — |
+| Provisioned capacity actively utilised (%) | 70–85% (proposed) | Monthly |
 | Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Success rate of migrations and upgrades | — | — |
 | Contribution to HCI standards and best practices | — | — |

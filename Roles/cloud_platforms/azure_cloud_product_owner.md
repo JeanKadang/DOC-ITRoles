@@ -134,7 +134,7 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 | PaaS service adoption rates | — | — |
 | Migrations completed in the committed window without rollback (%) | ≥80% (proposed) | Quarterly |
 | Azure platform feature delivery against roadmap | — | — |
-| Cloud platform requests fulfilled without manual intervention (%) | — | — |
+| Cloud platform requests fulfilled without manual intervention (%) | ≥80% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

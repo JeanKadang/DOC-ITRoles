@@ -165,7 +165,7 @@ The Access Management Product Owner manages the development and lifecycle of the
 | Access review campaign completion rates | — | — |
 | Stakeholder satisfaction with access processes | ≥85% (proposed) | Quarterly |
 | Privileged access security metrics | — | — |
-| Access-related security incidents (count per quarter) | — | — |
+| Access-related security incidents (count per quarter) | 0 critical or high (proposed) | Quarterly |
 | Successful delivery of access roadmap items | — | — |
 | Self-service access request adoption | — | — |
 | Access governance compliance scores | — | — |

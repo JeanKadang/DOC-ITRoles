@@ -141,7 +141,7 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 | Metric | Target | Frequency |
 |---|---|---|
 | Chapter practitioner retention rate and voluntary attrition trend | — | — |
-| New architect and senior engineer hires retained at 90 days (%) | — | — |
+| New architect and senior engineer hires retained at 90 days (%) | ≥95% (proposed) | Quarterly |
 | Chapter satisfaction score (internal survey results for the Security & Identity chapter) | ≥85% (proposed) | Quarterly |
 | Security architecture standards adoption rate across all technology domains | — | — |
 | Zero trust roadmap milestone completion rate against agreed programme timeline | — | — |

@@ -873,6 +873,48 @@
                                                                         target: '≥90%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
         { re: /\b(delivered|completed) in the committed\b/i,            target: '≥80%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
         { re: /\bdefinition of ready\b/i,                               target: '≥90%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+
+        // Conformance and estate hygiene. All of these ask "what share of the
+        // work followed the rule", where the rule is the organisation's own.
+        { re: /\bwork conforming to\b|\bconforms? to\b[^|]*\bstandards?\b/i,
+                                                                        target: '≥95%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bwithin its supported lifecycle\b|\bwithin the supported\b[^|]*\barchitecture\b/i,
+                                                                        target: '≥95%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bfrom the approved standard build\b|\bapproved reference pattern\b/i,
+                                                                        target: '≥90%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bartefacts current within\b|\brecommendations implemented within\b/i,
+                                                                        target: '≥90%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bmaintenance completed in window\b|\bcompleted in window\b/i,
+                                                                        target: '≥95%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bwithout manual intervention\b/i,                       target: '≥80%',            frequency: 'Monthly',   basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bcommitted sprint items delivered\b/i,                  target: '≥80%',            frequency: 'Monthly',   basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bresponse-time budget\b/i,                              target: '≥95%',            frequency: 'Monthly',   basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bquality gate pass rate\b/i,                            target: '≥90%',            frequency: 'Monthly',   basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bperformance baseline after tuning\b/i,                 target: '≥90%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bstated RPO\b/i,                                        target: '≥99%',            frequency: 'Monthly',   basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bhires retained at 90 days\b/i,                         target: '≥95%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        // Both of these are bands rather than thresholds: under-use wastes the
+        // spend, over-use removes the headroom the capacity exists for.
+        { re: /\bcapacity actively utilised\b|\butilisation\b[^|]*\(%\)/i,
+                                                                        target: '70–85%',          frequency: 'Monthly',   basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\breserved or committed capacity\b/i,                    target: '70–80%',          frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bmedian query execution time\b/i,                       target: '≤200 ms',         frequency: 'Monthly',   basis: 'house', note: 'no industry standard; house starting point for discussion' },
+
+        // Counts. A count target depends on team size, so these are the
+        // weakest proposals in the table and deliberately the lowest: a floor
+        // worth clearing rather than a stretch. "At least one a quarter" is a
+        // statement that the activity happens at all.
+        { re: /\bmentored who progress\b/i,                             target: '≥1 per year',     frequency: 'Annually',  basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bknowledge[- ]sharing\b[^|]*\(count per quarter\)/i,    target: '≥1 per quarter',  frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\b(risks|debt items|technical debt items)\b[^|]*\bclosed\b[^|]*\(count per quarter\)/i,
+                                                                        target: '≥2 per quarter',  frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\b(adopted into the|released to consuming teams)\b[^|]*\(count per year\)/i,
+                                                                        target: '≥2 per year',     frequency: 'Annually',  basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\b(onboarded to a platform capability|improvement items proposed and adopted)\b/i,
+                                                                        target: '≥1 per quarter',  frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        // The one count where the right number is knowable: severe incidents
+        // in the estate this role owns.
+        { re: /\b(access|identity)-related security incidents\b/i,      target: '0 critical or high', frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
     ];
 
     // A metric that asks only for a direction of travel has no threshold to
@@ -880,7 +922,10 @@
     // keyword matched in a sense the benchmark does not cover.
     const KPI_UNSEEDABLE = [
         /\btrend\w*\b/i,
-        /\bimprovement\w*\b|\bimprovements? in\b/i,
+        // "Improvement in X" is a direction; "Improvement items closed" is a
+        // count of things. Only the former is unseedable, so this is anchored
+        // to the preposition rather than to the word.
+        /\bimprovements? in\b/i,
         /\betc\.?\b/i,
     ];
 

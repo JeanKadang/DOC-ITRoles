@@ -139,7 +139,7 @@ The Application Configuration Management Senior Engineer leads the implementatio
 | Resolution time for configuration incidents | — | — |
 | Engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Standardization level of configuration practices | — | — |
-| New configuration patterns adopted into the standard (count per year) | — | — |
+| New configuration patterns adopted into the standard (count per year) | ≥2 per year (proposed) | Annually |
 | Security compliance of configuration processes | — | — |
 | Stakeholder satisfaction with configuration services | ≥85% (proposed) | Quarterly |
 

@@ -145,7 +145,7 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 | Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Issue resolution time for SCCM-related problems | — | — |
 | Endpoint inventory accuracy | — | — |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

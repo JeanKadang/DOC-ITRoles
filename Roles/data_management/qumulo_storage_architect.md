@@ -136,10 +136,10 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 | Cost efficiency of designed solutions | — | — |
 | Storage performance and availability metrics | ≥99.9% (proposed) | Monthly |
 | Adoption of reference architectures and standards | — | — |
-| Recorded architectural risks closed (count per quarter) | — | — |
+| Recorded architectural risks closed (count per quarter) | ≥2 per quarter (proposed) | Quarterly |
 | Innovation in storage approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 
