@@ -134,7 +134,7 @@ The Security Engineer implements and maintains security controls and technologie
 | Security control implementation quality | — | — |
 | Vulnerability remediation effectiveness | ≤30 days (critical) (proposed) | Monthly |
 | Security incident response time | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Security monitoring coverage | — | — |
 | Compliance with security standards | — | — |
 | Resolution time for security issues | — | — |

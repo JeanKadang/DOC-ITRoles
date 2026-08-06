@@ -144,7 +144,7 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 | Accuracy of capacity planning | — | — |
 | Effectiveness of observability solutions | — | — |
 | Quality of postmortem analysis and improvements | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

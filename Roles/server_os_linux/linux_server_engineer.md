@@ -142,7 +142,7 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 | Linux server availability metrics | ≥99.9% (proposed) | Monthly |
 | Time to resolve Linux-related incidents | — | — |
 | Patch compliance percentage | ≥95% (proposed) | Monthly |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Security compliance scores | — | — |
 | Successful implementation of automation tasks | — | — |
 | Backup success rates and recovery capabilities | ≥99% (proposed) | Monthly |

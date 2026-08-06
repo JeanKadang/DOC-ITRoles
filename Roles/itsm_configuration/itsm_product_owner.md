@@ -137,7 +137,7 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 | CMDB CI accuracy rate (target: >95% for in-scope CI classes) | >95% | — |
 | Service request self-service adoption rate (trend: increasing) | — | — |
 | Incident, Change, and Problem SLA compliance rates (platform impact contribution) | ≥95% (proposed) | Monthly |
-| Roadmap milestones delivered in the committed quarter (%) | — | — |
+| Roadmap milestones delivered in the committed quarter (%) | ≥80% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

@@ -137,7 +137,7 @@ The Security Senior Engineer leads the implementation and optimization of comple
 | Time to resolve complex security issues | — | — |
 | Security automation coverage and effectiveness | — | — |
 | Knowledge transfer effectiveness to security engineers | — | — |
-| Assets compliant with the security baseline (%) | — | — |
+| Assets compliant with the security baseline (%) | ≥95% (proposed) | Monthly |
 | Reduction in security vulnerabilities | — | — |
 | Innovation in security approaches | — | — |
 | Customer satisfaction with security services | ≥85% (proposed) | Quarterly |

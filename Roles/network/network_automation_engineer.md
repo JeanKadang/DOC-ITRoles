@@ -138,7 +138,7 @@ The Network Automation Engineer specializes in developing and implementing autom
 | Error reduction through automation | — | — |
 | Network change success rate improvement | — | — |
 | Code quality and reusability metrics | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Testing coverage for network automation | — | — |
 | Pipeline reliability and performance | — | — |
 | Innovation in automation approaches | — | — |

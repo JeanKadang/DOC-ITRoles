@@ -141,7 +141,7 @@ The Server Hardware Engineer implements and maintains the physical server infras
 | Server deployment time efficiency | — | — |
 | Hardware-related incident resolution time | — | — |
 | Hardware configuration accuracy | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Firmware compliance percentage | — | — |
 | Hardware inventory accuracy | — | — |
 | Planned hardware maintenance completed in window (%) | — | — |

@@ -136,7 +136,7 @@ The Service Management Engineer implements and maintains IT service management p
 | Time to complete service management requests | — | — |
 | Service catalog effectiveness | — | — |
 | Workflow automation success rate | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | User satisfaction with ITSM tools | ≥85% (proposed) | Quarterly |
 | Reporting and dashboard utility | — | — |
 | Resolution time for ITSM platform issues | — | — |

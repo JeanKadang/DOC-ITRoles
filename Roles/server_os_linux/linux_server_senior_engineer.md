@@ -138,11 +138,11 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 | Metric | Target | Frequency |
 |---|---|---|
 | Linux system availability and reliability metrics | ≥99.9% (proposed) | Monthly |
-| Linux implementations accepted without post-deployment rework (%) | — | — |
+| Linux implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolution for critical Linux incidents | — | — |
 | Automation coverage for Linux administration tasks | — | — |
 | Security compliance scores for Linux environments | — | — |
-| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Successful implementation of Linux standards | — | — |
 | Innovation in Linux platform enhancements | — | — |
 | Resource optimization achievements | — | — |

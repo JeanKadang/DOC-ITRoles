@@ -152,7 +152,7 @@ The Security Product Owner manages the development and lifecycle of the organiza
 | Compliance achievement percentage | — | — |
 | Successful delivery of security roadmap items | — | — |
 | Security awareness and adoption metrics | — | — |
-| Backlog items meeting the definition of ready before sprint planning (%) | — | — |
+| Backlog items meeting the definition of ready before sprint planning (%) | ≥90% (proposed) | Quarterly |
 | Return on security investment metrics | — | — |
 | Security maturity improvement | — | — |
 

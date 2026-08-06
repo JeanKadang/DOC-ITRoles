@@ -137,11 +137,11 @@ The Java Engineer implements and maintains Java-based applications and platform 
 | Timely completion of development tasks | — | — |
 | Unit test coverage percentage | ≥80% (proposed) | Monthly |
 | Number of defects in delivered code | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Work conforming to Java coding standards (%) | — | — |
-| Cross-team deliverables completed in the committed period (%) | — | — |
+| Cross-team deliverables completed in the committed period (%) | ≥80% (proposed) | Quarterly |
 | Knowledge-sharing contributions published or presented (count per quarter) | — | — |
-| Support requests acknowledged within the agreed response window (%) | — | — |
+| Support requests acknowledged within the agreed response window (%) | ≥95% (proposed) | Monthly |
 | Application transactions meeting their response-time budget (%) | — | — |
 
 ## Remote Work Considerations

@@ -135,11 +135,11 @@ The Network Product Owner manages the development and lifecycle of the organizat
 | Network service availability and reliability | ≥99.9% (proposed) | Monthly |
 | Time-to-delivery for network services | — | — |
 | Stakeholder satisfaction with network capabilities | ≥85% (proposed) | Quarterly |
-| Network devices compliant with the security baseline (%) | — | — |
+| Network devices compliant with the security baseline (%) | ≥95% (proposed) | Monthly |
 | Cost optimization achievements | — | — |
 | Successful delivery of network roadmap items | — | — |
 | Network service request fulfillment time | — | — |
-| Backlog items meeting the definition of ready before sprint planning (%) | — | — |
+| Backlog items meeting the definition of ready before sprint planning (%) | ≥90% (proposed) | Quarterly |
 | Network capacity management accuracy | — | — |
 | Innovation in network service delivery | — | — |
 

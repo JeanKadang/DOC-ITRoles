@@ -145,7 +145,7 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 | Time-to-delivery for platform enhancements | — | — |
 | Stakeholder satisfaction ratings | ≥85% (proposed) | Quarterly |
 | Cost efficiency metrics for HCI resources | — | — |
-| Backlog items meeting the definition of ready before sprint planning (%) | — | — |
+| Backlog items meeting the definition of ready before sprint planning (%) | ≥90% (proposed) | Quarterly |
 | Platform adoption rates across the organization | — | — |
 | Quality of service delivery documentation | — | — |
 | Platform automation and self-service capability | — | — |

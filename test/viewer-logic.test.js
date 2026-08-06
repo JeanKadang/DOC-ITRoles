@@ -6,6 +6,7 @@ const assert = require('node:assert/strict');
 const {
     STALE_MONTHS,
     proposedKpiTarget,
+    KPI_BENCHMARKS,
     parseKpiBullet,
     orgListHtml,
     graphListHtml,
@@ -1343,4 +1344,38 @@ test('proposedKpiTarget routes vulnerability MTTR to the remediation policy', ()
     const got = proposedKpiTarget(
         'Vulnerability mean time to remediate (MTTR) across critical and high severity findings');
     assert.match(got.target, /30 days/);
+});
+
+test('proposedKpiTarget seeds the further sourceable families', () => {
+    assert.match(proposedKpiTarget('Median lead time from commit to production for teams on the standard (hours)').target, /24 hours/);
+    assert.match(proposedKpiTarget('Platform services meeting their published SLO (%)').target, /95%/);
+    assert.match(proposedKpiTarget('Cloud accounts and subscriptions compliant with landing-zone guardrails (%)').target, /95%/);
+    assert.match(proposedKpiTarget('Support requests acknowledged within the agreed response window (%)').target, /95%/);
+});
+
+test('the DORA lead time figure is anchored to change lead time', () => {
+    // Not every duration called a lead time is the DORA one. Without the
+    // anchor this seeded ≤24 hours against an ML feature pipeline.
+    assert.equal(
+        proposedKpiTarget('ML feature pipeline production lead time (time from feature request to production availability)'),
+        null);
+});
+
+test('proposedKpiTarget separates published benchmarks from house starting points', () => {
+    // The distinction the marker cannot carry: "(proposed)" says the number
+    // is not agreed, but not whether anyone published it. A house figure
+    // must never be dressed up with a citation it does not have.
+    assert.equal(proposedKpiTarget('Change failure rate').basis, 'benchmark');
+    const house = proposedKpiTarget('Owned documentation reviewed and current within the agreed review cycle (%)');
+    assert.equal(house.basis, 'house');
+    assert.match(house.note, /no industry standard/i);
+    assert.match(house.target, /\(proposed\)$/);
+});
+
+test('every KPI benchmark declares its basis and a note', () => {
+    // A new entry added without a basis would be counted as published.
+    for (const b of KPI_BENCHMARKS) {
+        assert.ok(['benchmark', 'house'].includes(b.basis), `${b.re} needs a basis`);
+        assert.ok(b.note && b.note.length > 0, `${b.re} needs a note`);
+    }
 });

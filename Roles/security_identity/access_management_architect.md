@@ -137,7 +137,7 @@ The Access Management Architect designs and oversees the organization's access m
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
 | Access-related security incidents (count per quarter) | — | — |
 | Improvement in access governance metrics | — | — |
 | Timely delivery of access architecture artifacts | — | — |

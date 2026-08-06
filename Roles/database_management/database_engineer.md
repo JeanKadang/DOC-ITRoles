@@ -143,7 +143,7 @@ The Database Engineer implements and maintains database systems across the organ
 | Query performance and optimization | — | — |
 | Time to resolve database incidents | — | — |
 | Database patch compliance percentage | ≥95% (proposed) | Monthly |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | User satisfaction with database services | ≥85% (proposed) | Quarterly |
 | Implementation quality of standard configurations | — | — |
 | Security compliance with database policies | — | — |

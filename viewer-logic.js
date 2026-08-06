@@ -825,25 +825,54 @@
     // Adoption rate and incident rate are deliberately absent: widely
     // measured, but with no established value to propose. A family with no
     // real benchmark gets no seed.
+    // `basis` records where the number came from, which "(proposed)" cannot
+    // say on its own: the marker means "not agreed", not "nobody published
+    // it". A 'benchmark' entry cites a real published source; a 'house' entry
+    // is a starting point for the conversation and says so in its note. The
+    // two are counted separately rather than blended, so a house figure is
+    // never mistaken for an industry standard.
     const KPI_BENCHMARKS = [
-        { re: /\bchange failure\b/i,                                    target: '≤15%',             frequency: 'Monthly',   note: 'DORA' },
-        { re: /\bdeployment frequency\b/i,                              target: 'Weekly or better', frequency: 'Monthly',   note: 'DORA high performer' },
+        { re: /\bchange failure\b/i,                                    target: '≤15%',             frequency: 'Monthly',   basis: 'benchmark', note: 'DORA' },
+        { re: /\bdeployment frequency\b/i,                              target: 'Weekly or better', frequency: 'Monthly',   basis: 'benchmark', note: 'DORA high performer' },
         // Ahead of the MTTR rule: for a vulnerability, "time to remediate" is
         // governed by the remediation policy, not the P1 restore commitment.
-        { re: /\bvulnerab\w*\b[^|]*\b(remediat|resolv|closure)/i,       target: '≤30 days (critical)', frequency: 'Monthly', note: 'common remediation policy' },
+        { re: /\bvulnerab\w*\b[^|]*\b(remediat|resolv|closure)/i,       target: '≤30 days (critical)', frequency: 'Monthly', basis: 'benchmark', note: 'common remediation policy' },
         { re: /\b(mttr|mean time to (restore|repair|resolve|recover)\w*|time to restore)\b/i,
-                                                                        target: '≤4 hours',         frequency: 'Monthly',   note: 'common P1 restore commitment' },
-        { re: /\b(mttd|mean time to detect\w*|time to detect)\b/i,      target: '≤24 hours',        frequency: 'Monthly',   note: 'common detection target' },
-        { re: /\b(test|code)\s+coverage\b/i,                            target: '≥80%',             frequency: 'Monthly',   note: 'widely-used threshold' },
-        { re: /\b(backup|recovery|restore)\b[^|]*\b(success|rate|test)/i, target: '≥99%',           frequency: 'Monthly',   note: 'standard data-protection target' },
-        { re: /\bfirst[- ]contact\b/i,                                  target: '≥70%',             frequency: 'Monthly',   note: 'common service-desk target' },
-        { re: /\b(patch|compliance)\b[^|]*\b(coverage|complian)/i,      target: '≥95%',             frequency: 'Monthly',   note: 'common security baseline' },
-        { re: /\bSLA\b/,                                                target: '≥95%',             frequency: 'Monthly',   note: 'typical service commitment' },
-        { re: /\b(csat|satisfaction|nps)\b/i,                           target: '≥85%',             frequency: 'Quarterly', note: 'common enterprise IT service target' },
+                                                                        target: '≤4 hours',         frequency: 'Monthly',   basis: 'benchmark', note: 'common P1 restore commitment' },
+        { re: /\b(mttd|mean time to detect\w*|time to detect)\b/i,      target: '≤24 hours',        frequency: 'Monthly',   basis: 'benchmark', note: 'common detection target' },
+        // Anchored to "commit": the DORA figure is about change lead time, not
+        // any duration that happens to be called a lead time.
+        { re: /\blead time\b[^|]*\bcommit\b|\blead time for changes\b/i, target: '≤24 hours',       frequency: 'Monthly',   basis: 'benchmark', note: 'DORA high performer' },
+        { re: /\b(test|code)\s+coverage\b/i,                            target: '≥80%',             frequency: 'Monthly',   basis: 'benchmark', note: 'widely-used threshold' },
+        { re: /\b(backup|recovery|restore)\b[^|]*\b(success|rate|test)/i, target: '≥99%',           frequency: 'Monthly',   basis: 'benchmark', note: 'standard data-protection target' },
+        { re: /\bfirst[- ]contact\b/i,                                  target: '≥70%',             frequency: 'Monthly',   basis: 'benchmark', note: 'common service-desk target' },
+        { re: /\b(patch|compliance)\b[^|]*\b(coverage|complian)/i,      target: '≥95%',             frequency: 'Monthly',   basis: 'benchmark', note: 'common security baseline' },
+        { re: /\bcomplian\w*\b[^|]*\b(baseline|guardrail|landing[- ]zone)|\b(baseline|guardrail)s?\b[^|]*\bcomplian/i,
+                                                                        target: '≥95%',             frequency: 'Monthly',   basis: 'benchmark', note: 'common security baseline' },
+        // SLO alongside SLA: the same commitment, named differently by the
+        // teams that publish one rather than the other.
+        { re: /\bSL[AO]\b/,                                             target: '≥95%',             frequency: 'Monthly',   basis: 'benchmark', note: 'typical service commitment' },
+        { re: /\backnowledg\w*\b[^|]*\b(response|window)\b/i,           target: '≥95%',             frequency: 'Monthly',   basis: 'benchmark', note: 'common service-desk response commitment' },
+        { re: /\b(csat|satisfaction|nps)\b/i,                           target: '≥85%',             frequency: 'Quarterly', basis: 'benchmark', note: 'common enterprise IT service target' },
         // Anchored to the noun so "documentation available to teams" does not
         // match — only uptime/availability used as the metric itself.
         { re: /\b(uptime|availability)\b(?!\s+(to|for|of\s+(the\s+)?(team|staff|stakeholder)))/i,
-                                                                        target: '≥99.9%',           frequency: 'Monthly',   note: 'three-nines enterprise SLA' },
+                                                                        target: '≥99.9%',           frequency: 'Monthly',   basis: 'benchmark', note: 'three-nines enterprise SLA' },
+
+        // House starting points. These families are measured everywhere and
+        // standardised nowhere: no body publishes a documentation-currency,
+        // first-pass-approval or ramp-completion figure. Left alone they stay
+        // blank indefinitely, so they carry a defensible opening number and an
+        // explicit statement of where it came from. Dressing one of these up
+        // with a citation it does not have would be the worse outcome.
+        { re: /\bdocumentation\b[^|]*\b(reviewed and current|current within|currency)\b/i,
+                                                                        target: '≥95%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bwithout (post-deployment )?rework\b|\b(approved|accepted|passing)\b[^|]*\bat first\b/i,
+                                                                        target: '≥80%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\breaching independent delivery\b|\bagreed ramp period\b/i,
+                                                                        target: '≥90%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\b(delivered|completed) in the committed\b/i,            target: '≥80%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
+        { re: /\bdefinition of ready\b/i,                               target: '≥90%',            frequency: 'Quarterly', basis: 'house', note: 'no industry standard; house starting point for discussion' },
     ];
 
     // A metric that asks only for a direction of travel has no threshold to
@@ -893,7 +922,7 @@
             if (!b.re.test(m)) continue;
             const tUnit = kpiTargetUnit(b.target);
             if (mUnit && tUnit && mUnit !== tUnit) return null;
-            return { target: `${b.target} (proposed)`, frequency: b.frequency, note: b.note };
+            return { target: `${b.target} (proposed)`, frequency: b.frequency, basis: b.basis, note: b.note };
         }
         return null;
     }

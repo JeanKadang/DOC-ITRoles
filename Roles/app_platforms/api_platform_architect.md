@@ -134,13 +134,13 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
-| API designs accepted by the requesting business owner without rework (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
+| API designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
 | API platform performance and scalability | — | — |
 | Security posture of API implementations | — | — |
 | Adoption of API reference architectures and patterns | — | — |
 | Reduction in API architectural risks and technical debt | — | — |
-| Median lead time from commit to production for teams on the standard (hours) | — | — |
+| Median lead time from commit to production for teams on the standard (hours) | ≤24 hours (proposed) | Monthly |
 | Innovation in API architectural approaches | — | — |
 | Engineers mentored who progress to the next competency level (count per year) | — | — |
 | Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |

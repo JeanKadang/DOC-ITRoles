@@ -135,7 +135,7 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 | Group Policy implementation accuracy | — | — |
 | Directory service backup success rate | ≥99% (proposed) | Monthly |
 | Time to resolve Active Directory incidents | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Active Directory security posture | — | — |
 | Successful implementation of directory standards | — | — |
 | User satisfaction with identity services | ≥85% (proposed) | Quarterly |

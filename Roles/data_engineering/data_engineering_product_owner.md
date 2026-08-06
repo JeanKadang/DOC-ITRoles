@@ -137,7 +137,7 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 | Data platform cost per TB processed (trend: optimising) | — | — |
 | Data pipeline availability SLA compliance | ≥95% (proposed) | Monthly |
 | Stakeholder satisfaction score with data platform | ≥85% (proposed) | Quarterly |
-| Roadmap milestones delivered in the committed quarter (%) | — | — |
+| Roadmap milestones delivered in the committed quarter (%) | ≥80% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

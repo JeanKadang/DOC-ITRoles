@@ -134,8 +134,8 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
-| DevOps designs accepted by the requesting business owner without rework (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
+| DevOps designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
 | Delivery pipeline efficiency and reliability | — | — |
 | Security integration in DevOps workflows | — | — |
 | Adoption of DevOps reference architectures and patterns | — | — |

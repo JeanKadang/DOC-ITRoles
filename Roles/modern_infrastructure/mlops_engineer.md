@@ -152,7 +152,7 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 | Reproducibility of ML workflows | — | — |
 | Model monitoring coverage | — | — |
 | Feature engineering automation level | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Edge model deployment automation coverage: ≥80% of edge model updates delivered via automated pipelines | ≥80% | — |
 | Edge model drift detection rate: ≥90% of edge-deployed models under active performance monitoring | ≥90% | — |
 

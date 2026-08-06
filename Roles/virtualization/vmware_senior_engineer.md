@@ -143,7 +143,7 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 | Resource utilization optimization metrics | — | — |
 | Success rate of infrastructure changes and migrations | — | — |
 | Resolution time for complex incidents | — | — |
-| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Implementation of standards and best practices | — | — |
 | Improvement items proposed and adopted (count per quarter) | — | — |
 

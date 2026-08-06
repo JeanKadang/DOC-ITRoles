@@ -140,7 +140,7 @@ The Windows Server Architect designs and defines the strategic direction for the
 | Technical debt reduction in Windows environments | — | — |
 | Time-to-delivery for new Windows capabilities and services | — | — |
 | Windows security posture improvement | — | — |
-| Engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

@@ -135,8 +135,8 @@ The Network Senior Engineer leads the implementation and optimization of complex
 |---|---|---|
 | Network availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Mean time to resolution for complex network issues | — | — |
-| Network implementations accepted without post-deployment rework (%) | — | — |
-| Network devices compliant with the security baseline (%) | — | — |
+| Network implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
+| Network devices compliant with the security baseline (%) | ≥95% (proposed) | Monthly |
 | Knowledge transfer effectiveness to network engineers | — | — |
 | Network automation coverage and efficiency | — | — |
 | Success rate of network migrations and changes | — | — |
