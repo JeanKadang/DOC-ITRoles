@@ -132,7 +132,7 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 | Quality of IaC implementation | — | — |
 | Security compliance in Azure deployments | — | — |
 | Documentation quality for Azure configurations | — | — |
-| Successful implementation of standard patterns | — | — |
+| Deployments using an approved reference pattern (%) | — | — |
 | Azure service monitoring coverage | — | — |
 | Knowledge sharing with team members | — | — |
 

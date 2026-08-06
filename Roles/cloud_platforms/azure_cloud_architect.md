@@ -135,16 +135,16 @@ The Azure Cloud Platform Architect designs, implements, and governs cloud soluti
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
-| Alignment of cloud designs with business requirements | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
+| Cloud designs accepted by the requesting business owner without rework (%) | — | — |
 | Cloud architecture scalability and flexibility | — | — |
 | Cost efficiency of designed cloud solutions | — | — |
-| Security compliance of cloud architectures | — | — |
+| Cloud designs passing security review at first submission (%) | — | — |
 | Adoption of cloud reference architectures and patterns | — | — |
-| Reduction in architectural risks and technical debt | — | — |
-| Innovation in cloud architectural approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Recorded architectural risks and debt items closed (count per quarter) | — | — |
+| New cloud patterns adopted into the reference architecture (count per year) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

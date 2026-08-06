@@ -137,16 +137,16 @@ The Access Management Architect designs and oversees the organization's access m
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
-| Reduction in access-related security incidents | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
+| Access-related security incidents (count per quarter) | — | — |
 | Improvement in access governance metrics | — | — |
 | Timely delivery of access architecture artifacts | — | — |
 | Stakeholder satisfaction with access solutions | ≥85% (proposed) | Quarterly |
-| Innovation in access management approaches | — | — |
+| New access management patterns adopted into the standard (count per year) | — | — |
 | Alignment with security and compliance requirements | — | — |
 | Successful adoption of access architecture patterns | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

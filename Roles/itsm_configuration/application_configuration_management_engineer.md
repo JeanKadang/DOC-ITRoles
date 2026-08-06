@@ -136,12 +136,12 @@ The Application Configuration Management Engineer implements and maintains confi
 | Configuration deployment success rate | — | — |
 | Configuration-related incident reduction | — | — |
 | Time to resolve configuration issues | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Configuration compliance percentage | — | — |
 | Configuration management automation level | — | — |
 | Environment configuration consistency | — | — |
 | User satisfaction with configuration services | ≥85% (proposed) | Quarterly |
-| Knowledge sharing and collaboration | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

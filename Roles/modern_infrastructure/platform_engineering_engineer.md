@@ -137,14 +137,14 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 |---|---|---|
 | Platform component reliability and uptime | ≥99.9% (proposed) | Monthly |
 | Implementation quality of platform features | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Developer onboarding efficiency | — | — |
 | Platform issue resolution time | — | — |
 | Self-service capability effectiveness | — | — |
 | Template and golden path usage rates | — | — |
 | Developer support responsiveness | — | — |
 | Platform deployment automation success rate | — | — |
-| Knowledge sharing and collaboration | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

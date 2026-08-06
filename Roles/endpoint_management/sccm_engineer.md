@@ -142,10 +142,10 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 | Operating system deployment reliability | — | — |
 | Client health metrics | — | — |
 | Configuration baseline compliance | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Issue resolution time for SCCM-related problems | — | — |
 | Endpoint inventory accuracy | — | — |
-| Knowledge sharing and collaboration | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

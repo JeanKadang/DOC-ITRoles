@@ -174,9 +174,9 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 | Successful implementation of Kubernetes platform strategies | — | — |
 | Adoption rate of containerized applications | — | — |
 | Platform reliability and availability metrics | ≥99.9% (proposed) | Monthly |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Effective knowledge transfer to engineering teams | — | — |
-| Alignment of Kubernetes platforms with business requirements | — | — |
+| Kubernetes platforms accepted by the requesting business owner without rework (%) | — | — |
 | Number of CNCF technologies formally evaluated and adopted into the platform per year; operator maturity level (basic / managed / full lifecycle) | — | — |
 
 ## Recommended Certifications & Learning Paths

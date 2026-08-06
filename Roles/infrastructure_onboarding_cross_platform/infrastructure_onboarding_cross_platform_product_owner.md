@@ -143,7 +143,7 @@ The Enterprise Infrastructure Onboarding Product Owner manages the infrastructur
 | Request accuracy and first-time completions | — | — |
 | Onboarding documentation quality | — | — |
 | Infrastructure standards compliance | — | — |
-| Successful delivery of roadmap initiatives | — | — |
+| Roadmap initiatives delivered in the committed quarter (%) | — | — |
 
 ## Remote Work Considerations
 

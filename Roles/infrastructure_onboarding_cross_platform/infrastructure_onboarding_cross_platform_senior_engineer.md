@@ -135,9 +135,9 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 | Infrastructure provisioning time efficiency | — | — |
 | Automation coverage across infrastructure domains | — | — |
 | Provisioning success rate and reliability | — | — |
-| Implementation quality of onboarding solutions | — | — |
+| Onboarding implementations accepted without post-deployment rework (%) | — | — |
 | Resolution time for onboarding incidents | — | — |
-| Knowledge transfer effectiveness to engineers | — | — |
+| Engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Standardization level of infrastructure deployments | — | — |
 | Innovation in onboarding approaches | — | — |
 | Cross-platform integration effectiveness | — | — |

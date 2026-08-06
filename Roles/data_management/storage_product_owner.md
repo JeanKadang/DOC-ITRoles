@@ -136,11 +136,11 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 | Storage cost efficiency metrics | — | — |
 | Stakeholder satisfaction with storage services | ≥85% (proposed) | Quarterly |
 | Time to provision new storage resources | — | — |
-| Storage service levels achievement | — | — |
-| Implementation quality of storage solutions | — | — |
+| Storage services meeting their published SLO (%) | — | — |
+| Storage implementations accepted without post-deployment rework (%) | — | — |
 | Cost optimization achievements | — | — |
-| Backlog health and delivery metrics | — | — |
-| Innovation in storage services delivery | — | — |
+| Backlog items meeting the definition of ready before sprint planning (%) | — | — |
+| New storage capabilities released to consuming teams (count per year) | — | — |
 
 ## Remote Work Considerations
 

@@ -130,16 +130,16 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
-| Alignment of solutions with business requirements | — | — |
-| Backup architecture scalability and flexibility | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
+| Solution designs accepted by the requesting business owner without rework (%) | — | — |
+| Protected workloads within the supported backup architecture (%) | — | — |
 | Cost efficiency of designed solutions | — | — |
-| Recovery capabilities meeting or exceeding SLAs | — | — |
+| Recovery tests meeting their stated RTO (%) | — | — |
 | Adoption of reference architectures and standards | — | — |
-| Reduction in architectural risks and complexity | — | — |
+| Recorded architectural risks closed (count per quarter) | — | — |
 | Innovation in data protection approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

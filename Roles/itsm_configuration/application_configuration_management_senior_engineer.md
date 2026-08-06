@@ -135,11 +135,11 @@ The Application Configuration Management Senior Engineer leads the implementatio
 | Configuration management reliability metrics | — | — |
 | Automation coverage for configuration processes | — | — |
 | Configuration deployment success rate | — | — |
-| Implementation quality of configuration solutions | — | — |
+| Configuration implementations accepted without post-deployment rework (%) | — | — |
 | Resolution time for configuration incidents | — | — |
-| Knowledge transfer effectiveness to engineers | — | — |
+| Engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Standardization level of configuration practices | — | — |
-| Innovation in configuration management approaches | — | — |
+| New configuration patterns adopted into the standard (count per year) | — | — |
 | Security compliance of configuration processes | — | — |
 | Stakeholder satisfaction with configuration services | ≥85% (proposed) | Quarterly |
 

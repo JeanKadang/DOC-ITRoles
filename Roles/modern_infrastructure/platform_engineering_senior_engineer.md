@@ -138,7 +138,7 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 |---|---|---|
 | Platform stability and reliability metrics | — | — |
 | Developer adoption of platform services | — | — |
-| Implementation quality of platform solutions | — | — |
+| Platform implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for platform incidents | — | — |
 | Developer experience satisfaction scores | ≥85% (proposed) | Quarterly |
 | Reduction in toil through platform automation | — | — |

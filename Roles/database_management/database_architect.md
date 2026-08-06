@@ -132,15 +132,15 @@ The Database Architect designs comprehensive data management strategies and arch
 | Metric | Target | Frequency |
 |---|---|---|
 | Database architecture design quality and effectiveness | — | — |
-| Alignment of database designs with business requirements | — | — |
+| Database designs accepted by the requesting business owner without rework (%) | — | — |
 | Database performance, scalability, and reliability | — | — |
 | Data security and compliance framework effectiveness | — | — |
 | Adoption of database reference architectures and patterns | — | — |
 | Reduction in data-related architectural risks | — | — |
 | Database modernization progress and benefits | — | — |
 | Innovation in data management approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

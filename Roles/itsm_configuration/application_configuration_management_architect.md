@@ -131,16 +131,16 @@ The Application Configuration Management Architect designs comprehensive strateg
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
-| Alignment of configuration designs with business requirements | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
+| Configuration designs accepted by the requesting business owner without rework (%) | — | — |
 | Configuration management reliability and scalability | — | — |
 | Security posture of configuration systems | — | — |
 | Adoption of configuration reference architectures | — | — |
 | Reduction in configuration-related incidents | — | — |
 | Configuration automation maturity improvement | — | — |
-| Innovation in configuration management approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| New configuration patterns adopted into the standard (count per year) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

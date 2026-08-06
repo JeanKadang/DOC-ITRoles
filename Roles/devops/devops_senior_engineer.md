@@ -119,7 +119,7 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 | Improvements in deployment frequency and reliability | Weekly or better (proposed) | Monthly |
 | Quality of pipeline templates and reusable components | — | — |
 | Effectiveness of self-service DevOps capabilities | — | — |
-| Quality of technical leadership and mentorship | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
 | Contribution to DevOps standards and best practices | — | — |
 | Innovation in delivery automation approaches | — | — |
 

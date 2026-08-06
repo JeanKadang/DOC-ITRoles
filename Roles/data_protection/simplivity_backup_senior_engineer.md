@@ -127,12 +127,12 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 |---|---|---|
 | Backup success rate and reliability metrics | ≥99% (proposed) | Monthly |
 | Recovery time objective (RTO) achievement | — | — |
-| Recovery point objective (RPO) achievement | — | — |
+| Protected workloads meeting their stated RPO (%) | — | — |
 | Backup storage efficiency (deduplication ratios) | — | — |
-| Implementation quality of data protection solutions | — | — |
+| Data protection implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for complex backup incidents | — | — |
-| Knowledge transfer effectiveness to junior engineers | — | — |
-| Automation level of backup operations | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Backup operations performed without manual intervention (%) | — | — |
 | Successful recovery testing completion rates | ≥99% (proposed) | Monthly |
 | Business continuity improvement metrics | — | — |
 

@@ -142,12 +142,12 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 | Virtual machine provisioning efficiency | — | — |
 | Time to resolve Nutanix-related incidents | — | — |
 | Successful completion of maintenance activities | — | — |
-| Documentation quality and completeness | — | — |
-| Resource utilization optimization | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Provisioned capacity actively utilised (%) | — | — |
 | Patch compliance for Nutanix components | ≥95% (proposed) | Monthly |
 | Reduction in recurring incidents | — | — |
 | User satisfaction with infrastructure services | ≥85% (proposed) | Quarterly |
-| Knowledge sharing and collaboration | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

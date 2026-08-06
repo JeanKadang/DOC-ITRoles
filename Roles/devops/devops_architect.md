@@ -134,15 +134,15 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
-| Alignment of DevOps designs with business requirements | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
+| DevOps designs accepted by the requesting business owner without rework (%) | — | — |
 | Delivery pipeline efficiency and reliability | — | — |
 | Security integration in DevOps workflows | — | — |
 | Adoption of DevOps reference architectures and patterns | — | — |
 | Reduction in delivery-related incidents | — | — |
 | Number of novel pipeline patterns adopted and operationalized per quarter; percentage of teams using self-service golden path tooling | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 | Improvement in delivery metrics (lead time, MTTR, etc.) | ≤4 hours (proposed) | Monthly |
 
 ## Remote Work Considerations

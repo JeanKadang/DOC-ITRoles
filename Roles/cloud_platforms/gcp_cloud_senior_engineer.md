@@ -131,14 +131,14 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 | Metric | Target | Frequency |
 |---|---|---|
 | GCP environment availability and reliability | ≥99.9% (proposed) | Monthly |
-| Implementation quality of GCP solutions | — | — |
+| GCP implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolve critical cloud incidents | — | — |
 | Cost optimization achievements | — | — |
 | Security posture improvement in GCP | — | — |
-| Knowledge transfer effectiveness to junior engineers | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Successful implementation of GCP standards and patterns | — | — |
-| Project delivery timeliness and quality | — | — |
-| Technical innovation contribution | — | — |
+| Projects delivered in the committed period without post-go-live defects (%) | — | — |
+| New patterns or tooling adopted into the standard (count per year) | — | — |
 | Customer satisfaction with GCP services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations

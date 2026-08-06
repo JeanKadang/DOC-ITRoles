@@ -148,7 +148,7 @@ The Database Product Owner manages the portfolio of database platforms and data 
 | Metric | Target | Frequency |
 |---|---|---|
 | Database platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
-| Query performance optimization results | — | — |
+| Median query execution time for tuned workloads (ms) | — | — |
 | Time to provision new database environments | — | — |
 | Database incident reduction trends | — | — |
 | Cost efficiency of database resources | — | — |

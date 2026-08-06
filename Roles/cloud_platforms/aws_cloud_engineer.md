@@ -136,10 +136,10 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 | AWS cost management effectiveness | — | — |
 | Security compliance in AWS environments | — | — |
 | Documentation quality for AWS configurations | — | — |
-| Successful implementation of standard patterns | — | — |
+| Deployments using an approved reference pattern (%) | — | — |
 | AWS resource utilization efficiency | — | — |
 | User satisfaction with AWS services | ≥85% (proposed) | Quarterly |
-| Knowledge sharing and collaboration | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

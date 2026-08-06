@@ -133,7 +133,7 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 |---|---|---|
 | Storage environment availability and reliability | ≥99.9% (proposed) | Monthly |
 | Storage performance optimization results | — | — |
-| Implementation quality of storage solutions | — | — |
+| Storage implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for complex storage issues | — | — |
 | Knowledge transfer effectiveness to storage engineers | — | — |
 | Storage automation coverage and efficiency | — | — |

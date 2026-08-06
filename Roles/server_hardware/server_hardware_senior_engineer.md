@@ -140,14 +140,14 @@ The Server Hardware Senior Engineer leads the implementation and optimization of
 | Metric | Target | Frequency |
 |---|---|---|
 | Server hardware availability and reliability metrics | ≥99.9% (proposed) | Monthly |
-| Implementation quality of hardware solutions | — | — |
+| Hardware implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for critical hardware issues | — | — |
 | Hardware deployment automation effectiveness | — | — |
 | Power and cooling efficiency improvements | — | — |
-| Knowledge transfer effectiveness to junior engineers | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Hardware standardization implementation success | — | — |
 | Success rate of hardware upgrades and refreshes | — | — |
-| Innovation in server infrastructure approaches | — | — |
+| New server platform patterns adopted into the standard build (count per year) | — | — |
 | Stakeholder satisfaction with infrastructure services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations

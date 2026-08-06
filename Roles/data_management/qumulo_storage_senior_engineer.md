@@ -136,13 +136,13 @@ The Qumulo Storage Senior Engineer leads the implementation and optimization of 
 | Metric | Target | Frequency |
 |---|---|---|
 | Storage availability and reliability metrics | ≥99.9% (proposed) | Monthly |
-| Implementation quality of storage solutions | — | — |
+| Storage implementations accepted without post-deployment rework (%) | — | — |
 | Time to resolution for complex storage issues | — | — |
 | Qumulo performance optimization results | — | — |
-| Knowledge transfer effectiveness to engineers | — | — |
+| Engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Storage automation level and efficiency | — | — |
 | Success rate of data migrations | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Innovation in Qumulo implementation approaches | — | — |
 | Customer satisfaction with file storage services | ≥85% (proposed) | Quarterly |
 
