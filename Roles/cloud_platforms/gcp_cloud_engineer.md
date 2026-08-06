@@ -130,7 +130,7 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 
 | Metric | Target | Frequency |
 |---|---|---|
-| GCP environment uptime and reliability | — | — |
+| GCP environment uptime and reliability | ≥99.9% (proposed) | Monthly |
 | Time to provision new cloud resources | — | — |
 | Resolution time for cloud service incidents | — | — |
 | GCP cost management effectiveness | — | — |
@@ -138,7 +138,7 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 | Documentation quality for GCP configurations | — | — |
 | Successful implementation of standard patterns | — | — |
 | GCP resource utilization efficiency | — | — |
-| User satisfaction with GCP services | — | — |
+| User satisfaction with GCP services | ≥85% (proposed) | Quarterly |
 | Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations

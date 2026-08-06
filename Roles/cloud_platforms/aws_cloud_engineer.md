@@ -130,7 +130,7 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 | Metric | Target | Frequency |
 |---|---|---|
-| AWS environment uptime and reliability | — | — |
+| AWS environment uptime and reliability | ≥99.9% (proposed) | Monthly |
 | Time to provision new cloud resources | — | — |
 | Resolution time for cloud service incidents | — | — |
 | AWS cost management effectiveness | — | — |
@@ -138,7 +138,7 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 | Documentation quality for AWS configurations | — | — |
 | Successful implementation of standard patterns | — | — |
 | AWS resource utilization efficiency | — | — |
-| User satisfaction with AWS services | — | — |
+| User satisfaction with AWS services | ≥85% (proposed) | Quarterly |
 | Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations

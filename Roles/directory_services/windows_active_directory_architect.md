@@ -126,13 +126,13 @@ The Windows Active Directory Architect designs AD structure, security models, an
 | Metric | Target | Frequency |
 |---|---|---|
 | Success of Active Directory design implementations | — | — |
-| Availability and reliability of directory services | — | — |
+| Availability and reliability of directory services | ≥99.9% (proposed) | Monthly |
 | Security posture of AD infrastructure | — | — |
 | Adoption of AD standards and best practices | — | — |
 | Quality of architecture documentation | — | — |
 | Time-to-resolution for complex AD design issues | — | — |
 | Successful completion of AD migrations | — | — |
-| Business satisfaction with identity infrastructure | — | — |
+| Business satisfaction with identity infrastructure | ≥85% (proposed) | Quarterly |
 | Reduction in security incidents related to directory services | — | — |
 | Knowledge transfer effectiveness to engineering teams | — | — |
 

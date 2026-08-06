@@ -141,7 +141,7 @@ The Access Management Architect designs and oversees the organization's access m
 | Reduction in access-related security incidents | — | — |
 | Improvement in access governance metrics | — | — |
 | Timely delivery of access architecture artifacts | — | — |
-| Stakeholder satisfaction with access solutions | — | — |
+| Stakeholder satisfaction with access solutions | ≥85% (proposed) | Quarterly |
 | Innovation in access management approaches | — | — |
 | Alignment with security and compliance requirements | — | — |
 | Successful adoption of access architecture patterns | — | — |

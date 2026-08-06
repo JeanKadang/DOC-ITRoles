@@ -140,7 +140,7 @@ The AI Governance Senior Engineer implements, operates, and continuously improve
 | Audit finding rate and remediation time for AI governance findings | — | — |
 | GenAI deployment compliance review completion rate | — | — |
 | AI incident documentation completeness and timeliness | — | — |
-| Governance tooling availability and data quality scores | — | — |
+| Governance tooling availability and data quality scores | ≥99.9% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

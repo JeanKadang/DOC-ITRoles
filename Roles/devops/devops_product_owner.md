@@ -113,7 +113,7 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 |---|---|---|
 | DevOps platform adoption rates across teams | — | — |
 | Successful delivery of roadmap initiatives | — | — |
-| Stakeholder satisfaction with DevOps services | — | — |
+| Stakeholder satisfaction with DevOps services | ≥85% (proposed) | Quarterly |
 | Quality of backlog management and prioritization | — | — |
 | Measurable improvement in software delivery metrics | — | — |
 | Effectiveness of DevOps training and enablement programs | — | — |

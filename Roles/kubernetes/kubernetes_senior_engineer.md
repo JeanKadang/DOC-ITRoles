@@ -112,7 +112,7 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 | Metric | Target | Frequency |
 |---|---|---|
 | Successful implementation rate of complex Kubernetes solutions | — | — |
-| Platform reliability metrics (uptime, stability) | — | — |
+| Platform reliability metrics (uptime, stability) | ≥99.9% (proposed) | Monthly |
 | Mean time to recovery for platform incidents | — | — |
 | Deployment automation effectiveness | — | — |
 | Knowledge transfer metrics for mentored engineers | — | — |

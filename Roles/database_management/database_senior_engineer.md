@@ -135,7 +135,7 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Database availability and performance metrics | — | — |
+| Database availability and performance metrics | ≥99.9% (proposed) | Monthly |
 | Query performance optimization results | — | — |
 | Implementation quality of database solutions | — | — |
 | Mean time to resolution for critical database issues | — | — |

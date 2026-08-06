@@ -120,7 +120,7 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Stakeholder satisfaction with Hyper-V services | — | — |
+| Stakeholder satisfaction with Hyper-V services | ≥85% (proposed) | Quarterly |
 | Achievement of roadmap milestones and delivery objectives | — | — |
 | Effective prioritization of features and initiatives | — | — |
 | Quality of service metrics for Hyper-V environments | — | — |

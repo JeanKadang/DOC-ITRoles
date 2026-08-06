@@ -140,8 +140,8 @@ The DevOps & Delivery Chapter Lead is the most senior technical manager and peop
 |---|---|---|
 | Chapter practitioner retention rate and voluntary attrition trend | — | — |
 | Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires) | — | — |
-| Chapter satisfaction score (internal survey results for the DevOps & Delivery chapter) | — | — |
-| DORA metrics trend at chapter level (deployment frequency, lead time, change failure rate, MTTR) | — | — |
+| Chapter satisfaction score (internal survey results for the DevOps & Delivery chapter) | ≥85% (proposed) | Quarterly |
+| DORA metrics trend at chapter level (deployment frequency, lead time, change failure rate, MTTR) | ≤15% (proposed) | Monthly |
 | IDP adoption rate across development teams | — | — |
 | Pipeline standardisation coverage across the organisation | — | — |
 | API governance compliance rate | — | — |

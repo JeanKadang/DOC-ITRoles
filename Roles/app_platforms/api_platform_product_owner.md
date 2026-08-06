@@ -131,7 +131,7 @@ The API Platform Product Owner manages the development and lifecycle of the orga
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Developer satisfaction with API platform | — | — |
+| Developer satisfaction with API platform | ≥85% (proposed) | Quarterly |
 | API adoption rates across development teams | — | — |
 | Time-to-market improvement for API-dependent applications | — | — |
 | Reduction in integration effort through standardized APIs | — | — |

@@ -138,7 +138,7 @@ The Enterprise Architect develops and maintains the overall technological vision
 | Time-to-market improvements from architectural enablement | — | — |
 | Cost efficiencies achieved through architecture optimization | — | — |
 | Solution delivery success rates with architectural governance | — | — |
-| Stakeholder satisfaction with architectural guidance | — | — |
+| Stakeholder satisfaction with architectural guidance | ≥85% (proposed) | Quarterly |
 | Enterprise architecture maturity progression | — | — |
 | Innovation enablement through architecture | — | — |
 | Quality of documentation and knowledge sharing | — | — |

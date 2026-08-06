@@ -146,7 +146,7 @@ The Server Hardware Engineer implements and maintains the physical server infras
 | Hardware inventory accuracy | — | — |
 | Successful hardware maintenance completions | — | — |
 | Standard build implementation quality | — | — |
-| User satisfaction with hardware support | — | — |
+| User satisfaction with hardware support | ≥85% (proposed) | Quarterly |
 | Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations

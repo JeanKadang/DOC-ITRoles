@@ -140,10 +140,10 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Platform availability and reliability metrics | — | — |
+| Platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Resource utilization optimization | — | — |
 | Time-to-delivery for platform enhancements | — | — |
-| Stakeholder satisfaction ratings | — | — |
+| Stakeholder satisfaction ratings | ≥85% (proposed) | Quarterly |
 | Cost efficiency metrics for HCI resources | — | — |
 | Backlog health and prioritization effectiveness | — | — |
 | Platform adoption rates across the organization | — | — |

@@ -133,7 +133,7 @@ The Windows Server Architect designs and defines the strategic direction for the
 |---|---|---|
 | Architectural standards adoption rate across Windows deployments | — | — |
 | Reduction in Windows infrastructure incidents due to architectural improvements | — | — |
-| Windows environment availability and performance metrics | — | — |
+| Windows environment availability and performance metrics | ≥99.9% (proposed) | Monthly |
 | Successful implementation of architectural recommendations | — | — |
 | Cost optimization of Windows licensing and infrastructure | — | — |
 | Quality and completeness of architecture documentation | — | — |

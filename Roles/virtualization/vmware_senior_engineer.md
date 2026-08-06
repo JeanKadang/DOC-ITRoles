@@ -138,7 +138,7 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Infrastructure availability and uptime statistics | — | — |
+| Infrastructure availability and uptime statistics | ≥99.9% (proposed) | Monthly |
 | VM deployment time reduction through automation | — | — |
 | Resource utilization optimization metrics | — | — |
 | Success rate of infrastructure changes and migrations | — | — |

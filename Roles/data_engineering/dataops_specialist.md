@@ -146,14 +146,14 @@ The DataOps Specialist applies DevOps and agile engineering principles to data p
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Data pipeline SLA compliance rate (% of pipelines meeting their published SLO targets) | — | — |
+| Data pipeline SLA compliance rate (% of pipelines meeting their published SLO targets) | ≥95% (proposed) | Monthly |
 | Data quality score across critical Gold tier datasets (% of dbt and Great Expectations checks passing) | — | — |
-| Pipeline MTTR (mean time to restore failed data pipelines, in hours) | — | — |
-| Deployment frequency for data pipeline changes (releases per week/month, trending up) | — | — |
+| Pipeline MTTR (mean time to restore failed data pipelines, in hours) | ≤4 hours (proposed) | Monthly |
+| Deployment frequency for data pipeline changes (releases per week/month, trending up) | Weekly or better (proposed) | Monthly |
 | Data incident volume trending (number of data quality incidents per month, trending down) | — | — |
 | Time-to-detect (TTD) for data quality anomalies (minutes/hours from issue occurrence to alert firing) | — | — |
-| Automated test coverage rate (% of transformation logic covered by automated data quality tests) | — | — |
-| Post-incident review completion rate (% of severity-1 incidents with completed PIR within SLA) | — | — |
+| Automated test coverage rate (% of transformation logic covered by automated data quality tests) | ≥80% (proposed) | Monthly |
+| Post-incident review completion rate (% of severity-1 incidents with completed PIR within SLA) | ≥95% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

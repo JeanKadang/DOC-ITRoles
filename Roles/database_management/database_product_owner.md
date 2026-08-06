@@ -147,13 +147,13 @@ The Database Product Owner manages the portfolio of database platforms and data 
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Database platform availability and reliability metrics | — | — |
+| Database platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Query performance optimization results | — | — |
 | Time to provision new database environments | — | — |
 | Database incident reduction trends | — | — |
 | Cost efficiency of database resources | — | — |
 | Successful delivery of database roadmap items | — | — |
-| Stakeholder satisfaction with database services | — | — |
+| Stakeholder satisfaction with database services | ≥85% (proposed) | Quarterly |
 | Database automation and self-service capabilities | — | — |
 | Backup and recovery effectiveness metrics | — | — |
 | Database security compliance scores | — | — |

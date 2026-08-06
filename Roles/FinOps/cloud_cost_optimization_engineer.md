@@ -142,7 +142,7 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 | Metric | Target | Frequency |
 |---|---|---|
 | Percentage of cloud waste eliminated month-on-month | — | — |
-| Rightsizing recommendation adoption rate (% of recommendations implemented within SLA) | — | — |
+| Rightsizing recommendation adoption rate (% of recommendations implemented within SLA) | ≥95% (proposed) | Monthly |
 | Reserved instance and savings plan coverage percentage across eligible spend | — | — |
 | Cost anomaly resolution time (average hours from alert to resolution) | — | — |
 | Tagging compliance percentage across the cloud estate | — | — |

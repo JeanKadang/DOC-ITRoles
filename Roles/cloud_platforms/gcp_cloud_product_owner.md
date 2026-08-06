@@ -129,10 +129,10 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 
 | Metric | Target | Frequency |
 |---|---|---|
-| GCP platform availability and reliability | — | — |
+| GCP platform availability and reliability | ≥99.9% (proposed) | Monthly |
 | Cloud cost management effectiveness | — | — |
 | Time-to-delivery for cloud services | — | — |
-| Stakeholder satisfaction with GCP platform | — | — |
+| Stakeholder satisfaction with GCP platform | ≥85% (proposed) | Quarterly |
 | Security compliance scores for cloud environment | — | — |
 | Successful implementation of cloud governance | — | — |
 | GCP service adoption rates | — | — |

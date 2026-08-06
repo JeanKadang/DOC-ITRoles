@@ -146,7 +146,7 @@ The Data Mesh Architect designs and governs the organisation's data mesh archite
 | Metric | Target | Frequency |
 |---|---|---|
 | Number of active domain data products published to the mesh (trending growth month-over-month) | — | — |
-| Data product SLA compliance rate (% of data products meeting their published quality and freshness SLOs) | — | — |
+| Data product SLA compliance rate (% of data products meeting their published quality and freshness SLOs) | ≥95% (proposed) | Monthly |
 | Time-to-production for new domain data products (days from initiation to first consumer, trending down) | — | — |
 | Data catalogue coverage (% of domain data products with complete metadata, lineage, and ownership records) | — | — |
 | Cross-domain data product consumption rate (number of active cross-domain data product subscriptions) | — | — |

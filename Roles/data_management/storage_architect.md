@@ -146,7 +146,7 @@ The Storage Architect is responsible for designing and governing the organisatio
 | Storage-related incident count (trend: decreasing) | — | — |
 | Capacity forecast accuracy (target: within 10% of actuals at 6-month horizon) | 10% | — |
 | Storage cost per TB (trend: optimising) | — | — |
-| SLA compliance for storage performance tiers | — | — |
+| SLA compliance for storage performance tiers | ≥95% (proposed) | Monthly |
 | Percentage of Kubernetes persistent volumes using approved CSI/StorageClass standards | — | — |
 
 ## Remote Work Considerations

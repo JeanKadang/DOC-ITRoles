@@ -133,7 +133,7 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Network availability and reliability metrics | — | — |
+| Network availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Mean time to resolution for complex network issues | — | — |
 | Implementation quality of network solutions | — | — |
 | Network security posture improvement | — | — |
@@ -141,7 +141,7 @@ The Network Senior Engineer leads the implementation and optimization of complex
 | Network automation coverage and efficiency | — | — |
 | Success rate of network migrations and changes | — | — |
 | Network performance optimization results | — | — |
-| Customer satisfaction with network services | — | — |
+| Customer satisfaction with network services | ≥85% (proposed) | Quarterly |
 | Innovation in network implementation approaches | — | — |
 
 ## Remote Work Considerations

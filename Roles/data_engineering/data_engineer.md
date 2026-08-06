@@ -139,8 +139,8 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 |---|---|---|
 | Pipeline availability for owned data products | — | — |
 | Data quality test pass rate for owned models | — | — |
-| Data freshness SLA compliance | — | — |
-| Analyst satisfaction with data quality and timeliness | — | — |
+| Data freshness SLA compliance | ≥95% (proposed) | Monthly |
+| Analyst satisfaction with data quality and timeliness | ≥85% (proposed) | Quarterly |
 | Data documentation completeness in the catalogue | — | — |
 | Query performance and cost efficiency of owned data models | — | — |
 

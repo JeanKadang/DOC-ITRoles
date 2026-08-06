@@ -153,7 +153,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 | Resource tagging compliance percentage | — | — |
 | Reserved/committed capacity optimization | — | — |
 | Documentation quality and completeness | — | — |
-| User satisfaction with cost management tools | — | — |
+| User satisfaction with cost management tools | ≥85% (proposed) | Quarterly |
 | Problem resolution time for billing issues | — | — |
 
 ## Remote Work Considerations

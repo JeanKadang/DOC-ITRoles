@@ -136,7 +136,7 @@ The Enterprise Infrastructure Onboarding Product Owner manages the infrastructur
 |---|---|---|
 | Infrastructure provisioning time metrics | — | — |
 | Service request fulfillment time | — | — |
-| User satisfaction with onboarding processes | — | — |
+| User satisfaction with onboarding processes | ≥85% (proposed) | Quarterly |
 | Automation level of provisioning workflows | — | — |
 | Self-service adoption metrics | — | — |
 | Cost savings through standardization | — | — |

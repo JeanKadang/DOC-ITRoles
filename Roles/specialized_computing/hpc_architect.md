@@ -156,7 +156,7 @@ The High-Performance Computing (HPC) Architect leads the design, implementation,
 | Time-to-solution improvements for computational workloads | — | — |
 | Security and compliance adherence in HPC environments | — | — |
 | Knowledge transfer effectiveness and documentation quality | — | — |
-| Stakeholder satisfaction with HPC capabilities | — | — |
+| Stakeholder satisfaction with HPC capabilities | ≥85% (proposed) | Quarterly |
 | Innovation in HPC solutions and approaches | — | — |
 | Sustainability improvements in HPC operations | — | — |
 | Edge-to-cloud latency SLA adherence: ≥99% of edge inference workloads meeting defined end-to-end latency SLAs | ≥99% | — |

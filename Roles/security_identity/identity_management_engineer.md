@@ -132,7 +132,7 @@ The Identity Management Engineer implements and maintains identity management sy
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Identity system uptime and reliability | — | — |
+| Identity system uptime and reliability | ≥99.9% (proposed) | Monthly |
 | User provisioning and deprovisioning accuracy | — | — |
 | Authentication system performance | — | — |
 | Identity-related incident resolution time | — | — |

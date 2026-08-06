@@ -153,7 +153,7 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Server hardware availability and reliability metrics | — | — |
+| Server hardware availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Hardware procurement cycle efficiency | — | — |
 | Server provisioning time metrics | — | — |
 | Hardware costs versus performance benchmarks | — | — |
@@ -162,7 +162,7 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 | Asset lifecycle management effectiveness | — | — |
 | Successful delivery of hardware roadmap items | — | — |
 | Hardware incident reduction trends | — | — |
-| Stakeholder satisfaction with server infrastructure | — | — |
+| Stakeholder satisfaction with server infrastructure | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

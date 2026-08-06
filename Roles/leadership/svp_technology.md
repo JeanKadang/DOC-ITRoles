@@ -153,7 +153,7 @@ The SVP of Technology sits above the Product Area Lead (PAL) and Technical Area 
 | Enterprise technology risk posture (board-level risk rating trend) | — | — |
 | IT spend as a percentage of revenue and against peer benchmarks | — | — |
 | Technology function employee engagement and senior leadership retention | — | — |
-| Board and executive satisfaction with technology governance and reporting | — | — |
+| Board and executive satisfaction with technology governance and reporting | ≥85% (proposed) | Quarterly |
 | Strategic vendor and partner performance against enterprise agreements | — | — |
 | Technology capability maturity progression (measured against defined target state) | — | — |
 | Time-to-value for major technology platform and product investments | — | — |

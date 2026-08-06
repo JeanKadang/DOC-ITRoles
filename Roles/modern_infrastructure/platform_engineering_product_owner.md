@@ -134,7 +134,7 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Developer satisfaction with platform experience | — | — |
+| Developer satisfaction with platform experience | ≥85% (proposed) | Quarterly |
 | Platform adoption rates across development teams | — | — |
 | Time-to-production for new applications | — | — |
 | Developer self-service capability utilization | — | — |

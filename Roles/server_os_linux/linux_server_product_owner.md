@@ -150,10 +150,10 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Linux platform availability and reliability metrics | — | — |
+| Linux platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Time to provision new Linux servers | — | — |
 | Linux patching compliance percentages | — | — |
-| Stakeholder satisfaction with Linux services | — | — |
+| Stakeholder satisfaction with Linux services | ≥85% (proposed) | Quarterly |
 | Linux-related incident reduction | — | — |
 | Successful delivery of Linux roadmap items | — | — |
 | Self-service adoption for Linux provisioning | — | — |

@@ -138,7 +138,7 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Integration flow availability and SLA compliance | — | — |
+| Integration flow availability and SLA compliance | ≥95% (proposed) | Monthly |
 | Error rate on critical integration flows (trend: decreasing) | — | — |
 | API response time compliance | — | — |
 | Code review coverage within the integration team | — | — |

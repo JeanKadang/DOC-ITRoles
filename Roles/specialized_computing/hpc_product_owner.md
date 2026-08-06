@@ -156,10 +156,10 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 
 | Metric | Target | Frequency |
 |---|---|---|
-| HPC cluster availability and reliability | — | — |
+| HPC cluster availability and reliability | ≥99.9% (proposed) | Monthly |
 | Job scheduling efficiency and throughput | — | — |
 | Cluster utilization optimization | — | — |
-| Researcher satisfaction with HPC services | — | — |
+| Researcher satisfaction with HPC services | ≥85% (proposed) | Quarterly |
 | Time-to-solution for computational workloads | — | — |
 | Cost per computation metrics | — | — |
 | Successful delivery of HPC roadmap items | — | — |

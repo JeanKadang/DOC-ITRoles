@@ -140,7 +140,7 @@ The Security Senior Engineer leads the implementation and optimization of comple
 | Security posture improvement metrics | — | — |
 | Reduction in security vulnerabilities | — | — |
 | Innovation in security approaches | — | — |
-| Customer satisfaction with security services | — | — |
+| Customer satisfaction with security services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

@@ -137,7 +137,7 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Linux system availability and reliability metrics | — | — |
+| Linux system availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Implementation quality of Linux solutions | — | — |
 | Time to resolution for critical Linux incidents | — | — |
 | Automation coverage for Linux administration tasks | — | — |

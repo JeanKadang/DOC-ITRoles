@@ -128,7 +128,7 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 
 | Metric | Target | Frequency |
 |---|---|---|
-| AI platform availability and reliability for model serving workloads | — | — |
+| AI platform availability and reliability for model serving workloads | ≥99.9% (proposed) | Monthly |
 | Time-to-production for new AI/LLM applications using the platform | — | — |
 | AI cost per unit of value delivered (token cost efficiency, GPU utilization) | — | — |
 | Coverage of AI security and governance controls across deployments | — | — |
@@ -139,7 +139,7 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 | Responsible AI compliance rate across AI deployments | — | — |
 | Knowledge transfer and enablement effectiveness | — | — |
 | Edge AI model deployment coverage: ≥80% of approved edge AI workloads served via standardised edge inference patterns | ≥80% | — |
-| Edge inference latency: p95 inference latency within agreed SLA for latency-sensitive edge AI applications | — | — |
+| Edge inference latency: p95 inference latency within agreed SLA for latency-sensitive edge AI applications | ≥95% (proposed) | Monthly |
 
 ## Role Scope & Boundaries
 

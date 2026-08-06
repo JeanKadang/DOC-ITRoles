@@ -125,7 +125,7 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Directory services availability and reliability | — | — |
+| Directory services availability and reliability | ≥99.9% (proposed) | Monthly |
 | Authentication system performance metrics | — | — |
 | Security compliance scores for directory services | — | — |
 | Implementation quality of AD projects | — | — |

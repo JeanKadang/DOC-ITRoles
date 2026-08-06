@@ -136,9 +136,9 @@ The Modern Workplace Senior Engineer implements, manages, and optimises the orga
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Exchange Online mail flow availability and delivery SLA | — | — |
+| Exchange Online mail flow availability and delivery SLA | ≥95% (proposed) | Monthly |
 | Teams call quality (P.MOS score, call reliability %) | — | — |
-| Purview compliance policy coverage across tenant | — | — |
+| Purview compliance policy coverage across tenant | ≥95% (proposed) | Monthly |
 | Secure Score trend (improving quarter-over-quarter) | — | — |
 | Help desk escalation response and resolution time | — | — |
 | Automation scripts deployed (increasing coverage) | — | — |

@@ -133,7 +133,7 @@ The Access Management Senior Engineer leads the implementation and optimization 
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Access management system availability | — | — |
+| Access management system availability | ≥99.9% (proposed) | Monthly |
 | Privileged access security effectiveness | — | — |
 | Implementation quality of access solutions | — | — |
 | Time to resolve complex access incidents | — | — |

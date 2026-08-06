@@ -129,15 +129,15 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Backup success rate improvement trends | — | — |
-| Mean time to detect (MTTD) backup issues | — | — |
-| Mean time to resolve (MTTR) backup failures | — | — |
+| Backup success rate improvement trends | ≥99% (proposed) | Monthly |
+| Mean time to detect (MTTD) backup issues | ≤24 hours (proposed) | Monthly |
+| Mean time to resolve (MTTR) backup failures | ≤4 hours (proposed) | Monthly |
 | Reduction in backup incidents over time | — | — |
-| Recovery testing success rates | — | — |
+| Recovery testing success rates | ≥99% (proposed) | Monthly |
 | Monitoring coverage for backup systems | — | — |
 | Automation level of reliability processes | — | — |
 | Accuracy of reliability metrics | — | — |
-| SLO/SLA achievement for backup services | — | — |
+| SLO/SLA achievement for backup services | ≥95% (proposed) | Monthly |
 | Knowledge sharing effectiveness | — | — |
 
 ## Remote Work Considerations

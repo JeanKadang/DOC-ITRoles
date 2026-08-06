@@ -470,3 +470,37 @@ test('an empty target cell counts the same as an em dash', () => {
   const r = validateFile(file, tmpRoot);
   assert.ok(r.warnings.some(w => /target/i.test(w)));
 });
+
+test('a proposed target is reported separately from a missing one', () => {
+  // Seeding a benchmark must not read as "done". A proposal still needs
+  // confirming, so it keeps its own count rather than clearing the warning.
+  const file = writeFixture('kpi-proposed.md', completeRole({
+    transform: c => c.replace(
+      '| Delivery within agreed scope | ≥95% | Monthly |',
+      '| Delivery within agreed scope | ≥95% | Monthly |\n| Platform availability | ≥99.9% (proposed) | Monthly |\n| Architecture quality | — | — |'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, []);
+  const w = r.warnings.join(' ');
+  assert.match(w, /1 row\(s\) with no target/);
+  assert.match(w, /1 .*proposed/i);
+});
+
+test('a table of only proposed targets still warns', () => {
+  const file = writeFixture('kpi-all-proposed.md', completeRole({
+    transform: c => c.replace(
+      '| Delivery within agreed scope | ≥95% | Monthly |',
+      '| Platform availability | ≥99.9% (proposed) | Monthly |'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.ok(r.warnings.some(w => /proposed/i.test(w)),
+    `a fully-proposed table must not look complete, got: ${JSON.stringify(r.warnings)}`);
+});
+
+test('a table of confirmed targets warns about neither', () => {
+  const file = writeFixture('kpi-confirmed.md', completeRole());
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.warnings.filter(w => /Key Performance Indicators/.test(w)), []);
+});

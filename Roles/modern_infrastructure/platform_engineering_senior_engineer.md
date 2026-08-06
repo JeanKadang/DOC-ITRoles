@@ -140,7 +140,7 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 | Developer adoption of platform services | — | — |
 | Implementation quality of platform solutions | — | — |
 | Time to resolution for platform incidents | — | — |
-| Developer experience satisfaction scores | — | — |
+| Developer experience satisfaction scores | ≥85% (proposed) | Quarterly |
 | Reduction in toil through platform automation | — | — |
 | Knowledge transfer effectiveness to platform engineers | — | — |
 | Time-to-deployment improvement through platform | — | — |

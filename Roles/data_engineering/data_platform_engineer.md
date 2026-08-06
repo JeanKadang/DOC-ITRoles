@@ -145,14 +145,14 @@ The Data Platform Engineer builds, maintains, and optimises the shared data plat
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Data platform availability SLA (uptime % for Databricks, ingestion pipelines, and shared platform components) | — | — |
+| Data platform availability SLA (uptime % for Databricks, ingestion pipelines, and shared platform components) | ≥95% (proposed) | Monthly |
 | Data ingestion pipeline success rate (% of scheduled ingestion jobs completing without failure) | — | — |
 | Time-to-provision for new data engineering environments (days from request to ready, trending down) | — | — |
 | Data platform cost per TB processed (trending month-over-month vs. data volume growth) | — | — |
 | Platform-caused incident rate (number of incidents caused by shared platform failures, trending down) | — | — |
 | Lakehouse table health score (% of tables meeting compaction, freshness, and partitioning standards) | — | — |
-| Infrastructure-as-code coverage (% of data platform resources managed via Terraform) | — | — |
-| Mean time to restore (MTTR) for data platform infrastructure incidents | — | — |
+| Infrastructure-as-code coverage (% of data platform resources managed via Terraform) | ≥80% (proposed) | Monthly |
+| Mean time to restore (MTTR) for data platform infrastructure incidents | ≤4 hours (proposed) | Monthly |
 
 ## Remote Work Considerations
 

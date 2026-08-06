@@ -135,7 +135,7 @@ The Endpoint Management Engineer administers and maintains the organisation's en
 | Metric | Target | Frequency |
 |---|---|---|
 | Device compliance rate on assigned platforms | — | — |
-| Patch deployment success rate within SLA | — | — |
+| Patch deployment success rate within SLA | ≥95% (proposed) | Monthly |
 | Application deployment success rate | — | — |
 | Help desk escalation response and resolution time | — | — |
 | Accuracy and completeness of documentation maintained | — | — |

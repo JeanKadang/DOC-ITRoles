@@ -151,7 +151,7 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 | Technical leadership effectiveness | — | — |
 | Knowledge transfer to engineering teams | — | — |
 | Edge workload onboarding time: time from request to production-ready edge deployment | — | — |
-| Edge platform availability: uptime SLA for IDP golden paths and self-service tooling at edge locations | — | — |
+| Edge platform availability: uptime SLA for IDP golden paths and self-service tooling at edge locations | ≥95% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

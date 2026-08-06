@@ -125,7 +125,7 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Azure environment availability and reliability | — | — |
+| Azure environment availability and reliability | ≥99.9% (proposed) | Monthly |
 | Time to provision new cloud resources | — | — |
 | Azure cost optimization efforts | — | — |
 | Resolution time for cloud service incidents | — | — |

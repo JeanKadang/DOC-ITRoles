@@ -135,7 +135,7 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 | Infrastructure provisioning time metrics | — | — |
 | Provisioning request success rate | — | — |
 | Documentation quality and completeness | — | — |
-| User satisfaction with provisioning services | — | — |
+| User satisfaction with provisioning services | ≥85% (proposed) | Quarterly |
 | Automation coverage for standard deployments | — | — |
 | Time to resolve provisioning incidents | — | — |
 | Quality of service catalog items and descriptions | — | — |

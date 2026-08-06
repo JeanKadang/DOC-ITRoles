@@ -136,7 +136,7 @@ The Technical Community Leader is a senior individual contributor responsible fo
 | CoP session attendance rate and active participation trend (contributors, not just attendees) | — | — |
 | Number of cross-domain knowledge transfer events facilitated per quarter | — | — |
 | Volume and currency of internal technical content published (articles, guides, radar updates, standards) | — | — |
-| Practitioner satisfaction score from periodic community engagement surveys | — | — |
+| Practitioner satisfaction score from periodic community engagement surveys | ≥85% (proposed) | Quarterly |
 | Adoption rate of shared standards and patterns across engineering teams | — | — |
 | Time from standard proposal to published and communicated adoption guidance | — | — |
 | Hackathon and knowledge share event participation across domain boundaries | — | — |

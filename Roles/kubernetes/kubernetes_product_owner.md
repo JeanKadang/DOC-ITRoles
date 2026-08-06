@@ -111,7 +111,7 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 |---|---|---|
 | Platform adoption rates across application teams | — | — |
 | Successful delivery of roadmap initiatives | — | — |
-| Stakeholder satisfaction with Kubernetes services | — | — |
+| Stakeholder satisfaction with Kubernetes services | ≥85% (proposed) | Quarterly |
 | Quality of backlog management and prioritization | — | — |
 | Measurable improvement in application deployment velocity | — | — |
 | Effective communication of platform capabilities and value | — | — |

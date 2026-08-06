@@ -163,15 +163,15 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Identity system availability and reliability | — | — |
+| Identity system availability and reliability | ≥99.9% (proposed) | Monthly |
 | User provisioning time efficiency | — | — |
 | Identity-related incident reduction | — | — |
-| Authentication process user satisfaction | — | — |
+| Authentication process user satisfaction | ≥85% (proposed) | Quarterly |
 | Self-service adoption rates | — | — |
 | Identity governance compliance scores | — | — |
 | Successful delivery of identity roadmap items | — | — |
 | Cost effectiveness of identity solutions | — | — |
-| Stakeholder satisfaction with identity services | — | — |
+| Stakeholder satisfaction with identity services | ≥85% (proposed) | Quarterly |
 | Directory data quality metrics | — | — |
 
 ## Remote Work Considerations

@@ -143,7 +143,7 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 |---|---|---|
 | Chapter practitioner retention rate and voluntary attrition trend | — | — |
 | Hiring velocity and quality for infrastructure architect and senior engineer roles (90-day retention of new hires) | — | — |
-| Chapter satisfaction score (internal survey results for the infrastructure chapter) | — | — |
+| Chapter satisfaction score (internal survey results for the infrastructure chapter) | ≥85% (proposed) | Quarterly |
 | Infrastructure architecture standards adoption rate across all eleven domains | — | — |
 | Cloud cost optimisation savings attributed to FinOps domain activity within the chapter | — | — |
 | Platform consolidation progress against chapter roadmap milestones | — | — |

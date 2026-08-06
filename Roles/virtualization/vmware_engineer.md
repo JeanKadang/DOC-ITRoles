@@ -136,16 +136,16 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 
 | Metric | Target | Frequency |
 |---|---|---|
-| VMware environment uptime and availability metrics | — | — |
+| VMware environment uptime and availability metrics | ≥99.9% (proposed) | Monthly |
 | Virtual machine deployment time efficiency | — | — |
 | Resolution time for virtualization incidents | — | — |
 | Documentation quality and completeness | — | — |
 | Resource utilization efficiency | — | — |
-| Patch compliance for VMware components | — | — |
-| Backup success rates for virtual machines | — | — |
+| Patch compliance for VMware components | ≥95% (proposed) | Monthly |
+| Backup success rates for virtual machines | ≥99% (proposed) | Monthly |
 | Adherence to VMware configuration standards | — | — |
 | Number of automated processes implemented | — | — |
-| Customer satisfaction with virtualization services | — | — |
+| Customer satisfaction with virtualization services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

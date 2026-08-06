@@ -132,7 +132,7 @@ The Java Platform Product Owner manages the development and lifecycle of the org
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Developer satisfaction with Java platform | — | — |
+| Developer satisfaction with Java platform | ≥85% (proposed) | Quarterly |
 | Platform adoption rates across development teams | — | — |
 | Time-to-market improvement for applications | — | — |
 | Reduction in development effort through shared components | — | — |

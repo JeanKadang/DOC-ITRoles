@@ -147,7 +147,7 @@ The Security Product Owner manages the development and lifecycle of the organiza
 |---|---|---|
 | Security risk reduction effectiveness | — | — |
 | Time-to-delivery for security capabilities | — | — |
-| Stakeholder satisfaction with security services | — | — |
+| Stakeholder satisfaction with security services | ≥85% (proposed) | Quarterly |
 | Security incident reduction trends | — | — |
 | Compliance achievement percentage | — | — |
 | Successful delivery of security roadmap items | — | — |

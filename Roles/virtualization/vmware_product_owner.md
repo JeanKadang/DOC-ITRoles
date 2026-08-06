@@ -159,8 +159,8 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 | Metric | Target | Frequency |
 |---|---|---|
 | Time-to-delivery for virtualization services | — | — |
-| Platform availability and SLA compliance | — | — |
-| Stakeholder satisfaction ratings | — | — |
+| Platform availability and SLA compliance | ≥95% (proposed) | Monthly |
+| Stakeholder satisfaction ratings | ≥85% (proposed) | Quarterly |
 | Business value delivered through platform enhancements | — | — |
 | Resource utilization efficiency | — | — |
 | Cost optimization achievements | — | — |

@@ -152,7 +152,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 | Cloud resource utilization rates | — | — |
 | Reserved capacity optimization percentage | — | — |
 | Adoption of FinOps practices across the organization | — | — |
-| Stakeholder satisfaction with cost transparency | — | — |
+| Stakeholder satisfaction with cost transparency | ≥85% (proposed) | Quarterly |
 | Cost variance reduction | — | — |
 | Successful implementation of FinOps frameworks | — | — |
 

@@ -151,7 +151,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 |---|---|---|
 | Cloud cost reduction achievements | — | — |
 | Forecast accuracy for cloud spending | — | — |
-| Stakeholder satisfaction with cost transparency | — | — |
+| Stakeholder satisfaction with cost transparency | ≥85% (proposed) | Quarterly |
 | Cost allocation coverage and accuracy | — | — |
 | On-time delivery of FinOps roadmap items | — | — |
 | Adoption of FinOps practices across teams | — | — |

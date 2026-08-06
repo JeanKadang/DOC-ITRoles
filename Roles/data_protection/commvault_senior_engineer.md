@@ -129,7 +129,7 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Backup success rate and reliability | — | — |
+| Backup success rate and reliability | ≥99% (proposed) | Monthly |
 | Recovery time objective (RTO) achievement | — | — |
 | Recovery point objective (RPO) achievement | — | — |
 | Backup window optimization | — | — |
@@ -137,7 +137,7 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 | Time to resolution for complex backup incidents | — | — |
 | Knowledge transfer effectiveness to junior engineers | — | — |
 | Automation level of backup operations | — | — |
-| Successful recovery testing completion rates | — | — |
+| Successful recovery testing completion rates | ≥99% (proposed) | Monthly |
 | Storage efficiency metrics (deduplication, compression) | — | — |
 
 ## Remote Work Considerations

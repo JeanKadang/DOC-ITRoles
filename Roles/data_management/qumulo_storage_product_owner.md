@@ -149,10 +149,10 @@ The Qumulo Storage Product Owner manages the development and lifecycle of the or
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Storage platform availability and reliability metrics | — | — |
+| Storage platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Capacity planning accuracy | — | — |
 | Storage cost per TB efficiency metrics | — | — |
-| Stakeholder satisfaction with storage services | — | — |
+| Stakeholder satisfaction with storage services | ≥85% (proposed) | Quarterly |
 | Time to provision new storage resources | — | — |
 | Storage service levels achievement | — | — |
 | Implementation quality of storage solutions | — | — |

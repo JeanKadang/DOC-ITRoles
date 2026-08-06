@@ -150,7 +150,7 @@ The Network Automation Architect designs and governs the strategy, tooling, and 
 | Network change cycle time (automated vs. manual benchmark) | — | — |
 | Network compliance check pass rate (automated validation) | — | — |
 | Mean time to remediate network misconfigurations | — | — |
-| Network automation pipeline code coverage and test pass rate | — | — |
+| Network automation pipeline code coverage and test pass rate | ≥80% (proposed) | Monthly |
 | Edge site provisioning automation coverage: ≥80% of new edge PoPs and branch sites provisioned via automated ZTP pipelines | ≥80% | — |
 | Edge network configuration drift rate: near-zero target applied consistently across the edge and branch network estate | — | — |
 

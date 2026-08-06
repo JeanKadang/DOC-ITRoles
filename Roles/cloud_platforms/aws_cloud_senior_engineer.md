@@ -130,7 +130,7 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 
 | Metric | Target | Frequency |
 |---|---|---|
-| AWS environment availability and reliability | — | — |
+| AWS environment availability and reliability | ≥99.9% (proposed) | Monthly |
 | Implementation quality of AWS solutions | — | — |
 | Time to resolve critical cloud incidents | — | — |
 | Cost optimization achievements | — | — |
@@ -139,7 +139,7 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 | Successful implementation of AWS standards and patterns | — | — |
 | Project delivery timeliness and quality | — | — |
 | Technical innovation contribution | — | — |
-| Customer satisfaction with AWS services | — | — |
+| Customer satisfaction with AWS services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

@@ -125,10 +125,10 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 | Metric | Target | Frequency |
 |---|---|---|
-| AWS platform availability and reliability metrics | — | — |
+| AWS platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Cloud cost management effectiveness | — | — |
 | Time-to-delivery for cloud services | — | — |
-| Stakeholder satisfaction with AWS platform | — | — |
+| Stakeholder satisfaction with AWS platform | ≥85% (proposed) | Quarterly |
 | Security compliance scores for AWS environment | — | — |
 | Successful implementation of cloud governance | — | — |
 | AWS service adoption rates | — | — |

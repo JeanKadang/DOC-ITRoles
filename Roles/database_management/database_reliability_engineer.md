@@ -131,15 +131,15 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Database uptime and availability metrics | — | — |
-| Mean time to detect (MTTD) database issues | — | — |
-| Mean time to resolve (MTTR) database failures | — | — |
+| Database uptime and availability metrics | ≥99.9% (proposed) | Monthly |
+| Mean time to detect (MTTD) database issues | ≤24 hours (proposed) | Monthly |
+| Mean time to resolve (MTTR) database failures | ≤4 hours (proposed) | Monthly |
 | Query performance optimization results | — | — |
 | Successful automated recovery percentage | — | — |
 | Reduction in database incidents over time | — | — |
 | Database scaling effectiveness | — | — |
 | Automated operations percentage | — | — |
-| SLO/SLA achievement for database services | — | — |
+| SLO/SLA achievement for database services | ≥95% (proposed) | Monthly |
 | Knowledge sharing effectiveness | — | — |
 
 ## Remote Work Considerations

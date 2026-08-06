@@ -130,7 +130,7 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Cloud environment availability and reliability metrics | — | — |
+| Cloud environment availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Implementation quality scores for Azure solutions | — | — |
 | Automation coverage percentage for cloud operations | — | — |
 | Cost optimization achievements (% reduction, efficiency gains) | — | — |
@@ -138,7 +138,7 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 | Mean time to resolution for complex cloud incidents | — | — |
 | Knowledge transfer effectiveness to junior engineers | — | — |
 | Timely delivery of Azure implementation projects | — | — |
-| Customer satisfaction scores for cloud services | — | — |
+| Customer satisfaction scores for cloud services | ≥85% (proposed) | Quarterly |
 | Innovation and continuous improvement contributions | — | — |
 
 ## Remote Work Considerations

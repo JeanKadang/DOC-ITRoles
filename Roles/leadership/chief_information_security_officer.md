@@ -147,14 +147,14 @@ The CISO sits above the PAL and TAL in the technology leadership hierarchy on ma
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Security incident frequency, severity, and mean time to detect and respond | — | — |
+| Security incident frequency, severity, and mean time to detect and respond | ≤24 hours (proposed) | Monthly |
 | Regulatory audit outcomes: findings severity, remediation speed, and repeat finding rate | — | — |
 | Compliance posture across applicable frameworks (ISO 27001, GDPR, NIS2, DORA, SOC 2) | — | — |
 | Third-party security risk exposure trend and high-risk vendor remediation rate | — | — |
 | Security investment efficiency: capability maturity growth per unit of investment | — | — |
 | Board and executive confidence in security governance (survey or qualitative assessment) | — | — |
 | Employee security awareness score and phishing simulation performance trend | — | — |
-| Vulnerability mean time to remediate (MTTR) across critical and high severity findings | — | — |
+| Vulnerability mean time to remediate (MTTR) across critical and high severity findings | ≤4 hours (proposed) | Monthly |
 | Security architecture adoption rate across technology programmes | — | — |
 | Security team retention and capability development progression | — | — |
 

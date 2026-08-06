@@ -131,7 +131,7 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Developer satisfaction with .NET platform | — | — |
+| Developer satisfaction with .NET platform | ≥85% (proposed) | Quarterly |
 | Platform adoption rates across development teams | — | — |
 | Time-to-market improvement for applications | — | — |
 | Reduction in development effort through shared components | — | — |

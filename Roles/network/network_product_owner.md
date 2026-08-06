@@ -132,9 +132,9 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Network service availability and reliability | — | — |
+| Network service availability and reliability | ≥99.9% (proposed) | Monthly |
 | Time-to-delivery for network services | — | — |
-| Stakeholder satisfaction with network capabilities | — | — |
+| Stakeholder satisfaction with network capabilities | ≥85% (proposed) | Quarterly |
 | Network security posture improvement | — | — |
 | Cost optimization achievements | — | — |
 | Successful delivery of network roadmap items | — | — |

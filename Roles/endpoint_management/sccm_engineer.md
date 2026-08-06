@@ -136,7 +136,7 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 
 | Metric | Target | Frequency |
 |---|---|---|
-| SCCM infrastructure availability and health | — | — |
+| SCCM infrastructure availability and health | ≥99.9% (proposed) | Monthly |
 | Application deployment success rates | — | — |
 | Software update compliance percentages | — | — |
 | Operating system deployment reliability | — | — |

@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 
 const {
     STALE_MONTHS,
+    proposedKpiTarget,
     parseKpiBullet,
     orgListHtml,
     graphListHtml,
@@ -1234,4 +1235,50 @@ test('parseKpiBullet does not mistake a year or a version for a target', () => {
 
 test('parseKpiBullet escapes a pipe so it cannot break the table', () => {
     assert.equal(parseKpiBullet('Uptime | availability').metric, 'Uptime \\| availability');
+});
+
+// ── proposedKpiTarget (#140) ──────────────────────────────
+// Seeds a recognised industry benchmark for the metric families that have
+// one. Every value is marked "(proposed)" so it cannot be mistaken for an
+// agreed organisational target, and the validator counts proposals apart
+// from real gaps.
+test('proposedKpiTarget seeds the well-established families', () => {
+    assert.match(proposedKpiTarget('Platform availability').target, /99\.9%/);
+    assert.match(proposedKpiTarget('Overall SLA attainment').target, /95%/);
+    assert.match(proposedKpiTarget('Desk-wide CSAT score').target, /85%/);
+    assert.match(proposedKpiTarget('Mean time to restore (MTTR)').target, /4 hours/);
+    assert.match(proposedKpiTarget('Change failure rate').target, /15%/);
+});
+
+test('proposedKpiTarget marks every seeded value as proposed', () => {
+    for (const m of ['Service uptime', 'Backup success rate', 'Test coverage']) {
+        assert.match(proposedKpiTarget(m).target, /\(proposed\)$/, `"${m}" must be marked`);
+    }
+});
+
+test('proposedKpiTarget returns nothing for a metric with no recognised benchmark', () => {
+    // These are the 1,379 that name a subject rather than a measure. Inventing
+    // a number for them is exactly what must not happen.
+    for (const m of ['Architecture design quality and effectiveness',
+                     'AI supplier assessment coverage',
+                     'Knowledge transfer to engineering teams']) {
+        assert.equal(proposedKpiTarget(m), null, `"${m}" must not be seeded`);
+    }
+});
+
+test('proposedKpiTarget declines the families with no established benchmark', () => {
+    // Adoption and incident rate were deliberately excluded: widely measured,
+    // but with no industry-standard value to propose.
+    assert.equal(proposedKpiTarget('Self-service adoption rate'), null);
+    assert.equal(proposedKpiTarget('Security incident rate'), null);
+});
+
+test('proposedKpiTarget suggests a review cadence alongside the target', () => {
+    assert.ok(proposedKpiTarget('Platform availability').frequency);
+    assert.match(proposedKpiTarget('Platform availability').frequency, /Monthly|Quarterly/);
+});
+
+test('proposedKpiTarget matches the family, not an incidental word', () => {
+    // "available" in prose must not trigger the availability benchmark.
+    assert.equal(proposedKpiTarget('Documentation available to delivery teams'), null);
 });

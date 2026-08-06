@@ -134,14 +134,14 @@ The API Platform Engineer implements and maintains API management solutions acro
 
 | Metric | Target | Frequency |
 |---|---|---|
-| API platform reliability and availability | — | — |
+| API platform reliability and availability | ≥99.9% (proposed) | Monthly |
 | API response time and performance metrics | — | — |
 | Quality of API documentation | — | — |
 | Time to resolve API-related issues | — | — |
 | API security compliance | — | — |
-| API consumer satisfaction | — | — |
+| API consumer satisfaction | ≥85% (proposed) | Quarterly |
 | Successful API deployments | — | — |
-| API test coverage | — | — |
+| API test coverage | ≥80% (proposed) | Monthly |
 | Knowledge sharing and collaboration effectiveness | — | — |
 | Continuous learning and skill development | — | — |
 

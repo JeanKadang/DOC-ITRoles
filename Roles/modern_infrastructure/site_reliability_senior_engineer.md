@@ -149,8 +149,8 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 |---|---|---|
 | SLO target achievement rate per service | — | — |
 | Error budget consumption trends (healthy burn rate) | — | — |
-| Mean time to detect (MTTD) for P1/P2 incidents | — | — |
-| Mean time to recover (MTTR) for P1/P2 incidents | — | — |
+| Mean time to detect (MTTD) for P1/P2 incidents | ≤24 hours (proposed) | Monthly |
+| Mean time to recover (MTTR) for P1/P2 incidents | ≤4 hours (proposed) | Monthly |
 | Toil hours per week (trend: decreasing) | — | — |
 | Post-mortem completion rate and action item close rate | — | — |
 | Chaos experiment coverage across critical service tier | — | — |

@@ -132,13 +132,13 @@ The Access Management Engineer implements and maintains access management system
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Access management system uptime and reliability | — | — |
+| Access management system uptime and reliability | ≥99.9% (proposed) | Monthly |
 | Access request fulfillment time | — | — |
 | Access certification campaign completion rates | — | — |
 | Time to revoke inappropriate access | — | — |
 | Access-related incident resolution time | — | — |
 | Documentation quality and completeness | — | — |
-| User satisfaction with access processes | — | — |
+| User satisfaction with access processes | ≥85% (proposed) | Quarterly |
 | Implementation quality of access solutions | — | — |
 | Self-service adoption for access requests | — | — |
 | Reduction in access-related security issues | — | — |

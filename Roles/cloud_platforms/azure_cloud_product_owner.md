@@ -125,10 +125,10 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Azure platform availability and reliability metrics | — | — |
+| Azure platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Cloud cost management effectiveness | — | — |
 | Time-to-delivery for cloud services | — | — |
-| Stakeholder satisfaction with Azure platform | — | — |
+| Stakeholder satisfaction with Azure platform | ≥85% (proposed) | Quarterly |
 | Security compliance scores for cloud environment | — | — |
 | Successful implementation of cloud governance | — | — |
 | PaaS service adoption rates | — | — |

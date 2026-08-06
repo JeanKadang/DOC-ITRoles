@@ -149,7 +149,7 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 | Resilience weaknesses discovered and remediated | — | — |
 | Game day exercises conducted per year (target: per major service domain) | — | — |
 | Services with automated pre-production chaos gates in CI/CD | — | — |
-| MTTD validation accuracy (alerts triggered within target window during experiments) | — | — |
+| MTTD validation accuracy (alerts triggered within target window during experiments) | ≤24 hours (proposed) | Monthly |
 | Stakeholder participation rate in game days | — | — |
 
 ## Remote Work Considerations

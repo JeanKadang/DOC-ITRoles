@@ -133,7 +133,7 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Identity system availability and reliability metrics | — | — |
+| Identity system availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | Authentication service response times | — | — |
 | Implementation quality of identity solutions | — | — |
 | Time to resolution for complex identity incidents | — | — |
@@ -142,7 +142,7 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 | Knowledge transfer effectiveness to junior engineers | — | — |
 | Reduction in identity-related security incidents | — | — |
 | Successful implementation of identity standards | — | — |
-| User satisfaction with authentication experience | — | — |
+| User satisfaction with authentication experience | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

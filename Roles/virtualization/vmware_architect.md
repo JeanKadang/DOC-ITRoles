@@ -134,10 +134,10 @@ The VMware Architect designs and oversees the organization's virtualization infr
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Virtualization platform availability against agreed service levels | — | — |
+| Virtualization platform availability against agreed service levels | ≥99.9% (proposed) | Monthly |
 | VM consolidation ratio and infrastructure cost-efficiency trend | — | — |
 | Adoption rate of approved design standards in new deployments | — | — |
-| Disaster recovery test success rate for VMware-hosted workloads | — | — |
+| Disaster recovery test success rate for VMware-hosted workloads | ≥99% (proposed) | Monthly |
 | Platform version currency (vSphere/vSAN/NSX at N or N-1) | — | — |
 | NSX microsegmentation coverage of eligible workloads | — | — |
 | Workload migration success rate for platform transformation programmes | — | — |

@@ -132,10 +132,10 @@ The Modern Workplace Engineer administers and supports the organisation's Micros
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Mailbox and Teams provisioning SLA compliance | — | — |
+| Mailbox and Teams provisioning SLA compliance | ≥95% (proposed) | Monthly |
 | Help desk escalation resolution time | — | — |
 | M365 user lifecycle task completion accuracy | — | — |
-| Compliance task turnaround (eDiscovery, holds) within SLA | — | — |
+| Compliance task turnaround (eDiscovery, holds) within SLA | ≥95% (proposed) | Monthly |
 | Knowledge base article currency and completeness | — | — |
 
 ## Remote Work Considerations

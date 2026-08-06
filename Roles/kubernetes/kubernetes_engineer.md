@@ -132,7 +132,7 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Kubernetes cluster uptime and reliability | — | — |
+| Kubernetes cluster uptime and reliability | ≥99.9% (proposed) | Monthly |
 | Container deployment success rate | — | — |
 | Time to resolve Kubernetes incidents | — | — |
 | Security compliance in Kubernetes environments | — | — |
@@ -140,7 +140,7 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 | Implementation quality of standard patterns | — | — |
 | Knowledge sharing and collaboration | — | — |
 | Kubernetes automation implementation | — | — |
-| User satisfaction with container platform | — | — |
+| User satisfaction with container platform | ≥85% (proposed) | Quarterly |
 | Cluster resource utilization efficiency | — | — |
 
 ## Remote Work Considerations

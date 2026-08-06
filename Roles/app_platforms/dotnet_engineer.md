@@ -135,7 +135,7 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 |---|---|---|
 | Code quality and maintainability metrics | — | — |
 | Timely completion of development tasks | — | — |
-| Unit test coverage percentage | — | — |
+| Unit test coverage percentage | ≥80% (proposed) | Monthly |
 | Number of defects in delivered code | — | — |
 | Documentation quality and completeness | — | — |
 | Adherence to .NET coding standards | — | — |

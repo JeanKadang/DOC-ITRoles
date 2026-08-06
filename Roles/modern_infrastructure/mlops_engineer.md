@@ -145,9 +145,9 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 |---|---|---|
 | ML model deployment time and reliability | — | — |
 | Pipeline automation coverage | — | — |
-| Model serving availability and performance | — | — |
-| Time to detect and resolve model issues | — | — |
-| Model deployment frequency | — | — |
+| Model serving availability and performance | ≥99.9% (proposed) | Monthly |
+| Time to detect and resolve model issues | ≤24 hours (proposed) | Monthly |
+| Model deployment frequency | Weekly or better (proposed) | Monthly |
 | Infrastructure cost optimization for ML workloads | — | — |
 | Reproducibility of ML workflows | — | — |
 | Model monitoring coverage | — | — |

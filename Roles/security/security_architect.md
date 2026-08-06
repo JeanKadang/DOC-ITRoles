@@ -127,7 +127,7 @@ The Security Architect designs and implements security systems and frameworks th
 | Effectiveness of security controls implementation | — | — |
 | Security standards adoption across the organization | — | — |
 | Quality of security architecture documentation | — | — |
-| Stakeholder satisfaction with security guidance | — | — |
+| Stakeholder satisfaction with security guidance | ≥85% (proposed) | Quarterly |
 | Time to address critical security vulnerabilities | — | — |
 | Security maturity score improvement | — | — |
 | Knowledge sharing and mentoring effectiveness | — | — |

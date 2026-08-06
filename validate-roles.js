@@ -64,17 +64,22 @@ function hasKpiTable(body) {
   return /^\|.*\|[ \t]*\r?\n\|[\s:|-]+\|/im.test(body);
 }
 
-// Count KPI table rows whose Target cell is empty or an em dash. Skips the
-// header and the delimiter row. An em dash is how #140 renders a known gap,
-// and a blank cell must not be a quieter way of saying the same thing.
-function kpiRowsMissingTarget(body) {
-  let missing = 0;
+// Classify KPI table rows by whether their Target is confirmed, merely
+// proposed, or absent. Skips the header and delimiter rows.
+//
+// An em dash is how #140 renders a known gap and a blank cell must not be a
+// quieter way of saying the same thing. "(proposed)" marks a seeded industry
+// benchmark: a real starting point, but not yet an agreed commitment, so it
+// is counted apart rather than treated as done.
+function kpiTargetCounts(body) {
+  let missing = 0, proposed = 0;
   const rows = body.split(/\r?\n/).filter(l => l.trim().startsWith('|'));
   for (const row of rows.slice(2)) {
     const target = (row.split('|')[2] || '').trim();
     if (!target || target === '—' || target === '-' || target === 'TBD') missing++;
+    else if (/\(proposed\)/i.test(target)) proposed++;
   }
-  return missing;
+  return { missing, proposed };
 }
 
 // Technology Proficiency Levels should use the template's sub-heading form
@@ -167,9 +172,12 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
     // with no target is still an unmeasurable KPI. Without this the #140
     // conversion would have silenced the very signal it was meant to expose
     // (see also #122's KPI notes).
-    const missing = kpiRowsMissingTarget(kpiBody);
+    const { missing, proposed } = kpiTargetCounts(kpiBody);
     if (missing > 0) {
       warnings.push(`Key Performance Indicators has ${missing} row(s) with no target — a metric nobody can meet or miss is not yet a KPI`);
+    }
+    if (proposed > 0) {
+      warnings.push(`Key Performance Indicators has ${proposed} proposed target(s) awaiting confirmation — seeded from an industry benchmark, not yet agreed`);
     }
   }
 

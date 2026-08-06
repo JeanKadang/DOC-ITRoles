@@ -138,13 +138,13 @@ The Database Engineer implements and maintains database systems across the organ
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Database availability and uptime metrics | — | — |
-| Database backup success rate | — | — |
+| Database availability and uptime metrics | ≥99.9% (proposed) | Monthly |
+| Database backup success rate | ≥99% (proposed) | Monthly |
 | Query performance and optimization | — | — |
 | Time to resolve database incidents | — | — |
-| Database patch compliance percentage | — | — |
+| Database patch compliance percentage | ≥95% (proposed) | Monthly |
 | Documentation quality and completeness | — | — |
-| User satisfaction with database services | — | — |
+| User satisfaction with database services | ≥85% (proposed) | Quarterly |
 | Implementation quality of standard configurations | — | — |
 | Security compliance with database policies | — | — |
 | Knowledge sharing and collaboration | — | — |

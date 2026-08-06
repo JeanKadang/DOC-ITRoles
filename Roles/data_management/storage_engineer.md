@@ -132,7 +132,7 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Storage system availability and uptime | — | — |
+| Storage system availability and uptime | ≥99.9% (proposed) | Monthly |
 | Storage provisioning accuracy and timeliness | — | — |
 | Resolution time for storage incidents | — | — |
 | Storage utilization efficiency | — | — |
@@ -140,7 +140,7 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 | Successful execution of maintenance activities | — | — |
 | Storage performance consistency | — | — |
 | Data protection implementation quality | — | — |
-| User satisfaction with storage services | — | — |
+| User satisfaction with storage services | ≥85% (proposed) | Quarterly |
 | Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations

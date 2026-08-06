@@ -135,7 +135,7 @@ The Endpoint Management Product Owner (PO) owns the product vision, roadmap, and
 | Backlog health (stories ready for sprint, acceptances defined) | — | — |
 | Platform roadmap milestone delivery against plan | — | — |
 | Device compliance rate trend (month-over-month) | — | — |
-| Stakeholder satisfaction with platform communication and delivery | — | — |
+| Stakeholder satisfaction with platform communication and delivery | ≥85% (proposed) | Quarterly |
 | Cost per managed device (trend: optimising) | — | — |
 
 ## Remote Work Considerations

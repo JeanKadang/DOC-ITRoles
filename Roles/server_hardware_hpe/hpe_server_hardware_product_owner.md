@@ -127,9 +127,9 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Server infrastructure availability and reliability metrics | — | — |
+| Server infrastructure availability and reliability metrics | ≥99.9% (proposed) | Monthly |
 | On-time delivery of hardware initiatives and projects | — | — |
-| Stakeholder satisfaction ratings | — | — |
+| Stakeholder satisfaction ratings | ≥85% (proposed) | Quarterly |
 | Budget management and cost optimization | — | — |
 | Hardware standardization percentage | — | — |
 | Time to provision new server infrastructure | — | — |

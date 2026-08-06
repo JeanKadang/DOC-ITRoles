@@ -144,12 +144,12 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 | Metric | Target | Frequency |
 |---|---|---|
 | Forecast accuracy percentage (actual vs. forecast spend within agreed tolerance bands) | — | — |
-| Chargeback report delivery SLA adherence (% of reports delivered on time each month) | — | — |
+| Chargeback report delivery SLA adherence (% of reports delivered on time each month) | ≥95% (proposed) | Monthly |
 | Budget variance detection speed (average time from anomaly occurrence to stakeholder notification) | — | — |
 | Unit cost trend analysis quality (stakeholder-assessed usefulness score) | — | — |
-| Stakeholder satisfaction score (measured via periodic feedback surveys) | — | — |
+| Stakeholder satisfaction score (measured via periodic feedback surveys) | ≥85% (proposed) | Quarterly |
 | Data quality score for billing allocation and tagging completeness underlying reports | — | — |
-| Number of ad hoc financial analysis requests completed within SLA per quarter | — | — |
+| Number of ad hoc financial analysis requests completed within SLA per quarter | ≥95% (proposed) | Monthly |
 | Reduction in manual reporting effort through automation improvements (hours saved) | — | — |
 
 ## Remote Work Considerations

@@ -140,7 +140,7 @@ The Application Configuration Management Engineer implements and maintains confi
 | Configuration compliance percentage | — | — |
 | Configuration management automation level | — | — |
 | Environment configuration consistency | — | — |
-| User satisfaction with configuration services | — | — |
+| User satisfaction with configuration services | ≥85% (proposed) | Quarterly |
 | Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations

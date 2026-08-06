@@ -126,14 +126,14 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Qumulo cluster availability and uptime | — | — |
+| Qumulo cluster availability and uptime | ≥99.9% (proposed) | Monthly |
 | Storage provisioning accuracy and timeliness | — | — |
 | Resolution time for storage incidents | — | — |
 | File system performance optimization | — | — |
 | Documentation quality and completeness | — | — |
 | Successful execution of maintenance activities | — | — |
 | Data protection implementation quality | — | — |
-| User satisfaction with file services | — | — |
+| User satisfaction with file services | ≥85% (proposed) | Quarterly |
 | Knowledge sharing and collaboration | — | — |
 | Capacity utilization efficiency | — | — |
 

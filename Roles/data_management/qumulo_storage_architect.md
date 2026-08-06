@@ -134,7 +134,7 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 | Alignment of solutions with business requirements | — | — |
 | Storage architecture scalability and flexibility | — | — |
 | Cost efficiency of designed solutions | — | — |
-| Storage performance and availability metrics | — | — |
+| Storage performance and availability metrics | ≥99.9% (proposed) | Monthly |
 | Adoption of reference architectures and standards | — | — |
 | Reduction in architectural risks and complexity | — | — |
 | Innovation in storage approaches | — | — |

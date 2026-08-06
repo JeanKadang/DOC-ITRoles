@@ -141,7 +141,7 @@ The Application Configuration Management Senior Engineer leads the implementatio
 | Standardization level of configuration practices | — | — |
 | Innovation in configuration management approaches | — | — |
 | Security compliance of configuration processes | — | — |
-| Stakeholder satisfaction with configuration services | — | — |
+| Stakeholder satisfaction with configuration services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 
