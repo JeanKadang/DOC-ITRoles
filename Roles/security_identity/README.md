@@ -4,13 +4,13 @@ This domain covers identity and access management (IAM) architecture across the 
 
 ## Roles in this domain
 
-- `access_management_architect.md`
-- `access_management_engineer.md`
-- `access_management_product_owner.md`
-- `access_management_senior_engineer.md`
-- `identity_management_architect.md`
-- `identity_management_engineer.md`
-- `identity_management_product_owner.md`
-- `identity_management_senior_engineer.md`
-- `privileged_access_management_architect.md`
-- `privileged_access_management_engineer.md`
+- [`access_management_architect.md`](access_management_architect.md)
+- [`access_management_engineer.md`](access_management_engineer.md)
+- [`access_management_product_owner.md`](access_management_product_owner.md)
+- [`access_management_senior_engineer.md`](access_management_senior_engineer.md)
+- [`identity_management_architect.md`](identity_management_architect.md)
+- [`identity_management_engineer.md`](identity_management_engineer.md)
+- [`identity_management_product_owner.md`](identity_management_product_owner.md)
+- [`identity_management_senior_engineer.md`](identity_management_senior_engineer.md)
+- [`privileged_access_management_architect.md`](privileged_access_management_architect.md)
+- [`privileged_access_management_engineer.md`](privileged_access_management_engineer.md)

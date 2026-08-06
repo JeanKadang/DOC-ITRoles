@@ -3414,7 +3414,14 @@
                 openRole(clean, title, '', '');
             }
         } else if (clean.startsWith('docs/')) {
-            const title = clean.split('/').pop().replace(/_/g, ' ').replace('.md', '');
+            // Prefer the title the sidebar uses. Deriving one from the
+            // filename gave "SKILLS PROGRESSION" for a document listed as
+            // "Career Paths & Skills Progression", so following a link
+            // landed the reader somewhere that looked like a different page.
+            const listed = RESOURCES.find(r => r.file === clean);
+            const title = listed
+                ? listed.title
+                : clean.split('/').pop().replace(/_/g, ' ').replace('.md', '');
             openDoc(clean, title);
         }
     });

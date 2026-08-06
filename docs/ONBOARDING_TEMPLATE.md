@@ -13,7 +13,7 @@
 | **Start date** | \<date\> |
 | **Hiring manager** | \<name\> |
 | **Assigned buddy** | \<name and role\> |
-| **Role definition** | Link to role file in this repository |
+| **Role definition** | \<link to the role definition\> |
 
 ---
 
@@ -46,7 +46,7 @@
 - [ ] Review existing architecture documentation, decision records (ADRs), and runbooks for the domain
 - [ ] Get hands-on access to key systems and environments (non-production first)
 - [ ] Shadow at least 2 live tasks or incidents to understand how the team operates
-- [ ] Review the `SKILLS_PROGRESSION.md` and `CROSS_DOMAIN_INTERACTIONS.md` in this repository
+- [ ] Review [Career Paths & Skills Progression](SKILLS_PROGRESSION.md) and [Domain Interactions](CROSS_DOMAIN_INTERACTIONS.md)
 
 ### Domain-specific orientation
 
@@ -130,9 +130,9 @@
 
 | Resource | Type | Priority |
 |---|---|---|
-| Role definition in this repository | Internal documentation | Day 1 |
-| `SKILLS_PROGRESSION.md` | Internal documentation | Week 1 |
-| `CROSS_DOMAIN_INTERACTIONS.md` | Internal documentation | Week 1 |
+| \<link to the role definition\> | Internal documentation | Day 1 |
+| [Career Paths & Skills Progression](SKILLS_PROGRESSION.md) | Internal documentation | Week 1 |
+| [Domain Interactions](CROSS_DOMAIN_INTERACTIONS.md) | Internal documentation | Week 1 |
 | \<Relevant certification path\> | Certification | First 90 days |
 | \<Internal wiki / Confluence space\> | Internal knowledge base | Week 1 |
 | \<Specific tool or platform training\> | Vendor training | By day 60 |

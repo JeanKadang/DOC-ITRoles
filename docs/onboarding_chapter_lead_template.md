@@ -56,7 +56,7 @@ Complete all items before the new Chapter Lead's first day. Items marked _(CL-sp
 - [ ] All domain role definitions for the chapter shared — new Chapter Lead asked to review before day 1 _(CL-specific)_
 - [ ] Existing chapter architecture standards documentation shared _(CL-specific)_
 - [ ] Current chapter technology radar shared _(CL-specific)_
-- [ ] `SKILLS_PROGRESSION.md` and `CROSS_DOMAIN_INTERACTIONS.md` shared
+- [ ] [Career Paths & Skills Progression](SKILLS_PROGRESSION.md) and [Domain Interactions](CROSS_DOMAIN_INTERACTIONS.md) shared
 
 ---
 
@@ -81,7 +81,7 @@ The first 30 days are for orientation. The new Chapter Lead should listen, read,
 - [ ] Review existing chapter architecture standards, technology radar, and any active Architecture Decision Records (ADRs) across all chapter domains
 - [ ] Attend and observe (do not chair) the chapter architecture review board in your first two weeks — understand the current decision-making process, quality bar, and recurring themes
 - [ ] Review the chapter roadmap, backlog, and any outstanding architecture or delivery commitments already in flight
-- [ ] Review `SKILLS_PROGRESSION.md` and `CROSS_DOMAIN_INTERACTIONS.md` with specific focus on your chapter's domains — understand how your domains interact with other chapters
+- [ ] Review [Career Paths & Skills Progression](SKILLS_PROGRESSION.md) and [Domain Interactions](CROSS_DOMAIN_INTERACTIONS.md) with specific focus on your chapter's domains — understand how your domains interact with other chapters
 - [ ] Review any active platform consolidation or rationalisation programmes affecting your chapter
 
 ### Stakeholder and context orientation
@@ -233,8 +233,8 @@ These tasks are specific to the Chapter Lead role and should be completed within
 |---|---|---|
 | Chapter Lead role definition (this repository) | Internal documentation | Day 1 |
 | All domain role definitions in your chapter (this repository) | Internal documentation | Week 1 |
-| `SKILLS_PROGRESSION.md` | Internal documentation | Week 1 |
-| `CROSS_DOMAIN_INTERACTIONS.md` | Internal documentation | Week 1 |
+| [Career Paths & Skills Progression](SKILLS_PROGRESSION.md) | Internal documentation | Week 1 |
+| [Domain Interactions](CROSS_DOMAIN_INTERACTIONS.md) | Internal documentation | Week 1 |
 | TOGAF Foundation or Practitioner | Certification | First 90 days |
 | ITIL 4 Managing Professional or Strategic Leader | Certification | First 90 days |
 | Relevant chapter domain certifications (see role definition) | Certification | By 6 months |

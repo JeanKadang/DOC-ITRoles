@@ -4,7 +4,7 @@ This domain covers security patterns and controls that apply across multiple tec
 
 ## Roles in this domain
 
-- `security_cross_platform_architect.md`
-- `security_cross_platform_engineer.md`
-- `security_cross_platform_product_owner.md`
-- `security_cross_platform_senior_engineer.md`
+- [`security_cross_platform_architect.md`](security_cross_platform_architect.md)
+- [`security_cross_platform_engineer.md`](security_cross_platform_engineer.md)
+- [`security_cross_platform_product_owner.md`](security_cross_platform_product_owner.md)
+- [`security_cross_platform_senior_engineer.md`](security_cross_platform_senior_engineer.md)
