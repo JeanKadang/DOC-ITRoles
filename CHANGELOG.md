@@ -7,6 +7,61 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.13.0] - 2026-08-06
+
+Onboarding gains four level supplements, covering 206 of the 226 roles
+without needing information the repository does not hold.
+
+### Added
+
+- **Onboarding supplements for Engineer, Senior Engineer, Architect and
+  Product Owner (#149).** Each sits in the 🚀 Onboarding sidebar group, in
+  level order, between the base template and the Chapter Lead variant.
+
+  | Level | Roles | Scope of influence stated |
+  |---|---|---|
+  | Engineer | 61 | **Team** — 58 of 61 |
+  | Senior Engineer | 56 | **Domain** — 45 |
+  | Architect | 49 | **Domain-wide** — 47 |
+  | Product Owner | 41 | **Domain** (backlog) |
+
+  Each is an overlay of roughly 400 words: what changes at that level,
+  additions to each of the 30/60/90 phases, and the failure modes common
+  there. `ONBOARDING_TEMPLATE.md` keeps the shared 30/60/90 structure, the
+  manager checklist and the check-in questions, and none of it is repeated.
+  Copying 144 lines four times would guarantee the drift that #123 retired a
+  509-line document over.
+
+### On answering the issue differently from how it was filed
+
+#149 asked for variants for *high-volume roles*, and named hiring volume and
+access processes as what it was waiting on. That framing is what had kept it
+open.
+
+**Level is the better axis, and the catalogue already documents it.**
+The role definitions state scope of influence consistently enough to
+partition on, so four supplements reach 206 roles where naming two or three
+high-volume roles would have reached two or three — and no hiring data is
+needed to write them.
+
+Every claim traces to something already in the catalogue rather than to
+general onboarding advice:
+
+- *"Assuming the guidance role includes line management"* comes from the
+  phrasing **132 roles** share — "day-to-day technical guidance and
+  mentoring; formal line management sits with the Chapter Lead"
+- *"Not escalating soon enough"* comes from the Engineer's **Escalates To**
+  line, which names the Senior Engineer
+- *"Treating Governed By as advisory"* comes from the Architect's
+  **Interactions** table, where Enterprise Architect and Security appear as
+  governing roles
+- *"Straying into technical decisions"* comes from the Owns/Advises split
+  stated in nearly every Product Owner definition
+
+The 20 roles outside these four levels — Chapter Leads and the executive
+tier — are either covered by the existing Chapter Lead template or are
+individual enough that a shared supplement would not serve them.
+
 ## [1.12.1] - 2026-08-06
 
 KPI content: subject-style metrics rewritten into things that can actually
