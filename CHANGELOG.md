@@ -7,6 +7,44 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **A technology radar, generated from the role definitions (#172).**
+  `npm run build-radar` reads the **Technology Proficiency Levels** block of
+  every role and writes `docs/TECHNOLOGY_RADAR.md` — 99 technologies across
+  four quadrants, in the viewer's 📚 Resources group.
+
+  | Ring | Rule | Technologies |
+  |---|---|---:|
+  | Adopt | Expert or Proficient in 10 or more roles | 40 |
+  | Trial | Expert or Proficient below that threshold | 55 |
+  | Assess | Named mostly at Working Knowledge or Awareness | 4 |
+  | Hold | *No source in this repository* | **0** |
+
+  **Only the proficiency block is counted.** `Microsoft Teams` appears in
+  220 role files and in 5 proficiency bullets; a product named under Remote
+  Work Considerations says nothing about the skill expected of a person.
+
+  **Hold is empty and the document says why.** Nothing in a role definition
+  says "stop using this", so the ring has no source here and is left visibly
+  empty rather than quietly omitted or filled with a guess. The page states
+  the other limit too: a count of role definitions is not a licence count,
+  and a role definition may describe one person or thirty.
+
+  **A curated vocabulary rather than extraction.** Parsing names out of the
+  bullets yields 2,278 candidates — among them `equivalent`, `reporting` and
+  `governance` — and puts Kubernetes at Awareness in 6 roles, because it is
+  usually named inside a longer capability phrase. Matching known names
+  against prose is reliable; parsing prose into names is not.
+  `data/technologies.json` holds the vocabulary with aliases, so `Azure AD`
+  folds into `Microsoft Entra ID`.
+
+  That vocabulary is hand-maintained, which is this repository's dominant
+  bug class, so a guard requires any capitalised term appearing in 25 or
+  more proficiency bullets to be in the vocabulary or its explicit
+  exclusions list. **It found HPE SimpliVity on its first run** — expected in
+  25 bullets and absent from the list.
+
 ### Fixed
 
 - **16 seeded targets that contradicted their own metric are corrected
