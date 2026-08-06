@@ -123,16 +123,18 @@ The Windows Active Directory Architect designs AD structure, security models, an
 
 ## Key Performance Indicators
 
-- Success of Active Directory design implementations
-- Availability and reliability of directory services
-- Security posture of AD infrastructure
-- Adoption of AD standards and best practices
-- Quality of architecture documentation
-- Time-to-resolution for complex AD design issues
-- Successful completion of AD migrations
-- Business satisfaction with identity infrastructure
-- Reduction in security incidents related to directory services
-- Knowledge transfer effectiveness to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Success of Active Directory design implementations | — | — |
+| Availability and reliability of directory services | — | — |
+| Security posture of AD infrastructure | — | — |
+| Adoption of AD standards and best practices | — | — |
+| Quality of architecture documentation | — | — |
+| Time-to-resolution for complex AD design issues | — | — |
+| Successful completion of AD migrations | — | — |
+| Business satisfaction with identity infrastructure | — | — |
+| Reduction in security incidents related to directory services | — | — |
+| Knowledge transfer effectiveness to engineering teams | — | — |
 
 ## Remote Work Considerations
 

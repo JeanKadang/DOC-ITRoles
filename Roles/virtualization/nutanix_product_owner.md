@@ -138,16 +138,18 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 
 ## Key Performance Indicators
 
-- Platform availability and reliability metrics
-- Resource utilization optimization
-- Time-to-delivery for platform enhancements
-- Stakeholder satisfaction ratings
-- Cost efficiency metrics for HCI resources
-- Backlog health and prioritization effectiveness
-- Platform adoption rates across the organization
-- Quality of service delivery documentation
-- Platform automation and self-service capability
-- Successful platform upgrades and enhancements
+| Metric | Target | Frequency |
+|---|---|---|
+| Platform availability and reliability metrics | — | — |
+| Resource utilization optimization | — | — |
+| Time-to-delivery for platform enhancements | — | — |
+| Stakeholder satisfaction ratings | — | — |
+| Cost efficiency metrics for HCI resources | — | — |
+| Backlog health and prioritization effectiveness | — | — |
+| Platform adoption rates across the organization | — | — |
+| Quality of service delivery documentation | — | — |
+| Platform automation and self-service capability | — | — |
+| Successful platform upgrades and enhancements | — | — |
 
 ## Remote Work Considerations
 

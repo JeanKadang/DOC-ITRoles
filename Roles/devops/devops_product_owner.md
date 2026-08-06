@@ -109,12 +109,14 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 
 ## Key Performance Indicators
 
-- DevOps platform adoption rates across teams
-- Successful delivery of roadmap initiatives
-- Stakeholder satisfaction with DevOps services
-- Quality of backlog management and prioritization
-- Measurable improvement in software delivery metrics
-- Effectiveness of DevOps training and enablement programs
+| Metric | Target | Frequency |
+|---|---|---|
+| DevOps platform adoption rates across teams | — | — |
+| Successful delivery of roadmap initiatives | — | — |
+| Stakeholder satisfaction with DevOps services | — | — |
+| Quality of backlog management and prioritization | — | — |
+| Measurable improvement in software delivery metrics | — | — |
+| Effectiveness of DevOps training and enablement programs | — | — |
 
 ## Key Technologies
 

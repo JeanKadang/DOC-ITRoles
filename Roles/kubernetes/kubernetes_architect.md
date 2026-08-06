@@ -169,13 +169,15 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 
 ## Key Performance Indicators
 
-- Successful implementation of Kubernetes platform strategies
-- Adoption rate of containerized applications
-- Platform reliability and availability metrics
-- Documentation quality and completeness
-- Effective knowledge transfer to engineering teams
-- Alignment of Kubernetes platforms with business requirements
-- Number of CNCF technologies formally evaluated and adopted into the platform per year; operator maturity level (basic / managed / full lifecycle)
+| Metric | Target | Frequency |
+|---|---|---|
+| Successful implementation of Kubernetes platform strategies | — | — |
+| Adoption rate of containerized applications | — | — |
+| Platform reliability and availability metrics | — | — |
+| Documentation quality and completeness | — | — |
+| Effective knowledge transfer to engineering teams | — | — |
+| Alignment of Kubernetes platforms with business requirements | — | — |
+| Number of CNCF technologies formally evaluated and adopted into the platform per year; operator maturity level (basic / managed / full lifecycle) | — | — |
 
 ## Recommended Certifications & Learning Paths
 

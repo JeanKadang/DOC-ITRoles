@@ -143,16 +143,18 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 ## Key Performance Indicators
 
-- Cloud cost reduction achievements
-- Cost visibility and allocation accuracy
-- Unit economics improvements for cloud services
-- Forecast accuracy for cloud spending
-- Cloud resource utilization rates
-- Reserved capacity optimization percentage
-- Adoption of FinOps practices across the organization
-- Stakeholder satisfaction with cost transparency
-- Cost variance reduction
-- Successful implementation of FinOps frameworks
+| Metric | Target | Frequency |
+|---|---|---|
+| Cloud cost reduction achievements | — | — |
+| Cost visibility and allocation accuracy | — | — |
+| Unit economics improvements for cloud services | — | — |
+| Forecast accuracy for cloud spending | — | — |
+| Cloud resource utilization rates | — | — |
+| Reserved capacity optimization percentage | — | — |
+| Adoption of FinOps practices across the organization | — | — |
+| Stakeholder satisfaction with cost transparency | — | — |
+| Cost variance reduction | — | — |
+| Successful implementation of FinOps frameworks | — | — |
 
 ## Remote Work Considerations
 

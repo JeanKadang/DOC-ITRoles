@@ -126,10 +126,12 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 
 ## Key Performance Indicators
 
-- Integration flow availability for monitored flows
-- Error response and resolution time
-- Documentation currency for assigned integrations
-- Escalation rate (trend: decreasing as skills develop)
+| Metric | Target | Frequency |
+|---|---|---|
+| Integration flow availability for monitored flows | — | — |
+| Error response and resolution time | — | — |
+| Documentation currency for assigned integrations | — | — |
+| Escalation rate (trend: decreasing as skills develop) | — | — |
 
 ## Remote Work Considerations
 

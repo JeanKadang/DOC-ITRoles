@@ -141,14 +141,16 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 ## Key Performance Indicators
 
-- Forecast accuracy percentage (actual vs. forecast spend within agreed tolerance bands)
-- Chargeback report delivery SLA adherence (% of reports delivered on time each month)
-- Budget variance detection speed (average time from anomaly occurrence to stakeholder notification)
-- Unit cost trend analysis quality (stakeholder-assessed usefulness score)
-- Stakeholder satisfaction score (measured via periodic feedback surveys)
-- Data quality score for billing allocation and tagging completeness underlying reports
-- Number of ad hoc financial analysis requests completed within SLA per quarter
-- Reduction in manual reporting effort through automation improvements (hours saved)
+| Metric | Target | Frequency |
+|---|---|---|
+| Forecast accuracy percentage (actual vs. forecast spend within agreed tolerance bands) | — | — |
+| Chargeback report delivery SLA adherence (% of reports delivered on time each month) | — | — |
+| Budget variance detection speed (average time from anomaly occurrence to stakeholder notification) | — | — |
+| Unit cost trend analysis quality (stakeholder-assessed usefulness score) | — | — |
+| Stakeholder satisfaction score (measured via periodic feedback surveys) | — | — |
+| Data quality score for billing allocation and tagging completeness underlying reports | — | — |
+| Number of ad hoc financial analysis requests completed within SLA per quarter | — | — |
+| Reduction in manual reporting effort through automation improvements (hours saved) | — | — |
 
 ## Remote Work Considerations
 

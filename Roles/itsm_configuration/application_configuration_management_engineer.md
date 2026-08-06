@@ -130,16 +130,18 @@ The Application Configuration Management Engineer implements and maintains confi
 
 ## Key Performance Indicators
 
-- Configuration accuracy and consistency
-- Configuration deployment success rate
-- Configuration-related incident reduction
-- Time to resolve configuration issues
-- Documentation quality and completeness
-- Configuration compliance percentage
-- Configuration management automation level
-- Environment configuration consistency
-- User satisfaction with configuration services
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| Configuration accuracy and consistency | — | — |
+| Configuration deployment success rate | — | — |
+| Configuration-related incident reduction | — | — |
+| Time to resolve configuration issues | — | — |
+| Documentation quality and completeness | — | — |
+| Configuration compliance percentage | — | — |
+| Configuration management automation level | — | — |
+| Environment configuration consistency | — | — |
+| User satisfaction with configuration services | — | — |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

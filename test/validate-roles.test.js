@@ -419,3 +419,54 @@ test('sub-heading Technology Proficiency Levels do not warn', () => {
   const r = validateFile(file, tmpRoot);
   assert.deepEqual(r.warnings.filter(w => /Technology Proficiency Levels/.test(w)), []);
 });
+
+// ── KPI rows without a target (#140) ─────────────────────
+// Once every role uses the table format the old "uses bullets" warning goes
+// silent, which would hide the real problem. The signal moves from
+// per-file to per-row: a table row with no target is still an unmeasurable
+// KPI, and must keep saying so.
+
+test('a KPI table row with no target warns', () => {
+  const file = writeFixture('kpi-no-target.md', completeRole({
+    transform: c => c.replace(
+      '| Delivery within agreed scope | ≥95% | Monthly |',
+      '| Delivery within agreed scope | ≥95% | Monthly |\n| Architecture design quality | — | — |'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.errors, [], 'a missing target is a gap to fill, not a broken file');
+  assert.ok(
+    r.warnings.some(w => /Key Performance Indicators/.test(w) && /target/i.test(w)),
+    `expected a missing-target warning, got: ${JSON.stringify(r.warnings)}`
+  );
+});
+
+test('the warning counts how many rows are missing a target', () => {
+  const file = writeFixture('kpi-two-gaps.md', completeRole({
+    transform: c => c.replace(
+      '| Delivery within agreed scope | ≥95% | Monthly |',
+      '| Delivery within agreed scope | ≥95% | Monthly |\n| Gap one | — | — |\n| Gap two | — | Monthly |'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.ok(r.warnings.some(w => /\b2\b/.test(w) && /target/i.test(w)),
+    `expected the warning to name 2 rows, got: ${JSON.stringify(r.warnings)}`);
+});
+
+test('a fully targeted KPI table does not warn', () => {
+  const file = writeFixture('kpi-all-targeted.md', completeRole());
+  const r = validateFile(file, tmpRoot);
+  assert.deepEqual(r.warnings.filter(w => /Key Performance Indicators/.test(w)), []);
+});
+
+test('an empty target cell counts the same as an em dash', () => {
+  // Whitespace must not be a way to dodge the check.
+  const file = writeFixture('kpi-blank-cell.md', completeRole({
+    transform: c => c.replace(
+      '| Delivery within agreed scope | ≥95% | Monthly |',
+      '| Delivery within agreed scope |  |  |'
+    ),
+  }));
+  const r = validateFile(file, tmpRoot);
+  assert.ok(r.warnings.some(w => /target/i.test(w)));
+});

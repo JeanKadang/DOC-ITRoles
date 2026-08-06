@@ -137,16 +137,18 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 
 ## Key Performance Indicators
 
-- Linux server availability metrics
-- Time to resolve Linux-related incidents
-- Patch compliance percentage
-- Documentation quality and completeness
-- Security compliance scores
-- Successful implementation of automation tasks
-- Backup success rates and recovery capabilities
-- User satisfaction with Linux support
-- Adherence to Linux standards and procedures
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| Linux server availability metrics | — | — |
+| Time to resolve Linux-related incidents | — | — |
+| Patch compliance percentage | — | — |
+| Documentation quality and completeness | — | — |
+| Security compliance scores | — | — |
+| Successful implementation of automation tasks | — | — |
+| Backup success rates and recovery capabilities | — | — |
+| User satisfaction with Linux support | — | — |
+| Adherence to Linux standards and procedures | — | — |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

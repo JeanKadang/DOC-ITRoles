@@ -139,14 +139,16 @@ The Platform Reliability Engineer applies site reliability engineering (SRE) pri
 
 ## Key Performance Indicators
 
-- Platform SLO achievement rate: ≥99% of defined platform SLOs met per quarter across CI/CD infrastructure, developer portal, and self-service APIs
-- Mean time to recover (MTTR) for platform P1/P2 incidents: target ≤30 minutes for CI/CD infrastructure, ≤60 minutes for developer portal
-- Platform error budget burn rate: no service consuming more than 50% of monthly error budget without a reliability improvement plan in place
-- Chaos engineering coverage: ≥80% of critical platform components validated by at least one chaos experiment per quarter
-- Developer-reported platform reliability satisfaction score: ≥4.0/5.0 on internal developer platform surveys
-- Post-incident review completion rate: 100% of P1/P2 platform incidents have a published blameless review within 5 business days
-- Runbook coverage: ≥90% of paging alerts have an associated runbook linked in the alert annotation
-- Platform-caused deployment failures: fewer than 5 confirmed platform-originated deployment failures per month across all teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Platform SLO achievement rate: ≥99% of defined platform SLOs met per quarter across CI/CD infrastructure, developer portal, and self-service APIs | ≥99% | — |
+| Mean time to recover (MTTR) for platform P1/P2 incidents: target ≤30 minutes for CI/CD infrastructure, ≤60 minutes for developer portal | ≤30 minutes | — |
+| Platform error budget burn rate: no service consuming more than 50% of monthly error budget without a reliability improvement plan in place | 50% | Monthly |
+| Chaos engineering coverage: ≥80% of critical platform components validated by at least one chaos experiment per quarter | ≥80% | — |
+| Developer-reported platform reliability satisfaction score: ≥4.0/5.0 on internal developer platform surveys | ≥4.0 | — |
+| Post-incident review completion rate: 100% of P1/P2 platform incidents have a published blameless review within 5 business days | 100% | — |
+| Runbook coverage: ≥90% of paging alerts have an associated runbook linked in the alert annotation | ≥90% | — |
+| Platform-caused deployment failures: fewer than 5 confirmed platform-originated deployment failures per month across all teams | — | — |
 
 ## Remote Work Considerations
 

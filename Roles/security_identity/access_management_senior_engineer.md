@@ -131,16 +131,18 @@ The Access Management Senior Engineer leads the implementation and optimization 
 
 ## Key Performance Indicators
 
-- Access management system availability
-- Privileged access security effectiveness
-- Implementation quality of access solutions
-- Time to resolve complex access incidents
-- Access certification campaign completion rates
-- Automation level of access processes
-- Knowledge transfer to junior engineers
-- Reduction in inappropriate access events
-- Compliance with access governance frameworks
-- Innovation in access management approaches
+| Metric | Target | Frequency |
+|---|---|---|
+| Access management system availability | — | — |
+| Privileged access security effectiveness | — | — |
+| Implementation quality of access solutions | — | — |
+| Time to resolve complex access incidents | — | — |
+| Access certification campaign completion rates | — | — |
+| Automation level of access processes | — | — |
+| Knowledge transfer to junior engineers | — | — |
+| Reduction in inappropriate access events | — | — |
+| Compliance with access governance frameworks | — | — |
+| Innovation in access management approaches | — | — |
 
 ## Key Performance Indicators
 

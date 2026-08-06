@@ -138,15 +138,17 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 
 ## Key Performance Indicators
 
-- Quality and completeness of architecture deliverables
-- Successful implementation of Nutanix infrastructure designs
-- Infrastructure performance and stability metrics
-- Effective capacity management and resource utilization
-- Business alignment of technical solutions
-- Adoption of standards and best practices
-- Time-to-value for new Nutanix implementations
-- Risk mitigation effectiveness
-- Innovation and continuous improvement contributions
+| Metric | Target | Frequency |
+|---|---|---|
+| Quality and completeness of architecture deliverables | — | — |
+| Successful implementation of Nutanix infrastructure designs | — | — |
+| Infrastructure performance and stability metrics | — | — |
+| Effective capacity management and resource utilization | — | — |
+| Business alignment of technical solutions | — | — |
+| Adoption of standards and best practices | — | — |
+| Time-to-value for new Nutanix implementations | — | — |
+| Risk mitigation effectiveness | — | — |
+| Innovation and continuous improvement contributions | — | — |
 
 ## Remote Work Considerations
 

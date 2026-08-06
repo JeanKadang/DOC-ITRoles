@@ -129,16 +129,18 @@ The Security Engineer implements and maintains security controls and technologie
 
 ## Key Performance Indicators
 
-- Security control implementation quality
-- Vulnerability remediation effectiveness
-- Security incident response time
-- Documentation quality and completeness
-- Security monitoring coverage
-- Compliance with security standards
-- Resolution time for security issues
-- Implementation of security best practices
-- Collaboration with other teams
-- Security knowledge sharing
+| Metric | Target | Frequency |
+|---|---|---|
+| Security control implementation quality | — | — |
+| Vulnerability remediation effectiveness | — | — |
+| Security incident response time | — | — |
+| Documentation quality and completeness | — | — |
+| Security monitoring coverage | — | — |
+| Compliance with security standards | — | — |
+| Resolution time for security issues | — | — |
+| Implementation of security best practices | — | — |
+| Collaboration with other teams | — | — |
+| Security knowledge sharing | — | — |
 
 ## Remote Work Considerations
 

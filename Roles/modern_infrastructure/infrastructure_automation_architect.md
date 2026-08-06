@@ -147,15 +147,17 @@ The Infrastructure Automation Architect designs and governs the organisation's e
 
 ## Key Performance Indicators
 
-- IaC coverage rate: ≥90% of cloud infrastructure managed as code and tracked in version control within 12 months of standard publication
-- Reusable module adoption: ≥75% of new infrastructure provisioning using modules from the approved internal IaC module library
-- Compliance-as-code pass rate: ≥95% of IaC pipeline runs passing all mandatory compliance-as-code gates without manual overrides
-- Infrastructure drift detection rate: 100% of IaC-managed infrastructure enrolled in drift detection, with critical drift remediated within 24 hours
-- IaC provisioning lead time: median time to provision a standard cloud environment reduced to ≤4 hours via automation
-- Runbook automation coverage: ≥60% of Tier 1 operational runbooks automated or partially automated within 12 months
-- Automation-related incident rate: fewer than 3 production incidents per quarter attributable to automation errors or unchecked drift
-- Infracost integration coverage: ≥80% of IaC pipelines generating cost estimates before infrastructure approval
-- Edge node provisioning automation coverage: ≥80% of edge nodes provisioned via automated IaC pipelines within 12 months of edge automation standard publication
+| Metric | Target | Frequency |
+|---|---|---|
+| IaC coverage rate: ≥90% of cloud infrastructure managed as code and tracked in version control within 12 months of standard publication | ≥90% | — |
+| Reusable module adoption: ≥75% of new infrastructure provisioning using modules from the approved internal IaC module library | ≥75% | — |
+| Compliance-as-code pass rate: ≥95% of IaC pipeline runs passing all mandatory compliance-as-code gates without manual overrides | ≥95% | — |
+| Infrastructure drift detection rate: 100% of IaC-managed infrastructure enrolled in drift detection, with critical drift remediated within 24 hours | 100% | — |
+| IaC provisioning lead time: median time to provision a standard cloud environment reduced to ≤4 hours via automation | ≤4 hours | — |
+| Runbook automation coverage: ≥60% of Tier 1 operational runbooks automated or partially automated within 12 months | ≥60% | — |
+| Automation-related incident rate: fewer than 3 production incidents per quarter attributable to automation errors or unchecked drift | — | — |
+| Infracost integration coverage: ≥80% of IaC pipelines generating cost estimates before infrastructure approval | ≥80% | — |
+| Edge node provisioning automation coverage: ≥80% of edge nodes provisioned via automated IaC pipelines within 12 months of edge automation standard publication | ≥80% | — |
 
 ## Remote Work Considerations
 

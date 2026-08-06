@@ -129,16 +129,18 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of Java designs with business requirements
-- Application performance and scalability
-- Security posture of Java applications
-- Adoption of Java reference architectures and patterns
-- Reduction in architectural risks and technical debt
-- Developer productivity improvement through standards
-- Innovation in Java architectural approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of Java designs with business requirements | — | — |
+| Application performance and scalability | — | — |
+| Security posture of Java applications | — | — |
+| Adoption of Java reference architectures and patterns | — | — |
+| Reduction in architectural risks and technical debt | — | — |
+| Developer productivity improvement through standards | — | — |
+| Innovation in Java architectural approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

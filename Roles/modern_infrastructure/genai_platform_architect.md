@@ -126,18 +126,20 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 
 ## Key Performance Indicators
 
-- AI platform availability and reliability for model serving workloads
-- Time-to-production for new AI/LLM applications using the platform
-- AI cost per unit of value delivered (token cost efficiency, GPU utilization)
-- Coverage of AI security and governance controls across deployments
-- Developer adoption of AI platform golden paths and reference architectures
-- Model evaluation score improvements through platform tooling
-- Reduction in AI-related security incidents and prompt injection attempts
-- AI platform scalability under demand spikes
-- Responsible AI compliance rate across AI deployments
-- Knowledge transfer and enablement effectiveness
-- Edge AI model deployment coverage: ≥80% of approved edge AI workloads served via standardised edge inference patterns
-- Edge inference latency: p95 inference latency within agreed SLA for latency-sensitive edge AI applications
+| Metric | Target | Frequency |
+|---|---|---|
+| AI platform availability and reliability for model serving workloads | — | — |
+| Time-to-production for new AI/LLM applications using the platform | — | — |
+| AI cost per unit of value delivered (token cost efficiency, GPU utilization) | — | — |
+| Coverage of AI security and governance controls across deployments | — | — |
+| Developer adoption of AI platform golden paths and reference architectures | — | — |
+| Model evaluation score improvements through platform tooling | — | — |
+| Reduction in AI-related security incidents and prompt injection attempts | — | — |
+| AI platform scalability under demand spikes | — | — |
+| Responsible AI compliance rate across AI deployments | — | — |
+| Knowledge transfer and enablement effectiveness | — | — |
+| Edge AI model deployment coverage: ≥80% of approved edge AI workloads served via standardised edge inference patterns | ≥80% | — |
+| Edge inference latency: p95 inference latency within agreed SLA for latency-sensitive edge AI applications | — | — |
 
 ## Role Scope & Boundaries
 

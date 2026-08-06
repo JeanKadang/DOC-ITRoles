@@ -129,16 +129,18 @@ The Service Management Senior Engineer leads the implementation and optimization
 
 ## Key Performance Indicators
 
-- ITSM platform availability and performance
-- Workflow automation effectiveness
-- Implementation quality of ITSM solutions
-- Time to resolution for complex platform issues
-- Knowledge transfer effectiveness to junior engineers
-- ITSM platform security and compliance
-- Successful implementation of ITSM standards
-- Innovation in service management solutions
-- Integration reliability with enterprise systems
-- User satisfaction with ITSM platform
+| Metric | Target | Frequency |
+|---|---|---|
+| ITSM platform availability and performance | — | — |
+| Workflow automation effectiveness | — | — |
+| Implementation quality of ITSM solutions | — | — |
+| Time to resolution for complex platform issues | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| ITSM platform security and compliance | — | — |
+| Successful implementation of ITSM standards | — | — |
+| Innovation in service management solutions | — | — |
+| Integration reliability with enterprise systems | — | — |
+| User satisfaction with ITSM platform | — | — |
 
 ## Remote Work Considerations
 

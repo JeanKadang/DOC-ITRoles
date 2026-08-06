@@ -129,16 +129,18 @@ The Database Architect designs comprehensive data management strategies and arch
 
 ## Key Performance Indicators
 
-- Database architecture design quality and effectiveness
-- Alignment of database designs with business requirements
-- Database performance, scalability, and reliability
-- Data security and compliance framework effectiveness
-- Adoption of database reference architectures and patterns
-- Reduction in data-related architectural risks
-- Database modernization progress and benefits
-- Innovation in data management approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Database architecture design quality and effectiveness | — | — |
+| Alignment of database designs with business requirements | — | — |
+| Database performance, scalability, and reliability | — | — |
+| Data security and compliance framework effectiveness | — | — |
+| Adoption of database reference architectures and patterns | — | — |
+| Reduction in data-related architectural risks | — | — |
+| Database modernization progress and benefits | — | — |
+| Innovation in data management approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

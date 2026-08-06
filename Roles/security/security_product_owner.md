@@ -143,16 +143,18 @@ The Security Product Owner manages the development and lifecycle of the organiza
 
 ## Key Performance Indicators
 
-- Security risk reduction effectiveness
-- Time-to-delivery for security capabilities
-- Stakeholder satisfaction with security services
-- Security incident reduction trends
-- Compliance achievement percentage
-- Successful delivery of security roadmap items
-- Security awareness and adoption metrics
-- Backlog health and prioritization effectiveness
-- Return on security investment metrics
-- Security maturity improvement
+| Metric | Target | Frequency |
+|---|---|---|
+| Security risk reduction effectiveness | — | — |
+| Time-to-delivery for security capabilities | — | — |
+| Stakeholder satisfaction with security services | — | — |
+| Security incident reduction trends | — | — |
+| Compliance achievement percentage | — | — |
+| Successful delivery of security roadmap items | — | — |
+| Security awareness and adoption metrics | — | — |
+| Backlog health and prioritization effectiveness | — | — |
+| Return on security investment metrics | — | — |
+| Security maturity improvement | — | — |
 
 ## Remote Work Considerations
 

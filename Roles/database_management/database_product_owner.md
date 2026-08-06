@@ -145,16 +145,18 @@ The Database Product Owner manages the portfolio of database platforms and data 
 
 ## Key Performance Indicators
 
-- Database platform availability and reliability metrics
-- Query performance optimization results
-- Time to provision new database environments
-- Database incident reduction trends
-- Cost efficiency of database resources
-- Successful delivery of database roadmap items
-- Stakeholder satisfaction with database services
-- Database automation and self-service capabilities
-- Backup and recovery effectiveness metrics
-- Database security compliance scores
+| Metric | Target | Frequency |
+|---|---|---|
+| Database platform availability and reliability metrics | — | — |
+| Query performance optimization results | — | — |
+| Time to provision new database environments | — | — |
+| Database incident reduction trends | — | — |
+| Cost efficiency of database resources | — | — |
+| Successful delivery of database roadmap items | — | — |
+| Stakeholder satisfaction with database services | — | — |
+| Database automation and self-service capabilities | — | — |
+| Backup and recovery effectiveness metrics | — | — |
+| Database security compliance scores | — | — |
 
 ## Remote Work Considerations
 

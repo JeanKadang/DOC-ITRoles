@@ -131,16 +131,18 @@ The Network Automation Engineer specializes in developing and implementing autom
 
 ## Key Performance Indicators
 
-- Percentage of network operations automated
-- Time savings from automated processes
-- Error reduction through automation
-- Network change success rate improvement
-- Code quality and reusability metrics
-- Documentation quality and completeness
-- Testing coverage for network automation
-- Pipeline reliability and performance
-- Innovation in automation approaches
-- Knowledge sharing and enablement
+| Metric | Target | Frequency |
+|---|---|---|
+| Percentage of network operations automated | — | — |
+| Time savings from automated processes | — | — |
+| Error reduction through automation | — | — |
+| Network change success rate improvement | — | — |
+| Code quality and reusability metrics | — | — |
+| Documentation quality and completeness | — | — |
+| Testing coverage for network automation | — | — |
+| Pipeline reliability and performance | — | — |
+| Innovation in automation approaches | — | — |
+| Knowledge sharing and enablement | — | — |
 
 ## Remote Work Considerations
 

@@ -129,16 +129,18 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 
 ## Key Performance Indicators
 
-- Storage platform availability and reliability
-- Capacity planning accuracy
-- Storage cost efficiency metrics
-- Stakeholder satisfaction with storage services
-- Time to provision new storage resources
-- Storage service levels achievement
-- Implementation quality of storage solutions
-- Cost optimization achievements
-- Backlog health and delivery metrics
-- Innovation in storage services delivery
+| Metric | Target | Frequency |
+|---|---|---|
+| Storage platform availability and reliability | — | — |
+| Capacity planning accuracy | — | — |
+| Storage cost efficiency metrics | — | — |
+| Stakeholder satisfaction with storage services | — | — |
+| Time to provision new storage resources | — | — |
+| Storage service levels achievement | — | — |
+| Implementation quality of storage solutions | — | — |
+| Cost optimization achievements | — | — |
+| Backlog health and delivery metrics | — | — |
+| Innovation in storage services delivery | — | — |
 
 ## Remote Work Considerations
 

@@ -136,14 +136,16 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 
 ## Key Performance Indicators
 
-- Infrastructure availability and uptime statistics
-- VM deployment time reduction through automation
-- Resource utilization optimization metrics
-- Success rate of infrastructure changes and migrations
-- Resolution time for complex incidents
-- Knowledge transfer effectiveness to junior engineers
-- Implementation of standards and best practices
-- Innovation and continuous improvement contributions
+| Metric | Target | Frequency |
+|---|---|---|
+| Infrastructure availability and uptime statistics | — | — |
+| VM deployment time reduction through automation | — | — |
+| Resource utilization optimization metrics | — | — |
+| Success rate of infrastructure changes and migrations | — | — |
+| Resolution time for complex incidents | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Implementation of standards and best practices | — | — |
+| Innovation and continuous improvement contributions | — | — |
 
 ## Remote Work Considerations
 

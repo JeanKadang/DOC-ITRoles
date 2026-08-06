@@ -139,14 +139,16 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 
 ## Key Performance Indicators
 
-- Data platform SLA availability
-- Time-to-production for new data products
-- Data platform cost per TB processed
-- Data quality score across Gold tier datasets
-- Data governance completeness (catalogued and classified datasets %)
-- Engineering team adoption of platform standards
-- Data platform cost per TB of data processed (trending month-over-month vs. volume growth)
-- ML feature pipeline production lead time (time from feature request to production availability)
+| Metric | Target | Frequency |
+|---|---|---|
+| Data platform SLA availability | — | — |
+| Time-to-production for new data products | — | — |
+| Data platform cost per TB processed | — | — |
+| Data quality score across Gold tier datasets | — | — |
+| Data governance completeness (catalogued and classified datasets %) | — | — |
+| Engineering team adoption of platform standards | — | — |
+| Data platform cost per TB of data processed (trending month-over-month vs. volume growth) | — | — |
+| ML feature pipeline production lead time (time from feature request to production availability) | — | — |
 
 ## Remote Work Considerations
 

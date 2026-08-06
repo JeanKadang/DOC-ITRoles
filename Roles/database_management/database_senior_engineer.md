@@ -133,16 +133,18 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 ## Key Performance Indicators
 
-- Database availability and performance metrics
-- Query performance optimization results
-- Implementation quality of database solutions
-- Mean time to resolution for critical database issues
-- Knowledge transfer effectiveness to database engineers
-- Automation coverage for database operations
-- Success rate of database migrations
-- Reduction in database-related incidents
-- Security compliance scores for database environments
-- Data integrity and recoverability metrics
+| Metric | Target | Frequency |
+|---|---|---|
+| Database availability and performance metrics | — | — |
+| Query performance optimization results | — | — |
+| Implementation quality of database solutions | — | — |
+| Mean time to resolution for critical database issues | — | — |
+| Knowledge transfer effectiveness to database engineers | — | — |
+| Automation coverage for database operations | — | — |
+| Success rate of database migrations | — | — |
+| Reduction in database-related incidents | — | — |
+| Security compliance scores for database environments | — | — |
+| Data integrity and recoverability metrics | — | — |
 
 ## Remote Work Considerations
 

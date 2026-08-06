@@ -139,12 +139,14 @@ The Responsible AI Engineer implements the technical tooling, testing processes,
 
 ## Key Performance Indicators
 
-- Percentage of production AI models with current model cards and fairness evaluations
-- Bias and fairness test pass rate at model deployment gates
-- Explainability coverage for high-risk AI decision systems
-- Governance pipeline integration rate across ML projects
-- AI red teaming findings resolved before production deployment
-- PII scanning coverage in data pipelines feeding AI systems
+| Metric | Target | Frequency |
+|---|---|---|
+| Percentage of production AI models with current model cards and fairness evaluations | — | — |
+| Bias and fairness test pass rate at model deployment gates | — | — |
+| Explainability coverage for high-risk AI decision systems | — | — |
+| Governance pipeline integration rate across ML projects | — | — |
+| AI red teaming findings resolved before production deployment | — | — |
+| PII scanning coverage in data pipelines feeding AI systems | — | — |
 
 ## Remote Work Considerations
 

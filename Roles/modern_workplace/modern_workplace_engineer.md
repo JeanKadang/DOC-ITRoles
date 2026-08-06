@@ -130,11 +130,13 @@ The Modern Workplace Engineer administers and supports the organisation's Micros
 
 ## Key Performance Indicators
 
-- Mailbox and Teams provisioning SLA compliance
-- Help desk escalation resolution time
-- M365 user lifecycle task completion accuracy
-- Compliance task turnaround (eDiscovery, holds) within SLA
-- Knowledge base article currency and completeness
+| Metric | Target | Frequency |
+|---|---|---|
+| Mailbox and Teams provisioning SLA compliance | — | — |
+| Help desk escalation resolution time | — | — |
+| M365 user lifecycle task completion accuracy | — | — |
+| Compliance task turnaround (eDiscovery, holds) within SLA | — | — |
+| Knowledge base article currency and completeness | — | — |
 
 ## Remote Work Considerations
 

@@ -156,15 +156,17 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 
 ## Key Performance Indicators
 
-- Time-to-delivery for virtualization services
-- Platform availability and SLA compliance
-- Stakeholder satisfaction ratings
-- Business value delivered through platform enhancements
-- Resource utilization efficiency
-- Cost optimization achievements
-- Feature adoption rates
-- Backlog health and roadmap delivery
-- Mean time to resolution for service incidents
+| Metric | Target | Frequency |
+|---|---|---|
+| Time-to-delivery for virtualization services | — | — |
+| Platform availability and SLA compliance | — | — |
+| Stakeholder satisfaction ratings | — | — |
+| Business value delivered through platform enhancements | — | — |
+| Resource utilization efficiency | — | — |
+| Cost optimization achievements | — | — |
+| Feature adoption rates | — | — |
+| Backlog health and roadmap delivery | — | — |
+| Mean time to resolution for service incidents | — | — |
 
 ## Remote Work Considerations
 

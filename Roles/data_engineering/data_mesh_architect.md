@@ -143,14 +143,16 @@ The Data Mesh Architect designs and governs the organisation's data mesh archite
 
 ## Key Performance Indicators
 
-- Number of active domain data products published to the mesh (trending growth month-over-month)
-- Data product SLA compliance rate (% of data products meeting their published quality and freshness SLOs)
-- Time-to-production for new domain data products (days from initiation to first consumer, trending down)
-- Data catalogue coverage (% of domain data products with complete metadata, lineage, and ownership records)
-- Cross-domain data product consumption rate (number of active cross-domain data product subscriptions)
-- Data contract compliance rate (% of data product interfaces backed by validated and enforced data contracts)
-- Data observability incident rate per domain data product (trending down)
-- Domain team self-serve capability score (onboarding time and central platform dependency reduction)
+| Metric | Target | Frequency |
+|---|---|---|
+| Number of active domain data products published to the mesh (trending growth month-over-month) | — | — |
+| Data product SLA compliance rate (% of data products meeting their published quality and freshness SLOs) | — | — |
+| Time-to-production for new domain data products (days from initiation to first consumer, trending down) | — | — |
+| Data catalogue coverage (% of domain data products with complete metadata, lineage, and ownership records) | — | — |
+| Cross-domain data product consumption rate (number of active cross-domain data product subscriptions) | — | — |
+| Data contract compliance rate (% of data product interfaces backed by validated and enforced data contracts) | — | — |
+| Data observability incident rate per domain data product (trending down) | — | — |
+| Domain team self-serve capability score (onboarding time and central platform dependency reduction) | — | — |
 
 ## Remote Work Considerations
 

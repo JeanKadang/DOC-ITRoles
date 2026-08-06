@@ -128,16 +128,18 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 ## Key Performance Indicators
 
-- AWS environment uptime and reliability
-- Time to provision new cloud resources
-- Resolution time for cloud service incidents
-- AWS cost management effectiveness
-- Security compliance in AWS environments
-- Documentation quality for AWS configurations
-- Successful implementation of standard patterns
-- AWS resource utilization efficiency
-- User satisfaction with AWS services
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| AWS environment uptime and reliability | — | — |
+| Time to provision new cloud resources | — | — |
+| Resolution time for cloud service incidents | — | — |
+| AWS cost management effectiveness | — | — |
+| Security compliance in AWS environments | — | — |
+| Documentation quality for AWS configurations | — | — |
+| Successful implementation of standard patterns | — | — |
+| AWS resource utilization efficiency | — | — |
+| User satisfaction with AWS services | — | — |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

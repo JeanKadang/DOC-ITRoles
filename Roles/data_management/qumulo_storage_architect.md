@@ -128,16 +128,18 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of solutions with business requirements
-- Storage architecture scalability and flexibility
-- Cost efficiency of designed solutions
-- Storage performance and availability metrics
-- Adoption of reference architectures and standards
-- Reduction in architectural risks and complexity
-- Innovation in storage approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of solutions with business requirements | — | — |
+| Storage architecture scalability and flexibility | — | — |
+| Cost efficiency of designed solutions | — | — |
+| Storage performance and availability metrics | — | — |
+| Adoption of reference architectures and standards | — | — |
+| Reduction in architectural risks and complexity | — | — |
+| Innovation in storage approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

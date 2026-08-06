@@ -129,16 +129,18 @@ The Windows Server Architect designs and defines the strategic direction for the
 
 ## Key Performance Indicators
 
-- Architectural standards adoption rate across Windows deployments
-- Reduction in Windows infrastructure incidents due to architectural improvements
-- Windows environment availability and performance metrics
-- Successful implementation of architectural recommendations
-- Cost optimization of Windows licensing and infrastructure
-- Quality and completeness of architecture documentation
-- Technical debt reduction in Windows environments
-- Time-to-delivery for new Windows capabilities and services
-- Windows security posture improvement
-- Knowledge transfer effectiveness to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architectural standards adoption rate across Windows deployments | — | — |
+| Reduction in Windows infrastructure incidents due to architectural improvements | — | — |
+| Windows environment availability and performance metrics | — | — |
+| Successful implementation of architectural recommendations | — | — |
+| Cost optimization of Windows licensing and infrastructure | — | — |
+| Quality and completeness of architecture documentation | — | — |
+| Technical debt reduction in Windows environments | — | — |
+| Time-to-delivery for new Windows capabilities and services | — | — |
+| Windows security posture improvement | — | — |
+| Knowledge transfer effectiveness to engineering teams | — | — |
 
 ## Remote Work Considerations
 

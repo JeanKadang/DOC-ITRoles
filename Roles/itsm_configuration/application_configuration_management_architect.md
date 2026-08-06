@@ -129,16 +129,18 @@ The Application Configuration Management Architect designs comprehensive strateg
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of configuration designs with business requirements
-- Configuration management reliability and scalability
-- Security posture of configuration systems
-- Adoption of configuration reference architectures
-- Reduction in configuration-related incidents
-- Configuration automation maturity improvement
-- Innovation in configuration management approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of configuration designs with business requirements | — | — |
+| Configuration management reliability and scalability | — | — |
+| Security posture of configuration systems | — | — |
+| Adoption of configuration reference architectures | — | — |
+| Reduction in configuration-related incidents | — | — |
+| Configuration automation maturity improvement | — | — |
+| Innovation in configuration management approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

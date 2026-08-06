@@ -132,16 +132,18 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of API designs with business requirements
-- API platform performance and scalability
-- Security posture of API implementations
-- Adoption of API reference architectures and patterns
-- Reduction in API architectural risks and technical debt
-- Developer productivity improvement through standards
-- Innovation in API architectural approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of API designs with business requirements | — | — |
+| API platform performance and scalability | — | — |
+| Security posture of API implementations | — | — |
+| Adoption of API reference architectures and patterns | — | — |
+| Reduction in API architectural risks and technical debt | — | — |
+| Developer productivity improvement through standards | — | — |
+| Innovation in API architectural approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

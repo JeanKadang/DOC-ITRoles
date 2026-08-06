@@ -115,18 +115,20 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 
 ## Key Performance Indicators
 
-- Server deployment accuracy and quality
-- Implementation time for server infrastructure projects
-- Server hardware incident resolution time
-- Documentation quality and completeness
-- Knowledge sharing effectiveness
-- Automation implementation success rate
-- Server performance optimization metrics
-- Hardware standardization compliance
-- Team technical capability development
-- Server capacity utilization metrics
-- Reduction in recurring hardware issues
-- Successful technology adoptions
+| Metric | Target | Frequency |
+|---|---|---|
+| Server deployment accuracy and quality | — | — |
+| Implementation time for server infrastructure projects | — | — |
+| Server hardware incident resolution time | — | — |
+| Documentation quality and completeness | — | — |
+| Knowledge sharing effectiveness | — | — |
+| Automation implementation success rate | — | — |
+| Server performance optimization metrics | — | — |
+| Hardware standardization compliance | — | — |
+| Team technical capability development | — | — |
+| Server capacity utilization metrics | — | — |
+| Reduction in recurring hardware issues | — | — |
+| Successful technology adoptions | — | — |
 
 ## Remote Work Considerations
 

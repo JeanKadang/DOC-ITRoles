@@ -129,16 +129,18 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 
 ## Key Performance Indicators
 
-- Database uptime and availability metrics
-- Mean time to detect (MTTD) database issues
-- Mean time to resolve (MTTR) database failures
-- Query performance optimization results
-- Successful automated recovery percentage
-- Reduction in database incidents over time
-- Database scaling effectiveness
-- Automated operations percentage
-- SLO/SLA achievement for database services
-- Knowledge sharing effectiveness
+| Metric | Target | Frequency |
+|---|---|---|
+| Database uptime and availability metrics | — | — |
+| Mean time to detect (MTTD) database issues | — | — |
+| Mean time to resolve (MTTR) database failures | — | — |
+| Query performance optimization results | — | — |
+| Successful automated recovery percentage | — | — |
+| Reduction in database incidents over time | — | — |
+| Database scaling effectiveness | — | — |
+| Automated operations percentage | — | — |
+| SLO/SLA achievement for database services | — | — |
+| Knowledge sharing effectiveness | — | — |
 
 ## Remote Work Considerations
 

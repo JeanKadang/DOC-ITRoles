@@ -119,17 +119,19 @@ The Security Architect designs and implements security systems and frameworks th
 
 ## Key Performance Indicators
 
-- Security architecture compliance rate
-- Reduction in security vulnerabilities and incidents
-- Timely completion of security architecture deliverables
-- Effectiveness of security controls implementation
-- Security standards adoption across the organization
-- Quality of security architecture documentation
-- Stakeholder satisfaction with security guidance
-- Time to address critical security vulnerabilities
-- Security maturity score improvement
-- Knowledge sharing and mentoring effectiveness
-- Number of security engineers advanced to Architect level through mentorship; security training completion rate across engineering teams (%)
+| Metric | Target | Frequency |
+|---|---|---|
+| Security architecture compliance rate | — | — |
+| Reduction in security vulnerabilities and incidents | — | — |
+| Timely completion of security architecture deliverables | — | — |
+| Effectiveness of security controls implementation | — | — |
+| Security standards adoption across the organization | — | — |
+| Quality of security architecture documentation | — | — |
+| Stakeholder satisfaction with security guidance | — | — |
+| Time to address critical security vulnerabilities | — | — |
+| Security maturity score improvement | — | — |
+| Knowledge sharing and mentoring effectiveness | — | — |
+| Number of security engineers advanced to Architect level through mentorship; security training completion rate across engineering teams (%) | — | — |
 
 ## Remote Work Considerations
 

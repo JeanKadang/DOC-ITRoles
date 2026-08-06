@@ -129,16 +129,18 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 ## Key Performance Indicators
 
-- Security solution implementation quality
-- Security incident detection and response metrics
-- Implementation quality of security standards
-- Time to resolve complex security issues
-- Security automation coverage and effectiveness
-- Knowledge transfer effectiveness to security engineers
-- Security posture improvement metrics
-- Reduction in security vulnerabilities
-- Innovation in security approaches
-- Customer satisfaction with security services
+| Metric | Target | Frequency |
+|---|---|---|
+| Security solution implementation quality | — | — |
+| Security incident detection and response metrics | — | — |
+| Implementation quality of security standards | — | — |
+| Time to resolve complex security issues | — | — |
+| Security automation coverage and effectiveness | — | — |
+| Knowledge transfer effectiveness to security engineers | — | — |
+| Security posture improvement metrics | — | — |
+| Reduction in security vulnerabilities | — | — |
+| Innovation in security approaches | — | — |
+| Customer satisfaction with security services | — | — |
 
 ## Remote Work Considerations
 

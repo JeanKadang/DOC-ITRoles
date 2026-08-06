@@ -144,14 +144,16 @@ The DataOps Specialist applies DevOps and agile engineering principles to data p
 
 ## Key Performance Indicators
 
-- Data pipeline SLA compliance rate (% of pipelines meeting their published SLO targets)
-- Data quality score across critical Gold tier datasets (% of dbt and Great Expectations checks passing)
-- Pipeline MTTR (mean time to restore failed data pipelines, in hours)
-- Deployment frequency for data pipeline changes (releases per week/month, trending up)
-- Data incident volume trending (number of data quality incidents per month, trending down)
-- Time-to-detect (TTD) for data quality anomalies (minutes/hours from issue occurrence to alert firing)
-- Automated test coverage rate (% of transformation logic covered by automated data quality tests)
-- Post-incident review completion rate (% of severity-1 incidents with completed PIR within SLA)
+| Metric | Target | Frequency |
+|---|---|---|
+| Data pipeline SLA compliance rate (% of pipelines meeting their published SLO targets) | — | — |
+| Data quality score across critical Gold tier datasets (% of dbt and Great Expectations checks passing) | — | — |
+| Pipeline MTTR (mean time to restore failed data pipelines, in hours) | — | — |
+| Deployment frequency for data pipeline changes (releases per week/month, trending up) | — | — |
+| Data incident volume trending (number of data quality incidents per month, trending down) | — | — |
+| Time-to-detect (TTD) for data quality anomalies (minutes/hours from issue occurrence to alert firing) | — | — |
+| Automated test coverage rate (% of transformation logic covered by automated data quality tests) | — | — |
+| Post-incident review completion rate (% of severity-1 incidents with completed PIR within SLA) | — | — |
 
 ## Remote Work Considerations
 

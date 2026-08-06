@@ -134,14 +134,16 @@ The Engineering Practices Champion is a senior individual contributor and intern
 
 ## Key Performance Indicators
 
-- DORA metrics improvement per coached team: deployment frequency, lead time for changes, mean time to recovery, and change failure rate tracked before and after engagement
-- Code quality gate adoption rate across delivery teams (percentage of active pipelines with configured and enforced quality gates)
-- Number of distinct teams coached per quarter, with a defined engagement scope and measurable outcome
-- Engineering practice maturity score delta — improvement in structured maturity assessment scores across coached teams
-- Test coverage trend across teams using shared pipeline templates with quality gate enforcement
-- Definition of Done completeness rate — percentage of teams with formally documented and tool-embedded DoD criteria
-- Practitioner feedback score from post-coaching engagement surveys — measuring coaching quality and perceived impact
-- Golden path template adoption rate in Backstage — percentage of new projects starting from a quality-configured template
+| Metric | Target | Frequency |
+|---|---|---|
+| DORA metrics improvement per coached team: deployment frequency, lead time for changes, mean time to recovery, and change failure rate tracked before and after engagement | — | — |
+| Code quality gate adoption rate across delivery teams (percentage of active pipelines with configured and enforced quality gates) | — | — |
+| Number of distinct teams coached per quarter, with a defined engagement scope and measurable outcome | — | — |
+| Engineering practice maturity score delta — improvement in structured maturity assessment scores across coached teams | — | — |
+| Test coverage trend across teams using shared pipeline templates with quality gate enforcement | — | — |
+| Definition of Done completeness rate — percentage of teams with formally documented and tool-embedded DoD criteria | — | — |
+| Practitioner feedback score from post-coaching engagement surveys — measuring coaching quality and perceived impact | — | — |
+| Golden path template adoption rate in Backstage — percentage of new projects starting from a quality-configured template | — | — |
 
 ## Remote Work Considerations
 

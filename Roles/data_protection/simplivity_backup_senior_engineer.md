@@ -123,16 +123,18 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 
 ## Key Performance Indicators
 
-- Backup success rate and reliability metrics
-- Recovery time objective (RTO) achievement
-- Recovery point objective (RPO) achievement
-- Backup storage efficiency (deduplication ratios)
-- Implementation quality of data protection solutions
-- Time to resolution for complex backup incidents
-- Knowledge transfer effectiveness to junior engineers
-- Automation level of backup operations
-- Successful recovery testing completion rates
-- Business continuity improvement metrics
+| Metric | Target | Frequency |
+|---|---|---|
+| Backup success rate and reliability metrics | — | — |
+| Recovery time objective (RTO) achievement | — | — |
+| Recovery point objective (RPO) achievement | — | — |
+| Backup storage efficiency (deduplication ratios) | — | — |
+| Implementation quality of data protection solutions | — | — |
+| Time to resolution for complex backup incidents | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Automation level of backup operations | — | — |
+| Successful recovery testing completion rates | — | — |
+| Business continuity improvement metrics | — | — |
 
 ## Remote Work Considerations
 

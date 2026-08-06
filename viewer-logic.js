@@ -782,8 +782,40 @@
         return `<ul>${byNode}</ul>`;
     }
 
+    // Convert a bullet KPI into a | Metric | Target | Frequency | row (#140).
+    //
+    // The metric text is kept **verbatim** — a target already stated in the
+    // prose is surfaced into its own column as well, rather than being cut
+    // out of the sentence. Slight redundancy on the ~97 rows that have one is
+    // a fair price for guaranteeing nothing is lost in a 1,791-row rewrite.
+    //
+    // A missing target or cadence becomes an em dash, not an empty cell: the
+    // gap is the point. Two thirds of these KPIs name a subject rather than a
+    // measure, and the row should say so plainly.
+    function parseKpiBullet(text) {
+        const raw = String(text == null ? '' : text).trim();
+
+        // Only forms actually used in the catalogue. Deliberately excludes a
+        // bare number, so "ISO 27001" and "the 2026 standard" are not read as
+        // targets.
+        const target = raw.match(/[≥≤<>]\s*\d+(?:\.\d+)?\s*(?:%|hours?|hrs?|days?|weeks?|months?|minutes?|mins?|business days?)?|\b\d+(?:\.\d+)?\s*%/);
+
+        const cadence = raw.match(/\b(daily|weekly|monthly|quarterly|annual(?:ly)?|per sprint)\b/i);
+        const FREQ = { daily: 'Daily', weekly: 'Weekly', monthly: 'Monthly',
+                       quarterly: 'Quarterly', annual: 'Annual', annually: 'Annual',
+                       'per sprint': 'Per sprint' };
+
+        return {
+            // A pipe would silently split the cell and shift every column.
+            metric:    raw.replace(/\|/g, '\\|'),
+            target:    target ? target[0].replace(/\s+/g, ' ').trim() : '—',
+            frequency: cadence ? FREQ[cadence[0].toLowerCase()] : '—',
+        };
+    }
+
     return {
         STALE_MONTHS,
+        parseKpiBullet,
         orgListHtml,
         graphListHtml,
         pushRecent,

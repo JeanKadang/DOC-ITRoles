@@ -137,12 +137,14 @@ The Privileged Access Management (PAM) Architect designs, governs, and evolves t
 
 ## Key Performance Indicators
 
-- Percentage of privileged accounts vaulted in PAM (target: 100% of in-scope accounts)
-- Standing privileged access reduction (trend to zero standing admin accounts)
-- Privileged session audit coverage (target: 100% of production privileged access)
-- JIT access adoption rate across administrative populations
-- PAM platform availability (target: 99.9%+)
-- Time to on-board newly discovered privileged accounts
+| Metric | Target | Frequency |
+|---|---|---|
+| Percentage of privileged accounts vaulted in PAM (target: 100% of in-scope accounts) | 100% | — |
+| Standing privileged access reduction (trend to zero standing admin accounts) | — | — |
+| Privileged session audit coverage (target: 100% of production privileged access) | 100% | — |
+| JIT access adoption rate across administrative populations | — | — |
+| PAM platform availability (target: 99.9%+) | 99.9% | — |
+| Time to on-board newly discovered privileged accounts | — | — |
 
 ## Remote Work Considerations
 

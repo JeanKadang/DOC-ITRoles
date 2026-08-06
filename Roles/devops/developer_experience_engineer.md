@@ -139,14 +139,16 @@ The Developer Experience Engineer designs, builds, and operates internal develop
 
 ## Key Performance Indicators
 
-- Deployment frequency improvement across teams using IDP golden paths: target ≥20% increase year-on-year
-- Lead time for changes for teams onboarded to golden paths: target ≤1 day median lead time for standard service changes
-- IDP self-service adoption rate: ≥70% of new services onboarded via golden path templates within 6 months
-- Developer satisfaction score (SPACE survey or equivalent): ≥4.0/5.0 for platform tooling satisfaction
-- Mean time to onboard a new service to the IDP: target ≤3 business days end-to-end
-- Number of manual platform requests (tickets, Slack requests) eliminated per quarter through self-service automation
-- Golden path template coverage: ≥80% of supported application archetypes covered by maintained golden paths
-- Platform tooling incident rate: fewer than 2 developer-impacting IDP outages per quarter
+| Metric | Target | Frequency |
+|---|---|---|
+| Deployment frequency improvement across teams using IDP golden paths: target ≥20% increase year-on-year | ≥20% | — |
+| Lead time for changes for teams onboarded to golden paths: target ≤1 day median lead time for standard service changes | ≤1 day | — |
+| IDP self-service adoption rate: ≥70% of new services onboarded via golden path templates within 6 months | ≥70% | — |
+| Developer satisfaction score (SPACE survey or equivalent): ≥4.0/5.0 for platform tooling satisfaction | ≥4.0 | — |
+| Mean time to onboard a new service to the IDP: target ≤3 business days end-to-end | ≤3 business days | — |
+| Number of manual platform requests (tickets, Slack requests) eliminated per quarter through self-service automation | — | — |
+| Golden path template coverage: ≥80% of supported application archetypes covered by maintained golden paths | ≥80% | — |
+| Platform tooling incident rate: fewer than 2 developer-impacting IDP outages per quarter | — | — |
 
 ## Remote Work Considerations
 

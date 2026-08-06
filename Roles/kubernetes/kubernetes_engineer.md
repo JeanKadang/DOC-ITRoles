@@ -130,16 +130,18 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 
 ## Key Performance Indicators
 
-- Kubernetes cluster uptime and reliability
-- Container deployment success rate
-- Time to resolve Kubernetes incidents
-- Security compliance in Kubernetes environments
-- Documentation quality and completeness
-- Implementation quality of standard patterns
-- Knowledge sharing and collaboration
-- Kubernetes automation implementation
-- User satisfaction with container platform
-- Cluster resource utilization efficiency
+| Metric | Target | Frequency |
+|---|---|---|
+| Kubernetes cluster uptime and reliability | — | — |
+| Container deployment success rate | — | — |
+| Time to resolve Kubernetes incidents | — | — |
+| Security compliance in Kubernetes environments | — | — |
+| Documentation quality and completeness | — | — |
+| Implementation quality of standard patterns | — | — |
+| Knowledge sharing and collaboration | — | — |
+| Kubernetes automation implementation | — | — |
+| User satisfaction with container platform | — | — |
+| Cluster resource utilization efficiency | — | — |
 
 ## Remote Work Considerations
 

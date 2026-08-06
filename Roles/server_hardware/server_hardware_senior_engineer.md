@@ -137,16 +137,18 @@ The Server Hardware Senior Engineer leads the implementation and optimization of
 
 ## Key Performance Indicators
 
-- Server hardware availability and reliability metrics
-- Implementation quality of hardware solutions
-- Time to resolution for critical hardware issues
-- Hardware deployment automation effectiveness
-- Power and cooling efficiency improvements
-- Knowledge transfer effectiveness to junior engineers
-- Hardware standardization implementation success
-- Success rate of hardware upgrades and refreshes
-- Innovation in server infrastructure approaches
-- Stakeholder satisfaction with infrastructure services
+| Metric | Target | Frequency |
+|---|---|---|
+| Server hardware availability and reliability metrics | — | — |
+| Implementation quality of hardware solutions | — | — |
+| Time to resolution for critical hardware issues | — | — |
+| Hardware deployment automation effectiveness | — | — |
+| Power and cooling efficiency improvements | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Hardware standardization implementation success | — | — |
+| Success rate of hardware upgrades and refreshes | — | — |
+| Innovation in server infrastructure approaches | — | — |
+| Stakeholder satisfaction with infrastructure services | — | — |
 
 ## Remote Work Considerations
 

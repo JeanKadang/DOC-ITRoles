@@ -130,12 +130,14 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 
 ## Key Performance Indicators
 
-- Data product delivery velocity (sprint throughput)
-- Data product adoption rate (active consumers by product)
-- Data platform cost per TB processed (trend: optimising)
-- Data pipeline availability SLA compliance
-- Stakeholder satisfaction score with data platform
-- Roadmap milestone delivery against plan
+| Metric | Target | Frequency |
+|---|---|---|
+| Data product delivery velocity (sprint throughput) | — | — |
+| Data product adoption rate (active consumers by product) | — | — |
+| Data platform cost per TB processed (trend: optimising) | — | — |
+| Data pipeline availability SLA compliance | — | — |
+| Stakeholder satisfaction score with data platform | — | — |
+| Roadmap milestone delivery against plan | — | — |
 
 ## Remote Work Considerations
 

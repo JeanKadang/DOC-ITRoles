@@ -138,18 +138,20 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of platform design with developer needs
-- Platform architecture scalability and flexibility
-- Developer experience improvement through architecture
-- Platform reliability and performance through design
-- Adoption of reference architectures and golden paths
-- Reduction in architectural complexity
-- Innovation in platform approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
-- Edge workload onboarding time: time from request to production-ready edge deployment
-- Edge platform availability: uptime SLA for IDP golden paths and self-service tooling at edge locations
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of platform design with developer needs | — | — |
+| Platform architecture scalability and flexibility | — | — |
+| Developer experience improvement through architecture | — | — |
+| Platform reliability and performance through design | — | — |
+| Adoption of reference architectures and golden paths | — | — |
+| Reduction in architectural complexity | — | — |
+| Innovation in platform approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
+| Edge workload onboarding time: time from request to production-ready edge deployment | — | — |
+| Edge platform availability: uptime SLA for IDP golden paths and self-service tooling at edge locations | — | — |
 
 ## Remote Work Considerations
 

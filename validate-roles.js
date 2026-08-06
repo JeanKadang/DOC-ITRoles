@@ -64,6 +64,19 @@ function hasKpiTable(body) {
   return /^\|.*\|[ \t]*\r?\n\|[\s:|-]+\|/im.test(body);
 }
 
+// Count KPI table rows whose Target cell is empty or an em dash. Skips the
+// header and the delimiter row. An em dash is how #140 renders a known gap,
+// and a blank cell must not be a quieter way of saying the same thing.
+function kpiRowsMissingTarget(body) {
+  let missing = 0;
+  const rows = body.split(/\r?\n/).filter(l => l.trim().startsWith('|'));
+  for (const row of rows.slice(2)) {
+    const target = (row.split('|')[2] || '').trim();
+    if (!target || target === '—' || target === '-' || target === 'TBD') missing++;
+  }
+  return missing;
+}
+
 // Technology Proficiency Levels should use the template's sub-heading form
 // (**Expert level required:** on its own line, then a bullet list) rather
 // than folding each tier into a single bullet. 191 of 222 use the inline
@@ -149,6 +162,15 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
   const kpiBody = sectionBody(content, 'Key Performance Indicators');
   if (kpiBody && !hasKpiTable(kpiBody)) {
     warnings.push('Key Performance Indicators uses bullets — the template prefers a | Metric | Target | Frequency | table so targets are measurable');
+  } else if (kpiBody) {
+    // Once a role uses the table the format warning goes quiet, but a row
+    // with no target is still an unmeasurable KPI. Without this the #140
+    // conversion would have silenced the very signal it was meant to expose
+    // (see also #122's KPI notes).
+    const missing = kpiRowsMissingTarget(kpiBody);
+    if (missing > 0) {
+      warnings.push(`Key Performance Indicators has ${missing} row(s) with no target — a metric nobody can meet or miss is not yet a KPI`);
+    }
   }
 
   if (PROFICIENCY_INLINE.test(content)) {

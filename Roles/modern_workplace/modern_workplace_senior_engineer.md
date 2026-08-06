@@ -134,12 +134,14 @@ The Modern Workplace Senior Engineer implements, manages, and optimises the orga
 
 ## Key Performance Indicators
 
-- Exchange Online mail flow availability and delivery SLA
-- Teams call quality (P.MOS score, call reliability %)
-- Purview compliance policy coverage across tenant
-- Secure Score trend (improving quarter-over-quarter)
-- Help desk escalation response and resolution time
-- Automation scripts deployed (increasing coverage)
+| Metric | Target | Frequency |
+|---|---|---|
+| Exchange Online mail flow availability and delivery SLA | — | — |
+| Teams call quality (P.MOS score, call reliability %) | — | — |
+| Purview compliance policy coverage across tenant | — | — |
+| Secure Score trend (improving quarter-over-quarter) | — | — |
+| Help desk escalation response and resolution time | — | — |
+| Automation scripts deployed (increasing coverage) | — | — |
 
 ## Remote Work Considerations
 

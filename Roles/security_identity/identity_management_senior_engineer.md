@@ -131,16 +131,18 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 
 ## Key Performance Indicators
 
-- Identity system availability and reliability metrics
-- Authentication service response times
-- Implementation quality of identity solutions
-- Time to resolution for complex identity incidents
-- Automation level achieved for identity operations
-- Security posture improvement in identity systems
-- Knowledge transfer effectiveness to junior engineers
-- Reduction in identity-related security incidents
-- Successful implementation of identity standards
-- User satisfaction with authentication experience
+| Metric | Target | Frequency |
+|---|---|---|
+| Identity system availability and reliability metrics | — | — |
+| Authentication service response times | — | — |
+| Implementation quality of identity solutions | — | — |
+| Time to resolution for complex identity incidents | — | — |
+| Automation level achieved for identity operations | — | — |
+| Security posture improvement in identity systems | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Reduction in identity-related security incidents | — | — |
+| Successful implementation of identity standards | — | — |
+| User satisfaction with authentication experience | — | — |
 
 ## Remote Work Considerations
 

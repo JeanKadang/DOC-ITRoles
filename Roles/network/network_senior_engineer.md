@@ -131,16 +131,18 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 ## Key Performance Indicators
 
-- Network availability and reliability metrics
-- Mean time to resolution for complex network issues
-- Implementation quality of network solutions
-- Network security posture improvement
-- Knowledge transfer effectiveness to network engineers
-- Network automation coverage and efficiency
-- Success rate of network migrations and changes
-- Network performance optimization results
-- Customer satisfaction with network services
-- Innovation in network implementation approaches
+| Metric | Target | Frequency |
+|---|---|---|
+| Network availability and reliability metrics | — | — |
+| Mean time to resolution for complex network issues | — | — |
+| Implementation quality of network solutions | — | — |
+| Network security posture improvement | — | — |
+| Knowledge transfer effectiveness to network engineers | — | — |
+| Network automation coverage and efficiency | — | — |
+| Success rate of network migrations and changes | — | — |
+| Network performance optimization results | — | — |
+| Customer satisfaction with network services | — | — |
+| Innovation in network implementation approaches | — | — |
 
 ## Remote Work Considerations
 

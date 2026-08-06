@@ -139,15 +139,17 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 
 ## Key Performance Indicators
 
-- LLM serving reliability and latency SLA compliance
-- RAG pipeline retrieval accuracy and end-to-end quality scores
-- AI platform cost per request / token cost efficiency
-- Time to onboard new teams onto AI platform capabilities
-- AI security control effectiveness (blocked prompt injection attempts)
-- Mean time to restore for AI platform incidents
-- Coverage of AI workloads under observability and evaluation monitoring
-- Deployment automation coverage and frequency
-- Quality and completeness of platform documentation
+| Metric | Target | Frequency |
+|---|---|---|
+| LLM serving reliability and latency SLA compliance | — | — |
+| RAG pipeline retrieval accuracy and end-to-end quality scores | — | — |
+| AI platform cost per request / token cost efficiency | — | — |
+| Time to onboard new teams onto AI platform capabilities | — | — |
+| AI security control effectiveness (blocked prompt injection attempts) | — | — |
+| Mean time to restore for AI platform incidents | — | — |
+| Coverage of AI workloads under observability and evaluation monitoring | — | — |
+| Deployment automation coverage and frequency | — | — |
+| Quality and completeness of platform documentation | — | — |
 
 ## Remote Work Considerations
 

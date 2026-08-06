@@ -134,16 +134,18 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 
 ## Key Performance Indicators
 
-- Platform stability and reliability metrics
-- Developer adoption of platform services
-- Implementation quality of platform solutions
-- Time to resolution for platform incidents
-- Developer experience satisfaction scores
-- Reduction in toil through platform automation
-- Knowledge transfer effectiveness to platform engineers
-- Time-to-deployment improvement through platform
-- Platform service catalog expansion
-- Innovation in platform capabilities
+| Metric | Target | Frequency |
+|---|---|---|
+| Platform stability and reliability metrics | — | — |
+| Developer adoption of platform services | — | — |
+| Implementation quality of platform solutions | — | — |
+| Time to resolution for platform incidents | — | — |
+| Developer experience satisfaction scores | — | — |
+| Reduction in toil through platform automation | — | — |
+| Knowledge transfer effectiveness to platform engineers | — | — |
+| Time-to-deployment improvement through platform | — | — |
+| Platform service catalog expansion | — | — |
+| Innovation in platform capabilities | — | — |
 
 ## Remote Work Considerations
 

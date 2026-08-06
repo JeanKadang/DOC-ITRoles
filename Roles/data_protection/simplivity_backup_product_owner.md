@@ -137,16 +137,18 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 
 ## Key Performance Indicators
 
-- Backup success rate percentage
-- Recovery time objective (RTO) achievements
-- Recovery point objective (RPO) achievements
-- Stakeholder satisfaction with recovery capabilities
-- Data protection compliance scores
-- Successful recovery testing completion rates
-- Backup storage efficiency metrics
-- Incident reduction in backup operations
-- Implementation of backup automation
-- Cross-team collaboration effectiveness
+| Metric | Target | Frequency |
+|---|---|---|
+| Backup success rate percentage | — | — |
+| Recovery time objective (RTO) achievements | — | — |
+| Recovery point objective (RPO) achievements | — | — |
+| Stakeholder satisfaction with recovery capabilities | — | — |
+| Data protection compliance scores | — | — |
+| Successful recovery testing completion rates | — | — |
+| Backup storage efficiency metrics | — | — |
+| Incident reduction in backup operations | — | — |
+| Implementation of backup automation | — | — |
+| Cross-team collaboration effectiveness | — | — |
 
 ## Remote Work Considerations
 

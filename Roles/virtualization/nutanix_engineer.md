@@ -136,16 +136,18 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 
 ## Key Performance Indicators
 
-- Nutanix environment uptime and availability
-- Virtual machine provisioning efficiency
-- Time to resolve Nutanix-related incidents
-- Successful completion of maintenance activities
-- Documentation quality and completeness
-- Resource utilization optimization
-- Patch compliance for Nutanix components
-- Reduction in recurring incidents
-- User satisfaction with infrastructure services
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| Nutanix environment uptime and availability | — | — |
+| Virtual machine provisioning efficiency | — | — |
+| Time to resolve Nutanix-related incidents | — | — |
+| Successful completion of maintenance activities | — | — |
+| Documentation quality and completeness | — | — |
+| Resource utilization optimization | — | — |
+| Patch compliance for Nutanix components | — | — |
+| Reduction in recurring incidents | — | — |
+| User satisfaction with infrastructure services | — | — |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

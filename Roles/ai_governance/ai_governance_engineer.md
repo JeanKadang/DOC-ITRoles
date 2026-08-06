@@ -140,12 +140,14 @@ The AI Governance Engineer is an entry-level practitioner role responsible for i
 
 ## Key Performance Indicators
 
-- AI risk register currency: ≥95% of in-scope AI systems with assessment completed within the required review cycle
-- Model card documentation completeness: 100% of production AI systems with a current, complete model card in the inventory
-- Bias evaluation coverage: all AI systems flagged for bias testing evaluated and results documented within the agreed schedule
-- Compliance evidence collection: 100% of required evidence artefacts collated at least 5 business days prior to audit deadlines
-- AI incident log accuracy: all logged incidents with complete required fields within 24 hours of identification
-- AI system inventory completeness: ≥98% of known AI systems tracked in the inventory with current status and last review date
+| Metric | Target | Frequency |
+|---|---|---|
+| AI risk register currency: ≥95% of in-scope AI systems with assessment completed within the required review cycle | ≥95% | — |
+| Model card documentation completeness: 100% of production AI systems with a current, complete model card in the inventory | 100% | — |
+| Bias evaluation coverage: all AI systems flagged for bias testing evaluated and results documented within the agreed schedule | — | — |
+| Compliance evidence collection: 100% of required evidence artefacts collated at least 5 business days prior to audit deadlines | 100% | — |
+| AI incident log accuracy: all logged incidents with complete required fields within 24 hours of identification | — | — |
+| AI system inventory completeness: ≥98% of known AI systems tracked in the inventory with current status and last review date | ≥98% | — |
 
 ## Remote Work Considerations
 

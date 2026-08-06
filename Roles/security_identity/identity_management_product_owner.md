@@ -161,16 +161,18 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 ## Key Performance Indicators
 
-- Identity system availability and reliability
-- User provisioning time efficiency
-- Identity-related incident reduction
-- Authentication process user satisfaction
-- Self-service adoption rates
-- Identity governance compliance scores
-- Successful delivery of identity roadmap items
-- Cost effectiveness of identity solutions
-- Stakeholder satisfaction with identity services
-- Directory data quality metrics
+| Metric | Target | Frequency |
+|---|---|---|
+| Identity system availability and reliability | — | — |
+| User provisioning time efficiency | — | — |
+| Identity-related incident reduction | — | — |
+| Authentication process user satisfaction | — | — |
+| Self-service adoption rates | — | — |
+| Identity governance compliance scores | — | — |
+| Successful delivery of identity roadmap items | — | — |
+| Cost effectiveness of identity solutions | — | — |
+| Stakeholder satisfaction with identity services | — | — |
+| Directory data quality metrics | — | — |
 
 ## Remote Work Considerations
 

@@ -142,12 +142,14 @@ The AI Governance Architect designs and governs the organisation's frameworks, p
 
 ## Key Performance Indicators
 
-- AI system inventory completeness (percentage of AI systems assessed and classified)
-- High-risk AI systems with completed documentation and controls in place
-- AI incident rate and severity
-- EU AI Act / regulatory compliance readiness score
-- AI supplier assessment coverage
-- Employee AI governance and acceptable use training completion rate
+| Metric | Target | Frequency |
+|---|---|---|
+| AI system inventory completeness (percentage of AI systems assessed and classified) | — | — |
+| High-risk AI systems with completed documentation and controls in place | — | — |
+| AI incident rate and severity | — | — |
+| EU AI Act / regulatory compliance readiness score | — | — |
+| AI supplier assessment coverage | — | — |
+| Employee AI governance and acceptable use training completion rate | — | — |
 
 ## Remote Work Considerations
 

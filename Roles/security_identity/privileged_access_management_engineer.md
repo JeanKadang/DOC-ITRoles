@@ -132,12 +132,14 @@ The Privileged Access Management (PAM) Engineer implements, operates, and mainta
 
 ## Key Performance Indicators
 
-- Privileged account on-boarding rate (accounts added per sprint/month)
-- Credential rotation success rate (target: >99%)
-- PAM platform availability (target: 99.9%+)
-- Open privileged account discovery findings (trend: decreasing)
-- Compliance audit findings related to PAM (target: zero)
-- Session recording completeness rate
+| Metric | Target | Frequency |
+|---|---|---|
+| Privileged account on-boarding rate (accounts added per sprint/month) | — | Per sprint |
+| Credential rotation success rate (target: >99%) | >99% | — |
+| PAM platform availability (target: 99.9%+) | 99.9% | — |
+| Open privileged account discovery findings (trend: decreasing) | — | — |
+| Compliance audit findings related to PAM (target: zero) | — | — |
+| Session recording completeness rate | — | — |
 
 ## Remote Work Considerations
 

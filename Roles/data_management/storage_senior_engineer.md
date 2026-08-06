@@ -129,16 +129,18 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 ## Key Performance Indicators
 
-- Storage environment availability and reliability
-- Storage performance optimization results
-- Implementation quality of storage solutions
-- Time to resolution for complex storage issues
-- Knowledge transfer effectiveness to storage engineers
-- Storage automation coverage and efficiency
-- Success rate of storage migrations and transitions
-- Storage capacity utilization efficiency
-- Customer satisfaction with storage services
-- Innovation in storage implementation approaches
+| Metric | Target | Frequency |
+|---|---|---|
+| Storage environment availability and reliability | — | — |
+| Storage performance optimization results | — | — |
+| Implementation quality of storage solutions | — | — |
+| Time to resolution for complex storage issues | — | — |
+| Knowledge transfer effectiveness to storage engineers | — | — |
+| Storage automation coverage and efficiency | — | — |
+| Success rate of storage migrations and transitions | — | — |
+| Storage capacity utilization efficiency | — | — |
+| Customer satisfaction with storage services | — | — |
+| Innovation in storage implementation approaches | — | — |
 
 ## Remote Work Considerations
 

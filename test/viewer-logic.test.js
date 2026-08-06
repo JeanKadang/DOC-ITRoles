@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 
 const {
     STALE_MONTHS,
+    parseKpiBullet,
     orgListHtml,
     graphListHtml,
     pushRecent,
@@ -1190,4 +1191,47 @@ test('graphListHtml falls back to "Other" for a node with no chapter', () => {
 test('graphListHtml renders node notes', () => {
     const graph = { nodes: [{ name: 'Alpha', kind: 'domain', notes: ['consulted by all domains'] }], links: [] };
     assert.match(graphListHtml(graph, {}), /consulted by all domains/);
+});
+
+// ── parseKpiBullet (#140) ─────────────────────────────────
+// Converting a bullet KPI to a | Metric | Target | Frequency | row. The
+// metric text is kept verbatim so nothing is lost; a target or cadence
+// already stated in the prose is surfaced into its own column, and a gap
+// is rendered as an em dash rather than silently omitted.
+test('parseKpiBullet surfaces a stated target without altering the metric text', () => {
+    const t = 'SAST/DAST/SCA pipeline coverage: ≥95% of active repositories instrumented';
+    const r = parseKpiBullet(t);
+    assert.equal(r.metric, t, 'metric text must survive verbatim');
+    assert.equal(r.target, '≥95%');
+});
+
+test('parseKpiBullet recognises the target forms actually used', () => {
+    assert.equal(parseKpiBullet('MTTD critical vulnerabilities: ≤24 hours from commit').target, '≤24 hours');
+    assert.equal(parseKpiBullet('Admission control coverage: 100% of production clusters').target, '100%');
+    assert.equal(parseKpiBullet('Resolution time <4 hours for P1').target, '<4 hours');
+    assert.equal(parseKpiBullet('Attrition rate ≥30% of findings auto-resolved').target, '≥30%');
+});
+
+test('parseKpiBullet extracts a cadence when one is named', () => {
+    assert.equal(parseKpiBullet('False positive rate ≤10%, reviewed monthly').frequency, 'Monthly');
+    assert.equal(parseKpiBullet('Adoption reviewed quarterly').frequency, 'Quarterly');
+    assert.equal(parseKpiBullet('Reported annually to the board').frequency, 'Annual');
+});
+
+test('parseKpiBullet marks an absent target or cadence with an em dash', () => {
+    // The gap has to be visible in the row. Omitting it would make an
+    // unmeasurable KPI look complete.
+    const r = parseKpiBullet('AI incident rate and severity');
+    assert.equal(r.metric, 'AI incident rate and severity');
+    assert.equal(r.target, '—');
+    assert.equal(r.frequency, '—');
+});
+
+test('parseKpiBullet does not mistake a year or a version for a target', () => {
+    assert.equal(parseKpiBullet('Alignment with ISO 27001 controls').target, '—');
+    assert.equal(parseKpiBullet('Adoption of the 2026 architecture standard').target, '—');
+});
+
+test('parseKpiBullet escapes a pipe so it cannot break the table', () => {
+    assert.equal(parseKpiBullet('Uptime | availability').metric, 'Uptime \\| availability');
 });

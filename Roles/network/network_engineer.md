@@ -131,16 +131,18 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 
 ## Key Performance Indicators
 
-- Network uptime and availability metrics
-- Mean time to resolution for network incidents
-- Change implementation success rate
-- Documentation quality and completeness
-- Network security policy compliance
-- Network monitoring coverage
-- Response time to service requests
-- Knowledge sharing and collaboration
-- Successful implementation of standard designs
-- Customer satisfaction with network services
+| Metric | Target | Frequency |
+|---|---|---|
+| Network uptime and availability metrics | — | — |
+| Mean time to resolution for network incidents | — | — |
+| Change implementation success rate | — | — |
+| Documentation quality and completeness | — | — |
+| Network security policy compliance | — | — |
+| Network monitoring coverage | — | — |
+| Response time to service requests | — | — |
+| Knowledge sharing and collaboration | — | — |
+| Successful implementation of standard designs | — | — |
+| Customer satisfaction with network services | — | — |
 
 ## Remote Work Considerations
 

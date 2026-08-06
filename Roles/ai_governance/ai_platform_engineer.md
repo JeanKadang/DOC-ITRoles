@@ -143,14 +143,16 @@ The AI Platform Engineer builds and operates the organisation's AI/ML platform i
 
 ## Key Performance Indicators
 
-- ML platform uptime and availability (target SLA, e.g., ≥99.5%)
-- ML pipeline execution success rate (% of scheduled pipelines completing without failure)
-- Model deployment lead time (hours from training completion to production endpoint availability, trending down)
-- Mean time to restore (MTTR) for ML infrastructure incidents
-- Data scientist onboarding time to first successful experiment run (days, trending down)
-- Feature store pipeline data freshness SLA compliance (% of feature tables meeting published freshness SLO)
-- ML infrastructure cost per model training run (trending vs. prior period)
-- Number of platform incidents attributed to infrastructure misconfiguration (trending down)
+| Metric | Target | Frequency |
+|---|---|---|
+| ML platform uptime and availability (target SLA, e.g., ≥99.5%) | ≥99.5% | — |
+| ML pipeline execution success rate (% of scheduled pipelines completing without failure) | — | — |
+| Model deployment lead time (hours from training completion to production endpoint availability, trending down) | — | — |
+| Mean time to restore (MTTR) for ML infrastructure incidents | — | — |
+| Data scientist onboarding time to first successful experiment run (days, trending down) | — | — |
+| Feature store pipeline data freshness SLA compliance (% of feature tables meeting published freshness SLO) | — | — |
+| ML infrastructure cost per model training run (trending vs. prior period) | — | — |
+| Number of platform incidents attributed to infrastructure misconfiguration (trending down) | — | — |
 
 ## Remote Work Considerations
 

@@ -128,14 +128,16 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 ## Key Performance Indicators
 
-- Multi-cloud strategy maturity and documentation completeness
-- Alignment of platform architect deliverables with defined strategic principles
-- Reduction in strategic architectural rework or re-platforming costs
-- Quality and coverage of architectural standards and guardrails
-- Cloud provider relationship depth and access to advisory programs
-- Leadership perception of cloud architecture clarity and direction
-- Innovation adoption rate: strategic technologies evaluated and formally adopted or rejected per year
-- Escalation resolution rate and time-to-decision for complex cloud architectural issues
+| Metric | Target | Frequency |
+|---|---|---|
+| Multi-cloud strategy maturity and documentation completeness | — | — |
+| Alignment of platform architect deliverables with defined strategic principles | — | — |
+| Reduction in strategic architectural rework or re-platforming costs | — | — |
+| Quality and coverage of architectural standards and guardrails | — | — |
+| Cloud provider relationship depth and access to advisory programs | — | — |
+| Leadership perception of cloud architecture clarity and direction | — | — |
+| Innovation adoption rate: strategic technologies evaluated and formally adopted or rejected per year | — | — |
+| Escalation resolution rate and time-to-decision for complex cloud architectural issues | — | — |
 
 ## Remote Work Considerations
 

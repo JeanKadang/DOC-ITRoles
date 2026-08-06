@@ -137,16 +137,18 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 
 ## Key Performance Indicators
 
-- Chapter practitioner retention rate and voluntary attrition trend
-- Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires)
-- Chapter satisfaction score (internal survey results for the Service & Governance chapter)
-- ITSM process maturity level across all ITIL 4 processes (measured against ITIL 4 maturity model)
-- CMDB accuracy and completeness rate for critical configuration item classes
-- EA governance board throughput — submission-to-decision cycle time and architecture compliance rate
-- Service catalogue coverage — percentage of IT services with accurate, maintained catalogue entries
-- Infrastructure onboarding playbook adherence rate across chapters
-- IT compliance reporting accuracy and on-time delivery rate
-- Change management success rate and change-related incident trend
+| Metric | Target | Frequency |
+|---|---|---|
+| Chapter practitioner retention rate and voluntary attrition trend | — | — |
+| Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires) | — | — |
+| Chapter satisfaction score (internal survey results for the Service & Governance chapter) | — | — |
+| ITSM process maturity level across all ITIL 4 processes (measured against ITIL 4 maturity model) | — | — |
+| CMDB accuracy and completeness rate for critical configuration item classes | — | — |
+| EA governance board throughput — submission-to-decision cycle time and architecture compliance rate | — | — |
+| Service catalogue coverage — percentage of IT services with accurate, maintained catalogue entries | — | — |
+| Infrastructure onboarding playbook adherence rate across chapters | — | — |
+| IT compliance reporting accuracy and on-time delivery rate | — | — |
+| Change management success rate and change-related incident trend | — | — |
 
 ## Remote Work Considerations
 

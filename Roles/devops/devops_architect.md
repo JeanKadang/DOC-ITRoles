@@ -132,16 +132,18 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of DevOps designs with business requirements
-- Delivery pipeline efficiency and reliability
-- Security integration in DevOps workflows
-- Adoption of DevOps reference architectures and patterns
-- Reduction in delivery-related incidents
-- Number of novel pipeline patterns adopted and operationalized per quarter; percentage of teams using self-service golden path tooling
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
-- Improvement in delivery metrics (lead time, MTTR, etc.)
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of DevOps designs with business requirements | — | — |
+| Delivery pipeline efficiency and reliability | — | — |
+| Security integration in DevOps workflows | — | — |
+| Adoption of DevOps reference architectures and patterns | — | — |
+| Reduction in delivery-related incidents | — | — |
+| Number of novel pipeline patterns adopted and operationalized per quarter; percentage of teams using self-service golden path tooling | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
+| Improvement in delivery metrics (lead time, MTTR, etc.) | — | — |
 
 ## Remote Work Considerations
 

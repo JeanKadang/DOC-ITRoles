@@ -132,16 +132,18 @@ The API Platform Engineer implements and maintains API management solutions acro
 
 ## Key Performance Indicators
 
-- API platform reliability and availability
-- API response time and performance metrics
-- Quality of API documentation
-- Time to resolve API-related issues
-- API security compliance
-- API consumer satisfaction
-- Successful API deployments
-- API test coverage
-- Knowledge sharing and collaboration effectiveness
-- Continuous learning and skill development
+| Metric | Target | Frequency |
+|---|---|---|
+| API platform reliability and availability | — | — |
+| API response time and performance metrics | — | — |
+| Quality of API documentation | — | — |
+| Time to resolve API-related issues | — | — |
+| API security compliance | — | — |
+| API consumer satisfaction | — | — |
+| Successful API deployments | — | — |
+| API test coverage | — | — |
+| Knowledge sharing and collaboration effectiveness | — | — |
+| Continuous learning and skill development | — | — |
 
 ## Remote Work Considerations
 

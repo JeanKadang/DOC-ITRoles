@@ -130,11 +130,13 @@ The Endpoint Management Product Owner (PO) owns the product vision, roadmap, and
 
 ## Key Performance Indicators
 
-- Backlog health (stories ready for sprint, acceptances defined)
-- Platform roadmap milestone delivery against plan
-- Device compliance rate trend (month-over-month)
-- Stakeholder satisfaction with platform communication and delivery
-- Cost per managed device (trend: optimising)
+| Metric | Target | Frequency |
+|---|---|---|
+| Backlog health (stories ready for sprint, acceptances defined) | — | — |
+| Platform roadmap milestone delivery against plan | — | — |
+| Device compliance rate trend (month-over-month) | — | — |
+| Stakeholder satisfaction with platform communication and delivery | — | — |
+| Cost per managed device (trend: optimising) | — | — |
 
 ## Remote Work Considerations
 

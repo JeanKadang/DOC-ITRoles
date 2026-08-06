@@ -158,16 +158,18 @@ The Access Management Product Owner manages the development and lifecycle of the
 
 ## Key Performance Indicators
 
-- Access management system reliability
-- Access request fulfillment time
-- Access review campaign completion rates
-- Stakeholder satisfaction with access processes
-- Privileged access security metrics
-- Reduction in access-related security incidents
-- Successful delivery of access roadmap items
-- Self-service access request adoption
-- Access governance compliance scores
-- User satisfaction with access processes
+| Metric | Target | Frequency |
+|---|---|---|
+| Access management system reliability | — | — |
+| Access request fulfillment time | — | — |
+| Access review campaign completion rates | — | — |
+| Stakeholder satisfaction with access processes | — | — |
+| Privileged access security metrics | — | — |
+| Reduction in access-related security incidents | — | — |
+| Successful delivery of access roadmap items | — | — |
+| Self-service access request adoption | — | — |
+| Access governance compliance scores | — | — |
+| User satisfaction with access processes | — | — |
 
 ## Remote Work Considerations
 

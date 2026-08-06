@@ -133,16 +133,18 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 
 ## Key Performance Indicators
 
-- System availability and reliability metrics
-- Mean time to detection (MTTD) for incidents
-- Mean time to recovery (MTTR) from failures
-- SLO/SLA achievement percentages
-- Percentage of incidents resolved by automated remediation
-- Reduction in toil through automation
-- Accuracy of capacity planning
-- Effectiveness of observability solutions
-- Quality of postmortem analysis and improvements
-- Knowledge sharing and documentation quality
+| Metric | Target | Frequency |
+|---|---|---|
+| System availability and reliability metrics | — | — |
+| Mean time to detection (MTTD) for incidents | — | — |
+| Mean time to recovery (MTTR) from failures | — | — |
+| SLO/SLA achievement percentages | — | — |
+| Percentage of incidents resolved by automated remediation | — | — |
+| Reduction in toil through automation | — | — |
+| Accuracy of capacity planning | — | — |
+| Effectiveness of observability solutions | — | — |
+| Quality of postmortem analysis and improvements | — | — |
+| Knowledge sharing and documentation quality | — | — |
 
 ## Remote Work Considerations
 

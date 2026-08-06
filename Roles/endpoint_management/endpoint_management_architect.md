@@ -144,12 +144,14 @@ The Endpoint Management Architect is responsible for the strategic design, gover
 
 ## Key Performance Indicators
 
-- Device compliance rate across managed estate (target: >98%)
-- Critical patch deployment time (target: <72 hours for critical CVEs)
-- Autopilot/zero-touch provisioning success rate (target: >95%)
-- Percentage of devices managed cloud-native via Intune (migration progress metric)
-- Helpdesk tickets related to endpoint management (trend: decreasing)
-- Security baseline policy coverage across endpoint fleet
+| Metric | Target | Frequency |
+|---|---|---|
+| Device compliance rate across managed estate (target: >98%) | >98% | — |
+| Critical patch deployment time (target: <72 hours for critical CVEs) | <72 hours | — |
+| Autopilot/zero-touch provisioning success rate (target: >95%) | >95% | — |
+| Percentage of devices managed cloud-native via Intune (migration progress metric) | — | — |
+| Helpdesk tickets related to endpoint management (trend: decreasing) | — | — |
+| Security baseline policy coverage across endpoint fleet | — | — |
 
 ## Remote Work Considerations
 

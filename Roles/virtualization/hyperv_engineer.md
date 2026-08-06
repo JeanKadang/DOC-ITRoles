@@ -118,14 +118,16 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 
 ## Key Performance Indicators
 
-- Operational stability of Hyper-V environments
-- Timely resolution of incidents and service requests
-- Efficiency of virtual resource utilization
-- Quality of documentation and operational procedures
-- Adherence to change management processes
-- Successful implementation of routine maintenance activities
-- VM provisioning turnaround times
-- Security compliance of virtualized environments
+| Metric | Target | Frequency |
+|---|---|---|
+| Operational stability of Hyper-V environments | — | — |
+| Timely resolution of incidents and service requests | — | — |
+| Efficiency of virtual resource utilization | — | — |
+| Quality of documentation and operational procedures | — | — |
+| Adherence to change management processes | — | — |
+| Successful implementation of routine maintenance activities | — | — |
+| VM provisioning turnaround times | — | — |
+| Security compliance of virtualized environments | — | — |
 
 ## Key Technologies
 

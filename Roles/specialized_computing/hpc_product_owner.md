@@ -154,16 +154,18 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 
 ## Key Performance Indicators
 
-- HPC cluster availability and reliability
-- Job scheduling efficiency and throughput
-- Cluster utilization optimization
-- Researcher satisfaction with HPC services
-- Time-to-solution for computational workloads
-- Cost per computation metrics
-- Successful delivery of HPC roadmap items
-- Scientific/research output enabled by HPC
-- Innovation in computational capabilities
-- Knowledge transfer effectiveness to user community
+| Metric | Target | Frequency |
+|---|---|---|
+| HPC cluster availability and reliability | — | — |
+| Job scheduling efficiency and throughput | — | — |
+| Cluster utilization optimization | — | — |
+| Researcher satisfaction with HPC services | — | — |
+| Time-to-solution for computational workloads | — | — |
+| Cost per computation metrics | — | — |
+| Successful delivery of HPC roadmap items | — | — |
+| Scientific/research output enabled by HPC | — | — |
+| Innovation in computational capabilities | — | — |
+| Knowledge transfer effectiveness to user community | — | — |
 
 ## Remote Work Considerations
 

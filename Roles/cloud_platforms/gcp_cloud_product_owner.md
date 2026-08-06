@@ -127,16 +127,18 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 
 ## Key Performance Indicators
 
-- GCP platform availability and reliability
-- Cloud cost management effectiveness
-- Time-to-delivery for cloud services
-- Stakeholder satisfaction with GCP platform
-- Security compliance scores for cloud environment
-- Successful implementation of cloud governance
-- GCP service adoption rates
-- Cloud migration project success
-- GCP platform feature delivery against roadmap
-- Cloud platform operational efficiency
+| Metric | Target | Frequency |
+|---|---|---|
+| GCP platform availability and reliability | — | — |
+| Cloud cost management effectiveness | — | — |
+| Time-to-delivery for cloud services | — | — |
+| Stakeholder satisfaction with GCP platform | — | — |
+| Security compliance scores for cloud environment | — | — |
+| Successful implementation of cloud governance | — | — |
+| GCP service adoption rates | — | — |
+| Cloud migration project success | — | — |
+| GCP platform feature delivery against roadmap | — | — |
+| Cloud platform operational efficiency | — | — |
 
 ## Remote Work Considerations
 

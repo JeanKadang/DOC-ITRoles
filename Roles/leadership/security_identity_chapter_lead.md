@@ -138,16 +138,18 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 
 ## Key Performance Indicators
 
-- Chapter practitioner retention rate and voluntary attrition trend
-- Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires)
-- Chapter satisfaction score (internal survey results for the Security & Identity chapter)
-- Security architecture standards adoption rate across all technology domains
-- Zero trust roadmap milestone completion rate against agreed programme timeline
-- Identity governance coverage — percentage of identities under IGA and PAM control
-- Data protection policy compliance rate across data-handling platforms
-- Security toolchain rationalisation progress — coverage gaps and duplicate tool reduction
-- Threat modelling adoption rate in architecture review processes across chapters
-- Mean time to remediate critical and high architecture-level security findings
+| Metric | Target | Frequency |
+|---|---|---|
+| Chapter practitioner retention rate and voluntary attrition trend | — | — |
+| Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires) | — | — |
+| Chapter satisfaction score (internal survey results for the Security & Identity chapter) | — | — |
+| Security architecture standards adoption rate across all technology domains | — | — |
+| Zero trust roadmap milestone completion rate against agreed programme timeline | — | — |
+| Identity governance coverage — percentage of identities under IGA and PAM control | — | — |
+| Data protection policy compliance rate across data-handling platforms | — | — |
+| Security toolchain rationalisation progress — coverage gaps and duplicate tool reduction | — | — |
+| Threat modelling adoption rate in architecture review processes across chapters | — | — |
+| Mean time to remediate critical and high architecture-level security findings | — | — |
 
 ## Remote Work Considerations
 

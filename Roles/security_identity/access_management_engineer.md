@@ -130,16 +130,18 @@ The Access Management Engineer implements and maintains access management system
 
 ## Key Performance Indicators
 
-- Access management system uptime and reliability
-- Access request fulfillment time
-- Access certification campaign completion rates
-- Time to revoke inappropriate access
-- Access-related incident resolution time
-- Documentation quality and completeness
-- User satisfaction with access processes
-- Implementation quality of access solutions
-- Self-service adoption for access requests
-- Reduction in access-related security issues
+| Metric | Target | Frequency |
+|---|---|---|
+| Access management system uptime and reliability | — | — |
+| Access request fulfillment time | — | — |
+| Access certification campaign completion rates | — | — |
+| Time to revoke inappropriate access | — | — |
+| Access-related incident resolution time | — | — |
+| Documentation quality and completeness | — | — |
+| User satisfaction with access processes | — | — |
+| Implementation quality of access solutions | — | — |
+| Self-service adoption for access requests | — | — |
+| Reduction in access-related security issues | — | — |
 
 ## Remote Work Considerations
 

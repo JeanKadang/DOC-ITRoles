@@ -136,12 +136,14 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 
 ## Key Performance Indicators
 
-- Integration flow availability and SLA compliance
-- Error rate on critical integration flows (trend: decreasing)
-- API response time compliance
-- Code review coverage within the integration team
-- Integration incident resolution time
-- Documentation currency for owned integrations
+| Metric | Target | Frequency |
+|---|---|---|
+| Integration flow availability and SLA compliance | — | — |
+| Error rate on critical integration flows (trend: decreasing) | — | — |
+| API response time compliance | — | — |
+| Code review coverage within the integration team | — | — |
+| Integration incident resolution time | — | — |
+| Documentation currency for owned integrations | — | — |
 
 ## Remote Work Considerations
 

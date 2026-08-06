@@ -127,16 +127,18 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 
 ## Key Performance Indicators
 
-- Backup success rate and reliability
-- Recovery time objective (RTO) achievement
-- Recovery point objective (RPO) achievement
-- Backup window optimization
-- Implementation quality of data protection solutions
-- Time to resolution for complex backup incidents
-- Knowledge transfer effectiveness to junior engineers
-- Automation level of backup operations
-- Successful recovery testing completion rates
-- Storage efficiency metrics (deduplication, compression)
+| Metric | Target | Frequency |
+|---|---|---|
+| Backup success rate and reliability | — | — |
+| Recovery time objective (RTO) achievement | — | — |
+| Recovery point objective (RPO) achievement | — | — |
+| Backup window optimization | — | — |
+| Implementation quality of data protection solutions | — | — |
+| Time to resolution for complex backup incidents | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Automation level of backup operations | — | — |
+| Successful recovery testing completion rates | — | — |
+| Storage efficiency metrics (deduplication, compression) | — | — |
 
 ## Remote Work Considerations
 

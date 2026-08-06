@@ -135,12 +135,14 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 
 ## Key Performance Indicators
 
-- Pipeline availability for owned data products
-- Data quality test pass rate for owned models
-- Data freshness SLA compliance
-- Analyst satisfaction with data quality and timeliness
-- Data documentation completeness in the catalogue
-- Query performance and cost efficiency of owned data models
+| Metric | Target | Frequency |
+|---|---|---|
+| Pipeline availability for owned data products | — | — |
+| Data quality test pass rate for owned models | — | — |
+| Data freshness SLA compliance | — | — |
+| Analyst satisfaction with data quality and timeliness | — | — |
+| Data documentation completeness in the catalogue | — | — |
+| Query performance and cost efficiency of owned data models | — | — |
 
 ## Remote Work Considerations
 

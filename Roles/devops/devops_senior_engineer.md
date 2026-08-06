@@ -113,13 +113,15 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 ## Key Performance Indicators
 
-- Successful implementation of advanced DevOps solutions
-- Improvements in deployment frequency and reliability
-- Quality of pipeline templates and reusable components
-- Effectiveness of self-service DevOps capabilities
-- Quality of technical leadership and mentorship
-- Contribution to DevOps standards and best practices
-- Innovation in delivery automation approaches
+| Metric | Target | Frequency |
+|---|---|---|
+| Successful implementation of advanced DevOps solutions | — | — |
+| Improvements in deployment frequency and reliability | — | — |
+| Quality of pipeline templates and reusable components | — | — |
+| Effectiveness of self-service DevOps capabilities | — | — |
+| Quality of technical leadership and mentorship | — | — |
+| Contribution to DevOps standards and best practices | — | — |
+| Innovation in delivery automation approaches | — | — |
 
 ## Key Technologies
 

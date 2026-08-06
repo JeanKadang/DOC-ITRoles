@@ -112,12 +112,14 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 
 ## Key Performance Indicators
 
-- Successful implementation of complex observability solutions
-- Effectiveness of advanced alerting and detection mechanisms
-- Platform scalability and performance improvements
-- Quality of technical leadership and mentorship
-- Contribution to observability standards and patterns
-- Implementation of innovative monitoring approaches
+| Metric | Target | Frequency |
+|---|---|---|
+| Successful implementation of complex observability solutions | — | — |
+| Effectiveness of advanced alerting and detection mechanisms | — | — |
+| Platform scalability and performance improvements | — | — |
+| Quality of technical leadership and mentorship | — | — |
+| Contribution to observability standards and patterns | — | — |
+| Implementation of innovative monitoring approaches | — | — |
 
 ## Key Technologies
 

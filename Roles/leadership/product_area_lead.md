@@ -136,16 +136,18 @@ The Product Area Lead (PAL) is a senior IT management role responsible for the e
 
 ## Key Performance Indicators
 
-- Service availability and SLA compliance across the product area
-- Delivery predictability (percentage of committed roadmap items delivered on time)
-- Budget adherence (actual spend vs. plan)
-- Employee engagement and retention scores within the area
-- Time-to-hire for open positions in the area
-- Stakeholder satisfaction scores (business and internal)
-- Risk and compliance posture of services within the area
-- Vendor performance against contracted SLAs
-- Team capability growth (certifications, competency progression)
-- Cross-area dependency resolution speed
+| Metric | Target | Frequency |
+|---|---|---|
+| Service availability and SLA compliance across the product area | — | — |
+| Delivery predictability (percentage of committed roadmap items delivered on time) | — | — |
+| Budget adherence (actual spend vs. plan) | — | — |
+| Employee engagement and retention scores within the area | — | — |
+| Time-to-hire for open positions in the area | — | — |
+| Stakeholder satisfaction scores (business and internal) | — | — |
+| Risk and compliance posture of services within the area | — | — |
+| Vendor performance against contracted SLAs | — | — |
+| Team capability growth (certifications, competency progression) | — | — |
+| Cross-area dependency resolution speed | — | — |
 
 ## Remote Work Considerations
 

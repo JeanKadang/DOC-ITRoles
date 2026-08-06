@@ -151,14 +151,16 @@ The Security Automation Engineer builds and maintains the automated security too
 
 ## Key Performance Indicators
 
-- SAST/DAST/SCA pipeline coverage: ≥95% of active repositories instrumented with at least one automated security scan integrated into the CI/CD pipeline
-- Mean time to detect (MTTD) critical vulnerabilities: ≤24 hours from code commit or image push to security alert generation for critical-severity findings
-- Automated remediation rate: ≥30% of low-to-medium severity findings resolved through automated PR suggestions, dependency auto-updates, or SOAR-driven remediation actions
-- Security gate false positive rate: ≤10% of security gate failures representing validated false positives, tracked per scanner and reviewed monthly
-- Compliance evidence automation coverage: ≥80% of required audit control evidence items satisfied by automated collection pipelines, reducing manual evidence-gathering effort
-- Policy-as-code admission control coverage: 100% of production Kubernetes clusters protected by OPA/Kyverno admission controllers enforcing organisation security policies
-- SOAR playbook mean time to respond (MTTR): automated playbook-driven response actions initiated within ≤5 minutes of qualifying alert for defined high-priority threat scenarios
-- Security scanning tooling availability: ≥99% pipeline security scan job success rate across all instrumented repositories, with failures alerted and resolved within 1 business day
+| Metric | Target | Frequency |
+|---|---|---|
+| SAST/DAST/SCA pipeline coverage: ≥95% of active repositories instrumented with at least one automated security scan integrated into the CI/CD pipeline | ≥95% | — |
+| Mean time to detect (MTTD) critical vulnerabilities: ≤24 hours from code commit or image push to security alert generation for critical-severity findings | ≤24 hours | — |
+| Automated remediation rate: ≥30% of low-to-medium severity findings resolved through automated PR suggestions, dependency auto-updates, or SOAR-driven remediation actions | ≥30% | — |
+| Security gate false positive rate: ≤10% of security gate failures representing validated false positives, tracked per scanner and reviewed monthly | ≤10% | Monthly |
+| Compliance evidence automation coverage: ≥80% of required audit control evidence items satisfied by automated collection pipelines, reducing manual evidence-gathering effort | ≥80% | — |
+| Policy-as-code admission control coverage: 100% of production Kubernetes clusters protected by OPA/Kyverno admission controllers enforcing organisation security policies | 100% | — |
+| SOAR playbook mean time to respond (MTTR): automated playbook-driven response actions initiated within ≤5 minutes of qualifying alert for defined high-priority threat scenarios | ≤5 minutes | — |
+| Security scanning tooling availability: ≥99% pipeline security scan job success rate across all instrumented repositories, with failures alerted and resolved within 1 business day | ≥99% | — |
 
 ## Remote Work Considerations
 

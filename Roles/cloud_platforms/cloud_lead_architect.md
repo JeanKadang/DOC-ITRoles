@@ -123,13 +123,15 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 
 ## Key Performance Indicators
 
-- Architecture review cycle time and quality of approved designs
-- Adoption rate of shared reference architectures across cloud platforms
-- Number of cross-platform architectural inconsistencies identified and resolved
-- Architect team satisfaction and professional development progress
-- Reduction in escalated architectural issues reaching the Principal Cloud Architect
-- Cross-platform cloud governance compliance rate
-- Contribution to and maintenance of shared architectural standards library
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture review cycle time and quality of approved designs | — | — |
+| Adoption rate of shared reference architectures across cloud platforms | — | — |
+| Number of cross-platform architectural inconsistencies identified and resolved | — | — |
+| Architect team satisfaction and professional development progress | — | — |
+| Reduction in escalated architectural issues reaching the Principal Cloud Architect | — | — |
+| Cross-platform cloud governance compliance rate | — | — |
+| Contribution to and maintenance of shared architectural standards library | — | — |
 
 ## Remote Work Considerations
 
