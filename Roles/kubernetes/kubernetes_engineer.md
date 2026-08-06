@@ -136,7 +136,7 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 | Container deployment success rate | — | — |
 | Time to resolve Kubernetes incidents | — | — |
 | Security compliance in Kubernetes environments | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Implementation quality of standard patterns | — | — |
 | Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 | Kubernetes automation implementation | — | — |

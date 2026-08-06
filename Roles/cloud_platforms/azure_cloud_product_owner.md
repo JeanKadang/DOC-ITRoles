@@ -129,10 +129,10 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 | Cloud cost management effectiveness | — | — |
 | Time-to-delivery for cloud services | — | — |
 | Stakeholder satisfaction with Azure platform | ≥85% (proposed) | Quarterly |
-| Cloud resources compliant with the security baseline (%) | — | — |
-| Cloud accounts and subscriptions compliant with landing-zone guardrails (%) | — | — |
+| Cloud resources compliant with the security baseline (%) | ≥95% (proposed) | Monthly |
+| Cloud accounts and subscriptions compliant with landing-zone guardrails (%) | ≥95% (proposed) | Monthly |
 | PaaS service adoption rates | — | — |
-| Migrations completed in the committed window without rollback (%) | — | — |
+| Migrations completed in the committed window without rollback (%) | ≥80% (proposed) | Quarterly |
 | Azure platform feature delivery against roadmap | — | — |
 | Cloud platform requests fulfilled without manual intervention (%) | — | — |
 

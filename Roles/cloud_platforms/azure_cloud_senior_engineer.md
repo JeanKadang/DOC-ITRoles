@@ -136,7 +136,7 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 | Cost optimization achievements (% reduction, efficiency gains) | — | — |
 | Security compliance scores for Azure resources | — | — |
 | Mean time to resolution for complex cloud incidents | — | — |
-| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Timely delivery of Azure implementation projects | — | — |
 | Customer satisfaction scores for cloud services | ≥85% (proposed) | Quarterly |
 | Improvement items proposed and adopted (count per quarter) | — | — |

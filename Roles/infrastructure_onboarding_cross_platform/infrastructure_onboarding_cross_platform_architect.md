@@ -131,8 +131,8 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
-| Designs accepted by the requesting business owner without rework (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
+| Designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
 | Onboarding architecture scalability and flexibility | — | — |
 | Standardization level across infrastructure domains | — | — |
 | Time-to-provision improvements through architecture | — | — |

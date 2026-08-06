@@ -136,7 +136,7 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 | Storage efficiency metrics (compression, deduplication) | — | — |
 | Agent deployment success rate | — | — |
 | Problem resolution time for backup failures | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Backup storage utilization management | — | — |
 | Successful completion of scheduled maintenance | — | — |
 | User satisfaction with restore services | ≥85% (proposed) | Quarterly |

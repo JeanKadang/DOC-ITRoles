@@ -11,7 +11,8 @@
     "start": "node server.js",
     "test": "node --test",
     "validate": "node validate-roles.js",
-    "check-counts": "node scripts/check-counts.js"
+    "check-counts": "node scripts/check-counts.js",
+    "seed-kpi": "node scripts/seed-kpi-targets.js"
   },
   "dependencies": {}
 }

@@ -148,7 +148,7 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 | Data governance completeness (catalogued and classified datasets %) | — | — |
 | Engineering team adoption of platform standards | — | — |
 | Data platform cost per TB of data processed (trending month-over-month vs. volume growth) | — | — |
-| ML feature pipeline production lead time (time from feature request to production availability) | ≥99.9% (proposed) | Monthly |
+| ML feature pipeline production lead time (time from feature request to production availability) | — | Monthly |
 
 ## Remote Work Considerations
 

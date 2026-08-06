@@ -135,8 +135,8 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
-| Network designs accepted by the requesting business owner without rework (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
+| Network designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
 | Network architecture scalability and flexibility | — | — |
 | Security posture improvement through network design | — | — |
 | Adoption of network reference architectures | — | — |

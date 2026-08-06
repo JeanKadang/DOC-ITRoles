@@ -68,9 +68,10 @@ function hasKpiTable(body) {
 // proposed, or absent. Skips the header and delimiter rows.
 //
 // An em dash is how #140 renders a known gap and a blank cell must not be a
-// quieter way of saying the same thing. "(proposed)" marks a seeded industry
-// benchmark: a real starting point, but not yet an agreed commitment, so it
-// is counted apart rather than treated as done.
+// quieter way of saying the same thing. "(proposed)" marks a seeded starting
+// point — for some families a published benchmark, for others a house figure
+// where no standard exists — real either way, but not an agreed commitment,
+// so it is counted apart rather than treated as done.
 function kpiTargetCounts(body) {
   let missing = 0, proposed = 0;
   const rows = body.split(/\r?\n/).filter(l => l.trim().startsWith('|'));
@@ -177,7 +178,12 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
       warnings.push(`Key Performance Indicators has ${missing} row(s) with no target — a metric nobody can meet or miss is not yet a KPI`);
     }
     if (proposed > 0) {
-      warnings.push(`Key Performance Indicators has ${proposed} proposed target(s) awaiting confirmation — seeded from an industry benchmark, not yet agreed`);
+      // Deliberately does not say where the number came from. Some proposals
+      // are published benchmarks and some are house starting points for
+      // families nobody standardises, and the "(proposed)" marker in the file
+      // cannot tell them apart. Claiming an industry source for all of them
+      // would be the more comfortable wording and the false one.
+      warnings.push(`Key Performance Indicators has ${proposed} proposed target(s) awaiting confirmation — a starting point, not yet agreed`);
     }
   }
 

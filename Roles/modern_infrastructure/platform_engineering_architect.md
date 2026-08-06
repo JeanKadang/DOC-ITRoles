@@ -140,7 +140,7 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
 | Alignment of platform design with developer needs | — | — |
 | Platform architecture scalability and flexibility | — | — |
 | Developer experience improvement through architecture | — | — |

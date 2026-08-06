@@ -143,14 +143,14 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 | Metric | Target | Frequency |
 |---|---|---|
 | Windows environment availability and reliability metrics | ≥99.9% (proposed) | Monthly |
-| Windows implementations accepted without post-deployment rework (%) | — | — |
+| Windows implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolve critical Windows incidents | — | — |
 | Automation coverage for Windows administration | — | — |
 | Security compliance scores for Windows servers | — | — |
-| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Successful implementation of Windows standards | — | — |
 | Servers meeting their performance baseline after tuning (%) | — | — |
-| Projects delivered in the committed period without post-go-live defects (%) | — | — |
+| Projects delivered in the committed period without post-go-live defects (%) | ≥80% (proposed) | Quarterly |
 | Innovation in Windows platform capabilities | — | — |
 
 ## Remote Work Considerations

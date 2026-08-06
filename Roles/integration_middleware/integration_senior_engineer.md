@@ -143,7 +143,7 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 | API response time compliance | — | — |
 | Code review coverage within the integration team | — | — |
 | Integration incident resolution time | — | — |
-| Documentation currency for owned integrations | — | — |
+| Documentation currency for owned integrations | ≥95% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

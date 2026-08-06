@@ -120,7 +120,7 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 | Server deployment accuracy and quality | — | — |
 | Implementation time for server infrastructure projects | — | — |
 | Server hardware incident resolution time | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 | Automation implementation success rate | — | — |
 | Servers meeting their performance baseline after tuning (%) | — | — |

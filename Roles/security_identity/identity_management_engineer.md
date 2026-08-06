@@ -136,8 +136,8 @@ The Identity Management Engineer implements and maintains identity management sy
 | User provisioning and deprovisioning accuracy | — | — |
 | Authentication system performance | — | — |
 | Identity-related incident resolution time | — | — |
-| Identity implementations accepted without post-deployment rework (%) | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Identity implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Federation service reliability | — | — |
 | Password reset success rate | — | — |
 | Directory service synchronization accuracy | — | — |

@@ -133,14 +133,14 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 |---|---|---|
 | .NET platform reliability and performance metrics | — | — |
 | Code quality gate pass rate on the main branch (%) | — | — |
-| .NET implementations accepted without post-deployment rework (%) | — | — |
+| .NET implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolution for complex .NET issues | — | — |
-| Junior developers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Junior developers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | .NET security posture improvement | — | — |
 | Successful implementation of .NET standards | — | — |
 | Recorded technical debt items closed (count per quarter) | — | — |
 | Innovation in .NET platform capabilities | — | — |
-| Median lead time from commit to production for teams on the framework (hours) | — | — |
+| Median lead time from commit to production for teams on the framework (hours) | ≤24 hours (proposed) | Monthly |
 
 ## Remote Work Considerations
 

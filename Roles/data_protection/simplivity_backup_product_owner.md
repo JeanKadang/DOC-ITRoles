@@ -148,7 +148,7 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 | Backup storage efficiency metrics | — | — |
 | Incident reduction in backup operations | — | — |
 | Backup jobs running without manual intervention (%) | — | — |
-| Cross-team deliverables completed in the committed period (%) | — | — |
+| Cross-team deliverables completed in the committed period (%) | ≥80% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

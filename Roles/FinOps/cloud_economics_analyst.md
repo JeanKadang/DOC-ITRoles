@@ -149,7 +149,7 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 | Unit cost trend analysis quality (stakeholder-assessed usefulness score) | — | — |
 | Stakeholder satisfaction score (measured via periodic feedback surveys) | ≥85% (proposed) | Quarterly |
 | Data quality score for billing allocation and tagging completeness underlying reports | — | — |
-| Number of ad hoc financial analysis requests completed within SLA per quarter | ≥95% (proposed) | Monthly |
+| Number of ad hoc financial analysis requests completed within SLA per quarter | — | Monthly |
 | Reduction in manual reporting effort through automation improvements (hours saved) | — | — |
 
 ## Remote Work Considerations

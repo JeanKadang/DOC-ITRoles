@@ -149,7 +149,7 @@ The Integration Product Owner owns the integration platform product backlog — 
 | Time-to-integrate: median onboarding time for new application teams to the integration platform reduced by ≥20% year-on-year | ≥20% | — |
 | Point-to-point integration reduction: ≥15% of legacy point-to-point integrations decommissioned per year as governed platform patterns expand | ≥15% | — |
 | API developer portal adoption: number of internal and external API consumers growing ≥10% quarter-on-quarter | ≥10% | — |
-| Integration-related incident rate: trend declining, with platform-attributable root causes addressed within agreed SLA response windows | ≥95% (proposed) | Monthly |
+| Integration-related incident rate: trend declining, with platform-attributable root causes addressed within agreed SLA response windows | — | Monthly |
 | API governance compliance: ≥90% of APIs published to the developer portal meeting integration architecture standards | ≥90% | — |
 
 ## Remote Work Considerations

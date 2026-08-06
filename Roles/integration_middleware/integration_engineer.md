@@ -130,7 +130,7 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 |---|---|---|
 | Integration flow availability for monitored flows | — | — |
 | Error response and resolution time | — | — |
-| Documentation currency for assigned integrations | — | — |
+| Documentation currency for assigned integrations | ≥95% (proposed) | Quarterly |
 | Escalation rate (trend: decreasing as skills develop) | — | — |
 
 ## Remote Work Considerations

@@ -135,7 +135,7 @@ The Access Management Senior Engineer leads the implementation and optimization 
 |---|---|---|
 | Access management system availability | ≥99.9% (proposed) | Monthly |
 | Privileged access security effectiveness | — | — |
-| Access implementations accepted without post-deployment rework (%) | — | — |
+| Access implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolve complex access incidents | — | — |
 | Access certification campaign completion rates | — | — |
 | Automation level of access processes | — | — |

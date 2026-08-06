@@ -137,9 +137,9 @@ The Access Management Engineer implements and maintains access management system
 | Access certification campaign completion rates | — | — |
 | Time to revoke inappropriate access | — | — |
 | Access-related incident resolution time | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | User satisfaction with access processes | ≥85% (proposed) | Quarterly |
-| Access implementations accepted without post-deployment rework (%) | — | — |
+| Access implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Self-service adoption for access requests | — | — |
 | Reduction in access-related security issues | — | — |
 

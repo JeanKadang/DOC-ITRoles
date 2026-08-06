@@ -141,7 +141,7 @@ The Linux Server Architect designs and defines the strategic direction for the o
 | Technical debt reduction in Linux environments | — | — |
 | Time-to-delivery for new Linux capabilities and services | — | — |
 | Linux security posture improvement | — | — |
-| Engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

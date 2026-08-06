@@ -141,12 +141,12 @@ The Security Cross-Platform Engineer implements and maintains security controls 
 | Reduction in security vulnerabilities across platforms | — | — |
 | Time to resolve security configuration issues | — | — |
 | Coverage of security monitoring across environments | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Compliance with security standards in implementations | — | — |
 | Time to implement critical security patches | — | — |
 | Success rate of security control testing | — | — |
 | Collaboration effectiveness with domain teams | — | — |
-| Assets compliant with the security baseline (%) | — | — |
+| Assets compliant with the security baseline (%) | ≥95% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

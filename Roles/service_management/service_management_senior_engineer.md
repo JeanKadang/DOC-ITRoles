@@ -133,9 +133,9 @@ The Service Management Senior Engineer leads the implementation and optimization
 |---|---|---|
 | ITSM platform availability and performance | ≥99.9% (proposed) | Monthly |
 | Workflow automation effectiveness | — | — |
-| ITSM implementations accepted without post-deployment rework (%) | — | — |
+| ITSM implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolution for complex platform issues | — | — |
-| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | ITSM platform security and compliance | — | — |
 | Successful implementation of ITSM standards | — | — |
 | Innovation in service management solutions | — | — |

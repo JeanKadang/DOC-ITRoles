@@ -147,7 +147,7 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 | Knowledge transfer to junior team members | — | — |
 | Innovation in cost optimization approaches | — | — |
 | Implementation quality of FinOps standards | — | — |
-| Cross-team deliverables completed in the committed period (%) | — | — |
+| Cross-team deliverables completed in the committed period (%) | ≥80% (proposed) | Quarterly |
 | Data quality and reliability metrics | — | — |
 
 ## Remote Work Considerations

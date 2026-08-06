@@ -133,9 +133,9 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 | Recovery time objective (RTO) achievement | — | — |
 | Protected workloads meeting their stated RPO (%) | — | — |
 | Backup window optimization | — | — |
-| Data protection implementations accepted without post-deployment rework (%) | — | — |
+| Data protection implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolution for complex backup incidents | — | — |
-| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Backup operations performed without manual intervention (%) | — | — |
 | Successful recovery testing completion rates | ≥99% (proposed) | Monthly |
 | Storage efficiency metrics (deduplication, compression) | — | — |

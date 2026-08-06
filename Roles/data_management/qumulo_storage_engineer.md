@@ -130,9 +130,9 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 | Storage provisioning accuracy and timeliness | — | — |
 | Resolution time for storage incidents | — | — |
 | File system performance optimization | — | — |
-| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Planned maintenance completed in window without unplanned impact (%) | — | — |
-| Protected workloads passing their most recent recovery test (%) | — | — |
+| Protected workloads passing their most recent recovery test (%) | ≥99% (proposed) | Monthly |
 | User satisfaction with file services | ≥85% (proposed) | Quarterly |
 | Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 | Capacity utilization efficiency | — | — |

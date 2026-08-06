@@ -148,7 +148,7 @@ The Cloud Security Posture Manager implements and operates Cloud Security Postur
 | CIS Benchmark compliance score: maintain ≥80% pass rate across CIS Azure, AWS, and GCP Benchmarks per quarter | ≥80% | — |
 | CSPM finding recurrence rate: fewer than 10% of remediated findings reoccurring within 60 days | 10% | — |
 | Mean time to remediate (MTTR) critical findings: target ≤3 business days from identification to verified remediation | ≤3 business days | — |
-| Compliance posture trend: quarter-on-quarter improvement in overall benchmark compliance score across all three cloud platforms | ≥95% (proposed) | Monthly |
+| Compliance posture trend: quarter-on-quarter improvement in overall benchmark compliance score across all three cloud platforms | — | Monthly |
 | CSPM false positive rate: suppressed findings representing ≤15% of total active findings, with all suppressions documented and reviewed quarterly | ≤15% | Quarterly |
 
 ## Remote Work Considerations

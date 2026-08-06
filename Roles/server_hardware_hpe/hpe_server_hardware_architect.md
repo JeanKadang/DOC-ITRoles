@@ -137,9 +137,9 @@ The HPE Server Hardware Architect designs and oversees the organization's server
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
-| Hardware designs accepted by the requesting business owner without rework (%) | — | — |
-| Server estate meeting its published SLO (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
+| Hardware designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
+| Server estate meeting its published SLO (%) | ≥95% (proposed) | Monthly |
 | Data centre power usage effectiveness (PUE) | — | — |
 | Cost effectiveness of hardware architectures | — | — |
 | Adoption of reference architectures and standards | — | — |

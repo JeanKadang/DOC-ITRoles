@@ -112,9 +112,9 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 | Metric | Target | Frequency |
 |---|---|---|
 | DevOps platform adoption rates across teams | — | — |
-| Roadmap initiatives delivered in the committed quarter (%) | — | — |
+| Roadmap initiatives delivered in the committed quarter (%) | ≥80% (proposed) | Quarterly |
 | Stakeholder satisfaction with DevOps services | ≥85% (proposed) | Quarterly |
-| Backlog items meeting the definition of ready before sprint planning (%) | — | — |
+| Backlog items meeting the definition of ready before sprint planning (%) | ≥90% (proposed) | Quarterly |
 | Measurable improvement in software delivery metrics | — | — |
 | Effectiveness of DevOps training and enablement programs | — | — |
 

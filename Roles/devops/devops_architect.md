@@ -134,8 +134,8 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Designs approved at first architecture review, without rework (%) | — | — |
-| DevOps designs accepted by the requesting business owner without rework (%) | — | — |
+| Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
+| DevOps designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
 | Delivery pipeline efficiency and reliability | — | — |
 | Security integration in DevOps workflows | — | — |
 | Adoption of DevOps reference architectures and patterns | — | — |
@@ -143,7 +143,7 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 | Number of novel pipeline patterns adopted and operationalized per quarter; percentage of teams using self-service golden path tooling | — | — |
 | Engineers mentored who progress to the next competency level (count per year) | — | — |
 | Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
-| Improvement in delivery metrics (lead time, MTTR, etc.) | ≤4 hours (proposed) | Monthly |
+| Improvement in delivery metrics (lead time, MTTR, etc.) | — | Monthly |
 
 ## Remote Work Considerations
 
