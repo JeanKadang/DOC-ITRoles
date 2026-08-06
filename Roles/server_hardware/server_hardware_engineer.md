@@ -144,10 +144,10 @@ The Server Hardware Engineer implements and maintains the physical server infras
 | Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | Firmware compliance percentage | — | — |
 | Hardware inventory accuracy | — | — |
-| Planned hardware maintenance completed in window (%) | — | — |
-| Servers deployed from the approved standard build (%) | — | — |
+| Planned hardware maintenance completed in window (%) | ≥95% (proposed) | Quarterly |
+| Servers deployed from the approved standard build (%) | ≥90% (proposed) | Quarterly |
 | User satisfaction with hardware support | ≥85% (proposed) | Quarterly |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

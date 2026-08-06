@@ -162,7 +162,7 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 | Platform availability and SLA compliance | ≥95% (proposed) | Monthly |
 | Stakeholder satisfaction ratings | ≥85% (proposed) | Quarterly |
 | Business value delivered through platform enhancements | — | — |
-| Provisioned capacity actively utilised (%) | — | — |
+| Provisioned capacity actively utilised (%) | 70–85% (proposed) | Monthly |
 | Cost optimization achievements | — | — |
 | Feature adoption rates | — | — |
 | Backlog health and roadmap delivery | — | — |

@@ -133,13 +133,13 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 | Metric | Target | Frequency |
 |---|---|---|
 | Java platform reliability and performance metrics | — | — |
-| Code quality gate pass rate on the main branch (%) | — | — |
+| Code quality gate pass rate on the main branch (%) | ≥90% (proposed) | Monthly |
 | Java implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Time to resolution for complex Java issues | — | — |
 | Junior developers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Java security posture improvement | — | — |
 | Successful implementation of Java standards | — | — |
-| Recorded technical debt items closed (count per quarter) | — | — |
+| Recorded technical debt items closed (count per quarter) | ≥2 per quarter (proposed) | Quarterly |
 | Innovation in Java platform capabilities | — | — |
 | Median lead time from commit to production for teams on the framework (hours) | ≤24 hours (proposed) | Monthly |
 

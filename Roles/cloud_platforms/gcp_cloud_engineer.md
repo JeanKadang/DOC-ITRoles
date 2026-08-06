@@ -136,10 +136,10 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 | GCP cost management effectiveness | — | — |
 | Security compliance in GCP environments | — | — |
 | Documentation quality for GCP configurations | — | — |
-| Deployments using an approved reference pattern (%) | — | — |
+| Deployments using an approved reference pattern (%) | ≥90% (proposed) | Quarterly |
 | GCP resource utilization efficiency | — | — |
 | User satisfaction with GCP services | ≥85% (proposed) | Quarterly |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

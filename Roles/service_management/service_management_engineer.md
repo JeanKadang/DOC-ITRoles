@@ -140,7 +140,7 @@ The Service Management Engineer implements and maintains IT service management p
 | User satisfaction with ITSM tools | ≥85% (proposed) | Quarterly |
 | Reporting and dashboard utility | — | — |
 | Resolution time for ITSM platform issues | — | — |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | Process automation efficiency | — | — |
 
 ## Remote Work Considerations

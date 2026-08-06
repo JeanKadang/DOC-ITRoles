@@ -141,7 +141,7 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 | Reduction in developer toil through automation | — | — |
 | Platform services meeting their published SLO (%) | ≥95% (proposed) | Monthly |
 | Platform roadmap items delivered in the committed quarter (%) | ≥80% (proposed) | Quarterly |
-| Delivery teams onboarded to a platform capability (count per quarter) | — | — |
+| Delivery teams onboarded to a platform capability (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | Engineering hours saved per quarter attributable to platform capabilities (hours) | — | — |
 | Innovation in developer experience | — | — |
 

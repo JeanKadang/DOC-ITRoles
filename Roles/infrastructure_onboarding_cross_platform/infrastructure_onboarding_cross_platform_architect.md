@@ -136,11 +136,11 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 | Onboarding architecture scalability and flexibility | — | — |
 | Standardization level across infrastructure domains | — | — |
 | Time-to-provision improvements through architecture | — | — |
-| Recorded architectural risks closed (count per quarter) | — | — |
+| Recorded architectural risks closed (count per quarter) | ≥2 per quarter (proposed) | Quarterly |
 | Adoption of reference architectures and patterns | — | — |
 | Innovation in infrastructure provisioning approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

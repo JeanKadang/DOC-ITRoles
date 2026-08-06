@@ -136,7 +136,7 @@ The Database Senior Engineer leads the implementation and optimization of comple
 | Metric | Target | Frequency |
 |---|---|---|
 | Database availability and performance metrics | ≥99.9% (proposed) | Monthly |
-| Median query execution time for tuned workloads (ms) | — | — |
+| Median query execution time for tuned workloads (ms) | ≤200 ms (proposed) | Monthly |
 | Database implementations accepted without post-deployment rework (%) | ≥80% (proposed) | Quarterly |
 | Mean time to resolution for critical database issues | — | — |
 | Knowledge transfer effectiveness to database engineers | — | — |

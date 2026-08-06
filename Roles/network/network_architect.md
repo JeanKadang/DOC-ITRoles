@@ -143,8 +143,8 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 | Reduction in network-related incidents | — | — |
 | Network simplification and standardization | — | — |
 | Innovation in network architectural approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | AIOps prediction accuracy for capacity forecasting and incident detection (target: >85% precision) | >85% | — |
 | Edge network availability: ≥99.9% connectivity SLA for business-critical edge PoPs and industrial edge sites | ≥99.9% | — |
 | Edge site deployment time: network provisioning lead time for new edge PoPs reduced via SD-WAN ZTP automation | — | — |

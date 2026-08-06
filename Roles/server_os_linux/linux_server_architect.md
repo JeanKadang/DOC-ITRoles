@@ -135,9 +135,9 @@ The Linux Server Architect designs and defines the strategic direction for the o
 | Architectural standards adoption rate across Linux deployments | — | — |
 | Reduction in Linux infrastructure incidents due to architectural improvements | — | — |
 | Linux environment availability and performance metrics | ≥99.9% (proposed) | Monthly |
-| Architecture review recommendations implemented within the agreed period (%) | — | — |
+| Architecture review recommendations implemented within the agreed period (%) | ≥90% (proposed) | Quarterly |
 | Cost optimization of Linux infrastructure | — | — |
-| Architecture artefacts current within the agreed review cycle (%) | — | — |
+| Architecture artefacts current within the agreed review cycle (%) | ≥90% (proposed) | Quarterly |
 | Technical debt reduction in Linux environments | — | — |
 | Time-to-delivery for new Linux capabilities and services | — | — |
 | Linux security posture improvement | — | — |

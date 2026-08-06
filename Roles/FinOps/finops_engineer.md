@@ -151,7 +151,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 | Quality of cost optimization implementations | — | — |
 | Effectiveness of monitoring and alerting setup | — | — |
 | Resource tagging compliance percentage | — | — |
-| Eligible spend covered by reserved or committed capacity (%) | — | — |
+| Eligible spend covered by reserved or committed capacity (%) | 70–80% (proposed) | Quarterly |
 | Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
 | User satisfaction with cost management tools | ≥85% (proposed) | Quarterly |
 | Problem resolution time for billing issues | — | — |

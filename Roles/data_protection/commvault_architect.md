@@ -132,14 +132,14 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 |---|---|---|
 | Designs approved at first architecture review, without rework (%) | ≥80% (proposed) | Quarterly |
 | Solution designs accepted by the requesting business owner without rework (%) | ≥80% (proposed) | Quarterly |
-| Protected workloads within the supported backup architecture (%) | — | — |
+| Protected workloads within the supported backup architecture (%) | ≥95% (proposed) | Quarterly |
 | Cost efficiency of designed solutions | — | — |
 | Recovery tests meeting their stated RTO (%) | ≥99% (proposed) | Monthly |
 | Adoption of reference architectures and standards | — | — |
-| Recorded architectural risks closed (count per quarter) | — | — |
+| Recorded architectural risks closed (count per quarter) | ≥2 per quarter (proposed) | Quarterly |
 | Innovation in data protection approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

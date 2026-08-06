@@ -149,7 +149,7 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 | Security compliance scores for Windows servers | — | — |
 | Junior engineers reaching independent delivery within the agreed ramp period (%) | ≥90% (proposed) | Quarterly |
 | Successful implementation of Windows standards | — | — |
-| Servers meeting their performance baseline after tuning (%) | — | — |
+| Servers meeting their performance baseline after tuning (%) | ≥90% (proposed) | Quarterly |
 | Projects delivered in the committed period without post-go-live defects (%) | ≥80% (proposed) | Quarterly |
 | Innovation in Windows platform capabilities | — | — |
 

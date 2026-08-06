@@ -146,10 +146,10 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 | Developer experience improvement through architecture | — | — |
 | Platform reliability and performance through design | — | — |
 | Adoption of reference architectures and golden paths | — | — |
-| Recorded architectural risks closed (count per quarter) | — | — |
+| Recorded architectural risks closed (count per quarter) | ≥2 per quarter (proposed) | Quarterly |
 | Innovation in platform approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | Edge workload onboarding time: time from request to production-ready edge deployment | — | — |
 | Edge platform availability: uptime SLA for IDP golden paths and self-service tooling at edge locations | ≥95% (proposed) | Monthly |
 

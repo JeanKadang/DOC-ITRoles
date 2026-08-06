@@ -142,7 +142,7 @@ The Access Management Senior Engineer leads the implementation and optimization 
 | Knowledge transfer to junior engineers | — | — |
 | Reduction in inappropriate access events | — | — |
 | Compliance with access governance frameworks | — | — |
-| New access management patterns adopted into the standard (count per year) | — | — |
+| New access management patterns adopted into the standard (count per year) | ≥2 per year (proposed) | Annually |
 
 ## Key Performance Indicators
 

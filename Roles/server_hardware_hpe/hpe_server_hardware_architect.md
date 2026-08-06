@@ -143,10 +143,10 @@ The HPE Server Hardware Architect designs and oversees the organization's server
 | Data centre power usage effectiveness (PUE) | — | — |
 | Cost effectiveness of hardware architectures | — | — |
 | Adoption of reference architectures and standards | — | — |
-| Server estate within its supported lifecycle window (%) | — | — |
-| New server platform patterns adopted into the standard build (count per year) | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Server estate within its supported lifecycle window (%) | ≥95% (proposed) | Quarterly |
+| New server platform patterns adopted into the standard build (count per year) | ≥2 per year (proposed) | Annually |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

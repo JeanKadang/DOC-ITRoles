@@ -149,13 +149,13 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 |---|---|---|
 | Backup success rate percentage | ≥99% (proposed) | Monthly |
 | Recovery time objective (RTO) achievements | — | — |
-| Protected workloads meeting their stated RPO (%) | — | — |
+| Protected workloads meeting their stated RPO (%) | ≥99% (proposed) | Monthly |
 | Stakeholder satisfaction with data protection services | ≥85% (proposed) | Quarterly |
 | Backup compliance and audit readiness | — | — |
 | Data protection cost efficiency | — | — |
 | Storage optimization metrics (deduplication ratios) | — | — |
 | Successful delivery of backup roadmap items | — | — |
-| Backup jobs running without manual intervention (%) | — | — |
+| Backup jobs running without manual intervention (%) | ≥80% (proposed) | Monthly |
 | Backup platform availability and reliability | ≥99.9% (proposed) | Monthly |
 
 ## Remote Work Considerations

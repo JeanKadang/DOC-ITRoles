@@ -138,7 +138,7 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 | Platform services meeting their published SLO (%) | ≥95% (proposed) | Monthly |
 | Security vulnerability reduction in .NET applications | — | — |
 | Platform roadmap items delivered in the committed quarter (%) | ≥80% (proposed) | Quarterly |
-| Delivery teams onboarded to a platform capability (count per quarter) | — | — |
+| Delivery teams onboarded to a platform capability (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | Engineering hours saved per quarter attributable to platform capabilities (hours) | — | — |
 | Innovation in .NET capabilities | — | — |
 

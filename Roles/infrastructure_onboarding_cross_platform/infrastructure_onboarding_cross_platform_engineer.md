@@ -140,7 +140,7 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 | Time to resolve provisioning incidents | — | — |
 | Quality of service catalog items and descriptions | — | — |
 | Self-service adoption metrics | — | — |
-| Work conforming to infrastructure standards (%) | — | — |
+| Work conforming to infrastructure standards (%) | ≥95% (proposed) | Quarterly |
 | Process improvement contributions | — | — |
 
 ## Remote Work Considerations

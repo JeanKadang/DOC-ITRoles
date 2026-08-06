@@ -140,7 +140,7 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 | Network security policy compliance | — | — |
 | Network monitoring coverage | — | — |
 | Response time to service requests | — | — |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 | Successful implementation of standard designs | — | — |
 | Customer satisfaction with network services | ≥85% (proposed) | Quarterly |
 

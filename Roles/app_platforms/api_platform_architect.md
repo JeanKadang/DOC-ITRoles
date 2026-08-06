@@ -142,8 +142,8 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 | Reduction in API architectural risks and technical debt | — | — |
 | Median lead time from commit to production for teams on the standard (hours) | ≤24 hours (proposed) | Monthly |
 | Innovation in API architectural approaches | — | — |
-| Engineers mentored who progress to the next competency level (count per year) | — | — |
-| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | ≥1 per year (proposed) | Annually |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

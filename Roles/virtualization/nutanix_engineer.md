@@ -143,11 +143,11 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 | Time to resolve Nutanix-related incidents | — | — |
 | Successful completion of maintenance activities | — | — |
 | Owned documentation reviewed and current within the agreed review cycle (%) | ≥95% (proposed) | Quarterly |
-| Provisioned capacity actively utilised (%) | — | — |
+| Provisioned capacity actively utilised (%) | 70–85% (proposed) | Monthly |
 | Patch compliance for Nutanix components | ≥95% (proposed) | Monthly |
 | Reduction in recurring incidents | — | — |
 | User satisfaction with infrastructure services | ≥85% (proposed) | Quarterly |
-| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | ≥1 per quarter (proposed) | Quarterly |
 
 ## Remote Work Considerations
 
