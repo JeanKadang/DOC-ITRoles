@@ -958,6 +958,61 @@
         return null;
     }
 
+    // Read the generated radar document back into data for the chart (#172).
+    //
+    // The view parses the committed document rather than re-deriving counts
+    // in the browser, so the chart and the page a reader can open cannot
+    // disagree. `scripts/build-radar.js` owns the derivation; this owns only
+    // the reading of it.
+    //
+    // Technology tables have five columns; the explanatory ring table and the
+    // summary table have two, which is what tells them apart.
+    function parseRadarDoc(markdown) {
+        const out = [];
+        let quadrant = null;
+        for (const line of String(markdown == null ? '' : markdown).split(/\r?\n/)) {
+            const h = line.match(/^##\s+(.+?)\s*$/);
+            if (h) { quadrant = h[1]; continue; }
+            if (!quadrant || !line.trim().startsWith('|')) continue;
+            const cells = line.split('|').slice(1, -1).map(c => c.trim());
+            if (cells.length !== 5) continue;
+            const [name, ring, roles, expert, proficient] = cells;
+            if (!/^(Adopt|Trial|Assess|Hold)$/.test(ring)) continue;   // skips the header row
+            out.push({
+                name,
+                quadrant,
+                ring,
+                roles: Number(roles) || 0,
+                expert: Number(expert) || 0,
+                proficient: Number(proficient) || 0,
+            });
+        }
+        return out;
+    }
+
+    // Accessible fallback for the radar chart, grouped by ring. Mirrors what
+    // orgListHtml and graphListHtml do for their charts: a screen-reader user
+    // gets the content, not an empty canvas.
+    function radarListHtml(entries) {
+        const rings = ['Adopt', 'Trial', 'Assess'];
+        const parts = [];
+        for (const ring of rings) {
+            const inRing = (entries || []).filter(e => e.ring === ring);
+            if (!inRing.length) continue;
+            parts.push(`<h4>${escapeHtml(ring)} (${inRing.length})</h4><ul>` +
+                inRing
+                    .slice()
+                    .sort((a, b) => b.roles - a.roles || a.name.localeCompare(b.name))
+                    .map(e => `<li><strong>${escapeHtml(e.name)}</strong> — ${e.roles} role${e.roles === 1 ? '' : 's'}, ${escapeHtml(e.quadrant)}</li>`)
+                    .join('') +
+                '</ul>');
+        }
+        // Stated, not omitted: nothing in a role definition says "stop using
+        // this", so the ring stays empty on purpose.
+        parts.push('<h4>Hold (0)</h4><p>Empty, and not derivable from role definitions — nothing here says to stop using a technology.</p>');
+        return parts.join('');
+    }
+
     function proposedKpiTarget(metric) {
         const m = String(metric == null ? '' : metric);
         if (KPI_UNSEEDABLE.some(re => re.test(m))) return null;
@@ -976,6 +1031,8 @@
         STALE_MONTHS,
         proposedKpiTarget,
         KPI_BENCHMARKS,
+        parseRadarDoc,
+        radarListHtml,
         parseKpiBullet,
         orgListHtml,
         graphListHtml,
