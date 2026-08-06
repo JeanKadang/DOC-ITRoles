@@ -126,6 +126,7 @@ roles_master/
 │   ├── CROSS_DOMAIN_INTERACTIONS.md        # Domain ownership and escalation paths
 │   ├── SKILLS_PROGRESSION.md              # Career progression framework
 │   ├── ONBOARDING_TEMPLATE.md             # 30/60/90 day onboarding plan template
+│   ├── onboarding_*_supplement.md         # Level overlays: Engineer, Senior, Architect, PO
 │   ├── onboarding_chapter_lead_template.md # Chapter Lead-specific onboarding variant
 │   ├── CHAPTERS_OVERVIEW.md               # The 7 chapters: focus, lead, detail link
 │   └── chapters/                           # Per-chapter narrative (rendered in the viewer)
@@ -202,6 +203,7 @@ Each role file follows the canonical 14-section structure. See `docs/role_templa
 | `docs/CROSS_DOMAIN_INTERACTIONS.md` | Domain ownership boundaries, key relationships, escalation paths |
 | `docs/SKILLS_PROGRESSION.md` | Engineer → Senior → Architect career ladder per domain |
 | `docs/ONBOARDING_TEMPLATE.md` | 30/60/90 day plan template for new hires |
+| `docs/onboarding_*_supplement.md` | Level overlays (Engineer, Senior Engineer, Architect, Product Owner) — used **alongside** the base template, adding only what differs by level |
 | `docs/onboarding_chapter_lead_template.md` | Onboarding variant for incoming Chapter Leads |
 | `docs/CHAPTERS_OVERVIEW.md` | The 7 chapters, their focus, and links to per-chapter detail |
 | `docs/improvements_and_recommendations.md` | **Closed.** Narrative of the four 2026 review cycles. Open work is in [GitHub Issues](https://github.com/JeanKadang/DOC-ITRoles/issues); what shipped is in [CHANGELOG.md](CHANGELOG.md) |
