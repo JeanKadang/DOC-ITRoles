@@ -64,18 +64,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   benchmark"*. The file marker cannot distinguish the two bases, and
   claiming a source for all of them would be false for 152 of the 427.
 
+- **162 further rows carry an indicative number (#140).** Every untargeted
+  row whose metric already declares what it is counted in — a `(%)`, a
+  `(count per quarter)`, a `(ms)` — now has an opening figure. 168 rows met
+  that test and 162 could be given one, taking proposals to **589 of the
+  1,694 untargeted rows**.
+
+  | Target | Families |
+  |---|---|
+  | `≥95%` | conformance to a standard · estate within its supported lifecycle · maintenance completed in window · hires retained at 90 days |
+  | `≥90%` | quality gate pass rate · deployed from the approved standard build · review recommendations implemented |
+  | `≥80%` | fulfilled without manual intervention · committed sprint items delivered |
+  | `70–85%` | provisioned capacity actively utilised |
+  | `70–80%` | eligible spend on reserved or committed capacity |
+
+  The last two are **bands rather than thresholds**: under-use wastes the
+  spend and over-use removes the headroom the capacity exists for, so a `≥`
+  target would propose the wrong shape of answer.
+
+  Counts get the lowest defensible figure rather than none —
+  `≥1 per year` for engineers mentored who progress a level (22 rows),
+  `≥1 per quarter` for knowledge-sharing (43), `≥2 per quarter` for
+  recorded risks and debt items closed (11), `≥2 per year` for new patterns
+  adopted into a standard (14). **A floor is not a level of output.** 1.12.0
+  recorded that these families had no defensible figure; that holds for a
+  target level, but "at least one a quarter" asserts only that the activity
+  happens at all, which is sayable without knowing team size, and beats a
+  blank. Access- and identity-related security incidents are the one count
+  with a knowable right answer: `0 critical or high`.
+
+  The direction-only guard narrows from `improvement` to `improvements in`.
+  `Improvement in delivery metrics` is a direction and stays refused;
+  `Improvement items proposed and adopted (count per quarter)` counts
+  things, and the broader rule was withholding a target from it.
+
 ### Still open
 
-Tracked in #140. **1,267 of 1,941 KPI rows have no target** (down from
-1,436). Of those, 418 declare a unit — a `(%)`, a `(count …)`, a duration —
-and so state plainly what number is missing; the rest name a subject and
-need rewriting before a target means anything.
+Tracked in #140. **1,105 of 1,941 KPI rows have no target** (down from
+1,436). Nine of them declare a unit and are still blank on purpose:
+`Engineering hours saved per quarter attributable to platform capabilities
+(hours)` needs a baseline nobody has measured, and `Delivery teams
+consuming a shared component (count)` names no period to count over.
 
-The three largest remaining families are counts: engineers mentored who
-progress a level (22 rows), knowledge-sharing sessions delivered (20),
-contributions published (20). A target for these depends on team size and
-on what the organisation asks of the role. There is no defensible figure to
-propose, in-house or otherwise, so they stay blank.
+The rest name a subject rather than a measure and need rewriting before any
+target means anything — a KPI nobody can quantify is not a KPI.
+
+The 589 proposals split **275 from a published benchmark and 314 house
+starting points**. That distinction is not visible in the files, where both
+render as `(proposed)`; it lives in `KPI_BENCHMARKS` as
+`basis: 'benchmark' | 'house'`.
 
 ## [1.13.0] - 2026-08-06
 
