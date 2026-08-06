@@ -4,9 +4,9 @@ This domain covers general security architecture across the organisation — thr
 
 ## Roles in this domain
 
-- `devsecops_architect.md`
-- `devsecops_engineer.md`
-- `security_architect.md`
-- `security_engineer.md`
-- `security_product_owner.md`
-- `security_senior_engineer.md`
+- [`devsecops_architect.md`](devsecops_architect.md)
+- [`devsecops_engineer.md`](devsecops_engineer.md)
+- [`security_architect.md`](security_architect.md)
+- [`security_engineer.md`](security_engineer.md)
+- [`security_product_owner.md`](security_product_owner.md)
+- [`security_senior_engineer.md`](security_senior_engineer.md)

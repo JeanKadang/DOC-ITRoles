@@ -82,7 +82,7 @@ The 34 domains are grouped into 7 chapters, each led by a Chapter Lead:
 | 6 | 🎯 Service & Governance | ITSM, configuration management, service management, enterprise architecture |
 | 7 | 👑 Leadership | C-Suite, SVP, CISO, Chapter Leads, TAL, PAL, cross-cutting leadership |
 
-See `docs/CHAPTERS_OVERVIEW.md` for the full breakdown and `docs/chapters/*.md` for each chapter's detail. Domain and role counts are computed live from `Roles/` — never hand-maintained — to prevent drift.
+See [`docs/CHAPTERS_OVERVIEW.md`](docs/CHAPTERS_OVERVIEW.md) for the full breakdown and `docs/chapters/*.md` for each chapter's detail. Domain and role counts are computed live from `Roles/` — never hand-maintained — to prevent drift.
 
 ## Role hierarchy
 
@@ -148,11 +148,11 @@ roles_master/
 
 ## Adding a new role
 
-1. Copy `docs/role_template.md` into the appropriate folder under `Roles/`.
+1. Copy [`docs/role_template.md`](docs/role_template.md) into the appropriate folder under `Roles/`.
 2. Name the file using the pattern: `<technology>_<level>.md`
    - Standard levels: `architect`, `senior_engineer`, `engineer`, `product_owner`
    - Special levels: `product_area_lead`, `technical_area_lead`, `cloud_lead_architect`, `cloud_principal_architect`
-   - Example: `Roles/kubernetes/kubernetes_platform_engineer.md`
+   - Example: [`Roles/kubernetes/kubernetes_senior_engineer.md`](Roles/kubernetes/kubernetes_senior_engineer.md)
 3. Fill in all 14 sections following the template.
 4. Run `npm run validate` to confirm the file has all required sections and metadata.
 5. Restart the server — new roles are picked up automatically on each request.
@@ -166,7 +166,7 @@ roles_master/
 
 ## Role file format
 
-Each role file follows the canonical 14-section structure. See `docs/role_template.md` for full guidance.
+Each role file follows the canonical 14-section structure. See [`docs/role_template.md`](docs/role_template.md) for full guidance.
 
 ```markdown
 # Role Title
@@ -200,15 +200,15 @@ Each role file follows the canonical 14-section structure. See `docs/role_templa
 
 | Document | Purpose |
 |---|---|
-| `docs/CROSS_DOMAIN_INTERACTIONS.md` | Domain ownership boundaries, key relationships, escalation paths |
-| `docs/SKILLS_PROGRESSION.md` | Engineer → Senior → Architect career ladder per domain |
-| `docs/ONBOARDING_TEMPLATE.md` | 30/60/90 day plan template for new hires |
+| [`docs/CROSS_DOMAIN_INTERACTIONS.md`](docs/CROSS_DOMAIN_INTERACTIONS.md) | Domain ownership boundaries, key relationships, escalation paths |
+| [`docs/SKILLS_PROGRESSION.md`](docs/SKILLS_PROGRESSION.md) | Engineer → Senior → Architect career ladder per domain |
+| [`docs/ONBOARDING_TEMPLATE.md`](docs/ONBOARDING_TEMPLATE.md) | 30/60/90 day plan template for new hires |
 | `docs/onboarding_*_supplement.md` | Level overlays (Engineer, Senior Engineer, Architect, Product Owner) — used **alongside** the base template, adding only what differs by level |
-| `docs/onboarding_chapter_lead_template.md` | Onboarding variant for incoming Chapter Leads |
-| `docs/CHAPTERS_OVERVIEW.md` | The 7 chapters, their focus, and links to per-chapter detail |
-| `docs/improvements_and_recommendations.md` | **Closed.** Narrative of the four 2026 review cycles. Open work is in [GitHub Issues](https://github.com/JeanKadang/DOC-ITRoles/issues); what shipped is in [CHANGELOG.md](CHANGELOG.md) |
-| `CHANGELOG.md` | Version history of the codebase (Keep a Changelog format) |
-| `SECURITY.md` | Security policy and how to report a vulnerability |
+| [`docs/onboarding_chapter_lead_template.md`](docs/onboarding_chapter_lead_template.md) | Onboarding variant for incoming Chapter Leads |
+| [`docs/CHAPTERS_OVERVIEW.md`](docs/CHAPTERS_OVERVIEW.md) | The 7 chapters, their focus, and links to per-chapter detail |
+| [`docs/improvements_and_recommendations.md`](docs/improvements_and_recommendations.md) | **Closed.** Narrative of the four 2026 review cycles. Open work is in [GitHub Issues](https://github.com/JeanKadang/DOC-ITRoles/issues); what shipped is in [CHANGELOG.md](CHANGELOG.md) |
+| [`CHANGELOG.md`](CHANGELOG.md) | Version history of the codebase (Keep a Changelog format) |
+| [`SECURITY.md`](SECURITY.md) | Security policy and how to report a vulnerability |
 
 ## Development
 
