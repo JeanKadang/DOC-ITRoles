@@ -7,6 +7,76 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **16 seeded targets that contradicted their own metric are corrected
+  (#140).** Auditing all 258 rows seeded in 1.12.0 found the benchmark
+  keyword matching incidentally rather than as the thing measured:
+
+  | Was | Metric |
+  |---|---|
+  | `≥99.9%` | Model deployment lead time (hours … to production endpoint **availability**, trending down) |
+  | `≤4 hours` | Vulnerability mean time to remediate (**MTTR**) — the remediation policy, not the P1 restore commitment |
+  | `≥95%` | **Number of** ad hoc analysis requests completed within SLA per quarter |
+  | `≤15%` | DORA metrics **trend** (deployment frequency, lead time, change failure rate, MTTR) |
+
+  A wrong proposal is worse than a blank. The validator counts a blank as a
+  gap and a `(proposed)` value as awaiting confirmation, so a target that
+  does not fit its metric is the one state that reads as progress while
+  being false. 15 rows return to an em dash and the vulnerability row is
+  re-pointed at the remediation policy.
+
+  Three guards prevent the class rather than the instances: a **unit
+  conflict** rule (no percentage on a metric counted in hours or in units of
+  work), a **direction-only** rule (`trend`, `improvement`, `etc.` describe
+  travel, not a threshold), and a **composite** rule counting measure nouns
+  rather than commas — so `Microsoft 365 service availability (Exchange,
+  Teams, SharePoint)` stays seeded while `incident frequency, severity, and
+  mean time to detect` does not.
+
+  The guard was reconciled against all 258 rows before use, and refused two
+  the hand audit had passed. Both were product lists rather than measure
+  lists, which is what moved the composite rule off comma counting.
+
+### Added
+
+- **179 more rows carry a proposed target, each marked by where its number
+  came from (#140).** 427 rows now hold an opening figure, up from 258.
+
+  | Basis | Rows | Examples |
+  |---|---|---|
+  | Published benchmark | **275** | DORA change lead time `≤24 hours`, SLO attainment and guardrail compliance `≥95%` |
+  | House starting point | **152** | documentation currency `≥95%`, first-review approval `≥80%`, ramp completion `≥90%` |
+
+  **The distinction `(proposed)` cannot carry.** The marker says a number is
+  not agreed; it does not say whether anybody published it. The house
+  families — documentation currency (33 rows), accepted without rework (85),
+  reaching independent delivery within the agreed ramp period (32) — are the
+  largest in the catalogue and are standardised nowhere. Each entry now
+  declares `basis: 'house'` and the note *"no industry standard; house
+  starting point for discussion"*, and a test asserts every entry declares a
+  basis, so one cannot be added as published by omission.
+
+  The DORA lead-time figure is anchored to `commit` so that any duration
+  called a lead time does not inherit it.
+
+- The validator no longer describes proposals as *"seeded from an industry
+  benchmark"*. The file marker cannot distinguish the two bases, and
+  claiming a source for all of them would be false for 152 of the 427.
+
+### Still open
+
+Tracked in #140. **1,267 of 1,941 KPI rows have no target** (down from
+1,436). Of those, 418 declare a unit — a `(%)`, a `(count …)`, a duration —
+and so state plainly what number is missing; the rest name a subject and
+need rewriting before a target means anything.
+
+The three largest remaining families are counts: engineers mentored who
+progress a level (22 rows), knowledge-sharing sessions delivered (20),
+contributions published (20). A target for these depends on team size and
+on what the organisation asks of the role. There is no defensible figure to
+propose, in-house or otherwise, so they stay blank.
+
 ## [1.13.0] - 2026-08-06
 
 Onboarding gains four level supplements, covering 206 of the 226 roles
