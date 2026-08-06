@@ -782,8 +782,83 @@
         return `<ul>${byNode}</ul>`;
     }
 
+    // Convert a bullet KPI into a | Metric | Target | Frequency | row (#140).
+    //
+    // The metric text is kept **verbatim** — a target already stated in the
+    // prose is surfaced into its own column as well, rather than being cut
+    // out of the sentence. Slight redundancy on the ~97 rows that have one is
+    // a fair price for guaranteeing nothing is lost in a 1,791-row rewrite.
+    //
+    // A missing target or cadence becomes an em dash, not an empty cell: the
+    // gap is the point. Two thirds of these KPIs name a subject rather than a
+    // measure, and the row should say so plainly.
+    function parseKpiBullet(text) {
+        const raw = String(text == null ? '' : text).trim();
+
+        // Only forms actually used in the catalogue. Deliberately excludes a
+        // bare number, so "ISO 27001" and "the 2026 standard" are not read as
+        // targets.
+        const target = raw.match(/[≥≤<>]\s*\d+(?:\.\d+)?\s*(?:%|hours?|hrs?|days?|weeks?|months?|minutes?|mins?|business days?)?|\b\d+(?:\.\d+)?\s*%/);
+
+        const cadence = raw.match(/\b(daily|weekly|monthly|quarterly|annual(?:ly)?|per sprint)\b/i);
+        const FREQ = { daily: 'Daily', weekly: 'Weekly', monthly: 'Monthly',
+                       quarterly: 'Quarterly', annual: 'Annual', annually: 'Annual',
+                       'per sprint': 'Per sprint' };
+
+        return {
+            // A pipe would silently split the cell and shift every column.
+            metric:    raw.replace(/\|/g, '\\|'),
+            target:    target ? target[0].replace(/\s+/g, ' ').trim() : '—',
+            frequency: cadence ? FREQ[cadence[0].toLowerCase()] : '—',
+        };
+    }
+
+    // Industry benchmarks for the metric families that genuinely have one
+    // (#140). Seeding these turns 315 blank rows into a reviewable starting
+    // point — correcting a draft is far easier than filling a blank.
+    //
+    // Every value carries "(proposed)" so it travels with the number if a row
+    // is copied, and the validator counts proposals apart from real gaps. An
+    // unmarked invented target would end up cited in a performance
+    // conversation as though it had been agreed.
+    //
+    // Adoption rate and incident rate are deliberately absent: widely
+    // measured, but with no established value to propose. A family with no
+    // real benchmark gets no seed.
+    const KPI_BENCHMARKS = [
+        { re: /\bchange failure\b/i,                                    target: '≤15%',             frequency: 'Monthly',   note: 'DORA' },
+        { re: /\bdeployment frequency\b/i,                              target: 'Weekly or better', frequency: 'Monthly',   note: 'DORA high performer' },
+        { re: /\b(mttr|mean time to (restore|repair|resolve)|time to restore)\b/i,
+                                                                        target: '≤4 hours',         frequency: 'Monthly',   note: 'common P1 restore commitment' },
+        { re: /\b(mttd|mean time to detect|time to detect)\b/i,         target: '≤24 hours',        frequency: 'Monthly',   note: 'common detection target' },
+        { re: /\bvulnerab\w*\b[^|]*\b(remediat|resolv|closure)/i,       target: '≤30 days (critical)', frequency: 'Monthly', note: 'common remediation policy' },
+        { re: /\b(test|code)\s+coverage\b/i,                            target: '≥80%',             frequency: 'Monthly',   note: 'widely-used threshold' },
+        { re: /\b(backup|recovery|restore)\b[^|]*\b(success|rate|test)/i, target: '≥99%',           frequency: 'Monthly',   note: 'standard data-protection target' },
+        { re: /\bfirst[- ]contact\b/i,                                  target: '≥70%',             frequency: 'Monthly',   note: 'common service-desk target' },
+        { re: /\b(patch|compliance)\b[^|]*\b(coverage|complian)/i,      target: '≥95%',             frequency: 'Monthly',   note: 'common security baseline' },
+        { re: /\bSLA\b/,                                                target: '≥95%',             frequency: 'Monthly',   note: 'typical service commitment' },
+        { re: /\b(csat|satisfaction|nps)\b/i,                           target: '≥85%',             frequency: 'Quarterly', note: 'common enterprise IT service target' },
+        // Anchored to the noun so "documentation available to teams" does not
+        // match — only uptime/availability used as the metric itself.
+        { re: /\b(uptime|availability)\b(?!\s+(to|for|of\s+(the\s+)?(team|staff|stakeholder)))/i,
+                                                                        target: '≥99.9%',           frequency: 'Monthly',   note: 'three-nines enterprise SLA' },
+    ];
+
+    function proposedKpiTarget(metric) {
+        const m = String(metric == null ? '' : metric);
+        for (const b of KPI_BENCHMARKS) {
+            if (b.re.test(m)) {
+                return { target: `${b.target} (proposed)`, frequency: b.frequency, note: b.note };
+            }
+        }
+        return null;
+    }
+
     return {
         STALE_MONTHS,
+        proposedKpiTarget,
+        KPI_BENCHMARKS,
+        parseKpiBullet,
         orgListHtml,
         graphListHtml,
         pushRecent,

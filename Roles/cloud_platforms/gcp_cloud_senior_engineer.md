@@ -128,16 +128,18 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 
 ## Key Performance Indicators
 
-- GCP environment availability and reliability
-- Implementation quality of GCP solutions
-- Time to resolve critical cloud incidents
-- Cost optimization achievements
-- Security posture improvement in GCP
-- Knowledge transfer effectiveness to junior engineers
-- Successful implementation of GCP standards and patterns
-- Project delivery timeliness and quality
-- Technical innovation contribution
-- Customer satisfaction with GCP services
+| Metric | Target | Frequency |
+|---|---|---|
+| GCP environment availability and reliability | ≥99.9% (proposed) | Monthly |
+| Implementation quality of GCP solutions | — | — |
+| Time to resolve critical cloud incidents | — | — |
+| Cost optimization achievements | — | — |
+| Security posture improvement in GCP | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Successful implementation of GCP standards and patterns | — | — |
+| Project delivery timeliness and quality | — | — |
+| Technical innovation contribution | — | — |
+| Customer satisfaction with GCP services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

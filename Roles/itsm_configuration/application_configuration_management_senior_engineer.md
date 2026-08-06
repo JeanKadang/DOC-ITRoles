@@ -130,16 +130,18 @@ The Application Configuration Management Senior Engineer leads the implementatio
 
 ## Key Performance Indicators
 
-- Configuration management reliability metrics
-- Automation coverage for configuration processes
-- Configuration deployment success rate
-- Implementation quality of configuration solutions
-- Resolution time for configuration incidents
-- Knowledge transfer effectiveness to engineers
-- Standardization level of configuration practices
-- Innovation in configuration management approaches
-- Security compliance of configuration processes
-- Stakeholder satisfaction with configuration services
+| Metric | Target | Frequency |
+|---|---|---|
+| Configuration management reliability metrics | — | — |
+| Automation coverage for configuration processes | — | — |
+| Configuration deployment success rate | — | — |
+| Implementation quality of configuration solutions | — | — |
+| Resolution time for configuration incidents | — | — |
+| Knowledge transfer effectiveness to engineers | — | — |
+| Standardization level of configuration practices | — | — |
+| Innovation in configuration management approaches | — | — |
+| Security compliance of configuration processes | — | — |
+| Stakeholder satisfaction with configuration services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

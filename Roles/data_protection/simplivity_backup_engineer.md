@@ -122,16 +122,18 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 
 ## Key Performance Indicators
 
-- Backup success rate percentage
-- Backup completion within scheduled windows
-- Recovery time performance
-- Accurate implementation of backup policies
-- Documentation quality and completeness
-- Response time to backup failures
-- Recovery testing success rates
-- Adherence to data retention requirements
-- User satisfaction with backup/recovery services
-- Efficiency of storage utilization for backups
+| Metric | Target | Frequency |
+|---|---|---|
+| Backup success rate percentage | ≥99% (proposed) | Monthly |
+| Backup completion within scheduled windows | — | — |
+| Recovery time performance | — | — |
+| Accurate implementation of backup policies | — | — |
+| Documentation quality and completeness | — | — |
+| Response time to backup failures | — | — |
+| Recovery testing success rates | ≥99% (proposed) | Monthly |
+| Adherence to data retention requirements | — | — |
+| User satisfaction with backup/recovery services | ≥85% (proposed) | Quarterly |
+| Efficiency of storage utilization for backups | — | — |
 
 ## Remote Work Considerations
 

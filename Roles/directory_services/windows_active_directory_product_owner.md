@@ -123,16 +123,18 @@ The Windows Active Directory Product Owner manages the service roadmap and plann
 
 ## Key Performance Indicators
 
-- Active Directory availability and reliability
-- Authentication success rates
-- Directory services incident reduction
-- Group Policy implementation effectiveness
-- Time to provision/deprovision user accounts
-- Directory security compliance scores
-- Stakeholder satisfaction with AD services
-- Successful delivery of AD roadmap items
-- AD automation level achievement
-- Knowledge sharing and training effectiveness
+| Metric | Target | Frequency |
+|---|---|---|
+| Active Directory availability and reliability | ≥99.9% (proposed) | Monthly |
+| Authentication success rates | — | — |
+| Directory services incident reduction | — | — |
+| Group Policy implementation effectiveness | — | — |
+| Time to provision/deprovision user accounts | — | — |
+| Directory security compliance scores | — | — |
+| Stakeholder satisfaction with AD services | ≥85% (proposed) | Quarterly |
+| Successful delivery of AD roadmap items | — | — |
+| AD automation level achievement | — | — |
+| Knowledge sharing and training effectiveness | — | — |
 
 ## Remote Work Considerations
 

@@ -136,16 +136,18 @@ The Server Hardware Engineer implements and maintains the physical server infras
 
 ## Key Performance Indicators
 
-- Server deployment time efficiency
-- Hardware-related incident resolution time
-- Hardware configuration accuracy
-- Documentation quality and completeness
-- Firmware compliance percentage
-- Hardware inventory accuracy
-- Successful hardware maintenance completions
-- Standard build implementation quality
-- User satisfaction with hardware support
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| Server deployment time efficiency | — | — |
+| Hardware-related incident resolution time | — | — |
+| Hardware configuration accuracy | — | — |
+| Documentation quality and completeness | — | — |
+| Firmware compliance percentage | — | — |
+| Hardware inventory accuracy | — | — |
+| Successful hardware maintenance completions | — | — |
+| Standard build implementation quality | — | — |
+| User satisfaction with hardware support | ≥85% (proposed) | Quarterly |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

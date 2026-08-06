@@ -129,16 +129,18 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of designs with business requirements
-- Onboarding architecture scalability and flexibility
-- Standardization level across infrastructure domains
-- Time-to-provision improvements through architecture
-- Reduction in architectural complexity
-- Adoption of reference architectures and patterns
-- Innovation in infrastructure provisioning approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of designs with business requirements | — | — |
+| Onboarding architecture scalability and flexibility | — | — |
+| Standardization level across infrastructure domains | — | — |
+| Time-to-provision improvements through architecture | — | — |
+| Reduction in architectural complexity | — | — |
+| Adoption of reference architectures and patterns | — | — |
+| Innovation in infrastructure provisioning approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

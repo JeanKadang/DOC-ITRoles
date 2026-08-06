@@ -135,12 +135,14 @@ The Security Cross-Platform Senior Engineer leads the technical implementation o
 
 ## Key Performance Indicators
 
-- Successful implementation of security controls that work consistently across all platforms
-- Development of reusable security components that can be leveraged across domains
-- Increased automation of security processes spanning multiple technology areas
-- Reduction in security incidents through proactive cross-platform controls
-- Improved detection and response capabilities through integrated monitoring
-- Knowledge transfer to domain-specific teams on security best practices
+| Metric | Target | Frequency |
+|---|---|---|
+| Successful implementation of security controls that work consistently across all platforms | — | — |
+| Development of reusable security components that can be leveraged across domains | — | — |
+| Increased automation of security processes spanning multiple technology areas | — | — |
+| Reduction in security incidents through proactive cross-platform controls | — | — |
+| Improved detection and response capabilities through integrated monitoring | — | — |
+| Knowledge transfer to domain-specific teams on security best practices | — | — |
 
 ## Remote Work Considerations
 

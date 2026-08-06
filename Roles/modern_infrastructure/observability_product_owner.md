@@ -111,12 +111,14 @@ The Observability Product Owner manages the observability platform portfolio, de
 
 ## Key Performance Indicators
 
-- Platform adoption rates across teams
-- Stakeholder satisfaction with observability services
-- Successful delivery of roadmap initiatives
-- Quality of backlog management and prioritization
-- Effectiveness of observability in improving system reliability
-- Clear demonstration of platform value to the business
+| Metric | Target | Frequency |
+|---|---|---|
+| Platform adoption rates across teams | — | — |
+| Stakeholder satisfaction with observability services | ≥85% (proposed) | Quarterly |
+| Successful delivery of roadmap initiatives | — | — |
+| Quality of backlog management and prioritization | — | — |
+| Effectiveness of observability in improving system reliability | — | — |
+| Clear demonstration of platform value to the business | — | — |
 
 ## Key Technologies
 

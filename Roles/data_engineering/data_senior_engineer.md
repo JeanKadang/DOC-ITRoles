@@ -139,12 +139,14 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 
 ## Key Performance Indicators
 
-- Data product delivery throughput (team-level velocity)
-- Data quality test coverage across owned data domains (target: >90%)
-- Pipeline performance and cost efficiency of owned components
-- Code review coverage and quality gate adherence within team
-- Mentoring: junior engineer progression metrics
-- Reusable framework and component adoption by data engineering team
+| Metric | Target | Frequency |
+|---|---|---|
+| Data product delivery throughput (team-level velocity) | — | — |
+| Data quality test coverage across owned data domains (target: >90%) | >90% | — |
+| Pipeline performance and cost efficiency of owned components | — | — |
+| Code review coverage and quality gate adherence within team | — | — |
+| Mentoring: junior engineer progression metrics | — | — |
+| Reusable framework and component adoption by data engineering team | — | — |
 
 ## Remote Work Considerations
 

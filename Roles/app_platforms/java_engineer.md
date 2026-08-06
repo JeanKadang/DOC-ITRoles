@@ -131,16 +131,18 @@ The Java Engineer implements and maintains Java-based applications and platform 
 
 ## Key Performance Indicators
 
-- Code quality and maintainability metrics
-- Timely completion of development tasks
-- Unit test coverage percentage
-- Number of defects in delivered code
-- Documentation quality and completeness
-- Adherence to Java coding standards
-- Collaboration effectiveness with team
-- Knowledge sharing and skill development
-- Responsiveness to support requests
-- Application performance and resource usage
+| Metric | Target | Frequency |
+|---|---|---|
+| Code quality and maintainability metrics | — | — |
+| Timely completion of development tasks | — | — |
+| Unit test coverage percentage | ≥80% (proposed) | Monthly |
+| Number of defects in delivered code | — | — |
+| Documentation quality and completeness | — | — |
+| Adherence to Java coding standards | — | — |
+| Collaboration effectiveness with team | — | — |
+| Knowledge sharing and skill development | — | — |
+| Responsiveness to support requests | — | — |
+| Application performance and resource usage | — | — |
 
 ## Remote Work Considerations
 

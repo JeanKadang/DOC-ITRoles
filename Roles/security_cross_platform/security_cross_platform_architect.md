@@ -135,11 +135,13 @@ The Security Cross-Platform Architect designs and develops comprehensive securit
 
 ## Key Performance Indicators
 
-- Implementation of consistent security controls across all technology domains
-- Reduction in security vulnerabilities through standardized approaches
-- Improved security posture across diverse technology platforms
-- Faster security implementation through reusable patterns and frameworks
-- Increased automation of security controls across multiple domains
+| Metric | Target | Frequency |
+|---|---|---|
+| Implementation of consistent security controls across all technology domains | — | — |
+| Reduction in security vulnerabilities through standardized approaches | — | — |
+| Improved security posture across diverse technology platforms | — | — |
+| Faster security implementation through reusable patterns and frameworks | — | — |
+| Increased automation of security controls across multiple domains | — | — |
 
 ## Remote Work Considerations
 

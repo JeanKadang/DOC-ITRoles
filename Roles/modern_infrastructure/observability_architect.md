@@ -150,14 +150,16 @@ The Observability Architect designs and governs the organisation's full-stack ob
 
 ## Key Performance Indicators
 
-- Mean time to detect (MTTD) for P1/P2 incidents: target reduction of ≥20% year-on-year
-- SLO achievement rate across critical services: ≥95% of defined SLOs met per quarter
-- Observability coverage: ≥90% of production services emitting metrics, logs, and traces conforming to standards
-- Alert signal-to-noise ratio: false positive alert rate below 15% of total actionable alerts triggered
-- Telemetry pipeline cost per observed service: tracked and within agreed FinOps budget envelope each quarter
-- Time-to-instrument new services: median instrumentation to production observability within 5 business days
-- OpenTelemetry standard adoption: ≥80% of new services instrumented using org standards within 6 months of standard publication
-- Edge observability coverage: ≥80% of edge nodes emitting conformant metrics, logs, and traces within 3 months of edge platform deployment
+| Metric | Target | Frequency |
+|---|---|---|
+| Mean time to detect (MTTD) for P1/P2 incidents: target reduction of ≥20% year-on-year | ≥20% | — |
+| SLO achievement rate across critical services: ≥95% of defined SLOs met per quarter | ≥95% | — |
+| Observability coverage: ≥90% of production services emitting metrics, logs, and traces conforming to standards | ≥90% | — |
+| Alert signal-to-noise ratio: false positive alert rate below 15% of total actionable alerts triggered | 15% | — |
+| Telemetry pipeline cost per observed service: tracked and within agreed FinOps budget envelope each quarter | — | — |
+| Time-to-instrument new services: median instrumentation to production observability within 5 business days | — | — |
+| OpenTelemetry standard adoption: ≥80% of new services instrumented using org standards within 6 months of standard publication | ≥80% | — |
+| Edge observability coverage: ≥80% of edge nodes emitting conformant metrics, logs, and traces within 3 months of edge platform deployment | ≥80% | — |
 
 ## Remote Work Considerations
 

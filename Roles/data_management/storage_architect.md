@@ -140,12 +140,14 @@ The Storage Architect is responsible for designing and governing the organisatio
 
 ## Key Performance Indicators
 
-- Storage utilisation efficiency (target: >70% average utilisation)
-- Storage-related incident count (trend: decreasing)
-- Capacity forecast accuracy (target: within 10% of actuals at 6-month horizon)
-- Storage cost per TB (trend: optimising)
-- SLA compliance for storage performance tiers
-- Percentage of Kubernetes persistent volumes using approved CSI/StorageClass standards
+| Metric | Target | Frequency |
+|---|---|---|
+| Storage utilisation efficiency (target: >70% average utilisation) | >70% | — |
+| Storage-related incident count (trend: decreasing) | — | — |
+| Capacity forecast accuracy (target: within 10% of actuals at 6-month horizon) | 10% | — |
+| Storage cost per TB (trend: optimising) | — | — |
+| SLA compliance for storage performance tiers | ≥95% (proposed) | Monthly |
+| Percentage of Kubernetes persistent volumes using approved CSI/StorageClass standards | — | — |
 
 ## Remote Work Considerations
 

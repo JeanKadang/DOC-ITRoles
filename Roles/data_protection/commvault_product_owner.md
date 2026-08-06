@@ -145,16 +145,18 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 
 ## Key Performance Indicators
 
-- Backup success rate percentage
-- Recovery time objective (RTO) achievements
-- Recovery point objective (RPO) achievements
-- Stakeholder satisfaction with data protection services
-- Backup compliance and audit readiness
-- Data protection cost efficiency
-- Storage optimization metrics (deduplication ratios)
-- Successful delivery of backup roadmap items
-- Implementation of backup automation
-- Backup platform availability and reliability
+| Metric | Target | Frequency |
+|---|---|---|
+| Backup success rate percentage | ≥99% (proposed) | Monthly |
+| Recovery time objective (RTO) achievements | — | — |
+| Recovery point objective (RPO) achievements | — | — |
+| Stakeholder satisfaction with data protection services | ≥85% (proposed) | Quarterly |
+| Backup compliance and audit readiness | — | — |
+| Data protection cost efficiency | — | — |
+| Storage optimization metrics (deduplication ratios) | — | — |
+| Successful delivery of backup roadmap items | — | — |
+| Implementation of backup automation | — | — |
+| Backup platform availability and reliability | ≥99.9% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

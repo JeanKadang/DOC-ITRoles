@@ -129,16 +129,18 @@ The API Platform Product Owner manages the development and lifecycle of the orga
 
 ## Key Performance Indicators
 
-- Developer satisfaction with API platform
-- API adoption rates across development teams
-- Time-to-market improvement for API-dependent applications
-- Reduction in integration effort through standardized APIs
-- API platform reliability and performance metrics
-- API security vulnerability reduction
-- Successful delivery of API platform roadmap items
-- Business value delivery through API capabilities
-- Return on investment for API platform initiatives
-- Innovation in API capabilities
+| Metric | Target | Frequency |
+|---|---|---|
+| Developer satisfaction with API platform | ≥85% (proposed) | Quarterly |
+| API adoption rates across development teams | — | — |
+| Time-to-market improvement for API-dependent applications | — | — |
+| Reduction in integration effort through standardized APIs | — | — |
+| API platform reliability and performance metrics | — | — |
+| API security vulnerability reduction | — | — |
+| Successful delivery of API platform roadmap items | — | — |
+| Business value delivery through API capabilities | — | — |
+| Return on investment for API platform initiatives | — | — |
+| Innovation in API capabilities | — | — |
 
 ## Remote Work Considerations
 

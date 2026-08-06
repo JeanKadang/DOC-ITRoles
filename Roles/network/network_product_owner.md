@@ -130,16 +130,18 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 ## Key Performance Indicators
 
-- Network service availability and reliability
-- Time-to-delivery for network services
-- Stakeholder satisfaction with network capabilities
-- Network security posture improvement
-- Cost optimization achievements
-- Successful delivery of network roadmap items
-- Network service request fulfillment time
-- Backlog health and prioritization effectiveness
-- Network capacity management accuracy
-- Innovation in network service delivery
+| Metric | Target | Frequency |
+|---|---|---|
+| Network service availability and reliability | ≥99.9% (proposed) | Monthly |
+| Time-to-delivery for network services | — | — |
+| Stakeholder satisfaction with network capabilities | ≥85% (proposed) | Quarterly |
+| Network security posture improvement | — | — |
+| Cost optimization achievements | — | — |
+| Successful delivery of network roadmap items | — | — |
+| Network service request fulfillment time | — | — |
+| Backlog health and prioritization effectiveness | — | — |
+| Network capacity management accuracy | — | — |
+| Innovation in network service delivery | — | — |
 
 ## Remote Work Considerations
 

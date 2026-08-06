@@ -133,16 +133,18 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of cloud designs with business requirements
-- Cloud architecture scalability and reliability
-- Cost efficiency of designed cloud solutions
-- Security compliance of cloud architectures
-- Adoption of cloud reference architectures and patterns
-- Reduction in architectural risks and technical debt
-- Innovation in cloud architectural approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of cloud designs with business requirements | — | — |
+| Cloud architecture scalability and reliability | — | — |
+| Cost efficiency of designed cloud solutions | — | — |
+| Security compliance of cloud architectures | — | — |
+| Adoption of cloud reference architectures and patterns | — | — |
+| Reduction in architectural risks and technical debt | — | — |
+| Innovation in cloud architectural approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

@@ -123,16 +123,18 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 ## Key Performance Indicators
 
-- AWS platform availability and reliability metrics
-- Cloud cost management effectiveness
-- Time-to-delivery for cloud services
-- Stakeholder satisfaction with AWS platform
-- Security compliance scores for AWS environment
-- Successful implementation of cloud governance
-- AWS service adoption rates
-- Cloud migration project success rates
-- AWS platform feature delivery against roadmap
-- Cloud platform operational efficiency
+| Metric | Target | Frequency |
+|---|---|---|
+| AWS platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Cloud cost management effectiveness | — | — |
+| Time-to-delivery for cloud services | — | — |
+| Stakeholder satisfaction with AWS platform | ≥85% (proposed) | Quarterly |
+| Security compliance scores for AWS environment | — | — |
+| Successful implementation of cloud governance | — | — |
+| AWS service adoption rates | — | — |
+| Cloud migration project success rates | — | — |
+| AWS platform feature delivery against roadmap | — | — |
+| Cloud platform operational efficiency | — | — |
 
 ## Remote Work Considerations
 

@@ -142,12 +142,14 @@ The Integration Architect designs and governs the organisation's enterprise inte
 
 ## Key Performance Indicators
 
-- Integration platform availability (target: 99.9%+)
-- API governance compliance rate (APIs adhering to standards)
-- Point-to-point integration reduction (governed integrations as percentage of total)
-- Integration-related incident rate (trend: decreasing)
-- Mean time to integrate new applications
-- API developer portal adoption (external/internal consumers)
+| Metric | Target | Frequency |
+|---|---|---|
+| Integration platform availability (target: 99.9%+) | 99.9% | — |
+| API governance compliance rate (APIs adhering to standards) | — | — |
+| Point-to-point integration reduction (governed integrations as percentage of total) | — | — |
+| Integration-related incident rate (trend: decreasing) | — | — |
+| Mean time to integrate new applications | — | — |
+| API developer portal adoption (external/internal consumers) | — | — |
 
 ## Remote Work Considerations
 

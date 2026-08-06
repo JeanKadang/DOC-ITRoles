@@ -134,16 +134,18 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 
 ## Key Performance Indicators
 
-- SCCM infrastructure availability and health
-- Application deployment success rates
-- Software update compliance percentages
-- Operating system deployment reliability
-- Client health metrics
-- Configuration baseline compliance
-- Documentation quality and completeness
-- Issue resolution time for SCCM-related problems
-- Endpoint inventory accuracy
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| SCCM infrastructure availability and health | ≥99.9% (proposed) | Monthly |
+| Application deployment success rates | — | — |
+| Software update compliance percentages | — | — |
+| Operating system deployment reliability | — | — |
+| Client health metrics | — | — |
+| Configuration baseline compliance | — | — |
+| Documentation quality and completeness | — | — |
+| Issue resolution time for SCCM-related problems | — | — |
+| Endpoint inventory accuracy | — | — |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

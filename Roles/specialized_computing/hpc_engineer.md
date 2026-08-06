@@ -149,15 +149,17 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 
 ## Key Performance Indicators
 
-- Cluster uptime, availability, and security metrics
-- Job scheduling and resource utilization efficiency
-- Automation coverage and reduction in manual interventions
-- Software installation and update success rate
-- User support responsiveness and satisfaction
-- Time to resolve HPC-related incidents and security issues
-- Documentation quality, completeness, and accessibility
-- Software environment and storage system stability
-- Knowledge transfer and training effectiveness for research community
+| Metric | Target | Frequency |
+|---|---|---|
+| Cluster uptime, availability, and security metrics | ≥99.9% (proposed) | Monthly |
+| Job scheduling and resource utilization efficiency | — | — |
+| Automation coverage and reduction in manual interventions | — | — |
+| Software installation and update success rate | — | — |
+| User support responsiveness and satisfaction | ≥85% (proposed) | Quarterly |
+| Time to resolve HPC-related incidents and security issues | — | — |
+| Documentation quality, completeness, and accessibility | — | — |
+| Software environment and storage system stability | — | — |
+| Knowledge transfer and training effectiveness for research community | — | — |
 
 ## Remote Work Considerations
 

@@ -148,13 +148,15 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 
 ## Key Performance Indicators
 
-- Access certification campaign completion rate: ≥95% of scheduled certification reviews completed by the campaign deadline, with 100% of revocation decisions actioned within 5 business days of campaign close
-- Orphaned account elimination rate: ≥98% of identified orphaned accounts revoked or formally risk-accepted within 10 business days of detection
-- SoD violation remediation time: ≥90% of SoD violations remediated or compensating controls documented within 15 business days of detection
-- JML process automation percentage: ≥90% of Joiner, Mover, and Leaver events processed via automated IGA workflows without manual intervention, measured monthly
-- Over-privileged account reduction: quarter-on-quarter reduction in the number of accounts holding entitlements beyond their role-defined access baseline, tracked via role mining and certification outcomes
-- IGA provisioning accuracy: ≤1% error rate on automated provisioning and deprovisioning events, measured as failed or incorrectly processed JML workflow events per total events
-- Audit finding rate: zero repeat identity governance audit findings across consecutive annual audit cycles; fewer than two new findings per assessment cycle attributable to IGA process or tooling gaps
+| Metric | Target | Frequency |
+|---|---|---|
+| Access certification campaign completion rate: ≥95% of scheduled certification reviews completed by the campaign deadline, with 100% of revocation decisions actioned within 5 business days of campaign close | ≥95% | — |
+| Orphaned account elimination rate: ≥98% of identified orphaned accounts revoked or formally risk-accepted within 10 business days of detection | ≥98% | — |
+| SoD violation remediation time: ≥90% of SoD violations remediated or compensating controls documented within 15 business days of detection | ≥90% | — |
+| JML process automation percentage: ≥90% of Joiner, Mover, and Leaver events processed via automated IGA workflows without manual intervention, measured monthly | ≥90% | Monthly |
+| Over-privileged account reduction: quarter-on-quarter reduction in the number of accounts holding entitlements beyond their role-defined access baseline, tracked via role mining and certification outcomes | — | — |
+| IGA provisioning accuracy: ≤1% error rate on automated provisioning and deprovisioning events, measured as failed or incorrectly processed JML workflow events per total events | ≤1% | — |
+| Audit finding rate: zero repeat identity governance audit findings across consecutive annual audit cycles; fewer than two new findings per assessment cycle attributable to IGA process or tooling gaps | — | Annual |
 
 ## Remote Work Considerations
 

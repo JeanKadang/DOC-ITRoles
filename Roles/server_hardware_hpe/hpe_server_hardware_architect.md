@@ -135,16 +135,18 @@ The HPE Server Hardware Architect designs and oversees the organization's server
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of hardware designs with business requirements
-- Server infrastructure performance and reliability
-- Power efficiency and sustainability metrics
-- Cost effectiveness of hardware architectures
-- Adoption of reference architectures and standards
-- Hardware lifecycle optimization metrics
-- Innovation in server infrastructure approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of hardware designs with business requirements | — | — |
+| Server infrastructure performance and reliability | — | — |
+| Power efficiency and sustainability metrics | — | — |
+| Cost effectiveness of hardware architectures | — | — |
+| Adoption of reference architectures and standards | — | — |
+| Hardware lifecycle optimization metrics | — | — |
+| Innovation in server infrastructure approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

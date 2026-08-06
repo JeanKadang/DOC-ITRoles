@@ -116,16 +116,18 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 
 ## Key Performance Indicators
 
-- Quality and effectiveness of Hyper-V architecture designs
-- Adoption rate of established standards and best practices
-- Successful implementation of Hyper-V solutions that meet business requirements
-- Performance and reliability of Hyper-V environments
-- Cost-effectiveness of virtualization infrastructure
-- Timely evaluation and adoption of new Microsoft virtualization technologies
-- Effectiveness of knowledge transfer to engineering teams
-- Reduction in architectural-related incidents
-- Business agility enabled through virtualization architecture
-- Success of migration initiatives to/from Hyper-V platforms
+| Metric | Target | Frequency |
+|---|---|---|
+| Quality and effectiveness of Hyper-V architecture designs | — | — |
+| Adoption rate of established standards and best practices | — | — |
+| Successful implementation of Hyper-V solutions that meet business requirements | — | — |
+| Performance and reliability of Hyper-V environments | — | — |
+| Cost-effectiveness of virtualization infrastructure | — | — |
+| Timely evaluation and adoption of new Microsoft virtualization technologies | — | — |
+| Effectiveness of knowledge transfer to engineering teams | — | — |
+| Reduction in architectural-related incidents | — | — |
+| Business agility enabled through virtualization architecture | — | — |
+| Success of migration initiatives to/from Hyper-V platforms | — | — |
 
 ## Key Technologies
 

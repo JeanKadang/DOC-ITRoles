@@ -139,14 +139,16 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 
 ## Key Performance Indicators
 
-- Percentage of cloud waste eliminated month-on-month
-- Rightsizing recommendation adoption rate (% of recommendations implemented within SLA)
-- Reserved instance and savings plan coverage percentage across eligible spend
-- Cost anomaly resolution time (average hours from alert to resolution)
-- Tagging compliance percentage across the cloud estate
-- Idle and orphaned resource cleanup rate (resources remediated per sprint)
-- Spot instance adoption rate across eligible non-production workloads
-- Savings delivered ($ value) against quarterly optimisation targets
+| Metric | Target | Frequency |
+|---|---|---|
+| Percentage of cloud waste eliminated month-on-month | — | — |
+| Rightsizing recommendation adoption rate (% of recommendations implemented within SLA) | ≥95% (proposed) | Monthly |
+| Reserved instance and savings plan coverage percentage across eligible spend | — | — |
+| Cost anomaly resolution time (average hours from alert to resolution) | — | — |
+| Tagging compliance percentage across the cloud estate | — | — |
+| Idle and orphaned resource cleanup rate (resources remediated per sprint) | — | Per sprint |
+| Spot instance adoption rate across eligible non-production workloads | — | — |
+| Savings delivered ($ value) against quarterly optimisation targets | — | Quarterly |
 
 ## Remote Work Considerations
 

@@ -132,16 +132,18 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 ## Key Performance Indicators
 
-- Developer satisfaction with platform experience
-- Platform adoption rates across development teams
-- Time-to-production for new applications
-- Developer self-service capability utilization
-- Reduction in developer toil through automation
-- Platform reliability and performance metrics
-- Successful delivery of platform roadmap items
-- Business value delivery through platform capabilities
-- Return on investment for platform initiatives
-- Innovation in developer experience
+| Metric | Target | Frequency |
+|---|---|---|
+| Developer satisfaction with platform experience | ≥85% (proposed) | Quarterly |
+| Platform adoption rates across development teams | — | — |
+| Time-to-production for new applications | — | — |
+| Developer self-service capability utilization | — | — |
+| Reduction in developer toil through automation | — | — |
+| Platform reliability and performance metrics | — | — |
+| Successful delivery of platform roadmap items | — | — |
+| Business value delivery through platform capabilities | — | — |
+| Return on investment for platform initiatives | — | — |
+| Innovation in developer experience | — | — |
 
 ## Remote Work Considerations
 

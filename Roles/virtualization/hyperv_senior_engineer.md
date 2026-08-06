@@ -122,16 +122,18 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 
 ## Key Performance Indicators
 
-- Hyper-V environment reliability and uptime percentages
-- Implementation quality of complex virtualization solutions
-- Success rate of migrations and upgrades
-- Resolution time for complex virtualization issues
-- Automation coverage for routine administrative tasks
-- Resource utilization efficiency metrics
-- Knowledge transfer effectiveness to junior engineers
-- Contribution to virtualization standards and best practices
-- Security posture improvement in virtualized environments
-- Innovation in virtualization solutions implementation
+| Metric | Target | Frequency |
+|---|---|---|
+| Hyper-V environment reliability and uptime percentages | ≥99.9% (proposed) | Monthly |
+| Implementation quality of complex virtualization solutions | — | — |
+| Success rate of migrations and upgrades | — | — |
+| Resolution time for complex virtualization issues | — | — |
+| Automation coverage for routine administrative tasks | — | — |
+| Resource utilization efficiency metrics | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Contribution to virtualization standards and best practices | — | — |
+| Security posture improvement in virtualized environments | — | — |
+| Innovation in virtualization solutions implementation | — | — |
 
 ## Key Technologies
 

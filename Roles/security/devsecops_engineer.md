@@ -134,12 +134,14 @@ The DevSecOps Engineer implements and maintains the security tooling, automation
 
 ## Key Performance Indicators
 
-- Pipeline SAST/SCA gate coverage percentage
-- False positive rate from automated scanning tools (minimised via tuning)
-- Mean time to triage and assign vulnerability findings
-- Developer satisfaction score with DevSecOps tooling
-- Secret rotation compliance rate
-- SBOM generation coverage
+| Metric | Target | Frequency |
+|---|---|---|
+| Pipeline SAST/SCA gate coverage percentage | — | — |
+| False positive rate from automated scanning tools (minimised via tuning) | — | — |
+| Mean time to triage and assign vulnerability findings | — | — |
+| Developer satisfaction score with DevSecOps tooling | ≥85% (proposed) | Quarterly |
+| Secret rotation compliance rate | — | — |
+| SBOM generation coverage | — | — |
 
 ## Remote Work Considerations
 

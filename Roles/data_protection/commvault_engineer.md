@@ -128,16 +128,18 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 
 ## Key Performance Indicators
 
-- Backup success rate percentage
-- Time to restore data when requested
-- Compliance with backup window requirements
-- Storage efficiency metrics (compression, deduplication)
-- Agent deployment success rate
-- Problem resolution time for backup failures
-- Documentation quality and completeness
-- Backup storage utilization management
-- Successful completion of scheduled maintenance
-- User satisfaction with restore services
+| Metric | Target | Frequency |
+|---|---|---|
+| Backup success rate percentage | ≥99% (proposed) | Monthly |
+| Time to restore data when requested | ≤4 hours (proposed) | Monthly |
+| Compliance with backup window requirements | — | — |
+| Storage efficiency metrics (compression, deduplication) | — | — |
+| Agent deployment success rate | — | — |
+| Problem resolution time for backup failures | — | — |
+| Documentation quality and completeness | — | — |
+| Backup storage utilization management | — | — |
+| Successful completion of scheduled maintenance | — | — |
+| User satisfaction with restore services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

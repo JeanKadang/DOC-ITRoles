@@ -130,16 +130,18 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 
 ## Key Performance Indicators
 
-- Storage system availability and uptime
-- Storage provisioning accuracy and timeliness
-- Resolution time for storage incidents
-- Storage utilization efficiency
-- Documentation quality and completeness
-- Successful execution of maintenance activities
-- Storage performance consistency
-- Data protection implementation quality
-- User satisfaction with storage services
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| Storage system availability and uptime | ≥99.9% (proposed) | Monthly |
+| Storage provisioning accuracy and timeliness | — | — |
+| Resolution time for storage incidents | — | — |
+| Storage utilization efficiency | — | — |
+| Documentation quality and completeness | — | — |
+| Successful execution of maintenance activities | — | — |
+| Storage performance consistency | — | — |
+| Data protection implementation quality | — | — |
+| User satisfaction with storage services | ≥85% (proposed) | Quarterly |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

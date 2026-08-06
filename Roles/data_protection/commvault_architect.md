@@ -128,16 +128,18 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of solutions with business requirements
-- Backup architecture scalability and flexibility
-- Cost efficiency of designed solutions
-- Recovery capabilities meeting or exceeding SLAs
-- Adoption of reference architectures and standards
-- Reduction in architectural risks and complexity
-- Innovation in data protection approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of solutions with business requirements | — | — |
+| Backup architecture scalability and flexibility | — | — |
+| Cost efficiency of designed solutions | — | — |
+| Recovery capabilities meeting or exceeding SLAs | — | — |
+| Adoption of reference architectures and standards | — | — |
+| Reduction in architectural risks and complexity | — | — |
+| Innovation in data protection approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

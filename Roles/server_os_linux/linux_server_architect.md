@@ -130,16 +130,18 @@ The Linux Server Architect designs and defines the strategic direction for the o
 
 ## Key Performance Indicators
 
-- Architectural standards adoption rate across Linux deployments
-- Reduction in Linux infrastructure incidents due to architectural improvements
-- Linux environment availability and performance metrics
-- Successful implementation of architectural recommendations
-- Cost optimization of Linux infrastructure
-- Quality and completeness of architecture documentation
-- Technical debt reduction in Linux environments
-- Time-to-delivery for new Linux capabilities and services
-- Linux security posture improvement
-- Knowledge transfer effectiveness to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architectural standards adoption rate across Linux deployments | — | — |
+| Reduction in Linux infrastructure incidents due to architectural improvements | — | — |
+| Linux environment availability and performance metrics | ≥99.9% (proposed) | Monthly |
+| Successful implementation of architectural recommendations | — | — |
+| Cost optimization of Linux infrastructure | — | — |
+| Quality and completeness of architecture documentation | — | — |
+| Technical debt reduction in Linux environments | — | — |
+| Time-to-delivery for new Linux capabilities and services | — | — |
+| Linux security posture improvement | — | — |
+| Knowledge transfer effectiveness to engineering teams | — | — |
 
 ## Remote Work Considerations
 

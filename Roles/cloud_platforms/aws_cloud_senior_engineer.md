@@ -128,16 +128,18 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 
 ## Key Performance Indicators
 
-- AWS environment availability and reliability
-- Implementation quality of AWS solutions
-- Time to resolve critical cloud incidents
-- Cost optimization achievements
-- Security posture improvement in AWS
-- Knowledge transfer effectiveness to junior engineers
-- Successful implementation of AWS standards and patterns
-- Project delivery timeliness and quality
-- Technical innovation contribution
-- Customer satisfaction with AWS services
+| Metric | Target | Frequency |
+|---|---|---|
+| AWS environment availability and reliability | ≥99.9% (proposed) | Monthly |
+| Implementation quality of AWS solutions | — | — |
+| Time to resolve critical cloud incidents | — | — |
+| Cost optimization achievements | — | — |
+| Security posture improvement in AWS | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Successful implementation of AWS standards and patterns | — | — |
+| Project delivery timeliness and quality | — | — |
+| Technical innovation contribution | — | — |
+| Customer satisfaction with AWS services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

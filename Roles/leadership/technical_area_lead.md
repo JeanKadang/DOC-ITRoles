@@ -133,16 +133,18 @@ The Technical Area Lead (TAL) is the senior technical authority for a defined IT
 
 ## Key Performance Indicators
 
-- Architecture standards adoption rate across area domains
-- Technical debt trend (age, volume, and resolution velocity)
-- Platform availability and reliability metrics for area-owned services
-- Engineering hiring quality (90-day retention, performance of TAL-approved hires)
-- Innovation adoption rate (new technologies successfully adopted and operationalized)
-- Technical risk resolution rate and time-to-remediate critical risks
-- Engineer and architect satisfaction with technical leadership and direction
-- Architecture review cycle time and decision quality
-- Cross-area technical dependency resolution speed
-- Senior engineer and architect promotion and retention rate
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture standards adoption rate across area domains | — | — |
+| Technical debt trend (age, volume, and resolution velocity) | — | — |
+| Platform availability and reliability metrics for area-owned services | ≥99.9% (proposed) | Monthly |
+| Engineering hiring quality (90-day retention, performance of TAL-approved hires) | — | — |
+| Innovation adoption rate (new technologies successfully adopted and operationalized) | — | — |
+| Technical risk resolution rate and time-to-remediate critical risks | — | — |
+| Engineer and architect satisfaction with technical leadership and direction | ≥85% (proposed) | Quarterly |
+| Architecture review cycle time and decision quality | — | — |
+| Cross-area technical dependency resolution speed | — | — |
+| Senior engineer and architect promotion and retention rate | — | — |
 
 ## Remote Work Considerations
 

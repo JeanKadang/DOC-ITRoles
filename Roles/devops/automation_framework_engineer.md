@@ -151,14 +151,16 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 
 ## Key Performance Indicators
 
-- **Framework adoption rate** — percentage of engineering teams actively consuming at least one shared framework or library (target: continuous growth quarter-over-quarter)
-- **Time saved per automation task** — measured via consumer surveys or telemetry comparing framework-enabled vs. bespoke automation build time
-- **Test coverage enabled** — aggregate test coverage attributable to shared test frameworks across consuming repositories
-- **Framework defect rate** — number of production defects or breaking regressions introduced per framework release, tracked per quarter
-- **Onboarding time to first automation** — median time for a new consumer team to go from zero to first passing automation run using a shared framework
-- **Reusable workflow adoption** — percentage of CI/CD pipelines in the organisation referencing shared GitHub Actions reusable workflows rather than duplicated inline definitions
-- **Documentation completeness** — percentage of published framework components with up-to-date usage documentation and at least one worked example
-- **Consumer satisfaction** — periodic NPS or satisfaction score from engineering teams who consume the automation frameworks
+| Metric | Target | Frequency |
+|---|---|---|
+| **Framework adoption rate** — percentage of engineering teams actively consuming at least one shared framework or library (target: continuous growth quarter-over-quarter) | — | — |
+| **Time saved per automation task** — measured via consumer surveys or telemetry comparing framework-enabled vs. bespoke automation build time | — | — |
+| **Test coverage enabled** — aggregate test coverage attributable to shared test frameworks across consuming repositories | ≥80% (proposed) | Monthly |
+| **Framework defect rate** — number of production defects or breaking regressions introduced per framework release, tracked per quarter | — | — |
+| **Onboarding time to first automation** — median time for a new consumer team to go from zero to first passing automation run using a shared framework | — | — |
+| **Reusable workflow adoption** — percentage of CI/CD pipelines in the organisation referencing shared GitHub Actions reusable workflows rather than duplicated inline definitions | — | — |
+| **Documentation completeness** — percentage of published framework components with up-to-date usage documentation and at least one worked example | — | — |
+| **Consumer satisfaction** — periodic NPS or satisfaction score from engineering teams who consume the automation frameworks | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

@@ -129,16 +129,18 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 
 ## Key Performance Indicators
 
-- Developer satisfaction with .NET platform
-- Platform adoption rates across development teams
-- Time-to-market improvement for applications
-- Reduction in development effort through shared components
-- Platform reliability and performance metrics
-- Security vulnerability reduction in .NET applications
-- Successful delivery of platform roadmap items
-- Business value delivery through platform capabilities
-- Return on investment for platform initiatives
-- Innovation in .NET capabilities
+| Metric | Target | Frequency |
+|---|---|---|
+| Developer satisfaction with .NET platform | ≥85% (proposed) | Quarterly |
+| Platform adoption rates across development teams | — | — |
+| Time-to-market improvement for applications | — | — |
+| Reduction in development effort through shared components | — | — |
+| Platform reliability and performance metrics | — | — |
+| Security vulnerability reduction in .NET applications | — | — |
+| Successful delivery of platform roadmap items | — | — |
+| Business value delivery through platform capabilities | — | — |
+| Return on investment for platform initiatives | — | — |
+| Innovation in .NET capabilities | — | — |
 
 ## Remote Work Considerations
 

@@ -129,16 +129,18 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 
 ## Key Performance Indicators
 
-- .NET platform reliability and performance metrics
-- Code quality and maintainability scores
-- Implementation quality of .NET solutions
-- Time to resolution for complex .NET issues
-- Knowledge transfer effectiveness to junior developers
-- .NET security posture improvement
-- Successful implementation of .NET standards
-- Reduction in technical debt
-- Innovation in .NET platform capabilities
-- Team productivity improvements through frameworks
+| Metric | Target | Frequency |
+|---|---|---|
+| .NET platform reliability and performance metrics | — | — |
+| Code quality and maintainability scores | — | — |
+| Implementation quality of .NET solutions | — | — |
+| Time to resolution for complex .NET issues | — | — |
+| Knowledge transfer effectiveness to junior developers | — | — |
+| .NET security posture improvement | — | — |
+| Successful implementation of .NET standards | — | — |
+| Reduction in technical debt | — | — |
+| Innovation in .NET platform capabilities | — | — |
+| Team productivity improvements through frameworks | — | — |
 
 ## Remote Work Considerations
 

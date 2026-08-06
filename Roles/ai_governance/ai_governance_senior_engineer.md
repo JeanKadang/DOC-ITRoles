@@ -132,13 +132,15 @@ The AI Governance Senior Engineer implements, operates, and continuously improve
 
 ## Key Performance Indicators
 
-- AI system inventory completeness (percentage of known AI systems assessed and classified)
-- Assessment cycle time (average days from request to completed risk assessment)
-- Bias testing coverage of in-scope production AI models
-- Audit finding rate and remediation time for AI governance findings
-- GenAI deployment compliance review completion rate
-- AI incident documentation completeness and timeliness
-- Governance tooling availability and data quality scores
+| Metric | Target | Frequency |
+|---|---|---|
+| AI system inventory completeness (percentage of known AI systems assessed and classified) | — | — |
+| Assessment cycle time (average days from request to completed risk assessment) | — | — |
+| Bias testing coverage of in-scope production AI models | — | — |
+| Audit finding rate and remediation time for AI governance findings | — | — |
+| GenAI deployment compliance review completion rate | — | — |
+| AI incident documentation completeness and timeliness | — | — |
+| Governance tooling availability and data quality scores | ≥99.9% (proposed) | Monthly |
 
 ## Remote Work Considerations
 

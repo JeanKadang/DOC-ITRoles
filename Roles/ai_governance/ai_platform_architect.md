@@ -144,13 +144,15 @@ The AI Platform Architect designs and governs the organisation's AI/ML platform 
 
 ## Key Performance Indicators
 
-- Model deployment lead time: median time from model registry approval to production endpoint availability — target ≤2 business days for standard deployment patterns
-- ML platform availability: ≥99.5% uptime for model serving and experiment tracking services per month
-- Feature store reuse rate: ≥40% of production ML features consumed from the shared feature store rather than per-team custom computation
-- MLOps pipeline adoption: ≥80% of production ML models deployed via governed CI/CT/CD pipelines within 12 months of standard publication
-- Time to provision ML experiment environment: median new experiment environment ready within 1 business day
-- AI infrastructure cost per model training job: tracked and within FinOps governance thresholds each quarter
-- Governance checkpoint compliance: 100% of high-risk AI models passed through bias evaluation and documentation pipeline before production deployment
+| Metric | Target | Frequency |
+|---|---|---|
+| Model deployment lead time: median time from model registry approval to production endpoint availability — target ≤2 business days for standard deployment patterns | ≤2 business days | — |
+| ML platform availability: ≥99.5% uptime for model serving and experiment tracking services per month | ≥99.5% | — |
+| Feature store reuse rate: ≥40% of production ML features consumed from the shared feature store rather than per-team custom computation | ≥40% | — |
+| MLOps pipeline adoption: ≥80% of production ML models deployed via governed CI/CT/CD pipelines within 12 months of standard publication | ≥80% | — |
+| Time to provision ML experiment environment: median new experiment environment ready within 1 business day | — | — |
+| AI infrastructure cost per model training job: tracked and within FinOps governance thresholds each quarter | — | — |
+| Governance checkpoint compliance: 100% of high-risk AI models passed through bias evaluation and documentation pipeline before production deployment | 100% | — |
 
 ## Remote Work Considerations
 

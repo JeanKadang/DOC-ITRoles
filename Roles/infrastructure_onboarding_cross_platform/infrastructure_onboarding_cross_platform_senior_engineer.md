@@ -130,16 +130,18 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 
 ## Key Performance Indicators
 
-- Infrastructure provisioning time efficiency
-- Automation coverage across infrastructure domains
-- Provisioning success rate and reliability
-- Implementation quality of onboarding solutions
-- Resolution time for onboarding incidents
-- Knowledge transfer effectiveness to engineers
-- Standardization level of infrastructure deployments
-- Innovation in onboarding approaches
-- Cross-platform integration effectiveness
-- Stakeholder satisfaction with onboarding processes
+| Metric | Target | Frequency |
+|---|---|---|
+| Infrastructure provisioning time efficiency | — | — |
+| Automation coverage across infrastructure domains | — | — |
+| Provisioning success rate and reliability | — | — |
+| Implementation quality of onboarding solutions | — | — |
+| Resolution time for onboarding incidents | — | — |
+| Knowledge transfer effectiveness to engineers | — | — |
+| Standardization level of infrastructure deployments | — | — |
+| Innovation in onboarding approaches | — | — |
+| Cross-platform integration effectiveness | — | — |
+| Stakeholder satisfaction with onboarding processes | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

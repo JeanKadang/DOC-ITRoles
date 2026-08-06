@@ -143,16 +143,18 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 ## Key Performance Indicators
 
-- Accuracy of cost allocation and tagging
-- Cloud cost reduction achievements
-- Timeliness of cost reporting and analysis
-- Quality of cost optimization implementations
-- Effectiveness of monitoring and alerting setup
-- Resource tagging compliance percentage
-- Reserved/committed capacity optimization
-- Documentation quality and completeness
-- User satisfaction with cost management tools
-- Problem resolution time for billing issues
+| Metric | Target | Frequency |
+|---|---|---|
+| Accuracy of cost allocation and tagging | — | — |
+| Cloud cost reduction achievements | — | — |
+| Timeliness of cost reporting and analysis | — | — |
+| Quality of cost optimization implementations | — | — |
+| Effectiveness of monitoring and alerting setup | — | — |
+| Resource tagging compliance percentage | — | — |
+| Reserved/committed capacity optimization | — | — |
+| Documentation quality and completeness | — | — |
+| User satisfaction with cost management tools | ≥85% (proposed) | Quarterly |
+| Problem resolution time for billing issues | — | — |
 
 ## Remote Work Considerations
 

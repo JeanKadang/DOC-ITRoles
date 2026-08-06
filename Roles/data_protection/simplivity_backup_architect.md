@@ -127,16 +127,18 @@ The SimpliVity Backup Architect designs and oversees data protection strategies 
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of solutions with business requirements
-- Backup architecture scalability and flexibility
-- Cost efficiency of designed solutions
-- Recovery capabilities meeting or exceeding SLAs
-- Adoption of reference architectures and standards
-- Reduction in data protection architectural risks
-- Innovation in backup approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of solutions with business requirements | — | — |
+| Backup architecture scalability and flexibility | — | — |
+| Cost efficiency of designed solutions | — | — |
+| Recovery capabilities meeting or exceeding SLAs | — | — |
+| Adoption of reference architectures and standards | — | — |
+| Reduction in data protection architectural risks | — | — |
+| Innovation in backup approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

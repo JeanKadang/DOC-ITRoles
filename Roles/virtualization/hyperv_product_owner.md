@@ -118,14 +118,16 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 
 ## Key Performance Indicators
 
-- Stakeholder satisfaction with Hyper-V services
-- Achievement of roadmap milestones and delivery objectives
-- Effective prioritization of features and initiatives
-- Quality of service metrics for Hyper-V environments
-- Alignment of Hyper-V capabilities with business needs
-- Cost optimization and value delivery
-- Clear backlog management and sprint execution
-- Successful adoption of new Hyper-V features and capabilities
+| Metric | Target | Frequency |
+|---|---|---|
+| Stakeholder satisfaction with Hyper-V services | ≥85% (proposed) | Quarterly |
+| Achievement of roadmap milestones and delivery objectives | — | — |
+| Effective prioritization of features and initiatives | — | — |
+| Quality of service metrics for Hyper-V environments | — | — |
+| Alignment of Hyper-V capabilities with business needs | — | — |
+| Cost optimization and value delivery | — | — |
+| Clear backlog management and sprint execution | — | — |
+| Successful adoption of new Hyper-V features and capabilities | — | — |
 
 ## Key Focus Areas
 

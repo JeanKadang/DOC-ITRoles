@@ -110,12 +110,14 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 
 ## Key Performance Indicators
 
-- Reliability and performance of CI/CD pipelines
-- Time to resolve pipeline and automation issues
-- Quality of DevOps documentation and runbooks
-- Successful implementation of standard pipeline patterns
-- Effectiveness of deployment automation
-- Support responsiveness to development teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Reliability and performance of CI/CD pipelines | — | — |
+| Time to resolve pipeline and automation issues | — | — |
+| Quality of DevOps documentation and runbooks | — | — |
+| Successful implementation of standard pipeline patterns | — | — |
+| Effectiveness of deployment automation | — | — |
+| Support responsiveness to development teams | — | — |
 
 ## Key Technologies
 

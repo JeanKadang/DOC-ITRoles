@@ -109,16 +109,18 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 
 ## Key Performance Indicators
 
-- Successful implementation rate of complex Kubernetes solutions
-- Platform reliability metrics (uptime, stability)
-- Mean time to recovery for platform incidents
-- Deployment automation effectiveness
-- Knowledge transfer metrics for mentored engineers
-- Kubernetes platform security posture scores
-- Resource utilization efficiency metrics
-- Contribution to platform standards adoption
-- Implementation of innovative container solutions
-- Reduced operational overhead through automation
+| Metric | Target | Frequency |
+|---|---|---|
+| Successful implementation rate of complex Kubernetes solutions | — | — |
+| Platform reliability metrics (uptime, stability) | ≥99.9% (proposed) | Monthly |
+| Mean time to recovery for platform incidents | — | — |
+| Deployment automation effectiveness | — | — |
+| Knowledge transfer metrics for mentored engineers | — | — |
+| Kubernetes platform security posture scores | — | — |
+| Resource utilization efficiency metrics | — | — |
+| Contribution to platform standards adoption | — | — |
+| Implementation of innovative container solutions | — | — |
+| Reduced operational overhead through automation | — | — |
 
 ## Key Technologies
 

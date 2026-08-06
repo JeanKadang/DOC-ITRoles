@@ -130,16 +130,18 @@ The Identity Management Architect designs and oversees the organization's identi
 
 ## Key Performance Indicators
 
-- Identity architecture quality and effectiveness
-- Alignment of solutions with security and business requirements
-- Identity system reliability and scalability
-- User experience improvements through architecture
-- Security posture improvement via identity controls
-- Adoption of identity standards and patterns
-- Reduction in identity-related security incidents
-- Innovation in identity management approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
+| Metric | Target | Frequency |
+|---|---|---|
+| Identity architecture quality and effectiveness | — | — |
+| Alignment of solutions with security and business requirements | — | — |
+| Identity system reliability and scalability | — | — |
+| User experience improvements through architecture | — | — |
+| Security posture improvement via identity controls | — | — |
+| Adoption of identity standards and patterns | — | — |
+| Reduction in identity-related security incidents | — | — |
+| Innovation in identity management approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
 
 ## Remote Work Considerations
 

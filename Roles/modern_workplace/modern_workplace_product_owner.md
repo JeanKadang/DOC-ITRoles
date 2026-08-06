@@ -131,12 +131,14 @@ The Modern Workplace Product Owner (PO) owns the vision, roadmap, and delivery b
 
 ## Key Performance Indicators
 
-- M365 workload adoption rates (monthly active users by product)
-- Microsoft 365 Copilot adoption (active users / licensed)
-- Licensing utilisation efficiency (active use / licensed seats)
-- Employee satisfaction with digital workplace tools (annual survey)
-- Backlog velocity and sprint delivery predictability
-- Roadmap milestones delivered against plan
+| Metric | Target | Frequency |
+|---|---|---|
+| M365 workload adoption rates (monthly active users by product) | — | Monthly |
+| Microsoft 365 Copilot adoption (active users / licensed) | — | — |
+| Licensing utilisation efficiency (active use / licensed seats) | — | — |
+| Employee satisfaction with digital workplace tools (annual survey) | ≥85% (proposed) | Annual |
+| Backlog velocity and sprint delivery predictability | — | — |
+| Roadmap milestones delivered against plan | — | — |
 
 ## Remote Work Considerations
 

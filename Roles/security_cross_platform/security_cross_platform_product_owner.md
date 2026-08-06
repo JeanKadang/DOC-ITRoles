@@ -134,12 +134,14 @@ The Security Cross-Platform Product Owner manages the portfolio of security serv
 
 ## Key Performance Indicators
 
-- On-time delivery of cross-platform security capabilities
-- Consistent implementation of security features across various technology domains
-- Stakeholder satisfaction with security services that span multiple platforms
-- Measurable improvement in security posture across domains
-- Effective prioritization of security initiatives based on risk and business impact
-- Reduced time-to-market for security controls through coordinated implementation
+| Metric | Target | Frequency |
+|---|---|---|
+| On-time delivery of cross-platform security capabilities | — | — |
+| Consistent implementation of security features across various technology domains | — | — |
+| Stakeholder satisfaction with security services that span multiple platforms | ≥85% (proposed) | Quarterly |
+| Measurable improvement in security posture across domains | — | — |
+| Effective prioritization of security initiatives based on risk and business impact | — | — |
+| Reduced time-to-market for security controls through coordinated implementation | — | — |
 
 ## Remote Work Considerations
 

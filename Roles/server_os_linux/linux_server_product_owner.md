@@ -148,16 +148,18 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 
 ## Key Performance Indicators
 
-- Linux platform availability and reliability metrics
-- Time to provision new Linux servers
-- Linux patching compliance percentages
-- Stakeholder satisfaction with Linux services
-- Linux-related incident reduction
-- Successful delivery of Linux roadmap items
-- Self-service adoption for Linux provisioning
-- Linux automation coverage percentage
-- Linux security compliance scores
-- Cost efficiency of Linux platform
+| Metric | Target | Frequency |
+|---|---|---|
+| Linux platform availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Time to provision new Linux servers | — | — |
+| Linux patching compliance percentages | — | — |
+| Stakeholder satisfaction with Linux services | ≥85% (proposed) | Quarterly |
+| Linux-related incident reduction | — | — |
+| Successful delivery of Linux roadmap items | — | — |
+| Self-service adoption for Linux provisioning | — | — |
+| Linux automation coverage percentage | — | — |
+| Linux security compliance scores | — | — |
+| Cost efficiency of Linux platform | — | — |
 
 ## Remote Work Considerations
 

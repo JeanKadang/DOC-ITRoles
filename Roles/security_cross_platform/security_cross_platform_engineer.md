@@ -135,16 +135,18 @@ The Security Cross-Platform Engineer implements and maintains security controls 
 
 ## Key Performance Indicators
 
-- Number of security controls successfully implemented
-- Reduction in security vulnerabilities across platforms
-- Time to resolve security configuration issues
-- Coverage of security monitoring across environments
-- Documentation quality and completeness
-- Compliance with security standards in implementations
-- Time to implement critical security patches
-- Success rate of security control testing
-- Collaboration effectiveness with domain teams
-- Security posture improvement metrics
+| Metric | Target | Frequency |
+|---|---|---|
+| Number of security controls successfully implemented | — | — |
+| Reduction in security vulnerabilities across platforms | — | — |
+| Time to resolve security configuration issues | — | — |
+| Coverage of security monitoring across environments | — | — |
+| Documentation quality and completeness | — | — |
+| Compliance with security standards in implementations | — | — |
+| Time to implement critical security patches | — | — |
+| Success rate of security control testing | — | — |
+| Collaboration effectiveness with domain teams | — | — |
+| Security posture improvement metrics | — | — |
 
 ## Remote Work Considerations
 

@@ -140,12 +140,14 @@ The Solution Architect is responsible for designing end-to-end technical solutio
 
 ## Key Performance Indicators
 
-- Solution design approval time at Architecture Review Board
-- Post-go-live defect rate attributable to design issues
-- Stakeholder satisfaction scores on design quality and communication
-- Accuracy of solution cost estimates (budget vs. actuals)
-- NFR compliance rate of delivered solutions in first 3 months
-- Volume of solutions successfully delivered per year
+| Metric | Target | Frequency |
+|---|---|---|
+| Solution design approval time at Architecture Review Board | — | — |
+| Post-go-live defect rate attributable to design issues | — | — |
+| Stakeholder satisfaction scores on design quality and communication | ≥85% (proposed) | Quarterly |
+| Accuracy of solution cost estimates (budget vs. actuals) | — | — |
+| NFR compliance rate of delivered solutions in first 3 months | — | — |
+| Volume of solutions successfully delivered per year | — | — |
 
 ## Remote Work Considerations
 

@@ -147,17 +147,19 @@ The High-Performance Computing (HPC) Architect leads the design, implementation,
 
 ## Key Performance Indicators
 
-- Architectural design quality and alignment with business needs
-- System performance benchmarks against industry standards
-- Cost efficiency and resource optimization achievements
-- Successful implementation of new technologies and approaches
-- Time-to-solution improvements for computational workloads
-- Security and compliance adherence in HPC environments
-- Knowledge transfer effectiveness and documentation quality
-- Stakeholder satisfaction with HPC capabilities
-- Innovation in HPC solutions and approaches
-- Sustainability improvements in HPC operations
-- Edge-to-cloud latency SLA adherence: ≥99% of edge inference workloads meeting defined end-to-end latency SLAs
+| Metric | Target | Frequency |
+|---|---|---|
+| Architectural design quality and alignment with business needs | — | — |
+| System performance benchmarks against industry standards | — | — |
+| Cost efficiency and resource optimization achievements | — | — |
+| Successful implementation of new technologies and approaches | — | — |
+| Time-to-solution improvements for computational workloads | — | — |
+| Security and compliance adherence in HPC environments | — | — |
+| Knowledge transfer effectiveness and documentation quality | — | — |
+| Stakeholder satisfaction with HPC capabilities | ≥85% (proposed) | Quarterly |
+| Innovation in HPC solutions and approaches | — | — |
+| Sustainability improvements in HPC operations | — | — |
+| Edge-to-cloud latency SLA adherence: ≥99% of edge inference workloads meeting defined end-to-end latency SLAs | ≥99% | — |
 
 ## Remote Work Considerations
 

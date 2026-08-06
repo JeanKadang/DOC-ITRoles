@@ -131,14 +131,16 @@ The Enterprise Architecture Senior Engineer operates at the intersection of tech
 
 ## Key Performance Indicators
 
-- Architecture repository completeness and data quality score
-- Architecture review board cycle time (days from submission to decision)
-- Reference architecture adoption rate across delivery projects
-- Technology radar publication frequency and currency
-- Stakeholder satisfaction with architecture governance support and tooling
-- Standards documentation coverage (percentage of domains with current reference architectures)
-- Action item closure rate from architecture review board decisions
-- Architecture community of practice engagement metrics
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture repository completeness and data quality score | — | — |
+| Architecture review board cycle time (days from submission to decision) | — | — |
+| Reference architecture adoption rate across delivery projects | — | — |
+| Technology radar publication frequency and currency | — | — |
+| Stakeholder satisfaction with architecture governance support and tooling | ≥85% (proposed) | Quarterly |
+| Standards documentation coverage (percentage of domains with current reference architectures) | — | — |
+| Action item closure rate from architecture review board decisions | — | — |
+| Architecture community of practice engagement metrics | — | — |
 
 ## Remote Work Considerations
 

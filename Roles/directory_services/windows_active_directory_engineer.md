@@ -128,16 +128,18 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 
 ## Key Performance Indicators
 
-- Active Directory availability and uptime
-- User provisioning and deprovisioning efficiency
-- Group Policy implementation accuracy
-- Directory service backup success rate
-- Time to resolve Active Directory incidents
-- Documentation quality and completeness
-- Active Directory security posture
-- Successful implementation of directory standards
-- User satisfaction with identity services
-- Domain controller health and performance
+| Metric | Target | Frequency |
+|---|---|---|
+| Active Directory availability and uptime | ≥99.9% (proposed) | Monthly |
+| User provisioning and deprovisioning efficiency | — | — |
+| Group Policy implementation accuracy | — | — |
+| Directory service backup success rate | ≥99% (proposed) | Monthly |
+| Time to resolve Active Directory incidents | — | — |
+| Documentation quality and completeness | — | — |
+| Active Directory security posture | — | — |
+| Successful implementation of directory standards | — | — |
+| User satisfaction with identity services | ≥85% (proposed) | Quarterly |
+| Domain controller health and performance | — | — |
 
 ## Remote Work Considerations
 

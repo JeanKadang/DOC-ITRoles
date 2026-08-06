@@ -133,16 +133,18 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 ## Key Performance Indicators
 
-- Platform component reliability and uptime
-- Implementation quality of platform features
-- Documentation quality and completeness
-- Developer onboarding efficiency
-- Platform issue resolution time
-- Self-service capability effectiveness
-- Template and golden path usage rates
-- Developer support responsiveness
-- Platform deployment automation success rate
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| Platform component reliability and uptime | ≥99.9% (proposed) | Monthly |
+| Implementation quality of platform features | — | — |
+| Documentation quality and completeness | — | — |
+| Developer onboarding efficiency | — | — |
+| Platform issue resolution time | — | — |
+| Self-service capability effectiveness | — | — |
+| Template and golden path usage rates | — | — |
+| Developer support responsiveness | — | — |
+| Platform deployment automation success rate | — | — |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

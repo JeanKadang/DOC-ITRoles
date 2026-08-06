@@ -128,16 +128,18 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 
 ## Key Performance Indicators
 
-- GCP environment uptime and reliability
-- Time to provision new cloud resources
-- Resolution time for cloud service incidents
-- GCP cost management effectiveness
-- Security compliance in GCP environments
-- Documentation quality for GCP configurations
-- Successful implementation of standard patterns
-- GCP resource utilization efficiency
-- User satisfaction with GCP services
-- Knowledge sharing and collaboration
+| Metric | Target | Frequency |
+|---|---|---|
+| GCP environment uptime and reliability | ≥99.9% (proposed) | Monthly |
+| Time to provision new cloud resources | — | — |
+| Resolution time for cloud service incidents | — | — |
+| GCP cost management effectiveness | — | — |
+| Security compliance in GCP environments | — | — |
+| Documentation quality for GCP configurations | — | — |
+| Successful implementation of standard patterns | — | — |
+| GCP resource utilization efficiency | — | — |
+| User satisfaction with GCP services | ≥85% (proposed) | Quarterly |
+| Knowledge sharing and collaboration | — | — |
 
 ## Remote Work Considerations
 

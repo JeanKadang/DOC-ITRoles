@@ -123,16 +123,18 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 ## Key Performance Indicators
 
-- Azure environment availability and reliability
-- Time to provision new cloud resources
-- Azure cost optimization efforts
-- Resolution time for cloud service incidents
-- Quality of IaC implementation
-- Security compliance in Azure deployments
-- Documentation quality for Azure configurations
-- Successful implementation of standard patterns
-- Azure service monitoring coverage
-- Knowledge sharing with team members
+| Metric | Target | Frequency |
+|---|---|---|
+| Azure environment availability and reliability | ≥99.9% (proposed) | Monthly |
+| Time to provision new cloud resources | — | — |
+| Azure cost optimization efforts | — | — |
+| Resolution time for cloud service incidents | — | — |
+| Quality of IaC implementation | — | — |
+| Security compliance in Azure deployments | — | — |
+| Documentation quality for Azure configurations | — | — |
+| Successful implementation of standard patterns | — | — |
+| Azure service monitoring coverage | — | — |
+| Knowledge sharing with team members | — | — |
 
 ## Remote Work Considerations
 

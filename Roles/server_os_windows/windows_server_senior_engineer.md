@@ -140,16 +140,18 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 
 ## Key Performance Indicators
 
-- Windows environment availability and reliability metrics
-- Implementation quality of Windows solutions
-- Time to resolve critical Windows incidents
-- Automation coverage for Windows administration
-- Security compliance scores for Windows servers
-- Knowledge transfer effectiveness to junior engineers
-- Successful implementation of Windows standards
-- Server performance optimization metrics
-- Project delivery timeliness and quality
-- Innovation in Windows platform capabilities
+| Metric | Target | Frequency |
+|---|---|---|
+| Windows environment availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Implementation quality of Windows solutions | — | — |
+| Time to resolve critical Windows incidents | — | — |
+| Automation coverage for Windows administration | — | — |
+| Security compliance scores for Windows servers | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Successful implementation of Windows standards | — | — |
+| Server performance optimization metrics | — | — |
+| Project delivery timeliness and quality | — | — |
+| Innovation in Windows platform capabilities | — | — |
 
 ## Remote Work Considerations
 

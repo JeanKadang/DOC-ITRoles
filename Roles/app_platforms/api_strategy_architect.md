@@ -144,14 +144,16 @@ The API Strategy Architect defines and governs the organisation's end-to-end API
 
 ## Key Performance Indicators
 
-- API governance standard adoption rate: ≥85% of new APIs passing automated Spectral governance checks before publication
-- API contract compliance rate: ≥90% of published APIs conforming to the organisation's OpenAPI / AsyncAPI specification standards
-- Consumer-driven contract test coverage: ≥70% of externally consumed APIs covered by Pact contract tests within CI/CD pipelines within 12 months of standard publication
-- Time-to-publish for new external APIs: median time from design approval to published developer portal listing ≤10 business days
-- Developer portal API catalogue completeness: ≥95% of published APIs have complete documentation including examples, changelog, and deprecation notices
-- Breaking change incident rate: fewer than 3 breaking-change-related integration incidents per quarter attributable to API lifecycle policy gaps
-- API deprecation compliance: ≥90% of deprecated APIs retired on schedule per published deprecation timeline
-- API security governance coverage: 100% of externally published APIs reviewed against the API security governance framework before publication
+| Metric | Target | Frequency |
+|---|---|---|
+| API governance standard adoption rate: ≥85% of new APIs passing automated Spectral governance checks before publication | ≥85% | — |
+| API contract compliance rate: ≥90% of published APIs conforming to the organisation's OpenAPI / AsyncAPI specification standards | ≥90% | — |
+| Consumer-driven contract test coverage: ≥70% of externally consumed APIs covered by Pact contract tests within CI/CD pipelines within 12 months of standard publication | ≥70% | — |
+| Time-to-publish for new external APIs: median time from design approval to published developer portal listing ≤10 business days | ≤10 business days | — |
+| Developer portal API catalogue completeness: ≥95% of published APIs have complete documentation including examples, changelog, and deprecation notices | ≥95% | — |
+| Breaking change incident rate: fewer than 3 breaking-change-related integration incidents per quarter attributable to API lifecycle policy gaps | — | — |
+| API deprecation compliance: ≥90% of deprecated APIs retired on schedule per published deprecation timeline | ≥90% | — |
+| API security governance coverage: 100% of externally published APIs reviewed against the API security governance framework before publication | 100% | — |
 
 ## Remote Work Considerations
 

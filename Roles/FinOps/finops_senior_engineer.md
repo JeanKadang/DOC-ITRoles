@@ -137,16 +137,18 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 ## Key Performance Indicators
 
-- Cloud cost reduction achievements
-- Automation coverage for FinOps processes
-- Accuracy of cost allocation systems
-- Time to resolve complex cost issues
-- Effectiveness of anomaly detection
-- Knowledge transfer to junior team members
-- Innovation in cost optimization approaches
-- Implementation quality of FinOps standards
-- Cross-team collaboration effectiveness
-- Data quality and reliability metrics
+| Metric | Target | Frequency |
+|---|---|---|
+| Cloud cost reduction achievements | — | — |
+| Automation coverage for FinOps processes | — | — |
+| Accuracy of cost allocation systems | — | — |
+| Time to resolve complex cost issues | — | — |
+| Effectiveness of anomaly detection | — | — |
+| Knowledge transfer to junior team members | — | — |
+| Innovation in cost optimization approaches | — | — |
+| Implementation quality of FinOps standards | — | — |
+| Cross-team collaboration effectiveness | — | — |
+| Data quality and reliability metrics | — | — |
 
 ## Remote Work Considerations
 

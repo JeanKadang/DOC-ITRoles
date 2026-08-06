@@ -140,12 +140,14 @@ The Endpoint Management Senior Engineer designs, implements, and maintains compl
 
 ## Key Performance Indicators
 
-- Device compliance percentage across managed platforms (target: >97%)
-- Patch ring completion rate within defined SLAs
-- Autopilot success rate (target: >95%)
-- Application deployment success rate
-- Escalation ticket resolution time
-- Number of automated remediation scripts deployed (increasing trend)
+| Metric | Target | Frequency |
+|---|---|---|
+| Device compliance percentage across managed platforms (target: >97%) | >97% | — |
+| Patch ring completion rate within defined SLAs | — | — |
+| Autopilot success rate (target: >95%) | >95% | — |
+| Application deployment success rate | — | — |
+| Escalation ticket resolution time | — | — |
+| Number of automated remediation scripts deployed (increasing trend) | — | — |
 
 ## Remote Work Considerations
 

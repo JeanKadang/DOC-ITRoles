@@ -141,18 +141,20 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 ## Key Performance Indicators
 
-- ML model deployment time and reliability
-- Pipeline automation coverage
-- Model serving availability and performance
-- Time to detect and resolve model issues
-- Model deployment frequency
-- Infrastructure cost optimization for ML workloads
-- Reproducibility of ML workflows
-- Model monitoring coverage
-- Feature engineering automation level
-- Knowledge sharing and documentation quality
-- Edge model deployment automation coverage: ≥80% of edge model updates delivered via automated pipelines
-- Edge model drift detection rate: ≥90% of edge-deployed models under active performance monitoring
+| Metric | Target | Frequency |
+|---|---|---|
+| ML model deployment time and reliability | — | — |
+| Pipeline automation coverage | — | — |
+| Model serving availability and performance | ≥99.9% (proposed) | Monthly |
+| Time to detect and resolve model issues | ≤24 hours (proposed) | Monthly |
+| Model deployment frequency | Weekly or better (proposed) | Monthly |
+| Infrastructure cost optimization for ML workloads | — | — |
+| Reproducibility of ML workflows | — | — |
+| Model monitoring coverage | — | — |
+| Feature engineering automation level | — | — |
+| Knowledge sharing and documentation quality | — | — |
+| Edge model deployment automation coverage: ≥80% of edge model updates delivered via automated pipelines | ≥80% | — |
+| Edge model drift detection rate: ≥90% of edge-deployed models under active performance monitoring | ≥90% | — |
 
 ## Remote Work Considerations
 

@@ -136,13 +136,15 @@ The AI Governance Product Owner owns the AI governance product backlog, managing
 
 ## Key Performance Indicators
 
-- AI governance backlog delivery rate: ≥85% of committed sprint items delivered each sprint
-- Regulatory milestone delivery: 100% of EU AI Act / ISO 42001 compliance programme milestones met on schedule
-- AI risk register completeness: ≥95% of in-scope AI systems with assessments completed within the review cycle
-- Audit readiness: zero critical audit findings attributable to governance programme delivery gaps in annual internal or external audits
-- Governance tooling adoption: ≥80% of AI teams using governed processes (model cards, risk assessments) within 6 months of tooling launch
-- Time-to-compliance: new regulatory requirements translated into backlog items within 10 business days of guidance publication
-- Stakeholder satisfaction: AI governance programme NPS from Business Unit AI teams ≥7/10
+| Metric | Target | Frequency |
+|---|---|---|
+| AI governance backlog delivery rate: ≥85% of committed sprint items delivered each sprint | ≥85% | — |
+| Regulatory milestone delivery: 100% of EU AI Act / ISO 42001 compliance programme milestones met on schedule | 100% | — |
+| AI risk register completeness: ≥95% of in-scope AI systems with assessments completed within the review cycle | ≥95% | — |
+| Audit readiness: zero critical audit findings attributable to governance programme delivery gaps in annual internal or external audits | — | Annual |
+| Governance tooling adoption: ≥80% of AI teams using governed processes (model cards, risk assessments) within 6 months of tooling launch | ≥80% | — |
+| Time-to-compliance: new regulatory requirements translated into backlog items within 10 business days of guidance publication | — | — |
+| Stakeholder satisfaction: AI governance programme NPS from Business Unit AI teams ≥7/10 | ≥7 | — |
 
 ## Remote Work Considerations
 

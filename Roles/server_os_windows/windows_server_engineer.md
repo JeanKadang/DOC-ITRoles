@@ -138,16 +138,18 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 
 ## Key Performance Indicators
 
-- Windows Server availability and reliability metrics
-- Patch compliance percentages
-- Time to implement standard server configurations
-- Service request resolution time
-- Documentation quality and completeness
-- Group Policy implementation accuracy
-- Backup success rate and recovery effectiveness
-- Change implementation success rate
-- Adherence to security standards and best practices
-- User satisfaction with server services
+| Metric | Target | Frequency |
+|---|---|---|
+| Windows Server availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Patch compliance percentages | ≥95% (proposed) | Monthly |
+| Time to implement standard server configurations | — | — |
+| Service request resolution time | — | — |
+| Documentation quality and completeness | — | — |
+| Group Policy implementation accuracy | — | — |
+| Backup success rate and recovery effectiveness | ≥99% (proposed) | Monthly |
+| Change implementation success rate | — | — |
+| Adherence to security standards and best practices | — | — |
+| User satisfaction with server services | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

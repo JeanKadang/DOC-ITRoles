@@ -129,16 +129,18 @@ The Service Management Product Owner manages the development and lifecycle of th
 
 ## Key Performance Indicators
 
-- Service availability and reliability metrics
-- Time-to-resolution for incidents and service requests
-- Customer satisfaction with IT services
-- Self-service adoption rates
-- Successful implementation of ITIL processes
-- Service catalog maturity and adoption
-- ITSM platform enhancement delivery
-- Process automation effectiveness
-- Knowledge base utilization and quality
-- Return on investment for ITSM initiatives
+| Metric | Target | Frequency |
+|---|---|---|
+| Service availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Time-to-resolution for incidents and service requests | — | — |
+| Customer satisfaction with IT services | ≥85% (proposed) | Quarterly |
+| Self-service adoption rates | — | — |
+| Successful implementation of ITIL processes | — | — |
+| Service catalog maturity and adoption | — | — |
+| ITSM platform enhancement delivery | — | — |
+| Process automation effectiveness | — | — |
+| Knowledge base utilization and quality | — | — |
+| Return on investment for ITSM initiatives | — | — |
 
 ## Remote Work Considerations
 

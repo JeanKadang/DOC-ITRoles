@@ -129,16 +129,18 @@ The Service Management Architect designs comprehensive strategies and architectu
 
 ## Key Performance Indicators
 
-- Architecture design quality and effectiveness
-- Alignment of ITSM designs with business requirements
-- Process efficiency and effectiveness metrics
-- Service integration reliability
-- Adoption of ITSM reference architectures
-- Reduction in service-related incidents
-- Innovation in service management approaches
-- Technical leadership effectiveness
-- Knowledge transfer to engineering teams
-- Service management maturity improvement
+| Metric | Target | Frequency |
+|---|---|---|
+| Architecture design quality and effectiveness | — | — |
+| Alignment of ITSM designs with business requirements | — | — |
+| Process efficiency and effectiveness metrics | — | — |
+| Service integration reliability | — | — |
+| Adoption of ITSM reference architectures | — | — |
+| Reduction in service-related incidents | — | — |
+| Innovation in service management approaches | — | — |
+| Technical leadership effectiveness | — | — |
+| Knowledge transfer to engineering teams | — | — |
+| Service management maturity improvement | — | — |
 
 ## Remote Work Considerations
 

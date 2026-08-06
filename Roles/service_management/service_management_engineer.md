@@ -130,16 +130,18 @@ The Service Management Engineer implements and maintains IT service management p
 
 ## Key Performance Indicators
 
-- ITSM configuration implementation quality
-- Time to complete service management requests
-- Service catalog effectiveness
-- Workflow automation success rate
-- Documentation quality and completeness
-- User satisfaction with ITSM tools
-- Reporting and dashboard utility
-- Resolution time for ITSM platform issues
-- Knowledge sharing and collaboration
-- Process automation efficiency
+| Metric | Target | Frequency |
+|---|---|---|
+| ITSM configuration implementation quality | — | — |
+| Time to complete service management requests | — | — |
+| Service catalog effectiveness | — | — |
+| Workflow automation success rate | — | — |
+| Documentation quality and completeness | — | — |
+| User satisfaction with ITSM tools | ≥85% (proposed) | Quarterly |
+| Reporting and dashboard utility | — | — |
+| Resolution time for ITSM platform issues | — | — |
+| Knowledge sharing and collaboration | — | — |
+| Process automation efficiency | — | — |
 
 ## Remote Work Considerations
 

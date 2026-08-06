@@ -143,12 +143,14 @@ The Modern Workplace Architect is responsible for designing, governing, and evol
 
 ## Key Performance Indicators
 
-- Microsoft 365 service availability (Exchange, Teams, SharePoint)
-- Microsoft Secure Score target achievement
-- M365 Copilot adoption rate (active users / licensed users)
-- DLP policy match and block accuracy rate
-- eDiscovery case turnaround time (Legal SLA compliance)
-- User satisfaction with collaboration tools (annual survey)
+| Metric | Target | Frequency |
+|---|---|---|
+| Microsoft 365 service availability (Exchange, Teams, SharePoint) | ≥99.9% (proposed) | Monthly |
+| Microsoft Secure Score target achievement | — | — |
+| M365 Copilot adoption rate (active users / licensed users) | — | — |
+| DLP policy match and block accuracy rate | — | — |
+| eDiscovery case turnaround time (Legal SLA compliance) | ≥95% (proposed) | Monthly |
+| User satisfaction with collaboration tools (annual survey) | ≥85% (proposed) | Annual |
 
 ## Remote Work Considerations
 

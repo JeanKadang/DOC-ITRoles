@@ -147,16 +147,18 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 
 ## Key Performance Indicators
 
-- Cloud cost reduction achievements
-- Forecast accuracy for cloud spending
-- Stakeholder satisfaction with cost transparency
-- Cost allocation coverage and accuracy
-- On-time delivery of FinOps roadmap items
-- Adoption of FinOps practices across teams
-- Quality of backlog management
-- Unit economics improvement metrics
-- Reserved/committed capacity optimization
-- FinOps maturity progression
+| Metric | Target | Frequency |
+|---|---|---|
+| Cloud cost reduction achievements | — | — |
+| Forecast accuracy for cloud spending | — | — |
+| Stakeholder satisfaction with cost transparency | ≥85% (proposed) | Quarterly |
+| Cost allocation coverage and accuracy | — | — |
+| On-time delivery of FinOps roadmap items | — | — |
+| Adoption of FinOps practices across teams | — | — |
+| Quality of backlog management | — | — |
+| Unit economics improvement metrics | — | — |
+| Reserved/committed capacity optimization | — | — |
+| FinOps maturity progression | — | — |
 
 ## Remote Work Considerations
 

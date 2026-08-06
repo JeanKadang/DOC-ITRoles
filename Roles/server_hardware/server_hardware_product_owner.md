@@ -151,16 +151,18 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 
 ## Key Performance Indicators
 
-- Server hardware availability and reliability metrics
-- Hardware procurement cycle efficiency
-- Server provisioning time metrics
-- Hardware costs versus performance benchmarks
-- Energy efficiency metrics (PUE, DCiE)
-- Hardware standardization percentage
-- Asset lifecycle management effectiveness
-- Successful delivery of hardware roadmap items
-- Hardware incident reduction trends
-- Stakeholder satisfaction with server infrastructure
+| Metric | Target | Frequency |
+|---|---|---|
+| Server hardware availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Hardware procurement cycle efficiency | — | — |
+| Server provisioning time metrics | — | — |
+| Hardware costs versus performance benchmarks | — | — |
+| Energy efficiency metrics (PUE, DCiE) | — | — |
+| Hardware standardization percentage | — | — |
+| Asset lifecycle management effectiveness | — | — |
+| Successful delivery of hardware roadmap items | — | — |
+| Hardware incident reduction trends | — | — |
+| Stakeholder satisfaction with server infrastructure | ≥85% (proposed) | Quarterly |
 
 ## Remote Work Considerations
 

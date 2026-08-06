@@ -139,12 +139,14 @@ The DevSecOps Architect is responsible for designing and governing the strategy,
 
 ## Key Performance Indicators
 
-- Percentage of CI/CD pipelines with SAST/SCA gates enforced
-- Mean time to remediate critical and high severity code vulnerabilities
-- Security defect escape rate (defects found in production vs. pipeline)
-- Developer security training completion rate
-- SBOM generation coverage across software portfolio
-- Critical CVE identification to remediation cycle time
+| Metric | Target | Frequency |
+|---|---|---|
+| Percentage of CI/CD pipelines with SAST/SCA gates enforced | — | — |
+| Mean time to remediate critical and high severity code vulnerabilities | — | — |
+| Security defect escape rate (defects found in production vs. pipeline) | — | — |
+| Developer security training completion rate | — | — |
+| SBOM generation coverage across software portfolio | — | — |
+| Critical CVE identification to remediation cycle time | — | — |
 
 ## Remote Work Considerations
 

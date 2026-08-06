@@ -149,15 +149,17 @@ The HPC Senior Engineer leads the technical implementation, automation, and opti
 
 ## Key Performance Indicators
 
-- HPC cluster availability, reliability, and security metrics
-- System performance benchmarking and optimization results
-- Job throughput, resource utilization, and automation coverage
-- Implementation quality and innovation in HPC solutions
-- Time to resolution for complex HPC and security issues
-- User satisfaction with computational performance and support
-- Knowledge transfer and training effectiveness
-- Success of optimization and automation projects
-- Effective capacity planning and resource management
+| Metric | Target | Frequency |
+|---|---|---|
+| HPC cluster availability, reliability, and security metrics | ≥99.9% (proposed) | Monthly |
+| System performance benchmarking and optimization results | — | — |
+| Job throughput, resource utilization, and automation coverage | — | — |
+| Implementation quality and innovation in HPC solutions | — | — |
+| Time to resolution for complex HPC and security issues | — | — |
+| User satisfaction with computational performance and support | ≥85% (proposed) | Quarterly |
+| Knowledge transfer and training effectiveness | — | — |
+| Success of optimization and automation projects | — | — |
+| Effective capacity planning and resource management | — | — |
 
 ## Remote Work Considerations
 

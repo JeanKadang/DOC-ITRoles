@@ -123,12 +123,14 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 
 ## Key Performance Indicators
 
-- Reliability and performance of observability platforms
-- Coverage of monitoring across critical systems
-- Quality and usefulness of dashboards and visualizations
-- Effectiveness of alerting in detecting actual issues
-- Timeliness of resolving observability platform issues
-- Comprehensiveness of monitoring documentation
+| Metric | Target | Frequency |
+|---|---|---|
+| Reliability and performance of observability platforms | — | — |
+| Coverage of monitoring across critical systems | — | — |
+| Quality and usefulness of dashboards and visualizations | — | — |
+| Effectiveness of alerting in detecting actual issues | — | — |
+| Timeliness of resolving observability platform issues | — | — |
+| Comprehensiveness of monitoring documentation | — | — |
 
 ## Typical Day-to-Day Activities
 

@@ -130,16 +130,18 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 
 ## Key Performance Indicators
 
-- Java platform reliability and performance metrics
-- Code quality and maintainability scores
-- Implementation quality of Java solutions
-- Time to resolution for complex Java issues
-- Knowledge transfer effectiveness to junior developers
-- Java security posture improvement
-- Successful implementation of Java standards
-- Reduction in technical debt
-- Innovation in Java platform capabilities
-- Team productivity improvements through frameworks
+| Metric | Target | Frequency |
+|---|---|---|
+| Java platform reliability and performance metrics | — | — |
+| Code quality and maintainability scores | — | — |
+| Implementation quality of Java solutions | — | — |
+| Time to resolution for complex Java issues | — | — |
+| Knowledge transfer effectiveness to junior developers | — | — |
+| Java security posture improvement | — | — |
+| Successful implementation of Java standards | — | — |
+| Reduction in technical debt | — | — |
+| Innovation in Java platform capabilities | — | — |
+| Team productivity improvements through frameworks | — | — |
 
 ## Remote Work Considerations
 

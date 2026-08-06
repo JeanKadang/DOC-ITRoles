@@ -135,16 +135,18 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 ## Key Performance Indicators
 
-- Linux system availability and reliability metrics
-- Implementation quality of Linux solutions
-- Time to resolution for critical Linux incidents
-- Automation coverage for Linux administration tasks
-- Security compliance scores for Linux environments
-- Knowledge transfer effectiveness to junior engineers
-- Successful implementation of Linux standards
-- Innovation in Linux platform enhancements
-- Resource optimization achievements
-- Project delivery timeframes and quality
+| Metric | Target | Frequency |
+|---|---|---|
+| Linux system availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Implementation quality of Linux solutions | — | — |
+| Time to resolution for critical Linux incidents | — | — |
+| Automation coverage for Linux administration tasks | — | — |
+| Security compliance scores for Linux environments | — | — |
+| Knowledge transfer effectiveness to junior engineers | — | — |
+| Successful implementation of Linux standards | — | — |
+| Innovation in Linux platform enhancements | — | — |
+| Resource optimization achievements | — | — |
+| Project delivery timeframes and quality | — | — |
 
 ## Remote Work Considerations
 

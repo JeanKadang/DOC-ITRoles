@@ -140,14 +140,16 @@ The Cloud Security Posture Manager implements and operates Cloud Security Postur
 
 ## Key Performance Indicators
 
-- Critical misconfiguration SLA compliance: ≥95% of critical-severity CSPM findings remediated or formally risk-accepted within 5 business days
-- High-severity misconfiguration SLA compliance: ≥90% of high-severity findings remediated within 15 business days
-- CSPM coverage rate: ≥95% of cloud subscriptions/accounts/projects enrolled in CSPM monitoring within 3 months of account creation
-- CIS Benchmark compliance score: maintain ≥80% pass rate across CIS Azure, AWS, and GCP Benchmarks per quarter
-- CSPM finding recurrence rate: fewer than 10% of remediated findings reoccurring within 60 days
-- Mean time to remediate (MTTR) critical findings: target ≤3 business days from identification to verified remediation
-- Compliance posture trend: quarter-on-quarter improvement in overall benchmark compliance score across all three cloud platforms
-- CSPM false positive rate: suppressed findings representing ≤15% of total active findings, with all suppressions documented and reviewed quarterly
+| Metric | Target | Frequency |
+|---|---|---|
+| Critical misconfiguration SLA compliance: ≥95% of critical-severity CSPM findings remediated or formally risk-accepted within 5 business days | ≥95% | — |
+| High-severity misconfiguration SLA compliance: ≥90% of high-severity findings remediated within 15 business days | ≥90% | — |
+| CSPM coverage rate: ≥95% of cloud subscriptions/accounts/projects enrolled in CSPM monitoring within 3 months of account creation | ≥95% | — |
+| CIS Benchmark compliance score: maintain ≥80% pass rate across CIS Azure, AWS, and GCP Benchmarks per quarter | ≥80% | — |
+| CSPM finding recurrence rate: fewer than 10% of remediated findings reoccurring within 60 days | 10% | — |
+| Mean time to remediate (MTTR) critical findings: target ≤3 business days from identification to verified remediation | ≤3 business days | — |
+| Compliance posture trend: quarter-on-quarter improvement in overall benchmark compliance score across all three cloud platforms | ≥95% (proposed) | Monthly |
+| CSPM false positive rate: suppressed findings representing ≤15% of total active findings, with all suppressions documented and reviewed quarterly | ≤15% | Quarterly |
 
 ## Remote Work Considerations
 

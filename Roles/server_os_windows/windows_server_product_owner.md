@@ -148,16 +148,18 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 
 ## Key Performance Indicators
 
-- Windows Server availability and reliability metrics
-- Mean time to resolution for platform incidents
-- Patch compliance percentages
-- Cost efficiency of Windows infrastructure
-- Stakeholder satisfaction with server services
-- Windows Server automation efficiency
-- Successful delivery of roadmap initiatives
-- Security compliance scores for server environment
-- Backlog health and prioritization effectiveness
-- Service level objective achievement
+| Metric | Target | Frequency |
+|---|---|---|
+| Windows Server availability and reliability metrics | ≥99.9% (proposed) | Monthly |
+| Mean time to resolution for platform incidents | — | — |
+| Patch compliance percentages | ≥95% (proposed) | Monthly |
+| Cost efficiency of Windows infrastructure | — | — |
+| Stakeholder satisfaction with server services | ≥85% (proposed) | Quarterly |
+| Windows Server automation efficiency | — | — |
+| Successful delivery of roadmap initiatives | — | — |
+| Security compliance scores for server environment | — | — |
+| Backlog health and prioritization effectiveness | — | — |
+| Service level objective achievement | — | — |
 
 ## Remote Work Considerations
 

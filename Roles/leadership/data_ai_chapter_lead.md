@@ -137,16 +137,18 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 
 ## Key Performance Indicators
 
-- Chapter practitioner retention rate and voluntary attrition trend
-- Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires)
-- Chapter satisfaction score (internal survey results for the Data & AI chapter)
-- Data platform adoption and coverage across the organisation's data domains
-- Data quality scores for critical business data domains
-- AI/ML model governance compliance rate — percentage of models with approved governance artefacts
-- Data governance policy adherence rate across data-producing teams
-- Time-to-access trusted data products for analytics and AI consumers
-- Architecture debt reduction trend across data and AI platforms
-- AI ethics and compliance review throughput and issue resolution rate
+| Metric | Target | Frequency |
+|---|---|---|
+| Chapter practitioner retention rate and voluntary attrition trend | — | — |
+| Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires) | — | — |
+| Chapter satisfaction score (internal survey results for the Data & AI chapter) | ≥85% (proposed) | Quarterly |
+| Data platform adoption and coverage across the organisation's data domains | — | — |
+| Data quality scores for critical business data domains | — | — |
+| AI/ML model governance compliance rate — percentage of models with approved governance artefacts | — | — |
+| Data governance policy adherence rate across data-producing teams | — | — |
+| Time-to-access trusted data products for analytics and AI consumers | — | — |
+| Architecture debt reduction trend across data and AI platforms | — | — |
+| AI ethics and compliance review throughput and issue resolution rate | — | — |
 
 ## Remote Work Considerations
 

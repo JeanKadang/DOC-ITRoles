@@ -132,16 +132,18 @@ The Enterprise Infrastructure Onboarding Product Owner manages the infrastructur
 
 ## Key Performance Indicators
 
-- Infrastructure provisioning time metrics
-- Service request fulfillment time
-- User satisfaction with onboarding processes
-- Automation level of provisioning workflows
-- Self-service adoption metrics
-- Cost savings through standardization
-- Request accuracy and first-time completions
-- Onboarding documentation quality
-- Infrastructure standards compliance
-- Successful delivery of roadmap initiatives
+| Metric | Target | Frequency |
+|---|---|---|
+| Infrastructure provisioning time metrics | — | — |
+| Service request fulfillment time | — | — |
+| User satisfaction with onboarding processes | ≥85% (proposed) | Quarterly |
+| Automation level of provisioning workflows | — | — |
+| Self-service adoption metrics | — | — |
+| Cost savings through standardization | — | — |
+| Request accuracy and first-time completions | — | — |
+| Onboarding documentation quality | — | — |
+| Infrastructure standards compliance | — | — |
+| Successful delivery of roadmap initiatives | — | — |
 
 ## Remote Work Considerations
 
