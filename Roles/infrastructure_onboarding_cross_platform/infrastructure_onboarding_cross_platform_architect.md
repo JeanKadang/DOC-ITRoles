@@ -131,16 +131,16 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
 | Alignment of designs with business requirements | — | — |
 | Onboarding architecture scalability and flexibility | — | — |
 | Standardization level across infrastructure domains | — | — |
 | Time-to-provision improvements through architecture | — | — |
-| Reduction in architectural complexity | — | — |
+| Recorded architectural risks closed (count per quarter) | — | — |
 | Adoption of reference architectures and patterns | — | — |
 | Innovation in infrastructure provisioning approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

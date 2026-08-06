@@ -138,7 +138,7 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 | Automation level of reliability processes | — | — |
 | Accuracy of reliability metrics | — | — |
 | SLO/SLA achievement for backup services | ≥95% (proposed) | Monthly |
-| Knowledge sharing effectiveness | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

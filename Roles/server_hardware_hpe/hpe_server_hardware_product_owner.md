@@ -135,7 +135,7 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 | Time to provision new server infrastructure | — | — |
 | Server capacity utilization efficiency | — | — |
 | Successful technology adoption rate | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Team velocity and productivity metrics | — | — |
 
 ## Remote Work Considerations

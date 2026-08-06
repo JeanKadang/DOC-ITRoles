@@ -144,7 +144,7 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 | Patch compliance percentages | ≥95% (proposed) | Monthly |
 | Time to implement standard server configurations | — | — |
 | Service request resolution time | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Group Policy implementation accuracy | — | — |
 | Backup success rate and recovery effectiveness | ≥99% (proposed) | Monthly |
 | Change implementation success rate | — | — |

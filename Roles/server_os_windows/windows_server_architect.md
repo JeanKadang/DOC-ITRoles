@@ -134,13 +134,13 @@ The Windows Server Architect designs and defines the strategic direction for the
 | Architectural standards adoption rate across Windows deployments | — | — |
 | Reduction in Windows infrastructure incidents due to architectural improvements | — | — |
 | Windows environment availability and performance metrics | ≥99.9% (proposed) | Monthly |
-| Successful implementation of architectural recommendations | — | — |
+| Architecture review recommendations implemented within the agreed period (%) | — | — |
 | Cost optimization of Windows licensing and infrastructure | — | — |
-| Quality and completeness of architecture documentation | — | — |
+| Architecture artefacts current within the agreed review cycle (%) | — | — |
 | Technical debt reduction in Windows environments | — | — |
 | Time-to-delivery for new Windows capabilities and services | — | — |
 | Windows security posture improvement | — | — |
-| Knowledge transfer effectiveness to engineering teams | — | — |
+| Engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 
 ## Remote Work Considerations
 

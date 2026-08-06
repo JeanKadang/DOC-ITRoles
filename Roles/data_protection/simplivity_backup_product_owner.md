@@ -141,14 +141,14 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 |---|---|---|
 | Backup success rate percentage | ≥99% (proposed) | Monthly |
 | Recovery time objective (RTO) achievements | — | — |
-| Recovery point objective (RPO) achievements | — | — |
+| Protected workloads meeting their stated RPO (%) | — | — |
 | Stakeholder satisfaction with recovery capabilities | ≥85% (proposed) | Quarterly |
 | Data protection compliance scores | — | — |
 | Successful recovery testing completion rates | ≥99% (proposed) | Monthly |
 | Backup storage efficiency metrics | — | — |
 | Incident reduction in backup operations | — | — |
-| Implementation of backup automation | — | — |
-| Cross-team collaboration effectiveness | — | — |
+| Backup jobs running without manual intervention (%) | — | — |
+| Cross-team deliverables completed in the committed period (%) | — | — |
 
 ## Remote Work Considerations
 

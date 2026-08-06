@@ -130,7 +130,7 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 | Security compliance scores for directory services | — | — |
 | Implementation quality of AD projects | — | — |
 | Mean time to resolution for complex AD incidents | — | — |
-| Knowledge transfer effectiveness to junior engineers | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Automation level of AD management tasks | — | — |
 | Success rate of AD migrations and upgrades | — | — |
 | Reduction in security vulnerabilities through hardening | — | — |

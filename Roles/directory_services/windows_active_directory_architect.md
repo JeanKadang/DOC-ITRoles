@@ -134,7 +134,7 @@ The Windows Active Directory Architect designs AD structure, security models, an
 | Successful completion of AD migrations | — | — |
 | Business satisfaction with identity infrastructure | ≥85% (proposed) | Quarterly |
 | Reduction in security incidents related to directory services | — | — |
-| Knowledge transfer effectiveness to engineering teams | — | — |
+| Engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 
 ## Remote Work Considerations
 

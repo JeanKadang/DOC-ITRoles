@@ -132,12 +132,12 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Backlog velocity and sprint delivery predictability | — | — |
+| Committed sprint items delivered in the sprint (%) | — | — |
 | ITSM platform user satisfaction score (CSAT) | ≥85% (proposed) | Quarterly |
 | CMDB CI accuracy rate (target: >95% for in-scope CI classes) | >95% | — |
 | Service request self-service adoption rate (trend: increasing) | — | — |
 | Incident, Change, and Problem SLA compliance rates (platform impact contribution) | ≥95% (proposed) | Monthly |
-| Roadmap milestone delivery against plan | — | — |
+| Roadmap milestones delivered in the committed quarter (%) | — | — |
 
 ## Remote Work Considerations
 

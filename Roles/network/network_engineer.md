@@ -136,11 +136,11 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 | Network uptime and availability metrics | ≥99.9% (proposed) | Monthly |
 | Mean time to resolution for network incidents | — | — |
 | Change implementation success rate | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Network security policy compliance | — | — |
 | Network monitoring coverage | — | — |
 | Response time to service requests | — | — |
-| Knowledge sharing and collaboration | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 | Successful implementation of standard designs | — | — |
 | Customer satisfaction with network services | ≥85% (proposed) | Quarterly |
 

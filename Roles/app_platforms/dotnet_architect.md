@@ -131,16 +131,16 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
 | Alignment of .NET designs with business requirements | — | — |
-| Application performance and scalability | — | — |
+| Application transactions meeting their response-time budget (%) | — | — |
 | Security posture of .NET applications | — | — |
 | Adoption of .NET reference architectures and patterns | — | — |
-| Reduction in architectural risks and technical debt | — | — |
-| Developer productivity improvement through standards | — | — |
+| Recorded architectural risks and debt items closed (count per quarter) | — | — |
+| Median lead time from commit to production for teams on the standard (hours) | — | — |
 | Innovation in .NET architectural approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

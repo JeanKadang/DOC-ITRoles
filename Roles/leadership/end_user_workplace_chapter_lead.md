@@ -141,7 +141,7 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 | Metric | Target | Frequency |
 |---|---|---|
 | Chapter practitioner retention rate and voluntary attrition trend | — | — |
-| Hiring velocity and quality for chapter architect and senior engineer roles (90-day retention of new hires) | — | — |
+| New architect and senior engineer hires retained at 90 days (%) | — | — |
 | Chapter satisfaction score (internal survey results for the End User & Workplace chapter) | ≥85% (proposed) | Quarterly |
 | Device management coverage and compliance rate across all managed endpoints | — | — |
 | Microsoft 365 governance compliance rate — adherence to tenant standards and Teams governance policies | — | — |

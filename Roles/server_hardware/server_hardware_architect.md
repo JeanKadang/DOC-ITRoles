@@ -131,16 +131,16 @@ The Server Hardware Architect designs comprehensive server infrastructure strate
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
-| Alignment of hardware designs with business requirements | — | — |
-| Server infrastructure performance and reliability | — | — |
-| Power efficiency and sustainability metrics | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
+| Hardware designs accepted by the requesting business owner without rework (%) | — | — |
+| Server estate meeting its published SLO (%) | — | — |
+| Data centre power usage effectiveness (PUE) | — | — |
 | Cost effectiveness of hardware architectures | — | — |
 | Adoption of reference architectures and standards | — | — |
-| Hardware lifecycle optimization metrics | — | — |
-| Innovation in server infrastructure approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Server estate within its supported lifecycle window (%) | — | — |
+| New server platform patterns adopted into the standard build (count per year) | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

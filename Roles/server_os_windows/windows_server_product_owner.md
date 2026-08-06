@@ -156,9 +156,9 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 | Cost efficiency of Windows infrastructure | — | — |
 | Stakeholder satisfaction with server services | ≥85% (proposed) | Quarterly |
 | Windows Server automation efficiency | — | — |
-| Successful delivery of roadmap initiatives | — | — |
+| Roadmap initiatives delivered in the committed quarter (%) | — | — |
 | Security compliance scores for server environment | — | — |
-| Backlog health and prioritization effectiveness | — | — |
+| Backlog items meeting the definition of ready before sprint planning (%) | — | — |
 | Service level objective achievement | — | — |
 
 ## Remote Work Considerations

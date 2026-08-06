@@ -135,12 +135,12 @@ The Java Platform Product Owner manages the development and lifecycle of the org
 | Developer satisfaction with Java platform | ≥85% (proposed) | Quarterly |
 | Platform adoption rates across development teams | — | — |
 | Time-to-market improvement for applications | — | — |
-| Reduction in development effort through shared components | — | — |
-| Platform reliability and performance metrics | — | — |
+| Delivery teams consuming a shared component rather than rebuilding it (count) | — | — |
+| Platform services meeting their published SLO (%) | — | — |
 | Security vulnerability reduction in Java applications | — | — |
-| Successful delivery of platform roadmap items | — | — |
-| Business value delivery through platform capabilities | — | — |
-| Return on investment for platform initiatives | — | — |
+| Platform roadmap items delivered in the committed quarter (%) | — | — |
+| Delivery teams onboarded to a platform capability (count per quarter) | — | — |
+| Engineering hours saved per quarter attributable to platform capabilities (hours) | — | — |
 | Innovation in Java capabilities | — | — |
 
 ## Remote Work Considerations

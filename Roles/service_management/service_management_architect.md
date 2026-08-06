@@ -131,15 +131,15 @@ The Service Management Architect designs comprehensive strategies and architectu
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
 | Alignment of ITSM designs with business requirements | — | — |
 | Process efficiency and effectiveness metrics | — | — |
 | Service integration reliability | — | — |
 | Adoption of ITSM reference architectures | — | — |
 | Reduction in service-related incidents | — | — |
 | Innovation in service management approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 | Service management maturity improvement | — | — |
 
 ## Remote Work Considerations

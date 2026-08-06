@@ -165,13 +165,13 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 | Server deployment time efficiency | — | — |
 | Hardware-related incident resolution time | — | — |
 | Hardware configuration accuracy | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Firmware compliance percentage | — | — |
 | Hardware inventory accuracy | — | — |
-| Successful hardware maintenance completions | — | — |
-| Standard build implementation quality | — | — |
+| Planned hardware maintenance completed in window (%) | — | — |
+| Servers deployed from the approved standard build (%) | — | — |
 | User satisfaction with hardware support | ≥85% (proposed) | Quarterly |
-| Knowledge sharing and collaboration | — | — |
+| Knowledge-sharing contributions published or presented (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

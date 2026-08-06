@@ -128,7 +128,7 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 | Backup completion within scheduled windows | — | — |
 | Recovery time performance | — | — |
 | Accurate implementation of backup policies | — | — |
-| Documentation quality and completeness | — | — |
+| Owned documentation reviewed and current within the agreed review cycle (%) | — | — |
 | Response time to backup failures | — | — |
 | Recovery testing success rates | ≥99% (proposed) | Monthly |
 | Adherence to data retention requirements | — | — |

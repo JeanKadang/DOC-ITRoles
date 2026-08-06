@@ -138,10 +138,10 @@ The Identity Management Architect designs and oversees the organization's identi
 | User experience improvements through architecture | — | — |
 | Security posture improvement via identity controls | — | — |
 | Adoption of identity standards and patterns | — | — |
-| Reduction in identity-related security incidents | — | — |
+| Identity-related security incidents (count per quarter) | — | — |
 | Innovation in identity management approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 
 ## Remote Work Considerations
 

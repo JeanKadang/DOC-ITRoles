@@ -130,11 +130,11 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 | Time-to-delivery for cloud services | — | — |
 | Stakeholder satisfaction with AWS platform | ≥85% (proposed) | Quarterly |
 | Security compliance scores for AWS environment | — | — |
-| Successful implementation of cloud governance | — | — |
+| Cloud accounts and subscriptions compliant with landing-zone guardrails (%) | — | — |
 | AWS service adoption rates | — | — |
 | Cloud migration project success rates | — | — |
 | AWS platform feature delivery against roadmap | — | — |
-| Cloud platform operational efficiency | — | — |
+| Cloud platform requests fulfilled without manual intervention (%) | — | — |
 
 ## Remote Work Considerations
 

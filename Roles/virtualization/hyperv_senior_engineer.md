@@ -129,8 +129,8 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 | Success rate of migrations and upgrades | — | — |
 | Resolution time for complex virtualization issues | — | — |
 | Automation coverage for routine administrative tasks | — | — |
-| Resource utilization efficiency metrics | — | — |
-| Knowledge transfer effectiveness to junior engineers | — | — |
+| Provisioned capacity actively utilised (%) | — | — |
+| Junior engineers reaching independent delivery within the agreed ramp period (%) | — | — |
 | Contribution to virtualization standards and best practices | — | — |
 | Security posture improvement in virtualized environments | — | — |
 | Innovation in virtualization solutions implementation | — | — |

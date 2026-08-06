@@ -135,7 +135,7 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 
 | Metric | Target | Frequency |
 |---|---|---|
-| Architecture design quality and effectiveness | — | — |
+| Designs approved at first architecture review, without rework (%) | — | — |
 | Alignment of network designs with business requirements | — | — |
 | Network architecture scalability and flexibility | — | — |
 | Security posture improvement through network design | — | — |
@@ -143,8 +143,8 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 | Reduction in network-related incidents | — | — |
 | Network simplification and standardization | — | — |
 | Innovation in network architectural approaches | — | — |
-| Technical leadership effectiveness | — | — |
-| Knowledge transfer to engineering teams | — | — |
+| Engineers mentored who progress to the next competency level (count per year) | — | — |
+| Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
 | AIOps prediction accuracy for capacity forecasting and incident detection (target: >85% precision) | >85% | — |
 | Edge network availability: ≥99.9% connectivity SLA for business-critical edge PoPs and industrial edge sites | ≥99.9% | — |
 | Edge site deployment time: network provisioning lead time for new edge PoPs reduced via SD-WAN ZTP automation | — | — |

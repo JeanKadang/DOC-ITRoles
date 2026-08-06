@@ -115,8 +115,8 @@ The Observability Product Owner manages the observability platform portfolio, de
 |---|---|---|
 | Platform adoption rates across teams | — | — |
 | Stakeholder satisfaction with observability services | ≥85% (proposed) | Quarterly |
-| Successful delivery of roadmap initiatives | — | — |
-| Quality of backlog management and prioritization | — | — |
+| Roadmap initiatives delivered in the committed quarter (%) | — | — |
+| Backlog items meeting the definition of ready before sprint planning (%) | — | — |
 | Effectiveness of observability in improving system reliability | — | — |
 | Clear demonstration of platform value to the business | — | — |
 
