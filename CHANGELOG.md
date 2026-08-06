@@ -7,6 +7,66 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.12.0] - 2026-08-06
+
+Every KPI section is now a table, with its gaps visible on the page rather
+than only in a validator warning.
+
+### Changed
+
+- **All 200 remaining roles moved from bullet KPIs to the template's
+  `| Metric | Target | Frequency |` table (#140).** 1,791 rows: 97 carried a
+  target already stated in the prose, 13 a cadence.
+
+  Metric text is kept **verbatim** rather than cut down to a name — a target
+  already in the sentence is surfaced into its own column as well, so ~97
+  rows repeat it. That redundancy is the price of guaranteeing nothing is
+  lost in a 1,791-row rewrite, and it was verified rather than assumed:
+  every original bullet appears unchanged as its metric cell.
+
+- **258 rows seeded with recognised industry benchmarks, each marked
+  `(proposed)` (#140).** Three-nines availability, DORA change failure and
+  deployment frequency, common P1 restore and detection times, standard
+  data-protection and security baselines, widely-used coverage thresholds.
+
+  Correcting a draft is far easier than filling a blank, and a marked
+  proposal carries none of the risk of an unmarked invented number — which
+  would end up cited as though it had been agreed.
+
+  **Adoption rate and incident rate are deliberately not seeded.** Both are
+  widely measured and neither has an industry-standard value to propose.
+
+### Added
+
+- **The validator reports KPI targets per row, not per file.** Previously it
+  warned that a role "uses bullets"; once every role has a table that
+  warning goes silent, which would have hidden the very problem the
+  conversion exists to expose. It now counts rows with **no target**
+  separately from **proposed** targets awaiting confirmation, so neither
+  converting a role nor seeding a benchmark can make it look finished.
+
+  ```
+  before: 200 files — "Key Performance Indicators uses bullets"
+  after :   258 proposed awaiting confirmation
+            1,436 rows still with no target
+  ```
+
+  `security_automation_engineer` is the first role in the catalogue to clear
+  the check outright — all 8 of its KPIs already carry real targets.
+
+### Testing
+
+Suite grown **171 → 190**. New tests assert that `parseKpiBullet` does not
+read `ISO 27001` or `the 2026 standard` as a target, that unmeasurable
+metrics are **not** seeded, and that `documentation available to teams` does
+not trigger the availability benchmark.
+
+### Still open
+
+1,436 rows have no target. Roughly a third name a real metric and need a
+number; the rest name a subject and need rewriting or removal — a KPI nobody
+can quantify is not a KPI. Tracked in #140.
+
 ## [1.11.1] - 2026-08-06
 
 Content readability and test coverage. No behaviour change.
