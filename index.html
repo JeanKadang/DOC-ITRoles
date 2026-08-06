@@ -1365,6 +1365,7 @@
         <button class="btn-ghost" id="orgBtn" onclick="toggleOrg()" aria-pressed="false" aria-label="Toggle organisation chart view">🌳 Org</button>
         <button class="btn-ghost" id="graphBtn" onclick="toggleGraph()" aria-pressed="false" aria-label="Toggle domain relationship graph">🔗 Graph</button>
         <button class="btn-ghost" id="careersBtn" onclick="toggleCareers()" aria-pressed="false" aria-label="Toggle career path flow view">📈 Careers</button>
+        <button class="btn-ghost" id="radarBtn" onclick="toggleRadar()" aria-pressed="false" aria-label="Toggle technology radar view">📡 Radar</button>
         <button class="btn-ghost" id="themeBtn" onclick="toggleTheme()" aria-pressed="false" aria-label="Toggle dark mode">🌙 Dark</button>
     </div>
 </header>
@@ -1519,6 +1520,26 @@
             </details>
         </div>
 
+        <!-- Technology radar view -->
+        <div class="matrix-view" id="radarView">
+            <div class="matrix-header">
+                <div>
+                    <h2>📡 Technology Radar</h2>
+                    <p>What the catalogue staffs for, read from the generated
+                       <strong>Technology Radar</strong> document rather than recalculated here,
+                       so the chart and the page cannot disagree. Distance from the centre is the
+                       ring; dot size is how many roles expect the technology. Hold is empty on
+                       purpose — nothing in a role definition says to stop using something.</p>
+                </div>
+            </div>
+            <div id="radarChartCanvas" class="org-canvas" role="img"
+                 aria-label="Technology radar. A text version is available below under 'View as list'."></div>
+            <details class="chart-table">
+                <summary>View as list</summary>
+                <div id="radarListFallback" class="org-list"></div>
+            </details>
+        </div>
+
         <!-- Doc view (reference documents) -->
         <div class="doc-view" id="docView">
             <div class="role-card doc-card" id="docHeader"></div>
@@ -1542,6 +1563,7 @@
         sectionStartsOpen, panelStateFor,
         tocIdFor, activeTocIndex,
         parseRoleMeta, splitReportingValue, reviewSlotFor,
+        parseRadarDoc, radarListHtml,
         EXEC_LEVELS, STAT_GROUPS, countRolesAtLevels, roleMatchesFilter, groupResources,
         findRoleByTitle: resolveRoleTitle,
     } = ViewerLogic;
@@ -2024,6 +2046,8 @@
                    onOpen: () => renderDomainGraph() },
         careers: { viewId: 'careersView', btnId: 'careersBtn',
                    onOpen: () => renderCareerSankey() },
+        radar:   { viewId: 'radarView',   btnId: 'radarBtn',
+                   onOpen: () => renderTechRadar() },
     };
     let activePanel = null;
 
@@ -2075,6 +2099,7 @@
     const toggleOrg        = () => togglePanel('org');
     const toggleGraph      = () => togglePanel('graph');
     const toggleCareers    = () => togglePanel('careers');
+    const toggleRadar      = () => togglePanel('radar');
 
     // ── Domain relationship graph (ECharts force graph) ───
     let graphChart = null;
@@ -2276,8 +2301,109 @@
     }
 
 
+    // ── Technology radar (#172) ──────────────────────────
+    //
+    // Reads docs/TECHNOLOGY_RADAR.md, which scripts/build-radar.js generates
+    // and a test pins to regeneration. Deriving the numbers again here would
+    // create a second implementation to keep in step, and the two would
+    // eventually disagree about what the catalogue says.
+    let radarChart = null;
+
+    // Quadrant angles are fixed so a technology keeps its place between
+    // renders; the offset within a quadrant is hashed from the name for the
+    // same reason. A random scatter would move dots on every open.
+    const RADAR_QUADRANTS = {
+        'Platforms & Infrastructure': { from: 180, to: 270, color: '#2a78d6' },
+        'Tools & Delivery':           { from: 270, to: 360, color: '#eb6834' },
+        'Data & AI':                  { from:  90, to: 180, color: '#1baf7a' },
+        'Security & Identity':        { from:   0, to:  90, color: '#4a3aa7' },
+    };
+    const RADAR_RINGS = { Adopt: [0, 0.34], Trial: [0.38, 0.72], Assess: [0.76, 1] };
+
+    function radarSlot(name) {
+        let h = 0x811c9dc5;
+        for (let i = 0; i < name.length; i++) { h ^= name.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+        return h;
+    }
+
+    async function renderTechRadar() {
+        if (typeof echarts === 'undefined') return;
+        const theme = chartTheme();
+
+        let md;
+        try {
+            const res = await fetch(`/api/doc?file=${encodeURIComponent('docs/TECHNOLOGY_RADAR.md')}`);
+            md = await res.text();
+        } catch {
+            document.getElementById('radarListFallback').innerHTML =
+                '<p>⚠️ Could not load the Technology Radar document. Run <code>npm run build-radar</code>.</p>';
+            return;
+        }
+
+        const entries = parseRadarDoc(md);
+        document.getElementById('radarListFallback').innerHTML = radarListHtml(entries);
+        if (!entries.length) return;
+
+        const R = 100;
+        const series = Object.entries(RADAR_QUADRANTS).map(([quadrant, q]) => ({
+            name: quadrant,
+            type: 'scatter',
+            symbolSize: d => Math.max(7, Math.min(30, 6 + Math.sqrt(d[2]) * 2.4)),
+            itemStyle: { color: q.color, opacity: 0.82 },
+            emphasis: { focus: 'series', label: { show: true, formatter: p => p.data[3], position: 'top' } },
+            data: entries.filter(e => e.quadrant === quadrant).map(e => {
+                const h = radarSlot(e.name);
+                const ang = (q.from + 6 + ((h % 1000) / 1000) * (q.to - q.from - 12)) * Math.PI / 180;
+                const [lo, hi] = RADAR_RINGS[e.ring] || RADAR_RINGS.Assess;
+                const rad = R * (lo + (((h >> 10) % 1000) / 1000) * (hi - lo));
+                return [Math.cos(ang) * rad, Math.sin(ang) * rad, e.roles, e.name, e.ring, e.expert, e.proficient];
+            }),
+        }));
+
+        radarChart?.dispose();
+        radarChart = echarts.init(document.getElementById('radarChartCanvas'));
+        radarChart.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: p => `<b>${escapeHtml(p.data[3])}</b><br>${escapeHtml(p.data[4])} — ${p.data[2]} role${p.data[2] === 1 ? '' : 's'}` +
+                                `<br>Expert in ${p.data[5]}, Proficient in ${p.data[6]}`,
+            },
+            legend: { bottom: 0, textStyle: { color: theme.text } },
+            grid: { left: 10, right: 10, top: 20, bottom: 60 },
+            xAxis: { min: -R * 1.1, max: R * 1.1, show: false, type: 'value' },
+            yAxis: { min: -R * 1.1, max: R * 1.1, show: false, type: 'value' },
+            series: [
+                // Rings first so the dots draw over them.
+                {
+                    type: 'custom',
+                    silent: true,
+                    renderItem: (params, api) => {
+                        const centre = api.coord([0, 0]);
+                        const edge   = api.coord([R, 0]);
+                        const unit   = edge[0] - centre[0];
+                        const children = [1, 0.72, 0.34].map((f, i) => ({
+                            type: 'circle',
+                            shape: { cx: centre[0], cy: centre[1], r: unit * f },
+                            style: { fill: 'none', stroke: theme.grid, lineWidth: 1 },
+                        }));
+                        for (const [label, f] of [['Adopt', 0.17], ['Trial', 0.55], ['Assess', 0.88]]) {
+                            children.push({
+                                type: 'text',
+                                style: { text: label, x: centre[0], y: centre[1] - unit * f,
+                                         textAlign: 'center', fill: theme.text, fontSize: 11 },
+                            });
+                        }
+                        return { type: 'group', children };
+                    },
+                    data: [0],
+                },
+                ...series,
+            ],
+        });
+    }
+
     // Keep the ECharts canvases sized to their containers.
-    window.addEventListener('resize', () => { orgChart?.resize(); graphChart?.resize(); careersChart?.resize(); });
+    window.addEventListener('resize', () => { orgChart?.resize(); graphChart?.resize(); careersChart?.resize(); radarChart?.resize(); });
 
     // ── Render sidebar ───────────────────────────────────
     // ── Level filters (#115) ─────────────────────────────
@@ -2508,11 +2634,12 @@
         activeFile = null; activeDoc = null;
         activeChapter = key;
         document.getElementById('rolesGrid').style.display    = 'none';
-        document.getElementById('matrixView').classList.remove('show');
-        document.getElementById('staleView').classList.remove('show');
-        document.getElementById('orgView').classList.remove('show');
-        document.getElementById('graphView').classList.remove('show');
-        document.getElementById('careersView').classList.remove('show');
+        // Iterated rather than listed by hand: a panel added to PANELS but
+        // forgotten here would stay on screen underneath the chapter view,
+        // which is how the same list drifted before (#46, #129, #141).
+        for (const panel of Object.values(PANELS)) {
+            document.getElementById(panel.viewId).classList.remove('show');
+        }
         document.getElementById('docView').style.display      = 'none';
         document.getElementById('welcomeState').style.display = 'none';
 

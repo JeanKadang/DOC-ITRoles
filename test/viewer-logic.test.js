@@ -7,6 +7,8 @@ const {
     STALE_MONTHS,
     proposedKpiTarget,
     KPI_BENCHMARKS,
+    parseRadarDoc,
+    radarListHtml,
     parseKpiBullet,
     orgListHtml,
     graphListHtml,
@@ -1397,4 +1399,77 @@ test('count targets are floors, and stated per period', () => {
         assert.match(proposedKpiTarget(m).target, /^≥\d+ per (quarter|year) \(proposed\)$/, m);
         assert.equal(proposedKpiTarget(m).basis, 'house');
     }
+});
+
+// ── parseRadarDoc (#172) ──────────────────────────────────
+// The radar view reads the generated document rather than re-deriving the
+// numbers in the browser, so the chart and the page can never disagree.
+
+test('parseRadarDoc reads technologies, rings and quadrants from the document', () => {
+    const md = [
+        '# Technology radar',
+        '',
+        'Some prose about what it is.',
+        '',
+        '| Ring | Meaning here |',
+        '|---|---|',
+        '| **Adopt** | Expected at Expert or Proficient level in 10 or more roles |',
+        '',
+        '## Platforms & Infrastructure',
+        '',
+        '| Technology | Ring | Roles | Expert | Proficient |',
+        '|---|---|---:|---:|---:|',
+        '| Microsoft Azure | Adopt | 138 | 86 | 71 |',
+        '| Istio | Trial | 12 | 1 | 4 |',
+        '',
+        '## Data & AI',
+        '',
+        '| Technology | Ring | Roles | Expert | Proficient |',
+        '|---|---|---:|---:|---:|',
+        '| Power BI | Adopt | 33 | 12 | 21 |',
+        '',
+        '## Summary',
+        '',
+        '| Ring | Technologies |',
+        '|---|---:|',
+        '| Adopt | 40 |',
+    ].join('\n');
+
+    const got = parseRadarDoc(md);
+    assert.equal(got.length, 3);
+    assert.deepEqual(got[0], { name: 'Microsoft Azure', quadrant: 'Platforms & Infrastructure', ring: 'Adopt', roles: 138, expert: 86, proficient: 71 });
+    assert.equal(got[2].quadrant, 'Data & AI');
+});
+
+test('parseRadarDoc ignores the explanatory and summary tables', () => {
+    // Both have two columns and live under headings; only the five-column
+    // technology tables carry radar entries.
+    const md = [
+        '## Summary',
+        '',
+        '| Ring | Technologies |',
+        '|---|---:|',
+        '| Adopt | 40 |',
+        '| Hold | 0 — not derivable |',
+    ].join('\n');
+    assert.deepEqual(parseRadarDoc(md), []);
+});
+
+test('parseRadarDoc survives a document with no technology tables', () => {
+    assert.deepEqual(parseRadarDoc('# Technology radar\n\nNothing yet.\n'), []);
+    assert.deepEqual(parseRadarDoc(''), []);
+});
+
+test('radarListHtml groups by ring for the accessible fallback', () => {
+    const entries = [
+        { name: 'Microsoft Azure', quadrant: 'Platforms & Infrastructure', ring: 'Adopt', roles: 138, expert: 86, proficient: 71 },
+        { name: 'Istio', quadrant: 'Platforms & Infrastructure', ring: 'Trial', roles: 12, expert: 1, proficient: 4 },
+    ];
+    const html = radarListHtml(entries);
+    assert.match(html, /Adopt/);
+    assert.match(html, /Microsoft Azure/);
+    assert.match(html, /138/);
+    // Hold has no source in the catalogue; the fallback must say so rather
+    // than leaving the reader to wonder whether it was dropped.
+    assert.match(html, /not derivable/i);
 });
