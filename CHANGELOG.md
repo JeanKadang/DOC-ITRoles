@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.14.0] - 2026-08-06
+
+KPI targets stop being a promise and start being numbers, and the catalogue
+learns to describe itself: two generators, three drift guards, and a
+technology radar derived from the roles rather than assembled by hand.
+
+The theme across all of it is that a mechanism must not hide the gap it was
+built to expose — seeded targets are counted apart from agreed ones, the
+radar leaves a ring visibly empty rather than guessing at it, and every
+hand-maintained list added this cycle fails the suite when it goes stale.
+
 ### Added
 
 - **A technology radar, generated from the role definitions (#172).**
@@ -135,6 +146,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   `Improvement in delivery metrics` is a direction and stays refused;
   `Improvement items proposed and adopted (count per quarter)` counts
   things, and the broader rule was withholding a target from it.
+
+- **47 filename mentions became links (#168, #169).** A document naming
+  another document was giving the reader a code span rather than a way to
+  get there, and the viewer already routes in-body `.md` links.
+
+  The onboarding templates were the sharp case: they instruct a new starter
+  to read two documents the viewer carries as pages, and both were inert
+  text. Prose now names each document as the sidebar names it — nobody
+  scanning for *Career Paths & Skills Progression* will find
+  `SKILLS_PROGRESSION.md`.
+
+  Two rows in `ONBOARDING_TEMPLATE.md` were not mentions but instructions
+  where a link belonged, one of them the **Day 1** learning resource. Both
+  differ per hire, so they became fillable `\<link to the role definition\>`
+  placeholders in the template's own style.
+
+  `README.md` also gave a naming example for a file that does not exist,
+  whose level contradicted the rule stated one line above it. Following a
+  link landed the reader on a page headed `SKILLS PROGRESSION`, derived from
+  the filename, for a document listed under a different name — the route now
+  prefers the registered title.
+
+  `test/doc-links.test.js` guards all three: no bare mention in a
+  navigational document, no link to a file that does not exist, and no
+  reverting the placeholders to prose.
 
 ### Still open
 
