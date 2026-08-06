@@ -143,7 +143,7 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 | Number of novel pipeline patterns adopted and operationalized per quarter; percentage of teams using self-service golden path tooling | — | — |
 | Engineers mentored who progress to the next competency level (count per year) | — | — |
 | Knowledge-sharing sessions delivered to engineering teams (count per quarter) | — | — |
-| Improvement in delivery metrics (lead time, MTTR, etc.) | ≤4 hours (proposed) | Monthly |
+| Improvement in delivery metrics (lead time, MTTR, etc.) | — | Monthly |
 
 ## Remote Work Considerations
 

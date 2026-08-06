@@ -147,7 +147,7 @@ The AI Platform Engineer builds and operates the organisation's AI/ML platform i
 |---|---|---|
 | ML platform uptime and availability (target SLA, e.g., ≥99.5%) | ≥99.5% | — |
 | ML pipeline execution success rate (% of scheduled pipelines completing without failure) | — | — |
-| Model deployment lead time (hours from training completion to production endpoint availability, trending down) | ≥99.9% (proposed) | Monthly |
+| Model deployment lead time (hours from training completion to production endpoint availability, trending down) | — | Monthly |
 | Mean time to restore (MTTR) for ML infrastructure incidents | ≤4 hours (proposed) | Monthly |
 | Data scientist onboarding time to first successful experiment run (days, trending down) | — | — |
 | Feature store pipeline data freshness SLA compliance (% of feature tables meeting published freshness SLO) | ≥95% (proposed) | Monthly |

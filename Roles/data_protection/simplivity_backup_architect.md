@@ -133,7 +133,7 @@ The SimpliVity Backup Architect designs and oversees data protection strategies 
 | Solution designs accepted by the requesting business owner without rework (%) | — | — |
 | Protected workloads within the supported backup architecture (%) | — | — |
 | Cost efficiency of designed solutions | — | — |
-| Recovery tests meeting their stated RTO (%) | — | — |
+| Recovery tests meeting their stated RTO (%) | ≥99% (proposed) | Monthly |
 | Adoption of reference architectures and standards | — | — |
 | Reduction in data protection architectural risks | — | — |
 | Innovation in backup approaches | — | — |

@@ -1282,3 +1282,65 @@ test('proposedKpiTarget matches the family, not an incidental word', () => {
     // "available" in prose must not trigger the availability benchmark.
     assert.equal(proposedKpiTarget('Documentation available to delivery teams'), null);
 });
+
+// ── proposedKpiTarget: seeding must not contradict the metric (#140) ──
+// Every string below is real content from a role file that the first pass
+// of benchmark matching seeded wrongly. They are the regression guard:
+// each had a keyword the benchmark table recognised, used in a sense the
+// benchmark does not apply to.
+
+test('proposedKpiTarget refuses a percentage target on a duration metric', () => {
+    // "availability" appears here as the endpoint of a lead time, not as
+    // the thing measured. Seeding 99.9% against a metric counted in hours
+    // is worse than leaving it blank: the validator counts it as awaiting
+    // confirmation rather than as wrong.
+    for (const m of [
+        'Model deployment lead time (hours from training completion to production endpoint availability, trending down)',
+        'ML feature pipeline production lead time (time from feature request to production availability)',
+        'eDiscovery case turnaround time (Legal SLA compliance)',
+    ]) {
+        assert.equal(proposedKpiTarget(m), null, `"${m}" must not be seeded`);
+    }
+});
+
+test('proposedKpiTarget refuses a percentage target on a counted metric', () => {
+    assert.equal(
+        proposedKpiTarget('Number of ad hoc financial analysis requests completed within SLA per quarter'),
+        null);
+});
+
+test('proposedKpiTarget refuses composite and trend metrics', () => {
+    // A metric naming several measures at once has no single target, and a
+    // metric asking for a direction of travel has no threshold at all.
+    for (const m of [
+        'DORA metrics trend at chapter level (deployment frequency, lead time, change failure rate, MTTR)',
+        'DORA metrics improvement per coached team: deployment frequency, lead time for changes, mean time to recovery, and change failure rate tracked before and after engagement',
+        'Improvement in delivery metrics (lead time, MTTR, etc.)',
+        'Improvements in deployment frequency and reliability',
+        'Backup success rate improvement trends',
+        'Security incident frequency, severity, and mean time to detect and respond',
+    ]) {
+        assert.equal(proposedKpiTarget(m), null, `"${m}" must not be seeded`);
+    }
+});
+
+test('proposedKpiTarget reads a list of products as scope, not as measures', () => {
+    // Reconciling the guard against all 258 seeded rows caught this: a
+    // comma-counting rule refused these, but each names one measure across
+    // several products. Only a row naming three actual measures is composite.
+    for (const m of [
+        'Microsoft 365 service availability (Exchange, Teams, SharePoint)',
+        'Data platform availability SLA (uptime % for Databricks, ingestion pipelines, and shared platform components)',
+        'Incident, Change, and Problem SLA compliance rates (platform impact contribution)',
+    ]) {
+        assert.ok(proposedKpiTarget(m), `"${m}" should still be seeded`);
+    }
+});
+
+test('proposedKpiTarget routes vulnerability MTTR to the remediation policy', () => {
+    // MTTR here means "time to remediate a finding", governed by the
+    // vulnerability policy, not the P1 restore commitment.
+    const got = proposedKpiTarget(
+        'Vulnerability mean time to remediate (MTTR) across critical and high severity findings');
+    assert.match(got.target, /30 days/);
+});

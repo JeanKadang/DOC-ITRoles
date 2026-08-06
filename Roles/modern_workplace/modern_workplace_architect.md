@@ -149,7 +149,7 @@ The Modern Workplace Architect is responsible for designing, governing, and evol
 | Microsoft Secure Score target achievement | — | — |
 | M365 Copilot adoption rate (active users / licensed users) | — | — |
 | DLP policy match and block accuracy rate | — | — |
-| eDiscovery case turnaround time (Legal SLA compliance) | ≥95% (proposed) | Monthly |
+| eDiscovery case turnaround time (Legal SLA compliance) | — | Monthly |
 | User satisfaction with collaboration tools (annual survey) | ≥85% (proposed) | Annual |
 
 ## Remote Work Considerations

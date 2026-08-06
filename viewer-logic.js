@@ -828,10 +828,12 @@
     const KPI_BENCHMARKS = [
         { re: /\bchange failure\b/i,                                    target: '≤15%',             frequency: 'Monthly',   note: 'DORA' },
         { re: /\bdeployment frequency\b/i,                              target: 'Weekly or better', frequency: 'Monthly',   note: 'DORA high performer' },
-        { re: /\b(mttr|mean time to (restore|repair|resolve)|time to restore)\b/i,
-                                                                        target: '≤4 hours',         frequency: 'Monthly',   note: 'common P1 restore commitment' },
-        { re: /\b(mttd|mean time to detect|time to detect)\b/i,         target: '≤24 hours',        frequency: 'Monthly',   note: 'common detection target' },
+        // Ahead of the MTTR rule: for a vulnerability, "time to remediate" is
+        // governed by the remediation policy, not the P1 restore commitment.
         { re: /\bvulnerab\w*\b[^|]*\b(remediat|resolv|closure)/i,       target: '≤30 days (critical)', frequency: 'Monthly', note: 'common remediation policy' },
+        { re: /\b(mttr|mean time to (restore|repair|resolve|recover)\w*|time to restore)\b/i,
+                                                                        target: '≤4 hours',         frequency: 'Monthly',   note: 'common P1 restore commitment' },
+        { re: /\b(mttd|mean time to detect\w*|time to detect)\b/i,      target: '≤24 hours',        frequency: 'Monthly',   note: 'common detection target' },
         { re: /\b(test|code)\s+coverage\b/i,                            target: '≥80%',             frequency: 'Monthly',   note: 'widely-used threshold' },
         { re: /\b(backup|recovery|restore)\b[^|]*\b(success|rate|test)/i, target: '≥99%',           frequency: 'Monthly',   note: 'standard data-protection target' },
         { re: /\bfirst[- ]contact\b/i,                                  target: '≥70%',             frequency: 'Monthly',   note: 'common service-desk target' },
@@ -844,12 +846,54 @@
                                                                         target: '≥99.9%',           frequency: 'Monthly',   note: 'three-nines enterprise SLA' },
     ];
 
+    // A metric that asks only for a direction of travel has no threshold to
+    // propose. Every pattern here comes from a real row that a benchmark
+    // keyword matched in a sense the benchmark does not cover.
+    const KPI_UNSEEDABLE = [
+        /\btrend\w*\b/i,
+        /\bimprovement\w*\b|\bimprovements? in\b/i,
+        /\betc\.?\b/i,
+    ];
+
+    // Counting measure nouns rather than commas. A list inside a metric is
+    // usually scope, not measures — "Microsoft 365 service availability
+    // (Exchange, Teams, SharePoint)" is one measure across three products,
+    // whereas "incident frequency, severity, and mean time to detect" is
+    // three measures in one row and has no single target.
+    const KPI_MEASURE_NOUN = /\b(frequency|severity|rate|time|uptime|availability|reliability|coverage|utilisation|utilization|latency|throughput|cost|accuracy|volume|score)\b/i;
+
+    function kpiMeasureCount(m) {
+        return m.split(/,|\band\b/i).filter(seg => KPI_MEASURE_NOUN.test(seg)).length;
+    }
+
+    // The unit the metric is counted in. Seeding "≥99.9%" against a lead time
+    // measured in hours is not a weaker proposal but a wrong one, and a wrong
+    // proposal hides the gap better than a blank does — the validator counts
+    // it as awaiting confirmation rather than as an error.
+    function kpiMetricUnit(m) {
+        if (/^\s*number of\b/i.test(m) || /\(count\b/i.test(m)) return 'count';
+        if (/\((hours?|days?|minutes?|seconds?|ms)\)/i.test(m)
+            || /\b(lead time|turnaround|mean time|time to)\b/i.test(m)) return 'duration';
+        if (/\(%\)|\bpercentage\b|\brate\b|\bscore\b/i.test(m)) return 'percent';
+        return null;
+    }
+
+    function kpiTargetUnit(t) {
+        if (/%/.test(t)) return 'percent';
+        if (/\b(hours?|days?|minutes?|seconds?)\b/i.test(t)) return 'duration';
+        return null;
+    }
+
     function proposedKpiTarget(metric) {
         const m = String(metric == null ? '' : metric);
+        if (KPI_UNSEEDABLE.some(re => re.test(m))) return null;
+        if (kpiMeasureCount(m) >= 3) return null;
+        const mUnit = kpiMetricUnit(m);
         for (const b of KPI_BENCHMARKS) {
-            if (b.re.test(m)) {
-                return { target: `${b.target} (proposed)`, frequency: b.frequency, note: b.note };
-            }
+            if (!b.re.test(m)) continue;
+            const tUnit = kpiTargetUnit(b.target);
+            if (mUnit && tUnit && mUnit !== tUnit) return null;
+            return { target: `${b.target} (proposed)`, frequency: b.frequency, note: b.note };
         }
         return null;
     }
