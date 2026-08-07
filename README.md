@@ -8,7 +8,9 @@ Repository: [github.com/JeanKadang/DOC-ITRoles](https://github.com/JeanKadang/DO
 
 ## Prerequisites
 
-**Node.js v18 or later.** The server and tooling use only Node.js built-in modules — no `npm install` needed.
+**Node.js v18 or later.** The server, core tooling, and Node test suite use only
+Node.js built-in modules — no `npm install` needed. Browser tests have a separate
+Node.js requirement described under [Browser journey and accessibility tests](#browser-journey-and-accessibility-tests).
 
 ### Install Node.js on Windows with winget
 
@@ -221,6 +223,10 @@ npm test
 Runs the Node.js built-in test runner (`node --test`) against `test/` — covers path-traversal protection on `/api/role`, `/api/doc`, and `/vendor/*`, API response shapes, and role-metadata parsing (including the BOM-prefixed-file edge case).
 
 ### Browser journey and accessibility tests
+
+**Node.js v20 or later is required for browser tests.** The pinned Playwright
+development tooling does not support Node.js 18; the server, core tooling, and
+`npm test` remain supported on Node.js 18 without installing packages.
 
 ```powershell
 npm ci

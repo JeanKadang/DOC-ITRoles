@@ -25,6 +25,15 @@ test.describe('narrow-screen navigation', () => {
 });
 
 test('keyboard activates chapter, domain, role, and header controls', async ({ page }) => {
+  const search = page.getByRole('textbox', { name: 'Search roles' });
+  const firstLevelFilter = page.getByRole('button', { name: 'Executives', exact: true });
+  await search.focus();
+  await expect(search).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(firstLevelFilter).toBeFocused();
+  await page.keyboard.press('Shift+Tab');
+  await expect(search).toBeFocused();
+
   const chapter = page.locator('#ch-cloud_platform_infra').getByRole('button').first();
   await chapter.focus();
   await expect(chapter).toBeFocused();

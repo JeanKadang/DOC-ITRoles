@@ -9,8 +9,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node --test test/*.test.js",
-    "test:browser": "playwright test",
+    "test": "node scripts/run-node-tests.js",
+    "test:browser": "node scripts/run-browser-tests.js",
     "validate": "node validate-roles.js",
     "check-counts": "node scripts/check-counts.js",
     "seed-kpi": "node scripts/seed-kpi-targets.js",

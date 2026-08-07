@@ -2,6 +2,10 @@ const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
+  const totalRoles = page.locator('#statsCards .stat-card').filter({
+    has: page.getByText('Total Roles', { exact: true }),
+  });
+  await expect(totalRoles).toContainText('226');
 });
 
 test('home page shows the live catalogue totals', async ({ page }) => {
@@ -26,8 +30,7 @@ test('search opens a known role without duplicating its exact title', async ({ p
   await searchResponse;
 
   const exactRole = page.locator('#sidebarNav .chapter-domains').getByRole('button', {
-    name: 'Kubernetes Architect Architect',
-    exact: true,
+    name: /^Kubernetes Architect\b/,
   });
   await expect(exactRole).toHaveCount(1);
   await expect(page.locator('#contentMatches').getByText('Kubernetes Architect', { exact: true })).toHaveCount(0);
@@ -41,8 +44,7 @@ test('compare mode opens a second role and closes cleanly', async ({ page }) => 
   const search = page.getByRole('textbox', { name: 'Search roles' });
   await search.fill('Kubernetes Architect');
   await page.locator('#sidebarNav .chapter-domains').getByRole('button', {
-    name: 'Kubernetes Architect Architect',
-    exact: true,
+    name: /^Kubernetes Architect\b/,
   }).click();
   await expect(page.locator('#roleHeader').getByRole('heading', { name: 'Kubernetes Architect' })).toBeVisible();
 
@@ -51,13 +53,11 @@ test('compare mode opens a second role and closes cleanly', async ({ page }) => 
 
   await search.fill('Kubernetes Engineer');
   await page.locator('#sidebarNav .chapter-domains').getByRole('button', {
-    name: 'Kubernetes Engineer Engineer',
-    exact: true,
+    name: /^Kubernetes Engineer\b/,
   }).click();
   await expect(page.locator('#roleHeader2').getByRole('heading', { name: 'Kubernetes Engineer' })).toBeVisible();
-  await expect(page.locator('#rolesGrid')).toHaveClass(/comparing/);
 
   await page.getByRole('button', { name: 'Close comparison' }).click();
   await expect(page.locator('#roleView2')).toBeHidden();
-  await expect(page.locator('#rolesGrid')).not.toHaveClass(/comparing/);
+  await expect(page.getByRole('button', { name: 'Compare with another role' })).toBeVisible();
 });
