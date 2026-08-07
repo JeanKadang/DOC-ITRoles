@@ -6,3 +6,7 @@ node_modules/
 
 # Understand Anything knowledge-graph cache — regenerable local tooling data
 .ua/
+
+# Playwright browser-test output
+playwright-report/
+test-results/
