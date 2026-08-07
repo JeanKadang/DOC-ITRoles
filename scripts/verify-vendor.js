@@ -70,6 +70,22 @@ function verifyVendor(rootDir) {
     if (typeof asset.verified === 'string' && !/^\d{4}-\d{2}-\d{2}$/.test(asset.verified)) {
       errors.push(`${label}: verified must use YYYY-MM-DD`);
     }
+    if (!Array.isArray(asset.licenseFiles) || asset.licenseFiles.length === 0) {
+      errors.push(`${label}: licenseFiles must be a non-empty array`);
+    } else {
+      for (const licenseFile of asset.licenseFiles) {
+        if (typeof licenseFile !== 'string' || licenseFile.trim() === '') {
+          errors.push(`${label}: licenseFiles entries must be non-empty strings`);
+          continue;
+        }
+        const licensePath = path.resolve(vendorDir, licenseFile);
+        if (!licensePath.startsWith(`${path.resolve(vendorDir)}${path.sep}`)) {
+          errors.push(`${label}: licence file must stay inside vendor/: ${licenseFile}`);
+        } else if (!fs.existsSync(licensePath)) {
+          errors.push(`Missing licence file: ${licenseFile}`);
+        }
+      }
+    }
 
     const assetPath = path.join(vendorDir, asset.file);
     if (!fs.existsSync(assetPath)) {

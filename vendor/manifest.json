@@ -8,6 +8,7 @@
       "source": "https://github.com/chartjs/Chart.js/releases/tag/v4.5.1",
       "license": "MIT",
       "licenseSource": "https://github.com/chartjs/Chart.js/blob/v4.5.1/LICENSE.md",
+      "licenseFiles": ["THIRD_PARTY_NOTICES.md"],
       "sha256": "48444a82d4edcb5bec0f1965faacdde18d9c17db3063d042abada2f705c9f54a",
       "verified": "2026-08-07",
       "owner": "repository maintainer",
@@ -21,6 +22,11 @@
       "license": "Apache-2.0",
       "licenseSource": "https://github.com/apache/echarts/blob/5.6.0/LICENSE",
       "noticeSource": "https://github.com/apache/echarts/blob/5.6.0/NOTICE",
+      "licenseFiles": [
+        "licenses/APACHE-2.0.txt",
+        "licenses/BSD-3-Clause-d3.txt",
+        "THIRD_PARTY_NOTICES.md"
+      ],
       "sha256": "bf4a223524e40b77c304bec67e1222cf551f14880cf42c69dc046558e11c07b1",
       "verified": "2026-08-07",
       "owner": "repository maintainer",
@@ -33,6 +39,7 @@
       "source": "https://github.com/markedjs/marked/releases/tag/v12.0.2",
       "license": "MIT with bundled Markdown notices",
       "licenseSource": "https://github.com/markedjs/marked/blob/v12.0.2/LICENSE.md",
+      "licenseFiles": ["THIRD_PARTY_NOTICES.md"],
       "sha256": "15fabce5b65898b32b03f5ed25e9f891a729ad4c0d6d877110a7744aa847a894",
       "verified": "2026-08-07",
       "owner": "repository maintainer",
@@ -45,6 +52,10 @@
       "source": "https://github.com/cure53/DOMPurify/releases/tag/3.2.7",
       "license": "Apache-2.0 OR MPL-2.0",
       "licenseSource": "https://github.com/cure53/DOMPurify/blob/3.2.7/LICENSE",
+      "licenseFiles": [
+        "licenses/APACHE-2.0.txt",
+        "THIRD_PARTY_NOTICES.md"
+      ],
       "sha256": "40cff492b54353a55cdf9ffb369786539ffb7d54d25f97dd4a1e8975b309c35d",
       "verified": "2026-08-07",
       "owner": "repository maintainer",

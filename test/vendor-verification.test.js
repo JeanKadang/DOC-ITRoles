@@ -15,8 +15,10 @@ function createFixture() {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'vendor-verification-'));
   const vendorDir = path.join(root, 'vendor');
   fs.mkdirSync(vendorDir);
+  fs.mkdirSync(path.join(vendorDir, 'licenses'));
   const content = '/* Example 1.0.0 */\n';
   fs.writeFileSync(path.join(vendorDir, 'example.min.js'), content);
+  fs.writeFileSync(path.join(vendorDir, 'licenses', 'MIT.txt'), 'MIT licence\n');
   fs.writeFileSync(path.join(vendorDir, 'manifest.json'), JSON.stringify({
     schemaVersion: 1,
     assets: [{
@@ -25,6 +27,7 @@ function createFixture() {
       version: '1.0.0',
       source: 'https://example.com/example/releases/tag/v1.0.0',
       license: 'MIT',
+      licenseFiles: ['licenses/MIT.txt'],
       sha256: sha256(content),
       verified: '2026-08-07',
       owner: 'repository maintainer',
@@ -59,6 +62,13 @@ test('reports JavaScript assets missing from the manifest', t => {
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   fs.writeFileSync(path.join(root, 'vendor', 'untracked.min.js'), '// untracked\n');
   assert.match(verifyVendor(root).join('\n'), /untracked asset.*untracked\.min\.js/i);
+});
+
+test('reports a retained licence file that is missing', t => {
+  const root = createFixture();
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  fs.unlinkSync(path.join(root, 'vendor', 'licenses', 'MIT.txt'));
+  assert.match(verifyVendor(root).join('\n'), /missing licence file.*licenses[/\\]MIT\.txt/i);
 });
 
 test('the committed vendor directory passes verification', () => {
