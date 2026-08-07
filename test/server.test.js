@@ -5,6 +5,7 @@ const assert = require('node:assert/strict');
 const http = require('node:http');
 
 const { server, preferredSearchMatchIndex } = require('../server.js');
+const { contentReferencesForQuery } = require('../viewer-logic.js');
 
 let baseUrl;
 
@@ -88,6 +89,19 @@ test('GET /api/search retains an exact-title match for API consumers', async () 
   const res = await request('/api/search?q=' + encodeURIComponent('Kubernetes Architect'));
   const { matches } = JSON.parse(res.body);
   assert.ok(matches.some(m => m.title === 'Kubernetes Architect'));
+});
+
+test('GET /api/search normalizes repeated whitespace before viewer reconciliation', async () => {
+  const query = 'Kubernetes   Architect';
+  const res = await request('/api/search?q=' + encodeURIComponent(query));
+  const { matches } = JSON.parse(res.body);
+  const exact = matches.find(m => m.title === 'Kubernetes Architect');
+
+  assert.ok(exact, 'the general-purpose API retains the normalized exact-title match');
+  const references = contentReferencesForQuery(matches, query, [exact]);
+  assert.ok(!references.some(m => m.title === 'Kubernetes Architect'));
+  assert.ok(references.some(m => m.title === 'AI Platform Architect'),
+    'another role mentioning the exact title remains a content reference');
 });
 
 test('preferredSearchMatchIndex skips heading and metadata for a narrative match', () => {

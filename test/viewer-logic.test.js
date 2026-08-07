@@ -81,6 +81,19 @@ test('contentReferencesForQuery safely handles missing collections', () => {
     assert.deepEqual(contentReferencesForQuery(null, 'Kubernetes Architect'), []);
 });
 
+test('contentReferencesForQuery retains an exact title hidden by the level filter', () => {
+    const exact = { title: 'Kubernetes Architect', file: 'exact.md', level: 'Architect' };
+    const reference = { title: 'AI Platform Architect', file: 'reference.md', level: 'Architect' };
+    const matches = [exact, reference];
+    const visibleRoles = [exact].filter(role =>
+        roleMatchesFilter(role, {}, { q: 'Kubernetes Architect', levels: ['Engineer'] }));
+
+    assert.deepEqual(
+        contentReferencesForQuery(matches, 'Kubernetes Architect', visibleRoles),
+        matches,
+    );
+});
+
 // ── escapeHtml ────────────────────────────────────────────
 
 test('escapeHtml escapes all five significant characters', () => {

@@ -116,7 +116,6 @@ function getSearchIndex() {
         level:       resolveLevel(content, file),
         domainLabel: label,
         text:        content,
-        textLower:   content.toLowerCase(),
       });
     }
   }
@@ -156,7 +155,7 @@ function makeSnippet(text, idx, qlen, radius = 50) {
 // Roles whose title or body contains the query. Title matches sort first,
 // then alphabetically. Query shorter than 2 chars returns nothing.
 function searchRoles(query) {
-  const q = String(query).trim().toLowerCase();
+  const q = String(query).trim().replace(/\s+/g, ' ').toLowerCase();
   if (q.length < 2) return [];
   const matches = [];
   for (const e of getSearchIndex()) {

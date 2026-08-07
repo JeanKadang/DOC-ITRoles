@@ -706,10 +706,16 @@
             .toLowerCase();
     }
 
-    function contentReferencesForQuery(matches, query) {
+    function contentReferencesForQuery(matches, query, visibleRoles) {
         const items = Array.isArray(matches) ? matches : [];
         const queryKey = normalizedSearchText(query);
         if (!queryKey) return items.slice();
+        const sidebarItems = visibleRoles === undefined
+            ? items
+            : (Array.isArray(visibleRoles) ? visibleRoles : []);
+        const exactTitleIsVisible = sidebarItems.some(role =>
+            normalizedSearchText(role && role.title) === queryKey);
+        if (!exactTitleIsVisible) return items.slice();
         return items.filter(match => normalizedSearchText(match && match.title) !== queryKey);
     }
 

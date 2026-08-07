@@ -2750,7 +2750,9 @@
             const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
             if (!res.ok) throw new Error(res.status);
             ({ matches } = await res.json());
-            matches = contentReferencesForQuery(matches, q);
+            const visibleRoles = [...document.querySelectorAll('#sidebarNav .chapter-domains .role-item[data-title]')]
+                .map(item => ({ title: item.dataset.title }));
+            matches = contentReferencesForQuery(matches, q, visibleRoles);
         } catch {
             if (seq === contentSearchSeq) showContentStatus('⚠️ Content search unavailable', 'cm-error');
             return;
