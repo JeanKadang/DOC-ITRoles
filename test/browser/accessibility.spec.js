@@ -33,6 +33,14 @@ async function scanForAccessibility(page, testInfo, stateName) {
   expect(summary, `${stateName} has serious or critical axe violations`).toEqual([]);
 }
 
+async function activateDarkTheme(page) {
+  const themeButton = page.getByRole('button', { name: 'Toggle dark mode' });
+
+  await themeButton.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(themeButton).toHaveAttribute('aria-pressed', 'true');
+}
+
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
 });
@@ -40,6 +48,13 @@ test.beforeEach(async ({ page }) => {
 test('home state has no serious or critical axe violations', async ({ page }, testInfo) => {
   await expect(page.getByRole('heading', { name: 'Select a role to view' })).toBeVisible();
   await scanForAccessibility(page, testInfo, 'home');
+});
+
+test('dark home state has no serious or critical axe violations', async ({ page }, testInfo) => {
+  await activateDarkTheme(page);
+
+  await expect(page.getByRole('heading', { name: 'Select a role to view' })).toBeVisible();
+  await scanForAccessibility(page, testInfo, 'dark-home');
 });
 
 test('opened role has no serious or critical axe violations', async ({ page }, testInfo) => {
