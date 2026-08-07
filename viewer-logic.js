@@ -699,6 +699,20 @@
             || String(chapterLabel).toLowerCase().includes(needle);
     }
 
+    function normalizedSearchText(value) {
+        return String(value == null ? '' : value)
+            .trim()
+            .replace(/\s+/g, ' ')
+            .toLowerCase();
+    }
+
+    function contentReferencesForQuery(matches, query) {
+        const items = Array.isArray(matches) ? matches : [];
+        const queryKey = normalizedSearchText(query);
+        if (!queryKey) return items.slice();
+        return items.filter(match => normalizedSearchText(match && match.title) !== queryKey);
+    }
+
     // Bucket sidebar resources by their declared group, preserving the order
     // the groups are declared in (#144). Empty groups are dropped; an item
     // with no group falls into the first one rather than disappearing, since
@@ -1042,6 +1056,7 @@
         STAT_GROUPS,
         countRolesAtLevels,
         roleMatchesFilter,
+        contentReferencesForQuery,
         REFERENCE_DOC_PATTERN,
         LEVEL_ORDER,
         LEVEL_SHORT,
