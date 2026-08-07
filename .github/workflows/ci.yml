@@ -55,7 +55,10 @@ jobs:
   browser:
     name: Browser journeys (Chromium, Firefox, WebKit)
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Fresh hosted runners may need to provision more than 100 MB of browser
+    # system dependencies. Keep a ceiling, but leave enough room for a slow
+    # Ubuntu mirror before the cross-browser tests begin (#206).
+    timeout-minutes: 30
     steps:
       # actions/checkout v7
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0

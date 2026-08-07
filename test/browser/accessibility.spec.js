@@ -2,6 +2,16 @@ const { test, expect } = require('@playwright/test');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 async function scanForAccessibility(page, testInfo, stateName) {
+  // Axe evaluates the pixels at the instant it runs. Wait for finite entrance
+  // animations so Firefox does not measure text while its parent is partially
+  // transparent; intentionally infinite decoration such as the header shimmer
+  // must not hold the scan open.
+  await page.evaluate(async () => {
+    const finiteAnimations = document.getAnimations().filter(animation =>
+      animation.effect?.getTiming().iterations !== Infinity);
+    await Promise.all(finiteAnimations.map(animation => animation.finished.catch(() => {})));
+  });
+
   const results = await new AxeBuilder({ page }).analyze();
 
   if (results.violations.length > 0) {
