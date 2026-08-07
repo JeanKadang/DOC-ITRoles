@@ -202,6 +202,8 @@ Each role file follows the canonical 14-section structure. See [`docs/role_templ
 
 | Document | Purpose |
 |---|---|
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | Evidence standards, substantive review expectations, and contribution workflow |
+| [`docs/adr/README.md`](docs/adr/README.md) | Durable catalogue and architecture decisions, ADR lifecycle, and index |
 | [`docs/CROSS_DOMAIN_INTERACTIONS.md`](docs/CROSS_DOMAIN_INTERACTIONS.md) | Domain ownership boundaries, key relationships, escalation paths |
 | [`docs/SKILLS_PROGRESSION.md`](docs/SKILLS_PROGRESSION.md) | Engineer → Senior → Architect career ladder per domain |
 | [`docs/ONBOARDING_TEMPLATE.md`](docs/ONBOARDING_TEMPLATE.md) | 30/60/90 day plan template for new hires |
@@ -211,6 +213,7 @@ Each role file follows the canonical 14-section structure. See [`docs/role_templ
 | [`docs/improvements_and_recommendations.md`](docs/improvements_and_recommendations.md) | **Closed.** Narrative of the four 2026 review cycles. Open work is in [GitHub Issues](https://github.com/JeanKadang/DOC-ITRoles/issues); what shipped is in [CHANGELOG.md](CHANGELOG.md) |
 | [`CHANGELOG.md`](CHANGELOG.md) | Version history of the codebase (Keep a Changelog format) |
 | [`SECURITY.md`](SECURITY.md) | Security policy and how to report a vulnerability |
+| [`vendor/README.md`](vendor/README.md) | Vendored dependency provenance, licence notices, verification, and upgrade process |
 
 ## Development
 

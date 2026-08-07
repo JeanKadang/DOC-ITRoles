@@ -19,6 +19,7 @@
 ### Task 1: Evidence and decision guidance
 
 **Files:**
+
 - Create: `CONTRIBUTING.md`
 - Create: `docs/adr/README.md`
 - Create: `docs/adr/template.md`
@@ -27,6 +28,7 @@
 - Modify: `README.md`
 
 **Interfaces:**
+
 - Consumes: current role template, repository design notes, and retired recommendations workflow
 - Produces: contributor review rules and indexed, immutable decision records
 

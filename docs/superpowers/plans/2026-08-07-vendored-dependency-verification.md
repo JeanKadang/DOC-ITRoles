@@ -19,6 +19,7 @@
 ### Task 1: Vendor manifest verifier
 
 **Files:**
+
 - Create: `test/vendor-verification.test.js`
 - Create: `scripts/verify-vendor.js`
 - Create: `vendor/manifest.json`
@@ -26,6 +27,7 @@
 - Modify: `package.json`
 
 **Interfaces:**
+
 - Consumes: `{ assets: Array<{ file, package, version, source, license, sha256, verified, owner, reviewCadence }> }`
 - Produces: `verifyVendor(rootDir): string[]`, where an empty array means success
 
