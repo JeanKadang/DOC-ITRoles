@@ -4,7 +4,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const http = require('node:http');
 
-const { server } = require('../server.js');
+const { server, preferredSearchMatchIndex } = require('../server.js');
 
 let baseUrl;
 
@@ -82,6 +82,45 @@ test('GET /api/search sorts title matches ahead of body-only matches', async () 
   if (firstBodyOnly !== -1 && lastTitle !== -1) {
     assert.ok(lastTitle < firstBodyOnly, 'all title matches precede body-only matches');
   }
+});
+
+test('GET /api/search retains an exact-title match for API consumers', async () => {
+  const res = await request('/api/search?q=' + encodeURIComponent('Kubernetes Architect'));
+  const { matches } = JSON.parse(res.body);
+  assert.ok(matches.some(m => m.title === 'Kubernetes Architect'));
+});
+
+test('preferredSearchMatchIndex skips heading and metadata for a narrative match', () => {
+  const markdown = [
+    '# Kubernetes Architect',
+    '',
+    '| Related Role | Kubernetes Architect |',
+    '',
+    '## Purpose',
+    '',
+    'Partners with the Kubernetes Architect on platform direction.',
+  ].join('\n');
+
+  const idx = preferredSearchMatchIndex(markdown, 'kubernetes architect');
+  assert.ok(idx > markdown.indexOf('## Purpose'));
+  assert.equal(markdown.slice(idx, idx + 'Kubernetes Architect'.length), 'Kubernetes Architect');
+});
+
+test('preferredSearchMatchIndex falls back to a metadata-only match', () => {
+  const markdown = [
+    '# Platform Engineer',
+    '',
+    '| Primary Tool | Terraform |',
+    '',
+    '## Purpose',
+    '',
+    'Builds reliable internal platforms.',
+  ].join('\n');
+
+  assert.equal(
+    preferredSearchMatchIndex(markdown, 'terraform'),
+    markdown.toLowerCase().indexOf('terraform'),
+  );
 });
 
 test('GET /api/search returns nothing for a query shorter than 2 chars', async () => {

@@ -124,6 +124,23 @@ function getSearchIndex() {
   return entries;
 }
 
+function preferredSearchMatchIndex(text, query) {
+  const source = String(text == null ? '' : text);
+  const q = String(query == null ? '' : query).toLowerCase();
+  if (!q) return -1;
+
+  const lower = source.toLowerCase();
+  const first = lower.indexOf(q);
+  if (first === -1) return -1;
+
+  const narrativeStart = source.search(/^##\s+/m);
+  if (narrativeStart !== -1) {
+    const narrative = lower.indexOf(q, narrativeStart);
+    if (narrative !== -1) return narrative;
+  }
+  return first;
+}
+
 // A ~100-char excerpt of `text` centred on the first match of the query.
 // Whitespace (incl. markdown table pipes/newlines) is collapsed to one
 // space; the raw excerpt is HTML-escaped by the client before rendering.
@@ -144,7 +161,7 @@ function searchRoles(query) {
   const matches = [];
   for (const e of getSearchIndex()) {
     const inTitle = e.title.toLowerCase().includes(q);
-    const bodyIdx = e.textLower.indexOf(q);
+    const bodyIdx = preferredSearchMatchIndex(e.text, q);
     if (!inTitle && bodyIdx === -1) continue;
     matches.push({
       file:    e.file,
@@ -312,4 +329,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { server, getRoles, searchRoles, ROOT, ROLES_DIR };
+module.exports = { server, getRoles, searchRoles, preferredSearchMatchIndex, ROOT, ROLES_DIR };
