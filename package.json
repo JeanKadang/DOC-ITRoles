@@ -9,12 +9,17 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "node --test",
+    "test": "node scripts/run-node-tests.js",
+    "test:browser": "node scripts/run-browser-tests.js",
     "validate": "node validate-roles.js",
     "check-counts": "node scripts/check-counts.js",
     "seed-kpi": "node scripts/seed-kpi-targets.js",
     "build-radar": "node scripts/build-radar.js",
     "build-skills-matrix": "node scripts/build-skills-matrix.js"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@playwright/test": "1.62.1"
+  }
 }

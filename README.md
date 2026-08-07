@@ -8,7 +8,9 @@ Repository: [github.com/JeanKadang/DOC-ITRoles](https://github.com/JeanKadang/DO
 
 ## Prerequisites
 
-**Node.js v18 or later.** The server and tooling use only Node.js built-in modules — no `npm install` needed.
+**Node.js v18 or later.** The server, core tooling, and Node test suite use only
+Node.js built-in modules — no `npm install` needed. Browser tests have a separate
+Node.js requirement described under [Browser journey and accessibility tests](#browser-journey-and-accessibility-tests).
 
 ### Install Node.js on Windows with winget
 
@@ -220,6 +222,23 @@ npm test
 
 Runs the Node.js built-in test runner (`node --test`) against `test/` — covers path-traversal protection on `/api/role`, `/api/doc`, and `/vendor/*`, API response shapes, and role-metadata parsing (including the BOM-prefixed-file edge case).
 
+### Browser journey and accessibility tests
+
+**Node.js v20 or later is required for browser tests.** The pinned Playwright
+development tooling does not support Node.js 18; the server, core tooling, and
+`npm test` remain supported on Node.js 18 without installing packages.
+
+```powershell
+npm ci
+npx playwright install chromium firefox webkit
+npm run test:browser
+```
+
+Playwright starts the local Node server automatically and runs the critical home,
+search, compare, responsive-navigation, keyboard, and accessibility journeys in
+Chromium, Firefox, and WebKit. Failure output is written to `test-results/`; the
+HTML report is written to `playwright-report/` in CI.
+
 ### Validating role content
 
 ```powershell
@@ -243,6 +262,9 @@ Compares README.md's count-bearing sentences ("N domains grouped into N chapters
 `.github/workflows/ci.yml` runs on every push/PR to `main`:
 
 - **Tests** (`npm test`) — blocking, on a Node 18/22 matrix.
+- **Browser journeys** (`npm run test:browser`) — blocking; Chromium, Firefox,
+  and WebKit share a ten-minute job budget, with failure diagnostics retained
+  for seven days.
 - **Role content validation** (`npm run validate`) — blocking; every role file must match the canonical template.
 - **Markdown lint** (`markdownlint-cli2`, config in `.markdownlint.json`) — blocking.
 - **Count check** (`npm run check-counts`) — blocking.
