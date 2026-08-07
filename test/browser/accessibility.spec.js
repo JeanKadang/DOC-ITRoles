@@ -65,3 +65,16 @@ test('opened role has no serious or critical axe violations', async ({ page }, t
 
   await scanForAccessibility(page, testInfo, 'opened-role');
 });
+
+test('dark opened role has no serious or critical axe violations', async ({ page }, testInfo) => {
+  await activateDarkTheme(page);
+
+  const search = page.getByRole('textbox', { name: 'Search roles' });
+  await search.fill('Kubernetes Architect');
+  await page.getByRole('button', { name: /Kubernetes Architect/ }).click();
+
+  await expect(
+    page.locator('#roleHeader').getByRole('heading', { name: 'Kubernetes Architect' }),
+  ).toBeVisible();
+  await scanForAccessibility(page, testInfo, 'dark-opened-role');
+});
