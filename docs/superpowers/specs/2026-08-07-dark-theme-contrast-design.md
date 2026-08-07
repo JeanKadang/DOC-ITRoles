@@ -1,7 +1,7 @@
 # Dark-Theme Contrast Remediation Design
 
 **Issue:** #202  
-**Status:** Approved  
+**Status:** Implemented
 **Date:** 2026-08-07
 
 ## Context
@@ -128,3 +128,10 @@ The implementation belongs in one issue-linked branch and pull request for
 accessibility tests, and this design/implementation documentation. Configuration
 centralisation (#184), stable role identity (#180), and vendored dependency
 verification (#185) remain separate changes.
+
+## Implementation verification
+
+- Dark home and dark opened-role axe scans pass without exclusions in Chromium, Firefox, and WebKit.
+- The full Node and browser suites pass.
+- Repository validation and content counts remain at their pre-change baselines.
+- Desktop and narrow-width checks confirm that the light theme and layout remain unchanged.

@@ -210,7 +210,7 @@ Run each command separately:
 npm test
 npm run test:browser
 npm run validate
-npm run count
+npm run check-counts
 npx markdownlint-cli2 "**/*.md" "#node_modules"
 ```
 
@@ -219,7 +219,7 @@ Expected results from the current baseline plus the two new browser tests:
 - `npm test`: 233 tests pass.
 - `npm run test:browser`: 27 tests pass across Chromium, Firefox, and WebKit.
 - `npm run validate`: zero errors; the existing warning baseline remains unchanged unless the generated data changed, which this plan forbids.
-- `npm run count`: 226 roles, 34 categories, and 7 tracks.
+- `npm run check-counts`: 226 roles, 34 domains, and 7 chapters.
 - Markdown lint: zero errors.
 
 - [ ] **Step 2: Inspect the final UI at desktop and narrow widths**
