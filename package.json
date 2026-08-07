@@ -13,6 +13,7 @@
     "test:browser": "node scripts/run-browser-tests.js",
     "validate": "node validate-roles.js",
     "check-counts": "node scripts/check-counts.js",
+    "verify-vendor": "node scripts/verify-vendor.js",
     "seed-kpi": "node scripts/seed-kpi-targets.js",
     "build-radar": "node scripts/build-radar.js",
     "build-skills-matrix": "node scripts/build-skills-matrix.js"
