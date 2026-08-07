@@ -692,11 +692,31 @@
     // can be applied independently or together.
     function roleMatchesFilter(role, { domainLabel = '', chapterLabel = '' } = {}, { q = '', levels = [] } = {}) {
         if (levels.length && !levels.includes(role.level)) return false;
-        const needle = String(q || '').trim().toLowerCase();
+        const needle = normalizedSearchText(q);
         if (!needle) return true;
-        return String(role.title).toLowerCase().includes(needle)
-            || String(domainLabel).toLowerCase().includes(needle)
-            || String(chapterLabel).toLowerCase().includes(needle);
+        return normalizedSearchText(role.title).includes(needle)
+            || normalizedSearchText(domainLabel).includes(needle)
+            || normalizedSearchText(chapterLabel).includes(needle);
+    }
+
+    function normalizedSearchText(value) {
+        return String(value == null ? '' : value)
+            .trim()
+            .replace(/\s+/g, ' ')
+            .toLowerCase();
+    }
+
+    function contentReferencesForQuery(matches, query, visibleRoles) {
+        const items = Array.isArray(matches) ? matches : [];
+        const queryKey = normalizedSearchText(query);
+        if (!queryKey) return items.slice();
+        const sidebarItems = visibleRoles === undefined
+            ? items
+            : (Array.isArray(visibleRoles) ? visibleRoles : []);
+        const exactTitleIsVisible = sidebarItems.some(role =>
+            normalizedSearchText(role && role.title) === queryKey);
+        if (!exactTitleIsVisible) return items.slice();
+        return items.filter(match => normalizedSearchText(match && match.title) !== queryKey);
     }
 
     // Bucket sidebar resources by their declared group, preserving the order
@@ -1042,6 +1062,7 @@
         STAT_GROUPS,
         countRolesAtLevels,
         roleMatchesFilter,
+        contentReferencesForQuery,
         REFERENCE_DOC_PATTERN,
         LEVEL_ORDER,
         LEVEL_SHORT,

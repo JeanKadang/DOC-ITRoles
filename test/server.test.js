@@ -4,7 +4,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const http = require('node:http');
 
-const { server } = require('../server.js');
+const { server, preferredSearchMatchIndex } = require('../server.js');
+const { contentReferencesForQuery } = require('../viewer-logic.js');
 
 let baseUrl;
 
@@ -82,6 +83,58 @@ test('GET /api/search sorts title matches ahead of body-only matches', async () 
   if (firstBodyOnly !== -1 && lastTitle !== -1) {
     assert.ok(lastTitle < firstBodyOnly, 'all title matches precede body-only matches');
   }
+});
+
+test('GET /api/search retains an exact-title match for API consumers', async () => {
+  const res = await request('/api/search?q=' + encodeURIComponent('Kubernetes Architect'));
+  const { matches } = JSON.parse(res.body);
+  assert.ok(matches.some(m => m.title === 'Kubernetes Architect'));
+});
+
+test('GET /api/search normalizes repeated whitespace before viewer reconciliation', async () => {
+  const query = 'Kubernetes   Architect';
+  const res = await request('/api/search?q=' + encodeURIComponent(query));
+  const { matches } = JSON.parse(res.body);
+  const exact = matches.find(m => m.title === 'Kubernetes Architect');
+
+  assert.ok(exact, 'the general-purpose API retains the normalized exact-title match');
+  const references = contentReferencesForQuery(matches, query, [exact]);
+  assert.ok(!references.some(m => m.title === 'Kubernetes Architect'));
+  assert.ok(references.some(m => m.title === 'AI Platform Architect'),
+    'another role mentioning the exact title remains a content reference');
+});
+
+test('preferredSearchMatchIndex skips heading and metadata for a narrative match', () => {
+  const markdown = [
+    '# Kubernetes Architect',
+    '',
+    '| Related Role | Kubernetes Architect |',
+    '',
+    '## Purpose',
+    '',
+    'Partners with the Kubernetes Architect on platform direction.',
+  ].join('\n');
+
+  const idx = preferredSearchMatchIndex(markdown, 'kubernetes architect');
+  assert.ok(idx > markdown.indexOf('## Purpose'));
+  assert.equal(markdown.slice(idx, idx + 'Kubernetes Architect'.length), 'Kubernetes Architect');
+});
+
+test('preferredSearchMatchIndex falls back to a metadata-only match', () => {
+  const markdown = [
+    '# Platform Engineer',
+    '',
+    '| Primary Tool | Terraform |',
+    '',
+    '## Purpose',
+    '',
+    'Builds reliable internal platforms.',
+  ].join('\n');
+
+  assert.equal(
+    preferredSearchMatchIndex(markdown, 'terraform'),
+    markdown.toLowerCase().indexOf('terraform'),
+  );
 });
 
 test('GET /api/search returns nothing for a query shorter than 2 chars', async () => {

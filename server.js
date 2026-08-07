@@ -116,12 +116,28 @@ function getSearchIndex() {
         level:       resolveLevel(content, file),
         domainLabel: label,
         text:        content,
-        textLower:   content.toLowerCase(),
       });
     }
   }
   searchCache = { signature, entries };
   return entries;
+}
+
+function preferredSearchMatchIndex(text, query) {
+  const source = String(text == null ? '' : text);
+  const q = String(query == null ? '' : query).toLowerCase();
+  if (!q) return -1;
+
+  const lower = source.toLowerCase();
+  const first = lower.indexOf(q);
+  if (first === -1) return -1;
+
+  const narrativeStart = source.search(/^##\s+/m);
+  if (narrativeStart !== -1) {
+    const narrative = lower.indexOf(q, narrativeStart);
+    if (narrative !== -1) return narrative;
+  }
+  return first;
 }
 
 // A ~100-char excerpt of `text` centred on the first match of the query.
@@ -139,12 +155,12 @@ function makeSnippet(text, idx, qlen, radius = 50) {
 // Roles whose title or body contains the query. Title matches sort first,
 // then alphabetically. Query shorter than 2 chars returns nothing.
 function searchRoles(query) {
-  const q = String(query).trim().toLowerCase();
+  const q = String(query).trim().replace(/\s+/g, ' ').toLowerCase();
   if (q.length < 2) return [];
   const matches = [];
   for (const e of getSearchIndex()) {
     const inTitle = e.title.toLowerCase().includes(q);
-    const bodyIdx = e.textLower.indexOf(q);
+    const bodyIdx = preferredSearchMatchIndex(e.text, q);
     if (!inTitle && bodyIdx === -1) continue;
     matches.push({
       file:    e.file,
@@ -312,4 +328,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { server, getRoles, searchRoles, ROOT, ROLES_DIR };
+module.exports = { server, getRoles, searchRoles, preferredSearchMatchIndex, ROOT, ROLES_DIR };

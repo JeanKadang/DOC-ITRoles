@@ -18,6 +18,7 @@ const {
     STAT_GROUPS,
     countRolesAtLevels,
     roleMatchesFilter,
+    contentReferencesForQuery,
     LEVEL_ORDER,
     LEVEL_SHORT,
     escapeHtml,
@@ -53,6 +54,44 @@ test('viewer-logic REFERENCE_DOC_PATTERN mirrors roleMeta exactly', () => {
     // copy; this test keeps the two from drifting apart.
     assert.equal(REFERENCE_DOC_PATTERN.source, ROLEMETA_REF_PATTERN.source);
     assert.equal(REFERENCE_DOC_PATTERN.flags, ROLEMETA_REF_PATTERN.flags);
+});
+
+test('contentReferencesForQuery removes only an exact normalized title match', () => {
+    const exact = { title: 'Kubernetes Architect', file: 'exact.md' };
+    const reference = { title: 'Platform Architect', file: 'reference.md' };
+    const matches = [exact, reference];
+
+    assert.deepEqual(
+        contentReferencesForQuery(matches, '  KUBERNETES   architect  '),
+        [reference],
+    );
+});
+
+test('contentReferencesForQuery retains partial-title and unrelated matches', () => {
+    const matches = [
+        { title: 'Kubernetes Architect', file: 'architect.md' },
+        { title: 'Kubernetes Engineer', file: 'engineer.md' },
+    ];
+
+    assert.deepEqual(contentReferencesForQuery(matches, 'Kubernetes'), matches);
+});
+
+test('contentReferencesForQuery safely handles missing collections', () => {
+    assert.deepEqual(contentReferencesForQuery(undefined, 'Kubernetes Architect'), []);
+    assert.deepEqual(contentReferencesForQuery(null, 'Kubernetes Architect'), []);
+});
+
+test('contentReferencesForQuery retains an exact title hidden by the level filter', () => {
+    const exact = { title: 'Kubernetes Architect', file: 'exact.md', level: 'Architect' };
+    const reference = { title: 'AI Platform Architect', file: 'reference.md', level: 'Architect' };
+    const matches = [exact, reference];
+    const visibleRoles = [exact].filter(role =>
+        roleMatchesFilter(role, {}, { q: 'Kubernetes Architect', levels: ['Engineer'] }));
+
+    assert.deepEqual(
+        contentReferencesForQuery(matches, 'Kubernetes Architect', visibleRoles),
+        matches,
+    );
 });
 
 // ── escapeHtml ────────────────────────────────────────────
@@ -1012,6 +1051,15 @@ test('roleMatchesFilter combines the text query and the level filter', () => {
     assert.equal(roleMatchesFilter(role, ctx, { q: 'aws',  levels: ['Engineer'] }), false);
     assert.equal(roleMatchesFilter(role, ctx, { q: 'nope', levels: ['Architect'] }), false);
     assert.equal(roleMatchesFilter(role, ctx, { q: '',     levels: [] }), true);
+});
+
+test('roleMatchesFilter normalizes internal whitespace in exact-title queries', () => {
+    const role = { title: 'Kubernetes Architect', level: 'Architect' };
+
+    assert.equal(
+        roleMatchesFilter(role, {}, { q: '  KUBERNETES   architect  ', levels: [] }),
+        true,
+    );
 });
 
 test('roleMatchesFilter matches on domain and chapter as well as title', () => {
