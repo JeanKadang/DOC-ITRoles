@@ -10,7 +10,7 @@ Run:
 npm run verify-vendor
 ```
 
-The command performs no network access. It fails when manifest metadata is incomplete, a JavaScript asset is missing or untracked, or committed bytes no longer match their SHA-256 checksum.
+The command performs no network access. It fails when manifest metadata is incomplete, a JavaScript asset is missing or untracked, or committed content no longer matches its SHA-256 checksum. Checksums use UTF-8 text with LF line endings so Git's Windows checkout conversion cannot produce false failures.
 
 ## Licence and notice retention
 

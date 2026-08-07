@@ -47,6 +47,13 @@ test('reports checksum drift after an asset changes', t => {
   assert.match(verifyVendor(root).join('\n'), /checksum mismatch.*example\.min\.js/i);
 });
 
+test('uses LF-normalized text checksums across Git checkout settings', t => {
+  const root = createFixture();
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  fs.writeFileSync(path.join(root, 'vendor', 'example.min.js'), '/* Example 1.0.0 */\r\n');
+  assert.deepEqual(verifyVendor(root), []);
+});
+
 test('reports JavaScript assets missing from the manifest', t => {
   const root = createFixture();
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));

@@ -15,7 +15,8 @@ const REQUIRED_FIELDS = [
 ];
 
 function digest(filePath) {
-  return crypto.createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
+  const normalized = fs.readFileSync(filePath, 'utf8').replace(/\r\n/g, '\n');
+  return crypto.createHash('sha256').update(normalized).digest('hex');
 }
 
 function verifyVendor(rootDir) {

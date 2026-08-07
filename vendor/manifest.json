@@ -45,7 +45,7 @@
       "source": "https://github.com/cure53/DOMPurify/releases/tag/3.2.7",
       "license": "Apache-2.0 OR MPL-2.0",
       "licenseSource": "https://github.com/cure53/DOMPurify/blob/3.2.7/LICENSE",
-      "sha256": "9bc53493b7b0cfc39267a3b97e807b0d05a278b9f7552a6d1178c2240905682d",
+      "sha256": "40cff492b54353a55cdf9ffb369786539ffb7d54d25f97dd4a1e8975b309c35d",
       "verified": "2026-08-07",
       "owner": "repository maintainer",
       "reviewCadence": "quarterly"
