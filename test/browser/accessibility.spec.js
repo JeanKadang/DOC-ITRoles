@@ -33,6 +33,14 @@ async function scanForAccessibility(page, testInfo, stateName) {
   expect(summary, `${stateName} has serious or critical axe violations`).toEqual([]);
 }
 
+async function activateDarkTheme(page) {
+  const themeButton = page.getByRole('button', { name: 'Toggle dark mode' });
+
+  await themeButton.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(themeButton).toHaveAttribute('aria-pressed', 'true');
+}
+
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
 });
@@ -42,6 +50,13 @@ test('home state has no serious or critical axe violations', async ({ page }, te
   await scanForAccessibility(page, testInfo, 'home');
 });
 
+test('dark home state has no serious or critical axe violations', async ({ page }, testInfo) => {
+  await activateDarkTheme(page);
+
+  await expect(page.getByRole('heading', { name: 'Select a role to view' })).toBeVisible();
+  await scanForAccessibility(page, testInfo, 'dark-home');
+});
+
 test('opened role has no serious or critical axe violations', async ({ page }, testInfo) => {
   const search = page.getByRole('textbox', { name: 'Search roles' });
   await search.fill('Kubernetes Architect');
@@ -49,4 +64,17 @@ test('opened role has no serious or critical axe violations', async ({ page }, t
   await expect(page.locator('#roleHeader').getByRole('heading', { name: 'Kubernetes Architect' })).toBeVisible();
 
   await scanForAccessibility(page, testInfo, 'opened-role');
+});
+
+test('dark opened role has no serious or critical axe violations', async ({ page }, testInfo) => {
+  await activateDarkTheme(page);
+
+  const search = page.getByRole('textbox', { name: 'Search roles' });
+  await search.fill('Kubernetes Architect');
+  await page.getByRole('button', { name: /Kubernetes Architect/ }).click();
+
+  await expect(
+    page.locator('#roleHeader').getByRole('heading', { name: 'Kubernetes Architect' }),
+  ).toBeVisible();
+  await scanForAccessibility(page, testInfo, 'dark-opened-role');
 });

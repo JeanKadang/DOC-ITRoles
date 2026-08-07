@@ -39,21 +39,17 @@
             --sidebar-w:  290px;
         }
         [data-theme="dark"] {
-            --bg-primary:     #0d1117;
-            --bg-card:        #161b22;
-            --bg-card-hover:  #1c2333;
-            --bg-input:       #21262d;
-            --text-primary:   #e6edf3;
-            --text-secondary: #b1bac4;
-            --text-muted:     #7d8590;
-            --accent-blue:    #0078D4;
-            --border-color:   rgba(255,255,255,0.1);
-            --border-hover:   rgba(0,120,212,0.4);
-            --shadow-sm:      0 1px 3px rgba(0,0,0,0.3);
-            --shadow-md:      0 4px 12px rgba(0,0,0,0.4);
-            --shadow-lg:      0 8px 30px rgba(0,0,0,0.5);
-            --shadow-xl:      0 20px 60px rgba(0,0,0,0.6);
-            --gradient-card:  linear-gradient(135deg, #1c2333 0%, #21262d 100%);
+            --bg-primary: #0b1220;
+            --bg-card: #111827;
+            --bg-card-hover: #1b2638;
+            --bg-input: #243044;
+            --text-primary: #f8fafc;
+            --text-secondary: #d6deea;
+            --text-muted: #b4c0d0;
+            --accent-blue: #6eb6ff;
+            --border-color: rgba(226, 232, 240, 0.18);
+            --border-hover: rgba(110, 182, 255, 0.72);
+            --gradient-card: linear-gradient(135deg, #172033 0%, #202c40 100%);
         }
 
         *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -372,22 +368,22 @@
         .b-pal   { background: rgba(30,58,95,0.14);   color: #1e3a5f; }
         .b-tal   { background: rgba(0,120,212,0.22);  color: #005a9e; font-weight: 700; }
 
-        [data-theme="dark"] .b-ceo  { background: rgba(251,191,36,0.25);  color: #fcd34d; font-weight: 700; }
-        [data-theme="dark"] .b-cto  { background: rgba(165,180,252,0.25); color: #a5b4fc; font-weight: 700; }
-        [data-theme="dark"] .b-cio  { background: rgba(52,211,153,0.25);  color: #34d399; font-weight: 700; }
-        [data-theme="dark"] .b-cfo  { background: rgba(244,114,182,0.25); color: #f472b6; font-weight: 700; }
-        [data-theme="dark"] .b-svp  { background: rgba(226,232,240,0.15); color: #e2e8f0; font-weight: 700; }
-        [data-theme="dark"] .b-ciso { background: rgba(254,202,202,0.2);  color: #fca5a5; font-weight: 700; }
-        [data-theme="dark"] .b-arch { background: rgba(118,75,162,0.28); color: #c09ee0; }
-        [data-theme="dark"] .b-lead { background: rgba(220,130,50,0.28); color: #f0a860; }
-        [data-theme="dark"] .b-prin { background: rgba(220,180,0,0.28);  color: #f0d060; font-weight: 700; }
-        [data-theme="dark"] .b-cl   { background: rgba(0,200,160,0.28);  color: #00d4a8; font-weight: 700; }
-        [data-theme="dark"] .b-sen  { background: rgba(0,120,212,0.28);  color: #60b4ff; }
-        [data-theme="dark"] .b-eng  { background: rgba(40,167,69,0.28);  color: #6bcf7f; }
-        [data-theme="dark"] .b-po   { background: rgba(255,152,0,0.28);  color: #ffb84d; }
-        [data-theme="dark"] .b-standards { background: rgba(23,162,184,0.25); color: #5fd3e8; }
-        [data-theme="dark"] .b-pal  { background: rgba(100,160,255,0.2); color: #a0c8ff; font-weight: 700; }
-        [data-theme="dark"] .b-tal  { background: rgba(0,120,212,0.35);  color: #90d0ff; font-weight: 700; }
+        [data-theme="dark"] .b-ceo { background: #3a2c0c; color: #fcd34d; }
+        [data-theme="dark"] .b-cto { background: #26264f; color: #c7d2fe; }
+        [data-theme="dark"] .b-cio { background: #11382d; color: #6ee7b7; }
+        [data-theme="dark"] .b-cfo { background: #442039; color: #f9a8d4; }
+        [data-theme="dark"] .b-svp { background: #2b3442; color: #f1f5f9; }
+        [data-theme="dark"] .b-ciso { background: #48252b; color: #fecaca; }
+        [data-theme="dark"] .b-arch { background: #342247; color: #e9d5ff; }
+        [data-theme="dark"] .b-lead { background: #422b18; color: #fdba74; }
+        [data-theme="dark"] .b-prin { background: #3b330f; color: #fde68a; }
+        [data-theme="dark"] .b-cl { background: #103b34; color: #5eead4; }
+        [data-theme="dark"] .b-sen { background: #163858; color: #93c5fd; }
+        [data-theme="dark"] .b-eng { background: #173822; color: #86efac; }
+        [data-theme="dark"] .b-po { background: #422a0b; color: #fdba74; }
+        [data-theme="dark"] .b-standards { background: #123744; color: #67e8f9; }
+        [data-theme="dark"] .b-pal { background: #1d3557; color: #bfdbfe; }
+        [data-theme="dark"] .b-tal { background: #123b55; color: #bae6fd; }
 
         /* ── MAIN CONTENT ────────────────────────────────────────────── */
         .main {
@@ -540,6 +536,11 @@
             color: #fff;
             font-weight: 700;
             white-space: nowrap;
+        }
+        [data-theme="dark"] .career-stepper .cs-current {
+            background: var(--bg-input);
+            color: var(--accent-blue);
+            box-shadow: inset 0 0 0 1px var(--border-hover);
         }
         .career-stepper .cs-arrow { color: var(--text-muted); font-weight: 700; }
         @media print { .career-stepper { display: none; } }
