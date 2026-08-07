@@ -1040,6 +1040,15 @@ test('roleMatchesFilter combines the text query and the level filter', () => {
     assert.equal(roleMatchesFilter(role, ctx, { q: '',     levels: [] }), true);
 });
 
+test('roleMatchesFilter normalizes internal whitespace in exact-title queries', () => {
+    const role = { title: 'Kubernetes Architect', level: 'Architect' };
+
+    assert.equal(
+        roleMatchesFilter(role, {}, { q: '  KUBERNETES   architect  ', levels: [] }),
+        true,
+    );
+});
+
 test('roleMatchesFilter matches on domain and chapter as well as title', () => {
     const role = { title: 'AWS Cloud Architect', level: 'Architect' };
     const ctx  = { domainLabel: 'Cloud Platforms', chapterLabel: 'Cloud, Platform & Infrastructure' };

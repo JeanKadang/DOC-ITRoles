@@ -692,11 +692,11 @@
     // can be applied independently or together.
     function roleMatchesFilter(role, { domainLabel = '', chapterLabel = '' } = {}, { q = '', levels = [] } = {}) {
         if (levels.length && !levels.includes(role.level)) return false;
-        const needle = String(q || '').trim().toLowerCase();
+        const needle = normalizedSearchText(q);
         if (!needle) return true;
-        return String(role.title).toLowerCase().includes(needle)
-            || String(domainLabel).toLowerCase().includes(needle)
-            || String(chapterLabel).toLowerCase().includes(needle);
+        return normalizedSearchText(role.title).includes(needle)
+            || normalizedSearchText(domainLabel).includes(needle)
+            || normalizedSearchText(chapterLabel).includes(needle);
     }
 
     function normalizedSearchText(value) {
