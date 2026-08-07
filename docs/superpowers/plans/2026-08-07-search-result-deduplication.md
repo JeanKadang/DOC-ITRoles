@@ -31,11 +31,13 @@
 ### Task 1: Reconcile exact-title content references in the viewer
 
 **Files:**
+
 - Modify: `viewer-logic.js`
 - Modify: `test/viewer-logic.test.js`
 - Modify: `index.html`
 
 **Interfaces:**
+
 - Consumes: API match objects shaped as `{ file, title, level, domain, inTitle, snippet }` and a string query.
 - Produces: `contentReferencesForQuery(matches, query) -> Array`, returning a new array whose only omitted items have a normalized title equal to the normalized query.
 
@@ -135,10 +137,12 @@ git commit -m "fix: deduplicate exact search titles"
 ### Task 2: Prefer narrative content when generating snippets
 
 **Files:**
+
 - Modify: `server.js`
 - Modify: `test/server.test.js`
 
 **Interfaces:**
+
 - Consumes: Markdown text and the normalized lowercase query already produced by `searchRoles`.
 - Produces: `preferredSearchMatchIndex(text, query) -> number`, returning the first narrative occurrence, otherwise the first document-wide occurrence, otherwise `-1`.
 
@@ -256,9 +260,11 @@ git commit -m "fix: prefer narrative search snippets"
 ### Task 3: Verify #182 acceptance criteria and branch hygiene
 
 **Files:**
+
 - Verify only; no planned source changes.
 
 **Interfaces:**
+
 - Consumes: the completed changes from Tasks 1 and 2.
 - Produces: fresh test, validation, count, whitespace, and branch-scope evidence suitable for a pull request.
 
