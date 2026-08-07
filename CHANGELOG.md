@@ -7,6 +7,47 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.15.0] - 2026-08-07
+
+The catalogue becomes easier to explore and safer to change. This release
+adds two generated visual views, improves search results, and introduces
+real-browser journey and accessibility checks across Chromium, Firefox, and
+WebKit.
+
+### Added
+
+- **An interactive technology radar (#172, #195).** The generated radar data
+  now has a responsive browser view with filters, keyboard navigation,
+  accessible details, and direct links back to the catalogue evidence.
+- **A generated skills matrix (#177).** Career rungs and role definitions are
+  combined into a browsable matrix that makes expected progression easier to
+  compare without duplicating source content.
+- **Cross-browser journey coverage (#183).** Playwright now exercises search,
+  role comparison, responsive navigation, keyboard operation, and the viewer's
+  main accessibility paths in Chromium, Firefox, and WebKit. Failed CI runs
+  retain browser diagnostics as short-lived artifacts.
+- **Automated accessibility smoke checks (#183, #201).** Axe checks now block
+  serious and critical regressions on the highest-value viewer journeys.
+
+### Changed
+
+- **Search results are clearer and less repetitive (#182).** Exact title
+  matches no longer reappear as duplicate section results, search whitespace
+  is normalized, and result previews prefer useful narrative text.
+- **Repository review findings are traceable to GitHub work (#197, #198).** The
+  review document now includes a maintained crosswalk from each recommendation
+  to its issue, milestone, and current disposition.
+
+### Fixed
+
+- Light-theme viewer colors now meet the new automated contrast gate (#201).
+- Accessibility scans now wait for finite entrance animations, preventing
+  Firefox from measuring partially transparent content as a false contrast
+  failure (#201, #205).
+- Browser CI now permits failure-artifact uploads and has a bounded provisioning
+  window that tolerates slow hosted-runner package mirrors (#203, #206).
+- Markdown list spacing now passes the repository lint policy (#199, #200).
+
 ## [1.14.0] - 2026-08-06
 
 KPI targets stop being a promise and start being numbers, and the catalogue
