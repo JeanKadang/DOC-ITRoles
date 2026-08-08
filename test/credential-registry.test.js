@@ -163,3 +163,15 @@ test('an uppercase credential ID is an error instead of an ignored marker', () =
   const result = validateRoleCredentialReferences(markdown, known, { requireComplete: false });
   assert.ok(result.errors.some(error => /invalid credential marker/i.test(error)));
 });
+
+test('a credential comment without a colon is an error', () => {
+  const markdown = '- CKA <!-- credential cncf-cka -->\n';
+  const result = validateRoleCredentialReferences(markdown, known, { requireComplete: false });
+  assert.ok(result.errors.some(error => /invalid credential marker/i.test(error)));
+});
+
+test('a credential comment using an equals sign is an error', () => {
+  const markdown = '- CKA <!-- credential=cncf-cka -->\n';
+  const result = validateRoleCredentialReferences(markdown, known, { requireComplete: false });
+  assert.ok(result.errors.some(error => /invalid credential marker/i.test(error)));
+});

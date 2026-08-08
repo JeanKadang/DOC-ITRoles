@@ -6,7 +6,7 @@ const CREDENTIAL_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const ALLOWED_TYPES = new Set(['certification', 'certificate']);
 const ALLOWED_STATUSES = new Set(['active', 'retired', 'superseded']);
 const CREDENTIAL_MARKER = /<!-- credential: ([a-z0-9]+(?:-[a-z0-9]+)*) -->/g;
-const CREDENTIAL_LIKE_MARKER = /<!--\s*credential\s*:[^>]*-->/gi;
+const CREDENTIAL_LIKE_MARKER = /<!--(?=[^>]*\bcredential\b)[^>]*-->/gi;
 const REQUIRED_FIELDS = [
   'id', 'name', 'issuer', 'type', 'url', 'status',
   'verified_on', 'owner', 'review_months',
