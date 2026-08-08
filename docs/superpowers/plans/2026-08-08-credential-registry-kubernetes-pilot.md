@@ -853,7 +853,7 @@ Use `gh issue edit 178 --body-file <newline-preserving-file>` to check a criteri
 Issue #178 now has a criterion-level completion comment, six checked acceptance
 criteria, zero unchecked criteria, and remains open pending merge of PR #211.
 
-- [ ] **Step 5: Open the pull request without bypassing the closure gate**
+- [x] **Step 5: Open the pull request without bypassing the closure gate**
 
 Create a ready PR titled `feat: add credential registry and Kubernetes pilot`. Its body includes:
 
@@ -867,4 +867,7 @@ Create a ready PR titled `feat: add credential registry and Kubernetes pilot`. I
 Wait for every CI leg. Do not merge until the maintainer explicitly approves and `github-hygiene` confirms the issue closure gate still passes.
 
 Ready PR #211 was opened against `main` with the `enhancement` release-note
-label and `Closes #178`. This step remains unchecked until every CI leg passes.
+label and `Closes #178`. GitHub Actions run `31232382326` passed the Node 18,
+Node 22, role-validation, Markdown-lint, and hosted Chromium/Firefox/WebKit
+jobs; both CodeQL analyses also passed. The PR remains unmerged pending the
+maintainer's explicit approval.
