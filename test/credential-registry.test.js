@@ -92,6 +92,43 @@ test('a review due on the reference date is not stale', () => {
   assert.deepEqual(validateCredentialRegistry(registry, NOW).warnings, []);
 });
 
+test('a review is non-stale through its UTC due date and stale the next date', () => {
+  const registry = validRegistry();
+  registry.credentials[0].verified_on = '2025-08-08';
+  const dueDateWarnings = validateCredentialRegistry(
+    registry, new Date('2026-08-08T12:00:00Z'),
+  ).warnings;
+  const nextDateWarnings = validateCredentialRegistry(
+    registry, new Date('2026-08-09T00:00:00Z'),
+  ).warnings;
+  assert.deepEqual({
+    dueDateIsStale: dueDateWarnings.some(warning => /stale/i.test(warning)),
+    nextDateIsStale: nextDateWarnings.some(warning => /stale/i.test(warning)),
+  }, {
+    dueDateIsStale: false,
+    nextDateIsStale: true,
+  });
+});
+
+test('a month interval clamps an end-of-month due date to the destination month', () => {
+  const registry = validRegistry();
+  registry.credentials[0].verified_on = '2025-01-31';
+  registry.credentials[0].review_months = 1;
+  const dueDateWarnings = validateCredentialRegistry(
+    registry, new Date('2025-02-28T12:00:00Z'),
+  ).warnings;
+  const nextDateWarnings = validateCredentialRegistry(
+    registry, new Date('2025-03-01T00:00:00Z'),
+  ).warnings;
+  assert.deepEqual({
+    dueDateIsStale: dueDateWarnings.some(warning => /stale/i.test(warning)),
+    nextDateIsStale: nextDateWarnings.some(warning => /stale/i.test(warning)),
+  }, {
+    dueDateIsStale: false,
+    nextDateIsStale: true,
+  });
+});
+
 test('malformed JSON is returned as a registry error', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'credential-registry-'));
   const file = path.join(dir, 'credentials.json');
@@ -135,6 +172,43 @@ test('audited recommendation bullets require exactly one marker', () => {
   const result = validateRoleCredentialReferences(markdown, known, { requireComplete: true });
   assert.ok(result.errors.some(error => /missing credential marker/i.test(error)));
   assert.equal(result.errors.filter(error => /Kubernetes documentation/.test(error)).length, 0);
+});
+
+test('the canonical ampersand learning heading ends audited recommendations', () => {
+  const markdown = `## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Certified Kubernetes Administrator (CKA) <!-- credential: cncf-cka -->
+
+**Learning Resources & Communities:**
+
+- Kubernetes documentation
+`;
+  assert.deepEqual(validateRoleCredentialReferences(markdown, known, { requireComplete: true }),
+    { errors: [], warnings: [] });
+});
+
+test('an unmarked star recommendation bullet fails audited completeness', () => {
+  const markdown = `## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+* Certified Kubernetes Administrator (CKA)
+`;
+  assert.ok(validateRoleCredentialReferences(markdown, known, { requireComplete: true })
+    .errors.some(error => /missing credential marker/i.test(error)));
+});
+
+test('an unmarked plus recommendation bullet fails audited completeness', () => {
+  const markdown = `## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
++ Certified Kubernetes Administrator (CKA)
+`;
+  assert.ok(validateRoleCredentialReferences(markdown, known, { requireComplete: true })
+    .errors.some(error => /missing credential marker/i.test(error)));
 });
 
 test('legacy unmarked recommendations remain allowed', () => {

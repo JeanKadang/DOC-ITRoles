@@ -24,8 +24,19 @@ function isRealIsoDate(value) {
 
 function reviewDueDate(verifiedOn, months) {
   const date = new Date(`${verifiedOn}T00:00:00Z`);
+  const day = date.getUTCDate();
+  date.setUTCDate(1);
   date.setUTCMonth(date.getUTCMonth() + months);
+  const monthEnd = new Date(date);
+  monthEnd.setUTCMonth(monthEnd.getUTCMonth() + 1, 0);
+  date.setUTCDate(Math.min(day, monthEnd.getUTCDate()));
   return date;
+}
+
+function utcCalendarDate(date) {
+  const normalized = new Date(date);
+  normalized.setUTCHours(0, 0, 0, 0);
+  return normalized;
 }
 
 function validateCredentialRegistry(value, now = new Date()) {
@@ -96,7 +107,7 @@ function validateCredentialRegistry(value, now = new Date()) {
     }
     if (isRealIsoDate(credential.verified_on || '') &&
         Number.isInteger(credential.review_months) && credential.review_months > 0 &&
-        now > reviewDueDate(credential.verified_on, credential.review_months)) {
+        utcCalendarDate(now) > reviewDueDate(credential.verified_on, credential.review_months)) {
       result.warnings.push(`${credential.id || prefix} credential verification is stale`);
     }
   }
@@ -134,11 +145,11 @@ function findCredentialReferences(markdown) {
 
 function recommendedCredentialBullets(markdown) {
   const section = certificationSection(markdown);
-  const learningIndex = section.search(/^\*\*Learning Resources and Communities:\*\*\s*$/im);
+  const learningIndex = section.search(/^\*\*Learning Resources (?:&|and) Communities:\*\*\s*$/im);
   const credentialPart = learningIndex === -1 ? section : section.slice(0, learningIndex);
   return credentialPart.split(/\r?\n/)
     .map((line, index) => ({ line, number: index + 1 }))
-    .filter(item => /^\s*-\s+/.test(item.line));
+    .filter(item => /^\s*[-*+]\s+/.test(item.line));
 }
 
 function validateRoleCredentialReferences(markdown, credentialsById, { requireComplete = false } = {}) {
