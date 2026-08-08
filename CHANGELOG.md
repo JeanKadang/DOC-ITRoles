@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.16.0] - 2026-08-08
+
+### Added
+
+- **Authoritative credential registry and rollout guardrails (#211).** Adds a
+  Kubernetes pilot, marker validation, stale-review warnings, and rollout
+  documentation.
+- **Spawned validator CLI regression coverage (#213).** Proves invalid
+  registries exit 1 with the registry error, while stale-registry warnings exit
+  0 normally and exit 1 under `--strict`.
+
+### Changed
+
+- **Vendored dependency integrity and governance are traceable (#209).**
+  `npm run verify-vendor` enforces checksum/manifest verification, alongside
+  recorded checksum and licence provenance, contribution evidence, and ADR
+  governance.
+
+### Fixed
+
+- **Dark-theme contrast now meets the viewer accessibility gate (#208).**
+- **Malformed `audited_roles` input is handled safely (#213).**
+
 ## [1.15.0] - 2026-08-07
 
 The catalogue becomes easier to explore and safer to change. This release
