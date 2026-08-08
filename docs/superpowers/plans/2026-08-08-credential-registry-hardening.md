@@ -191,7 +191,7 @@ git commit -m "test: cover registry CLI exit codes"
 - Consumes: The completed validator and CLI tests from Tasks 1 and 2.
 - Produces: Reproducible local evidence for every code-level acceptance criterion in issue #212.
 
-- [ ] **Step 1: Run all focused registry and validator tests**
+- [x] **Step 1: Run all focused registry and validator tests**
 
 Run:
 
@@ -201,19 +201,19 @@ node --test test/credential-registry.test.js test/kubernetes-credentials.test.js
 
 Expected: exit 0 with no failed tests.
 
-- [ ] **Step 2: Run the full Node test suite**
+- [x] **Step 2: Run the full Node test suite**
 
 Run: `npm test`
 
 Expected: exit 0 with every test passing.
 
-- [ ] **Step 3: Run repository validation**
+- [x] **Step 3: Run repository validation**
 
 Run: `npm run validate`
 
 Expected: exit 0 with zero files containing errors. Existing non-strict KPI warnings may remain and do not fail validation.
 
-- [ ] **Step 4: Check diff and worktree scope**
+- [x] **Step 4: Check diff and worktree scope**
 
 Run:
 
@@ -225,7 +225,7 @@ git diff main...HEAD -- credentialRegistry.js test/credential-registry.test.js t
 
 Expected: no whitespace errors; only issue #212 implementation, test, design, and plan files are included. The pre-existing untracked `.claude/settings.local.json` remains untouched and unstaged.
 
-- [ ] **Step 5: Record verification evidence and commit the completed plan**
+- [x] **Step 5: Record verification evidence and commit the completed plan**
 
 Append the actual command results under a `## Verification evidence` section,
 check only steps demonstrated by the recorded output, then commit:
@@ -234,3 +234,25 @@ check only steps demonstrated by the recorded output, then commit:
 git add docs/superpowers/plans/2026-08-08-credential-registry-hardening.md
 git commit -m "docs: record registry hardening evidence"
 ```
+
+## Verification evidence
+
+Executed on 2026-08-08 in the isolated issue #212 worktree. No browser or
+Firefox check was run.
+
+1. `node --test test/credential-registry.test.js test/kubernetes-credentials.test.js test/validate-roles.test.js`
+   exited `0`: `79` tests passed, `0` failed, `0` skipped, duration `867.8424 ms`.
+2. `npm test` exited `0`: `279` tests passed, `0` failed, `0` skipped, duration
+   `1758.3867 ms`.
+3. `npm run validate` exited `0`: checked `227` role files (`1` reference doc
+   skipped), with `0 file(s) with errors`, `199 file(s) with warnings`, and
+   `0 duplicate title(s)`. The warnings were non-strict KPI target/proposed-target
+   warnings.
+4. `git diff --check` exited `0` with no output (no whitespace errors).
+   `git status --short` exited `0` with no status entries; Git emitted only
+   permission warnings while reading the global ignore file. The scoped
+   `git diff main...HEAD -- credentialRegistry.js test/credential-registry.test.js
+   test/validate-roles.test.js docs/superpowers/specs/2026-08-08-credential-registry-hardening-design.md
+   docs/superpowers/plans/2026-08-08-credential-registry-hardening.md` exited
+   `0` and showed only the issue #212 validator, focused-test, design, and plan
+   changes.
