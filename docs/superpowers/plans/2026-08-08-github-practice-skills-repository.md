@@ -66,7 +66,7 @@
 **Interfaces:**
 
 - Consumes: the approved design's “New-repository bootstrap skill” section.
-- Produces: a complete draft package accepted by the local skill validator and ready to govern Task 2.
+- Produces: a complete draft package accepted by the local skill validator, committed in a disposable local staging repository, and ready to govern Task 2.
 
 - [ ] **Step 1: Read both required skill-authoring instructions**
 
@@ -128,7 +128,9 @@ Expected: zero frontmatter, naming, or metadata errors.
 
 - [ ] **Step 5: Review all bootstrap gates**
 
-Create a criterion table covering the 12 sections, public/private boundary, conditional scaffolding, plan-gated rulesets, solo-maintainer behavior, release handoff, and actual-settings verification. Every row must be `Met` before Task 2. No commit occurs because this is temporary pre-repository staging.
+Create a criterion table covering the 12 sections, public/private boundary, conditional scaffolding, plan-gated rulesets, solo-maintainer behavior, release handoff, and actual-settings verification. Every row must be `Met` before Task 2.
+
+Initialize a disposable Git repository at `.superpowers/sdd/doc-github-practice-skills-bootstrap`, commit the validated draft as `docs: draft repository bootstrap skill`, and use that commit for the Task 1 review package. This commit exists only to make the pre-creation artifact reviewable; it must never be merged into DOC-ITRoles or pushed as an independent repository. Delete the disposable repository after Task 3 verifies the canonical copy.
 
 ---
 
