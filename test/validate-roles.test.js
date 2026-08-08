@@ -323,6 +323,57 @@ test('CLI exits 1 for an unknown credential marker from CREDENTIALS_FILE', () =>
   fs.rmSync(cliRoot, { recursive: true, force: true });
 });
 
+test('CLI exits 1 and identifies an invalid credential registry', () => {
+  const cliRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-cli-invalid-registry-'));
+  const credentialsFile = path.join(cliRoot, 'credentials.json');
+  fs.mkdirSync(path.join(cliRoot, 'testdomain'));
+  fs.writeFileSync(path.join(cliRoot, 'testdomain', 'ok.md'),
+    completeRole({ transform: c => c.replace('# Test Role', '# Ok Role') }));
+  fs.writeFileSync(credentialsFile, JSON.stringify({
+    schema_version: 1,
+    audited_roles: {},
+    credentials: [],
+  }));
+
+  const run = runCli(cliRoot, [], { CREDENTIALS_FILE: credentialsFile });
+  assert.equal(run.status, 1, run.stdout);
+  assert.match(run.stdout, /credentials\.json/i);
+  assert.match(run.stdout, /audited_roles must be an array/i);
+  fs.rmSync(cliRoot, { recursive: true, force: true });
+});
+
+test('CLI stale registry warnings exit 0 normally and 1 with --strict', () => {
+  const cliRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-cli-stale-registry-'));
+  const credentialsFile = path.join(cliRoot, 'credentials.json');
+  fs.mkdirSync(path.join(cliRoot, 'testdomain'));
+  fs.writeFileSync(path.join(cliRoot, 'testdomain', 'ok.md'),
+    completeRole({ transform: c => c.replace('# Test Role', '# Ok Role') }));
+  fs.writeFileSync(credentialsFile, JSON.stringify({
+    schema_version: 1,
+    audited_roles: [],
+    credentials: [{
+      id: 'example-certification',
+      name: 'Example Certification',
+      issuer: 'Example Issuer',
+      type: 'certification',
+      url: 'https://example.com/certification',
+      status: 'active',
+      verified_on: '2020-01-01',
+      owner: 'catalogue-maintainers',
+      review_months: 12,
+    }],
+  }));
+
+  const normal = runCli(cliRoot, [], { CREDENTIALS_FILE: credentialsFile });
+  assert.equal(normal.status, 0, normal.stdout);
+  assert.match(normal.stdout, /example-certification.*stale/i);
+
+  const strict = runCli(cliRoot, ['--strict'], { CREDENTIALS_FILE: credentialsFile });
+  assert.equal(strict.status, 1, strict.stdout);
+  assert.match(strict.stdout, /example-certification.*stale/i);
+  fs.rmSync(cliRoot, { recursive: true, force: true });
+});
+
 // ── findDuplicateTitles (#67) ────────────────────────────
 // Isolated temp trees (not the shared tmpRoot, which accumulates many
 // "Test Role" H1s across the other tests).
