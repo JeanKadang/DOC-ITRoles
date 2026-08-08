@@ -75,6 +75,21 @@ test('a well-formed role file passes with 0 errors and 0 warnings', () => {
   assert.equal(r.skipped, false);
 });
 
+test('validateFile applies credential markers from an explicit registry context', () => {
+  const file = writeFixture('credential-context.md', completeRole({
+    transform: c => c.replace(
+      'Content for Recommended Certifications & Learning Paths.',
+      '- Imaginary Credential <!-- credential: invented-one -->'
+    ),
+  }));
+  const rel = path.relative(path.dirname(tmpRoot), file).replace(/\\/g, '/');
+  const result = validateFile(file, tmpRoot, {
+    credentialsById: new Map(),
+    auditedRoles: new Set([rel]),
+  });
+  assert.ok(result.errors.some(error => /unknown.*invented-one/i.test(error)));
+});
+
 // ── required sections ────────────────────────────────────
 
 test('each required section individually missing produces exactly that error', () => {
@@ -249,9 +264,9 @@ test('listRoleFiles finds .md files in domain folders and skips READMEs', () => 
 
 // ── CLI exit codes (spawned against a fixture tree) ─────
 
-function runCli(rolesDir, args = []) {
+function runCli(rolesDir, args = [], env = {}) {
   return spawnSync(process.execPath, [path.join(__dirname, '..', 'validate-roles.js'), ...args], {
-    env: { ...process.env, ROLES_DIR: rolesDir },
+    env: { ...process.env, ROLES_DIR: rolesDir, ...env },
     encoding: 'utf8',
   });
 }
@@ -283,6 +298,28 @@ test('CLI exits 1 when a file has errors', () => {
   const run = runCli(cliRoot);
   assert.equal(run.status, 1);
   assert.match(run.stdout, /Missing section: ## Business Impact/);
+  fs.rmSync(cliRoot, { recursive: true, force: true });
+});
+
+test('CLI exits 1 for an unknown credential marker from CREDENTIALS_FILE', () => {
+  const cliRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-cli-credentials-'));
+  const credentialsFile = path.join(cliRoot, 'credentials.json');
+  fs.mkdirSync(path.join(cliRoot, 'testdomain'));
+  fs.writeFileSync(path.join(cliRoot, 'testdomain', 'unknown-marker.md'), completeRole({
+    transform: c => c.replace(
+      'Content for Recommended Certifications & Learning Paths.',
+      '- Imaginary Credential <!-- credential: invented-one -->'
+    ),
+  }));
+  fs.writeFileSync(credentialsFile, JSON.stringify({
+    schema_version: 1,
+    audited_roles: [],
+    credentials: [],
+  }));
+
+  const run = runCli(cliRoot, [], { CREDENTIALS_FILE: credentialsFile });
+  assert.equal(run.status, 1, run.stdout);
+  assert.match(run.stdout, /unknown credential reference.*invented-one/i);
   fs.rmSync(cliRoot, { recursive: true, force: true });
 });
 

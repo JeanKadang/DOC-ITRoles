@@ -203,6 +203,7 @@ Each role file follows the canonical 14-section structure. See [`docs/role_templ
 | Document | Purpose |
 |---|---|
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Evidence standards, substantive review expectations, and contribution workflow |
+| [`docs/CREDENTIAL_REGISTRY.md`](docs/CREDENTIAL_REGISTRY.md) | Audited credential evidence, ownership, lifecycle, contributor policy, and rollout tracking |
 | [`docs/adr/README.md`](docs/adr/README.md) | Durable catalogue and architecture decisions, ADR lifecycle, and index |
 | [`docs/CROSS_DOMAIN_INTERACTIONS.md`](docs/CROSS_DOMAIN_INTERACTIONS.md) | Domain ownership boundaries, key relationships, escalation paths |
 | [`docs/SKILLS_PROGRESSION.md`](docs/SKILLS_PROGRESSION.md) | Engineer → Senior → Architect career ladder per domain |
@@ -248,7 +249,7 @@ HTML report is written to `playwright-report/` in CI.
 npm run validate
 ```
 
-Checks every role file against the canonical 14-section template and required metadata fields (`Domain`, `Role Level`, `Reports To`, `Direct Reports`, `Last Reviewed`), and requires the Interactions table to carry an `Interaction Mode` column. Missing sections, metadata, or the mode column are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`, or a `Domain` that doesn't match its folder's canonical label) are reported as warnings. Pass `--strict` to fail the build on warnings too.
+Checks every role file against the canonical 14-section template and required metadata fields (`Domain`, `Role Level`, `Reports To`, `Direct Reports`, `Last Reviewed`), and requires the Interactions table to carry an `Interaction Mode` column. It also validates credential-registry structure, rejects unknown or duplicate credential references, requires complete marker coverage for `audited_roles`, and warns when credential verification is stale. Missing sections, metadata, unknown references, or the mode column are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`, or a `Domain` that doesn't match its folder's canonical label) and stale credential verification are reported as warnings. Pass `--strict` to fail the build on warnings too.
 
 Duplicate H1 role titles across the catalog are also errors — the same title appearing in two files is a content-integrity bug that shipped twice before this check existed.
 

@@ -16,7 +16,7 @@ Prefer primary, authoritative sources. Link the exact page, standard, release, p
 | Content | Required evidence |
 |---|---|
 | Role responsibility or accountability | Named domain owner or approved operating-model source; distinguish a portable recommendation from local policy |
-| Certification or credential | Official issuer page, exact credential name, credential type, lifecycle status, and verification date; do not present organisation programmes as individual credentials |
+| Certification or credential | Follow the [Credential Registry](docs/CREDENTIAL_REGISTRY.md): issuer-controlled page, exact credential name, type, lifecycle status, verification date, and owner; do not present organisation programmes as individual credentials |
 | Technology or standard | Official product, project, or standards-body source; record version/status when material |
 | KPI target | Approved target source, frequency, and scope (`global`, `service-specific`, or `local`); never generate an authoritative-looking commitment |
 | Reporting or career relationship | Existing catalogue role or explicitly labelled external destination; do not guess a relationship from similar names |
@@ -45,6 +45,7 @@ Edit a generator's source data or script, not its generated Markdown. Regenerate
 
 - Link the issue with `Closes #<number>` when the acceptance criteria are complete.
 - Explain the evidence and any organisation-specific assumptions.
+- For a credential change, include the registry ID, authoritative issuer URL, verification date, and `npm run validate` output; use the canonical marker in every audited role recommendation.
 - Update an ADR when the change creates or reverses a durable taxonomy decision.
 - Run `npm test`, `npm run validate`, `npm run check-counts`, and any focused generator or verifier command affected by the change.
 - Keep generated output, documentation links, and the changelog consistent with the implementation.

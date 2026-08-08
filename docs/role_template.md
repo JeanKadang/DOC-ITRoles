@@ -168,6 +168,10 @@
 
 ## Recommended Certifications & Learning Paths
 
+> For a registry-audited role, use the official credential name followed by
+> `<!-- credential: stable-id -->`. Keep courses and communities under learning
+> resources. See [Credential Registry](CREDENTIAL_REGISTRY.md).
+
 **Core Certifications:**
 
 - [Core Certification 1]

@@ -183,22 +183,16 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 
 **Core Certifications:**
 
-- Certified Kubernetes Administrator (CKA)
-- Certified Kubernetes Security Specialist (CKS)
-- CNCF Certified Kubernetes Service Provider
-- Red Hat OpenShift Architect certification
-- Advanced Kubernetes Networking certification
-- Multi-Cloud Kubernetes Architecture certification
-- Cloud Native Architecture certification
-- Service Mesh Architecture certification
-- GitOps Architecture certification
-- Container Platform Architecture certification
-- Kubernetes Patterns and Practices
-- Enterprise Architecture certification
+- Certified Kubernetes Administrator (CKA) <!-- credential: cncf-cka -->
+- Certified Kubernetes Security Specialist (CKS) <!-- credential: cncf-cks -->
+- TOGAF Enterprise Architecture Practitioner <!-- credential: opengroup-togaf-ea-practitioner -->
 
 **Complementary Certifications:**
 
-- HashiCorp Certified: Terraform Associate (cluster IaC), TOGAF (enterprise architecture alignment), and cloud provider Kubernetes specialist tracks (AKS, EKS, GKE).
+- HashiCorp Certified: Terraform Associate <!-- credential: hashicorp-terraform-associate -->
+- Red Hat Certified System Administrator in OpenShift <!-- credential: redhat-openshift-administrator -->
+- Istio Certified Associate (ICA) <!-- credential: cncf-ica -->
+- GitOps Certified Associate (CGOA) <!-- credential: cncf-cgoa -->
 
 **Learning Resources and Communities:**
 

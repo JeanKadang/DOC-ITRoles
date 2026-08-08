@@ -171,20 +171,17 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 
 ## Recommended Certifications & Learning Paths
 
-- Certified Kubernetes Administrator (CKA)
-- Certified Kubernetes Application Developer (CKAD)
-- Docker Certified Associate
-- Linux Foundation Kubernetes Fundamentals
-- Cloud provider Kubernetes certifications (AKS, EKS, GKE)
-- Container Security Fundamentals
-- Helm certification
-- Cloud Native Associate certification
-- GitOps Fundamentals (ArgoCD, Flux)
-- Linux Administration certification
+**Core Certifications:**
+
+- Certified Kubernetes Administrator (CKA) <!-- credential: cncf-cka -->
+- Certified Kubernetes Application Developer (CKAD) <!-- credential: cncf-ckad -->
 
 **Complementary Certifications:**
 
-- CompTIA Linux+ (OS fundamentals), Prometheus Certified Associate (PCA), and cloud provider Kubernetes fundamentals tracks (AKS, EKS, GKE basics).
+- Kubernetes and Cloud Native Associate (KCNA) <!-- credential: cncf-kcna -->
+- Prometheus Certified Associate (PCA) <!-- credential: cncf-pca -->
+- Certified Argo Project Associate (CAPA) <!-- credential: cncf-capa -->
+- HashiCorp Certified: Terraform Associate <!-- credential: hashicorp-terraform-associate -->
 
 **Learning Resources and Communities:**
 

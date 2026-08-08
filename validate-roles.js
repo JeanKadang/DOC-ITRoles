@@ -10,11 +10,15 @@
 const fs   = require('fs');
 const path = require('path');
 const { parseMeta, KNOWN_LEVELS, normalizeLevel, REFERENCE_DOC_PATTERN, DOMAIN_LABELS } = require('./roleMeta');
+const { loadCredentialRegistry, validateRoleCredentialReferences } = require('./credentialRegistry');
 
 const ROOT       = __dirname;
 // ROLES_DIR env override exists for the test suite, which points the
 // validator at a fixture tree; normal runs always use Roles/.
 const ROLES_DIR  = process.env.ROLES_DIR ? path.resolve(process.env.ROLES_DIR) : path.join(ROOT, 'Roles');
+const CREDENTIALS_FILE = process.env.CREDENTIALS_FILE
+  ? path.resolve(process.env.CREDENTIALS_FILE)
+  : path.join(ROOT, 'data', 'credentials.json');
 const STRICT     = process.argv.includes('--strict');
 
 // Required section headings. Each entry accepts one or more historical
@@ -103,7 +107,7 @@ function listRoleFiles(rolesDir = ROLES_DIR) {
   return files.sort();
 }
 
-function validateFile(filePath, rolesDir = ROLES_DIR) {
+function validateFile(filePath, rolesDir = ROLES_DIR, credentialContext = null) {
   const rel     = path.relative(path.dirname(rolesDir), filePath).replace(/\\/g, '/');
   const content = fs.readFileSync(filePath, 'utf8');
   const meta    = parseMeta(content);
@@ -195,6 +199,16 @@ function validateFile(filePath, rolesDir = ROLES_DIR) {
     errors.push('Interactions table is missing the "Interaction Mode" column');
   }
 
+  if (credentialContext) {
+    const credentialResult = validateRoleCredentialReferences(
+      content,
+      credentialContext.credentialsById,
+      { requireComplete: credentialContext.auditedRoles.has(rel) },
+    );
+    errors.push(...credentialResult.errors);
+    warnings.push(...credentialResult.warnings);
+  }
+
   return { rel, errors, warnings, skipped: false };
 }
 
@@ -219,13 +233,20 @@ function findDuplicateTitles(rolesDir = ROLES_DIR) {
 }
 
 function main() {
+  const credentialContext = loadCredentialRegistry(CREDENTIALS_FILE);
   const files   = listRoleFiles();
-  const results = files.map(f => validateFile(f));
+  const results = files.map(f => validateFile(f, ROLES_DIR, credentialContext));
 
   const withErrors   = results.filter(r => r.errors.length > 0);
   const withWarnings = results.filter(r => r.warnings.length > 0);
   const skipped      = results.filter(r => r.skipped);
   const duplicates   = findDuplicateTitles();
+
+  if (credentialContext.errors.length > 0 || credentialContext.warnings.length > 0) {
+    console.log(`\n${CREDENTIALS_FILE}`);
+    for (const error of credentialContext.errors) console.log(`  ERROR: ${error}`);
+    for (const warning of credentialContext.warnings) console.log(`  warn:  ${warning}`);
+  }
 
   for (const r of withErrors) {
     console.log(`\n✖ ${r.rel}`);
@@ -249,7 +270,8 @@ function main() {
   console.log(`  ${duplicates.length} duplicate title(s)`);
   console.log('─'.repeat(60));
 
-  if (withErrors.length > 0 || duplicates.length > 0 || (STRICT && withWarnings.length > 0)) {
+  if (withErrors.length > 0 || credentialContext.errors.length > 0 || duplicates.length > 0 ||
+      (STRICT && (withWarnings.length > 0 || credentialContext.warnings.length > 0))) {
     process.exitCode = 1;
   }
 }
