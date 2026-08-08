@@ -42,6 +42,28 @@ test('a valid registry builds ID and audited-role indexes', () => {
   assert.ok(result.auditedRoles.has('Roles/kubernetes/kubernetes_engineer.md'));
 });
 
+for (const [label, auditedRoles] of [
+  ['object', {}],
+  ['number', 42],
+  ['string', 'Roles/kubernetes/kubernetes_engineer.md'],
+  ['boolean', true],
+  ['null', null],
+]) {
+  test(`a ${label} audited_roles value returns a structured error`, () => {
+    const registry = validRegistry();
+    registry.audited_roles = auditedRoles;
+
+    let result;
+    assert.doesNotThrow(() => {
+      result = validateCredentialRegistry(registry, NOW);
+    });
+    assert.ok(result.errors.some(error => /audited_roles must be an array/i.test(error)));
+    assert.deepEqual([...result.auditedRoles], []);
+    assert.ok(result.credentialsById.has('cncf-cka'),
+      'independent credential validation should continue');
+  });
+}
+
 test('duplicate credential IDs are errors', () => {
   const registry = validRegistry();
   registry.credentials.push({ ...registry.credentials[0] });

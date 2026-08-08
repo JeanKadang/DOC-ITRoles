@@ -46,13 +46,14 @@ function validateCredentialRegistry(value, now = new Date()) {
     return result;
   }
   if (value.schema_version !== 1) result.errors.push('schema_version must be 1');
+  const auditedRoles = Array.isArray(value.audited_roles) ? value.audited_roles : [];
   if (!Array.isArray(value.audited_roles)) result.errors.push('audited_roles must be an array');
   if (!Array.isArray(value.credentials)) {
     result.errors.push('credentials must be an array');
     return result;
   }
 
-  for (const role of value.audited_roles || []) {
+  for (const role of auditedRoles) {
     if (typeof role !== 'string' || !/^Roles\/[a-z0-9_/-]+\.md$/.test(role)) {
       result.errors.push(`Invalid audited role path: ${String(role)}`);
     } else if (result.auditedRoles.has(role)) {
