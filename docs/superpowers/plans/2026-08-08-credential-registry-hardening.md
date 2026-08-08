@@ -29,7 +29,7 @@
 - Consumes: `validateCredentialRegistry(value, now = new Date())` and the existing `{ errors, warnings, credentialsById, auditedRoles }` result shape.
 - Produces: The same result shape, with an empty `auditedRoles` set and a structured error for every non-array `audited_roles` value; independent valid credentials remain indexed.
 
-- [ ] **Step 1: Write the failing malformed-shape test**
+- [x] **Step 1: Write the failing malformed-shape test**
 
 Add after the valid-registry test in `test/credential-registry.test.js`:
 
@@ -57,13 +57,13 @@ for (const [label, auditedRoles] of [
 }
 ```
 
-- [ ] **Step 2: Run the focused test and confirm the original defect**
+- [x] **Step 2: Run the focused test and confirm the original defect**
 
 Run: `node --test test/credential-registry.test.js`
 
 Expected: FAIL for at least the truthy non-iterable values because the current loop iterates `value.audited_roles || []`.
 
-- [ ] **Step 3: Normalize the collection after recording the error**
+- [x] **Step 3: Normalize the collection after recording the error**
 
 In `validateCredentialRegistry()`, replace the direct check and loop source with:
 
@@ -80,13 +80,13 @@ Then iterate the normalized local value:
 
 Do not change the existing non-array `credentials` early return.
 
-- [ ] **Step 4: Run the focused credential-registry tests**
+- [x] **Step 4: Run the focused credential-registry tests**
 
 Run: `node --test test/credential-registry.test.js`
 
 Expected: PASS; all malformed-shape cases return normally, report the structured error, keep `auditedRoles` empty, and still index the valid credential.
 
-- [ ] **Step 5: Commit the validator hardening**
+- [x] **Step 5: Commit the validator hardening**
 
 ```bash
 git add credentialRegistry.js test/credential-registry.test.js
@@ -104,7 +104,7 @@ git commit -m "fix: harden audited role validation"
 - Consumes: `runCli(rolesDir, args = [], env = {})`, the `CREDENTIALS_FILE` environment override, and the current normal/strict exit-code rules in `validate-roles.js`.
 - Produces: Spawned-process regression coverage for invalid-registry errors and stale-registry warnings without changing production CLI behavior.
 
-- [ ] **Step 1: Add an invalid-registry spawned CLI test**
+- [x] **Step 1: Add an invalid-registry spawned CLI test**
 
 Add near the existing credential CLI test in `test/validate-roles.test.js`:
 
@@ -129,7 +129,7 @@ test('CLI exits 1 and identifies an invalid credential registry', () => {
 });
 ```
 
-- [ ] **Step 2: Add normal and strict stale-registry CLI assertions**
+- [x] **Step 2: Add normal and strict stale-registry CLI assertions**
 
 Add a second spawned-process test:
 
@@ -167,13 +167,13 @@ test('CLI stale registry warnings exit 0 normally and 1 with --strict', () => {
 });
 ```
 
-- [ ] **Step 3: Run the focused CLI tests**
+- [x] **Step 3: Run the focused CLI tests**
 
 Run: `node --test test/validate-roles.test.js`
 
 Expected: PASS. The invalid registry exits 1 with its field error; the stale registry exits 0 normally and 1 with `--strict`.
 
-- [ ] **Step 4: Commit the CLI regression coverage**
+- [x] **Step 4: Commit the CLI regression coverage**
 
 ```bash
 git add test/validate-roles.test.js
@@ -260,9 +260,10 @@ Firefox check was run.
    `docs/superpowers/plans/2026-08-08-credential-registry-hardening.md`,
    `docs/superpowers/specs/2026-08-08-credential-registry-hardening-design.md`,
    `test/credential-registry.test.js`, and `test/validate-roles.test.js`.
-   The primary checkout was confirmed on `main`; with a per-command
-   `safe.directory` override (required by sandbox ownership),
-   `git -C C:\\Claude\\Projects\\DOC-ITRoles status --short` exited `0` and
+   The primary checkout was confirmed on `main`; the exact temporary
+   safe-directory status command,
+   `git -c safe.directory='C:/Claude/Projects/DOC-ITRoles' -C C:\\Claude\\Projects\\DOC-ITRoles status --short`,
+   exited `0` and
    printed `?? .claude/settings.local.json` (in addition to two global-ignore
    permission warnings). This proves that pre-existing file remains untracked
    and unstaged in the primary checkout.
