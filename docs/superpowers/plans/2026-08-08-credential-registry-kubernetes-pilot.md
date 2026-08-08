@@ -834,7 +834,7 @@ markers, while credential review dates now use UTC date-only comparison and
 clamped calendar-month arithmetic. The scoped re-review found both findings
 addressed with no new Critical or Important breakage.
 
-- [ ] **Step 3: Commit the verification record and push**
+- [x] **Step 3: Commit the verification record and push**
 
 Update this plan's checkboxes and add the actual verification totals beneath this task. Then:
 
@@ -844,11 +844,14 @@ git commit -m "docs: record credential pilot verification"
 git push -u origin codex/178-credential-registry
 ```
 
-- [ ] **Step 4: Reconcile issue #178 acceptance criteria before closure**
+- [x] **Step 4: Reconcile issue #178 acceptance criteria before closure**
 
 Add a completion comment mapping each issue criterion to concrete evidence: registry documentation, four audited role paths, the KCSP removal test, all registry URLs/dates, validator tests/output, and the rollout issue.
 
 Use `gh issue edit 178 --body-file <newline-preserving-file>` to check a criterion only after its evidence is confirmed. If any criterion lacks evidence, leave it unchecked and keep the PR body at `Refs #178`.
+
+Issue #178 now has a criterion-level completion comment, six checked acceptance
+criteria, zero unchecked criteria, and remains open pending merge of PR #211.
 
 - [ ] **Step 5: Open the pull request without bypassing the closure gate**
 
@@ -862,3 +865,6 @@ Create a ready PR titled `feat: add credential registry and Kubernetes pilot`. I
 - `Closes #178` only if every acceptance criterion has already been evidenced and checked, otherwise `Refs #178`.
 
 Wait for every CI leg. Do not merge until the maintainer explicitly approves and `github-hygiene` confirms the issue closure gate still passes.
+
+Ready PR #211 was opened against `main` with the `enhancement` release-note
+label and `Closes #178`. This step remains unchecked until every CI leg passes.
