@@ -11,7 +11,8 @@ Create a public repository named `DOC-GitHub-Practice-Skills` under the
 seven GitHub workflow skills currently installed locally for Claude and OpenAI
 Codex.
 
-The repository will keep one shared skill source and provide platform-specific
+The repository will preserve the seven existing skills, add a dedicated
+`github-repo-bootstrap` skill, and provide platform-specific
 metadata, installation, and usage guidance for OpenAI Codex and Claude. A third
 track will explain general Azure DevOps-to-GitHub migration concepts. It will not
 contain company-specific ADO templates, names, fields, or policies.
@@ -21,7 +22,7 @@ released version and records only repository-specific conventions.
 
 ## Goals
 
-- Establish one canonical source for all seven skills.
+- Establish one canonical source for all eight skills.
 - Prevent Claude and Codex installations from drifting independently.
 - Publish understandable contributor and maintainer documentation.
 - Validate package structure and platform metadata automatically.
@@ -58,15 +59,17 @@ the same workflow model.
 
 ## Canonical skill inventory
 
-The initial release contains exactly these seven skills:
+The initial release contains the seven existing skills plus the new repository
+bootstrap skill:
 
 1. `github-issue-first`
 2. `github-hygiene`
 3. `github-pr-review`
 4. `github-repo-review`
-5. `github-security-response`
-6. `github-projects`
-7. `github-for-ado-users`
+5. `github-repo-bootstrap`
+6. `github-security-response`
+7. `github-projects`
+8. `github-for-ado-users`
 
 The existing `github-repo-review/review-prompt.md` remains a self-contained
 companion artifact. Its deliberate policy repetition is preserved because it is
@@ -108,6 +111,7 @@ DOC-GitHub-Practice-Skills/
 │   ├── github-issue-first/
 │   ├── github-pr-review/
 │   ├── github-projects/
+│   ├── github-repo-bootstrap/
 │   ├── github-repo-review/
 │   └── github-security-response/
 ├── CHANGELOG.md
@@ -124,6 +128,52 @@ additional OpenAI metadata; no second policy copy is created.
 
 The `platforms/` directories explain installation and activation differences.
 They contain no forks of the skill text.
+
+## New-repository bootstrap skill
+
+`github-repo-bootstrap` activates before creating a GitHub repository or when a
+newly created repository has not yet completed its initial setup. It orchestrates
+the other skills without absorbing their detailed policies.
+
+Its workflow is:
+
+1. Confirm owner, name availability, purpose, visibility, licence, description,
+   topics, default branch, expected maintainers, and release intent.
+2. For a public repository, scan all proposed bootstrap content for credentials,
+   personal data, company-specific material, and unintended history.
+3. Verify GitHub authentication, plan-dependent feature availability, and the
+   exact local source directory before creating external state.
+4. Create only the minimum repository shell needed to enable issue tracking: a
+   README, licence, and `main` branch. This is the documented issue-first
+   bootstrap exception because no issue can exist before the repository exists.
+5. Immediately file and assign a bootstrap issue with labels, milestone, and
+   acceptance criteria, then create its issue-linked branch.
+6. Add the warranted scaffolding through that branch: contribution and security
+   guidance, issue forms, PR template, dependency updates, CI, release-note
+   configuration, changelog, documentation, and ADR structure.
+7. Configure repository behavior deliberately: merge methods, automatic branch
+   deletion, Actions token permissions, vulnerability reporting, Dependabot,
+   secret scanning, push protection, and other available security controls.
+8. Establish rulesets only after CI job names exist, and only when the repository
+   visibility and account plan support them. A solo repository must not require
+   an impossible self-approval.
+9. Run the repository's validation, inspect the first pull request and every CI
+   leg, reconcile acceptance evidence, and merge only with maintainer approval.
+10. Query the GitHub APIs after setup and compare actual settings with the design
+    before declaring the repository bootstrapped.
+11. Publish an initial release when the repository is intended to distribute a
+    versioned artifact, then hand ongoing work to `github-hygiene`.
+
+The skill must make conditional scaffolding explicit. It does not create a
+Projects board for a solo maintainer, does not add CODEOWNERS without a real
+review-routing need, does not enable GitHub Wiki for this repository, and does
+not recommend unavailable paid controls as though they were missing work.
+
+`DOC-GitHub-Practice-Skills` is the skill's first acceptance case. A draft of the
+bootstrap skill and its checklist will be prepared before repository creation;
+the minimum shell, bootstrap issue, branch, settings, CI, verification, and first
+release will then be executed and evidenced against that draft. The accepted
+skill enters the same repository through the bootstrap pull request.
 
 ## Documentation model
 
@@ -221,7 +271,7 @@ boundary clearly.
 
 ## Validation and consistency controls
 
-`contracts/skill-inventory.json` records the seven expected skill names and
+`contracts/skill-inventory.json` records the eight expected skill names and
 their required files. Automated checks verify:
 
 - every inventory entry has a valid `SKILL.md` and required frontmatter;
@@ -296,15 +346,20 @@ outside the source repository.
 
 1. Create the public repository with a README and MIT licence.
 2. File its bootstrap issue and create an issue-linked branch.
-3. Copy the seven current skill sources without policy redesign.
-4. Add OpenAI metadata, platform guides, inventory, validation, and installation.
-5. Add the layered guide and maintainer documentation.
-6. Validate a staged Claude and Codex installation from a clean checkout.
-7. Merge the bootstrap PR after acceptance review and publish `v0.1.0`.
-8. Add `docs/GITHUB_WORKFLOW_SKILLS.md` to DOC-ITRoles, pinned to `v0.1.0`,
+3. Prepare and review the new `github-repo-bootstrap` skill locally, then use its
+   documented minimum-shell exception to create the repository.
+4. File the new repository's bootstrap issue and create its issue-linked branch.
+5. Copy the seven current skill sources without policy redesign and add the
+   bootstrap skill as the eighth canonical package.
+6. Add OpenAI metadata, platform guides, inventory, validation, and installation.
+7. Add the layered guide and maintainer documentation.
+8. Validate a staged Claude and Codex installation from a clean checkout.
+9. Verify actual repository settings against the bootstrap design.
+10. Merge the bootstrap PR after acceptance review and publish `v0.1.0`.
+11. Add `docs/GITHUB_WORKFLOW_SKILLS.md` to DOC-ITRoles, pinned to `v0.1.0`,
    containing only local conventions and canonical links.
-9. Reconcile issue #216 with evidence from both repositories.
-10. File separate improvement issues in the new repository.
+12. Reconcile issue #216 with evidence from both repositories.
+13. File separate improvement issues in the new repository.
 
 Existing local installations remain untouched until the released installer has
 passed staged validation. Migration is additive and recoverable.
@@ -314,7 +369,7 @@ passed staged validation. Migration is additive and recoverable.
 `docs/GITHUB_WORKFLOW_SKILLS.md` will contain:
 
 - the adopted skills repository and release version;
-- the seven enabled skill names;
+- the eight enabled skill names;
 - DOC-ITRoles-specific labels, milestone model, merge approval, release, and
   acceptance-evidence conventions;
 - the parent-epic reconciliation requirement;
@@ -327,9 +382,11 @@ passed staged validation. Migration is additive and recoverable.
 Completion requires evidence that:
 
 - the public repository and initial release exist;
-- all seven skills validate from the canonical checkout;
+- all eight skills validate from the canonical checkout;
+- `github-repo-bootstrap` has a criterion-by-criterion evidence record from
+  creating and verifying its own canonical repository;
 - staged Claude and Codex installations contain the same `SKILL.md` content;
-- the guide covers all seven skills and all three tracks;
+- the guide covers all eight skills and all three tracks;
 - public-content scanning finds no company-specific material;
 - release notes and changelog identify the bootstrap contents;
 - the DOC-ITRoles integration document points to the verified release; and
