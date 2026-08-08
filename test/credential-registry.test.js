@@ -151,3 +151,15 @@ test('credential references include their marker line and source text', () => {
     raw: '<!-- credential: cncf-cka -->',
   }]);
 });
+
+test('a credential marker without canonical spacing is an error', () => {
+  const markdown = '- CKA <!--credential:cncf-cka-->\n';
+  const result = validateRoleCredentialReferences(markdown, known, { requireComplete: false });
+  assert.ok(result.errors.some(error => /invalid credential marker/i.test(error)));
+});
+
+test('an uppercase credential ID is an error instead of an ignored marker', () => {
+  const markdown = '- CKA <!-- credential: CNCF-CKA -->\n';
+  const result = validateRoleCredentialReferences(markdown, known, { requireComplete: false });
+  assert.ok(result.errors.some(error => /invalid credential marker/i.test(error)));
+});

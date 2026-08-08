@@ -5,7 +5,8 @@ const fs = require('node:fs');
 const CREDENTIAL_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const ALLOWED_TYPES = new Set(['certification', 'certificate']);
 const ALLOWED_STATUSES = new Set(['active', 'retired', 'superseded']);
-const CREDENTIAL_MARKER = /<!--\s*credential:\s*([a-z0-9]+(?:-[a-z0-9]+)*)\s*-->/g;
+const CREDENTIAL_MARKER = /<!-- credential: ([a-z0-9]+(?:-[a-z0-9]+)*) -->/g;
+const CREDENTIAL_LIKE_MARKER = /<!--\s*credential\s*:[^>]*-->/gi;
 const REQUIRED_FIELDS = [
   'id', 'name', 'issuer', 'type', 'url', 'status',
   'verified_on', 'owner', 'review_months',
@@ -144,6 +145,14 @@ function validateRoleCredentialReferences(markdown, credentialsById, { requireCo
   const errors = [];
   const warnings = [];
   const seen = new Set();
+  CREDENTIAL_LIKE_MARKER.lastIndex = 0;
+  for (const match of markdown.matchAll(CREDENTIAL_LIKE_MARKER)) {
+    CREDENTIAL_MARKER.lastIndex = 0;
+    if (!CREDENTIAL_MARKER.test(match[0])) {
+      const line = markdown.slice(0, match.index).split(/\r?\n/).length;
+      errors.push(`Invalid credential marker on line ${line}: ${match[0]}`);
+    }
+  }
   for (const reference of findCredentialReferences(markdown)) {
     if (!credentialsById.has(reference.id)) {
       errors.push(`Unknown credential reference "${reference.id}" on line ${reference.line}`);
