@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const CREDENTIAL_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const ALLOWED_TYPES = new Set(['certification', 'certificate']);
 const ALLOWED_STATUSES = new Set(['active', 'retired', 'superseded']);
+const CREDENTIAL_MARKER = /<!--\s*credential:\s*([a-z0-9]+(?:-[a-z0-9]+)*)\s*-->/g;
 const REQUIRED_FIELDS = [
   'id', 'name', 'issuer', 'type', 'url', 'status',
   'verified_on', 'owner', 'review_months',
@@ -109,10 +110,69 @@ function loadCredentialRegistry(filePath, now = new Date()) {
   }
 }
 
+function certificationSection(markdown) {
+  const start = markdown.search(/^##\s+Recommended Certifications (?:&|and) Learning Paths\s*$/im);
+  if (start === -1) return '';
+  const rest = markdown.slice(start);
+  const next = rest.slice(1).search(/\n##\s+/);
+  return next === -1 ? rest : rest.slice(0, next + 1);
+}
+
+function findCredentialReferences(markdown) {
+  const references = [];
+  CREDENTIAL_MARKER.lastIndex = 0;
+  for (const match of markdown.matchAll(CREDENTIAL_MARKER)) {
+    references.push({
+      id: match[1],
+      line: markdown.slice(0, match.index).split(/\r?\n/).length,
+      raw: match[0],
+    });
+  }
+  return references;
+}
+
+function recommendedCredentialBullets(markdown) {
+  const section = certificationSection(markdown);
+  const learningIndex = section.search(/^\*\*Learning Resources and Communities:\*\*\s*$/im);
+  const credentialPart = learningIndex === -1 ? section : section.slice(0, learningIndex);
+  return credentialPart.split(/\r?\n/)
+    .map((line, index) => ({ line, number: index + 1 }))
+    .filter(item => /^\s*-\s+/.test(item.line));
+}
+
+function validateRoleCredentialReferences(markdown, credentialsById, { requireComplete = false } = {}) {
+  const errors = [];
+  const warnings = [];
+  const seen = new Set();
+  for (const reference of findCredentialReferences(markdown)) {
+    if (!credentialsById.has(reference.id)) {
+      errors.push(`Unknown credential reference "${reference.id}" on line ${reference.line}`);
+    }
+    if (seen.has(reference.id)) {
+      errors.push(`Duplicate credential reference "${reference.id}" in one role`);
+    }
+    seen.add(reference.id);
+  }
+  if (requireComplete) {
+    for (const bullet of recommendedCredentialBullets(markdown)) {
+      CREDENTIAL_MARKER.lastIndex = 0;
+      const matches = [...bullet.line.matchAll(CREDENTIAL_MARKER)];
+      if (matches.length === 0) {
+        errors.push(`Audited credential bullet is missing credential marker: ${bullet.line.trim()}`);
+      } else if (matches.length > 1) {
+        errors.push(`Audited credential bullet has multiple credential markers: ${bullet.line.trim()}`);
+      }
+    }
+  }
+  return { errors, warnings };
+}
+
 module.exports = {
   validateCredentialRegistry,
   loadCredentialRegistry,
   CREDENTIAL_ID_PATTERN,
   ALLOWED_TYPES,
   ALLOWED_STATUSES,
+  findCredentialReferences,
+  validateRoleCredentialReferences,
 };

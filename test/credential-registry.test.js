@@ -9,6 +9,8 @@ const path = require('node:path');
 const {
   validateCredentialRegistry,
   loadCredentialRegistry,
+  findCredentialReferences,
+  validateRoleCredentialReferences,
 } = require('../credentialRegistry');
 
 const NOW = new Date('2026-08-08T00:00:00Z');
@@ -97,4 +99,55 @@ test('malformed JSON is returned as a registry error', () => {
   const result = loadCredentialRegistry(file, NOW);
   assert.ok(result.errors.some(error => /parse/i.test(error)));
   fs.rmSync(dir, { recursive: true, force: true });
+});
+
+const known = new Map([['cncf-cka', { id: 'cncf-cka' }]]);
+
+test('a known credential marker passes', () => {
+  const markdown = '## Recommended Certifications & Learning Paths\n\n- Certified Kubernetes Administrator (CKA) <!-- credential: cncf-cka -->\n';
+  assert.deepEqual(validateRoleCredentialReferences(markdown, known, { requireComplete: true }),
+    { errors: [], warnings: [] });
+});
+
+test('an unknown credential marker is an error', () => {
+  const markdown = '- Imaginary Credential <!-- credential: invented-one -->\n';
+  assert.ok(validateRoleCredentialReferences(markdown, known, { requireComplete: false })
+    .errors.some(error => /unknown.*invented-one/i.test(error)));
+});
+
+test('a duplicate marker in one role is an error', () => {
+  const markdown = '- CKA <!-- credential: cncf-cka -->\n- CKA again <!-- credential: cncf-cka -->\n';
+  assert.ok(validateRoleCredentialReferences(markdown, known, { requireComplete: false })
+    .errors.some(error => /duplicate.*cncf-cka/i.test(error)));
+});
+
+test('audited recommendation bullets require exactly one marker', () => {
+  const markdown = `## Recommended Certifications & Learning Paths
+
+**Core Certifications:**
+
+- Certified Kubernetes Administrator (CKA)
+
+**Learning Resources and Communities:**
+
+- Kubernetes documentation
+`;
+  const result = validateRoleCredentialReferences(markdown, known, { requireComplete: true });
+  assert.ok(result.errors.some(error => /missing credential marker/i.test(error)));
+  assert.equal(result.errors.filter(error => /Kubernetes documentation/.test(error)).length, 0);
+});
+
+test('legacy unmarked recommendations remain allowed', () => {
+  const markdown = '## Recommended Certifications & Learning Paths\n\n- Legacy free text\n';
+  assert.deepEqual(validateRoleCredentialReferences(markdown, known, { requireComplete: false }),
+    { errors: [], warnings: [] });
+});
+
+test('credential references include their marker line and source text', () => {
+  const markdown = 'Intro\n- CKA <!-- credential: cncf-cka -->\n';
+  assert.deepEqual(findCredentialReferences(markdown), [{
+    id: 'cncf-cka',
+    line: 2,
+    raw: '<!-- credential: cncf-cka -->',
+  }]);
 });
