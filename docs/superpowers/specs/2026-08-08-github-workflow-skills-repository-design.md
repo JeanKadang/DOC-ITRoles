@@ -6,7 +6,7 @@
 
 ## Decision summary
 
-Create a public repository named `github-workflow-skills` under the
+Create a public repository named `DOC-GitHub-Practice-Skills` under the
 `JeanKadang` account. It will become the canonical, versioned source for the
 seven GitHub workflow skills currently installed locally for Claude and OpenAI
 Codex.
@@ -46,7 +46,7 @@ released version and records only repository-specific conventions.
 | Property | Decision |
 |---|---|
 | Owner | `JeanKadang` |
-| Name | `github-workflow-skills` |
+| Name | `DOC-GitHub-Practice-Skills` |
 | Visibility | Public |
 | Licence | MIT, suitable for reuse and adaptation |
 | Default branch | `main` |
@@ -75,7 +75,7 @@ also intended for colleagues who do not run the skill package.
 ## Repository structure
 
 ```text
-github-workflow-skills/
+DOC-GitHub-Practice-Skills/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   ├── workflows/
