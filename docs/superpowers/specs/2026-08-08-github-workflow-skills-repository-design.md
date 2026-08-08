@@ -37,6 +37,9 @@ released version and records only repository-specific conventions.
 - Maintaining separate policy copies for Claude and OpenAI Codex.
 - Automatically overwriting locally modified installed skills.
 - Moving DOC-ITRoles project-specific policy into the shared repository.
+- Publishing documentation through GitHub Wiki. The Wiki's separate repository,
+  publication workflow, and indexing caveats add more maintenance than the
+  initial release needs; reviewed Markdown under `docs/` remains authoritative.
 
 ## Repository identity
 
@@ -158,6 +161,11 @@ The remainder of the guide and `docs/MAINTAINING.md` describe each skill's:
 
 Documentation identifies the repository release it describes and distinguishes
 current behavior from proposed changes.
+
+GitHub Wiki is deliberately not part of the initial documentation model. The
+repository README and `docs/` tree provide one reviewable, testable, and
+version-matched documentation surface. Wiki publication can be reconsidered only
+if a concrete navigation or contributor need outweighs the additional sync path.
 
 ## Platform tracks
 
