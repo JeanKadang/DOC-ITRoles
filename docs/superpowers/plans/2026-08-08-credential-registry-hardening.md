@@ -255,4 +255,14 @@ Firefox check was run.
    test/validate-roles.test.js docs/superpowers/specs/2026-08-08-credential-registry-hardening-design.md
    docs/superpowers/plans/2026-08-08-credential-registry-hardening.md` exited
    `0` and showed only the issue #212 validator, focused-test, design, and plan
-   changes.
+   changes. Follow-up scope evidence: `git diff --name-only main...HEAD` exited
+   `0` and printed exactly `credentialRegistry.js`,
+   `docs/superpowers/plans/2026-08-08-credential-registry-hardening.md`,
+   `docs/superpowers/specs/2026-08-08-credential-registry-hardening-design.md`,
+   `test/credential-registry.test.js`, and `test/validate-roles.test.js`.
+   The primary checkout was confirmed on `main`; with a per-command
+   `safe.directory` override (required by sandbox ownership),
+   `git -C C:\\Claude\\Projects\\DOC-ITRoles status --short` exited `0` and
+   printed `?? .claude/settings.local.json` (in addition to two global-ignore
+   permission warnings). This proves that pre-existing file remains untracked
+   and unstaged in the primary checkout.
