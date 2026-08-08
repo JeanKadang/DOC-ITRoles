@@ -807,8 +807,8 @@ Confirm explicitly:
 
 All commands were run separately on `codex/178-credential-registry` and exited 0:
 
-- `node --test test/credential-registry.test.js test/kubernetes-credentials.test.js test/validate-roles.test.js`: 67 tests, 67 passed, 0 failed, 0 skipped, 0 todo.
-- `npm test`: 267 tests, 267 passed, 0 failed, 0 skipped, 0 todo.
+- `node --test test/credential-registry.test.js test/kubernetes-credentials.test.js test/validate-roles.test.js`: 72 tests, 72 passed, 0 failed, 0 skipped, 0 todo after the final review fixes.
+- `npm test`: 272 tests, 272 passed, 0 failed, 0 skipped, 0 todo after the final review fixes.
 - `npm run validate`: checked 227 role files, skipped 1 reference document, found 0 files with errors, 199 files with pre-existing KPI warnings, and 0 duplicate titles. No stale credential warnings or audited-role marker gaps were reported.
 - `npm run check-counts`: 226 roles, 34 domains, and 7 chapters; README counts match.
 - `npm run verify-vendor`: vendored dependency manifest and checksums verified.
@@ -826,6 +826,13 @@ The design review confirmed:
 - Legacy unmarked recommendations remain allowed by validation and are explicitly described as unaudited in `docs/CREDENTIAL_REGISTRY.md`.
 - Focused tests prove stale entries warn, unknown references fail, and malformed marker syntax fails.
 - `docs/CREDENTIAL_REGISTRY.md` names `catalogue-maintainers` ownership and links the remaining-domain rollout tracker, issue #210, in both the audit-boundary and rollout sections. The controller separately verified the external issue state.
+
+The final whole-branch review found two boundary defects. Commit `91ed3db`
+fixed both with RED/GREEN regression coverage: audited completeness now accepts
+the canonical ampersand learning heading and all Markdown unordered-list
+markers, while credential review dates now use UTC date-only comparison and
+clamped calendar-month arithmetic. The scoped re-review found both findings
+addressed with no new Critical or Important breakage.
 
 - [ ] **Step 3: Commit the verification record and push**
 
