@@ -22,10 +22,12 @@
 ### Task 1: Make `audited_roles` validation non-throwing
 
 **Files:**
+
 - Modify: `credentialRegistry.js:43-63`
 - Test: `test/credential-registry.test.js`
 
 **Interfaces:**
+
 - Consumes: `validateCredentialRegistry(value, now = new Date())` and the existing `{ errors, warnings, credentialsById, auditedRoles }` result shape.
 - Produces: The same result shape, with an empty `auditedRoles` set and a structured error for every non-array `audited_roles` value; independent valid credentials remain indexed.
 
@@ -98,9 +100,11 @@ git commit -m "fix: harden audited role validation"
 ### Task 2: Prove registry CLI exit codes
 
 **Files:**
+
 - Test: `test/validate-roles.test.js`
 
 **Interfaces:**
+
 - Consumes: `runCli(rolesDir, args = [], env = {})`, the `CREDENTIALS_FILE` environment override, and the current normal/strict exit-code rules in `validate-roles.js`.
 - Produces: Spawned-process regression coverage for invalid-registry errors and stale-registry warnings without changing production CLI behavior.
 
@@ -185,9 +189,11 @@ git commit -m "test: cover registry CLI exit codes"
 ### Task 3: Verify issue #212 as a whole
 
 **Files:**
+
 - Modify only if execution evidence is recorded: `docs/superpowers/plans/2026-08-08-credential-registry-hardening.md`
 
 **Interfaces:**
+
 - Consumes: The completed validator and CLI tests from Tasks 1 and 2.
 - Produces: Reproducible local evidence for every code-level acceptance criterion in issue #212.
 
