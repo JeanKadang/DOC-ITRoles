@@ -177,22 +177,20 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 
 ## Recommended Certifications & Learning Paths
 
-- Certified Kubernetes Administrator (CKA)
-- Certified Kubernetes Application Developer (CKAD)
-- Certified Kubernetes Security Specialist (CKS)
-- Linux Foundation Kubernetes certifications
-- Red Hat OpenShift certification
-- AWS Certified Container Specialist
-- Microsoft Azure Kubernetes Service certification
-- Google Kubernetes Engine certification
-- GitOps certifications (ArgoCD, Flux)
-- Cloud Native certifications from CNCF
-- Advanced Networking with Kubernetes
-- Container Security certifications
+**Core Certifications:**
+
+- Certified Kubernetes Administrator (CKA) <!-- credential: cncf-cka -->
+- Certified Kubernetes Application Developer (CKAD) <!-- credential: cncf-ckad -->
+- Certified Kubernetes Security Specialist (CKS) <!-- credential: cncf-cks -->
 
 **Complementary Certifications:**
 
-- HashiCorp Certified: Terraform Associate (cluster IaC), Istio Associate certification, and Prometheus Certified Associate (PCA).
+- HashiCorp Certified: Terraform Associate <!-- credential: hashicorp-terraform-associate -->
+- Red Hat Certified System Administrator in OpenShift <!-- credential: redhat-openshift-administrator -->
+- Istio Certified Associate (ICA) <!-- credential: cncf-ica -->
+- Prometheus Certified Associate (PCA) <!-- credential: cncf-pca -->
+- Certified Argo Project Associate (CAPA) <!-- credential: cncf-capa -->
+- GitOps Certified Associate (CGOA) <!-- credential: cncf-cgoa -->
 
 **Learning Resources and Communities:**
 

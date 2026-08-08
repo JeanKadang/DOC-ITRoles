@@ -172,20 +172,14 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 
 ## Recommended Certifications & Learning Paths
 
-- Professional Scrum Product Owner (PSPO)
-- Kubernetes Foundation certification
-- Certified Kubernetes Application Developer (CKAD)
-- Cloud Native Associate certification
-- SAFe Product Owner/Product Manager
-- DevOps Product Owner certification
-- Container Platform Strategy certification
-- Platform Engineering Leadership certification
-- Cloud Platforms Business Professional
-- Digital Transformation certification
+**Core Certifications:**
+
+- Professional Scrum Product Owner I (PSPO I) <!-- credential: scrumorg-pspo-i -->
+- Kubernetes and Cloud Native Associate (KCNA) <!-- credential: cncf-kcna -->
 
 **Complementary Certifications:**
 
-- FinOps Certified Practitioner (Kubernetes cost management), ITIL 4 Foundation, and CNCF Kubernetes Associate (platform awareness).
+- FinOps Certified Practitioner <!-- credential: finops-certified-practitioner -->
 
 **Learning Resources and Communities:**
 
