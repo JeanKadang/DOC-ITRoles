@@ -50,7 +50,7 @@
 - Produces: `loadCredentialRegistry(filePath, now)` with the same return shape and parse/read errors converted to validation errors.
 - Produces: `CREDENTIAL_ID_PATTERN`, `ALLOWED_TYPES`, and `ALLOWED_STATUSES` for focused tests.
 
-- [ ] **Step 1: Write failing schema and staleness tests**
+- [x] **Step 1: Write failing schema and staleness tests**
 
 Create `test/credential-registry.test.js` with a reusable valid fixture and one-behaviour tests:
 
@@ -157,13 +157,13 @@ test('malformed JSON is returned as a registry error', () => {
 });
 ```
 
-- [ ] **Step 2: Run the focused test and verify RED**
+- [x] **Step 2: Run the focused test and verify RED**
 
 Run: `node --test test/credential-registry.test.js`
 
 Expected: FAIL with `Cannot find module '../credentialRegistry'`.
 
-- [ ] **Step 3: Implement the minimal registry validator**
+- [x] **Step 3: Implement the minimal registry validator**
 
 Create `credentialRegistry.js` using these exact rules:
 
@@ -299,7 +299,7 @@ integrated in Task 2 without leaving `npm run validate` broken between commits:
 }
 ```
 
-- [ ] **Step 4: Run focused and full Node tests**
+- [x] **Step 4: Run focused and full Node tests**
 
 Run: `node --test test/credential-registry.test.js`
 
@@ -309,7 +309,7 @@ Run: `npm test`
 
 Expected: all existing tests plus the new registry tests pass.
 
-- [ ] **Step 5: Commit Task 1**
+- [x] **Step 5: Commit Task 1**
 
 ```bash
 git add credentialRegistry.js data/credentials.json test/credential-registry.test.js
@@ -332,7 +332,7 @@ git commit -m "feat: validate credential registry"
 - Produces: `validateRoleCredentialReferences(markdown, credentialsById, { requireComplete })` returning `{ errors, warnings }`.
 - Changes: `validateFile(filePath, rolesDir, credentialContext = null)`; existing two-argument callers remain valid.
 
-- [ ] **Step 1: Write failing marker tests**
+- [x] **Step 1: Write failing marker tests**
 
 Append tests that prove known, unknown, duplicate, and unmarked audited bullets:
 
@@ -387,13 +387,13 @@ test('legacy unmarked recommendations remain allowed', () => {
 
 In `test/validate-roles.test.js`, add a fixture test passing an explicit credential context to `validateFile` and a CLI test using `CREDENTIALS_FILE` to prove an unknown marker exits 1.
 
-- [ ] **Step 2: Run the focused tests and verify RED**
+- [x] **Step 2: Run the focused tests and verify RED**
 
 Run: `node --test test/credential-registry.test.js test/validate-roles.test.js`
 
 Expected: FAIL because the marker functions and `credentialContext` integration do not exist.
 
-- [ ] **Step 3: Implement marker extraction and audited-section checks**
+- [x] **Step 3: Implement marker extraction and audited-section checks**
 
 Add to `credentialRegistry.js`:
 
@@ -458,7 +458,7 @@ function validateRoleCredentialReferences(markdown, credentialsById, { requireCo
 
 Export the three new functions. Reset `CREDENTIAL_MARKER.lastIndex = 0` before each scan if implementation testing shows the global regular expression retaining state between calls.
 
-- [ ] **Step 4: Integrate the registry into `validate-roles.js`**
+- [x] **Step 4: Integrate the registry into `validate-roles.js`**
 
 Import `loadCredentialRegistry` and `validateRoleCredentialReferences`. Add `CREDENTIALS_FILE`, honoring a `CREDENTIALS_FILE` environment override for CLI fixtures. Extend `validateFile` with an optional context and append marker errors/warnings after the existing structural checks:
 
@@ -480,7 +480,7 @@ function validateFile(filePath, rolesDir = ROLES_DIR, credentialContext = null) 
 
 In `main()`, load the registry once, print registry errors/warnings under `data/credentials.json`, pass the context to every `validateFile`, include registry warnings in the strict-mode decision, and include registry errors in exit code 1. Do not load the registry at module import time.
 
-- [ ] **Step 5: Run focused tests and verify GREEN**
+- [x] **Step 5: Run focused tests and verify GREEN**
 
 Run: `node --test test/credential-registry.test.js test/validate-roles.test.js`
 
@@ -494,7 +494,7 @@ Run: `npm run validate`
 
 Expected: exit 0 with the empty valid registry and unchanged legacy role files.
 
-- [ ] **Step 6: Commit Task 2**
+- [x] **Step 6: Commit Task 2**
 
 ```bash
 git add credentialRegistry.js validate-roles.js test/credential-registry.test.js test/validate-roles.test.js
@@ -517,7 +517,7 @@ git commit -m "feat: validate role credential references"
 - Consumes: the registry schema and role-reference validator from Tasks 1–2.
 - Produces: 13 stable credential IDs and four fully audited role files.
 
-- [ ] **Step 1: Write the failing Kubernetes pilot integration test**
+- [x] **Step 1: Write the failing Kubernetes pilot integration test**
 
 Create `test/kubernetes-credentials.test.js`:
 
@@ -567,13 +567,13 @@ test('KCSP is not presented as an individual credential', () => {
 });
 ```
 
-- [ ] **Step 2: Run the pilot test and verify RED**
+- [x] **Step 2: Run the pilot test and verify RED**
 
 Run: `node --test test/kubernetes-credentials.test.js`
 
 Expected: FAIL because the registry has no audited roles or credential records.
 
-- [ ] **Step 3: Add the verified registry records**
+- [x] **Step 3: Add the verified registry records**
 
 Create `data/credentials.json` with `schema_version: 1`, the exact four `audited_roles`, and these records. Every record uses `status: "active"`, `type: "certification"`, `verified_on: "2026-08-08"`, `owner: "catalogue-maintainers"`, and `review_months: 12`.
 
@@ -595,7 +595,7 @@ Create `data/credentials.json` with `schema_version: 1`, the exact four `audited
 
 This table contains 13 records; keep all 13 because each appears in at least one audited role. Do not add Docker Certified Associate, Kubernetes Fundamentals, generic cloud-provider tracks, or invented architecture/product credentials to the registry.
 
-- [ ] **Step 4: Replace the four certification sections with audited content**
+- [x] **Step 4: Replace the four certification sections with audited content**
 
 Use these exact credential sets, one bullet and one marker per credential:
 
@@ -666,7 +666,7 @@ Use these exact credential sets, one bullet and one marker per credential:
 
 Retain each existing `Learning Resources and Communities` subsection. Move only genuine courses or reading suggestions there when the existing text is specific and useful; remove generic pseudo-credentials rather than relabeling them as authoritative learning resources.
 
-- [ ] **Step 5: Run pilot, validator, and full tests**
+- [x] **Step 5: Run pilot, validator, and full tests**
 
 Run: `node --test test/kubernetes-credentials.test.js`
 
@@ -680,7 +680,7 @@ Run: `npm test`
 
 Expected: all tests pass.
 
-- [ ] **Step 6: Commit Task 3**
+- [x] **Step 6: Commit Task 3**
 
 ```bash
 git add data/credentials.json test/kubernetes-credentials.test.js Roles/kubernetes
@@ -701,7 +701,7 @@ git commit -m "docs: audit kubernetes credentials"
 - Consumes: schema and marker syntax from Tasks 1–3.
 - Produces: contributor-facing ownership and lifecycle policy plus a GitHub follow-up for the remaining domains.
 
-- [ ] **Step 1: Write the credential governance document**
+- [x] **Step 1: Write the credential governance document**
 
 Create `docs/CREDENTIAL_REGISTRY.md` with these sections and decisions:
 
@@ -715,7 +715,7 @@ Create `docs/CREDENTIAL_REGISTRY.md` with these sections and decisions:
 - **Courses and organisation programmes:** keep courses under learning resources; never represent KCSP-like programmes as individual credentials.
 - **Rollout:** inventory strings, group aliases, audit by bounded domain batches, migrate markers, and track unaudited domains in GitHub.
 
-- [ ] **Step 2: Link the policy from contributor and repository guidance**
+- [x] **Step 2: Link the policy from contributor and repository guidance**
 
 In `CONTRIBUTING.md`, link `docs/CREDENTIAL_REGISTRY.md` from the credential evidence row and require registry ID, authoritative URL, verification date, and validator output in credential PRs.
 
@@ -729,7 +729,7 @@ In `docs/role_template.md`, add a concise note above the certification example:
 > resources. See [Credential Registry](CREDENTIAL_REGISTRY.md).
 ```
 
-- [ ] **Step 3: Create the catalogue rollout follow-up issue**
+- [x] **Step 3: Create the catalogue rollout follow-up issue**
 
 Create one assigned, milestone-bound issue titled `Roll out credential registry references across the remaining role domains` with labels `documentation`, `maintenance`, and `P2`, milestone `Catalogue Trust & Adoption`, and this acceptance contract:
 
@@ -747,9 +747,9 @@ Create one assigned, milestone-bound issue titled `Roll out credential registry 
 
 Reference issue #178 as the completed Kubernetes pilot. Do not close this rollout issue until its own criteria pass.
 
-- [ ] **Step 4: Verify documentation and links**
+- [x] **Step 4: Verify documentation and links**
 
-Run: `npx --yes markdownlint-cli2@0.18.1 "**/*.md"`
+Run: `npx --yes markdownlint-cli2@0.18.1 "**/*.md" "#node_modules" "#.superpowers/sdd"`
 
 Expected: zero Markdown lint errors.
 
@@ -757,7 +757,7 @@ Run: `rg -n "CREDENTIAL_REGISTRY|credential: stable-id|catalogue-maintainers" RE
 
 Expected: all four files contain the intended policy link or example.
 
-- [ ] **Step 5: Commit Task 4**
+- [x] **Step 5: Commit Task 4**
 
 ```bash
 git add docs/CREDENTIAL_REGISTRY.md CONTRIBUTING.md README.md docs/role_template.md
@@ -775,7 +775,7 @@ git commit -m "docs: govern credential recommendations"
 - Consumes: every deliverable and test from Tasks 1–4.
 - Produces: a pushed branch, reviewable PR, and criterion-level completion evidence for issue #178.
 
-- [ ] **Step 1: Run the complete local verification gate**
+- [x] **Step 1: Run the complete local verification gate**
 
 Run each command separately and retain its exact result:
 
@@ -785,13 +785,13 @@ npm test
 npm run validate
 npm run check-counts
 npm run verify-vendor
-npx --yes markdownlint-cli2@0.18.1 "**/*.md"
+npx --yes markdownlint-cli2@0.18.1 "**/*.md" "#node_modules" "#.superpowers/sdd"
 git diff --check
 ```
 
 Expected: every command exits 0. `npm run validate` may report pre-existing non-credential warnings but reports zero errors, zero stale credential warnings, and no audited-role marker gaps.
 
-- [ ] **Step 2: Review the complete diff against the approved design**
+- [x] **Step 2: Review the complete diff against the approved design**
 
 Confirm explicitly:
 
@@ -802,6 +802,30 @@ Confirm explicitly:
 - legacy domains remain allowed and visibly unaudited;
 - stale references warn and unknown references fail;
 - documentation names ownership and the remaining-domain rollout issue exists.
+
+#### Task 5 local verification evidence (2026-08-08)
+
+All commands were run separately on `codex/178-credential-registry` and exited 0:
+
+- `node --test test/credential-registry.test.js test/kubernetes-credentials.test.js test/validate-roles.test.js`: 67 tests, 67 passed, 0 failed, 0 skipped, 0 todo.
+- `npm test`: 267 tests, 267 passed, 0 failed, 0 skipped, 0 todo.
+- `npm run validate`: checked 227 role files, skipped 1 reference document, found 0 files with errors, 199 files with pre-existing KPI warnings, and 0 duplicate titles. No stale credential warnings or audited-role marker gaps were reported.
+- `npm run check-counts`: 226 roles, 34 domains, and 7 chapters; README counts match.
+- `npm run verify-vendor`: vendored dependency manifest and checksums verified.
+- `npx --yes markdownlint-cli2@0.18.1 "**/*.md" "#node_modules" "#.superpowers/sdd"`: linted 275 CI-visible Markdown files with 0 errors.
+- `git diff --check`: no whitespace errors.
+
+The original local lint glob also traversed git-ignored `node_modules/` and self-ignored `.superpowers/sdd/` orchestration artifacts, which are absent from CI. The corrected command excludes both ignored trees and matches the 275-file CI-visible scope.
+
+The design review confirmed:
+
+- `audited_roles` contains exactly the four Kubernetes architect, engineer, product owner, and senior engineer paths.
+- All 13 registry records use HTTPS issuer-controlled domains, carry `verified_on: 2026-08-08`, and are owned by `catalogue-maintainers`.
+- The four audited recommendation sections contain no KCSP or other organisation-programme recommendations.
+- Architect, engineer, product owner, and senior engineer contain 7, 6, 3, and 9 markers respectively; every recommendation bullet has exactly one known marker and all four files validate with zero credential errors.
+- Legacy unmarked recommendations remain allowed by validation and are explicitly described as unaudited in `docs/CREDENTIAL_REGISTRY.md`.
+- Focused tests prove stale entries warn, unknown references fail, and malformed marker syntax fails.
+- `docs/CREDENTIAL_REGISTRY.md` names `catalogue-maintainers` ownership and links the remaining-domain rollout tracker, issue #210, in both the audit-boundary and rollout sections. The controller separately verified the external issue state.
 
 - [ ] **Step 3: Commit the verification record and push**
 
