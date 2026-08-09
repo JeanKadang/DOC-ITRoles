@@ -466,17 +466,17 @@ git commit -m "feat: add safe skill installer"
 - Consumes: eight validated skills and installer interface.
 - Produces: complete public documentation, intake templates, CI, dependency updates, release notes, security policy, and release automation.
 
-- [ ] **Step 1: Write the layered guide**
+- [x] **Step 1: Write the layered guide**
 
 `docs/GUIDE.md` covers all eight triggers, responsibilities, boundaries, outputs, and handoffs. Start with the issue → linked branch → `Refs` → criterion evidence → `Closes` → epic/milestone → release chain. Include ordinary change, repository review, PR review, security, multi-maintainer, release, and new-repository examples. Label current policy separately from improvements and record version/review date.
 
 `docs/WORKFLOW.md` expands the lifecycle. `docs/MAINTAINING.md` defines the cross-skill invariant review, parent-epic reconciliation, issue-versus-PR number verification, and compatibility recording.
 
-- [ ] **Step 2: Write platform tracks**
+- [x] **Step 2: Write platform tracks**
 
 Create OpenAI Codex and Claude guides that link to the same skill directories, document discovery/restart behavior, and show `-DryRun` before installation. Create neutral ADO mappings for work items, types, iterations, milestones, Projects, repos, pipelines, Test Plans, and Wiki; state that workplace templates belong in a future private companion.
 
-- [ ] **Step 3: Write root policies**
+- [x] **Step 3: Write root policies**
 
 README: purpose, eight skills, quick install, docs, compatibility, licence, security, release status. CONTRIBUTING: issue-first, conventional commits, linked branches, evidence gates, focused PRs, tests, and no workplace content. SECURITY: current release, private vulnerability reporting, no public disclosure, no fictitious guarantees.
 
@@ -496,15 +496,15 @@ Start `CHANGELOG.md` with:
 - General Azure DevOps-to-GitHub migration guidance.
 ```
 
-- [ ] **Step 4: Add issue forms and PR template**
+- [x] **Step 4: Add issue forms and PR template**
 
 Bug and improvement forms require evidence, scope, acceptance criteria, affected skills, and public-content confirmation. Disable blank issues and route security reports to SECURITY.md. PR template begins `Refs #N`, asks for criterion evidence and validation, and never defaults to `Closes #N`.
 
-- [ ] **Step 5: Add dependency and release-note configuration**
+- [x] **Step 5: Add dependency and release-note configuration**
 
 Dependabot checks npm and GitHub Actions weekly, grouped, assigned to `JeanKadang`, with Task 2 labels. Release notes categorize Security, Features, Fixes, Documentation, Tooling & CI, Maintenance, and Other; exclude `ignore-for-release`; keep `"*"` last.
 
-- [ ] **Step 6: Add pinned CI**
+- [x] **Step 6: Add pinned CI**
 
 `validate.yml` uses `permissions: contents: read` and stable job names:
 
@@ -515,7 +515,7 @@ Dependabot checks npm and GitHub Actions weekly, grouped, assigned to `JeanKadan
 
 Use pinned `actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0` and `actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e`. Node jobs use `npm ci`; Windows runs installer tests and direct dry-run against temporary homes.
 
-- [ ] **Step 7: Add tag release workflow**
+- [x] **Step 7: Add tag release workflow**
 
 Trigger `v*`; use `permissions: contents: write`; checkout tag; run `npm ci` and `npm run check`; require package and inventory versions to equal the tag without `v`; then run this release step with `shell: pwsh`:
 
@@ -526,7 +526,7 @@ gh release create $env:GITHUB_REF_NAME `
 
 Expose `${{ github.token }}` only as `GH_TOKEN` for that step. Use no third-party release action.
 
-- [ ] **Step 8: Verify and commit Task 5**
+- [x] **Step 8: Verify and commit Task 5**
 
 Run `npm run check`, the public-content regex from Task 2 across the repo excluding `node_modules` and lockfile, and `git diff --check`. Review any generic documentation match manually.
 
