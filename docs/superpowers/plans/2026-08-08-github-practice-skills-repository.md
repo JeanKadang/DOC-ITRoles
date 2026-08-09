@@ -297,7 +297,9 @@ Create `package.json`:
   "scripts": {
     "test": "node --test",
     "validate": "node scripts/validate-skills.mjs",
-    "lint:markdown": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "lint:markdown:docs": "markdownlint-cli2 \"**/*.md\" \"#node_modules/**\" \"#skills/**\"",
+    "lint:markdown:skills": "markdownlint-cli2 --config .markdownlint-skills.jsonc \"skills/**/*.md\"",
+    "lint:markdown": "npm run lint:markdown:docs && npm run lint:markdown:skills",
     "check": "npm run validate && npm test && npm run lint:markdown"
   },
   "devDependencies": {
@@ -308,6 +310,14 @@ Create `package.json`:
 ```
 
 Run `npm install` and commit the generated lockfile.
+
+Create `.markdownlint-skills.jsonc` for the byte-preserved imported skill
+sources. Disable only inherited formatting rules `MD013`, `MD022`, `MD032`,
+`MD040`, and `MD060`. Root and documentation Markdown remain subject to the
+strict default rules through `lint:markdown:docs`. This scoped exception was
+approved by the maintainer on 2026-08-09 after the exact imports exposed 266
+pre-existing findings; normalization is intentionally deferred to a separately
+reviewed change.
 
 - [ ] **Step 4: Write failing validator tests**
 
@@ -364,12 +374,13 @@ npm test
 npm run lint:markdown
 ```
 
-Expected: eight skills, all tests pass, zero Markdown issues.
+Expected: eight skills, all tests pass, zero Markdown issues under the strict
+repository-doc rules and the explicitly scoped imported-skill policy.
 
 - [ ] **Step 7: Commit Task 3**
 
 ```powershell
-git add skills contracts scripts/validate-skills.mjs tests/validate-skills.test.mjs package.json package-lock.json
+git add skills contracts scripts/validate-skills.mjs tests/validate-skills.test.mjs package.json package-lock.json .markdownlint-skills.jsonc
 git commit -m "feat: add canonical skill inventory"
 ```
 
