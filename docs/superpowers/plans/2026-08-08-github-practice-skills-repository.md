@@ -246,7 +246,7 @@ Expected: clean `bootstrap/1-initial-release`, linked to issue #1. Comment on #1
 - Consumes: seven existing Codex skill directories and the Task 1 draft.
 - Produces: `validateRepository(root) -> { errors, warnings, skills }`, CLI exit status, and the inventory consumed by the installer.
 
-- [ ] **Step 1: Copy sources without policy edits**
+- [x] **Step 1: Copy sources without policy edits**
 
 Copy these exact directories into `skills/`:
 
@@ -262,7 +262,7 @@ C:\Users\Jean\.codex\skills\github-security-response
 
 Copy the Task 1 draft as `skills/github-repo-bootstrap`. Verify `github-repo-review/review-prompt.md` and all eight `agents/openai.yaml` files exist.
 
-- [ ] **Step 2: Define the inventory**
+- [x] **Step 2: Define the inventory**
 
 Create `contracts/skill-inventory.json`:
 
@@ -283,7 +283,7 @@ Create `contracts/skill-inventory.json`:
 }
 ```
 
-- [ ] **Step 3: Define the Node package**
+- [x] **Step 3: Define the Node package**
 
 Create `package.json`:
 
@@ -319,7 +319,7 @@ approved by the maintainer on 2026-08-09 after the exact imports exposed 266
 pre-existing findings; normalization is intentionally deferred to a separately
 reviewed change.
 
-- [ ] **Step 4: Write failing validator tests**
+- [x] **Step 4: Write failing validator tests**
 
 Use `node:test` and temporary copies. Include:
 
@@ -354,7 +354,7 @@ test('rejects a frontmatter name that differs from its directory', async () => {
 
 Run the focused test and confirm failure because `validateRepository` is absent.
 
-- [ ] **Step 5: Implement manifest validation**
+- [x] **Step 5: Implement manifest validation**
 
 `scripts/validate-skills.mjs` exports:
 
@@ -366,7 +366,7 @@ export async function validateRepository(root = process.cwd()) {
 
 Expand it to load the inventory, compare registered and actual `skills/github-*` directories, verify files, parse `SKILL.md` YAML frontmatter, require `name === directory name`, parse `agents/openai.yaml`, and require non-empty `interface.display_name`, `short_description`, and `default_prompt`. The CLI prints a deterministic summary and exits one on errors.
 
-- [ ] **Step 6: Run red-green verification**
+- [x] **Step 6: Run red-green verification**
 
 ```powershell
 npm run validate
@@ -377,7 +377,7 @@ npm run lint:markdown
 Expected: eight skills, all tests pass, zero Markdown issues under the strict
 repository-doc rules and the explicitly scoped imported-skill policy.
 
-- [ ] **Step 7: Commit Task 3**
+- [x] **Step 7: Commit Task 3**
 
 ```powershell
 git add skills contracts scripts/validate-skills.mjs tests/validate-skills.test.mjs package.json package-lock.json .markdownlint-skills.jsonc
