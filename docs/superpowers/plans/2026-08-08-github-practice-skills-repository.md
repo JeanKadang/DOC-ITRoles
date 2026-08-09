@@ -399,13 +399,13 @@ git commit -m "feat: add canonical skill inventory"
 - Consumes: inventory and validated `skills/` tree.
 - Produces: `install-skills.ps1 -Target Codex|Claude|Both -SourceRoot <path> -CodexHome <path> -ClaudeHome <path> -DryRun -Force`.
 
-- [ ] **Step 1: Write failing installer tests**
+- [x] **Step 1: Write failing installer tests**
 
 Spawn `pwsh -NoProfile -File scripts/install-skills.ps1` with temporary homes. Test that dry-run changes nothing, both targets receive eight skills, corresponding `SKILL.md` hashes match, an untracked existing skill is refused without `-Force`, and `-Force` backs up a modified tracked skill before replacement.
 
 Run the focused test and confirm failure because the installer is absent.
 
-- [ ] **Step 2: Implement parameters and discovery**
+- [x] **Step 2: Implement parameters and discovery**
 
 ```powershell
 [CmdletBinding()]
@@ -430,13 +430,13 @@ if (-not $ClaudeHome) {
 
 Do not declare or repurpose `$HOME`, `$home`, or `$CODEX_HOME`.
 
-- [ ] **Step 3: Implement staging and overwrite safety**
+- [x] **Step 3: Implement staging and overwrite safety**
 
 Validate `SourceRoot` before destination writes. Load the inventory, compute SHA-256 for required files, and stage under a GUID directory inside each target parent. `-DryRun` prints source, target, eight skills, overwrite decisions, and backup paths without creating anything.
 
 Write `.doc-github-practice-skills.json` with release and file hashes. If an existing skill has no matching marker or current hashes differ, exit one unless `-Force`. With `-Force`, back up to `<platform-home>/skill-backups/<UTC timestamp>/<skill-name>/`. Move staged directories only after every check succeeds.
 
-- [ ] **Step 4: Run installer red-green verification**
+- [x] **Step 4: Run installer red-green verification**
 
 ```powershell
 npm test
@@ -445,7 +445,7 @@ npm run check
 
 Expected: staged Codex and Claude hashes match for all eight skills; overwrite and backup tests pass.
 
-- [ ] **Step 5: Commit Task 4**
+- [x] **Step 5: Commit Task 4**
 
 ```powershell
 git add scripts/install-skills.ps1 tests/install-skills.test.mjs package.json package-lock.json
