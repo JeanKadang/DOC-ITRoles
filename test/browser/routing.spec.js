@@ -61,3 +61,40 @@ test('invalid routes preserve the hash and show a safe fallback', async ({ page 
   await expect(page).toHaveURL(/#\/role\/kubernetes\/not-a-role$/);
   await expect(page).toHaveTitle('IT Roles Library');
 });
+
+test('viewer actions create canonical role and comparison URLs', async ({ page }) => {
+  await page.goto('/');
+  const search = page.getByRole('textbox', { name: 'Search roles' });
+  await search.fill('Kubernetes Architect');
+  await page.locator('#sidebarNav .chapter-domains').getByRole('button', {
+    name: /^Kubernetes Architect\b/,
+  }).click();
+  await expect(page).toHaveURL(/#\/role\/kubernetes\/kubernetes_architect$/);
+
+  await page.getByRole('button', { name: 'Compare with another role' }).click();
+  await search.fill('Kubernetes Engineer');
+  await page.locator('#sidebarNav .chapter-domains').getByRole('button', {
+    name: /^Kubernetes Engineer\b/,
+  }).click();
+  await expect(page).toHaveURL(
+    /#\/compare\/kubernetes\/kubernetes_architect\/kubernetes\/kubernetes_engineer$/,
+  );
+  await page.getByRole('button', { name: 'Close comparison' }).click();
+  await expect(page).toHaveURL(/#\/role\/kubernetes\/kubernetes_architect$/);
+});
+
+test('Copy link writes the canonical absolute route and announces success', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'clipboard', {
+      configurable: true,
+      value: { writeText: value => { window.__copiedViewerLink = value; } },
+    });
+  });
+  await page.goto('/#/role/kubernetes/kubernetes_architect');
+  await expectArchitect(page);
+  await page.getByRole('button', { name: 'Copy link to this view' }).click();
+  await expect(page.getByRole('status')).toHaveText('Link copied.');
+  await expect.poll(() => page.evaluate(() => window.__copiedViewerLink)).toMatch(
+    /#\/role\/kubernetes\/kubernetes_architect$/,
+  );
+});

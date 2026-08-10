@@ -119,6 +119,27 @@ test('roleRouteFromFile accepts only canonical role Markdown paths', () => {
     assert.equal(roleRouteFromFile('Roles/kubernetes/README.md'), null);
 });
 
+test('every catalogue role has a stable round-trippable route', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const rolesDir = path.join(__dirname, '..', 'Roles');
+    let count = 0;
+
+    for (const domain of fs.readdirSync(rolesDir, { withFileTypes: true })) {
+        if (!domain.isDirectory()) continue;
+        const domainDir = path.join(rolesDir, domain.name);
+        for (const file of fs.readdirSync(domainDir)) {
+            if (!file.endsWith('.md') || file === 'README.md' || /_standards\.md$/.test(file)) continue;
+            const route = roleRouteFromFile(`Roles/${domain.name}/${file}`);
+            assert.ok(route, `${domain.name}/${file}`);
+            assert.deepEqual(parseViewerRoute(formatViewerRoute(route)), route);
+            count++;
+        }
+    }
+
+    assert.equal(count, 226);
+});
+
 test('viewer-logic REFERENCE_DOC_PATTERN mirrors roleMeta exactly', () => {
     // The browser cannot require roleMeta.js, so viewer-logic carries a
     // copy; this test keeps the two from drifting apart.

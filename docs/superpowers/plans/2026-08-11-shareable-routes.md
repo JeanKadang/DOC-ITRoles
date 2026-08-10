@@ -47,7 +47,7 @@
 - Produces: `roleRouteFromFile(file) -> { type: 'role', domain, role } | null`.
 - Route shapes are `{ type: 'home' }`, `{ type: 'role', domain, role }`, `{ type: 'compare', first: { domain, role }, second: { domain, role } }`, `{ type: 'matrix', domain }`, `{ type: 'doc', id }`, and `{ type: 'invalid' }`.
 
-- [ ] **Step 1: Add failing route-contract tests**
+- [x] **Step 1: Add failing route-contract tests**
 
 Add the three planned helpers to the destructured import in `test/viewer-logic.test.js`, then append:
 
@@ -120,13 +120,13 @@ test('roleRouteFromFile accepts only canonical role Markdown paths', () => {
 });
 ```
 
-- [ ] **Step 2: Run the focused test and confirm RED**
+- [x] **Step 2: Run the focused test and confirm RED**
 
 Run: `node --test test/viewer-logic.test.js`
 
 Expected: FAIL because the three route helpers are not exported.
 
-- [ ] **Step 3: Implement the route grammar**
+- [x] **Step 3: Implement the route grammar**
 
 Add before the export object in `viewer-logic.js`:
 
@@ -205,13 +205,13 @@ function roleRouteFromFile(file) {
 
 Export `parseViewerRoute`, `formatViewerRoute`, and `roleRouteFromFile` from the returned object.
 
-- [ ] **Step 4: Run the focused test and confirm GREEN**
+- [x] **Step 4: Run the focused test and confirm GREEN**
 
 Run: `node --test test/viewer-logic.test.js`
 
 Expected: all viewer-logic tests PASS.
 
-- [ ] **Step 5: Commit the pure contract and approved matrix correction**
+- [x] **Step 5: Commit the pure contract and approved matrix correction**
 
 ```powershell
 git add -- viewer-logic.js test/viewer-logic.test.js docs/superpowers/specs/2026-08-11-shareable-routes-design.md
@@ -231,7 +231,7 @@ git commit -m "feat: define viewer route contract"
 - Produces: `navigateToRoute(route, options?)`, `applyCurrentRoute()`, `resolveRoleRoute(route)`, `showHomeView(options?)`, and `copyCurrentLink()` in the browser script.
 - Produces: stable registered resource entries shaped as `{ routeId, group, file, icon, title }`.
 
-- [ ] **Step 1: Add failing direct-route browser tests**
+- [x] **Step 1: Add failing direct-route browser tests**
 
 Create `test/browser/routing.spec.js`:
 
@@ -301,13 +301,13 @@ test('invalid routes preserve the hash and show a safe fallback', async ({ page 
 });
 ```
 
-- [ ] **Step 2: Run one local Chromium project and confirm RED**
+- [x] **Step 2: Run one local Chromium project and confirm RED**
 
 Run: `npx playwright test test/browser/routing.spec.js --project=chromium`
 
 Expected: FAIL because direct hashes are not applied and titles remain generic. If Chromium itself cannot launch locally, record that environment failure once and continue with Node tests plus hosted CI; do not substitute repeated Firefox retries.
 
-- [ ] **Step 3: Register stable document IDs and route controls**
+- [x] **Step 3: Register stable document IDs and route controls**
 
 Add `routeId` to every `RESOURCES` entry using these exact values:
 
@@ -343,7 +343,7 @@ At the start of `#welcomeState`, add:
 <div id="routeStatus" class="empty-msg" role="alert" hidden></div>
 ```
 
-- [ ] **Step 4: Add the central route controller**
+- [x] **Step 4: Add the central route controller**
 
 Add browser state and helpers near the current viewer state:
 
@@ -438,7 +438,7 @@ async function applyCurrentRoute() {
 
 `showHomeView({ invalid = false } = {})` must perform the existing `goHome` DOM reset without writing history, set the default title, hide `#copyLinkBtn`, and show `#routeStatus` with `The requested view could not be found.` only when invalid.
 
-- [ ] **Step 5: Separate route entry from view rendering**
+- [x] **Step 5: Separate route entry from view rendering**
 
 Refactor the existing durable functions without changing their rendering markup:
 
@@ -564,7 +564,7 @@ Change `closeComparison()` to navigate to `roleRouteFromFile(activeFile)`. Chang
 
 Change `renderMatrix(domains)` to `renderMatrix(domains, domainKey = 'all')`; create `visibleDomains` as either `domains` or `{ [domainKey]: domains[domainKey] }`, and use it for levels, rows, counts, and heading text. `renderMatrixView(domainKey)` sets `activeMatrixDomain`, opens the matrix panel without another navigation write, and shows `Kubernetes Role Matrix` for the Kubernetes route. The Matrix header button navigates to `{ type: 'matrix', domain: 'all' }` when opening and `{ type: 'home' }` when closing.
 
-- [ ] **Step 6: Wire initial load and browser history**
+- [x] **Step 6: Wire initial load and browser history**
 
 At the end of successful `init()`:
 
@@ -587,7 +587,7 @@ window.addEventListener('hashchange', () => {
 
 Replace the private `backStack`, `captureView`, `pushHistory`, and `restoringView` machinery. `goBack()` calls `history.back()` only when `history.state.docItRolesIndex > 0`; otherwise it navigates to home. Show the header Back control when the current state index is above zero.
 
-- [ ] **Step 7: Implement Copy link feedback**
+- [x] **Step 7: Implement Copy link feedback**
 
 Add:
 
@@ -605,7 +605,7 @@ async function copyCurrentLink() {
 
 Show `#copyLinkBtn` after successfully resolving role, comparison, matrix, and registered-document routes. Hide it for home, invalid, and transient views.
 
-- [ ] **Step 8: Run focused tests and confirm GREEN**
+- [x] **Step 8: Run focused tests and confirm GREEN**
 
 Run: `node --test test/viewer-logic.test.js`
 
@@ -615,7 +615,7 @@ Run: `npx playwright test test/browser/routing.spec.js --project=chromium`
 
 Expected: all routing tests PASS, or one recorded local browser-launch environment failure with no repeated local retries.
 
-- [ ] **Step 9: Commit the routed viewer**
+- [x] **Step 9: Commit the routed viewer**
 
 ```powershell
 git add -- index.html test/browser/routing.spec.js
@@ -634,7 +634,7 @@ git commit -m "feat: add shareable viewer routes"
 - Consumes: the route controller and Copy link action from Task 2.
 - Produces: acceptance evidence for direct links, reload, browser history, titles, invalid routes, and canonical copied URLs.
 
-- [ ] **Step 1: Add failing UI-navigation and clipboard tests**
+- [x] **Step 1: Add UI-navigation and clipboard tests**
 
 Append to `test/browser/routing.spec.js`:
 
@@ -677,13 +677,13 @@ test('Copy link writes the canonical absolute route and announces success', asyn
 });
 ```
 
-- [ ] **Step 2: Run the focused browser spec and confirm behavior**
+- [x] **Step 2: Run the focused browser spec and confirm behavior**
 
 Run: `npx playwright test test/browser/routing.spec.js --project=chromium`
 
 Expected: all routing tests PASS. If Step 1 exposes a product gap, keep the failing test, make only the controller or event-binding correction it demonstrates, and rerun this command once.
 
-- [ ] **Step 3: Run the fast repository checks**
+- [x] **Step 3: Run the fast repository checks**
 
 Run: `npm test`
 
@@ -697,13 +697,15 @@ Run: `npm run check-counts`
 
 Expected: exit code 0 and committed counts match the catalogue.
 
-- [ ] **Step 4: Run the complete local browser suite once when available**
+- [x] **Step 4: Run the available local browser suite once**
 
-Run: `npm run test:browser`
+Run: `npx playwright test --project=chromium`
 
-Expected: all configured projects PASS. If a local browser engine fails before reaching the application, record the single environment failure and stop retrying it; hosted PR checks decide cross-browser acceptance.
+Result: all 15 Chromium journeys passed. Local Firefox and WebKit were not run;
+hosted PR checks decide three-engine acceptance, as required by the approved
+design and the user's explicit instruction not to retry local Firefox.
 
-- [ ] **Step 5: Check scope and whitespace**
+- [x] **Step 5: Check scope and whitespace**
 
 Run: `git diff origin/main...HEAD --check`
 
@@ -717,21 +719,21 @@ Run: `git diff --stat origin/main...HEAD`
 
 Expected: only the approved specification, plan, `viewer-logic.js`, `test/viewer-logic.test.js`, `index.html`, and `test/browser/routing.spec.js` are changed.
 
-- [ ] **Step 6: Reconcile every #181 acceptance criterion**
+- [x] **Step 6: Reconcile every #181 acceptance criterion**
 
 Confirm with fresh evidence:
 
 ```text
-[ ] Every catalogue role derives a stable direct URL from its file identity.
-[ ] Reload restores role, comparison, matrix, and registered-document views.
-[ ] Back and Forward replay viewer state without blank panels.
-[ ] Role and document views have contextual titles.
-[ ] Invalid route identifiers retain their hash and show a safe fallback.
-[ ] Automated Node and browser tests cover route parsing and reload behavior.
-[ ] Copy link exposes the canonical absolute URL with accessible feedback.
+[x] Every catalogue role derives a stable direct URL from its file identity.
+[x] Reload restores role, comparison, matrix, and registered-document views.
+[x] Back and Forward replay viewer state without blank panels.
+[x] Role and document views have contextual titles.
+[x] Invalid route identifiers retain their hash and show a safe fallback.
+[x] Automated Node and browser tests cover route parsing and reload behavior.
+[x] Copy link exposes the canonical absolute URL with accessible feedback.
 ```
 
-- [ ] **Step 7: Commit any final test-only additions**
+- [x] **Step 7: Commit any final test-only additions**
 
 If Step 1 added tests after the Task 2 commit, commit them:
 
