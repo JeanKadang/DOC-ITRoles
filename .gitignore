@@ -1,6 +1,9 @@
 *.log
 node_modules/
 
+# Local isolated implementation worktrees
+.worktrees/
+
 # Local Claude Code session artifacts, not project content
 .claude/scheduled_tasks.lock
 
