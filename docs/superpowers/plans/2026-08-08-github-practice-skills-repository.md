@@ -675,7 +675,7 @@ git diff --check
 
 Expected: zero lint issues, at least 279 Node tests pass, role validation zero errors, clean diff.
 
-- [ ] **Step 4: Open the DOC-ITRoles PR**
+- [x] **Step 4: Open the DOC-ITRoles PR**
 
 From `docs/216-github-skills-guide`, open a ready PR titled `docs: document GitHub practice skills` with `Refs #216`, release evidence, local validation, and scope-decision history.
 
