@@ -621,11 +621,11 @@ gh api repos/JeanKadang/DOC-GitHub-Practice-Skills/releases/generate-notes `
 
 Expected: bootstrap PR categorized correctly and no unrelated changes.
 
-- [ ] **Step 3: Request explicit release approval**
+- [x] **Step 3: Request explicit release approval**
 
 Present release commit, check results, notes preview, open release criterion, and annotated-tag command. Do not tag without approval.
 
-- [ ] **Step 4: Tag updated `main`**
+- [x] **Step 4: Tag updated `main`**
 
 ```powershell
 git tag -a v0.1.0 -m "Release 0.1.0"
@@ -635,7 +635,7 @@ git push origin v0.1.0
 
 Verify tag commit equals `main`, then watch release automation. Do not create a duplicate manual release.
 
-- [ ] **Step 5: Verify and close release tracking**
+- [x] **Step 5: Verify and close release tracking**
 
 Confirm `v0.1.0` is latest, not draft/prerelease, annotated tag resolves to updated `main`, generated notes exist, and release workflow is green. Add criterion evidence to issue #1, check all eight boxes with a body file, close Completed, verify zero unchecked, close milestone `v0.1.0`, prune the branch, and report any open PR.
 
@@ -654,15 +654,15 @@ Confirm `v0.1.0` is latest, not draft/prerelease, annotated tag resolves to upda
 - Consumes: verified public `v0.1.0` and canonical documentation URLs.
 - Produces: repository-specific integration guide, green DOC-ITRoles PR, and evidence-backed #216 closure.
 
-- [ ] **Step 1: Write the integration guide**
+- [x] **Step 1: Write the integration guide**
 
 Include repository URL and adopted `v0.1.0`; all eight names; canonical guide/installer/platform links; DOC-ITRoles labels, thematic milestones, linked branches, merge commits, release conventions; acceptance criteria as evidence gates; parent-epic/native-sub-issue reconciliation; explicit merge/release approval; hosted browser CI as authoritative when local simulation is unavailable; private security routing; and a statement that reusable policy lives in the released skills repository.
 
-- [ ] **Step 2: Update the changelog**
+- [x] **Step 2: Update the changelog**
 
 Under `[Unreleased]`, record the integration guide and link #216 and the released repository. Do not bump DOC-ITRoles solely for this documentation PR.
 
-- [ ] **Step 3: Verify DOC-ITRoles**
+- [x] **Step 3: Verify DOC-ITRoles**
 
 ```powershell
 npx --yes markdownlint-cli2 "docs/GITHUB_WORKFLOW_SKILLS.md" `

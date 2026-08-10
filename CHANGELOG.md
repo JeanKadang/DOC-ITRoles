@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **Versioned GitHub workflow guidance (#216).** DOC-ITRoles now documents its
+  repository-specific adoption of the public
+  [`DOC-GitHub-Practice-Skills` v0.1.0 release](https://github.com/JeanKadang/DOC-GitHub-Practice-Skills/releases/tag/v0.1.0),
+  including issue, acceptance, merge, release, browser-CI, and security-routing
+  conventions.
+
 ## [1.16.0] - 2026-08-08
 
 ### Added
