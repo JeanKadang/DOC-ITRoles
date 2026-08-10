@@ -30,6 +30,7 @@ The supported routes are:
 - `#/` — welcome view;
 - `#/role/<domain>/<role-id>` — one role;
 - `#/compare/<domain-a>/<role-a>/<domain-b>/<role-b>` — two roles;
+- `#/matrix/all` — the complete matrix;
 - `#/matrix/<domain>` — the matrix focused on one domain; and
 - `#/doc/<document-id>` — a registered reference or onboarding document.
 
@@ -105,10 +106,10 @@ that role creates the comparison route.
 
 ### Matrix domains
 
-The matrix route validates the domain and renders the existing matrix limited
-to that domain. The normal Matrix button may open the first available domain or
-retain the last valid matrix domain during the session, but the resulting URL
-must always identify a concrete domain.
+The matrix route accepts the reserved identifier `all` or validates a catalogue
+domain and renders the existing matrix for that selection. The normal Matrix
+button opens `#/matrix/all`, preserving its current complete-matrix behavior.
+Concrete domain routes provide the narrower shareable view proposed by #181.
 
 ### Documents
 
