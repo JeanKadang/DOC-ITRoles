@@ -598,7 +598,7 @@ After merge, create an active `~DEFAULT_BRANCH` ruleset with deletion and non-fa
 - Consumes: updated `main`, green validation, matching `0.1.0` versions, changelog, approved release.
 - Produces: annotated tag, latest release, completed issue #1, closed milestone, clean branches.
 
-- [ ] **Step 1: Verify fresh `main`**
+- [x] **Step 1: Verify fresh `main`**
 
 ```powershell
 git checkout main
@@ -611,7 +611,7 @@ git diff --check
 
 Expected: all checks pass, versions match, tree clean.
 
-- [ ] **Step 2: Preview release notes**
+- [x] **Step 2: Preview release notes**
 
 ```powershell
 gh api repos/JeanKadang/DOC-GitHub-Practice-Skills/releases/generate-notes `
