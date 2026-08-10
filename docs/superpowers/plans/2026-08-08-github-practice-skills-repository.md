@@ -550,15 +550,15 @@ git commit -m "docs: add skill workflow guidance"
 - Consumes: complete bootstrap branch with green local validation.
 - Produces: configured repository, green PR, evidence-backed issue state, and approved merge commit.
 
-- [ ] **Step 1: Push and open the PR**
+- [x] **Step 1: Push and open the PR**
 
 Push `bootstrap/1-initial-release`. Open a ready PR titled `feat: bootstrap GitHub practice skills` with `Refs #1`, exact commits, inventory, validation, settings still to verify, and public-content scan result.
 
-- [ ] **Step 2: Enable and verify security settings**
+- [x] **Step 2: Enable and verify security settings**
 
 Enable private vulnerability reporting. Query `security_and_analysis`; enable secret scanning and push protection where the public repository reports them available. Record an unavailable API/plan control as a constraint, not a fabricated defect.
 
-- [ ] **Step 3: Audit actual settings**
+- [x] **Step 3: Audit actual settings**
 
 ```powershell
 gh repo view JeanKadang/DOC-GitHub-Practice-Skills `
@@ -569,19 +569,19 @@ gh api repos/JeanKadang/DOC-GitHub-Practice-Skills --jq .security_and_analysis
 
 Expected: public/main, delete true, merge commit true, squash/rebase false, issues true, Projects/Wiki false, default Actions read, available security controls enabled.
 
-- [ ] **Step 4: Wait for every PR check**
+- [x] **Step 4: Wait for every PR check**
 
 Resolve the PR number from the branch, then run `gh pr checks <N> --watch`. All four stable CI jobs must be green. Diagnose failures before any rerun.
 
-- [ ] **Step 5: Review issue criteria and PR scope**
+- [x] **Step 5: Review issue criteria and PR scope**
 
 Use `github-pr-review` to map each non-release criterion to diff, tests, CI, docs, or settings. Keep the release criterion unchecked and keep `Refs #1`, because `v0.1.0` does not exist yet.
 
-- [ ] **Step 6: Request explicit merge approval**
+- [x] **Step 6: Request explicit merge approval**
 
 Present PR URL, criterion table, CI matrix, settings audit, content scan, and the remaining release criterion. Merge only after approval, with a merge commit.
 
-- [ ] **Step 7: Create the main ruleset after CI names exist**
+- [x] **Step 7: Create the main ruleset after CI names exist**
 
 After merge, create an active `~DEFAULT_BRANCH` ruleset with deletion and non-fast-forward protection, pull requests required with zero approvals for the solo maintainer, and strict required checks using the four exact Task 5 job names. Verify with `gh ruleset check main` and the API. Record why the first PR preceded the ruleset.
 
