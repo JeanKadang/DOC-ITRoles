@@ -679,7 +679,7 @@ Expected: zero lint issues, at least 279 Node tests pass, role validation zero e
 
 From `docs/216-github-skills-guide`, open a ready PR titled `docs: document GitHub practice skills` with `Refs #216`, release evidence, local validation, and scope-decision history.
 
-- [ ] **Step 5: Reconcile all ten #216 criteria**
+- [x] **Step 5: Reconcile all ten #216 criteria**
 
 Map criteria to design, public repo, eight packages, bootstrap evidence, docs, CI, installer tests, release, integration guide, content scan, and both validations. Only when all are `Met`, change PR to `Closes #216` and check every box with a newline-preserving body file.
 
