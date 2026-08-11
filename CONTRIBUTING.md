@@ -58,6 +58,7 @@ Consumers must read domain labels, icons, chapter membership, and order from
 - For a credential change, include the registry ID, authoritative issuer URL, verification date, and `npm run validate` output; use the canonical marker in every audited role recommendation.
 - Update an ADR when the change creates or reverses a durable taxonomy decision.
 - Run `npm test`, `npm run validate`, `npm run check-counts`, and any focused generator or verifier command affected by the change.
+- For a viewer change, also run `npm run test:browser`. It drives Chromium, Firefox, and WebKit serially and takes roughly two and a half minutes; the projects share one server, so it is deliberately not parallel. A failure there is a real defect — re-run it rather than assuming a flake, and if it does prove intermittent, file it.
 - Keep generated output, documentation links, and the changelog consistent with the implementation.
 
 Security vulnerabilities and credentials must not be filed in a public issue; follow [SECURITY.md](SECURITY.md).
