@@ -1379,6 +1379,16 @@ test('parseKpiBullet escapes a pipe so it cannot break the table', () => {
     assert.equal(parseKpiBullet('Uptime | availability').metric, 'Uptime \\| availability');
 });
 
+// A backslash already in the bullet must be escaped before the pipe is, or
+// the escape the line above depends on is itself escaped away and the column
+// breaks anyway.
+test('parseKpiBullet escapes a backslash so it cannot cancel the pipe escape', () => {
+    assert.equal(
+        parseKpiBullet(String.raw`Uptime \| availability`).metric,
+        String.raw`Uptime \\\| availability`,
+    );
+});
+
 // ── proposedKpiTarget (#140) ──────────────────────────────
 // Seeds a recognised industry benchmark for the metric families that have
 // one. Every value is marked "(proposed)" so it cannot be mistaken for an

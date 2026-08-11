@@ -827,7 +827,9 @@
 
         return {
             // A pipe would silently split the cell and shift every column.
-            metric:    raw.replace(/\|/g, '\\|'),
+            // Backslashes go first, or an existing "\|" turns into "\\|" —
+            // an escaped backslash followed by a live column separator.
+            metric:    raw.replace(/\\/g, '\\\\').replace(/\|/g, '\\|'),
             target:    target ? target[0].replace(/\s+/g, ' ').trim() : '—',
             frequency: cadence ? FREQ[cadence[0].toLowerCase()] : '—',
         };
