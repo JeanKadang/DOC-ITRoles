@@ -7,13 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.17.0] - 2026-08-11
+
+The catalogue now has durable URLs and a single validated configuration for
+its domain and chapter structure. Repository workflow guidance and pinned
+automation dependencies also move forward with the catalogue.
+
 ### Added
 
+- **Shareable, reload-safe catalogue routes (#181).** Roles, comparisons,
+  matrices, and registered documents have canonical URLs that survive reload,
+  browser Back/Forward navigation, and direct sharing. Viewer titles provide
+  useful browser-tab context, and Copy link exposes the canonical URL.
 - **Versioned GitHub workflow guidance (#216).** DOC-ITRoles now documents its
   repository-specific adoption of the public
   [`DOC-GitHub-Practice-Skills` v0.1.0 release](https://github.com/JeanKadang/DOC-GitHub-Practice-Skills/releases/tag/v0.1.0),
   including issue, acceptance, merge, release, browser-CI, and security-routing
   conventions.
+
+### Changed
+
+- **Central catalogue configuration (#184).** Chapters, domains, labels,
+  icons, ordering, and legacy aliases now come from one validated source shared
+  by the server, viewer, metadata helpers, counts, and generators. The FinOps
+  directory is canonicalised as `Roles/finops` while legacy routes still work.
+- **Pinned GitHub Actions dependencies (#217).** CI uses the refreshed,
+  commit-pinned checkout, Node setup, Markdown lint, and artifact-upload
+  actions.
 
 ## [1.16.0] - 2026-08-08
 
