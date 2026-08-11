@@ -44,10 +44,101 @@ const {
     splitReportingValue,
     tocIdFor,
     activeTocIndex,
+    parseViewerRoute,
+    formatViewerRoute,
+    roleRouteFromFile,
 } = require('../viewer-logic');
 
 const { CANONICAL_LEVELS, REFERENCE_DOC_PATTERN: ROLEMETA_REF_PATTERN } = require('../roleMeta');
 const { REFERENCE_DOC_PATTERN } = require('../viewer-logic');
+
+test('viewer routes parse every supported canonical shape', () => {
+    assert.deepEqual(parseViewerRoute('#/'), { type: 'home' });
+    assert.deepEqual(parseViewerRoute('#/role/kubernetes/kubernetes_architect'), {
+        type: 'role', domain: 'kubernetes', role: 'kubernetes_architect',
+    });
+    assert.deepEqual(parseViewerRoute(
+        '#/compare/kubernetes/kubernetes_architect/kubernetes/kubernetes_engineer',
+    ), {
+        type: 'compare',
+        first: { domain: 'kubernetes', role: 'kubernetes_architect' },
+        second: { domain: 'kubernetes', role: 'kubernetes_engineer' },
+    });
+    assert.deepEqual(parseViewerRoute('#/matrix/all'), { type: 'matrix', domain: 'all' });
+    assert.deepEqual(parseViewerRoute('#/matrix/kubernetes'), { type: 'matrix', domain: 'kubernetes' });
+    assert.deepEqual(parseViewerRoute('#/doc/skills-progression'), {
+        type: 'doc', id: 'skills-progression',
+    });
+});
+
+test('viewer routes normalize case and percent-encoded segments', () => {
+    assert.deepEqual(parseViewerRoute('#/ROLE/Cloud%5FPlatforms/Cloud%5FArchitect'), {
+        type: 'role', domain: 'cloud_platforms', role: 'cloud_architect',
+    });
+    assert.equal(formatViewerRoute({
+        type: 'doc', id: 'Skills Progression',
+    }), '#/doc/skills%20progression');
+});
+
+test('viewer routes reject malformed and incomplete hashes', () => {
+    for (const hash of [
+        '', '#', '#/role/kubernetes', '#/role/kubernetes/a/extra',
+        '#/compare/kubernetes/a/kubernetes', '#/matrix', '#/doc',
+        '#/unknown/value', '#/role/%E0%A4%A/value',
+    ]) {
+        assert.deepEqual(parseViewerRoute(hash), { type: 'invalid' }, hash);
+    }
+});
+
+test('formatViewerRoute round-trips supported routes', () => {
+    const routes = [
+        { type: 'home' },
+        { type: 'role', domain: 'kubernetes', role: 'kubernetes_architect' },
+        {
+            type: 'compare',
+            first: { domain: 'kubernetes', role: 'kubernetes_architect' },
+            second: { domain: 'kubernetes', role: 'kubernetes_engineer' },
+        },
+        { type: 'matrix', domain: 'all' },
+        { type: 'doc', id: 'skills-progression' },
+    ];
+    for (const route of routes) {
+        assert.deepEqual(parseViewerRoute(formatViewerRoute(route)), route);
+    }
+    assert.equal(formatViewerRoute({ type: 'unknown' }), null);
+});
+
+test('roleRouteFromFile accepts only canonical role Markdown paths', () => {
+    assert.deepEqual(roleRouteFromFile('Roles/kubernetes/kubernetes_architect.md'), {
+        type: 'role', domain: 'kubernetes', role: 'kubernetes_architect',
+    });
+    assert.deepEqual(roleRouteFromFile('Roles\\kubernetes\\kubernetes_engineer.md'), {
+        type: 'role', domain: 'kubernetes', role: 'kubernetes_engineer',
+    });
+    assert.equal(roleRouteFromFile('docs/SKILLS_PROGRESSION.md'), null);
+    assert.equal(roleRouteFromFile('Roles/kubernetes/README.md'), null);
+});
+
+test('every catalogue role has a stable round-trippable route', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const rolesDir = path.join(__dirname, '..', 'Roles');
+    let count = 0;
+
+    for (const domain of fs.readdirSync(rolesDir, { withFileTypes: true })) {
+        if (!domain.isDirectory()) continue;
+        const domainDir = path.join(rolesDir, domain.name);
+        for (const file of fs.readdirSync(domainDir)) {
+            if (!file.endsWith('.md') || file === 'README.md' || /_standards\.md$/.test(file)) continue;
+            const route = roleRouteFromFile(`Roles/${domain.name}/${file}`);
+            assert.ok(route, `${domain.name}/${file}`);
+            assert.deepEqual(parseViewerRoute(formatViewerRoute(route)), route);
+            count++;
+        }
+    }
+
+    assert.equal(count, 226);
+});
 
 test('viewer-logic REFERENCE_DOC_PATTERN mirrors roleMeta exactly', () => {
     // The browser cannot require roleMeta.js, so viewer-logic carries a

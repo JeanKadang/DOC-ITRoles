@@ -1033,6 +1033,86 @@
         return parts.join('');
     }
 
+    function routeSegment(value) {
+        const text = String(value == null ? '' : value).trim().toLowerCase();
+        return text ? encodeURIComponent(text) : null;
+    }
+
+    function decodeRouteSegments(hash) {
+        if (hash === '#/' || hash === '/') return [];
+        const raw = String(hash == null ? '' : hash).replace(/^#/, '');
+        if (!raw.startsWith('/') || raw.endsWith('/')) return null;
+        try {
+            const parts = raw.slice(1).split('/')
+                .map(part => decodeURIComponent(part).trim().toLowerCase());
+            return parts.every(Boolean) ? parts : null;
+        } catch {
+            return null;
+        }
+    }
+
+    function parseViewerRoute(hash) {
+        const parts = decodeRouteSegments(hash);
+        if (!parts) return { type: 'invalid' };
+        if (parts.length === 0) return { type: 'home' };
+        if (parts[0] === 'role' && parts.length === 3) {
+            return { type: 'role', domain: parts[1], role: parts[2] };
+        }
+        if (parts[0] === 'compare' && parts.length === 5) {
+            return {
+                type: 'compare',
+                first: { domain: parts[1], role: parts[2] },
+                second: { domain: parts[3], role: parts[4] },
+            };
+        }
+        if (parts[0] === 'matrix' && parts.length === 2) {
+            return { type: 'matrix', domain: parts[1] };
+        }
+        if (parts[0] === 'doc' && parts.length === 2) {
+            return { type: 'doc', id: parts[1] };
+        }
+        return { type: 'invalid' };
+    }
+
+    function formatViewerRoute(route) {
+        if (!route || route.type === 'invalid') return null;
+        if (route.type === 'home') return '#/';
+        if (route.type === 'role') {
+            const domain = routeSegment(route.domain);
+            const role = routeSegment(route.role);
+            return domain && role ? `#/role/${domain}/${role}` : null;
+        }
+        if (route.type === 'compare') {
+            const values = [
+                route.first?.domain,
+                route.first?.role,
+                route.second?.domain,
+                route.second?.role,
+            ].map(routeSegment);
+            return values.every(Boolean) ? `#/compare/${values.join('/')}` : null;
+        }
+        if (route.type === 'matrix') {
+            const domain = routeSegment(route.domain);
+            return domain ? `#/matrix/${domain}` : null;
+        }
+        if (route.type === 'doc') {
+            const id = routeSegment(route.id);
+            return id ? `#/doc/${id}` : null;
+        }
+        return null;
+    }
+
+    function roleRouteFromFile(file) {
+        const normalized = String(file == null ? '' : file).replace(/\\/g, '/');
+        const match = normalized.match(/^Roles\/([^/]+)\/([^/]+)\.md$/i);
+        if (!match || match[2].toLowerCase() === 'readme') return null;
+        return {
+            type: 'role',
+            domain: match[1].toLowerCase(),
+            role: match[2].toLowerCase(),
+        };
+    }
+
     function proposedKpiTarget(metric) {
         const m = String(metric == null ? '' : metric);
         if (KPI_UNSEEDABLE.some(re => re.test(m))) return null;
@@ -1089,5 +1169,8 @@
         splitReportingValue,
         tocIdFor,
         activeTocIndex,
+        parseViewerRoute,
+        formatViewerRoute,
+        roleRouteFromFile,
     };
 });
