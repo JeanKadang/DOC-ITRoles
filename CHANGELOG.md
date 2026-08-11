@@ -7,6 +7,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.17.1] - 2026-08-11
+
+A maintenance release. Both of the repository's open code-scanning alerts are
+cleared, and the browser suite is as trustworthy locally as it is on CI. No
+catalogue content or viewer behaviour changes.
+
+### Fixed
+
+- **KPI table cells escape backslashes before pipes (#223).** A KPI bullet
+  containing a literal `\|` previously became `\\|` — an escaped backslash
+  followed by a live column separator, which is the exact column shift the
+  escape exists to prevent. Latent rather than live: no role file currently
+  contains a backslash in a KPI bullet, so no rendered output changes.
+- **The browser suite runs serially everywhere (#222).** `workers` was left
+  unset off CI, so the three browser projects ran concurrently against a single
+  server and the suite failed a different three tests on every local run, always
+  as timeouts. Local and CI runs now use the same worker count.
+
+### Changed
+
+- **Escaping assertions match tag casing case-insensitively (#223).** A
+  lower-case-only assertion would not have caught a surviving `<SCRIPT>`. No
+  production change; `escapeHtml` was already casing-agnostic.
+- **Contribution guidance records the browser-suite cost (#222).** The PR
+  checklist states the roughly two-and-a-half minute runtime, notes the suite is
+  deliberately serial, and says a failure should be re-run rather than assumed
+  to be a flake.
+
 ## [1.17.0] - 2026-08-11
 
 The catalogue now has durable URLs and a single validated configuration for
