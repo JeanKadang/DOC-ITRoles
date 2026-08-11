@@ -5,6 +5,13 @@ const assert = require('node:assert/strict');
 
 const { parseMeta, normalizeLevel, resolveLevel, detectLevelFromFilename, KNOWN_LEVELS } = require('../roleMeta.js');
 
+test('domain labels are the shared catalogue export', () => {
+  assert.equal(
+    require('../roleMeta').DOMAIN_LABELS,
+    require('../catalogueConfig').DOMAIN_LABELS,
+  );
+});
+
 test('parseMeta extracts title and metadata fields', () => {
   const content = [
     '# Example Architect',

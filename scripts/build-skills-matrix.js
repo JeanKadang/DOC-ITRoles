@@ -22,6 +22,7 @@ const fs = require('fs');
 const path = require('path');
 const { parseProgressionLadders } = require('../viewer-logic');
 const { proficiencyBullets } = require('./build-radar');
+const { DOMAIN_LIST } = require('../catalogueConfig');
 
 const ROOT      = path.join(__dirname, '..');
 const ROLES_DIR = process.env.ROLES_DIR ? path.resolve(process.env.ROLES_DIR) : path.join(ROOT, 'Roles');
@@ -48,9 +49,9 @@ function loadMatchers() {
   }));
 }
 
-function roleFileFor(slug) {
-  for (const dir of fs.readdirSync(ROLES_DIR)) {
-    const p = path.join(ROLES_DIR, dir, slug + '.md');
+function roleFileFor(slug, { rolesDir = ROLES_DIR, domains = DOMAIN_LIST } = {}) {
+  for (const domain of domains) {
+    const p = path.join(rolesDir, domain.id, slug + '.md');
     if (fs.existsSync(p)) return p;
   }
   return null;
@@ -172,4 +173,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { build, render, rungTiers, RUNGS, TIER_RANK };
+module.exports = { build, render, roleFileFor, rungTiers, RUNGS, TIER_RANK };

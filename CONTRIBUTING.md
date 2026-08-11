@@ -41,6 +41,16 @@ Reviewers should explicitly check:
 
 Edit a generator's source data or script, not its generated Markdown. Regenerate the artefact and commit source and output together. The pull request must state the command used and must not hand-maintain counts that the repository derives from files.
 
+## Adding a domain
+
+1. Add one record to `DOMAIN_LIST` in `catalogueConfig.js`. Use a lowercase
+   `id` and define its label, icon, chapter, order, and any legacy aliases.
+2. Create the exact `Roles/<domain-id>/` directory and its role files.
+3. Run `npm run validate`, `npm run check-counts`, and the affected generators.
+
+Consumers must read domain labels, icons, chapter membership, and order from
+`catalogueConfig.js`; do not duplicate those authored values elsewhere.
+
 ## Pull request checklist
 
 - Link the issue with `Closes #<number>` when the acceptance criteria are complete.

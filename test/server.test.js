@@ -6,6 +6,7 @@ const http = require('node:http');
 
 const { server, preferredSearchMatchIndex } = require('../server.js');
 const { contentReferencesForQuery } = require('../viewer-logic.js');
+const { DOMAIN_LIST } = require('../catalogueConfig.js');
 
 let baseUrl;
 
@@ -50,10 +51,26 @@ test('GET /api/roles returns JSON grouped by domain', async () => {
   assert.ok('lastReviewed' in domains.kubernetes.roles[0]);
 });
 
+test('GET /catalogueConfig.js serves the shared browser module', async () => {
+  const res = await request('/catalogueConfig.js');
+  assert.equal(res.status, 200);
+  assert.match(res.headers['content-type'], /javascript/);
+  assert.match(res.body, /CatalogueConfig/);
+});
+
+test('GET /api/roles uses canonical configured IDs and order', async () => {
+  const res = await request('/api/roles');
+  const domains = JSON.parse(res.body);
+  assert.ok(domains.finops);
+  assert.equal(domains.FinOps, undefined);
+  assert.deepEqual(Object.keys(domains), DOMAIN_LIST.map(domain => domain.id));
+  assert.equal(domains.finops.label, 'FinOps');
+});
+
 test('GET /api/roles lists reference docs separately from roles (#29)', async () => {
   const res = await request('/api/roles');
   const domains = JSON.parse(res.body);
-  const finops = domains.FinOps;
+  const finops = domains.finops;
   assert.ok(Array.isArray(finops.references), 'FinOps carries a references array');
   const std = finops.references.find(r => r.file.endsWith('cloud_cost_optimization_standards.md'));
   assert.ok(std, 'the standards doc is listed as a reference');

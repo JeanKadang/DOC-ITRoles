@@ -5,52 +5,14 @@
 
 'use strict';
 
+const { DOMAIN_LABELS } = require('./catalogueConfig');
+
 // Files that document standards/policy rather than a single role (e.g.
 // cloud_cost_optimization_standards.md). They carry no Role Level or Last
 // Reviewed metadata by design, so both the validator and the web server's
 // role listing/stale-tracking must exclude them rather than treat them as
 // roles with missing metadata.
 const REFERENCE_DOC_PATTERN = /_standards\.md$/;
-
-// Canonical human-readable label for each domain folder under Roles/. Single
-// source of truth for both the web server (sidebar/matrix labels) and the
-// validator (checking each role's Domain metadata value matches its folder).
-const DOMAIN_LABELS = {
-  leadership:                             'Leadership',
-  ai_governance:                          'AI Governance',
-  app_platforms:                          'App Platforms',
-  cloud_platforms:                        'Cloud Platforms',
-  data_engineering:                       'Data Engineering',
-  data_management:                        'Data Management',
-  data_protection:                        'Data Protection',
-  database_management:                    'Database Management',
-  devops:                                 'DevOps',
-  directory_services:                     'Directory Services',
-  client_platform:                        'Client Platform',
-  endpoint_management:                    'Endpoint Management',
-  enterprise_architecture:                'Enterprise Architecture',
-  FinOps:                                 'FinOps',
-  infrastructure_onboarding_cross_platform: 'Infrastructure Onboarding',
-  integration_middleware:                 'Integration & Middleware',
-  quality_engineering:                    'Quality Engineering',
-  itsm_configuration:                     'ITSM & Configuration',
-  kubernetes:                             'Kubernetes',
-  modern_infrastructure:                  'Modern Infrastructure',
-  modern_workplace:                       'Modern Workplace',
-  network:                                'Network',
-  security:                               'Security',
-  security_cross_platform:                'Security Cross-Platform',
-  security_identity:                      'Security & Identity',
-  server_hardware:                        'Server Hardware',
-  server_hardware_hpe:                    'HPE Server Hardware',
-  server_os_linux:                        'Linux Server OS',
-  server_os_windows:                      'Windows Server OS',
-  service_desk:                           'Service Desk',
-  service_management:                     'Service Management',
-  c_suite:                                'C-Suite',
-  specialized_computing:                  'Specialized Computing',
-  virtualization:                         'Virtualization',
-};
 
 // Canonical role-level vocabulary used by the UI badges, matrix columns and
 // the validator. Order is not significant here (the UI defines its own order).

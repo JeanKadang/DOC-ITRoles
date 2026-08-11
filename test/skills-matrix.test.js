@@ -10,7 +10,7 @@ const assert = require('node:assert/strict');
 const fs = require('fs');
 const path = require('path');
 
-const { build, render, rungTiers, TIER_RANK } = require('../scripts/build-skills-matrix');
+const { build, render, roleFileFor, rungTiers, TIER_RANK } = require('../scripts/build-skills-matrix');
 
 const ROOT = path.join(__dirname, '..');
 const DOC = path.join(ROOT, 'docs', 'SKILLS_MATRIX.md');
@@ -54,6 +54,24 @@ test('a rung with several roles takes the highest tier among them', () => {
 
 test('an unknown role slug yields nothing rather than an empty rung', () => {
     assert.equal(rungTiers(['no_such_role_anywhere'], [{ name: 'X', res: [/x/] }]), null);
+});
+
+test('role lookup searches configured domains only', (t) => {
+    const rolesDir = fs.mkdtempSync(path.join(require('os').tmpdir(), 'skills-matrix-'));
+    t.after(() => fs.rmSync(rolesDir, { recursive: true, force: true }));
+
+    fs.mkdirSync(path.join(rolesDir, 'finops'));
+    fs.mkdirSync(path.join(rolesDir, 'rogue'));
+    fs.writeFileSync(path.join(rolesDir, 'finops', 'shared_slug.md'), 'configured');
+    fs.writeFileSync(path.join(rolesDir, 'rogue', 'shared_slug.md'), 'unconfigured');
+
+    assert.equal(
+        roleFileFor('shared_slug', {
+            rolesDir,
+            domains: [{ id: 'finops' }],
+        }),
+        path.join(rolesDir, 'finops', 'shared_slug.md'),
+    );
 });
 
 test('the document states what it is not', () => {

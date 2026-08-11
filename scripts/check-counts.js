@@ -10,19 +10,14 @@
 const fs = require('fs');
 const path = require('path');
 const { getRoles } = require('../server.js');
+const { CHAPTER_LIST } = require('../catalogueConfig');
 
 const ROOT = path.join(__dirname, '..');
 
-function computeCounts() {
-  const domains = getRoles();
+function computeCounts({ domains = getRoles(), chapters = CHAPTER_LIST } = {}) {
   const roleCount = Object.values(domains).reduce((n, d) => n + d.roles.length, 0);
   const domainCount = Object.keys(domains).length;
-
-  const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
-  const chaptersMatch = indexHtml.match(/const CHAPTERS = \{([\s\S]*?)\n    \};/);
-  const chapterCount = chaptersMatch
-    ? (chaptersMatch[1].match(/^\s{8}[a-z_]+:\s*\{/gm) || []).length
-    : null;
+  const chapterCount = chapters.length;
 
   return { roleCount, domainCount, chapterCount };
 }

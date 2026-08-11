@@ -8,6 +8,7 @@
     <script src="/vendor/purify.min.js"></script>
     <script src="/vendor/chart.umd.min.js"></script>
     <script src="/vendor/echarts.min.js"></script>
+    <script src="/catalogueConfig.js"></script>
     <script src="/viewer-logic.js"></script>
     <style>
         :root {
@@ -1592,6 +1593,8 @@
         parseViewerRoute, formatViewerRoute, roleRouteFromFile,
     } = ViewerLogic;
 
+    const { CHAPTERS, ICONS, resolveDomainId } = CatalogueConfig;
+
     // Reviews are spread over this many months past STALE_MONTHS, using each
     // role's own slot, so the queue fills gradually instead of 206 roles all
     // falling due in the same month (#124). Set to 0 to review everything on a
@@ -1706,7 +1709,8 @@
     ];
 
     function resolveRoleRoute(route) {
-        const domain = allDomains[route.domain];
+        const domainId = resolveDomainId(route.domain);
+        const domain = domainId ? allDomains[domainId] : null;
         if (!domain) return null;
         const role = domain.roles.find(item => item.name.toLowerCase() === route.role);
         return role ? { ...role, domainLabel: domain.label } : null;
@@ -1743,8 +1747,12 @@
     async function applyCurrentRoute() {
         const hash = location.hash || '#/';
         const route = parseViewerRoute(hash);
+        const canonicalHash = formatViewerRoute(route);
+        if (canonicalHash && canonicalHash !== hash) {
+            history.replaceState(history.state, '', canonicalHash);
+        }
         const revision = ++routeRevision;
-        appliedHash = hash;
+        appliedHash = canonicalHash || hash;
         currentRoute = route;
         setCopyLinkVisible(false);
 
@@ -1775,13 +1783,14 @@
             return;
         }
         if (route.type === 'matrix') {
-            if (route.domain !== 'all' && !allDomains[route.domain]) {
+            const domainId = route.domain === 'all' ? 'all' : resolveDomainId(route.domain);
+            if (!domainId || (domainId !== 'all' && !allDomains[domainId])) {
                 showHomeView({ invalid: true });
                 return;
             }
             setCopyLinkVisible(true);
-            renderMatrixView(route.domain);
-            const label = route.domain === 'all' ? 'Role' : allDomains[route.domain].label;
+            renderMatrixView(domainId);
+            const label = domainId === 'all' ? 'Role' : allDomains[domainId].label;
             titleForView(`${label} Matrix`);
             return;
         }
@@ -1805,102 +1814,6 @@
             status.textContent = 'Could not copy the link.';
         }
     }
-
-    // ── Chapter → domain groupings ───────────────────────
-    const CHAPTERS = {
-        cloud_platform_infra: {
-            label: 'Cloud, Platform & Infrastructure',
-            icon:  '☁️',
-            desc:  'Owns the full infrastructure estate from bare metal to cloud-native, including cloud adoption strategy, platform engineering, container orchestration, virtualisation, specialised computing, server hardware, operating systems, networking, and cloud cost governance (FinOps).',
-            domains: [
-                'cloud_platforms', 'kubernetes', 'modern_infrastructure',
-                'virtualization', 'specialized_computing',
-                'server_hardware', 'server_hardware_hpe',
-                'server_os_linux', 'server_os_windows', 'network', 'FinOps',
-            ],
-            leadFile: 'Roles/leadership/cloud_platform_infrastructure_chapter_lead.md',
-        },
-        devops_delivery: {
-            label: 'DevOps & Delivery',
-            icon:  '🔄',
-            desc:  'Owns the software delivery toolchain, internal developer platforms, CI/CD standards, application platform engineering, and integration & middleware architecture. Accountable for DORA metrics and delivery flow across the organisation.',
-            domains: ['devops', 'app_platforms', 'integration_middleware', 'quality_engineering'],
-            leadFile: 'Roles/leadership/devops_delivery_chapter_lead.md',
-        },
-        data_ai: {
-            label: 'Data & AI',
-            icon:  '📊',
-            desc:  'Owns the data platform strategy, data architecture, database management standards, and AI governance frameworks. Ensures data quality, lineage, and ethical AI practices across the organisation.',
-            domains: ['data_engineering', 'data_management', 'database_management', 'ai_governance'],
-            leadFile: 'Roles/leadership/data_ai_chapter_lead.md',
-        },
-        security_identity: {
-            label: 'Security & Identity',
-            icon:  '🔒',
-            desc:  'Owns the end-to-end security posture, zero trust architecture, identity and access management, data protection, directory services, and security automation across all platforms and cloud environments.',
-            domains: ['security', 'security_cross_platform', 'security_identity', 'data_protection', 'directory_services'],
-            leadFile: 'Roles/leadership/security_identity_chapter_lead.md',
-        },
-        end_user_workplace: {
-            label: 'End User & Workplace',
-            icon:  '🖥️',
-            desc:  'Owns the digital workplace experience, device management strategy, M365 platform, collaboration tooling, Tier-1/2/3 service desk operations, and end-user technology standards. Ensures employees have secure, productive, and consistent technology experiences.',
-            domains: ['client_platform', 'endpoint_management', 'modern_workplace', 'service_desk'],
-            leadFile: 'Roles/leadership/end_user_workplace_chapter_lead.md',
-        },
-        service_governance: {
-            label: 'Service & Governance',
-            icon:  '🎯',
-            desc:  'Owns IT service management, configuration management, SIAM frameworks, enterprise architecture governance, and infrastructure onboarding standards. Ensures IT operates as a consistent, measurable service across the organisation.',
-            domains: ['itsm_configuration', 'service_management', 'infrastructure_onboarding_cross_platform', 'enterprise_architecture'],
-            leadFile: 'Roles/leadership/service_governance_chapter_lead.md',
-        },
-        leadership_chapter: {
-            label: 'Leadership',
-            icon:  '👑',
-            desc:  'Cross-cutting leadership roles that span all chapters and domains. Includes C-Suite executives, Chapter Leads, Technical Area Leads (TAL), and Product Area Leads (PAL). These roles set technical direction, own people development, and represent IT at the business level.',
-            domains: ['c_suite', 'leadership'],
-            leadFile: null,
-        },
-    };
-
-    // ── Domain icons ────────────────────────────────────
-    const ICONS = {
-        c_suite:                                 '🏢',
-        leadership:                              '👑',
-        ai_governance:                           '🤖',
-        app_platforms:                           '⚙️',
-        cloud_platforms:                         '☁️',
-        data_engineering:                        '📊',
-        data_management:                         '💾',
-        data_protection:                         '🛡️',
-        database_management:                     '🗄️',
-        devops:                                  '🔄',
-        directory_services:                      '📁',
-        client_platform:                         '🖱️',
-        endpoint_management:                     '💻',
-        enterprise_architecture:                 '🏛️',
-        FinOps:                                  '💰',
-        infrastructure_onboarding_cross_platform:'🔌',
-        integration_middleware:                  '🔗',
-        quality_engineering:                     '🧪',
-        itsm_configuration:                      '📋',
-        kubernetes:                              '☸️',
-        modern_infrastructure:                   '🚀',
-        modern_workplace:                        '🖥️',
-        network:                                 '🌐',
-        security:                                '🔒',
-        security_cross_platform:                 '🛡️',
-        security_identity:                       '🪪',
-        service_desk:                            '🎧',
-        server_hardware:                         '🖧',
-        server_hardware_hpe:                     '🖧',
-        server_os_linux:                         '🐧',
-        server_os_windows:                       '🪟',
-        service_management:                      '🎯',
-        specialized_computing:                   '⚡',
-        virtualization:                          '📦',
-    };
 
     // ── Markdown rendering ────────────────────────────────
     // marked does not sanitize its output; any HTML in a .md file passes

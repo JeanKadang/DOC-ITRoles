@@ -20,4 +20,6 @@ This role library is organised into **seven chapters** — the top-level groupin
 
 - To edit a chapter's purpose or collaborations, update its file in [`docs/chapters/`](chapters/) — the web viewer's chapter panel renders it directly.
 - Do not add role or domain counts to these files. Counts are computed live from the `Roles/` folder by the viewer, which prevents the drift this document previously suffered.
-- To add a new chapter, create `docs/chapters/<key>.md` and add a matching entry (with the same `<key>`) to the `CHAPTERS` map in `index.html`.
+- To add a new chapter, create `docs/chapters/<key>.md` and add one matching
+  record to `CHAPTER_LIST` in `catalogueConfig.js`. The configured key must
+  match the chapter document name.
