@@ -6,6 +6,7 @@ node_modules/
 
 # Local Claude Code session artifacts, not project content
 .claude/scheduled_tasks.lock
+.claude/settings.local.json
 
 # Understand Anything knowledge-graph cache — regenerable local tooling data
 .ua/
