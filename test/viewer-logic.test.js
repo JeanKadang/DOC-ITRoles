@@ -1289,11 +1289,14 @@ test('orgListHtml adds no lead line to a node without one', () => {
     assert.doesNotMatch(orgListHtml({ name: 'Role', file: 'r.md' }), /lead:/);
 });
 
-test('orgListHtml escapes names and file paths', () => {
-    const html = orgListHtml({ name: '<img src=x onerror=alert(1)>', file: '"><script>' });
-    assert.doesNotMatch(html, /<img/);
-    assert.doesNotMatch(html, /<script>/);
-    assert.match(html, /&lt;img/);
+// Tag casing is matched case-insensitively: HTML tag names are not
+// case-sensitive, so a lower-case-only assertion would pass while "<SCRIPT>"
+// survived escaping.
+test('orgListHtml escapes names and file paths whatever the tag casing', () => {
+    const html = orgListHtml({ name: '<IMG src=x onerror=alert(1)>', file: '"><script>' });
+    assert.doesNotMatch(html, /<img/i);
+    assert.doesNotMatch(html, /<script>/i);
+    assert.match(html, /&lt;IMG/);
 });
 
 test('graphListHtml lists each node with its relationships and chapter', () => {
