@@ -320,7 +320,7 @@ test('resolveDocHref passes repo-absolute hrefs through unchanged', () => {
 
 test('resolveDocHref resolves siblings relative to the base file', () => {
     assert.equal(resolveDocHref('ONBOARDING_TEMPLATE.md', 'docs/CHAPTERS_OVERVIEW.md'), 'docs/ONBOARDING_TEMPLATE.md');
-    assert.equal(resolveDocHref('./cloud_cost_optimization_standards.md', 'Roles/FinOps/finops_architect.md'), 'Roles/FinOps/cloud_cost_optimization_standards.md');
+    assert.equal(resolveDocHref('./cloud_cost_optimization_standards.md', 'Roles/finops/finops_architect.md'), 'Roles/finops/cloud_cost_optimization_standards.md');
 });
 
 test('resolveDocHref resolves parent traversal from nested paths', () => {

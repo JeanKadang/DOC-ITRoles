@@ -1,7 +1,8 @@
 const http = require('http');
 const fs   = require('fs');
 const path = require('path');
-const { resolveLevel, parseMeta, REFERENCE_DOC_PATTERN, DOMAIN_LABELS } = require('./roleMeta');
+const { resolveLevel, parseMeta, REFERENCE_DOC_PATTERN } = require('./roleMeta');
+const { DOMAIN_LIST, resolveDomainId } = require('./catalogueConfig');
 
 const PORT      = process.env.PORT || 3000;
 const ROOT      = __dirname;
@@ -27,6 +28,26 @@ function rolesTreeSignature() {
   return latest;
 }
 
+function assertConfiguredRoleFolders() {
+  const actualFolders = fs.readdirSync(ROLES_DIR, { withFileTypes: true })
+    .filter(entry => entry.isDirectory())
+    .map(entry => entry.name);
+  const actualSet = new Set(actualFolders);
+
+  for (const folder of actualFolders) {
+    const canonicalId = resolveDomainId(folder);
+    if (!canonicalId) throw new Error(`Unconfigured role folder: ${folder}`);
+    if (folder !== canonicalId) {
+      throw new Error(`Role folder casing drift: expected ${canonicalId}, found ${folder}`);
+    }
+  }
+  for (const domain of DOMAIN_LIST) {
+    if (!actualSet.has(domain.id)) {
+      throw new Error(`Configured role folder is missing: ${domain.id}`);
+    }
+  }
+}
+
 function getRoles() {
   const signature = rolesTreeSignature();
   if (rolesCache.domains && rolesCache.signature === signature) {
@@ -35,16 +56,11 @@ function getRoles() {
 
   const domains = {};
 
-  const entries = fs.readdirSync(ROLES_DIR, { withFileTypes: true })
-    .filter(d => d.isDirectory())
-    .sort((a, b) => {
-      const la = DOMAIN_LABELS[a.name] || a.name;
-      const lb = DOMAIN_LABELS[b.name] || b.name;
-      return la.localeCompare(lb);
-    });
+  assertConfiguredRoleFolders();
 
-  for (const entry of entries) {
-    const domainPath = path.join(ROLES_DIR, entry.name);
+  for (const domainConfig of DOMAIN_LIST) {
+    const domainId = domainConfig.id;
+    const domainPath = path.join(ROLES_DIR, domainId);
     const allMd = fs.readdirSync(domainPath)
       .filter(f => f.endsWith('.md') && f !== 'README.md')
       .sort();
@@ -60,7 +76,7 @@ function getRoles() {
 
       return {
         name:         file.replace('.md', ''),
-        file:         `Roles/${entry.name}/${file}`,
+        file:         `Roles/${domainId}/${file}`,
         title,
         level:        resolveLevel(content, file),
         lastReviewed: meta.lastReviewed,
@@ -75,13 +91,13 @@ function getRoles() {
       const meta = parseMeta(content);
       return {
         name:  file.replace('.md', ''),
-        file:  `Roles/${entry.name}/${file}`,
+        file:  `Roles/${domainId}/${file}`,
         title: meta.title || file.replace(/_/g, ' ').replace('.md', ''),
       };
     });
 
-    domains[entry.name] = {
-      label: DOMAIN_LABELS[entry.name] || entry.name.replace(/_/g, ' '),
+    domains[domainId] = {
+      label: domainConfig.label,
       roles,
       references,
     };
@@ -102,16 +118,16 @@ function getSearchIndex() {
   if (searchCache.entries && searchCache.signature === signature) return searchCache.entries;
 
   const entries = [];
-  for (const entry of fs.readdirSync(ROLES_DIR, { withFileTypes: true })) {
-    if (!entry.isDirectory()) continue;
-    const domainPath = path.join(ROLES_DIR, entry.name);
-    const label = DOMAIN_LABELS[entry.name] || entry.name.replace(/_/g, ' ');
+  assertConfiguredRoleFolders();
+  for (const domainConfig of DOMAIN_LIST) {
+    const domainPath = path.join(ROLES_DIR, domainConfig.id);
+    const label = domainConfig.label;
     for (const file of fs.readdirSync(domainPath)) {
       if (!file.endsWith('.md') || file === 'README.md' || REFERENCE_DOC_PATTERN.test(file)) continue;
       const content = fs.readFileSync(path.join(domainPath, file), 'utf8');
       const meta = parseMeta(content);
       entries.push({
-        file:        `Roles/${entry.name}/${file}`,
+        file:        `Roles/${domainConfig.id}/${file}`,
         title:       meta.title || file.replace(/_/g, ' ').replace('.md', ''),
         level:       resolveLevel(content, file),
         domainLabel: label,
@@ -219,6 +235,16 @@ const server = http.createServer((req, res) => {
   if (url.pathname === '/viewer-logic.js') {
     try {
       send(res, 200, 'text/javascript; charset=utf-8', fs.readFileSync(path.join(ROOT, 'viewer-logic.js')));
+    } catch {
+      send(res, 404, 'text/plain', 'Asset not found');
+    }
+    return;
+  }
+
+  // Serve the shared catalogue configuration to the browser.
+  if (url.pathname === '/catalogueConfig.js') {
+    try {
+      send(res, 200, 'text/javascript; charset=utf-8', fs.readFileSync(path.join(ROOT, 'catalogueConfig.js')));
     } catch {
       send(res, 404, 'text/plain', 'Asset not found');
     }
