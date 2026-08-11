@@ -54,6 +54,14 @@ test('comparison, matrix, and document routes restore contextual views', async (
   await expect(page).toHaveTitle('Career Paths & Skills Progression — IT Roles Library');
 });
 
+test('legacy FinOps route loads the shared config and becomes canonical', async ({ page }) => {
+  await page.goto('/#/matrix/FinOps');
+  await expect.poll(() => page.evaluate(() =>
+    globalThis.CatalogueConfig?.resolveDomainId('FinOps'))).toBe('finops');
+  await expect(page).toHaveURL(/#\/matrix\/finops$/);
+  await expect(page.getByRole('heading', { name: 'FinOps Role Matrix' })).toBeVisible();
+});
+
 test('invalid routes preserve the hash and show a safe fallback', async ({ page }) => {
   await page.goto('/#/role/kubernetes/not-a-role');
   await expect(page.getByRole('heading', { name: 'Select a role to view' })).toBeVisible();
