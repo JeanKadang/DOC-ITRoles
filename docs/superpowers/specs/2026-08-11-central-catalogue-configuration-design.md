@@ -86,7 +86,8 @@ Configuration validation reports actionable errors for:
 - non-lowercase canonical domain IDs;
 - a domain referencing an unknown chapter;
 - duplicate or invalid display-order values within their scope;
-- missing labels, icons, descriptions, or chapter-lead references;
+- missing labels, icons, descriptions, or chapter-lead references (the
+  cross-cutting Leadership chapter explicitly declares that it has no lead);
 - configured domain folders that are absent, unconfigured role folders, or
   folder casing that differs from the canonical ID;
 - chapter-lead references that do not resolve to a role; and
