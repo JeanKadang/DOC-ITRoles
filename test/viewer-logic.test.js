@@ -1289,11 +1289,14 @@ test('orgListHtml adds no lead line to a node without one', () => {
     assert.doesNotMatch(orgListHtml({ name: 'Role', file: 'r.md' }), /lead:/);
 });
 
-test('orgListHtml escapes names and file paths', () => {
-    const html = orgListHtml({ name: '<img src=x onerror=alert(1)>', file: '"><script>' });
-    assert.doesNotMatch(html, /<img/);
-    assert.doesNotMatch(html, /<script>/);
-    assert.match(html, /&lt;img/);
+// Tag casing is matched case-insensitively: HTML tag names are not
+// case-sensitive, so a lower-case-only assertion would pass while "<SCRIPT>"
+// survived escaping.
+test('orgListHtml escapes names and file paths whatever the tag casing', () => {
+    const html = orgListHtml({ name: '<IMG src=x onerror=alert(1)>', file: '"><script>' });
+    assert.doesNotMatch(html, /<img/i);
+    assert.doesNotMatch(html, /<script>/i);
+    assert.match(html, /&lt;IMG/);
 });
 
 test('graphListHtml lists each node with its relationships and chapter', () => {
@@ -1377,6 +1380,16 @@ test('parseKpiBullet does not mistake a year or a version for a target', () => {
 
 test('parseKpiBullet escapes a pipe so it cannot break the table', () => {
     assert.equal(parseKpiBullet('Uptime | availability').metric, 'Uptime \\| availability');
+});
+
+// A backslash already in the bullet must be escaped before the pipe is, or
+// the escape the line above depends on is itself escaped away and the column
+// breaks anyway.
+test('parseKpiBullet escapes a backslash so it cannot cancel the pipe escape', () => {
+    assert.equal(
+        parseKpiBullet(String.raw`Uptime \| availability`).metric,
+        String.raw`Uptime \\\| availability`,
+    );
 });
 
 // ── proposedKpiTarget (#140) ──────────────────────────────
