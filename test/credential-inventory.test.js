@@ -132,6 +132,19 @@ test('a nested comment is stripped completely, leaving no marker in the name', (
     assert.doesNotMatch(entries[0].name, /<!--/);
 });
 
+// `--!>` closes an HTML comment as surely as `-->`; a stripper that knows only
+// the latter leaves the comment body in the credential name.
+test('a comment closed with --!> is stripped as well', () => {
+    const file = fixture([
+        '## Recommended Certifications & Learning Paths',
+        '',
+        '- CompTIA Security+ <!-- stray --!>',
+    ].join('\n'));
+
+    const entries = inventoryRole(fs.readFileSync(file, 'utf8'));
+    assert.deepEqual(entries.map(e => e.name), ['CompTIA Security+']);
+});
+
 test('aliasKey groups the spellings of one credential', () => {
     const key = aliasKey('Microsoft Certified: Identity and Access Administrator Associate (SC-300)');
     assert.equal(aliasKey('Microsoft Certified: Identity and Access Administrator'), key);

@@ -30,19 +30,46 @@ function normalize(text) {
     return String(text).replace(/^﻿/, '').replace(/\r\n/g, '\n');
 }
 
-// Strip to a fixed point: one pass over `<!-- ... -->` leaves the outer opener
-// behind when a comment encloses another, so the marker survives into the
-// credential name.
+// Removes HTML comments from a bullet so the credential name is left behind.
+//
+// Scanned rather than pattern-replaced, for two reasons a regex kept getting
+// wrong: a lazy `<!--[\s\S]*?-->` matches from the first opener to the first
+// closer, so a comment enclosing another leaves the outer `<!--` in the name;
+// and `-->` is not the only terminator HTML accepts — `--!>` closes a comment
+// too, so a filter that knows only `-->` under-reads the text.
+const COMMENT_OPEN = '<!--';
+const COMMENT_ENDS = ['-->', '--!>'];
+
+function firstEnd(value) {
+    let at = -1;
+    let length = 0;
+    for (const end of COMMENT_ENDS) {
+        const index = value.indexOf(end);
+        if (index !== -1 && (at === -1 || index < at)) { at = index; length = end.length; }
+    }
+    return { at, length };
+}
+
 function stripComments(value) {
-    let out = String(value);
-    let previous;
-    do {
-        previous = out;
-        out = out.replace(/<!--[\s\S]*?-->/g, '');
-    } while (out !== previous);
-    // A lazy match consumes `<!--<!-- x -->` and leaves the trailing `-->`
-    // orphaned; drop any delimiter that outlived its comment.
-    return out.replace(/<!--|-->/g, '');
+    let rest = String(value);
+    let out = '';
+
+    for (;;) {
+        const open = rest.indexOf(COMMENT_OPEN);
+        if (open === -1) { out += rest; break; }
+
+        out += rest.slice(0, open);
+        const after = rest.slice(open + COMMENT_OPEN.length);
+        const end = firstEnd(after);
+        // An unterminated comment swallows the remainder, as a parser would.
+        if (end.at === -1) break;
+        rest = after.slice(end.at + end.length);
+    }
+
+    // A nested comment leaves its outer terminator orphaned once the inner one
+    // has been consumed; drop any delimiter that outlived its comment.
+    for (const end of COMMENT_ENDS) out = out.split(end).join('');
+    return out.split(COMMENT_OPEN).join('');
 }
 
 // Returns the body of the certification section, or '' when a role has none.
