@@ -79,3 +79,17 @@ Migrate the remaining catalogue in bounded domain or role-family batches:
 5. Add completed roles to `audited_roles` only when every certification bullet is deliberately covered, then run validation.
 
 Legacy prose stays unaudited until that work is complete. The durable tracker for unaudited domains and rollout batches is [issue #210](https://github.com/JeanKadang/DOC-ITRoles/issues/210); do not treat its open scope as verified merely because the text remains in a role file.
+
+Run `node scripts/credential-inventory.js` before and after a batch. It reports the legacy entries that remain, grouped by domain and by alias, so rollout progress is measured rather than asserted. It reports only; it never edits a role file.
+
+## Text that does not name a credential
+
+Not every certification bullet names a credential a person can hold. Around 476 legacy entries name a group, a subject, or an alternative, and none can become a registry record. The rule, decided in [ADR-0003](adr/0003-name-credentials-explicitly-rather-than-families-or-topics.md), is that **a credential recommendation names one credential a person can hold, or it is not a credential recommendation**.
+
+| Kind | Looks like | What to do |
+|---|---|---|
+| Family | `Cloud platform associate certifications`, `ITIL Service Management certifications` | Expand to the specific credentials the role actually expects, each registry-backed. If no set is determinable, name what the domain genuinely expects or drop the line — never retain the family as-is. |
+| Topic | `Linux fundamentals`, `REST API Design fundamentals` | Audit before judging. Some are real credentials with the exam code omitted — `Microsoft Azure Fundamentals` is AZ-900. Register those; treat whatever remains a genuine subject as a family. |
+| Vague | `TOGAF or other enterprise architecture certification`, `CISSP or equivalent` | Rewrite to the named credential. Do not preserve the hedge: a reader cannot act on "or equivalent" and a validator cannot verify it. Where several credentials genuinely qualify, name each one. |
+
+Two contributors applying these rules to the same entry should produce the same result. Where an entry is genuinely ambiguous, resolve it in the domain batch with the reasoning visible in the pull request, rather than inventing a local convention.

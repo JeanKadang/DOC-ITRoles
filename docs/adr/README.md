@@ -18,3 +18,4 @@ Allowed statuses are `Proposed`, `Accepted`, `Deprecated`, and `Superseded by AD
 |---|---|---|
 | [0001](0001-organise-domains-into-seven-capability-chapters.md) | Accepted | Organise domains into seven capability chapters |
 | [0002](0002-separate-technical-product-and-people-leadership-tracks.md) | Accepted | Separate technical, product, and people-leadership tracks |
+| [0003](0003-name-credentials-explicitly-rather-than-families-or-topics.md) | Accepted | Name credentials explicitly rather than families or topics |
