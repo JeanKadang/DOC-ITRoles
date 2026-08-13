@@ -116,6 +116,22 @@ test('an already-marked bullet is reported as migrated, not as legacy text', () 
     assert.equal(entries[0].name, 'Certified Kubernetes Administrator (CKA)');
 });
 
+// Stripping comments in a single pass leaves a marker behind when one comment
+// encloses another: removing the inner `<!-- x -->` re-forms nothing, but the
+// outer opener survives into the credential name.
+test('a nested comment is stripped completely, leaving no marker in the name', () => {
+    const file = fixture([
+        '## Recommended Certifications & Learning Paths',
+        '',
+        '- CompTIA Security+ <!--<!-- stray -->-->',
+    ].join('\n'));
+
+    const entries = inventoryRole(fs.readFileSync(file, 'utf8'));
+    assert.equal(entries.length, 1);
+    assert.equal(entries[0].name, 'CompTIA Security+');
+    assert.doesNotMatch(entries[0].name, /<!--/);
+});
+
 test('aliasKey groups the spellings of one credential', () => {
     const key = aliasKey('Microsoft Certified: Identity and Access Administrator Associate (SC-300)');
     assert.equal(aliasKey('Microsoft Certified: Identity and Access Administrator'), key);

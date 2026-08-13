@@ -30,6 +30,21 @@ function normalize(text) {
     return String(text).replace(/^﻿/, '').replace(/\r\n/g, '\n');
 }
 
+// Strip to a fixed point: one pass over `<!-- ... -->` leaves the outer opener
+// behind when a comment encloses another, so the marker survives into the
+// credential name.
+function stripComments(value) {
+    let out = String(value);
+    let previous;
+    do {
+        previous = out;
+        out = out.replace(/<!--[\s\S]*?-->/g, '');
+    } while (out !== previous);
+    // A lazy match consumes `<!--<!-- x -->` and leaves the trailing `-->`
+    // orphaned; drop any delimiter that outlived its comment.
+    return out.replace(/<!--|-->/g, '');
+}
+
 // Returns the body of the certification section, or '' when a role has none.
 // Sliced by index deliberately: with the /m flag a `$` end-anchor matches a line
 // end, which silently yields an empty section.
@@ -108,7 +123,7 @@ function inventoryRole(text) {
         if (LEARNING_SUBHEAD.test(subhead)) continue;
 
         const marker = raw.match(CREDENTIAL_MARKER);
-        const name = raw.replace(/<!--[\s\S]*?-->/g, '').replace(/\s+/g, ' ').trim();
+        const name = stripComments(raw).replace(/\s+/g, ' ').trim();
         if (!name) continue;
 
         if (marker) {
