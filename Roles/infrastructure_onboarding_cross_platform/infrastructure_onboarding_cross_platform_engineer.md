@@ -171,6 +171,8 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL Foundation
 - ServiceNow Certified System Administrator
 - Entry-level automation certifications
@@ -184,6 +186,6 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 
 - ITIL 4 Foundation, HashiCorp Terraform Associate, and ServiceNow Certified System Administrator
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HashiCorp Learn (developer.hashicorp.com), Ansible documentation (docs.ansible.com), ServiceNow community forums, GitHub Actions documentation, and ITIL Foundation learning resources

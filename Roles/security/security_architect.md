@@ -161,6 +161,8 @@ The Security Architect designs and implements security systems and frameworks th
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Certified Information Systems Security Professional (CISSP)
 - SABSA Chartered Security Architect
 - Certified Cloud Security Professional (CCSP)

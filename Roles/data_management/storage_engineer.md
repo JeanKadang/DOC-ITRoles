@@ -170,22 +170,23 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Dell EMC Storage Administrator
 - NetApp Certified Storage Associate
 - HPE Storage Solutions certification
 - Pure Storage certification
 - SNIA Certified Storage Professional
-- Complementary certifications:
-  - VMware vSAN certification
-  - Entry-level cloud storage certifications
-  - CompTIA Storage+
-  - Microsoft Azure Storage certifications
-  - AWS Storage specialty certification
 
 **Complementary Certifications:**
 
+- VMware vSAN certification
+- Entry-level cloud storage certifications
+- CompTIA Storage+
+- Microsoft Azure Storage certifications
+- AWS Storage specialty certification
 - CompTIA Storage+, VMware vSAN Specialist, SNIA Certified Storage Professional, and cloud storage fundamentals (AZ-104 or AWS SAA, storage domain)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - SNIA community and training (snia.org), storage vendor documentation (NetApp, Dell EMC, HPE, Pure Storage), Server Fault storage community, and storage vendor learning portals (NetApp Learning, HPE Education)

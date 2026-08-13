@@ -188,6 +188,8 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - FinOps Certified Practitioner (FCP)
 - Professional Scrum Product Owner (PSPO)
 - AWS Certified Cloud Practitioner
@@ -201,6 +203,6 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 
 - SAFe Product Owner/Product Manager (SAFe POPM), FinOps Certified Practitioner (FCP), and ITIL 4 Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - FinOps Foundation (finops.org), Scrum.org product owner resources, Technology Business Management Council (tbmcouncil.org), and cloud provider billing documentation (AWS, Azure, GCP)

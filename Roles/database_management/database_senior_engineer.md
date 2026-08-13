@@ -173,6 +173,8 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Oracle Certified Master (OCM)
 - Microsoft Certified: Azure Database Administrator Associate
 - AWS Certified Database - Specialty
@@ -186,6 +188,6 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 - Cloud database specialist certifications (AWS Database Specialty, Azure Database Administrator), NoSQL certifications (MongoDB, Cassandra), CDMP (Certified Data Management Professional), and cloud security certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - use-the-index-luke.com (SQL performance), SQLServerCentral (sqlservercentral.com), dba.stackexchange.com, PostgreSQL documentation, Oracle DBA blog, MongoDB developer docs, and DB-Engines ranking and trend analysis (db-engines.com)

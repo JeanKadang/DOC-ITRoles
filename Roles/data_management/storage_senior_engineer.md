@@ -170,6 +170,8 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Dell EMC Implementation Engineer (EMCIE)
 - NetApp Certified Data Administrator (NCDA)
 - HPE ASE - Storage Solutions Architect
@@ -185,6 +187,6 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 - SNIA Certified Storage Professional, NetApp Certified Data Administrator (NCDA), Dell EMC Implementation Engineer (EMCIE), or Pure Storage Certified Architect; cloud storage specialist certifications (AWS Storage Specialty or Azure solutions architect level)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - SNIA technical resources and training (snia.org), NetApp Learning Services, Pure Storage technical whitepapers, VMware vSAN documentation, Kubernetes SIG-Storage documentation, and Server Fault storage community

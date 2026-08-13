@@ -184,6 +184,8 @@ The Security Product Owner manages the development and lifecycle of the organiza
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Certified Information Security Manager (CISM)
 - Certified Information Systems Security Professional (CISSP)
@@ -198,6 +200,6 @@ The Security Product Owner manages the development and lifecycle of the organiza
 
 - FinOps Certified Practitioner (security investment ROI), NIST Cybersecurity Framework, IEC 62443 practitioner training, DORA / NIS2 compliance practitioner programmes, and ISO 27001 Lead Auditor.
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - ISC2 community and leadership webinars, ISACA resources and CISM study groups, Gartner security research, NCSC (ncsc.gov.uk) guidance publications, Scrum.org PSPO learning paths.

@@ -165,6 +165,8 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Solutions Architect Expert (AZ-305)
 - AWS Certified Solutions Architect – Professional
 - Google Professional Cloud Architect
@@ -177,6 +179,6 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 - Distinguished contributor status in cloud provider programs (e.g., Microsoft MVP, AWS Hero, Google Developer Expert), executive leadership programs, and enterprise architecture specializations
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Gartner and Forrester cloud research, CNCF, Cloud Native Security Con, FinOps Foundation, AWS re:Invent, Microsoft Ignite, Google Cloud Next, and internal architecture community of practice leadership

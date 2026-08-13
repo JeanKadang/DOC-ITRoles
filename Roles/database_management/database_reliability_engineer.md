@@ -170,6 +170,8 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - AWS Certified Database - Specialty
 - Microsoft Certified: Azure Database Administrator Associate
 - MongoDB Database Administrator
@@ -183,6 +185,6 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 
 - Cloud database certifications (AWS/GCP/Azure DB Specialty), Prometheus Certified Associate, Certified Kubernetes Administrator (CKA), and chaos engineering practitioner certifications (Gremlin, LitmusChaos)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Google SRE books (sre.google), use-the-index-luke.com for SQL performance, pgBadger and pg_activity documentation, dba.stackexchange.com, Percona database blog, and SREcon database-track sessions

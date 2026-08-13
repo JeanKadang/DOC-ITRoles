@@ -199,6 +199,8 @@ The Access Management Product Owner manages the development and lifecycle of the
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Certified Identity & Access Manager (CIAM)
 - ITIL Service Management certifications
@@ -212,6 +214,6 @@ The Access Management Product Owner manages the development and lifecycle of the
 
 - SAFe Product Owner/Product Manager (SAFe POPM), CISM, ITIL Service Management certifications, and CRISC (Certified in Risk and Information Systems Control) for risk-aligned product decisions
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - IDPro Body of Knowledge (idpro.org), Gartner IAM research, KuppingerCole IAM reports, Scrum.org Product Owner community, and vendor thought leadership from SailPoint, CyberArk, and Microsoft

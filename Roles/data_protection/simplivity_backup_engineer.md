@@ -163,22 +163,23 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - HPE SimpliVity Solutions certification
 - VMware Certified Professional
 - HPE Storage certification
 - Backup and recovery fundamentals certification
 - Disaster recovery essentials
-- Complementary certifications:
-  - Business continuity basics
-  - Hyperconverged infrastructure certification
-  - Data protection compliance certification
-  - ITIL Foundation
-  - CompTIA Server+
 
 **Complementary Certifications:**
 
+- Business continuity basics
+- Hyperconverged infrastructure certification
+- Data protection compliance certification
+- ITIL Foundation
+- CompTIA Server+
 - HPE SimpliVity solutions certification, VMware Certified Professional - Data Center Virtualisation (VCP-DCV), ITIL 4 Foundation, and CompTIA Server+
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HPE SimpliVity documentation and support portal, HPE education portal (education.hpe.com), VMware documentation, Server Fault backup/recovery community, and backup fundamentals training content

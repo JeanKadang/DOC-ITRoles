@@ -168,6 +168,8 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Windows Server
 - Microsoft Certified: Identity and Access Management Fundamentals
 - CompTIA Security+
@@ -181,6 +183,6 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 
 - Microsoft Certified: Identity and Access Administrator Associate, CompTIA Security+, and ITIL 4 Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), Microsoft TechNet library for AD documentation, PowerShell Gallery for AD automation scripts, and Microsoft Tech Community identity and directory services forums

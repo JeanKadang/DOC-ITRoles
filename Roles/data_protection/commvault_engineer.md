@@ -168,6 +168,8 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Commvault Certified Professional (CCP)
 - Commvault Technical Sales Professional
 - Entry-level storage certifications
@@ -180,6 +182,6 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 
 - ITIL 4 Foundation, CompTIA Server+ or Linux+, cloud fundamentals (AZ-900 or AWS Cloud Practitioner), and scripting basics (PowerShell/Python)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Commvault education portal (education.commvault.com), Commvault community forums (community.commvault.com), backup certification study resources, and Server Fault backup/recovery community

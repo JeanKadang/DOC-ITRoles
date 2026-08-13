@@ -173,6 +173,8 @@ The Enterprise Infrastructure Onboarding Product Owner manages the infrastructur
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - ITIL 4 Foundation or higher
 - ServiceNow Certified Implementation Specialist
@@ -186,6 +188,6 @@ The Enterprise Infrastructure Onboarding Product Owner manages the infrastructur
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, and ServiceNow Certified Implementation Specialist
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Scrum.org resources, ITIL Foundation documentation, ServiceNow community (community.servicenow.com), HashiCorp community resources, and DevOps Enterprise Forum

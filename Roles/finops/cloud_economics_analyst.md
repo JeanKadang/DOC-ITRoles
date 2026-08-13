@@ -180,6 +180,8 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - FinOps Certified Practitioner (FCP) — FinOps Foundation
 - Microsoft Power BI Data Analyst Associate (PL-300)
 - Google Data Analytics Professional Certificate
@@ -191,6 +193,6 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 - Tableau Desktop Specialist, Microsoft Azure Data Fundamentals (DP-900), and CIMA Certificate in Business Accounting for analysts seeking broader financial management credibility alongside FinOps specialisation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - FinOps Foundation (finops.org), Microsoft Power BI documentation and learning paths (learn.microsoft.com), AWS Cost and Usage Report developer guide, Google Cloud BigQuery Billing Export documentation, and the FinOps Foundation community Slack workspace

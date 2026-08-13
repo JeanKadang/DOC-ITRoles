@@ -165,6 +165,8 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Administrator Associate
 - Microsoft Certified: Azure Developer Associate
 - Microsoft Certified: Azure Security Engineer Associate
@@ -178,6 +180,6 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 - Microsoft 365 certifications, PowerShell scripting proficiency, Linux fundamentals, ITIL Foundation, and Docker/Kubernetes fundamentals for container-hosted workloads
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), AZ-104 study resources, A Cloud Guru, Pluralsight Azure tracks, and the Azure community Discord and Microsoft Tech Community forums

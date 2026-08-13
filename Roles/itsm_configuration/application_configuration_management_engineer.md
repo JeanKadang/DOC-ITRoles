@@ -171,6 +171,8 @@ The Application Configuration Management Engineer implements and maintains confi
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL Foundation
 - ServiceNow Certified System Administrator
 - Configuration Management certification
@@ -184,6 +186,6 @@ The Application Configuration Management Engineer implements and maintains confi
 
 - ITIL 4 Foundation, ServiceNow Certified System Administrator, and HashiCorp Vault Associate
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - ITIL Foundation resources, ServiceNow community (community.servicenow.com), Ansible documentation (docs.ansible.com), HashiCorp Learn (developer.hashicorp.com), and Git source control community documentation

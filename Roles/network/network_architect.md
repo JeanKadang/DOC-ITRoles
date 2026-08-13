@@ -177,6 +177,8 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Cisco Certified Architect (CCAr)
 - Cisco Certified Design Expert (CCDE)
 - Juniper Networks Certified Design Expert (JNCDE)
@@ -192,6 +194,6 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 
 - AWS Certified Advanced Networking - Specialty, Microsoft Certified: Azure Network Engineer Associate (AZ-700), and vendor-specific SD-WAN certifications (Cisco Viptela, Fortinet SD-WAN, VMware VeloCloud).
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Cisco Live sessions and DevNet learning library, Juniper Networks Learning Portal, Network to Code (networktocode.com), ipSpace.net (Ivan Pepelnjak), NANOG and RIPE NCC community resources, Packet Pushers podcast.

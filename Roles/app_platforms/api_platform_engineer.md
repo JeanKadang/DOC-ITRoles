@@ -173,6 +173,8 @@ The API Platform Engineer implements and maintains API management solutions acro
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Google Apigee API Engineer certification
 - MuleSoft Certified Developer
 - AWS API Gateway Developer certification
@@ -183,17 +185,16 @@ The API Platform Engineer implements and maintains API management solutions acro
 - GraphQL Developer certification
 - API Security fundamentals
 - Postman API certification
-- Complementary certifications:
-  - Docker and container basics
-  - CI/CD pipeline certifications
-  - Cloud platform associate certifications
-  - Web security fundamentals
-  - Microservices fundamentals
 
 **Complementary Certifications:**
 
+- Docker and container basics
+- CI/CD pipeline certifications
+- Cloud platform associate certifications
+- Web security fundamentals
+- Microservices fundamentals
 - Docker and container basics, cloud platform associate certifications (AWS/Azure/GCP), web security fundamentals (OWASP), and CI/CD pipeline certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Postman Learning Center (learning.postman.com), OWASP API Security Top 10, OpenAPI Specification docs, vendor tutorials (Apigee, Kong, Azure APIM), and API Academy free courses

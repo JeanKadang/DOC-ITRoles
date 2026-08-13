@@ -173,6 +173,8 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - SAFe Product Owner/Product Manager
 - Project Management Professional (PMP)
@@ -186,6 +188,6 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, CKAD (for developer context), digital product management certifications, and DORA DevOps Leader certification
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - platformengineering.org, DORA research publications (dora.dev), Gartner DevOps research, InnerSource Commons community (innersourcecommons.org), Thoughtworks Technology Radar, and Team Topologies community (teamtopologies.com)

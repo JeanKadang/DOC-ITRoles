@@ -189,6 +189,8 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Red Hat Certified Architect (RHCA)
 - Linux Foundation certifications
@@ -202,6 +204,6 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, Red Hat overview fundamentals, and Linux Foundation overview certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Linux Foundation (linuxfoundation.org), Red Hat Developer blog, Scrum.org product owner resources, Gartner Linux and server management research, and CNCF blog for cloud-native context

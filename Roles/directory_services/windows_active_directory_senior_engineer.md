@@ -163,6 +163,8 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Windows Server Hybrid Administrator Associate
 - Microsoft 365 Certified: Identity and Access Administrator Associate
 - Microsoft Certified: Security, Compliance, and Identity Fundamentals
@@ -176,6 +178,6 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 
 - Microsoft 365 Certified: Enterprise Administrator Expert, Certified Information Systems Security Professional (CISSP), and CompTIA Security+
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), adsecurity.org, SpectreOps BloodHound documentation, Microsoft Tech Community identity and security blogs, and PowerShell Gallery for AD automation modules

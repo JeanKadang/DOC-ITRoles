@@ -292,4 +292,4 @@ function report() {
 
 if (require.main === module) report();
 
-module.exports = { certificationSection, inventoryRole, aliasKey, classifyEntry, sectionShape, buildInventory };
+module.exports = { certificationSection, stripComments, inventoryRole, aliasKey, classifyEntry, sectionShape, buildInventory };

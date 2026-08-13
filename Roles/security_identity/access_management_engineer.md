@@ -171,6 +171,8 @@ The Access Management Engineer implements and maintains access management system
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Certified Identity & Access Manager (CIAM)
 - SailPoint IdentityIQ certification
 - CyberArk Certified Administrator
@@ -184,6 +186,6 @@ The Access Management Engineer implements and maintains access management system
 
 - ITIL Foundation for service management alignment, CompTIA CySA+ for broader security analyst skills, Microsoft 365 certifications, and PowerShell scripting proficiency for access automation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (Entra ID and identity), SailPoint and CyberArk vendor training, LinkedIn Learning access management paths, IDPro introductory resources, and vendor community forums

@@ -178,6 +178,8 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - HPE SimpliVity certifications
 - VMware certifications
@@ -191,6 +193,6 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, Certified Business Continuity Professional (CBCP), and HPE SimpliVity overview certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - BCI.org business continuity resources, HPE SimpliVity documentation and community, Scrum.org product owner resources, Gartner backup and recovery research, and DRII.org disaster recovery standards

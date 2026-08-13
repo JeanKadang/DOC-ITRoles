@@ -193,6 +193,8 @@ The VMware Product Owner manages the development and lifecycle of the organizati
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL or other service management framework certification
 - Professional Scrum Product Owner (PSPO) or similar
 - VMware Technical Sales Professional (VTSP)

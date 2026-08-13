@@ -158,6 +158,8 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - HPE ASE - Server Solutions Architect
 - HPE Master ASE - Server Solutions Architect
 - HPE Product Certified - OneView

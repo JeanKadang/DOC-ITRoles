@@ -169,6 +169,8 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Google Cloud Certified - Associate Cloud Engineer
 - Google Cloud Certified - Professional Cloud Developer
 - Certified Kubernetes Administrator (CKA)
@@ -182,6 +184,6 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 
 - Kubernetes fundamentals (CKAD), Linux certifications (LPIC-1), Terraform Associate, Python scripting proficiency, and ITIL Foundation for service management context
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Google Cloud Skills Boost (cloud.google.com/learn), Coursera Google Cloud Engineer path, A Cloud Guru, HashiCorp Learn for Terraform, and Google Cloud Community user groups

@@ -186,6 +186,8 @@ The Database Product Owner manages the portfolio of database platforms and data 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - AWS Certified Database - Specialty
 - Microsoft Certified: Azure Database Administrator
@@ -199,6 +201,6 @@ The Database Product Owner manages the portfolio of database platforms and data 
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, CDMP (Certified Data Management Professional), and cloud database associate certifications (AWS/Azure)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - DAMA International (dama.org), TDWI community, Gartner database research, Scrum.org Product Owner resources, and AWS re:Post database track

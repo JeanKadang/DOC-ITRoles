@@ -170,6 +170,8 @@ The Application Configuration Management Architect designs comprehensive strateg
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL Expert or Master
 - TOGAF with ITSM focus
 - ServiceNow Certified Application Architect
@@ -185,6 +187,6 @@ The Application Configuration Management Architect designs comprehensive strateg
 
 - TOGAF, ServiceNow Certified Application Architect, and ITIL 4 Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HashiCorp Vault documentation (developer.hashicorp.com), ITIL 4 Foundation resources, ServiceNow developer portal (developer.servicenow.com), OWASP secure configuration guides, and DevOps Enterprise Forum

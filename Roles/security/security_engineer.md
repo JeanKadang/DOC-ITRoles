@@ -170,6 +170,8 @@ The Security Engineer implements and maintains security controls and technologie
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - CompTIA Security+
 - Certified Information Systems Security Professional (CISSP) Associate
 - Certified Ethical Hacker (CEH)
@@ -183,6 +185,6 @@ The Security Engineer implements and maintains security controls and technologie
 
 - CompTIA CySA+ (threat detection and analysis), Microsoft Certified: Security Operations Analyst Associate (SC-200), and vendor-specific certifications (Palo Alto PCNSA, CrowdStrike, Qualys).
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - TryHackMe and HackTheBox (practical security labs), SANS Cyber Aces (free foundational content), Microsoft Learn (SC-200 path), OWASP Foundation (owasp.org), r/netsec and r/cybersecurity communities.

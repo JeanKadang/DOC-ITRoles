@@ -164,6 +164,8 @@ The Windows Active Directory Architect designs AD structure, security models, an
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Identity and Access Administrator
 - Microsoft 365 Certified: Enterprise Administrator Expert
 - Microsoft Certified: Windows Server Hybrid Administrator Associate
@@ -177,6 +179,6 @@ The Windows Active Directory Architect designs AD structure, security models, an
 
 - TOGAF, Microsoft Certified: Azure Solutions Architect Expert, and Certified Information Systems Security Professional (CISSP)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), Active Directory security community resources (adsecurity.org), SpectreOps BloodHound community, and Microsoft Tech Community identity and security blogs

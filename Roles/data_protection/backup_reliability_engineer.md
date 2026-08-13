@@ -168,6 +168,8 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Veeam Certified Engineer (VMCE)
 - Commvault Certified Professional
 - NetBackup Certified Professional
@@ -181,6 +183,6 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 
 - Prometheus Certified Associate, cloud backup certifications (AWS/Azure), CKA (for cloud-native backup), and chaos engineering practitioner certifications (Gremlin, LitmusChaos)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Google SRE books (sre.google), Honeycomb observability blog, Veeam community (community.veeam.com), Commvault community (community.commvault.com), and backup reliability engineering patterns blog content

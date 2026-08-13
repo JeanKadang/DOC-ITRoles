@@ -174,6 +174,8 @@ The Azure Cloud Platform Architect designs, implements, and governs cloud soluti
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Solutions Architect Expert (AZ-305)
 - Microsoft Certified: DevOps Engineer Expert (AZ-400)
 - Microsoft Certified: Azure Security Engineer Associate (AZ-500)
@@ -189,6 +191,6 @@ The Azure Cloud Platform Architect designs, implements, and governs cloud soluti
 
 - AWS or GCP architect certifications for multi-cloud context, TOGAF for enterprise architecture, CISSP, Agile/SAFe certifications, and FinOps Certified Practitioner
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), Azure Architecture Center, Azure Friday YouTube series, A Cloud Guru Azure paths, and Microsoft Tech Community forums

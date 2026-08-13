@@ -177,6 +177,8 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - FinOps Certified Practitioner (FCP) — FinOps Foundation
 - AWS Certified Cloud Practitioner
 - Microsoft Azure Fundamentals (AZ-900)
@@ -188,6 +190,6 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 
 - HashiCorp Terraform Associate, AWS Certified SysOps Administrator – Associate, and Microsoft Azure Administrator (AZ-104) for engineering depth alongside FinOps specialisation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - FinOps Foundation (finops.org), AWS Cost Management documentation and Well-Architected Cost Optimisation pillar, Microsoft Azure Cost Management and Billing documentation, Google Cloud Cost Optimisation best practices, and the FinOps Foundation community Slack workspace

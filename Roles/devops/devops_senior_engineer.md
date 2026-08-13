@@ -180,6 +180,8 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - AWS Certified DevOps Engineer - Professional
 - Microsoft Certified: DevOps Engineer Expert
 - Google Professional Cloud DevOps Engineer
@@ -193,6 +195,6 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 - Certified Kubernetes Security Specialist (CKS), AWS Certified Security - Specialty (pipeline security), and Harness Continuous Delivery certifications.
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Continuous Delivery Foundation resources (cd.foundation), CNCF KubeCon sessions, GitHub Universe talks, Thoughtworks Technology Radar, DevOps Toolkit YouTube channel (Viktor Farcic), Pluralsight DevOps learning paths.

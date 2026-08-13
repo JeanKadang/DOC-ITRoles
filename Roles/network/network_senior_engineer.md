@@ -172,6 +172,8 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Cisco Certified Network Professional (CCNP)
 - Cisco Certified Internetwork Expert (CCIE)
 - Juniper Networks Certified Professional (JNCP)
@@ -185,6 +187,6 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 - HashiCorp Certified: Terraform Associate (network IaC), Python Institute PCEP/PCAP (automation scripting), Fortinet NSE 4/5, and Palo Alto Networks PCNSE.
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Cisco Learning Network and DevNet, Juniper Learning Portal, Network to Code (networktocode.com), Packet Pushers podcast and community, ipSpace.net, INE network engineering courses.

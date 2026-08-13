@@ -188,22 +188,23 @@ The Qumulo Storage Product Owner manages the development and lifecycle of the or
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Qumulo Certified Administrator
 - Certified Data Storage Professional
 - SNIA Storage Networking Certification
 - AWS Storage Specialty
-- Complementary certifications:
-  - Microsoft Azure Storage certification
-  - Project Management Professional (PMP)
-  - ITIL 4 Foundation
-  - SAFe Product Owner/Product Manager
-  - Certified Agile Service Manager
 
 **Complementary Certifications:**
 
+- Microsoft Azure Storage certification
+- Project Management Professional (PMP)
+- ITIL 4 Foundation
+- SAFe Product Owner/Product Manager
+- Certified Agile Service Manager
 - SAFe Product Owner/Product Manager (SAFe POPM), SNIA Certified Storage Professional (overview level), ITIL 4 Foundation, and cloud storage fundamentals
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Qumulo blog and community (community.qumulo.com), SNIA resources (snia.org), Gartner storage and data management research, Scrum.org product owner resources, and IDC storage market research

@@ -168,6 +168,8 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Solutions Architect Expert
 - Microsoft Certified: DevOps Engineer Expert
 - Microsoft Certified: Azure Security Engineer Associate
@@ -181,6 +183,6 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 
 - Certified Kubernetes Administrator (CKA), Terraform Associate, Windows Server/Entra ID certifications, CISSP, and AWS or GCP associate-level certifications for multi-cloud awareness
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), A Cloud Guru Azure paths, Pluralsight Azure tracks, Azure Architecture Center, and Microsoft Tech Community forums

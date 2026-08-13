@@ -170,6 +170,8 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Microsoft Azure certifications
 - SAFe Product Owner/Product Manager
@@ -178,17 +180,16 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 - Technology Business Management
 - DevOps leadership certifications
 - Software Architecture certifications
-- Complementary certifications:
-  - Microsoft 365 certifications
-  - Azure DevOps certifications
-  - ITIL Foundation
-  - Change Management certification
-  - Product Management Professional
 
 **Complementary Certifications:**
 
+- Microsoft 365 certifications
+- Azure DevOps certifications
+- ITIL Foundation
+- Change Management certification
+- Product Management Professional
 - SAFe Product Owner/Product Manager (SAFe POPM), Azure Fundamentals, ITIL Foundation, and Change Management certification for platform upgrade programs
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), .NET Foundation community, Microsoft Build conference content, Pluralsight .NET management paths, and the ASP.NET community resources

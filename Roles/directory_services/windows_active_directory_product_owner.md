@@ -164,6 +164,8 @@ The Windows Active Directory Product Owner manages the service roadmap and plann
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Microsoft Certified: Identity and Access Administrator
 - Microsoft 365 Certified: Enterprise Administrator Expert
@@ -177,6 +179,6 @@ The Windows Active Directory Product Owner manages the service roadmap and plann
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, and Microsoft Security Fundamentals training
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), Microsoft Tech Community (techcommunity.microsoft.com), Scrum.org professional development resources, and Active Directory security community resources (adsecurity.org)

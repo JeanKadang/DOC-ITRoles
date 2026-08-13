@@ -167,22 +167,23 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Commvault Certified Professional (CCP)
 - Commvault Certified Master (CCM)
 - Commvault Certified Architect (CCA)
 - Certified Information Systems Security Professional (CISSP)
 - Certified Data Center Professional (CDCP)
-- Complementary certifications:
-  - SNIA Storage Networking certifications
-  - Cloud platform certifications for backup solutions
-  - ITIL certifications
-  - VMware Certified Professional
-  - Microsoft Certified: Azure Administrator
 
 **Complementary Certifications:**
 
+- SNIA Storage Networking certifications
+- Cloud platform certifications for backup solutions
+- ITIL certifications
+- VMware Certified Professional
+- Microsoft Certified: Azure Administrator
 - Commvault Certified Master (CCM), CISSP, cloud backup certifications (AWS/Azure), and Certified Business Continuity Professional (CBCP)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Commvault education portal (education.commvault.com), Commvault community forums (community.commvault.com), SNIA data protection track (snia.org), StorageNewsletter.com, and backup technology engineering blogs

@@ -170,6 +170,8 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Oracle Certified Master, Java Architect
 - Spring Professional certification
 - Cloud platform architect certifications
@@ -180,17 +182,16 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 - TOGAF or other enterprise architecture certification
 - Cloud native architect certifications
 - Microservices architecture certifications
-- Complementary certifications:
-  - Domain-Driven Design certification
-  - Event-Driven Architecture certification
-  - Certified Scrum Professional
-  - AWS Professional/Expert certifications
-  - Azure Expert certifications
 
 **Complementary Certifications:**
 
+- Domain-Driven Design certification
+- Event-Driven Architecture certification
+- Certified Scrum Professional
+- AWS Professional/Expert certifications
+- Azure Expert certifications
 - TOGAF for enterprise architecture alignment, domain-driven design (DDD) certifications, cloud architect certifications (AWS/Azure/GCP), and event-driven/Kafka certifications for distributed Java systems
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - dev.java, Spring.io blog, InfoQ Java (infoq.com), Devoxx conference recordings, Baeldung.com, Java Magazine, and Coursera cloud-native Java specializations

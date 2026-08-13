@@ -171,6 +171,8 @@ The Service Management Engineer implements and maintains IT service management p
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL 4 Foundation
 - ServiceNow Certified System Administrator
 - BMC Certified Administrator (or equivalent)
@@ -184,6 +186,6 @@ The Service Management Engineer implements and maintains IT service management p
 
 - ITIL 4 Foundation, ServiceNow Certified System Administrator, and Knowledge-Centered Service (KCS) Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AXELOS ITIL learning resources (axelos.com), ServiceNow community (community.servicenow.com), ServiceNow developer portal, HDI certifications and community (thinkhdi.com), and Microsoft Power Platform documentation

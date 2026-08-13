@@ -178,6 +178,8 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - FinOps Certified Practitioner (FCP)
 - FinOps Certified Engineer (FCE)
 - AWS Certified Solutions Architect - Professional
@@ -191,6 +193,6 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 - FinOps Certified Engineer (FCE), AWS Certified Solutions Architect - Professional or Microsoft Azure Solutions Architect Expert, and HashiCorp Terraform Associate
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - FinOps Foundation (finops.org), AWS Cost Management advanced documentation, Microsoft Azure Cost Management and Billing documentation, Google Cloud Cost Management documentation, and FinOps Foundation community Slack workspace

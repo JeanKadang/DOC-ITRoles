@@ -186,6 +186,8 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Commvault Certified Professional
 - Commvault Certified Engineer
 - Commvault Certified Advanced Professional
@@ -201,6 +203,6 @@ The Commvault Product Owner is responsible for maximizing the value of the organ
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, Certified Business Continuity Professional (CBCP), and cloud fundamentals certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - DRII.org (disaster recovery standards), BCI (bci.org), Commvault community and events (community.commvault.com), Scrum.org product owner resources, Gartner backup and recovery research

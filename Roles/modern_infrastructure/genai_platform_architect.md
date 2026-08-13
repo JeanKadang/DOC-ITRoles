@@ -184,6 +184,8 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure AI Engineer Associate (AI-102)
 - Microsoft Certified: Azure Solutions Architect Expert (AZ-305)
 - AWS Certified Machine Learning Specialty
@@ -199,6 +201,6 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 
 - FinOps Certified Practitioner (for AI/LLM cost governance), IAPP AI Governance Professional (AIGP), CISSP for AI security context, and cloud solutions architect certifications (AWS/Azure/GCP)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Hugging Face community (huggingface.co), CNCF AI working groups, Microsoft AI research blog, AWS Machine Learning blog, LangChain and LlamaIndex documentation, ArXiv AI preprints, NVIDIA developer blog, and the AI Alignment Forum

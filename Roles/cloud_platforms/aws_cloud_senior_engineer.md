@@ -169,6 +169,8 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - AWS Certified Solutions Architect - Professional
 - AWS Certified DevOps Engineer - Professional
 - AWS Certified Security - Specialty
@@ -182,6 +184,6 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 
 - Certified Kubernetes Administrator (CKA), Terraform Associate, Linux certifications (RHCE, LFCS), CISSP or AWS Security Specialty for deeper security focus
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AWS Training and Skill Builder (aws.training), A Cloud Guru, Pluralsight AWS paths, AWS re:Invent recordings, and the AWS community Slack and Discord communities

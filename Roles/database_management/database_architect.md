@@ -170,6 +170,8 @@ The Database Architect designs comprehensive data management strategies and arch
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Oracle Certified Master
 - Microsoft Certified: Azure Database Administrator Associate
 - MongoDB Certified Solutions Architect
@@ -179,17 +181,16 @@ The Database Architect designs comprehensive data management strategies and arch
 - CDMP (Certified Data Management Professional)
 - IBM Certified Database Administrator
 - Google Professional Cloud Database Engineer
-- Complementary certifications:
-  - Certified Information Security Manager (CISM)
-  - Certified Data Privacy Solutions Engineer (CDPSE)
-  - ITIL 4 Foundation
-  - Certified Cloud Security Professional (CCSP)
-  - Red Hat Certified Specialist in OpenShift Data Foundation
 
 **Complementary Certifications:**
 
+- Certified Information Security Manager (CISM)
+- Certified Data Privacy Solutions Engineer (CDPSE)
+- ITIL 4 Foundation
+- Certified Cloud Security Professional (CCSP)
+- Red Hat Certified Specialist in OpenShift Data Foundation
 - TOGAF for enterprise architecture alignment, CISSP for data security governance, CDMP (Certified Data Management Professional), and cloud database certifications (AWS Database Specialty, Azure Database Administrator)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - dba.stackexchange.com community, SQLServerCentral (sqlservercentral.com), use-the-index-luke.com (SQL tuning), PostgreSQL documentation, Oracle DBA community, MongoDB developer resources, and VLDB conference content

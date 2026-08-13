@@ -175,6 +175,8 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Kubernetes certifications (CKA, CKAD)
 - Cloud platform certifications (AWS, Azure, Google Cloud)
 - Terraform or other IaC certifications
@@ -188,6 +190,6 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 
 - CKA/CKAD, DORA metrics practitioner, HashiCorp Terraform and Vault certifications, GitHub Advanced Security, and cloud platform developer certifications (AWS/Azure/GCP)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - platformengineering.org, CNCF blog (cncf.io/blog), Backstage community (backstage.io), DevOpsDays conference talks, DORA DevOps research (dora.dev), Thoughtworks Technology Radar, and KubeCon + CloudNativeCon recordings

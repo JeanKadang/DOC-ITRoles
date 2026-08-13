@@ -179,6 +179,8 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure AI Engineer Associate (AI-102)
 - AWS Certified AI Practitioner
 - Google Cloud Professional Machine Learning Engineer
@@ -192,6 +194,6 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 
 - FinOps Certified Practitioner (for AI cost governance), IAPP AI Governance Professional (AIGP), GitOps certifications (ArgoCD), and cloud security associate certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Hugging Face community (huggingface.co), LangChain documentation, LlamaIndex documentation, vLLM GitHub, NVIDIA developer blog, Microsoft AI blog, AWS Machine Learning blog, and Google DeepMind technical blog

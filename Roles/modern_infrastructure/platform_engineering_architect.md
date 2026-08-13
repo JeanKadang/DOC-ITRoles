@@ -181,6 +181,8 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - TOGAF Certified Enterprise Architect
 - AWS Solutions Architect Professional
 - Microsoft Certified: Azure Solutions Architect Expert
@@ -197,6 +199,6 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 
 - Certified Kubernetes Administrator (CKA) or CKS, TOGAF, HashiCorp Vault and Terraform certifications, DORA DevOps Leader certification, and CNCF Kubernetes and Cloud Native Associate (KCNA)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - platformengineering.org, CNCF community (cncf.io), Backstage community (backstage.io), DORA research publications (dora.dev), Kelsey Hightower talks, KubeCon + CloudNativeCon content, and DevEx conference resources

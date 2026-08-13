@@ -174,6 +174,8 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Kubernetes certifications (CKA, CKAD)
 - Cloud platform certifications (AWS, Azure, Google Cloud)
 - DevOps certifications
@@ -187,6 +189,6 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 - CKA/CKAD, Docker Certified Associate, cloud associate certifications (AWS/Azure/GCP), ITIL Foundation, and GitHub Actions certification
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - CNCF documentation (cncf.io), Backstage getting started guides (backstage.io/docs), GitHub Actions documentation, HashiCorp Terraform getting started, KubeCon YouTube channel, and kubectl docs (kubectl.docs.kubernetes.io)

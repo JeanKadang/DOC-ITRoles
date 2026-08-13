@@ -176,6 +176,8 @@ The Access Management Architect designs and oversees the organization's access m
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Certified Information Systems Security Professional (CISSP)
 - SailPoint IdentityIQ Architect
 - CyberArk Certified Architect
@@ -189,7 +191,7 @@ The Access Management Architect designs and oversees the organization's access m
 
 - CISM (Certified Information Security Manager), CCSP (cloud security), ITIL Foundation for service framing, and Agile/SAFe certifications for product-aligned delivery environments
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - IDPro Body of Knowledge (idpro.org), Gartner IAM Summit, KuppingerCole IAM research, SailPoint University, CyberArk training portal, and SANS Identity and Access Management courses
 - [Relevant training platforms, vendor learning paths, or professional communities]

@@ -166,6 +166,8 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - HPE Product Certified - Server Solutions
 - HPE Technical Certified - Server Solutions

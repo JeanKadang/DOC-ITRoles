@@ -171,6 +171,8 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Oracle Certified Professional Java Developer
 - Spring Professional certification
 - Cloud platform certifications for Java workloads

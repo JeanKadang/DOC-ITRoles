@@ -170,6 +170,8 @@ The API Platform Product Owner manages the development and lifecycle of the orga
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - API Product Management certifications
 - Google Apigee API Product Manager
@@ -180,17 +182,16 @@ The API Platform Product Owner manages the development and lifecycle of the orga
 - SAFe Product Owner/Product Manager
 - Digital Product Management certifications
 - API Monetization and Strategy certification
-- Complementary certifications:
-  - Agile Leadership certifications
-  - Cloud Platform certifications
-  - Digital Transformation strategy
-  - Business Process Management
-  - Change Management certification
 
 **Complementary Certifications:**
 
+- Agile Leadership certifications
+- Cloud Platform certifications
+- Digital Transformation strategy
+- Business Process Management
+- Change Management certification
 - SAFe Product Owner/Product Manager (SAFe POPM), digital product management certifications, ITIL Foundation for service context, and Agile leadership certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Nordic APIs blog, API Academy, Gartner API management research, Postman State of the API report, ProgrammableWeb, and Forrester API platform research

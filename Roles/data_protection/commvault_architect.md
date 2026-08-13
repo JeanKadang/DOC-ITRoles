@@ -169,22 +169,23 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Commvault Certified Architect (CCA)
 - Commvault Certified Master (CCM)
 - Certified Data Management Professional (CDMP)
 - Certified Information Systems Security Professional (CISSP)
 - TOGAF or other enterprise architecture certification
-- Complementary certifications:
-  - Cloud architecture certifications
-  - ITIL Expert or Master
-  - Data Governance certifications
-  - AWS Certified Solutions Architect
-  - Microsoft Certified: Azure Solutions Architect
 
 **Complementary Certifications:**
 
+- Cloud architecture certifications
+- ITIL Expert or Master
+- Data Governance certifications
+- AWS Certified Solutions Architect
+- Microsoft Certified: Azure Solutions Architect
 - TOGAF, CISSP, cloud architecture certifications (AWS Solutions Architect/Azure Solutions Architect), and Certified Business Continuity Professional (CBCP)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Commvault documentation and community (community.commvault.com), Commvault education portal (education.commvault.com), SNIA data protection track, StorageNewsletter.com, and Gartner backup and recovery market research
