@@ -105,21 +105,39 @@ function splitJoined(value) {
 // Administrator", its "Associate" spelling, and its "(SC-300)" spelling group
 // together.
 function aliasKey(name) {
-    return String(name)
+    const normalized = String(name)
         .toLowerCase()
         .replace(/\([^)]*\)/g, ' ')
         .replace(/\b(certification|certifications|certificate|certified|associate|professional|expert|fundamentals|foundation)\b/g, ' ')
         .replace(/[^a-z0-9]+/g, ' ')
         .trim();
+
+    // Stripped this far, a specific credential and a generic family collide --
+    // "Certified Cloud Security Professional (CCSP)" and "Cloud security
+    // certifications" both reduce to "cloud security". Keying on the kind as
+    // well keeps them apart, so a family cannot absorb a credential and hand it
+    // its own classification (#248).
+    return `${classifyEntry(name)}:${normalized}`;
 }
 
 // A family or a topic is not an individual credential and must not become a
 // registry record; a vague claim has to be rewritten before it can be audited.
+// A single parenthesised exam or credential code — (AZ-900), (MS-900), (CCSP) —
+// names one specific, individually-held credential. A list of them, as in
+// "Kubernetes certifications (CKA, CKAD)", does not, which is why the plural
+// family test runs first.
+const EXAM_CODE = /\(([A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*)\)/;
+
 function classifyEntry(name) {
     const value = String(name).trim();
 
     if (/\bor\s+(other|similar|equivalent)\b/i.test(value)) return 'vague';
     if (/\b(certifications|certificates)\b/i.test(value)) return 'family';
+    // Several real Microsoft certifications are named "... Fundamentals", so the
+    // wording alone cannot rule a credential out; the code decides (#248).
+    // "Microsoft Certified: ... Fundamentals" and "Microsoft 365 Certified:
+    // Fundamentals" are certification brandings, not subject descriptions.
+    if (EXAM_CODE.test(value) || /\bCertified:/.test(value)) return 'credential';
     if (/\b(fundamentals|basics|essentials)\b/i.test(value)) return 'topic';
     return 'credential';
 }

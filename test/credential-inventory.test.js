@@ -155,6 +155,40 @@ test('aliasKey keeps genuinely different credentials apart', () => {
     assert.notEqual(aliasKey('Certified Kubernetes Administrator (CKA)'), aliasKey('Certified Kubernetes Application Developer (CKAD)'));
 });
 
+// Several real Microsoft certifications are literally named "Fundamentals", so
+// the word alone cannot mean "not a credential". A parenthesised exam code is
+// decisive evidence of an individually-held credential (#248).
+test('an exam code outweighs the fundamentals wording', () => {
+    assert.equal(classifyEntry('Microsoft Azure Fundamentals (AZ-900)'), 'credential');
+    assert.equal(classifyEntry('Microsoft 365 Certified: Fundamentals (MS-900)'), 'credential');
+    assert.equal(classifyEntry('Certified Cloud Security Professional (CCSP)'), 'credential');
+});
+
+// aliasKey strips level and certification wording to group spellings. Stripped
+// far enough, a specific credential and a generic family collide -- and the
+// group then inherits one kind for both (#248).
+test('aliasKey does not merge a credential with a generic family', () => {
+    assert.notEqual(
+        aliasKey('Certified Cloud Security Professional (CCSP)'),
+        aliasKey('Cloud security certifications'),
+    );
+});
+
+// "Certified:" is certification branding, not a subject description, so it
+// carries the same weight as an exam code even when the code is omitted.
+test('Certified: branding outweighs the fundamentals wording', () => {
+    assert.equal(classifyEntry('Microsoft Certified: Security, Compliance, and Identity Fundamentals'), 'credential');
+    assert.equal(classifyEntry('Microsoft 365 Certified: Fundamentals'), 'credential');
+    // No branding and no code: a subject, and the audit decides otherwise.
+    assert.equal(classifyEntry('Linux fundamentals'), 'topic');
+});
+
+test('classifyEntry still recognises a genuine family', () => {
+    assert.equal(classifyEntry('Cloud platform associate certifications'), 'family');
+    assert.equal(classifyEntry('ITIL Service Management certifications'), 'family');
+    assert.equal(classifyEntry('Kubernetes certifications (CKA, CKAD)'), 'family');
+});
+
 test('classifyEntry separates credentials from families, topics and vague claims', () => {
     assert.equal(classifyEntry('Certified Kubernetes Administrator (CKA)'), 'credential');
     assert.equal(classifyEntry('ITIL Service Management certifications'), 'family');
