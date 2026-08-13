@@ -71,6 +71,20 @@ test('a duplicated recommendation is kept once', () => {
     assert.equal(out.split('CompTIA Security+').length - 1, 1);
 });
 
+// The dedup key strips markers so "X" and "X <!-- credential: id -->" count as
+// one claim. Stripping with a single lazy pass leaves the outer opener behind
+// on a nested comment, so the two keys stop matching and the duplicate
+// survives — the same defect class as #248.
+test('a duplicate is still recognised when its comment is nested', () => {
+    const out = normaliseSection(doc(
+        '- CompTIA Security+',
+        '- Complementary certifications:',
+        '  - CompTIA Security+ <!--<!-- stray -->-->',
+    ));
+
+    assert.equal(out.split('CompTIA Security+').length - 1, 1);
+});
+
 test('the learning resources heading is spelled one way', () => {
     const out = normaliseSection(doc(
         '**Learning Resources and Communities:**',

@@ -16,6 +16,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
+const { stripComments } = require('./credential-inventory.js');
+
 const ROLES_DIR = path.resolve(__dirname, '..', 'Roles');
 
 const CORE = 'Core Certifications';
@@ -57,7 +59,10 @@ function readGroups(section) {
     const seen = new Map();
     let current = CORE;
 
-    const claimOf = entry => entry.replace(/<!--[\s\S]*?-->/g, '').replace(/\s+/g, ' ').trim().toLowerCase();
+    // Reuses the inventory's scanner rather than a local pattern: a lazy
+    // `<!--[\s\S]*?-->` leaves the outer opener behind on a nested comment, so
+    // two spellings of one claim would stop matching (#248).
+    const claimOf = entry => stripComments(entry).replace(/\s+/g, ' ').trim().toLowerCase();
 
     const add = (group, entry) => {
         if (!groups.has(group)) groups.set(group, []);
