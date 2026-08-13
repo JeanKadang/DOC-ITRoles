@@ -180,6 +180,8 @@ The AWS Cloud Platform Architect designs, implements, and governs cloud solution
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - AWS Certified Solutions Architect Professional (SAP-C02)
 - AWS Certified DevOps Engineer Professional
 - AWS Certified Security Specialty
@@ -195,6 +197,6 @@ The AWS Cloud Platform Architect designs, implements, and governs cloud solution
 
 - Azure or GCP architect certifications for multi-cloud context, Agile/SAFe certifications, network and security architecture certifications, and ITIL for service management context
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AWS Well-Architected Framework documentation, AWS re:Invent sessions, A Cloud Guru/Pluralsight AWS paths, AWS Training (aws.training), and the AWS Community Builders program

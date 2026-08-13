@@ -177,6 +177,8 @@ The Database Engineer implements and maintains database systems across the organ
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Oracle Certified Associate (OCA)
 - Microsoft Certified: Azure Database Administrator Associate
 - AWS Database Specialty
@@ -190,6 +192,6 @@ The Database Engineer implements and maintains database systems across the organ
 
 - ITIL Foundation, CompTIA Server+, cloud fundamentals (AZ-900 or AWS Cloud Practitioner), Linux fundamentals (RHCSA/LPIC-1), and scripting basics (Python/PowerShell)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - SQLServerCentral (sqlservercentral.com), use-the-index-luke.com, PostgreSQL documentation (postgresql.org/docs), Oracle Learning Library (education.oracle.com), dba.stackexchange.com, and MySQL documentation

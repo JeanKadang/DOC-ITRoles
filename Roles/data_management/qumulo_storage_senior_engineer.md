@@ -174,21 +174,22 @@ The Qumulo Storage Senior Engineer leads the implementation and optimization of 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Qumulo Certified Professional
 - Qumulo Certified Administrator
 - SNIA Certified Storage Professional
 - Cloud storage certifications (AWS/Azure/GCP)
-- Complementary certifications:
-  - VMware certifications
-  - Linux administration certifications
-  - Networking certifications
-  - Python scripting certification
-  - Containerization technologies
 
 **Complementary Certifications:**
 
+- VMware certifications
+- Linux administration certifications
+- Networking certifications
+- Python scripting certification
+- Containerization technologies
 - Qumulo Certified Professional (if available), SNIA Certified Storage Professional, cloud storage specialist certifications (AWS/Azure), and Linux administration (RHCE/LFCE) for Qumulo node management
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Qumulo documentation (docs.qumulo.com), Qumulo community forums (community.qumulo.com), SNIA technical training (snia.org), Server Fault storage community, and cross-platform storage performance engineering blogs

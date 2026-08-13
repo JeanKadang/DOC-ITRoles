@@ -170,6 +170,8 @@ The Windows Server Architect designs and defines the strategic direction for the
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Windows Server Hybrid Administrator Associate
 - Microsoft Certified: Azure Solutions Architect Expert
 - Microsoft Certified: Identity and Access Administrator Associate

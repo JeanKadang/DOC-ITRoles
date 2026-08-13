@@ -170,6 +170,8 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Developer Associate
 - Microsoft Certified: DevOps Engineer Expert
 - Microsoft Certified: Azure Solutions Architect Expert
@@ -178,17 +180,16 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 - Design patterns and software architecture certifications
 - Azure certifications for .NET hosting
 - DevSecOps certifications
-- Complementary certifications:
-  - Microsoft Certified: Azure Security Engineer Associate
-  - Certified Kubernetes Application Developer
-  - Certified Scrum Developer
-  - GitHub Actions certification
-  - Container security certifications
 
 **Complementary Certifications:**
 
+- Microsoft Certified: Azure Security Engineer Associate
+- Certified Kubernetes Application Developer
+- Certified Scrum Developer
+- GitHub Actions certification
+- Container security certifications
 - Certified Kubernetes Application Developer (CKAD), GitHub Actions certification, container security certifications, and CISSP for broader security engineering context
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), ASP.NET Community Standup (YouTube), .NET Blog (devblogs.microsoft.com/dotnet), Pluralsight .NET paths, NDC Conferences, and dotnet.microsoft.com

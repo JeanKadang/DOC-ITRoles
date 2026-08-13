@@ -174,6 +174,8 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Google SRE certification
 - Linux Foundation SRE certification
 - Certified Kubernetes Administrator (CKA)
@@ -188,6 +190,6 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 
 - Certified Kubernetes Administrator (CKA), cloud reliability certifications (AWS/Azure/GCP), Prometheus Certified Associate, chaos engineering practitioner certifications (Gremlin, LitmusChaos), and ITIL Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Google SRE books (sre.google), SREcon archives (usenix.org/srecon), Honeycomb engineering blog (honeycomb.io), DORA research (dora.dev), Prometheus documentation, and PagerDuty operational runbook guides

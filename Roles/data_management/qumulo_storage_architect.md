@@ -169,22 +169,23 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Qumulo Certified Storage Expert
 - SNIA Certified Storage Architect
 - TOGAF Certified Architect
 - AWS/Azure/GCP Cloud Architecture certifications
 - CDMP (Certified Data Management Professional)
-- Complementary certifications:
-  - Enterprise Architecture certifications
-  - Data Governance certifications
-  - ITIL Expert
-  - Security certifications (CISSP)
-  - Business continuity planning certifications
 
 **Complementary Certifications:**
 
+- Enterprise Architecture certifications
+- Data Governance certifications
+- ITIL Expert
+- Security certifications (CISSP)
+- Business continuity planning certifications
 - SNIA Certified Storage Architect, TOGAF, cloud architecture certifications (AWS Solutions Architect/Azure Solutions Architect), and CISSP for storage security governance
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Qumulo documentation and community (community.qumulo.com), SNIA technical resources and whitepapers (snia.org), AWS storage design patterns for Qumulo Shift integration, and storage architecture practitioner blogs and SNIA educational sessions

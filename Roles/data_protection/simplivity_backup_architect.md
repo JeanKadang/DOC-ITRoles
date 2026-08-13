@@ -168,22 +168,23 @@ The SimpliVity Backup Architect designs and oversees data protection strategies 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - HPE Master ASE - SimpliVity Solutions
 - HPE ASE - Storage Solutions
 - VMware Certified Professional - Data Center Virtualization
 - Certified Information Systems Security Professional (CISSP)
 - SNIA Certified Storage Professional
-- Complementary certifications:
-  - Veeam Certified Engineer (VMCE)
-  - Certified Business Continuity Professional (CBCP)
-  - TOGAF Certified
-  - ITIL 4
-  - AWS/Azure/GCP Cloud Storage certifications
 
 **Complementary Certifications:**
 
+- Veeam Certified Engineer (VMCE)
+- Certified Business Continuity Professional (CBCP)
+- TOGAF Certified
+- ITIL 4
+- AWS/Azure/GCP Cloud Storage certifications
 - HPE Master ASE - SimpliVity Solutions, Certified Business Continuity Professional (CBCP), TOGAF, VMware Certified Professional - Data Center Virtualisation (VCP-DCV), and CISSP
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HPE SimpliVity documentation and support portal, HPE education portal (education.hpe.com), VMware documentation, BCI.org business continuity resources, and Veeam tech blog for cross-platform data protection references

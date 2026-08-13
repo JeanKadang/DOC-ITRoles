@@ -171,6 +171,8 @@ The Enterprise Architect develops and maintains the overall technological vision
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - TOGAF certification
 - AWS/Azure/GCP Enterprise Architecture certifications
 - ArchiMate certification
@@ -185,6 +187,6 @@ The Enterprise Architect develops and maintains the overall technological vision
 
 - Certified Information Systems Security Professional (CISSP), Open Group Certified Architect (Open CA), and major cloud provider Solutions Architect certifications (AWS/Azure/GCP)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - The Open Group (opengroup.org), Gartner architecture research, InfoQ enterprise architecture content, MIT CISR digital transformation research, and IASA global IT architect community (iasaglobal.org)

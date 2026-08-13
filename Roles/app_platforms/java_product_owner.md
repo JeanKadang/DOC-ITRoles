@@ -171,6 +171,8 @@ The Java Platform Product Owner manages the development and lifecycle of the org
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Java Platform Strategy certification
 - Oracle Java platform certifications
@@ -181,17 +183,16 @@ The Java Platform Product Owner manages the development and lifecycle of the org
 - Enterprise Architecture fundamentals
 - Software Product Management Professional
 - Cloud Platform Product Management certification
-- Complementary certifications:
-  - ITIL Foundation
-  - Project Management Professional (PMP)
-  - AWS Cloud Practitioner
-  - Azure Fundamentals
-  - Certified Scrum Master (CSM)
 
 **Complementary Certifications:**
 
+- ITIL Foundation
+- Project Management Professional (PMP)
+- AWS Cloud Practitioner
+- Azure Fundamentals
+- Certified Scrum Master (CSM)
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL Foundation, Agile leadership certifications, and cloud platform fundamentals (AWS/Azure)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Spring.io community, Devoxx conference content, InfoQ Java platform articles, Scrum.org community, Oracle Java platform resources, and Java developer community at dev.java

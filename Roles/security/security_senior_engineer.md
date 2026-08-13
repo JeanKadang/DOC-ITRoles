@@ -170,6 +170,8 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Certified Information Systems Security Professional (CISSP)
 - Certified Information Security Manager (CISM)
 - GIAC Security Expert (GSE)
@@ -183,6 +185,6 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 - GIAC Cloud Security Essentials (GCSE), GIAC Cyber Threat Intelligence (GCTI), Microsoft Certified: Cybersecurity Architect Expert (SC-100), and Palo Alto Networks Certified Security Engineer (PCNSE).
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - SANS Institute courses and reading room, MITRE ATT&CK Navigator (attack.mitre.org), Darknet Diaries podcast, TryHackMe and HackTheBox (practical labs), Microsoft Security blog, Krebs on Security.

@@ -178,6 +178,8 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Red Hat Certified System Administrator (RHCSA)
 - Linux Foundation Certified System Administrator (LFCS)
 - CompTIA Linux+
@@ -191,6 +193,6 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 
 - CompTIA Linux+, Microsoft Azure Fundamentals (AZ-900), ITIL 4 Foundation, and CompTIA Security+
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Red Hat documentation, Linux Foundation training (training.linuxfoundation.org), Linux man pages, linux.die.net reference, and Server Fault Linux community

@@ -171,6 +171,8 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - SAFe Product Owner/Product Manager
 - ITIL 4 Foundation
@@ -184,6 +186,6 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 - FinOps Certified Practitioner, ITIL 4 Specialist: Drive Stakeholder Value, and vendor business/partner certifications from Cisco, Juniper, or Palo Alto.
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Scrum.org PSPO learning paths, LinkedIn Learning (Product Management and Technology Leadership tracks), Gartner IT networking research, NetworkWorld.com, Cisco Customer Success community resources.

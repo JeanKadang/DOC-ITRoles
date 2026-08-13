@@ -165,6 +165,8 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Qumulo Certified Administrator
 - Qumulo Certified Professional
 - SNIA Storage Networking certifications

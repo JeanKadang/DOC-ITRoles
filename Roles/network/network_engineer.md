@@ -172,6 +172,8 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Cisco Certified Network Associate (CCNA)
 - Juniper Networks Certified Associate (JNCIA)
 - CompTIA Network+
@@ -185,6 +187,6 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 
 - CompTIA Security+ (network security awareness), Python for Network Engineers (CBT Nuggets / Udemy), Palo Alto PCNSA, and Fortinet NSE 2/3.
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Cisco DevNet Learning Labs, CBT Nuggets (CCNA/CCNP tracks), Packet Pushers podcast, NetworkChuck (YouTube), INE and Udemy network engineering courses.

@@ -184,6 +184,8 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Certified Kubernetes Application Developer (CKAD)
 - AWS Certified Machine Learning - Specialty
 - Google Professional Machine Learning Engineer
@@ -199,6 +201,6 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 - FinOps Certified Practitioner (for ML cost governance), cloud ML specialty certifications (AWS Machine Learning Specialty, GCP Professional ML Engineer, Azure AI Engineer), and Databricks certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - MLflow documentation (mlflow.org), Papers with Code (paperswithcode.com), Hugging Face community, Made With ML (madewithml.com), Neptune.ai blog, Evidently AI blog, and NVIDIA developer blog

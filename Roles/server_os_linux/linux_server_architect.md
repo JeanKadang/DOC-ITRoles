@@ -171,6 +171,8 @@ The Linux Server Architect designs and defines the strategic direction for the o
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Red Hat Certified Architect (RHCA)
 - SUSE Certified Architect
 - Linux Foundation Certified Engineer (LFCE)

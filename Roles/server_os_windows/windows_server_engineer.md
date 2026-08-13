@@ -178,6 +178,8 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Windows Server
 - CompTIA Server+
 - Microsoft 365 Certified: Modern Desktop Administrator Associate
@@ -191,6 +193,6 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 
 - CompTIA Server+, Microsoft Azure Fundamentals (AZ-900), ITIL 4 Foundation, and CompTIA Security+ (foundational security knowledge for server hardening)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), Windows Server documentation, Petri.com Windows Server content, Spiceworks Windows community, and Microsoft Tech Community

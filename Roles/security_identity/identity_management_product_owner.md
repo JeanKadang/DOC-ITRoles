@@ -202,6 +202,8 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Certified Identity Management Professional (CIMP)
 - Microsoft Certified: Identity and Access Administrator Associate
@@ -215,6 +217,6 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL Service Management certifications, CISM for security product leadership context, and CRISC (Certified in Risk and Information Systems Control)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - IDPro Body of Knowledge (idpro.org), Gartner IAM research, Microsoft Learn (Entra ID), Scrum.org Product Owner community, and vendor thought leadership from Microsoft, Okta, and SailPoint

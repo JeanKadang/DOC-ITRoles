@@ -171,6 +171,8 @@ The Application Configuration Management Senior Engineer leads the implementatio
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL Service Management certifications
 - Configuration Management certifications
 - DevOps Institute certifications
@@ -184,6 +186,6 @@ The Application Configuration Management Senior Engineer leads the implementatio
 
 - ServiceNow Certified Application Developer, HashiCorp Vault Professional, and ITIL 4 Foundation or Specialist
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HashiCorp Vault documentation (developer.hashicorp.com), ServiceNow developer portal (developer.servicenow.com), OWASP secure configuration guides, Ansible and Chef documentation, and ITIL community resources

@@ -175,6 +175,8 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - SAFe DevOps Practitioner
 - AWS Certified DevOps Engineer - Professional
@@ -188,6 +190,6 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 
 - FinOps Certified Practitioner (DevOps tooling cost management), ITIL 4 Specialist: Drive Stakeholder Value, and GitHub for Business / Azure DevOps administrator certifications.
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - DORA (dora.dev) research and Four Keys metrics guidance, Continuous Delivery Foundation (cd.foundation), DevOps Enterprise Summit talks (itrevolution.com), Scrum.org PSPO learning paths, Thoughtworks Technology Radar.

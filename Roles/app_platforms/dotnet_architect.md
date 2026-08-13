@@ -170,6 +170,8 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Solutions Architect Expert
 - Microsoft Certified: DevOps Engineer Expert
 - Microsoft Certified: Azure Security Engineer Associate
@@ -179,17 +181,16 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 - API design certifications
 - DevSecOps certifications
 - TOGAF or other enterprise architecture certification
-- Complementary certifications:
-  - Microsoft Certified: Azure Database Administrator Associate
-  - Certified Kubernetes Administrator
-  - Site Reliability Engineering certifications
-  - Event-Driven Architecture certifications
-  - Serverless architecture certifications
 
 **Complementary Certifications:**
 
+- Microsoft Certified: Azure Database Administrator Associate
+- Certified Kubernetes Administrator
+- Site Reliability Engineering certifications
+- Event-Driven Architecture certifications
+- Serverless architecture certifications
 - TOGAF for enterprise architecture alignment, CISSP, API design certifications, CKAD for cloud-native .NET, and event-driven/Kafka certifications for distributed system patterns
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), .NET Blog (devblogs.microsoft.com/dotnet), dotnet.microsoft.com, NDC Conferences YouTube, .NET Foundation community, and Pluralsight .NET architecture paths

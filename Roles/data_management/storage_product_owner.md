@@ -170,6 +170,8 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - ITIL Service Management certifications
 - SNIA Storage Networking Certification
@@ -183,6 +185,6 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Foundation, SNIA overview certifications, and cloud storage fundamentals (AZ-900 level)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - SNIA resources (snia.org), Gartner storage and data infrastructure research, IDC storage market analysis, Scrum.org product owner resources, and storage vendor roadmap and industry event content

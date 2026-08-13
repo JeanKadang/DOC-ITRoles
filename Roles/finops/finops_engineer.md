@@ -184,6 +184,8 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - FinOps Certified Practitioner (FCP)
 - AWS Certified Cloud Practitioner
 - Microsoft Azure Fundamentals (AZ-900)
@@ -197,6 +199,6 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 - FinOps Certified Practitioner (FCP), AWS Certified Cloud Practitioner or Microsoft Azure Fundamentals (AZ-900), and ITIL 4 Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - FinOps Foundation (finops.org), AWS Cost Management User Guide (docs.aws.amazon.com), Microsoft Azure Cost Management documentation (learn.microsoft.com), Google Cloud Billing documentation, and FinOps Foundation community Slack workspace

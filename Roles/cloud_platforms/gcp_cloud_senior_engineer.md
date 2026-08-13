@@ -169,6 +169,8 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Google Cloud Professional Cloud Architect
 - Google Cloud Professional Security Engineer
 - Google Cloud Professional Network Engineer
@@ -182,6 +184,6 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 
 - Certified Kubernetes Administrator (CKA), BigQuery or data engineering certifications, Terraform Associate, Linux certifications (RHCE, LFCS), and CCSP for cloud security depth
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Google Cloud Skills Boost (cloud.google.com/learn), Coursera Google Cloud specializations, A Cloud Guru GCP paths, GCP architecture documentation, and the Google Cloud Community

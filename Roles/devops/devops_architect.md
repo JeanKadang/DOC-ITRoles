@@ -173,6 +173,8 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - DevOps Institute Architect certification
 - AWS DevOps Professional / Azure DevOps Expert (AZ-400)
 - Certified Kubernetes Administrator (CKA) / Certified Kubernetes Security Specialist (CKS)
@@ -188,6 +190,6 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 - DORA DevOps Research practitioner resources, FinOps Certified Practitioner (pipeline cost awareness), and vendor-specific platform certifications (GitLab Professional, Harness Continuous Delivery Architect).
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - DORA (dora.dev) State of DevOps reports, DevOps Enterprise Summit talks, Thoughtworks Technology Radar, Cloud Native Computing Foundation (CNCF) webinars, Continuous Delivery Foundation (cd.foundation) resources.

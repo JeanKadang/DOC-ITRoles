@@ -168,6 +168,8 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Google Cloud Certified - Professional Cloud Architect
 - Google Cloud Certified - Associate Cloud Engineer
@@ -181,6 +183,6 @@ The Google Cloud Product Owner manages the development and lifecycle of the orga
 
 - SAFe Product Owner/Product Manager (SAFe POPM), FinOps Certified Practitioner (FCP), Google Cloud Fundamentals certification, ITIL 4 Foundation, and Agile certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Google Cloud training (cloud.google.com/learn), FinOps Foundation (finops.org), Coursera Google Cloud management tracks, Scrum.org community, and Google Cloud case studies and customer success content

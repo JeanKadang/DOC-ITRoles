@@ -172,6 +172,8 @@ The Network Automation Engineer specializes in developing and implementing autom
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Cisco Certified DevNet Professional
 - Cisco Certified DevNet Associate
 - Red Hat Certified Specialist in Ansible Automation
@@ -185,6 +187,6 @@ The Network Automation Engineer specializes in developing and implementing autom
 
 - [Certifications that complement and broaden the core skill set]
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - [Relevant training platforms, vendor learning paths, or professional communities]

@@ -159,6 +159,8 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Solutions Architect Expert (AZ-305)
 - AWS Certified Solutions Architect – Professional
 - Google Professional Cloud Architect
@@ -171,6 +173,6 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 
 - Cloud security certifications across all three major providers, CISSP, and leadership/management training (e.g., ITIL 4 Strategist, Agile leadership)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AWS Architecture Blog, Azure Architecture Center, Google Cloud Architecture Framework, CNCF, FinOps Foundation, and multi-cloud architecture community forums

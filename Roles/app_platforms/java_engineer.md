@@ -172,6 +172,8 @@ The Java Engineer implements and maintains Java-based applications and platform 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Oracle Certified Associate Java Programmer
 - Oracle Certified Professional Java Developer
 - Spring Professional certification
@@ -180,17 +182,16 @@ The Java Engineer implements and maintains Java-based applications and platform 
 - Web development certifications
 - Entry-level security certifications
 - Agile development certifications
-- Complementary certifications:
-  - Git and GitHub certifications
-  - Jenkins Essentials
-  - JUnit and Test-Driven Development
-  - REST API development
-  - SQL and database fundamentals
 
 **Complementary Certifications:**
 
+- Git and GitHub certifications
+- Jenkins Essentials
+- JUnit and Test-Driven Development
+- REST API development
+- SQL and database fundamentals
 - Git and GitHub fundamentals, Docker container basics, SQL and database fundamentals, ITIL Foundation, and REST API design principles
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Baeldung.com, Spring.io getting started guides, dev.java, Oracle Java tutorials, Pluralsight Java fundamentals, and the r/java and JVMLS community

@@ -164,6 +164,8 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - Microsoft Certified: Azure Fundamentals
 - Microsoft Certified: Azure Solutions Architect
@@ -177,6 +179,6 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 - SAFe Product Owner/Product Manager (SAFe POPM), FinOps Certified Practitioner (FCP), ITIL 4 Foundation, and Agile certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), Azure Architecture Center, FinOps Foundation (finops.org), Microsoft Tech Community, and Azure customer success stories and case studies

@@ -170,6 +170,8 @@ The Service Management Product Owner manages the development and lifecycle of th
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - ITIL 4 Strategic Leader
 - ITIL 4 Managing Professional
@@ -183,6 +185,6 @@ The Service Management Product Owner manages the development and lifecycle of th
 
 - SAFe Product Owner/Product Manager (SAFe POPM), ITIL 4 Managing Professional, and VeriSM Professional
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AXELOS ITIL resources (axelos.com), Scrum.org resources, ServiceNow community (community.servicenow.com), VeriSM learning materials, and HDI community resources (thinkhdi.com)

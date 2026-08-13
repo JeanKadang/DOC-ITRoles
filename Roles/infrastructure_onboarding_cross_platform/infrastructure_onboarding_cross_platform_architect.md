@@ -170,6 +170,8 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - TOGAF or other enterprise architecture certification
 - IT4IT certification
 - ITIL Expert or Master
@@ -183,6 +185,6 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 
 - TOGAF, HashiCorp Terraform Associate or Professional, and ITIL 4 Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HashiCorp Learn (developer.hashicorp.com), ITIL Foundation documentation, The Open Group (opengroup.org), DevOps Enterprise Forum resources, and Thoughtworks Technology Radar

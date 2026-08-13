@@ -169,6 +169,8 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - AWS Certified Solutions Architect - Associate
 - AWS Certified Developer - Associate
 - AWS Certified SysOps Administrator - Associate
@@ -182,6 +184,6 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 - Linux certifications (LPIC-1, LFCS), Kubernetes fundamentals (CKAD), Docker Certified Associate, ITIL Foundation, and Python or Bash scripting proficiency
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AWS Skill Builder (skillbuilder.aws), A Cloud Guru, Pluralsight AWS tracks, Linux Foundation training, and AWS User Group community events

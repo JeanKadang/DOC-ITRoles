@@ -171,6 +171,8 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Google Apigee Certified API Engineer
 - MuleSoft Certified Platform Architect
 - AWS API Gateway certifications
@@ -180,17 +182,16 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 - TOGAF certification with API focus
 - Cloud security certifications
 - API security certifications
-- Complementary certifications:
-  - OAuth 2.0 and OpenID Connect certifications
-  - Event-Driven Architecture certifications
-  - Service Mesh certifications
-  - Kafka certifications
-  - Istio Service Mesh certifications
 
 **Complementary Certifications:**
 
+- OAuth 2.0 and OpenID Connect certifications
+- Event-Driven Architecture certifications
+- Service Mesh certifications
+- Kafka certifications
+- Istio Service Mesh certifications
 - OAuth 2.0/OIDC specialist knowledge, Kafka certifications for event-driven APIs, Kubernetes (CKA/CKAD), cloud platform developer certifications (AWS/Azure/GCP)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Nordic APIs blog, Kong Academy, Google Apigee training, Azure API Management documentation, Postman Learning Center, AsyncAPI community, and API security resources from OWASP

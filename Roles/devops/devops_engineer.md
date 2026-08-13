@@ -176,6 +176,8 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - GitHub Actions / GitHub Advanced Security certifications
 - Microsoft Certified: Azure DevOps Engineer Expert (AZ-400)
 - Docker Certified Associate
@@ -189,6 +191,6 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 
 - CompTIA Linux+, Python Institute PCEP (automation scripting), and cloud-specific developer associate certifications (AWS, Azure, GCP).
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - GitHub Learning Lab, Microsoft Learn (AZ-400 DevOps path), KodeKloud (hands-on labs for Kubernetes, Terraform, Ansible), TechWorld with Nana (YouTube), Pluralsight DevOps fundamentals tracks.

@@ -171,6 +171,8 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL Service Management certifications
 - Multi-platform cloud certifications
 - HashiCorp Terraform certifications
@@ -184,6 +186,6 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 
 - HashiCorp Terraform Professional, ITIL 4 Foundation or Specialist, and GitHub Actions or Azure DevOps certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HashiCorp Learn (developer.hashicorp.com), Ansible documentation (docs.ansible.com), ServiceNow developer resources, ITIL community resources, and DevOps Enterprise Summit recordings

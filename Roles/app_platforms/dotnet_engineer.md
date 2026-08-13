@@ -172,6 +172,8 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Azure Developer Associate
 - Microsoft Certified: .NET Associate
 - Microsoft 365 Certified Developer Associate
@@ -181,17 +183,16 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 - Cloud platform associate certifications
 - Web development certifications
 - Entry-level security certifications
-- Complementary certifications:
-  - SQL Server certifications
-  - Git fundamentals
-  - Azure DevOps fundamentals
-  - Agile development methodologies
-  - Web accessibility certifications
 
 **Complementary Certifications:**
 
+- SQL Server certifications
+- Git fundamentals
+- Azure DevOps fundamentals
+- Agile development methodologies
+- Web accessibility certifications
 - SQL Server and database certifications, Git/GitHub fundamentals, ITIL Foundation for service management context, and Agile/Scrum developer certifications
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn (learn.microsoft.com), dotnet.microsoft.com, ASP.NET documentation, C# Corner community, Pluralsight .NET fundamentals, and the .NET community Discord

@@ -170,6 +170,8 @@ The Server Hardware Architect designs comprehensive server infrastructure strate
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Dell EMC Certified Master Enterprise Architect
 - HPE ASE - Data Center and Cloud Architect
 - Cisco CCDE (Certified Design Expert)
@@ -185,6 +187,6 @@ The Server Hardware Architect designs comprehensive server infrastructure strate
 
 - BICSI Certified Data Centre Design Professional (CDCDP), TOGAF, HPE ASE - Data Centre and Cloud Architect, and Uptime Institute Accredited Tier Designer
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Uptime Institute resources (uptimeinstitute.com), BICSI education content, Data Centre Knowledge blog (datacenterfrontier.com), server vendor technical white papers (Dell, HPE, Lenovo), and ASHRAE TC 9.9 thermal management guides

@@ -163,6 +163,8 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - HPE Master ASE - Storage Solutions
 - HPE ASE - SimpliVity Solutions
 - Veeam Certified Engineer (VMCE)
@@ -176,6 +178,6 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 
 - HPE Master ASE - SimpliVity Solutions, VMware Certified Professional - Data Center Virtualisation (VCP-DCV), Certified Business Continuity Professional (CBCP), ITIL 4 Foundation, and scripting certifications (Python/PowerShell)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - HPE SimpliVity documentation and support portal, HPE education portal (education.hpe.com), VMware documentation, BCI.org business continuity resources, and Veeam technical blog for cross-platform backup engineering references

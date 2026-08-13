@@ -175,6 +175,8 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Red Hat Certified Engineer (RHCE)
 - Linux Foundation Certified Engineer (LFCE)
 - Linux Professional Institute LPIC-2 or LPIC-3
@@ -188,6 +190,6 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 - Red Hat Certified Engineer (RHCE), Linux Foundation Certified Engineer (LFCE), Certified Kubernetes Administrator (CKA) for container host expertise, and CISSP or CompTIA Security+ for security depth
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Red Hat blog and developer documentation, Linux Foundation training (training.linuxfoundation.org), Ansible documentation, Julia Evans Linux blog (jvns.ca), and kernel.org for deep technical content

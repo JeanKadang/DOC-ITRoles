@@ -175,6 +175,8 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft 365 Certified: Modern Desktop Administrator Associate
 - Microsoft Certified: Windows Server
 - Microsoft Certified: Azure Administrator Associate
@@ -188,6 +190,6 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 
 - Microsoft 365 Certified: Modern Desktop Administrator Associate, CompTIA A+, and ITIL 4 Foundation
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Microsoft Learn ConfigMgr documentation (learn.microsoft.com/mem/configmgr), Microsoft Tech Community SCCM/ConfigMgr forums, Patch My PC blog, Deployment Research blog (deploymentresearch.com), and PowerShell Gallery for ConfigMgr automation modules

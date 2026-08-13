@@ -170,6 +170,8 @@ The Service Management Senior Engineer leads the implementation and optimization
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL 4 Managing Professional
 - ServiceNow Certified Implementation Specialist
 - ServiceNow Certified Application Developer
@@ -183,6 +185,6 @@ The Service Management Senior Engineer leads the implementation and optimization
 
 - ServiceNow Certified Application Developer, ITIL 4 Managing Professional, and Microsoft Power Platform Developer Associate
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - ServiceNow developer portal (developer.servicenow.com), AXELOS ITIL resources (axelos.com), ServiceNow community (community.servicenow.com), HDI certifications and community (thinkhdi.com), and Microsoft Power Platform documentation

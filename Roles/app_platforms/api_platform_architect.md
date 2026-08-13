@@ -173,6 +173,8 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Google Apigee Certified API Architect
 - MuleSoft Certified Platform Architect
 - AWS Advanced Networking Specialty
@@ -181,17 +183,16 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 - API Security certifications
 - Cloud Architecture certifications with API focus
 - GraphQL Advanced certifications
-- Complementary certifications:
-  - Kubernetes certifications (CKA, CKAD)
-  - Event-Driven Architecture certifications
-  - System Design Expert
-  - Security architecture certifications
-  - Enterprise Integration Patterns
 
 **Complementary Certifications:**
 
+- Kubernetes certifications (CKA, CKAD)
+- Event-Driven Architecture certifications
+- System Design Expert
+- Security architecture certifications
+- Enterprise Integration Patterns
 - Cloud platform architect certifications (AWS/Azure/GCP), Certified Kubernetes Administrator (CKA), event-driven/Kafka certifications, and TOGAF for enterprise architecture alignment
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - API Academy (apiacademy.co), Nordic APIs blog (nordicapis.com), AsyncAPI community, Postman Learning Center, Google Apigee documentation, Kong Academy, and API The Docs conference content

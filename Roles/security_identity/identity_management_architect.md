@@ -171,6 +171,8 @@ The Identity Management Architect designs and oversees the organization's identi
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Microsoft Certified: Identity and Access Administrator
 - Certified Identity Management Professional (CIMP)
 - IDPro CIDPRO certification
@@ -186,6 +188,6 @@ The Identity Management Architect designs and oversees the organization's identi
 
 - TOGAF (enterprise architecture framework), SABSA (security architecture methodology), CCSP (cloud security), CISM, and advanced vendor certifications (Microsoft Entra ID, Okta Consultant)
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - IDPro Body of Knowledge (idpro.org), Gartner IAM Summit, KuppingerCole IAM research, Microsoft Learn (Entra ID), SailPoint University, and SANS Institute identity management courses

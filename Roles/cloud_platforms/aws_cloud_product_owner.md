@@ -164,6 +164,8 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Professional Scrum Product Owner (PSPO)
 - AWS Certified Cloud Practitioner
 - AWS Certified Solutions Architect - Associate
@@ -177,6 +179,6 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 - SAFe Product Owner/Product Manager (SAFe POPM), FinOps Certified Practitioner (FCP), Agile certifications, and CISM or equivalent for cloud security awareness
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AWS Well-Architected Framework, FinOps Foundation (finops.org), AWS Skill Builder business tracks, AWS Partner Network content, and cloud economics resources from AWS

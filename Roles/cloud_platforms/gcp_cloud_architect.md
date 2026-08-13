@@ -174,6 +174,8 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - Google Cloud Certified Professional Cloud Architect
 - Google Cloud Certified Professional Security Engineer
 - Google Cloud Certified Professional Network Engineer
@@ -190,6 +192,6 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 
 - AWS or Azure architect certifications for multi-cloud context, Kubernetes (CKA/CKS), TOGAF for enterprise architecture, CCSP for cloud security, and FinOps Certified Practitioner
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - Google Cloud training (cloud.google.com/learn), Coursera Google Cloud specializations, A Cloud Guru GCP paths, Google Cloud Architecture Center, and Google Cloud Community events

@@ -170,6 +170,8 @@ The Service Management Architect designs comprehensive strategies and architectu
 
 ## Recommended Certifications & Learning Paths
 
+**Core Certifications:**
+
 - ITIL 4 Master
 - TOGAF Certified with ITSM focus
 - ServiceNow Certified Technical Architect
@@ -184,6 +186,6 @@ The Service Management Architect designs comprehensive strategies and architectu
 
 - TOGAF, IT4IT certification (The Open Group), and ServiceNow Certified Technical Architect
 
-**Learning Resources and Communities:**
+**Learning Resources & Communities:**
 
 - AXELOS ITIL resources (axelos.com), ServiceNow community and developer portal (community.servicenow.com), The Open Group IT4IT resources, and HDI (Help Desk Institute) professional community
