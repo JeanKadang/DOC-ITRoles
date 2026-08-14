@@ -145,10 +145,47 @@ test('a comment closed with --!> is stripped as well', () => {
     assert.deepEqual(entries.map(e => e.name), ['CompTIA Security+']);
 });
 
-test('aliasKey groups the spellings of one credential', () => {
-    const key = aliasKey('Microsoft Certified: Identity and Access Administrator Associate (SC-300)');
-    assert.equal(aliasKey('Microsoft Certified: Identity and Access Administrator'), key);
-    assert.equal(aliasKey('Microsoft Certified: Identity and Access Administrator Associate'), key);
+// Grouping deliberately prefers over-splitting to over-merging (#252). For a
+// certification scheme the level *is* the credential — Terraform Associate and
+// Terraform Expert are separate exams — and no string rule can tell that from a
+// level word that is merely part of one credential's official name.
+//
+// The failure modes are not symmetric. An over-split pair becomes two audit
+// candidates that the auditor merges on seeing the issuer page; an over-merged
+// pair silently hides a credential and nothing later reveals it.
+//
+// So this asserts less grouping than it used to: "... Administrator" and
+// "... Administrator Associate" are both SC-300, and the audit in #229 is what
+// resolves them onto one ID.
+test('aliasKey groups spellings that differ only by a parenthesised code', () => {
+    assert.equal(
+        aliasKey('Microsoft Certified: Identity and Access Administrator Associate (SC-300)'),
+        aliasKey('Microsoft Certified: Identity and Access Administrator Associate'),
+    );
+});
+
+test('aliasKey groups spellings that differ only by punctuation or issuer wording', () => {
+    assert.equal(
+        aliasKey('AWS Certified Solutions Architect – Professional'),
+        aliasKey('AWS Certified Solutions Architect - Professional'),
+    );
+    assert.equal(
+        aliasKey('HashiCorp Certified: Terraform Associate'),
+        aliasKey('HashiCorp Terraform Associate'),
+    );
+});
+
+test('aliasKey keeps certification levels apart', () => {
+    const distinct = [
+        ['AWS Certified Solutions Architect - Associate', 'AWS Certified Solutions Architect - Professional'],
+        ['HashiCorp Certified: Terraform Associate', 'HashiCorp Certified: Terraform Expert'],
+        ['ITIL Foundation', 'ITIL Expert'],
+        ['Certified Information Systems Security Professional (CISSP)', 'Certified Information Systems Security Professional (CISSP) Associate'],
+    ];
+
+    for (const [a, b] of distinct) {
+        assert.notEqual(aliasKey(a), aliasKey(b), `${a} must not group with ${b}`);
+    }
 });
 
 test('aliasKey keeps genuinely different credentials apart', () => {
