@@ -105,10 +105,20 @@ function splitJoined(value) {
 // Administrator", its "Associate" spelling, and its "(SC-300)" spelling group
 // together.
 function aliasKey(name) {
+    // Level words — associate, professional, expert, foundation — are kept.
+    // For a certification scheme the level *is* the credential: Terraform
+    // Associate and Terraform Expert are separate exams, and merging them would
+    // produce one registry record where two credentials exist, with whichever
+    // spelling came first supplying the official name and issuer URL (#252).
+    //
+    // The cost is over-splitting, since a level word is sometimes just part of
+    // one credential's official name. That is the safer error: an over-split
+    // pair becomes two audit candidates the auditor merges on seeing the issuer
+    // page, whereas an over-merged pair hides a credential for good.
     const normalized = String(name)
         .toLowerCase()
         .replace(/\([^)]*\)/g, ' ')
-        .replace(/\b(certification|certifications|certificate|certified|associate|professional|expert|fundamentals|foundation)\b/g, ' ')
+        .replace(/\b(certification|certifications|certificate|certified)\b/g, ' ')
         .replace(/[^a-z0-9]+/g, ' ')
         .trim();
 
