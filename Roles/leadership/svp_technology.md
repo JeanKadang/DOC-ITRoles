@@ -7,6 +7,8 @@
 | **Role Level** | SVP of Technology |
 | **Reports To** | CEO |
 | **Direct Reports** | Product Area Leads, Technical Area Lead (equivalent title to CTO/CIO — org uses one) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

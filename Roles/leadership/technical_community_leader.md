@@ -7,6 +7,8 @@
 | **Role Level** | Senior Engineer |
 | **Reports To** | Engineering Director or Technical Area Lead (PAL/TAL pair for the relevant product area or organisation-wide engineering function) |
 | **Direct Reports** | None (individual contributor — leads through influence, curation, and connection rather than line management) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

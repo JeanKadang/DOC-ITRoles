@@ -7,6 +7,8 @@
 | **Role Level** | Engineer |
 | **Reports To** | HPE Server Hardware Senior Engineer |
 | **Direct Reports** | None |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

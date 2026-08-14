@@ -7,6 +7,8 @@
 | **Role Level** | Senior Engineer |
 | **Reports To** | End User & Workplace Chapter Lead |
 | **Direct Reports** | Service Desk Senior Analysts, Service Desk Analysts (full line management, including hiring and career progression — a deliberate exception to the catalogue's usual model, see Role Scope & Boundaries) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-07 |
 
 ---

@@ -7,6 +7,8 @@
 | **Role Level** | CISO |
 | **Reports To** | SVP of Technology (or CTO/CIO equivalent); CEO or Board in independent governance models |
 | **Direct Reports** | None (strategic direction over the Security & Identity Chapter Lead and senior security architects — not formal line management; see the org chart / #71) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

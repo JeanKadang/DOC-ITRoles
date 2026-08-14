@@ -7,6 +7,8 @@
 | **Role Level** | Architect |
 | **Reports To** | Service & Governance Chapter Lead |
 | **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

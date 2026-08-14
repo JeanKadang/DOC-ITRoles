@@ -27,6 +27,11 @@ const STRICT     = process.argv.includes('--strict');
 // now also raises a canonical-heading warning (#121) so the drift is visible
 // and countable; #122 normalises the files, after which the alternates can be
 // dropped and CI can move to `--strict`.
+// Review provenance vocabulary (#179). "mechanical" is the honest default for
+// a role whose date came from a bulk edit rather than a review; "reviewed" is
+// claimed only when an owner has actually read the content.
+const REVIEW_STATUSES = new Set(['reviewed', 'mechanical', 'unreviewed']);
+
 const REQUIRED_SECTIONS = [
   { name: 'Role Overview',                          patterns: [/^##\s+Role Overview/im] },
   { name: 'Role Scope & Boundaries',                patterns: [/^##\s+Role Scope (&|and) Boundaries/im] },
@@ -150,6 +155,23 @@ function validateFile(filePath, rolesDir = ROLES_DIR, credentialContext = null) 
     errors.push('Missing **Last Reviewed** metadata field');
   } else if (!/^\d{4}-\d{2}$/.test(meta.lastReviewed)) {
     warnings.push(`Last Reviewed "${meta.lastReviewed}" is not in YYYY-MM format`);
+  }
+
+  // Review provenance (#179). A populated Last Reviewed date shows only that
+  // the file was touched -- 206 roles shared one month before this was added.
+  // Content Owner names who stands behind the content, as a durable role
+  // identifier rather than a person so the catalogue stays portable; Review
+  // Status says whether the date reflects subject-matter review or a bulk edit.
+  if (!meta.contentOwner) errors.push('Missing **Content Owner** metadata field');
+
+  if (!meta.reviewStatus) {
+    errors.push('Missing **Review Status** metadata field');
+  } else if (!REVIEW_STATUSES.has(meta.reviewStatus)) {
+    errors.push(`Review Status "${meta.reviewStatus}" is not one of: ${[...REVIEW_STATUSES].join(', ')}`);
+  } else if (meta.reviewStatus !== 'reviewed') {
+    // A warning, not an error: the gap stays countable without failing CI,
+    // the same way the KPI target gap does.
+    warnings.push(`Review Status is "${meta.reviewStatus}" — the content has not been reviewed by its owner, so Last Reviewed records only when the file was last touched`);
   }
 
   for (const section of REQUIRED_SECTIONS) {

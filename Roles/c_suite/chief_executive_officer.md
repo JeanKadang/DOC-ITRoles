@@ -7,6 +7,8 @@
 | **Role Level** | CEO |
 | **Reports To** | Board of Directors |
 | **Direct Reports** | CTO, CIO, or SVP of Technology (equivalent titles — org uses one); CFO; CISO (in direct-reporting governance models) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

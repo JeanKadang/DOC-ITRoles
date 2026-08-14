@@ -7,6 +7,8 @@
 | **Role Level** | Architect |
 | **Reports To** | DevOps & Delivery Chapter Lead |
 | **Direct Reports** | None (technical direction role, not a people manager) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-08 |
 
 ---

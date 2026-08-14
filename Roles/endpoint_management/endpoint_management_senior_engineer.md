@@ -7,6 +7,8 @@
 | **Role Level** | Senior Engineer |
 | **Reports To** | End User & Workplace Chapter Lead |
 | **Direct Reports** | Endpoint Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

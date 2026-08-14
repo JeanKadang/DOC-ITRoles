@@ -7,6 +7,8 @@
 | **Role Level** | Chapter Lead |
 | **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
 | **Direct Reports** | Domain Architects and Senior Engineers across all eleven infrastructure chapter domains (Cloud Platforms, Kubernetes, Modern Infrastructure, Virtualisation, Specialised Computing, Server Hardware ×2, Linux/Windows Server OS, Network, FinOps) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

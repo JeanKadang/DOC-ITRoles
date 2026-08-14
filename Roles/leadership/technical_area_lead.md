@@ -7,6 +7,8 @@
 | **Role Level** | Technical Area Lead |
 | **Reports To** | SVP of Technology (or CTO/CIO) |
 | **Direct Reports** | Chapter Leads (jointly with the Product Area Lead, as the PAL/TAL leadership pair); Engineering Practices Champion; Technical Community Leader |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

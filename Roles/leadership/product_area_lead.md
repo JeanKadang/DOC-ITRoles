@@ -7,6 +7,8 @@
 | **Role Level** | Product Area Lead |
 | **Reports To** | CTO/CIO (or SVP of Technology) |
 | **Direct Reports** | Chapter Leads (jointly with the Technical Area Lead, as the PAL/TAL leadership pair); Product Owners within the area |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

@@ -7,6 +7,8 @@
 | **Role Level** | Architect |
 | **Reports To** | Service & Governance Chapter Lead |
 | **Direct Reports** | Solution Architect; Enterprise Architecture Senior Engineer |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

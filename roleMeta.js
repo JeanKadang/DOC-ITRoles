@@ -104,6 +104,11 @@ function parseMeta(content) {
     reportsTo:      parseField(content, 'Reports To'),
     directReports:  parseField(content, 'Direct Reports'),
     lastReviewed:   parseField(content, 'Last Reviewed'),
+    // Review provenance (#179). Last Reviewed alone records only that the file
+    // was touched; these say who stands behind the content and whether the date
+    // reflects a subject-matter review or a bulk edit.
+    contentOwner:   parseField(content, 'Content Owner'),
+    reviewStatus:   parseField(content, 'Review Status'),
   };
 }
 

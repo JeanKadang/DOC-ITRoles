@@ -7,6 +7,8 @@
 | **Role Level** | Senior Engineer |
 | **Reports To** | Engineering Director or Technical Area Lead (PAL/TAL pair for the relevant product area or cross-cutting engineering enablement function) |
 | **Direct Reports** | None (individual contributor and internal consultant — no line management authority; drives change through coaching influence) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

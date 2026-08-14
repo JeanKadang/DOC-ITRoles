@@ -7,6 +7,8 @@
 | **Role Level** | Senior Engineer |
 | **Reports To** | Security Architect |
 | **Direct Reports** | None |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-07 |
 
 ---

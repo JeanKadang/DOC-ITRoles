@@ -7,6 +7,8 @@
 | **Role Level** | Architect |
 | **Reports To** | DevOps & Delivery Chapter Lead |
 | **Direct Reports** | None (sets API governance strategy; formal line management sits with the Chapter Lead) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

@@ -7,6 +7,8 @@
 | **Role Level** | Senior Engineer |
 | **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
 | **Direct Reports** | GCP Cloud Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---
