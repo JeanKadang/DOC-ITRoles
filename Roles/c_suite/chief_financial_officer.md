@@ -7,6 +7,8 @@
 | **Role Level** | CFO |
 | **Reports To** | CEO |
 | **Direct Reports** | None (no subordinate finance roles modelled in this catalog) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

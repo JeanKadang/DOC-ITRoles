@@ -7,6 +7,8 @@
 | **Role Level** | Chapter Lead |
 | **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
 | **Direct Reports** | Domain Architects and Senior Engineers across Client Platform, Endpoint Management, Modern Workplace, and Service Desk domains |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

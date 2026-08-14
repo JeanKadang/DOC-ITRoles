@@ -7,6 +7,8 @@
 | **Role Level** | Engineer |
 | **Reports To** | Privileged Access Management Architect |
 | **Direct Reports** | None |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

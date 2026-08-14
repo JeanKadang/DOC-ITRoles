@@ -7,6 +7,8 @@
 | **Role Level** | Principal Architect |
 | **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
 | **Direct Reports** | None (sets multi-cloud strategy; the Cloud Lead Architect and platform architects execute against it) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

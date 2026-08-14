@@ -7,6 +7,8 @@
 | **Role Level** | Product Owner |
 | **Reports To** | Service & Governance Chapter Lead |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-08 |
 
 ---

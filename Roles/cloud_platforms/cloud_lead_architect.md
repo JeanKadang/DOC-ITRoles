@@ -7,6 +7,8 @@
 | **Role Level** | Lead Architect |
 | **Reports To** | Cloud Principal Architect |
 | **Direct Reports** | None (provides technical oversight and mentorship to the AWS, Azure, and GCP Cloud Architects; formal line management sits with the Cloud, Platform & Infrastructure Chapter Lead) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

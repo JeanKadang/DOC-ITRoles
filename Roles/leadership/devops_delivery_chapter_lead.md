@@ -7,6 +7,8 @@
 | **Role Level** | Chapter Lead |
 | **Reports To** | Technical Area Lead (TAL) or Product Area Lead (PAL) |
 | **Direct Reports** | Domain Architects and Senior Engineers across DevOps, App Platforms, and Integration & Middleware domains |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

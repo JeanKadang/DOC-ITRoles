@@ -52,6 +52,8 @@ function completeRole({ except = null, transform = null } = {}) {
 | **Role Level** | Engineer |
 | **Reports To** | Test Chapter Lead |
 | **Direct Reports** | None |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | reviewed |
 | **Last Reviewed** | 2026-07 |
 
 ${sections}`;
@@ -155,6 +157,50 @@ test('missing Direct Reports metadata is an error', () => {
   const file = writeFixture('no-direct-reports.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Direct Reports\*\*.*\n/, '') }));
   const r = validateFile(file, tmpRoot);
   assert.deepEqual(r.errors, ['Missing **Direct Reports** metadata field']);
+});
+
+// ── review provenance (#179) ──
+//
+// A populated Last Reviewed date shows only that the file was touched. These
+// fields record who stands behind the content and whether the date reflects a
+// subject-matter review or a bulk edit — the distinction that matters while
+// #230 to #245 rewrite every role's certification section.
+
+test('missing Content Owner metadata is an error', () => {
+    const file = writeFixture('no-owner.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Content Owner\*\*.*\n/, '') }));
+    const r = validateFile(file, tmpRoot);
+    assert.deepEqual(r.errors, ['Missing **Content Owner** metadata field']);
+});
+
+test('missing Review Status metadata is an error', () => {
+    const file = writeFixture('no-review-status.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Review Status\*\*.*\n/, '') }));
+    const r = validateFile(file, tmpRoot);
+    assert.deepEqual(r.errors, ['Missing **Review Status** metadata field']);
+});
+
+test('Review Status outside the vocabulary is an error', () => {
+    const file = writeFixture('bad-review-status.md', completeRole({ transform: c => c.replace(/(\*\*Review Status\*\* \| )reviewed/, '$1current') }));
+    const r = validateFile(file, tmpRoot);
+    assert.equal(r.errors.length, 1);
+    assert.match(r.errors[0], /Review Status "current"/);
+});
+
+test('every value in the review status vocabulary is accepted', () => {
+    for (const status of ['reviewed', 'mechanical', 'unreviewed']) {
+        const file = writeFixture(`status-${status}.md`, completeRole({ transform: c => c.replace(/(\*\*Review Status\*\* \| )reviewed/, `$1${status}`) }));
+        const r = validateFile(file, tmpRoot);
+        assert.deepEqual(r.errors, [], `${status} should be accepted`);
+    }
+});
+
+// A role whose date is a bulk stamp must not read as reviewed content. The
+// warning keeps the gap countable without failing CI, the same way the KPI
+// and credential-staleness warnings do.
+test('a mechanical review status warns that provenance is unestablished', () => {
+    const file = writeFixture('mechanical.md', completeRole({ transform: c => c.replace(/(\*\*Review Status\*\* \| )reviewed/, '$1mechanical') }));
+    const r = validateFile(file, tmpRoot);
+    assert.equal(r.errors.length, 0);
+    assert.ok(r.warnings.some(w => /not been reviewed/i.test(w)), `expected a provenance warning, got ${JSON.stringify(r.warnings)}`);
 });
 
 test('"None" is a valid Direct Reports value for individual contributors', () => {

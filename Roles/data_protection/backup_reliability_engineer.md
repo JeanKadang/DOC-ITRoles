@@ -7,6 +7,8 @@
 | **Role Level** | Engineer |
 | **Reports To** | Commvault Senior Engineer or SimpliVity Backup Senior Engineer (depending on platform assignment) |
 | **Direct Reports** | None |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

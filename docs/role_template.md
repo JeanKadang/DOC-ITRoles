@@ -6,6 +6,8 @@
 | **Role Level** | [Engineer / Senior Engineer / Product Owner / Architect / Lead Architect / Principal Architect / Chapter Lead / Technical Area Lead / Product Area Lead / SVP / CISO / CFO / CIO / CTO / CEO] |
 | **Reports To** | [Role title this position reports to, e.g., Cloud Platform Architect] |
 | **Direct Reports** | [Role titles managed by this position, or "None" for individual-contributor roles] |
+| **Content Owner** | [Durable role identifier accountable for this content, e.g. `catalogue-maintainers` or the owning chapter. Not a person's name — see below.] |
+| **Review Status** | [reviewed / mechanical / unreviewed] |
 | **Last Reviewed** | [YYYY-MM] |
 
 ---
@@ -189,5 +191,17 @@
 - [Training platform, community, or learning path, e.g., A Cloud Guru, CNCF community, vendor learning paths]
 
 ---
+
+> **Review provenance note:** `Content Owner` holds a **durable role identifier**, never a person's name — `catalogue-maintainers` in this repository, and the owning chapter lead in an organisation that adopts the catalogue. Identifiers survive people changing jobs, and keep personal data out of a document intended to be shared.
+>
+> `Review Status` says what the `Last Reviewed` date actually means:
+>
+> | Status | Meaning |
+> |---|---|
+> | `reviewed` | An owner read the content and stands behind it as of that date. |
+> | `mechanical` | The file was edited — a bulk rewrite, a formatting pass — but nobody reviewed the content. |
+> | `unreviewed` | New or migrated content with no review yet. |
+>
+> A bulk pass across many roles must leave `Last Reviewed` alone and set `Review Status` to `mechanical`. Only a human reading the content may set `reviewed`. See [ADR-0004](adr/0004-record-review-provenance-with-durable-owner-identifiers.md).
 
 > **Compliance frameworks note:** For roles with regulatory or security scope, reference applicable frameworks inline within Key Responsibilities or Required Skills — do not create a separate section. Standard set: `ISO/IEC 27001, NIST CSF, GDPR, NIS2, SOC 2, DORA`. Add `IEC 62443` for OT/ICS-relevant roles. Add `NIST SP 800-53` or `NIST SP 800-218` where more precise than CSF.

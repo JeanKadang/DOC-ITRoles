@@ -7,6 +7,8 @@
 | **Role Level** | Senior Engineer |
 | **Reports To** | Data & AI Chapter Lead |
 | **Direct Reports** | None (formal line management sits with the Chapter Lead) |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---

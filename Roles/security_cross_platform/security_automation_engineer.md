@@ -7,6 +7,8 @@
 | **Role Level** | Engineer |
 | **Reports To** | Security Cross-Platform Senior Engineer |
 | **Direct Reports** | None |
+| **Content Owner** | catalogue-maintainers |
+| **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
 
 ---
