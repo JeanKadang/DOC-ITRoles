@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `modern-workplace-product-owner-microsoft-365` |
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |

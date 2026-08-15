@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `database-architect` |
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |

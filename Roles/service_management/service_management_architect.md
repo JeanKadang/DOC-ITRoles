@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `service-management-architect` |
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |

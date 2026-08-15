@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `database-product-owner` |
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |

@@ -32,6 +32,10 @@ const STRICT     = process.argv.includes('--strict');
 // claimed only when an owner has actually read the content.
 const REVIEW_STATUSES = new Set(['reviewed', 'mechanical', 'unreviewed']);
 
+// Stable role identifier (#180): lowercase kebab-case, matching the shape the
+// credential registry already uses for its ids.
+const ROLE_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
 const REQUIRED_SECTIONS = [
   { name: 'Role Overview',                          patterns: [/^##\s+Role Overview/im] },
   { name: 'Role Scope & Boundaries',                patterns: [/^##\s+Role Scope (&|and) Boundaries/im] },
@@ -139,6 +143,16 @@ function validateFile(filePath, rolesDir = ROLES_DIR, credentialContext = null) 
     }
   }
 
+  // Stable identifier (#180). Relationships will resolve against this rather
+  // than against a title, so it has to exist and be well-formed before it can
+  // be trusted as an anchor. Uniqueness is checked catalogue-wide, in
+  // findDuplicateRoleIds.
+  if (!meta.roleId) {
+    errors.push('Missing **Role ID** metadata field');
+  } else if (!ROLE_ID_PATTERN.test(meta.roleId)) {
+    errors.push(`Role ID "${meta.roleId}" is not lowercase kebab-case (a-z, 0-9 and single hyphens)`);
+  }
+
   if (!meta.levelRaw) {
     errors.push('Missing **Role Level** metadata field');
   } else if (!KNOWN_LEVELS.has(normalizeLevel(meta.levelRaw))) {
@@ -239,6 +253,23 @@ function validateFile(filePath, rolesDir = ROLES_DIR, credentialContext = null) 
 // Duplicate titles shipped in both v1.2.0 (3 cross-domain pairs) and
 // v1.3.0 (a pair the filename scan missed because the files differed);
 // this makes the recurrence a blocking validation error.
+// An id shared by two roles is not an identifier. Checked across the catalogue
+// rather than per file, the same way duplicate titles are (#180).
+function findDuplicateRoleIds(rolesDir = ROLES_DIR) {
+  const byId = new Map();
+  for (const filePath of listRoleFiles(rolesDir)) {
+    if (REFERENCE_DOC_PATTERN.test(path.basename(filePath))) continue;
+    const { roleId } = parseMeta(fs.readFileSync(filePath, 'utf8'));
+    if (!roleId) continue; // a missing id is already a per-file error
+    const rel = path.relative(path.dirname(rolesDir), filePath).replace(/\\/g, '/');
+    if (!byId.has(roleId)) byId.set(roleId, []);
+    byId.get(roleId).push(rel);
+  }
+  return [...byId.entries()]
+    .filter(([, files]) => files.length > 1)
+    .map(([id, files]) => ({ id, files: files.sort() }));
+}
+
 function findDuplicateTitles(rolesDir = ROLES_DIR) {
   const byTitle = new Map();
   for (const filePath of listRoleFiles(rolesDir)) {
@@ -263,6 +294,7 @@ function main() {
   const withWarnings = results.filter(r => r.warnings.length > 0);
   const skipped      = results.filter(r => r.skipped);
   const duplicates   = findDuplicateTitles();
+  const duplicateIds = findDuplicateRoleIds();
 
   if (credentialContext.errors.length > 0 || credentialContext.warnings.length > 0) {
     console.log(`\n${CREDENTIALS_FILE}`);
@@ -285,14 +317,20 @@ function main() {
     for (const f of d.files) console.log(`  ${f}`);
   }
 
+  for (const d of duplicateIds) {
+    console.log(`\n✖ Duplicate Role ID: "${d.id}"`);
+    for (const f of d.files) console.log(`  ${f}`);
+  }
+
   console.log(`\n${'─'.repeat(60)}`);
   console.log(`Checked ${files.length} role files (${skipped.length} reference docs skipped)`);
   console.log(`  ${withErrors.length} file(s) with errors`);
   console.log(`  ${withWarnings.length} file(s) with warnings`);
   console.log(`  ${duplicates.length} duplicate title(s)`);
+  console.log(`  ${duplicateIds.length} duplicate role ID(s)`);
   console.log('─'.repeat(60));
 
-  if (withErrors.length > 0 || credentialContext.errors.length > 0 || duplicates.length > 0 ||
+  if (withErrors.length > 0 || credentialContext.errors.length > 0 || duplicates.length > 0 || duplicateIds.length > 0 ||
       (STRICT && (withWarnings.length > 0 || credentialContext.warnings.length > 0))) {
     process.exitCode = 1;
   }
@@ -304,4 +342,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { listRoleFiles, validateFile, findDuplicateTitles, REQUIRED_SECTIONS };
+module.exports = { listRoleFiles, validateFile, findDuplicateTitles, findDuplicateRoleIds, REQUIRED_SECTIONS };

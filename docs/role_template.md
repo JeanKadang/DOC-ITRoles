@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | [Stable lowercase kebab-case identifier, unique across the catalogue, e.g. `kubernetes-engineer`. Assigned once and never changed — see below.] |
 | **Domain** | [e.g., Cloud Platforms / Security / DevOps / Modern Infrastructure] |
 | **Role Level** | [Engineer / Senior Engineer / Product Owner / Architect / Lead Architect / Principal Architect / Chapter Lead / Technical Area Lead / Product Area Lead / SVP / CISO / CFO / CIO / CTO / CEO] |
 | **Reports To** | [Role title this position reports to, e.g., Cloud Platform Architect] |
@@ -191,6 +192,8 @@
 - [Training platform, community, or learning path, e.g., A Cloud Guru, CNCF community, vendor learning paths]
 
 ---
+
+> **Role ID note:** The id is seeded from the role title when the role is created and then **frozen**. Renaming a role changes its title and leaves its id alone — that is the whole point, since reporting lines and career paths resolve against the id. An id that looks stale after a rename is correct, not a defect to tidy up. Ids are never reused for a different role. See [ADR-0005](adr/0005-identify-roles-by-a-stable-id-rather-than-by-title.md).
 
 > **Review provenance note:** `Content Owner` holds a **durable role identifier**, never a person's name — `catalogue-maintainers` in this repository, and the owning chapter lead in an organisation that adopts the catalogue. Identifiers survive people changing jobs, and keep personal data out of a document intended to be shared.
 >

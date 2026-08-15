@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `storage-product-owner` |
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |

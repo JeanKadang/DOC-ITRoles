@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `database-reliability-engineer` |
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |

@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `quality-engineer` |
 | **Domain** | Quality Engineering |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |

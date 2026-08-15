@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `ai-governance-product-owner` |
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
