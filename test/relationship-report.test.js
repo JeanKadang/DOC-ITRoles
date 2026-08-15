@@ -45,6 +45,19 @@ test('no reporting line drifts', () => {
     );
 });
 
+// The first version of this report classified "CEO" as a destination above the
+// catalogue, because it looks like one. It is not: "Chief Executive Officer" is
+// a role in c_suite, and four reporting lines referenced it by initialism. Token
+// overlap cannot catch that — an abbreviation shares no words with the title it
+// stands for — so the report resolves initialisms explicitly.
+test('an initialism of an existing role is not mistaken for an external destination', () => {
+    const { external, drift, resolved } = buildGraph();
+    const all = [...external.map(e => e.target), ...drift.map(d => d.target)];
+    assert.ok(!all.includes('CEO'),
+        '"CEO" is an abbreviation of Chief Executive Officer, a catalogue role, and must resolve');
+    assert.ok(resolved.length > 0);
+});
+
 test('a destination above the catalogue is not counted as drift', () => {
     const { external, drift } = buildGraph();
     assert.ok(external.length > 0, 'expected some external destinations');
