@@ -6,7 +6,7 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
-| **Reports To** | Configuration Management Senior Engineer |
+| **Reports To** | Application Configuration Management Senior Engineer |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |

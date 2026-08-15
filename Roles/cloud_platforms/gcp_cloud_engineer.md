@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | GCP Cloud Senior Engineer |
+| **Reports To** | Google Cloud Senior Engineer |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |

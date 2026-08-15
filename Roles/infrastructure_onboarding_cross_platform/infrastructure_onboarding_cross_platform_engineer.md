@@ -6,7 +6,7 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
-| **Reports To** | Infrastructure Onboarding Senior Engineer |
+| **Reports To** | Enterprise Infrastructure Onboarding Senior Engineer |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
