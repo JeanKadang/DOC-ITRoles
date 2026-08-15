@@ -193,7 +193,6 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 - Cloud platform financial certifications (AWS, Azure, GCP)
 - IT Financial Management certifications
 - ITIL Financial Management for IT Services
-- Technology Business Management (TBM) certifications
 - Cloud platform architecture certifications
 - Certified Cost Professional (CCP)
 
@@ -203,4 +202,5 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 **Learning Resources and Communities:**
 
+- TBM Practitioner course and certification, TBM Council — course, not an individually-held certification
 - FinOps Foundation (finops.org), cloud provider cost management training (AWS, Azure, GCP), Apptio TBM University (tbmuniversity.org), and CloudHealth and Cloudability vendor community resources

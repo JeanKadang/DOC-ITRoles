@@ -185,7 +185,6 @@ The Linux Server Architect designs and defines the strategic direction for the o
 - TOGAF Certified Architect
 - CompTIA Linux+
 - Red Hat Certified Engineer (RHCE)
-- Docker Certified Associate
 
 ## Interactions with Other Roles
 
@@ -207,4 +206,5 @@ The Linux Server Architect designs and defines the strategic direction for the o
 
 **Learning Resources and Communities:**
 
+- Docker Foundations Professional Certificate (LinkedIn Learning) — course, not an individually-held certification
 - Red Hat blog (redhat.com/blog), Linux Foundation training (training.linuxfoundation.org), kernel.org documentation, Ansible documentation, and Linux architecture discussion on Hacker News and CNCF community resources

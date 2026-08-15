@@ -172,7 +172,6 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 - Microsoft 365 Certified: Identity and Access Administrator Associate
 - Microsoft Certified: Security, Compliance, and Identity Fundamentals
 - CompTIA Security+
-- MCSE: Core Infrastructure (legacy but valuable)
 - Certified Information Systems Security Professional (CISSP)
 - Microsoft 365 Certified: Enterprise Administrator Expert
 - Certified Directory Services Engineer

@@ -201,7 +201,6 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 - Microsoft Azure Fundamentals (AZ-900)
 - Project Management Professional (PMP)
 - Microsoft 365 Certified: Fundamentals
-- Certified Agile Service Manager
 
 **Complementary Certifications:**
 

@@ -201,7 +201,6 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 - Microsoft Certified: Azure Administrator Associate
 - Microsoft Certified: Azure Virtual Desktop Specialty
 - VMware Certified Professional (for hybrid environments)
-- MCSE: Core Infrastructure (legacy but valuable)
 - Advanced PowerShell certifications
 
 **Complementary Certifications:**

@@ -189,7 +189,6 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 - Microsoft Certified: DevOps Engineer Expert
 - Google Professional Cloud DevOps Engineer
 - Certified Kubernetes Administrator (CKA)
-- Docker Certified Associate
 - HashiCorp Certified: Terraform Expert
 - Red Hat Certified Specialist in Ansible Automation
 - GitLab Professional Services Engineer
@@ -200,4 +199,5 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 **Learning Resources & Communities:**
 
+- Docker Foundations Professional Certificate (LinkedIn Learning) — course, not an individually-held certification
 - Continuous Delivery Foundation resources (cd.foundation), CNCF KubeCon sessions, GitHub Universe talks, Thoughtworks Technology Radar, DevOps Toolkit YouTube channel (Viktor Farcic), Pluralsight DevOps learning paths.

@@ -205,7 +205,6 @@ The Qumulo Storage Product Owner manages the development and lifecycle of the or
 - Project Management Professional (PMP)
 - ITIL 4 Foundation
 - SAFe Product Owner/Product Manager
-- Certified Agile Service Manager
 - SAFe Product Owner/Product Manager (SAFe POPM), SNIA Certified Storage Professional (overview level), ITIL 4 Foundation, and cloud storage fundamentals
 
 **Learning Resources & Communities:**

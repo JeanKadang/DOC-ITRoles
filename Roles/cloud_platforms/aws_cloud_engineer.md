@@ -181,7 +181,6 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 - Certified Kubernetes Administrator (CKA)
 - Linux Professional Institute certification
 - AWS Certified Security - Specialty
-- Docker Certified Associate
 
 **Complementary Certifications:**
 
@@ -189,4 +188,5 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 **Learning Resources & Communities:**
 
+- Docker Foundations Professional Certificate (LinkedIn Learning) — course, not an individually-held certification
 - AWS Skill Builder (skillbuilder.aws), A Cloud Guru, Pluralsight AWS tracks, Linux Foundation training, and AWS User Group community events
