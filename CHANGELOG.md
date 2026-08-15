@@ -7,6 +7,56 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.18.0] - 2026-08-15
+
+The catalogue now separates durable identity from mutable role names and
+records whether content was substantively reviewed or only changed
+mechanically. Credential recommendations gain stronger evidence tooling and a
+smaller, honest maintenance policy: verified records remain authoritative,
+while legacy prose is explicitly unaudited and migrates only when a role is
+substantively reviewed.
+
+### Added
+
+- **Stable role IDs across all 226 roles (#180).** IDs are frozen independently
+  of display titles, validated for format and uniqueness, and protected by
+  migration and rename regression tests. A relationship report distinguishes
+  valid catalogue destinations, external roles, choices, and actual drift.
+- **Review provenance on every role (#179).** `Content Owner` and
+  `Review Status` distinguish substantive review from mechanical edits;
+  templates, parsing, validation, backfill tooling, and ADR-0004 enforce the
+  distinction without storing personal names.
+- **Credential inventory and evidence tooling (#210, #229).** A reproducible
+  inventory classifies and groups legacy recommendations, while the registry
+  now contains 53 issuer-verified records for reuse by audited roles.
+- **Durable catalogue decisions.** ADR-0003 defines what counts as an
+  individually held credential, ADR-0004 records review provenance, and
+  ADR-0005 defines stable role identity.
+
+### Changed
+
+- **Certification sections use one grouped structure (#227).** All role files
+  use consistent Core, Complementary, and Learning Resources groupings without
+  presenting courses or vague topics as verified credentials.
+- **Credential migration is opportunistic rather than exhaustive (#263).**
+  Legacy recommendations remain visibly unaudited until the affected role is
+  substantively reviewed; the retired catalogue-wide rollout is no longer
+  presented as active committed work.
+- **Repository policy reflects the public project (#263).** README visibility
+  and security-version support now follow current repository and release state.
+
+### Fixed
+
+- **Four drifted reporting lines now resolve to catalogue roles (#180).** The
+  relationship report shows zero unexplained reporting-line drift.
+- **Credential aliases no longer merge distinct levels or absorb real
+  certifications into generic families (#248, #252).** Regression tests prefer
+  safe over-splitting to silent false verification.
+- **Unsupported recommendations were retired or relocated (#229).** Nine dead
+  references were removed, six course-shaped successors moved to Learning
+  Resources, and the SABSA credential name was corrected against issuer
+  evidence.
+
 ## [1.17.1] - 2026-08-11
 
 A maintenance release. Both of the repository's open code-scanning alerts are
