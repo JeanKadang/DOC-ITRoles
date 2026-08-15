@@ -4,7 +4,10 @@
 
 [`data/credentials.json`](../data/credentials.json) is the authoritative, machine-readable catalogue of credential recommendations that have been audited against an issuer-controlled source. A role recommendation with a valid registry marker is registry-backed and verified as of its recorded `verified_on` date.
 
-Legacy credential text without a marker is not yet audited. It may remain visible while the catalogue is migrated, but it must not be represented as registry-backed or current verified evidence. The current Kubernetes pilot is the first audited domain; remaining domains are tracked in [issue #210](https://github.com/JeanKadang/DOC-ITRoles/issues/210).
+Legacy credential text without a marker is not audited. It may remain visible,
+but it must not be represented as registry-backed or current verified evidence.
+Migration happens opportunistically when a role is substantively reviewed or
+changed; no exhaustive catalogue-wide backfill is scheduled.
 
 ## Registry schema
 
@@ -78,7 +81,11 @@ Migrate the remaining catalogue in bounded domain or role-family batches:
 4. Move learning resources out of certification lists and remove or clarify organisation programmes, ambiguous claims, and unverifiable text.
 5. Add completed roles to `audited_roles` only when every certification bullet is deliberately covered, then run validation.
 
-Legacy prose stays unaudited until that work is complete. The durable tracker for unaudited domains and rollout batches is [issue #210](https://github.com/JeanKadang/DOC-ITRoles/issues/210); do not treat its open scope as verified merely because the text remains in a role file.
+Legacy prose stays unaudited until the affected role receives a substantive
+review. A mechanical edit does not trigger migration and does not establish
+credential evidence. The retired exhaustive rollout remains documented in
+[closed issue #210](https://github.com/JeanKadang/DOC-ITRoles/issues/210), but
+it is not active work and its unfinished scope must not be treated as verified.
 
 Run `node scripts/credential-inventory.js` before and after a batch. It reports the legacy entries that remain, grouped by domain and by alias, so rollout progress is measured rather than asserted. It reports only; it never edits a role file.
 

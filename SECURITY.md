@@ -3,11 +3,10 @@
 ## Supported Versions
 
 Security fixes are provided for the current released version of this repository.
-
-| Version | Supported |
-| ------- | --------- |
-| 1.6.x   | Yes       |
-| < 1.6   | No        |
+The supported version is therefore the version marked **Latest** on the
+[GitHub Releases page](https://github.com/JeanKadang/DOC-ITRoles/releases/latest);
+older releases are not maintained. This avoids a hard-coded version table
+becoming stale whenever a new release is published.
 
 ## Reporting a Vulnerability
 
