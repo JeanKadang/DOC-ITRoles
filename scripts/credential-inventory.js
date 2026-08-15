@@ -40,36 +40,29 @@ function normalize(text) {
 const COMMENT_OPEN = '<!--';
 const COMMENT_ENDS = ['-->', '--!>'];
 
-function firstEnd(value) {
-    let at = -1;
-    let length = 0;
-    for (const end of COMMENT_ENDS) {
-        const index = value.indexOf(end);
-        if (index !== -1 && (at === -1 || index < at)) { at = index; length = end.length; }
-    }
-    return { at, length };
-}
-
 function stripComments(value) {
-    let rest = String(value);
     let out = '';
+    const input = String(value);
+    let depth = 0;
 
-    for (;;) {
-        const open = rest.indexOf(COMMENT_OPEN);
-        if (open === -1) { out += rest; break; }
+    for (let i = 0; i < input.length;) {
+        if (input.startsWith(COMMENT_OPEN, i)) {
+            depth++;
+            i += COMMENT_OPEN.length;
+            continue;
+        }
 
-        out += rest.slice(0, open);
-        const after = rest.slice(open + COMMENT_OPEN.length);
-        const end = firstEnd(after);
-        // An unterminated comment swallows the remainder, as a parser would.
-        if (end.at === -1) break;
-        rest = after.slice(end.at + end.length);
+        const end = COMMENT_ENDS.find(token => input.startsWith(token, i));
+        if (end) {
+            if (depth > 0) depth--;
+            i += end.length;
+            continue;
+        }
+
+        if (depth === 0) out += input[i];
+        i++;
     }
-
-    // A nested comment leaves its outer terminator orphaned once the inner one
-    // has been consumed; drop any delimiter that outlived its comment.
-    for (const end of COMMENT_ENDS) out = out.split(end).join('');
-    return out.split(COMMENT_OPEN).join('');
+    return out;
 }
 
 // Returns the body of the certification section, or '' when a role has none.

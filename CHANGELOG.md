@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- **Security reporting now has a concrete private route (#267).** The security
+  policy links directly to GitHub private vulnerability reporting, while
+  repository settings enable private reports, secret scanning, push protection,
+  and enforced pull-request checks on `main`.
+
+### Fixed
+
+- **Nested credential comments no longer evade retirement classification
+  (#267).** Credential maintenance tools share the comment scanner, which now
+  removes a complete nested comment before deciding whether a bullet contains
+  several recommendations.
+
 ## [1.18.0] - 2026-08-15
 
 The catalogue now separates durable identity from mutable role names and

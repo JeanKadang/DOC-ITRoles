@@ -60,6 +60,13 @@ test('a bullet naming several credentials is left for a human', () => {
     assert.deepEqual(changes.map(c => c.action), ['manual']);
 });
 
+test('a comma inside a nested comment does not make one credential look packed', () => {
+    const line = '- MCSE: Core Infrastructure <!-- outer <!-- inner -->, trailing -->';
+    const { text, changes } = applyRules(doc('**Core Certifications:**', '', line));
+    assert.doesNotMatch(text, /MCSE/, 'comment metadata must not prevent the retirement rule');
+    assert.deepEqual(changes.map(c => c.action), ['drop']);
+});
+
 test('every removal is accounted for by a change entry', () => {
     const before = doc('**Core Certifications:**', '', '- MCSE: Core Infrastructure', '- Certified Agile Service Manager', '- CompTIA Server+');
     const { text, changes } = applyRules(before);

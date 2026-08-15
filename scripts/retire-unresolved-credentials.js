@@ -16,6 +16,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { stripComments } = require('./credential-inventory');
 
 const ROLES_DIR = path.resolve(__dirname, '..', 'Roles');
 // The catalogue spells this subhead two ways -- 124 roles use "&" and 101 use
@@ -100,7 +101,7 @@ function applyRules(text) {
         // dropping "Azure Stack HCI Operator Associate, MCSE: Core
         // Infrastructure, ..." deletes two live Microsoft certifications to
         // remove one dead one. Those bullets are reported for a human instead.
-        const body = line.replace(/^\s*[-*]\s+/, '').replace(/<!--[\s\S]*?-->/g, '').trim();
+        const body = stripComments(line.replace(/^\s*[-*]\s+/, '')).trim();
         const packed = body.split(/,\s*(?:and\s+)?|\s+and\s+/).map(s => s.trim()).filter(Boolean);
         if (packed.length > 1) {
             changes.push({ action: 'manual', line: line.trim(), why: 'bullet names several credentials; splitting it is a content judgement' });
