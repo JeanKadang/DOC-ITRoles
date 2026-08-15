@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `api-platform-architect` |
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |

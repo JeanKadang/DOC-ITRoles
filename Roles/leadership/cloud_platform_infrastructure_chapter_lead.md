@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `cloud-platform-and-infrastructure-chapter-lead` |
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Chapter Lead |

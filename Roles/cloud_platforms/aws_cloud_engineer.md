@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `aws-cloud-engineer` |
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |

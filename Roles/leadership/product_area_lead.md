@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `product-area-lead` |
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Product Area Lead |

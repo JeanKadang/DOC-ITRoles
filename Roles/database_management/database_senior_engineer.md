@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `database-senior-engineer` |
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |

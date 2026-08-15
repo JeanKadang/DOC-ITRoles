@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `network-product-owner` |
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |

@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `data-mesh-architect` |
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |

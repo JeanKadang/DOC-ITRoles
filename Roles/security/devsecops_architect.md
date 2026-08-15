@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `devsecops-architect` |
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |

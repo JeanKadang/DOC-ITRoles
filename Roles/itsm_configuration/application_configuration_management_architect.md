@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `application-configuration-management-architect` |
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |

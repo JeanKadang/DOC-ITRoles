@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `cloud-economics-analyst` |
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |

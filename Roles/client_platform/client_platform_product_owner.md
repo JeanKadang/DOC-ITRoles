@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `client-platform-product-owner` |
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |

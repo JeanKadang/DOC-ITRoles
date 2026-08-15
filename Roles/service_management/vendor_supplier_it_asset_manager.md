@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `vendor-supplier-it-asset-manager` |
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |

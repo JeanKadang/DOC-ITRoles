@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `hpe-server-hardware-architect` |
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |

@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `database-engineer` |
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |

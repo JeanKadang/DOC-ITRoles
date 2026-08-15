@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `enterprise-infrastructure-onboarding-architect` |
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |

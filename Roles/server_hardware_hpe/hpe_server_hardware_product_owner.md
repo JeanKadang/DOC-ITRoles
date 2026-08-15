@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `hpe-server-hardware-product-owner` |
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |

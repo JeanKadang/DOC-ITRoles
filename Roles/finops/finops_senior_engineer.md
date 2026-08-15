@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `finops-senior-engineer` |
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |

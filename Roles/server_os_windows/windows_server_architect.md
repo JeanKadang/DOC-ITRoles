@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `windows-server-architect` |
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |

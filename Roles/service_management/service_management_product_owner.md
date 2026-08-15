@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `service-management-product-owner` |
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |

@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `enterprise-architecture-engineer` |
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |

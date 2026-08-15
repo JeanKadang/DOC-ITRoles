@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `qumulo-storage-architect` |
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |

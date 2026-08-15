@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `hpc-architect` |
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |

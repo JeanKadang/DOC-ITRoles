@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `cloud-principal-architect` |
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Principal Architect |

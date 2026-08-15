@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `server-hardware-product-owner` |
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |

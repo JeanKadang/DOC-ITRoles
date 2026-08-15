@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `client-platform-engineer` |
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |

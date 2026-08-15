@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `storage-architect` |
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |

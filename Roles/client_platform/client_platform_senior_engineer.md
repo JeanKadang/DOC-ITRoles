@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `client-platform-senior-engineer` |
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |

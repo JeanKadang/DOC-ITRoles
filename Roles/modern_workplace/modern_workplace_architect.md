@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `modern-workplace-architect-microsoft-365` |
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |

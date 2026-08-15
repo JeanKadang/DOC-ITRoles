@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `devops-engineer` |
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |

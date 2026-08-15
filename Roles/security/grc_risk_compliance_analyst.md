@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `grc-risk-and-compliance-analyst` |
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |

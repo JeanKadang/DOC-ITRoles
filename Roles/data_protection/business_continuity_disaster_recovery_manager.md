@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `business-continuity-disaster-recovery-manager` |
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |

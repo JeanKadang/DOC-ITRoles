@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `enterprise-architecture-product-owner` |
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |

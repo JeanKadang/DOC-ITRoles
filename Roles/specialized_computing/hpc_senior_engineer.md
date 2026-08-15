@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `hpc-senior-engineer` |
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |

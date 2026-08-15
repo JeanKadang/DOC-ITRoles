@@ -7,7 +7,7 @@ const os = require('node:os');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
-const { listRoleFiles, validateFile, findDuplicateTitles, REQUIRED_SECTIONS } = require('../validate-roles');
+const { listRoleFiles, validateFile, findDuplicateTitles, findDuplicateRoleIds, REQUIRED_SECTIONS } = require('../validate-roles');
 
 // All fixtures are generated into a temp tree at runtime — nothing under
 // Roles/ or test/ is touched, so `npm run validate` and markdownlint on the
@@ -48,6 +48,7 @@ function completeRole({ except = null, transform = null } = {}) {
 
 | Field | Value |
 |---|---|
+| **Role ID** | \`test-role\` |
 | **Domain** | testdomain |
 | **Role Level** | Engineer |
 | **Reports To** | Test Chapter Lead |
@@ -157,6 +158,32 @@ test('missing Direct Reports metadata is an error', () => {
   const file = writeFixture('no-direct-reports.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Direct Reports\*\*.*\n/, '') }));
   const r = validateFile(file, tmpRoot);
   assert.deepEqual(r.errors, ['Missing **Direct Reports** metadata field']);
+});
+
+// ── stable role identifiers (#180) ──
+//
+// Relationships reference roles by title today, so a rename breaks them
+// silently — on main, four reporting lines name a role that no longer exists
+// under that name and nothing reports it. The id is the anchor that survives
+// the rename, which only works if it is present, well-formed, and unique.
+
+test('missing Role ID metadata is an error', () => {
+    const file = writeFixture('no-role-id.md', completeRole({ transform: c => c.replace(/\|\s*\*\*Role ID\*\*.*\n/, '') }));
+    const r = validateFile(file, tmpRoot);
+    assert.deepEqual(r.errors, ['Missing **Role ID** metadata field']);
+});
+
+test('a Role ID outside lowercase kebab-case is an error', () => {
+    const file = writeFixture('bad-role-id.md', completeRole({ transform: c => c.replace('`test-role`', '`Test Role`') }));
+    const r = validateFile(file, tmpRoot);
+    assert.equal(r.errors.length, 1);
+    assert.match(r.errors[0], /Role ID "Test Role"/);
+});
+
+test('a Role ID reads the same with or without backticks', () => {
+    const file = writeFixture('plain-role-id.md', completeRole({ transform: c => c.replace('`test-role`', 'test-role') }));
+    const r = validateFile(file, tmpRoot);
+    assert.deepEqual(r.errors, []);
 });
 
 // ── review provenance (#179) ──
@@ -320,10 +347,13 @@ function runCli(rolesDir, args = [], env = {}) {
 test('CLI exits 0 on a clean tree, and warnings do not fail a normal run', () => {
   const cliRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-cli-'));
   fs.mkdirSync(path.join(cliRoot, 'testdomain'));
+  // Distinct Role IDs as well as distinct titles: two roles sharing an id is
+  // itself an error now (#180), which would mask what this test is checking.
   fs.writeFileSync(path.join(cliRoot, 'testdomain', 'ok.md'),
-    completeRole({ transform: c => c.replace('# Test Role', '# Ok Role') }));
+    completeRole({ transform: c => c.replace('# Test Role', '# Ok Role').replace('`test-role`', '`ok-role`') }));
   fs.writeFileSync(path.join(cliRoot, 'testdomain', 'warny.md'), completeRole({
     transform: c => c.replace('# Test Role', '# Warny Role')
+                     .replace('`test-role`', '`warny-role`')
                      .replace('| **Role Level** | Engineer |', '| **Role Level** | Grand Wizard |'),
   }));
   const normal = runCli(cliRoot);
@@ -418,6 +448,36 @@ test('CLI stale registry warnings exit 0 normally and 1 with --strict', () => {
   assert.equal(strict.status, 1, strict.stdout);
   assert.match(strict.stdout, /example-certification.*stale/i);
   fs.rmSync(cliRoot, { recursive: true, force: true });
+});
+
+// ── findDuplicateRoleIds (#180) ──────────────────────────
+//
+// An id that two roles share is not an identifier. Checked catalogue-wide
+// rather than per file, the same way duplicate titles are.
+
+test('findDuplicateRoleIds reports an id shared by two roles, with both paths', () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'dupe-ids-'));
+    const domain = path.join(dir, 'testdomain');
+    fs.mkdirSync(domain);
+    fs.writeFileSync(path.join(domain, 'one.md'), completeRole());
+    fs.writeFileSync(path.join(domain, 'two.md'), completeRole({ transform: c => c.replace('# Test Role', '# Other Role') }));
+
+    const dupes = findDuplicateRoleIds(dir);
+    assert.equal(dupes.length, 1);
+    assert.equal(dupes[0].id, 'test-role');
+    assert.equal(dupes[0].files.length, 2);
+    fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('findDuplicateRoleIds reports nothing when every id is unique', () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'unique-ids-'));
+    const domain = path.join(dir, 'testdomain');
+    fs.mkdirSync(domain);
+    fs.writeFileSync(path.join(domain, 'one.md'), completeRole());
+    fs.writeFileSync(path.join(domain, 'two.md'), completeRole({ transform: c => c.replace('`test-role`', '`other-role`') }));
+
+    assert.deepEqual(findDuplicateRoleIds(dir), []);
+    fs.rmSync(dir, { recursive: true, force: true });
 });
 
 // ── findDuplicateTitles (#67) ────────────────────────────

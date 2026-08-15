@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `cloud-cost-optimization-engineer` |
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |

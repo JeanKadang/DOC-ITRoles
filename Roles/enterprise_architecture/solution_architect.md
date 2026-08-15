@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `solution-architect` |
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |

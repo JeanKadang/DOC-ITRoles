@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `endpoint-management-architect` |
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |

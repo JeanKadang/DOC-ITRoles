@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `kubernetes-product-owner` |
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |

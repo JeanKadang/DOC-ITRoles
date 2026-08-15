@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `cloud-cost-optimization-standards` |
 | **Domain** | FinOps |
 
 ## Overview

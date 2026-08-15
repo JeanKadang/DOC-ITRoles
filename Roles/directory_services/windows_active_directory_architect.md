@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `windows-active-directory-architect` |
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |

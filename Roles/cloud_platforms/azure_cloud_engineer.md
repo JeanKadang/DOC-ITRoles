@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `azure-cloud-engineer` |
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |

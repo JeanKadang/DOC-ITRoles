@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `quality-engineering-senior-engineer` |
 | **Domain** | Quality Engineering |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |

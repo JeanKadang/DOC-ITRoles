@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `integration-engineer` |
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |

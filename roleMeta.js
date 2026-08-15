@@ -98,6 +98,9 @@ function parseMeta(content) {
   const titleMatch = clean.match(/^#\s+(.+)/m);
   return {
     title:        titleMatch ? titleMatch[1].trim() : null,
+    // Stable identifier (#180). Written in backticks in the role files for
+    // readability; the backticks are presentation, not part of the id.
+    roleId:         (parseField(content, 'Role ID') || '').replace(/`/g, '').trim() || null,
     domain:         parseField(content, 'Domain'),
     chapter:        parseField(content, 'Chapter:') || parseField(content, 'Chapter'),
     levelRaw:       parseField(content, 'Role Level'),

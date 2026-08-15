@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `vmware-engineer` |
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |

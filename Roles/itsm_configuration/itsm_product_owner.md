@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `itsm-product-owner` |
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |

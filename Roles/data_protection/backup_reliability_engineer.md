@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `backup-reliability-engineer` |
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |

@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `qumulo-storage-engineer` |
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |

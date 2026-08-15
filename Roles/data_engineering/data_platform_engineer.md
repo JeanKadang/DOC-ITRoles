@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `data-platform-engineer` |
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |

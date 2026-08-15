@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `quality-engineering-architect` |
 | **Domain** | Quality Engineering |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |

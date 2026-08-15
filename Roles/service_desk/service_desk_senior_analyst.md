@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `service-desk-senior-analyst` |
 | **Domain** | Service Desk |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |

@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `change-release-manager` |
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |

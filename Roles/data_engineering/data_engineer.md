@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `data-engineer` |
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |

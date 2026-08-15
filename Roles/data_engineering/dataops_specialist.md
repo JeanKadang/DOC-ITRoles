@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `dataops-specialist` |
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |

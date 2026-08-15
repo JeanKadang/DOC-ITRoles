@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `commvault-architect` |
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |

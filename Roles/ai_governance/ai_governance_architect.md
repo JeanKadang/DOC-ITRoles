@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `ai-governance-architect` |
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |

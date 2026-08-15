@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `server-hardware-engineer` |
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |

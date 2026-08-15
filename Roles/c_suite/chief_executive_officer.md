@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `chief-executive-officer` |
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CEO |

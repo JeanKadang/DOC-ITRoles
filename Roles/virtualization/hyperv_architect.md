@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `hyper-v-architect` |
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |

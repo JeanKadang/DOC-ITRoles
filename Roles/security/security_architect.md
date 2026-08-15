@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `security-architect` |
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |

@@ -2,6 +2,7 @@
 
 | Field | Value |
 |---|---|
+| **Role ID** | `devsecops-engineer` |
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
