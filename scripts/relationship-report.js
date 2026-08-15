@@ -36,6 +36,31 @@ const EXTERNAL = /\b(CEO|Board of Directors|Board|CTO|CIO|CFO|CISO|SVP|Executive
 // A single field naming two acceptable destinations is a choice, not an edge.
 const ALTERNATIVE = /\bor\b|\//;
 
+// An initialism built from a title's capitalised words: "Chief Executive
+// Officer" -> "CEO". Needed because token overlap is blind to abbreviations —
+// "CEO" and "Chief Executive Officer" share no words — which is how four
+// references to a real catalogue role were first mistaken for destinations
+// above the catalogue.
+function initialism(title) {
+    const words = String(title).split(/\s+/).filter(w => /^[A-Z]/.test(w));
+    return words.length >= 2 ? words.map(w => w[0]).join('').toUpperCase() : null;
+}
+
+// Ambiguous initialisms are dropped rather than guessed: an abbreviation that
+// two roles share identifies neither.
+function initialismIndex(titles) {
+    const byAbbr = new Map();
+    const ambiguous = new Set();
+    for (const title of titles) {
+        const abbr = initialism(title);
+        if (!abbr) continue;
+        if (byAbbr.has(abbr)) ambiguous.add(abbr);
+        else byAbbr.set(abbr, title);
+    }
+    for (const abbr of ambiguous) byAbbr.delete(abbr);
+    return byAbbr;
+}
+
 // Token overlap, used only to suggest what a drifted reference probably meant.
 function similarity(a, b) {
     const A = new Set(a.toLowerCase().split(/\s+/));
@@ -62,6 +87,7 @@ function buildGraph() {
     }
 
     const byTitle = new Map(roles.map(r => [r.title, r]));
+    const byAbbr = initialismIndex(byTitle.keys());
     const resolved = [];
     const external = [];
     const alternatives = [];
@@ -73,6 +99,16 @@ function buildGraph() {
 
         if (byTitle.has(target)) { resolved.push(role); continue; }
         if (ALTERNATIVE.test(target)) { alternatives.push({ role, target }); continue; }
+
+        // Before anything else: an abbreviation of a real role is drift, not an
+        // external destination. This check must precede the EXTERNAL one, since
+        // the titles most often abbreviated -- CEO, CTO, CISO -- are exactly the
+        // ones that look external.
+        if (byAbbr.has(target)) {
+            drift.push({ role, target, suggestion: { title: byAbbr.get(target), score: 1 }, reason: 'abbreviation' });
+            continue;
+        }
+
         if (EXTERNAL.test(target)) { external.push({ role, target }); continue; }
 
         const best = roles
@@ -100,9 +136,9 @@ function report() {
         for (const d of drift) {
             console.log(`  ${d.role.file}`);
             console.log(`     Reports To: "${d.target}"`);
-            console.log(d.suggestion
-                ? `     probably:   "${d.suggestion.title}"  (${Math.round(d.suggestion.score * 100)}% token overlap)`
-                : '     no similar role in the catalogue');
+            if (!d.suggestion) console.log('     no similar role in the catalogue');
+            else if (d.reason === 'abbreviation') console.log(`     resolves:   "${d.suggestion.title}"  (abbreviation of an existing role)`);
+            else console.log(`     probably:   "${d.suggestion.title}"  (${Math.round(d.suggestion.score * 100)}% token overlap — verify before applying)`);
         }
     }
 

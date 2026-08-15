@@ -32,13 +32,30 @@ test('the overwhelming majority of reporting lines resolve', () => {
         `only ${resolved.length} of ${roles.length} reporting lines resolve`);
 });
 
-// A guard, not a target. The four known drifted references are recorded in
-// ADR-0005; this fails if that number grows, which is the silent regression
-// the whole issue is about.
-test('drifted reporting lines do not increase beyond the known four', () => {
+// The four references ADR-0005 recorded as drift are fixed, so this is now a
+// ratchet at zero rather than a ceiling at four. A reporting line that resolves
+// to nothing and is not deliberately external is a defect, and this is what
+// makes it loud instead of silent.
+test('no reporting line drifts', () => {
     const { drift } = buildGraph();
-    assert.ok(drift.length <= 4,
-        `drifted reporting lines rose to ${drift.length}:\n${drift.map(d => `  ${d.role.file}: "${d.target}"`).join('\n')}`);
+    assert.deepEqual(
+        drift.map(d => `${d.role.file}: "${d.target}"`),
+        [],
+        'a reporting line resolves to nothing and is not deliberately external',
+    );
+});
+
+// The first version of this report classified "CEO" as a destination above the
+// catalogue, because it looks like one. It is not: "Chief Executive Officer" is
+// a role in c_suite, and four reporting lines referenced it by initialism. Token
+// overlap cannot catch that — an abbreviation shares no words with the title it
+// stands for — so the report resolves initialisms explicitly.
+test('an initialism of an existing role is not mistaken for an external destination', () => {
+    const { external, drift, resolved } = buildGraph();
+    const all = [...external.map(e => e.target), ...drift.map(d => d.target)];
+    assert.ok(!all.includes('CEO'),
+        '"CEO" is an abbreviation of Chief Executive Officer, a catalogue role, and must resolve');
+    assert.ok(resolved.length > 0);
 });
 
 test('a destination above the catalogue is not counted as drift', () => {

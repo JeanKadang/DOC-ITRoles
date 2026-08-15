@@ -6,7 +6,7 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CFO |
-| **Reports To** | CEO |
+| **Reports To** | Chief Executive Officer |
 | **Direct Reports** | None (no subordinate finance roles modelled in this catalog) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |

@@ -6,7 +6,7 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | SVP of Technology |
-| **Reports To** | CEO |
+| **Reports To** | Chief Executive Officer |
 | **Direct Reports** | Product Area Leads, Technical Area Lead (equivalent title to CTO/CIO — org uses one) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
