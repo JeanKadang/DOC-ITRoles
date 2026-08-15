@@ -195,7 +195,6 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 - PowerShell advanced certifications
 - Microsoft Certified: Azure Stack HCI Operator Associate
 - Microsoft Certified: Security, Compliance, and Identity Fundamentals
-- MCSE: Core Infrastructure (legacy)
 - Microsoft Azure certifications related to hybrid scenarios
 - ITIL Foundation certification
 

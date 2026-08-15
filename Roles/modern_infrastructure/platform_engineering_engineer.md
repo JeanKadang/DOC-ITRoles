@@ -184,7 +184,6 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 - DevOps certifications
 - Terraform Associate or similar IaC certifications
 - CI/CD platform certifications
-- Docker Certified Associate
 - Programming language certifications
 - Service mesh certifications
 
@@ -194,4 +193,5 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 **Learning Resources & Communities:**
 
+- Docker Foundations Professional Certificate (LinkedIn Learning) — course, not an individually-held certification
 - CNCF documentation (cncf.io), Backstage getting started guides (backstage.io/docs), GitHub Actions documentation, HashiCorp Terraform getting started, KubeCon YouTube channel, and kubectl docs (kubectl.docs.kubernetes.io)

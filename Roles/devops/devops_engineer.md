@@ -183,7 +183,6 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 
 - GitHub Actions / GitHub Advanced Security certifications
 - Microsoft Certified: Azure DevOps Engineer Expert (AZ-400)
-- Docker Certified Associate
 - Certified Kubernetes Application Developer (CKAD)
 - HashiCorp Certified: Terraform Associate
 - GitLab Certified Associate
@@ -196,4 +195,5 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 
 **Learning Resources & Communities:**
 
+- Docker Foundations Professional Certificate (LinkedIn Learning) — course, not an individually-held certification
 - GitHub Learning Lab, Microsoft Learn (AZ-400 DevOps path), KodeKloud (hands-on labs for Kubernetes, Terraform, Ansible), TechWorld with Nana (YouTube), Pluralsight DevOps fundamentals tracks.

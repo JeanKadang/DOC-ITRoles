@@ -181,7 +181,6 @@ The Network Product Owner manages the development and lifecycle of the organizat
 - ITIL 4 Foundation
 - Cisco Certified Network Associate (CCNA)
 - Project Management Professional (PMP)
-- Certified Agile Service Manager
 - Scaled Agile Framework (SAFe) Agilist
 - AWS Cloud Practitioner or Azure Fundamentals
 

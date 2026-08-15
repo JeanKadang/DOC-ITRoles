@@ -176,7 +176,6 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 **Complementary Certifications:**
 
 - ITIL 4 Foundation
-- Certified Agile Service Manager (CASM)
 
 **Learning Resources and Communities:**
 

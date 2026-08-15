@@ -185,7 +185,6 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 - AWS Certified DevOps Engineer - Professional
 - Microsoft Certified: DevOps Engineer Expert
 - Project Management Professional (PMP)
-- Certified Agile Service Manager
 - ITIL 4 Foundation
 - DevOps Leadership certification
 

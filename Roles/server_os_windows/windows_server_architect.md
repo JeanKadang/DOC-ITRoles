@@ -180,7 +180,6 @@ The Windows Server Architect designs and defines the strategic direction for the
 - Microsoft Certified: Identity and Access Administrator Associate
 - Microsoft 365 Certified: Enterprise Administrator Expert
 - Microsoft Certified: Azure Stack Hub Operator Associate
-- MCSE: Core Infrastructure
 - TOGAF Certified Architect with Windows focus
 - Microsoft Storage Solutions certification
 - Microsoft Active Directory certification
