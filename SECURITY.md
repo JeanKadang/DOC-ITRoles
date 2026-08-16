@@ -10,13 +10,17 @@ becoming stale whenever a new release is published.
 
 ## Reporting a Vulnerability
 
-Report suspected vulnerabilities privately to the primary maintainer:
+Report suspected vulnerabilities through GitHub's
+[private vulnerability reporting form](https://github.com/JeanKadang/DOC-ITRoles/security/advisories/new).
+Reports are visible only to the repository's security managers while they are
+triaged and coordinated.
 
 - Primary maintainer: Jean Kadang (`@JeanKadang`)
 
-Use an established private contact channel for the maintainer. Do not open a
-public GitHub issue or discussion with exploit details, credentials, private
-repository content, or other sensitive information.
+Do not open a public GitHub issue or discussion with exploit details,
+credentials, private repository content, or other sensitive information. If
+the GitHub form is unavailable, contact the primary maintainer through an
+existing private channel without including secrets in the initial message.
 
 If additional maintainers are invited to the project, this section should be
 updated with the current security contact list.
