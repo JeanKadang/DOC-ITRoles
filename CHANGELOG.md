@@ -7,8 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **The catalogue now has explicit reuse terms (#272).** Software, scripts,
+  tests, workflows, and configuration are licensed under MIT; role
+  definitions, catalogue data, and documentation are licensed under
+  CC BY 4.0. Vendored third-party material keeps its existing upstream
+  terms. `LICENSE` and `LICENSES/` set out the split, and `README.md`
+  documents how to reuse and attribute the catalogue.
+- **A maintainer-controlled waiver for browser-irrelevant pull requests
+  (#277).** The `browser-not-required` label lets a PR that touches no
+  viewer code satisfy the required browser-journeys check without running
+  it, while the check itself stays required for everything else. The
+  policy re-evaluates immediately when the label is added or removed, and
+  tolerates a CRLF checkout of the workflow file.
+
 ### Changed
 
+- **Relationship targets now have an accepted representation (ADR-0006,
+  #268).** Decides how role files will distinguish a catalogue destination,
+  an external party, and a genuine one-of choice from mutable-title drift.
+  Establishes the syntax and authoring guidance; migrating existing role
+  files (#269) and enforcing the model in validation (#270) follow
+  separately.
 - **Security reporting now has a concrete private route (#267).** The security
   policy links directly to GitHub private vulnerability reporting, while
   repository settings enable private reports, secret scanning, push protection,
