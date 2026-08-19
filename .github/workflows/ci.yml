@@ -40,6 +40,7 @@ jobs:
           node-version: '18'
       - run: npm run validate
       - run: npm run check-counts
+      - run: npm run verify-vendor
 
   markdownlint:
     name: Markdown lint
