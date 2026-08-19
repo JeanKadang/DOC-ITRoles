@@ -111,7 +111,8 @@ See [`docs/CHAPTERS_OVERVIEW.md`](docs/CHAPTERS_OVERVIEW.md) for the full breakd
 ```
 roles_master/
 ├── .github/
-│   ├── workflows/ci.yml                    # CI: npm test, npm run validate, check-counts, markdownlint
+│   ├── workflows/ci.yml                    # CI: tests, validation + count + vendor checks, markdownlint, browser
+│   ├── workflows/pr-label.yml              # Labels PRs from their conventional-commit title prefix
 │   └── dependabot.yml                      # Weekly GitHub Actions + npm update checks
 ├── Roles/                                  # All role definitions (34 domains, 226 roles)
 │   ├── leadership/                         # SVP, CISO, Chapter Leads, TAL, PAL
@@ -128,25 +129,38 @@ roles_master/
 │   └── ...                                 # 34 domains total
 ├── docs/                                   # Governance and reference documentation
 │   ├── role_template.md                    # Template for new roles
-│   ├── improvements_and_recommendations.md # Closed - review history (see Issues for open work)
+│   ├── CREDENTIAL_REGISTRY.md              # Audited credential evidence and audit boundary
 │   ├── CROSS_DOMAIN_INTERACTIONS.md        # Domain ownership and escalation paths
+│   ├── SCENARIOS.md                        # A cross-domain escalation walked through end to end
 │   ├── SKILLS_PROGRESSION.md              # Career progression framework
 │   ├── ONBOARDING_TEMPLATE.md             # 30/60/90 day onboarding plan template
 │   ├── onboarding_*_supplement.md         # Level overlays: Engineer, Senior, Architect, PO
 │   ├── onboarding_chapter_lead_template.md # Chapter Lead-specific onboarding variant
 │   ├── CHAPTERS_OVERVIEW.md               # The 7 chapters: focus, lead, detail link
-│   └── chapters/                           # Per-chapter narrative (rendered in the viewer)
-├── scripts/
-│   └── check-counts.js                     # Verifies README counts vs filesystem — `npm run check-counts`
-├── test/                                   # node:test suite (server, roleMeta, validator, viewer logic, career paths)
+│   ├── adr/                                # Architecture Decision Records (durable decisions + reasoning)
+│   ├── chapters/                           # Per-chapter narrative (rendered in the viewer)
+│   └── ...                                 # see the Governance documents table below for the full list
+├── data/
+│   └── credentials.json                    # Credential registry: audited records + audited_roles list
+├── scripts/                                 # Validators, generators, and migration/audit tooling
+│   ├── check-counts.js                     # Verifies README counts vs filesystem — `npm run check-counts`
+│   ├── verify-vendor.js                    # Checksums vendor/* against manifest.json — `npm run verify-vendor`
+│   └── ...                                 # see package.json for the full script list
+├── test/                                   # node:test suite (374 tests: server, validator, viewer logic, generators, docs)
 ├── vendor/                                 # Vendored third-party assets (marked, DOMPurify, Chart.js, ECharts)
+├── LICENSES/                                # Full text of the licenses named in LICENSE
 ├── server.js                               # Node.js web server (no dependencies)
+├── catalogueConfig.js                      # Single source for domains, chapters, labels, and icons
+├── credentialRegistry.js                   # Credential registry read/validation logic
 ├── roleMeta.js                             # Shared role metadata parser (server + validator)
 ├── viewer-logic.js                         # Browser-side pure logic, shared with the test suite
 ├── validate-roles.js                       # Content validator — `npm run validate`
 ├── index.html                              # Web UI markup, styles, and view wiring
 ├── start.bat                               # Windows launcher (auto-picks a free port, opens browser)
-├── package.json                            # Scripts: start, test, validate, check-counts
+├── package.json                            # See its "scripts" section for the full command list
+├── .gitattributes                          # Pins LF line endings; excludes vendor/ from normalization
+├── CONTRIBUTING.md                         # Evidence standards and contribution workflow
+├── LICENSE                                 # Licensing split: MIT (software) / CC BY 4.0 (catalogue content)
 ├── SECURITY.md                             # Security policy and vulnerability reporting
 ├── CHANGELOG.md                            # Version history (Keep a Changelog)
 └── README.md                               # This file
@@ -165,10 +179,9 @@ roles_master/
 
 ## Adding a new domain
 
-1. Create a new folder under `Roles/` using lowercase and underscores.
-   - Example: `Roles/service_mesh/`
-2. Add role files inside it.
-3. Add the domain key and a display label to the `DOMAIN_LABELS` map in `server.js` and the `ICONS` map in `index.html`.
+1. Add one record to `DOMAIN_LIST` in `catalogueConfig.js` — a lowercase `id`, its label, icon, chapter, order, and any legacy aliases. This is the single source both `server.js` and the viewer read from; nothing else needs editing.
+2. Create the exact `Roles/<domain-id>/` directory and its role files.
+3. Run `npm run validate` and `npm run check-counts`.
 
 ## Role file format
 
@@ -179,10 +192,14 @@ Each role file follows the canonical 14-section structure. See [`docs/role_templ
 
 | Field | Value |
 |---|---|
+| **Role ID** | `stable-kebab-case-id`, frozen once assigned (ADR-0005) |
 | **Domain** | Domain Name |
+| **Chapter:** | The chapter this domain belongs to |
 | **Role Level** | Architect / Senior Engineer / Engineer / Product Owner |
 | **Reports To** | Role this position reports to |
 | **Direct Reports** | Roles managed, or "None" for individual contributors |
+| **Content Owner** | Durable role/team identifier accountable for the content (ADR-0004) |
+| **Review Status** | `reviewed` / `mechanical` / `unreviewed` (ADR-0004) |
 | **Last Reviewed** | YYYY-MM |
 
 ---
@@ -229,7 +246,7 @@ Each role file follows the canonical 14-section structure. See [`docs/role_templ
 npm test
 ```
 
-Runs the Node.js built-in test runner (`node --test`) against `test/` — covers path-traversal protection on `/api/role`, `/api/doc`, and `/vendor/*`, API response shapes, and role-metadata parsing (including the BOM-prefixed-file edge case).
+Runs the Node.js built-in test runner (`node --test`) against every `test/*.test.js` file — 374 tests covering the server (path-traversal protection on `/api/role`, `/api/doc`, and `/vendor/*`, API response shapes), role-metadata parsing (including the BOM-prefixed-file edge case), the content validator, the credential registry, viewer logic, doc-link integrity, and every generator/migration script.
 
 ### Browser journey and accessibility tests
 
@@ -254,7 +271,7 @@ HTML report is written to `playwright-report/` in CI.
 npm run validate
 ```
 
-Checks every role file against the canonical 14-section template and required metadata fields (`Domain`, `Role Level`, `Reports To`, `Direct Reports`, `Last Reviewed`), and requires the Interactions table to carry an `Interaction Mode` column. It also validates credential-registry structure, rejects unknown or duplicate credential references, requires complete marker coverage for `audited_roles`, and warns when credential verification is stale. Missing sections, metadata, unknown references, or the mode column are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`, or a `Domain` that doesn't match its folder's canonical label) and stale credential verification are reported as warnings. Pass `--strict` to fail the build on warnings too.
+Checks every role file against the canonical 14-section template and required metadata fields (`Domain`, `Role ID`, `Role Level`, `Reports To`, `Direct Reports`, `Content Owner`, `Review Status`, `Last Reviewed`), and requires the Interactions table to carry an `Interaction Mode` column. It also validates credential-registry structure, rejects unknown or duplicate credential references, requires complete marker coverage for `audited_roles`, and warns when credential verification is stale. Missing sections, metadata, unknown references, or the mode column are reported as errors (exit code 1); non-canonical values (e.g. an unrecognized `Role Level`, or a `Domain` that doesn't match its folder's canonical label) and stale credential verification are reported as warnings. Pass `--strict` to fail the build on warnings too.
 
 Duplicate H1 role titles across the catalog are also errors — the same title appearing in two files is a content-integrity bug that shipped twice before this check existed.
 
@@ -266,17 +283,31 @@ npm run check-counts
 
 Compares README.md's count-bearing sentences ("N domains grouped into N chapters, and N roles") against the actual `Roles/` filesystem and fails (exit code 1) on any mismatch — a guard-rail against count drift, since these numbers used to be hand-maintained and go stale silently.
 
+### Verifying vendored assets
+
+```powershell
+npm run verify-vendor
+```
+
+Checksums every file under `vendor/` against `vendor/manifest.json`'s recorded SHA-256, so a tampered or accidentally-modified third-party asset (including `marked` and `DOMPurify`, which feed the viewer's HTML sanitization) fails the build rather than merging unnoticed.
+
 ### Continuous integration
 
-`.github/workflows/ci.yml` runs on every push/PR to `main`:
+`.github/workflows/ci.yml` runs four jobs on every push/PR to `main`, all required:
 
-- **Tests** (`npm test`) — blocking, on a Node 18/22 matrix.
-- **Browser journeys** (`npm run test:browser`) — blocking; Chromium, Firefox,
-  and WebKit share a ten-minute job budget, with failure diagnostics retained
-  for seven days.
-- **Role content validation** (`npm run validate`) — blocking; every role file must match the canonical template.
-- **Markdown lint** (`markdownlint-cli2`, config in `.markdownlint.json`) — blocking.
-- **Count check** (`npm run check-counts`) — blocking.
+- **Tests** (`npm test`) — on a Node 18/22 matrix.
+- **Role content validation** — three steps in sequence: `npm run validate`
+  (every role file matches the canonical template), `npm run check-counts`
+  (README's counts match the filesystem), and `npm run verify-vendor`
+  (vendored assets match their recorded checksums).
+- **Markdown lint** (`markdownlint-cli2`, config in `.markdownlint.json`).
+- **Browser journeys** (`npm run test:browser`) — Chromium, Firefox, and
+  WebKit share a 30-minute job budget (headroom for a slow runner mirror
+  provisioning browser engines, not typical runtime — a normal run takes
+  roughly 2.5 minutes), with failure diagnostics retained for seven days.
+  A PR that touches nothing browser-relevant can carry the maintainer-applied
+  `browser-not-required` label to waive this job without weakening it as a
+  required check for everything else.
 
 ### Security
 
