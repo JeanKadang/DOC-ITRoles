@@ -55,6 +55,7 @@ jobs:
   browser:
     name: Browser journeys (Chromium, Firefox, WebKit)
     runs-on: ubuntu-latest
+    # Maintainer-approved escape hatch for browser-irrelevant PRs; see #277.
     env:
       BROWSER_WAIVED: ${{ github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'browser-not-required') }}
     # Fresh hosted runners may need to provision more than 100 MB of browser
