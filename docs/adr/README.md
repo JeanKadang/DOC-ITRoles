@@ -21,3 +21,4 @@ Allowed statuses are `Proposed`, `Accepted`, `Deprecated`, and `Superseded by AD
 | [0003](0003-name-credentials-explicitly-rather-than-families-or-topics.md) | Accepted | Name credentials explicitly rather than families or topics |
 | [0004](0004-record-review-provenance-with-durable-owner-identifiers.md) | Accepted | Record review provenance with durable owner identifiers |
 | [0005](0005-identify-roles-by-a-stable-id-rather-than-by-title.md) | Accepted | Identify roles by a stable ID rather than by title |
+| [0006](0006-annotate-role-relationships-with-stable-targets.md) | Accepted | Annotate role relationships with stable targets |

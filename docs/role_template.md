@@ -5,8 +5,8 @@
 | **Role ID** | [Stable lowercase kebab-case identifier, unique across the catalogue, e.g. `kubernetes-engineer`. Assigned once and never changed — see below.] |
 | **Domain** | [e.g., Cloud Platforms / Security / DevOps / Modern Infrastructure] |
 | **Role Level** | [Engineer / Senior Engineer / Product Owner / Architect / Lead Architect / Principal Architect / Chapter Lead / Technical Area Lead / Product Area Lead / SVP / CISO / CFO / CIO / CTO / CEO] |
-| **Reports To** | [Role title this position reports to, e.g., Cloud Platform Architect] |
-| **Direct Reports** | [Role titles managed by this position, or "None" for individual-contributor roles] |
+| **Reports To** | [Role title] <!-- role: stable-role-id --> |
+| **Direct Reports** | [Role title] <!-- role: stable-role-id -->; [another role title] <!-- role: another-stable-role-id -->, or `None` for individual-contributor roles |
 | **Content Owner** | [Durable role identifier accountable for this content, e.g. `catalogue-maintainers` or the owning chapter. Not a person's name — see below.] |
 | **Review Status** | [reviewed / mechanical / unreviewed] |
 | **Last Reviewed** | [YYYY-MM] |
@@ -97,12 +97,9 @@
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| [Role 1] | [What this role collaborates on with Role 1] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
-| [Role 2] | [What this role collaborates on with Role 2] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
-| [Role 3] | [What this role collaborates on with Role 3] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
-| [Role 4] | [What this role collaborates on with Role 4] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
-| [Role 5] | [What this role collaborates on with Role 5] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
-| [Role 6] | [What this role collaborates on with Role 6] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
+| [Role 1] <!-- role: stable-role-id --> | [What this role collaborates on with Role 1] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
+| [Role 2] <!-- role: stable-role-id --> | [What this role collaborates on with Role 2] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
+| [External party] <!-- external-role --> | [What this role exchanges with the external party] | [Collaborates / Consumes From / Provides To / Governed By / Escalates To] |
 
 ## Key Technologies
 
@@ -155,19 +152,15 @@
 
 **Previous Roles:**
 
-- [Previous Role 1]
-- [Previous Role 2]
-- [Previous Role 3]
-- [Previous Role 4]
-- [Previous Role 5]
+- [Previous Role 1] <!-- role: previous-role-id -->
+- [Previous Role 2] <!-- role: previous-role-id -->
+- [External previous role] <!-- external-role -->
 
 **Potential Next Roles:**
 
-- [Next Role 1]
-- [Next Role 2]
-- [Next Role 3]
-- [Next Role 4]
-- [Next Role 5]
+- [Next Role 1] <!-- role: next-role-id -->
+- [Next Role 2] <!-- role: next-role-id -->
+- [External next role] <!-- external-role -->
 
 ## Recommended Certifications & Learning Paths
 
@@ -194,6 +187,8 @@
 ---
 
 > **Role ID note:** The id is seeded from the role title when the role is created and then **frozen**. Renaming a role changes its title and leaves its id alone — that is the whole point, since reporting lines and career paths resolve against the id. An id that looks stale after a rename is correct, not a defect to tidy up. Ids are never reused for a different role. See [ADR-0005](adr/0005-identify-roles-by-a-stable-id-rather-than-by-title.md).
+
+> **Relationship target note:** Keep the readable role or party name and annotate its identity immediately after it. Use `<!-- role: stable-role-id -->` for a catalogue role and `<!-- external-role -->` for a destination outside the catalogue. Wrap a genuine choice in `<!-- one-of -->` and `<!-- /one-of -->`; do not infer alternatives from prose alone. Use `None` by itself when there is no relationship. See [ADR-0006](adr/0006-annotate-role-relationships-with-stable-targets.md).
 
 > **Review provenance note:** `Content Owner` holds a **durable role identifier**, never a person's name — `catalogue-maintainers` in this repository, and the owning chapter lead in an organisation that adopts the catalogue. Identifiers survive people changing jobs, and keep personal data out of a document intended to be shared.
 >
