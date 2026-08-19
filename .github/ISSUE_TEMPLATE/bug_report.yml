@@ -1,0 +1,59 @@
+name: Bug report
+description: Something in the viewer, server, or tooling is broken.
+title: "bug: "
+labels:
+  - bug
+assignees:
+  - JeanKadang
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a security vulnerability, use "Report a security vulnerability"
+        from the template picker instead of this form — see SECURITY.md.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps, starting from a clean checkout if possible.
+      placeholder: |
+        1. Run `npm start`
+        2. Open the viewer and search for "..."
+        3. Click "..."
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Error output, screenshots, or logs
+      description: Paste any console output, stack trace, or screenshot. Text pastes as-is, images can be dragged in.
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Node version (`node -v`), OS, and browser + version if this is a viewer bug.
+      placeholder: "Node 22.x, Windows 11, Chrome 128"
+    validations:
+      required: true
+
+  - type: input
+    id: area
+    attributes:
+      label: Relevant file(s) or area
+      description: e.g. viewer-logic.js, server.js, a specific script under scripts/, or a role file path.
+    validations:
+      required: false

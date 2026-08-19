@@ -1,0 +1,55 @@
+name: Catalogue content issue
+description: A role's responsibilities, relationships, credentials, or KPIs are wrong, outdated, or unsupported.
+title: "content: "
+labels:
+  - backfill
+assignees:
+  - JeanKadang
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See [CONTRIBUTING.md](../../CONTRIBUTING.md) for the evidence standard
+        this catalogue holds itself to. A correction without a source is still
+        useful — it can be filed as unresolved rather than fabricated — but a
+        primary source lets it be fixed immediately instead of queued for review.
+
+  - type: input
+    id: role
+    attributes:
+      label: Role file
+      description: Path under Roles/, e.g. Roles/kubernetes/kubernetes_architect.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is this?
+      options:
+        - Responsibility or accountability is wrong or duplicates another role
+        - Credential/certification name, status, or issuer link is wrong
+        - KPI target or cadence is wrong, missing, or unsupported
+        - Reporting line, direct report, or career path is wrong
+        - Technology or standard reference is outdated
+        - Other content problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong, and what should it say instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source
+      description: >-
+        Link the issuer-controlled page, standard, or policy that supports the
+        correction, per the evidence table in CONTRIBUTING.md. If you don't
+        have one, say so — an unresolved value is preferable to a guess.
+    validations:
+      required: false

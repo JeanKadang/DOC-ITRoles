@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/JeanKadang/DOC-ITRoles/security/advisories/new
+    about: >-
+      Do not open a public issue for a vulnerability, exposed secret, or
+      unsafe execution path. Use GitHub's private reporting form instead —
+      see SECURITY.md.
+  - name: Search existing issues first
+    url: https://github.com/JeanKadang/DOC-ITRoles/issues
+    about: Check whether this is already tracked before filing a new one.
