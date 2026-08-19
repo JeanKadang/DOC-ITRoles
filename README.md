@@ -206,6 +206,7 @@ Each role file follows the canonical 14-section structure. See [`docs/role_templ
 | [`docs/CREDENTIAL_REGISTRY.md`](docs/CREDENTIAL_REGISTRY.md) | Audited credential evidence, ownership, lifecycle, contributor policy, and migration policy |
 | [`docs/adr/README.md`](docs/adr/README.md) | Durable catalogue and architecture decisions, ADR lifecycle, and index |
 | [`docs/CROSS_DOMAIN_INTERACTIONS.md`](docs/CROSS_DOMAIN_INTERACTIONS.md) | Domain ownership boundaries, key relationships, escalation paths |
+| [`docs/SCENARIOS.md`](docs/SCENARIOS.md) | A cross-domain escalation walked through end to end, linking the real role pages at each step |
 | [`docs/SKILLS_PROGRESSION.md`](docs/SKILLS_PROGRESSION.md) | Engineer → Senior → Architect career ladder per domain |
 | [`docs/ONBOARDING_TEMPLATE.md`](docs/ONBOARDING_TEMPLATE.md) | 30/60/90 day plan template for new hires |
 | `docs/onboarding_*_supplement.md` | Level overlays (Engineer, Senior Engineer, Architect, Product Owner) — used **alongside** the base template, adding only what differs by level |
