@@ -7,8 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.19.0] - 2026-08-19
+
+The catalogue's licensing terms, credential-audit boundary, and
+relationship-representation decision are now explicit and recorded, not
+implicit or scattered across closed issues. CI verifies vendored assets and
+tolerates CRLF checkouts consistently instead of once. Documentation gained
+a stated purpose, an adoption guide, a cross-role scenario walkthrough, and
+a sweep for accuracy against the current codebase.
+
 ### Added
 
+- **CI now verifies vendored third-party assets on every push and PR
+  (#279).** `npm run verify-vendor` existed but nothing ran it
+  automatically; a tampered or corrupted file under `vendor/` — including
+  the DOMPurify and marked builds that feed the viewer's HTML sanitization
+  — could previously merge with a mismatched checksum unnoticed.
+- **`.gitattributes` pins LF line endings (#281).** Prevents the class of
+  bug behind #277: a checkout on a machine with `core.autocrlf=true`
+  silently converting tracked text files to CRLF, which broke a
+  regex-based content check once already. `vendor/` is excluded so its
+  checksum-verified bytes stay untouched.
+- **A cross-domain scenario walkthrough (#286).** `docs/SCENARIOS.md`
+  follows a P1 outage through Service Desk, the Major Incident Manager,
+  and Client Platform Engineer, quoting each role's own responsibilities
+  rather than inventing dialogue — the escalation lines the org chart and
+  relationship graph already show, read as a sequence.
+- **An adoption guide for organisations of different sizes (#284).**
+  `docs/ADOPTING.md` states the intended posture (fork and trim, not
+  become identical to), a sizing heuristic for which leadership layers
+  and domains earn their keep at different scales, and how to keep
+  `Role ID`s traceable against upstream after forking.
+- **Two durable decisions now have ADRs (#291, #292).** ADR-0007 records
+  the dual-licensing split (software MIT, catalogue content CC BY 4.0);
+  ADR-0008 records why the credential registry's audit stays capped at
+  what's been verified rather than backfilling all 2,151 legacy entries.
+- **README states why this catalogue exists (#283).** The mechanics were
+  documented in depth; the thesis — evidence-backed, tested, ADR-governed
+  content instead of a static document nobody re-checks — was previously
+  only implicit.
 - **The catalogue now has explicit reuse terms (#272).** Software, scripts,
   tests, workflows, and configuration are licensed under MIT; role
   definitions, catalogue data, and documentation are licensed under
@@ -37,6 +74,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- **README no longer describes dead code or undercounts the catalogue.**
+  "Adding a new domain" pointed at a `DOMAIN_LABELS` map in `server.js`
+  that moved to `catalogueConfig.js` when #184 centralised catalogue
+  config; the role-file-format example and required-metadata list were
+  missing three fields (`Role ID`, `Content Owner`, `Review Status`) added
+  since by ADR-0004/ADR-0005; the CI section described `check-counts` as
+  its own job (it's a step) and stated a ten-minute browser-job budget
+  against an actual 30-minute timeout; and the repository structure tree
+  omitted `CONTRIBUTING.md`, `LICENSE`, `catalogueConfig.js`,
+  `credentialRegistry.js`, `data/`, `docs/adr/`, and all but one file each
+  in `scripts/` and `docs/`.
 - **Nested credential comments no longer evade retirement classification
   (#267).** Credential maintenance tools share the comment scanner, which now
   removes a complete nested comment before deciding whether a bullet contains
