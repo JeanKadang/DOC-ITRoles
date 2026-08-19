@@ -1,8 +1,8 @@
 # ADR-0006: Annotate role relationships with stable targets
 
-- **Status:** Proposed
+- **Status:** Accepted
 - **Date:** 2026-08-19
-- **Issue/PR:** #268 (parent: #180)
+- **Issue/PR:** #268 / #275 (parent: #180)
 
 ## Context
 
