@@ -6,6 +6,10 @@ A portable role definition repository for infrastructure and platform engineerin
 
 Repository: [github.com/JeanKadang/DOC-ITRoles](https://github.com/JeanKadang/DOC-ITRoles) (public). Issues and committed work are tracked on the [Issues tab](https://github.com/JeanKadang/DOC-ITRoles/issues).
 
+## Why this exists
+
+Most role catalogues live as static documents — a Confluence page or a slide deck, written once and never re-checked. This one is held to the same discipline as the software that serves it: every certification recommendation is checked against an issuer-controlled source before it's marked verified ([`docs/CREDENTIAL_REGISTRY.md`](docs/CREDENTIAL_REGISTRY.md)), every durable structural decision is recorded with its reasoning rather than just its outcome ([`docs/adr/`](docs/adr/README.md)), and the catalogue's own structure is validated and tested (374 automated tests, `npm run validate`) rather than trusted on sight. The result is content you can audit, not just read — you can tell what's been verified, by whom, and as of when, instead of taking a role definition on faith.
+
 ## Prerequisites
 
 **Node.js v18 or later.** The server, core tooling, and Node test suite use only
