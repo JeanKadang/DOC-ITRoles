@@ -1,0 +1,43 @@
+name: Enhancement or improvement
+description: A gap, missing capability, or quality improvement — not a bug, not a content correction.
+title: ""
+labels:
+  - enhancement
+assignees:
+  - JeanKadang
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Viewer or server code
+        - Catalogue tooling / scripts / validation
+        - CI, workflows, or repo settings
+        - Documentation
+        - Catalogue structure or taxonomy (new domain, template field, etc.)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or gap
+      description: What's missing or awkward today? Cite the file(s) involved if you know them.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Suggested approach
+      description: Optional — a rough direction is fine.
+    validations:
+      required: false
