@@ -8,10 +8,11 @@ const workflow = readFileSync(
   'utf8',
 );
 
+// Git may materialize the workflow with LF or CRLF depending on the checkout.
 function stepNamed(name) {
   const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const match = workflow.match(new RegExp(
-    `      - name: ${escaped}\\n([\\s\\S]*?)(?=\\n      - |\\n\\n|$)`,
+    `      - name: ${escaped}\\r?\\n([\\s\\S]*?)(?=\\r?\\n      - |\\r?\\n\\r?\\n|$)`,
   ));
 
   assert.ok(match, `missing workflow step: ${name}`);
@@ -22,6 +23,13 @@ test('only a labelled pull request can waive browser tests', () => {
   assert.match(
     workflow,
     /BROWSER_WAIVED: \$\{\{ github\.event_name == 'pull_request' && contains\(github\.event\.pull_request\.labels\.\*\.name, 'browser-not-required'\) \}\}/,
+  );
+});
+
+test('label changes trigger a fresh browser policy evaluation', () => {
+  assert.match(
+    workflow,
+    /pull_request:\r?\n    branches: \[main\]\r?\n    types: \[opened, synchronize, reopened, labeled, unlabeled\]/,
   );
 });
 
