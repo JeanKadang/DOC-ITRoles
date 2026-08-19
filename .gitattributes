@@ -1,0 +1,15 @@
+# Pin line endings to LF regardless of a contributor's core.autocrlf setting.
+# Without this, a Windows checkout (autocrlf=true) produces CRLF working-tree
+# files that regex-based content parsers in scripts/ and test/ can silently
+# mis-handle — see #277 for a live incident this already caused.
+* text=auto eol=lf
+
+*.md text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Vendored third-party assets must stay byte-identical to upstream for the
+# checksum verification in scripts/verify-vendor.js — never normalize them.
+vendor/* -text
