@@ -280,6 +280,27 @@ Compares README.md's count-bearing sentences ("N domains grouped into N chapters
 - Every response sets `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, and a `Content-Security-Policy` restricting script/style/connect origins to same-origin.
 - `/api/role`, `/api/doc`, and `/vendor/*` all validate requested paths against traversal (`..`) and enforce their respective root directories.
 
+## Licence
+
+DOC-ITRoles uses separate licences for software and catalogue content:
+
+- Source code, scripts, tests, workflows, configuration, and code samples are
+  available under the [MIT License](LICENSES/MIT.txt).
+- Role definitions, catalogue data, and documentation are available under the
+  [Creative Commons Attribution 4.0 International License](LICENSES/CC-BY-4.0.txt).
+- Vendored third-party files retain their upstream licences and notices, as
+  documented in [`vendor/README.md`](vendor/README.md).
+
+For CC BY 4.0 attribution, credit "Jean Kadang and DOC-ITRoles contributors",
+link to this repository and the licence, and indicate whether changes were
+made. For example:
+
+> IT Roles Library by Jean Kadang and DOC-ITRoles contributors, licensed under
+> [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source:
+> [DOC-ITRoles](https://github.com/JeanKadang/DOC-ITRoles). Changes were made.
+
+See [`LICENSE`](LICENSE) for the authoritative scope and third-party exceptions.
+
 ## Design notes
 
 - **Near-single-file UI.** Markup, styles, and view wiring live together in `index.html` (~3,000 lines) with no build step or bundler, so the app stays portable. The one deliberate exception is `viewer-logic.js`, which holds the pure functions (level ordering, stale-role computation, career-path parsing) so the `node:test` suite can import and test them directly — logic that was previously untestable and shipped two silent bugs. Keep new *pure* logic there and new *DOM* work in `index.html`.

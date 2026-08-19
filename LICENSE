@@ -1,0 +1,30 @@
+DOC-ITRoles uses separate licences for software and catalogue content.
+
+Software
+--------
+
+Source code, scripts, tests, workflows, and configuration are licensed under
+the MIT License. This includes the executable and configuration files at the
+repository root and files under `.claude/`, `.github/`, `scripts/`, and `test/`.
+Code samples embedded in documentation are also licensed under the MIT License.
+See `LICENSES/MIT.txt`.
+
+Catalogue content and documentation
+-----------------------------------
+
+Role definitions, catalogue data, and documentation are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0). This
+includes files under `Roles/`, `data/`, and `docs/`, plus Markdown documentation
+at the repository root. See `LICENSES/CC-BY-4.0.txt`.
+
+When sharing or adapting this material, provide attribution to "Jean Kadang and
+DOC-ITRoles contributors", link to the source repository and CC BY 4.0, and
+indicate whether changes were made. Attribution must not imply endorsement.
+
+Third-party material
+--------------------
+
+Files under `vendor/` remain governed by their respective upstream licences and
+notices. See `vendor/manifest.json`, `vendor/licenses/`, and
+`vendor/THIRD_PARTY_NOTICES.md`. The licence texts in `LICENSES/` are governed by
+their own terms.

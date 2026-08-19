@@ -55,6 +55,9 @@ jobs:
   browser:
     name: Browser journeys (Chromium, Firefox, WebKit)
     runs-on: ubuntu-latest
+    # Maintainer-approved escape hatch for browser-irrelevant PRs; see #277.
+    env:
+      BROWSER_WAIVED: ${{ github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'browser-not-required') }}
     # Fresh hosted runners may need to provision more than 100 MB of browser
     # system dependencies. Keep a ceiling, but leave enough room for a slow
     # Ubuntu mirror before the cross-browser tests begin (#206).
@@ -62,17 +65,30 @@ jobs:
     steps:
       # actions/checkout v7
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Record maintainer browser-test waiver
+        if: env.BROWSER_WAIVED == 'true'
+        run: |
+          echo "::notice title=Browser tests waived::The maintainer applied the browser-not-required label."
       # actions/setup-node v6
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+      - name: Set up Node for browser tests
+        if: env.BROWSER_WAIVED != 'true'
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
         with:
           node-version: '22'
           cache: npm
-      - run: npm ci
-      - run: npx playwright install --with-deps chromium firefox webkit
-      - run: npm run test:browser
+      - name: Install browser test dependencies
+        if: env.BROWSER_WAIVED != 'true'
+        run: npm ci
+      - name: Install browser engines
+        if: env.BROWSER_WAIVED != 'true'
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Run browser journeys
+        if: env.BROWSER_WAIVED != 'true'
+        run: npm run test:browser
       # actions/upload-artifact v4
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
-        if: ${{ failure() }}
+      - name: Upload browser failure artifacts
+        if: failure() && env.BROWSER_WAIVED != 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: playwright-failure-${{ github.run_id }}
           path: |

@@ -16,7 +16,10 @@ The command performs no network access. It fails when manifest metadata is incom
 
 The original licence/copyright headers remain embedded in every minified asset. The manifest names the retained local licence files and links to the complete licence text in the exact upstream tag from which each version came. `THIRD_PARTY_NOTICES.md` retains package-specific copyright and attribution notices, including the Apache ECharts NOTICE text and the additional Markdown notice shipped by marked.
 
-The repository itself is private and `UNLICENSED`, as declared in `package.json`. Vendored third-party code remains governed by its own upstream licence; its presence does not license the rest of this repository.
+The repository's own software and catalogue content use the licences described
+in the root [`LICENSE`](../LICENSE) file. Vendored third-party code remains
+governed by its own upstream licence; the repository's MIT and CC BY 4.0 grants
+do not replace those terms.
 
 ## Upgrade and security review
 
