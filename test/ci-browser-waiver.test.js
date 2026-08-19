@@ -8,6 +8,7 @@ const workflow = readFileSync(
   'utf8',
 );
 
+// Git may materialize the workflow with LF or CRLF depending on the checkout.
 function stepNamed(name) {
   const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const match = workflow.match(new RegExp(
