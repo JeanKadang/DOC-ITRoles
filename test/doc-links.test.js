@@ -28,6 +28,7 @@ const NAVIGATIONAL = [
   'docs/onboarding_senior_engineer_supplement.md',
   'docs/onboarding_architect_supplement.md',
   'docs/onboarding_product_owner_supplement.md',
+  'docs/SCENARIOS.md',
   'Roles/c_suite/README.md',
   'Roles/security/README.md',
   'Roles/security_cross_platform/README.md',
