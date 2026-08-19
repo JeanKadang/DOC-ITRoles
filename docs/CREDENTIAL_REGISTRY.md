@@ -7,7 +7,9 @@
 Legacy credential text without a marker is not audited. It may remain visible,
 but it must not be represented as registry-backed or current verified evidence.
 Migration happens opportunistically when a role is substantively reviewed or
-changed; no exhaustive catalogue-wide backfill is scheduled.
+changed; no exhaustive catalogue-wide backfill is scheduled. See
+[ADR-0008](adr/0008-cap-the-credential-registry-audit-to-what-is-actually-worth-verifying.md)
+for why this boundary is deliberate rather than a gap awaiting funding.
 
 ## Registry schema
 

@@ -22,3 +22,4 @@ Allowed statuses are `Proposed`, `Accepted`, `Deprecated`, and `Superseded by AD
 | [0004](0004-record-review-provenance-with-durable-owner-identifiers.md) | Accepted | Record review provenance with durable owner identifiers |
 | [0005](0005-identify-roles-by-a-stable-id-rather-than-by-title.md) | Accepted | Identify roles by a stable ID rather than by title |
 | [0006](0006-annotate-role-relationships-with-stable-targets.md) | Accepted | Annotate role relationships with stable targets |
+| [0008](0008-cap-the-credential-registry-audit-to-what-is-actually-worth-verifying.md) | Accepted | Cap the credential registry audit to what is actually worth verifying |
