@@ -6,7 +6,7 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Windows Server Senior Engineer |
+| **Reports To** | Windows Server Senior Engineer <!-- role: windows-server-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -105,10 +105,10 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Server Product Owner | Task prioritization and delivery | Consumes From |
+| Windows Server Product Owner <!-- role: windows-server-product-owner --> | Task prioritization and delivery | Consumes From |
 | Server Hardware Engineers | Physical server deployments | Collaborates |
 | Observability Engineers | Monitoring implementation | Collaborates |
-| Windows Server Architect | Implementation details | Escalates To |
+| Windows Server Architect <!-- role: windows-server-architect --> | Implementation details | Escalates To |
 | other platform engineers | Integration points | Collaborates |
 
 ## Key Technologies
@@ -173,7 +173,7 @@ The Windows Server Engineer implements and maintains Tier 1 Windows Server envir
 
 **Potential Next Roles:**
 
-- Windows Server Senior Engineer
+- Windows Server Senior Engineer <!-- role: windows-server-senior-engineer -->
 - Systems Administrator Team Lead
 - Microsoft Technology Specialist
 - Cloud Platform Engineer
