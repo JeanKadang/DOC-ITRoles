@@ -6,7 +6,7 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | Database Senior Engineer |
+| **Reports To** | Database Senior Engineer <!-- role: database-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,10 +103,10 @@ The Database Engineer implements and maintains database systems across the organ
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Database Product Owner | Task prioritization | Consumes From |
+| Database Product Owner <!-- role: database-product-owner --> | Task prioritization | Consumes From |
 | Windows/Linux Server Engineers | Database host configuration | Collaborates |
 | Observability Engineers | Database monitoring | Collaborates |
-| Database Architect | Implementation activities | Escalates To |
+| Database Architect <!-- role: database-architect --> | Implementation activities | Escalates To |
 | application teams | Database requirements | Provides To |
 
 ## Key Technologies
@@ -172,11 +172,11 @@ The Database Engineer implements and maintains database systems across the organ
 
 **Potential Next Roles:**
 
-- Database Senior Engineer
+- Database Senior Engineer <!-- role: database-senior-engineer -->
 - Database Team Lead
-- Database Reliability Engineer
+- Database Reliability Engineer <!-- role: database-reliability-engineer -->
 - Cloud Database Specialist
-- Data Platform Engineer
+- Data Platform Engineer <!-- role: data-platform-engineer -->
 
 ## Recommended Certifications & Learning Paths
 

@@ -6,7 +6,7 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | Database Senior Engineer |
+| **Reports To** | Database Senior Engineer <!-- role: database-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 | Database Senior Engineers | Implementation | Escalates To |
 | Observability Engineers | Monitoring implementation | Collaborates |
 | DevOps Engineers | CI/CD integration | Collaborates |
-| Database Product Owner | Reliability metrics | Provides To |
+| Database Product Owner <!-- role: database-product-owner --> | Reliability metrics | Provides To |
 | Database Architects | Resilience design | Consumes From |
 | application teams | Database performance | Provides To |
 
@@ -157,9 +157,9 @@ The Database Reliability Engineer focuses on ensuring the availability, performa
 
 **Previous Roles:**
 
-- Database Engineer
+- Database Engineer <!-- role: database-engineer -->
 - Database Administrator
-- Site Reliability Engineer
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - DevOps Engineer with database focus
 - Performance Engineer
 

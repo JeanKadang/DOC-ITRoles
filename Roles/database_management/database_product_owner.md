@@ -6,7 +6,7 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,7 +103,7 @@ The Database Product Owner manages the portfolio of database platforms and data 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Database Architect | Technical decisions and designs | Consumes From |
+| Database Architect <!-- role: database-architect --> | Technical decisions and designs | Consumes From |
 | Application Product Owners | Data requirements | Consumes From |
 | Cloud Platform Product Owners | Database-as-a-service offerings | Collaborates |
 | Data Governance teams | Data management policies | Governed By |
@@ -174,7 +174,7 @@ The Database Product Owner manages the portfolio of database platforms and data 
 **Previous Roles:**
 
 - Database Administrator/Engineer
-- Data Platform Engineer
+- Data Platform Engineer <!-- role: data-platform-engineer -->
 - Technical Project Manager
 - Database Service Manager
 - Application Database Specialist
