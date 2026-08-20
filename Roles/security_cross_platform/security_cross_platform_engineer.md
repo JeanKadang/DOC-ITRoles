@@ -6,7 +6,7 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | Security Cross-Platform Senior Engineer |
+| **Reports To** | Security Cross-Platform Senior Engineer <!-- role: security-cross-platform-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -105,7 +105,7 @@ The Security Cross-Platform Engineer implements and maintains security controls 
 | domain-specific Engineers | Implement consistent security controls | Collaborates |
 | Security Cross-Platform Senior Engineers | Complex implementations | Escalates To |
 | operations teams | Multiple domains on security maintenance | Provides To |
-| security operations | Monitoring and incident response | Collaborates |
+| security operations <!-- external-role --> | Monitoring and incident response | Collaborates |
 | domain architects | Provide technical input on security implementations | Consumes From |
 
 ## Key Technologies
@@ -170,9 +170,9 @@ The Security Cross-Platform Engineer implements and maintains security controls 
 
 **Potential Next Roles:**
 
-- Security Cross-Platform Senior Engineer
+- Security Cross-Platform Senior Engineer <!-- role: security-cross-platform-senior-engineer -->
 - Security Specialist
-- DevSecOps Engineer
+- DevSecOps Engineer <!-- role: devsecops-engineer -->
 - Security Architect (domain-specific)
 - Security Operations Engineer
 

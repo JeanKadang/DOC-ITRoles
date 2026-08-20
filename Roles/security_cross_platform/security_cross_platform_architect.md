@@ -6,7 +6,7 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Security Cross-Platform Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -158,7 +158,7 @@ The Security Cross-Platform Architect designs and develops comprehensive securit
 
 **Previous Roles:**
 
-- Security Senior Engineer
+- Security Senior Engineer <!-- role: security-senior-engineer -->
 - Domain-specific Security Architect
 - Security Consultant
 - Enterprise Architect with security focus
