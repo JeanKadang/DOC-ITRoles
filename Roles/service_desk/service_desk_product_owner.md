@@ -6,7 +6,7 @@
 | **Domain** | Service Desk |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,10 +97,10 @@ The Service Desk Product Owner owns the backlog for the tooling and self-service
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Service Desk Lead | Gathers operational requirements and tooling friction points; delivers tooling that supports SLA and staffing targets | Provides To |
-| Service Desk Senior Analyst | As the tooling backlog owner, incorporates ticket-pattern feedback into prioritisation | Consumes From |
-| End User & Workplace Chapter Lead | Escalates budget, headcount, and cross-domain roadmap trade-offs | Escalates To |
-| Service Management Product Owner | Aligns desk-facing tooling roadmap with the broader ITSM platform backlog | Collaborates |
+| Service Desk Lead <!-- role: service-desk-lead --> | Gathers operational requirements and tooling friction points; delivers tooling that supports SLA and staffing targets | Provides To |
+| Service Desk Senior Analyst <!-- role: service-desk-senior-analyst --> | As the tooling backlog owner, incorporates ticket-pattern feedback into prioritisation | Consumes From |
+| End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> | Escalates budget, headcount, and cross-domain roadmap trade-offs | Escalates To |
+| Service Management Product Owner <!-- role: service-management-product-owner --> | Aligns desk-facing tooling roadmap with the broader ITSM platform backlog | Collaborates |
 | Client Platform Architect / Endpoint Management Architect | Aligns self-service and automation tooling with underlying endpoint and identity standards | Collaborates |
 | vendor TAM/PAM (ServiceNow, virtual-agent platforms) | Product roadmap updates, support agreements, and licensing strategy | Collaborates |
 
@@ -150,9 +150,9 @@ The Service Desk Product Owner owns the backlog for the tooling and self-service
 
 **Potential Next Roles:**
 
-- Service Management Product Owner
-- End User & Workplace Chapter Lead
-- Client Platform Product Owner
+- Service Management Product Owner <!-- role: service-management-product-owner -->
+- End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead -->
+- Client Platform Product Owner <!-- role: client-platform-product-owner -->
 
 ## Recommended Certifications & Learning Paths
 

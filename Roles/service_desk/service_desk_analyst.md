@@ -6,7 +6,7 @@
 | **Domain** | Service Desk |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
-| **Reports To** | Service Desk Senior Analyst |
+| **Reports To** | Service Desk Senior Analyst <!-- role: service-desk-senior-analyst --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,10 +98,10 @@ The Service Desk Analyst is the Tier-1 point of contact for every employee techn
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Service Desk Senior Analyst | Escalates tickets outside first-contact-resolution scope; receives coaching and knowledge base guidance | Escalates To |
-| Client Platform Engineer | Hands off OS-level issues (imaging, driver conflicts, profile corruption) that require engineering investigation | Escalates To |
-| Endpoint Management Engineer | Hands off device enrollment, compliance policy, or MDM configuration issues | Escalates To |
-| Major Incident Manager | Reports suspected wide-scale outages detected through ticket pattern spikes | Escalates To |
+| Service Desk Senior Analyst <!-- role: service-desk-senior-analyst --> | Escalates tickets outside first-contact-resolution scope; receives coaching and knowledge base guidance | Escalates To |
+| Client Platform Engineer <!-- role: client-platform-engineer --> | Hands off OS-level issues (imaging, driver conflicts, profile corruption) that require engineering investigation | Escalates To |
+| Endpoint Management Engineer <!-- role: endpoint-management-engineer --> | Hands off device enrollment, compliance policy, or MDM configuration issues | Escalates To |
+| Major Incident Manager <!-- role: major-incident-manager --> | Reports suspected wide-scale outages detected through ticket pattern spikes | Escalates To |
 | HR / People Function | Receives new-starter and leaver notifications that trigger account and equipment tickets | Consumes From |
 | End users (organization-wide) | Provides first-line support, resolution, and status updates for logged tickets | Provides To |
 
@@ -155,7 +155,7 @@ The Service Desk Analyst is the Tier-1 point of contact for every employee techn
 
 **Potential Next Roles:**
 
-- Service Desk Senior Analyst
+- Service Desk Senior Analyst <!-- role: service-desk-senior-analyst -->
 - Client Platform Engineer (for those developing OS/hardware engineering interest)
 - Endpoint Management Engineer (for those developing device management platform interest)
 
