@@ -6,7 +6,7 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service Management Architect |
+| **Reports To** | Service Management Architect <!-- role: service-management-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -100,12 +100,12 @@ The Change / Release Manager owns the organization's change enablement process â
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevOps Architect | Partners on CI/CD pipeline approval gates and progressive delivery patterns that reduce change risk | Collaborates |
-| Major Incident Manager | Reviews change records to assess causality when an incident occurs | Provides To |
-| Security Architect | Reviews security-relevant changes for additional risk assessment before CAB approval | Consumes From |
+| DevOps Architect <!-- role: devops-architect --> | Partners on CI/CD pipeline approval gates and progressive delivery patterns that reduce change risk | Collaborates |
+| Major Incident Manager <!-- role: major-incident-manager --> | Reviews change records to assess causality when an incident occurs | Provides To |
+| Security Architect <!-- role: security-architect --> | Reviews security-relevant changes for additional risk assessment before CAB approval | Consumes From |
 | Any team's Architect/Engineer | Submits changes for CAB review and receives approval/rejection with rationale | Governed By |
-| Service Management Architect | Escalation path for organization-wide freezes and unresolved CAB disputes | Escalates To |
-| Technical Program Manager / Delivery Manager | Coordinates release scheduling for multi-team program cutover events | Collaborates |
+| Service Management Architect <!-- role: service-management-architect --> | Escalation path for organization-wide freezes and unresolved CAB disputes | Escalates To |
+| Technical Program Manager / Delivery Manager <!-- role: technical-program-manager-delivery-manager --> | Coordinates release scheduling for multi-team program cutover events | Collaborates |
 
 ## Key Technologies
 
@@ -155,7 +155,7 @@ The Change / Release Manager owns the organization's change enablement process â
 
 **Potential Next Roles:**
 
-- Service Management Architect
+- Service Management Architect <!-- role: service-management-architect -->
 - DevOps Architect (if pivoting toward release engineering/CI-CD architecture)
 - Head of Service Management / IT Governance Lead
 

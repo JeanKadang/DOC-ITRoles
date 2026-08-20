@@ -6,7 +6,7 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service Management Architect |
+| **Reports To** | Service Management Architect <!-- role: service-management-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,11 +101,11 @@ The Vendor / Supplier / IT Asset Manager owns the lifecycle of the organization'
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | FinOps Architect/Engineer | Provides license and vendor spend data as an input to cloud and software cost optimization | Provides To |
-| Security Architect | Collaborates on vendor security risk assessment for the vendor risk register | Collaborates |
+| Security Architect <!-- role: security-architect --> | Collaborates on vendor security risk assessment for the vendor risk register | Collaborates |
 | Endpoint Management Architect/Engineer | Coordinates hardware asset lifecycle tracking for end-user devices | Collaborates |
 | Any domain Architect | Provides licensing cost and vendor risk input before a technology selection decision | Provides To |
 | Procurement / Legal (external to this catalog) | Consumes final contract terms and legal review for vendor agreements | Consumes From |
-| Service Management Architect | Escalation path for vendor disputes or major compliance risk | Escalates To |
+| Service Management Architect <!-- role: service-management-architect --> | Escalation path for vendor disputes or major compliance risk | Escalates To |
 
 ## Key Technologies
 
@@ -155,7 +155,7 @@ The Vendor / Supplier / IT Asset Manager owns the lifecycle of the organization'
 
 **Potential Next Roles:**
 
-- Service Management Architect
+- Service Management Architect <!-- role: service-management-architect -->
 - FinOps Architect (if pivoting toward broader cloud cost strategy)
 - Head of IT Asset Management / Vendor Management
 

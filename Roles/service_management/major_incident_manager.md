@@ -6,7 +6,7 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service Management Architect |
+| **Reports To** | Service Management Architect <!-- role: service-management-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,11 +101,11 @@ The Major Incident Manager owns the end-to-end lifecycle of major (P1/P2) incide
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Site Reliability Engineer | Coordinates technical remediation during major incidents and shares post-incident findings for the reliability roadmap | Collaborates |
-| Platform Reliability Engineer | Coordinates response for platform-level incidents spanning multiple services | Collaborates |
-| Change / Release Manager | Consumes recent change records to assess causality during incident investigation | Consumes From |
-| Security Architect | Hands off incidents identified as security events for security-led investigation | Escalates To |
-| Service Management Architect | Escalation path for incidents requiring executive notification or process exceptions | Escalates To |
+| Site Reliability Engineer <!-- role: site-reliability-engineer --> | Coordinates technical remediation during major incidents and shares post-incident findings for the reliability roadmap | Collaborates |
+| Platform Reliability Engineer <!-- role: platform-reliability-engineer --> | Coordinates response for platform-level incidents spanning multiple services | Collaborates |
+| Change / Release Manager <!-- role: change-release-manager --> | Consumes recent change records to assess causality during incident investigation | Consumes From |
+| Security Architect <!-- role: security-architect --> | Hands off incidents identified as security events for security-led investigation | Escalates To |
+| Service Management Architect <!-- role: service-management-architect --> | Escalation path for incidents requiring executive notification or process exceptions | Escalates To |
 | Customer Support / Success teams | Provides incident status and customer-facing communication content | Provides To |
 
 ## Key Technologies
@@ -157,7 +157,7 @@ The Major Incident Manager owns the end-to-end lifecycle of major (P1/P2) incide
 
 **Potential Next Roles:**
 
-- Service Management Architect
+- Service Management Architect <!-- role: service-management-architect -->
 - Head of Incident and Problem Management
 - Site Reliability Engineering leadership track
 
