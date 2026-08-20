@@ -6,7 +6,7 @@
 | **Domain** | Quality Engineering |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | Quality Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -105,12 +105,12 @@ The Quality Engineering Senior Engineer owns the test strategy for a set of serv
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Quality Engineering Architect | Works within estate-wide quality standards; escalates exceptions | Governed By |
-| Quality Engineer | Sets test strategy, reviews test designs, and mentors toward independent ownership | Provides To |
-| DevOps Senior Engineer | Jointly designs where quality gates sit in the delivery pipeline | Collaborates |
-| DevSecOps Engineer | Integrates security gates into the same pipeline without duplicating them | Collaborates |
-| Change / Release Manager | Supplies the test evidence that informs release risk classification | Provides To |
-| DevOps & Delivery Chapter Lead | Reports quality metrics and escalates cross-team quality disputes | Escalates To |
+| Quality Engineering Architect <!-- role: quality-engineering-architect --> | Works within estate-wide quality standards; escalates exceptions | Governed By |
+| Quality Engineer <!-- role: quality-engineer --> | Sets test strategy, reviews test designs, and mentors toward independent ownership | Provides To |
+| DevOps Senior Engineer <!-- role: devops-senior-engineer --> | Jointly designs where quality gates sit in the delivery pipeline | Collaborates |
+| DevSecOps Engineer <!-- role: devsecops-engineer --> | Integrates security gates into the same pipeline without duplicating them | Collaborates |
+| Change / Release Manager <!-- role: change-release-manager --> | Supplies the test evidence that informs release risk classification | Provides To |
+| DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> | Reports quality metrics and escalates cross-team quality disputes | Escalates To |
 | Delivery Teams | Receives defect and coverage feedback; negotiates testability of proposed changes | Collaborates |
 
 ## Key Technologies
@@ -158,16 +158,16 @@ The Quality Engineering Senior Engineer owns the test strategy for a set of serv
 
 **Previous Roles:**
 
-- Quality Engineer
+- Quality Engineer <!-- role: quality-engineer -->
 - Software Engineer with a strong testing and tooling focus
 - DevOps Engineer moving toward delivery quality
-- Automation Framework Engineer
+- Automation Framework Engineer <!-- role: automation-framework-engineer -->
 
 **Potential Next Roles:**
 
-- Quality Engineering Architect
-- DevOps Architect
-- Engineering Practices Champion
+- Quality Engineering Architect <!-- role: quality-engineering-architect -->
+- DevOps Architect <!-- role: devops-architect -->
+- Engineering Practices Champion <!-- role: engineering-practices-champion -->
 - Delivery team technical lead
 
 ## Recommended Certifications & Learning Paths

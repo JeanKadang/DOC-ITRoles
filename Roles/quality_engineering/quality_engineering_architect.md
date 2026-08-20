@@ -6,7 +6,7 @@
 | **Domain** | Quality Engineering |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (technical direction role, not a people manager) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -107,13 +107,13 @@ The Quality Engineering Architect owns how quality is engineered across the deli
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Quality Engineering Senior Engineer | Sets the estate-wide standards they design area test strategy within | Provides To |
-| DevOps Architect | Jointly ensures quality gates fit the pipeline platform rather than fighting it | Collaborates |
-| DevSecOps Architect | Aligns quality and security gates so they complement rather than duplicate | Collaborates |
-| Enterprise Architect | Works within enterprise architecture standards; escalates conflicts | Governed By |
-| Change / Release Manager | Supplies the quality signals that inform change risk classification | Provides To |
-| Engineering Practices Champion | Partners on adoption of quality practice across engineering teams | Collaborates |
-| DevOps & Delivery Chapter Lead | Escalates tooling investment and cross-team quality disputes | Escalates To |
+| Quality Engineering Senior Engineer <!-- role: quality-engineering-senior-engineer --> | Sets the estate-wide standards they design area test strategy within | Provides To |
+| DevOps Architect <!-- role: devops-architect --> | Jointly ensures quality gates fit the pipeline platform rather than fighting it | Collaborates |
+| DevSecOps Architect <!-- role: devsecops-architect --> | Aligns quality and security gates so they complement rather than duplicate | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Works within enterprise architecture standards; escalates conflicts | Governed By |
+| Change / Release Manager <!-- role: change-release-manager --> | Supplies the quality signals that inform change risk classification | Provides To |
+| Engineering Practices Champion <!-- role: engineering-practices-champion --> | Partners on adoption of quality practice across engineering teams | Collaborates |
+| DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> | Escalates tooling investment and cross-team quality disputes | Escalates To |
 | Delivery Team Architects | Reviews proposed architectures for testability | Governed By |
 
 ## Key Technologies
@@ -161,17 +161,17 @@ The Quality Engineering Architect owns how quality is engineered across the deli
 
 **Previous Roles:**
 
-- Quality Engineering Senior Engineer
+- Quality Engineering Senior Engineer <!-- role: quality-engineering-senior-engineer -->
 - DevOps Architect or Senior Engineer with a strong quality focus
 - Application platform Architect with test architecture depth
-- Engineering Practices Champion
+- Engineering Practices Champion <!-- role: engineering-practices-champion -->
 
 **Potential Next Roles:**
 
-- Enterprise Architect
-- DevOps & Delivery Chapter Lead
+- Enterprise Architect <!-- role: enterprise-architect -->
+- DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead -->
 - Head of Engineering Practice
-- Solution Architect
+- Solution Architect <!-- role: solution-architect -->
 
 ## Recommended Certifications & Learning Paths
 
