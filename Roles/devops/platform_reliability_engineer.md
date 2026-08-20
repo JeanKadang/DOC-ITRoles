@@ -6,7 +6,7 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | DevOps Architect |
+| **Reports To** | DevOps Architect <!-- role: devops-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -106,11 +106,11 @@ The Platform Reliability Engineer applies site reliability engineering (SRE) pri
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Developer Experience Engineer | Review platform feature designs for reliability risks and to jointly respond to IDP incidents | Collaborates |
-| DevOps Architect | Platform design reviews — providing reliability and resilience input to IDP architecture decisions | Escalates To |
-| Observability Architect | Align platform monitoring with organisation-wide observability standards and telemetry pipeline governance | Governed By |
+| Developer Experience Engineer <!-- role: developer-experience-engineer --> | Review platform feature designs for reliability risks and to jointly respond to IDP incidents | Collaborates |
+| DevOps Architect <!-- role: devops-architect --> | Platform design reviews — providing reliability and resilience input to IDP architecture decisions | Escalates To |
+| Observability Architect <!-- role: observability-architect --> | Align platform monitoring with organisation-wide observability standards and telemetry pipeline governance | Governed By |
 | Azure, AWS, and GCP Cloud Architects | Underlying infrastructure reliability, autoscaling, and multi-zone availability design for shared platform components | Collaborates |
-| Kubernetes Architect | Cluster reliability, workload isolation, and failure domain analysis for platform services hosted on shared clusters | Collaborates |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | Cluster reliability, workload isolation, and failure domain analysis for platform services hosted on shared clusters | Collaborates |
 | application development teams | Communicate platform SLO status, planned maintenance, and reliability improvements | Provides To |
 | FinOps team | Platform infrastructure cost optimisation initiatives that must be balanced against reliability requirements | Collaborates |
 
@@ -173,9 +173,9 @@ The Platform Reliability Engineer applies site reliability engineering (SRE) pri
 
 **Potential Next Roles:**
 
-- DevOps Senior Engineer
-- Site Reliability Senior Engineer
-- Observability Senior Engineer
+- DevOps Senior Engineer <!-- role: devops-senior-engineer -->
+- Site Reliability Senior Engineer <!-- role: site-reliability-senior-engineer -->
+- Observability Senior Engineer <!-- role: observability-senior-engineer -->
 - DevOps Architect (platform reliability specialism)
 - Head of Platform Reliability / SRE Practice Lead
 

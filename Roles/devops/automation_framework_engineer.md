@@ -116,10 +116,10 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevOps Senior Engineer or DevOps Architect | Reports to, depending on team structure | Escalates To |
-| Developer Experience Engineer | Inner developer portal and golden paths | Collaborates |
-| Platform Reliability Engineer | Operational automation and runbook alignment | Collaborates |
-| Infrastructure Automation Architect | Strategic direction and module governance | Governed By |
+| <!-- one-of -->DevOps Senior Engineer <!-- role: devops-senior-engineer --> or DevOps Architect <!-- role: devops-architect --><!-- /one-of --> | Reports to, depending on team structure | Escalates To |
+| Developer Experience Engineer <!-- role: developer-experience-engineer --> | Inner developer portal and golden paths | Collaborates |
+| Platform Reliability Engineer <!-- role: platform-reliability-engineer --> | Operational automation and runbook alignment | Collaborates |
+| Infrastructure Automation Architect <!-- role: infrastructure-automation-architect --> | Strategic direction and module governance | Governed By |
 | domain engineering teams | Consume published frameworks | Provides To |
 | QA/test engineering leads | Aligning on test automation standards | Collaborates |
 | security engineering | Compliance controls embedded in shared templates | Governed By |
@@ -177,7 +177,7 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 
 **Previous Roles:**
 
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Software Engineer (with infrastructure or tooling focus)
 - QA Automation Engineer
 - Build and Release Engineer
@@ -185,8 +185,8 @@ The Automation Framework Engineer designs, builds, and maintains the reusable au
 
 **Potential Next Roles:**
 
-- DevOps Senior Engineer
-- Infrastructure Automation Architect
+- DevOps Senior Engineer <!-- role: devops-senior-engineer -->
+- Infrastructure Automation Architect <!-- role: infrastructure-automation-architect -->
 - Developer Experience Engineer (internal platform / golden-path ownership)
 - Staff or Principal Engineer (automation platform track)
 - Solutions Architect (automation and DevOps tooling specialisation)
