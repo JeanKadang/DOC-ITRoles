@@ -480,7 +480,7 @@
                 continue;
             }
             const item = current && line.match(/^-\s+(.+)$/);
-            if (item) out[current].push(item[1].trim());
+            if (item) out[current].push(stripAnnotations(item[1]));
         }
         return out;
     }
@@ -641,6 +641,26 @@
         };
     }
 
+    // #269's annotation syntax (`<!-- role: id -->`, `<!-- external-role -->`,
+    // `<!-- one-of -->...<!-- /one-of -->`) is appended inline in the same
+    // Reports To / Direct Reports value and Career Development Path bullet
+    // text these functions read. The general role body goes through
+    // marked+DOMPurify, which drops HTML comments on its own, but
+    // splitReportingValue and parseCareerPath extract raw text directly and
+    // hand it straight to escapeHtml() for display and to findRoleByTitle()
+    // for xref matching — neither strips it, so an annotated value would
+    // show the literal comment text and fail to link. Strip here, once, so
+    // both callers get clean text for free.
+    const ANNOTATION_COMMENT = /<!--[\s\S]*?-->/g;
+
+    function stripAnnotations(text) {
+        return String(text == null ? '' : text)
+            .replace(ANNOTATION_COMMENT, '')
+            .replace(/\s+([,;])/g, '$1')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
     // Split a Reports To / Direct Reports value into the part worth showing
     // and the qualifier behind it. 34% of these values run past 60 characters
     // (longest is 241) because they explain the arrangement inline — "None
@@ -648,7 +668,7 @@
     // with the Chapter Lead)". Rendering that whole string as a chip is
     // unreadable, so the lead-in shows and the rest becomes a tooltip (#113).
     function splitReportingValue(value) {
-        const v = String(value == null ? '' : value).trim();
+        const v = stripAnnotations(value);
         if (!v) return { head: '', detail: '' };
         const paren = v.match(/^([^(]+?)\s*\((.+)\)\s*$/);
         if (paren) return { head: paren[1].trim(), detail: paren[2].trim() };
@@ -1169,6 +1189,7 @@
         panelStateFor,
         parseRoleMeta,
         splitReportingValue,
+        stripAnnotations,
         tocIdFor,
         activeTocIndex,
         parseViewerRoute,

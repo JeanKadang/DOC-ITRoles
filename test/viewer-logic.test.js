@@ -42,6 +42,7 @@ const {
     panelStateFor,
     parseRoleMeta,
     splitReportingValue,
+    stripAnnotations,
     tocIdFor,
     activeTocIndex,
     parseViewerRoute,
@@ -713,6 +714,19 @@ test('parseCareerPath ignores bullets outside the from/to sub-lists', () => {
     assert.deepEqual(parseCareerPath(md), { from: ['Real Entry'], to: [] });
 });
 
+// #269's migration appends an inline annotation comment to a career-path
+// bullet's own text. renderCareerStepper (index.html) shows this value
+// directly and matches it against the catalog via findRoleByTitle, so an
+// unstripped comment would appear as literal text in the career stepper and
+// break the xref link.
+test('parseCareerPath strips a #269 annotation from a bullet', () => {
+    const md = `## Career Development Path\n\n**Previous Roles:**\n\n- Cloud Lead Architect <!-- role: cloud-lead-architect -->\n\n**Potential Next Roles:**\n\n- COO <!-- external-role -->\n`;
+    assert.deepEqual(parseCareerPath(md), {
+        from: ['Cloud Lead Architect'],
+        to:   ['COO'],
+    });
+});
+
 test('parseCareerPath parses every role file in the catalog', () => {
     const fs = require('node:fs');
     const path = require('node:path');
@@ -1024,6 +1038,37 @@ test('splitReportingValue splits on a semicolon when there is no parenthetical',
 test('splitReportingValue handles empty and missing values', () => {
     assert.deepEqual(splitReportingValue(''),   { head: '', detail: '' });
     assert.deepEqual(splitReportingValue(null), { head: '', detail: '' });
+});
+
+// #269's migration appends an inline annotation comment to the same Reports
+// To / Direct Reports value this function reads. Without stripping it, the
+// chip would show the literal "<!-- role: ... -->" text and its xref match
+// (which runs on `head`) would fail, since the comment isn't a catalogue
+// title.
+test('stripAnnotations removes each #269 annotation form without disturbing the underlying text', () => {
+    assert.equal(
+        stripAnnotations('Chief Executive Officer <!-- role: chief-executive-officer -->'),
+        'Chief Executive Officer',
+    );
+    assert.equal(stripAnnotations('COO <!-- external-role -->'), 'COO');
+    assert.equal(
+        stripAnnotations('<!-- one-of -->A <!-- role: a -->, B <!-- role: b --><!-- /one-of -->'),
+        'A, B',
+    );
+    assert.equal(stripAnnotations('Chief Executive Officer'), 'Chief Executive Officer');
+    assert.equal(stripAnnotations(''), '');
+    assert.equal(stripAnnotations(null), '');
+});
+
+test('splitReportingValue strips a #269 annotation from the head before it is shown or matched', () => {
+    assert.deepEqual(
+        splitReportingValue('Chief Executive Officer <!-- role: chief-executive-officer -->'),
+        { head: 'Chief Executive Officer', detail: '' },
+    );
+    assert.deepEqual(
+        splitReportingValue('COO <!-- external-role -->'),
+        { head: 'COO', detail: '' },
+    );
 });
 
 // ── staggered review schedule (#124) ──────────────────────
