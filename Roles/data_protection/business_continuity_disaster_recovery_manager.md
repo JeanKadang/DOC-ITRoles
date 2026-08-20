@@ -6,7 +6,7 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -102,10 +102,10 @@ The Business Continuity / Disaster Recovery Manager owns the organization's busi
 |---|---|---|
 | Commvault Architect / Engineer | Validates that backup configurations meet the RPOs defined in the Business Impact Analysis | Consumes From |
 | SimpliVity Backup Architect / Engineer | Validates that replication/recovery configurations meet defined RTOs for hyperconverged workloads | Consumes From |
-| Major Incident Manager | Coordinates the handoff between a technical major incident and a formal business continuity invocation | Collaborates |
-| Security Architect | Collaborates on aligning BC/DR governance with the broader security and resilience posture | Collaborates |
+| Major Incident Manager <!-- role: major-incident-manager --> | Coordinates the handoff between a technical major incident and a formal business continuity invocation | Collaborates |
+| Security Architect <!-- role: security-architect --> | Collaborates on aligning BC/DR governance with the broader security and resilience posture | Collaborates |
 | Any domain Architect | Provides the RTO/RPO targets and BIA findings that inform that domain's resilience design | Provides To |
-| Security & Identity Chapter Lead | Escalation path for BIA-identified risks requiring executive risk acceptance or investment | Escalates To |
+| Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> | Escalation path for BIA-identified risks requiring executive risk acceptance or investment | Escalates To |
 
 ## Key Technologies
 
@@ -156,7 +156,7 @@ The Business Continuity / Disaster Recovery Manager owns the organization's busi
 
 - Security Architect (if pivoting toward broader security/resilience architecture)
 - Head of Business Continuity / Operational Resilience
-- Security & Identity Chapter Lead
+- Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead -->
 
 ## Recommended Certifications & Learning Paths
 

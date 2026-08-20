@@ -97,7 +97,7 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 | Observability Engineers | Monitoring implementation | Collaborates |
 | Storage Engineers | Storage reliability | Collaborates |
 | Backup Product Owner | Reliability metrics | Provides To |
-| Risk Management | Data protection assurance | Provides To |
+| Risk Management <!-- external-role --> | Data protection assurance | Provides To |
 | Backup Architects | Resilience design | Consumes From |
 
 ## Key Technologies
@@ -156,8 +156,8 @@ The Backup Reliability Engineer focuses on ensuring the consistency, reliability
 **Previous Roles:**
 
 - Backup Engineer
-- Storage Engineer
-- Site Reliability Engineer
+- Storage Engineer <!-- role: storage-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Infrastructure Engineer
 - Systems Administrator with backup focus
 

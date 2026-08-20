@@ -6,7 +6,7 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | SimpliVity Backup Senior Engineer |
+| **Reports To** | SimpliVity Backup Senior Engineer <!-- role: simplivity-backup-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,10 +93,10 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| SimpliVity Backup Product Owner | Task prioritization | Consumes From |
+| SimpliVity Backup Product Owner <!-- role: simplivity-backup-product-owner --> | Task prioritization | Consumes From |
 | VMware Engineers | Virtual machine backup operations | Collaborates |
 | Observability Engineers | Backup monitoring implementation | Collaborates |
-| SimpliVity Backup Architect | Implementation activities | Escalates To |
+| SimpliVity Backup Architect <!-- role: simplivity-backup-architect --> | Implementation activities | Escalates To |
 | application teams | Backup and recovery requirements | Provides To |
 
 ## Key Technologies
@@ -158,7 +158,7 @@ The SimpliVity Backup Engineer implements and maintains backup and recovery oper
 
 **Potential Next Roles:**
 
-- SimpliVity Backup Senior Engineer
+- SimpliVity Backup Senior Engineer <!-- role: simplivity-backup-senior-engineer -->
 - Data Protection Specialist
 - Hyperconverged Infrastructure Engineer
 - Storage Administrator

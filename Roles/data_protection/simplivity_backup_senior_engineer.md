@@ -6,7 +6,7 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | SimpliVity Backup Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,8 +93,8 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| SimpliVity Backup Architect | Solution design and implementation strategy | Escalates To |
-| SimpliVity Backup Product Owner | Technical planning and roadmap execution | Collaborates |
+| SimpliVity Backup Architect <!-- role: simplivity-backup-architect --> | Solution design and implementation strategy | Escalates To |
+| SimpliVity Backup Product Owner <!-- role: simplivity-backup-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | VMware Senior Engineers | Advanced virtualization integration | Collaborates |
 | Enterprise Backup Senior Engineers | Integration with broader backup strategy | Collaborates |
 | SimpliVity Backup Engineers | Technical implementation | Provides To |
@@ -151,14 +151,14 @@ The SimpliVity Backup Senior Engineer leads the implementation and optimization 
 
 **Previous Roles:**
 
-- SimpliVity Backup Engineer
+- SimpliVity Backup Engineer <!-- role: simplivity-backup-engineer -->
 - Virtualization Engineer with backup focus
 - Data Protection Specialist
 - Storage Administrator
 
 **Potential Next Roles:**
 
-- SimpliVity Backup Architect
+- SimpliVity Backup Architect <!-- role: simplivity-backup-architect -->
 - Data Protection Architect
 - Enterprise Backup Leader
 - Business Continuity Manager
