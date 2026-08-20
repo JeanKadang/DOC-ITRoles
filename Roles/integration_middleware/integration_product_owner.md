@@ -6,7 +6,7 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -107,11 +107,11 @@ The Integration Product Owner owns the integration platform product backlog — 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Integration Architect | As the technical counterpart — receives architectural direction and ensures that backlog prioritisation reflects integration platform architectural strategy and delivery dependencies | Consumes From |
-| API Platform Architect | (where separate) to align API gateway roadmap and developer portal features with the broader API management strategy | Collaborates |
-| DevOps Architect | Ensure integration platform CI/CD pipeline requirements and deployment automation are included in DevOps platform delivery planning | Collaborates |
-| Security Architect | Incorporate API security, OAuth 2.0 / mTLS, and B2B credential governance requirements into the integration platform backlog | Governed By |
-| Enterprise Architect | Integration platform direction within the overall enterprise architecture strategy and digital transformation programme | Governed By |
+| Integration Architect <!-- role: integration-architect --> | As the technical counterpart — receives architectural direction and ensures that backlog prioritisation reflects integration platform architectural strategy and delivery dependencies | Consumes From |
+| API Platform Architect <!-- role: api-platform-architect --> | (where separate) to align API gateway roadmap and developer portal features with the broader API management strategy | Collaborates |
+| DevOps Architect <!-- role: devops-architect --> | Ensure integration platform CI/CD pipeline requirements and deployment automation are included in DevOps platform delivery planning | Collaborates |
+| Security Architect <!-- role: security-architect --> | Incorporate API security, OAuth 2.0 / mTLS, and B2B credential governance requirements into the integration platform backlog | Governed By |
+| Enterprise Architect <!-- role: enterprise-architect --> | Integration platform direction within the overall enterprise architecture strategy and digital transformation programme | Governed By |
 | consuming application teams | Gather requirements, manage onboarding to integration services, and communicate deprecation timelines | Provides To |
 | Integration Senior Engineers | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |
 | Integration Engineers | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |

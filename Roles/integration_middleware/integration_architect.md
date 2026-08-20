@@ -6,7 +6,7 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Integration Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -114,11 +114,11 @@ The Integration Architect designs and governs the organisation's enterprise inte
 | Enterprise Architect / Solution Architects | Provide integration patterns; governance review of integration designs in project proposals | Governed By |
 | Cloud Architects | Align integration platform architecture with cloud platform standards | Collaborates |
 | Application Teams | Define and enforce API design standards; support integration design within applications | Provides To |
-| Security Architect | Implement API security patterns and B2B credential governance | Governed By |
+| Security Architect <!-- role: security-architect --> | Implement API security patterns and B2B credential governance | Governed By |
 | ERP / Business Systems Teams | Design integration between core enterprise systems and surrounding applications | Collaborates |
 | DataOps / Data Platform | Define event sourcing and CDC patterns where integration feeds data platforms | Collaborates |
-| DevOps Architect | Govern CI/CD integration pipeline standards, deployment automation for integration artifacts, and integration testing practices | Collaborates |
-| API Platform Architect | API design standards, versioning policies, and the boundary between API gateway capabilities and integration platform responsibilities | Collaborates |
+| DevOps Architect <!-- role: devops-architect --> | Govern CI/CD integration pipeline standards, deployment automation for integration artifacts, and integration testing practices | Collaborates |
+| API Platform Architect <!-- role: api-platform-architect --> | API design standards, versioning policies, and the boundary between API gateway capabilities and integration platform responsibilities | Collaborates |
 
 ## Key Technologies
 
@@ -172,7 +172,7 @@ The Integration Architect designs and governs the organisation's enterprise inte
 
 **Potential Next Roles:**
 
-- Enterprise Architect
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Head of Integration and Architecture
 - Chief Architect
 
