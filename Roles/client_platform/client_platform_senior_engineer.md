@@ -6,7 +6,7 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | Client Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -150,15 +150,15 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 
 **From (typical previous roles):**
 
-- Client Platform Engineer
+- Client Platform Engineer <!-- role: client-platform-engineer -->
 - Desktop Support Engineer (Tier 2/3) with scripting and packaging skills
 - Systems Administrator (Windows or macOS focused)
 - Endpoint Management Engineer with OS build experience
 
 **To (typical next roles):**
 
-- Client Platform Architect
-- Endpoint Management Architect
+- Client Platform Architect <!-- role: client-platform-architect -->
+- Endpoint Management Architect <!-- role: endpoint-management-architect -->
 - Modern Workplace Senior Engineer
 - DevOps / Platform Automation Engineer (with OS automation focus)
 
@@ -168,13 +168,13 @@ This role provides technical leadership and mentoring to Client Platform Enginee
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Client Platform Architect | Receive architectural direction; contribute engineering feedback to standards and roadmap | Escalates To |
+| Client Platform Architect <!-- role: client-platform-architect --> | Receive architectural direction; contribute engineering feedback to standards and roadmap | Escalates To |
 | Client Platform Engineers | Provide mentoring, peer review packaging work, and first-line escalation support | Provides To |
 | Endpoint Management Senior Engineers | Coordinate on Intune policy integration with OS builds and application deployment alignment | Collaborates |
 | Service Desk (Tier 1/2) | Receive OS-level escalations; provide resolution, root cause analysis, and knowledge base updates | Provides To |
-| Security Operations | Validate OS hardening baseline implementations; support rapid remediation of client-side CVEs | Collaborates |
+| Security Operations <!-- external-role --> | Validate OS hardening baseline implementations; support rapid remediation of client-side CVEs | Collaborates |
 | HR / People Operations | Support device provisioning workflows for new employee onboarding cohorts | Collaborates |
-| Procurement | Advise on hardware compatibility for new device models entering the standard | Consumes From |
+| Procurement <!-- external-role --> | Advise on hardware compatibility for new device models entering the standard | Consumes From |
 
 ## Key Technologies
 
