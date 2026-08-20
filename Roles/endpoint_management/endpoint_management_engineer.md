@@ -6,7 +6,7 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
-| **Reports To** | Endpoint Management Senior Engineer |
+| **Reports To** | Endpoint Management Senior Engineer <!-- role: endpoint-management-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -161,7 +161,7 @@ The Endpoint Management Engineer administers and maintains the organisation's en
 
 **Potential Next Roles:**
 
-- Endpoint Management Senior Engineer
+- Endpoint Management Senior Engineer <!-- role: endpoint-management-senior-engineer -->
 - Systems Administrator
 - Cloud Engineer (Microsoft 365 / Azure)
 

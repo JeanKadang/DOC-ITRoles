@@ -6,7 +6,7 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -168,13 +168,13 @@ The Endpoint Management Architect is responsible for the strategic design, gover
 
 **Previous Roles:**
 
-- Endpoint Management Senior Engineer
+- Endpoint Management Senior Engineer <!-- role: endpoint-management-senior-engineer -->
 - Systems Engineer (SCCM/ConfigMgr background)
 - Desktop Engineer with cloud management experience
 
 **Potential Next Roles:**
 
-- Enterprise Architect
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Modern Workplace Architect (broader Microsoft 365 scope)
 - Cloud Platform Architect (with Microsoft focus)
 - Director of IT Infrastructure
