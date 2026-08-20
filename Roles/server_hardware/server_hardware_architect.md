@@ -6,7 +6,7 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Server Hardware Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,9 +98,9 @@ The Server Hardware Architect designs comprehensive server infrastructure strate
 | Enterprise Architects | Technology standards | Governed By |
 | Data Center Architects | Infrastructure planning | Collaborates |
 | Infrastructure Directors | Capacity strategy | Collaborates |
-| Server Hardware Product Owner | Technical strategy | Collaborates |
+| Server Hardware Product Owner <!-- role: server-hardware-product-owner --> | Technical strategy | Collaborates |
 | Server Hardware Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
-| vendors | Hardware roadmaps and innovation | Collaborates |
+| vendors <!-- external-role --> | Hardware roadmaps and innovation | Collaborates |
 
 ## Key Technologies
 
@@ -157,7 +157,7 @@ The Server Hardware Architect designs comprehensive server infrastructure strate
 
 **Previous Roles:**
 
-- Server Hardware Senior Engineer
+- Server Hardware Senior Engineer <!-- role: server-hardware-senior-engineer -->
 - Data Center Infrastructure Manager
 - Enterprise Hardware Specialist
 - Technology Operations Leader

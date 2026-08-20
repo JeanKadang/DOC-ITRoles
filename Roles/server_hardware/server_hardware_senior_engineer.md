@@ -6,7 +6,7 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Server Hardware Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,8 +103,8 @@ The Server Hardware Senior Engineer leads the implementation and optimization of
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Architect | Implementation strategies | Escalates To |
-| Server Hardware Product Owner | Technical planning | Collaborates |
+| Server Hardware Architect <!-- role: server-hardware-architect --> | Implementation strategies | Escalates To |
+| Server Hardware Product Owner <!-- role: server-hardware-product-owner --> | Technical planning | Collaborates |
 | Senior Engineers from other platforms | Hardware requirements | Collaborates |
 | Server Hardware Engineers | Complex technical challenges | Provides To |
 | data center operations | Infrastructure planning | Collaborates |
@@ -165,7 +165,7 @@ The Server Hardware Senior Engineer leads the implementation and optimization of
 
 **Previous Roles:**
 
-- Server Hardware Engineer
+- Server Hardware Engineer <!-- role: server-hardware-engineer -->
 - Data Center Technician
 - Infrastructure Support Engineer
 - Hardware Systems Administrator
@@ -173,7 +173,7 @@ The Server Hardware Senior Engineer leads the implementation and optimization of
 
 **Potential Next Roles:**
 
-- Server Hardware Architect
+- Server Hardware Architect <!-- role: server-hardware-architect -->
 - Data Center Infrastructure Manager
 - Infrastructure Team Leader
 - Technology Operations Director
