@@ -107,9 +107,9 @@ The DevOps & Delivery Chapter Lead is the most senior technical manager and peop
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Cloud, Platform & Infrastructure Chapter Lead | Platform decisions, cloud architecture, and delivery workload cost visibility | Collaborates |
-| Enterprise Architect | Delivery and integration alignment with enterprise architecture standards | Governed By |
-| Security & Identity Chapter Lead | Pipeline security, SAST/DAST toolchain integration, and secure delivery practices | Collaborates |
+| Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> | Platform decisions, cloud architecture, and delivery workload cost visibility | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Delivery and integration alignment with enterprise architecture standards | Governed By |
+| Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> | Pipeline security, SAST/DAST toolchain integration, and secure delivery practices | Collaborates |
 | Finance stakeholders | Delivery toolchain investment visibility; cloud spend governance is handled via the Cloud, Platform & Infrastructure Chapter Lead | Collaborates |
 | Enterprise architecture forums, cloud strategy governance, developer experience communities of practice | Cross-chapter engineering leadership forums | Escalates To |
 

@@ -105,7 +105,7 @@ The Engineering Practices Champion is a senior individual contributor and intern
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | DevOps Architect, Developer Experience Engineer, Automation Framework Engineer | Joint ownership of tooling and platform capability that engineering practices depend on | Collaborates |
-| Technical Community Leader | Coordinate engineering-culture initiatives with the wider technical community programme | Collaborates |
+| Technical Community Leader <!-- role: technical-community-leader --> | Coordinate engineering-culture initiatives with the wider technical community programme | Collaborates |
 | Delivery teams, Team Leads, Engineering Managers | Primary coaching audience for TDD/BDD, code review culture, and CI/CD maturity uplift | Provides To |
 | Product Owners | Definition of Ready / Definition of Done governance as DoR/DoD stakeholders | Collaborates |
 

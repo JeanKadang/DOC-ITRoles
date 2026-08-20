@@ -108,7 +108,7 @@ The Service & Governance Chapter Lead is the most senior technical manager and p
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Enterprise Architect | Primary partner on EA governance board operations and architecture standards alignment | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Primary partner on EA governance board operations and architecture standards alignment | Collaborates |
 | All other Chapter Leads | This chapter owns the processes and governance frameworks that all chapters operate within — change management, onboarding gates, CMDB, service catalogue | Provides To |
 | Risk and Audit functions | IT compliance reporting, configuration estate audits, and governance evidence | Governed By |
 | CTO/CIO | EA governance board outcomes, IT service reporting, and governance maturity programme direction | Escalates To |

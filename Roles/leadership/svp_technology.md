@@ -6,7 +6,7 @@
 | **Domain** | Leadership |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | SVP of Technology |
-| **Reports To** | Chief Executive Officer |
+| **Reports To** | Chief Executive Officer <!-- role: chief-executive-officer --> |
 | **Direct Reports** | Product Area Leads, Technical Area Lead (equivalent title to CTO/CIO — org uses one) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -116,10 +116,10 @@ The SVP of Technology sits above the Product Area Lead (PAL) and Technical Area 
 | Product Area Leads (PALs) | Day-to-day operation of the technology function, portfolio alignment, and delivery governance | Provides To |
 | Technical Area Lead (TAL) | Technical strategy execution, engineering standards, and cross-chapter coordination | Provides To |
 | CISO | (where the role is separate) on information security strategy, risk posture, and board-level security reporting; in some organisations holds both roles | Collaborates |
-| Enterprise Architect | The long-term technology architecture strategy and platform evolution | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | The long-term technology architecture strategy and platform evolution | Collaborates |
 | CEO and Board of Directors | As the primary technology accountability point for risk, investment, and strategic direction | Escalates To |
 | CFO | Technology investment planning, ROI reporting, and financial governance | Collaborates |
-| CPO (Chief People Officer) | Technology talent strategy, leadership development, and organisational design | Collaborates |
+| CPO (Chief People Officer) <!-- external-role --> | Technology talent strategy, leadership development, and organisational design | Collaborates |
 | executive leadership team | Alongside COO, CFO, CMO, and other C-suite peers | Collaborates |
 | strategic technology vendors and partners | Including cloud hyperscalers, system integrators, and platform providers | Governed By |
 

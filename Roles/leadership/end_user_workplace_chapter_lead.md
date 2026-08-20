@@ -109,9 +109,9 @@ The End User & Workplace Chapter Lead is the most senior technical manager and p
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Security & Identity Chapter Lead | Endpoint security posture, EDR coverage, and conditional access architecture aligned to the zero trust roadmap | Collaborates |
-| Service & Governance Chapter Lead | ITSM processes for end-user services, device onboarding, and service catalogue entries | Collaborates |
-| Enterprise Architect | M365 platform alignment with enterprise architecture standards | Governed By |
+| Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> | Endpoint security posture, EDR coverage, and conditional access architecture aligned to the zero trust roadmap | Collaborates |
+| Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> | ITSM processes for end-user services, device onboarding, and service catalogue entries | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | M365 platform alignment with enterprise architecture standards | Governed By |
 | HR and People function | Digital employee experience strategy, hybrid working technology requirements, and people technology roadmap | Collaborates |
 | Enterprise architecture forums, endpoint security reviews, M365 governance boards, digital workplace steering groups | Cross-chapter governance forums | Escalates To |
 

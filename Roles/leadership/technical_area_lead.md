@@ -7,7 +7,7 @@
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | Technical Area Lead |
 | **Reports To** | SVP of Technology (or CTO/CIO) |
-| **Direct Reports** | Chapter Leads (jointly with the Product Area Lead, as the PAL/TAL leadership pair); Engineering Practices Champion; Technical Community Leader |
+| **Direct Reports** | Chapter Leads (jointly with the Product Area Lead, as the PAL/TAL leadership pair); Engineering Practices Champion <!-- role: engineering-practices-champion -->; Technical Community Leader <!-- role: technical-community-leader --> |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
 | **Last Reviewed** | 2026-03 |
@@ -104,7 +104,7 @@ The Technical Area Lead (TAL) is the senior technical authority for a defined IT
 | Product Area Lead (PAL) | As the leadership pair — the TAL owns technical quality and direction; the PAL owns delivery and business alignment | Collaborates |
 | Domain Architects | Across the area's domains | Provides To |
 | Senior Engineers | Across the area's domains | Provides To |
-| Enterprise Architect | Align area technical direction with enterprise architecture standards and patterns | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Align area technical direction with enterprise architecture standards and patterns | Collaborates |
 | CISO / Security Architect | Ensure security and compliance are embedded in area technical decisions | Collaborates |
 | CTO/CIO-level technical forums | Cross-area technical governance bodies | Escalates To |
 | TALs of other product areas | Shared platforms, integration patterns, and cross-area technical dependencies | Collaborates |

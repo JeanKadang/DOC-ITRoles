@@ -109,7 +109,7 @@ The Security & Identity Chapter Lead is the organisation's most senior security 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | CISO | This role is the practitioner-level counterpart to the CISO's strategic and risk leadership | Escalates To |
-| Enterprise Architect | Security architecture alignment with enterprise standards and zero trust principles | Governed By |
+| Enterprise Architect <!-- role: enterprise-architect --> | Security architecture alignment with enterprise standards and zero trust principles | Governed By |
 | All other Chapter Leads | Embedding security requirements, threat modelling, and security controls into their domain architectures | Provides To |
 | Data Protection Officer (DPO) and Legal/Compliance | GDPR, data privacy, and regulatory security obligations | Governed By |
 | Security governance boards, risk committees, enterprise architecture forums | Cross-chapter technical governance | Escalates To |
