@@ -140,3 +140,57 @@ test('annotateField leaves an unresolved semicolon-separated field byte-identica
   const r = annotateField(original, ctx());
   assert.equal(r.text, original, 'nothing resolved, so nothing should be rewritten, including separator spacing');
 });
+
+// Task 3: Whole-document migration for Reports To and Direct Reports
+const { migrateRoleContent } = require('../scripts/lib/relationship-annotations.js');
+
+const SAMPLE = [
+  '# Kubernetes Engineer',
+  '',
+  '| Field | Value |',
+  '|---|---|',
+  '| **Role ID** | `kubernetes-engineer` |',
+  '| **Reports To** | Kubernetes Senior Engineer |',
+  '| **Direct Reports** | None |',
+  '',
+  '## Role Overview',
+  '',
+  'Text.',
+  '',
+].join('\n');
+
+function sampleCtx() {
+  return {
+    roleIndex: buildRoleIndex([
+      { title: 'Kubernetes Engineer', roleId: 'kubernetes-engineer' },
+      { title: 'Kubernetes Senior Engineer', roleId: 'kubernetes-senior-engineer' },
+    ]),
+    externalTerms: new Set(),
+  };
+}
+
+test('migrateRoleContent annotates Reports To and leaves a None Direct Reports untouched', () => {
+  const r = migrateRoleContent(SAMPLE, sampleCtx());
+  assert.match(r.content, /\*\*Reports To\*\* \| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> \|/);
+  assert.match(r.content, /\*\*Direct Reports\*\* \| None \|/);
+  assert.equal(r.resolved.length, 1);
+});
+
+test('migrateRoleContent leaves everything else in the document unchanged', () => {
+  const r = migrateRoleContent(SAMPLE, sampleCtx());
+  assert.match(r.content, /## Role Overview\n\nText\./);
+});
+
+test('migrateRoleContent is idempotent', () => {
+  const first = migrateRoleContent(SAMPLE, sampleCtx());
+  const second = migrateRoleContent(first.content, sampleCtx());
+  assert.equal(second.content, first.content);
+  assert.deepEqual(second.resolved, []);
+});
+
+test('migrateRoleContent records an unresolved Reports To as a legacy entry', () => {
+  const drifted = SAMPLE.replace('Kubernetes Senior Engineer', 'Some Drifted Title');
+  const r = migrateRoleContent(drifted, sampleCtx());
+  assert.equal(r.content, drifted);
+  assert.deepEqual(r.legacy, [{ field: 'Reports To', text: 'Some Drifted Title' }]);
+});

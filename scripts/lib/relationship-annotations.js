@@ -97,4 +97,34 @@ function annotateField(fieldText, ctx) {
   return { text, resolved, legacy };
 }
 
-module.exports = { normalizeTitle, buildRoleIndex, annotateTarget, isAnnotated, annotateField };
+// Matches a metadata table row's value cell: group 1 is everything up to
+// and including the opening "| **Field** | ", group 2 is the value, group 3
+// is the trailing whitespace and closing pipe. Replacing only group 2 keeps
+// the row's formatting untouched when nothing resolves.
+function fieldRowPattern(name) {
+  return new RegExp(`(\\|\\s*\\*\\*${name}\\*\\*\\s*\\|\\s*)([^|\\n]*?)(\\s*\\|)`);
+}
+
+function migrateTableField(content, name, ctx, resolved, legacy) {
+  const pattern = fieldRowPattern(name);
+  const match = content.match(pattern);
+  if (!match) return content;
+
+  const { text, resolved: fieldResolved, legacy: fieldLegacy } = annotateField(match[2], ctx);
+  resolved.push(...fieldResolved);
+  legacy.push(...fieldLegacy.map(entry => ({ field: name, text: entry })));
+
+  if (text === match[2]) return content;
+  return content.replace(pattern, `$1${text}$3`);
+}
+
+function migrateRoleContent(content, ctx) {
+  const resolved = [];
+  const legacy = [];
+  let out = content;
+  out = migrateTableField(out, 'Reports To', ctx, resolved, legacy);
+  out = migrateTableField(out, 'Direct Reports', ctx, resolved, legacy);
+  return { content: out, resolved, legacy };
+}
+
+module.exports = { normalizeTitle, buildRoleIndex, annotateTarget, isAnnotated, annotateField, migrateRoleContent };
