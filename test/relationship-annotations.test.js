@@ -141,6 +141,15 @@ test('annotateField leaves an unresolved semicolon-separated field byte-identica
   assert.equal(r.text, original, 'nothing resolved, so nothing should be rewritten, including separator spacing');
 });
 
+test('annotateField recognizes None with parenthetical explanation as a complete sentinel (regression test)', () => {
+  // Real-world example from the catalogue: None with explanation containing internal semicolons
+  const original = 'None (sets technical direction and mentors Network Senior Engineers; formal line management sits with the Chapter Lead)';
+  const r = annotateField(original, ctx());
+  assert.equal(r.text, original, 'should preserve the entire None (...) pattern unchanged');
+  assert.deepEqual(r.resolved, [], 'should not resolve any annotations');
+  assert.deepEqual(r.legacy, [], 'should not create legacy fragments from internal punctuation');
+});
+
 // Task 3: Whole-document migration for Reports To and Direct Reports
 const { migrateRoleContent } = require('../scripts/lib/relationship-annotations.js');
 

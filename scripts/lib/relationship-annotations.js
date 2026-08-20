@@ -83,9 +83,10 @@ function annotateSegment(segment, ctx) {
 // Top-level targets in a field are separated by ";" (see ADR-0006's Direct
 // Reports example). A field that resolves nothing is returned completely
 // unchanged, including its original separator spacing, so untouched fields
-// never produce a diff.
+// never produce a diff. "None" is recognized with an optional parenthetical
+// explanation (e.g. "None (explanation; with; internal; punctuation)").
 function annotateField(fieldText, ctx) {
-  if (/^\s*none\s*$/i.test(fieldText)) return { text: fieldText, resolved: [], legacy: [] };
+  if (/^\s*none\s*(\(.*\))?\s*$/i.test(fieldText)) return { text: fieldText, resolved: [], legacy: [] };
 
   const segments = fieldText.split(';').map(s => annotateSegment(s, ctx));
   const resolved = segments.filter(s => s.status === 'resolved').map(s => s.detail);
