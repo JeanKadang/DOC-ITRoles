@@ -6,7 +6,7 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Security Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -148,7 +148,7 @@ The Security Architect designs and implements security systems and frameworks th
 
 **Previous Roles:**
 
-- Security Engineer
+- Security Engineer <!-- role: security-engineer -->
 - Network Security Specialist
 - Security Analyst
 - Solutions Architect with Security Focus
@@ -187,8 +187,8 @@ The Security Architect designs and implements security systems and frameworks th
 | Security Engineers | Implementation of security designs | Provides To |
 | Compliance Managers | Regulatory requirements | Governed By |
 | Development Teams | Secure coding practices | Provides To |
-| Security Operations | Architectural insights and design guidance for security operations | Provides To |
-| Risk Management | Security risk assessments | Governed By |
+| Security Operations <!-- external-role --> | Architectural insights and design guidance for security operations | Provides To |
+| Risk Management <!-- external-role --> | Security risk assessments | Governed By |
 | Product Owners | Security requirements | Provides To |
 
 **Complementary Certifications:**

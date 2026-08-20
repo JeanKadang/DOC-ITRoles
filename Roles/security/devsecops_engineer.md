@@ -6,7 +6,7 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | DevSecOps Architect |
+| **Reports To** | DevSecOps Architect <!-- role: devsecops-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -107,11 +107,11 @@ The DevSecOps Engineer implements and maintains the security tooling, automation
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevSecOps Architect | Receive design direction; raise implementation blockers and findings | Escalates To |
+| DevSecOps Architect <!-- role: devsecops-architect --> | Receive design direction; raise implementation blockers and findings | Escalates To |
 | DevOps / Platform Engineers | Collaborate on pipeline integration and tooling deployment | Collaborates |
 | Software Engineers | Guide and support developers in understanding and remediating security findings | Provides To |
 | Security Engineers | Escalate findings requiring broader security response | Collaborates |
-| Compliance | Provide pipeline security evidence for audit requirements | Provides To |
+| Compliance <!-- external-role --> | Provide pipeline security evidence for audit requirements | Provides To |
 
 ## Key Technologies
 
@@ -165,7 +165,7 @@ The DevSecOps Engineer implements and maintains the security tooling, automation
 **Potential Next Roles:**
 
 - DevSecOps Senior Engineer
-- DevSecOps Architect
+- DevSecOps Architect <!-- role: devsecops-architect -->
 - Application Security Engineer / Architect
 
 ## Recommended Certifications & Learning Paths

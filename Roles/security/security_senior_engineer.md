@@ -6,7 +6,7 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | Security Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,8 +95,8 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Security Architect | Solution design | Escalates To |
-| Security Product Owner | Technical planning | Collaborates |
+| Security Architect <!-- role: security-architect --> | Solution design | Escalates To |
+| Security Product Owner <!-- role: security-product-owner --> | Technical planning | Collaborates |
 | Network Senior Engineers | Security infrastructure | Collaborates |
 | Cloud Senior Engineers | Cloud security | Collaborates |
 | Incident Response | Security events | Collaborates |
@@ -157,7 +157,7 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 **Previous Roles:**
 
-- Security Engineer
+- Security Engineer <!-- role: security-engineer -->
 - Security Operations Specialist
 - Network Security Engineer
 - Identity and Access Management Engineer
@@ -165,7 +165,7 @@ The Security Senior Engineer leads the implementation and optimization of comple
 
 **Potential Next Roles:**
 
-- Security Architect
+- Security Architect <!-- role: security-architect -->
 - Security Engineering Manager
 - Security Operations Leader
 - Cloud Security Architect

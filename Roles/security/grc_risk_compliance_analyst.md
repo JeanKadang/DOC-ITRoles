@@ -6,7 +6,7 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security Architect |
+| **Reports To** | Security Architect <!-- role: security-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -100,12 +100,12 @@ The GRC / Risk & Compliance Analyst owns the operational governance, risk, and c
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Security Architect | Escalation path for control gaps requiring architectural remediation | Escalates To |
+| Security Architect <!-- role: security-architect --> | Escalation path for control gaps requiring architectural remediation | Escalates To |
 | Any domain Architect/Engineer | Consumes technical control evidence to assess framework compliance | Consumes From |
-| Data Privacy Officer | Tracks privacy compliance status as a category within the enterprise risk register | Collaborates |
-| Vendor / Supplier / IT Asset Manager | Collaborates on third-party/vendor risk assessment | Collaborates |
-| Business Continuity / Disaster Recovery Manager | Incorporates BC/DR readiness status into the DORA operational resilience risk category | Consumes From |
-| Chief Information Security Officer | Provides GRC status reporting and escalates risk acceptance decisions on high/critical risks | Provides To |
+| Data Privacy Officer <!-- role: data-privacy-officer --> | Tracks privacy compliance status as a category within the enterprise risk register | Collaborates |
+| Vendor / Supplier / IT Asset Manager <!-- role: vendor-supplier-it-asset-manager --> | Collaborates on third-party/vendor risk assessment | Collaborates |
+| Business Continuity / Disaster Recovery Manager <!-- role: business-continuity-disaster-recovery-manager --> | Incorporates BC/DR readiness status into the DORA operational resilience risk category | Consumes From |
+| Chief Information Security Officer <!-- role: chief-information-security-officer --> | Provides GRC status reporting and escalates risk acceptance decisions on high/critical risks | Provides To |
 
 ## Key Technologies
 
