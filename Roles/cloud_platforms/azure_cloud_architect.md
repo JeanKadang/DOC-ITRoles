@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Azure Cloud Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,10 +95,10 @@ The Azure Cloud Platform Architect designs, implements, and governs cloud soluti
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Server Architect | Microsoft Entra ID and hybrid services | Collaborates |
-| Kubernetes Architect | Azure Kubernetes Service implementations | Collaborates |
-| Database Architect | Azure database services | Collaborates |
-| Observability Architect | Azure Monitor and Log Analytics | Collaborates |
+| Windows Server Architect <!-- role: windows-server-architect --> | Microsoft Entra ID and hybrid services | Collaborates |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | Azure Kubernetes Service implementations | Collaborates |
+| Database Architect <!-- role: database-architect --> | Azure database services | Collaborates |
+| Observability Architect <!-- role: observability-architect --> | Azure Monitor and Log Analytics | Collaborates |
 | AWS Cloud Platform Architect | Multi-cloud strategies | Collaborates |
 
 ## Key Technologies
@@ -161,11 +161,11 @@ The Azure Cloud Platform Architect designs, implements, and governs cloud soluti
 
 **Previous Roles:**
 
-- Azure Cloud Senior Engineer
+- Azure Cloud Senior Engineer <!-- role: azure-cloud-senior-engineer -->
 - Cloud Solutions Architect
 - Enterprise Application Architect
 - Technical Infrastructure Lead
-- DevOps Architect
+- DevOps Architect <!-- role: devops-architect -->
 
 **Potential Next Roles:**
 

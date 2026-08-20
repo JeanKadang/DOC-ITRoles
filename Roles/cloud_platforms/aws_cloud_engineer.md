@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | AWS Cloud Senior Engineer |
+| **Reports To** | AWS Cloud Senior Engineer <!-- role: aws-cloud-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -164,10 +164,10 @@ The AWS Cloud Engineer implements and maintains cloud resources and services in 
 
 **Potential Next Roles:**
 
-- AWS Cloud Senior Engineer
+- AWS Cloud Senior Engineer <!-- role: aws-cloud-senior-engineer -->
 - Cloud Architect
-- DevOps Engineer
-- Site Reliability Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Specialized AWS role (Security, Networking, etc.)
 
 ## Recommended Certifications & Learning Paths

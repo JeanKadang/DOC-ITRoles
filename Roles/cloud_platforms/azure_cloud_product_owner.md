@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,8 +93,8 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Server Product Owner | Hybrid cloud scenarios | Collaborates |
-| Kubernetes Product Owner | Azure Kubernetes Service strategy | Collaborates |
+| Windows Server Product Owner <!-- role: windows-server-product-owner --> | Hybrid cloud scenarios | Collaborates |
+| Kubernetes Product Owner <!-- role: kubernetes-product-owner --> | Azure Kubernetes Service strategy | Collaborates |
 | Azure Cloud Platform Architect | Technical decisions | Consumes From |
 | Application Product Owners | Platform requirements | Consumes From |
 | Security and Compliance teams | Cloud controls | Governed By |
@@ -151,7 +151,7 @@ The Azure Cloud Platform Product Owner manages the organization's Azure cloud se
 
 **Previous Roles:**
 
-- Azure Cloud Engineer
+- Azure Cloud Engineer <!-- role: azure-cloud-engineer -->
 - Cloud Service Manager
 - Technical Product Manager
 - IT Infrastructure Manager

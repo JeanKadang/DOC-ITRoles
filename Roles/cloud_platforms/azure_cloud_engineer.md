@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Azure Cloud Senior Engineer |
+| **Reports To** | Azure Cloud Senior Engineer <!-- role: azure-cloud-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -159,10 +159,10 @@ The Azure Cloud Engineer implements and maintains cloud resources and services i
 
 **Potential Next Roles:**
 
-- Azure Cloud Senior Engineer
+- Azure Cloud Senior Engineer <!-- role: azure-cloud-senior-engineer -->
 - Cloud Architect
-- DevOps Engineer
-- Site Reliability Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Cloud Security Specialist
 - Platform Engineering Lead
 

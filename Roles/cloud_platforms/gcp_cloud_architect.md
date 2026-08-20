@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors GCP Cloud Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -165,7 +165,7 @@ The Google Cloud Architect designs comprehensive cloud solutions using Google Cl
 - Cloud Solutions Architect
 - Enterprise Application Architect
 - Technical Infrastructure Lead
-- DevOps Architect
+- DevOps Architect <!-- role: devops-architect -->
 
 **Potential Next Roles:**
 

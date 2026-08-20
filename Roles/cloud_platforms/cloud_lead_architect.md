@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Lead Architect |
-| **Reports To** | Cloud Principal Architect |
+| **Reports To** | Cloud Principal Architect <!-- role: cloud-principal-architect --> |
 | **Direct Reports** | None (provides technical oversight and mentorship to the AWS, Azure, and GCP Cloud Architects; formal line management sits with the Cloud, Platform & Infrastructure Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 | Principal Cloud Architect | Translates strategic direction into platform-level guidance | Escalates To |
 | Azure, AWS, and GCP Cloud Architects | Coordinates and provides technical oversight | Provides To |
 | Technical Area Lead (TAL) | Priorities, escalations, and cross-domain technical decisions | Collaborates |
-| Enterprise Architecture Senior Engineer | Ensure cloud patterns are captured in the EA repository | Collaborates |
+| Enterprise Architecture Senior Engineer <!-- role: enterprise-architecture-senior-engineer --> | Ensure cloud patterns are captured in the EA repository | Collaborates |
 | Security and Compliance Architects | Ensure cross-platform security posture consistency | Governed By |
 | FinOps | Ensure cost governance standards are applied consistently across all cloud platforms | Governed By |
 
@@ -150,14 +150,14 @@ The Cloud Lead Architect provides technical leadership across a cluster of cloud
 
 - Azure Cloud Architect / AWS Cloud Architect / GCP Cloud Architect
 - Multi-Cloud Senior Engineer
-- Enterprise Architecture Senior Engineer
+- Enterprise Architecture Senior Engineer <!-- role: enterprise-architecture-senior-engineer -->
 - DevOps Architect with multi-cloud scope
 
 **Potential Next Roles:**
 
 - Principal Cloud Architect
 - Technical Area Lead (TAL)
-- Enterprise Architect
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Cloud CTO / VP of Cloud Engineering
 
 ## Recommended Certifications & Learning Paths

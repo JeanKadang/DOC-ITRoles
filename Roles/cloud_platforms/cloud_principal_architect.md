@@ -97,9 +97,9 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Technical Area Lead (TAL) | Cloud technology strategy, roadmap alignment, and governance | Escalates To |
-| Cloud Lead Architect | Provides strategic direction and oversight | Provides To |
+| Cloud Lead Architect <!-- role: cloud-lead-architect --> | Provides strategic direction and oversight | Provides To |
 | PAL | Alignment between cloud investment and business outcomes | Collaborates |
-| Enterprise Architecture Senior Engineer | Ensure cloud strategy is reflected in the EA repository and roadmap | Collaborates |
+| Enterprise Architecture Senior Engineer <!-- role: enterprise-architecture-senior-engineer --> | Ensure cloud strategy is reflected in the EA repository and roadmap | Collaborates |
 | Security and Compliance Architects | Cloud-wide security posture and policy | Governed By |
 | FinOps | Cloud spend strategy, commitment optimization, and multi-year cost modelling | Collaborates |
 | cloud service provider advisory programs | Technical communities | Collaborates |
@@ -154,7 +154,7 @@ The Cloud Principal Architect is the organization's foremost individual contribu
 
 **Previous Roles:**
 
-- Cloud Lead Architect
+- Cloud Lead Architect <!-- role: cloud-lead-architect -->
 - Azure Cloud Architect / AWS Cloud Architect (multi-platform trajectory)
 - Enterprise Architect with cloud specialization
 - Technical Area Lead (TAL) transitioning to deep IC track

@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | GCP Cloud Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -157,7 +157,7 @@ The Google Cloud Senior Engineer leads the implementation and optimization of co
 **Previous Roles:**
 
 - GCP Cloud Engineer
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Linux Systems Administrator
 - Solutions Engineer
 - Infrastructure Engineer with cloud focus

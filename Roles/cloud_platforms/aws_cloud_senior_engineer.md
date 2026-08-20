@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | AWS Cloud Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -156,15 +156,15 @@ The AWS Cloud Senior Engineer leads the implementation and optimization of compl
 
 **Previous Roles:**
 
-- AWS Cloud Engineer
-- DevOps Engineer
+- AWS Cloud Engineer <!-- role: aws-cloud-engineer -->
+- DevOps Engineer <!-- role: devops-engineer -->
 - Linux Systems Administrator
 - Network Engineer with cloud focus
 - Infrastructure Engineer
 
 **Potential Next Roles:**
 
-- AWS Cloud Architect
+- AWS Cloud Architect <!-- role: aws-cloud-architect -->
 - Multi-cloud Architect
 - Cloud Engineering Manager
 - Cloud Operations Leader
