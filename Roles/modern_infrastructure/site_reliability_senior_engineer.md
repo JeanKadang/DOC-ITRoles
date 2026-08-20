@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -118,7 +118,7 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 | Engineering Squads | Embed reliability practices; support SLO design and incident post-mortems | Provides To |
 | Observability Engineers | Collaborate on telemetry pipeline and dashboard design | Collaborates |
 | Platform Engineering | Drive reliability requirements for internal developer platform capabilities | Provides To |
-| Security Operations | Coordinate on availability-impacting security incidents | Collaborates |
+| Security Operations <!-- external-role --> | Coordinate on availability-impacting security incidents | Collaborates |
 
 ## Key Technologies
 
@@ -170,14 +170,14 @@ The Site Reliability Senior Engineer (Senior SRE) leads the technical implementa
 
 **Previous Roles:**
 
-- Site Reliability Engineer
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Senior DevOps Engineer
 - Senior Platform Engineer
 
 **Potential Next Roles:**
 
 - SRE Architect / Staff SRE
-- Platform Engineering Architect
+- Platform Engineering Architect <!-- role: platform-engineering-architect -->
 - Engineering Manager (reliability-focused)
 
 ## Recommended Certifications & Learning Paths

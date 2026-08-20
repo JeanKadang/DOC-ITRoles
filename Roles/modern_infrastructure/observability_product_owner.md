@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -105,7 +105,7 @@ The Observability Product Owner manages the observability platform portfolio, de
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Observability Architect | Platform strategy | Consumes From |
+| Observability Architect <!-- role: observability-architect --> | Platform strategy | Consumes From |
 | Observability Engineers | Implementation priorities | Provides To |
 | application teams | Understand monitoring requirements | Consumes From |
 | IT operations | Incident management integration | Collaborates |
@@ -164,9 +164,9 @@ The Observability Product Owner manages the observability platform portfolio, de
 
 **Previous Roles:**
 
-- Observability Engineer
-- Site Reliability Engineer
-- DevOps Engineer
+- Observability Engineer <!-- role: observability-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
+- DevOps Engineer <!-- role: devops-engineer -->
 - IT Operations Manager
 - Monitoring Specialist
 

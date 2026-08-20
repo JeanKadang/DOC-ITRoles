@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Site Reliability Senior Engineer |
+| **Reports To** | Site Reliability Senior Engineer <!-- role: site-reliability-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -162,9 +162,9 @@ The Site Reliability Engineer (SRE) focuses on creating reliable, scalable, and 
 **Previous Roles:**
 
 - Software Engineer
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Systems Administrator
-- Network Engineer
+- Network Engineer <!-- role: network-engineer -->
 - Cloud Engineer
 
 **Potential Next Roles:**

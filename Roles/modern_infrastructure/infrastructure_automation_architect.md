@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -109,11 +109,11 @@ The Infrastructure Automation Architect designs and governs the organisation's e
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Azure, AWS, and GCP Cloud Architects | Define automation standards that align with each cloud platform's native capabilities and governance model | Collaborates |
-| DevOps Architect | CI/CD pipeline automation integration — ensuring IaC modules, compliance gates, and drift detection fit within delivery pipeline patterns | Collaborates |
-| Observability Architect | Design automated remediation triggers based on observability signals and to ensure automation activities produce appropriate audit telemetry | Collaborates |
+| DevOps Architect <!-- role: devops-architect --> | CI/CD pipeline automation integration — ensuring IaC modules, compliance gates, and drift detection fit within delivery pipeline patterns | Collaborates |
+| Observability Architect <!-- role: observability-architect --> | Design automated remediation triggers based on observability signals and to ensure automation activities produce appropriate audit telemetry | Collaborates |
 | ITSM Architect | Runbook automation integration with ServiceNow Orchestration and change management workflows | Collaborates |
-| Kubernetes Architect | GitOps-based cluster automation, namespace provisioning patterns, and cluster lifecycle management automation | Collaborates |
-| Security Architect | Embed compliance-as-code controls and security guardrails into IaC module standards and automation pipelines | Governed By |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | GitOps-based cluster automation, namespace provisioning patterns, and cluster lifecycle management automation | Collaborates |
+| Security Architect <!-- role: security-architect --> | Embed compliance-as-code controls and security guardrails into IaC module standards and automation pipelines | Governed By |
 | Infrastructure Automation Senior Engineers and Infrastructure Engineers | IaC design patterns and module development | Provides To |
 | FinOps team | Infracost integration, budget guardrails in IaC pipelines, and cost governance standards | Collaborates |
 

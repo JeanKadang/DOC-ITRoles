@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Site Reliability Senior Engineer |
+| **Reports To** | Site Reliability Senior Engineer <!-- role: site-reliability-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -167,16 +167,16 @@ The Chaos Engineer designs, implements, and executes controlled failure experime
 
 **Previous Roles:**
 
-- Site Reliability Engineer
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Platform Engineer
 - DevOps Engineer with resilience focus
 - Software Engineer with distributed systems background
 
 **Potential Next Roles:**
 
-- Site Reliability Senior Engineer
+- Site Reliability Senior Engineer <!-- role: site-reliability-senior-engineer -->
 - SRE Architect
-- Platform Engineering Architect
+- Platform Engineering Architect <!-- role: platform-engineering-architect -->
 - Resilience Engineering Lead
 
 ## Recommended Certifications & Learning Paths

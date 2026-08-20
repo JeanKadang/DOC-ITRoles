@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,8 +98,8 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Platform Engineering Architect | Solution design | Escalates To |
-| Platform Engineering Product Owner | Technical planning | Collaborates |
+| Platform Engineering Architect <!-- role: platform-engineering-architect --> | Solution design | Escalates To |
+| Platform Engineering Product Owner <!-- role: platform-engineering-product-owner --> | Technical planning | Collaborates |
 | DevOps Senior Engineers | Pipeline integration | Collaborates |
 | Kubernetes Senior Engineers | Container platforms | Collaborates |
 | Security Engineers | Platform security controls | Governed By |
@@ -163,14 +163,14 @@ The Platform Engineering Senior Engineer leads the implementation and optimizati
 **Previous Roles:**
 
 - Platform Engineer
-- DevOps Engineer
-- Site Reliability Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Infrastructure Engineer
 - Software Engineer with platform focus
 
 **Potential Next Roles:**
 
-- Platform Engineering Architect
+- Platform Engineering Architect <!-- role: platform-engineering-architect -->
 - Engineering Productivity Leader
 - Developer Experience Director
 - Platform Engineering Manager

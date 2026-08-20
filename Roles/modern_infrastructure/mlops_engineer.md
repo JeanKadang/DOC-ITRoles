@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | GenAI Platform Architect |
+| **Reports To** | GenAI Platform Architect <!-- role: genai-platform-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -171,8 +171,8 @@ The MLOps Engineer implements and maintains platforms and pipelines that enable 
 
 **Previous Roles:**
 
-- DevOps Engineer
-- Data Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Data Engineer <!-- role: data-engineer -->
 - Software Engineer with ML focus
 - ML Engineer
 - Cloud Engineer

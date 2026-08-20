@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Platform Engineering Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,7 +101,7 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 | Cloud Platform Architects | Infrastructure integration | Collaborates |
 | DevOps Architects | CI/CD strategy | Collaborates |
 | Security Architects | Secure platform design | Governed By |
-| Platform Engineering Product Owner | Technical strategy | Collaborates |
+| Platform Engineering Product Owner <!-- role: platform-engineering-product-owner --> | Technical strategy | Collaborates |
 | Platform Engineering Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
 | application architects | Platform requirements | Provides To |
 
@@ -168,8 +168,8 @@ The Platform Engineering Architect designs comprehensive internal developer plat
 
 **Previous Roles:**
 
-- Platform Engineering Senior Engineer
-- DevOps Architect
+- Platform Engineering Senior Engineer <!-- role: platform-engineering-senior-engineer -->
+- DevOps Architect <!-- role: devops-architect -->
 - Cloud Architect
 - Software Architect with platform focus
 - Site Reliability Engineering Lead

@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Platform Engineering Senior Engineer |
+| **Reports To** | Platform Engineering Senior Engineer <!-- role: platform-engineering-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,7 +97,7 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Platform Engineering Product Owner | Task prioritization | Consumes From |
+| Platform Engineering Product Owner <!-- role: platform-engineering-product-owner --> | Task prioritization | Consumes From |
 | DevOps Engineers | Pipeline integration | Collaborates |
 | Kubernetes Engineers | Container platforms | Collaborates |
 | Cloud Engineers | Infrastructure services | Collaborates |
@@ -161,18 +161,18 @@ The Platform Engineering Engineer implements and maintains internal developer pl
 
 **Previous Roles:**
 
-- DevOps Engineer
-- Site Reliability Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - System Administrator
 - Application Developer with infrastructure focus
 - Build and Release Engineer
 
 **Potential Next Roles:**
 
-- Platform Engineering Senior Engineer
+- Platform Engineering Senior Engineer <!-- role: platform-engineering-senior-engineer -->
 - Developer Experience Specialist
 - DevOps Team Lead
-- Site Reliability Engineer
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Platform Architect
 
 ## Recommended Certifications & Learning Paths
