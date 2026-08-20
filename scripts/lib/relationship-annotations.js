@@ -119,12 +119,79 @@ function migrateTableField(content, name, ctx, resolved, legacy) {
   return content.replace(pattern, `$1${text}$3`);
 }
 
+// Same boundary rule validate-roles.js uses for section bodies: a heading
+// runs to the next "## " heading or end of document.
+function sectionBody(content, headingPattern) {
+  const start = content.search(headingPattern);
+  if (start === -1) return null;
+  const rest = content.slice(start);
+  const next = rest.slice(1).search(/\n##\s+/);
+  const end = next === -1 ? rest.length : next + 1;
+  return { start, end: start + end, text: rest.slice(0, end) };
+}
+
+function migrateInteractionsTable(content, ctx, resolved, legacy) {
+  const section = sectionBody(content, /^##\s+(Interactions with Other Roles|Relationships (&|and) Collaboration)/im);
+  if (!section) return content;
+
+  const lines = section.text.split('\n');
+  let changed = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    // Skip the header row and the "|---|---|---|" separator row.
+    if (!/^\|/.test(line) || /^\|\s*Role\s*\|/.test(line) || /^\|[\s:|-]+\|$/.test(line)) continue;
+
+    const cellMatch = line.match(/^(\|\s*)([^|]*?)(\s*\|.*)$/);
+    if (!cellMatch) continue;
+
+    const { text, resolved: cellResolved, legacy: cellLegacy } = annotateField(cellMatch[2], ctx);
+    resolved.push(...cellResolved);
+    legacy.push(...cellLegacy.map(entry => ({ field: 'Interactions with Other Roles', text: entry })));
+
+    if (text !== cellMatch[2]) {
+      lines[i] = `${cellMatch[1]}${text}${cellMatch[3]}`;
+      changed = true;
+    }
+  }
+
+  if (!changed) return content;
+  const newSection = lines.join('\n');
+  return content.slice(0, section.start) + newSection + content.slice(section.end);
+}
+
+function migrateCareerBullets(content, ctx, resolved, legacy) {
+  const section = sectionBody(content, /^##\s+Career Development Path/im);
+  if (!section) return content;
+
+  const lines = section.text.split('\n');
+  let changed = false;
+  for (let i = 0; i < lines.length; i++) {
+    const bulletMatch = lines[i].match(/^(-\s+)(.+)$/);
+    if (!bulletMatch) continue;
+
+    const { text, resolved: itemResolved, legacy: itemLegacy } = annotateField(bulletMatch[2], ctx);
+    resolved.push(...itemResolved);
+    legacy.push(...itemLegacy.map(entry => ({ field: 'Career Development Path', text: entry })));
+
+    if (text !== bulletMatch[2]) {
+      lines[i] = `${bulletMatch[1]}${text}`;
+      changed = true;
+    }
+  }
+
+  if (!changed) return content;
+  const newSection = lines.join('\n');
+  return content.slice(0, section.start) + newSection + content.slice(section.end);
+}
+
 function migrateRoleContent(content, ctx) {
   const resolved = [];
   const legacy = [];
   let out = content;
   out = migrateTableField(out, 'Reports To', ctx, resolved, legacy);
   out = migrateTableField(out, 'Direct Reports', ctx, resolved, legacy);
+  out = migrateInteractionsTable(out, ctx, resolved, legacy);
+  out = migrateCareerBullets(out, ctx, resolved, legacy);
   return { content: out, resolved, legacy };
 }
 

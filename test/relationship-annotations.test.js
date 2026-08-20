@@ -203,3 +203,74 @@ test('migrateRoleContent records an unresolved Reports To as a legacy entry', ()
   assert.equal(r.content, drifted);
   assert.deepEqual(r.legacy, [{ field: 'Reports To', text: 'Some Drifted Title' }]);
 });
+
+// Task 4: Career-path bullets and the interactions table
+const CAREER_AND_INTERACTIONS = [
+  '# Kubernetes Engineer',
+  '',
+  '| Field | Value |',
+  '|---|---|',
+  '| **Role ID** | `kubernetes-engineer` |',
+  '| **Reports To** | Kubernetes Senior Engineer |',
+  '| **Direct Reports** | None |',
+  '',
+  '## Interactions with Other Roles',
+  '',
+  '| Role | Nature of Interaction | Interaction Mode |',
+  '|---|---|---|',
+  '| Kubernetes Senior Engineer | Escalation | Escalates To |',
+  '| Board of Directors | Reporting | Provides To |',
+  '',
+  '## Career Development Path',
+  '',
+  '**Previous Roles:**',
+  '',
+  '- Kubernetes Senior Engineer',
+  '',
+  '**Potential Next Roles:**',
+  '',
+  '- Kubernetes Architect',
+  '',
+].join('\n');
+
+function extendedCtx() {
+  return {
+    roleIndex: buildRoleIndex([
+      { title: 'Kubernetes Engineer', roleId: 'kubernetes-engineer' },
+      { title: 'Kubernetes Senior Engineer', roleId: 'kubernetes-senior-engineer' },
+      { title: 'Kubernetes Architect', roleId: 'kubernetes-architect' },
+    ]),
+    externalTerms: new Set(['board of directors']),
+  };
+}
+
+test('migrateRoleContent annotates the interactions table Role column', () => {
+  const r = migrateRoleContent(CAREER_AND_INTERACTIONS, extendedCtx());
+  assert.match(r.content, /\| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> \| Escalation \| Escalates To \|/);
+  assert.match(r.content, /\| Board of Directors <!-- external-role --> \| Reporting \| Provides To \|/);
+});
+
+test('migrateRoleContent annotates career-path bullets', () => {
+  const r = migrateRoleContent(CAREER_AND_INTERACTIONS, extendedCtx());
+  assert.match(r.content, /- Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer -->\n/);
+  assert.match(r.content, /- Kubernetes Architect <!-- role: kubernetes-architect -->\n/);
+});
+
+test('migrateRoleContent leaves the interactions header row and separator untouched', () => {
+  const r = migrateRoleContent(CAREER_AND_INTERACTIONS, extendedCtx());
+  assert.match(r.content, /\| Role \| Nature of Interaction \| Interaction Mode \|/);
+  assert.match(r.content, /\|---\|---\|---\|/);
+});
+
+test('a career-path bullet that does not resolve is left as legacy text', () => {
+  const drifted = CAREER_AND_INTERACTIONS.replace('- Kubernetes Architect', '- Some Drifted Title');
+  const r = migrateRoleContent(drifted, extendedCtx());
+  assert.match(r.content, /- Some Drifted Title\n/);
+  assert.ok(r.legacy.some(l => l.field === 'Career Development Path' && l.text === 'Some Drifted Title'));
+});
+
+test('the extended migration is idempotent', () => {
+  const first = migrateRoleContent(CAREER_AND_INTERACTIONS, extendedCtx());
+  const second = migrateRoleContent(first.content, extendedCtx());
+  assert.equal(second.content, first.content);
+});
