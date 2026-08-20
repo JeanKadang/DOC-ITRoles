@@ -6,7 +6,7 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -153,7 +153,7 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 
 **Previous Roles:**
 
-- Server Hardware Engineer
+- Server Hardware Engineer <!-- role: server-hardware-engineer -->
 - Infrastructure Team Lead
 - Data Center Operations Manager
 - IT Project Manager
@@ -184,7 +184,7 @@ The HPE Server Hardware Product Owner manages the development and lifecycle of t
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| HPE Server Hardware Architect | Technical strategy | Consumes From |
+| HPE Server Hardware Architect <!-- role: hpe-server-hardware-architect --> | Technical strategy | Consumes From |
 | platform-specific Product Owners (Windows, Linux, VMware) | Hardware requirements | Collaborates |
 | procurement teams | Vendor negotiations and contracts | Collaborates |
 | finance teams | Capital expenditure planning | Collaborates |

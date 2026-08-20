@@ -6,7 +6,7 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | HPE Server Hardware Senior Engineer |
+| **Reports To** | HPE Server Hardware Senior Engineer <!-- role: hpe-server-hardware-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -138,9 +138,9 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| HPE Server Hardware Product Owner | Task prioritization | Consumes From |
+| HPE Server Hardware Product Owner <!-- role: hpe-server-hardware-product-owner --> | Task prioritization | Consumes From |
 | OS Engineers | Operating system installation requirements | Collaborates |
-| HPE Server Hardware Architect | Implementation activities | Escalates To |
+| HPE Server Hardware Architect <!-- role: hpe-server-hardware-architect --> | Implementation activities | Escalates To |
 | data center facilities teams | Physical infrastructure | Collaborates |
 | procurement team | Hardware receiving and inventory | Collaborates |
 | platform engineers | Hardware-related issues | Provides To |
@@ -194,7 +194,7 @@ The HPE Server Hardware Engineer implements and maintains server infrastructure 
 
 **To (typical next roles):**
 
-- HPE Server Hardware Senior Engineer
-- Server Hardware Architect
+- HPE Server Hardware Senior Engineer <!-- role: hpe-server-hardware-senior-engineer -->
+- Server Hardware Architect <!-- role: server-hardware-architect -->
 - Platform engineering roles in adjacent domains (Virtualization, Linux/Windows Server OS)
 - Data Centre Operations Lead

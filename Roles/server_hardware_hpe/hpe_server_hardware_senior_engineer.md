@@ -6,7 +6,7 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | HPE Server Hardware Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -145,7 +145,7 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 
 **Previous Roles:**
 
-- HPE Server Hardware Engineer
+- HPE Server Hardware Engineer <!-- role: hpe-server-hardware-engineer -->
 - Data Center Technician
 - Server Support Specialist
 - System Administrator
@@ -153,7 +153,7 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 
 **Potential Next Roles:**
 
-- HPE Server Hardware Architect
+- HPE Server Hardware Architect <!-- role: hpe-server-hardware-architect -->
 - Technical Infrastructure Manager
 - Infrastructure Team Lead
 - Data Center Engineering Manager
@@ -176,8 +176,8 @@ The HPE Server Hardware Senior Engineer leads the implementation and optimizatio
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| HPE Server Hardware Architect | Solution design and implementation strategy | Escalates To |
-| HPE Server Hardware Product Owner | Technical planning | Collaborates |
+| HPE Server Hardware Architect <!-- role: hpe-server-hardware-architect --> | Solution design and implementation strategy | Escalates To |
+| HPE Server Hardware Product Owner <!-- role: hpe-server-hardware-product-owner --> | Technical planning | Collaborates |
 | Virtualization Senior Engineers | Host optimization | Collaborates |
 | Platform Senior Engineers | OS-hardware integration | Collaborates |
 | HPE Server Hardware Engineers | Technical implementation | Provides To |
