@@ -6,7 +6,7 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -110,11 +110,11 @@ The High-Performance Computing (HPC) Product Owner leads the development, delive
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Product Owner | Infrastructure requirements and optimization | Collaborates |
-| Linux Server Product Owner | Infrastructure requirements and optimization | Collaborates |
+| Server Hardware Product Owner <!-- role: server-hardware-product-owner --> | Infrastructure requirements and optimization | Collaborates |
+| Linux Server Product Owner <!-- role: linux-server-product-owner --> | Infrastructure requirements and optimization | Collaborates |
 | Cloud Product Owners | Cloud integration and compliance | Collaborates |
 | Security Teams | Cloud integration and compliance | Governed By |
-| HPC Architect | Platform design, technology adoption, and enhancement | Consumes From |
+| HPC Architect <!-- role: hpc-architect --> | Platform design, technology adoption, and enhancement | Consumes From |
 | Data Science and Research departments | Understand evolving computational needs | Consumes From |
 | IT leadership | HPC investment strategy, business cases, and value delivery | Provides To |
 

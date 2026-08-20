@@ -6,7 +6,7 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors HPC Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -109,13 +109,13 @@ The High-Performance Computing (HPC) Architect leads the design, implementation,
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Linux Server Architect | OS and hybrid/cloud integration | Collaborates |
+| Linux Server Architect <!-- role: linux-server-architect --> | OS and hybrid/cloud integration | Collaborates |
 | Cloud Platform Architects | OS and hybrid/cloud integration | Collaborates |
-| Database Architect | Data-intensive computing solutions | Collaborates |
+| Database Architect <!-- role: database-architect --> | Data-intensive computing solutions | Collaborates |
 | Security Architects | Ensure compliance and data protection | Governed By |
-| Observability Architect | HPC monitoring and analytics | Collaborates |
-| HPC Product Owner | Business stakeholders on HPC strategy | Collaborates |
-| Server Hardware Architect | Specialized HPC hardware | Consumes From |
+| Observability Architect <!-- role: observability-architect --> | HPC monitoring and analytics | Collaborates |
+| HPC Product Owner <!-- role: hpc-product-owner --> | Business stakeholders on HPC strategy | Collaborates |
+| Server Hardware Architect <!-- role: server-hardware-architect --> | Specialized HPC hardware | Consumes From |
 | All HPC stakeholders | Facilitates knowledge sharing and documentation | Provides To |
 
 ## Key Technologies
@@ -176,7 +176,7 @@ The High-Performance Computing (HPC) Architect leads the design, implementation,
 
 **Previous Roles:**
 
-- HPC Senior Engineer
+- HPC Senior Engineer <!-- role: hpc-senior-engineer -->
 - Scientific Computing Team Lead
 - Research Computing Specialist
 - Senior Linux System Administrator
