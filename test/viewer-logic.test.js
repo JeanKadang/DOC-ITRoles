@@ -1071,6 +1071,36 @@ test('splitReportingValue strips a #269 annotation from the head before it is sh
     );
 });
 
+// index.html's inline <script> is not require()-able (it's not a module and
+// has no exports), so this can't call reportingChip() directly the way the
+// tests above call splitReportingValue()/stripAnnotations() in isolation.
+// This is a text-level check instead: it confirms index.html actually wires
+// stripAnnotations into its script (the destructuring pull from
+// ViewerLogic) and applies it to the value that becomes the reporting
+// chip's tooltip text, so a future edit can't silently drop the import or
+// the call and regress #269's tooltip-leak fix without this test failing.
+test('index.html imports stripAnnotations from ViewerLogic and applies it to the reporting-chip tooltip value', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+
+    const scriptMatch = html.match(/<script>([\s\S]*?)<\/script>/);
+    assert.ok(scriptMatch, 'index.html has an inline <script> block');
+    const script = scriptMatch[1];
+
+    const destructure = script.match(/const\s*\{[\s\S]*?\}\s*=\s*ViewerLogic;/);
+    assert.ok(destructure, 'index.html destructures ViewerLogic exports');
+    assert.match(destructure[0], /\bstripAnnotations\b/,
+        'stripAnnotations must be pulled from ViewerLogic alongside splitReportingValue');
+
+    const reportingChip = script.match(/const reportingChip = \(icon, label, value\) => \{[\s\S]*?\n {8}\};/);
+    assert.ok(reportingChip, 'reportingChip() is defined in index.html as expected');
+    assert.match(reportingChip[0], /stripAnnotations\(value\)/,
+        'reportingChip must strip #269 annotations from value before use');
+    assert.match(reportingChip[0], /title="\$\{escapeHtml\(clean\)\}"/,
+        'the tooltip must render the stripped value, not the raw annotated one');
+});
+
 // ── staggered review schedule (#124) ──────────────────────
 // 206 of 222 roles carry an identical 2026-03 stamp, so at a flat
 // 12-month threshold every one of them turns stale in the same month and

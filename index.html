@@ -1585,7 +1585,7 @@
         parseProgressionLadders, buildCareerSankey, parseMobilityPaths, parseCareerPath,
         sectionStartsOpen, panelStateFor,
         tocIdFor, activeTocIndex,
-        parseRoleMeta, splitReportingValue, reviewSlotFor,
+        parseRoleMeta, splitReportingValue, stripAnnotations, reviewSlotFor,
         parseRadarDoc, radarListHtml,
         EXEC_LEVELS, STAT_GROUPS, countRolesAtLevels, roleMatchesFilter, groupResources,
         contentReferencesForQuery,
@@ -3096,6 +3096,11 @@
         // catalog role becomes a link, reusing the .role-xref affordance.
         const reportingChip = (icon, label, value) => {
             if (!value) return '';
+            // #269 appends an inline annotation comment to this same value.
+            // splitReportingValue already strips it for head/detail; strip
+            // it here too so the tooltip (which shows the value whole,
+            // rather than through head/detail) doesn't carry it either.
+            const clean = stripAnnotations(value);
             const { head, detail } = splitReportingValue(value);
             const hit = findRoleByTitle(head);
             const inner = hit
@@ -3106,7 +3111,7 @@
                 : escapeHtml(head);
             // The qualifier stays reachable without dominating the header.
             const note = detail ? `<span class="meta-note" title="${escapeHtml(detail)}">ⓘ</span>` : '';
-            return `<span class="meta-tag meta-reporting" title="${escapeHtml(value)}"><span class="meta-key">${icon} ${label}</span> ${inner}${note}</span>`;
+            return `<span class="meta-tag meta-reporting" title="${escapeHtml(clean)}"><span class="meta-key">${icon} ${label}</span> ${inner}${note}</span>`;
         };
         const reporting = meta
             ? reportingChip('↑', 'Reports to', meta.reportsTo) +
