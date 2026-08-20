@@ -6,7 +6,7 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | Windows Active Directory Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,8 +93,8 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Active Directory Architect | Solution design and implementation strategy | Escalates To |
-| Windows Active Directory Product Owner | Technical planning and roadmap execution | Collaborates |
+| Windows Active Directory Architect <!-- role: windows-active-directory-architect --> | Solution design and implementation strategy | Escalates To |
+| Windows Active Directory Product Owner <!-- role: windows-active-directory-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Windows Server Senior Engineers | Infrastructure integration | Collaborates |
 | Security Senior Engineers | Directory security implementations | Collaborates |
 | Cloud Senior Engineers | Hybrid identity solutions | Collaborates |
@@ -151,14 +151,14 @@ The Windows Active Directory Senior Engineer leads all Tier 0 infrastructure ini
 
 **Previous Roles:**
 
-- Windows Active Directory Engineer
+- Windows Active Directory Engineer <!-- role: windows-active-directory-engineer -->
 - Windows Server Administrator
-- Identity Management Engineer
+- Identity Management Engineer <!-- role: identity-management-engineer -->
 - Systems Administrator with AD focus
 
 **Potential Next Roles:**
 
-- Windows Active Directory Architect
+- Windows Active Directory Architect <!-- role: windows-active-directory-architect -->
 - Identity and Access Management Architect
 - Infrastructure Team Lead
 - Directory Services Manager

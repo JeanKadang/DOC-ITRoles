@@ -6,7 +6,7 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,9 +93,9 @@ The Windows Active Directory Product Owner manages the service roadmap and plann
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Server Product Owner | Infrastructure requirements | Collaborates |
-| Identity Management Product Owner | Integrated identity strategy | Collaborates |
-| Windows Active Directory Architect | Technical strategy | Consumes From |
+| Windows Server Product Owner <!-- role: windows-server-product-owner --> | Infrastructure requirements | Collaborates |
+| Identity Management Product Owner <!-- role: identity-management-product-owner --> | Integrated identity strategy | Collaborates |
+| Windows Active Directory Architect <!-- role: windows-active-directory-architect --> | Technical strategy | Consumes From |
 | Security and Compliance teams | Directory security policies | Governed By |
 | Application Product Owners | Authentication requirements | Consumes From |
 | IT leadership | Directory services strategy and investments | Provides To |

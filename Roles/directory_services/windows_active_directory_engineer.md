@@ -6,7 +6,7 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | Windows Active Directory Senior Engineer |
+| **Reports To** | Windows Active Directory Senior Engineer <!-- role: windows-active-directory-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -94,11 +94,11 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Active Directory Product Owner | Task prioritization | Consumes From |
+| Windows Active Directory Product Owner <!-- role: windows-active-directory-product-owner --> | Task prioritization | Consumes From |
 | Windows Server Engineers | Server infrastructure | Collaborates |
 | Identity Management Engineers | Identity integration | Collaborates |
 | Security Engineers | Directory security controls | Collaborates |
-| Windows Active Directory Architect | Implementation activities | Escalates To |
+| Windows Active Directory Architect <!-- role: windows-active-directory-architect --> | Implementation activities | Escalates To |
 | application teams | Authentication requirements | Provides To |
 
 ## Key Technologies
@@ -163,7 +163,7 @@ The Windows Active Directory Engineer maintains directory services and all Tier 
 
 **Potential Next Roles:**
 
-- Windows Active Directory Senior Engineer
+- Windows Active Directory Senior Engineer <!-- role: windows-active-directory-senior-engineer -->
 - Identity Management Specialist
 - Windows Infrastructure Team Lead
 - Microsoft 365 Identity Engineer
