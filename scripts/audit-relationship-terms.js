@@ -8,7 +8,8 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { buildRoleIndex, annotateField } = require('./lib/relationship-annotations.js');
+const { buildRoleIndex, annotateField, normalizeTitle } = require('./lib/relationship-annotations.js');
+const { EXTERNAL_TERMS } = require('./lib/external-role-terms.js');
 
 const ROLES_DIR = path.resolve(__dirname, '..', 'Roles');
 
@@ -89,7 +90,8 @@ function collectUnresolvedTerms(roles, externalTerms) {
 
 function run() {
   const roles = loadRoles();
-  const counts = collectUnresolvedTerms(roles, new Set());
+  const externalTerms = new Set(EXTERNAL_TERMS.map(normalizeTitle));
+  const counts = collectUnresolvedTerms(roles, externalTerms);
   console.log(`${roles.length} roles scanned.\n`);
   console.log('Unresolved relationship text (not a catalogue title, not a curated external term):\n');
   for (const [text, count] of counts) {
