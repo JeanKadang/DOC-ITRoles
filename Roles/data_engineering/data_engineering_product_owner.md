@@ -6,7 +6,7 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -105,7 +105,7 @@ The Data Engineering Product Owner owns the vision, roadmap, and delivery backlo
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Align backlog with architecture roadmap and technical constraints | Consumes From |
+| Data Platform Architect <!-- role: data-platform-architect --> | Align backlog with architecture roadmap and technical constraints | Consumes From |
 | CDO / Data Strategy | Receive strategic data priorities and translate into engineering deliverables | Consumes From |
 | Analytics / BI Leads | Capture and prioritise data consumption requirements | Consumes From |
 | Data Science / MLOps | Align feature pipeline delivery with ML project roadmaps | Collaborates |

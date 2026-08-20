@@ -6,7 +6,7 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | Data Senior Engineer |
+| **Reports To** | Data Senior Engineer <!-- role: data-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -108,7 +108,7 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Receive architectural direction; contribute feedback on implementation feasibility | Consumes From |
+| Data Platform Architect <!-- role: data-platform-architect --> | Receive architectural direction; contribute feedback on implementation feasibility | Consumes From |
 | DataOps Specialists | Follow CI/CD standards; request tooling and pipeline infrastructure support | Governed By |
 | Analytics Engineers | Collaborate on semantic layer and BI-facing data models | Collaborates |
 | Data Scientists | Provide feature engineering pipelines and curated datasets | Provides To |
@@ -165,9 +165,9 @@ The Data Engineer designs, builds, and maintains the data pipelines, transformat
 
 **Potential Next Roles:**
 
-- Data Senior Engineer
-- DataOps Specialist
-- MLOps Engineer
+- Data Senior Engineer <!-- role: data-senior-engineer -->
+- DataOps Specialist <!-- role: dataops-specialist -->
+- MLOps Engineer <!-- role: mlops-engineer -->
 - Analytics Engineer
 
 ## Recommended Certifications & Learning Paths

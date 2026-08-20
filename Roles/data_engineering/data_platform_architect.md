@@ -6,7 +6,7 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Data Senior Engineers and Data Platform Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -111,7 +111,7 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 |---|---|---|
 | CDO / Data Governance team | Align platform architecture with data governance policies and data strategy | Governed By |
 | MLOps / AI Platform Architect | Design integration between data platform and ML training/serving infrastructure | Collaborates |
-| DataOps Specialist | Provide architecture direction; receive operational feedback from platform operations | Provides To |
+| DataOps Specialist <!-- role: dataops-specialist --> | Provide architecture direction; receive operational feedback from platform operations | Provides To |
 | Cloud Architects | Align data platform architecture with cloud platform standards | Collaborates |
 | Analytics / BI teams | Ensure data platform serves consumption layer performance requirements | Provides To |
 | FinOps | Provide data platform cost attribution models | Provides To |
@@ -165,8 +165,8 @@ The Data Platform Architect designs and governs the organisation's enterprise da
 
 **Previous Roles:**
 
-- Data Senior Engineer
-- MLOps Engineer
+- Data Senior Engineer <!-- role: data-senior-engineer -->
+- MLOps Engineer <!-- role: mlops-engineer -->
 - Cloud Architect (data platform focus)
 - Data Science Platform Engineer
 

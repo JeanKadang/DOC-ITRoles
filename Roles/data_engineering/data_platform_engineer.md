@@ -6,7 +6,7 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | Data Platform Architect |
+| **Reports To** | Data Platform Architect <!-- role: data-platform-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -111,12 +111,12 @@ The Data Platform Engineer builds, maintains, and optimises the shared data plat
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Receives architecture designs, technology standards, and implementation direction; escalates complex design decisions and provides implementation feasibility feedback | Escalates To |
-| DataOps Specialist | Collaborates on pipeline reliability, data quality test integration, CI/CD pipeline implementation, and incident response for platform-layer failures | Collaborates |
+| Data Platform Architect <!-- role: data-platform-architect --> | Receives architecture designs, technology standards, and implementation direction; escalates complex design decisions and provides implementation feasibility feedback | Escalates To |
+| DataOps Specialist <!-- role: dataops-specialist --> | Collaborates on pipeline reliability, data quality test integration, CI/CD pipeline implementation, and incident response for platform-layer failures | Collaborates |
 | Data Engineers across domains | Primary platform customers; supports onboarding, resolves platform issues, and provides shared infrastructure services enabling domain data product delivery | Provides To |
 | Cloud Architects | Coordinates on underlying compute, networking, storage, and security configuration that underpins the data platform | Collaborates |
-| DevOps Architect | Aligns data platform CI/CD pipelines with organisational DevOps toolchain, container registries, and deployment gates | Governed By |
-| AI Platform Engineer | Coordinates on data platform integration points for ML feature pipeline ingestion and training data access patterns | Collaborates |
+| DevOps Architect <!-- role: devops-architect --> | Aligns data platform CI/CD pipelines with organisational DevOps toolchain, container registries, and deployment gates | Governed By |
+| AI Platform Engineer <!-- role: ai-platform-engineer --> | Coordinates on data platform integration points for ML feature pipeline ingestion and training data access patterns | Collaborates |
 
 ## Key Technologies
 
@@ -176,8 +176,8 @@ The Data Platform Engineer builds, maintains, and optimises the shared data plat
 
 **Potential Next Roles:**
 
-- DataOps Specialist
-- Data Platform Architect
+- DataOps Specialist <!-- role: dataops-specialist -->
+- Data Platform Architect <!-- role: data-platform-architect -->
 - Senior Data Engineer (domain-focused pipeline specialisation)
 - AI Platform Engineer (ML platform specialisation)
 
