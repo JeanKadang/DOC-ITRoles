@@ -6,7 +6,7 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CIO |
-| **Reports To** | Chief Executive Officer |
+| **Reports To** | Chief Executive Officer <!-- role: chief-executive-officer --> |
 | **Direct Reports** | Product Area Lead, Technical Area Lead (equivalent title to CTO/SVP of Technology — org uses one) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -157,8 +157,8 @@ Degree in Information Technology, Computer Science, Business Information Systems
 |---|---|---|
 | CEO | Primary reporting line; IT risk, IT investment performance, enterprise IT governance, and operational IT resilience | Escalates To |
 | CFO | Close collaboration on IT cost governance, ERP financial systems, IT investment ROI, and audit readiness | Collaborates |
-| COO | IT operational continuity, ITSM alignment to business operations, and IT enablement of business process performance | Collaborates |
-| CPO (Chief People Officer) | HRIS strategy, digital employee experience, and people system lifecycle governance | Collaborates |
+| COO <!-- external-role --> | IT operational continuity, ITSM alignment to business operations, and IT enablement of business process performance | Collaborates |
+| CPO (Chief People Officer) <!-- external-role --> | HRIS strategy, digital employee experience, and people system lifecycle governance | Collaborates |
 | CTO | Peer collaboration on enterprise architecture, cloud strategy, and shared infrastructure; boundary management where product engineering and IT operations overlap | Collaborates |
 | CISO | IT security posture, IT compliance obligations, and security requirements for enterprise systems and IT infrastructure; CISO may report to CIO in some governance models | Collaborates |
 | Business operations leaders | IT as an enabler of operational performance; SLA management, service improvement prioritisation, and operational IT requirements | Provides To |
