@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (sets API governance strategy; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -108,11 +108,11 @@ The API Strategy Architect defines and governs the organisation's end-to-end API
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| API Platform Architect | As the primary technical counterpart — aligns strategic governance with platform implementation decisions; this relationship is the most critical in the role | Collaborates |
-| Integration Architect | Align API strategy with enterprise integration patterns, event-driven integration, and the use of APIs as integration mechanisms | Collaborates |
-| Security Architect | Define and enforce API security governance standards: authentication flows, authorisation models, API threat protection, and security review requirements | Governed By |
-| DevOps Architect | API CI/CD integration, contract testing pipeline standards, and APIOps practices | Collaborates |
-| Enterprise Architect | Ensure the API strategy aligns with enterprise architecture governance, technology standards, and digital transformation initiatives | Governed By |
+| API Platform Architect <!-- role: api-platform-architect --> | As the primary technical counterpart — aligns strategic governance with platform implementation decisions; this relationship is the most critical in the role | Collaborates |
+| Integration Architect <!-- role: integration-architect --> | Align API strategy with enterprise integration patterns, event-driven integration, and the use of APIs as integration mechanisms | Collaborates |
+| Security Architect <!-- role: security-architect --> | Define and enforce API security governance standards: authentication flows, authorisation models, API threat protection, and security review requirements | Governed By |
+| DevOps Architect <!-- role: devops-architect --> | API CI/CD integration, contract testing pipeline standards, and APIOps practices | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Ensure the API strategy aligns with enterprise architecture governance, technology standards, and digital transformation initiatives | Governed By |
 | business product owners | Partner-facing teams to define external API products, developer portal strategy, and API monetisation models | Collaborates |
 | API Platform Senior Engineers | API design standards compliance and lifecycle policy adherence | Provides To |
 | API Platform Engineers | API design standards compliance and lifecycle policy adherence | Provides To |

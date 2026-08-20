@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | API Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,7 +97,7 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | API Architect | API platform strategy | Escalates To |
-| API Platform Product Owner | Technical planning | Collaborates |
+| API Platform Product Owner <!-- role: api-platform-product-owner --> | Technical planning | Collaborates |
 | Integration Senior Engineers | Enterprise integration patterns | Collaborates |
 | Security Senior Engineers | API security controls | Governed By |
 | API Platform Engineers | Implementation best practices | Provides To |
@@ -158,7 +158,7 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 
 **Previous Roles:**
 
-- API Platform Engineer
+- API Platform Engineer <!-- role: api-platform-engineer -->
 - Integration Developer
 - Backend Developer with API focus
 - Full Stack Developer
@@ -167,7 +167,7 @@ The API Platform Senior Engineer leads the implementation and optimization of AP
 **Potential Next Roles:**
 
 - API Architect
-- Integration Architect
+- Integration Architect <!-- role: integration-architect -->
 - Digital Platform Architect
 - API Product Manager
 - Integration Practice Lead

@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | .NET Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,8 +95,8 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| .NET Architect | Solution design | Escalates To |
-| .NET Platform Product Owner | Technical planning | Collaborates |
+| .NET Architect <!-- role: net-architect --> | Solution design | Escalates To |
+| .NET Platform Product Owner <!-- role: net-platform-product-owner --> | Technical planning | Collaborates |
 | DevOps Senior Engineers | CI/CD pipelines | Collaborates |
 | Security Senior Engineers | Application security | Governed By |
 | Database Senior Engineers | Data access layers | Collaborates |
@@ -157,7 +157,7 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 
 **Previous Roles:**
 
-- .NET Engineer
+- .NET Engineer <!-- role: net-engineer -->
 - Full Stack Developer with .NET focus
 - Application Developer
 - Software Engineer
@@ -165,7 +165,7 @@ The .NET Senior Engineer leads the implementation and optimization of complex .N
 
 **Potential Next Roles:**
 
-- .NET Architect
+- .NET Architect <!-- role: net-architect -->
 - Software Architect
 - Technical Director
 - Development Manager

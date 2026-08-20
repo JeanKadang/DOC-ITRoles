@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,9 +95,9 @@ The .NET Platform Product Owner manages the development and lifecycle of the org
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevOps Product Owner | CI/CD integration | Collaborates |
+| DevOps Product Owner <!-- role: devops-product-owner --> | CI/CD integration | Collaborates |
 | Security Teams | .NET security standards | Governed By |
-| .NET Architect | Technical strategy | Consumes From |
+| .NET Architect <!-- role: net-architect --> | Technical strategy | Consumes From |
 | Application Product Owners | Platform requirements | Consumes From |
 | development teams | Platform adoption | Provides To |
 | IT leadership | Platform strategy and investments | Provides To |
