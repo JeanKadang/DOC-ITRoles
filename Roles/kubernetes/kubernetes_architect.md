@@ -6,7 +6,7 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Kubernetes Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -143,8 +143,8 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 
 **Previous Roles:**
 
-- Kubernetes Senior Engineer
-- DevOps Architect
+- Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer -->
+- DevOps Architect <!-- role: devops-architect -->
 - Cloud Platform Architect
 - Site Reliability Engineering Lead
 - Senior Platform Engineer
@@ -161,9 +161,9 @@ The Kubernetes Architect is responsible for designing and evolving container orc
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Kubernetes-based data orchestration, Apache Spark/Flink on Kubernetes, and ML pipeline infrastructure (Kubeflow, Ray) | Collaborates |
-| Integration Architect | Service mesh cross-domain integration patterns, east-west traffic governance, and inter-service API standards | Collaborates |
-| Kubernetes Product Owner | Strategy and roadmap | Collaborates |
+| Data Platform Architect <!-- role: data-platform-architect --> | Kubernetes-based data orchestration, Apache Spark/Flink on Kubernetes, and ML pipeline infrastructure (Kubeflow, Ray) | Collaborates |
+| Integration Architect <!-- role: integration-architect --> | Service mesh cross-domain integration patterns, east-west traffic governance, and inter-service API standards | Collaborates |
+| Kubernetes Product Owner <!-- role: kubernetes-product-owner --> | Strategy and roadmap | Collaborates |
 | Kubernetes Engineers and Senior Engineers | Technical guidance | Provides To |
 | Security Architects | Container security standards | Governed By |
 | Cloud Architects | Align with cloud platform strategies | Collaborates |
