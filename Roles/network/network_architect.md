@@ -6,7 +6,7 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Network Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -99,7 +99,7 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 | Enterprise Architects | Technology standards | Governed By |
 | Security Architects | Security design | Governed By |
 | Cloud Architects | Hybrid connectivity | Collaborates |
-| Network Product Owner | Technical strategy | Collaborates |
+| Network Product Owner <!-- role: network-product-owner --> | Technical strategy | Collaborates |
 | Network Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
 | application architects | Network requirements | Provides To |
 
@@ -164,7 +164,7 @@ The Network Architect designs comprehensive enterprise network strategies and ar
 
 **Previous Roles:**
 
-- Network Senior Engineer
+- Network Senior Engineer <!-- role: network-senior-engineer -->
 - Network Team Leader
 - Enterprise Network Designer
 - Network Security Specialist

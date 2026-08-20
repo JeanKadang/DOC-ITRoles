@@ -6,7 +6,7 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Network Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,8 +97,8 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Network Architect | Solution design and implementation strategy | Escalates To |
-| Network Product Owner | Technical planning and roadmap execution | Collaborates |
+| Network Architect <!-- role: network-architect --> | Solution design and implementation strategy | Escalates To |
+| Network Product Owner <!-- role: network-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Security Senior Engineers | Network security controls | Governed By |
 | Cloud Senior Engineers | Cloud network integration | Collaborates |
 | Virtualization Senior Engineers | Virtual networking | Collaborates |
@@ -159,7 +159,7 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 **Previous Roles:**
 
-- Network Engineer
+- Network Engineer <!-- role: network-engineer -->
 - Network Administrator
 - Systems Engineer with network focus
 - Network Support Specialist
@@ -167,7 +167,7 @@ The Network Senior Engineer leads the implementation and optimization of complex
 
 **Potential Next Roles:**
 
-- Network Architect
+- Network Architect <!-- role: network-architect -->
 - Network Engineering Manager
 - Network Operations Director
 - Cloud Network Architect

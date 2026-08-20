@@ -6,7 +6,7 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Network Senior Engineer |
+| **Reports To** | Network Senior Engineer <!-- role: network-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,11 +97,11 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Network Product Owner | Task prioritization | Consumes From |
+| Network Product Owner <!-- role: network-product-owner --> | Task prioritization | Consumes From |
 | Security Engineers | Network security controls | Governed By |
 | Server Infrastructure Engineers | Connectivity | Collaborates |
 | Cloud Engineers | Hybrid network integration | Collaborates |
-| Network Architect | Implementation activities | Escalates To |
+| Network Architect <!-- role: network-architect --> | Implementation activities | Escalates To |
 | business units | Network connectivity requirements | Provides To |
 
 ## Key Technologies
@@ -167,7 +167,7 @@ The Network Engineer implements and maintains enterprise network infrastructure 
 
 **Potential Next Roles:**
 
-- Network Senior Engineer
+- Network Senior Engineer <!-- role: network-senior-engineer -->
 - Network Team Lead
 - Network Security Specialist
 - Cloud Network Engineer

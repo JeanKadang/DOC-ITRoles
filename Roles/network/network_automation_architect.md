@@ -6,7 +6,7 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors the Network Automation Engineer; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -113,7 +113,7 @@ The Network Automation Architect designs and governs the strategy, tooling, and 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Network Architect | Collaborate on overall network platform decisions; automation extends and operationalises network designs | Collaborates |
+| Network Architect <!-- role: network-architect --> | Collaborate on overall network platform decisions; automation extends and operationalises network designs | Collaborates |
 | DevOps / Platform Engineering Architect | Align network CI/CD with enterprise pipeline standards | Collaborates |
 | Cloud Architects | Define cloud network automation patterns (Terraform VNets/VPCs) aligned with cloud platform IaC standards | Collaborates |
 | Security Engineers | Automate network security policy enforcement and compliance validation | Governed By |
