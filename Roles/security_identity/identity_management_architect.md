@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Identity Management Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,8 +103,8 @@ The Identity Management Architect designs and oversees the organization's identi
 |---|---|---|
 | Cloud Platform Architects | Cloud identity strategies | Collaborates |
 | Security Architects | Identity security controls | Governed By |
-| Windows Server Architect | Active Directory architecture | Collaborates |
-| Access Management Architect | Integrated IAM solutions | Collaborates |
+| Windows Server Architect <!-- role: windows-server-architect --> | Active Directory architecture | Collaborates |
+| Access Management Architect <!-- role: access-management-architect --> | Integrated IAM solutions | Collaborates |
 | application architects | Application identity integration | Provides To |
 
 ## Key Technologies
@@ -158,7 +158,7 @@ The Identity Management Architect designs and oversees the organization's identi
 
 **Previous Roles:**
 
-- Identity Management Senior Engineer
+- Identity Management Senior Engineer <!-- role: identity-management-senior-engineer -->
 - Security Architect with identity focus
 - Identity Team Lead
 - Identity Management Consultant

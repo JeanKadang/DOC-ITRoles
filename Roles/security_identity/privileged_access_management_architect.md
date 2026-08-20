@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors the Privileged Access Management Engineer; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -108,12 +108,12 @@ The Privileged Access Management (PAM) Architect designs, governs, and evolves t
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Identity Management Architect | Coordinate on Entra ID PIM, access governance, and identity lifecycle integration | Collaborates |
+| Identity Management Architect <!-- role: identity-management-architect --> | Coordinate on Entra ID PIM, access governance, and identity lifecycle integration | Collaborates |
 | Security Architect / CISO | Align PAM strategy with enterprise security architecture and risk management | Governed By |
 | Cloud Architects (Azure, AWS, GCP) | Define cloud-native privileged access patterns and JIT models | Collaborates |
 | IT Operations / Sysadmins | Drive on-boarding of server and infrastructure privileged accounts | Provides To |
 | Database Administrators | On-board database privileged credentials to PAM vaulting | Provides To |
-| Compliance / Audit | Provide PAM control evidence and attestation for regulatory requirements | Provides To |
+| Compliance / Audit <!-- external-role --> | Provide PAM control evidence and attestation for regulatory requirements | Provides To |
 
 ## Key Technologies
 
@@ -161,8 +161,8 @@ The Privileged Access Management (PAM) Architect designs, governs, and evolves t
 
 **Previous Roles:**
 
-- Identity Management Architect
-- Security Architect
+- Identity Management Architect <!-- role: identity-management-architect -->
+- Security Architect <!-- role: security-architect -->
 - Senior PAM Engineer (CyberArk/BeyondTrust specialism)
 - Senior Sysadmin / Infrastructure Engineer with security focus
 

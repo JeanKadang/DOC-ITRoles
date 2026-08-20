@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -128,8 +128,8 @@ The Access Management Product Owner manages the development and lifecycle of the
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Identity Management Product Owner | Integrated IAM strategy | Collaborates |
-| Access Management Architect | Technical strategy | Consumes From |
+| Identity Management Product Owner <!-- role: identity-management-product-owner --> | Integrated IAM strategy | Collaborates |
+| Access Management Architect <!-- role: access-management-architect --> | Technical strategy | Consumes From |
 | Security and Compliance teams | Access policies | Governed By |
 | Application Product Owners | Application access requirements | Consumes From |
 | business unit representatives | Access needs | Consumes From |
@@ -186,7 +186,7 @@ The Access Management Product Owner manages the development and lifecycle of the
 
 **Previous Roles:**
 
-- Access Management Engineer
+- Access Management Engineer <!-- role: access-management-engineer -->
 - IAM Specialist
 - Security Analyst with access focus
 - GRC (Governance, Risk, Compliance) Analyst

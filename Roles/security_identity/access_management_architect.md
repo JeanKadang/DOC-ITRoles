@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Access Management Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,8 +103,8 @@ The Access Management Architect designs and oversees the organization's access m
 |---|---|---|
 | Security Architects | Access security controls | Governed By |
 | Cloud Platform Architects | Cloud access management | Collaborates |
-| Observability Architect | Access monitoring | Consumes From |
-| Identity Management Architect | Integrated IAM solutions | Collaborates |
+| Observability Architect <!-- role: observability-architect --> | Access monitoring | Consumes From |
+| Identity Management Architect <!-- role: identity-management-architect --> | Integrated IAM solutions | Collaborates |
 | compliance and risk management | Access governance | Governed By |
 
 ## Key Technologies
@@ -163,7 +163,7 @@ The Access Management Architect designs and oversees the organization's access m
 
 **Previous Roles:**
 
-- Access Management Senior Engineer
+- Access Management Senior Engineer <!-- role: access-management-senior-engineer -->
 - Identity and Access Management Specialist
 - Security Architect with IAM focus
 - Access Governance Consultant

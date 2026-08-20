@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | Access Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,8 +101,8 @@ The Access Management Senior Engineer leads the implementation and optimization 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Access Management Architect | Solution design and implementation strategy | Escalates To |
-| Access Management Product Owner | Technical planning and roadmap execution | Collaborates |
+| Access Management Architect <!-- role: access-management-architect --> | Solution design and implementation strategy | Escalates To |
+| Access Management Product Owner <!-- role: access-management-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Identity Management Senior Engineers | Integrated IAM solutions | Collaborates |
 | Security Senior Engineers | Advanced access security controls | Collaborates |
 | Access Management Engineers | Technical implementation | Provides To |
@@ -172,14 +172,14 @@ The Access Management Senior Engineer leads the implementation and optimization 
 
 **Previous Roles:**
 
-- Access Management Engineer
+- Access Management Engineer <!-- role: access-management-engineer -->
 - Identity and Access Management Specialist
 - Security Engineer with access focus
 - System Administrator with security specialization
 
 **Potential Next Roles:**
 
-- Access Management Architect
+- Access Management Architect <!-- role: access-management-architect -->
 - IAM Practice Leader
 - Cybersecurity Manager
 - Zero Trust Architecture Lead
