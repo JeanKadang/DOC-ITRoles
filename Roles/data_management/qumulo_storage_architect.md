@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Qumulo Storage Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,10 +95,10 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Architect | Hardware specifications for Qumulo nodes | Consumes From |
+| Server Hardware Architect <!-- role: server-hardware-architect --> | Hardware specifications for Qumulo nodes | Consumes From |
 | Cloud Platform Architects | Hybrid cloud storage implementations | Collaborates |
-| Database Architect | Storage requirements for database workloads | Provides To |
-| Observability Architect | Storage monitoring solutions | Governed By |
+| Database Architect <!-- role: database-architect --> | Storage requirements for database workloads | Provides To |
+| Observability Architect <!-- role: observability-architect --> | Storage monitoring solutions | Governed By |
 | Backup Solution Architects | Data protection integration | Collaborates |
 
 ## Key Technologies
@@ -156,7 +156,7 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 
 **Previous Roles:**
 
-- Qumulo Storage Senior Engineer
+- Qumulo Storage Senior Engineer <!-- role: qumulo-storage-senior-engineer -->
 - Enterprise Storage Engineer
 - Storage Team Lead
 - File Systems Specialist
@@ -165,7 +165,7 @@ The Qumulo Storage Architect designs and oversees the implementation of enterpri
 **Potential Next Roles:**
 
 - Enterprise Data Management Director
-- Chief Data Officer
+- Chief Data Officer <!-- external-role -->
 - Technology Strategy Executive
 - IT Architecture Director
 - Cloud Data Services Leader

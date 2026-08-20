@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | Qumulo Storage Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,8 +103,8 @@ The Qumulo Storage Senior Engineer leads the implementation and optimization of 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Qumulo Storage Architect | Solution design and implementation strategy | Escalates To |
-| Qumulo Storage Product Owner | Technical planning and roadmap execution | Collaborates |
+| Qumulo Storage Architect <!-- role: qumulo-storage-architect --> | Solution design and implementation strategy | Escalates To |
+| Qumulo Storage Product Owner <!-- role: qumulo-storage-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Cloud Senior Engineers | Hybrid cloud storage solutions | Collaborates |
 | Backup Solution Senior Engineers | Integrated data protection | Collaborates |
 | Qumulo Storage Engineers | Technical implementation | Provides To |
@@ -161,7 +161,7 @@ The Qumulo Storage Senior Engineer leads the implementation and optimization of 
 
 **Previous Roles:**
 
-- Qumulo Storage Engineer
+- Qumulo Storage Engineer <!-- role: qumulo-storage-engineer -->
 - Storage Administrator
 - NAS/SAN Engineer
 - File Systems Specialist
@@ -169,7 +169,7 @@ The Qumulo Storage Senior Engineer leads the implementation and optimization of 
 
 **Potential Next Roles:**
 
-- Qumulo Storage Architect
+- Qumulo Storage Architect <!-- role: qumulo-storage-architect -->
 - Enterprise Storage Architect
 - Data Center Infrastructure Architect
 - Storage and Backup Manager

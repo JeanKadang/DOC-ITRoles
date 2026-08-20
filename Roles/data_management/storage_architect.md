@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Storage Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -164,7 +164,7 @@ The Storage Architect is responsible for designing and governing the organisatio
 
 **Previous Roles:**
 
-- Storage Senior Engineer
+- Storage Senior Engineer <!-- role: storage-senior-engineer -->
 - Infrastructure Architect (generalised)
 - Storage Engineer with vendor specialism (NetApp, Pure, Dell)
 
