@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors VMware Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,7 +104,7 @@ The VMware Architect designs and oversees the organization's virtualization infr
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Architect | Hardware specifications for VMware hosts | Consumes From |
+| Server Hardware Architect <!-- role: server-hardware-architect --> | Hardware specifications for VMware hosts | Consumes From |
 | Storage Architects | Virtual storage design | Collaborates |
 | Network Architects | Virtual networking solutions | Collaborates |
 | Cloud Platform Architects | Hybrid cloud integration | Collaborates |
@@ -157,14 +157,14 @@ The VMware Architect designs and oversees the organization's virtualization infr
 
 **From (typical previous roles):**
 
-- VMware Senior Engineer
+- VMware Senior Engineer <!-- role: vmware-senior-engineer -->
 - Infrastructure or Virtualization Engineer with design responsibility
 - Storage or Network Architect broadening into SDDC scope
 
 **To (typical next roles):**
 
-- Cloud Lead Architect or Cloud Principal Architect
-- Enterprise Architect
+- <!-- one-of -->Cloud Lead Architect <!-- role: cloud-lead-architect --> or Cloud Principal Architect <!-- role: cloud-principal-architect --><!-- /one-of -->
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Technical Area Lead or Chapter Lead (Cloud, Platform & Infrastructure)
 
 ## Recommended Certifications & Learning Paths

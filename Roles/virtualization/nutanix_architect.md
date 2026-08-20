@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Nutanix Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,9 +104,9 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Architect | Hardware specifications for Nutanix nodes | Consumes From |
-| Database Architect | Database workload optimization on Nutanix | Collaborates |
-| Kubernetes Architect | Container solutions with Nutanix Karbon | Collaborates |
+| Server Hardware Architect <!-- role: server-hardware-architect --> | Hardware specifications for Nutanix nodes | Consumes From |
+| Database Architect <!-- role: database-architect --> | Database workload optimization on Nutanix | Collaborates |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | Container solutions with Nutanix Karbon | Collaborates |
 | Backup Solutions Architect | Nutanix data protection strategies | Collaborates |
 | Cloud Platform Architects | Hybrid cloud solutions with Nutanix Xi | Collaborates |
 | application architects | Workload placement | Provides To |
@@ -165,7 +165,7 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 
 **Previous Roles:**
 
-- Nutanix Senior Engineer
+- Nutanix Senior Engineer <!-- role: nutanix-senior-engineer -->
 - HCI Systems Engineer
 - Virtualization Specialist
 - Storage Administrator
@@ -174,7 +174,7 @@ The Nutanix Architect designs and oversees the organization's hyperconverged inf
 **Potential Next Roles:**
 
 - Enterprise Infrastructure Architect
-- Chief Technology Officer
+- Chief Technology Officer <!-- role: chief-technology-officer -->
 - Cloud Architecture Director
 - Technical Director
 - IT Infrastructure Manager

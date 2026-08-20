@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Hyper-V Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -174,7 +174,7 @@ The Hyper-V Architect is responsible for designing and overseeing the strategic 
 
 **Previous Roles:**
 
-- Hyper-V Senior Engineer
+- Hyper-V Senior Engineer <!-- role: hyper-v-senior-engineer -->
 - Windows Server Specialist
 - Systems Architect
 - Infrastructure Team Lead

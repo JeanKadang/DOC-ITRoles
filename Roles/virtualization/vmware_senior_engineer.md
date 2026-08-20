@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | VMware Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,8 +104,8 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| VMware Architect | Solution design and implementation strategy | Escalates To |
-| VMware Product Owner | Technical planning and roadmap execution | Collaborates |
+| VMware Architect <!-- role: vmware-architect --> | Solution design and implementation strategy | Escalates To |
+| VMware Product Owner <!-- role: vmware-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Storage Senior Engineers | Advanced storage virtualization | Collaborates |
 | Network Senior Engineers | Complex virtual networking | Collaborates |
 | Security Senior Engineers | Virtualization security controls | Governed By |
@@ -162,12 +162,12 @@ The VMware Senior Engineer leads the implementation and optimization of complex 
 
 **Previous Roles:**
 
-- VMware Engineer
+- VMware Engineer <!-- role: vmware-engineer -->
 - Systems Administrator with VMware specialization
 
 **Potential Next Roles:**
 
-- VMware Architect
+- VMware Architect <!-- role: vmware-architect -->
 - Cloud Infrastructure Architect
 - Infrastructure Manager
 - Technical Lead for Cloud Platforms

@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,8 +96,8 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Product Owner | Nutanix hardware planning | Collaborates |
-| Nutanix Architect | Technical strategy and design | Consumes From |
+| Server Hardware Product Owner <!-- role: server-hardware-product-owner --> | Nutanix hardware planning | Collaborates |
+| Nutanix Architect <!-- role: nutanix-architect --> | Technical strategy and design | Consumes From |
 | Application Product Owners | Infrastructure requirements | Consumes From |
 | Service Delivery Managers | Operational transitions | Collaborates |
 | business stakeholders | Service requirements | Consumes From |
@@ -166,7 +166,7 @@ The Nutanix Product Owner manages the development and lifecycle of the organizat
 
 **Previous Roles:**
 
-- Nutanix Engineer
+- Nutanix Engineer <!-- role: nutanix-engineer -->
 - Infrastructure Product Owner
 - Technical Project Manager
 - Platform Operations Manager

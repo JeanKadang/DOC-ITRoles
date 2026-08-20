@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Hyper-V Senior Engineer |
+| **Reports To** | Hyper-V Senior Engineer <!-- role: hyper-v-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -179,7 +179,7 @@ The Hyper-V Engineer implements and maintains Microsoft virtualization environme
 
 **Potential Next Roles:**
 
-- Hyper-V Senior Engineer
+- Hyper-V Senior Engineer <!-- role: hyper-v-senior-engineer -->
 - Windows Platform Specialist
 - Cloud Infrastructure Engineer
 - Systems Engineer Team Lead

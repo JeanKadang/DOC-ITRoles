@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Nutanix Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,8 +96,8 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Nutanix Architect | Solution design and implementation strategy | Escalates To |
-| Nutanix Product Owner | Technical planning and roadmap execution | Collaborates |
+| Nutanix Architect <!-- role: nutanix-architect --> | Solution design and implementation strategy | Escalates To |
+| Nutanix Product Owner <!-- role: nutanix-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Database Senior Engineers | Optimizing database workloads | Collaborates |
 | Security Senior Engineers | Infrastructure security controls | Governed By |
 | Cloud Senior Engineers | Hybrid cloud integrations | Collaborates |
@@ -158,14 +158,14 @@ The Nutanix Senior Engineer leads the implementation and optimization of complex
 
 **Previous Roles:**
 
-- Nutanix Engineer
+- Nutanix Engineer <!-- role: nutanix-engineer -->
 - Virtualization Engineer
 - Systems Engineer with HCI focus
 - Storage or Server Administrator
 
 **Potential Next Roles:**
 
-- Nutanix Architect
+- Nutanix Architect <!-- role: nutanix-architect -->
 - Principal HCI Architect
 - Cloud Infrastructure Architect
 - Hybrid Cloud Leader

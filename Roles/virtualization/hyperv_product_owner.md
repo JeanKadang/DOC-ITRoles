@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -112,10 +112,10 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Business Stakeholders | Understanding requirements and managing expectations | Consumes From |
-| Hyper-V Architect | Collaborating on technical strategy and architecture | Consumes From |
+| Hyper-V Architect <!-- role: hyper-v-architect --> | Collaborating on technical strategy and architecture | Consumes From |
 | Hyper-V Engineering Teams | Providing direction on implementation priorities | Provides To |
 | Windows Server Teams | Coordinating platform dependencies and roadmaps | Collaborates |
-| Procurement | Managing licensing and vendor relationships | Collaborates |
+| Procurement <!-- external-role --> | Managing licensing and vendor relationships | Collaborates |
 | Finance Teams | Budget planning and cost management | Collaborates |
 | Service Management | Defining service levels and support models | Collaborates |
 
@@ -182,7 +182,7 @@ The Hyper-V Product Owner manages the lifecycle and roadmap of Microsoft virtual
 
 **Previous Roles:**
 
-- Hyper-V Engineer
+- Hyper-V Engineer <!-- role: hyper-v-engineer -->
 - Windows Server Administrator
 - Infrastructure Service Manager
 - Technical Project Manager

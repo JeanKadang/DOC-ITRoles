@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | VMware Senior Engineer |
+| **Reports To** | VMware Senior Engineer <!-- role: vmware-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,11 +104,11 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| VMware Product Owner | Task prioritization | Consumes From |
+| VMware Product Owner <!-- role: vmware-product-owner --> | Task prioritization | Consumes From |
 | Server Hardware Engineers | Host configuration | Collaborates |
 | Storage Engineers | Datastore configuration | Collaborates |
 | Network Engineers | Virtual network implementation | Collaborates |
-| VMware Architect | Implementation activities | Escalates To |
+| VMware Architect <!-- role: vmware-architect --> | Implementation activities | Escalates To |
 | application teams | VM requirements | Provides To |
 
 ## Key Technologies
@@ -169,7 +169,7 @@ The VMware Engineer implements and maintains virtualization infrastructure based
 
 **Potential Next Roles:**
 
-- VMware Senior Engineer
+- VMware Senior Engineer <!-- role: vmware-senior-engineer -->
 - Virtualization Team Lead
 - Cloud Platform Engineer
 - Systems Architect
