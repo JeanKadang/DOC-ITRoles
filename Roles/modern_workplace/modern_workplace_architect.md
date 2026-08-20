@@ -6,7 +6,7 @@
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -173,7 +173,7 @@ The Modern Workplace Architect is responsible for designing, governing, and evol
 
 **Potential Next Roles:**
 
-- Enterprise Architect
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Chief Digital Officer (CDO) support function
 - Head of Digital Workplace
 
