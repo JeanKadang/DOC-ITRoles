@@ -6,7 +6,7 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | FinOps Senior Engineer |
+| **Reports To** | FinOps Senior Engineer <!-- role: finops-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -179,7 +179,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 **Potential Next Roles:**
 
-- FinOps Senior Engineer
+- FinOps Senior Engineer <!-- role: finops-senior-engineer -->
 - Cloud Cost Optimization Specialist
 - Cloud Financial Analyst
 - FinOps Consultant
