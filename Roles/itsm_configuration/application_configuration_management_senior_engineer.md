@@ -6,7 +6,7 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | Configuration Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,7 +97,7 @@ The Application Configuration Management Senior Engineer leads the implementatio
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Configuration Management Architect | Solution design | Escalates To |
-| ITSM Product Owner | Technical planning | Collaborates |
+| ITSM Product Owner <!-- role: itsm-product-owner --> | Technical planning | Collaborates |
 | DevOps Senior Engineers | CI/CD integration | Collaborates |
 | Security Engineers | Secure configuration practices | Collaborates |
 | Application Teams | Configuration requirements | Consumes From |
@@ -159,7 +159,7 @@ The Application Configuration Management Senior Engineer leads the implementatio
 **Previous Roles:**
 
 - Configuration Management Engineer
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Release Engineer
 - Application Support Engineer
 - IT Service Management Specialist
@@ -167,7 +167,7 @@ The Application Configuration Management Senior Engineer leads the implementatio
 **Potential Next Roles:**
 
 - Configuration Management Architect
-- DevOps Architect
+- DevOps Architect <!-- role: devops-architect -->
 - Release Management Director
 - Enterprise Application Manager
 - ITSM Practice Leader

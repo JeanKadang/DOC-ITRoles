@@ -6,7 +6,7 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
-| **Reports To** | Application Configuration Management Senior Engineer |
+| **Reports To** | Application Configuration Management Senior Engineer <!-- role: application-configuration-management-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,7 +95,7 @@ The Application Configuration Management Engineer implements and maintains confi
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| ITSM Product Owner | Task prioritization | Consumes From |
+| ITSM Product Owner <!-- role: itsm-product-owner --> | Task prioritization | Consumes From |
 | Release Management | Deployment configurations | Collaborates |
 | DevOps Engineers | Pipeline integration | Collaborates |
 | Application Support | Configuration troubleshooting | Provides To |
@@ -166,9 +166,9 @@ The Application Configuration Management Engineer implements and maintains confi
 
 **Potential Next Roles:**
 
-- Application Configuration Management Senior Engineer
+- Application Configuration Management Senior Engineer <!-- role: application-configuration-management-senior-engineer -->
 - Release Management Specialist
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - ITSM Specialist
 - Change Management Coordinator
 

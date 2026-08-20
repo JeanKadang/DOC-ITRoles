@@ -6,7 +6,7 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The Application Configuration Management Architect designs comprehensive strateg
 | Enterprise Architects | Technology standards | Governed By |
 | Security Architects | Secure configuration patterns | Governed By |
 | DevOps Architects | CI/CD integration | Collaborates |
-| ITSM Product Owner | Technical strategy | Collaborates |
+| ITSM Product Owner <!-- role: itsm-product-owner --> | Technical strategy | Collaborates |
 | Configuration Management Senior Engineers | Provide architectural direction and review engineering designs | Provides To |
 | application architects | Configuration requirements | Consumes From |
 
