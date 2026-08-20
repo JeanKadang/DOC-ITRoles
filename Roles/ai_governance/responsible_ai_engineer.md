@@ -6,7 +6,7 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | AI Governance Architect |
+| **Reports To** | AI Governance Architect <!-- role: ai-governance-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -112,11 +112,11 @@ The Responsible AI Engineer implements the technical tooling, testing processes,
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| AI Governance Architect | Receives governance requirements; escalates findings and compliance gaps | Escalates To |
+| AI Governance Architect <!-- role: ai-governance-architect --> | Receives governance requirements; escalates findings and compliance gaps | Escalates To |
 | Data Scientists | Embeds governance checks into experimentation and training workflows | Provides To |
-| MLOps Engineer | Integrates governance tooling into CI/CD pipelines and model deployment gates | Collaborates |
-| Security Engineer | Coordinates on AI-specific threat surface (prompt injection, model theft, adversarial examples) | Collaborates |
-| Legal and Compliance | Provides technical evidence for AI regulatory assessments and audits | Provides To |
+| MLOps Engineer <!-- role: mlops-engineer --> | Integrates governance tooling into CI/CD pipelines and model deployment gates | Collaborates |
+| Security Engineer <!-- role: security-engineer --> | Coordinates on AI-specific threat surface (prompt injection, model theft, adversarial examples) | Collaborates |
+| Legal and Compliance <!-- external-role --> | Provides technical evidence for AI regulatory assessments and audits | Provides To |
 
 ## Key Technologies
 

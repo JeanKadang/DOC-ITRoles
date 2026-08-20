@@ -6,7 +6,7 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | AI Governance Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -102,10 +102,10 @@ The AI Governance Senior Engineer implements, operates, and continuously improve
 | AI Platform Engineers | Embed governance checks into AI pipelines | Collaborates |
 | MLOps Engineers | Embed governance checks into AI pipelines | Collaborates |
 | data science and ML teams | Model card completion, bias testing, and documentation | Collaborates |
-| Legal and Compliance | Technical evidence packages for regulatory reviews and audits | Provides To |
+| Legal and Compliance <!-- external-role --> | Technical evidence packages for regulatory reviews and audits | Provides To |
 | Security Engineers | AI-specific security controls (prompt injection mitigations, model access controls) | Collaborates |
 | business AI owners | Complete risk assessment interviews and gather system documentation | Consumes From |
-| AI Governance Architect | Framework, policy, and complex assessment decisions | Escalates To |
+| AI Governance Architect <!-- role: ai-governance-architect --> | Framework, policy, and complex assessment decisions | Escalates To |
 
 ## Key Technologies
 
@@ -164,7 +164,7 @@ The AI Governance Senior Engineer implements, operates, and continuously improve
 
 **Potential Next Roles:**
 
-- AI Governance Architect
+- AI Governance Architect <!-- role: ai-governance-architect -->
 - Responsible AI Engineer (specializing in fairness, explainability, or safety)
 - MLOps Engineer (governance-embedded platform track)
 - Data Governance Senior Engineer or Architect

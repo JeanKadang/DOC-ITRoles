@@ -6,7 +6,7 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | AI Platform Architect |
+| **Reports To** | AI Platform Architect <!-- role: ai-platform-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -111,11 +111,11 @@ The AI Platform Engineer builds and operates the organisation's AI/ML platform i
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| AI Platform Architect | Receives architecture design direction, reference implementations, and technology standards; escalates complex design decisions upward | Escalates To |
-| AI Governance Engineer | Coordinates on embedding governance controls, audit logging, and bias testing hooks within ML pipelines and the model registry | Collaborates |
-| Data Platform Architect | Aligns data ingestion and feature pipeline integration between the data platform and the ML platform | Collaborates |
+| AI Platform Architect <!-- role: ai-platform-architect --> | Receives architecture design direction, reference implementations, and technology standards; escalates complex design decisions upward | Escalates To |
+| AI Governance Engineer <!-- role: ai-governance-engineer --> | Coordinates on embedding governance controls, audit logging, and bias testing hooks within ML pipelines and the model registry | Collaborates |
+| Data Platform Architect <!-- role: data-platform-architect --> | Aligns data ingestion and feature pipeline integration between the data platform and the ML platform | Collaborates |
 | Data Science / ML Engineering teams | Primary customers of the platform; supports experiment environment setup, pipeline debugging, and model deployment | Provides To |
-| DevOps Architect | Aligns MLOps CI/CD pipelines with organisational DevOps toolchain standards and deployment gates | Governed By |
+| DevOps Architect <!-- role: devops-architect --> | Aligns MLOps CI/CD pipelines with organisational DevOps toolchain standards and deployment gates | Governed By |
 | Cloud Architects | Coordinates on underlying compute, networking, and storage for ML infrastructure | Collaborates |
 
 ## Key Technologies
@@ -177,7 +177,7 @@ The AI Platform Engineer builds and operates the organisation's AI/ML platform i
 **Potential Next Roles:**
 
 - Senior AI Platform Engineer
-- AI Platform Architect
+- AI Platform Architect <!-- role: ai-platform-architect -->
 - MLOps Lead / ML Engineering Lead
 - DataOps Specialist (data platform operations specialisation)
 

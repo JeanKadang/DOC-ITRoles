@@ -6,7 +6,7 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors AI Governance Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -115,10 +115,10 @@ The AI Governance Architect designs and governs the organisation's frameworks, p
 |---|---|---|
 | CISO / Security Architect | Align AI security controls with the AI governance framework | Collaborates |
 | Chief Data Officer / Data Governance | Integrate AI data governance with broader data governance policy | Governed By |
-| AI Platform Architect | Embed governance controls into AI platform design | Collaborates |
-| Legal and Compliance | Translate regulatory requirements into technical governance controls | Governed By |
-| HR | Govern workforce AI tools (Copilot, AI assistants, AI-assisted performance management) | Provides To |
-| Product Teams | Provide AI governance requirements for AI-powered product features | Provides To |
+| AI Platform Architect <!-- role: ai-platform-architect --> | Embed governance controls into AI platform design | Collaborates |
+| Legal and Compliance <!-- external-role --> | Translate regulatory requirements into technical governance controls | Governed By |
+| HR <!-- external-role --> | Govern workforce AI tools (Copilot, AI assistants, AI-assisted performance management) | Provides To |
+| Product Teams <!-- external-role --> | Provide AI governance requirements for AI-powered product features | Provides To |
 
 ## Key Technologies
 
