@@ -26,9 +26,20 @@ function roleFiles(dir = ROLES_DIR, out = []) {
     return out;
 }
 
+// #269's annotation syntax (`<!-- role: id -->`, `<!-- external-role -->`,
+// `<!-- one-of -->...<!-- /one-of -->`) is appended inline within the same
+// table cell this report reads. Strip it before matching so an annotated
+// value ("Chief Executive Officer <!-- role: chief-executive-officer -->")
+// still resolves exactly as the unannotated text did.
+const ANNOTATION_COMMENT = /<!--[\s\S]*?-->/g;
+
+function stripAnnotations(text) {
+    return text.replace(ANNOTATION_COMMENT, '').replace(/\s+([,;])/g, '$1').replace(/\s+/g, ' ').trim();
+}
+
 function field(text, name) {
     const m = text.match(new RegExp(`\\|\\s*\\*\\*${name}\\*\\*\\s*\\|\\s*([^|\\n]+)`));
-    return m ? m[1].trim() : null;
+    return m ? stripAnnotations(m[1]) : null;
 }
 
 // Destinations that sit above or outside the catalogue on purpose.
@@ -156,4 +167,4 @@ function report() {
 
 if (require.main === module) report();
 
-module.exports = { buildGraph, similarity };
+module.exports = { buildGraph, similarity, stripAnnotations };
