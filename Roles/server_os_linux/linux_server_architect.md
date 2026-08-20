@@ -6,7 +6,7 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Linux Server Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -158,17 +158,17 @@ The Linux Server Architect designs and defines the strategic direction for the o
 
 **Previous Roles:**
 
-- Linux Server Engineer
+- Linux Server Engineer <!-- role: linux-server-engineer -->
 - Linux Infrastructure Specialist
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Senior Linux Systems Administrator
 - Linux Team Lead
 
 **Potential Next Roles:**
 
 - Principal Infrastructure Architect
-- Enterprise Architect
-- Chief Technology Officer
+- Enterprise Architect <!-- role: enterprise-architect -->
+- Chief Technology Officer <!-- role: chief-technology-officer -->
 - IT Infrastructure Director
 - Cloud Architecture Director
 

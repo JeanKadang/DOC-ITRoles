@@ -6,7 +6,7 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Linux Server Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -105,8 +105,8 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Linux Server Architect | Solution design and implementation approaches | Escalates To |
-| Linux Server Product Owner | Technical planning and roadmap execution | Collaborates |
+| Linux Server Architect <!-- role: linux-server-architect --> | Solution design and implementation approaches | Escalates To |
+| Linux Server Product Owner <!-- role: linux-server-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | HPC Senior Engineers | Linux performance optimization | Collaborates |
 | Kubernetes Senior Engineers | Advanced container hosting | Collaborates |
 | Cloud Senior Engineers | Linux in cloud environments | Collaborates |
@@ -163,14 +163,14 @@ The Linux Server Senior Engineer leads complex implementations and optimizations
 
 **Previous Roles:**
 
-- Linux Server Engineer
+- Linux Server Engineer <!-- role: linux-server-engineer -->
 - Linux Systems Administrator
 - DevOps Engineer with Linux focus
 - UNIX Administrator
 
 **Potential Next Roles:**
 
-- Linux Server Architect
+- Linux Server Architect <!-- role: linux-server-architect -->
 - Open Source Technology Leader
 - Linux Platform Manager
 - Cloud Linux Solution Architect

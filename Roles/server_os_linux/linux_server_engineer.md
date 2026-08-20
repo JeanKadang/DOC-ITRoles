@@ -6,7 +6,7 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Linux Server Senior Engineer |
+| **Reports To** | Linux Server Senior Engineer <!-- role: linux-server-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,11 +104,11 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Linux Server Product Owner | Task prioritization | Consumes From |
+| Linux Server Product Owner <!-- role: linux-server-product-owner --> | Task prioritization | Consumes From |
 | Server Hardware Engineers | Server deployments | Collaborates |
 | Kubernetes Engineers | Container host configuration | Collaborates |
 | Database Engineers | Linux database hosts | Provides To |
-| Linux Server Architect | Implementation activities | Escalates To |
+| Linux Server Architect <!-- role: linux-server-architect --> | Implementation activities | Escalates To |
 
 ## Key Technologies
 
@@ -173,9 +173,9 @@ The Linux Server Engineer implements and maintains Tier 1 Linux Server environme
 
 **Potential Next Roles:**
 
-- Linux Server Senior Engineer
-- DevOps Engineer
-- Site Reliability Engineer
+- Linux Server Senior Engineer <!-- role: linux-server-senior-engineer -->
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Linux Team Lead
 - Cloud Linux Engineer
 

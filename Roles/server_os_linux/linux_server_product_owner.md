@@ -6,7 +6,7 @@
 | **Domain** | Linux Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,7 +104,7 @@ The Linux Server Product Owner manages the product backlog and roadmap for all T
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Linux Server Architect | Technical strategy and design | Consumes From |
+| Linux Server Architect <!-- role: linux-server-architect --> | Technical strategy and design | Consumes From |
 | other Product Owners | Integrated solutions | Collaborates |
 | Security teams | Linux hardening and compliance | Governed By |
 | Service Delivery Managers | Operational transitions | Collaborates |
