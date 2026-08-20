@@ -6,7 +6,7 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
-| **Reports To** | Enterprise Infrastructure Onboarding Senior Engineer |
+| **Reports To** | Enterprise Infrastructure Onboarding Senior Engineer <!-- role: enterprise-infrastructure-onboarding-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -168,7 +168,7 @@ The Enterprise Infrastructure Onboarding Engineer implements and maintains provi
 
 - Infrastructure Onboarding Senior Engineer
 - Infrastructure Automation Specialist
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Service Delivery Engineer
 - Platform Engineer
 
