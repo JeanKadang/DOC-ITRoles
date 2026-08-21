@@ -725,6 +725,11 @@ test('findRelationshipIssues flags a Reports To that references an unknown role 
   relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'Ghost Role <!-- role: ghost-role -->' });
   const { errors } = findRelationshipIssues(root);
   assert.ok(errors.some(e => e.field === 'Reports To' && /unknown role ID "ghost-role"/.test(e.message)));
+  // Reported paths must be repo-relative (e.g. "testdomain/a.md"), not the
+  // absolute filesystem path loadRoles() returns internally — an earlier
+  // task fixed this to match every other check in this file, and nothing
+  // guarded against it regressing.
+  assert.ok(!path.isAbsolute(errors[0].file), `expected a repo-relative path, got "${errors[0].file}"`);
   fs.rmSync(root, { recursive: true, force: true });
 });
 
