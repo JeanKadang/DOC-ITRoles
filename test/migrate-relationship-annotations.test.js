@@ -75,3 +75,49 @@ test('running --write twice is idempotent', () => {
   assert.equal(afterSecond, afterFirst);
   fs.rmSync(root, { recursive: true, force: true });
 });
+
+function fixtureTreeWithLegacyReference() {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'migrate-fixture-legacy-'));
+  const domain = path.join(root, 'testdomain');
+  fs.mkdirSync(domain);
+  fs.writeFileSync(path.join(domain, 'engineer.md'), [
+    '# Kubernetes Engineer',
+    '',
+    '| Field | Value |',
+    '|---|---|',
+    '| **Role ID** | `kubernetes-engineer` |',
+    '| **Reports To** | Infrastructure Onboarding Senior Engineer |',
+    '| **Direct Reports** | None |',
+    '',
+  ].join('\n'));
+  return root;
+}
+
+test('--legacy prints the unresolved file/field/text entries instead of just a count', () => {
+  const root = fixtureTreeWithLegacyReference();
+  const result = runCli(root, ['--legacy']);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+  const engineerFile = path.join(root, 'testdomain', 'engineer.md');
+  assert.match(result.stdout, new RegExp(engineerFile.replace(/[\\.]/g, '\\$&')));
+  assert.match(result.stdout, /Reports To/);
+  assert.match(result.stdout, /Infrastructure Onboarding Senior Engineer/);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('--legacy does not write any files (dry-run behavior is preserved)', () => {
+  const root = fixtureTreeWithLegacyReference();
+  const before = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  runCli(root, ['--legacy']);
+  const after = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  assert.equal(after, before);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('default (no --legacy) behavior is unchanged: only the summary count is printed', () => {
+  const root = fixtureTreeWithLegacyReference();
+  const result = runCli(root);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+  assert.match(result.stdout, /unresolved reference\(s\) left as legacy text/);
+  assert.doesNotMatch(result.stdout, /Reports To\tInfrastructure Onboarding Senior Engineer/);
+  fs.rmSync(root, { recursive: true, force: true });
+});

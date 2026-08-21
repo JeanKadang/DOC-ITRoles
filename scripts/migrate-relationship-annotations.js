@@ -35,7 +35,7 @@ function loadRoleIndex(files) {
   return buildRoleIndex(roles);
 }
 
-function run({ write }) {
+function run({ write, legacy }) {
   const files = roleFiles();
   const roleIndex = loadRoleIndex(files);
   const externalTerms = new Set(EXTERNAL_TERMS.map(normalizeTitle));
@@ -69,8 +69,22 @@ function run({ write }) {
   if (legacyEntries.length) {
     console.log(`\n${legacyEntries.length} unresolved reference(s) left as legacy text — run scripts/audit-relationship-terms.js for the full breakdown.`);
   }
+
+  // --legacy surfaces the file/field/text detail the design spec calls for
+  // ("targets left legacy — with file + field + text — so the legacy list
+  // is a concrete, reviewable to-do"). The committed exceptions doc
+  // (docs/superpowers/plans/2026-08-20-relationship-annotation-legacy-exceptions.txt,
+  // produced separately by scripts/audit-relationship-terms.js) has text +
+  // frequency but no file/field, so this is the only way to trace an
+  // unresolved string back to the file it lives in.
+  if (legacy) {
+    console.log('\nfile\tfield\ttext');
+    for (const entry of legacyEntries) {
+      console.log(`${entry.file}\t${entry.field}\t${entry.text}`);
+    }
+  }
 }
 
-if (require.main === module) run({ write: process.argv.includes('--write') });
+if (require.main === module) run({ write: process.argv.includes('--write'), legacy: process.argv.includes('--legacy') });
 
 module.exports = { run, loadRoleIndex, roleFiles };
