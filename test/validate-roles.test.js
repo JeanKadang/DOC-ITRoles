@@ -698,3 +698,147 @@ test('a table of confirmed targets warns about neither', () => {
   const r = validateFile(file, tmpRoot);
   assert.deepEqual(r.warnings.filter(w => /Key Performance Indicators/.test(w)), []);
 });
+
+const { findRelationshipIssues } = require('../validate-roles');
+
+function relRole(dir, filename, { title, roleId, reportsTo = 'None', directReports = 'None' }) {
+  fs.writeFileSync(path.join(dir, filename), [
+    `# ${title}`,
+    '',
+    '| Field | Value |',
+    '|---|---|',
+    `| **Role ID** | \`${roleId}\` |`,
+    `| **Reports To** | ${reportsTo} |`,
+    `| **Direct Reports** | ${directReports} |`,
+    '',
+  ].join('\n'));
+}
+
+function relTree() {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'roles-relationships-'));
+  fs.mkdirSync(path.join(root, 'testdomain'));
+  return { root, dir: path.join(root, 'testdomain') };
+}
+
+test('findRelationshipIssues flags a Reports To that references an unknown role ID', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'Ghost Role <!-- role: ghost-role -->' });
+  const { errors } = findRelationshipIssues(root);
+  assert.ok(errors.some(e => e.field === 'Reports To' && /unknown role ID "ghost-role"/.test(e.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+// Deletion-failure: a role is removed while another still references its ID.
+test('a role file removed after another annotated a reference to it becomes an unresolved-ID error', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'B <!-- role: b -->' });
+  relRole(dir, 'b.md', { title: 'B', roleId: 'b' });
+  assert.deepEqual(findRelationshipIssues(root).errors, []);
+  fs.rmSync(path.join(dir, 'b.md'));
+  const { errors } = findRelationshipIssues(root);
+  assert.ok(errors.some(e => /unknown role ID "b"/.test(e.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues flags a role reporting to itself', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'A <!-- role: a -->' });
+  const { errors } = findRelationshipIssues(root);
+  assert.ok(errors.some(e => e.field === 'Reports To' && /reports to itself/.test(e.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues detects a 2-role reporting cycle', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'B <!-- role: b -->' });
+  relRole(dir, 'b.md', { title: 'B', roleId: 'b', reportsTo: 'A <!-- role: a -->' });
+  const { errors } = findRelationshipIssues(root);
+  assert.ok(errors.some(e => /reporting cycle/.test(e.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues detects a 3-role reporting cycle', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'B <!-- role: b -->' });
+  relRole(dir, 'b.md', { title: 'B', roleId: 'b', reportsTo: 'C <!-- role: c -->' });
+  relRole(dir, 'c.md', { title: 'C', roleId: 'c', reportsTo: 'A <!-- role: a -->' });
+  const { errors } = findRelationshipIssues(root);
+  assert.ok(errors.some(e => /reporting cycle/.test(e.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues does not treat a one-of Reports To as a cycle edge', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', {
+    title: 'A', roleId: 'a',
+    reportsTo: '<!-- one-of -->B <!-- role: b --> or C <!-- role: c --><!-- /one-of -->',
+  });
+  relRole(dir, 'b.md', { title: 'B', roleId: 'b', reportsTo: 'A <!-- role: a -->' });
+  relRole(dir, 'c.md', { title: 'C', roleId: 'c' });
+  const { errors } = findRelationshipIssues(root);
+  assert.deepEqual(errors.filter(e => /cycle/.test(e.message)), []);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues flags a contradictory pair when both sides are annotated', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'P <!-- role: p -->' });
+  relRole(dir, 'p.md', { title: 'P', roleId: 'p', directReports: 'Someone Else <!-- role: someone-else -->' });
+  relRole(dir, 'someone-else.md', { title: 'Someone Else', roleId: 'someone-else' });
+  const { errors } = findRelationshipIssues(root);
+  assert.ok(errors.some(e => e.field === 'Direct Reports' && /does not list "A"/.test(e.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues accepts a contradictory-looking pair when both sides agree', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'P <!-- role: p -->' });
+  relRole(dir, 'p.md', { title: 'P', roleId: 'p', directReports: 'A <!-- role: a -->' });
+  const { errors } = findRelationshipIssues(root);
+  assert.deepEqual(errors.filter(e => e.field === 'Direct Reports'), []);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+// Single-letter titles ('A', 'B', ...) are used everywhere else in this
+// file for brevity, but the "mentions the child" check below is a plain
+// substring match — a single letter would spuriously match almost any
+// prose (e.g. "A" inside "that"). These two tests use a distinctive
+// multi-word title so the substring check is actually meaningful.
+test('findRelationshipIssues warns (does not error) when a legacy Direct Reports may not document a known child', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'Zephyr Quality Engineer', roleId: 'a', reportsTo: 'P <!-- role: p -->' });
+  relRole(dir, 'p.md', { title: 'P', roleId: 'p', directReports: 'Some prose that never mentions the child' });
+  const { errors, warnings } = findRelationshipIssues(root);
+  assert.deepEqual(errors.filter(e => e.field === 'Direct Reports'), []);
+  assert.ok(warnings.some(w => w.field === 'Direct Reports' && /may not document "Zephyr Quality Engineer"/.test(w.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues does not warn when legacy Direct Reports text mentions the child', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'Zephyr Quality Engineer', roleId: 'a', reportsTo: 'P <!-- role: p -->' });
+  relRole(dir, 'p.md', { title: 'P', roleId: 'p', directReports: 'Manages several engineers including Zephyr Quality Engineer directly' });
+  const { warnings } = findRelationshipIssues(root);
+  assert.deepEqual(warnings.filter(w => w.field === 'Direct Reports'), []);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+// Rename-stability: the title changes, the Role ID doesn't — resolution
+// still succeeds; the stale annotation label is a warning, not an error.
+test('findRelationshipIssues resolves a rename via Role ID and warns about the stale label', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: 'Old Title For P <!-- role: p -->' });
+  relRole(dir, 'p.md', { title: 'New Title For P', roleId: 'p' });
+  const { errors, warnings } = findRelationshipIssues(root);
+  assert.deepEqual(errors, []);
+  assert.ok(warnings.some(w => w.field === 'Reports To' && /stale/.test(w.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('findRelationshipIssues flags invalid annotation syntax', () => {
+  const { root, dir } = relTree();
+  relRole(dir, 'a.md', { title: 'A', roleId: 'a', reportsTo: '<!-- role: p -->' });
+  const { errors } = findRelationshipIssues(root);
+  assert.ok(errors.some(e => /invalid annotation/.test(e.message)));
+  fs.rmSync(root, { recursive: true, force: true });
+});
