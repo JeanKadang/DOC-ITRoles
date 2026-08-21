@@ -224,6 +224,84 @@ function stripAnnotations(text) {
     .trim();
 }
 
+// Reads the ADR-0006 annotation syntax back into structured data — the
+// counterpart to annotateField's writing side. Pure extraction: the role
+// ID is already embedded in the text, so this needs no roleIndex to parse,
+// which is what makes it small and safe enough to mirror into the browser
+// (see the equivalent function in viewer-logic.js).
+function parseSingleTarget(segment) {
+  const markerCount = (segment.match(/<!--\s*(role:|external-role)/gi) || []).length;
+  if (markerCount > 1) {
+    return { kind: 'invalid', reason: 'a label carries more than one target annotation', text: segment };
+  }
+
+  const roleMatch = segment.match(/^(.*?)\s*<!--\s*role:\s*([a-z0-9][a-z0-9-]*)\s*-->\s*$/);
+  if (roleMatch) {
+    const label = roleMatch[1].trim();
+    if (!label) return { kind: 'invalid', reason: 'annotation has no visible label', text: segment };
+    return { kind: 'catalogue', roleId: roleMatch[2], label };
+  }
+
+  const externalMatch = segment.match(/^(.*?)\s*<!--\s*external-role\s*-->\s*$/);
+  if (externalMatch) {
+    const label = externalMatch[1].trim();
+    if (!label) return { kind: 'invalid', reason: 'annotation has no visible label', text: segment };
+    return { kind: 'external', label };
+  }
+
+  return { kind: 'legacy', text: segment };
+}
+
+function parseOneOf(segment) {
+  const closed = segment.match(/^<!--\s*one-of\s*-->([\s\S]*)<!--\s*\/one-of\s*-->$/);
+  if (!closed) {
+    if (/<!--\s*one-of\s*-->|<!--\s*\/one-of\s*-->/.test(segment)) {
+      return { kind: 'invalid', reason: 'unclosed one-of wrapper', text: segment };
+    }
+    return null; // not a one-of at all — caller tries a single target instead
+  }
+
+  const inner = closed[1];
+  if (/<!--\s*one-of\s*-->|<!--\s*\/one-of\s*-->/.test(inner)) {
+    return { kind: 'invalid', reason: 'nested one-of wrapper', text: segment };
+  }
+
+  const options = inner.split(/,|\bor\b/i).map(s => s.trim()).filter(Boolean).map(parseSingleTarget);
+  if (options.length < 2) {
+    return { kind: 'invalid', reason: 'one-of has fewer than two options', text: segment };
+  }
+  if (options.some(o => o.kind === 'invalid' || o.kind === 'legacy')) {
+    return { kind: 'invalid', reason: 'one-of contains an unannotated or invalid option', text: segment };
+  }
+  return { kind: 'one-of', options };
+}
+
+function parseSegment(segment) {
+  const oneOf = parseOneOf(segment);
+  if (oneOf) return oneOf;
+  return parseSingleTarget(segment);
+}
+
+function parseRelationshipField(fieldText) {
+  const text = String(fieldText == null ? '' : fieldText).trim();
+  if (!text) return [];
+
+  // The whole field is the empty-relationship sentinel, optionally with a
+  // parenthetical explanation (matches annotateField's None handling).
+  // Check this BEFORE splitting on semicolons, since the explanation can
+  // contain internal semicolons.
+  if (/^none\s*(\(.*\))?$/i.test(text)) return [];
+
+  const segments = text.split(';').map(s => s.trim()).filter(Boolean);
+
+  return segments.map(seg => {
+    if (/^none\b/i.test(seg) && !/<!--/.test(seg)) {
+      return { kind: 'invalid', reason: 'None combined with another target', text: seg };
+    }
+    return parseSegment(seg);
+  });
+}
+
 module.exports = {
   normalizeTitle,
   buildRoleIndex,
@@ -232,4 +310,5 @@ module.exports = {
   annotateField,
   migrateRoleContent,
   stripAnnotations,
+  parseRelationshipField,
 };

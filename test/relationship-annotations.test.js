@@ -302,3 +302,100 @@ test('the extended migration is idempotent', () => {
   const second = migrateRoleContent(first.content, extendedCtx());
   assert.equal(second.content, first.content);
 });
+
+// Task 5: Read-side annotation parser
+const { parseRelationshipField } = require('../scripts/lib/relationship-annotations.js');
+
+test('parseRelationshipField resolves a single catalogue target', () => {
+  const entries = parseRelationshipField('Cloud Platform Architect <!-- role: cloud-platform-architect -->');
+  assert.deepEqual(entries, [{ kind: 'catalogue', roleId: 'cloud-platform-architect', label: 'Cloud Platform Architect' }]);
+});
+
+test('parseRelationshipField resolves an external target', () => {
+  const entries = parseRelationshipField('Board of Directors <!-- external-role -->');
+  assert.deepEqual(entries, [{ kind: 'external', label: 'Board of Directors' }]);
+});
+
+test('parseRelationshipField resolves a one-of group', () => {
+  const entries = parseRelationshipField(
+    '<!-- one-of -->DevOps Senior Engineer <!-- role: devops-senior-engineer --> or DevOps Architect <!-- role: devops-architect --><!-- /one-of -->'
+  );
+  assert.deepEqual(entries, [{
+    kind: 'one-of',
+    options: [
+      { kind: 'catalogue', roleId: 'devops-senior-engineer', label: 'DevOps Senior Engineer' },
+      { kind: 'catalogue', roleId: 'devops-architect', label: 'DevOps Architect' },
+    ],
+  }]);
+});
+
+test('parseRelationshipField resolves a one-of group of external options', () => {
+  const entries = parseRelationshipField(
+    '<!-- one-of -->Chief Data Officer (CDO) <!-- external-role --> or Chief AI Officer <!-- external-role --><!-- /one-of -->'
+  );
+  assert.deepEqual(entries, [{
+    kind: 'one-of',
+    options: [
+      { kind: 'external', label: 'Chief Data Officer (CDO)' },
+      { kind: 'external', label: 'Chief AI Officer' },
+    ],
+  }]);
+});
+
+test('parseRelationshipField returns an empty array for the None sentinel, plain or parenthesised', () => {
+  assert.deepEqual(parseRelationshipField('None'), []);
+  assert.deepEqual(parseRelationshipField('None (sets technical direction; formal line management sits with the Chapter Lead)'), []);
+  assert.deepEqual(parseRelationshipField(''), []);
+  assert.deepEqual(parseRelationshipField(null), []);
+});
+
+test('parseRelationshipField splits simultaneous targets on top-level semicolons', () => {
+  const entries = parseRelationshipField('CFO <!-- role: chief-financial-officer -->; CISO <!-- role: chief-information-security-officer -->');
+  assert.deepEqual(entries, [
+    { kind: 'catalogue', roleId: 'chief-financial-officer', label: 'CFO' },
+    { kind: 'catalogue', roleId: 'chief-information-security-officer', label: 'CISO' },
+  ]);
+});
+
+test('parseRelationshipField returns legacy for unannotated text', () => {
+  assert.deepEqual(parseRelationshipField('Some Drifted Title'), [{ kind: 'legacy', text: 'Some Drifted Title' }]);
+});
+
+test('parseRelationshipField flags a target with both role and external-role annotations as invalid', () => {
+  const entries = parseRelationshipField('X <!-- role: x --><!-- external-role -->');
+  assert.equal(entries.length, 1);
+  assert.equal(entries[0].kind, 'invalid');
+});
+
+test('parseRelationshipField flags an annotation with no visible label as invalid', () => {
+  const entries = parseRelationshipField('<!-- role: x -->');
+  assert.equal(entries[0].kind, 'invalid');
+});
+
+test('parseRelationshipField flags an unclosed one-of as invalid', () => {
+  const entries = parseRelationshipField('<!-- one-of -->A <!-- role: a --> or B <!-- role: b -->');
+  assert.equal(entries[0].kind, 'invalid');
+});
+
+test('parseRelationshipField flags a nested one-of as invalid', () => {
+  const entries = parseRelationshipField(
+    '<!-- one-of -->A <!-- role: a --><!-- one-of -->B <!-- role: b --><!-- /one-of --><!-- /one-of -->'
+  );
+  assert.equal(entries[0].kind, 'invalid');
+});
+
+test('parseRelationshipField flags a one-of with fewer than two options as invalid', () => {
+  const entries = parseRelationshipField('<!-- one-of -->A <!-- role: a --><!-- /one-of -->');
+  assert.equal(entries[0].kind, 'invalid');
+});
+
+test('parseRelationshipField flags a one-of containing an unannotated option as invalid', () => {
+  const entries = parseRelationshipField('<!-- one-of -->A <!-- role: a --> or B<!-- /one-of -->');
+  assert.equal(entries[0].kind, 'invalid');
+});
+
+test('parseRelationshipField flags None combined with another target as invalid', () => {
+  const entries = parseRelationshipField('None; Cloud Architect <!-- role: cloud-architect -->');
+  assert.equal(entries[0].kind, 'invalid');
+  assert.equal(entries[1].kind, 'catalogue');
+});
