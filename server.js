@@ -81,6 +81,7 @@ function getRoles() {
         title,
         level:        resolveLevel(content, file),
         lastReviewed: meta.lastReviewed,
+        roleId:       meta.roleId,
       };
     });
 

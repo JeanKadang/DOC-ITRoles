@@ -237,3 +237,11 @@ test('GET on an unknown path returns 404', async () => {
   const res = await request('/does/not/exist');
   assert.equal(res.status, 404);
 });
+
+test('GET /api/roles includes each role\'s roleId', async () => {
+  const res = await request('/api/roles');
+  const domains = JSON.parse(res.body);
+  const kubernetesArchitect = domains.kubernetes.roles.find(r => r.name === 'kubernetes_architect');
+  assert.ok(kubernetesArchitect, 'fixture role should be present');
+  assert.equal(kubernetesArchitect.roleId, 'kubernetes-architect');
+});
