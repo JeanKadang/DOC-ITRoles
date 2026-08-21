@@ -35,6 +35,7 @@ const {
     buildCareerSankey,
     parseMobilityPaths,
     parseCareerPath,
+    parseInteractionRoles,
     resolveDocHref,
     sectionStartsOpen,
     roleTitleKey,
@@ -1775,4 +1776,101 @@ test('radarListHtml groups by ring for the accessible fallback', () => {
     // Hold has no source in the catalogue; the fallback must say so rather
     // than leaving the reader to wonder whether it was dropped.
     assert.match(html, /not derivable/i);
+});
+
+// ── parseInteractionRoles ────────────────────────────────
+test('parseInteractionRoles extracts the Role column in row order', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> | Escalation | Escalates To |',
+        '| Board of Directors <!-- external-role --> | Reporting | Provides To |',
+        '',
+    ].join('\n');
+    const rows = parseInteractionRoles(md);
+    assert.equal(rows.length, 2);
+    assert.deepEqual(rows[0].parsed, [{ kind: 'catalogue', roleId: 'kubernetes-senior-engineer', label: 'Kubernetes Senior Engineer' }]);
+    assert.deepEqual(rows[1].parsed, [{ kind: 'external', label: 'Board of Directors' }]);
+});
+
+test('parseInteractionRoles handles a one-of Role cell', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| <!-- one-of -->DevOps Senior Engineer <!-- role: devops-senior-engineer --> or DevOps Architect <!-- role: devops-architect --><!-- /one-of --> | Escalation | Escalates To |',
+        '',
+    ].join('\n');
+    const rows = parseInteractionRoles(md);
+    assert.equal(rows[0].parsed[0].kind, 'one-of');
+    assert.equal(rows[0].parsed[0].options.length, 2);
+});
+
+test('parseInteractionRoles returns an empty array when the section is absent', () => {
+    assert.deepEqual(parseInteractionRoles('# Role\n\n## Role Overview\n\nText.'), []);
+});
+
+test('parseInteractionRoles skips the header and separator rows', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> | Escalation | Escalates To |',
+        '',
+    ].join('\n');
+    assert.equal(parseInteractionRoles(md).length, 1);
+});
+
+test('index.html destructures parseRelationshipField, parseInteractionRoles, and findRoleById from ViewerLogic', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+    const scriptMatch = html.match(/<script>([\s\S]*?)<\/script>/i);
+    assert.ok(scriptMatch, 'index.html has an inline <script> block');
+    const script = scriptMatch[1];
+
+    const destructure = script.match(/const\s*\{[\s\S]*?\}\s*=\s*ViewerLogic;/);
+    assert.ok(destructure, 'index.html destructures ViewerLogic exports');
+    assert.match(destructure[0], /\bparseRelationshipField\b/);
+    assert.match(destructure[0], /\bparseInteractionRoles\b/);
+    // NOTE: deviates from the plan's brief, which specified aliasing this
+    // import to `resolveRoleId` at destructure time. That collides: Task 4
+    // already defines a local `resolveRoleId` wrapper (used by the
+    // career-stepper `chip` function) with that exact name, so aliasing the
+    // import to the same identifier is a duplicate top-level declaration —
+    // a SyntaxError (verified with `node -e`), not just a style choice.
+    // `findRoleById` is imported plain instead; nothing else in the script
+    // uses that name, so no alias is needed (unlike `findRoleByTitle`,
+    // which *is* aliased below because its own wrapper reuses the name).
+    assert.match(destructure[0], /\bfindRoleById\b/);
+
+    assert.match(script, /function resolveRoleId\(id\)\s*\{\s*return findRoleById\(id, allDomains\);/,
+        'resolveRoleId must wrap findRoleById with allDomains, mirroring findRoleByTitle');
+});
+
+test('index.html resolves the reporting chip by role id before falling back to title matching', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+    const script = html.match(/<script>([\s\S]*?)<\/script>/i)[1];
+    const reportingChip = script.match(/const reportingChip = \(icon, label, value\) => \{[\s\S]*?\n {8}\};/);
+    assert.ok(reportingChip, 'index.html defines reportingChip');
+    assert.match(reportingChip[0], /parseRelationshipField\(value\)/);
+    assert.match(reportingChip[0], /resolveRoleId\(primary\.roleId\)/);
+});
+
+test('index.html passes parsed interaction rows into linkInteractionRoles', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+    // NOTE: the plan's brief used /linkInteractionRoles\([^)]*parseInteractionRoles\(markdown\)\)/,
+    // but [^)]* can never span the ')' that closes the real first argument
+    // (document.getElementById('roleBody')) — that pattern cannot match any
+    // correctly-wired call site. [\s\S]*? (non-greedy, dot-matches-all)
+    // finds the same thing without that false constraint.
+    assert.match(html, /linkInteractionRoles\([\s\S]*?parseInteractionRoles\(markdown\)\)/);
 });

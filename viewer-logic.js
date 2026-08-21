@@ -493,6 +493,28 @@
         return out;
     }
 
+    // Extracts the Role column of the per-role "## Interactions with Other
+    // Roles" table, in row order, so linkInteractionRoles (index.html) can
+    // resolve each row by id instead of re-deriving a fuzzy title match
+    // from post-render DOM text (which has already lost the annotation —
+    // marked+DOMPurify drop HTML comments before any JS sees the cell).
+    function parseInteractionRoles(markdown) {
+        const section = String(markdown).split(/^## Interactions with Other Roles\s*$/m)[1];
+        if (!section) return [];
+        const body = section.split(/\r?\n## /)[0];
+        const rows = [];
+        for (const line of body.split(/\r?\n/)) {
+            if (!/^\|/.test(line)) continue;
+            if (/^\|\s*Role\s*\|/.test(line)) continue;       // header
+            if (/^\|[\s:|-]+\|$/.test(line)) continue;         // separator
+            const cellMatch = line.match(/^\|\s*([^|]*?)\s*\|/);
+            if (!cellMatch) continue;
+            const raw = cellMatch[1];
+            rows.push({ label: stripAnnotations(raw), parsed: parseRelationshipField(raw) });
+        }
+        return rows;
+    }
+
     // Resolve a Markdown link href relative to the file it appears in.
     // Repo-absolute hrefs (Roles/…, docs/…) pass through unchanged.
     function resolveDocHref(href, baseFile = '') {
@@ -1295,6 +1317,7 @@
         buildCareerSankey,
         parseMobilityPaths,
         parseCareerPath,
+        parseInteractionRoles,
         resolveDocHref,
         sectionStartsOpen,
         roleTitleKey,

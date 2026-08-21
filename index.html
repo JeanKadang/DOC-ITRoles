@@ -1586,6 +1586,8 @@
         sectionStartsOpen, panelStateFor,
         tocIdFor, activeTocIndex,
         parseRoleMeta, splitReportingValue, stripAnnotations, reviewSlotFor,
+        parseRelationshipField, parseInteractionRoles,
+        findRoleById,
         parseRadarDoc, radarListHtml,
         EXEC_LEVELS, STAT_GROUPS, countRolesAtLevels, roleMatchesFilter, groupResources,
         contentReferencesForQuery,
@@ -2895,6 +2897,10 @@
         return resolveRoleTitle(title, allDomains);
     }
 
+    function resolveRoleId(id) {
+        return findRoleById(id, allDomains);
+    }
+
     function renderCareerStepper(markdown, currentTitle) {
         const el = document.getElementById('careerStepper');
         const { from, to } = parseCareerPath(markdown);
@@ -3060,34 +3066,51 @@
     // (plurals, parentheticals) is handled by viewer-logic's findRoleByTitle;
     // anything that does not resolve — "Business Leaders", "delivery teams",
     // vendor contacts — is left as text on purpose.
-    function linkInteractionRoles(container, currentTitle) {
+    function linkInteractionRoles(container, currentTitle, parsedRows) {
         if (!container) return;
         for (const h2 of container.querySelectorAll('h2')) {
             if (!/^Interactions with Other Roles/i.test(h2.textContent.trim())) continue;
             let el = h2.nextElementSibling;
             while (el && el.tagName !== 'TABLE' && el.tagName !== 'H2') el = el.nextElementSibling;
             if (!el || el.tagName !== 'TABLE') break;
-            for (const row of el.querySelectorAll('tbody tr')) {
+            const rows = [...el.querySelectorAll('tbody tr')];
+            rows.forEach((row, i) => {
                 const cell = row.cells[0];
-                if (!cell) continue;
-                const raw = cell.textContent.trim().replace(/:$/, '').trim();
-                const hit = findRoleByTitle(raw);
-                if (!hit || hit.title === currentTitle) continue;
-                const a = document.createElement('span');
-                a.className = 'role-xref';
-                a.setAttribute('role', 'button');
-                a.tabIndex = 0;
-                a.dataset.file   = hit.file;
-                a.dataset.title  = hit.title;
-                a.dataset.level  = hit.level;
-                a.dataset.domain = hit.domainLabel;
-                a.title = `Open ${hit.title}`;
-                a.textContent = cell.textContent.trim();
+                if (!cell) return;
+                const rawText = cell.textContent.trim().replace(/:$/, '').trim();
+                const item = parsedRows && parsedRows[i];
+                // #270: prefer the pre-parsed row (raw markdown, still
+                // carries the annotation) over the rendered cell text (the
+                // annotation is already gone — marked+DOMPurify strip HTML
+                // comments before any JS sees it).
+                const entries = (item && item.parsed.length === 1 && item.parsed[0].kind === 'one-of')
+                    ? item.parsed[0].options
+                    : (item ? item.parsed : [{ kind: 'legacy', text: rawText }]);
                 cell.textContent = '';
-                cell.appendChild(a);
-            }
+                entries.forEach((entry, idx) => {
+                    if (idx > 0) cell.appendChild(document.createTextNode(' or '));
+                    const label = entry.kind === 'legacy' ? rawText : entry.label;
+                    const hit = entry.kind === 'catalogue' ? resolveRoleId(entry.roleId)
+                        : entry.kind === 'legacy' ? findRoleByTitle(rawText)
+                        : null;
+                    if (hit && hit.title !== currentTitle) {
+                        const a = document.createElement('span');
+                        a.className = 'role-xref';
+                        a.setAttribute('role', 'button');
+                        a.tabIndex = 0;
+                        a.dataset.file   = hit.file;
+                        a.dataset.title  = hit.title;
+                        a.dataset.level  = hit.level;
+                        a.dataset.domain = hit.domainLabel;
+                        a.title = `Open ${hit.title}`;
+                        a.textContent = label;
+                        cell.appendChild(a);
+                    } else {
+                        cell.appendChild(document.createTextNode(label));
+                    }
+                });
+            });
             break;
-
         }
     }
 
@@ -3115,7 +3138,13 @@
             // rather than through head/detail) doesn't carry it either.
             const clean = stripAnnotations(value);
             const { head, detail } = splitReportingValue(value);
-            const hit = findRoleByTitle(head);
+            // #270: resolve by the annotated role id first — deterministic
+            // and rename-proof. Falls back to the title heuristic only for
+            // text #269 never annotated (still legacy, e.g. #299).
+            const primary = parseRelationshipField(value)[0];
+            const hit = primary && primary.kind === 'catalogue' ? resolveRoleId(primary.roleId)
+                : primary && primary.kind === 'external' ? null
+                : findRoleByTitle(head);
             const inner = hit
                 ? `<span class="role-xref" role="button" tabindex="0"
                          data-file="${escapeHtml(hit.file)}" data-title="${escapeHtml(hit.title)}"
@@ -3203,7 +3232,7 @@
             // to reach the interactions table, and collapseSections then moves
             // that table inside a <details>. Collapsing first silently drops
             // every cross-reference link.
-            linkInteractionRoles(document.getElementById('roleBody'), title);
+            linkInteractionRoles(document.getElementById('roleBody'), title, parseInteractionRoles(markdown));
             collapseSections(document.getElementById('roleBody'));
             buildSectionNav(document.getElementById('roleBody'),
                             document.getElementById('sectionNav'),
@@ -3260,7 +3289,7 @@
             const h2idx = markdown.indexOf('\n## ');
             const body  = h2idx > -1 ? markdown.slice(h2idx + 1) : markdown;
             document.getElementById('roleBody2').innerHTML = renderMarkdown(body);
-            linkInteractionRoles(document.getElementById('roleBody2'), title);
+            linkInteractionRoles(document.getElementById('roleBody2'), title, parseInteractionRoles(markdown));
             collapseSections(document.getElementById('roleBody2'));
 
         } catch {
