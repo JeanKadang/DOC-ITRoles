@@ -2920,7 +2920,7 @@
                 ? item.parsed[0].options
                 : item.parsed;
             return entries.map(entry => {
-                const label = entry.kind === 'legacy' ? item.label : entry.label;
+                const label = entry.kind === 'legacy' ? item.label : (entry.label ?? entry.text ?? item.label);
                 const hit = entry.kind === 'catalogue' ? resolveRoleId(entry.roleId)
                     : entry.kind === 'legacy' ? findRoleByTitle(item.label)
                     : null;
@@ -3089,7 +3089,7 @@
                 cell.textContent = '';
                 entries.forEach((entry, idx) => {
                     if (idx > 0) cell.appendChild(document.createTextNode(' or '));
-                    const label = entry.kind === 'legacy' ? rawText : entry.label;
+                    const label = entry.kind === 'legacy' ? rawText : (entry.label ?? entry.text ?? rawText);
                     const hit = entry.kind === 'catalogue' ? resolveRoleId(entry.roleId)
                         : entry.kind === 'legacy' ? findRoleByTitle(rawText)
                         : null;

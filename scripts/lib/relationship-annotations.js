@@ -249,6 +249,18 @@ function parseSingleTarget(segment) {
     return { kind: 'external', label };
   }
 
+  // markerCount === 1 already proved an annotation marker is present (the
+  // /gi regex above matches "role:" or "external-role" case-insensitively
+  // and without constraining the id's characters). If neither roleMatch nor
+  // externalMatch fired, the marker itself is malformed — an uppercase
+  // letter, underscore, space, or empty id in the role id, or a capitalized
+  // keyword — and that's a hand-edit typo, not unannotated prose. Falling
+  // through to 'legacy' here would be exactly the silent-drift failure
+  // ADR-0006 exists to catch.
+  if (markerCount === 1) {
+    return { kind: 'invalid', reason: 'malformed role annotation', text: segment };
+  }
+
   return { kind: 'legacy', text: segment };
 }
 

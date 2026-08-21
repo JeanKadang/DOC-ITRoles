@@ -729,6 +729,14 @@
             if (!label) return { kind: 'invalid', reason: 'annotation has no visible label', text: segment };
             return { kind: 'external', label };
         }
+        // markerCount === 1 already proved an annotation marker is present.
+        // If neither roleMatch nor externalMatch fired, the marker itself is
+        // malformed (uppercase letter, underscore, space, or empty id, or a
+        // capitalized keyword) — a hand-edit typo, not unannotated prose.
+        // Mirrors scripts/lib/relationship-annotations.js exactly.
+        if (markerCount === 1) {
+            return { kind: 'invalid', reason: 'malformed role annotation', text: segment };
+        }
         return { kind: 'legacy', text: segment };
     }
 

@@ -399,3 +399,45 @@ test('parseRelationshipField flags None combined with another target as invalid'
   assert.equal(entries[0].kind, 'invalid');
   assert.equal(entries[1].kind, 'catalogue');
 });
+
+// A hand-edit typo inside an otherwise-recognizable annotation marker (an
+// uppercase letter, an underscore, a space, or a capitalized keyword) must
+// not silently fall back to legacy/unannotated prose — that's exactly the
+// silent-drift failure ADR-0006 exists to catch. markerCount === 1 proves an
+// annotation was attempted; if neither roleMatch nor externalMatch fired,
+// the id or keyword itself is malformed and the entry is invalid, not legacy.
+test('parseRelationshipField flags a role id with an uppercase letter as invalid, not legacy', () => {
+  const entries = parseRelationshipField('Foo <!-- role: Foo-Bar -->');
+  assert.equal(entries[0].kind, 'invalid');
+  assert.equal(entries[0].reason, 'malformed role annotation');
+});
+
+test('parseRelationshipField flags an empty role id as invalid, not legacy', () => {
+  const entries = parseRelationshipField('Foo <!-- role: -->');
+  assert.equal(entries[0].kind, 'invalid');
+  assert.equal(entries[0].reason, 'malformed role annotation');
+});
+
+test('parseRelationshipField flags a role id with an underscore as invalid, not legacy', () => {
+  const entries = parseRelationshipField('Foo <!-- role: foo_bar -->');
+  assert.equal(entries[0].kind, 'invalid');
+  assert.equal(entries[0].reason, 'malformed role annotation');
+});
+
+test('parseRelationshipField flags a role id with a space as invalid, not legacy', () => {
+  const entries = parseRelationshipField('Foo <!-- role: foo bar -->');
+  assert.equal(entries[0].kind, 'invalid');
+  assert.equal(entries[0].reason, 'malformed role annotation');
+});
+
+test('parseRelationshipField flags a capitalized "Role:" keyword as invalid, not legacy', () => {
+  const entries = parseRelationshipField('Foo <!-- Role: foo-bar -->');
+  assert.equal(entries[0].kind, 'invalid');
+  assert.equal(entries[0].reason, 'malformed role annotation');
+});
+
+test('parseRelationshipField flags a capitalized "external-Role" keyword as invalid, not legacy', () => {
+  const entries = parseRelationshipField('Foo <!-- external-Role -->');
+  assert.equal(entries[0].kind, 'invalid');
+  assert.equal(entries[0].reason, 'malformed role annotation');
+});

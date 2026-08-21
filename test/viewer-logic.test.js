@@ -190,12 +190,35 @@ test('viewer-logic parseRelationshipField mirrors scripts/lib/relationship-annot
         'None (sets technical direction; formal line management sits with the Chapter Lead)',
         '<!-- role: x -->',
         '<!-- one-of -->A <!-- role: a --><!-- /one-of -->',
+        // Malformed annotation markers (#270 final review, Finding 1): the
+        // marker is present but the id or keyword itself is broken — an
+        // uppercase letter, an empty id, an underscore, a space, or a
+        // capitalized keyword. These must resolve to 'invalid' identically
+        // in both implementations, not silently fall back to 'legacy'.
+        'Foo <!-- role: Foo-Bar -->',
+        'Foo <!-- role: -->',
+        'Foo <!-- role: foo_bar -->',
+        'Foo <!-- role: foo bar -->',
+        'Foo <!-- Role: foo-bar -->',
+        'Foo <!-- external-Role -->',
         '',
         null,
     ];
     for (const sample of samples) {
         assert.deepEqual(parseRelationshipField(sample), canonicalParse(sample), `mismatch for ${JSON.stringify(sample)}`);
     }
+});
+
+// A hand-edit typo inside an otherwise-recognizable annotation marker must
+// not silently become legacy/unannotated prose (mirrors the canonical
+// implementation's test in test/relationship-annotations.test.js).
+test('viewer-logic parseRelationshipField flags malformed role annotations as invalid, not legacy', () => {
+    assert.equal(parseRelationshipField('Foo <!-- role: Foo-Bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- role: -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- role: foo_bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- role: foo bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- Role: foo-bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- external-Role -->')[0].kind, 'invalid');
 });
 
 // ── findRoleById ──────────────────────────────────────────
