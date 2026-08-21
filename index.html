@@ -2900,13 +2900,26 @@
         const { from, to } = parseCareerPath(markdown);
         if (!from.length && !to.length) { el.hidden = true; el.innerHTML = ''; return; }
 
-        const chip = title => {
-            const match = findRoleByTitle(title);
-            return match
-                ? `<span class="cs-chip" role="button" tabindex="0"
-                        data-file="${escapeHtml(match.file)}" data-title="${escapeHtml(match.title)}"
-                        data-level="${escapeHtml(match.level)}" data-domain="${escapeHtml(match.domainLabel)}">${escapeHtml(title)}</span>`
-                : `<span class="cs-chip">${escapeHtml(title)}</span>`;
+        const oneChip = (label, hit) => hit
+            ? `<span class="cs-chip" role="button" tabindex="0"
+                    data-file="${escapeHtml(hit.file)}" data-title="${escapeHtml(hit.title)}"
+                    data-level="${escapeHtml(hit.level)}" data-domain="${escapeHtml(hit.domainLabel)}">${escapeHtml(label)}</span>`
+            : `<span class="cs-chip">${escapeHtml(label)}</span>`;
+
+        // An item's parsed value is either a single top-level entry or a
+        // one-of group — either way, render one chip per resolvable option,
+        // joined by "or" for a one-of.
+        const chip = item => {
+            const entries = (item.parsed.length === 1 && item.parsed[0].kind === 'one-of')
+                ? item.parsed[0].options
+                : item.parsed;
+            return entries.map(entry => {
+                const label = entry.kind === 'legacy' ? item.label : entry.label;
+                const hit = entry.kind === 'catalogue' ? resolveRoleId(entry.roleId)
+                    : entry.kind === 'legacy' ? findRoleByTitle(item.label)
+                    : null;
+                return oneChip(label, hit);
+            }).join('<span class="cs-or"> or </span>');
         };
 
         el.innerHTML = `
