@@ -7,10 +7,38 @@ const {
   normalizeTitle,
   buildRoleIndex,
   annotateTarget,
+  stripAnnotations,
 } = require('../scripts/lib/relationship-annotations.js');
 
 test('normalizeTitle lowercases and collapses whitespace', () => {
   assert.equal(normalizeTitle('  Cloud   Platform Architect '), 'cloud platform architect');
+});
+
+test('stripAnnotations strips a role annotation', () => {
+  assert.equal(
+    stripAnnotations('Chief Executive Officer <!-- role: chief-executive-officer -->'),
+    'Chief Executive Officer',
+  );
+});
+
+test('stripAnnotations strips an external-role annotation', () => {
+  assert.equal(stripAnnotations('COO <!-- external-role -->'), 'COO');
+});
+
+test('stripAnnotations strips a one-of group annotation', () => {
+  assert.equal(
+    stripAnnotations('<!-- one-of -->A <!-- role: a -->, B <!-- role: b --><!-- /one-of -->'),
+    'A, B',
+  );
+});
+
+test('stripAnnotations leaves unannotated text unchanged', () => {
+  assert.equal(stripAnnotations('Chief Executive Officer'), 'Chief Executive Officer');
+});
+
+test('stripAnnotations tolerates null/undefined input', () => {
+  assert.equal(stripAnnotations(null), '');
+  assert.equal(stripAnnotations(undefined), '');
 });
 
 test('buildRoleIndex keys by normalized title', () => {

@@ -195,4 +195,31 @@ function migrateRoleContent(content, ctx) {
   return { content: out, resolved, legacy };
 }
 
-module.exports = { normalizeTitle, buildRoleIndex, annotateTarget, isAnnotated, annotateField, migrateRoleContent };
+// The one place that knows the ADR-0006 annotation syntax well enough to
+// strip it back out again. Every consumer that displays or matches against
+// relationship text (server.js's search snippets, scripts/relationship-report.js,
+// viewer-logic.js's reporting chips/career stepper) needs this, so it lives
+// here rather than being re-derived per caller. viewer-logic.js runs in the
+// browser via a plain <script> tag with no bundler and so cannot require()
+// this module directly; it carries a documented, test-enforced mirror
+// instead (see stripAnnotations in viewer-logic.js and the equivalence test
+// in test/viewer-logic.test.js).
+const ANNOTATION_COMMENT = /<!--[\s\S]*?-->/g;
+
+function stripAnnotations(text) {
+  return String(text == null ? '' : text)
+    .replace(ANNOTATION_COMMENT, '')
+    .replace(/\s+([,;])/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+module.exports = {
+  normalizeTitle,
+  buildRoleIndex,
+  annotateTarget,
+  isAnnotated,
+  annotateField,
+  migrateRoleContent,
+  stripAnnotations,
+};

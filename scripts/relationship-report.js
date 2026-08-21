@@ -14,6 +14,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { stripAnnotations } = require('./lib/relationship-annotations.js');
 
 const ROLES_DIR = path.resolve(__dirname, '..', 'Roles');
 
@@ -30,12 +31,9 @@ function roleFiles(dir = ROLES_DIR, out = []) {
 // `<!-- one-of -->...<!-- /one-of -->`) is appended inline within the same
 // table cell this report reads. Strip it before matching so an annotated
 // value ("Chief Executive Officer <!-- role: chief-executive-officer -->")
-// still resolves exactly as the unannotated text did.
-const ANNOTATION_COMMENT = /<!--[\s\S]*?-->/g;
-
-function stripAnnotations(text) {
-    return text.replace(ANNOTATION_COMMENT, '').replace(/\s+([,;])/g, '$1').replace(/\s+/g, ' ').trim();
-}
+// still resolves exactly as the unannotated text did. stripAnnotations is
+// imported from scripts/lib/relationship-annotations.js (the one place that
+// knows the annotation grammar) rather than re-derived here.
 
 function field(text, name) {
     const m = text.match(new RegExp(`\\|\\s*\\*\\*${name}\\*\\*\\s*\\|\\s*([^|\\n]+)`));

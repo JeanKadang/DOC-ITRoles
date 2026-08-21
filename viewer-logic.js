@@ -651,6 +651,14 @@
     // for xref matching — neither strips it, so an annotated value would
     // show the literal comment text and fail to link. Strip here, once, so
     // both callers get clean text for free.
+    //
+    // Mirror of stripAnnotations in scripts/lib/relationship-annotations.js
+    // (the canonical implementation, also used by server.js and
+    // scripts/relationship-report.js). index.html loads this file via a
+    // plain <script> tag with no bundler, so it cannot require() that
+    // module the way the Node-side consumers do — same constraint as
+    // REFERENCE_DOC_PATTERN above. A test in test/viewer-logic.test.js
+    // asserts these two implementations stay behaviorally identical.
     const ANNOTATION_COMMENT = /<!--[\s\S]*?-->/g;
 
     function stripAnnotations(text) {

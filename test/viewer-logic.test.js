@@ -148,6 +148,30 @@ test('viewer-logic REFERENCE_DOC_PATTERN mirrors roleMeta exactly', () => {
     assert.equal(REFERENCE_DOC_PATTERN.flags, ROLEMETA_REF_PATTERN.flags);
 });
 
+test('viewer-logic stripAnnotations mirrors scripts/lib/relationship-annotations.js exactly', () => {
+    // index.html loads viewer-logic.js via a plain <script> tag (no bundler),
+    // so it cannot require() the canonical implementation in
+    // scripts/lib/relationship-annotations.js the way server.js and
+    // scripts/relationship-report.js do. viewer-logic.js therefore carries
+    // its own copy (see the ANNOTATION_COMMENT comment above stripAnnotations
+    // in viewer-logic.js); this test keeps the two from drifting apart by
+    // asserting behavioral equivalence across every ADR-0006 annotation form.
+    const { stripAnnotations: canonicalStripAnnotations } = require('../scripts/lib/relationship-annotations.js');
+    const samples = [
+        'Chief Executive Officer <!-- role: chief-executive-officer -->',
+        'COO <!-- external-role -->',
+        '<!-- one-of -->A <!-- role: a -->, B <!-- role: b --><!-- /one-of -->',
+        'Chief Executive Officer',
+        'None (sets technical direction ; formal line management sits with the Chapter Lead)',
+        '',
+        null,
+        undefined,
+    ];
+    for (const sample of samples) {
+        assert.equal(stripAnnotations(sample), canonicalStripAnnotations(sample), `mismatch for ${JSON.stringify(sample)}`);
+    }
+});
+
 test('contentReferencesForQuery removes only an exact normalized title match', () => {
     const exact = { title: 'Kubernetes Architect', file: 'exact.md' };
     const reference = { title: 'Platform Architect', file: 'reference.md' };
