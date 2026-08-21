@@ -6,7 +6,7 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -158,14 +158,14 @@ The Enterprise Infrastructure Onboarding Architect designs comprehensive strateg
 **Previous Roles:**
 
 - Infrastructure Onboarding Senior Engineer
-- DevOps Architect
+- DevOps Architect <!-- role: devops-architect -->
 - Infrastructure Automation Leader
 - Enterprise Service Designer
 - Domain Architect with cross-platform focus
 
 **Potential Next Roles:**
 
-- Enterprise Architect
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Chief Architect
 - Technology Strategy Executive
 - CTO/CIO track positions

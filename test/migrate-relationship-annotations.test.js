@@ -1,0 +1,123 @@
+'use strict';
+
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const { spawnSync } = require('node:child_process');
+
+function runCli(rolesDir, args = []) {
+  return spawnSync(process.execPath, [path.join(__dirname, '..', 'scripts', 'migrate-relationship-annotations.js'), ...args], {
+    env: { ...process.env, ROLES_DIR: rolesDir },
+    encoding: 'utf8',
+  });
+}
+
+function fixtureTree() {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'migrate-fixture-'));
+  const domain = path.join(root, 'testdomain');
+  fs.mkdirSync(domain);
+  fs.writeFileSync(path.join(domain, 'engineer.md'), [
+    '# Kubernetes Engineer',
+    '',
+    '| Field | Value |',
+    '|---|---|',
+    '| **Role ID** | `kubernetes-engineer` |',
+    '| **Reports To** | Kubernetes Senior Engineer |',
+    '| **Direct Reports** | None |',
+    '',
+  ].join('\n'));
+  fs.writeFileSync(path.join(domain, 'senior.md'), [
+    '# Kubernetes Senior Engineer',
+    '',
+    '| Field | Value |',
+    '|---|---|',
+    '| **Role ID** | `kubernetes-senior-engineer` |',
+    '| **Reports To** | Board of Directors |',
+    '| **Direct Reports** | Kubernetes Engineer |',
+    '',
+  ].join('\n'));
+  return root;
+}
+
+test('dry run reports changes without writing them', () => {
+  const root = fixtureTree();
+  const before = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  const result = runCli(root);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+  assert.match(result.stdout, /Would (annotate|change)/i);
+  assert.equal(fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8'), before);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('--write annotates a resolvable Reports To and a curated external term', () => {
+  const root = fixtureTree();
+  const result = runCli(root, ['--write']);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+
+  const engineer = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  assert.match(engineer, /\*\*Reports To\*\* \| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> \|/);
+
+  const senior = fs.readFileSync(path.join(root, 'testdomain', 'senior.md'), 'utf8');
+  assert.match(senior, /\*\*Reports To\*\* \| Board of Directors <!-- external-role --> \|/);
+  assert.match(senior, /\*\*Direct Reports\*\* \| Kubernetes Engineer <!-- role: kubernetes-engineer --> \|/);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('running --write twice is idempotent', () => {
+  const root = fixtureTree();
+  runCli(root, ['--write']);
+  const afterFirst = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  const second = runCli(root, ['--write']);
+  assert.equal(second.status, 0, second.stdout + second.stderr);
+  const afterSecond = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  assert.equal(afterSecond, afterFirst);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+function fixtureTreeWithLegacyReference() {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'migrate-fixture-legacy-'));
+  const domain = path.join(root, 'testdomain');
+  fs.mkdirSync(domain);
+  fs.writeFileSync(path.join(domain, 'engineer.md'), [
+    '# Kubernetes Engineer',
+    '',
+    '| Field | Value |',
+    '|---|---|',
+    '| **Role ID** | `kubernetes-engineer` |',
+    '| **Reports To** | Infrastructure Onboarding Senior Engineer |',
+    '| **Direct Reports** | None |',
+    '',
+  ].join('\n'));
+  return root;
+}
+
+test('--legacy prints the unresolved file/field/text entries instead of just a count', () => {
+  const root = fixtureTreeWithLegacyReference();
+  const result = runCli(root, ['--legacy']);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+  const engineerFile = path.join(root, 'testdomain', 'engineer.md');
+  assert.match(result.stdout, new RegExp(engineerFile.replace(/[\\.]/g, '\\$&')));
+  assert.match(result.stdout, /Reports To/);
+  assert.match(result.stdout, /Infrastructure Onboarding Senior Engineer/);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('--legacy does not write any files (dry-run behavior is preserved)', () => {
+  const root = fixtureTreeWithLegacyReference();
+  const before = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  runCli(root, ['--legacy']);
+  const after = fs.readFileSync(path.join(root, 'testdomain', 'engineer.md'), 'utf8');
+  assert.equal(after, before);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
+test('default (no --legacy) behavior is unchanged: only the summary count is printed', () => {
+  const root = fixtureTreeWithLegacyReference();
+  const result = runCli(root);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+  assert.match(result.stdout, /unresolved reference\(s\) left as legacy text/);
+  assert.doesNotMatch(result.stdout, /Reports To\tInfrastructure Onboarding Senior Engineer/);
+  fs.rmSync(root, { recursive: true, force: true });
+});

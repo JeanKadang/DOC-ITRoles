@@ -108,10 +108,10 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Enterprise Architect | Alignment of data and AI architecture with enterprise standards and patterns | Governed By |
-| Chief Data Officer (CDO) | Enterprise data strategy, data governance policy, and AI programme direction | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Alignment of data and AI architecture with enterprise standards and patterns | Governed By |
+| Chief Data Officer (CDO) <!-- external-role --> | Enterprise data strategy, data governance policy, and AI programme direction | Collaborates |
 | Security & Identity Chapter Lead and CISO | Data protection, data privacy architecture, and secure data platform design | Collaborates |
-| Legal and Compliance | AI ethics, GDPR obligations, data residency, and regulatory AI requirements | Governed By |
+| Legal and Compliance <!-- external-role --> | AI ethics, GDPR obligations, data residency, and regulatory AI requirements | Governed By |
 | Enterprise architecture forums, data governance boards, AI ethics committees | Cross-chapter technology and governance forums | Escalates To |
 
 ## Key Technologies
@@ -173,7 +173,7 @@ The Data & AI Chapter Lead is the most senior technical manager and people leade
 **Potential Next Roles:**
 
 - Technical Area Lead (TAL) with data, AI, and analytics scope
-- Chief Data Officer (CDO) or Chief AI Officer
+- <!-- one-of -->Chief Data Officer (CDO) <!-- external-role --> or Chief AI Officer <!-- external-role --><!-- /one-of -->
 - VP of Data Engineering or VP of AI Platform
 - CTO (particularly for data-led or AI-native organisations)
 

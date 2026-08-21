@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | API Platform Senior Engineer |
+| **Reports To** | API Platform Senior Engineer <!-- role: api-platform-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The API Platform Engineer implements and maintains API management solutions acro
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| API Platform Product Owner | Task prioritization | Consumes From |
+| API Platform Product Owner <!-- role: api-platform-product-owner --> | Task prioritization | Consumes From |
 | Application Developers | API implementation | Provides To |
 | DevOps Engineers | API deployment | Collaborates |
 | Security Engineers | API security controls | Governed By |
@@ -168,7 +168,7 @@ The API Platform Engineer implements and maintains API management solutions acro
 
 **Potential Next Roles:**
 
-- API Platform Senior Engineer
+- API Platform Senior Engineer <!-- role: api-platform-senior-engineer -->
 - API Architect
 - Integration Specialist
 - Technical Team Lead

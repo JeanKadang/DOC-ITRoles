@@ -6,7 +6,7 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Architect |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -157,15 +157,15 @@ This role operates at the intersection of engineering rigour and business strate
 
 **From (typical previous roles):**
 
-- Client Platform Senior Engineer
+- Client Platform Senior Engineer <!-- role: client-platform-senior-engineer -->
 - Endpoint Management Senior Engineer or Architect
 - Systems Engineer (SCCM/ConfigMgr or Jamf background)
 - Desktop Engineering Lead or Technical Lead
 
 **To (typical next roles):**
 
-- Enterprise Architect
-- End User & Workplace Chapter Lead
+- Enterprise Architect <!-- role: enterprise-architect -->
+- End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead -->
 - Modern Workplace Architect (broader EUC / M365 scope)
 - Director of End User Computing
 - CTO / VP of IT Infrastructure
@@ -176,12 +176,12 @@ This role operates at the intersection of engineering rigour and business strate
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Endpoint Management Architect | Align OS engineering with UEM platform strategy; define domain boundaries between image build and MDM policy layer | Collaborates |
-| Security Architect | Define OS hardening baselines, integrate client telemetry with SIEM, align with Zero Trust endpoint model | Governed By |
+| Endpoint Management Architect <!-- role: endpoint-management-architect --> | Align OS engineering with UEM platform strategy; define domain boundaries between image build and MDM policy layer | Collaborates |
+| Security Architect <!-- role: security-architect --> | Define OS hardening baselines, integrate client telemetry with SIEM, align with Zero Trust endpoint model | Governed By |
 | Modern Workplace Architect | Ensure client OS standards support M365, Teams, and collaboration tooling requirements | Collaborates |
-| Service Desk Lead | Define Tier-2/3 escalation boundaries and OS-level support handoff procedures | Collaborates |
+| Service Desk Lead <!-- role: service-desk-lead --> | Define Tier-2/3 escalation boundaries and OS-level support handoff procedures | Collaborates |
 | HR / People Operations | Align device provisioning workflows with employee onboarding and offboarding processes | Collaborates |
-| Procurement | Govern hardware lifecycle standards, OEM selection criteria, and device refresh investment planning | Collaborates |
+| Procurement <!-- external-role --> | Govern hardware lifecycle standards, OEM selection criteria, and device refresh investment planning | Collaborates |
 | Client Platform Senior Engineers | Provide architectural direction, review engineering designs, mentor on platform decisions | Provides To |
 | Infrastructure / Server OS Architects | Coordinate on shared automation tooling, scripting standards, and cross-platform configuration management patterns | Collaborates |
 

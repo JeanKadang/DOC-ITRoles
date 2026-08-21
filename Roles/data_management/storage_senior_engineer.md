@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | Storage Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,8 +95,8 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Storage Architect | Solution design and implementation strategy | Escalates To |
-| Storage Product Owner | Technical planning and roadmap execution | Collaborates |
+| Storage Architect <!-- role: storage-architect --> | Solution design and implementation strategy | Escalates To |
+| Storage Product Owner <!-- role: storage-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Virtualization Senior Engineers | Storage for virtual environments | Provides To |
 | Database Senior Engineers | Storage for database systems | Provides To |
 | Backup Senior Engineers | Storage for backup infrastructure | Provides To |
@@ -157,7 +157,7 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 **Previous Roles:**
 
-- Storage Engineer
+- Storage Engineer <!-- role: storage-engineer -->
 - Storage Administrator
 - SAN Administrator
 - Systems Engineer with storage focus
@@ -165,7 +165,7 @@ The Storage Senior Engineer leads the implementation and optimization of complex
 
 **Potential Next Roles:**
 
-- Storage Architect
+- Storage Architect <!-- role: storage-architect -->
 - Data Center Infrastructure Architect
 - Storage and Backup Manager
 - Enterprise Infrastructure Architect

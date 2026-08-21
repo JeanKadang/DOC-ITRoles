@@ -6,7 +6,7 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Windows Server Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -106,8 +106,8 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Server Architect | Solution design and validation | Escalates To |
-| Windows Server Product Owner | Technical planning and roadmap execution | Collaborates |
+| Windows Server Architect <!-- role: windows-server-architect --> | Solution design and validation | Escalates To |
+| Windows Server Product Owner <!-- role: windows-server-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Azure Cloud Senior Engineers | Hybrid solutions | Collaborates |
 | Security Engineers | Windows security implementation | Governed By |
 | Senior Engineers from other platforms | Cross-domain solutions | Collaborates |
@@ -168,14 +168,14 @@ The Windows Server Senior Engineer leads complex implementations and optimizatio
 
 **Previous Roles:**
 
-- Windows Server Engineer
+- Windows Server Engineer <!-- role: windows-server-engineer -->
 - Windows Systems Administrator
 - Systems Engineer with Microsoft focus
 - IT Infrastructure Specialist
 
 **Potential Next Roles:**
 
-- Windows Server Architect
+- Windows Server Architect <!-- role: windows-server-architect -->
 - Microsoft Cloud Architect
 - Infrastructure Team Leader
 - IT Operations Manager

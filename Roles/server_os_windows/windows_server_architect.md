@@ -6,7 +6,7 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Windows Server Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -157,7 +157,7 @@ The Windows Server Architect designs and defines the strategic direction for the
 
 **Previous Roles:**
 
-- Windows Server Engineer
+- Windows Server Engineer <!-- role: windows-server-engineer -->
 - Windows Infrastructure Specialist
 - Active Directory Administrator
 - Senior Windows Systems Administrator
@@ -166,8 +166,8 @@ The Windows Server Architect designs and defines the strategic direction for the
 **Potential Next Roles:**
 
 - Principal Infrastructure Architect
-- Enterprise Architect
-- Chief Technology Officer
+- Enterprise Architect <!-- role: enterprise-architect -->
+- Chief Technology Officer <!-- role: chief-technology-officer -->
 - IT Infrastructure Director
 - Cloud Architecture Director
 

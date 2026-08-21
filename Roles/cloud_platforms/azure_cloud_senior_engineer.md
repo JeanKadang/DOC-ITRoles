@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Azure Cloud Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -156,14 +156,14 @@ The Azure Cloud Senior Engineer leads the implementation and optimization of com
 
 **Previous Roles:**
 
-- Azure Cloud Engineer
+- Azure Cloud Engineer <!-- role: azure-cloud-engineer -->
 - Windows Server Administrator
 - Cloud Operations Engineer
 - DevOps Engineer with Azure focus
 
 **Potential Next Roles:**
 
-- Azure Cloud Architect
+- Azure Cloud Architect <!-- role: azure-cloud-architect -->
 - Cloud Platform Lead
 - Head of Cloud Center of Excellence
 - Cloud Transformation Manager

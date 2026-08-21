@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | Qumulo Storage Senior Engineer |
+| **Reports To** | Qumulo Storage Senior Engineer <!-- role: qumulo-storage-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -160,7 +160,7 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 
 **Potential Next Roles:**
 
-- Qumulo Storage Senior Engineer
+- Qumulo Storage Senior Engineer <!-- role: qumulo-storage-senior-engineer -->
 - Storage Team Lead
 - File System Architect
 - Cloud Storage Engineer
@@ -188,7 +188,7 @@ The Qumulo Storage Engineer is responsible for the implementation, configuration
 | Cloud Engineers | Hybrid storage solutions | Collaborates |
 | System Administrators | Server access to storage | Collaborates |
 | Security Teams | Storage security configuration | Governed By |
-| Qumulo Storage Senior Engineer | Escalate complex issues; receive implementation guidance | Escalates To |
+| Qumulo Storage Senior Engineer <!-- role: qumulo-storage-senior-engineer --> | Escalate complex issues; receive implementation guidance | Escalates To |
 | Virtualization Engineers | VM storage connectivity | Collaborates |
 
 **Complementary Certifications:**

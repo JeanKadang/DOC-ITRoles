@@ -6,7 +6,7 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | Commvault Senior Engineer |
+| **Reports To** | Commvault Senior Engineer <!-- role: commvault-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -94,11 +94,11 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Commvault Product Owner | Task prioritization | Consumes From |
+| Commvault Product Owner <!-- role: commvault-product-owner --> | Task prioritization | Consumes From |
 | Server Engineers | Backup agent deployment | Collaborates |
 | Database Engineers | Database backup requirements | Collaborates |
 | Storage Engineers | Backup storage configuration | Collaborates |
-| Commvault Architect | Implementation activities | Escalates To |
+| Commvault Architect <!-- role: commvault-architect --> | Implementation activities | Escalates To |
 | application teams | Backup and recovery requests | Provides To |
 
 ## Key Technologies
@@ -163,7 +163,7 @@ The Commvault Engineer implements and maintains backup and recovery systems usin
 
 **Potential Next Roles:**
 
-- Commvault Senior Engineer
+- Commvault Senior Engineer <!-- role: commvault-senior-engineer -->
 - Backup Team Lead
 - Data Protection Specialist
 - Storage Administrator

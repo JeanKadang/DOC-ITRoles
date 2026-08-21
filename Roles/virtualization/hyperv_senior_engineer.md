@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Hyper-V Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -114,8 +114,8 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Hyper-V Architect | Supporting architecture design and standards development | Escalates To |
-| Hyper-V Product Owner | Providing technical input on roadmaps and feature prioritization | Collaborates |
+| Hyper-V Architect <!-- role: hyper-v-architect --> | Supporting architecture design and standards development | Escalates To |
+| Hyper-V Product Owner <!-- role: hyper-v-product-owner --> | Providing technical input on roadmaps and feature prioritization | Collaborates |
 | Hyper-V Engineers | Mentoring and providing technical leadership | Provides To |
 | Windows Server Teams | Collaborating on advanced Windows configurations | Collaborates |
 | Cloud Teams | Integration with Azure and hybrid scenarios | Collaborates |
@@ -178,14 +178,14 @@ The Hyper-V Senior Engineer leads complex Microsoft virtualization initiatives, 
 
 **Previous Roles:**
 
-- Hyper-V Engineer
+- Hyper-V Engineer <!-- role: hyper-v-engineer -->
 - Windows Server Administrator
 - Systems Engineer with virtualization focus
 - Virtual Infrastructure Specialist
 
 **Potential Next Roles:**
 
-- Hyper-V Architect
+- Hyper-V Architect <!-- role: hyper-v-architect -->
 - Cloud Infrastructure Architect
 - Virtualization Manager
 - Microsoft Platform Lead

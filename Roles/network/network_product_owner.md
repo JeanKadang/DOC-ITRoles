@@ -6,7 +6,7 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,8 +96,8 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Security Product Owner | Network security initiatives | Collaborates |
-| Network Architect | Technical strategy and design | Consumes From |
+| Security Product Owner <!-- role: security-product-owner --> | Network security initiatives | Collaborates |
+| Network Architect <!-- role: network-architect --> | Technical strategy and design | Consumes From |
 | Application Product Owners | Connectivity requirements | Consumes From |
 | Cloud teams | Hybrid network integration | Collaborates |
 | business units | Understand service needs | Consumes From |
@@ -158,7 +158,7 @@ The Network Product Owner manages the development and lifecycle of the organizat
 
 **Previous Roles:**
 
-- Network Engineer
+- Network Engineer <!-- role: network-engineer -->
 - Network Service Manager
 - Technical Project Manager
 - Network Team Lead

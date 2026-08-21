@@ -6,7 +6,7 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Server Hardware Senior Engineer |
+| **Reports To** | Server Hardware Senior Engineer <!-- role: server-hardware-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,9 +103,9 @@ The Server Hardware Engineer implements and maintains the physical server infras
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Product Owner | Task prioritization | Consumes From |
+| Server Hardware Product Owner <!-- role: server-hardware-product-owner --> | Task prioritization | Consumes From |
 | Windows/Linux Server Engineers | OS installation needs | Collaborates |
-| Server Hardware Architect | Implementation activities | Escalates To |
+| Server Hardware Architect <!-- role: server-hardware-architect --> | Implementation activities | Escalates To |
 | data center facilities teams | Physical infrastructure | Collaborates |
 | procurement team | Hardware receiving and inventory | Collaborates |
 
@@ -172,7 +172,7 @@ The Server Hardware Engineer implements and maintains the physical server infras
 
 **Potential Next Roles:**
 
-- Server Hardware Senior Engineer
+- Server Hardware Senior Engineer <!-- role: server-hardware-senior-engineer -->
 - Data Center Operations Specialist
 - Infrastructure Team Lead
 - Hardware Systems Administrator

@@ -6,7 +6,7 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction on data mesh standards; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -111,11 +111,11 @@ The Data Mesh Architect designs and governs the organisation's data mesh archite
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Aligns data mesh self-serve infrastructure requirements with the underlying data platform architecture; agrees shared storage, compute, and governance tooling | Collaborates |
-| Enterprise Architect | Aligns domain decomposition model with enterprise capability domains; ensures data mesh boundaries are consistent with application and business architecture | Governed By |
-| AI Governance Architect | Defines AI data product standards for ML training datasets, feature stores, and model output datasets published as data products | Collaborates |
+| Data Platform Architect <!-- role: data-platform-architect --> | Aligns data mesh self-serve infrastructure requirements with the underlying data platform architecture; agrees shared storage, compute, and governance tooling | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Aligns domain decomposition model with enterprise capability domains; ensures data mesh boundaries are consistent with application and business architecture | Governed By |
+| AI Governance Architect <!-- role: ai-governance-architect --> | Defines AI data product standards for ML training datasets, feature stores, and model output datasets published as data products | Collaborates |
 | Data Management / Data Governance team | Integrates federated governance model with enterprise-wide data governance policy, data classification, and regulatory requirements | Governed By |
-| Integration Architect | Aligns data product output port patterns with enterprise integration and API standards for downstream consumption | Collaborates |
+| Integration Architect <!-- role: integration-architect --> | Aligns data product output port patterns with enterprise integration and API standards for downstream consumption | Collaborates |
 | Business domain teams (Data Product Owners) | Partners with domain teams to design, review, and onboard data products to the mesh; provides governance guidance and self-serve tooling support | Provides To |
 
 ## Key Technologies
@@ -179,7 +179,7 @@ The Data Mesh Architect designs and governs the organisation's data mesh archite
 - Chief Data Architect
 - Enterprise Architect (data domain lead)
 - Head of Data Engineering
-- Chief Data Officer (CDO)
+- Chief Data Officer (CDO) <!-- external-role -->
 
 ## Recommended Certifications & Learning Paths
 

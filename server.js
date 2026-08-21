@@ -3,6 +3,7 @@ const fs   = require('fs');
 const path = require('path');
 const { resolveLevel, parseMeta, REFERENCE_DOC_PATTERN } = require('./roleMeta');
 const { DOMAIN_LIST, resolveDomainId } = require('./catalogueConfig');
+const { stripAnnotations } = require('./scripts/lib/relationship-annotations.js');
 
 const PORT      = process.env.PORT || 3000;
 const ROOT      = __dirname;
@@ -159,12 +160,30 @@ function preferredSearchMatchIndex(text, query) {
 // A ~100-char excerpt of `text` centred on the first match of the query.
 // Whitespace (incl. markdown table pipes/newlines) is collapsed to one
 // space; the raw excerpt is HTML-escaped by the client before rendering.
+// #269's annotation comments (`<!-- role: id -->` etc.) are stripped too --
+// otherwise a snippet centred near an annotated Reports To/Direct Reports
+// value leaks the raw HTML comment straight into the search results UI. A
+// naive radius-based slice can land mid-comment (cutting `-->` off, or
+// starting after `<!--`), leaving stripAnnotations nothing complete to
+// remove -- so the raw window is padded by COMMENT_BUFFER first, wide
+// enough to swallow any of #269's (short, single-line) comment forms whole,
+// then trimmed back down to the requested radius after stripping.
+const COMMENT_BUFFER = 80;
+
 function makeSnippet(text, idx, qlen, radius = 50) {
-  const start = Math.max(0, idx - radius);
-  const end   = Math.min(text.length, idx + qlen + radius);
-  let s = text.slice(start, end).replace(/[|#*`]/g, ' ').replace(/\s+/g, ' ').trim();
-  if (start > 0)          s = '… ' + s;
-  if (end < text.length)  s = s + ' …';
+  const rawStart = Math.max(0, idx - radius - COMMENT_BUFFER);
+  const rawEnd   = Math.min(text.length, idx + qlen + radius + COMMENT_BUFFER);
+  const clean = stripAnnotations(text.slice(rawStart, rawEnd).replace(/[|#*`]/g, ' '));
+
+  const q = text.slice(idx, idx + qlen).toLowerCase();
+  const centerIdx = clean.toLowerCase().indexOf(q);
+  const center = centerIdx === -1 ? Math.floor(clean.length / 2) : centerIdx;
+
+  const start = Math.max(0, center - radius);
+  const end   = Math.min(clean.length, center + qlen + radius);
+  let s = clean.slice(start, end).trim();
+  if (rawStart > 0 || start > 0)          s = '… ' + s;
+  if (rawEnd < text.length || end < clean.length) s = s + ' …';
   return s;
 }
 

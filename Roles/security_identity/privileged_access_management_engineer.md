@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | Privileged Access Management Architect |
+| **Reports To** | Privileged Access Management Architect <!-- role: privileged-access-management-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -108,8 +108,8 @@ The Privileged Access Management (PAM) Engineer implements, operates, and mainta
 |---|---|---|
 | PAM Architect | Receive architecture direction; escalate design-level issues and platform limitations | Escalates To |
 | IT Operations / System Administrators | Provide PAM access support and on-boarding assistance | Provides To |
-| Security Operations | Share audit logs and alert on privileged access anomalies | Collaborates |
-| Compliance / Audit | Produce access reports and attestation evidence | Provides To |
+| Security Operations <!-- external-role --> | Share audit logs and alert on privileged access anomalies | Collaborates |
+| Compliance / Audit <!-- external-role --> | Produce access reports and attestation evidence | Provides To |
 | Identity Engineers | Coordinate on Entra ID PIM and access lifecycle alignment | Collaborates |
 
 ## Key Technologies
@@ -164,8 +164,8 @@ The Privileged Access Management (PAM) Engineer implements, operates, and mainta
 
 - PAM Senior Engineer
 - PAM Architect
-- Identity Management Architect
-- Security Engineer
+- Identity Management Architect <!-- role: identity-management-architect -->
+- Security Engineer <!-- role: security-engineer -->
 
 ## Recommended Certifications & Learning Paths
 

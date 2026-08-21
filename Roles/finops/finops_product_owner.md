@@ -6,7 +6,7 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,7 +104,7 @@ The FinOps Product Owner manages the backlog of cloud cost optimization initiati
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| FinOps Architect | Consumes technical strategy to shape backlog and roadmap priorities | Consumes From |
+| FinOps Architect <!-- role: finops-architect --> | Consumes technical strategy to shape backlog and roadmap priorities | Consumes From |
 | Cloud Engineers | Provides delivery direction and prioritisation for cost optimisation work | Provides To |
 | Business Unit Leaders | Gathers cost governance and reporting requirements | Consumes From |
 | Financial Controllers | Coordinates cloud spend reporting with enterprise financial processes | Collaborates |

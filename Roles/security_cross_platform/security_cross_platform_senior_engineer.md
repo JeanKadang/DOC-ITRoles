@@ -6,7 +6,7 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | Security Cross-Platform Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,7 +103,7 @@ The Security Cross-Platform Senior Engineer leads the technical implementation o
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | domain-specific Senior Engineers | Implement consistent security controls | Governed By |
-| Security Cross-Platform Architect | Technical design and implementation | Escalates To |
+| Security Cross-Platform Architect <!-- role: security-cross-platform-architect --> | Technical design and implementation | Escalates To |
 | DevOps teams | Integrate security into CI/CD pipelines across platforms | Collaborates |
 | monitoring teams | Implement cross-platform security observability | Collaborates |
 | Security Cross-Platform Engineers | Mentors on complex implementations | Provides To |
@@ -159,13 +159,13 @@ The Security Cross-Platform Senior Engineer leads the technical implementation o
 
 **Previous Roles:**
 
-- Security Engineer
+- Security Engineer <!-- role: security-engineer -->
 - Platform-specific Security Specialist
-- DevSecOps Engineer
+- DevSecOps Engineer <!-- role: devsecops-engineer -->
 
 **Potential Next Roles:**
 
-- Security Cross-Platform Architect
+- Security Cross-Platform Architect <!-- role: security-cross-platform-architect -->
 - Security Engineering Manager
 - Cloud Security Architect
 - Director of Security Engineering

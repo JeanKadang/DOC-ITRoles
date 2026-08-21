@@ -6,7 +6,7 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CFO |
-| **Reports To** | Chief Executive Officer |
+| **Reports To** | Chief Executive Officer <!-- role: chief-executive-officer --> |
 | **Direct Reports** | None (no subordinate finance roles modelled in this catalog) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -160,8 +160,8 @@ Degree in Finance, Accounting, Economics, or a related field. A postgraduate qua
 | Board / Audit Committee | Direct accountability for financial reporting accuracy, internal controls, audit outcomes, and regulatory compliance | Escalates To |
 | CIO | Close collaboration on IT cost governance, ERP financial systems strategy, IT investment ROI, and audit readiness | Collaborates |
 | CTO | Technology capital investment governance, FinOps cloud cost management, and build-vs-buy financial evaluation | Collaborates |
-| COO | Operational cost management, working capital efficiency, financial controls in operational processes, and procurement governance | Collaborates |
-| CPO (Chief People Officer) | Compensation and benefits cost governance, headcount financial planning, and HRIS financial data integrity | Collaborates |
+| COO <!-- external-role --> | Operational cost management, working capital efficiency, financial controls in operational processes, and procurement governance | Collaborates |
+| CPO (Chief People Officer) <!-- external-role --> | Compensation and benefits cost governance, headcount financial planning, and HRIS financial data integrity | Collaborates |
 | CISO | Financial risk dimensions of cyber and data incidents; regulatory financial penalties; cyber insurance governance | Collaborates |
 | Business unit and functional leaders | Budget ownership, financial performance management, investment business cases, and financial reporting obligations | Provides To |
 | External auditors and regulators | Primary executive contact for statutory audit, regulatory financial submissions, and financial compliance assurance | Provides To |

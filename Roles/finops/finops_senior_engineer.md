@@ -6,7 +6,7 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | FinOps Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -106,9 +106,9 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| FinOps Architect | Receives cost governance standards and architecture direction | Escalates To |
+| FinOps Architect <!-- role: finops-architect --> | Receives cost governance standards and architecture direction | Escalates To |
 | Cloud Platform Senior Engineers | Coordinates on cloud resource cost data and optimisation opportunities | Collaborates |
-| FinOps Product Owner | Provides technical input to backlog and roadmap prioritisation | Collaborates |
+| FinOps Product Owner <!-- role: finops-product-owner --> | Provides technical input to backlog and roadmap prioritisation | Collaborates |
 
 ## Key Technologies
 
@@ -165,15 +165,15 @@ The FinOps Senior Engineer leads complex cloud financial optimization projects, 
 
 **Previous Roles:**
 
-- FinOps Engineer
+- FinOps Engineer <!-- role: finops-engineer -->
 - Cloud Engineer
 - Data Analyst with cloud focus
 - Cost Management Specialist
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 
 **Potential Next Roles:**
 
-- FinOps Architect
+- FinOps Architect <!-- role: finops-architect -->
 - Cloud Economics Leader
 - Cloud Platform Architect
 - Engineering Leadership roles

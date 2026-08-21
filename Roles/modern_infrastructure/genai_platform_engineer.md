@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | GenAI Platform Architect |
+| **Reports To** | GenAI Platform Architect <!-- role: genai-platform-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -108,7 +108,7 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 | Security Engineers | AI security control implementation | Governed By |
 | Cloud Engineers | Cloud AI service configuration | Collaborates |
 | Platform Engineering Engineers | IDP integration | Collaborates |
-| GenAI Platform Architect | Platform delivery | Escalates To |
+| GenAI Platform Architect <!-- role: genai-platform-architect --> | Platform delivery | Escalates To |
 
 ## Key Technologies
 
@@ -167,16 +167,16 @@ The GenAI Platform Engineer implements and maintains the infrastructure, tooling
 **Previous Roles:**
 
 - DevOps Engineer / Cloud Engineer
-- Data Engineer
+- Data Engineer <!-- role: data-engineer -->
 - Software Engineer with ML/AI focus
-- Platform Engineering Engineer
-- MLOps Engineer
+- Platform Engineering Engineer <!-- role: platform-engineering-engineer -->
+- MLOps Engineer <!-- role: mlops-engineer -->
 
 **Potential Next Roles:**
 
 - Senior GenAI Platform Engineer
-- MLOps Engineer
-- GenAI Platform Architect
+- MLOps Engineer <!-- role: mlops-engineer -->
+- GenAI Platform Architect <!-- role: genai-platform-architect -->
 - ML Infrastructure Lead
 - AI Engineering Manager
 

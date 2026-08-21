@@ -6,7 +6,7 @@
 | **Domain** | Directory Services |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Windows Active Directory Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,9 +93,9 @@ The Windows Active Directory Architect designs AD structure, security models, an
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Server Architect | Overall Windows infrastructure | Collaborates |
-| Identity Management Architect | Integrated identity solutions | Collaborates |
-| Access Management Architect | Authorization frameworks | Collaborates |
+| Windows Server Architect <!-- role: windows-server-architect --> | Overall Windows infrastructure | Collaborates |
+| Identity Management Architect <!-- role: identity-management-architect --> | Integrated identity solutions | Collaborates |
+| Access Management Architect <!-- role: access-management-architect --> | Authorization frameworks | Collaborates |
 | Security Architects | Directory security controls | Governed By |
 | Cloud Platform Architects | Microsoft Entra ID and hybrid identity | Collaborates |
 | application architects | Authentication requirements | Provides To |
@@ -151,7 +151,7 @@ The Windows Active Directory Architect designs AD structure, security models, an
 
 **Previous Roles:**
 
-- Windows Active Directory Senior Engineer
+- Windows Active Directory Senior Engineer <!-- role: windows-active-directory-senior-engineer -->
 - Identity and Access Management Specialist
 - Infrastructure Team Lead
 - Directory Services Technical Specialist
@@ -160,7 +160,7 @@ The Windows Active Directory Architect designs AD structure, security models, an
 **Potential Next Roles:**
 
 - Enterprise Infrastructure Architect
-- Chief Technology Officer
+- Chief Technology Officer <!-- role: chief-technology-officer -->
 - Technical Director
 - Identity and Access Management Director
 - Cloud Identity Architect

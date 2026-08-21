@@ -6,7 +6,7 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | HPC Senior Engineer |
+| **Reports To** | HPC Senior Engineer <!-- role: hpc-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -113,12 +113,12 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| HPC Product Owner | Task prioritization and user requirements | Consumes From |
+| HPC Product Owner <!-- role: hpc-product-owner --> | Task prioritization and user requirements | Consumes From |
 | Linux Server Engineers | Base OS and automation | Collaborates |
 | Server Hardware Engineers | Specialized hardware and upgrades | Collaborates |
 | Security Engineers | Ensure compliance and data protection | Governed By |
 | Cloud Engineers | Integrate cloud-based HPC resources | Collaborates |
-| HPC Architect | Implementation and design activities | Escalates To |
+| HPC Architect <!-- role: hpc-architect --> | Implementation and design activities | Escalates To |
 | researchers and engineers | Provide training, documentation, and support for HPC resource usage | Provides To |
 
 ## Key Technologies
@@ -183,7 +183,7 @@ The HPC Engineer designs, implements, and maintains high-performance computing e
 
 **Potential Next Roles:**
 
-- HPC Senior Engineer
+- HPC Senior Engineer <!-- role: hpc-senior-engineer -->
 - HPC Team Lead
 - Research Computing Manager
 - HPC Cloud Specialist

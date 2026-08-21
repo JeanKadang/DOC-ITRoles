@@ -6,7 +6,7 @@
 | **Domain** | Modern Workplace |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |

@@ -6,7 +6,7 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | Endpoint Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -164,13 +164,13 @@ The Endpoint Management Senior Engineer designs, implements, and maintains compl
 
 **Previous Roles:**
 
-- Endpoint Management Engineer
+- Endpoint Management Engineer <!-- role: endpoint-management-engineer -->
 - Desktop Support Engineer (Level 2/3)
 - Systems Administrator (Windows/SCCM background)
 
 **Potential Next Roles:**
 
-- Endpoint Management Architect
+- Endpoint Management Architect <!-- role: endpoint-management-architect -->
 - Modern Workplace Architect
 - Cloud Platform Engineer (Microsoft focus)
 

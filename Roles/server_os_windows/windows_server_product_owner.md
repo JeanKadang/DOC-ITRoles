@@ -6,7 +6,7 @@
 | **Domain** | Windows Server OS |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,7 +104,7 @@ The Windows Server Product Owner manages the product backlog and roadmap for all
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Windows Server Architect | Define technical direction | Consumes From |
+| Windows Server Architect <!-- role: windows-server-architect --> | Define technical direction | Consumes From |
 | other Product Owners | Cross-platform initiatives | Collaborates |
 | Security teams | Windows compliance and vulnerability management | Governed By |
 | Service Delivery Managers | Operational handover | Collaborates |

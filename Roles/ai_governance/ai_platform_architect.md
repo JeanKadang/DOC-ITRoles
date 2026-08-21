@@ -6,7 +6,7 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors AI Platform Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -109,11 +109,11 @@ The AI Platform Architect designs and governs the organisation's AI/ML platform 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| AI Governance Architect | Embed governance controls, bias evaluation pipelines, audit trail requirements, and AI risk tagging into the ML platform architecture | Collaborates |
-| Data Platform Architect | Data pipeline integration, feature computation patterns, Delta Lake / data lakehouse architecture, and data quality upstream of model training | Collaborates |
+| AI Governance Architect <!-- role: ai-governance-architect --> | Embed governance controls, bias evaluation pipelines, audit trail requirements, and AI risk tagging into the ML platform architecture | Collaborates |
+| Data Platform Architect <!-- role: data-platform-architect --> | Data pipeline integration, feature computation patterns, Delta Lake / data lakehouse architecture, and data quality upstream of model training | Collaborates |
 | Azure, AWS, and GCP Cloud Architects | AI/ML infrastructure provisioning, landing zone design for ML workloads, and managed AI service integration | Collaborates |
-| Kubernetes Architect | GPU workload orchestration, distributed training scheduling, and ML serving infrastructure deployment on Kubernetes | Collaborates |
-| Security Architect | Ensure model artefact security, training data access governance, inference endpoint security, and AI supply chain integrity | Governed By |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | GPU workload orchestration, distributed training scheduling, and ML serving infrastructure deployment on Kubernetes | Collaborates |
+| Security Architect <!-- role: security-architect --> | Ensure model artefact security, training data access governance, inference endpoint security, and AI supply chain integrity | Governed By |
 | MLOps Engineers | Platform tooling, pipeline patterns, and ML infrastructure implementation | Provides To |
 | data science and ML engineering teams | Platform adoption, experiment tracking standards, and model deployment best practices | Provides To |
 

@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors .NET Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 | Enterprise Architects | Technology standards | Governed By |
 | Security Architects | .NET security patterns | Governed By |
 | Cloud Architects | .NET cloud deployment | Collaborates |
-| .NET Platform Product Owner | Technical strategy | Collaborates |
+| .NET Platform Product Owner <!-- role: net-platform-product-owner --> | Technical strategy | Collaborates |
 | .NET Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
 | application architects | .NET implementation patterns | Provides To |
 
@@ -157,11 +157,11 @@ The .NET Architect designs comprehensive strategies and architectures for the or
 
 **Previous Roles:**
 
-- .NET Senior Engineer
+- .NET Senior Engineer <!-- role: net-senior-engineer -->
 - .NET Technical Lead
 - Enterprise Application Architect
 - Software Architect
-- Solution Architect
+- Solution Architect <!-- role: solution-architect -->
 
 **Potential Next Roles:**
 

@@ -6,7 +6,7 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Kubernetes Senior Engineer |
+| **Reports To** | Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -159,16 +159,16 @@ The Kubernetes Engineer implements and maintains Kubernetes environments, ensuri
 **Previous Roles:**
 
 - Linux System Administrator
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Cloud Engineer
 - Application Support Engineer
 - Docker Specialist
 
 **Potential Next Roles:**
 
-- Kubernetes Senior Engineer
+- Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer -->
 - DevOps Team Lead
-- Site Reliability Engineer
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Platform Engineering Specialist
 - Cloud Architect with container focus
 

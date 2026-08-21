@@ -1,7 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 
-const { buildGraph, similarity } = require('../scripts/relationship-report.js');
+const { buildGraph, similarity, stripAnnotations } = require('../scripts/relationship-report.js');
 
 // #180's premise is that an unresolved reporting line is not automatically a
 // defect. "CEO" is a correct destination above the catalogue, "X or Y" is a
@@ -69,6 +69,23 @@ test('an either/or destination is classified as a choice, not drift', () => {
     const { alternatives, drift } = buildGraph();
     assert.ok(alternatives.length > 0, 'expected some alternatives');
     assert.ok(!drift.some(d => / or /i.test(d.target)), 'an either/or is a representation gap, not a typo');
+});
+
+// #269's migration (scripts/migrate-relationship-annotations.js) appends an
+// annotation comment to the same table cell this report reads. Without this,
+// every migrated reporting line would fail to resolve, since the raw field
+// text would carry the comment as part of the title.
+test('stripAnnotations removes a #269 annotation without disturbing the underlying text', () => {
+    assert.equal(
+        stripAnnotations('Chief Executive Officer <!-- role: chief-executive-officer -->'),
+        'Chief Executive Officer',
+    );
+    assert.equal(stripAnnotations('COO <!-- external-role -->'), 'COO');
+    assert.equal(
+        stripAnnotations('<!-- one-of -->A <!-- role: a -->, B <!-- role: b --><!-- /one-of -->'),
+        'A, B',
+    );
+    assert.equal(stripAnnotations('Chief Executive Officer'), 'Chief Executive Officer');
 });
 
 test('similarity is symmetric and bounded', () => {

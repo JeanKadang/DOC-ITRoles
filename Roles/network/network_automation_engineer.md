@@ -6,7 +6,7 @@
 | **Domain** | Network |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Network Automation Architect |
+| **Reports To** | Network Automation Architect <!-- role: network-automation-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -100,7 +100,7 @@ The Network Automation Engineer specializes in developing and implementing autom
 | Network Engineers | Implementation requirements | Consumes From |
 | DevOps Engineers | Pipeline integration | Collaborates |
 | Security Engineers | Security automation | Collaborates |
-| Network Product Owner | Automation capabilities | Collaborates |
+| Network Product Owner <!-- role: network-product-owner --> | Automation capabilities | Collaborates |
 | Cloud Engineers | Hybrid network automation | Collaborates |
 | Network Architects | Automation strategy | Escalates To |
 
@@ -159,10 +159,10 @@ The Network Automation Engineer specializes in developing and implementing autom
 
 **Previous Roles:**
 
-- Network Engineer
+- Network Engineer <!-- role: network-engineer -->
 - Systems Administrator with scripting focus
 - Developer with network knowledge
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Automation Engineer (general)
 
 **Potential Next Roles:**

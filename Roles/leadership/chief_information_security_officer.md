@@ -111,15 +111,15 @@ The CISO sits above the PAL and TAL in the technology leadership hierarchy on ma
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| SVP of Technology | (or equivalent CTO/CIO) on security strategy, risk posture, and technology investment decisions with security implications; reports directly to the CEO or Board in independent governance models | Escalates To |
-| Security & Identity Chapter Lead | Who owns the operational delivery of security services, tooling, and engineering within the technology function | Provides To |
+| SVP of Technology <!-- role: svp-of-technology --> | (or equivalent CTO/CIO) on security strategy, risk posture, and technology investment decisions with security implications; reports directly to the CEO or Board in independent governance models | Escalates To |
+| Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> | Who owns the operational delivery of security services, tooling, and engineering within the technology function | Provides To |
 | security architects | Cloud, identity, application, and data security domains as technical advisors and delivery leaders | Provides To |
 | Board Risk or Audit Committee | Providing executive-level assurance on the organisation's security posture | Escalates To |
 | Product Area Lead (PAL) | Ensure security requirements are embedded in product area roadmaps, architectural decisions, and delivery practices | Collaborates |
 | Technical Area Lead (TAL) | Ensure security requirements are embedded in product area roadmaps, architectural decisions, and delivery practices | Collaborates |
 | Legal team and Data Protection Officer (DPO) | Regulatory compliance, data breach notification obligations, and contractual security requirements | Collaborates |
 | third-party vendors and technology partners | Security requirements, contractual obligations, and ongoing risk management | Governed By |
-| Enterprise Architect | Ensure security architecture principles are embedded in the enterprise architecture framework | Collaborates |
+| Enterprise Architect <!-- role: enterprise-architect --> | Ensure security architecture principles are embedded in the enterprise architecture framework | Collaborates |
 
 ## Key Technologies
 

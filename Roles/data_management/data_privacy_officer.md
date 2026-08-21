@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Chief Information Security Officer |
+| **Reports To** | Chief Information Security Officer <!-- role: chief-information-security-officer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,12 +101,12 @@ The Data Privacy Officer (DPO) owns the organization's data privacy compliance p
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Governance Lead | Consumes data classification and catalogue information to maintain the Record of Processing Activities | Consumes From |
-| Security Architect | Collaborates on privacy breach assessment and security controls that enforce privacy requirements | Collaborates |
-| Chief Information Security Officer | Escalation path for privacy incidents with material regulatory exposure | Escalates To |
+| Data Governance Lead <!-- role: data-governance-lead --> | Consumes data classification and catalogue information to maintain the Record of Processing Activities | Consumes From |
+| Security Architect <!-- role: security-architect --> | Collaborates on privacy breach assessment and security controls that enforce privacy requirements | Collaborates |
+| Chief Information Security Officer <!-- role: chief-information-security-officer --> | Escalation path for privacy incidents with material regulatory exposure | Escalates To |
 | Any domain Architect / Product Owner | Reviews and advises on new features processing personal data before launch (privacy-by-design) | Governed By |
-| AI Governance Architect | Collaborates on privacy implications of AI/ML training data and model outputs | Collaborates |
-| GRC / Risk & Compliance Analyst | Provides privacy compliance status as an input to the broader enterprise risk and compliance register | Provides To |
+| AI Governance Architect <!-- role: ai-governance-architect --> | Collaborates on privacy implications of AI/ML training data and model outputs | Collaborates |
+| GRC / Risk & Compliance Analyst <!-- role: grc-risk-and-compliance-analyst --> | Provides privacy compliance status as an input to the broader enterprise risk and compliance register | Provides To |
 
 ## Key Technologies
 
@@ -158,7 +158,7 @@ The Data Privacy Officer (DPO) owns the organization's data privacy compliance p
 
 - Security Architect (if pivoting toward broader security/compliance architecture)
 - Head of Privacy / Chief Privacy Officer
-- Data & AI Chapter Lead
+- Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead -->
 
 ## Recommended Certifications & Learning Paths
 

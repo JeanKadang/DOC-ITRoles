@@ -6,7 +6,7 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
-| **Reports To** | Service Management Senior Engineer |
+| **Reports To** | Service Management Senior Engineer <!-- role: service-management-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,7 +96,7 @@ The Service Management Engineer implements and maintains IT service management p
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Service Management Product Owner | Task prioritization | Consumes From |
+| Service Management Product Owner <!-- role: service-management-product-owner --> | Task prioritization | Consumes From |
 | Process Owners | Process implementations | Collaborates |
 | Service Desk Staff | Operational requirements | Provides To |
 | Knowledge Management | Documentation | Collaborates |
@@ -158,7 +158,7 @@ The Service Management Engineer implements and maintains IT service management p
 
 **Previous Roles:**
 
-- Service Desk Analyst
+- Service Desk Analyst <!-- role: service-desk-analyst -->
 - IT Support Specialist
 - Junior ITSM Specialist
 - ITSM Administrator
@@ -166,7 +166,7 @@ The Service Management Engineer implements and maintains IT service management p
 
 **Potential Next Roles:**
 
-- Service Management Senior Engineer
+- Service Management Senior Engineer <!-- role: service-management-senior-engineer -->
 - ITSM Process Owner
 - Service Desk Manager
 - Service Catalog Manager

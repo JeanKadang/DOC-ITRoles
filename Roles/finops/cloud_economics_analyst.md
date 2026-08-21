@@ -6,7 +6,7 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | FinOps Senior Engineer |
+| **Reports To** | FinOps Senior Engineer <!-- role: finops-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -106,8 +106,8 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| FinOps Senior Engineer | Receives task prioritisation and technical guidance | Escalates To |
-| FinOps Architect | Consumes cost governance standards for economics analysis | Consumes From |
+| FinOps Senior Engineer <!-- role: finops-senior-engineer --> | Receives task prioritisation and technical guidance | Escalates To |
+| FinOps Architect <!-- role: finops-architect --> | Consumes cost governance standards for economics analysis | Consumes From |
 | Finance business partners and business unit finance leads | Provides unit economics analysis and reporting | Provides To |
 | Cloud Platform Engineers | Coordinates for tagging and allocation accuracy | Collaborates |
 | product owners | Provides unit economics inputs | Provides To |
@@ -175,8 +175,8 @@ The Cloud Economics Analyst is the business-facing analytical capability within 
 
 **Potential Next Roles:**
 
-- FinOps Senior Engineer
-- FinOps Architect
+- FinOps Senior Engineer <!-- role: finops-senior-engineer -->
+- FinOps Architect <!-- role: finops-architect -->
 - Cloud Economics Manager
 - IT Finance Manager (cloud-focused)
 - Head of FinOps or Cloud Business Office Lead

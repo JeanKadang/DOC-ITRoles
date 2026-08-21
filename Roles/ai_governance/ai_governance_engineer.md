@@ -6,7 +6,7 @@
 | **Domain** | AI Governance |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | AI Governance Senior Engineer |
+| **Reports To** | AI Governance Senior Engineer <!-- role: ai-governance-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -107,12 +107,12 @@ The AI Governance Engineer is an entry-level practitioner role responsible for i
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| AI Platform Architect | Accessing deployed model artefacts, MLOps pipeline outputs, and model registry metadata needed for governance assessments | Consumes From |
-| Legal and Compliance | Team members when collecting compliance evidence or seeking clarification on documentation requirements | Collaborates |
-| AI Governance Senior Engineer | Day-to-day task direction, mentoring, and technical guidance | Escalates To |
-| AI Governance Architect | Technical guidance, framework interpretation, and escalation of complex governance decisions | Escalates To |
+| AI Platform Architect <!-- role: ai-platform-architect --> | Accessing deployed model artefacts, MLOps pipeline outputs, and model registry metadata needed for governance assessments | Consumes From |
+| Legal and Compliance <!-- external-role --> | Team members when collecting compliance evidence or seeking clarification on documentation requirements | Collaborates |
+| AI Governance Senior Engineer <!-- role: ai-governance-senior-engineer --> | Day-to-day task direction, mentoring, and technical guidance | Escalates To |
+| AI Governance Architect <!-- role: ai-governance-architect --> | Technical guidance, framework interpretation, and escalation of complex governance decisions | Escalates To |
 | Data Science and ML Engineering | Teams to collect model documentation, training data lineage, and evaluation metrics required for risk assessments | Consumes From |
-| AI Governance Product Owner | Provide status on documentation and risk register completeness for backlog and programme reporting | Provides To |
+| AI Governance Product Owner <!-- role: ai-governance-product-owner --> | Provide status on documentation and risk register completeness for backlog and programme reporting | Provides To |
 
 ## Key Technologies
 
@@ -172,7 +172,7 @@ The AI Governance Engineer is an entry-level practitioner role responsible for i
 
 **Potential Next Roles:**
 
-- AI Governance Senior Engineer
+- AI Governance Senior Engineer <!-- role: ai-governance-senior-engineer -->
 - Responsible AI Specialist / Engineer
 - MLOps Engineer (platform engineering career track)
 - Data Privacy Engineer (adjacent governance specialism)

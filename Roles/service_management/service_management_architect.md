@@ -6,7 +6,7 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The Service Management Architect designs comprehensive strategies and architectu
 | Enterprise Architects | Technology standards | Governed By |
 | Process Owners | Process design | Collaborates |
 | Business Relationship Managers | Service portfolio | Collaborates |
-| Service Management Product Owner | Technical strategy | Collaborates |
+| Service Management Product Owner <!-- role: service-management-product-owner --> | Technical strategy | Collaborates |
 | Service Management Senior Engineers | Provide architectural direction and review engineering designs | Provides To |
 | executives | Service management strategy | Escalates To |
 
@@ -157,7 +157,7 @@ The Service Management Architect designs comprehensive strategies and architectu
 
 **Previous Roles:**
 
-- Service Management Senior Engineer
+- Service Management Senior Engineer <!-- role: service-management-senior-engineer -->
 - ITSM Practice Leader
 - Service Delivery Manager
 - Enterprise Process Architect

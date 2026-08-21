@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,12 +101,12 @@ The Data Governance Lead owns the organization's data governance program — est
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Collaborates on aligning governance policy with the underlying data platform capabilities | Collaborates |
-| Storage Architect | Consumes storage platform capabilities to apply data classification and lifecycle policy | Consumes From |
-| Data Privacy Officer | Provides data classification and inventory that directly informs privacy impact assessments | Provides To |
-| AI Governance Architect | Provides data quality and classification assessments for AI/ML training data suitability | Provides To |
-| Security Architect | Collaborates on aligning data classification with the broader security control framework | Collaborates |
-| Data & AI Chapter Lead | Escalation path for governance policy disputes across domains | Escalates To |
+| Data Platform Architect <!-- role: data-platform-architect --> | Collaborates on aligning governance policy with the underlying data platform capabilities | Collaborates |
+| Storage Architect <!-- role: storage-architect --> | Consumes storage platform capabilities to apply data classification and lifecycle policy | Consumes From |
+| Data Privacy Officer <!-- role: data-privacy-officer --> | Provides data classification and inventory that directly informs privacy impact assessments | Provides To |
+| AI Governance Architect <!-- role: ai-governance-architect --> | Provides data quality and classification assessments for AI/ML training data suitability | Provides To |
+| Security Architect <!-- role: security-architect --> | Collaborates on aligning data classification with the broader security control framework | Collaborates |
+| Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> | Escalation path for governance policy disputes across domains | Escalates To |
 
 ## Key Technologies
 
@@ -159,7 +159,7 @@ The Data Governance Lead owns the organization's data governance program — est
 
 - Data Platform Architect (if pivoting toward broader data platform strategy)
 - Data Privacy Officer (if pivoting toward regulatory compliance)
-- Data & AI Chapter Lead
+- Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead -->
 
 ## Recommended Certifications & Learning Paths
 

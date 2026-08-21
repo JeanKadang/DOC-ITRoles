@@ -6,7 +6,7 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | Integration Senior Engineer |
+| **Reports To** | Integration Senior Engineer <!-- role: integration-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -154,8 +154,8 @@ The Integration Engineer builds, maintains, and supports enterprise integration 
 
 **Potential Next Roles:**
 
-- Integration Senior Engineer
-- DevOps Engineer
+- Integration Senior Engineer <!-- role: integration-senior-engineer -->
+- DevOps Engineer <!-- role: devops-engineer -->
 - Cloud Engineer (Azure Integration Services focus)
 
 ## Recommended Certifications & Learning Paths

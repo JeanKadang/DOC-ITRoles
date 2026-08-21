@@ -6,7 +6,7 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CTO |
-| **Reports To** | Chief Executive Officer |
+| **Reports To** | Chief Executive Officer <!-- role: chief-executive-officer --> |
 | **Direct Reports** | Product Area Lead, Technical Area Lead (equivalent title to CIO/SVP of Technology — org uses one) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |

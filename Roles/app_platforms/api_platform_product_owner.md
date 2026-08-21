@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,7 +96,7 @@ The API Platform Product Owner manages the development and lifecycle of the orga
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Application Product Owners | API requirements | Consumes From |
-| DevOps Product Owner | CI/CD integration for APIs | Collaborates |
+| DevOps Product Owner <!-- role: devops-product-owner --> | CI/CD integration for APIs | Collaborates |
 | Security Teams | API security standards | Governed By |
 | Application Teams | API adoption and consumption | Provides To |
 | IT Leadership | API platform strategy | Provides To |

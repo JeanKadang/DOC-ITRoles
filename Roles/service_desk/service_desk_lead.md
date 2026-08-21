@@ -6,7 +6,7 @@
 | **Domain** | Service Desk |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | Service Desk Senior Analysts, Service Desk Analysts (full line management, including hiring and career progression — a deliberate exception to the catalogue's usual model, see Role Scope & Boundaries) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,13 +101,13 @@ The Service Desk Lead owns the service desk as an operational function: staffing
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| End User & Workplace Chapter Lead | Reports desk performance and staffing risk; escalates budget and cross-domain policy decisions | Escalates To |
-| Client Platform Architect | Jointly defines Tier-2/3 escalation boundaries and OS-level support handoff procedures | Collaborates |
-| Endpoint Management Architect | Jointly defines escalation boundaries for device enrollment and compliance issues | Collaborates |
-| Service Desk Senior Analyst | Receives escalation and staffing feedback; sets SLA targets and coaching priorities | Provides To |
-| Major Incident Manager | Provides the desk's detection-and-escalation path for suspected major incidents | Provides To |
-| Change / Release Manager | Collaborates on the standard change catalogue for desk-initiated changes | Collaborates |
-| Vendor / Supplier / IT Asset Manager | Consumes hardware/license entitlement data that gates common ticket fulfilment | Consumes From |
+| End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> | Reports desk performance and staffing risk; escalates budget and cross-domain policy decisions | Escalates To |
+| Client Platform Architect <!-- role: client-platform-architect --> | Jointly defines Tier-2/3 escalation boundaries and OS-level support handoff procedures | Collaborates |
+| Endpoint Management Architect <!-- role: endpoint-management-architect --> | Jointly defines escalation boundaries for device enrollment and compliance issues | Collaborates |
+| Service Desk Senior Analyst <!-- role: service-desk-senior-analyst --> | Receives escalation and staffing feedback; sets SLA targets and coaching priorities | Provides To |
+| Major Incident Manager <!-- role: major-incident-manager --> | Provides the desk's detection-and-escalation path for suspected major incidents | Provides To |
+| Change / Release Manager <!-- role: change-release-manager --> | Collaborates on the standard change catalogue for desk-initiated changes | Collaborates |
+| Vendor / Supplier / IT Asset Manager <!-- role: vendor-supplier-it-asset-manager --> | Consumes hardware/license entitlement data that gates common ticket fulfilment | Consumes From |
 
 ## Key Technologies
 
@@ -153,13 +153,13 @@ The Service Desk Lead owns the service desk as an operational function: staffing
 
 **Previous Roles:**
 
-- Service Desk Senior Analyst
+- Service Desk Senior Analyst <!-- role: service-desk-senior-analyst -->
 - IT Support Team Lead or Shift Supervisor
 - Desktop Support Manager
 
 **Potential Next Roles:**
 
-- End User & Workplace Chapter Lead
+- End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead -->
 - Service Management Senior Engineer or Major Incident Manager (for those pivoting toward broader ITSM process ownership)
 - Client Platform Product Owner (for those pivoting toward end-user technology product ownership)
 

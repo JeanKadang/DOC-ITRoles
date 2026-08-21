@@ -6,7 +6,7 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | DevOps Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -108,7 +108,7 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevOps Architect | Platform design decisions | Escalates To |
+| DevOps Architect <!-- role: devops-architect --> | Platform design decisions | Escalates To |
 | DevOps Engineers | Technical matters | Provides To |
 | security teams | DevSecOps implementations | Governed By |
 | application architects | Delivery pipeline design | Collaborates |
@@ -166,7 +166,7 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 **Previous Roles:**
 
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - CI/CD Specialist
 - Build and Release Engineer
 - System Administrator
@@ -174,7 +174,7 @@ The DevOps Senior Engineer leads complex DevOps initiatives and transformations,
 
 **Potential Next Roles:**
 
-- DevOps Architect
+- DevOps Architect <!-- role: devops-architect -->
 - Platform Engineering Leader
 - DevOps Practice Manager
 - Engineering Productivity Director

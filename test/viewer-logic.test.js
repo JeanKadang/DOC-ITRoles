@@ -42,6 +42,7 @@ const {
     panelStateFor,
     parseRoleMeta,
     splitReportingValue,
+    stripAnnotations,
     tocIdFor,
     activeTocIndex,
     parseViewerRoute,
@@ -145,6 +146,30 @@ test('viewer-logic REFERENCE_DOC_PATTERN mirrors roleMeta exactly', () => {
     // copy; this test keeps the two from drifting apart.
     assert.equal(REFERENCE_DOC_PATTERN.source, ROLEMETA_REF_PATTERN.source);
     assert.equal(REFERENCE_DOC_PATTERN.flags, ROLEMETA_REF_PATTERN.flags);
+});
+
+test('viewer-logic stripAnnotations mirrors scripts/lib/relationship-annotations.js exactly', () => {
+    // index.html loads viewer-logic.js via a plain <script> tag (no bundler),
+    // so it cannot require() the canonical implementation in
+    // scripts/lib/relationship-annotations.js the way server.js and
+    // scripts/relationship-report.js do. viewer-logic.js therefore carries
+    // its own copy (see the ANNOTATION_COMMENT comment above stripAnnotations
+    // in viewer-logic.js); this test keeps the two from drifting apart by
+    // asserting behavioral equivalence across every ADR-0006 annotation form.
+    const { stripAnnotations: canonicalStripAnnotations } = require('../scripts/lib/relationship-annotations.js');
+    const samples = [
+        'Chief Executive Officer <!-- role: chief-executive-officer -->',
+        'COO <!-- external-role -->',
+        '<!-- one-of -->A <!-- role: a -->, B <!-- role: b --><!-- /one-of -->',
+        'Chief Executive Officer',
+        'None (sets technical direction ; formal line management sits with the Chapter Lead)',
+        '',
+        null,
+        undefined,
+    ];
+    for (const sample of samples) {
+        assert.equal(stripAnnotations(sample), canonicalStripAnnotations(sample), `mismatch for ${JSON.stringify(sample)}`);
+    }
 });
 
 test('contentReferencesForQuery removes only an exact normalized title match', () => {
@@ -713,6 +738,19 @@ test('parseCareerPath ignores bullets outside the from/to sub-lists', () => {
     assert.deepEqual(parseCareerPath(md), { from: ['Real Entry'], to: [] });
 });
 
+// #269's migration appends an inline annotation comment to a career-path
+// bullet's own text. renderCareerStepper (index.html) shows this value
+// directly and matches it against the catalog via findRoleByTitle, so an
+// unstripped comment would appear as literal text in the career stepper and
+// break the xref link.
+test('parseCareerPath strips a #269 annotation from a bullet', () => {
+    const md = `## Career Development Path\n\n**Previous Roles:**\n\n- Cloud Lead Architect <!-- role: cloud-lead-architect -->\n\n**Potential Next Roles:**\n\n- COO <!-- external-role -->\n`;
+    assert.deepEqual(parseCareerPath(md), {
+        from: ['Cloud Lead Architect'],
+        to:   ['COO'],
+    });
+});
+
 test('parseCareerPath parses every role file in the catalog', () => {
     const fs = require('node:fs');
     const path = require('node:path');
@@ -1024,6 +1062,67 @@ test('splitReportingValue splits on a semicolon when there is no parenthetical',
 test('splitReportingValue handles empty and missing values', () => {
     assert.deepEqual(splitReportingValue(''),   { head: '', detail: '' });
     assert.deepEqual(splitReportingValue(null), { head: '', detail: '' });
+});
+
+// #269's migration appends an inline annotation comment to the same Reports
+// To / Direct Reports value this function reads. Without stripping it, the
+// chip would show the literal "<!-- role: ... -->" text and its xref match
+// (which runs on `head`) would fail, since the comment isn't a catalogue
+// title.
+test('stripAnnotations removes each #269 annotation form without disturbing the underlying text', () => {
+    assert.equal(
+        stripAnnotations('Chief Executive Officer <!-- role: chief-executive-officer -->'),
+        'Chief Executive Officer',
+    );
+    assert.equal(stripAnnotations('COO <!-- external-role -->'), 'COO');
+    assert.equal(
+        stripAnnotations('<!-- one-of -->A <!-- role: a -->, B <!-- role: b --><!-- /one-of -->'),
+        'A, B',
+    );
+    assert.equal(stripAnnotations('Chief Executive Officer'), 'Chief Executive Officer');
+    assert.equal(stripAnnotations(''), '');
+    assert.equal(stripAnnotations(null), '');
+});
+
+test('splitReportingValue strips a #269 annotation from the head before it is shown or matched', () => {
+    assert.deepEqual(
+        splitReportingValue('Chief Executive Officer <!-- role: chief-executive-officer -->'),
+        { head: 'Chief Executive Officer', detail: '' },
+    );
+    assert.deepEqual(
+        splitReportingValue('COO <!-- external-role -->'),
+        { head: 'COO', detail: '' },
+    );
+});
+
+// index.html's inline <script> is not require()-able (it's not a module and
+// has no exports), so this can't call reportingChip() directly the way the
+// tests above call splitReportingValue()/stripAnnotations() in isolation.
+// This is a text-level check instead: it confirms index.html actually wires
+// stripAnnotations into its script (the destructuring pull from
+// ViewerLogic) and applies it to the value that becomes the reporting
+// chip's tooltip text, so a future edit can't silently drop the import or
+// the call and regress #269's tooltip-leak fix without this test failing.
+test('index.html imports stripAnnotations from ViewerLogic and applies it to the reporting-chip tooltip value', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+
+    const scriptMatch = html.match(/<script>([\s\S]*?)<\/script>/i);
+    assert.ok(scriptMatch, 'index.html has an inline <script> block');
+    const script = scriptMatch[1];
+
+    const destructure = script.match(/const\s*\{[\s\S]*?\}\s*=\s*ViewerLogic;/);
+    assert.ok(destructure, 'index.html destructures ViewerLogic exports');
+    assert.match(destructure[0], /\bstripAnnotations\b/,
+        'stripAnnotations must be pulled from ViewerLogic alongside splitReportingValue');
+
+    const reportingChip = script.match(/const reportingChip = \(icon, label, value\) => \{[\s\S]*?\n {8}\};/);
+    assert.ok(reportingChip, 'reportingChip() is defined in index.html as expected');
+    assert.match(reportingChip[0], /stripAnnotations\(value\)/,
+        'reportingChip must strip #269 annotations from value before use');
+    assert.match(reportingChip[0], /title="\$\{escapeHtml\(clean\)\}"/,
+        'the tooltip must render the stripped value, not the raw annotated one');
 });
 
 // ── staggered review schedule (#124) ──────────────────────

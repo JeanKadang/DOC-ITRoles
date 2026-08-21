@@ -6,7 +6,7 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service Management Architect |
+| **Reports To** | Service Management Architect <!-- role: service-management-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,12 +101,12 @@ The Technical Program Manager / Delivery Manager coordinates cross-team delivery
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Service & Governance Chapter Lead | Escalation path for cross-chapter resourcing conflicts and executive program risk reporting | Escalates To |
+| Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> | Escalation path for cross-chapter resourcing conflicts and executive program risk reporting | Escalates To |
 | Product Owner (any domain) | Coordinates cross-team backlog sequencing so dependent work lands in the correct order | Collaborates |
 | Architect (any domain) | Consumes technical roadmap and design timelines to build the integrated delivery plan | Consumes From |
 | Chapter Lead (any chapter) | Provides program status and risk visibility for teams within that chapter | Provides To |
-| Engineering Practices Champion | Shares program retrospective findings to inform organization-wide delivery process improvements | Provides To |
-| Technical Area Lead | Escalation path for unresolved cross-chapter technical risk affecting program delivery | Escalates To |
+| Engineering Practices Champion <!-- role: engineering-practices-champion --> | Shares program retrospective findings to inform organization-wide delivery process improvements | Provides To |
+| Technical Area Lead <!-- role: technical-area-lead --> | Escalation path for unresolved cross-chapter technical risk affecting program delivery | Escalates To |
 
 ## Key Technologies
 

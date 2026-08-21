@@ -6,7 +6,7 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | DevOps Senior Engineer |
+| **Reports To** | DevOps Senior Engineer <!-- role: devops-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -170,11 +170,11 @@ The DevOps Engineer implements and maintains CI/CD pipelines and automation tool
 
 **Potential Next Roles:**
 
-- DevOps Senior Engineer
+- DevOps Senior Engineer <!-- role: devops-senior-engineer -->
 - CI/CD Specialist
 - Cloud Platform Engineer
-- Site Reliability Engineer
-- DevSecOps Engineer
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
+- DevSecOps Engineer <!-- role: devsecops-engineer -->
 - Infrastructure Automation Engineer
 
 ## Recommended Certifications & Learning Paths

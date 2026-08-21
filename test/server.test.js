@@ -92,6 +92,19 @@ test('GET /api/search finds roles by body content, not just title (#68)', async 
   assert.ok(bodyOnly.file.startsWith('Roles/') && bodyOnly.title && bodyOnly.domain);
 });
 
+test('GET /api/search snippets never leak a #269 annotation comment', async () => {
+  // dotnet_architect.md's Reports To field is annotated:
+  //   | **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
+  // A "reports to" search used to center the snippet right on that comment.
+  const res = await request('/api/search?q=' + encodeURIComponent('reports to'));
+  assert.equal(res.status, 200);
+  const { matches } = JSON.parse(res.body);
+  const dotnet = matches.find(m => m.file === 'Roles/app_platforms/dotnet_architect.md');
+  assert.ok(dotnet, 'expected dotnet_architect.md among the matches');
+  assert.ok(!dotnet.snippet.includes('<!--'), `snippet leaked a raw annotation comment: ${dotnet.snippet}`);
+  assert.ok(!dotnet.snippet.includes('role:'), `snippet leaked annotation content: ${dotnet.snippet}`);
+});
+
 test('GET /api/search sorts title matches ahead of body-only matches', async () => {
   const res = await request('/api/search?q=kubernetes');
   const { matches } = JSON.parse(res.body);

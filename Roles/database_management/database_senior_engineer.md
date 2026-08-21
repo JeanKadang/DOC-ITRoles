@@ -6,7 +6,7 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | Database Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,8 +103,8 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Database Architect | Solution design and implementation strategy | Escalates To |
-| Database Product Owner | Technical planning and roadmap execution | Collaborates |
+| Database Architect <!-- role: database-architect --> | Solution design and implementation strategy | Escalates To |
+| Database Product Owner <!-- role: database-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Cloud Senior Engineers | Cloud database services | Collaborates |
 | Senior Engineers from other platforms | Integrated solutions | Collaborates |
 | Database Engineers | Complex database technologies | Provides To |
@@ -161,15 +161,15 @@ The Database Senior Engineer leads the implementation and optimization of comple
 
 **Previous Roles:**
 
-- Database Engineer
+- Database Engineer <!-- role: database-engineer -->
 - Database Administrator
 - Systems Engineer with database focus
 - Application Support Engineer
 
 **Potential Next Roles:**
 
-- Database Architect
-- Data Platform Architect
+- Database Architect <!-- role: database-architect -->
+- Data Platform Architect <!-- role: data-platform-architect -->
 - Database Engineering Manager
 - Cloud Data Services Lead
 - Enterprise Data Architect

@@ -6,7 +6,7 @@
 | **Domain** | Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -119,11 +119,11 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Server Hardware Architect | Specifications and designs | Consumes From |
+| Server Hardware Architect <!-- role: server-hardware-architect --> | Specifications and designs | Consumes From |
 | platform-specific Product Owners (Windows, Linux, HPC) | Hardware requirements | Collaborates |
 | Data Center Operations teams | Installation and maintenance | Collaborates |
-| Finance | Capital expenditure planning and budgeting | Collaborates |
-| Procurement | Vendor selection and contract negotiations | Collaborates |
+| Finance <!-- external-role --> | Capital expenditure planning and budgeting | Collaborates |
+| Procurement <!-- external-role --> | Vendor selection and contract negotiations | Collaborates |
 | IT leadership | Infrastructure investment strategy | Provides To |
 
 ## Key Focus Areas
@@ -179,7 +179,7 @@ The Server Hardware Product Owner manages the lifecycle of physical server infra
 
 **Previous Roles:**
 
-- Server Hardware Engineer
+- Server Hardware Engineer <!-- role: server-hardware-engineer -->
 - Data Center Technician
 - Infrastructure Manager
 - Technical Project Manager

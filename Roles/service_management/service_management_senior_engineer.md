@@ -6,7 +6,7 @@
 | **Domain** | Service Management |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | Service Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,7 +96,7 @@ The Service Management Senior Engineer leads the implementation and optimization
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | ITSM Architect | Solution design | Escalates To |
-| Service Management Product Owner | Technical planning | Collaborates |
+| Service Management Product Owner <!-- role: service-management-product-owner --> | Technical planning | Collaborates |
 | Process Owners | Process automation | Collaborates |
 | Integration Engineers | System connections | Collaborates |
 | Service Desk Teams | Operational requirements | Provides To |
@@ -157,7 +157,7 @@ The Service Management Senior Engineer leads the implementation and optimization
 
 **Previous Roles:**
 
-- Service Management Engineer
+- Service Management Engineer <!-- role: service-management-engineer -->
 - ITSM Administrator
 - Service Desk Analyst/Manager
 - Process Specialist

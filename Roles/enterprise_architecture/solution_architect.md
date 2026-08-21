@@ -6,7 +6,7 @@
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Architect |
-| **Reports To** | Enterprise Architect |
+| **Reports To** | Enterprise Architect <!-- role: enterprise-architect --> |
 | **Direct Reports** | None (technical direction role, not a people manager) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -170,7 +170,7 @@ The Solution Architect is responsible for designing end-to-end technical solutio
 
 **Potential Next Roles:**
 
-- Enterprise Architect
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Chief Architect / Principal Architect
 - CTO (technology leadership track)
 - Head of Architecture

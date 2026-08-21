@@ -6,7 +6,7 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Commvault Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,10 +93,10 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Storage Architect | Backup storage strategies | Collaborates |
+| Storage Architect <!-- role: storage-architect --> | Backup storage strategies | Collaborates |
 | Cloud Architects | Cloud-based data protection | Collaborates |
-| Security Architect | Data protection security | Governed By |
-| Commvault Product Owner | Technical strategy | Collaborates |
+| Security Architect <!-- role: security-architect --> | Data protection security | Governed By |
+| Commvault Product Owner <!-- role: commvault-product-owner --> | Technical strategy | Collaborates |
 | Commvault Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
 | application architects | Application backup requirements | Provides To |
 | compliance teams | Data retention requirements | Governed By |
@@ -156,7 +156,7 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 
 **Previous Roles:**
 
-- Commvault Senior Engineer
+- Commvault Senior Engineer <!-- role: commvault-senior-engineer -->
 - Backup and Recovery Team Lead
 - Data Protection Specialist
 - Enterprise Storage Engineer
@@ -165,7 +165,7 @@ The Commvault Architect designs enterprise data protection strategies and soluti
 **Potential Next Roles:**
 
 - Enterprise Data Management Director
-- Chief Data Officer
+- Chief Data Officer <!-- external-role -->
 - Technology Strategy Executive
 - IT Architecture Director
 - Cloud Data Services Leader

@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Google Cloud Senior Engineer |
+| **Reports To** | Google Cloud Senior Engineer <!-- role: google-cloud-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -164,10 +164,10 @@ The Google Cloud Engineer implements and maintains cloud resources and services 
 
 **Potential Next Roles:**
 
-- Google Cloud Senior Engineer
+- Google Cloud Senior Engineer <!-- role: google-cloud-senior-engineer -->
 - Cloud Architect
-- DevOps Engineer
-- Site Reliability Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Specialized GCP role (Security, Data, ML)
 
 ## Recommended Certifications & Learning Paths

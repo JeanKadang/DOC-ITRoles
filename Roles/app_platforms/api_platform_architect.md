@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors API Platform Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,7 +101,7 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 | Enterprise Architects | Technology standards | Governed By |
 | Security Architects | API security patterns | Governed By |
 | Integration Architects | Enterprise integration | Collaborates |
-| API Platform Product Owner | Technical strategy | Collaborates |
+| API Platform Product Owner <!-- role: api-platform-product-owner --> | Technical strategy | Collaborates |
 | API Platform Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
 | Application Architects | API consumption patterns | Provides To |
 
@@ -160,9 +160,9 @@ The API Platform Architect designs comprehensive strategies and architectures fo
 
 **Previous Roles:**
 
-- API Platform Senior Engineer
-- Integration Architect
-- Solution Architect
+- API Platform Senior Engineer <!-- role: api-platform-senior-engineer -->
+- Integration Architect <!-- role: integration-architect -->
+- Solution Architect <!-- role: solution-architect -->
 - Technical Lead with API focus
 - Enterprise Developer
 

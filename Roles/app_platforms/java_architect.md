@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Java Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 | Enterprise Architects | Technology standards | Governed By |
 | Security Architects | Java security patterns | Governed By |
 | Cloud Architects | Java cloud deployment | Collaborates |
-| Java Platform Product Owner | Technical strategy | Collaborates |
+| Java Platform Product Owner <!-- role: java-platform-product-owner --> | Technical strategy | Collaborates |
 | Java Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
 | application architects | Java implementation patterns | Provides To |
 
@@ -157,11 +157,11 @@ The Java Platform Architect designs comprehensive strategies and architectures f
 
 **Previous Roles:**
 
-- Java Senior Engineer
+- Java Senior Engineer <!-- role: java-senior-engineer -->
 - Java Technical Lead
 - Enterprise Application Architect
 - Software Architect
-- Solution Architect
+- Solution Architect <!-- role: solution-architect -->
 
 **Potential Next Roles:**
 

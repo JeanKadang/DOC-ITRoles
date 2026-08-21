@@ -109,7 +109,7 @@ The Cloud, Platform & Infrastructure Chapter Lead is the most senior technical m
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Other Chapter Leads | Cross-chapter technical dependencies with DevOps & Delivery, Security & Identity, Data & AI, End User & Workplace, and Service & Governance | Collaborates |
-| Enterprise Architect | Infrastructure alignment with enterprise architecture standards | Governed By |
+| Enterprise Architect <!-- role: enterprise-architect --> | Infrastructure alignment with enterprise architecture standards | Governed By |
 | Finance and Procurement | Cloud budget governance and vendor spend optimisation; FinOps domain practitioners within the chapter own the cloud cost governance practice | Collaborates |
 | CISO and Security & Identity Chapter Lead | Infrastructure security posture and compliance | Collaborates |
 | CTO/CIO-level infrastructure forums | Vendor and partner technical evaluations and cross-area capacity planning | Escalates To |

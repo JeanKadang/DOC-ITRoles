@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Observability Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -107,7 +107,7 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Observability Architect | Platform design | Escalates To |
+| Observability Architect <!-- role: observability-architect --> | Platform design | Escalates To |
 | SRE and platform teams | Advanced monitoring | Collaborates |
 | application architects | Advanced instrumentation | Collaborates |
 | security teams | Security monitoring patterns | Governed By |
@@ -166,15 +166,15 @@ The Observability Senior Engineer leads advanced observability projects, focusin
 
 **Previous Roles:**
 
-- Observability Engineer
+- Observability Engineer <!-- role: observability-engineer -->
 - Monitoring Specialist
-- DevOps Engineer
-- Site Reliability Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Systems Administrator with monitoring focus
 
 **Potential Next Roles:**
 
-- Observability Architect
+- Observability Architect <!-- role: observability-architect -->
 - Observability Practice Lead
 - SRE Manager
 - Platform Engineering Director

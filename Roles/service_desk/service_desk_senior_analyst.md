@@ -6,7 +6,7 @@
 | **Domain** | Service Desk |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service Desk Lead |
+| **Reports To** | Service Desk Lead <!-- role: service-desk-lead --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -99,12 +99,12 @@ The Service Desk Senior Analyst is the Tier-2 technical backbone of the service 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Service Desk Analyst | Receives escalated tickets; provides coaching, resolution, and knowledge base updates back to Tier-1 | Provides To |
-| Service Desk Lead | Escalates staffing/process gaps and recurring-issue patterns; reports on Tier-2 resolution trends | Escalates To |
-| Client Platform Senior Engineer | Escalates OS-level issues requiring engineering investigation; receives resolution and root-cause detail | Escalates To |
-| Endpoint Management Senior Engineer | Escalates device compliance/enrollment issues beyond standard troubleshooting | Escalates To |
-| Major Incident Manager | Escalates confirmed wide-scale outage patterns after pattern verification | Escalates To |
-| Change / Release Manager | Collaborates on standard change catalogue entries for common service desk-initiated changes | Collaborates |
+| Service Desk Analyst <!-- role: service-desk-analyst --> | Receives escalated tickets; provides coaching, resolution, and knowledge base updates back to Tier-1 | Provides To |
+| Service Desk Lead <!-- role: service-desk-lead --> | Escalates staffing/process gaps and recurring-issue patterns; reports on Tier-2 resolution trends | Escalates To |
+| Client Platform Senior Engineer <!-- role: client-platform-senior-engineer --> | Escalates OS-level issues requiring engineering investigation; receives resolution and root-cause detail | Escalates To |
+| Endpoint Management Senior Engineer <!-- role: endpoint-management-senior-engineer --> | Escalates device compliance/enrollment issues beyond standard troubleshooting | Escalates To |
+| Major Incident Manager <!-- role: major-incident-manager --> | Escalates confirmed wide-scale outage patterns after pattern verification | Escalates To |
+| Change / Release Manager <!-- role: change-release-manager --> | Collaborates on standard change catalogue entries for common service desk-initiated changes | Collaborates |
 
 ## Key Technologies
 
@@ -149,13 +149,13 @@ The Service Desk Senior Analyst is the Tier-2 technical backbone of the service 
 
 **Previous Roles:**
 
-- Service Desk Analyst
+- Service Desk Analyst <!-- role: service-desk-analyst -->
 - IT Support Technician with 2+ years of Tier-1/Tier-2 experience
 - Field/desktop support technician
 
 **Potential Next Roles:**
 
-- Service Desk Lead
+- Service Desk Lead <!-- role: service-desk-lead -->
 - Client Platform Engineer (for those developing OS/hardware engineering depth)
 - Endpoint Management Engineer (for those developing device management platform depth)
 

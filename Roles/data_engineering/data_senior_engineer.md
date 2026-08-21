@@ -6,7 +6,7 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | Data Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -111,7 +111,7 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Receive strategic direction; contribute implementation experience to architecture decisions | Escalates To |
+| Data Platform Architect <!-- role: data-platform-architect --> | Receive strategic direction; contribute implementation experience to architecture decisions | Escalates To |
 | DataOps Specialists | Collaborate on pipeline reliability, testing, and observability | Collaborates |
 | Data Engineers | Provide mentoring, code review, and design guidance | Provides To |
 | Analytics Engineers | Align on semantic layer requirements and data model design | Collaborates |
@@ -169,7 +169,7 @@ The Data Senior Engineer leads complex data engineering initiatives, drives data
 
 **Potential Next Roles:**
 
-- Data Platform Architect
+- Data Platform Architect <!-- role: data-platform-architect -->
 - Staff Data Engineer
 - DataOps Architect
 - MLOps / AI Platform Engineer

@@ -6,7 +6,7 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,9 +101,9 @@ The Security Product Owner manages the development and lifecycle of the organiza
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Risk Management | Risk prioritization | Governed By |
-| Compliance | Regulatory requirements | Governed By |
-| Security Architect | Technical strategy | Consumes From |
+| Risk Management <!-- external-role --> | Risk prioritization | Governed By |
+| Compliance <!-- external-role --> | Regulatory requirements | Governed By |
+| Security Architect <!-- role: security-architect --> | Technical strategy | Consumes From |
 | Business Unit leaders | Security requirements | Consumes From |
 | IT teams | Security implementation | Provides To |
 | executive leadership | Security investments | Provides To |
@@ -171,7 +171,7 @@ The Security Product Owner manages the development and lifecycle of the organiza
 
 **Previous Roles:**
 
-- Security Engineer
+- Security Engineer <!-- role: security-engineer -->
 - Security Operations Lead
 - Security Service Manager
 - Technical Project Manager

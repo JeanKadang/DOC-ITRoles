@@ -6,7 +6,7 @@
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Enterprise Architect |
+| **Reports To** | Enterprise Architect <!-- role: enterprise-architect --> |
 | **Direct Reports** | Enterprise Architecture Engineer (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -102,10 +102,10 @@ The Enterprise Architecture Senior Engineer operates at the intersection of tech
 | delivery teams | Understanding and applying architecture standards and documentation requirements | Provides To |
 | CMDB and IT asset management teams | Maintain accurate application and technology inventory data | Collaborates |
 | CTO/CIO office | Architecture reporting, maturity assessments, and executive communications | Provides To |
-| Enterprise Architect | Providing operational and documentation support for governance processes | Escalates To |
-| Solution Architect | Providing operational and documentation support for governance processes | Provides To |
+| Enterprise Architect <!-- role: enterprise-architect --> | Providing operational and documentation support for governance processes | Escalates To |
+| Solution Architect <!-- role: solution-architect --> | Providing operational and documentation support for governance processes | Provides To |
 | architecture review board | Chaired by the Enterprise Architect | Provides To |
-| Enterprise Architecture Engineer | Provides task direction, review, and mentoring on repository and documentation work | Provides To |
+| Enterprise Architecture Engineer <!-- role: enterprise-architecture-engineer --> | Provides task direction, review, and mentoring on repository and documentation work | Provides To |
 
 ## Key Technologies
 
@@ -164,8 +164,8 @@ The Enterprise Architecture Senior Engineer operates at the intersection of tech
 
 **Potential Next Roles:**
 
-- Solution Architect
-- Enterprise Architect
+- Solution Architect <!-- role: solution-architect -->
+- Enterprise Architect <!-- role: enterprise-architect -->
 - Domain Architect (Cloud, Security, Data, or other domain with aligned interest)
 - Architecture Practice Lead or Architecture Office Manager
 

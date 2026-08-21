@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Product Owner |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,7 +96,7 @@ The Storage Product Owner manages the development and lifecycle of the organizat
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Backup Solutions Product Owner | Data protection strategies | Collaborates |
-| Storage Architect | Technical strategy and design | Consumes From |
+| Storage Architect <!-- role: storage-architect --> | Technical strategy and design | Consumes From |
 | Application Product Owners | Storage requirements | Consumes From |
 | finance teams | Storage procurement and budgeting | Collaborates |
 | data governance teams | Storage compliance requirements | Governed By |

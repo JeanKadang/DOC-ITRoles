@@ -6,7 +6,7 @@
 | **Domain** | Database Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Architect |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors Database Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,7 +98,7 @@ The Database Architect designs comprehensive data management strategies and arch
 | Enterprise Architects | Data strategy | Governed By |
 | Security Architects | Database security design | Governed By |
 | Application Architects | Data persistence | Provides To |
-| Database Product Owner | Technical strategy | Collaborates |
+| Database Product Owner <!-- role: database-product-owner --> | Technical strategy | Collaborates |
 | Database Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
 | data governance teams | Compliance requirements | Governed By |
 
@@ -157,7 +157,7 @@ The Database Architect designs comprehensive data management strategies and arch
 
 **Previous Roles:**
 
-- Database Senior Engineer
+- Database Senior Engineer <!-- role: database-senior-engineer -->
 - Data Architect
 - Enterprise Application Architect
 - Database Administrator Team Lead
@@ -167,7 +167,7 @@ The Database Architect designs comprehensive data management strategies and arch
 
 - Chief Data Architect
 - Enterprise Data Management Director
-- Chief Data Officer
+- Chief Data Officer <!-- external-role -->
 - Technology Strategy Executive
 - CTO track positions
 

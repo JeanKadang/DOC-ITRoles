@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -113,13 +113,13 @@ The Identity and Access Governance Specialist owns the Identity Governance and A
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Security Architect | SoD policy alignment with the broader security control framework, risk acceptance processes for SoD exceptions, and audit preparation for identity governance controls | Governed By |
+| Security Architect <!-- role: security-architect --> | SoD policy alignment with the broader security control framework, risk acceptance processes for SoD exceptions, and audit preparation for identity governance controls | Governed By |
 | application owners | Onboard applications into the IGA platform, design entitlement models and role structures, and maintain application-specific certification and SoD configurations | Collaborates |
 | Compliance and Risk team | Identity governance evidence, access certification results, and SoD compliance reports in support of ISO 27001, SOC 2, SOX, and regulatory assessments | Provides To |
 | Internal and external audit teams | Identity governance evidence, access certification results, and SoD compliance reports in support of ISO 27001, SOC 2, SOX, and regulatory assessments | Provides To |
-| Access Management Senior Engineer | Coordinate with the identity engineering team on entitlement provisioning integration — ensuring IGA-driven provisioning events are correctly executed at the application and directory layer | Collaborates |
+| Access Management Senior Engineer <!-- role: access-management-senior-engineer --> | Coordinate with the identity engineering team on entitlement provisioning integration — ensuring IGA-driven provisioning events are correctly executed at the application and directory layer | Collaborates |
 | CyberArk Identity (or equivalent) | Ensure identity lifecycle events from the IGA platform are reflected in privileged account and vault membership management | Collaborates |
-| Identity Management Architect | Operates IGA platforms within the enterprise identity architecture framework and escalates platform or design decisions requiring architectural guidance | Escalates To |
+| Identity Management Architect <!-- role: identity-management-architect --> | Operates IGA platforms within the enterprise identity architecture framework and escalates platform or design decisions requiring architectural guidance | Escalates To |
 | Privileged Access Management (PAM) Architect and Engineer | Ensure privileged account entitlements are included in IGA certification scope, SoD analysis, and JML deprovisioning workflows — maintaining a unified governance view across standard and privileged identities | Collaborates |
 | HR systems teams (Workday, SAP HRIS owners) | Maintain JML integration reliability — managing attribute mapping updates, HR event trigger configurations, and data quality issues that affect automated provisioning | Consumes From |
 

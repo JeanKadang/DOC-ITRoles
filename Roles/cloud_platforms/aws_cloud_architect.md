@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors AWS Cloud Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -102,10 +102,10 @@ The AWS Cloud Platform Architect designs, implements, and governs cloud solution
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Linux Server Architect | EC2 deployments and AMI standards | Collaborates |
-| Kubernetes Architect | EKS implementations | Collaborates |
-| Database Architect | RDS and other AWS database services | Collaborates |
-| Observability Architect | CloudWatch and observability solutions | Collaborates |
+| Linux Server Architect <!-- role: linux-server-architect --> | EC2 deployments and AMI standards | Collaborates |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | EKS implementations | Collaborates |
+| Database Architect <!-- role: database-architect --> | RDS and other AWS database services | Collaborates |
+| Observability Architect <!-- role: observability-architect --> | CloudWatch and observability solutions | Collaborates |
 | Azure Cloud Platform Architect | Multi-cloud strategies | Collaborates |
 
 ## Key Technologies
@@ -167,10 +167,10 @@ The AWS Cloud Platform Architect designs, implements, and governs cloud solution
 
 **Previous Roles:**
 
-- AWS Cloud Senior Engineer
+- AWS Cloud Senior Engineer <!-- role: aws-cloud-senior-engineer -->
 - Cloud Solutions Architect
 - Enterprise Application Architect
-- DevOps Architect
+- DevOps Architect <!-- role: devops-architect -->
 - Technical Infrastructure Lead
 
 **Potential Next Roles:**

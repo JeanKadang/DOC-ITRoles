@@ -6,7 +6,7 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | DevOps Architect |
+| **Reports To** | DevOps Architect <!-- role: devops-architect --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -106,13 +106,13 @@ The Developer Experience Engineer designs, builds, and operates internal develop
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevOps Architect | Platform architecture, IDP strategy, and golden path standards | Escalates To |
+| DevOps Architect <!-- role: devops-architect --> | Platform architecture, IDP strategy, and golden path standards | Escalates To |
 | Azure, AWS, and GCP Cloud Architects | Designing self-service infrastructure provisioning workflows and cloud resource templates | Collaborates |
-| Kubernetes Architect | Align platform compute (cluster provisioning, namespace management, workload templates) with self-service IDP capabilities | Collaborates |
-| Security Architect | Embed security guardrails, policy-as-code checks, and compliance gates into golden path templates and platform scaffolding | Governed By |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | Align platform compute (cluster provisioning, namespace management, workload templates) with self-service IDP capabilities | Collaborates |
+| Security Architect <!-- role: security-architect --> | Embed security guardrails, policy-as-code checks, and compliance gates into golden path templates and platform scaffolding | Governed By |
 | application development teams | As primary customers — gathering productivity feedback, co-designing workflows, and supporting onboarding onto the IDP | Provides To |
-| Platform Reliability Engineer | Ensure IDP components and developer tooling meet reliability and availability standards | Collaborates |
-| Observability Architect | Or Observability Senior Engineers to include default instrumentation templates in golden paths | Collaborates |
+| Platform Reliability Engineer <!-- role: platform-reliability-engineer --> | Ensure IDP components and developer tooling meet reliability and availability standards | Collaborates |
+| Observability Architect <!-- role: observability-architect --> | Or Observability Senior Engineers to include default instrumentation templates in golden paths | Collaborates |
 
 ## Key Technologies
 
@@ -166,7 +166,7 @@ The Developer Experience Engineer designs, builds, and operates internal develop
 **Previous Roles:**
 
 - Software Engineer or Application Developer (with CI/CD and automation interest)
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - CI/CD Specialist or Build Engineer
 - Platform Engineer (entry level)
 - Site Reliability Engineer (early career)
@@ -175,7 +175,7 @@ The Developer Experience Engineer designs, builds, and operates internal develop
 
 - Developer Experience Senior Engineer
 - Platform Engineer (Senior)
-- DevOps Architect
+- DevOps Architect <!-- role: devops-architect -->
 - Internal Developer Platform Product Owner
 - Site Reliability Engineer (platform-focused)
 

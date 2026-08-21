@@ -6,7 +6,7 @@
 | **Domain** | C-Suite |
 | **Chapter:** | Leadership (Cross-cutting) |
 | **Role Level** | CEO |
-| **Reports To** | Board of Directors |
+| **Reports To** | Board of Directors <!-- external-role --> |
 | **Direct Reports** | CTO, CIO, or SVP of Technology (equivalent titles — org uses one); CFO; CISO (in direct-reporting governance models) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -157,11 +157,11 @@ Degree in Business, Economics, Law, Engineering, or a related field. An MBA or o
 | CTO / CIO / SVP of Technology | Direct reporting line; holds technology strategy, investment performance, and enterprise technology risk accountable | Provides To |
 | CISO | Direct or indirect reporting line (model-dependent); receives executive cyber risk briefings and sets risk appetite for security governance | Provides To |
 | CFO | Joint P&L oversight; capital allocation, investment governance, and Board financial reporting | Collaborates |
-| COO | Operational performance accountability; business continuity, enterprise operational risk, and cross-functional delivery | Collaborates |
-| CPO (Chief People Officer) | Executive talent strategy, succession planning, organisational design, and culture leadership | Collaborates |
-| Board of Directors | Primary governance accountability; strategy, performance, risk, executive appointments, and regulatory posture | Escalates To |
+| COO <!-- external-role --> | Operational performance accountability; business continuity, enterprise operational risk, and cross-functional delivery | Collaborates |
+| CPO (Chief People Officer) <!-- external-role --> | Executive talent strategy, succession planning, organisational design, and culture leadership | Collaborates |
+| Board of Directors <!-- external-role --> | Primary governance accountability; strategy, performance, risk, executive appointments, and regulatory posture | Escalates To |
 | Investors / Shareholders | External accountability relationship; investor relations, capital markets, and shareholder communications | Escalates To |
-| Regulators | External engagement; regulatory posture, formal notifications, government relations, and sector compliance | Escalates To |
+| Regulators <!-- external-role --> | External engagement; regulatory posture, formal notifications, government relations, and sector compliance | Escalates To |
 
 ## Key Technologies
 

@@ -6,7 +6,7 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Architect |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors the DevSecOps Engineer; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -115,7 +115,7 @@ The DevSecOps Architect is responsible for designing and governing the strategy,
 | DevOps Architect / Platform Engineering Architect | Embed security into CI/CD platforms as first-class capabilities | Collaborates |
 | Software Engineers / Development Teams | Define security requirements and provide enablement | Provides To |
 | Solution Architects | Ensure solution designs include security testing and supply chain considerations | Provides To |
-| Compliance / Audit | Provide evidence of security controls in the pipeline for regulatory requirements | Provides To |
+| Compliance / Audit <!-- external-role --> | Provide evidence of security controls in the pipeline for regulatory requirements | Provides To |
 
 ## Key Technologies
 

@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | .NET Senior Engineer |
+| **Reports To** | .NET Senior Engineer <!-- role: net-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,7 +96,7 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| .NET Platform Product Owner | Task prioritization | Consumes From |
+| .NET Platform Product Owner <!-- role: net-platform-product-owner --> | Task prioritization | Consumes From |
 | QA Engineers | Testing strategies | Collaborates |
 | DevOps Engineers | Deployment | Collaborates |
 | Database Engineers | Data access | Collaborates |
@@ -167,7 +167,7 @@ The .NET Engineer implements and maintains .NET-based applications and platform 
 
 **Potential Next Roles:**
 
-- .NET Senior Engineer
+- .NET Senior Engineer <!-- role: net-senior-engineer -->
 - Technical Team Lead
 - Full Stack Developer
 - DevOps Engineer with .NET focus

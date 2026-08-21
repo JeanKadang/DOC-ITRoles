@@ -103,7 +103,7 @@ The Technical Community Leader is a senior individual contributor responsible fo
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Architecture function (all domain Architects), Technical Area Leads | Enterprise architecture policy and domain-level technical direction inform the community's standards library and radar content | Consumes From |
-| Engineering Practices Champion | Coordinate engineering-culture initiatives with the wider technical community programme | Collaborates |
+| Engineering Practices Champion <!-- role: engineering-practices-champion --> | Coordinate engineering-culture initiatives with the wider technical community programme | Collaborates |
 | HR/L&D team, DevEx/Developer Experience Engineer | Internal learning and development alignment and developer-experience tooling for community platforms | Collaborates |
 | All engineering teams and practitioners | Community of practice participants, knowledge-sharing forums, and peer review | Provides To |
 | Vendor technical communities and industry peer groups | External technology radar input | Consumes From |

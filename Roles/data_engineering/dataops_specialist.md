@@ -6,7 +6,7 @@
 | **Domain** | Data Engineering |
 | **Chapter:** | Data & AI |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Data & AI Chapter Lead |
+| **Reports To** | Data & AI Chapter Lead <!-- role: data-and-ai-chapter-lead --> |
 | **Direct Reports** | None (formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -112,11 +112,11 @@ The DataOps Specialist applies DevOps and agile engineering principles to data p
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Data Platform Architect | Receives pipeline architecture standards and design direction; provides operational feedback on platform reliability and performance | Escalates To |
-| Data Mesh Architect | Aligns data product pipeline CI/CD standards with the data mesh governance framework; ensures domain data product pipelines meet quality and SLA requirements | Governed By |
-| DevOps Architect | Aligns data pipeline CI/CD toolchain with organisational DevOps standards, shared runners, and deployment governance | Governed By |
-| Observability Architect | Integrates data pipeline monitoring, alerting, and incident data with the enterprise observability platform (Datadog, Grafana, etc.) | Governed By |
-| AI Platform Architect | Coordinates on ML feature engineering pipeline orchestration reliability and MLOps CI/CD alignment | Collaborates |
+| Data Platform Architect <!-- role: data-platform-architect --> | Receives pipeline architecture standards and design direction; provides operational feedback on platform reliability and performance | Escalates To |
+| Data Mesh Architect <!-- role: data-mesh-architect --> | Aligns data product pipeline CI/CD standards with the data mesh governance framework; ensures domain data product pipelines meet quality and SLA requirements | Governed By |
+| DevOps Architect <!-- role: devops-architect --> | Aligns data pipeline CI/CD toolchain with organisational DevOps standards, shared runners, and deployment governance | Governed By |
+| Observability Architect <!-- role: observability-architect --> | Integrates data pipeline monitoring, alerting, and incident data with the enterprise observability platform (Datadog, Grafana, etc.) | Governed By |
+| AI Platform Architect <!-- role: ai-platform-architect --> | Coordinates on ML feature engineering pipeline orchestration reliability and MLOps CI/CD alignment | Collaborates |
 | Data Engineers across domains | Primary partners for pipeline code reviews, quality testing guidance, incident triage, and DataOps standards adoption | Provides To |
 
 ## Key Technologies
@@ -177,7 +177,7 @@ The DataOps Specialist applies DevOps and agile engineering principles to data p
 
 **Potential Next Roles:**
 
-- Data Platform Architect
+- Data Platform Architect <!-- role: data-platform-architect -->
 - Head of DataOps or Data Engineering Lead
 - Site Reliability Engineer (data SRE specialisation)
 - Data Mesh Architect (governance and standards focus)

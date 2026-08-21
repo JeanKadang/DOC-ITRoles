@@ -6,7 +6,7 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -103,7 +103,7 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevOps Architect | Platform strategy and design | Consumes From |
+| DevOps Architect <!-- role: devops-architect --> | Platform strategy and design | Consumes From |
 | DevOps Engineers | Implementation priorities | Provides To |
 | development teams | Understand pipeline requirements | Consumes From |
 | operations teams | Operational readiness | Collaborates |
@@ -161,7 +161,7 @@ The DevOps Product Owner manages the DevOps platform roadmap and adoption strate
 
 **Previous Roles:**
 
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Release Manager
 - Build and Release Engineer
 - Technical Project Manager

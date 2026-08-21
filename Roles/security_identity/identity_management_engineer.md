@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | Identity Management Senior Engineer |
+| **Reports To** | Identity Management Senior Engineer <!-- role: identity-management-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,10 +101,10 @@ The Identity Management Engineer implements and maintains identity management sy
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Identity Management Product Owner | Task prioritization | Consumes From |
+| Identity Management Product Owner <!-- role: identity-management-product-owner --> | Task prioritization | Consumes From |
 | Access Management Engineers | Integrated IAM solutions | Collaborates |
 | Windows Server Engineers | Active Directory operations | Collaborates |
-| Identity Management Architect | Implementation activities | Escalates To |
+| Identity Management Architect <!-- role: identity-management-architect --> | Implementation activities | Escalates To |
 | application teams | Identity integration | Provides To |
 
 ## Key Technologies
@@ -165,7 +165,7 @@ The Identity Management Engineer implements and maintains identity management sy
 
 **Potential Next Roles:**
 
-- Identity Management Senior Engineer
+- Identity Management Senior Engineer <!-- role: identity-management-senior-engineer -->
 - IAM Specialist
 - Identity Security Engineer
 - Authentication Services Lead

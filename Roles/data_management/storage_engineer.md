@@ -6,7 +6,7 @@
 | **Domain** | Data Management |
 | **Chapter:** | Data & AI |
 | **Role Level** | Engineer |
-| **Reports To** | Storage Senior Engineer |
+| **Reports To** | Storage Senior Engineer <!-- role: storage-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,11 +96,11 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Storage Product Owner | Task prioritization | Consumes From |
+| Storage Product Owner <!-- role: storage-product-owner --> | Task prioritization | Consumes From |
 | Server Infrastructure Engineers | Storage connectivity | Collaborates |
 | Virtualization Engineers | Storage for virtual machines | Provides To |
 | Backup Engineers | Backup storage integration | Collaborates |
-| Storage Architect | Implementation activities | Escalates To |
+| Storage Architect <!-- role: storage-architect --> | Implementation activities | Escalates To |
 | application teams | Storage requirements | Provides To |
 
 ## Key Technologies
@@ -165,7 +165,7 @@ The Storage Engineer implements and maintains enterprise storage solutions acros
 
 **Potential Next Roles:**
 
-- Storage Senior Engineer
+- Storage Senior Engineer <!-- role: storage-senior-engineer -->
 - SAN Administrator
 - Data Management Specialist
 - Infrastructure Team Lead

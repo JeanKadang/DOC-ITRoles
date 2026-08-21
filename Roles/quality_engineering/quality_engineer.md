@@ -6,7 +6,7 @@
 | **Domain** | Quality Engineering |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | Quality Engineering Senior Engineer |
+| **Reports To** | Quality Engineering Senior Engineer <!-- role: quality-engineering-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -100,11 +100,11 @@ The Quality Engineer builds and maintains automated tests for platform and appli
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Quality Engineering Senior Engineer | Receives test strategy direction; escalates flaky tests and coverage gaps | Escalates To |
-| DevOps Engineer | Contributes test stages to pipelines and interprets pipeline failures together | Collaborates |
+| Quality Engineering Senior Engineer <!-- role: quality-engineering-senior-engineer --> | Receives test strategy direction; escalates flaky tests and coverage gaps | Escalates To |
+| DevOps Engineer <!-- role: devops-engineer --> | Contributes test stages to pipelines and interprets pipeline failures together | Collaborates |
 | Delivery Teams | Provides automated coverage that gates their changes, and support on how to test a change | Provides To |
-| Automation Framework Engineer | Consumes shared automation frameworks and reusable tooling standards | Consumes From |
-| Change / Release Manager | Supplies test evidence that informs release decisions | Provides To |
+| Automation Framework Engineer <!-- role: automation-framework-engineer --> | Consumes shared automation frameworks and reusable tooling standards | Consumes From |
+| Change / Release Manager <!-- role: change-release-manager --> | Supplies test evidence that informs release decisions | Provides To |
 
 ## Key Technologies
 
@@ -156,10 +156,10 @@ The Quality Engineer builds and maintains automated tests for platform and appli
 
 **Potential Next Roles:**
 
-- Quality Engineering Senior Engineer
+- Quality Engineering Senior Engineer <!-- role: quality-engineering-senior-engineer -->
 - Software Engineer on a delivery team
-- DevOps Engineer
-- Automation Framework Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
+- Automation Framework Engineer <!-- role: automation-framework-engineer -->
 
 ## Recommended Certifications & Learning Paths
 

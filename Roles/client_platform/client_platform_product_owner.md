@@ -6,7 +6,7 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Product Owner |
-| **Reports To** | End User & Workplace Chapter Lead |
+| **Reports To** | End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -153,12 +153,12 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 
 - IT Business Analyst or Service Manager with EUC/endpoint domain knowledge
 - Client Platform Senior Engineer transitioning into product / delivery ownership
-- Endpoint Management Product Owner
+- Endpoint Management Product Owner <!-- role: endpoint-management-product-owner -->
 - IT Programme Manager (device / workplace focus)
 
 **To (typical next roles):**
 
-- End User & Workplace Chapter Lead
+- End User & Workplace Chapter Lead <!-- role: end-user-and-workplace-chapter-lead -->
 - Modern Workplace Product Owner (broader M365/collaboration scope)
 - IT Product Director / Head of IT Products
 - Senior IT Programme Manager
@@ -169,14 +169,14 @@ The Product Owner is accountable for ensuring the team delivers measurable outco
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Client Platform Architect | Collaborate on roadmap direction, technology selection decisions, and architecture-driven backlog items | Collaborates |
-| Client Platform Senior Engineer | Partner on backlog refinement, acceptance criteria, sprint planning, and delivery transparency | Collaborates |
-| Endpoint Management Product Owner | Align on cross-domain priorities where OS engineering meets UEM platform capabilities | Collaborates |
+| Client Platform Architect <!-- role: client-platform-architect --> | Collaborate on roadmap direction, technology selection decisions, and architecture-driven backlog items | Collaborates |
+| Client Platform Senior Engineer <!-- role: client-platform-senior-engineer --> | Partner on backlog refinement, acceptance criteria, sprint planning, and delivery transparency | Collaborates |
+| Endpoint Management Product Owner <!-- role: endpoint-management-product-owner --> | Align on cross-domain priorities where OS engineering meets UEM platform capabilities | Collaborates |
 | HR / People Operations | Manage device provisioning SLAs for onboarding; define acceptance criteria for new starter readiness | Consumes From |
-| Procurement | Lead hardware refresh planning, OEM vendor selection, device standard governance, and budget submissions | Collaborates |
+| Procurement <!-- external-role --> | Lead hardware refresh planning, OEM vendor selection, device standard governance, and budget submissions | Collaborates |
 | Security / CISO | Translate security hardening and compliance obligations into backlog items with prioritised delivery timelines | Consumes From |
-| Service Desk Lead | Report on provisioning performance, OS escalation volumes, and client estate health trends | Consumes From |
-| Finance | Manage hardware refresh budget planning, CapEx submissions, and lifecycle cost reporting | Collaborates |
+| Service Desk Lead <!-- role: service-desk-lead --> | Report on provisioning performance, OS escalation volumes, and client estate health trends | Consumes From |
+| Finance <!-- external-role --> | Manage hardware refresh budget planning, CapEx submissions, and lifecycle cost reporting | Collaborates |
 | Microsoft, Apple, OEM Vendors | Manage roadmap briefings, software assurance reviews, escalations, and commercial relationships | Governed By |
 
 ## Key Technologies

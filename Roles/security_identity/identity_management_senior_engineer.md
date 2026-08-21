@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | Identity Management Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,8 +101,8 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Identity Management Architect | Solution design and implementation strategy | Escalates To |
-| Identity Management Product Owner | Technical planning and roadmap execution | Collaborates |
+| Identity Management Architect <!-- role: identity-management-architect --> | Solution design and implementation strategy | Escalates To |
+| Identity Management Product Owner <!-- role: identity-management-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Access Management Senior Engineers | Integrated IAM solutions | Collaborates |
 | Cloud Senior Engineers | Cloud identity solutions | Collaborates |
 | Identity Management Engineers | Technical implementation | Provides To |
@@ -159,14 +159,14 @@ The Identity Management Senior Engineer leads the implementation and optimizatio
 
 **Previous Roles:**
 
-- Identity Management Engineer
+- Identity Management Engineer <!-- role: identity-management-engineer -->
 - Directory Services Administrator
 - Systems Administrator with identity focus
 - Security Engineer with IAM specialization
 
 **Potential Next Roles:**
 
-- Identity Management Architect
+- Identity Management Architect <!-- role: identity-management-architect -->
 - IAM Practice Leader
 - Identity & Access Management Director
 - Enterprise Identity Architect

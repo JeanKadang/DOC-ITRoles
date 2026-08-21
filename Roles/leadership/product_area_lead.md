@@ -110,7 +110,7 @@ The Product Area Lead (PAL) is a senior IT management role responsible for the e
 | CTO/CIO | Area strategy and investment | Escalates To |
 | other Product Area Leads | Cross-area dependencies, shared services, and portfolio alignment | Collaborates |
 | business stakeholders | Translating IT capability into business value | Provides To |
-| HR | Talent acquisition, development planning, and organizational design | Collaborates |
+| HR <!-- external-role --> | Talent acquisition, development planning, and organizational design | Collaborates |
 | vendor and partner relationships | Within the area in coordination with procurement | Governed By |
 
 ## Key Technologies

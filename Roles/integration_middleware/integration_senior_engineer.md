@@ -6,7 +6,7 @@
 | **Domain** | Integration & Middleware |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | Integration Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -109,7 +109,7 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Integration Architect | Receive architectural direction; contribute implementation feedback | Escalates To |
+| Integration Architect <!-- role: integration-architect --> | Receive architectural direction; contribute implementation feedback | Escalates To |
 | Integration Engineers | Mentor and review work | Provides To |
 | Application Teams | Design and agree integration contracts and API specifications | Collaborates |
 | DataOps Teams | Implement event-driven data feed integrations for the data platform | Collaborates |
@@ -160,14 +160,14 @@ The Integration Senior Engineer designs and implements complex enterprise integr
 
 **Previous Roles:**
 
-- Integration Engineer
+- Integration Engineer <!-- role: integration-engineer -->
 - Software Engineer / Backend Developer with API integration experience
 - ESB Developer (IBM MQ, Oracle SOA Suite background)
 
 **Potential Next Roles:**
 
-- Integration Architect
-- Solution Architect
+- Integration Architect <!-- role: integration-architect -->
+- Solution Architect <!-- role: solution-architect -->
 - Cloud Engineer (Azure Integration Services specialism)
 
 ## Recommended Certifications & Learning Paths

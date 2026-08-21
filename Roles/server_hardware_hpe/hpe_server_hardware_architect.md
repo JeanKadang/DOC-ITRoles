@@ -6,7 +6,7 @@
 | **Domain** | HPE Server Hardware |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors HPE Server Hardware Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -163,7 +163,7 @@ The HPE Server Hardware Architect designs and oversees the organization's server
 
 **Previous Roles:**
 
-- HPE Server Hardware Senior Engineer
+- HPE Server Hardware Senior Engineer <!-- role: hpe-server-hardware-senior-engineer -->
 - Data Center Infrastructure Manager
 - Enterprise Hardware Specialist
 - Technology Operations Leader

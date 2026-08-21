@@ -6,7 +6,7 @@
 | **Domain** | Cloud Platforms |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,8 +93,8 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Linux Server Product Owner | Amazon EC2 standards | Collaborates |
-| Database Product Owner | AWS database services strategy | Collaborates |
+| Linux Server Product Owner <!-- role: linux-server-product-owner --> | Amazon EC2 standards | Collaborates |
+| Database Product Owner <!-- role: database-product-owner --> | AWS database services strategy | Collaborates |
 | AWS Cloud Platform Architect | Technical strategy | Consumes From |
 | Application Product Owners | Platform requirements | Consumes From |
 | Security and Compliance teams | AWS controls | Governed By |
@@ -151,7 +151,7 @@ The AWS Cloud Platform Product Owner manages the organization's Amazon Web Servi
 
 **Previous Roles:**
 
-- AWS Cloud Engineer
+- AWS Cloud Engineer <!-- role: aws-cloud-engineer -->
 - Cloud Service Manager
 - Technical Product Manager
 - IT Infrastructure Manager

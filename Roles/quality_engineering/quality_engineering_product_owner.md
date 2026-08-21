@@ -6,7 +6,7 @@
 | **Domain** | Quality Engineering |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Product Owner |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,12 +101,12 @@ The Quality Engineering Product Owner treats the organisation's testing capabili
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Quality Engineering Architect | Receives standards and tooling selection criteria the backlog must respect | Governed By |
-| Quality Engineering Senior Engineer | As the workstream's product owner, leading ceremonies and providing delivery direction | Provides To |
-| Quality Engineer | As the workstream's product owner, leading ceremonies and providing delivery direction | Provides To |
-| DevOps Product Owner | Aligns quality tooling and pipeline platform roadmaps to avoid duplicated or blocking work | Collaborates |
+| Quality Engineering Architect <!-- role: quality-engineering-architect --> | Receives standards and tooling selection criteria the backlog must respect | Governed By |
+| Quality Engineering Senior Engineer <!-- role: quality-engineering-senior-engineer --> | As the workstream's product owner, leading ceremonies and providing delivery direction | Provides To |
+| Quality Engineer <!-- role: quality-engineer --> | As the workstream's product owner, leading ceremonies and providing delivery direction | Provides To |
+| DevOps Product Owner <!-- role: devops-product-owner --> | Aligns quality tooling and pipeline platform roadmaps to avoid duplicated or blocking work | Collaborates |
 | Delivery Teams | Gathers tooling pain points and delivers shared capability they consume | Provides To |
-| DevOps & Delivery Chapter Lead | Escalates budget, headcount, and cross-domain roadmap trade-offs | Escalates To |
+| DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> | Escalates budget, headcount, and cross-domain roadmap trade-offs | Escalates To |
 | Vendor TAM/PAM (test tooling vendors) | Product roadmap updates, support agreements, and licensing strategy | Collaborates |
 
 ## Key Technologies
@@ -158,9 +158,9 @@ The Quality Engineering Product Owner treats the organisation's testing capabili
 
 **Potential Next Roles:**
 
-- DevOps Product Owner
-- Platform Engineering Product Owner
-- DevOps & Delivery Chapter Lead
+- DevOps Product Owner <!-- role: devops-product-owner -->
+- Platform Engineering Product Owner <!-- role: platform-engineering-product-owner -->
+- DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead -->
 - Head of Engineering Productivity
 
 ## Recommended Certifications & Learning Paths

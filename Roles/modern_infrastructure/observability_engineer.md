@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Observability Senior Engineer |
+| **Reports To** | Observability Senior Engineer <!-- role: observability-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -168,9 +168,9 @@ The Observability Engineer implements and maintains monitoring, logging, and tra
 
 **Potential Next Roles:**
 
-- Observability Senior Engineer
-- DevOps Engineer
-- Site Reliability Engineer
+- Observability Senior Engineer <!-- role: observability-senior-engineer -->
+- DevOps Engineer <!-- role: devops-engineer -->
+- Site Reliability Engineer <!-- role: site-reliability-engineer -->
 - Platform Engineer
 - Monitoring Team Lead
 

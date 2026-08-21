@@ -6,7 +6,7 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | Commvault Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,8 +93,8 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Commvault Architect | Solution design and implementation strategy | Escalates To |
-| Commvault Product Owner | Technical planning and roadmap execution | Collaborates |
+| Commvault Architect <!-- role: commvault-architect --> | Solution design and implementation strategy | Escalates To |
+| Commvault Product Owner <!-- role: commvault-product-owner --> | Technical planning and roadmap execution | Collaborates |
 | Storage Senior Engineers | Backup storage integration | Collaborates |
 | Virtualization Senior Engineers | VM backup strategies | Collaborates |
 | Commvault Engineers | Technical implementation | Provides To |
@@ -155,14 +155,14 @@ The Commvault Senior Engineer leads the implementation and optimization of enter
 
 **Previous Roles:**
 
-- Commvault Engineer
+- Commvault Engineer <!-- role: commvault-engineer -->
 - Backup Administrator
 - Data Protection Specialist
 - Storage Administrator
 
 **Potential Next Roles:**
 
-- Commvault Architect
+- Commvault Architect <!-- role: commvault-architect -->
 - Data Protection Architect
 - Backup and Recovery Manager
 - Enterprise Storage Architect

@@ -6,7 +6,7 @@
 | **Domain** | Specialized Computing |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | HPC Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -113,8 +113,8 @@ The HPC Senior Engineer leads the technical implementation, automation, and opti
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| HPC Architect | Solution design, automation, and implementation strategies | Escalates To |
-| HPC Product Owner | Technical planning, roadmap execution, and user requirements | Collaborates |
+| HPC Architect <!-- role: hpc-architect --> | Solution design, automation, and implementation strategies | Escalates To |
+| HPC Product Owner <!-- role: hpc-product-owner --> | Technical planning, roadmap execution, and user requirements | Collaborates |
 | Server Hardware Senior Engineers | HPC infrastructure and upgrades | Collaborates |
 | Cloud Senior Engineers | Cloud and hybrid HPC solutions | Collaborates |
 | Security Engineers | Ensure compliance and data protection | Governed By |
@@ -176,14 +176,14 @@ The HPC Senior Engineer leads the technical implementation, automation, and opti
 
 **Previous Roles:**
 
-- HPC Engineer
+- HPC Engineer <!-- role: hpc-engineer -->
 - Scientific Computing Specialist
 - Research Computing Engineer
 - Linux System Administrator with HPC focus
 
 **Potential Next Roles:**
 
-- HPC Architect
+- HPC Architect <!-- role: hpc-architect -->
 - Research Computing Director
 - Scientific Computing Manager
 - Chief Technology Officer (research organization)

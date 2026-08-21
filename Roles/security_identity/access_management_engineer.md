@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | Access Management Senior Engineer |
+| **Reports To** | Access Management Senior Engineer <!-- role: access-management-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,10 +101,10 @@ The Access Management Engineer implements and maintains access management system
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Access Management Product Owner | Task prioritization | Consumes From |
+| Access Management Product Owner <!-- role: access-management-product-owner --> | Task prioritization | Consumes From |
 | Identity Management Engineers | Integrated IAM solutions | Collaborates |
 | Security Engineers | Access security controls | Collaborates |
-| Access Management Architect | Implementation activities | Escalates To |
+| Access Management Architect <!-- role: access-management-architect --> | Implementation activities | Escalates To |
 | application teams | Access requirements | Provides To |
 
 ## Key Technologies
@@ -166,9 +166,9 @@ The Access Management Engineer implements and maintains access management system
 
 **Potential Next Roles:**
 
-- Access Management Senior Engineer
+- Access Management Senior Engineer <!-- role: access-management-senior-engineer -->
 - Identity and Access Management Specialist
-- Security Engineer
+- Security Engineer <!-- role: security-engineer -->
 - Privileged Access Management Specialist
 - IAM Team Lead
 

@@ -6,7 +6,7 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,7 +101,7 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Kubernetes Architect | Platform strategy and design | Consumes From |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | Platform strategy and design | Consumes From |
 | Kubernetes Engineers | Implementation priorities | Provides To |
 | application teams | Understand containerization requirements | Consumes From |
 | enterprise architecture | Alignment with standards | Governed By |
@@ -159,8 +159,8 @@ The Kubernetes Product Owner manages the container platform roadmap and service 
 
 **Previous Roles:**
 
-- Kubernetes Engineer
-- DevOps Engineer
+- Kubernetes Engineer <!-- role: kubernetes-engineer -->
+- DevOps Engineer <!-- role: devops-engineer -->
 - Platform Engineer
 - Technical Project Manager
 - Application Developer with container focus

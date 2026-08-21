@@ -6,7 +6,7 @@
 | **Domain** | Client Platform |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
-| **Reports To** | Client Platform Senior Engineer |
+| **Reports To** | Client Platform Senior Engineer <!-- role: client-platform-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -152,8 +152,8 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 
 **To (typical next roles):**
 
-- Client Platform Senior Engineer
-- Endpoint Management Engineer
+- Client Platform Senior Engineer <!-- role: client-platform-senior-engineer -->
+- Endpoint Management Engineer <!-- role: endpoint-management-engineer -->
 - Modern Workplace Engineer
 - Systems Administrator (Windows or macOS focused)
 
@@ -163,8 +163,8 @@ The Engineer plays a critical role in the device lifecycle — from imaging new 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Client Platform Senior Engineer | Day-to-day technical guidance, escalation point, and peer review of packaging output | Escalates To |
-| Client Platform Architect | Receive procedures and standards; escalate design-level questions through the Senior Engineer | Governed By |
+| Client Platform Senior Engineer <!-- role: client-platform-senior-engineer --> | Day-to-day technical guidance, escalation point, and peer review of packaging output | Escalates To |
+| Client Platform Architect <!-- role: client-platform-architect --> | Receive procedures and standards; escalate design-level questions through the Senior Engineer | Governed By |
 | Service Desk (Tier 1) | Receive OS-level escalations; provide resolution and knowledge transfer back to Tier 1 | Provides To |
 | Endpoint Management Engineers | Coordinate on Intune application deployment and compliance policy interactions | Collaborates |
 | HR / People Operations | Align device setup timing with new employee start dates and onboarding cohort schedules | Collaborates |

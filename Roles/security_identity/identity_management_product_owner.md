@@ -6,7 +6,7 @@
 | **Domain** | Security & Identity |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -131,8 +131,8 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Access Management Product Owner | Integrated IAM strategy | Collaborates |
-| Identity Management Architect | Technical strategy | Consumes From |
+| Access Management Product Owner <!-- role: access-management-product-owner --> | Integrated IAM strategy | Collaborates |
+| Identity Management Architect <!-- role: identity-management-architect --> | Technical strategy | Consumes From |
 | security and compliance teams | Identity policies | Governed By |
 | Application Product Owners | Application identity requirements | Consumes From |
 | HR and business unit representatives | Identity lifecycle processes | Consumes From |
@@ -189,7 +189,7 @@ The Identity Management Product Owner manages the development and lifecycle of t
 
 **Previous Roles:**
 
-- Identity Management Engineer
+- Identity Management Engineer <!-- role: identity-management-engineer -->
 - IAM Specialist
 - IT Service Manager
 - Technical Project Manager

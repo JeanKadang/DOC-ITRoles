@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Senior Engineer |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | Java Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,7 +97,7 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
 | Java Architect | Solution design | Escalates To |
-| Java Platform Product Owner | Technical planning | Collaborates |
+| Java Platform Product Owner <!-- role: java-platform-product-owner --> | Technical planning | Collaborates |
 | DevOps Senior Engineers | CI/CD pipelines | Collaborates |
 | Security Senior Engineers | Application security | Governed By |
 | Database Senior Engineers | Data access layers | Collaborates |
@@ -158,7 +158,7 @@ The Java Senior Engineer leads the implementation and optimization of complex Ja
 
 **Previous Roles:**
 
-- Java Engineer
+- Java Engineer <!-- role: java-engineer -->
 - Full Stack Developer with Java focus
 - Application Developer
 - Software Engineer

@@ -6,7 +6,7 @@
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,11 +98,11 @@ The Enterprise Architecture Product Owner owns the backlog for the enterprise ar
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Enterprise Architect | Receives architecture strategy direction; ensures practice tooling backlog supports governance priorities | Governed By |
-| Solution Architect | Gathers tooling and documentation-platform improvement needs | Consumes From |
-| Enterprise Architecture Senior Engineer | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |
-| Enterprise Architecture Engineer | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |
-| Service & Governance Chapter Lead | Escalates budget, headcount, and cross-domain roadmap trade-offs | Escalates To |
+| Enterprise Architect <!-- role: enterprise-architect --> | Receives architecture strategy direction; ensures practice tooling backlog supports governance priorities | Governed By |
+| Solution Architect <!-- role: solution-architect --> | Gathers tooling and documentation-platform improvement needs | Consumes From |
+| Enterprise Architecture Senior Engineer <!-- role: enterprise-architecture-senior-engineer --> | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |
+| Enterprise Architecture Engineer <!-- role: enterprise-architecture-engineer --> | As the team's product owner, leading ceremonies and providing delivery direction | Provides To |
+| Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> | Escalates budget, headcount, and cross-domain roadmap trade-offs | Escalates To |
 | Domain Architects | Collect feedback on repository and documentation platform usability | Collaborates |
 | Vendor TAM/PAM (LeanIX, Bizzdesign, ARIS) | Product roadmap updates, support agreements, and licensing strategy | Collaborates |
 
@@ -152,7 +152,7 @@ The Enterprise Architecture Product Owner owns the backlog for the enterprise ar
 
 **Potential Next Roles:**
 
-- Service & Governance Chapter Lead
+- Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead -->
 - Enterprise Architect (via architecture practice depth)
 - Head of Architecture Practice / Architecture Operations
 

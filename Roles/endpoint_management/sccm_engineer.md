@@ -6,7 +6,7 @@
 | **Domain** | Endpoint Management |
 | **Chapter:** | End User & Workplace |
 | **Role Level** | Engineer |
-| **Reports To** | Endpoint Management Senior Engineer |
+| **Reports To** | Endpoint Management Senior Engineer <!-- role: endpoint-management-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -99,7 +99,7 @@ The SCCM Engineer implements and maintains Microsoft System Center Configuration
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Endpoint Management Product Owner | Task prioritization | Consumes From |
+| Endpoint Management Product Owner <!-- role: endpoint-management-product-owner --> | Task prioritization | Consumes From |
 | Windows Server Engineers | Infrastructure | Collaborates |
 | Security Engineers | Endpoint security | Governed By |
 | Application Packaging | Software deployment | Collaborates |

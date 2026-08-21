@@ -6,7 +6,7 @@
 | **Domain** | Enterprise Architecture |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Engineer |
-| **Reports To** | Enterprise Architecture Senior Engineer |
+| **Reports To** | Enterprise Architecture Senior Engineer <!-- role: enterprise-architecture-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -98,9 +98,9 @@ The Enterprise Architecture Engineer supports the enterprise architecture functi
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Enterprise Architecture Senior Engineer | Receives task direction, review feedback, and escalates tooling or data-quality issues | Escalates To |
-| Enterprise Architect | Repository accuracy supports architecture governance decisions | Provides To |
-| Solution Architect | Repository and diagram support for solution-level design work | Provides To |
+| Enterprise Architecture Senior Engineer <!-- role: enterprise-architecture-senior-engineer --> | Receives task direction, review feedback, and escalates tooling or data-quality issues | Escalates To |
+| Enterprise Architect <!-- role: enterprise-architect --> | Repository accuracy supports architecture governance decisions | Provides To |
+| Solution Architect <!-- role: solution-architect --> | Repository and diagram support for solution-level design work | Provides To |
 | Domain Architects | Source data and confirmation for repository updates in their domain | Consumes From |
 | Delivery Teams | Fields routine documentation and repository access questions | Provides To |
 
@@ -151,7 +151,7 @@ The Enterprise Architecture Engineer supports the enterprise architecture functi
 
 **Potential Next Roles:**
 
-- Enterprise Architecture Senior Engineer
+- Enterprise Architecture Senior Engineer <!-- role: enterprise-architecture-senior-engineer -->
 - Solution Architect (via broader domain experience)
 - Domain Engineer role with architecture exposure
 

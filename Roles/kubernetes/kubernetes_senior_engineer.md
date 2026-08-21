@@ -6,7 +6,7 @@
 | **Domain** | Kubernetes |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | Kubernetes Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,7 +104,7 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Kubernetes Architect | Platform design decisions | Escalates To |
+| Kubernetes Architect <!-- role: kubernetes-architect --> | Platform design decisions | Escalates To |
 | Kubernetes Engineers | Technical matters | Provides To |
 | DevOps teams | Advanced pipeline integrations | Collaborates |
 | application architects | Container strategy | Collaborates |
@@ -165,14 +165,14 @@ The Kubernetes Senior Engineer leads complex containerization initiatives and ad
 
 **Previous Roles:**
 
-- Kubernetes Engineer
+- Kubernetes Engineer <!-- role: kubernetes-engineer -->
 - DevOps Engineer with Kubernetes focus
 - Linux Systems Administrator
 - Cloud Platform Engineer
 
 **Potential Next Roles:**
 
-- Kubernetes Architect
+- Kubernetes Architect <!-- role: kubernetes-architect -->
 - Cloud Native Architect
 - Platform Engineering Manager
 - Site Reliability Engineering (SRE) Lead

@@ -6,7 +6,7 @@
 | **Domain** | Data Protection |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -93,8 +93,8 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| VMware Product Owner | Virtualization integration | Collaborates |
-| SimpliVity Backup Architect | Technical strategy | Consumes From |
+| VMware Product Owner <!-- role: vmware-product-owner --> | Virtualization integration | Collaborates |
+| SimpliVity Backup Architect <!-- role: simplivity-backup-architect --> | Technical strategy | Consumes From |
 | compliance and security teams | Data protection policies | Governed By |
 | Service Delivery Managers | Backup operations | Collaborates |
 | application owners | Recovery point/time objectives | Consumes From |
@@ -165,7 +165,7 @@ The SimpliVity Backup Product Owner manages the development and lifecycle of the
 
 **Previous Roles:**
 
-- SimpliVity Backup Engineer
+- SimpliVity Backup Engineer <!-- role: simplivity-backup-engineer -->
 - Backup Administrator
 - Storage Administrator
 - VMware Administrator

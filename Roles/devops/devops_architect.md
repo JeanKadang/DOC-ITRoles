@@ -6,7 +6,7 @@
 | **Domain** | DevOps |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Architect |
-| **Reports To** | DevOps & Delivery Chapter Lead |
+| **Reports To** | DevOps & Delivery Chapter Lead <!-- role: devops-and-delivery-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors DevOps Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,9 +96,9 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 | Enterprise Architects | Align DevOps platform standards with enterprise technology standards | Governed By |
 | Security Architects | Define the DevSecOps control framework, supply chain security policies (SLSA, SBOM), and security gate standards within CI/CD pipelines | Collaborates |
 | Cloud Architects | Align deployment architectures with cloud platform design | Collaborates |
-| DevOps Product Owner | Technical strategy input to backlog and roadmap prioritisation | Collaborates |
+| DevOps Product Owner <!-- role: devops-product-owner --> | Technical strategy input to backlog and roadmap prioritisation | Collaborates |
 | DevOps Senior Engineers | Provide architectural direction and mentoring; receive implementation feedback | Provides To |
-| Data Platform Architect | Data pipeline CI/CD governance, data quality gates, and dbt/Spark job deployment automation | Collaborates |
+| Data Platform Architect <!-- role: data-platform-architect --> | Data pipeline CI/CD governance, data quality gates, and dbt/Spark job deployment automation | Collaborates |
 | application architects | Delivery pipeline design and consumption patterns | Provides To |
 
 ## Key Technologies
@@ -160,10 +160,10 @@ The DevOps Architect designs comprehensive strategies and architectures for enab
 
 **Previous Roles:**
 
-- DevOps Senior Engineer
+- DevOps Senior Engineer <!-- role: devops-senior-engineer -->
 - CI/CD Specialist
 - Release Engineering Lead
-- Infrastructure Automation Architect
+- Infrastructure Automation Architect <!-- role: infrastructure-automation-architect -->
 - Site Reliability Engineer Lead
 
 **Potential Next Roles:**

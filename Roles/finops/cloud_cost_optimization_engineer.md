@@ -6,7 +6,7 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | FinOps Senior Engineer |
+| **Reports To** | FinOps Senior Engineer <!-- role: finops-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -105,7 +105,7 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| FinOps Senior Engineer | Receives task prioritisation and technical guidance | Escalates To |
+| FinOps Senior Engineer <!-- role: finops-senior-engineer --> | Receives task prioritisation and technical guidance | Escalates To |
 | Cloud Platform Engineers | Coordinates on resource tagging, anomaly resolution, and rightsizing implementation | Collaborates |
 | DevOps Engineers | Coordinates cost-efficient deployment practices | Collaborates |
 | Application owners | Supports tagging, anomaly resolution, and rightsizing initiatives | Provides To |
@@ -166,14 +166,14 @@ The Cloud Cost Optimization Engineer is responsible for the hands-on implementat
 **Previous Roles:**
 
 - Cloud Engineer
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Infrastructure Engineer
 - Systems Administrator with cloud exposure
 - IT Operations Analyst transitioning to cloud
 
 **Potential Next Roles:**
 
-- FinOps Senior Engineer
+- FinOps Senior Engineer <!-- role: finops-senior-engineer -->
 - Cloud Platform Engineer (cost-focused track)
 - FinOps Architect (with additional experience and certifications)
 - Cloud Operations Lead

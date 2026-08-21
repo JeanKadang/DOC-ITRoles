@@ -6,7 +6,7 @@
 | **Domain** | Security |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Engineer |
-| **Reports To** | Security Senior Engineer |
+| **Reports To** | Security Senior Engineer <!-- role: security-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -95,7 +95,7 @@ The Security Engineer implements and maintains security controls and technologie
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Security Product Owner | Task prioritization | Consumes From |
+| Security Product Owner <!-- role: security-product-owner --> | Task prioritization | Consumes From |
 | Network Engineers | Security controls | Collaborates |
 | System Administrators | Endpoint security | Collaborates |
 | Identity Engineers | Access controls | Collaborates |
@@ -165,7 +165,7 @@ The Security Engineer implements and maintains security controls and technologie
 
 **Potential Next Roles:**
 
-- Security Senior Engineer
+- Security Senior Engineer <!-- role: security-senior-engineer -->
 - Security Specialist
 - Application Security Engineer
 - Security Operations Lead

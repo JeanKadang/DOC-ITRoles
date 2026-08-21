@@ -6,7 +6,7 @@
 | **Domain** | Virtualization |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Engineer |
-| **Reports To** | Nutanix Senior Engineer |
+| **Reports To** | Nutanix Senior Engineer <!-- role: nutanix-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -104,11 +104,11 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Nutanix Product Owner | Task prioritization | Consumes From |
+| Nutanix Product Owner <!-- role: nutanix-product-owner --> | Task prioritization | Consumes From |
 | Server Hardware Engineers | Physical infrastructure | Collaborates |
 | Network Engineers | Connectivity requirements | Collaborates |
 | Security Engineers | Infrastructure security | Governed By |
-| Nutanix Architect | Implementation activities | Escalates To |
+| Nutanix Architect <!-- role: nutanix-architect --> | Implementation activities | Escalates To |
 | application teams | Infrastructure needs | Provides To |
 
 ## Key Technologies
@@ -171,7 +171,7 @@ The Nutanix Engineer implements and maintains hyperconverged infrastructure base
 
 **Potential Next Roles:**
 
-- Nutanix Senior Engineer
+- Nutanix Senior Engineer <!-- role: nutanix-senior-engineer -->
 - HCI Team Lead
 - Cloud Infrastructure Engineer
 - Infrastructure Architect

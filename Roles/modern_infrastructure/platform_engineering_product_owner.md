@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Product Owner |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -97,9 +97,9 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| DevOps Product Owner | CI/CD integration | Collaborates |
+| DevOps Product Owner <!-- role: devops-product-owner --> | CI/CD integration | Collaborates |
 | Cloud Platform Product Owners | Infrastructure services | Collaborates |
-| Platform Engineering Architect | Technical strategy | Consumes From |
+| Platform Engineering Architect <!-- role: platform-engineering-architect --> | Technical strategy | Consumes From |
 | Application Product Owners | Developer requirements | Consumes From |
 | development team leaders | Platform adoption | Provides To |
 | IT leadership | Platform strategy and investments | Provides To |
@@ -161,7 +161,7 @@ The Platform Engineering Product Owner manages the roadmap and development of in
 **Previous Roles:**
 
 - Platform Engineer
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Technical Product Manager
 - Developer Experience Specialist
 - Development Team Lead

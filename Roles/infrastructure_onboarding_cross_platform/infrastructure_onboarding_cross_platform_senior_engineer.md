@@ -6,7 +6,7 @@
 | **Domain** | Infrastructure Onboarding |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Senior Engineer |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | Infrastructure Onboarding Engineers (day-to-day technical guidance and mentoring; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -159,7 +159,7 @@ The Enterprise Infrastructure Onboarding Senior Engineer leads the implementatio
 **Previous Roles:**
 
 - Infrastructure Onboarding Engineer
-- DevOps Engineer
+- DevOps Engineer <!-- role: devops-engineer -->
 - Automation Specialist
 - Platform Engineer
 - Infrastructure Engineer with automation focus

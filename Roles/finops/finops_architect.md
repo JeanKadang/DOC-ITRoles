@@ -6,7 +6,7 @@
 | **Domain** | FinOps |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors FinOps Senior Engineers; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -171,7 +171,7 @@ See also: [Cloud Cost Optimization Standards](cloud_cost_optimization_standards.
 
 **Previous Roles:**
 
-- FinOps Senior Engineer
+- FinOps Senior Engineer <!-- role: finops-senior-engineer -->
 - Cloud Solutions Architect with cost focus
 - IT Financial Manager
 - Cloud Engineering Manager

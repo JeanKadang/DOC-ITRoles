@@ -6,7 +6,7 @@
 | **Domain** | Security Cross-Platform |
 | **Chapter:** | Security & Identity |
 | **Role Level** | Product Owner |
-| **Reports To** | Security & Identity Chapter Lead |
+| **Reports To** | Security & Identity Chapter Lead <!-- role: security-and-identity-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -101,7 +101,7 @@ The Security Cross-Platform Product Owner manages the portfolio of security serv
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Security Cross-Platform Architect | Align product roadmap with architectural vision | Consumes From |
+| Security Cross-Platform Architect <!-- role: security-cross-platform-architect --> | Align product roadmap with architectural vision | Consumes From |
 | domain-specific Product Owners | Security features are prioritized in their roadmaps | Collaborates |
 | business stakeholders | Understand security requirements that span multiple domains | Consumes From |
 | security compliance teams | Regulatory requirements are addressed across platforms | Governed By |

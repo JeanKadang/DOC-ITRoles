@@ -6,7 +6,7 @@
 | **Domain** | Modern Infrastructure |
 | **Chapter:** | Cloud, Platform & Infrastructure |
 | **Role Level** | Architect |
-| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead |
+| **Reports To** | Cloud, Platform & Infrastructure Chapter Lead <!-- role: cloud-platform-and-infrastructure-chapter-lead --> |
 | **Direct Reports** | None (sets technical direction and mentors the GenAI Platform Engineer; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -90,8 +90,8 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 | MLOps Engineers | Pipeline implementation and model deployment | Collaborates |
 | Security Architects | AI security controls and LLM governance | Governed By |
 | Cloud Platform Architects (Azure, AWS, GCP) | AI service integration | Collaborates |
-| Platform Engineering Architect | IDP integration of AI tooling | Collaborates |
-| FinOps Architect | AI/LLM cost governance | Governed By |
+| Platform Engineering Architect <!-- role: platform-engineering-architect --> | IDP integration of AI tooling | Collaborates |
+| FinOps Architect <!-- role: finops-architect --> | AI/LLM cost governance | Governed By |
 | Enterprise Architects | AI platform strategy and roadmap | Governed By |
 | Data Scientists and AI Engineers | Platform capabilities and golden paths | Provides To |
 | AI Platform Architect (AI Governance) | Alignment between classical MLOps platform architecture and GenAI/LLM platform architecture | Collaborates |
@@ -175,11 +175,11 @@ The GenAI Platform Architect designs and governs the organization's artificial i
 - Cloud Platform Architect with AI/ML focus
 - Data Scientist with platform engineering experience
 - Senior AI/ML Engineer
-- Platform Engineering Architect
+- Platform Engineering Architect <!-- role: platform-engineering-architect -->
 
 **Potential Next Roles:**
 
-- Chief AI Officer (CAIO)
+- Chief AI Officer (CAIO) <!-- external-role -->
 - VP of AI Engineering
 - CTO track positions
 - Distinguished Engineer (AI Systems)

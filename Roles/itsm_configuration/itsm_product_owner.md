@@ -6,7 +6,7 @@
 | **Domain** | ITSM & Configuration |
 | **Chapter:** | Service & Governance |
 | **Role Level** | Product Owner |
-| **Reports To** | Service & Governance Chapter Lead |
+| **Reports To** | Service & Governance Chapter Lead <!-- role: service-and-governance-chapter-lead --> |
 | **Direct Reports** | None (owns backlog and roadmap; formal line management sits with the Chapter Lead) |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -160,7 +160,7 @@ The ITSM Product Owner owns the product vision, roadmap, and backlog for the org
 
 **Potential Next Roles:**
 
-- Service Management Architect
+- Service Management Architect <!-- role: service-management-architect -->
 - IT Portfolio Manager
 - Head of IT Service Management
 - IT Operations Director

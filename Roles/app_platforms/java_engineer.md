@@ -6,7 +6,7 @@
 | **Domain** | App Platforms |
 | **Chapter:** | DevOps & Delivery |
 | **Role Level** | Engineer |
-| **Reports To** | Java Senior Engineer |
+| **Reports To** | Java Senior Engineer <!-- role: java-senior-engineer --> |
 | **Direct Reports** | None |
 | **Content Owner** | catalogue-maintainers |
 | **Review Status** | mechanical |
@@ -96,7 +96,7 @@ The Java Engineer implements and maintains Java-based applications and platform 
 
 | Role | Nature of Interaction | Interaction Mode |
 |---|---|---|
-| Java Platform Product Owner | Task prioritization | Consumes From |
+| Java Platform Product Owner <!-- role: java-platform-product-owner --> | Task prioritization | Consumes From |
 | QA Engineers | Testing strategies | Collaborates |
 | DevOps Engineers | Deployment | Collaborates |
 | Database Engineers | Data access | Collaborates |
@@ -167,7 +167,7 @@ The Java Engineer implements and maintains Java-based applications and platform 
 
 **Potential Next Roles:**
 
-- Java Senior Engineer
+- Java Senior Engineer <!-- role: java-senior-engineer -->
 - Technical Team Lead
 - Full Stack Developer
 - DevOps Engineer with Java focus
