@@ -460,10 +460,15 @@
     }
 
     // Parse a role file's "## Career Development Path" section into
-    // { from: [...], to: [...] }. The catalog uses two heading variants
-    // ("Previous Roles:" / "Potential Next Roles:" in 210 files,
-    // "From (typical previous roles):" / "To (typical next roles):" in 6);
-    // both are handled. Returns empty lists when the section is absent.
+    // { from: [Item...], to: [Item...] } where Item = { label, parsed }:
+    // `label` is the bullet's display text with any #269/#270 annotation
+    // comment stripped, and `parsed` is that same raw bullet run through
+    // parseRelationshipField (below) so a caller can resolve an annotated
+    // target by role id instead of by title-matching the display label. The
+    // catalog uses two heading variants ("Previous Roles:" / "Potential Next
+    // Roles:" in 210 files, "From (typical previous roles):" / "To (typical
+    // next roles):" in 6); both are handled. Returns empty lists when the
+    // section is absent.
     function parseCareerPath(markdown) {
         const section = String(markdown).split(/^## Career Development Path\s*$/m)[1];
         const out = { from: [], to: [] };
@@ -480,9 +485,44 @@
                 continue;
             }
             const item = current && line.match(/^-\s+(.+)$/);
-            if (item) out[current].push(stripAnnotations(item[1]));
+            if (item) {
+                const raw = item[1];
+                out[current].push({ label: stripAnnotations(raw), parsed: parseRelationshipField(raw) });
+            }
         }
         return out;
+    }
+
+    // Extracts the Role column of the per-role "## Interactions with Other
+    // Roles" table, in row order, so linkInteractionRoles (index.html) can
+    // resolve each row by id instead of re-deriving a fuzzy title match
+    // from post-render DOM text (which has already lost the annotation —
+    // marked+DOMPurify drop HTML comments before any JS sees the cell).
+    function parseInteractionRoles(markdown) {
+        const section = String(markdown).split(/^## Interactions with Other Roles\s*$/m)[1];
+        if (!section) return [];
+        const body = section.split(/\r?\n## /)[0];
+        const rows = [];
+        // Positional, not name-based: the first "|"-prefixed line is always
+        // the header row and the second is always the "|---|---|" separator,
+        // regardless of what the header cells say. linkInteractionRoles
+        // (index.html) pairs rows[i] against the i-th real DOM <tr> by
+        // position, so a name-based check (matching the literal word "Role")
+        // that fails to fire on a differently-worded header (e.g.
+        // "Role / Team") would shift every subsequent row by one and link
+        // every interaction cell to the wrong role (#270 final review,
+        // Finding 2).
+        let pipeRowIndex = -1;
+        for (const line of body.split(/\r?\n/)) {
+            if (!/^\|/.test(line)) continue;
+            pipeRowIndex++;
+            if (pipeRowIndex < 2) continue; // header (0) and separator (1)
+            const cellMatch = line.match(/^\|\s*([^|]*?)\s*\|/);
+            if (!cellMatch) continue;
+            const raw = cellMatch[1];
+            rows.push({ label: stripAnnotations(raw), parsed: parseRelationshipField(raw) });
+        }
+        return rows;
     }
 
     // Resolve a Markdown link href relative to the file it appears in.
@@ -675,6 +715,103 @@
             .replace(/\s+([,;])/g, '$1')
             .replace(/\s+/g, ' ')
             .trim();
+    }
+
+    // Mirror of parseRelationshipField in scripts/lib/relationship-annotations.js
+    // (the canonical implementation). Same constraint as stripAnnotations
+    // above: index.html loads this file via a plain <script> tag, so it
+    // cannot require() that module directly. The equivalence test in
+    // test/viewer-logic.test.js keeps the two from drifting apart.
+    function parseSingleTarget(segment) {
+        const markerCount = (segment.match(/<!--\s*(role:|external-role)/gi) || []).length;
+        if (markerCount > 1) {
+            return { kind: 'invalid', reason: 'a label carries more than one target annotation', text: segment };
+        }
+        const roleMatch = segment.match(/^(.*?)\s*<!--\s*role:\s*([a-z0-9][a-z0-9-]*)\s*-->\s*$/);
+        if (roleMatch) {
+            const label = roleMatch[1].trim();
+            if (!label) return { kind: 'invalid', reason: 'annotation has no visible label', text: segment };
+            return { kind: 'catalogue', roleId: roleMatch[2], label };
+        }
+        const externalMatch = segment.match(/^(.*?)\s*<!--\s*external-role\s*-->\s*$/);
+        if (externalMatch) {
+            const label = externalMatch[1].trim();
+            if (!label) return { kind: 'invalid', reason: 'annotation has no visible label', text: segment };
+            return { kind: 'external', label };
+        }
+        // markerCount === 1 already proved an annotation marker is present.
+        // If neither roleMatch nor externalMatch fired, the marker itself is
+        // malformed (uppercase letter, underscore, space, or empty id, or a
+        // capitalized keyword) — a hand-edit typo, not unannotated prose.
+        // Mirrors scripts/lib/relationship-annotations.js exactly.
+        if (markerCount === 1) {
+            return { kind: 'invalid', reason: 'malformed role annotation', text: segment };
+        }
+        return { kind: 'legacy', text: segment };
+    }
+
+    function parseOneOf(segment) {
+        const closed = segment.match(/^<!--\s*one-of\s*-->([\s\S]*)<!--\s*\/one-of\s*-->$/);
+        if (!closed) {
+            if (/<!--\s*one-of\s*-->|<!--\s*\/one-of\s*-->/.test(segment)) {
+                return { kind: 'invalid', reason: 'unclosed one-of wrapper', text: segment };
+            }
+            return null;
+        }
+        const inner = closed[1];
+        if (/<!--\s*one-of\s*-->|<!--\s*\/one-of\s*-->/.test(inner)) {
+            return { kind: 'invalid', reason: 'nested one-of wrapper', text: segment };
+        }
+        const options = inner.split(/,|\bor\b/i).map(s => s.trim()).filter(Boolean).map(parseSingleTarget);
+        if (options.length < 2) {
+            return { kind: 'invalid', reason: 'one-of has fewer than two options', text: segment };
+        }
+        if (options.some(o => o.kind === 'invalid' || o.kind === 'legacy')) {
+            return { kind: 'invalid', reason: 'one-of contains an unannotated or invalid option', text: segment };
+        }
+        return { kind: 'one-of', options };
+    }
+
+    function parseSegment(segment) {
+        const oneOf = parseOneOf(segment);
+        if (oneOf) return oneOf;
+        return parseSingleTarget(segment);
+    }
+
+    function parseRelationshipField(fieldText) {
+        const text = String(fieldText == null ? '' : fieldText).trim();
+        if (!text) return [];
+        // The whole field is the empty-relationship sentinel, optionally with
+        // a parenthetical explanation (matches annotateField's None
+        // handling). Checked BEFORE splitting on semicolons, since the
+        // explanation can contain internal semicolons — the brief's literal
+        // code split first and then only recognized "None (...)" when it
+        // happened to contain no ';', misparsing the real catalog value
+        // "None (sets technical direction; formal line management sits with
+        // the Chapter Lead)" as two invalid segments. Fixed to match the
+        // canonical implementation's order in
+        // scripts/lib/relationship-annotations.js.
+        if (/^none\s*(\(.*\))?$/i.test(text)) return [];
+        const segments = text.split(';').map(s => s.trim()).filter(Boolean);
+        return segments.map(seg => {
+            if (/^none\b/i.test(seg) && !/<!--/.test(seg)) {
+                return { kind: 'invalid', reason: 'None combined with another target', text: seg };
+            }
+            return parseSegment(seg);
+        });
+    }
+
+    // Resolve a stable role id to the catalog role it names, or null. The
+    // ID counterpart to findRoleByTitle — used once #270's annotations give
+    // a caller something more durable than a title to resolve against.
+    function findRoleById(roleId, domains) {
+        if (!roleId) return null;
+        for (const d of Object.values(domains || {})) {
+            for (const r of (d.roles || [])) {
+                if (r.roleId === roleId) return { ...r, domainLabel: d.label };
+            }
+        }
+        return null;
     }
 
     // Split a Reports To / Direct Reports value into the part worth showing
@@ -1198,14 +1335,17 @@
         buildCareerSankey,
         parseMobilityPaths,
         parseCareerPath,
+        parseInteractionRoles,
         resolveDocHref,
         sectionStartsOpen,
         roleTitleKey,
         findRoleByTitle,
+        findRoleById,
         panelStateFor,
         parseRoleMeta,
         splitReportingValue,
         stripAnnotations,
+        parseRelationshipField,
         tocIdFor,
         activeTocIndex,
         parseViewerRoute,

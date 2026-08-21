@@ -35,14 +35,17 @@ const {
     buildCareerSankey,
     parseMobilityPaths,
     parseCareerPath,
+    parseInteractionRoles,
     resolveDocHref,
     sectionStartsOpen,
     roleTitleKey,
     findRoleByTitle,
+    findRoleById,
     panelStateFor,
     parseRoleMeta,
     splitReportingValue,
     stripAnnotations,
+    parseRelationshipField,
     tocIdFor,
     activeTocIndex,
     parseViewerRoute,
@@ -170,6 +173,69 @@ test('viewer-logic stripAnnotations mirrors scripts/lib/relationship-annotations
     for (const sample of samples) {
         assert.equal(stripAnnotations(sample), canonicalStripAnnotations(sample), `mismatch for ${JSON.stringify(sample)}`);
     }
+});
+
+test('viewer-logic parseRelationshipField mirrors scripts/lib/relationship-annotations.js exactly', () => {
+    // Same reasoning as the stripAnnotations mirror test above: index.html
+    // cannot require() the canonical implementation, so this test keeps the
+    // two from drifting apart.
+    const { parseRelationshipField: canonicalParse } = require('../scripts/lib/relationship-annotations.js');
+    const samples = [
+        'Cloud Platform Architect <!-- role: cloud-platform-architect -->',
+        'Board of Directors <!-- external-role -->',
+        '<!-- one-of -->A <!-- role: a --> or B <!-- role: b --><!-- /one-of -->',
+        'CFO <!-- role: chief-financial-officer -->; CISO <!-- role: chief-information-security-officer -->',
+        'Some Drifted Title',
+        'None',
+        'None (sets technical direction; formal line management sits with the Chapter Lead)',
+        '<!-- role: x -->',
+        '<!-- one-of -->A <!-- role: a --><!-- /one-of -->',
+        // Malformed annotation markers (#270 final review, Finding 1): the
+        // marker is present but the id or keyword itself is broken — an
+        // uppercase letter, an empty id, an underscore, a space, or a
+        // capitalized keyword. These must resolve to 'invalid' identically
+        // in both implementations, not silently fall back to 'legacy'.
+        'Foo <!-- role: Foo-Bar -->',
+        'Foo <!-- role: -->',
+        'Foo <!-- role: foo_bar -->',
+        'Foo <!-- role: foo bar -->',
+        'Foo <!-- Role: foo-bar -->',
+        'Foo <!-- external-Role -->',
+        '',
+        null,
+    ];
+    for (const sample of samples) {
+        assert.deepEqual(parseRelationshipField(sample), canonicalParse(sample), `mismatch for ${JSON.stringify(sample)}`);
+    }
+});
+
+// A hand-edit typo inside an otherwise-recognizable annotation marker must
+// not silently become legacy/unannotated prose (mirrors the canonical
+// implementation's test in test/relationship-annotations.test.js).
+test('viewer-logic parseRelationshipField flags malformed role annotations as invalid, not legacy', () => {
+    assert.equal(parseRelationshipField('Foo <!-- role: Foo-Bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- role: -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- role: foo_bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- role: foo bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- Role: foo-bar -->')[0].kind, 'invalid');
+    assert.equal(parseRelationshipField('Foo <!-- external-Role -->')[0].kind, 'invalid');
+});
+
+// ── findRoleById ──────────────────────────────────────────
+test('findRoleById finds a role by its stable id across domains', () => {
+    const domains = { kubernetes: { label: 'Kubernetes', roles: [{ title: 'Kubernetes Architect', roleId: 'kubernetes-architect', file: 'x', level: 'Architect' }] } };
+    const hit = findRoleById('kubernetes-architect', domains);
+    assert.equal(hit.title, 'Kubernetes Architect');
+    assert.equal(hit.domainLabel, 'Kubernetes');
+});
+
+test('findRoleById returns null for an unknown id', () => {
+    assert.equal(findRoleById('nonexistent', { kubernetes: { label: 'Kubernetes', roles: [] } }), null);
+});
+
+test('findRoleById returns null for an empty id', () => {
+    assert.equal(findRoleById('', { kubernetes: { label: 'Kubernetes', roles: [] } }), null);
+    assert.equal(findRoleById(null, { kubernetes: { label: 'Kubernetes', roles: [] } }), null);
 });
 
 test('contentReferencesForQuery removes only an exact normalized title match', () => {
@@ -714,19 +780,19 @@ test('career sankey handles the real SKILLS_PROGRESSION.md', () => {
 // ── parseCareerPath ──────────────────────────────────────
 
 test('parseCareerPath handles the dominant heading variant', () => {
-    const md = `# Role\n\n## Career Development Path\n\n**Previous Roles:**\n\n- System Administrator\n- Build Engineer\n\n**Potential Next Roles:**\n\n- Senior Engineer\n\n## Interactions with Other Roles\n\n- stuff`;
-    assert.deepEqual(parseCareerPath(md), {
-        from: ['System Administrator', 'Build Engineer'],
-        to:   ['Senior Engineer'],
-    });
+    const md = '## Career Development Path\n\n**Previous Roles:**\n\n- Kubernetes Senior Engineer\n\n**Potential Next Roles:**\n\n- Kubernetes Architect\n';
+    const result = parseCareerPath(md);
+    assert.equal(result.from.length, 1);
+    assert.equal(result.from[0].label, 'Kubernetes Senior Engineer');
+    assert.deepEqual(result.from[0].parsed, [{ kind: 'legacy', text: 'Kubernetes Senior Engineer' }]);
+    assert.equal(result.to[0].label, 'Kubernetes Architect');
 });
 
 test('parseCareerPath handles the From/To (typical …) variant', () => {
-    const md = `## Career Development Path\n\n**From (typical previous roles):**\n\n- VMware Senior Engineer\n\n**To (typical next roles):**\n\n- Cloud Lead Architect\n- Enterprise Architect\n`;
-    assert.deepEqual(parseCareerPath(md), {
-        from: ['VMware Senior Engineer'],
-        to:   ['Cloud Lead Architect', 'Enterprise Architect'],
-    });
+    const md = '## Career Development Path\n\n**From (typical previous roles):**\n\n- Storage Engineer\n\n**To (typical next roles):**\n\n- Storage Architect\n';
+    const result = parseCareerPath(md);
+    assert.equal(result.from[0].label, 'Storage Engineer');
+    assert.equal(result.to[0].label, 'Storage Architect');
 });
 
 test('parseCareerPath returns empty lists when the section is absent', () => {
@@ -734,36 +800,46 @@ test('parseCareerPath returns empty lists when the section is absent', () => {
 });
 
 test('parseCareerPath ignores bullets outside the from/to sub-lists', () => {
-    const md = `## Career Development Path\n\nIntro text.\n\n- stray bullet\n\n**Previous Roles:**\n\n- Real Entry\n\n**Growth areas:**\n\n- not a role list\n`;
-    assert.deepEqual(parseCareerPath(md), { from: ['Real Entry'], to: [] });
+    const md = '## Career Development Path\n\nSome prose.\n\n- Stray bullet\n\n**Previous Roles:**\n\n- Real Entry\n';
+    const result = parseCareerPath(md);
+    assert.equal(result.from.length, 1);
+    assert.equal(result.from[0].label, 'Real Entry');
+    assert.equal(result.to.length, 0);
 });
 
-// #269's migration appends an inline annotation comment to a career-path
-// bullet's own text. renderCareerStepper (index.html) shows this value
-// directly and matches it against the catalog via findRoleByTitle, so an
-// unstripped comment would appear as literal text in the career stepper and
-// break the xref link.
-test('parseCareerPath strips a #269 annotation from a bullet', () => {
-    const md = `## Career Development Path\n\n**Previous Roles:**\n\n- Cloud Lead Architect <!-- role: cloud-lead-architect -->\n\n**Potential Next Roles:**\n\n- COO <!-- external-role -->\n`;
-    assert.deepEqual(parseCareerPath(md), {
-        from: ['Cloud Lead Architect'],
-        to:   ['COO'],
-    });
+test('parseCareerPath parses an annotated bullet into a catalogue entry', () => {
+    const md = '## Career Development Path\n\n**Previous Roles:**\n\n- Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer -->\n';
+    const result = parseCareerPath(md);
+    assert.equal(result.from[0].label, 'Kubernetes Senior Engineer');
+    assert.deepEqual(result.from[0].parsed, [{ kind: 'catalogue', roleId: 'kubernetes-senior-engineer', label: 'Kubernetes Senior Engineer' }]);
 });
 
-test('parseCareerPath parses every role file in the catalog', () => {
+test('parseCareerPath parses an annotated one-of bullet', () => {
+    const md = '## Career Development Path\n\n**Potential Next Roles:**\n\n- <!-- one-of -->Cloud Lead Architect <!-- role: cloud-lead-architect --> or Cloud Principal Architect <!-- role: cloud-principal-architect --><!-- /one-of -->\n';
+    const result = parseCareerPath(md);
+    assert.equal(result.to[0].parsed[0].kind, 'one-of');
+    assert.equal(result.to[0].parsed[0].options.length, 2);
+});
+
+test('parseCareerPath parses every role file in the catalog without throwing', () => {
     const fs = require('node:fs');
     const path = require('node:path');
-    let withBoth = 0, total = 0;
-    for (const d of fs.readdirSync(path.join(__dirname, '..', 'Roles'), { withFileTypes: true })) {
+    const domainsDir = path.join(__dirname, '..', 'Roles');
+    let total = 0, withBoth = 0;
+    for (const d of fs.readdirSync(domainsDir, { withFileTypes: true })) {
         if (!d.isDirectory()) continue;
-        for (const f of fs.readdirSync(path.join(__dirname, '..', 'Roles', d.name))) {
+        for (const f of fs.readdirSync(path.join(domainsDir, d.name))) {
             if (!f.endsWith('.md') || f === 'README.md' || /_standards\.md$/.test(f)) continue;
+            const cp = parseCareerPath(fs.readFileSync(path.join(domainsDir, d.name, f), 'utf8'));
+            assert.ok(Array.isArray(cp.from) && Array.isArray(cp.to));
             total++;
-            const cp = parseCareerPath(fs.readFileSync(path.join(__dirname, '..', 'Roles', d.name, f), 'utf8'));
             if (cp.from.length && cp.to.length) withBoth++;
         }
     }
+    // Preserves the coverage the pre-#270 version of this test asserted
+    // (total===226, withBoth===226): the brief's replacement only checked
+    // Array.isArray + total>0, which would silently accept a role file that
+    // stopped yielding a From or To list.
     assert.equal(total, 226);
     assert.equal(withBoth, 226, 'every role file yields both From and To lists');
 });
@@ -1723,4 +1799,122 @@ test('radarListHtml groups by ring for the accessible fallback', () => {
     // Hold has no source in the catalogue; the fallback must say so rather
     // than leaving the reader to wonder whether it was dropped.
     assert.match(html, /not derivable/i);
+});
+
+// ── parseInteractionRoles ────────────────────────────────
+test('parseInteractionRoles extracts the Role column in row order', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> | Escalation | Escalates To |',
+        '| Board of Directors <!-- external-role --> | Reporting | Provides To |',
+        '',
+    ].join('\n');
+    const rows = parseInteractionRoles(md);
+    assert.equal(rows.length, 2);
+    assert.deepEqual(rows[0].parsed, [{ kind: 'catalogue', roleId: 'kubernetes-senior-engineer', label: 'Kubernetes Senior Engineer' }]);
+    assert.deepEqual(rows[1].parsed, [{ kind: 'external', label: 'Board of Directors' }]);
+});
+
+test('parseInteractionRoles handles a one-of Role cell', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| <!-- one-of -->DevOps Senior Engineer <!-- role: devops-senior-engineer --> or DevOps Architect <!-- role: devops-architect --><!-- /one-of --> | Escalation | Escalates To |',
+        '',
+    ].join('\n');
+    const rows = parseInteractionRoles(md);
+    assert.equal(rows[0].parsed[0].kind, 'one-of');
+    assert.equal(rows[0].parsed[0].options.length, 2);
+});
+
+test('parseInteractionRoles returns an empty array when the section is absent', () => {
+    assert.deepEqual(parseInteractionRoles('# Role\n\n## Role Overview\n\nText.'), []);
+});
+
+test('parseInteractionRoles skips the header and separator rows', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> | Escalation | Escalates To |',
+        '',
+    ].join('\n');
+    assert.equal(parseInteractionRoles(md).length, 1);
+});
+
+// #270 final review, Finding 2: header detection must be positional (first
+// pipe row = header, second = separator), not keyed off the literal word
+// "Role". linkInteractionRoles (index.html) pairs parsedRows[i] against the
+// i-th real DOM <tr> by position, so a differently-worded header column
+// (e.g. "Role / Team") that a name-based check fails to skip would shift
+// every subsequent row by one and link every interaction cell to the wrong
+// role — a wrong link, not just a missing one.
+test('parseInteractionRoles skips a differently-worded header row by position, not by name', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role / Team | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> | Escalation | Escalates To |',
+        '',
+    ].join('\n');
+    const rows = parseInteractionRoles(md);
+    assert.equal(rows.length, 1);
+    assert.deepEqual(rows[0].parsed, [{ kind: 'catalogue', roleId: 'kubernetes-senior-engineer', label: 'Kubernetes Senior Engineer' }]);
+});
+
+test('index.html destructures parseRelationshipField, parseInteractionRoles, and findRoleById from ViewerLogic', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+    const scriptMatch = html.match(/<script>([\s\S]*?)<\/script>/i);
+    assert.ok(scriptMatch, 'index.html has an inline <script> block');
+    const script = scriptMatch[1];
+
+    const destructure = script.match(/const\s*\{[\s\S]*?\}\s*=\s*ViewerLogic;/);
+    assert.ok(destructure, 'index.html destructures ViewerLogic exports');
+    assert.match(destructure[0], /\bparseRelationshipField\b/);
+    assert.match(destructure[0], /\bparseInteractionRoles\b/);
+    // NOTE: deviates from the plan's brief, which specified aliasing this
+    // import to `resolveRoleId` at destructure time. That collides: Task 4
+    // already defines a local `resolveRoleId` wrapper (used by the
+    // career-stepper `chip` function) with that exact name, so aliasing the
+    // import to the same identifier is a duplicate top-level declaration —
+    // a SyntaxError (verified with `node -e`), not just a style choice.
+    // `findRoleById` is imported plain instead; nothing else in the script
+    // uses that name, so no alias is needed (unlike `findRoleByTitle`,
+    // which *is* aliased below because its own wrapper reuses the name).
+    assert.match(destructure[0], /\bfindRoleById\b/);
+
+    assert.match(script, /function resolveRoleId\(id\)\s*\{\s*return findRoleById\(id, allDomains\);/,
+        'resolveRoleId must wrap findRoleById with allDomains, mirroring findRoleByTitle');
+});
+
+test('index.html resolves the reporting chip by role id before falling back to title matching', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+    const script = html.match(/<script>([\s\S]*?)<\/script>/i)[1];
+    const reportingChip = script.match(/const reportingChip = \(icon, label, value\) => \{[\s\S]*?\n {8}\};/);
+    assert.ok(reportingChip, 'index.html defines reportingChip');
+    assert.match(reportingChip[0], /parseRelationshipField\(value\)/);
+    assert.match(reportingChip[0], /resolveRoleId\(primary\.roleId\)/);
+});
+
+test('index.html passes parsed interaction rows into linkInteractionRoles', () => {
+    const fs = require('node:fs');
+    const path = require('node:path');
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+    // NOTE: the plan's brief used /linkInteractionRoles\([^)]*parseInteractionRoles\(markdown\)\)/,
+    // but [^)]* can never span the ')' that closes the real first argument
+    // (document.getElementById('roleBody')) — that pattern cannot match any
+    // correctly-wired call site. [\s\S]*? (non-greedy, dot-matches-all)
+    // finds the same thing without that false constraint.
+    assert.match(html, /linkInteractionRoles\([\s\S]*?parseInteractionRoles\(markdown\)\)/);
 });

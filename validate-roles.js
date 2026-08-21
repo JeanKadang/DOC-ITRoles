@@ -11,6 +11,8 @@ const fs   = require('fs');
 const path = require('path');
 const { parseMeta, KNOWN_LEVELS, normalizeLevel, REFERENCE_DOC_PATTERN, DOMAIN_LABELS } = require('./roleMeta');
 const { loadCredentialRegistry, validateRoleCredentialReferences } = require('./credentialRegistry');
+const { loadRoles } = require('./scripts/audit-relationship-terms.js');
+const { parseRelationshipField } = require('./scripts/lib/relationship-annotations.js');
 
 const ROOT       = __dirname;
 // ROLES_DIR env override exists for the test suite, which points the
@@ -285,6 +287,130 @@ function findDuplicateTitles(rolesDir = ROLES_DIR) {
     .map(([title, files]) => ({ title, files: files.sort() }));
 }
 
+// Flattens a field's top-level entries so a one-of's options are checked
+// individually (each option is its own catalogue/external claim) without
+// the group itself being mistaken for a single resolvable target.
+function flattenRelationshipEntries(entries) {
+  const out = [];
+  for (const entry of entries) {
+    if (entry.kind === 'one-of') out.push(...entry.options);
+    else out.push(entry);
+  }
+  return out;
+}
+
+// Catalogue-wide relationship integrity (#270): unresolved catalogue IDs,
+// self-references, reporting cycles, contradictory reporting pairs, and
+// stale rename labels. Uses only the fields ADR-0006 annotates — Reports
+// To, Direct Reports, career-path bullets, and interactions-table cells.
+function findRelationshipIssues(rolesDir = ROLES_DIR) {
+  // loadRoles returns absolute filesystem paths; convert to the
+  // repo-relative form the rest of this file's console output uses.
+  const roles = loadRoles(rolesDir).filter(r => r.roleId).map(r => ({
+    ...r,
+    file: path.relative(path.dirname(rolesDir), r.file).replace(/\\/g, '/'),
+  }));
+  const byId = new Map(roles.map(r => [r.roleId, r]));
+  const errors = [];
+  const warnings = [];
+  const record = (list, file, field, message) => list.push({ file, field, message });
+
+  const parsedRoles = roles.map(role => ({
+    role,
+    fields: {
+      'Reports To': parseRelationshipField(role.fields.reportsTo || ''),
+      'Direct Reports': parseRelationshipField(role.fields.directReports || ''),
+      'Career Development Path': (role.fields.careerBullets || []).flatMap(parseRelationshipField),
+      'Interactions with Other Roles': (role.fields.interactionRoles || []).flatMap(parseRelationshipField),
+    },
+  }));
+
+  // Per-role checks: invalid syntax, unresolved IDs, self-reference, stale
+  // labels. None of these need cross-role state.
+  for (const { role, fields } of parsedRoles) {
+    for (const [fieldName, entries] of Object.entries(fields)) {
+      for (const entry of flattenRelationshipEntries(entries)) {
+        if (entry.kind === 'invalid') {
+          record(errors, role.file, fieldName, `invalid annotation (${entry.reason}): "${entry.text}"`);
+          continue;
+        }
+        if (entry.kind !== 'catalogue') continue;
+
+        if (!byId.has(entry.roleId)) {
+          record(errors, role.file, fieldName, `references unknown role ID "${entry.roleId}"`);
+          continue;
+        }
+        if (fieldName === 'Reports To' && entry.roleId === role.roleId) {
+          record(errors, role.file, fieldName, `reports to itself ("${entry.roleId}")`);
+        }
+        const target = byId.get(entry.roleId);
+        if (target.title !== entry.label) {
+          record(warnings, role.file, fieldName,
+            `label "${entry.label}" is stale — "${entry.roleId}" is now titled "${target.title}"`);
+        }
+      }
+    }
+  }
+
+  // Reporting cycles: an edge exists only for a single, unambiguous
+  // catalogue Reports To target. A one-of doesn't commit to one parent, so
+  // it can't participate without guessing which option is real.
+  const reportsToParent = new Map();
+  for (const { role, fields } of parsedRoles) {
+    const entries = fields['Reports To'];
+    if (entries.length === 1 && entries[0].kind === 'catalogue' && byId.has(entries[0].roleId)) {
+      reportsToParent.set(role.roleId, entries[0].roleId);
+    }
+  }
+  for (const startId of reportsToParent.keys()) {
+    const seen = new Set([startId]);
+    const chain = [startId];
+    let current = startId;
+    while (reportsToParent.has(current)) {
+      current = reportsToParent.get(current);
+      if (seen.has(current)) {
+        if (current === startId) {
+          record(errors, byId.get(startId).file, 'Reports To',
+            `reporting cycle: ${[...chain, current].join(' -> ')}`);
+        }
+        break;
+      }
+      seen.add(current);
+      chain.push(current);
+    }
+  }
+
+  // Contradictory reporting pairs, checked from each unambiguous Reports To
+  // edge. When the parent's Direct Reports is itself annotated, agreement
+  // is provable — a disagreement is an error. When it's legacy prose, a
+  // provable check isn't possible, so a missing mention is a warning only.
+  for (const [childId, parentId] of reportsToParent) {
+    const parentRole = byId.get(parentId);
+    const parentParsed = parsedRoles.find(p => p.role.roleId === parentId);
+    const annotatedIds = parentParsed.fields['Direct Reports']
+      .filter(e => e.kind === 'catalogue')
+      .map(e => e.roleId);
+    const child = byId.get(childId);
+
+    if (annotatedIds.length > 0) {
+      if (!annotatedIds.includes(childId)) {
+        record(errors, parentRole.file, 'Direct Reports',
+          `does not list "${child.title}" (${childId}), who reports to this role`);
+      }
+      continue;
+    }
+
+    const rawDirectReports = String(parentRole.fields.directReports || '').trim();
+    if (rawDirectReports && !/^none\b/i.test(rawDirectReports)
+        && !rawDirectReports.toLowerCase().includes(child.title.toLowerCase())) {
+      record(warnings, parentRole.file, 'Direct Reports',
+        `may not document "${child.title}", who reports to this role — verify manually`);
+    }
+  }
+
+  return { errors, warnings };
+}
+
 function main() {
   const credentialContext = loadCredentialRegistry(CREDENTIALS_FILE);
   const files   = listRoleFiles();
@@ -322,16 +448,28 @@ function main() {
     for (const f of d.files) console.log(`  ${f}`);
   }
 
+  const relationshipIssues = findRelationshipIssues();
+
+  for (const e of relationshipIssues.errors) {
+    console.log(`\n✖ ${e.file} [${e.field}]: ${e.message}`);
+  }
+  for (const w of relationshipIssues.warnings) {
+    console.log(`\n⚠ ${w.file} [${w.field}]: ${w.message}`);
+  }
+
   console.log(`\n${'─'.repeat(60)}`);
   console.log(`Checked ${files.length} role files (${skipped.length} reference docs skipped)`);
   console.log(`  ${withErrors.length} file(s) with errors`);
   console.log(`  ${withWarnings.length} file(s) with warnings`);
   console.log(`  ${duplicates.length} duplicate title(s)`);
   console.log(`  ${duplicateIds.length} duplicate role ID(s)`);
+  console.log(`  ${relationshipIssues.errors.length} relationship error(s)`);
+  console.log(`  ${relationshipIssues.warnings.length} relationship warning(s)`);
   console.log('─'.repeat(60));
 
   if (withErrors.length > 0 || credentialContext.errors.length > 0 || duplicates.length > 0 || duplicateIds.length > 0 ||
-      (STRICT && (withWarnings.length > 0 || credentialContext.warnings.length > 0))) {
+      relationshipIssues.errors.length > 0 ||
+      (STRICT && (withWarnings.length > 0 || credentialContext.warnings.length > 0 || relationshipIssues.warnings.length > 0))) {
     process.exitCode = 1;
   }
 }
@@ -342,4 +480,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { listRoleFiles, validateFile, findDuplicateTitles, findDuplicateRoleIds, REQUIRED_SECTIONS };
+module.exports = { listRoleFiles, validateFile, findDuplicateTitles, findDuplicateRoleIds, findRelationshipIssues, REQUIRED_SECTIONS };
