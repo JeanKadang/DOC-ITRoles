@@ -503,10 +503,20 @@
         if (!section) return [];
         const body = section.split(/\r?\n## /)[0];
         const rows = [];
+        // Positional, not name-based: the first "|"-prefixed line is always
+        // the header row and the second is always the "|---|---|" separator,
+        // regardless of what the header cells say. linkInteractionRoles
+        // (index.html) pairs rows[i] against the i-th real DOM <tr> by
+        // position, so a name-based check (matching the literal word "Role")
+        // that fails to fire on a differently-worded header (e.g.
+        // "Role / Team") would shift every subsequent row by one and link
+        // every interaction cell to the wrong role (#270 final review,
+        // Finding 2).
+        let pipeRowIndex = -1;
         for (const line of body.split(/\r?\n/)) {
             if (!/^\|/.test(line)) continue;
-            if (/^\|\s*Role\s*\|/.test(line)) continue;       // header
-            if (/^\|[\s:|-]+\|$/.test(line)) continue;         // separator
+            pipeRowIndex++;
+            if (pipeRowIndex < 2) continue; // header (0) and separator (1)
             const cellMatch = line.match(/^\|\s*([^|]*?)\s*\|/);
             if (!cellMatch) continue;
             const raw = cellMatch[1];

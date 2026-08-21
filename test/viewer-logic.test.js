@@ -1848,6 +1848,27 @@ test('parseInteractionRoles skips the header and separator rows', () => {
     assert.equal(parseInteractionRoles(md).length, 1);
 });
 
+// #270 final review, Finding 2: header detection must be positional (first
+// pipe row = header, second = separator), not keyed off the literal word
+// "Role". linkInteractionRoles (index.html) pairs parsedRows[i] against the
+// i-th real DOM <tr> by position, so a differently-worded header column
+// (e.g. "Role / Team") that a name-based check fails to skip would shift
+// every subsequent row by one and link every interaction cell to the wrong
+// role — a wrong link, not just a missing one.
+test('parseInteractionRoles skips a differently-worded header row by position, not by name', () => {
+    const md = [
+        '## Interactions with Other Roles',
+        '',
+        '| Role / Team | Nature of Interaction | Interaction Mode |',
+        '|---|---|---|',
+        '| Kubernetes Senior Engineer <!-- role: kubernetes-senior-engineer --> | Escalation | Escalates To |',
+        '',
+    ].join('\n');
+    const rows = parseInteractionRoles(md);
+    assert.equal(rows.length, 1);
+    assert.deepEqual(rows[0].parsed, [{ kind: 'catalogue', roleId: 'kubernetes-senior-engineer', label: 'Kubernetes Senior Engineer' }]);
+});
+
 test('index.html destructures parseRelationshipField, parseInteractionRoles, and findRoleById from ViewerLogic', () => {
     const fs = require('node:fs');
     const path = require('node:path');
