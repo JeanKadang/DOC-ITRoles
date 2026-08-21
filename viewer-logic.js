@@ -662,8 +662,16 @@
     const ANNOTATION_COMMENT = /<!--[\s\S]*?-->/g;
 
     function stripAnnotations(text) {
-        return String(text == null ? '' : text)
-            .replace(ANNOTATION_COMMENT, '')
+        let stripped = String(text == null ? '' : text);
+        // Looped to stay behaviorally identical to the canonical
+        // implementation in relationship-annotations.js — see its comment
+        // for why a single-pass replace isn't provably complete.
+        let previous;
+        do {
+            previous = stripped;
+            stripped = stripped.replace(ANNOTATION_COMMENT, '');
+        } while (stripped !== previous);
+        return stripped
             .replace(/\s+([,;])/g, '$1')
             .replace(/\s+/g, ' ')
             .trim();

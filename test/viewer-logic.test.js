@@ -1108,7 +1108,7 @@ test('index.html imports stripAnnotations from ViewerLogic and applies it to the
     const path = require('node:path');
     const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
 
-    const scriptMatch = html.match(/<script>([\s\S]*?)<\/script>/);
+    const scriptMatch = html.match(/<script>([\s\S]*?)<\/script>/i);
     assert.ok(scriptMatch, 'index.html has an inline <script> block');
     const script = scriptMatch[1];
 

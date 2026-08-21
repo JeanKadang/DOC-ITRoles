@@ -39,10 +39,12 @@ script in `scripts/`.
 ### Task 1: Role index and single-target annotation
 
 **Files:**
+
 - Create: `scripts/lib/relationship-annotations.js`
 - Test: `test/relationship-annotations.test.js`
 
 **Interfaces:**
+
 - Produces: `normalizeTitle(title: string): string`,
   `buildRoleIndex(roles: {title: string, roleId: string}[]): Map<string, {roleId: string, title: string}>`,
   `annotateTarget(label: string, ctx: {roleIndex: Map, externalTerms: Set<string>}): {text: string, kind: 'role'|'external', roleId?: string} | null`.
@@ -173,10 +175,12 @@ git commit -m "feat: add role index and single-target annotation (#269)"
 ### Task 2: Field splitting, one-of grouping, and field-level annotation
 
 **Files:**
+
 - Modify: `scripts/lib/relationship-annotations.js`
 - Test: `test/relationship-annotations.test.js`
 
 **Interfaces:**
+
 - Consumes: `annotateTarget` from Task 1 (same signature).
 - Produces: `isAnnotated(segment: string): boolean`,
   `annotateField(fieldText: string, ctx: {roleIndex, externalTerms}): {text: string, resolved: object[], legacy: string[]}`.
@@ -369,10 +373,12 @@ git commit -m "feat: add field splitting and one-of grouping to relationship ann
 ### Task 3: Whole-document migration for Reports To and Direct Reports
 
 **Files:**
+
 - Modify: `scripts/lib/relationship-annotations.js`
 - Test: `test/relationship-annotations.test.js`
 
 **Interfaces:**
+
 - Consumes: `annotateField` from Task 2.
 - Produces: `migrateRoleContent(content: string, ctx: {roleIndex, externalTerms}): {content: string, resolved: object[], legacy: {field: string, text: string}[]}`.
 
@@ -494,10 +500,12 @@ git commit -m "feat: migrate Reports To and Direct Reports table fields (#269)"
 ### Task 4: Extend migration to career-path bullets and the interactions table
 
 **Files:**
+
 - Modify: `scripts/lib/relationship-annotations.js`
 - Test: `test/relationship-annotations.test.js`
 
 **Interfaces:**
+
 - Consumes: `annotateField` from Task 2; extends `migrateRoleContent` from Task 3 (same signature, no change to its contract).
 
 - [ ] **Step 1: Write the failing tests**
@@ -683,10 +691,12 @@ git commit -m "feat: migrate career-path bullets and interactions table (#269)"
 ### Task 5: Read-only audit of unresolved relationship terms
 
 **Files:**
+
 - Create: `scripts/audit-relationship-terms.js`
 - Test: `test/audit-relationship-terms.test.js`
 
 **Interfaces:**
+
 - Consumes: `buildRoleIndex`, `normalizeTitle`, `annotateField` from `scripts/lib/relationship-annotations.js`.
 - Produces: `collectUnresolvedTerms(roles: {title, roleId, fields: {reportsTo, directReports, careerBullets: string[], interactionRoles: string[]}}[], externalTerms: Set<string>): Map<string, number>` (unresolved text → occurrence count, sorted by count descending when read via `[...map]`), and a CLI (`roleFiles`, `run`) that walks `Roles/`, extracts the four field shapes per file, and prints the map.
 
@@ -891,11 +901,13 @@ git commit -m "feat: add read-only audit of unresolved relationship terms (#269)
 ### Task 6: Curated external terms and the migration CLI
 
 **Files:**
+
 - Create: `scripts/lib/external-role-terms.js`
 - Create: `scripts/migrate-relationship-annotations.js`
 - Test: `test/migrate-relationship-annotations.test.js`
 
 **Interfaces:**
+
 - Consumes: `migrateRoleContent` from Task 4, `Task 5`'s audit output (read by a human before this task, not by code).
 - Produces: `EXTERNAL_TERMS: string[]` (exported from `external-role-terms.js`), and a CLI entry point in `migrate-relationship-annotations.js` with a `--write` flag, following `backfill-role-ids.js`'s `run({ write })` shape.
 
@@ -1132,6 +1144,7 @@ git commit -m "feat: add curated external terms and migration CLI (#269)"
 ### Task 7: Run the migration across the catalogue in batches
 
 **Files:**
+
 - Modify: files under `Roles/` (all 33 domain subfolders, applied in batches).
 - Modify: `scripts/lib/external-role-terms.js` (only if the live audit surfaces a new recurring external term).
 - Create: a legacy-exceptions record (see Step 4).

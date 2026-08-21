@@ -207,8 +207,18 @@ function migrateRoleContent(content, ctx) {
 const ANNOTATION_COMMENT = /<!--[\s\S]*?-->/g;
 
 function stripAnnotations(text) {
-  return String(text == null ? '' : text)
-    .replace(ANNOTATION_COMMENT, '')
+  let stripped = String(text == null ? '' : text);
+  // A single .replace pass is what CodeQL's incomplete-sanitization check
+  // flags: it cannot prove no comment-shaped text survives one pass, even
+  // though real HTML comments can't nest. Looping until stable removes any
+  // possibility, at the cost of one extra pass on the (already rare) input
+  // that contains an annotation at all.
+  let previous;
+  do {
+    previous = stripped;
+    stripped = stripped.replace(ANNOTATION_COMMENT, '');
+  } while (stripped !== previous);
+  return stripped
     .replace(/\s+([,;])/g, '$1')
     .replace(/\s+/g, ' ')
     .trim();
