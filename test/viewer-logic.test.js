@@ -801,7 +801,7 @@ test('parseCareerPath parses every role file in the catalog without throwing', (
     const fs = require('node:fs');
     const path = require('node:path');
     const domainsDir = path.join(__dirname, '..', 'Roles');
-    let total = 0;
+    let total = 0, withBoth = 0;
     for (const d of fs.readdirSync(domainsDir, { withFileTypes: true })) {
         if (!d.isDirectory()) continue;
         for (const f of fs.readdirSync(path.join(domainsDir, d.name))) {
@@ -809,9 +809,15 @@ test('parseCareerPath parses every role file in the catalog without throwing', (
             const cp = parseCareerPath(fs.readFileSync(path.join(domainsDir, d.name, f), 'utf8'));
             assert.ok(Array.isArray(cp.from) && Array.isArray(cp.to));
             total++;
+            if (cp.from.length && cp.to.length) withBoth++;
         }
     }
-    assert.ok(total > 0);
+    // Preserves the coverage the pre-#270 version of this test asserted
+    // (total===226, withBoth===226): the brief's replacement only checked
+    // Array.isArray + total>0, which would silently accept a role file that
+    // stopped yielding a From or To list.
+    assert.equal(total, 226);
+    assert.equal(withBoth, 226, 'every role file yields both From and To lists');
 });
 
 // ── sectionStartsOpen (#112) ──────────────────────────────
